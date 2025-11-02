@@ -38,11 +38,13 @@ jobs:
           python scripts/ingest_issues.py || echo "Warning: Issues ingestion failed"
           
       - name: Aggregate research data
-        run: python scripts/aggregate.py || echo "Warning: Aggregation failed"
+        run: |
+          python scripts/aggregate.py || echo "Warning: Aggregation failed"
         continue-on-error: true
         
       - name: Mine research insights
-        run: python scripts/mine_insights.py || echo "Warning: Insights mining failed"
+        run: |
+          python scripts/mine_insights.py || echo "Warning: Insights mining failed"
         continue-on-error: true
 
       - name: Commit and push research data
