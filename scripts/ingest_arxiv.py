@@ -66,7 +66,7 @@ def fetch_arxiv_papers():
     print("📚 Fetching papers from arXiv...")
     
     query_params = build_arxiv_query(ARXIV_CATEGORIES)
-    base_url = 'http://export.arxiv.org/api/query'
+    base_url = 'https://export.arxiv.org/api/query'
     
     try:
         response = requests.get(base_url, params=query_params, timeout=30)
@@ -266,6 +266,24 @@ def save_papers(papers):
     print(f"💾 Saved {len(papers)} papers to {filename}")
 
 
+def load_recent_papers_as_fallback():
+    """Load papers from the most recent successful ingestion as fallback"""
+    import glob
+    from datetime import datetime, timedelta
+    
+    # Look for recent files (last 3 days)
+    arxiv_dir = Path("data/arxiv")
+    for days_ago in range(1, 4):
+        past_date = (datetime.now() - timedelta(days=days_ago)).strftime("%Y-%m-%d")
+        past_file = arxiv_dir / f"{past_date}.json"
+        if past_file.exists():
+            with open(past_file, 'r', encoding='utf-8') as f:
+                papers = json.load(f)
+            print(f"📦 Using fallback data from {past_date} ({len(papers)} papers)")
+            return papers
+    return []
+
+
 def main():
     print("🔬 Starting arXiv paper ingestion...")
     print(f"📅 Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -275,8 +293,15 @@ def main():
     papers = fetch_arxiv_papers()
     
     if not papers:
-        print("⚠️  No papers fetched")
-        return
+        print("⚠️  No papers fetched from arXiv API")
+        print("🔄 Attempting to use recent data as fallback...")
+        papers = load_recent_papers_as_fallback()
+        
+        if not papers:
+            print("❌ No fallback data available")
+            # Create empty file so aggregation doesn't fail
+            save_papers([])
+            return
     
     # Filter and score
     relevant_papers = filter_and_score_papers(papers)

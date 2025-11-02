@@ -59,7 +59,7 @@ MAX_SUMMARY_LENGTH = 250  # Maximum characters for paper summaries
 MAX_DISPLAYED_TRENDS = 5  # Maximum trending topics to display
 
 # Actionable ideator configuration constants
-MIN_RESEARCH_SCORE_FOR_ACTIONABLE = 0.7  # Minimum score to generate actionable content
+MIN_RESEARCH_SCORE_FOR_ACTIONABLE = 0.5  # Minimum score to generate actionable content (lowered to work with non-arXiv sources)
 MIN_HIGH_SCORE_PAPERS = 3  # Minimum number of high-score papers needed
 
 

@@ -25,10 +25,21 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
+      
+      # Fetch arXiv data immediately after dependency install (minimize firewall impact)
+      - name: Pre-fetch arXiv research data
+        run: |
+          # Run arXiv ingestion with retry logic
+          for i in {1..3}; do
+            python scripts/ingest_arxiv.py && break || {
+              echo "Attempt $i failed, retrying..."
+              sleep 5
+            }
+          done
+        continue-on-error: true
           
       - name: Run research ingestion
         run: |
-          python scripts/ingest_arxiv.py || echo "Warning: arXiv ingestion failed"
           python scripts/ingest_huggingface.py || echo "Warning: HuggingFace ingestion failed"
           python scripts/ingest_paperswithcode.py || echo "Warning: PapersWithCode ingestion failed"
           python scripts/ingest_official.py || echo "Warning: Official ingestion failed"

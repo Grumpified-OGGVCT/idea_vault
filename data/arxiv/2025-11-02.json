@@ -283,7 +283,7 @@
     "summary": "Over-the-air (OTA) federated learning (FL) has been well recognized as a scalable paradigm that exploits the waveform superposition of the wireless multiple-access channel to aggregate model updates in a single use. Existing OTA-FL designs largely enforce zero-bias model updates by either assuming \\emph{homogeneous} wireless conditions (equal path loss across devices) or forcing zero-bias updates to guarantee convergence. Under \\emph{heterogeneous} wireless scenarios, however, such designs are constrained by the weakest device and inflate the update variance. Moreover, prior analyses of biased OTA-FL largely address convex objectives, while most modern AI models are highly non-convex. Motivated by these gaps, we study OTA-FL with stochastic gradient descent (SGD) for general smooth non-convex objectives under wireless heterogeneity. We develop novel OTA-FL SGD updates that allow a structured, time-invariant model bias while facilitating reduced variance updates. We derive a finite-time stationarity bound (expected time average squared gradient norm) that explicitly reveals a bias-variance trade-off. To optimize this trade-off, we pose a non-convex joint OTA power-control design and develop an efficient successive convex approximation (SCA) algorithm that requires only statistical CSI at the base station. Experiments on a non-convex image classification task validate the approach: the SCA-based design accelerates convergence via an optimized bias and improves generalization over prior OTA-FL baselines.",
     "authors": [
       "Muhammad Faraz Ul Abrar",
-      "Nicol\u00f2 Michelusi"
+      "Nicolò Michelusi"
     ],
     "categories": [
       "cs.LG",
@@ -971,7 +971,7 @@
     "summary": "Age-related macular degeneration (AMD) is one of the leading causes of irreversible vision impairment in people over the age of 60. This research focuses on semantic segmentation for AMD lesion detection in RGB fundus images, a non-invasive and cost-effective imaging technique. The results of the ADAM challenge - the most comprehensive AMD detection from RGB fundus images research competition and open dataset to date - serve as a benchmark for our evaluation. Taking the U-Net connectivity as a base of our framework, we evaluate and compare several approaches to improve the segmentation model's architecture and training pipeline, including pre-processing techniques, encoder (backbone) deep network types of varying complexity, and specialized loss functions to mitigate class imbalances on image and pixel levels. The main outcome of this research is the final configuration of the AMD detection framework, which outperforms all the prior ADAM challenge submissions on the multi-class segmentation of different AMD lesion types in non-invasive RGB fundus images. The source code used to conduct the experiments presented in this paper is made freely available.",
     "authors": [
       "Valentyna Starodub",
-      "Mantas Luko\u0161evi\u010dius"
+      "Mantas Lukoševičius"
     ],
     "categories": [
       "cs.CV",
@@ -1204,11 +1204,11 @@
     "title": "Curly Flow Matching for Learning Non-gradient Field Dynamics",
     "summary": "Modeling the transport dynamics of natural processes from population-level observations is a ubiquitous problem in the natural sciences. Such models rely on key assumptions about the underlying process in order to enable faithful learning of governing dynamics that mimic the actual system behavior. The de facto assumption in current approaches relies on the principle of least action that results in gradient field dynamics and leads to trajectories minimizing an energy functional between two probability measures. However, many real-world systems, such as cell cycles in single-cell RNA, are known to exhibit non-gradient, periodic behavior, which fundamentally cannot be captured by current state-of-the-art methods such as flow and bridge matching. In this paper, we introduce Curly Flow Matching (Curly-FM), a novel approach that is capable of learning non-gradient field dynamics by designing and solving a Schr\\\"odinger bridge problem with a non-zero drift reference process -- in stark contrast to typical zero-drift reference processes -- which is constructed using inferred velocities in addition to population snapshot data. We showcase Curly-FM by solving the trajectory inference problems for single cells, computational fluid dynamics, and ocean currents with approximate velocities. We demonstrate that Curly-FM can learn trajectories that better match both the reference process and population marginals. Curly-FM expands flow matching models beyond the modeling of populations and towards the modeling of known periodic behavior in physical systems. Our code repository is accessible at: https://github.com/kpetrovicc/curly-flow-matching.git",
     "authors": [
-      "Katarina Petrovi\u0107",
+      "Katarina Petrović",
       "Lazar Atanackovic",
       "Viggo Moro",
-      "Kacper Kapu\u015bniak",
-      "\u0130smail \u0130lkan Ceylan",
+      "Kacper Kapuśniak",
+      "İsmail İlkan Ceylan",
       "Michael Bronstein",
       "Avishek Joey Bose",
       "Alexander Tong"
@@ -1253,8 +1253,8 @@
     "summary": "Cosmological field-level inference requires differentiable forward models that solve the challenging dynamics of gas and dark matter under hydrodynamics and gravity. We propose a hybrid approach where gravitational forces are computed using a differentiable particle-mesh solver, while the hydrodynamics are parametrized by a neural network that maps local quantities to an effective pressure field. We demonstrate that our method improves upon alternative approaches, such as an Enthalpy Gradient Descent baseline, both at the field and summary-statistic level. The approach is furthermore highly data efficient, with a single reference simulation of cosmological structure formation being sufficient to constrain the neural pressure model. This opens the door for future applications where the model is fit directly to observational data, rather than a training set of simulations.",
     "authors": [
       "Arne Thomsen",
-      "Tilman Tr\u00f6ster",
-      "Fran\u00e7ois Lanusse"
+      "Tilman Tröster",
+      "François Lanusse"
     ],
     "categories": [
       "astro-ph.CO",
@@ -1552,7 +1552,7 @@
     "authors": [
       "Andreas Auer",
       "Daniel Klotz",
-      "Sebastinan B\u00f6ck",
+      "Sebastinan Böck",
       "Sepp Hochreiter"
     ],
     "categories": [
@@ -1593,9 +1593,9 @@
     "summary": "This paper investigates the structure of linear operators introduced in Hernandez et al. [2023] that decode specific relational facts in transformer language models. We extend their single-relation findings to a collection of relations and systematically chart their organization. We show that such collections of relation decoders can be highly compressed by simple order-3 tensor networks without significant loss in decoding accuracy. To explain this surprising redundancy, we develop a cross-evaluation protocol, in which we apply each linear decoder operator to the subjects of every other relation. Our results reveal that these linear maps do not encode distinct relations, but extract recurring, coarse-grained semantic properties (e.g., country of capital city and country of food are both in the country-of-X property). This property-centric structure clarifies both the operators' compressibility and highlights why they generalize only to new relations that are semantically close. Our findings thus interpret linear relational decoding in transformer language models as primarily property-based, rather than relation-specific.",
     "authors": [
       "Miranda Anna Christ",
-      "Adri\u00e1n Csisz\u00e1rik",
-      "Gergely Becs\u00f3",
-      "D\u00e1niel Varga"
+      "Adrián Csiszárik",
+      "Gergely Becsó",
+      "Dániel Varga"
     ],
     "categories": [
       "cs.CL",
@@ -1676,7 +1676,7 @@
     "summary": "Financial forecasting increasingly uses large neural network models, but their opacity raises challenges for trust and regulatory compliance. We present several approaches to explainable and reliable AI in finance. \\emph{First}, we describe how Time-LLM, a time series foundation model, uses a prompt to avoid a wrong directional forecast. \\emph{Second}, we show that combining foundation models for time series forecasting with a reliability estimator can filter our unreliable predictions. \\emph{Third}, we argue for symbolic reasoning encoding domain rules for transparent justification. These approaches shift emphasize executing only forecasts that are both reliable and explainable. Experiments on equity and cryptocurrency data show that the architecture reduces false positives and supports selective execution. By integrating predictive performance with reliability estimation and rule-based reasoning, our framework advances transparent and auditable financial AI systems.",
     "authors": [
       "Albi Isufaj",
-      "Pablo Moll\u00e1",
+      "Pablo Mollá",
       "Helmut Prendinger"
     ],
     "categories": [
@@ -1787,9 +1787,9 @@
     "title": "Cross-Platform Evaluation of Reasoning Capabilities in Foundation Models",
     "summary": "This paper presents a comprehensive cross-platform evaluation of reasoning capabilities in contemporary foundation models, establishing an infrastructure-agnostic benchmark across three computational paradigms: HPC supercomputing (MareNostrum 5), cloud platforms (Nebius AI Studio), and university clusters (a node with eight H200 GPUs).   We evaluate 15 foundation models across 79 problems spanning eight academic domains (Physics, Mathematics, Chemistry, Economics, Biology, Statistics, Calculus, and Optimization) through three experimental phases: (1) Baseline establishment: Six models (Mixtral-8x7B, Phi-3, LLaMA 3.1-8B, Gemma-2-9b, Mistral-7B, OLMo-7B) evaluated on 19 problems using MareNostrum 5, establishing methodology and reference performance; (2) Infrastructure validation: The 19-problem benchmark repeated on university cluster (seven models including Falcon-Mamba state-space architecture) and Nebius AI Studio (nine state-of-the-art models: Hermes-4 70B/405B, LLaMA 3.1-405B/3.3-70B, Qwen3 30B/235B, DeepSeek-R1, GPT-OSS 20B/120B) to confirm infrastructure-agnostic reproducibility; (3) Extended evaluation: Full 79-problem assessment on both university cluster and Nebius platforms, probing generalization at scale across architectural diversity.   The findings challenge conventional scaling assumptions, establish training data quality as more critical than model size, and provide actionable guidelines for model selection across educational, production, and research contexts. The tri-infrastructure methodology and 79-problem benchmark enable longitudinal tracking of reasoning capabilities as foundation models evolve.",
     "authors": [
-      "J. de Curt\u00f2",
-      "I. de Zarz\u00e0",
-      "Pablo Garc\u00eda",
+      "J. de Curtò",
+      "I. de Zarzà",
+      "Pablo García",
       "Jordi Cabot"
     ],
     "categories": [
@@ -1965,7 +1965,7 @@
     "title": "Discovering State Equivalences in UCT Search Trees By Action Pruning",
     "summary": "One approach to enhance Monte Carlo Tree Search (MCTS) is to improve its sample efficiency by grouping/abstracting states or state-action pairs and sharing statistics within a group. Though state-action pair abstractions are mostly easy to find in algorithms such as On the Go Abstractions in Upper Confidence bounds applied to Trees (OGA-UCT), nearly no state abstractions are found in either noisy or large action space settings due to constraining conditions. We provide theoretical and empirical evidence for this claim, and we slightly alleviate this state abstraction problem by proposing a weaker state abstraction condition that trades a minor loss in accuracy for finding many more abstractions. We name this technique Ideal Pruning Abstractions in UCT (IPA-UCT), which outperforms OGA-UCT (and any of its derivatives) across a large range of test domains and iteration budgets as experimentally validated. IPA-UCT uses a different abstraction framework from Abstraction of State-Action Pairs (ASAP) which is the one used by OGA-UCT, which we name IPA. Furthermore, we show that both IPA and ASAP are special cases of a more general framework that we call p-ASAP which itself is a special case of the ASASAP framework.",
     "authors": [
-      "Robin Schm\u00f6cker",
+      "Robin Schmöcker",
       "Alexander Dockhorn",
       "Bodo Rosenhahn"
     ],
@@ -2045,10 +2045,10 @@
     "title": "Likely Interpolants of Generative Models",
     "summary": "Interpolation in generative models allows for controlled generation, model inspection, and more. Unfortunately, most generative models lack a principal notion of interpolants without restrictive assumptions on either the model or data dimension. In this paper, we develop a general interpolation scheme that targets likely transition paths compatible with different metrics and probability distributions. We consider interpolants analogous to a geodesic constrained to a suitable data distribution and derive a novel algorithm for computing these curves, which requires no additional training. Theoretically, we show that our method locally can be considered as a geodesic under a suitable Riemannian metric. We quantitatively show that our interpolation scheme traverses higher density regions than baselines across a range of models and datasets.",
     "authors": [
-      "Frederik M\u00f6bius Rygaard",
+      "Frederik Möbius Rygaard",
       "Shen Zhu",
       "Yinzhu Jin",
-      "S\u00f8ren Hauberg",
+      "Søren Hauberg",
       "Tom Fletcher"
     ],
     "categories": [
@@ -2418,14 +2418,14 @@
     "title": "Unravelling the Mechanisms of Manipulating Numbers in Language Models",
     "summary": "Recent work has shown that different large language models (LLMs) converge to similar and accurate input embedding representations for numbers. These findings conflict with the documented propensity of LLMs to produce erroneous outputs when dealing with numeric information. In this work, we aim to explain this conflict by exploring how language models manipulate numbers and quantify the lower bounds of accuracy of these mechanisms. We find that despite surfacing errors, different language models learn interchangeable representations of numbers that are systematic, highly accurate and universal across their hidden states and the types of input contexts. This allows us to create universal probes for each LLM and to trace information -- including the causes of output errors -- to specific layers. Our results lay a fundamental understanding of how pre-trained LLMs manipulate numbers and outline the potential of more accurate probing techniques in addressed refinements of LLMs' architectures.",
     "authors": [
-      "Michal \u0160tef\u00e1nik",
+      "Michal Štefánik",
       "Timothee Mickus",
-      "Marek Kadl\u010d\u00edk",
-      "Bertram H\u00f8jer",
+      "Marek Kadlčík",
+      "Bertram Højer",
       "Michal Spiegel",
-      "Ra\u00fal V\u00e1zquez",
+      "Raúl Vázquez",
       "Aman Sinha",
-      "Josef Kucha\u0159",
+      "Josef Kuchař",
       "Philipp Mondorf"
     ],
     "categories": [
@@ -2524,7 +2524,7 @@
       "Mohit Bansal",
       "Zhengyan Shi",
       "Alessandro Sordoni",
-      "Marc-Alexandre C\u00f4t\u00e9",
+      "Marc-Alexandre Côté",
       "Xingdi Yuan",
       "Lucas Caccia"
     ],
@@ -2715,9 +2715,9 @@
       "Albert Thomas",
       "Malik Tiomoko",
       "Abdelhakim Benechehab",
-      "Corentin L\u00e9ger",
+      "Corentin Léger",
       "Corinne Ancourt",
-      "Bal\u00e1zs K\u00e9gl"
+      "Balázs Kégl"
     ],
     "categories": [
       "cs.LG",
@@ -2864,7 +2864,7 @@
     "title": "On the Impact of Weight Discretization in QUBO-Based SVM Training",
     "summary": "Training Support Vector Machines (SVMs) can be formulated as a QUBO problem, enabling the use of quantum annealing for model optimization. In this work, we study how the number of qubits - linked to the discretization level of dual weights - affects predictive performance across datasets. We compare QUBO-based SVM training to the classical LIBSVM solver and find that even low-precision QUBO encodings (e.g., 1 bit per parameter) yield competitive, and sometimes superior, accuracy. While increased bit-depth enables larger regularization parameters, it does not always improve classification. Our findings suggest that selecting the right support vectors may matter more than their precise weighting. Although current hardware limits the size of solvable QUBOs, our results highlight the potential of quantum annealing for efficient SVM training as quantum devices scale.",
     "authors": [
-      "Sascha M\u00fccke"
+      "Sascha Mücke"
     ],
     "categories": [
       "cs.LG"
@@ -3028,7 +3028,7 @@
       "Chiara Troiani",
       "Benjamin Ryder",
       "Jean Diaconu",
-      "Herv\u00e9 Muyal",
+      "Hervé Muyal",
       "Marcelo Yannuzzi"
     ],
     "categories": [
@@ -3332,7 +3332,7 @@
       "Vinitra Swamy",
       "Dominik Glandorf",
       "Tanya Nazaretsky",
-      "Tanja K\u00e4ser"
+      "Tanja Käser"
     ],
     "categories": [
       "cs.CL"
@@ -3435,7 +3435,7 @@
     "title": "How Regularization Terms Make Invertible Neural Networks Bayesian Point   Estimators",
     "summary": "Can regularization terms in the training of invertible neural networks lead to known Bayesian point estimators in reconstruction? Invertible networks are attractive for inverse problems due to their inherent stability and interpretability. Recently, optimization strategies for invertible neural networks that approximate either a reconstruction map or the forward operator have been studied from a Bayesian perspective, but each has limitations. To address this, we introduce and analyze two regularization terms for the network training that, upon inversion of the network, recover properties of classical Bayesian point estimators: while the first can be connected to the posterior mean, the second resembles the MAP estimator. Our theoretical analysis characterizes how each loss shapes both the learned forward operator and its inverse reconstruction map. Numerical experiments support our findings and demonstrate how these loss-term regularizers introduce data-dependence in a stable and interpretable way.",
     "authors": [
-      "Nick Heilenk\u00f6tter"
+      "Nick Heilenkötter"
     ],
     "categories": [
       "cs.LG",
@@ -3543,8 +3543,8 @@
     "summary": "Multi-output Gaussian process (MOGP) regression allows modelling dependencies among multiple correlated response variables. Similarly to standard Gaussian processes, MOGPs are sensitive to model misspecification and outliers, which can distort predictions within individual outputs. This situation can be further exacerbated by multiple anomalous response variables whose errors propagate due to correlations between outputs. To handle this situation, we extend and generalise the robust and conjugate Gaussian process (RCGP) framework introduced by Altamirano et al. (2024). This results in the multi-output RCGP (MO-RCGP): a provably robust MOGP that is conjugate, and jointly captures correlations across outputs. We thoroughly evaluate our approach through applications in finance and cancer research.",
     "authors": [
       "Joshua Rooijakkers",
-      "Leiv R\u00f8nneberg",
-      "Fran\u00e7ois-Xavier Briol",
+      "Leiv Rønneberg",
+      "François-Xavier Briol",
       "Jeremias Knoblauch",
       "Matias Altamirano"
     ],
@@ -3704,7 +3704,7 @@
       "Shravan Nayak",
       "Gaurav Kamath",
       "Marius Mosbach",
-      "Karolina Sta\u0144czak",
+      "Karolina Stańczak",
       "Vered Shwartz",
       "Siva Reddy"
     ],
@@ -3791,7 +3791,7 @@
     "summary": "Heavy-tailed distributions, prevalent in a lot of real-world applications such as finance, telecommunications, queuing theory, and natural language processing, are challenging to model accurately owing to their slow tail decay. Bernstein phase-type (BPH) distributions, through their analytical tractability and good approximations in the non-tail region, can present a good solution, but they suffer from an inability to reproduce these heavy-tailed behaviors exactly, thus leading to inadequate performance in important tail areas. On the contrary, while highly adaptable to heavy-tailed distributions, hyperexponential (HE) models struggle in the body part of the distribution. Additionally, they are highly sensitive to initial parameter selection, significantly affecting their precision.   To solve these issues, we propose a novel hybrid model of BPH and HE distributions, borrowing the most desirable features from each for enhanced approximation quality. Specifically, we leverage an optimization to set initial parameters for the HE component, significantly enhancing its robustness and reducing the possibility that the associated procedure results in an invalid HE model. Experimental validation demonstrates that the novel hybrid approach is more performant than individual application of BPH or HE models. More precisely, it can capture both the body and the tail of heavy-tailed distributions, with a considerable enhancement in matching parameters such as mean and coefficient of variation. Additional validation through experiments utilizing queuing theory proves the practical usefulness, accuracy, and precision of our hybrid approach.",
     "authors": [
       "Abdelhakim Ziani",
-      "Andr\u00e1s Horv\u00e1th",
+      "András Horváth",
       "Paolo Ballarini"
     ],
     "categories": [
@@ -3957,8 +3957,8 @@
     "title": "Spiking Patches: Asynchronous, Sparse, and Efficient Tokens for Event   Cameras",
     "summary": "We propose tokenization of events and present a tokenizer, Spiking Patches, specifically designed for event cameras. Given a stream of asynchronous and spatially sparse events, our goal is to discover an event representation that preserves these properties. Prior works have represented events as frames or as voxels. However, while these representations yield high accuracy, both frames and voxels are synchronous and decrease the spatial sparsity. Spiking Patches gives the means to preserve the unique properties of event cameras and we show in our experiments that this comes without sacrificing accuracy. We evaluate our tokenizer using a GNN, PCN, and a Transformer on gesture recognition and object detection. Tokens from Spiking Patches yield inference times that are up to 3.4x faster than voxel-based tokens and up to 10.4x faster than frames. We achieve this while matching their accuracy and even surpassing in some cases with absolute improvements up to 3.8 for gesture recognition and up to 1.4 for object detection. Thus, tokenization constitutes a novel direction in event-based vision and marks a step towards methods that preserve the properties of event cameras.",
     "authors": [
-      "Christoffer Koo \u00d8hrstr\u00f8m",
-      "Ronja G\u00fcldenring",
+      "Christoffer Koo Øhrstrøm",
+      "Ronja Güldenring",
       "Lazaros Nalpantidis"
     ],
     "categories": [
@@ -4006,7 +4006,7 @@
       "Clarissa Sabrina Arlinghaus",
       "Tristan Kenneweg",
       "Barbara Hammer",
-      "G\u00fcnter W. Maier"
+      "Günter W. Maier"
     ],
     "categories": [
       "cs.AI"
@@ -4102,7 +4102,7 @@
     "title": "Language Models Are Borrowing-Blind: A Multilingual Evaluation of   Loanword Identification across 10 Languages",
     "summary": "Throughout language history, words are borrowed from one language to another and gradually become integrated into the recipient's lexicon. Speakers can often differentiate these loanwords from native vocabulary, particularly in bilingual communities where a dominant language continuously imposes lexical items on a minority language. This paper investigates whether pretrained language models, including large language models, possess similar capabilities for loanword identification. We evaluate multiple models across 10 languages. Despite explicit instructions and contextual information, our results show that models perform poorly in distinguishing loanwords from native ones. These findings corroborate previous evidence that modern NLP systems exhibit a bias toward loanwords rather than native equivalents. Our work has implications for developing NLP tools for minority languages and supporting language preservation in communities under lexical pressure from dominant languages.",
     "authors": [
-      "M\u00e9rilin Sousa Silva",
+      "Mérilin Sousa Silva",
       "Sina Ahmadi"
     ],
     "categories": [
@@ -4158,7 +4158,7 @@
       "Kirill Chugunov",
       "Luis Ramirez",
       "Matias Geralnik",
-      "Hern\u00e1n Mesura",
+      "Hernán Mesura",
       "Dean Lee",
       "Ed-Yeremai Hernandez Cardona",
       "Annette Diamond",
@@ -4187,7 +4187,7 @@
     "authors": [
       "Isaac Robledo",
       "Juan Alfaro",
-      "V\u00edctor Duro",
+      "Víctor Duro",
       "Alberto Solera-Rico",
       "Rodrigo Castellanos",
       "Carlos Sanmiguel Vila"
@@ -4395,19 +4395,6 @@
     "research_score": 0.46
   },
   {
-    "title": "[PR] feat(project-restructure): Introduce Morgan RAG module and remove voice for now",
-    "date": "2025-11-02T16:29:38Z",
-    "summary": "Full system refactoring\r\n\r\n- Add new morgan-rag module with advanced RAG (Retrieval-Augmented Generation) capabilities\r\n- Implement modular architecture with extensive background processing, caching, and optimization systems\r\n- Create comprehensive example scripts demonstrating various system integr",
-    "url": "https://github.com/lazarevtill/Morgan/pull/21",
-    "source": "github_prs",
-    "highlights": [
-      "comments: 5",
-      "pull request",
-      "repo: Morgan"
-    ],
-    "research_score": 0.45
-  },
-  {
     "arxiv_id": "2510.26799v1",
     "title": "Masked Diffusion Captioning for Visual Feature Learning",
     "summary": "We learn visual features by captioning images with an image-conditioned masked diffusion language model, a formulation we call masked diffusion captioning (MDC). During training, text tokens in each image-caption pair are masked at a randomly chosen ratio, and a decoder conditioned on visual features is trained to reconstruct the original text. After training, the learned visual features can be applied to downstream vision tasks. Unlike autoregressive captioning, the strength of the visual learning signal in MDC does not depend on each token's position in the sequence, reducing the need for auxiliary objectives. Linear probing experiments across a variety of academic-scale models and datasets show that the learned visual features are competitive with those produced by autoregressive and contrastive approaches.",
@@ -4431,7 +4418,7 @@
     "title": "Analysis of the Robustness of an Edge Detector Based on Cellular   Automata Optimized by Particle Swarm",
     "summary": "The edge detection task is essential in image processing aiming to extract relevant information from an image. One recurring problem in this task is the weaknesses found in some detectors, such as the difficulty in detecting loose edges and the lack of context to extract relevant information from specific problems. To address these weaknesses and adapt the detector to the properties of an image, an adaptable detector described by two-dimensional cellular automaton and optimized by meta-heuristic combined with transfer learning techniques was developed. This study aims to analyze the impact of expanding the search space of the optimization phase and the robustness of the adaptability of the detector in identifying edges of a set of natural images and specialized subsets extracted from the same image set. The results obtained prove that expanding the search space of the optimization phase was not effective for the chosen image set. The study also analyzed the adaptability of the model through a series of experiments and validation techniques and found that, regardless of the validation, the model was able to adapt to the input and the transfer learning techniques applied to the model showed no significant improvements.",
     "authors": [
-      "Vin\u00edcius Ferraria",
+      "Vinícius Ferraria",
       "Eurico Ruivo"
     ],
     "categories": [
@@ -4484,364 +4471,12 @@
     "research_score": 0.42
   },
   {
-    "model_id": "naeaeaem/gpt2-finetuned",
-    "author": "unknown",
-    "title": "naeaeaem/gpt2-finetuned",
-    "downloads": 0,
-    "likes": 0,
-    "tags": [
-      "peft",
-      "safetensors",
-      "base_model:adapter:gpt2",
-      "lora",
-      "transformers",
-      "text-generation",
-      "arxiv:1910.09700",
-      "base_model:openai-community/gpt2",
-      "base_model:adapter:openai-community/gpt2",
-      "region:us"
-    ],
-    "pipeline_tag": "text-generation",
-    "library": "peft",
-    "created_at": "2025-11-02T20:07:35.000Z",
-    "last_modified": "2025-11-02T21:19:08.000Z",
-    "days_since_creation": 0,
-    "url": "https://huggingface.co/naeaeaem/gpt2-finetuned",
-    "date": "2025-11-02",
-    "source": "huggingface_model",
-    "type": "model",
-    "research_score": 0.4
-  },
-  {
-    "model_id": "0d1n/Qwen3-0.6B-Gensyn-Swarm-voracious_pesty_penguin",
-    "author": "unknown",
-    "title": "0d1n/Qwen3-0.6B-Gensyn-Swarm-voracious_pesty_penguin",
-    "downloads": 518,
-    "likes": 0,
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen3",
-      "text-generation",
-      "rl-swarm",
-      "genrl-swarm",
-      "grpo",
-      "gensyn",
-      "I am voracious_pesty_penguin",
-      "arxiv:1910.09700",
-      "autotrain_compatible",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "pipeline_tag": "text-generation",
-    "library": "transformers",
-    "created_at": "2025-11-01T06:15:56.000Z",
-    "last_modified": "2025-11-02T21:19:06.000Z",
-    "days_since_creation": 1,
-    "url": "https://huggingface.co/0d1n/Qwen3-0.6B-Gensyn-Swarm-voracious_pesty_penguin",
-    "date": "2025-11-02",
-    "source": "huggingface_model",
-    "type": "model",
-    "research_score": 0.4
-  },
-  {
-    "model_id": "oberbics/llama-3.1-argument_mining-v2",
-    "author": "unknown",
-    "title": "oberbics/llama-3.1-argument_mining-v2",
-    "downloads": 45,
-    "likes": 0,
-    "tags": [
-      "transformers",
-      "safetensors",
-      "llama",
-      "text-generation",
-      "argument-mining",
-      "multilingual (German, French, English, Italian)",
-      "newspapers",
-      "implicit-argument-mining",
-      "grpo",
-      "reinforcement-learning",
-      "trl",
-      "historical-texts",
-      "text-extraction",
-      "conversational",
-      "multilingual",
-      "dataset:multilingual-argument-mining-newspapers",
-      "arxiv:2402.03300",
-      "arxiv:2407.21783",
-      "base_model:meta-llama/Llama-3.1-8B-Instruct",
-      "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
-      "license:llama3.1",
-      "model-index",
-      "autotrain_compatible",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "pipeline_tag": "text-generation",
-    "library": "transformers",
-    "created_at": "2025-11-02T00:35:52.000Z",
-    "last_modified": "2025-11-02T21:18:59.000Z",
-    "days_since_creation": 0,
-    "url": "https://huggingface.co/oberbics/llama-3.1-argument_mining-v2",
-    "date": "2025-11-02",
-    "source": "huggingface_model",
-    "type": "model",
-    "research_score": 0.4
-  },
-  {
-    "model_id": "yanghuattt1/tha_deepseek-ai_deepseek-coder-6.7b-base_8_ft_clm_best",
-    "author": "unknown",
-    "title": "yanghuattt1/tha_deepseek-ai_deepseek-coder-6.7b-base_8_ft_clm_best",
-    "downloads": 0,
-    "likes": 0,
-    "tags": [
-      "transformers",
-      "safetensors",
-      "llama",
-      "text-generation",
-      "arxiv:1910.09700",
-      "autotrain_compatible",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "pipeline_tag": "text-generation",
-    "library": "transformers",
-    "created_at": "2025-11-02T18:05:55.000Z",
-    "last_modified": "2025-11-02T21:17:59.000Z",
-    "days_since_creation": 0,
-    "url": "https://huggingface.co/yanghuattt1/tha_deepseek-ai_deepseek-coder-6.7b-base_8_ft_clm_best",
-    "date": "2025-11-02",
-    "source": "huggingface_model",
-    "type": "model",
-    "research_score": 0.4
-  },
-  {
-    "model_id": "josephcyr/JosephCyr-Replicate",
-    "author": "unknown",
-    "title": "josephcyr/JosephCyr-Replicate",
-    "downloads": 0,
-    "likes": 0,
-    "tags": [
-      "diffusers",
-      "flux",
-      "lora",
-      "replicate",
-      "text-to-image",
-      "en",
-      "base_model:black-forest-labs/FLUX.1-dev",
-      "base_model:adapter:black-forest-labs/FLUX.1-dev",
-      "license:other",
-      "region:us"
-    ],
-    "pipeline_tag": "text-to-image",
-    "library": "diffusers",
-    "created_at": "2025-11-02T18:27:35.000Z",
-    "last_modified": "2025-11-02T21:17:42.000Z",
-    "days_since_creation": 0,
-    "url": "https://huggingface.co/josephcyr/JosephCyr-Replicate",
-    "date": "2025-11-02",
-    "source": "huggingface_model",
-    "type": "model",
-    "research_score": 0.4
-  },
-  {
-    "model_id": "Robapuros/Qwen3-0.6B-Gensyn-Swarm-amphibious_leaping_bison",
-    "author": "unknown",
-    "title": "Robapuros/Qwen3-0.6B-Gensyn-Swarm-amphibious_leaping_bison",
-    "downloads": 429,
-    "likes": 0,
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen3",
-      "text-generation",
-      "rl-swarm",
-      "genrl-swarm",
-      "grpo",
-      "gensyn",
-      "I am amphibious_leaping_bison",
-      "arxiv:1910.09700",
-      "autotrain_compatible",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "pipeline_tag": "text-generation",
-    "library": "transformers",
-    "created_at": "2025-11-01T13:40:17.000Z",
-    "last_modified": "2025-11-02T21:16:39.000Z",
-    "days_since_creation": 1,
-    "url": "https://huggingface.co/Robapuros/Qwen3-0.6B-Gensyn-Swarm-amphibious_leaping_bison",
-    "date": "2025-11-02",
-    "source": "huggingface_model",
-    "type": "model",
-    "research_score": 0.4
-  },
-  {
-    "model_id": "maczg/qwen3-30B-A3B-behavioral-q4_k_m",
-    "author": "unknown",
-    "title": "maczg/qwen3-30B-A3B-behavioral-q4_k_m",
-    "downloads": 0,
-    "likes": 0,
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen3_moe",
-      "text-generation",
-      "text-generation-inference",
-      "unsloth",
-      "trl",
-      "en",
-      "license:apache-2.0",
-      "autotrain_compatible",
-      "endpoints_compatible",
-      "4-bit",
-      "bitsandbytes",
-      "region:us"
-    ],
-    "pipeline_tag": "text-generation",
-    "library": "transformers",
-    "created_at": "2025-11-02T21:15:40.000Z",
-    "last_modified": "2025-11-02T21:16:30.000Z",
-    "days_since_creation": 0,
-    "url": "https://huggingface.co/maczg/qwen3-30B-A3B-behavioral-q4_k_m",
-    "date": "2025-11-02",
-    "source": "huggingface_model",
-    "type": "model",
-    "research_score": 0.4
-  },
-  {
-    "model_id": "Kibalama/smollm3-jobs-sft",
-    "author": "unknown",
-    "title": "Kibalama/smollm3-jobs-sft",
-    "downloads": 0,
-    "likes": 0,
-    "tags": [
-      "transformers",
-      "safetensors",
-      "smollm3",
-      "text-generation",
-      "generated_from_trainer",
-      "trl",
-      "hf_jobs",
-      "sft",
-      "conversational",
-      "base_model:HuggingFaceTB/SmolLM3-3B-Base",
-      "base_model:finetune:HuggingFaceTB/SmolLM3-3B-Base",
-      "autotrain_compatible",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "pipeline_tag": "text-generation",
-    "library": "transformers",
-    "created_at": "2025-11-02T06:55:12.000Z",
-    "last_modified": "2025-11-02T21:15:55.000Z",
-    "days_since_creation": 0,
-    "url": "https://huggingface.co/Kibalama/smollm3-jobs-sft",
-    "date": "2025-11-02",
-    "source": "huggingface_model",
-    "type": "model",
-    "research_score": 0.4
-  },
-  {
-    "model_id": "0x7s0lt1/text-to-emoji-gemma-3-270m-it",
-    "author": "unknown",
-    "title": "0x7s0lt1/text-to-emoji-gemma-3-270m-it",
-    "downloads": 0,
-    "likes": 0,
-    "tags": [
-      "text-generation",
-      "emoji",
-      "gemma",
-      "base_model:google/gemma-3-270m-it",
-      "base_model:finetune:google/gemma-3-270m-it",
-      "region:us"
-    ],
-    "pipeline_tag": "text-generation",
-    "library": "",
-    "created_at": "2025-11-02T21:12:49.000Z",
-    "last_modified": "2025-11-02T21:15:19.000Z",
-    "days_since_creation": 0,
-    "url": "https://huggingface.co/0x7s0lt1/text-to-emoji-gemma-3-270m-it",
-    "date": "2025-11-02",
-    "source": "huggingface_model",
-    "type": "model",
-    "research_score": 0.4
-  },
-  {
-    "model_id": "jpalvaradomil/out270m",
-    "author": "unknown",
-    "title": "jpalvaradomil/out270m",
-    "downloads": 0,
-    "likes": 0,
-    "tags": [
-      "transformers",
-      "safetensors",
-      "gemma3_text",
-      "text-generation",
-      "generated_from_trainer",
-      "base_model:google/gemma-3-270m",
-      "base_model:finetune:google/gemma-3-270m",
-      "license:gemma",
-      "autotrain_compatible",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "pipeline_tag": "text-generation",
-    "library": "transformers",
-    "created_at": "2025-11-02T21:03:21.000Z",
-    "last_modified": "2025-11-02T21:15:17.000Z",
-    "days_since_creation": 0,
-    "url": "https://huggingface.co/jpalvaradomil/out270m",
-    "date": "2025-11-02",
-    "source": "huggingface_model",
-    "type": "model",
-    "research_score": 0.4
-  },
-  {
-    "model_id": "tinnguyen16/Qwen3-0.6B-Gensyn-Swarm-invisible_whiskered_kiwi",
-    "author": "unknown",
-    "title": "tinnguyen16/Qwen3-0.6B-Gensyn-Swarm-invisible_whiskered_kiwi",
-    "downloads": 0,
-    "likes": 0,
-    "tags": [
-      "transformers",
-      "safetensors",
-      "qwen3",
-      "text-generation",
-      "rl-swarm",
-      "genrl-swarm",
-      "grpo",
-      "gensyn",
-      "I am invisible_whiskered_kiwi",
-      "arxiv:1910.09700",
-      "autotrain_compatible",
-      "text-generation-inference",
-      "endpoints_compatible",
-      "region:us"
-    ],
-    "pipeline_tag": "text-generation",
-    "library": "transformers",
-    "created_at": "2025-11-02T13:58:25.000Z",
-    "last_modified": "2025-11-02T21:14:36.000Z",
-    "days_since_creation": 0,
-    "url": "https://huggingface.co/tinnguyen16/Qwen3-0.6B-Gensyn-Swarm-invisible_whiskered_kiwi",
-    "date": "2025-11-02",
-    "source": "huggingface_model",
-    "type": "model",
-    "research_score": 0.4
-  },
-  {
     "arxiv_id": "2510.26304v1",
     "title": "Exploring the correlation between the type of music and the emotions   evoked: A study using subjective questionnaires and EEG",
     "summary": "The subject of this work is to check how different types of music affect human emotions. While listening to music, a subjective survey and brain activity measurements were carried out using an EEG helmet. The aim is to demonstrate the impact of different music genres on emotions. The research involved a diverse group of participants of different gender and musical preferences. This had the effect of capturing a wide range of emotional responses to music. After the experiment, a relationship analysis of the respondents' questionnaires with EEG signals was performed. The analysis revealed connections between emotions and observed brain activity.",
     "authors": [
       "Jelizaveta Jankowska",
-      "Bo\u017cena Kostek",
+      "Bożena Kostek",
       "Fernando Alonso-Fernandez",
       "Prayag Tiwari"
     ],
