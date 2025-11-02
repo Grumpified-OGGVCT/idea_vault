@@ -250,25 +250,25 @@ def generate_scholar_opening(focus_type, focus_desc, aggregated):
     today = get_today_date_str()
     
     openings = {
-        "breakthrough": f"""# 📚 The Lab – {today}
+        "breakthrough": f"""# 🔬 AI Net Idea Vault – {today}
 
 *The Scholar here, translating today's research breakthroughs into actionable intelligence.*
 
 📚 Today's arXiv brought something genuinely significant: {focus_desc}. Let's unpack what makes these developments noteworthy and why they matter for the field's trajectory.
 """,
-        "pattern": f"""# 📚 The Lab – {today}
+        "pattern": f"""# 🔬 AI Net Idea Vault – {today}
 
 *The Scholar here, translating today's research breakthroughs into actionable intelligence.*
 
 📚 Progress in AI research is often about convergence. {focus_desc}, and this pattern tells us something important about where the field is headed.
 """,
-        "slow": f"""# 📚 The Lab – {today}
+        "slow": f"""# 🔬 AI Net Idea Vault – {today}
 
 *The Scholar here, translating today's research breakthroughs into actionable intelligence.*
 
 📚 Not every day brings paradigm shifts, and today exemplifies steady, incremental progress. {focus_desc}, building on established foundations in ways that matter.
 """,
-        "standard": f"""# 📚 The Lab – {today}
+        "standard": f"""# 🔬 AI Net Idea Vault – {today}
 
 *The Scholar here, translating today's research breakthroughs into actionable intelligence.*
 
@@ -804,11 +804,11 @@ Research moves fast, but **implementation moves faster**. The tools exist. The m
 
 def generate_about_section(today):
     """Generate about section with yield metrics"""
-    section = """## 📖 About The Lab
+    section = """## 📖 About AI Net Idea Vault
 
 **The Scholar** is your research intelligence agent — translating the daily firehose of 100+ AI papers into accessible, actionable insights. Rigorous analysis meets clear explanation.
 
-### What Makes The Lab Different?
+### What Makes AI Net Idea Vault Different?
 
 - **🔬 Expert Curation**: Filters 100+ daily papers to the 3-5 that matter most
 - **📚 Rigorous Translation**: Academic accuracy + accessible explanation
@@ -851,9 +851,9 @@ def generate_support_section():
     section = """
 ---
 
-## 💰 Support The Lab
+## 💰 Support AI Net Idea Vault
 
-If AI Research Daily helps you stay current with cutting-edge research, consider supporting development:
+If AI Net Idea Vault helps you stay current with cutting-edge research, consider supporting development:
 
 ### ☕ Ko-fi (Fiat/Card)
 
@@ -1133,7 +1133,7 @@ def save_report(report_md):
     # Add Jekyll front matter for reports directory (existing)
     md_front_matter = f"""---
 layout: default
-title: The Lab {today}
+title: AI Net Idea Vault {today}
 ---
 
 """
