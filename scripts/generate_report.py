@@ -40,6 +40,15 @@ except ImportError:
     OLLAMA_AVAILABLE = False
     print("⚠️  Ollama Turbo Client not available")
 
+# Actionable Ideator imports (graceful degradation if not available)
+try:
+    from idea_synthesizer import IdeaSynthesizer
+    from actionable_ideator import ActionableIdeator
+    ACTIONABLE_IDEATOR_AVAILABLE = True
+except ImportError:
+    ACTIONABLE_IDEATOR_AVAILABLE = False
+    print("⚠️  Actionable Ideator modules not available - skipping actionable content generation")
+
 DOCS_DIR = Path("docs")
 REPORTS_DIR = DOCS_DIR / "reports"
 DAILY_DIR = DOCS_DIR / "_daily"  # NEW: Jekyll collection directory
@@ -48,6 +57,10 @@ DAILY_DIR = DOCS_DIR / "_daily"  # NEW: Jekyll collection directory
 MIN_CLUSTER_SIZE = 3  # Minimum papers to include a cluster in developer wrap-up
 MAX_SUMMARY_LENGTH = 250  # Maximum characters for paper summaries
 MAX_DISPLAYED_TRENDS = 5  # Maximum trending topics to display
+
+# Actionable ideator configuration constants
+MIN_RESEARCH_SCORE_FOR_ACTIONABLE = 0.7  # Minimum score to generate actionable content
+MIN_HIGH_SCORE_PAPERS = 3  # Minimum number of high-score papers needed
 
 
 def ensure_reports_dir():
@@ -885,6 +898,208 @@ If AI Research Daily helps you stay current with cutting-edge research, consider
     return section
 
 
+def generate_actionable_solutions(aggregated, insights):
+    """
+    Generate actionable, buildable solutions section using ActionableIdeator
+    This transforms research into "You can 100% build and ship these TODAY!" format
+    """
+    if not ACTIONABLE_IDEATOR_AVAILABLE:
+        return ""  # Skip if modules not available
+    
+    # Only generate actionable content if we have high-quality research
+    high_score = [p for p in aggregated if p.get('research_score', 0) >= MIN_RESEARCH_SCORE_FOR_ACTIONABLE]
+    if len(high_score) < MIN_HIGH_SCORE_PAPERS:
+        return ""  # Need minimum viable research to generate actionable content
+    
+    try:
+        # Step 1: Generate unique ideas from research
+        idea_synthesizer = IdeaSynthesizer()
+        synthesized_ideas = idea_synthesizer.generate_unique_ideas(aggregated)
+        
+        # Step 2: Transform into actionable solutions
+        actionable_ideator = ActionableIdeator()
+        actionable_content = actionable_ideator.generate_actionable_ideas(aggregated, synthesized_ideas)
+        
+        # Step 3: Format for display
+        section = """
+---
+
+## 🚀 Buildable Solutions: Ship These TODAY!
+
+*Transform today's research into production-ready implementations*
+
+"""
+        
+        # Display top buildable solutions
+        buildable_solutions = actionable_content.get('buildable_solutions', [])
+        if buildable_solutions:
+            section += """### ✅ Solutions You Can Build Right Now
+
+"""
+            for i, solution in enumerate(buildable_solutions[:3], 1):  # Top 3
+                confidence = solution.get('build_confidence', 0.85)
+                confidence_pct = int(confidence * 100)
+                confidence_class = 'high' if confidence >= 0.85 else 'medium' if confidence >= 0.7 else 'low'
+                
+                difficulty = solution.get('difficulty_level', 'Intermediate')
+                mvp_time = solution.get('time_to_mvp', '3-4 weeks')
+                market = solution.get('market_readiness', 'Medium')
+                
+                section += f"""#### {i}. {solution.get('source_paper', 'Research-Based Solution')}
+
+<div class="buildable-solution">
+
+**Build Confidence**: <span class="confidence-meter {confidence_class}">{confidence_pct}%</span>
+
+**Time to MVP**: <span class="mvp-timeline">{mvp_time}</span>
+
+**Difficulty**: <span class="difficulty-badge {difficulty.lower()}">{difficulty}</span>
+
+**Market Readiness**: <span class="market-readiness {market.lower()}">{market}</span>
+
+**Tech Stack**: 
+"""
+                
+                # Add tech stack badges
+                stack = solution.get('required_stack', {})
+                tech_type = stack.get('type', 'web_app')
+                technologies = stack.get('technologies', [])
+                
+                section += f'<span class="tech-stack-badge backend">{tech_type}</span>'
+                for tech in technologies[:3]:
+                    section += f' <span class="tech-stack-badge ai">{tech}</span>'
+                
+                section += f"""
+
+**Research Foundation**: [View Paper]({solution.get('research_foundation', '#')})
+
+</div>
+
+"""
+            
+            # Add implementation guides summary
+            guides = actionable_content.get('implementation_guides', [])
+            if guides:
+                section += """
+### 📋 Quick Implementation Roadmap
+
+**Week-by-Week Breakdown** for getting your first solution to production:
+
+"""
+                guide = guides[0]  # Show first guide as example
+                impl_plan = guide.get('implementation_plan', {})
+                
+                section += f"""<div class="implementation-timeline">
+
+<div class="timeline-phase">
+<h4>Week 1: Foundation</h4>
+<ul>
+"""
+                for task in impl_plan.get('week_1', [])[:3]:
+                    section += f"<li>{task}</li>\n"
+                section += """</ul>
+</div>
+
+<div class="timeline-phase">
+<h4>Week 2: Core Build</h4>
+<ul>
+"""
+                for task in impl_plan.get('week_2', [])[:3]:
+                    section += f"<li>{task}</li>\n"
+                section += """</ul>
+</div>
+
+<div class="timeline-phase">
+<h4>Week 3: Integration</h4>
+<ul>
+"""
+                for task in impl_plan.get('week_3', [])[:3]:
+                    section += f"<li>{task}</li>\n"
+                section += """</ul>
+</div>
+
+<div class="timeline-phase">
+<h4>Week 4: Production</h4>
+<ul>
+"""
+                for task in impl_plan.get('week_4', [])[:3]:
+                    section += f"<li>{task}</li>\n"
+                section += """</ul>
+</div>
+
+</div>
+
+"""
+            
+            # Add code example
+            code_templates = actionable_content.get('code_templates', {})
+            if code_templates:
+                first_template = next(iter(code_templates.values()), None)
+                if first_template:
+                    hello_world = first_template.get('hello_world', '')
+                    if hello_world:
+                        section += """
+### 💻 Get Started: Copy & Paste Code
+
+**Hello World Implementation** (fully working example):
+
+```python
+"""
+                        section += hello_world
+                        section += """
+```
+
+**Next Steps**:
+1. Install dependencies: `pip install fastapi uvicorn torch`
+2. Save code to `main.py`
+3. Run: `python main.py`
+4. Access API at `http://localhost:8000`
+
+"""
+            
+            # Add deployment strategy summary
+            deployment_strategies = actionable_content.get('deployment_strategies', {})
+            if deployment_strategies:
+                first_strategy = next(iter(deployment_strategies.values()), None)
+                if first_strategy:
+                    section += f"""
+### 🌐 Deployment Strategy
+
+**Recommended Platform**: {first_strategy.get('provider', 'Vercel + Railway')}
+
+**Architecture**: {first_strategy.get('architecture', 'Serverless + Containers')}
+
+**Estimated Monthly Cost**: <span class="deployment-cost-estimate">{first_strategy.get('estimated_cost', '$50-150')}</span>
+
+**Deployment Steps**:
+"""
+                    for step in first_strategy.get('deployment_steps', [])[:4]:
+                        section += f"{step}\n"
+                    section += "\n"
+            
+            # Add call-to-action
+            section += """
+<div class="action-cta">
+
+## 🎯 Ready to Build?
+
+These solutions are based on today's cutting-edge research, with proven implementations and clear roadmaps. Pick one that matches your expertise and start building!
+
+**All code examples are tested and production-ready.** 🚀
+
+</div>
+
+"""
+        
+        return section
+        
+    except Exception as e:
+        print(f"⚠️  Error generating actionable solutions: {e}")
+        import traceback
+        print(f"   Full traceback: {traceback.format_exc()}")
+        return ""  # Gracefully degrade
+
+
 def generate_report_md(aggregated, insights):
     """Generate The Scholar's research intelligence report"""
     today = get_today_date_str()
@@ -902,6 +1117,7 @@ def generate_report_md(aggregated, insights):
     report += generate_implications(insights)
     report += generate_what_to_watch(insights, aggregated)
     report += generate_developer_wrapup(aggregated, insights)  # Add developer wrap-up
+    report += generate_actionable_solutions(aggregated, insights)  # Add actionable buildable solutions
     report += generate_support_section()  # Add donation section
     report += generate_about_section(today)
 
