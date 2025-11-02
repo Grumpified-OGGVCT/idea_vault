@@ -13,7 +13,6 @@ from typing import List, Dict, Optional
 try:
     from pynostr.event import Event
     from pynostr.relay_manager import RelayManager
-    from pynostr.message_type import ClientMessageType
     from pynostr.key import PrivateKey
     NOSTR_AVAILABLE = True
 except ImportError:
@@ -82,7 +81,7 @@ class NostrPublisher:
         Initialize NOSTR publisher
         
         Args:
-            private_key_hex: Hex-encoded NOSTR private key (nsec format)
+            private_key_hex: Hex-encoded NOSTR private key (64 character hex string, not nsec/bech32)
             relays: List of relay URLs (defaults to 48+ relays)
         """
         if not NOSTR_AVAILABLE:
@@ -109,7 +108,15 @@ class NostrPublisher:
             except Exception as e:
                 print(f"   ⚠️  Failed to add relay {relay_url}: {e}")
         
-        self.relay_manager.open_connections({"cert_reqs": "CERT_NONE"})
+        # Note: Using CERT_REQUIRED for SSL verification
+        # Some relays may fail to connect if they have invalid certificates
+        try:
+            self.relay_manager.open_connections({"cert_reqs": "CERT_REQUIRED"})
+        except Exception as e:
+            print(f"   ⚠️  SSL verification failed, retrying with relaxed SSL: {e}")
+            # Fallback to CERT_OPTIONAL if strict verification fails
+            self.relay_manager.open_connections({"cert_reqs": "CERT_OPTIONAL"})
+        
         time.sleep(2)  # Give relays time to connect
         
         print(f"✅ Connected to {connected} relays")

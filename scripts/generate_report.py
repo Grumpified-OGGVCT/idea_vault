@@ -21,10 +21,21 @@ except ImportError:
 
 # Ollama Turbo Client import
 try:
-    import sys
-    sys.path.insert(0, str(Path(__file__).parent))
-    from ollama_turbo_client import OllamaTurboClient, MODELS
-    OLLAMA_AVAILABLE = True
+    # Use relative import to avoid sys.path manipulation
+    from pathlib import Path
+    import importlib.util
+    
+    ollama_client_path = Path(__file__).parent / "ollama_turbo_client.py"
+    spec = importlib.util.spec_from_file_location("ollama_turbo_client", ollama_client_path)
+    if spec and spec.loader:
+        ollama_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(ollama_module)
+        OllamaTurboClient = ollama_module.OllamaTurboClient
+        MODELS = ollama_module.MODELS
+        OLLAMA_AVAILABLE = True
+    else:
+        OLLAMA_AVAILABLE = False
+        print("⚠️  Ollama Turbo Client not available")
 except ImportError:
     OLLAMA_AVAILABLE = False
     print("⚠️  Ollama Turbo Client not available")
