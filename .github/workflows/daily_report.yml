@@ -33,6 +33,8 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_ENDPOINT: ${{ secrets.LLM_ENDPOINT }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          OLLAMA_ENDPOINT: ${{ secrets.OLLAMA_ENDPOINT }}
           SOURCE_URL: ${{ secrets.SOURCE_URL }}
         run: |
           python scripts/generate_report.py
@@ -40,6 +42,13 @@ jobs:
       - name: Update report index
         run: |
           python scripts/generate_report_index.py
+      
+      - name: Publish to NOSTR
+        env:
+          NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PRIVATE_KEY }}
+        run: |
+          python scripts/publish_nostr.py
+        continue-on-error: true
           
       - name: Commit and push report
         id: commit
