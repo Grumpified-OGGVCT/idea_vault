@@ -10,7 +10,7 @@ Based on the original AI Research Daily architecture.
 
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 import httpx
 from bs4 import BeautifulSoup
@@ -81,6 +81,16 @@ def call_llm_with_prompt(system_prompt, content):
     2. Pass the system_prompt and content to the LLM
     3. Return the formatted markdown response
     
+    Example LLM integration:
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": content}
+            ]
+        )
+        return response.choices[0].message.content
+    
     For now, we'll create a simple formatted version of the content.
     """
     # Placeholder implementation - creates a basic markdown structure
@@ -129,15 +139,16 @@ def write_daily_report(markdown_content):
     daily_dir.mkdir(parents=True, exist_ok=True)
     
     # Create timestamped filename
-    timestamp = datetime.utcnow().strftime("%Y-%m-%d-%H%M")
+    now_utc = datetime.now(timezone.utc)
+    timestamp = now_utc.strftime("%Y-%m-%d-%H%M")
     filename = f"{timestamp}-daily-report.md"
     filepath = daily_dir / filename
     
     # Write content with frontmatter
     frontmatter = f"""---
 layout: post
-title: "Daily Report {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}"
-date: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S %z')}
+title: "Daily Report {now_utc.strftime('%Y-%m-%d %H:%M UTC')}"
+date: {now_utc.strftime('%Y-%m-%d %H:%M:%S +0000')}
 categories: daily
 ---
 
