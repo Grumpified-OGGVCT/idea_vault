@@ -11,13 +11,13 @@ from pathlib import Path
 from typing import List, Dict, Optional
 
 try:
-    from nostr.event import Event
-    from nostr.relay_manager import RelayManager
-    from nostr.message_type import ClientMessageType
-    from nostr.key import PrivateKey
+    from pynostr.event import Event
+    from pynostr.relay_manager import RelayManager
+    from pynostr.message_type import ClientMessageType
+    from pynostr.key import PrivateKey
     NOSTR_AVAILABLE = True
 except ImportError:
-    print("⚠️  nostr library not available - install with: pip install nostr")
+    print("⚠️  pynostr library not available - install with: pip install pynostr")
     NOSTR_AVAILABLE = False
 
 
@@ -239,7 +239,7 @@ def main():
     
     if not NOSTR_AVAILABLE:
         print("❌ NOSTR library not available")
-        print("   Install with: pip install nostr")
+        print("   Install with: pip install pynostr")
         return
     
     # Get private key from environment

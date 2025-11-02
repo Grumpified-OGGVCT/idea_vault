@@ -35,7 +35,7 @@ ls -la docs/reports/
    - ✅ **Read and write permissions**
    - ✅ **Allow GitHub Actions to create and approve pull requests**
 
-#### Configure Secrets (Optional - For LLM Enhancement)
+#### Configure Secrets (Optional - For LLM Enhancement & NOSTR Publishing)
 
 Go to **Settings** → **Secrets and variables** → **Actions** → **New repository secret**
 
@@ -43,12 +43,18 @@ Add the following secrets:
 
 | Secret Name | Description | Required |
 |------------|-------------|----------|
-| `LLM_API_KEY` | Your OpenAI or compatible LLM API key | Optional |
+| `OLLAMA_API_KEY` | Your Ollama Cloud API key (priority LLM backend) | Optional |
+| `OLLAMA_ENDPOINT` | Ollama API endpoint (default: `https://api.ollama.ai`) | Optional |
+| `LLM_API_KEY` | Your OpenAI or compatible LLM API key (fallback) | Optional |
 | `LLM_ENDPOINT` | Custom LLM endpoint (e.g., `https://api.openai.com/v1`) | Optional |
 | `LLM_MODEL` | Model name (e.g., `gpt-3.5-turbo`, `gpt-4`) | Optional |
+| `NOSTR_PRIVATE_KEY` | Your NOSTR private key in hex format for publishing | Optional |
 | `SOURCE_URL` | Custom data source URL if needed | Optional |
 
-**Note**: If secrets are not configured, the system will use fallback analysis without LLM enhancement.
+**Note**: 
+- If secrets are not configured, the system will use fallback analysis without LLM enhancement.
+- NOSTR publishing will be gracefully skipped if `NOSTR_PRIVATE_KEY` is not set.
+- Ollama Turbo Cloud is prioritized for LLM enhancement; falls back to OpenAI-compatible endpoint if unavailable.
 
 ### 3. Enable GitHub Pages
 
@@ -153,6 +159,97 @@ LLM_ENDPOINT=http://localhost:11434/v1
 LLM_MODEL=llama2
 ```
 
+#### Ollama Turbo Cloud (Recommended)
+```bash
+OLLAMA_API_KEY=your-ollama-api-key-here
+OLLAMA_ENDPOINT=https://api.ollama.ai
+```
+
+**Available Models**:
+- `deepseek-v3.1:671b-cloud` - Reasoning and analysis (default)
+- `qwen3-vl:235b-cloud` - Vision and multimodal tasks
+- `qwen3-coder:30b-cloud` - Creative and coding tasks
+- `nomic-embed-text` - Text embeddings
+
+### NOSTR Configuration
+
+#### Generate NOSTR Keys
+
+**Option 1: Using `nak` (recommended)**:
+```bash
+# Install nak
+go install github.com/fiatjaf/nak@latest
+
+# Generate new key pair
+nak key generate
+
+# Output will show:
+# Private key (nsec): nsec1...
+# Public key (npub): npub1...
+
+# Convert nsec to hex for GitHub secret
+nak key decode nsec1...
+```
+
+**Option 2: Using Python**:
+```python
+from pynostr.key import PrivateKey
+
+# Generate new key
+private_key = PrivateKey()
+print(f"Private key (hex): {private_key.hex()}")
+print(f"Public key (hex): {private_key.public_key.hex()}")
+```
+
+#### Configure NOSTR Secret
+
+1. Generate or retrieve your NOSTR private key in **hex format**
+2. Add as `NOSTR_PRIVATE_KEY` secret in GitHub repository settings
+3. Publishing will automatically occur after each report generation
+
+**Default Relay List** (48+ relays):
+- wss://relay.damus.io
+- wss://relay.nostr.band
+- wss://nostr.wine
+- wss://relay.snort.social
+- ... and 44 more (see `scripts/publish_nostr.py`)
+
+#### Verify NOSTR Publishing
+
+After a report is generated:
+1. Check workflow logs for "NOSTR publishing" step
+2. Look for event ID in logs
+3. View publication record in `data/nostr_publications/YYYY-MM-DD.json`
+4. Search for your public key on NOSTR clients (e.g., Damus, Snort, Iris)
+
+### Ollama Data Sources
+
+The system now ingests from multiple Ollama-related sources:
+
+1. **Official Sources** (`ingest_official.py`):
+   - Ollama blog RSS feed
+   - /cloud page for model updates
+
+2. **Cloud Models** (`ingest_cloud.py`):
+   - Ollama Cloud API tags
+   - Turbo-optimized models
+
+3. **Community** (`ingest_community.py`):
+   - Reddit r/ollama
+   - YouTube Ollama tutorials
+   - Community newsletters
+   - Hacker News mentions
+
+4. **Tools & Integrations** (`ingest_tools.py`):
+   - GitHub repos with 'ollama' topic
+   - n8n marketplace integrations
+
+5. **Issues & PRs** (`ingest_issues.py`):
+   - GitHub issues mentioning Ollama
+   - Pull requests for Ollama integrations
+
+All sources are aggregated and scored for relevance.
+
 ## Monitoring & Troubleshooting
 
 ### Check Workflow Logs
@@ -164,6 +261,30 @@ LLM_MODEL=llama2
    - 💾 Dual output confirmation
 
 ### Common Issues
+
+#### Ollama Enhancement Not Working
+**Symptom**: Report generated but no Ollama LLM enhancement
+**Solution**:
+1. Verify `OLLAMA_API_KEY` secret is set
+2. Check Ollama API endpoint is accessible (https://api.ollama.ai)
+3. Review workflow logs for error messages
+4. System will gracefully fall back to OpenAI-compatible endpoint or non-LLM analysis
+
+#### NOSTR Publishing Fails
+**Symptom**: Report generated but not published to NOSTR
+**Solution**:
+1. Verify `NOSTR_PRIVATE_KEY` is set in hex format (not nsec)
+2. Check if `pynostr` library is installed: `pip install pynostr`
+3. Review workflow logs for NOSTR connection errors
+4. Publishing gracefully skips if key not configured (not a critical error)
+
+#### Ollama Data Sources Not Appearing
+**Symptom**: Only arXiv/HuggingFace data in reports
+**Solution**:
+1. Verify Ollama ingestion scripts ran: check workflow logs
+2. Check data directories: `data/official/`, `data/cloud/`, etc.
+3. Review aggregate.py logs for source counts
+4. Ensure ingest.yml workflow includes all Ollama scripts
 
 #### LLM Enhancement Not Working
 **Symptom**: Report generated but no LLM enhancement
