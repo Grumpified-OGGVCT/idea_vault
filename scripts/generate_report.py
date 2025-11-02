@@ -12,7 +12,6 @@ from typing import Dict, List, Optional, Any
 
 # LLM integration imports (graceful degradation if not available)
 try:
-    import httpx
     from openai import OpenAI
     LLM_AVAILABLE = True
 except ImportError:
@@ -845,7 +844,7 @@ title: The Lab {today}
     daily_front_matter = f"""---
 layout: default
 title: "AI Research Intelligence - {today}"
-date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S %z')}
+date: {datetime.now().astimezone().strftime('%Y-%m-%d %H:%M:%S %z')}
 categories: [research, daily]
 tags: [ai, research, analysis, breakthrough]
 permalink: /daily/{today.replace('-', '/')}/{daily_slug}/
@@ -924,14 +923,9 @@ def main():
 
     report_md = generate_report_md(aggregated, insights)
     
-    # Optional: Try to enhance with default LLM persona if available
-    default_persona = personas_config.get('default_persona', 'strategic_synthesizer')
-    if LLM_AVAILABLE and os.getenv('LLM_API_KEY'):
-        print(f"🤖 Attempting LLM enhancement with {default_persona} persona...")
-        # For now, we use existing report as-is since LLM enhancement
-        # would require substantial refactoring of individual sections
-        # This can be added incrementally in future updates
-        print("ℹ️  LLM enhancement will be applied to specific sections in future updates")
+    # Note: LLM enhancement framework is available but requires configuration
+    # Set LLM_API_KEY environment variable to enable persona-based enhancement
+    # See LLM_PERSONA_DOCUMENTATION.md for details
     
     save_report(report_md)
 
