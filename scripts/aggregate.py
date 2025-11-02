@@ -95,12 +95,22 @@ def aggregate_data():
     huggingface = load_source_data("huggingface")
     paperswithcode = load_source_data("paperswithcode")
     
+    # Load from Ollama-specific sources
+    official = load_source_data("official")
+    cloud = load_source_data("cloud")
+    community = load_source_data("community")
+    tools = load_source_data("tools")
+    
     print(f"  📚 arXiv: {len(arxiv)} entries")
     print(f"  🤗 HuggingFace: {len(huggingface)} entries")
     print(f"  📊 Papers with Code: {len(paperswithcode)} entries")
+    print(f"  📡 Ollama Official: {len(official)} entries")
+    print(f"  ☁️  Ollama Cloud: {len(cloud)} entries")
+    print(f"  👥 Community: {len(community)} entries")
+    print(f"  🔧 Tools: {len(tools)} entries")
     
     # Combine all
-    all_entries = arxiv + huggingface + paperswithcode
+    all_entries = arxiv + huggingface + paperswithcode + official + cloud + community + tools
     
     # Deduplicate by URL or arxiv_id
     seen_keys = set()

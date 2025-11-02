@@ -7,12 +7,15 @@ AI Net Idea Vault is a GitHub-native research aggregator that continuously monit
 ## 🎯 What It Does
 
 - **Ingests Research**: Daily scraping of AI research from arXiv, HuggingFace, Papers with Code
+- **Ollama Ecosystem Tracking**: Monitors Ollama blog, Cloud models, community discussions, tools, and GitHub integrations
 - **Deep Analysis**: Three-layer scholarly examination (Deep Dive, Cross-Project Analysis, Practical Implications)
-- **LLM Enhancement**: Optional multi-persona LLM analysis for enhanced insights
+- **LLM Enhancement**: Optional multi-persona LLM analysis using Ollama Turbo Cloud or OpenAI-compatible endpoints
 - **The Scholar Persona**: Academic voice with technical rigor and contextual depth
+- **NOSTR Publishing**: Publishes reports to 48+ NOSTR relays using NIP-23 (long-form content)
 - **Dual-Output Publishing**: 
   - Markdown to `docs/_daily/` (Jekyll collection with frontmatter)
   - HTML to `docs/reports/` (existing crimson-themed format)
+  - NOSTR network (decentralized social protocol)
 - **Auto-Publishes**: GitHub Pages deployment with searchable archive
 - **Twice-Daily Execution**: Runs at 08:00 UTC and 20:00 UTC
 - **Zero Maintenance**: Fully automated on GitHub Actions
@@ -24,9 +27,16 @@ AI_Net_Idea_Vault/
 ├── .github/workflows/
 │   └── daily_report.yml         # Twice-daily report generation (08:00 & 20:00 UTC)
 ├── scripts/
-│   ├── generate_report.py       # Enhanced with LLM integration
+│   ├── generate_report.py       # Enhanced with Ollama Turbo + OpenAI LLM integration
 │   ├── generate_report_index.py # Report index generation
 │   ├── ingest_*.py              # Multiple data source ingesters
+│   ├── ingest_official.py       # Ollama blog and official sources
+│   ├── ingest_cloud.py          # Ollama Cloud models
+│   ├── ingest_community.py      # Reddit, HN, YouTube, newsletters
+│   ├── ingest_tools.py          # GitHub Ollama integrations
+│   ├── ingest_issues.py         # GitHub issues/PRs about Ollama
+│   ├── ollama_turbo_client.py   # Ollama Cloud API client
+│   ├── publish_nostr.py         # NOSTR publishing (48+ relays)
 │   ├── aggregate.py             # Data aggregation
 │   └── mine_insights.py         # Pattern detection & insights
 ├── config/
@@ -35,8 +45,13 @@ AI_Net_Idea_Vault/
 │   ├── arxiv/                   # arXiv research papers
 │   ├── huggingface/             # HF models & datasets
 │   ├── paperswithcode/          # SOTA benchmarks
+│   ├── official/                # Ollama blog & official sources
+│   ├── cloud/                   # Ollama Cloud models
+│   ├── community/               # Community discussions & content
+│   ├── tools/                   # Ollama tools & integrations
 │   ├── aggregated/              # Aggregated daily data
-│   └── insights/                # Mined insights & patterns
+│   ├── insights/                # Mined insights & patterns
+│   └── nostr_publications/      # NOSTR publication records
 ├── docs/
 │   ├── _daily/                  # 🆕 Jekyll collection (timestamped posts)
 │   ├── reports/                 # HTML/Markdown reports
@@ -65,9 +80,12 @@ Add these secrets in Settings → Secrets and variables → Actions:
 - `LLM_API_KEY`: Your OpenAI-compatible API key
 - `LLM_ENDPOINT`: (Optional) Custom LLM endpoint URL
 - `LLM_MODEL`: (Optional) Model name (default: gpt-3.5-turbo)
+- `OLLAMA_API_KEY`: Your Ollama Cloud API key
+- `OLLAMA_ENDPOINT`: (Optional) Ollama API endpoint (default: https://api.ollama.ai)
+- `NOSTR_PRIVATE_KEY`: Your NOSTR private key (hex format) for publishing to relays
 - `SOURCE_URL`: (Optional) Custom source URL
 
-**Note**: The system works without LLM secrets using fallback analysis.
+**Note**: The system works without LLM secrets using fallback analysis. NOSTR publishing is optional and gracefully skipped if not configured.
 
 ### 4. Enable GitHub Pages
 - Go to Settings → Pages
@@ -117,9 +135,20 @@ Multi-persona analysis using configured personas:
 - **Responsive Layout** - Mobile-friendly
 - **Calendar Navigation** - Visual date-based browsing
 
-## 🤖 LLM Persona System
+### 🤖 LLM Persona System
 
-The system supports multiple LLM personas defined in `config/llm_personas.json`:
+The system supports multiple LLM personas with **dual backend support**:
+
+#### Ollama Turbo Cloud (Priority)
+- **Models**: deepseek-v3.1:671b-cloud, qwen3-vl:235b-cloud, qwen3-coder:30b-cloud
+- **Features**: Deep reasoning, vision capabilities, web search fallback
+- **Usage**: Set `OLLAMA_API_KEY` secret
+- **Endpoint**: https://api.ollama.ai (default)
+
+#### OpenAI-Compatible Fallback
+- **Models**: Any OpenAI-compatible model
+- **Usage**: Set `LLM_API_KEY` and optionally `LLM_ENDPOINT`, `LLM_MODEL`
+- **Fallback**: Automatically used if Ollama is unavailable
 
 ### Technical Analyst
 - **Focus**: Algorithms, architectures, implementation details
@@ -137,10 +166,20 @@ The system supports multiple LLM personas defined in `config/llm_personas.json`:
 - **Use Case**: Translating research to production systems
 
 ### Graceful Degradation
-If LLM API is unavailable or not configured:
+If LLM APIs are unavailable or not configured:
 - System falls back to existing Scholar analysis
 - No functionality loss
 - Clear console messaging
+
+### NOSTR Publishing
+- **Protocol**: NIP-23 (long-form content)
+- **Relays**: 48+ default relays (configurable)
+- **Event Kind**: 30023 (long-form content with metadata)
+- **Tags**: AI, research, daily, llm, machinelearning
+- **Authentication**: NOSTR private key (nsec format)
+- **Graceful Failure**: Publishing skipped if key not configured
+
+### Personas Defined
 
 ## 🔗 Integration with GrumpiBlogged
 
@@ -165,7 +204,9 @@ Access via: `http://127.0.0.1:8081/admin/grumpiblogged`
 - **OpenAI-compatible LLMs**: Optional enhancement
 - **Libraries**:
   - `httpx`: Async HTTP for LLM calls
-  - `openai`: LLM integration
+  - `aiohttp`: Async HTTP for Ollama Turbo Client
+  - `openai`: OpenAI-compatible LLM integration
+  - `nostr`: NOSTR protocol implementation
   - `pydantic`: Configuration validation
   - `sentence-transformers`: Embeddings
   - `scikit-learn`: Pattern detection

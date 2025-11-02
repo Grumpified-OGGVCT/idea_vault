@@ -9,6 +9,7 @@ import os
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Any
+import asyncio
 
 # LLM integration imports (graceful degradation if not available)
 try:
@@ -17,6 +18,27 @@ try:
 except ImportError:
     LLM_AVAILABLE = False
     print("⚠️  LLM libraries not available - using fallback analysis")
+
+# Ollama Turbo Client import
+try:
+    # Use relative import to avoid sys.path manipulation
+    from pathlib import Path
+    import importlib.util
+    
+    ollama_client_path = Path(__file__).parent / "ollama_turbo_client.py"
+    spec = importlib.util.spec_from_file_location("ollama_turbo_client", ollama_client_path)
+    if spec and spec.loader:
+        ollama_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(ollama_module)
+        OllamaTurboClient = ollama_module.OllamaTurboClient
+        MODELS = ollama_module.MODELS
+        OLLAMA_AVAILABLE = True
+    else:
+        OLLAMA_AVAILABLE = False
+        print("⚠️  Ollama Turbo Client not available")
+except ImportError:
+    OLLAMA_AVAILABLE = False
+    print("⚠️  Ollama Turbo Client not available")
 
 DOCS_DIR = Path("docs")
 REPORTS_DIR = DOCS_DIR / "reports"
@@ -54,11 +76,78 @@ def load_llm_personas() -> Dict[str, Any]:
     return {"personas": {}, "default_persona": "strategic_synthesizer", "fallback_behavior": "use_existing_analysis"}
 
 
+async def enhance_with_ollama(content: str, persona_name: str, personas_config: Dict) -> Optional[str]:
+    """
+    Enhance content using Ollama Turbo Cloud with specified persona
+    Returns enhanced content or None if Ollama not available/failed
+    """
+    if not OLLAMA_AVAILABLE:
+        return None
+    
+    # Check for Ollama API configuration
+    api_key = os.getenv('OLLAMA_API_KEY')
+    endpoint = os.getenv('OLLAMA_ENDPOINT', 'https://api.ollama.ai')
+    
+    if not api_key:
+        print(f"⚠️  OLLAMA_API_KEY not set - skipping Ollama enhancement")
+        return None
+    
+    try:
+        personas = personas_config.get('personas', {})
+        persona = personas.get(persona_name)
+        
+        if not persona:
+            print(f"⚠️  Persona '{persona_name}' not found - skipping enhancement")
+            return None
+        
+        # Select appropriate Ollama model based on persona
+        model = MODELS['reasoning']  # Default to reasoning model
+        if 'technical' in persona_name.lower():
+            model = MODELS['reasoning']
+        elif 'creative' in persona_name.lower():
+            model = MODELS['creative']
+        
+        # Initialize Ollama Turbo Client
+        async with OllamaTurboClient(api_key=api_key, base_url=endpoint) as client:
+            # Make LLM request
+            system_prompt = persona.get('system_prompt', '')
+            prompt = f"{system_prompt}\n\nAnalyze and enhance this research content:\n\n{content}"
+            
+            enhanced = await client.generate(
+                model=model,
+                prompt=prompt,
+                max_tokens=persona.get('max_tokens', 2000),
+                temperature=persona.get('temperature', 0.7),
+                thinking=True  # Enable deep reasoning
+            )
+            
+            print(f"✅ Ollama enhancement applied with {persona_name} using {model}")
+            return enhanced
+        
+    except Exception as e:
+        print(f"⚠️  Ollama enhancement failed: {e}")
+        return None
+
+
 def enhance_with_llm(content: str, persona_name: str, personas_config: Dict) -> Optional[str]:
     """
     Enhance content using LLM with specified persona
+    Tries Ollama Turbo first, falls back to OpenAI-compatible endpoint
     Returns enhanced content or None if LLM not available/failed
     """
+    # Try Ollama Turbo first if available
+    if OLLAMA_AVAILABLE and os.getenv('OLLAMA_API_KEY'):
+        try:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            enhanced = loop.run_until_complete(enhance_with_ollama(content, persona_name, personas_config))
+            loop.close()
+            if enhanced:
+                return enhanced
+        except Exception as e:
+            print(f"⚠️  Ollama enhancement failed, trying fallback: {e}")
+    
+    # Fallback to OpenAI-compatible endpoint
     if not LLM_AVAILABLE:
         return None
     

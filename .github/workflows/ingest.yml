@@ -31,6 +31,11 @@ jobs:
           python scripts/ingest_arxiv.py
           python scripts/ingest_huggingface.py
           python scripts/ingest_paperswithcode.py
+          python scripts/ingest_official.py
+          python scripts/ingest_cloud.py
+          python scripts/ingest_community.py
+          python scripts/ingest_tools.py
+          python scripts/ingest_issues.py
           
       - name: Aggregate research data
         run: python scripts/aggregate.py
