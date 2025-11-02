@@ -37,11 +37,12 @@ jobs:
           OLLAMA_ENDPOINT: ${{ secrets.OLLAMA_ENDPOINT }}
           SOURCE_URL: ${{ secrets.SOURCE_URL }}
         run: |
-          python scripts/generate_report.py
+          python scripts/generate_report.py || (echo "Error: Report generation failed" && exit 1)
       
       - name: Update report index
         run: |
-          python scripts/generate_report_index.py
+          python scripts/generate_report_index.py || echo "Warning: Index update failed"
+        continue-on-error: true
       
       - name: Publish to NOSTR
         env:
