@@ -492,3 +492,247 @@
     color: black !important;
   }
 }
+
+/* NEW: Daily Collection Styles */
+.daily-post-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #1e293b;
+  border-radius: 10px;
+  border: 1px solid #334155;
+}
+
+.daily-post-header {
+  border-bottom: 2px solid #DC143C;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.daily-post-header h1 {
+  color: #60a5fa;
+  margin: 0;
+}
+
+.daily-post-meta {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  color: #94a3b8;
+  font-size: 0.9em;
+}
+
+.daily-post-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.tag {
+  padding: 4px 10px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  color: #60a5fa;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+/* Calendar Navigation Widget */
+.calendar-widget {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header h3 {
+  color: #60a5fa;
+  margin: 0;
+}
+
+.calendar-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.calendar-nav button {
+  padding: 6px 12px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #e2e8f0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.calendar-nav button:hover {
+  background: #334155;
+  border-color: #60a5fa;
+  color: #60a5fa;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #cbd5e1;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.calendar-day:hover {
+  background: #334155;
+  border-color: #60a5fa;
+}
+
+.calendar-day.has-report {
+  background: #1e3a8a;
+  border-color: #60a5fa;
+  font-weight: 700;
+}
+
+.calendar-day.today {
+  background: #DC143C;
+  border-color: #DC143C;
+  color: white;
+  font-weight: 700;
+}
+
+.calendar-day.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.calendar-day.disabled:hover {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+/* Content Type Toggle */
+.content-type-toggle {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  padding: 10px;
+  background: #0f172a;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.toggle-option {
+  flex: 1;
+  padding: 10px 20px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #e2e8f0;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+}
+
+.toggle-option:hover {
+  background: #334155;
+  border-color: #60a5fa;
+}
+
+.toggle-option.active {
+  background: #DC143C;
+  border-color: #DC143C;
+  color: white;
+}
+
+/* Crimson Theme Accent Colors */
+.crimson-accent {
+  color: #DC143C;
+}
+
+.crimson-bg {
+  background: #DC143C;
+}
+
+.crimson-border {
+  border-color: #DC143C;
+}
+
+/* Enhanced Dark Mode for Markdown Content */
+.markdown-content {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+  line-height: 1.8;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3 {
+  color: #60a5fa;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.markdown-content h1 {
+  border-bottom: 2px solid #DC143C;
+  padding-bottom: 10px;
+}
+
+.markdown-content h2 {
+  border-bottom: 1px solid #334155;
+  padding-bottom: 8px;
+}
+
+.markdown-content a {
+  color: #60a5fa;
+  text-decoration: none;
+  border-bottom: 1px dotted #60a5fa;
+}
+
+.markdown-content a:hover {
+  color: #DC143C;
+  border-bottom-color: #DC143C;
+}
+
+/* Responsive Calendar */
+@media (max-width: 768px) {
+  .calendar-grid {
+    gap: 3px;
+  }
+  
+  .calendar-day {
+    font-size: 0.8em;
+  }
+  
+  .content-type-toggle {
+    flex-direction: column;
+  }
+  
+  .daily-post-container {
+    padding: 15px;
+  }
+}
+
