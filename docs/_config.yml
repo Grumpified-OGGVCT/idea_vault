@@ -1,4 +1,48 @@
-theme: jekyll-theme-midnight
-title: AI Research Daily
-description: Scholarly analysis of cutting-edge AI research
+# Idea Vault Jekyll Configuration
+# A digital garden for daily insights and discoveries
+
+# Site settings
+title: Idea Vault
+description: A curated collection of daily insights, research, and discoveries
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Collections
+collections:
+  daily:
+    output: true
+    permalink: /daily/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "daily"
+    values:
+      layout: "post"
+
+# Dark theme configuration
+minima:
+  skin: dark
+  
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
 show_downloads: false

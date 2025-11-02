@@ -1,0 +1,111 @@
+// Custom Dark Mode Stylesheet for Idea Vault
+// Overrides Minima theme defaults with a sophisticated dark palette
+
+// Color Palette
+$background-dark: #0d1117;
+$background-secondary: #161b22;
+$text-primary: #c9d1d9;
+$text-secondary: #8b949e;
+$accent-primary: #58a6ff;
+$accent-secondary: #1f6feb;
+$border-color: #30363d;
+$code-background: #161b22;
+
+// Global Overrides
+body {
+  background-color: $background-dark;
+  color: $text-primary;
+}
+
+// Headers
+h1, h2, h3, h4, h5, h6 {
+  color: $text-primary;
+  border-bottom: 1px solid $border-color;
+}
+
+// Links
+a {
+  color: $accent-primary;
+  
+  &:hover {
+    color: $accent-secondary;
+  }
+  
+  &:visited {
+    color: #8b949e;
+  }
+}
+
+// Code blocks
+code {
+  background-color: $code-background;
+  color: $text-primary;
+  border: 1px solid $border-color;
+}
+
+pre {
+  background-color: $code-background;
+  border: 1px solid $border-color;
+  
+  code {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+// Content sections
+.post-content,
+.page-content {
+  background-color: $background-secondary;
+  padding: 2rem;
+  border-radius: 6px;
+  border: 1px solid $border-color;
+}
+
+// Navigation
+.site-header {
+  background-color: $background-secondary;
+  border-bottom: 1px solid $border-color;
+}
+
+.site-nav {
+  a {
+    color: $text-primary;
+    
+    &:hover {
+      color: $accent-primary;
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  background-color: $background-secondary;
+  border-top: 1px solid $border-color;
+  color: $text-secondary;
+}
+
+// Tables
+table {
+  border-collapse: collapse;
+  
+  th, td {
+    border: 1px solid $border-color;
+    padding: 0.5rem;
+  }
+  
+  th {
+    background-color: $background-secondary;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(22, 27, 34, 0.5);
+  }
+}
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid $accent-primary;
+  background-color: $background-secondary;
+  color: $text-secondary;
+}
