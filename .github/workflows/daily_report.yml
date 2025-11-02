@@ -1,13 +1,10 @@
-name: The Lab Daily Research Report
+name: AI Net Idea Vault - Daily Research Report
 
 on:
   schedule:
-    # Morning report - 09:00 CT
-    - cron: '0 14 * * *'   # 09:00 CDT (UTC-5)
-    - cron: '0 15 * * *'   # 09:00 CST (UTC-6)
-    # Evening report - 19:00 CT
-    - cron: '0 0 * * *'    # 19:00 CDT (UTC-5) - next day UTC
-    - cron: '0 1 * * *'    # 19:00 CST (UTC-6) - next day UTC
+    # Twice-daily execution as specified in the plan
+    - cron: '0 8 * * *'    # 08:00 UTC morning report
+    - cron: '0 20 * * *'   # 20:00 UTC evening report
   workflow_dispatch:  # Manual trigger
 
 permissions:
@@ -31,19 +28,12 @@ jobs:
         run: |
           pip install -r requirements.txt
           
-      - name: Gate by Chicago local time (ensure 09:00 or 19:00)
-        env:
-          TZ: America/Chicago
-        run: |
-          echo "Local time: $(date)";
-          HOUR=$(date +%H);
-          if [ "$HOUR" != "09" ] && [ "$HOUR" != "19" ]; then
-            echo "Not 09:00 or 19:00 local — exiting without generating report.";
-            exit 0;
-          fi
-          echo "✅ Time gate passed: ${HOUR}:00 CT"
-          
       - name: Generate research intelligence report
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_ENDPOINT: ${{ secrets.LLM_ENDPOINT }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          SOURCE_URL: ${{ secrets.SOURCE_URL }}
         run: |
           python scripts/generate_report.py
       
@@ -61,7 +51,7 @@ jobs:
             echo "No changes to commit"
             echo "committed=false" >> $GITHUB_OUTPUT
           else
-            git commit -m "feat(report): daily research intelligence $(date -u '+%Y-%m-%d')"
+            git commit -m "feat(report): daily research intelligence $(date -u '+%Y-%m-%d %H:%M UTC')"
             git push
             echo "committed=true" >> $GITHUB_OUTPUT
           fi
@@ -75,4 +65,5 @@ jobs:
             https://api.github.com/repos/Grumpified-OGGVCT/GrumpiBlogged/dispatches \
             -d '{"event_type":"ai-research-daily-update"}'
           echo "✅ Notified GrumpiBlogged of new report"
+
 

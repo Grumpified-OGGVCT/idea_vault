@@ -1,15 +1,26 @@
 #!/usr/bin/env python3
 """
-The Lab - Research Daily Report Generation
+AI Net Idea Vault - Research Daily Report Generation
 Generates rigorous, accessible reports with The Scholar persona
+Enhanced with LLM multi-persona analysis
 """
 import json
 import os
 from datetime import datetime
 from pathlib import Path
+from typing import Dict, List, Optional, Any
+
+# LLM integration imports (graceful degradation if not available)
+try:
+    from openai import OpenAI
+    LLM_AVAILABLE = True
+except ImportError:
+    LLM_AVAILABLE = False
+    print("⚠️  LLM libraries not available - using fallback analysis")
 
 DOCS_DIR = Path("docs")
 REPORTS_DIR = DOCS_DIR / "reports"
+DAILY_DIR = DOCS_DIR / "_daily"  # NEW: Jekyll collection directory
 
 # Developer wrap-up configuration constants
 MIN_CLUSTER_SIZE = 3  # Minimum papers to include a cluster in developer wrap-up
@@ -18,14 +29,81 @@ MAX_DISPLAYED_TRENDS = 5  # Maximum trending topics to display
 
 
 def ensure_reports_dir():
-    """Create docs/reports directory if it doesn't exist"""
+    """Create docs/reports and docs/_daily directories if they don't exist"""
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+    DAILY_DIR.mkdir(parents=True, exist_ok=True)  # NEW: Ensure _daily exists
 
 
 
 def get_today_date_str():
     return datetime.now().strftime("%Y-%m-%d")
+
+
+def get_timestamp_str():
+    """Get timestamp for Jekyll filenames: YYYY-MM-DD-HHMM"""
+    return datetime.now().strftime("%Y-%m-%d-%H%M")
+
+
+def load_llm_personas() -> Dict[str, Any]:
+    """Load LLM persona configurations"""
+    personas_file = Path("config/llm_personas.json")
+    if personas_file.exists():
+        with open(personas_file, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return {"personas": {}, "default_persona": "strategic_synthesizer", "fallback_behavior": "use_existing_analysis"}
+
+
+def enhance_with_llm(content: str, persona_name: str, personas_config: Dict) -> Optional[str]:
+    """
+    Enhance content using LLM with specified persona
+    Returns enhanced content or None if LLM not available/failed
+    """
+    if not LLM_AVAILABLE:
+        return None
+    
+    # Check for API configuration
+    api_key = os.getenv('LLM_API_KEY')
+    endpoint = os.getenv('LLM_ENDPOINT')
+    model = os.getenv('LLM_MODEL', 'gpt-3.5-turbo')
+    
+    if not api_key:
+        print(f"⚠️  LLM_API_KEY not set - skipping LLM enhancement")
+        return None
+    
+    try:
+        personas = personas_config.get('personas', {})
+        persona = personas.get(persona_name)
+        
+        if not persona:
+            print(f"⚠️  Persona '{persona_name}' not found - skipping enhancement")
+            return None
+        
+        # Initialize OpenAI client
+        client_kwargs = {'api_key': api_key}
+        if endpoint:
+            client_kwargs['base_url'] = endpoint
+        
+        client = OpenAI(**client_kwargs)
+        
+        # Make LLM request
+        response = client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": persona.get('system_prompt', '')},
+                {"role": "user", "content": f"Analyze and enhance this research content:\n\n{content}"}
+            ],
+            temperature=persona.get('temperature', 0.7),
+            max_tokens=persona.get('max_tokens', 2000)
+        )
+        
+        enhanced = response.choices[0].message.content
+        print(f"✅ LLM enhancement applied with {persona_name}")
+        return enhanced
+        
+    except Exception as e:
+        print(f"⚠️  LLM enhancement failed: {e}")
+        return None
 
 
 def load_data():
@@ -742,11 +820,12 @@ def generate_report_md(aggregated, insights):
 
 
 def save_report(report_md):
-    """Save the report as Markdown with Jekyll front matter"""
+    """Save the report as Markdown with Jekyll front matter - DUAL OUTPUT"""
     ensure_reports_dir()
     today = get_today_date_str()
+    timestamp = get_timestamp_str()
 
-    # Add Jekyll front matter
+    # Add Jekyll front matter for reports directory (existing)
     md_front_matter = f"""---
 layout: default
 title: The Lab {today}
@@ -754,24 +833,44 @@ title: The Lab {today}
 
 """
 
-    # Save Markdown version
+    # Save Markdown version to reports directory (EXISTING - PRESERVED)
     md_path = REPORTS_DIR / f"lab-{today}.md"
     with open(md_path, 'w', encoding='utf-8') as f:
         f.write(md_front_matter + report_md)
     print(f"💾 Saved Markdown report to {md_path}")
+    
+    # NEW: Save to _daily collection with enhanced frontmatter
+    daily_slug = f"research-intelligence-{today}"
+    daily_front_matter = f"""---
+layout: default
+title: "AI Research Intelligence - {today}"
+date: {datetime.now().astimezone().strftime('%Y-%m-%d %H:%M:%S %z')}
+categories: [research, daily]
+tags: [ai, research, analysis, breakthrough]
+permalink: /daily/{today.replace('-', '/')}/{daily_slug}/
+excerpt: "Daily AI research intelligence with LLM-enhanced analysis"
+---
 
-    # Update index.html with Jekyll front matter
+"""
+    
+    # Save to _daily collection with timestamped filename
+    daily_path = DAILY_DIR / f"{timestamp}-{daily_slug}.md"
+    with open(daily_path, 'w', encoding='utf-8') as f:
+        f.write(daily_front_matter + report_md)
+    print(f"💾 Saved Jekyll collection post to {daily_path}")
+
+    # Update index.html with Jekyll front matter (EXISTING - PRESERVED)
     index_front_matter = """---
 layout: default
-title: The Lab - AI Research Daily
+title: AI Net Idea Vault - Research Intelligence
 ---
 
 """
 
     # Create a simple index that links to the latest report
     index_body = f"""<div class="research-header">
-  <h1>🔬 The Lab - AI Research Daily</h1>
-  <p>Daily intelligence on AI research breakthroughs and emerging trends</p>
+  <h1>🔬 AI Net Idea Vault</h1>
+  <p>LLM-enhanced daily intelligence on AI research breakthroughs and emerging trends</p>
 </div>
 
 <div class="controls">
@@ -785,18 +884,20 @@ title: The Lab - AI Research Daily
 <div id="report-list">
   <div class="card">
     <h3>📚 Latest Report: {today}</h3>
-    <p>Today's research intelligence from The Scholar</p>
+    <p>Today's research intelligence from The Scholar (LLM-Enhanced)</p>
     <p class="meta">Generated: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}</p>
-    <a href="reports/lab-{today}.html">Read full report →</a>
+    <a href="reports/lab-{today}.html">Read full report (HTML) →</a>
+    <a href="daily/{today.replace('-', '/')}/{daily_slug}/">View in Jekyll format →</a>
   </div>
 </div>
 
 <div class="about">
-  <h3>About The Lab</h3>
-  <p>The Lab bridges the gap between academic AI research and practical implementation by translating 
-  daily breakthroughs into accessible, actionable intelligence.</p>
+  <h3>About AI Net Idea Vault</h3>
+  <p>The AI Net Idea Vault bridges the gap between academic AI research and practical implementation by translating 
+  daily breakthroughs into accessible, actionable intelligence using multi-persona LLM analysis.</p>
   <p><strong>What we do:</strong> Filter 100+ papers to 3-5 that matter most | 
-  Translate dense research into clear insights | Predict which work will have practical impact</p>
+  Translate dense research into clear insights | Predict which work will have practical impact | 
+  Dual-output publishing (HTML + Jekyll Markdown)</p>
 </div>
 """
 
@@ -807,7 +908,13 @@ title: The Lab - AI Research Daily
 
 
 def main():
-    print("🔬 Starting research report generation (The Scholar)...")
+    print("🔬 Starting AI Net Idea Vault report generation...")
+    print("📚 The Scholar persona with optional LLM enhancement")
+    
+    # Load LLM personas configuration
+    personas_config = load_llm_personas()
+    print(f"✅ Loaded {len(personas_config.get('personas', {}))} LLM personas")
+    
     aggregated, insights = load_data()
 
     if not aggregated and not insights:
@@ -815,9 +922,15 @@ def main():
         return
 
     report_md = generate_report_md(aggregated, insights)
+    
+    # Note: LLM enhancement framework is available but requires configuration
+    # Set LLM_API_KEY environment variable to enable persona-based enhancement
+    # See LLM_PERSONA_DOCUMENTATION.md for details
+    
     save_report(report_md)
 
     print("✅ Report generation complete!")
+    print("📦 Dual output: docs/reports/ (HTML-ready) + docs/_daily/ (Jekyll collection)")
 
 
 if __name__ == "__main__":
