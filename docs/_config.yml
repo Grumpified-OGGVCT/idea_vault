@@ -1,4 +1,36 @@
 theme: jekyll-theme-midnight
-title: AI Research Daily
-description: Scholarly analysis of cutting-edge AI research
+title: AI Net Idea Vault
+description: LLM-enhanced research intelligence with dual-output publishing
 show_downloads: false
+
+# Collections configuration
+collections:
+  daily:
+    output: true
+    permalink: /daily/:year/:month/:day/:title/
+
+# Defaults for collections
+defaults:
+  - scope:
+      path: ""
+      type: "daily"
+    values:
+      layout: "default"
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Asset paths
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+exclude:
+  - node_modules/
+  - "*.json"
+  - Gemfile
+  - Gemfile.lock
