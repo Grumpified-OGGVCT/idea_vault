@@ -1,34 +1,38 @@
 ---
 layout: default
-title: The Lab - AI Research Daily
+title: Idea Vault - Your Personal Knowledge Garden
 ---
 
-<div class="research-header">
-  <h1>🔬 The Lab - AI Research Daily</h1>
-  <p>Daily intelligence on AI research breakthroughs and emerging trends</p>
+<div class="vault-header">
+  <h1>💡 Idea Vault</h1>
+  <p>Automated daily insights from the web, beautifully curated</p>
 </div>
 
 <div class="controls">
-  <input type="text" id="search" placeholder="Search reports..." />
+  <input type="text" id="search" placeholder="Search daily reports..." />
   <select id="sort">
     <option value="date">Sort by Date</option>
     <option value="relevance">Sort by Relevance</option>
   </select>
 </div>
 
-<div id="report-list">
-  <div class="card">
-    <h3>📚 Latest Report: 2025-11-02</h3>
-    <p>Today's research intelligence from The Scholar</p>
-    <p class="meta">Generated: 2025-11-02 15:09 UTC</p>
-    <a href="reports/lab-2025-11-02.html">Read full report →</a>
-  </div>
+<div id="daily-reports">
+  <h2>📚 Recent Reports</h2>
+  {% for post in site.daily limit:10 %}
+    <div class="report-card">
+      <h3>{{ post.title }}</h3>
+      <p class="meta">{{ post.date | date: "%B %d, %Y at %H:%M UTC" }}</p>
+      <a href="{{ post.url | relative_url }}">Read report →</a>
+    </div>
+  {% endfor %}
 </div>
 
 <div class="about">
-  <h3>About The Lab</h3>
-  <p>The Lab bridges the gap between academic AI research and practical implementation by translating 
-  daily breakthroughs into accessible, actionable intelligence.</p>
-  <p><strong>What we do:</strong> Filter 100+ papers to 3-5 that matter most | 
-  Translate dense research into clear insights | Predict which work will have practical impact</p>
+  <h3>About Idea Vault</h3>
+  <p>Idea Vault is your automated knowledge garden that continuously curates insights from the web. 
+  Running twice daily, it fetches content, processes it intelligently, and presents it in a beautiful, 
+  dark-themed format.</p>
+  <p><strong>How it works:</strong> Automated scraping at 08:00 & 20:00 UTC | 
+  LLM-powered content processing | Beautiful markdown reports | 
+  Zero maintenance required</p>
 </div>
