@@ -1,0 +1,88 @@
+name: Daily Report - Idea Vault
+
+on:
+  schedule:
+    # Run at 08:00 UTC
+    - cron: '0 8 * * *'
+    # Run at 20:00 UTC
+    - cron: '0 20 * * *'
+  workflow_dispatch:  # Allow manual triggering
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  daily-report:
+    runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.commit.outputs.has_changes }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          
+      - name: Install Python dependencies
+        run: |
+          pip install httpx beautifulsoup4
+          
+      - name: Run scraper and generate daily report
+        env:
+          SOURCE_URL: https://accidentaljedi.github.io/AI_Research_Daily/
+        run: |
+          python scripts/scrape_and_clean.py
+          
+      - name: Commit and push new daily reports
+        id: commit
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/_daily/
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No new daily reports to commit"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "feat(daily): add daily report $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+          
+  # Deploy to GitHub Pages
+  deploy-pages:
+    needs: daily-report
+    if: needs.daily-report.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository (with latest changes)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./docs
+          destination: ./_site
+          
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
