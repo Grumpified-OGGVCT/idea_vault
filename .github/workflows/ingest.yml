@@ -25,10 +25,25 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
+      
+      # Fetch arXiv data immediately after dependency install (minimize firewall impact)
+      # GitHub Actions firewall blocks export.arxiv.org, so we use retry with fallback
+      - name: Pre-fetch arXiv research data
+        env:
+          ARXIV_RETRY_ATTEMPTS: 3
+          ARXIV_RETRY_DELAY: 5
+        run: |
+          # Run arXiv ingestion with configurable retry logic
+          for i in $(seq 1 $ARXIV_RETRY_ATTEMPTS); do
+            python scripts/ingest_arxiv.py && break || {
+              echo "Attempt $i failed, retrying in ${ARXIV_RETRY_DELAY}s..."
+              sleep $ARXIV_RETRY_DELAY
+            }
+          done
+        continue-on-error: true
           
       - name: Run research ingestion
         run: |
-          python scripts/ingest_arxiv.py || echo "Warning: arXiv ingestion failed"
           python scripts/ingest_huggingface.py || echo "Warning: HuggingFace ingestion failed"
           python scripts/ingest_paperswithcode.py || echo "Warning: PapersWithCode ingestion failed"
           python scripts/ingest_official.py || echo "Warning: Official ingestion failed"
