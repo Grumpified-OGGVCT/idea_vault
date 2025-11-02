@@ -58,6 +58,10 @@ MIN_CLUSTER_SIZE = 3  # Minimum papers to include a cluster in developer wrap-up
 MAX_SUMMARY_LENGTH = 250  # Maximum characters for paper summaries
 MAX_DISPLAYED_TRENDS = 5  # Maximum trending topics to display
 
+# Actionable ideator configuration constants
+MIN_RESEARCH_SCORE_FOR_ACTIONABLE = 0.7  # Minimum score to generate actionable content
+MIN_HIGH_SCORE_PAPERS = 3  # Minimum number of high-score papers needed
+
 
 def ensure_reports_dir():
     """Create docs/reports and docs/_daily directories if they don't exist"""
@@ -903,8 +907,8 @@ def generate_actionable_solutions(aggregated, insights):
         return ""  # Skip if modules not available
     
     # Only generate actionable content if we have high-quality research
-    high_score = [p for p in aggregated if p.get('research_score', 0) >= 0.7]
-    if len(high_score) < 3:
+    high_score = [p for p in aggregated if p.get('research_score', 0) >= MIN_RESEARCH_SCORE_FOR_ACTIONABLE]
+    if len(high_score) < MIN_HIGH_SCORE_PAPERS:
         return ""  # Need minimum viable research to generate actionable content
     
     try:
@@ -1091,6 +1095,8 @@ These solutions are based on today's cutting-edge research, with proven implemen
         
     except Exception as e:
         print(f"⚠️  Error generating actionable solutions: {e}")
+        import traceback
+        print(f"   Full traceback: {traceback.format_exc()}")
         return ""  # Gracefully degrade
 
 

@@ -117,7 +117,7 @@ class IdeaSynthesizer:
         # Combine techniques from different domains
         if len(concepts['techniques']) >= 2 and len(concepts['domains']) >= 2:
             for i, tech1 in enumerate(concepts['techniques'][:3]):
-                for tech2 in concepts['techniques'][i+1:4]:
+                for tech2 in concepts['techniques'][i+1:3]:  # Fixed: consistent slice
                     for domain in concepts['domains'][:3]:
                         idea = {
                             'type': 'cross_pollination',

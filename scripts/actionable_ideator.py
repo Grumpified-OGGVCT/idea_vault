@@ -336,6 +336,8 @@ class ActionableIdeator:
         
         if tech_type == 'web_app' or tech_type == 'api_service':
             return '''# Flask/FastAPI implementation
+# SECURITY NOTE: This is a basic example for development/testing
+# For production use, add: authentication, input validation, rate limiting, HTTPS
 from fastapi import FastAPI, Request
 import uvicorn
 
@@ -348,11 +350,13 @@ async def root():
 @app.post("/api/process")
 async def process_data(request: Request):
     data = await request.json()
+    # TODO: Add input validation and authentication
     # TODO: Implement research-based processing
     result = {"processed": data, "status": "success"}
     return result
 
 if __name__ == "__main__":
+    # NOTE: Use host="127.0.0.1" for development, configure properly for production
     uvicorn.run(app, host="0.0.0.0", port=8000)'''
         
         elif tech_type == 'ai_model':
@@ -368,8 +372,13 @@ class ResearchModel(nn.Module):
         self.output = nn.Linear(hidden_dim, output_dim)
     
     def forward(self, x):
+        # Note: Adjust input shape for your specific use case
+        # MultiheadAttention expects (seq_len, batch, embed_dim)
         x = torch.relu(self.layer1(x))
+        # For batch-first attention, reshape x appropriately
+        x = x.unsqueeze(0)  # Add sequence dimension
         x, _ = self.attention(x, x, x)
+        x = x.squeeze(0)  # Remove sequence dimension
         x = self.output(x)
         return x
 
