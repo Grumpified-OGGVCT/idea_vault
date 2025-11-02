@@ -3,6 +3,7 @@
 The Lab - arXiv Paper Ingestion
 Fetches and filters papers from arXiv API for relevant AI/ML categories
 """
+import glob
 import json
 import os
 import re
@@ -267,12 +268,20 @@ def save_papers(papers):
 
 
 def load_recent_papers_as_fallback():
-    """Load papers from the most recent successful ingestion as fallback"""
-    import glob
-    from datetime import datetime, timedelta
+    """
+    Load papers from the most recent successful ingestion as fallback
+    
+    When the arXiv API is unavailable (e.g., due to GitHub Actions firewall),
+    this function provides graceful degradation by using cached papers from
+    the last 1-3 days. Research papers don't change daily, so recent papers
+    remain relevant and valuable for analysis.
+    
+    Returns:
+        list: Papers from most recent successful ingestion, or empty list
+    """
+    arxiv_dir = Path("data/arxiv")
     
     # Look for recent files (last 3 days)
-    arxiv_dir = Path("data/arxiv")
     for days_ago in range(1, 4):
         past_date = (datetime.now() - timedelta(days=days_ago)).strftime("%Y-%m-%d")
         past_file = arxiv_dir / f"{past_date}.json"

@@ -27,13 +27,17 @@ jobs:
           pip install -r requirements.txt
       
       # Fetch arXiv data immediately after dependency install (minimize firewall impact)
+      # GitHub Actions firewall blocks export.arxiv.org, so we use retry with fallback
       - name: Pre-fetch arXiv research data
+        env:
+          ARXIV_RETRY_ATTEMPTS: 3
+          ARXIV_RETRY_DELAY: 5
         run: |
-          # Run arXiv ingestion with retry logic
-          for i in {1..3}; do
+          # Run arXiv ingestion with configurable retry logic
+          for i in $(seq 1 $ARXIV_RETRY_ATTEMPTS); do
             python scripts/ingest_arxiv.py && break || {
-              echo "Attempt $i failed, retrying..."
-              sleep 5
+              echo "Attempt $i failed, retrying in ${ARXIV_RETRY_DELAY}s..."
+              sleep $ARXIV_RETRY_DELAY
             }
           done
         continue-on-error: true

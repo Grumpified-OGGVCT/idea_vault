@@ -59,7 +59,12 @@ MAX_SUMMARY_LENGTH = 250  # Maximum characters for paper summaries
 MAX_DISPLAYED_TRENDS = 5  # Maximum trending topics to display
 
 # Actionable ideator configuration constants
-MIN_RESEARCH_SCORE_FOR_ACTIONABLE = 0.5  # Minimum score to generate actionable content (lowered to work with non-arXiv sources)
+# Lowered from 0.7 to 0.5 to enable actionable content generation from diverse sources:
+# - ArXiv papers may be unavailable due to GitHub Actions firewall
+# - HuggingFace models, community discussions, and tools can score 0.5-0.7
+# - This ensures actionable ideations appear even when arXiv is blocked
+# - Still maintains quality bar while being inclusive of multiple research sources
+MIN_RESEARCH_SCORE_FOR_ACTIONABLE = 0.5  # Minimum score to generate actionable content
 MIN_HIGH_SCORE_PAPERS = 3  # Minimum number of high-score papers needed
 
 
