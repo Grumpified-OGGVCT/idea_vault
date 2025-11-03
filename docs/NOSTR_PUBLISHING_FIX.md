@@ -20,14 +20,26 @@ NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PUBLIC_KEY }}
 ## Important Notes
 
 ### Secret Naming Convention
+
+**⚠️ SECURITY NOTE**: The secret naming is non-standard and potentially confusing.
+
 - **Secret Name**: `NOSTR_PUBLIC_KEY` (in GitHub repository secrets)
-- **Secret Value**: Contains the NOSTR **private key** in hex format (64-character hex string)
+- **Secret Value**: Contains the NOSTR **PRIVATE KEY** in hex format (64-character hex string)
 - **Environment Variable**: `NOSTR_PRIVATE_KEY` (as expected by `scripts/publish_nostr.py`)
 
-The naming may be confusing, but:
-- The secret is named `NOSTR_PUBLIC_KEY` in the repository
-- The value it contains is actually the **private key** (required for signing NOSTR events)
-- The publishing script correctly uses this private key to derive the public key
+**Important Security Considerations**:
+- ⚠️ Despite being named `NOSTR_PUBLIC_KEY`, this secret contains **sensitive private key material**
+- ⚠️ The private key MUST be kept secret and never exposed in logs or commits
+- ⚠️ This naming was chosen by the repository owner but is NOT recommended for clarity
+- ✅ The secret is properly stored in GitHub Secrets (encrypted at rest)
+- ✅ The workflow correctly prevents the key from appearing in logs
+
+**How it works**:
+- The secret named `NOSTR_PUBLIC_KEY` actually contains the **private key** (required for signing NOSTR events)
+- The publishing script correctly uses this private key to derive the public key automatically
+- This naming convention should be understood by all maintainers to prevent accidental exposure
+
+**Recommended Best Practice**: In a new deployment, the secret should be named `NOSTR_PRIVATE_KEY` to avoid confusion and ensure proper security awareness.
 
 ### How NOSTR Publishing Works
 1. Workflow reads `secrets.NOSTR_PUBLIC_KEY` (which contains the private key value)
