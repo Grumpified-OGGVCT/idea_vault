@@ -250,30 +250,87 @@ def determine_report_focus(aggregated, insights):
         return "standard", "Notable developments in AI research"
 
 
+def generate_navigation_menu():
+    """Generate sticky navigation menu for the report"""
+    nav_menu = """<div class="report-nav-menu" id="nav-menu">
+  <div class="nav-menu-header">
+    <span class="nav-menu-title">📋 Report Navigation</span>
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">☰</button>
+  </div>
+  <nav class="nav-menu-content">
+    <a href="#top" class="nav-link">🏠 Home</a>
+    <a href="#research-overview" class="nav-link">🔬 Research Overview</a>
+    <a href="#breakthrough-papers" class="nav-link">📚 Breakthrough Papers</a>
+    <a href="#supporting-research" class="nav-link">🔗 Supporting Research</a>
+    <a href="#implementation-watch" class="nav-link">🤗 Implementation Watch</a>
+    <a href="#pattern-analysis" class="nav-link">📈 Pattern Analysis</a>
+    <a href="#research-implications" class="nav-link">🔮 Research Implications</a>
+    <a href="#what-to-watch" class="nav-link">👀 What to Watch</a>
+    <a href="#for-builders" class="nav-link">🔧 For Builders</a>
+    <a href="#buildable-solutions" class="nav-link">🚀 Buildable Solutions</a>
+    <a href="#support" class="nav-link">💰 Support</a>
+    <a href="#about" class="nav-link">📖 About</a>
+  </nav>
+</div>
+
+<script>
+function toggleNav() {
+  const menu = document.getElementById('nav-menu');
+  menu.classList.toggle('collapsed');
+}
+
+// Auto-collapse on mobile after DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.innerWidth < 768) {
+    const menu = document.getElementById('nav-menu');
+    if (menu) {
+      menu.classList.add('collapsed');
+    }
+  }
+});
+</script>
+
+"""
+    return nav_menu
+
+
+def generate_section_home_link():
+    """Generate a 'Back to Home' link to place after each section"""
+    return '\n<p class="back-to-home"><a href="#top">⬆️ Back to Top</a></p>\n\n'
+
+
 def generate_scholar_opening(focus_type, focus_desc, aggregated):
     """Generate The Scholar's opening with appropriate tone"""
     today = get_today_date_str()
     
     openings = {
-        "breakthrough": f"""# 🔬 AI Net Idea Vault – {today}
+        "breakthrough": f"""<div id="top"></div>
+
+# 🔬 AI Net Idea Vault – {today}
 
 *The Scholar here, translating today's research breakthroughs into actionable intelligence.*
 
 📚 Today's arXiv brought something genuinely significant: {focus_desc}. Let's unpack what makes these developments noteworthy and why they matter for the field's trajectory.
 """,
-        "pattern": f"""# 🔬 AI Net Idea Vault – {today}
+        "pattern": f"""<div id="top"></div>
+
+# 🔬 AI Net Idea Vault – {today}
 
 *The Scholar here, translating today's research breakthroughs into actionable intelligence.*
 
 📚 Progress in AI research is often about convergence. {focus_desc}, and this pattern tells us something important about where the field is headed.
 """,
-        "slow": f"""# 🔬 AI Net Idea Vault – {today}
+        "slow": f"""<div id="top"></div>
+
+# 🔬 AI Net Idea Vault – {today}
 
 *The Scholar here, translating today's research breakthroughs into actionable intelligence.*
 
 📚 Not every day brings paradigm shifts, and today exemplifies steady, incremental progress. {focus_desc}, building on established foundations in ways that matter.
 """,
-        "standard": f"""# 🔬 AI Net Idea Vault – {today}
+        "standard": f"""<div id="top"></div>
+
+# 🔬 AI Net Idea Vault – {today}
 
 *The Scholar here, translating today's research breakthroughs into actionable intelligence.*
 
@@ -301,6 +358,8 @@ def generate_research_overview(aggregated, insights):
     
     section = f"""
 ---
+
+<div id="research-overview"></div>
 
 ## 🔬 Research Overview
 
@@ -332,7 +391,9 @@ def generate_breakthrough_section(aggregated):
     if not high_score:
         return ""
     
-    section = """## 📚 The Breakthrough Papers
+    section = """<div id="breakthrough-papers"></div>
+
+## 📚 The Breakthrough Papers
 
 *The research that matters most today:*
 
@@ -383,7 +444,9 @@ def generate_supporting_research(aggregated):
     if not notable:
         return ""
     
-    section = """## 🔗 Supporting Research
+    section = """<div id="supporting-research"></div>
+
+## 🔗 Supporting Research
 
 *Papers that complement today's main story:*
 
@@ -414,7 +477,9 @@ def generate_implementation_watch(aggregated):
     if not hf_items:
         return ""
     
-    section = """## 🤗 Implementation Watch
+    section = """<div id="implementation-watch"></div>
+
+## 🤗 Implementation Watch
 
 *Research moving from paper to practice:*
 
@@ -454,7 +519,9 @@ def generate_pattern_analysis(insights):
     if not patterns:
         return ""
     
-    section = """## 📈 Pattern Analysis: Emerging Directions
+    section = """<div id="pattern-analysis"></div>
+
+## 📈 Pattern Analysis: Emerging Directions
 
 *What today's papers tell us about field-wide trends:*
 
@@ -495,7 +562,9 @@ def generate_implications(insights):
     if not inferences:
         return ""
     
-    section = """## 🔮 Research Implications
+    section = """<div id="research-implications"></div>
+
+## 🔮 Research Implications
 
 *What these developments mean for the field:*
 
@@ -539,7 +608,9 @@ def get_scholar_take(pattern, confidence):
 
 def generate_what_to_watch(insights, aggregated):
     """Generate what to watch section"""
-    section = """## 👀 What to Watch
+    section = """<div id="what-to-watch"></div>
+
+## 👀 What to Watch
 
 *Follow-up items for next week:*
 
@@ -662,7 +733,9 @@ def generate_developer_wrapup(aggregated, insights):
     pattern_count = len(patterns)
     breakthrough_count = len(breakthroughs)
     
-    section = f"""## 🔧 For Builders: Research → Production
+    section = f"""<div id="for-builders"></div>
+
+## 🔧 For Builders: Research → Production
 
 *Translating today's research into code you can ship next sprint.*
 
@@ -809,7 +882,9 @@ Research moves fast, but **implementation moves faster**. The tools exist. The m
 
 def generate_about_section(today):
     """Generate about section with yield metrics"""
-    section = """## 📖 About AI Net Idea Vault
+    section = """<div id="about"></div>
+
+## 📖 About AI Net Idea Vault
 
 **The Scholar** is your research intelligence agent — translating the daily firehose of 100+ AI papers into accessible, actionable insights. Rigorous analysis meets clear explanation.
 
@@ -855,6 +930,8 @@ def generate_support_section():
     """Generate support/donation section"""
     section = """
 ---
+
+<div id="support"></div>
 
 ## 💰 Support AI Net Idea Vault
 
@@ -928,6 +1005,8 @@ def generate_actionable_solutions(aggregated, insights):
         # Step 3: Format for display
         section = """
 ---
+
+<div id="buildable-solutions"></div>
 
 ## 🚀 Buildable Solutions: Ship These TODAY!
 
@@ -1112,19 +1191,31 @@ def generate_report_md(aggregated, insights):
     # Determine focus
     focus_type, focus_desc = determine_report_focus(aggregated, insights)
 
-    # Build report sections
-    report = generate_scholar_opening(focus_type, focus_desc, aggregated)
+    # Build report sections with navigation menu
+    report = generate_navigation_menu()  # Add navigation menu at the top
+    report += generate_scholar_opening(focus_type, focus_desc, aggregated)
     report += generate_research_overview(aggregated, insights)
+    report += generate_section_home_link()  # Add home link
     report += generate_breakthrough_section(aggregated)
+    report += generate_section_home_link()  # Add home link
     report += generate_supporting_research(aggregated)
+    report += generate_section_home_link()  # Add home link
     report += generate_implementation_watch(aggregated)
+    report += generate_section_home_link()  # Add home link
     report += generate_pattern_analysis(insights)
+    report += generate_section_home_link()  # Add home link
     report += generate_implications(insights)
+    report += generate_section_home_link()  # Add home link
     report += generate_what_to_watch(insights, aggregated)
+    report += generate_section_home_link()  # Add home link
     report += generate_developer_wrapup(aggregated, insights)  # Add developer wrap-up
+    report += generate_section_home_link()  # Add home link
     report += generate_actionable_solutions(aggregated, insights)  # Add actionable buildable solutions
+    report += generate_section_home_link()  # Add home link
     report += generate_support_section()  # Add donation section
+    report += generate_section_home_link()  # Add home link
     report += generate_about_section(today)
+    report += generate_section_home_link()  # Add final home link
 
     return report
 
