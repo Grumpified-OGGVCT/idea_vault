@@ -279,10 +279,15 @@ function toggleNav() {
   menu.classList.toggle('collapsed');
 }
 
-// Auto-collapse on mobile
-if (window.innerWidth < 768) {
-  document.getElementById('nav-menu').classList.add('collapsed');
-}
+// Auto-collapse on mobile after DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.innerWidth < 768) {
+    const menu = document.getElementById('nav-menu');
+    if (menu) {
+      menu.classList.add('collapsed');
+    }
+  }
+});
 </script>
 
 """

@@ -1228,9 +1228,14 @@
   }
 }
 
-/* Smooth scroll behavior */
+/* Smooth scroll behavior - respects user preference for reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 html {
-  scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
 
