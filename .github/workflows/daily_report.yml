@@ -46,7 +46,7 @@ jobs:
       
       - name: Publish to NOSTR
         env:
-          NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PUBLIC_KEY }}
+          NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PRIVATE_KEY }}
         run: |
           python scripts/publish_nostr.py
         continue-on-error: true
