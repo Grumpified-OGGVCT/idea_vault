@@ -273,7 +273,7 @@ def build_html_report(md_path, template):
         'keywords': keywords,
         'author': metadata.get('author', 'Grumpified-OGGVCT'),
         'slug': slug,
-        'filename': md_path.name.replace('.md', '.html'),  # Use actual filename for canonical URL
+        'filename': md_path.name.replace('.md', '.html'),  # Use HTML filename (base name preserved) for canonical URL
         'wordcount': word_count,
         'read_time': reading_time,
         'table_threshold': TABLE_COLLAPSE_THRESHOLD  # Pass threshold to template
