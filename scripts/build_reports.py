@@ -5,7 +5,6 @@ Implements SEO optimization, TL;DR generation, and responsive design
 """
 import re
 import math
-import json
 from pathlib import Path
 from datetime import datetime
 import frontmatter
