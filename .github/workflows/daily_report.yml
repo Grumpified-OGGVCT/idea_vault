@@ -44,6 +44,11 @@ jobs:
           python scripts/build_reports.py || echo "Warning: HTML build failed, continuing with markdown only"
         continue-on-error: true
       
+      - name: Build reports index
+        run: |
+          python scripts/build_index.py || echo "Warning: Index build failed"
+        continue-on-error: true
+      
       - name: Update report index
         run: |
           python scripts/generate_report_index.py || echo "Warning: Index update failed"
