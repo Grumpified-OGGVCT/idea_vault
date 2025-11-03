@@ -39,8 +39,16 @@ NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PUBLIC_KEY }}
 - The publishing script correctly uses this private key to derive the public key automatically
 - This naming convention should be understood by all maintainers to prevent accidental exposure
 
-**Recommended Best Practice**: In a new deployment, the secret should be named `NOSTR_PRIVATE_KEY` to avoid confusion and ensure proper security awareness.
+**Recommended Best Practice**: The secret should be renamed **immediately** in the current deployment to avoid confusion and ensure proper security awareness.
 
+**Actionable Steps to Safely Rename the Secret:**
+
+1. **Create a new secret** in your GitHub repository named `NOSTR_PRIVATE_KEY` with the same value as the current `NOSTR_PUBLIC_KEY` (the 64-character hex private key).
+2. **Update** `.github/workflows/daily_report.yml` to reference `secrets.NOSTR_PRIVATE_KEY` instead of `secrets.NOSTR_PUBLIC_KEY`.
+3. **Verify** that the workflow runs successfully and publishes to NOSTR as expected.
+4. **Delete** the old secret `NOSTR_PUBLIC_KEY` from the repository secrets to prevent accidental exposure or misuse.
+
+> This process ensures there is no downtime or risk of failed workflow runs, and improves security and clarity for all maintainers.
 ### How NOSTR Publishing Works
 1. Workflow reads `secrets.NOSTR_PUBLIC_KEY` (which contains the private key value)
 2. Passes it as `env.NOSTR_PRIVATE_KEY` to the publishing script
