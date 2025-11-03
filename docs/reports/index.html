@@ -1,125 +1,231 @@
 ---
 layout: default
-title: Reports Archive - AI Research Daily
+title: Reports Archive - AI Net Idea Vault
+description: Browse all AI research intelligence reports with enhanced SEO and mobile-friendly design
 ---
 
 <style>
 .archive-header {
   margin-bottom: 30px;
   padding-bottom: 20px;
-  border-bottom: 2px solid #dc143c;
+  border-bottom: 2px solid #0066CC;
+}
+.archive-header h1 {
+  color: #1a1a1a;
+  margin: 0 0 10px 0;
+}
+.archive-header p {
+  color: #666;
+  margin: 0;
 }
 .archive-controls {
   display: flex;
   gap: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
 }
 .archive-controls input,
 .archive-controls select {
-  padding: 10px;
-  border: 1px solid #334155;
-  background: #1e293b;
-  color: #e2e8f0;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
   border-radius: 4px;
   font-size: 14px;
 }
 .archive-controls input {
   flex: 1;
-  min-width: 200px;
+  min-width: 250px;
 }
-.calendar-view {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 10px;
-  margin-top: 20px;
-}
-.calendar-day {
-  padding: 15px;
-  background: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 4px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.calendar-day:hover {
-  background: #334155;
-  border-color: #dc143c;
-}
-.calendar-day.has-report {
-  background: #3a1e1e;
-  border-color: #dc143c;
-}
-.calendar-day .date {
-  font-size: 18px;
-  font-weight: bold;
-  color: #dc143c;
-  margin-bottom: 5px;
-}
-.calendar-day .count {
-  font-size: 12px;
-  color: #94a3b8;
-}
-.list-view .report-item {
-  padding: 20px;
-  background: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 4px;
-  margin-bottom: 15px;
-  transition: all 0.2s;
-}
-.list-view .report-item:hover {
-  background: #334155;
-  border-color: #dc143c;
-}
-.report-item h3 {
-  margin: 0 0 10px 0;
-  color: #dc143c;
-}
-.report-item .meta {
-  color: #94a3b8;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.report-item .excerpt {
-  color: #cbd5e1;
-  margin-bottom: 15px;
+.archive-controls input:focus,
+.archive-controls select:focus {
+  outline: none;
+  border-color: #0066CC;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
 .view-toggle {
   display: flex;
   gap: 10px;
 }
 .view-toggle button {
-  padding: 8px 16px;
-  background: #1e293b;
-  border: 1px solid #334155;
-  color: #e2e8f0;
+  padding: 10px 20px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #333;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s;
+  font-weight: 500;
+}
+.view-toggle button:hover {
+  background: #e8e8e8;
 }
 .view-toggle button.active {
-  background: #dc143c;
-  border-color: #dc143c;
+  background: #0066CC;
+  border-color: #0066CC;
   color: #fff;
+}
+.list-view .report-item {
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.list-view .report-item:hover {
+  background: #f9f9f9;
+  border-color: #0066CC;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+}
+.report-item h3 {
+  margin: 0 0 10px 0;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+}
+.report-item h3 a {
+  color: #0066CC;
+  text-decoration: none;
+}
+.report-item h3 a:hover {
+  text-decoration: underline;
+}
+.report-item .meta {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.report-item .meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.report-item .excerpt {
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.report-item .read-link {
+  color: #0066CC;
+  text-decoration: none;
+  font-weight: 500;
+}
+.report-item .read-link:hover {
+  text-decoration: underline;
+}
+.calendar-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.calendar-day {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.calendar-day:hover {
+  background: #f9f9f9;
+  border-color: #0066CC;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+}
+.calendar-day.has-report {
+  background: #f0f7ff;
+  border-color: #0066CC;
+}
+.calendar-day .date {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0066CC;
+  margin-bottom: 8px;
+}
+.calendar-day .month {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.calendar-day .count {
+  font-size: 12px;
+  color: #888;
+}
+.stats-banner {
+  background: linear-gradient(135deg, #0066CC 0%, #004499 100%);
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.stats-item {
+  text-align: center;
+}
+.stats-item .number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+}
+.stats-item .label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+@media(max-width: 600px) {
+  .archive-controls {
+    flex-direction: column;
+  }
+  .calendar-view {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+  .stats-banner {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 </style>
 
 <div class="archive-header">
-  <h1>📚 Reports Archive</h1>
-  <p style="color: #94a3b8;">Browse all AI Research Daily reports by date or search for specific topics.</p>
+  <h1>📚 AI Research Intelligence Archive</h1>
+  <p>Browse all SEO-enhanced, mobile-friendly research reports with proper structured data</p>
+</div>
+
+<div class="stats-banner">
+  <div class="stats-item">
+    <span class="number" id="totalReports">0</span>
+    <span class="label">Total Reports</span>
+  </div>
+  <div class="stats-item">
+    <span class="number" id="totalWords">0</span>
+    <span class="label">Total Words</span>
+  </div>
+  <div class="stats-item">
+    <span class="number" id="avgReadTime">0</span>
+    <span class="label">Avg Read Time (min)</span>
+  </div>
 </div>
 
 <div class="archive-controls">
-  <input type="text" id="archiveSearch" placeholder="🔍 Search reports..." />
+  <input type="text" id="archiveSearch" placeholder="🔍 Search by title, date, or keyword..." />
   <select id="sortOrder">
     <option value="date-desc">Newest First</option>
     <option value="date-asc">Oldest First</option>
+    <option value="words-desc">Longest First</option>
+    <option value="words-asc">Shortest First</option>
   </select>
   <div class="view-toggle">
-    <button id="listViewBtn" class="active">📋 List</button>
-    <button id="calendarViewBtn">📅 Calendar</button>
+    <button id="listViewBtn" class="active">📋 List View</button>
+    <button id="calendarViewBtn">📅 Calendar View</button>
   </div>
 </div>
 
@@ -129,64 +235,238 @@ title: Reports Archive - AI Research Daily
 <script>
 (function() {
   const reports = [
-    { date: '2025-10-23', title: 'Pulse 2025-10-23', url: '/AI_Research_Daily/reports/pulse-2025-10-23.html' },
-    { date: '2025-10-22', title: 'Pulse 2025-10-22', url: '/AI_Research_Daily/reports/pulse-2025-10-22.html' }
-  ];
+  {
+    "filename": "lab-2025-11-03.html",
+    "title": "AI Net Idea Vault 2025-11-03",
+    "date": "2025-11-03",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 5004,
+    "read_time": 26,
+    "url": "./lab-2025-11-03.html"
+  },
+  {
+    "filename": "lab-2025-11-02.html",
+    "title": "AI Net Idea Vault 2025-11-02",
+    "date": "2025-11-02",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 4571,
+    "read_time": 23,
+    "url": "./lab-2025-11-02.html"
+  },
+  {
+    "filename": "lab-2025-11-01.html",
+    "title": "The Lab 2025-11-01",
+    "date": "2025-11-01",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 3901,
+    "read_time": 20,
+    "url": "./lab-2025-11-01.html"
+  },
+  {
+    "filename": "lab-2025-10-31.html",
+    "title": "The Lab 2025-10-31",
+    "date": "2025-10-31",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 3903,
+    "read_time": 20,
+    "url": "./lab-2025-10-31.html"
+  },
+  {
+    "filename": "lab-2025-10-30.html",
+    "title": "The Lab 2025-10-30",
+    "date": "2025-10-30",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 3832,
+    "read_time": 20,
+    "url": "./lab-2025-10-30.html"
+  },
+  {
+    "filename": "lab-2025-10-29.html",
+    "title": "The Lab 2025-10-29",
+    "date": "2025-10-29",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 3865,
+    "read_time": 20,
+    "url": "./lab-2025-10-29.html"
+  },
+  {
+    "filename": "lab-2025-10-28.html",
+    "title": "The Lab 2025-10-28",
+    "date": "2025-10-28",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 3804,
+    "read_time": 20,
+    "url": "./lab-2025-10-28.html"
+  },
+  {
+    "filename": "lab-2025-10-27.html",
+    "title": "The Lab 2025-10-27",
+    "date": "2025-10-27",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 940,
+    "read_time": 5,
+    "url": "./lab-2025-10-27.html"
+  },
+  {
+    "filename": "lab-2025-10-26.html",
+    "title": "The Lab 2025-10-26",
+    "date": "2025-10-26",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 704,
+    "read_time": 4,
+    "url": "./lab-2025-10-26.html"
+  },
+  {
+    "filename": "lab-2025-10-25.html",
+    "title": "The Lab 2025-10-25",
+    "date": "2025-10-25",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 3629,
+    "read_time": 19,
+    "url": "./lab-2025-10-25.html"
+  },
+  {
+    "filename": "lab-2025-10-24.html",
+    "title": "The Lab 2025-10-24",
+    "date": "2025-10-24",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 3646,
+    "read_time": 19,
+    "url": "./lab-2025-10-24.html"
+  },
+  {
+    "filename": "pulse-2025-10-23.html",
+    "title": "Pulse 2025-10-23",
+    "date": "2025-10-23",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 833,
+    "read_time": 5,
+    "url": "./pulse-2025-10-23.html"
+  },
+  {
+    "filename": "lab-2025-10-23.html",
+    "title": "The Lab 2025-10-23",
+    "date": "2025-10-23",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 687,
+    "read_time": 4,
+    "url": "./lab-2025-10-23.html"
+  },
+  {
+    "filename": "pulse-2025-10-22.html",
+    "title": "Pulse 2025-10-22",
+    "date": "2025-10-22",
+    "description": "Daily AI research digest \u2013 breakthrough papers, implementation watch, pattern radar & ready-to-code playbook.",
+    "word_count": 811,
+    "read_time": 5,
+    "url": "./pulse-2025-10-22.html"
+  }
+];
+  
   const listView = document.getElementById('listView');
   const calendarView = document.getElementById('calendarView');
   const listViewBtn = document.getElementById('listViewBtn');
   const calendarViewBtn = document.getElementById('calendarViewBtn');
   const searchInput = document.getElementById('archiveSearch');
   const sortOrder = document.getElementById('sortOrder');
-
+  
+  // Update stats
+  document.getElementById('totalReports').textContent = reports.length;
+  const totalWords = reports.reduce((sum, r) => sum + (r.word_count || 0), 0);
+  document.getElementById('totalWords').textContent = totalWords.toLocaleString();
+  const avgRead = reports.reduce((sum, r) => sum + (r.read_time || 0), 0) / reports.length;
+  document.getElementById('avgReadTime').textContent = Math.round(avgRead);
+  
+  function formatDate(dateStr) {
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+  }
+  
   function renderListView(filteredReports) {
-    listView.innerHTML = filteredReports.map(report => 
+    if (filteredReports.length === 0) {
+      listView.innerHTML = '<p style="text-align:center;color:#666;padding:40px;">No reports found matching your search.</p>';
+      return;
+    }
+    
+    listView.innerHTML = filteredReports.map(report => `
       <div class="report-item">
-        <h3><a href="+${report.url}+" style="color: #dc143c; text-decoration: none;">+${report.title}+</a></h3>
-        <div class="meta">📅 +${report.date}+</div>
-        <div class="excerpt">AI research discoveries and insights</div>
-        <a href="+${report.url}+" style="color: #dc143c;">Read full report →</a>
+        <h3><a href="${report.url}">${report.title}</a></h3>
+        <div class="meta">
+          <span>📅 ${formatDate(report.date)}</span>
+          <span>📊 ${report.word_count.toLocaleString()} words</span>
+          <span>🕒 ${report.read_time} min read</span>
+        </div>
+        <div class="excerpt">${report.description}</div>
+        <a href="${report.url}" class="read-link">Read full report →</a>
       </div>
-    ).join('');
+    `).join('');
   }
-
+  
   function renderCalendarView(filteredReports) {
-    calendarView.innerHTML = filteredReports.map(report => 
-      <div class="calendar-day has-report" onclick="window.location.href='+${report.url}+'">
-        <div class="date">+${report.date.split('-')[2]}+</div>
-        <div class="count">+${report.date}+</div>
-      </div>
-    ).join('');
+    if (filteredReports.length === 0) {
+      calendarView.innerHTML = '<p style="text-align:center;color:#666;padding:40px;grid-column:1/-1;">No reports found matching your search.</p>';
+      return;
+    }
+    
+    calendarView.innerHTML = filteredReports.map(report => {
+      const date = new Date(report.date);
+      const day = date.getDate();
+      const month = date.toLocaleDateString('en-US', { month: 'short' });
+      return `
+        <div class="calendar-day has-report" onclick="window.location.href='${report.url}'">
+          <div class="month">${month}</div>
+          <div class="date">${day}</div>
+          <div class="count">${report.read_time} min read</div>
+        </div>
+      `;
+    }).join('');
   }
-
+  
   function filterAndSort() {
     let filtered = reports;
     const query = searchInput.value.toLowerCase();
+    
     if (query) {
-      filtered = reports.filter(r => r.title.toLowerCase().includes(query) || r.date.includes(query));
+      filtered = reports.filter(r => 
+        r.title.toLowerCase().includes(query) || 
+        r.date.includes(query) ||
+        r.description.toLowerCase().includes(query)
+      );
     }
+    
     const order = sortOrder.value;
-    filtered.sort((a, b) => order === 'date-desc' ? b.date.localeCompare(a.date) : a.date.localeCompare(b.date));
+    filtered.sort((a, b) => {
+      switch(order) {
+        case 'date-desc': return b.date.localeCompare(a.date);
+        case 'date-asc': return a.date.localeCompare(b.date);
+        case 'words-desc': return b.word_count - a.word_count;
+        case 'words-asc': return a.word_count - b.word_count;
+        default: return b.date.localeCompare(a.date);
+      }
+    });
+    
     renderListView(filtered);
     renderCalendarView(filtered);
   }
-
+  
   listViewBtn.addEventListener('click', () => {
     listView.style.display = 'block';
     calendarView.style.display = 'none';
     listViewBtn.classList.add('active');
     calendarViewBtn.classList.remove('active');
   });
-
+  
   calendarViewBtn.addEventListener('click', () => {
     listView.style.display = 'none';
     calendarView.style.display = 'grid';
     calendarViewBtn.classList.add('active');
     listViewBtn.classList.remove('active');
   });
-
+  
   searchInput.addEventListener('input', filterAndSort);
   sortOrder.addEventListener('change', filterAndSort);
+  
+  // Initial render
   filterAndSort();
 })();
 </script>

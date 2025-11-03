@@ -1,0 +1,445 @@
+#!/usr/bin/env python3
+"""
+Generate enhanced index.html for reports archive
+Automatically discovers all HTML reports and creates a searchable index
+"""
+import re
+import json
+from pathlib import Path
+
+# Paths
+BASE_DIR = Path(__file__).parent.parent
+REPORTS_DIR = BASE_DIR / "docs" / "reports"
+OUTPUT_FILE = REPORTS_DIR / "index.html"
+
+def extract_metadata_from_html(html_path):
+    """Extract metadata from HTML report"""
+    try:
+        with open(html_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        # Extract title
+        title_match = re.search(r'<title>(.*?)</title>', content)
+        title = title_match.group(1) if title_match else html_path.stem
+        
+        # Extract date
+        date_match = re.search(r'"datePublished":"(\d{4}-\d{2}-\d{2})"', content)
+        date = date_match.group(1) if date_match else ''
+        
+        # Extract description
+        desc_match = re.search(r'<meta name="description" content="(.*?)"', content)
+        description = desc_match.group(1) if desc_match else 'AI research intelligence report'
+        
+        # Extract word count
+        word_match = re.search(r'"wordCount":(\d+)', content)
+        word_count = int(word_match.group(1)) if word_match else 0
+        
+        # Extract read time
+        read_match = re.search(r'🕒 (\d+) min read', content)
+        read_time = int(read_match.group(1)) if read_match else 0
+        
+        return {
+            'filename': html_path.name,
+            'title': title,
+            'date': date,
+            'description': description,
+            'word_count': word_count,
+            'read_time': read_time,
+            'url': f'./{html_path.name}'
+        }
+    except Exception as e:
+        print(f"⚠️  Error extracting metadata from {html_path.name}: {e}")
+        return None
+
+
+def generate_index_html(reports):
+    """Generate the index.html page"""
+    
+    # Sort reports by date (newest first)
+    reports = sorted(reports, key=lambda x: x['date'], reverse=True)
+    
+    # Generate reports JSON
+    reports_json = json.dumps(reports, indent=2)
+    
+    html = f"""---
+layout: default
+title: Reports Archive - AI Net Idea Vault
+description: Browse all AI research intelligence reports with enhanced SEO and mobile-friendly design
+---
+
+<style>
+.archive-header {{
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #0066CC;
+}}
+.archive-header h1 {{
+  color: #1a1a1a;
+  margin: 0 0 10px 0;
+}}
+.archive-header p {{
+  color: #666;
+  margin: 0;
+}}
+.archive-controls {{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}}
+.archive-controls input,
+.archive-controls select {{
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #333;
+  border-radius: 4px;
+  font-size: 14px;
+}}
+.archive-controls input {{
+  flex: 1;
+  min-width: 250px;
+}}
+.archive-controls input:focus,
+.archive-controls select:focus {{
+  outline: none;
+  border-color: #0066CC;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}}
+.view-toggle {{
+  display: flex;
+  gap: 10px;
+}}
+.view-toggle button {{
+  padding: 10px 20px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}}
+.view-toggle button:hover {{
+  background: #e8e8e8;
+}}
+.view-toggle button.active {{
+  background: #0066CC;
+  border-color: #0066CC;
+  color: #fff;
+}}
+.list-view .report-item {{
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}}
+.list-view .report-item:hover {{
+  background: #f9f9f9;
+  border-color: #0066CC;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+}}
+.report-item h3 {{
+  margin: 0 0 10px 0;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+}}
+.report-item h3 a {{
+  color: #0066CC;
+  text-decoration: none;
+}}
+.report-item h3 a:hover {{
+  text-decoration: underline;
+}}
+.report-item .meta {{
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}}
+.report-item .meta span {{
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}}
+.report-item .excerpt {{
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}}
+.report-item .read-link {{
+  color: #0066CC;
+  text-decoration: none;
+  font-weight: 500;
+}}
+.report-item .read-link:hover {{
+  text-decoration: underline;
+}}
+.calendar-view {{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}}
+.calendar-day {{
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}}
+.calendar-day:hover {{
+  background: #f9f9f9;
+  border-color: #0066CC;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+}}
+.calendar-day.has-report {{
+  background: #f0f7ff;
+  border-color: #0066CC;
+}}
+.calendar-day .date {{
+  font-size: 24px;
+  font-weight: bold;
+  color: #0066CC;
+  margin-bottom: 8px;
+}}
+.calendar-day .month {{
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}}
+.calendar-day .count {{
+  font-size: 12px;
+  color: #888;
+}}
+.stats-banner {{
+  background: linear-gradient(135deg, #0066CC 0%, #004499 100%);
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}}
+.stats-item {{
+  text-align: center;
+}}
+.stats-item .number {{
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: block;
+}}
+.stats-item .label {{
+  font-size: 0.9rem;
+  opacity: 0.9;
+}}
+@media(max-width: 600px) {{
+  .archive-controls {{
+    flex-direction: column;
+  }}
+  .calendar-view {{
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }}
+  .stats-banner {{
+    flex-direction: column;
+    gap: 15px;
+  }}
+}}
+</style>
+
+<div class="archive-header">
+  <h1>📚 AI Research Intelligence Archive</h1>
+  <p>Browse all SEO-enhanced, mobile-friendly research reports with proper structured data</p>
+</div>
+
+<div class="stats-banner">
+  <div class="stats-item">
+    <span class="number" id="totalReports">0</span>
+    <span class="label">Total Reports</span>
+  </div>
+  <div class="stats-item">
+    <span class="number" id="totalWords">0</span>
+    <span class="label">Total Words</span>
+  </div>
+  <div class="stats-item">
+    <span class="number" id="avgReadTime">0</span>
+    <span class="label">Avg Read Time (min)</span>
+  </div>
+</div>
+
+<div class="archive-controls">
+  <input type="text" id="archiveSearch" placeholder="🔍 Search by title, date, or keyword..." />
+  <select id="sortOrder">
+    <option value="date-desc">Newest First</option>
+    <option value="date-asc">Oldest First</option>
+    <option value="words-desc">Longest First</option>
+    <option value="words-asc">Shortest First</option>
+  </select>
+  <div class="view-toggle">
+    <button id="listViewBtn" class="active">📋 List View</button>
+    <button id="calendarViewBtn">📅 Calendar View</button>
+  </div>
+</div>
+
+<div id="listView" class="list-view"></div>
+<div id="calendarView" class="calendar-view" style="display: none;"></div>
+
+<script>
+(function() {{
+  const reports = {reports_json};
+  
+  const listView = document.getElementById('listView');
+  const calendarView = document.getElementById('calendarView');
+  const listViewBtn = document.getElementById('listViewBtn');
+  const calendarViewBtn = document.getElementById('calendarViewBtn');
+  const searchInput = document.getElementById('archiveSearch');
+  const sortOrder = document.getElementById('sortOrder');
+  
+  // Update stats
+  document.getElementById('totalReports').textContent = reports.length;
+  const totalWords = reports.reduce((sum, r) => sum + (r.word_count || 0), 0);
+  document.getElementById('totalWords').textContent = totalWords.toLocaleString();
+  const avgRead = reports.reduce((sum, r) => sum + (r.read_time || 0), 0) / reports.length;
+  document.getElementById('avgReadTime').textContent = Math.round(avgRead);
+  
+  function formatDate(dateStr) {{
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('en-US', {{ year: 'numeric', month: 'short', day: 'numeric' }});
+  }}
+  
+  function renderListView(filteredReports) {{
+    if (filteredReports.length === 0) {{
+      listView.innerHTML = '<p style="text-align:center;color:#666;padding:40px;">No reports found matching your search.</p>';
+      return;
+    }}
+    
+    listView.innerHTML = filteredReports.map(report => `
+      <div class="report-item">
+        <h3><a href="${{report.url}}">${{report.title}}</a></h3>
+        <div class="meta">
+          <span>📅 ${{formatDate(report.date)}}</span>
+          <span>📊 ${{report.word_count.toLocaleString()}} words</span>
+          <span>🕒 ${{report.read_time}} min read</span>
+        </div>
+        <div class="excerpt">${{report.description}}</div>
+        <a href="${{report.url}}" class="read-link">Read full report →</a>
+      </div>
+    `).join('');
+  }}
+  
+  function renderCalendarView(filteredReports) {{
+    if (filteredReports.length === 0) {{
+      calendarView.innerHTML = '<p style="text-align:center;color:#666;padding:40px;grid-column:1/-1;">No reports found matching your search.</p>';
+      return;
+    }}
+    
+    calendarView.innerHTML = filteredReports.map(report => {{
+      const date = new Date(report.date);
+      const day = date.getDate();
+      const month = date.toLocaleDateString('en-US', {{ month: 'short' }});
+      return `
+        <div class="calendar-day has-report" onclick="window.location.href='${{report.url}}'">
+          <div class="month">${{month}}</div>
+          <div class="date">${{day}}</div>
+          <div class="count">${{report.read_time}} min read</div>
+        </div>
+      `;
+    }}).join('');
+  }}
+  
+  function filterAndSort() {{
+    let filtered = reports;
+    const query = searchInput.value.toLowerCase();
+    
+    if (query) {{
+      filtered = reports.filter(r => 
+        r.title.toLowerCase().includes(query) || 
+        r.date.includes(query) ||
+        r.description.toLowerCase().includes(query)
+      );
+    }}
+    
+    const order = sortOrder.value;
+    filtered.sort((a, b) => {{
+      switch(order) {{
+        case 'date-desc': return b.date.localeCompare(a.date);
+        case 'date-asc': return a.date.localeCompare(b.date);
+        case 'words-desc': return b.word_count - a.word_count;
+        case 'words-asc': return a.word_count - b.word_count;
+        default: return b.date.localeCompare(a.date);
+      }}
+    }});
+    
+    renderListView(filtered);
+    renderCalendarView(filtered);
+  }}
+  
+  listViewBtn.addEventListener('click', () => {{
+    listView.style.display = 'block';
+    calendarView.style.display = 'none';
+    listViewBtn.classList.add('active');
+    calendarViewBtn.classList.remove('active');
+  }});
+  
+  calendarViewBtn.addEventListener('click', () => {{
+    listView.style.display = 'none';
+    calendarView.style.display = 'grid';
+    calendarViewBtn.classList.add('active');
+    listViewBtn.classList.remove('active');
+  }});
+  
+  searchInput.addEventListener('input', filterAndSort);
+  sortOrder.addEventListener('change', filterAndSort);
+  
+  // Initial render
+  filterAndSort();
+}})();
+</script>
+"""
+    
+    return html
+
+
+def main():
+    """Main function to build the index"""
+    print("🔨 Building enhanced reports index...")
+    
+    # Find all HTML reports
+    html_files = list(REPORTS_DIR.glob('*.html'))
+    # Exclude index.html itself
+    html_files = [f for f in html_files if f.name != 'index.html']
+    
+    print(f"📚 Found {len(html_files)} HTML reports")
+    
+    # Extract metadata from each report
+    reports = []
+    for html_file in html_files:
+        metadata = extract_metadata_from_html(html_file)
+        if metadata:
+            reports.append(metadata)
+            print(f"  ✅ {html_file.name}: {metadata['title']}")
+    
+    # Generate index.html
+    index_html = generate_index_html(reports)
+    
+    # Write index file
+    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        f.write(index_html)
+    
+    print(f"\n✅ Generated index with {len(reports)} reports")
+    print(f"📂 Output: {OUTPUT_FILE}")
+
+
+if __name__ == "__main__":
+    main()
