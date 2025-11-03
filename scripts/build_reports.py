@@ -126,9 +126,13 @@ def parse_markdown_sections(md_content):
     
     # Remove "Back to Top" links as per SEO requirements
     # These are replaced by sticky navigation
-    md_content = re.sub(r'<p class="back-to-home"><a href="#top">⬆️ Back to Top</a></p>\s*', '', md_content)
-    md_content = re.sub(r'\[⬆️ Back to Top\]\(#top\)\s*', '', md_content)
-    
+    # Remove both HTML and markdown "Back to Top" links, allowing for any emoji, whitespace, or case
+    md_content = re.sub(
+        r'(<p\s+class=["\']back-to-home["\']>\s*<a\s+href=["\']#top["\']>\s*.*?Back\s*to\s*Top\s*</a>\s*</p>\s*|\[\s*.*?Back\s*to\s*Top\s*\]\(\s*#top\s*\)\s*)',
+        '',
+        md_content,
+        flags=re.IGNORECASE | re.DOTALL
+    )
     # Split by h2 headings (##)
     parts = re.split(r'\n##\s+', md_content)
     
