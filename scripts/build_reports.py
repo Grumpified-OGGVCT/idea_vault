@@ -168,7 +168,7 @@ def parse_markdown_sections(md_content):
             'title': clean_title,
             'emoji': emoji,
             'content': html_content,
-            'table': table_data if table_count > TABLE_COLLAPSE_THRESHOLD else None  # Use configurable threshold
+            'table': table_data  # Always include table data; let template handle threshold logic
         })
     
     return sections
