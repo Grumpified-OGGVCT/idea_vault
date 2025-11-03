@@ -37,6 +37,9 @@ TEMPLATES_DIR = BASE_DIR / "templates"
 REPORTS_DIR = BASE_DIR / "docs" / "reports"
 OUTPUT_DIR = BASE_DIR / "docs" / "reports"
 
+# Configuration
+TABLE_COLLAPSE_THRESHOLD = 10  # Rows count threshold for collapsible tables
+
 # Emoji mapping for sections
 EMOJI_MAP = {
     'research overview': '🔬',
@@ -59,10 +62,10 @@ EMOJI_MAP = {
 
 def slugify(text):
     """Convert text to URL-safe slug"""
-    # Remove emojis and special chars
+    # Remove emojis and special chars, keep alphanumeric, spaces, hyphens, and underscores
     text = re.sub(r'[^\w\s-]', '', text.lower())
-    # Replace spaces with hyphens
-    text = re.sub(r'[-\s]+', '-', text)
+    # Replace spaces and underscores with hyphens
+    text = re.sub(r'[-_\s]+', '-', text)
     return text.strip('-')
 
 
@@ -96,6 +99,7 @@ def generate_tldr(content, max_sentences=3):
     """Generate TL;DR summary from content"""
     if SUMY_AVAILABLE:
         try:
+            # Use NLTK tokenization for better sentence splitting
             parser = PlaintextParser.from_string(content, Tokenizer('english'))
             summarizer = LexRankSummarizer()
             summary_sentences = summarizer(parser.document, max_sentences)
@@ -103,10 +107,17 @@ def generate_tldr(content, max_sentences=3):
         except Exception as e:
             print(f"⚠️  LexRank summarization failed: {e}")
     
-    # Fallback: use first few sentences
-    sentences = re.split(r'[.!?]+', content)
-    clean_sentences = [s.strip() for s in sentences if len(s.strip()) > 20]
-    return '. '.join(clean_sentences[:max_sentences]) + '.'
+    # Fallback: use NLTK sentence tokenizer if available
+    try:
+        import nltk
+        sentences = nltk.sent_tokenize(content)
+        clean_sentences = [s.strip() for s in sentences if len(s.strip()) > 20]
+        return ' '.join(clean_sentences[:max_sentences])
+    except:
+        # Last resort: simple regex split
+        sentences = re.split(r'[.!?]+', content)
+        clean_sentences = [s.strip() for s in sentences if len(s.strip()) > 20]
+        return '. '.join(clean_sentences[:max_sentences]) + '.'
 
 
 def parse_markdown_sections(md_content):
@@ -157,7 +168,7 @@ def parse_markdown_sections(md_content):
             'title': clean_title,
             'emoji': emoji,
             'content': html_content,
-            'table': table_data if table_count > 10 else None  # Only track large tables
+            'table': table_data if table_count > TABLE_COLLAPSE_THRESHOLD else None  # Use configurable threshold
         })
     
     return sections
@@ -179,9 +190,24 @@ def extract_keywords(content, max_keywords=10):
     """Extract keywords from content"""
     # Simple keyword extraction based on frequency
     words = re.findall(r'\b[a-z]{4,}\b', content.lower())
-    # Remove common words
-    stopwords = {'that', 'this', 'with', 'from', 'have', 'been', 'were', 'will', 'their', 'there', 'these', 'those'}
-    words = [w for w in words if w not in stopwords]
+    
+    # Use NLTK stopwords if available, otherwise use basic set
+    try:
+        import nltk
+        try:
+            from nltk.corpus import stopwords
+            stop_words = set(stopwords.words('english'))
+        except:
+            nltk.download('stopwords', quiet=True)
+            from nltk.corpus import stopwords
+            stop_words = set(stopwords.words('english'))
+    except:
+        # Fallback to basic stopwords
+        stop_words = {'that', 'this', 'with', 'from', 'have', 'been', 'were', 
+                     'will', 'their', 'there', 'these', 'those', 'what', 'when',
+                     'where', 'which', 'while', 'about', 'after', 'before', 'being'}
+    
+    words = [w for w in words if w not in stop_words]
     
     # Count frequencies
     word_counts = Counter(words)
@@ -243,8 +269,10 @@ def build_html_report(md_path, template):
         'keywords': keywords,
         'author': metadata.get('author', 'Grumpified-OGGVCT'),
         'slug': slug,
+        'filename': md_path.name.replace('.md', '.html'),  # Use actual filename for canonical URL
         'wordcount': word_count,
-        'read_time': reading_time
+        'read_time': reading_time,
+        'table_threshold': TABLE_COLLAPSE_THRESHOLD  # Pass threshold to template
     }
     
     # Render template

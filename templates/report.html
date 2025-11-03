@@ -7,7 +7,7 @@
   <meta name="keywords" content="{{ meta.keywords|join(', ') }}">
   <meta name="author" content="{{ meta.author }}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="canonical" href="https://grumpified-oggvct.github.io/idea_vault/reports/{{ meta.slug }}.html">
+  <link rel="canonical" href="https://grumpified-oggvct.github.io/idea_vault/reports/{{ meta.filename }}">
 
   <!-- Minimal responsive CSS (≈ 5 KB) -->
   <style>
@@ -55,7 +55,7 @@
     "author":{"@type":"Organization","name":"{{ meta.author }}"},
     "description":"{{ meta.description }}",
     "keywords":"{{ meta.keywords|join(', ') }}",
-    "url":"https://grumpified-oggvct.github.io/idea_vault/reports/{{ meta.slug }}.html",
+    "url":"https://grumpified-oggvct.github.io/idea_vault/reports/{{ meta.filename }}",
     "wordCount":{{ meta.wordcount }},
     "publisher":{"@type":"Organization","name":"Grumpified‑OGGVCT"}
   }
@@ -87,8 +87,8 @@
     <h2>{{ sec.emoji }} {{ sec.title }}</h2>
     {{ sec.content|safe }}
     
-    {# Table handling – collapse if >10 rows #}
-    {% if sec.table and sec.table.row_count > 10 %}
+    {# Table handling – collapse if exceeds threshold #}
+    {% if sec.table and sec.table.row_count > meta.table_threshold %}
       <details>
         <summary>{{ sec.table.caption }} ({{ sec.table.row_count }} rows) – Click to expand</summary>
         {{ sec.table.html|safe }}
