@@ -261,7 +261,7 @@ def build_html_report(md_path, template):
     
     # Generate TL;DR
     # Remove markdown formatting for better summary
-    clean_content = re.sub(r'[#*_`\[\]()]', '', content)
+    clean_content = re.sub(r'[#*_`\\[\\]()]', '', content)
     clean_content = re.sub(r'http\S+', '', clean_content)
     summary = generate_tldr(clean_content, max_sentences=3)
     
