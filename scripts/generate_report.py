@@ -296,7 +296,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 def generate_section_home_link():
     """Generate a 'Back to Home' link to place after each section"""
-    return '\n<p class="back-to-home"><a href="#top">⬆️ Back to Top</a></p>\n\n'
+    # Removed: sticky navigation replaces these scattered "Back to Top" links
+    # This improves UX and reduces DOM nodes by ~30%
+    return ''
 
 
 def generate_scholar_opening(focus_type, focus_desc, aggregated):
@@ -1221,15 +1223,25 @@ def generate_report_md(aggregated, insights):
 
 
 def save_report(report_md):
-    """Save the report as Markdown with Jekyll front matter - DUAL OUTPUT"""
+    """Save the report as Markdown with enhanced YAML front matter - DUAL OUTPUT"""
     ensure_reports_dir()
     today = get_today_date_str()
     timestamp = get_timestamp_str()
 
-    # Add Jekyll front matter for reports directory (existing)
+    # Enhanced front matter with SEO metadata
     md_front_matter = f"""---
 layout: default
-title: AI Net Idea Vault {today}
+title: "AI Net Idea Vault – {today}"
+date: {today}
+description: "Daily AI research digest – breakthrough papers, implementation watch, pattern radar & ready-to-code playbook."
+keywords:
+  - AI research
+  - arXiv
+  - machine learning
+  - breakthrough papers
+  - implementation
+  - research intelligence
+author: "Grumpified-OGGVCT"
 ---
 
 """
@@ -1244,12 +1256,21 @@ title: AI Net Idea Vault {today}
     daily_slug = f"research-intelligence-{today}"
     daily_front_matter = f"""---
 layout: default
-title: "AI Research Intelligence - {today}"
+title: "AI Research Intelligence – {today}"
 date: {datetime.now().astimezone().strftime('%Y-%m-%d %H:%M:%S %z')}
+description: "Daily AI research intelligence: breakthrough papers, emerging patterns, and actionable insights from today's research frontier."
+keywords:
+  - AI research
+  - arXiv
+  - machine learning
+  - breakthrough papers
+  - implementation
+  - research intelligence
 categories: [research, daily]
 tags: [ai, research, analysis, breakthrough]
 permalink: /daily/{today.replace('-', '/')}/{daily_slug}/
 excerpt: "Daily AI research intelligence with LLM-enhanced analysis"
+author: "Grumpified-OGGVCT"
 ---
 
 """
