@@ -201,7 +201,7 @@ def extract_keywords(content, max_keywords=10):
         try:
             from nltk.corpus import stopwords
             stop_words = set(stopwords.words('english'))
-        except:
+        except Exception:
             nltk.download('stopwords', quiet=True)
             from nltk.corpus import stopwords
             stop_words = set(stopwords.words('english'))
