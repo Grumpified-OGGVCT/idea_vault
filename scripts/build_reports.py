@@ -113,7 +113,7 @@ def generate_tldr(content, max_sentences=3):
         sentences = nltk.sent_tokenize(content)
         clean_sentences = [s.strip() for s in sentences if len(s.strip()) > 20]
         return ' '.join(clean_sentences[:max_sentences])
-    except:
+    except Exception:
         # Last resort: simple regex split
         sentences = re.split(r'[.!?]+', content)
         clean_sentences = [s.strip() for s in sentences if len(s.strip()) > 20]
