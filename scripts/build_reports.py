@@ -205,7 +205,7 @@ def extract_keywords(content, max_keywords=10):
             nltk.download('stopwords', quiet=True)
             from nltk.corpus import stopwords
             stop_words = set(stopwords.words('english'))
-    except:
+    except (ImportError, LookupError):
         # Fallback to basic stopwords
         stop_words = {'that', 'this', 'with', 'from', 'have', 'been', 'were', 
                      'will', 'their', 'there', 'these', 'those', 'what', 'when',
