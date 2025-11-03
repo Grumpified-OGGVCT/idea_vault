@@ -6,7 +6,6 @@ Automatically discovers all HTML reports and creates a searchable index
 import re
 import json
 from pathlib import Path
-from datetime import datetime
 
 # Paths
 BASE_DIR = Path(__file__).parent.parent
