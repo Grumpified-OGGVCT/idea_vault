@@ -200,7 +200,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2025-11-05T10:17:05Z",
+    "date": "2025-11-05T17:30:25Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n> [!WARNING]\nThese dependencies ar",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -620,7 +620,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2025-11-05T01:52:16Z",
+    "date": "2025-11-05T18:33:11Z",
     "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change | Age | Confidence |\n|---|---|---|---|---|---|\n| [amannn/action-semantic-pull-request](https://redirect.github.com/amannn/action-semantic-pull-request) | action | minor | `v6.0.1` -> `v6.1.1` | [![age](https://developer.mend",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -692,7 +692,7 @@
   },
   {
     "title": "[PR] feat: Add IBM watsonx.ai and Ollama to LanguageModelComponent",
-    "date": "2025-11-05T17:23:04Z",
+    "date": "2025-11-05T17:51:46Z",
     "summary": "This pull request significantly enhances the `LanguageModelComponent` in the `Basic Prompt Chaining.json` starter project by adding support for IBM watsonx.ai and Ollama providers, enabling dynamic model selection and configuration for these new providers. It also refactors the input configuration a",
     "url": "https://github.com/langflow-ai/langflow/pull/10471",
     "source": "github_prs",
@@ -956,7 +956,7 @@
   },
   {
     "title": "[PR] Model: Qwen3 Next",
-    "date": "2025-11-05T15:05:46Z",
+    "date": "2025-11-05T17:32:41Z",
     "summary": "**EDIT: README FIRST**\r\nThis is an implementation of a new type of attention gating in GGML.\r\nTherefore, this implementation will be focused on *CORRECTNESS ONLY*.\r\nSpeed tuning and support for more architectures will come in future PRs.\r\nPlease do not spam this threads with reports about performanc",
     "url": "https://github.com/ggml-org/llama.cpp/pull/16095",
     "source": "github_prs",
@@ -1084,6 +1084,30 @@
       "comments: 2",
       "pull request",
       "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.curl-cffi: pin python-websockets at 12.0 and disable problematic tests",
+    "date": "2025-11-05T18:21:54Z",
+    "summary": "Supersedes #457592\r\n\r\nHydra: https://hydra.nixos.org/build/311365966\r\n\r\n1. The `echo` method called from `test_websocket` fails with a race condition in closing a websocket. This happens during the teardown after pytest is done. Disabled.\r\n2. `test_receive_large_messages_run_forever` can hang testin",
+    "url": "https://github.com/NixOS/nixpkgs/pull/458241",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Add GitHub Actions testing workflows with multi-level test separation",
+    "date": "2025-11-05T17:42:36Z",
+    "summary": "Implements CI/CD testing infrastructure with proper separation of unit, integration, and system tests for both Python backend and React Native frontend.\n\n## Workflows\n\n**6 parallel workflows** with smart path filtering and dependency caching:\n\n- `ci.yml` - Main orchestrator (5-8 min)\n- `backend-test",
+    "url": "https://github.com/bobthearsonist/meeting-coach/pull/33",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: meeting-coach"
     ]
   }
 ]
