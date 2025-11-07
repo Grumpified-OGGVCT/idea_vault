@@ -642,7 +642,7 @@
     "research_score": 0.68
   },
   {
-    "arxiv_id": "2511.03092v1",
+    "arxiv_id": "2511.03092v2",
     "title": "SnapStream: Efficient Long Sequence Decoding on Dataflow Accelerators",
     "summary": "The proliferation of 100B+ parameter Large Language Models (LLMs) with 100k+ context length support have resulted in increasing demands for on-chip memory to support large KV caches. Techniques such as StreamingLLM and SnapKV demonstrate how to control KV cache size while maintaining model accuracy. Yet, these techniques are not commonly used within industrial deployments using frameworks like vLLM or SGLang. The reason is twofold: on one hand, the static graphs and continuous batching methodology employed by these frameworks make it difficult to admit modifications to the standard multi-head attention algorithm, while on the other hand, the accuracy implications of such techniques on modern instruction-following and reasoning models are not well understood, obfuscating the need for implementing these techniques. In this paper, we explore these accuracy implications on Llama-3.1-8B-Instruct and DeepSeek-R1, and develop SnapStream, a KV cache compression method that can be deployed at scale. We demonstrate the efficacy of SnapStream in a 16-way tensor-parallel deployment of DeepSeek-671B on SambaNova SN40L accelerators running at 128k context length and up to 1832 tokens per second in a real production setting. SnapStream enables $4\\times$ improved on-chip memory usage and introduces minimal accuracy degradation on LongBench-v2, AIME24 and LiveCodeBench. To the best of our knowledge, this is the first implementation of sparse KV attention techniques deployed in a production inference system with static graphs and continuous batching.",
     "authors": [
@@ -675,8 +675,8 @@
       "cs.DC"
     ],
     "published": "2025-11-05",
-    "url": "https://arxiv.org/abs/2511.03092v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.03092v1.pdf",
+    "url": "https://arxiv.org/abs/2511.03092v2",
+    "pdf_url": "https://arxiv.org/pdf/2511.03092v2.pdf",
     "date": "2025-11-07",
     "source": "arxiv",
     "research_score": 0.68
@@ -3005,7 +3005,7 @@
     "research_score": 0.56
   },
   {
-    "arxiv_id": "2511.03179v1",
+    "arxiv_id": "2511.03179v2",
     "title": "Toward Autonomous Engineering Design: A Knowledge-Guided Multi-Agent   Framework",
     "summary": "The engineering design process often demands expertise from multiple domains, leading to complex collaborations and iterative refinements. Traditional methods can be resource-intensive and prone to inefficiencies. To address this, we formalize the engineering design process through a multi-agent AI framework that integrates structured design and review loops. The framework introduces specialized knowledge-driven agents that collaborate to generate and refine design candidates. As an exemplar, we demonstrate its application to the aerodynamic optimization of 4-digit NACA airfoils. The framework consists of three key AI agents: a Graph Ontologist, a Design Engineer, and a Systems Engineer. The Graph Ontologist employs a Large Language Model (LLM) to construct two domain-specific knowledge graphs from airfoil design literature. The Systems Engineer, informed by a human manager, formulates technical requirements that guide design generation and evaluation. The Design Engineer leverages the design knowledge graph and computational tools to propose candidate airfoils meeting these requirements. The Systems Engineer reviews and provides feedback both qualitative and quantitative using its own knowledge graph, forming an iterative feedback loop until a design is validated by the manager. The final design is then optimized to maximize performance metrics such as the lift-to-drag ratio. Overall, this work demonstrates how collaborative AI agents equipped with structured knowledge representations can enhance efficiency, consistency, and quality in the engineering design process.",
     "authors": [
@@ -3018,8 +3018,8 @@
       "cs.MA"
     ],
     "published": "2025-11-05",
-    "url": "https://arxiv.org/abs/2511.03179v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.03179v1.pdf",
+    "url": "https://arxiv.org/abs/2511.03179v2",
+    "pdf_url": "https://arxiv.org/pdf/2511.03179v2.pdf",
     "date": "2025-11-07",
     "source": "arxiv",
     "research_score": 0.56
@@ -3796,7 +3796,7 @@
     "research_score": 0.52
   },
   {
-    "arxiv_id": "2511.03325v1",
+    "arxiv_id": "2511.03325v2",
     "title": "SurgViVQA: Temporally-Grounded Video Question Answering for Surgical   Scene Understanding",
     "summary": "Video Question Answering (VideoQA) in the surgical domain aims to enhance intraoperative understanding by enabling AI models to reason over temporally coherent events rather than isolated frames. Current approaches are limited to static image features, and available datasets often lack temporal annotations, ignoring the dynamics critical for accurate procedural interpretation. We propose SurgViVQA, a surgical VideoQA model that extends visual reasoning from static images to dynamic surgical scenes. It uses a Masked Video--Text Encoder to fuse video and question features, capturing temporal cues such as motion and tool--tissue interactions, which a fine-tuned large language model (LLM) then decodes into coherent answers. To evaluate its performance, we curated REAL-Colon-VQA, a colonoscopic video dataset that includes motion-related questions and diagnostic attributes, as well as out-of-template questions with rephrased or semantically altered formulations to assess model robustness. Experimental validation on REAL-Colon-VQA and the public EndoVis18-VQA dataset shows that SurgViVQA outperforms existing image-based VQA benchmark models, particularly in keyword accuracy, improving over PitVQA by +11\\% on REAL-Colon-VQA and +9\\% on EndoVis18-VQA. A perturbation study on the questions further confirms improved generalizability and robustness to variations in question phrasing. SurgViVQA and the REAL-Colon-VQA dataset provide a framework for temporally-aware understanding in surgical VideoQA, enabling AI models to interpret dynamic procedural contexts more effectively. Code and dataset available at https://github.com/madratak/SurgViVQA.",
     "authors": [
@@ -3815,8 +3815,8 @@
       "cs.CV"
     ],
     "published": "2025-11-05",
-    "url": "https://arxiv.org/abs/2511.03325v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.03325v1.pdf",
+    "url": "https://arxiv.org/abs/2511.03325v2",
+    "pdf_url": "https://arxiv.org/pdf/2511.03325v2.pdf",
     "date": "2025-11-07",
     "source": "arxiv",
     "research_score": 0.52
