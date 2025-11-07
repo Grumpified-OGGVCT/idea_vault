@@ -584,7 +584,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( 0.6.32 \u2794 v0.6.36 )",
-    "date": "2025-11-07T12:15:09Z",
+    "date": "2025-11-07T13:17:06Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `0.6.32` -> `v0.6.36` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard fo",
     "url": "https://github.com/Aviator-Coding/home-ops/pull/337",
     "source": "github_prs",
@@ -824,7 +824,7 @@
   },
   {
     "title": "[PR] python3Packages.dask: 2025.10.0 -> 2025.11.0",
-    "date": "2025-11-07T10:01:19Z",
+    "date": "2025-11-07T12:59:58Z",
     "summary": "\n<!--\n^ Please summarise the changes you have done and explain why they are necessary here ^\n\nFor package updates please link to a changelog or describe changes, this helps your fellow maintainers discover breaking updates.\nFor new packages please briefly describe the package or provide a link to it",
     "url": "https://github.com/NixOS/nixpkgs/pull/459261",
     "source": "github_prs",
@@ -980,12 +980,12 @@
   },
   {
     "title": "[PR] feat(AI Assistant): scaffold automations",
-    "date": "2025-11-07T11:51:58Z",
+    "date": "2025-11-07T13:19:32Z",
     "summary": "### What is in this PR\r\nThe ability for the AI Assistant to scaffold workflow automation\r\n\r\nhttps://github.com/user-attachments/assets/73ce1b34-0cbd-4986-b70d-e2a9ec4016d5\r\n\r\n### How to test this PR\r\n- Create an account on ollama (https://signin.ollama.com). Download the app locally and enable gpt-o",
     "url": "https://github.com/baserow/baserow/pull/4172",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: baserow"
     ]
@@ -1096,6 +1096,18 @@
       "comments: 2",
       "pull request",
       "repo: open-webui"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.curl-cffi: pin python-websockets at 12.0 and disable problematic tests",
+    "date": "2025-11-07T13:20:04Z",
+    "summary": "Supersedes #457592\r\n\r\nHydra: https://hydra.nixos.org/build/311365966\r\n\r\n1. The `echo` method called from `test_websocket` fails with a race condition in closing a websocket. This happens during the teardown after pytest is done. Disabled.\r\n2. `test_receive_large_messages_run_forever` can hang testin",
+    "url": "https://github.com/NixOS/nixpkgs/pull/458241",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: nixpkgs"
     ]
   }
 ]
