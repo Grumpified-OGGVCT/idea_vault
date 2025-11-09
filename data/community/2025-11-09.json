@@ -572,7 +572,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( 0.6.32 \u2794 v0.6.36 )",
-    "date": "2025-11-09T01:37:26Z",
+    "date": "2025-11-09T02:40:45Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `0.6.32` -> `v0.6.36` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard fo",
     "url": "https://github.com/Aviator-Coding/home-ops/pull/337",
     "source": "github_prs",
@@ -784,6 +784,42 @@
       "comments: 1",
       "pull request",
       "repo: swift-chat"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.curl-cffi: pin python-websockets at 12.0 and disable problematic tests",
+    "date": "2025-11-09T03:13:46Z",
+    "summary": "Supersedes #457592\r\n\r\nHydra: https://hydra.nixos.org/build/311365966\r\n\r\n1. The `echo` method called from `test_websocket` fails with a race condition in closing a websocket. This happens during the teardown after pytest is done. Disabled.\r\n2. `test_receive_large_messages_run_forever` can hang testin",
+    "url": "https://github.com/NixOS/nixpkgs/pull/458241",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Bug-Squash/'Works-on-my-machine' - 4 PRDs in one PR :( \ud83d\udc4e ",
+    "date": "2025-11-09T02:58:52Z",
+    "summary": "Turn all(most) tests green, excluding jobs, sandbox and watchlists as they're WIP. \r\n\r\nEverything else should be passing.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n- New Features\n  - Unified streaming (SSE/WS) behind a feature flag with imp",
+    "url": "https://github.com/rmusser01/tldw_server/pull/679",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: tldw_server"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2025-11-09T02:44:08Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
     ]
   }
 ]
