@@ -224,7 +224,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2025-11-10T16:12:46Z",
+    "date": "2025-11-10T17:18:22Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n> [!WARNING]\nThese dependencies ar",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -584,7 +584,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( 0.6.32 \u2794 v0.6.36 )",
-    "date": "2025-11-10T16:12:00Z",
+    "date": "2025-11-10T17:09:28Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `0.6.32` -> `v0.6.36` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard fo",
     "url": "https://github.com/Aviator-Coding/home-ops/pull/337",
     "source": "github_prs",
@@ -632,7 +632,7 @@
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v1.119.0",
-    "date": "2025-11-10T14:06:39Z",
+    "date": "2025-11-10T17:04:12Z",
     "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | Kustomization | minor | `1.95.2` -> `1.119.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the ",
     "url": "https://github.com/meysam81/infra/pull/298",
     "source": "github_prs",
@@ -860,7 +860,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (release/8.8)",
-    "date": "2025-11-10T05:22:37Z",
+    "date": "2025-11-10T17:20:38Z",
     "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change | Age | Confidence |\n|---|---|---|---|---|---|\n| eclipse-temurin | final | patch | `21.0.8_9-jre` -> `21.0.9_10-jre` | [![age](https://developer.mend.io/api/mc/badges/age/docker/eclipse-temurin/21.0.9_10-jre?slim=true)](http",
     "url": "https://github.com/camunda/connectors/pull/5659",
     "source": "github_prs",
@@ -1171,13 +1171,13 @@
     ]
   },
   {
-    "title": "[PR] Implement Quality Gates V2 for pipeline validation",
-    "date": "2025-11-10T15:05:21Z",
-    "summary": "## Quality Gates V2 Implementation - COMPLETE \u2705\n\n### Recent Updates\n\n**Improvements based on feedback** (commits: 88dab0c, 2a84158)\n\n1. **Forbidden terms in external file** (`config/forbidden_terms.txt`)\n   - Better maintainability - easy to add/remove terms without code changes\n   - One term per li",
+    "title": "[PR] Implement Quality Gates V2 for pipeline validation with LLM-assisted completeness detection",
+    "date": "2025-11-10T16:56:39Z",
+    "summary": "## Quality Gates V2 Implementation - COMPLETE \u2705\n\n### Recent Updates\n\n**Improved Ollama configuration and LLM-assisted gates** (commit: 214c929)\n\n1. **Increased OLLAMA_NUM_PREDICT from 150 to 500 tokens**\n   - Supports narrations of 15-60 seconds as specified\n   - At ~2.5 words/second: 60s = 150 word",
     "url": "https://github.com/nklowns/potential-octo-chainllm/pull/4",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 6",
       "pull request",
       "repo: potential-octo-chainllm"
     ]
@@ -1220,7 +1220,7 @@
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v1.119.0",
-    "date": "2025-11-10T16:27:22Z",
+    "date": "2025-11-10T17:11:47Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `1.109.1` -> `1.119.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for m",
     "url": "https://github.com/vyrtualsynthese/homelab/pull/833",
     "source": "github_prs",
@@ -1256,14 +1256,38 @@
   },
   {
     "title": "[PR] Implement critical upgrades, safety fixes, SEO automation, social syndication, newsletter generation, and directory submissions with complete frontend integration",
-    "date": "2025-11-10T15:47:39Z",
-    "summary": "- [x] All backend features complete\n- [x] Frontend integration complete\n- [x] Enhanced directory submissions (15 platforms)\n- [x] Fix Generate Content buttons - Safety fixes applied \u2705\n- [x] Code cleanup - Remove unused files\n\n**Cleanup** (commit pending):\n\nRemoved `src/core/comfyuiService.js` as it'",
+    "date": "2025-11-10T17:10:31Z",
+    "summary": "- [x] All backend features complete\n- [x] Frontend integration complete\n- [x] Enhanced directory submissions (15 platforms)\n- [x] **Debugging Generate Content button clicks** \n\n**Latest Update** (commit pending):\n\nAdded enhanced debugging to diagnose why Generate Content buttons highlight on hover b",
     "url": "https://github.com/jlucasmcrell/MerchantFeedLauncher/pull/2",
     "source": "github_prs",
     "highlights": [
-      "comments: 16",
+      "comments: 20",
       "pull request",
       "repo: MerchantFeedLauncher"
+    ]
+  },
+  {
+    "title": "[PR] Update n8nio/n8n Docker tag to v1.119.1",
+    "date": "2025-11-10T17:13:35Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `1.114.4` -> `1.119.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v1.119.0`](http",
+    "url": "https://github.com/albinmedoc/kubernetes/pull/153",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: kubernetes"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency @langchain/community to ^0.3.0 [SECURITY]",
+    "date": "2025-11-10T16:49:09Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | Age | Confidence |\n|---|---|---|---|\n| [@langchain/community](https://redirect.github.com/langchain-ai/langchainjs/tree/main/libs/langchain-community/) ([source](https://redirect.github.com/langchain-ai/langchainjs)) | [`^0.0.57` -> `^0.3",
+    "url": "https://github.com/yuiseki/doit/pull/174",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: doit"
     ]
   }
 ]
