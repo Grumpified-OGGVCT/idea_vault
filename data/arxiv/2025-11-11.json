@@ -2603,6 +2603,28 @@
     "research_score": 0.62
   },
   {
+    "arxiv_id": "2511.06356v1",
+    "title": "Reaction Prediction via Interaction Modeling of Symmetric Difference Shingle Sets",
+    "summary": "Chemical reaction prediction remains a fundamental challenge in organic chemistry, where existing machine learning models face two critical limitations: sensitivity to input permutations (molecule/atom orderings) and inadequate modeling of substructural interactions governing reactivity. These shortcomings lead to inconsistent predictions and poor generalization to real-world scenarios. To address these challenges, we propose ReaDISH, a novel reaction prediction model that learns permutation-invariant representations while incorporating interaction-aware features. It introduces two innovations: (1) symmetric difference shingle encoding, which computes molecular shingle differences to capture reaction-specific structural changes while eliminating order sensitivity; and (2) geometry-structure interaction attention, a mechanism that models intra- and inter-molecular interactions at the shingle level. Extensive experiments demonstrate that ReaDISH improves reaction prediction performance across diverse benchmarks. It shows enhanced robustness with an average improvement of 8.76% on R$^2$ under permutation perturbations.",
+    "authors": [
+      "Runhan Shi",
+      "Letian Chen",
+      "Gufeng Yu",
+      "Yang Yang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "q-bio.BM"
+    ],
+    "published": "2025-11-09",
+    "url": "https://arxiv.org/abs/2511.06356v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06356v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.62
+  },
+  {
     "arxiv_id": "2511.06391v1",
     "title": "HatePrototypes: Interpretable and Transferable Representations for Implicit and Explicit Hate Speech Detection",
     "summary": "Optimization of offensive content moderation models for different types of hateful messages is typically achieved through continued pre-training or fine-tuning on new hate speech benchmarks. However, existing benchmarks mainly address explicit hate toward protected groups and often overlook implicit or indirect hate, such as demeaning comparisons, calls for exclusion or violence, and subtle discriminatory language that still causes harm. While explicit hate can often be captured through surface features, implicit hate requires deeper, full-model semantic processing. In this work, we question the need for repeated fine-tuning and analyze the role of HatePrototypes, class-level vector representations derived from language models optimized for hate speech detection and safety moderation. We find that these prototypes, built from as few as 50 examples per class, enable cross-task transfer between explicit and implicit hate, with interchangeable prototypes across benchmarks. Moreover, we show that parameter-free early exiting with prototypes is effective for both hate types. We release the code, prototype resources, and evaluation scripts to support future research on efficient and transferable hate speech detection.",
@@ -2660,28 +2682,6 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06818v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06818v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.62
-  },
-  {
-    "arxiv_id": "2511.06356v1",
-    "title": "Reaction Prediction via Interaction Modeling of Symmetric Difference Shingle Sets",
-    "summary": "Chemical reaction prediction remains a fundamental challenge in organic chemistry, where existing machine learning models face two critical limitations: sensitivity to input permutations (molecule/atom orderings) and inadequate modeling of substructural interactions governing reactivity. These shortcomings lead to inconsistent predictions and poor generalization to real-world scenarios. To address these challenges, we propose ReaDISH, a novel reaction prediction model that learns permutation-invariant representations while incorporating interaction-aware features. It introduces two innovations: (1) symmetric difference shingle encoding, which computes molecular shingle differences to capture reaction-specific structural changes while eliminating order sensitivity; and (2) geometry-structure interaction attention, a mechanism that models intra- and inter-molecular interactions at the shingle level. Extensive experiments demonstrate that ReaDISH improves reaction prediction performance across diverse benchmarks. It shows enhanced robustness with an average improvement of 8.76% on R$^2$ under permutation perturbations.",
-    "authors": [
-      "Runhan Shi",
-      "Letian Chen",
-      "Gufeng Yu",
-      "Yang Yang"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI",
-      "q-bio.BM"
-    ],
-    "published": "2025-11-09",
-    "url": "https://arxiv.org/abs/2511.06356v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06356v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.62
@@ -2896,25 +2896,6 @@
     "research_score": 0.61
   },
   {
-    "arxiv_id": "2511.06411v1",
-    "title": "SofT-GRPO: Surpassing Discrete-Token LLM Reinforcement Learning via Gumbel-Reparameterized Soft-Thinking Policy Optimization",
-    "summary": "The soft-thinking paradigm for Large Language Model (LLM) reasoning can outperform the conventional discrete-token Chain-of-Thought (CoT) reasoning in some scenarios, underscoring its research and application value. However, while the discrete-token CoT reasoning pattern can be reinforced through policy optimization algorithms such as group relative policy optimization (GRPO), extending the soft-thinking pattern with Reinforcement Learning (RL) remains challenging. This difficulty stems from the complexities of injecting stochasticity into soft-thinking tokens and updating soft-thinking policies accordingly. As a result, previous attempts to combine soft-thinking with GRPO typically underperform their discrete-token GRPO counterparts. To fully unlock the potential of soft-thinking, this paper presents a novel policy optimization algorithm, SofT-GRPO, to reinforce LLMs under the soft-thinking reasoning pattern. SofT-GRPO injects the Gumbel noise into logits, employs the Gumbel-Softmax technique to avoid soft-thinking tokens outside the pre-trained embedding space, and leverages the reparameterization trick in policy gradient. We conduct experiments across base LLMs ranging from 1.5B to 7B parameters, and results demonstrate that SofT-GRPO enables soft-thinking LLMs to slightly outperform discrete-token GRPO on Pass@1 (+0.13% on average accuracy), while exhibiting a substantial uplift on Pass@32 (+2.19% on average accuracy). Codes and weights are available on https://github.com/zz1358m/SofT-GRPO-master",
-    "authors": [
-      "Zhi Zheng",
-      "Wee Sun Lee"
-    ],
-    "categories": [
-      "cs.AI",
-      "cs.LG"
-    ],
-    "published": "2025-11-09",
-    "url": "https://arxiv.org/abs/2511.06411v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06411v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.61
-  },
-  {
     "arxiv_id": "2511.06575v1",
     "title": "CoFineLLM: Conformal Finetuning of LLMs for Language-Instructed Robot Planning",
     "summary": "Large Language Models (LLMs) have recently emerged as planners for language-instructed agents, generating sequences of actions to accomplish natural language tasks. However, their reliability remains a challenge, especially in long-horizon tasks, since they often produce overconfident yet wrong outputs. Conformal Prediction (CP) has been leveraged to address this issue by wrapping LLM outputs into prediction sets that contain the correct action with a user-defined confidence. When the prediction set is a singleton, the planner executes that action; otherwise, it requests help from a user. This has led to LLM-based planners that can ensure plan correctness with a user-defined probability. However, as LLMs are trained in an uncertainty-agnostic manner, without awareness of prediction sets, they tend to produce unnecessarily large sets, particularly at higher confidence levels, resulting in frequent human interventions limiting autonomous deployment. To address this, we introduce CoFineLLM (Conformal Finetuning for LLMs), the first CP-aware finetuning framework for LLM-based planners that explicitly reduces prediction-set size and, in turn, the need for user interventions. We evaluate our approach on multiple language-instructed robot planning problems and show consistent improvements over uncertainty-aware and uncertainty-agnostic finetuning baselines in terms of prediction-set size, and help rates. Finally, we demonstrate robustness of our method to out-of-distribution scenarios in hardware experiments.",
@@ -2931,6 +2912,25 @@
     "published": "2025-11-09",
     "url": "https://arxiv.org/abs/2511.06575v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06575v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
+    "arxiv_id": "2511.06411v1",
+    "title": "SofT-GRPO: Surpassing Discrete-Token LLM Reinforcement Learning via Gumbel-Reparameterized Soft-Thinking Policy Optimization",
+    "summary": "The soft-thinking paradigm for Large Language Model (LLM) reasoning can outperform the conventional discrete-token Chain-of-Thought (CoT) reasoning in some scenarios, underscoring its research and application value. However, while the discrete-token CoT reasoning pattern can be reinforced through policy optimization algorithms such as group relative policy optimization (GRPO), extending the soft-thinking pattern with Reinforcement Learning (RL) remains challenging. This difficulty stems from the complexities of injecting stochasticity into soft-thinking tokens and updating soft-thinking policies accordingly. As a result, previous attempts to combine soft-thinking with GRPO typically underperform their discrete-token GRPO counterparts. To fully unlock the potential of soft-thinking, this paper presents a novel policy optimization algorithm, SofT-GRPO, to reinforce LLMs under the soft-thinking reasoning pattern. SofT-GRPO injects the Gumbel noise into logits, employs the Gumbel-Softmax technique to avoid soft-thinking tokens outside the pre-trained embedding space, and leverages the reparameterization trick in policy gradient. We conduct experiments across base LLMs ranging from 1.5B to 7B parameters, and results demonstrate that SofT-GRPO enables soft-thinking LLMs to slightly outperform discrete-token GRPO on Pass@1 (+0.13% on average accuracy), while exhibiting a substantial uplift on Pass@32 (+2.19% on average accuracy). Codes and weights are available on https://github.com/zz1358m/SofT-GRPO-master",
+    "authors": [
+      "Zhi Zheng",
+      "Wee Sun Lee"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2025-11-09",
+    "url": "https://arxiv.org/abs/2511.06411v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06411v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.61
@@ -3376,25 +3376,6 @@
     "research_score": 0.59
   },
   {
-    "arxiv_id": "2511.06374v1",
-    "title": "Adaptive Regularization for Large-Scale Sparse Feature Embedding Models",
-    "summary": "The one-epoch overfitting problem has drawn widespread attention, especially in CTR and CVR estimation models in search, advertising, and recommendation domains. These models which rely heavily on large-scale sparse categorical features, often suffer a significant decline in performance when trained for multiple epochs. Although recent studies have proposed heuristic solutions, they have not clearly identified the fundamental cause of this phenomenon. In this work, we provide a theoretical analysis that explains why overfitting occurs in models that use large-scale sparse categorical features. Based on this analysis, we propose an adaptive regularization method to address it. Our approach not only prevents the severe performance degradation observed during multi-epoch training, but also improves model performance within a single epoch. This method has already been deployed in online production systems.",
-    "authors": [
-      "Mang Li",
-      "Wei Lyu"
-    ],
-    "categories": [
-      "cs.LG",
-      "stat.ML"
-    ],
-    "published": "2025-11-09",
-    "url": "https://arxiv.org/abs/2511.06374v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06374v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.59
-  },
-  {
     "arxiv_id": "2511.07080v1",
     "title": "Wasm: A Pipeline for Constructing Structured Arabic Interleaved Multimodal Corpora",
     "summary": "The performance of large language models (LLMs) and large multimodal models (LMMs) depends heavily on the quality and scale of their pre-training datasets. Recent research shows that large multimodal models trained on natural documents where images and text are interleaved outperform those trained only on image-text pairs across a wide range of benchmarks, leveraging advanced pre-trained models to enforce semantic alignment, image-sequence consistency, and textual coherence. For Arabic, however, the lack of high-quality multimodal datasets that preserve document structure has limited progress. In this paper, we present our pipeline Wasm for processing the Common Crawl dataset to create a new Arabic multimodal dataset that uniquely provides markdown output. Unlike existing Arabic corpora that focus solely on text extraction, our approach preserves the structural integrity of web content while maintaining flexibility for both text-only and multimodal pre-training scenarios. We provide a comprehensive comparative analysis of our data processing pipeline against those used for major existing datasets, highlighting the convergences in filtering strategies and justifying our specific design choices. To support future research, we publicly release a representative dataset dump along with the multimodal processing pipeline for Arabic.",
@@ -3414,6 +3395,25 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07080v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07080v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.59
+  },
+  {
+    "arxiv_id": "2511.06374v1",
+    "title": "Adaptive Regularization for Large-Scale Sparse Feature Embedding Models",
+    "summary": "The one-epoch overfitting problem has drawn widespread attention, especially in CTR and CVR estimation models in search, advertising, and recommendation domains. These models which rely heavily on large-scale sparse categorical features, often suffer a significant decline in performance when trained for multiple epochs. Although recent studies have proposed heuristic solutions, they have not clearly identified the fundamental cause of this phenomenon. In this work, we provide a theoretical analysis that explains why overfitting occurs in models that use large-scale sparse categorical features. Based on this analysis, we propose an adaptive regularization method to address it. Our approach not only prevents the severe performance degradation observed during multi-epoch training, but also improves model performance within a single epoch. This method has already been deployed in online production systems.",
+    "authors": [
+      "Mang Li",
+      "Wei Lyu"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2025-11-09",
+    "url": "https://arxiv.org/abs/2511.06374v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06374v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.59
@@ -4314,6 +4314,34 @@
     "research_score": 0.53
   },
   {
+    "arxiv_id": "2511.07384v1",
+    "title": "Teaching Pretrained Language Models to Think Deeper with Retrofitted Recurrence",
+    "summary": "Recent advances in depth-recurrent language models show that recurrence can decouple train-time compute and parameter count from test-time compute. In this work, we study how to convert existing pretrained non-recurrent language models into depth-recurrent models. We find that using a curriculum of recurrences to increase the effective depth of the model over the course of training preserves performance while reducing total computational cost. In our experiments, on mathematics, we observe that converting pretrained models to recurrent ones results in better performance at a given compute budget than simply post-training the original non-recurrent language model.",
+    "authors": [
+      "Sean McLeish",
+      "Ang Li",
+      "John Kirchenbauer",
+      "Dayal Singh Kalra",
+      "Brian R. Bartoldson",
+      "Bhavya Kailkhura",
+      "Avi Schwarzschild",
+      "Jonas Geiping",
+      "Tom Goldstein",
+      "Micah Goldblum"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07384v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07384v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.52
+  },
+  {
     "arxiv_id": "2511.07413v1",
     "title": "DigiData: Training and Evaluating General-Purpose Mobile Control Agents",
     "summary": "AI agents capable of controlling user interfaces have the potential to transform human interaction with digital devices. To accelerate this transformation, two fundamental building blocks are essential: high-quality datasets that enable agents to achieve complex and human-relevant goals, and robust evaluation methods that allow researchers and practitioners to rapidly enhance agent performance. In this paper, we introduce DigiData, a large-scale, high-quality, diverse, multi-modal dataset designed for training mobile control agents. Unlike existing datasets, which derive goals from unstructured interactions, DigiData is meticulously constructed through comprehensive exploration of app features, resulting in greater diversity and higher goal complexity. Additionally, we present DigiData-Bench, a benchmark for evaluating mobile control agents on real-world complex tasks. We demonstrate that the commonly used step-accuracy metric falls short in reliably assessing mobile control agents and, to address this, we propose dynamic evaluation protocols and AI-powered evaluations as rigorous alternatives for agent assessment. Our contributions aim to significantly advance the development of mobile control agents, paving the way for more intuitive and effective human-device interactions.",
@@ -4349,34 +4377,6 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07413v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07413v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.52
-  },
-  {
-    "arxiv_id": "2511.07384v1",
-    "title": "Teaching Pretrained Language Models to Think Deeper with Retrofitted Recurrence",
-    "summary": "Recent advances in depth-recurrent language models show that recurrence can decouple train-time compute and parameter count from test-time compute. In this work, we study how to convert existing pretrained non-recurrent language models into depth-recurrent models. We find that using a curriculum of recurrences to increase the effective depth of the model over the course of training preserves performance while reducing total computational cost. In our experiments, on mathematics, we observe that converting pretrained models to recurrent ones results in better performance at a given compute budget than simply post-training the original non-recurrent language model.",
-    "authors": [
-      "Sean McLeish",
-      "Ang Li",
-      "John Kirchenbauer",
-      "Dayal Singh Kalra",
-      "Brian R. Bartoldson",
-      "Bhavya Kailkhura",
-      "Avi Schwarzschild",
-      "Jonas Geiping",
-      "Tom Goldstein",
-      "Micah Goldblum"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI",
-      "cs.LG"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07384v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07384v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.52
