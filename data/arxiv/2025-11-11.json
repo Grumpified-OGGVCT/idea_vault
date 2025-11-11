@@ -964,6 +964,26 @@
     "research_score": 0.7
   },
   {
+    "arxiv_id": "2511.06250v1",
+    "title": "Test-Time Iterative Error Correction for Efficient Diffusion Models",
+    "summary": "With the growing demand for high-quality image generation on resource-constrained devices, efficient diffusion models have received increasing attention. However, such models suffer from approximation errors introduced by efficiency techniques, which significantly degrade generation quality. Once deployed, these errors are difficult to correct, as modifying the model is typically infeasible in deployment environments. Through an analysis of error propagation across diffusion timesteps, we reveal that these approximation errors can accumulate exponentially, severely impairing output quality. Motivated by this insight, we propose Iterative Error Correction (IEC), a novel test-time method that mitigates inference-time errors by iteratively refining the model's output. IEC is theoretically proven to reduce error propagation from exponential to linear growth, without requiring any retraining or architectural changes. IEC can seamlessly integrate into the inference process of existing diffusion models, enabling a flexible trade-off between performance and efficiency. Extensive experiments show that IEC consistently improves generation quality across various datasets, efficiency techniques, and model architectures, establishing it as a practical and generalizable solution for test-time enhancement of efficient diffusion models.",
+    "authors": [
+      "Yunshan Zhong",
+      "Yanwei Qi",
+      "Yuxin Zhang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "published": "2025-11-09",
+    "url": "https://arxiv.org/abs/2511.06250v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06250v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.7
+  },
+  {
     "arxiv_id": "2511.07293v1",
     "title": "Verifying rich robustness properties for neural networks",
     "summary": "Robustness is a important problem in AI alignment and safety, with models such as neural networks being increasingly used in safety-critical systems. In the last decade, a large body of work has emerged on local robustness, i.e., checking if the decision of a neural network remains unchanged when the input is slightly perturbed. However, many of these approaches require specialized encoding and often ignore the confidence of a neural network on its output. In this paper, our goal is to build a generalized framework to specify and verify variants of robustness in neural network verification. We propose a specification framework using a simple grammar, which is flexible enough to capture most existing variants. This allows us to introduce new variants of robustness that take into account the confidence of the neural network in its outputs. Next, we develop a novel and powerful unified technique to verify all such variants in a homogeneous way, viz., by adding a few additional layers to the neural network. This enables us to use any state-of-the-art neural network verification tool, without having to tinker with the encoding within, while incurring an approximation error that we show is bounded. We perform an extensive experimental evaluation over a large suite of 8870 benchmarks having 138M parameters in a largest network, and show that we are able to capture a wide set of robustness variants and outperform direct encoding approaches by a significant margin.",
@@ -980,26 +1000,6 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07293v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07293v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.7
-  },
-  {
-    "arxiv_id": "2511.06250v1",
-    "title": "Test-Time Iterative Error Correction for Efficient Diffusion Models",
-    "summary": "With the growing demand for high-quality image generation on resource-constrained devices, efficient diffusion models have received increasing attention. However, such models suffer from approximation errors introduced by efficiency techniques, which significantly degrade generation quality. Once deployed, these errors are difficult to correct, as modifying the model is typically infeasible in deployment environments. Through an analysis of error propagation across diffusion timesteps, we reveal that these approximation errors can accumulate exponentially, severely impairing output quality. Motivated by this insight, we propose Iterative Error Correction (IEC), a novel test-time method that mitigates inference-time errors by iteratively refining the model's output. IEC is theoretically proven to reduce error propagation from exponential to linear growth, without requiring any retraining or architectural changes. IEC can seamlessly integrate into the inference process of existing diffusion models, enabling a flexible trade-off between performance and efficiency. Extensive experiments show that IEC consistently improves generation quality across various datasets, efficiency techniques, and model architectures, establishing it as a practical and generalizable solution for test-time enhancement of efficient diffusion models.",
-    "authors": [
-      "Yunshan Zhong",
-      "Yanwei Qi",
-      "Yuxin Zhang"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.CV"
-    ],
-    "published": "2025-11-09",
-    "url": "https://arxiv.org/abs/2511.06250v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06250v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.7
@@ -1806,23 +1806,29 @@
     "research_score": 0.65
   },
   {
-    "arxiv_id": "2511.07032v1",
-    "title": "Fair Bayesian Data Selection via Generalized Discrepancy Measures",
-    "summary": "Fairness concerns are increasingly critical as machine learning models are deployed in high-stakes applications. While existing fairness-aware methods typically intervene at the model level, they often suffer from high computational costs, limited scalability, and poor generalization. To address these challenges, we propose a Bayesian data selection framework that ensures fairness by aligning group-specific posterior distributions of model parameters and sample weights with a shared central distribution. Our framework supports flexible alignment via various distributional discrepancy measures, including Wasserstein distance, maximum mean discrepancy, and $f$-divergence, allowing geometry-aware control without imposing explicit fairness constraints. This data-centric approach mitigates group-specific biases in training data and improves fairness in downstream tasks, with theoretical guarantees. Experiments on benchmark datasets show that our method consistently outperforms existing data selection and model-based fairness methods in both fairness and accuracy.",
+    "arxiv_id": "2511.06252v1",
+    "title": "MrCoM: A Meta-Regularized World-Model Generalizing Across Multi-Scenarios",
+    "summary": "Model-based reinforcement learning (MBRL) is a crucial approach to enhance the generalization capabilities and improve the sample efficiency of RL algorithms. However, current MBRL methods focus primarily on building world models for single tasks and rarely address generalization across different scenarios. Building on the insight that dynamics within the same simulation engine share inherent properties, we attempt to construct a unified world model capable of generalizing across different scenarios, named Meta-Regularized Contextual World-Model (MrCoM). This method first decomposes the latent state space into various components based on the dynamic characteristics, thereby enhancing the accuracy of world-model prediction. Further, MrCoM adopts meta-state regularization to extract unified representation of scenario-relevant information, and meta-value regularization to align world-model optimization with policy learning across diverse scenario objectives. We theoretically analyze the generalization error upper bound of MrCoM in multi-scenario settings. We systematically evaluate our algorithm's generalization ability across diverse scenarios, demonstrating significantly better performance than previous state-of-the-art methods.",
     "authors": [
-      "Yixuan Zhang",
-      "Jiabin Luo",
-      "Zhenggang Wang",
-      "Feng Zhou",
-      "Quyu Kong"
+      "Xuantang Xiong",
+      "Ni Mu",
+      "Runpeng Xie",
+      "Senhao Yang",
+      "Yaqing Wang",
+      "Lexiang Wang",
+      "Yao Luan",
+      "Siyuan Li",
+      "Shuang Xu",
+      "Yiqin Yang",
+      "Bo Xu"
     ],
     "categories": [
       "cs.LG",
-      "stat.ML"
+      "cs.AI"
     ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07032v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07032v1.pdf",
+    "published": "2025-11-09",
+    "url": "https://arxiv.org/abs/2511.06252v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06252v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.65
@@ -1851,29 +1857,23 @@
     "research_score": 0.65
   },
   {
-    "arxiv_id": "2511.06252v1",
-    "title": "MrCoM: A Meta-Regularized World-Model Generalizing Across Multi-Scenarios",
-    "summary": "Model-based reinforcement learning (MBRL) is a crucial approach to enhance the generalization capabilities and improve the sample efficiency of RL algorithms. However, current MBRL methods focus primarily on building world models for single tasks and rarely address generalization across different scenarios. Building on the insight that dynamics within the same simulation engine share inherent properties, we attempt to construct a unified world model capable of generalizing across different scenarios, named Meta-Regularized Contextual World-Model (MrCoM). This method first decomposes the latent state space into various components based on the dynamic characteristics, thereby enhancing the accuracy of world-model prediction. Further, MrCoM adopts meta-state regularization to extract unified representation of scenario-relevant information, and meta-value regularization to align world-model optimization with policy learning across diverse scenario objectives. We theoretically analyze the generalization error upper bound of MrCoM in multi-scenario settings. We systematically evaluate our algorithm's generalization ability across diverse scenarios, demonstrating significantly better performance than previous state-of-the-art methods.",
+    "arxiv_id": "2511.07032v1",
+    "title": "Fair Bayesian Data Selection via Generalized Discrepancy Measures",
+    "summary": "Fairness concerns are increasingly critical as machine learning models are deployed in high-stakes applications. While existing fairness-aware methods typically intervene at the model level, they often suffer from high computational costs, limited scalability, and poor generalization. To address these challenges, we propose a Bayesian data selection framework that ensures fairness by aligning group-specific posterior distributions of model parameters and sample weights with a shared central distribution. Our framework supports flexible alignment via various distributional discrepancy measures, including Wasserstein distance, maximum mean discrepancy, and $f$-divergence, allowing geometry-aware control without imposing explicit fairness constraints. This data-centric approach mitigates group-specific biases in training data and improves fairness in downstream tasks, with theoretical guarantees. Experiments on benchmark datasets show that our method consistently outperforms existing data selection and model-based fairness methods in both fairness and accuracy.",
     "authors": [
-      "Xuantang Xiong",
-      "Ni Mu",
-      "Runpeng Xie",
-      "Senhao Yang",
-      "Yaqing Wang",
-      "Lexiang Wang",
-      "Yao Luan",
-      "Siyuan Li",
-      "Shuang Xu",
-      "Yiqin Yang",
-      "Bo Xu"
+      "Yixuan Zhang",
+      "Jiabin Luo",
+      "Zhenggang Wang",
+      "Feng Zhou",
+      "Quyu Kong"
     ],
     "categories": [
       "cs.LG",
-      "cs.AI"
+      "stat.ML"
     ],
-    "published": "2025-11-09",
-    "url": "https://arxiv.org/abs/2511.06252v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06252v1.pdf",
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07032v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07032v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.65
@@ -3138,27 +3138,6 @@
     "research_score": 0.6
   },
   {
-    "arxiv_id": "2511.07165v1",
-    "title": "Fuzzy Label: From Concept to Its Application in Label Learning",
-    "summary": "Label learning is a fundamental task in machine learning that aims to construct intelligent models using labeled data, encompassing traditional single-label and multi-label classification models. Traditional methods typically rely on logical labels, such as binary indicators (e.g., \"yes/no\") that specify whether an instance belongs to a given category. However, in practical applications, label annotations often involve significant uncertainty due to factors such as data noise, inherent ambiguity in the observed entities, and the subjectivity of human annotators. Therefore, representing labels using simplistic binary logic can obscure valuable information and limit the expressiveness of label learning models. To overcome this limitation, this paper introduces the concept of fuzzy labels, grounded in fuzzy set theory, to better capture and represent label uncertainty. We further propose an efficient fuzzy labeling method that mines and generates fuzzy labels from the original data, thereby enriching the label space with more informative and nuanced representations. Based on this foundation, we present fuzzy-label-enhanced algorithms for both single-label and multi-label learning, using the classical K-Nearest Neighbors (KNN) and multi-label KNN algorithms as illustrative examples. Experimental results indicate that fuzzy labels can more effectively characterize the real-world labeling information and significantly enhance the performance of label learning models.",
-    "authors": [
-      "Chenxi Luoa",
-      "Zhuangzhuang Zhaoa",
-      "Zhaohong Denga",
-      "Te Zhangb"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07165v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07165v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.6
-  },
-  {
     "arxiv_id": "2511.07398v1",
     "title": "Solving bilevel optimization via sequential minimax optimization",
     "summary": "In this paper we propose a sequential minimax optimization (SMO) method for solving a class of constrained bilevel optimization problems in which the lower-level part is a possibly nonsmooth convex optimization problem, while the upper-level part is a possibly nonconvex optimization problem. Specifically, SMO applies a first-order method to solve a sequence of minimax subproblems, which are obtained by employing a hybrid of modified augmented Lagrangian and penalty schemes on the bilevel optimization problems. Under suitable assumptions, we establish an operation complexity of $O(\\varepsilon^{-7}\\log\\varepsilon^{-1})$ and $O(\\varepsilon^{-6}\\log\\varepsilon^{-1})$, measured in terms of fundamental operations, for SMO in finding an $\\varepsilon$-KKT solution of the bilevel optimization problems with merely convex and strongly convex lower-level objective functions, respectively. The latter result improves the previous best-known operation complexity by a factor of $\\varepsilon^{-1}$. Preliminary numerical results demonstrate significantly superior computational performance compared to the recently developed first-order penalty method.",
@@ -3175,6 +3154,27 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07398v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07398v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.6
+  },
+  {
+    "arxiv_id": "2511.07165v1",
+    "title": "Fuzzy Label: From Concept to Its Application in Label Learning",
+    "summary": "Label learning is a fundamental task in machine learning that aims to construct intelligent models using labeled data, encompassing traditional single-label and multi-label classification models. Traditional methods typically rely on logical labels, such as binary indicators (e.g., \"yes/no\") that specify whether an instance belongs to a given category. However, in practical applications, label annotations often involve significant uncertainty due to factors such as data noise, inherent ambiguity in the observed entities, and the subjectivity of human annotators. Therefore, representing labels using simplistic binary logic can obscure valuable information and limit the expressiveness of label learning models. To overcome this limitation, this paper introduces the concept of fuzzy labels, grounded in fuzzy set theory, to better capture and represent label uncertainty. We further propose an efficient fuzzy labeling method that mines and generates fuzzy labels from the original data, thereby enriching the label space with more informative and nuanced representations. Based on this foundation, we present fuzzy-label-enhanced algorithms for both single-label and multi-label learning, using the classical K-Nearest Neighbors (KNN) and multi-label KNN algorithms as illustrative examples. Experimental results indicate that fuzzy labels can more effectively characterize the real-world labeling information and significantly enhance the performance of label learning models.",
+    "authors": [
+      "Chenxi Luoa",
+      "Zhuangzhuang Zhaoa",
+      "Zhaohong Denga",
+      "Te Zhangb"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07165v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07165v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.6
@@ -3250,25 +3250,6 @@
     "research_score": 0.59
   },
   {
-    "arxiv_id": "2511.06886v1",
-    "title": "Inclusion of Role into Named Entity Recognition and Ranking",
-    "summary": "Most of the Natural Language Processing sys- tems are involved in entity-based processing for several tasks like Information Extraction, Question-Answering, Text-Summarization and so on. A new challenge comes when entities play roles according to their act or attributes in certain context. Entity Role Detection is the task of assigning such roles to the entities. Usu- ally real-world entities are of types: person, lo- cation and organization etc. Roles could be con- sidered as domain-dependent subtypes of these types. In the cases, where retrieving a subset of entities based on their roles is needed, poses the problem of defining the role and entities having those roles. This paper presents the study of study of solving Entity Role Detection prob- lem by modeling it as Named Entity Recogni- tion (NER) and Entity Retrieval/Ranking task. In NER, these roles could be considered as mutually exclusive classes and standard NER methods like sequence tagging could be used. For Entity Retrieval, Roles could be formulated as Query and entities as Collection on which the query needs to be executed. The aspect of Entity Retrieval task, which is different than document retrieval task is that the entities and roles against which they need to be retrieved are indirectly described. We have formulated au- tomated ways of learning representative words and phrases and building representations of roles and entities using them. We have also explored different contexts like sentence and document. Since the roles depend upon con- text, so it is not always possible to have large domain-specific dataset or knowledge bases for learning purposes, so we have tried to exploit the information from small dataset in domain- agnostic way.",
-    "authors": [
-      "Neelesh Kumar Shukla",
-      "Sanasam Ranbir Singh"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.LG"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06886v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06886v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.59
-  },
-  {
     "arxiv_id": "2511.06781v1",
     "title": "On the Mechanisms of Collaborative Learning in VAE Recommenders",
     "summary": "Variational Autoencoders (VAEs) are a powerful alternative to matrix factorization for recommendation. A common technique in VAE-based collaborative filtering (CF) consists in applying binary input masking to user interaction vectors, which improves performance but remains underexplored theoretically. In this work, we analyze how collaboration arises in VAE-based CF and show it is governed by latent proximity: we derive a latent sharing radius that informs when an SGD update on one user strictly reduces the loss on another user, with influence decaying as the latent Wasserstein distance increases. We further study the induced geometry: with clean inputs, VAE-based CF primarily exploits \\emph{local} collaboration between input-similar users and under-utilizes global collaboration between far-but-related users. We compare two mechanisms that encourage \\emph{global} mixing and characterize their trade-offs: (1) $β$-KL regularization directly tightens the information bottleneck, promoting posterior overlap but risking representational collapse if too large; (2) input masking induces stochastic geometric contractions and expansions, which can bring distant users onto the same latent neighborhood but also introduce neighborhood drift. To preserve user identity while enabling global consistency, we propose an anchor regularizer that aligns user posteriors with item embeddings, stabilizing users under masking and facilitating signal sharing across related items. Our analyses are validated on the Netflix, MovieLens-20M, and Million Song datasets. We also successfully deployed our proposed algorithm on an Amazon streaming platform following a successful online experiment.",
@@ -3287,6 +3268,25 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06781v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06781v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.59
+  },
+  {
+    "arxiv_id": "2511.06886v1",
+    "title": "Inclusion of Role into Named Entity Recognition and Ranking",
+    "summary": "Most of the Natural Language Processing systems are involved in entity-based processing for several tasks like Information Extraction, Question-Answering, Text-Summarization and so on. A new challenge comes when entities play roles according to their act or attributes in certain context. Entity Role Detection is the task of assigning such roles to the entities. Usually real-world entities are of types: person, location and organization etc. Roles could be considered as domain-dependent subtypes of these types. In the cases, where retrieving a subset of entities based on their roles is needed, poses the problem of defining the role and entities having those roles. This paper presents the study of study of solving Entity Role Detection problem by modeling it as Named Entity Recognition (NER) and Entity Retrieval/Ranking task. In NER, these roles could be considered as mutually exclusive classes and standard NER methods like sequence tagging could be used. For Entity Retrieval, Roles could be formulated as Query and entities as Collection on which the query needs to be executed. The aspect of Entity Retrieval task, which is different than document retrieval task is that the entities and roles against which they need to be retrieved are indirectly described. We have formulated automated ways of learning representative words and phrases and building representations of roles and entities using them. We have also explored different contexts like sentence and document. Since the roles depend upon context, so it is not always possible to have large domain-specific dataset or knowledge bases for learning purposes, so we have tried to exploit the information from small dataset in domain-agnostic way.",
+    "authors": [
+      "Neelesh Kumar Shukla",
+      "Sanasam Ranbir Singh"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.06886v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06886v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.59
@@ -3397,7 +3397,7 @@
   {
     "arxiv_id": "2511.07080v1",
     "title": "Wasm: A Pipeline for Constructing Structured Arabic Interleaved Multimodal Corpora",
-    "summary": "The performance of large language models (LLMs) and large multimodal models (LMMs) depends heavily on the quality and scale of their pre-training datasets. Recent research shows that large multimodal models trained on natural documents where images and text are interleaved outperform those trained only on image-text pairs across a wide range of benchmarks, leveraging advanced pre- trained models to enforce semantic alignment, image-sequence consistency, and textual coherence. For Arabic, however, the lack of high-quality multimodal datasets that preserve document structure has limited progress. In this paper, we present our pipeline Wasm for processing the Common Crawl dataset to create a new Arabic multimodal dataset that uniquely provides markdown output. Unlike existing Arabic corpora that focus solely on text extraction, our approach preserves the structural integrity of web content while maintaining flexibility for both text-only and multimodal pre-training scenarios. We provide a comprehensive comparative analysis of our data processing pipeline against those used for major existing datasets, highlighting the convergences in filtering strategies and justifying our specific design choices. To support future research, we publicly release a representative dataset dump along with the multimodal processing pipeline for Arabic.",
+    "summary": "The performance of large language models (LLMs) and large multimodal models (LMMs) depends heavily on the quality and scale of their pre-training datasets. Recent research shows that large multimodal models trained on natural documents where images and text are interleaved outperform those trained only on image-text pairs across a wide range of benchmarks, leveraging advanced pre-trained models to enforce semantic alignment, image-sequence consistency, and textual coherence. For Arabic, however, the lack of high-quality multimodal datasets that preserve document structure has limited progress. In this paper, we present our pipeline Wasm for processing the Common Crawl dataset to create a new Arabic multimodal dataset that uniquely provides markdown output. Unlike existing Arabic corpora that focus solely on text extraction, our approach preserves the structural integrity of web content while maintaining flexibility for both text-only and multimodal pre-training scenarios. We provide a comprehensive comparative analysis of our data processing pipeline against those used for major existing datasets, highlighting the convergences in filtering strategies and justifying our specific design choices. To support future research, we publicly release a representative dataset dump along with the multimodal processing pipeline for Arabic.",
     "authors": [
       "Khalil Hennara",
       "Ahmad Bastati",
@@ -3843,45 +3843,6 @@
     "research_score": 0.56
   },
   {
-    "arxiv_id": "2511.07011v1",
-    "title": "Multilingual Lexical Feature Analysis of Spoken Language for Predicting Major Depression Symptom Severity",
-    "summary": "Background: Captured between clinical appointments using mobile devices, spoken language has potential for objective, more regular assessment of symptom severity and earlier detection of relapse in major depressive disorder. However, research to date has largely been in non-clinical cross-sectional samples of written language using complex machine learning (ML) approaches with limited interpretability.   Methods: We describe an initial exploratory analysis of longitudinal speech data and PHQ-8 assessments from 5,836 recordings of 586 participants in the UK, Netherlands, and Spain, collected in the RADAR-MDD study. We sought to identify interpretable lexical features associated with MDD symptom severity with linear mixed-effects modelling. Interpretable features and high-dimensional vector embeddings were also used to test the prediction performance of four regressor ML models.   Results: In English data, MDD symptom severity was associated with 7 features including lexical diversity measures and absolutist language. In Dutch, associations were observed with words per sentence and positive word frequency; no associations were observed in recordings collected in Spain. The predictive power of lexical features and vector embeddings was near chance level across all languages.   Limitations: Smaller samples in non-English speech and methodological choices, such as the elicitation prompt, may have also limited the effect sizes observable. A lack of NLP tools in languages other than English restricted our feature choice.   Conclusion: To understand the value of lexical markers in clinical research and practice, further research is needed in larger samples across several languages using improved protocols, and ML models that account for within- and between-individual variations in language.",
-    "authors": [
-      "Anastasiia Tokareva",
-      "Judith Dineley",
-      "Zoe Firth",
-      "Pauline Conde",
-      "Faith Matcham",
-      "Sara Siddi",
-      "Femke Lamers",
-      "Ewan Carr",
-      "Carolin Oetzmann",
-      "Daniel Leightley",
-      "Yuezhou Zhang",
-      "Amos A. Folarin",
-      "Josep Maria Haro",
-      "Brenda W. J. H. Penninx",
-      "Raquel Bailon",
-      "Srinivasan Vairavan",
-      "Til Wykes",
-      "Richard J. B. Dobson",
-      "Vaibhav A. Narayan",
-      "Matthew Hotopf",
-      "Nicholas Cummins",
-      "The RADAR-CNS Consortium"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.LG"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07011v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07011v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.56
-  },
-  {
     "arxiv_id": "2511.06700v1",
     "title": "Place Matters: Comparing LLM Hallucination Rates for Place-Based Legal Queries",
     "summary": "How do we make a meaningful comparison of a large language model's knowledge of the law in one place compared to another? Quantifying these differences is critical to understanding if the quality of the legal information obtained by users of LLM-based chatbots varies depending on their location. However, obtaining meaningful comparative metrics is challenging because legal institutions in different places are not themselves easily comparable. In this work we propose a methodology to obtain place-to-place metrics based on the comparative law concept of functionalism. We construct a dataset of factual scenarios drawn from Reddit posts by users seeking legal advice for family, housing, employment, crime and traffic issues. We use these to elicit a summary of a law from the LLM relevant to each scenario in Los Angeles, London and Sydney. These summaries, typically of a legislative provision, are manually evaluated for hallucinations. We show that the rate of hallucination of legal information by leading closed-source LLMs is significantly associated with place. This suggests that the quality of legal solutions provided by these models is not evenly distributed across geography. Additionally, we show a strong negative correlation between hallucination rate and the frequency of the majority response when the LLM is sampled multiple times, suggesting a measure of uncertainty of model predictions of legal facts.",
@@ -3920,6 +3881,45 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06698v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06698v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.56
+  },
+  {
+    "arxiv_id": "2511.07011v1",
+    "title": "Multilingual Lexical Feature Analysis of Spoken Language for Predicting Major Depression Symptom Severity",
+    "summary": "Background: Captured between clinical appointments using mobile devices, spoken language has potential for objective, more regular assessment of symptom severity and earlier detection of relapse in major depressive disorder. However, research to date has largely been in non-clinical cross-sectional samples of written language using complex machine learning (ML) approaches with limited interpretability.   Methods: We describe an initial exploratory analysis of longitudinal speech data and PHQ-8 assessments from 5,836 recordings of 586 participants in the UK, Netherlands, and Spain, collected in the RADAR-MDD study. We sought to identify interpretable lexical features associated with MDD symptom severity with linear mixed-effects modelling. Interpretable features and high-dimensional vector embeddings were also used to test the prediction performance of four regressor ML models.   Results: In English data, MDD symptom severity was associated with 7 features including lexical diversity measures and absolutist language. In Dutch, associations were observed with words per sentence and positive word frequency; no associations were observed in recordings collected in Spain. The predictive power of lexical features and vector embeddings was near chance level across all languages.   Limitations: Smaller samples in non-English speech and methodological choices, such as the elicitation prompt, may have also limited the effect sizes observable. A lack of NLP tools in languages other than English restricted our feature choice.   Conclusion: To understand the value of lexical markers in clinical research and practice, further research is needed in larger samples across several languages using improved protocols, and ML models that account for within- and between-individual variations in language.",
+    "authors": [
+      "Anastasiia Tokareva",
+      "Judith Dineley",
+      "Zoe Firth",
+      "Pauline Conde",
+      "Faith Matcham",
+      "Sara Siddi",
+      "Femke Lamers",
+      "Ewan Carr",
+      "Carolin Oetzmann",
+      "Daniel Leightley",
+      "Yuezhou Zhang",
+      "Amos A. Folarin",
+      "Josep Maria Haro",
+      "Brenda W. J. H. Penninx",
+      "Raquel Bailon",
+      "Srinivasan Vairavan",
+      "Til Wykes",
+      "Richard J. B. Dobson",
+      "Vaibhav A. Narayan",
+      "Matthew Hotopf",
+      "Nicholas Cummins",
+      "The RADAR-CNS Consortium"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07011v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07011v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.56
