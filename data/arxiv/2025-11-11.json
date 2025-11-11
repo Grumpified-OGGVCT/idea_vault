@@ -671,27 +671,6 @@
     "research_score": 0.71
   },
   {
-    "arxiv_id": "2511.07377v1",
-    "title": "Real-Time LiDAR Super-Resolution via Frequency-Aware Multi-Scale Fusion",
-    "summary": "LiDAR super-resolution addresses the challenge of achieving high-quality 3D perception from cost-effective, low-resolution sensors. While recent transformer-based approaches like TULIP show promise, they remain limited to spatial-domain processing with restricted receptive fields. We introduce FLASH (Frequency-aware LiDAR Adaptive Super-resolution with Hierarchical fusion), a novel framework that overcomes these limitations through dual-domain processing. FLASH integrates two key innovations: (i) Frequency-Aware Window Attention that combines local spatial attention with global frequency-domain analysis via FFT, capturing both fine-grained geometry and periodic scanning patterns at log-linear complexity. (ii) Adaptive Multi-Scale Fusion that replaces conventional skip connections with learned position-specific feature aggregation, enhanced by CBAM attention for dynamic feature selection. Extensive experiments on KITTI demonstrate that FLASH achieves state-of-the-art performance across all evaluation metrics, surpassing even uncertainty-enhanced baselines that require multiple forward passes. Notably, FLASH outperforms TULIP with Monte Carlo Dropout while maintaining single-pass efficiency, which enables real-time deployment. The consistent superiority across all distance ranges validates that our dual-domain approach effectively handles uncertainty through architectural design rather than computationally expensive stochastic inference, making it practical for autonomous systems.",
-    "authors": [
-      "June Moh Goo",
-      "Zichao Zeng",
-      "Jan Boehm"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI",
-      "cs.RO"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07377v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07377v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.71
-  },
-  {
     "arxiv_id": "2511.06893v1",
     "title": "DeepBooTS: Dual-Stream Residual Boosting for Drift-Resilient Time-Series Forecasting",
     "summary": "Time-Series (TS) exhibits pronounced non-stationarity. Consequently, most forecasting methods display compromised robustness to concept drift, despite the prevalent application of instance normalization. We tackle this challenge by first analysing concept drift through a bias-variance lens and proving that weighted ensemble reduces variance without increasing bias. These insights motivate DeepBooTS, a novel end-to-end dual-stream residual-decreasing boosting method that progressively reconstructs the intrinsic signal. In our design, each block of a deep model becomes an ensemble of learners with an auxiliary output branch forming a highway to the final prediction. The block-wise outputs correct the residuals of previous blocks, leading to a learning-driven decomposition of both inputs and targets. This method enhances versatility and interpretability while substantially improving robustness to concept drift. Extensive experiments, including those on large-scale datasets, show that the proposed method outperforms existing methods by a large margin, yielding an average performance improvement of 15.8% across various datasets, establishing a new benchmark for TS forecasting.",
@@ -733,6 +712,27 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06757v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06757v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.71
+  },
+  {
+    "arxiv_id": "2511.07377v1",
+    "title": "Real-Time LiDAR Super-Resolution via Frequency-Aware Multi-Scale Fusion",
+    "summary": "LiDAR super-resolution addresses the challenge of achieving high-quality 3D perception from cost-effective, low-resolution sensors. While recent transformer-based approaches like TULIP show promise, they remain limited to spatial-domain processing with restricted receptive fields. We introduce FLASH (Frequency-aware LiDAR Adaptive Super-resolution with Hierarchical fusion), a novel framework that overcomes these limitations through dual-domain processing. FLASH integrates two key innovations: (i) Frequency-Aware Window Attention that combines local spatial attention with global frequency-domain analysis via FFT, capturing both fine-grained geometry and periodic scanning patterns at log-linear complexity. (ii) Adaptive Multi-Scale Fusion that replaces conventional skip connections with learned position-specific feature aggregation, enhanced by CBAM attention for dynamic feature selection. Extensive experiments on KITTI demonstrate that FLASH achieves state-of-the-art performance across all evaluation metrics, surpassing even uncertainty-enhanced baselines that require multiple forward passes. Notably, FLASH outperforms TULIP with Monte Carlo Dropout while maintaining single-pass efficiency, which enables real-time deployment. The consistent superiority across all distance ranges validates that our dual-domain approach effectively handles uncertainty through architectural design rather than computationally expensive stochastic inference, making it practical for autonomous systems.",
+    "authors": [
+      "June Moh Goo",
+      "Zichao Zeng",
+      "Jan Boehm"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.RO"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07377v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07377v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.71
@@ -964,26 +964,6 @@
     "research_score": 0.7
   },
   {
-    "arxiv_id": "2511.06250v1",
-    "title": "Test-Time Iterative Error Correction for Efficient Diffusion Models",
-    "summary": "With the growing demand for high-quality image generation on resource-constrained devices, efficient diffusion models have received increasing attention. However, such models suffer from approximation errors introduced by efficiency techniques, which significantly degrade generation quality. Once deployed, these errors are difficult to correct, as modifying the model is typically infeasible in deployment environments. Through an analysis of error propagation across diffusion timesteps, we reveal that these approximation errors can accumulate exponentially, severely impairing output quality. Motivated by this insight, we propose Iterative Error Correction (IEC), a novel test-time method that mitigates inference-time errors by iteratively refining the model's output. IEC is theoretically proven to reduce error propagation from exponential to linear growth, without requiring any retraining or architectural changes. IEC can seamlessly integrate into the inference process of existing diffusion models, enabling a flexible trade-off between performance and efficiency. Extensive experiments show that IEC consistently improves generation quality across various datasets, efficiency techniques, and model architectures, establishing it as a practical and generalizable solution for test-time enhancement of efficient diffusion models.",
-    "authors": [
-      "Yunshan Zhong",
-      "Yanwei Qi",
-      "Yuxin Zhang"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.CV"
-    ],
-    "published": "2025-11-09",
-    "url": "https://arxiv.org/abs/2511.06250v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06250v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.7
-  },
-  {
     "arxiv_id": "2511.07293v1",
     "title": "Verifying rich robustness properties for neural networks",
     "summary": "Robustness is a important problem in AI alignment and safety, with models such as neural networks being increasingly used in safety-critical systems. In the last decade, a large body of work has emerged on local robustness, i.e., checking if the decision of a neural network remains unchanged when the input is slightly perturbed. However, many of these approaches require specialized encoding and often ignore the confidence of a neural network on its output. In this paper, our goal is to build a generalized framework to specify and verify variants of robustness in neural network verification. We propose a specification framework using a simple grammar, which is flexible enough to capture most existing variants. This allows us to introduce new variants of robustness that take into account the confidence of the neural network in its outputs. Next, we develop a novel and powerful unified technique to verify all such variants in a homogeneous way, viz., by adding a few additional layers to the neural network. This enables us to use any state-of-the-art neural network verification tool, without having to tinker with the encoding within, while incurring an approximation error that we show is bounded. We perform an extensive experimental evaluation over a large suite of 8870 benchmarks having 138M parameters in a largest network, and show that we are able to capture a wide set of robustness variants and outperform direct encoding approaches by a significant margin.",
@@ -1000,6 +980,26 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07293v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07293v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.7
+  },
+  {
+    "arxiv_id": "2511.06250v1",
+    "title": "Test-Time Iterative Error Correction for Efficient Diffusion Models",
+    "summary": "With the growing demand for high-quality image generation on resource-constrained devices, efficient diffusion models have received increasing attention. However, such models suffer from approximation errors introduced by efficiency techniques, which significantly degrade generation quality. Once deployed, these errors are difficult to correct, as modifying the model is typically infeasible in deployment environments. Through an analysis of error propagation across diffusion timesteps, we reveal that these approximation errors can accumulate exponentially, severely impairing output quality. Motivated by this insight, we propose Iterative Error Correction (IEC), a novel test-time method that mitigates inference-time errors by iteratively refining the model's output. IEC is theoretically proven to reduce error propagation from exponential to linear growth, without requiring any retraining or architectural changes. IEC can seamlessly integrate into the inference process of existing diffusion models, enabling a flexible trade-off between performance and efficiency. Extensive experiments show that IEC consistently improves generation quality across various datasets, efficiency techniques, and model architectures, establishing it as a practical and generalizable solution for test-time enhancement of efficient diffusion models.",
+    "authors": [
+      "Yunshan Zhong",
+      "Yanwei Qi",
+      "Yuxin Zhang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "published": "2025-11-09",
+    "url": "https://arxiv.org/abs/2511.06250v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06250v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.7
@@ -1298,6 +1298,27 @@
     "research_score": 0.68
   },
   {
+    "arxiv_id": "2511.07156v1",
+    "title": "Conditional Diffusion as Latent Constraints for Controllable Symbolic Music Generation",
+    "summary": "Recent advances in latent diffusion models have demonstrated state-of-the-art performance in high-dimensional time-series data synthesis while providing flexible control through conditioning and guidance. However, existing methodologies primarily rely on musical context or natural language as the main modality of interacting with the generative process, which may not be ideal for expert users who seek precise fader-like control over specific musical attributes. In this work, we explore the application of denoising diffusion processes as plug-and-play latent constraints for unconditional symbolic music generation models. We focus on a framework that leverages a library of small conditional diffusion models operating as implicit probabilistic priors on the latents of a frozen unconditional backbone. While previous studies have explored domain-specific use cases, this work, to the best of our knowledge, is the first to demonstrate the versatility of such an approach across a diverse array of musical attributes, such as note density, pitch range, contour, and rhythm complexity. Our experiments show that diffusion-driven constraints outperform traditional attribute regularization and other latent constraints architectures, achieving significantly stronger correlations between target and generated attributes while maintaining high perceptual quality and diversity.",
+    "authors": [
+      "Matteo Pettenó",
+      "Alessandro Ilic Mezza",
+      "Alberto Bernardini"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "eess.AS"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07156v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07156v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
     "arxiv_id": "2511.06172v1",
     "title": "MambaOVSR: Multiscale Fusion with Global Motion Modeling for Chinese Opera Video Super-Resolution",
     "summary": "Chinese opera is celebrated for preserving classical art. However, early filming equipment limitations have degraded videos of last-century performances by renowned artists (e.g., low frame rates and resolution), hindering archival efforts. Although space-time video super-resolution (STVSR) has advanced significantly, applying it directly to opera videos remains challenging. The scarcity of datasets impedes the recovery of high frequency details, and existing STVSR methods lack global modeling capabilities, compromising visual quality when handling opera's characteristic large motions. To address these challenges, we pioneer a large scale Chinese Opera Video Clip (COVC) dataset and propose the Mamba-based multiscale fusion network for space-time Opera Video Super-Resolution (MambaOVSR). Specifically, MambaOVSR involves three novel components: the Global Fusion Module (GFM) for motion modeling through a multiscale alternating scanning mechanism, and the Multiscale Synergistic Mamba Module (MSMM) for alignment across different sequence lengths. Additionally, our MambaVR block resolves feature artifacts and positional information loss during alignment. Experimental results on the COVC dataset show that MambaOVSR significantly outperforms the SOTA STVSR method by an average of 1.86 dB in terms of PSNR. Dataset and Code will be publicly released.",
@@ -1337,27 +1358,6 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07103v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07103v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.68
-  },
-  {
-    "arxiv_id": "2511.07156v1",
-    "title": "Conditional Diffusion as Latent Constraints for Controllable Symbolic Music Generation",
-    "summary": "Recent advances in latent diffusion models have demonstrated state-of-the-art performance in high-dimensional time-series data synthesis while providing flexible control through conditioning and guidance. However, existing methodologies primarily rely on musical context or natural language as the main modality of interacting with the generative process, which may not be ideal for expert users who seek precise fader-like control over specific musical attributes. In this work, we explore the application of denoising diffusion processes as plug-and-play latent constraints for unconditional symbolic music generation models. We focus on a framework that leverages a library of small conditional diffusion models operating as implicit probabilistic priors on the latents of a frozen unconditional backbone. While previous studies have explored domain-specific use cases, this work, to the best of our knowledge, is the first to demonstrate the versatility of such an approach across a diverse array of musical attributes, such as note density, pitch range, contour, and rhythm complexity. Our experiments show that diffusion-driven constraints outperform traditional attribute regularization and other latent constraints architectures, achieving significantly stronger correlations between target and generated attributes while maintaining high perceptual quality and diversity.",
-    "authors": [
-      "Matteo Pettenó",
-      "Alessandro Ilic Mezza",
-      "Alberto Bernardini"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI",
-      "eess.AS"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07156v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07156v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.68
@@ -1474,30 +1474,6 @@
     "research_score": 0.67
   },
   {
-    "arxiv_id": "2511.06634v1",
-    "title": "CaberNet: Causal Representation Learning for Cross-Domain HVAC Energy Prediction",
-    "summary": "Cross-domain HVAC energy prediction is essential for scalable building energy management, particularly because collecting extensive labeled data for every new building is both costly and impractical. Yet, this task remains highly challenging due to the scarcity and heterogeneity of data across different buildings, climate zones, and seasonal patterns. In particular, buildings situated in distinct climatic regions introduce variability that often leads existing methods to overfit to spurious correlations, rely heavily on expert intervention, or compromise on data diversity. To address these limitations, we propose CaberNet, a causal and interpretable deep sequence model that learns invariant (Markov blanket) representations for robust cross-domain prediction. In a purely data-driven fashion and without requiring any prior knowledge, CaberNet integrates i) a global feature gate trained with a self-supervised Bernoulli regularization to distinguish superior causal features from inferior ones, and ii) a domain-wise training scheme that balances domain contributions, minimizes cross-domain loss variance, and promotes latent factor independence. We evaluate CaberNet on real-world datasets collected from three buildings located in three climatically diverse cities, and it consistently outperforms all baselines, achieving a 22.9\\% reduction in normalized mean squared error (NMSE) compared to the best benchmark. Our code is available at https://github.com/rickzky1001/CaberNet-CRL.",
-    "authors": [
-      "Kaiyuan Zhai",
-      "Jiacheng Cui",
-      "Zhehao Zhang",
-      "Junyu Xue",
-      "Yang Deng",
-      "Kui Wu",
-      "Guoming Tang"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06634v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06634v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.67
-  },
-  {
     "arxiv_id": "2511.06715v1",
     "title": "Sensor Calibration Model Balancing Accuracy, Real-time, and Efficiency",
     "summary": "Most on-device sensor calibration studies benchmark models only against three macroscopic requirements (i.e., accuracy, real-time, and resource efficiency), thereby hiding deployment bottlenecks such as instantaneous error and worst-case latency. We therefore decompose this triad into eight microscopic requirements and introduce Scare (Sensor Calibration model balancing Accuracy, Real-time, and Efficiency), an ultra-compressed transformer that fulfills them all. SCARE comprises three core components: (1) Sequence Lens Projector (SLP) that logarithmically compresses time-series data while preserving boundary information across bins, (2) Efficient Bitwise Attention (EBA) module that replaces costly multiplications with bitwise operations via binary hash codes, and (3) Hash optimization strategy that ensures stable training without auxiliary loss terms. Together, these components minimize computational overhead while maintaining high accuracy and compatibility with microcontroller units (MCUs). Extensive experiments on large-scale air-quality datasets and real microcontroller deployments demonstrate that Scare outperforms existing linear, hybrid, and deep-learning baselines, making Scare, to the best of our knowledge, the first model to meet all eight microscopic requirements simultaneously.",
@@ -1541,6 +1517,30 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07092v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07092v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.67
+  },
+  {
+    "arxiv_id": "2511.06634v1",
+    "title": "CaberNet: Causal Representation Learning for Cross-Domain HVAC Energy Prediction",
+    "summary": "Cross-domain HVAC energy prediction is essential for scalable building energy management, particularly because collecting extensive labeled data for every new building is both costly and impractical. Yet, this task remains highly challenging due to the scarcity and heterogeneity of data across different buildings, climate zones, and seasonal patterns. In particular, buildings situated in distinct climatic regions introduce variability that often leads existing methods to overfit to spurious correlations, rely heavily on expert intervention, or compromise on data diversity. To address these limitations, we propose CaberNet, a causal and interpretable deep sequence model that learns invariant (Markov blanket) representations for robust cross-domain prediction. In a purely data-driven fashion and without requiring any prior knowledge, CaberNet integrates i) a global feature gate trained with a self-supervised Bernoulli regularization to distinguish superior causal features from inferior ones, and ii) a domain-wise training scheme that balances domain contributions, minimizes cross-domain loss variance, and promotes latent factor independence. We evaluate CaberNet on real-world datasets collected from three buildings located in three climatically diverse cities, and it consistently outperforms all baselines, achieving a 22.9\\% reduction in normalized mean squared error (NMSE) compared to the best benchmark. Our code is available at https://github.com/rickzky1001/CaberNet-CRL.",
+    "authors": [
+      "Kaiyuan Zhai",
+      "Jiacheng Cui",
+      "Zhehao Zhang",
+      "Junyu Xue",
+      "Yang Deng",
+      "Kui Wu",
+      "Guoming Tang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.06634v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06634v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.67
@@ -1806,29 +1806,23 @@
     "research_score": 0.65
   },
   {
-    "arxiv_id": "2511.06252v1",
-    "title": "MrCoM: A Meta-Regularized World-Model Generalizing Across Multi-Scenarios",
-    "summary": "Model-based reinforcement learning (MBRL) is a crucial approach to enhance the generalization capabilities and improve the sample efficiency of RL algorithms. However, current MBRL methods focus primarily on building world models for single tasks and rarely address generalization across different scenarios. Building on the insight that dynamics within the same simulation engine share inherent properties, we attempt to construct a unified world model capable of generalizing across different scenarios, named Meta-Regularized Contextual World-Model (MrCoM). This method first decomposes the latent state space into various components based on the dynamic characteristics, thereby enhancing the accuracy of world-model prediction. Further, MrCoM adopts meta-state regularization to extract unified representation of scenario-relevant information, and meta-value regularization to align world-model optimization with policy learning across diverse scenario objectives. We theoretically analyze the generalization error upper bound of MrCoM in multi-scenario settings. We systematically evaluate our algorithm's generalization ability across diverse scenarios, demonstrating significantly better performance than previous state-of-the-art methods.",
+    "arxiv_id": "2511.07032v1",
+    "title": "Fair Bayesian Data Selection via Generalized Discrepancy Measures",
+    "summary": "Fairness concerns are increasingly critical as machine learning models are deployed in high-stakes applications. While existing fairness-aware methods typically intervene at the model level, they often suffer from high computational costs, limited scalability, and poor generalization. To address these challenges, we propose a Bayesian data selection framework that ensures fairness by aligning group-specific posterior distributions of model parameters and sample weights with a shared central distribution. Our framework supports flexible alignment via various distributional discrepancy measures, including Wasserstein distance, maximum mean discrepancy, and $f$-divergence, allowing geometry-aware control without imposing explicit fairness constraints. This data-centric approach mitigates group-specific biases in training data and improves fairness in downstream tasks, with theoretical guarantees. Experiments on benchmark datasets show that our method consistently outperforms existing data selection and model-based fairness methods in both fairness and accuracy.",
     "authors": [
-      "Xuantang Xiong",
-      "Ni Mu",
-      "Runpeng Xie",
-      "Senhao Yang",
-      "Yaqing Wang",
-      "Lexiang Wang",
-      "Yao Luan",
-      "Siyuan Li",
-      "Shuang Xu",
-      "Yiqin Yang",
-      "Bo Xu"
+      "Yixuan Zhang",
+      "Jiabin Luo",
+      "Zhenggang Wang",
+      "Feng Zhou",
+      "Quyu Kong"
     ],
     "categories": [
       "cs.LG",
-      "cs.AI"
+      "stat.ML"
     ],
-    "published": "2025-11-09",
-    "url": "https://arxiv.org/abs/2511.06252v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06252v1.pdf",
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07032v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07032v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.65
@@ -1857,23 +1851,29 @@
     "research_score": 0.65
   },
   {
-    "arxiv_id": "2511.07032v1",
-    "title": "Fair Bayesian Data Selection via Generalized Discrepancy Measures",
-    "summary": "Fairness concerns are increasingly critical as machine learning models are deployed in high-stakes applications. While existing fairness-aware methods typically intervene at the model level, they often suffer from high computational costs, limited scalability, and poor generalization. To address these challenges, we propose a Bayesian data selection framework that ensures fairness by aligning group-specific posterior distributions of model parameters and sample weights with a shared central distribution. Our framework supports flexible alignment via various distributional discrepancy measures, including Wasserstein distance, maximum mean discrepancy, and $f$-divergence, allowing geometry-aware control without imposing explicit fairness constraints. This data-centric approach mitigates group-specific biases in training data and improves fairness in downstream tasks, with theoretical guarantees. Experiments on benchmark datasets show that our method consistently outperforms existing data selection and model-based fairness methods in both fairness and accuracy.",
+    "arxiv_id": "2511.06252v1",
+    "title": "MrCoM: A Meta-Regularized World-Model Generalizing Across Multi-Scenarios",
+    "summary": "Model-based reinforcement learning (MBRL) is a crucial approach to enhance the generalization capabilities and improve the sample efficiency of RL algorithms. However, current MBRL methods focus primarily on building world models for single tasks and rarely address generalization across different scenarios. Building on the insight that dynamics within the same simulation engine share inherent properties, we attempt to construct a unified world model capable of generalizing across different scenarios, named Meta-Regularized Contextual World-Model (MrCoM). This method first decomposes the latent state space into various components based on the dynamic characteristics, thereby enhancing the accuracy of world-model prediction. Further, MrCoM adopts meta-state regularization to extract unified representation of scenario-relevant information, and meta-value regularization to align world-model optimization with policy learning across diverse scenario objectives. We theoretically analyze the generalization error upper bound of MrCoM in multi-scenario settings. We systematically evaluate our algorithm's generalization ability across diverse scenarios, demonstrating significantly better performance than previous state-of-the-art methods.",
     "authors": [
-      "Yixuan Zhang",
-      "Jiabin Luo",
-      "Zhenggang Wang",
-      "Feng Zhou",
-      "Quyu Kong"
+      "Xuantang Xiong",
+      "Ni Mu",
+      "Runpeng Xie",
+      "Senhao Yang",
+      "Yaqing Wang",
+      "Lexiang Wang",
+      "Yao Luan",
+      "Siyuan Li",
+      "Shuang Xu",
+      "Yiqin Yang",
+      "Bo Xu"
     ],
     "categories": [
       "cs.LG",
-      "stat.ML"
+      "cs.AI"
     ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07032v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07032v1.pdf",
+    "published": "2025-11-09",
+    "url": "https://arxiv.org/abs/2511.06252v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06252v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.65
@@ -2155,59 +2155,6 @@
     "research_score": 0.64
   },
   {
-    "arxiv_id": "2511.06479v1",
-    "title": "Bridging Theory and Practice: A Stochastic Learning-Optimization Model for Resilient Automotive Supply Chains",
-    "summary": "Supply chain disruptions and volatile demand pose significant challenges to the UK automotive industry, which relies heavily on Just-In-Time (JIT) manufacturing. While qualitative studies highlight the potential of integrating Artificial Intelligence (AI) with traditional optimization, a formal, quantitative demonstration of this synergy is lacking. This paper introduces a novel stochastic learning-optimization framework that integrates Bayesian inference with inventory optimization for supply chain management (SCM). We model a two-echelon inventory system subject to stochastic demand and supply disruptions, comparing a traditional static optimization policy against an adaptive policy where Bayesian learning continuously updates parameter estimates to inform stochastic optimization. Our simulations over 365 periods across three operational scenarios demonstrate that the integrated approach achieves 7.4\\% cost reduction in stable environments and 5.7\\% improvement during supply disruptions, while revealing important limitations during sudden demand shocks due to the inherent conservatism of Bayesian updating. This work provides mathematical validation for practitioner observations and establishes a formal framework for understanding AI-driven supply chain resilience, while identifying critical boundary conditions for successful implementation.",
-    "authors": [
-      "Muhammad Shahnawaz",
-      "Adeel Safder"
-    ],
-    "categories": [
-      "stat.ML",
-      "cs.LG",
-      "math.OC"
-    ],
-    "published": "2025-11-09",
-    "url": "https://arxiv.org/abs/2511.06479v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06479v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
-    "arxiv_id": "2511.07250v1",
-    "title": "MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal LLMs",
-    "summary": "The advent of Multimodal Large Language Models (MLLMs) has expanded AI capabilities to visual modalities, yet existing evaluation benchmarks remain limited to single-video understanding, overlooking the critical need for multi-video understanding in real-world scenarios (e.g., sports analytics and autonomous driving). To address this significant gap, we introduce MVU-Eval, the first comprehensive benchmark for evaluating Multi-Video Understanding for MLLMs. Specifically, our MVU-Eval mainly assesses eight core competencies through 1,824 meticulously curated question-answer pairs spanning 4,959 videos from diverse domains, addressing both fundamental perception tasks and high-order reasoning tasks. These capabilities are rigorously aligned with real-world applications such as multi-sensor synthesis in autonomous systems and cross-angle sports analytics. Through extensive evaluation of state-of-the-art open-source and closed-source models, we reveal significant performance discrepancies and limitations in current MLLMs' ability to perform understanding across multiple videos. The benchmark will be made publicly available to foster future research.",
-    "authors": [
-      "Tianhao Peng",
-      "Haochen Wang",
-      "Yuanxing Zhang",
-      "Zekun Wang",
-      "Zili Wang",
-      "Ge Zhang",
-      "Jian Yang",
-      "Shihao Li",
-      "Yanghai Wang",
-      "Xintao Wang",
-      "Houyi Li",
-      "Wei Ji",
-      "Pengfei Wan",
-      "Wenhao Huang",
-      "Zhaoxiang Zhang",
-      "Jiaheng Liu"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07250v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07250v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
     "arxiv_id": "2511.06793v1",
     "title": "Cross-Modal Unlearning via Influential Neuron Path Editing in Multimodal Large Language Models",
     "summary": "Multimodal Large Language Models (MLLMs) extend foundation models to real-world applications by integrating inputs such as text and vision. However, their broad knowledge capacity raises growing concerns about privacy leakage, toxicity mitigation, and intellectual property violations. Machine Unlearning (MU) offers a practical solution by selectively forgetting targeted knowledge while preserving overall model utility. When applied to MLLMs, existing neuron-editing-based MU approaches face two fundamental challenges: (1) forgetting becomes inconsistent across modalities because existing point-wise attribution methods fail to capture the structured, layer-by-layer information flow that connects different modalities; and (2) general knowledge performance declines when sensitive neurons that also support important reasoning paths are pruned, as this disrupts the model's ability to generalize. To alleviate these limitations, we propose a multimodal influential neuron path editor (MIP-Editor) for MU. Our approach introduces modality-specific attribution scores to identify influential neuron paths responsible for encoding forget-set knowledge and applies influential-path-aware neuron-editing via representation misdirection. This strategy also enables effective and coordinated forgetting across modalities while preserving the model's general capabilities. Experimental results demonstrate that MIP-Editor achieves a superior unlearning performance on multimodal tasks, with a maximum forgetting rate of 87.75% and up to 54.26% improvement in general knowledge retention. On textual tasks, MIP-Editor achieves up to 80.65% forgetting and preserves 77.9% of general performance. Codes are available at https://github.com/PreckLi/MIP-Editor.",
@@ -2249,6 +2196,59 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06947v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06947v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
+    "arxiv_id": "2511.07250v1",
+    "title": "MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal LLMs",
+    "summary": "The advent of Multimodal Large Language Models (MLLMs) has expanded AI capabilities to visual modalities, yet existing evaluation benchmarks remain limited to single-video understanding, overlooking the critical need for multi-video understanding in real-world scenarios (e.g., sports analytics and autonomous driving). To address this significant gap, we introduce MVU-Eval, the first comprehensive benchmark for evaluating Multi-Video Understanding for MLLMs. Specifically, our MVU-Eval mainly assesses eight core competencies through 1,824 meticulously curated question-answer pairs spanning 4,959 videos from diverse domains, addressing both fundamental perception tasks and high-order reasoning tasks. These capabilities are rigorously aligned with real-world applications such as multi-sensor synthesis in autonomous systems and cross-angle sports analytics. Through extensive evaluation of state-of-the-art open-source and closed-source models, we reveal significant performance discrepancies and limitations in current MLLMs' ability to perform understanding across multiple videos. The benchmark will be made publicly available to foster future research.",
+    "authors": [
+      "Tianhao Peng",
+      "Haochen Wang",
+      "Yuanxing Zhang",
+      "Zekun Wang",
+      "Zili Wang",
+      "Ge Zhang",
+      "Jian Yang",
+      "Shihao Li",
+      "Yanghai Wang",
+      "Xintao Wang",
+      "Houyi Li",
+      "Wei Ji",
+      "Pengfei Wan",
+      "Wenhao Huang",
+      "Zhaoxiang Zhang",
+      "Jiaheng Liu"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07250v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07250v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
+    "arxiv_id": "2511.06479v1",
+    "title": "Bridging Theory and Practice: A Stochastic Learning-Optimization Model for Resilient Automotive Supply Chains",
+    "summary": "Supply chain disruptions and volatile demand pose significant challenges to the UK automotive industry, which relies heavily on Just-In-Time (JIT) manufacturing. While qualitative studies highlight the potential of integrating Artificial Intelligence (AI) with traditional optimization, a formal, quantitative demonstration of this synergy is lacking. This paper introduces a novel stochastic learning-optimization framework that integrates Bayesian inference with inventory optimization for supply chain management (SCM). We model a two-echelon inventory system subject to stochastic demand and supply disruptions, comparing a traditional static optimization policy against an adaptive policy where Bayesian learning continuously updates parameter estimates to inform stochastic optimization. Our simulations over 365 periods across three operational scenarios demonstrate that the integrated approach achieves 7.4\\% cost reduction in stable environments and 5.7\\% improvement during supply disruptions, while revealing important limitations during sudden demand shocks due to the inherent conservatism of Bayesian updating. This work provides mathematical validation for practitioner observations and establishes a formal framework for understanding AI-driven supply chain resilience, while identifying critical boundary conditions for successful implementation.",
+    "authors": [
+      "Muhammad Shahnawaz",
+      "Adeel Safder"
+    ],
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "math.OC"
+    ],
+    "published": "2025-11-09",
+    "url": "https://arxiv.org/abs/2511.06479v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06479v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.64
@@ -2835,27 +2835,6 @@
     "research_score": 0.61
   },
   {
-    "arxiv_id": "2511.06406v1",
-    "title": "On Modality Incomplete Infrared-Visible Object Detection: An Architecture Compatibility Perspective",
-    "summary": "Infrared and visible object detection (IVOD) is essential for numerous around-the-clock applications. Despite notable advancements, current IVOD models exhibit notable performance declines when confronted with incomplete modality data, particularly if the dominant modality is missing. In this paper, we take a thorough investigation on modality incomplete IVOD problem from an architecture compatibility perspective. Specifically, we propose a plug-and-play Scarf Neck module for DETR variants, which introduces a modality-agnostic deformable attention mechanism to enable the IVOD detector to flexibly adapt to any single or double modalities during training and inference. When training Scarf-DETR, we design a pseudo modality dropout strategy to fully utilize the multi-modality information, making the detector compatible and robust to both working modes of single and double modalities. Moreover, we introduce a comprehensive benchmark for the modality-incomplete IVOD task aimed at thoroughly assessing situations where the absent modality is either dominant or secondary. Our proposed Scarf-DETR not only performs excellently in missing modality scenarios but also achieves superior performances on the standard IVOD modality complete benchmarks. Our code will be available at https://github.com/YinghuiXing/Scarf-DETR.",
-    "authors": [
-      "Shuo Yang",
-      "Yinghui Xing",
-      "Shizhou Zhang",
-      "Zhilong Niu"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-09",
-    "url": "https://arxiv.org/abs/2511.06406v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06406v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.61
-  },
-  {
     "arxiv_id": "2511.06894v1",
     "title": "COGNOS: Universal Enhancement for Time Series Anomaly Detection via Constrained Gaussian-Noise Optimization and Smoothing",
     "summary": "Reconstruction-based methods are a dominant paradigm in time series anomaly detection (TSAD), however, their near-universal reliance on Mean Squared Error (MSE) loss results in statistically flawed reconstruction residuals. This fundamental weakness leads to noisy, unstable anomaly scores with a poor signal-to-noise ratio, hindering reliable detection. To address this, we propose Constrained Gaussian-Noise Optimization and Smoothing (COGNOS), a universal, model-agnostic enhancement framework that tackles this issue at its source. COGNOS introduces a novel Gaussian-White Noise Regularization strategy during training, which directly constrains the model's output residuals to conform to a Gaussian white noise distribution. This engineered statistical property creates the ideal precondition for our second contribution: a Kalman Smoothing Post-processor that provably operates as a statistically optimal estimator to denoise the raw anomaly scores. The synergy between these two components allows COGNOS to robustly separate the true anomaly signal from random fluctuations. Extensive experiments demonstrate that COGNOS is highly effective, delivering an average F-score uplift of 57.9% when applied to 12 diverse backbone models across multiple real-world benchmark datasets. Our work reveals that directly regularizing output statistics is a powerful and generalizable strategy for significantly improving anomaly detection systems.",
@@ -2891,6 +2870,27 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07065v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07065v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
+    "arxiv_id": "2511.06406v1",
+    "title": "On Modality Incomplete Infrared-Visible Object Detection: An Architecture Compatibility Perspective",
+    "summary": "Infrared and visible object detection (IVOD) is essential for numerous around-the-clock applications. Despite notable advancements, current IVOD models exhibit notable performance declines when confronted with incomplete modality data, particularly if the dominant modality is missing. In this paper, we take a thorough investigation on modality incomplete IVOD problem from an architecture compatibility perspective. Specifically, we propose a plug-and-play Scarf Neck module for DETR variants, which introduces a modality-agnostic deformable attention mechanism to enable the IVOD detector to flexibly adapt to any single or double modalities during training and inference. When training Scarf-DETR, we design a pseudo modality dropout strategy to fully utilize the multi-modality information, making the detector compatible and robust to both working modes of single and double modalities. Moreover, we introduce a comprehensive benchmark for the modality-incomplete IVOD task aimed at thoroughly assessing situations where the absent modality is either dominant or secondary. Our proposed Scarf-DETR not only performs excellently in missing modality scenarios but also achieves superior performances on the standard IVOD modality complete benchmarks. Our code will be available at https://github.com/YinghuiXing/Scarf-DETR.",
+    "authors": [
+      "Shuo Yang",
+      "Yinghui Xing",
+      "Shizhou Zhang",
+      "Zhilong Niu"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-09",
+    "url": "https://arxiv.org/abs/2511.06406v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06406v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.61
@@ -3843,6 +3843,45 @@
     "research_score": 0.56
   },
   {
+    "arxiv_id": "2511.07011v1",
+    "title": "Multilingual Lexical Feature Analysis of Spoken Language for Predicting Major Depression Symptom Severity",
+    "summary": "Background: Captured between clinical appointments using mobile devices, spoken language has potential for objective, more regular assessment of symptom severity and earlier detection of relapse in major depressive disorder. However, research to date has largely been in non-clinical cross-sectional samples of written language using complex machine learning (ML) approaches with limited interpretability.   Methods: We describe an initial exploratory analysis of longitudinal speech data and PHQ-8 assessments from 5,836 recordings of 586 participants in the UK, Netherlands, and Spain, collected in the RADAR-MDD study. We sought to identify interpretable lexical features associated with MDD symptom severity with linear mixed-effects modelling. Interpretable features and high-dimensional vector embeddings were also used to test the prediction performance of four regressor ML models.   Results: In English data, MDD symptom severity was associated with 7 features including lexical diversity measures and absolutist language. In Dutch, associations were observed with words per sentence and positive word frequency; no associations were observed in recordings collected in Spain. The predictive power of lexical features and vector embeddings was near chance level across all languages.   Limitations: Smaller samples in non-English speech and methodological choices, such as the elicitation prompt, may have also limited the effect sizes observable. A lack of NLP tools in languages other than English restricted our feature choice.   Conclusion: To understand the value of lexical markers in clinical research and practice, further research is needed in larger samples across several languages using improved protocols, and ML models that account for within- and between-individual variations in language.",
+    "authors": [
+      "Anastasiia Tokareva",
+      "Judith Dineley",
+      "Zoe Firth",
+      "Pauline Conde",
+      "Faith Matcham",
+      "Sara Siddi",
+      "Femke Lamers",
+      "Ewan Carr",
+      "Carolin Oetzmann",
+      "Daniel Leightley",
+      "Yuezhou Zhang",
+      "Amos A. Folarin",
+      "Josep Maria Haro",
+      "Brenda W. J. H. Penninx",
+      "Raquel Bailon",
+      "Srinivasan Vairavan",
+      "Til Wykes",
+      "Richard J. B. Dobson",
+      "Vaibhav A. Narayan",
+      "Matthew Hotopf",
+      "Nicholas Cummins",
+      "The RADAR-CNS Consortium"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07011v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07011v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.56
+  },
+  {
     "arxiv_id": "2511.06700v1",
     "title": "Place Matters: Comparing LLM Hallucination Rates for Place-Based Legal Queries",
     "summary": "How do we make a meaningful comparison of a large language model's knowledge of the law in one place compared to another? Quantifying these differences is critical to understanding if the quality of the legal information obtained by users of LLM-based chatbots varies depending on their location. However, obtaining meaningful comparative metrics is challenging because legal institutions in different places are not themselves easily comparable. In this work we propose a methodology to obtain place-to-place metrics based on the comparative law concept of functionalism. We construct a dataset of factual scenarios drawn from Reddit posts by users seeking legal advice for family, housing, employment, crime and traffic issues. We use these to elicit a summary of a law from the LLM relevant to each scenario in Los Angeles, London and Sydney. These summaries, typically of a legislative provision, are manually evaluated for hallucinations. We show that the rate of hallucination of legal information by leading closed-source LLMs is significantly associated with place. This suggests that the quality of legal solutions provided by these models is not evenly distributed across geography. Additionally, we show a strong negative correlation between hallucination rate and the frequency of the majority response when the LLM is sampled multiple times, suggesting a measure of uncertainty of model predictions of legal facts.",
@@ -3881,45 +3920,6 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06698v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06698v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.56
-  },
-  {
-    "arxiv_id": "2511.07011v1",
-    "title": "Multilingual Lexical Feature Analysis of Spoken Language for Predicting Major Depression Symptom Severity",
-    "summary": "Background: Captured between clinical appointments using mobile devices, spoken language has potential for objective, more regular assessment of symptom severity and earlier detection of relapse in major depressive disorder. However, research to date has largely been in non-clinical cross-sectional samples of written language using complex machine learning (ML) approaches with limited interpretability.   Methods: We describe an initial exploratory analysis of longitudinal speech data and PHQ-8 assessments from 5,836 recordings of 586 participants in the UK, Netherlands, and Spain, collected in the RADAR-MDD study. We sought to identify interpretable lexical features associated with MDD symptom severity with linear mixed-effects modelling. Interpretable features and high-dimensional vector embeddings were also used to test the prediction performance of four regressor ML models.   Results: In English data, MDD symptom severity was associated with 7 features including lexical diversity measures and absolutist language. In Dutch, associations were observed with words per sentence and positive word frequency; no associations were observed in recordings collected in Spain. The predictive power of lexical features and vector embeddings was near chance level across all languages.   Limitations: Smaller samples in non-English speech and methodological choices, such as the elicitation prompt, may have also limited the effect sizes observable. A lack of NLP tools in languages other than English restricted our feature choice.   Conclusion: To understand the value of lexical markers in clinical research and practice, further research is needed in larger samples across several languages using improved protocols, and ML models that account for within- and between-individual variations in language.",
-    "authors": [
-      "Anastasiia Tokareva",
-      "Judith Dineley",
-      "Zoe Firth",
-      "Pauline Conde",
-      "Faith Matcham",
-      "Sara Siddi",
-      "Femke Lamers",
-      "Ewan Carr",
-      "Carolin Oetzmann",
-      "Daniel Leightley",
-      "Yuezhou Zhang",
-      "Amos A. Folarin",
-      "Josep Maria Haro",
-      "Brenda W. J. H. Penninx",
-      "Raquel Bailon",
-      "Srinivasan Vairavan",
-      "Til Wykes",
-      "Richard J. B. Dobson",
-      "Vaibhav A. Narayan",
-      "Matthew Hotopf",
-      "Nicholas Cummins",
-      "The RADAR-CNS Consortium"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.LG"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07011v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07011v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.56
@@ -4075,26 +4075,6 @@
     "research_score": 0.54
   },
   {
-    "arxiv_id": "2511.06585v1",
-    "title": "Learning Biomolecular Motion: The Physics-Informed Machine Learning Paradigm",
-    "summary": "The convergence of statistical learning and molecular physics is transforming our approach to modeling biomolecular systems. Physics-informed machine learning (PIML) offers a systematic framework that integrates data-driven inference with physical constraints, resulting in models that are accurate, mechanistic, generalizable, and able to extrapolate beyond observed domains. This review surveys recent advances in physics-informed neural networks and operator learning, differentiable molecular simulation, and hybrid physics-ML potentials, with emphasis on long-timescale kinetics, rare events, and free-energy estimation. We frame these approaches as solutions to the \"biomolecular closure problem\", recovering unresolved interactions beyond classical force fields while preserving thermodynamic consistency and mechanistic interpretability. We examine theoretical foundations, tools and frameworks, computational trade-offs, and unresolved issues, including model expressiveness and stability. We outline prospective research avenues at the intersection of machine learning, statistical physics, and computational chemistry, contending that future advancements will depend on mechanistic inductive biases, and integrated differentiable physical learning frameworks for biomolecular simulation and discovery.",
-    "authors": [
-      "Aaryesh Deshpande"
-    ],
-    "categories": [
-      "q-bio.BM",
-      "cs.LG",
-      "physics.comp-ph",
-      "stat.ML"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06585v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06585v1.pdf",
-    "date": "2025-11-11",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
     "arxiv_id": "2511.06906v1",
     "title": "Counterfactual Explanation for Multivariate Time Series Forecasting with Exogenous Variables",
     "summary": "Currently, machine learning is widely used across various domains, including time series data analysis. However, some machine learning models function as black boxes, making interpretability a critical concern. One approach to address this issue is counterfactual explanation (CE), which aims to provide insights into model predictions. This study focuses on the relatively underexplored problem of generating counterfactual explanations for time series forecasting. We propose a method for extracting CEs in time series forecasting using exogenous variables, which are frequently encountered in fields such as business and marketing. In addition, we present methods for analyzing the influence of each variable over an entire time series, generating CEs by altering only specific variables, and evaluating the quality of the resulting CEs. We validate the proposed method through theoretical analysis and empirical experiments, showcasing its accuracy and practical applicability. These contributions are expected to support real-world decision-making based on time series data analysis.",
@@ -4130,6 +4110,26 @@
     "published": "2025-11-09",
     "url": "https://arxiv.org/abs/2511.06211v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06211v1.pdf",
+    "date": "2025-11-11",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
+    "arxiv_id": "2511.06585v1",
+    "title": "Learning Biomolecular Motion: The Physics-Informed Machine Learning Paradigm",
+    "summary": "The convergence of statistical learning and molecular physics is transforming our approach to modeling biomolecular systems. Physics-informed machine learning (PIML) offers a systematic framework that integrates data-driven inference with physical constraints, resulting in models that are accurate, mechanistic, generalizable, and able to extrapolate beyond observed domains. This review surveys recent advances in physics-informed neural networks and operator learning, differentiable molecular simulation, and hybrid physics-ML potentials, with emphasis on long-timescale kinetics, rare events, and free-energy estimation. We frame these approaches as solutions to the \"biomolecular closure problem\", recovering unresolved interactions beyond classical force fields while preserving thermodynamic consistency and mechanistic interpretability. We examine theoretical foundations, tools and frameworks, computational trade-offs, and unresolved issues, including model expressiveness and stability. We outline prospective research avenues at the intersection of machine learning, statistical physics, and computational chemistry, contending that future advancements will depend on mechanistic inductive biases, and integrated differentiable physical learning frameworks for biomolecular simulation and discovery.",
+    "authors": [
+      "Aaryesh Deshpande"
+    ],
+    "categories": [
+      "q-bio.BM",
+      "cs.LG",
+      "physics.comp-ph",
+      "stat.ML"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.06585v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06585v1.pdf",
     "date": "2025-11-11",
     "source": "arxiv",
     "research_score": 0.54
