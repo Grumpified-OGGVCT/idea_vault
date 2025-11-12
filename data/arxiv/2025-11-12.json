@@ -622,27 +622,6 @@
     "research_score": 0.71
   },
   {
-    "arxiv_id": "2511.07377v1",
-    "title": "Real-Time LiDAR Super-Resolution via Frequency-Aware Multi-Scale Fusion",
-    "summary": "LiDAR super-resolution addresses the challenge of achieving high-quality 3D perception from cost-effective, low-resolution sensors. While recent transformer-based approaches like TULIP show promise, they remain limited to spatial-domain processing with restricted receptive fields. We introduce FLASH (Frequency-aware LiDAR Adaptive Super-resolution with Hierarchical fusion), a novel framework that overcomes these limitations through dual-domain processing. FLASH integrates two key innovations: (i) Frequency-Aware Window Attention that combines local spatial attention with global frequency-domain analysis via FFT, capturing both fine-grained geometry and periodic scanning patterns at log-linear complexity. (ii) Adaptive Multi-Scale Fusion that replaces conventional skip connections with learned position-specific feature aggregation, enhanced by CBAM attention for dynamic feature selection. Extensive experiments on KITTI demonstrate that FLASH achieves state-of-the-art performance across all evaluation metrics, surpassing even uncertainty-enhanced baselines that require multiple forward passes. Notably, FLASH outperforms TULIP with Monte Carlo Dropout while maintaining single-pass efficiency, which enables real-time deployment. The consistent superiority across all distance ranges validates that our dual-domain approach effectively handles uncertainty through architectural design rather than computationally expensive stochastic inference, making it practical for autonomous systems.",
-    "authors": [
-      "June Moh Goo",
-      "Zichao Zeng",
-      "Jan Boehm"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI",
-      "cs.RO"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07377v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07377v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.71
-  },
-  {
     "arxiv_id": "2511.06893v1",
     "title": "DeepBooTS: Dual-Stream Residual Boosting for Drift-Resilient Time-Series Forecasting",
     "summary": "Time-Series (TS) exhibits pronounced non-stationarity. Consequently, most forecasting methods display compromised robustness to concept drift, despite the prevalent application of instance normalization. We tackle this challenge by first analysing concept drift through a bias-variance lens and proving that weighted ensemble reduces variance without increasing bias. These insights motivate DeepBooTS, a novel end-to-end dual-stream residual-decreasing boosting method that progressively reconstructs the intrinsic signal. In our design, each block of a deep model becomes an ensemble of learners with an auxiliary output branch forming a highway to the final prediction. The block-wise outputs correct the residuals of previous blocks, leading to a learning-driven decomposition of both inputs and targets. This method enhances versatility and interpretability while substantially improving robustness to concept drift. Extensive experiments, including those on large-scale datasets, show that the proposed method outperforms existing methods by a large margin, yielding an average performance improvement of 15.8% across various datasets, establishing a new benchmark for TS forecasting.",
@@ -684,6 +663,27 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06757v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06757v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.71
+  },
+  {
+    "arxiv_id": "2511.07377v1",
+    "title": "Real-Time LiDAR Super-Resolution via Frequency-Aware Multi-Scale Fusion",
+    "summary": "LiDAR super-resolution addresses the challenge of achieving high-quality 3D perception from cost-effective, low-resolution sensors. While recent transformer-based approaches like TULIP show promise, they remain limited to spatial-domain processing with restricted receptive fields. We introduce FLASH (Frequency-aware LiDAR Adaptive Super-resolution with Hierarchical fusion), a novel framework that overcomes these limitations through dual-domain processing. FLASH integrates two key innovations: (i) Frequency-Aware Window Attention that combines local spatial attention with global frequency-domain analysis via FFT, capturing both fine-grained geometry and periodic scanning patterns at log-linear complexity. (ii) Adaptive Multi-Scale Fusion that replaces conventional skip connections with learned position-specific feature aggregation, enhanced by CBAM attention for dynamic feature selection. Extensive experiments on KITTI demonstrate that FLASH achieves state-of-the-art performance across all evaluation metrics, surpassing even uncertainty-enhanced baselines that require multiple forward passes. Notably, FLASH outperforms TULIP with Monte Carlo Dropout while maintaining single-pass efficiency, which enables real-time deployment. The consistent superiority across all distance ranges validates that our dual-domain approach effectively handles uncertainty through architectural design rather than computationally expensive stochastic inference, making it practical for autonomous systems.",
+    "authors": [
+      "June Moh Goo",
+      "Zichao Zeng",
+      "Jan Boehm"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.RO"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07377v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07377v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.71
@@ -1256,27 +1256,6 @@
     "research_score": 0.68
   },
   {
-    "arxiv_id": "2511.07103v1",
-    "title": "GEWDiff: Geometric Enhanced Wavelet-based Diffusion Model for Hyperspectral Image Super-resolution",
-    "summary": "Improving the quality of hyperspectral images (HSIs), such as through super-resolution, is a crucial research area. However, generative modeling for HSIs presents several challenges. Due to their high spectral dimensionality, HSIs are too memory-intensive for direct input into conventional diffusion models. Furthermore, general generative models lack an understanding of the topological and geometric structures of ground objects in remote sensing imagery. In addition, most diffusion models optimize loss functions at the noise level, leading to a non-intuitive convergence behavior and suboptimal generation quality for complex data. To address these challenges, we propose a Geometric Enhanced Wavelet-based Diffusion Model (GEWDiff), a novel framework for reconstructing hyperspectral images at 4-times super-resolution. A wavelet-based encoder-decoder is introduced that efficiently compresses HSIs into a latent space while preserving spectral-spatial information. To avoid distortion during generation, we incorporate a geometry-enhanced diffusion process that preserves the geometric features. Furthermore, a multi-level loss function was designed to guide the diffusion process, promoting stable convergence and improved reconstruction fidelity. Our model demonstrated state-of-the-art results across multiple dimensions, including fidelity, spectral accuracy, visual realism, and clarity.",
-    "authors": [
-      "Sirui Wang",
-      "Jiang He",
-      "Natàlia Blasco Andreo",
-      "Xiao Xiang Zhu"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07103v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07103v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.68
-  },
-  {
     "arxiv_id": "2511.07156v1",
     "title": "Conditional Diffusion as Latent Constraints for Controllable Symbolic Music Generation",
     "summary": "Recent advances in latent diffusion models have demonstrated state-of-the-art performance in high-dimensional time-series data synthesis while providing flexible control through conditioning and guidance. However, existing methodologies primarily rely on musical context or natural language as the main modality of interacting with the generative process, which may not be ideal for expert users who seek precise fader-like control over specific musical attributes. In this work, we explore the application of denoising diffusion processes as plug-and-play latent constraints for unconditional symbolic music generation models. We focus on a framework that leverages a library of small conditional diffusion models operating as implicit probabilistic priors on the latents of a frozen unconditional backbone. While previous studies have explored domain-specific use cases, this work, to the best of our knowledge, is the first to demonstrate the versatility of such an approach across a diverse array of musical attributes, such as note density, pitch range, contour, and rhythm complexity. Our experiments show that diffusion-driven constraints outperform traditional attribute regularization and other latent constraints architectures, achieving significantly stronger correlations between target and generated attributes while maintaining high perceptual quality and diversity.",
@@ -1293,30 +1272,6 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07156v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07156v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.68
-  },
-  {
-    "arxiv_id": "2511.08071v1",
-    "title": "Radar-APLANC: Unsupervised Radar-based Heartbeat Sensing via Augmented Pseudo-Label and Noise Contrast",
-    "summary": "Frequency Modulated Continuous Wave (FMCW) radars can measure subtle chest wall oscillations to enable non-contact heartbeat sensing. However, traditional radar-based heartbeat sensing methods face performance degradation due to noise. Learning-based radar methods achieve better noise robustness but require costly labeled signals for supervised training. To overcome these limitations, we propose the first unsupervised framework for radar-based heartbeat sensing via Augmented Pseudo-Label and Noise Contrast (Radar-APLANC). We propose to use both the heartbeat range and noise range within the radar range matrix to construct the positive and negative samples, respectively, for improved noise robustness. Our Noise-Contrastive Triplet (NCT) loss only utilizes positive samples, negative samples, and pseudo-label signals generated by the traditional radar method, thereby avoiding dependence on expensive ground-truth physiological signals. We further design a pseudo-label augmentation approach featuring adaptive noise-aware label selection to improve pseudo-label signal quality. Extensive experiments on the Equipleth dataset and our collected radar dataset demonstrate that our unsupervised method achieves performance comparable to state-of-the-art supervised methods. Our code, dataset, and supplementary materials can be accessed from https://github.com/RadarHRSensing/Radar-APLANC.",
-    "authors": [
-      "Ying Wang",
-      "Zhaodong Sun",
-      "Xu Cheng",
-      "Zuxian He",
-      "Xiaobai Li"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI",
-      "cs.HC",
-      "eess.SP"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08071v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08071v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.68
@@ -1372,6 +1327,51 @@
     "research_score": 0.68
   },
   {
+    "arxiv_id": "2511.07103v1",
+    "title": "GEWDiff: Geometric Enhanced Wavelet-based Diffusion Model for Hyperspectral Image Super-resolution",
+    "summary": "Improving the quality of hyperspectral images (HSIs), such as through super-resolution, is a crucial research area. However, generative modeling for HSIs presents several challenges. Due to their high spectral dimensionality, HSIs are too memory-intensive for direct input into conventional diffusion models. Furthermore, general generative models lack an understanding of the topological and geometric structures of ground objects in remote sensing imagery. In addition, most diffusion models optimize loss functions at the noise level, leading to a non-intuitive convergence behavior and suboptimal generation quality for complex data. To address these challenges, we propose a Geometric Enhanced Wavelet-based Diffusion Model (GEWDiff), a novel framework for reconstructing hyperspectral images at 4-times super-resolution. A wavelet-based encoder-decoder is introduced that efficiently compresses HSIs into a latent space while preserving spectral-spatial information. To avoid distortion during generation, we incorporate a geometry-enhanced diffusion process that preserves the geometric features. Furthermore, a multi-level loss function was designed to guide the diffusion process, promoting stable convergence and improved reconstruction fidelity. Our model demonstrated state-of-the-art results across multiple dimensions, including fidelity, spectral accuracy, visual realism, and clarity.",
+    "authors": [
+      "Sirui Wang",
+      "Jiang He",
+      "Natàlia Blasco Andreo",
+      "Xiao Xiang Zhu"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07103v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07103v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
+    "arxiv_id": "2511.08071v1",
+    "title": "Radar-APLANC: Unsupervised Radar-based Heartbeat Sensing via Augmented Pseudo-Label and Noise Contrast",
+    "summary": "Frequency Modulated Continuous Wave (FMCW) radars can measure subtle chest wall oscillations to enable non-contact heartbeat sensing. However, traditional radar-based heartbeat sensing methods face performance degradation due to noise. Learning-based radar methods achieve better noise robustness but require costly labeled signals for supervised training. To overcome these limitations, we propose the first unsupervised framework for radar-based heartbeat sensing via Augmented Pseudo-Label and Noise Contrast (Radar-APLANC). We propose to use both the heartbeat range and noise range within the radar range matrix to construct the positive and negative samples, respectively, for improved noise robustness. Our Noise-Contrastive Triplet (NCT) loss only utilizes positive samples, negative samples, and pseudo-label signals generated by the traditional radar method, thereby avoiding dependence on expensive ground-truth physiological signals. We further design a pseudo-label augmentation approach featuring adaptive noise-aware label selection to improve pseudo-label signal quality. Extensive experiments on the Equipleth dataset and our collected radar dataset demonstrate that our unsupervised method achieves performance comparable to state-of-the-art supervised methods. Our code, dataset, and supplementary materials can be accessed from https://github.com/RadarHRSensing/Radar-APLANC.",
+    "authors": [
+      "Ying Wang",
+      "Zhaodong Sun",
+      "Xu Cheng",
+      "Zuxian He",
+      "Xiaobai Li"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.HC",
+      "eess.SP"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08071v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08071v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
     "arxiv_id": "2511.07318v1",
     "title": "When Bias Pretends to Be Truth: How Spurious Correlations Undermine Hallucination Detection in LLMs",
     "summary": "Despite substantial advances, large language models (LLMs) continue to exhibit hallucinations, generating plausible yet incorrect responses. In this paper, we highlight a critical yet previously underexplored class of hallucinations driven by spurious correlations -- superficial but statistically prominent associations between features (e.g., surnames) and attributes (e.g., nationality) present in the training data. We demonstrate that these spurious correlations induce hallucinations that are confidently generated, immune to model scaling, evade current detection methods, and persist even after refusal fine-tuning. Through systematically controlled synthetic experiments and empirical evaluations on state-of-the-art open-source and proprietary LLMs (including GPT-5), we show that existing hallucination detection methods, such as confidence-based filtering and inner-state probing, fundamentally fail in the presence of spurious correlations. Our theoretical analysis further elucidates why these statistical biases intrinsically undermine confidence-based detection techniques. Our findings thus emphasize the urgent need for new approaches explicitly designed to address hallucinations caused by spurious correlations.",
@@ -1418,30 +1418,6 @@
     "research_score": 0.67
   },
   {
-    "arxiv_id": "2511.08500v1",
-    "title": "SPEAR-MM: Selective Parameter Evaluation and Restoration via Model Merging for Efficient Financial LLM Adaptation",
-    "summary": "Large language models (LLMs) adapted to financial domains often suffer from catastrophic forgetting of general reasoning capabilities essential for customer interactions and complex financial analysis. We introduce Selective Parameter Evaluation and Restoration via Model Merging (SPEAR-MM), a practical framework that preserves critical capabilities while enabling domain adaptation. Our method approximates layer-wise impact on external benchmarks through post-hoc analysis, then selectively freezes or restores transformer layers via spherical interpolation merging. Applied to LLaMA-3.1-8B for financial tasks, SPEAR-MM achieves 91.2% retention of general capabilities versus 69.7% for standard continual pretraining, while maintaining 94% of domain adaptation gains. The approach provides interpretable trade-off control and reduces computational costs by 90% crucial for resource-constrained financial institutions.",
-    "authors": [
-      "Berkcan Kapusuzoglu",
-      "Supriyo Chakraborty",
-      "Renkun Ni",
-      "Stephen Rawls",
-      "Sambit Sahu"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI",
-      "cs.LG",
-      "math.SP"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08500v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08500v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.67
-  },
-  {
     "arxiv_id": "2511.07885v1",
     "title": "Intelligence per Watt: Measuring Intelligence Efficiency of Local AI",
     "summary": "Large language model (LLM) queries are predominantly processed by frontier models in centralized cloud infrastructure. Rapidly growing demand strains this paradigm, and cloud providers struggle to scale infrastructure at pace. Two advances enable us to rethink this paradigm: small LMs (<=20B active parameters) now achieve competitive performance to frontier models on many tasks, and local accelerators (e.g., Apple M4 Max) run these models at interactive latencies. This raises the question: can local inference viably redistribute demand from centralized infrastructure? Answering this requires measuring whether local LMs can accurately answer real-world queries and whether they can do so efficiently enough to be practical on power-constrained devices (i.e., laptops). We propose intelligence per watt (IPW), task accuracy divided by unit of power, as a metric for assessing capability and efficiency of local inference across model-accelerator pairs. We conduct a large-scale empirical study across 20+ state-of-the-art local LMs, 8 accelerators, and a representative subset of LLM traffic: 1M real-world single-turn chat and reasoning queries. For each query, we measure accuracy, energy, latency, and power. Our analysis reveals $3$ findings. First, local LMs can accurately answer 88.7% of single-turn chat and reasoning queries with accuracy varying by domain. Second, from 2023-2025, IPW improved 5.3x and local query coverage rose from 23.2% to 71.3%. Third, local accelerators achieve at least 1.4x lower IPW than cloud accelerators running identical models, revealing significant headroom for optimization. These findings demonstrate that local inference can meaningfully redistribute demand from centralized infrastructure, with IPW serving as the critical metric for tracking this transition. We release our IPW profiling harness for systematic intelligence-per-watt benchmarking.",
@@ -1471,6 +1447,30 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07885v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07885v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.67
+  },
+  {
+    "arxiv_id": "2511.08500v1",
+    "title": "SPEAR-MM: Selective Parameter Evaluation and Restoration via Model Merging for Efficient Financial LLM Adaptation",
+    "summary": "Large language models (LLMs) adapted to financial domains often suffer from catastrophic forgetting of general reasoning capabilities essential for customer interactions and complex financial analysis. We introduce Selective Parameter Evaluation and Restoration via Model Merging (SPEAR-MM), a practical framework that preserves critical capabilities while enabling domain adaptation. Our method approximates layer-wise impact on external benchmarks through post-hoc analysis, then selectively freezes or restores transformer layers via spherical interpolation merging. Applied to LLaMA-3.1-8B for financial tasks, SPEAR-MM achieves 91.2% retention of general capabilities versus 69.7% for standard continual pretraining, while maintaining 94% of domain adaptation gains. The approach provides interpretable trade-off control and reduces computational costs by 90% crucial for resource-constrained financial institutions.",
+    "authors": [
+      "Berkcan Kapusuzoglu",
+      "Supriyo Chakraborty",
+      "Renkun Ni",
+      "Stephen Rawls",
+      "Sambit Sahu"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "math.SP"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08500v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08500v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.67
@@ -1574,30 +1574,6 @@
     "research_score": 0.67
   },
   {
-    "arxiv_id": "2511.06634v1",
-    "title": "CaberNet: Causal Representation Learning for Cross-Domain HVAC Energy Prediction",
-    "summary": "Cross-domain HVAC energy prediction is essential for scalable building energy management, particularly because collecting extensive labeled data for every new building is both costly and impractical. Yet, this task remains highly challenging due to the scarcity and heterogeneity of data across different buildings, climate zones, and seasonal patterns. In particular, buildings situated in distinct climatic regions introduce variability that often leads existing methods to overfit to spurious correlations, rely heavily on expert intervention, or compromise on data diversity. To address these limitations, we propose CaberNet, a causal and interpretable deep sequence model that learns invariant (Markov blanket) representations for robust cross-domain prediction. In a purely data-driven fashion and without requiring any prior knowledge, CaberNet integrates i) a global feature gate trained with a self-supervised Bernoulli regularization to distinguish superior causal features from inferior ones, and ii) a domain-wise training scheme that balances domain contributions, minimizes cross-domain loss variance, and promotes latent factor independence. We evaluate CaberNet on real-world datasets collected from three buildings located in three climatically diverse cities, and it consistently outperforms all baselines, achieving a 22.9\\% reduction in normalized mean squared error (NMSE) compared to the best benchmark. Our code is available at https://github.com/rickzky1001/CaberNet-CRL.",
-    "authors": [
-      "Kaiyuan Zhai",
-      "Jiacheng Cui",
-      "Zhehao Zhang",
-      "Junyu Xue",
-      "Yang Deng",
-      "Kui Wu",
-      "Guoming Tang"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06634v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06634v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.67
-  },
-  {
     "arxiv_id": "2511.06715v1",
     "title": "Sensor Calibration Model Balancing Accuracy, Real-time, and Efficiency",
     "summary": "Most on-device sensor calibration studies benchmark models only against three macroscopic requirements (i.e., accuracy, real-time, and resource efficiency), thereby hiding deployment bottlenecks such as instantaneous error and worst-case latency. We therefore decompose this triad into eight microscopic requirements and introduce Scare (Sensor Calibration model balancing Accuracy, Real-time, and Efficiency), an ultra-compressed transformer that fulfills them all. SCARE comprises three core components: (1) Sequence Lens Projector (SLP) that logarithmically compresses time-series data while preserving boundary information across bins, (2) Efficient Bitwise Attention (EBA) module that replaces costly multiplications with bitwise operations via binary hash codes, and (3) Hash optimization strategy that ensures stable training without auxiliary loss terms. Together, these components minimize computational overhead while maintaining high accuracy and compatibility with microcontroller units (MCUs). Extensive experiments on large-scale air-quality datasets and real microcontroller deployments demonstrate that Scare outperforms existing linear, hybrid, and deep-learning baselines, making Scare, to the best of our knowledge, the first model to meet all eight microscopic requirements simultaneously.",
@@ -1641,6 +1617,30 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07092v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07092v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.67
+  },
+  {
+    "arxiv_id": "2511.06634v1",
+    "title": "CaberNet: Causal Representation Learning for Cross-Domain HVAC Energy Prediction",
+    "summary": "Cross-domain HVAC energy prediction is essential for scalable building energy management, particularly because collecting extensive labeled data for every new building is both costly and impractical. Yet, this task remains highly challenging due to the scarcity and heterogeneity of data across different buildings, climate zones, and seasonal patterns. In particular, buildings situated in distinct climatic regions introduce variability that often leads existing methods to overfit to spurious correlations, rely heavily on expert intervention, or compromise on data diversity. To address these limitations, we propose CaberNet, a causal and interpretable deep sequence model that learns invariant (Markov blanket) representations for robust cross-domain prediction. In a purely data-driven fashion and without requiring any prior knowledge, CaberNet integrates i) a global feature gate trained with a self-supervised Bernoulli regularization to distinguish superior causal features from inferior ones, and ii) a domain-wise training scheme that balances domain contributions, minimizes cross-domain loss variance, and promotes latent factor independence. We evaluate CaberNet on real-world datasets collected from three buildings located in three climatically diverse cities, and it consistently outperforms all baselines, achieving a 22.9\\% reduction in normalized mean squared error (NMSE) compared to the best benchmark. Our code is available at https://github.com/rickzky1001/CaberNet-CRL.",
+    "authors": [
+      "Kaiyuan Zhai",
+      "Jiacheng Cui",
+      "Zhehao Zhang",
+      "Junyu Xue",
+      "Yang Deng",
+      "Kui Wu",
+      "Guoming Tang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.06634v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06634v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.67
@@ -2383,39 +2383,6 @@
     "research_score": 0.64
   },
   {
-    "arxiv_id": "2511.07250v1",
-    "title": "MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal LLMs",
-    "summary": "The advent of Multimodal Large Language Models (MLLMs) has expanded AI capabilities to visual modalities, yet existing evaluation benchmarks remain limited to single-video understanding, overlooking the critical need for multi-video understanding in real-world scenarios (e.g., sports analytics and autonomous driving). To address this significant gap, we introduce MVU-Eval, the first comprehensive benchmark for evaluating Multi-Video Understanding for MLLMs. Specifically, our MVU-Eval mainly assesses eight core competencies through 1,824 meticulously curated question-answer pairs spanning 4,959 videos from diverse domains, addressing both fundamental perception tasks and high-order reasoning tasks. These capabilities are rigorously aligned with real-world applications such as multi-sensor synthesis in autonomous systems and cross-angle sports analytics. Through extensive evaluation of state-of-the-art open-source and closed-source models, we reveal significant performance discrepancies and limitations in current MLLMs' ability to perform understanding across multiple videos. The benchmark will be made publicly available to foster future research.",
-    "authors": [
-      "Tianhao Peng",
-      "Haochen Wang",
-      "Yuanxing Zhang",
-      "Zekun Wang",
-      "Zili Wang",
-      "Ge Zhang",
-      "Jian Yang",
-      "Shihao Li",
-      "Yanghai Wang",
-      "Xintao Wang",
-      "Houyi Li",
-      "Wei Ji",
-      "Pengfei Wan",
-      "Wenhao Huang",
-      "Zhaoxiang Zhang",
-      "Jiaheng Liu"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07250v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07250v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
     "arxiv_id": "2511.06793v1",
     "title": "Cross-Modal Unlearning via Influential Neuron Path Editing in Multimodal Large Language Models",
     "summary": "Multimodal Large Language Models (MLLMs) extend foundation models to real-world applications by integrating inputs such as text and vision. However, their broad knowledge capacity raises growing concerns about privacy leakage, toxicity mitigation, and intellectual property violations. Machine Unlearning (MU) offers a practical solution by selectively forgetting targeted knowledge while preserving overall model utility. When applied to MLLMs, existing neuron-editing-based MU approaches face two fundamental challenges: (1) forgetting becomes inconsistent across modalities because existing point-wise attribution methods fail to capture the structured, layer-by-layer information flow that connects different modalities; and (2) general knowledge performance declines when sensitive neurons that also support important reasoning paths are pruned, as this disrupts the model's ability to generalize. To alleviate these limitations, we propose a multimodal influential neuron path editor (MIP-Editor) for MU. Our approach introduces modality-specific attribution scores to identify influential neuron paths responsible for encoding forget-set knowledge and applies influential-path-aware neuron-editing via representation misdirection. This strategy also enables effective and coordinated forgetting across modalities while preserving the model's general capabilities. Experimental results demonstrate that MIP-Editor achieves a superior unlearning performance on multimodal tasks, with a maximum forgetting rate of 87.75% and up to 54.26% improvement in general knowledge retention. On textual tasks, MIP-Editor achieves up to 80.65% forgetting and preserves 77.9% of general performance. Codes are available at https://github.com/PreckLi/MIP-Editor.",
@@ -2457,6 +2424,39 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06947v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06947v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
+    "arxiv_id": "2511.07250v1",
+    "title": "MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal LLMs",
+    "summary": "The advent of Multimodal Large Language Models (MLLMs) has expanded AI capabilities to visual modalities, yet existing evaluation benchmarks remain limited to single-video understanding, overlooking the critical need for multi-video understanding in real-world scenarios (e.g., sports analytics and autonomous driving). To address this significant gap, we introduce MVU-Eval, the first comprehensive benchmark for evaluating Multi-Video Understanding for MLLMs. Specifically, our MVU-Eval mainly assesses eight core competencies through 1,824 meticulously curated question-answer pairs spanning 4,959 videos from diverse domains, addressing both fundamental perception tasks and high-order reasoning tasks. These capabilities are rigorously aligned with real-world applications such as multi-sensor synthesis in autonomous systems and cross-angle sports analytics. Through extensive evaluation of state-of-the-art open-source and closed-source models, we reveal significant performance discrepancies and limitations in current MLLMs' ability to perform understanding across multiple videos. The benchmark will be made publicly available to foster future research.",
+    "authors": [
+      "Tianhao Peng",
+      "Haochen Wang",
+      "Yuanxing Zhang",
+      "Zekun Wang",
+      "Zili Wang",
+      "Ge Zhang",
+      "Jian Yang",
+      "Shihao Li",
+      "Yanghai Wang",
+      "Xintao Wang",
+      "Houyi Li",
+      "Wei Ji",
+      "Pengfei Wan",
+      "Wenhao Huang",
+      "Zhaoxiang Zhang",
+      "Jiaheng Liu"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07250v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07250v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.64
@@ -3773,6 +3773,31 @@
     "research_score": 0.57
   },
   {
+    "arxiv_id": "2511.07947v1",
+    "title": "Class-feature Watermark: A Resilient Black-box Watermark Against Model Extraction Attacks",
+    "summary": "Machine learning models constitute valuable intellectual property, yet remain vulnerable to model extraction attacks (MEA), where adversaries replicate their functionality through black-box queries. Model watermarking counters MEAs by embedding forensic markers for ownership verification. Current black-box watermarks prioritize MEA survival through representation entanglement, yet inadequately explore resilience against sequential MEAs and removal attacks. Our study reveals that this risk is underestimated because existing removal methods are weakened by entanglement. To address this gap, we propose Watermark Removal attacK (WRK), which circumvents entanglement constraints by exploiting decision boundaries shaped by prevailing sample-level watermark artifacts. WRK effectively reduces watermark success rates by at least 88.79% across existing watermarking benchmarks.   For robust protection, we propose Class-Feature Watermarks (CFW), which improve resilience by leveraging class-level artifacts. CFW constructs a synthetic class using out-of-domain samples, eliminating vulnerable decision boundaries between original domain samples and their artifact-modified counterparts (watermark samples). CFW concurrently optimizes both MEA transferability and post-MEA stability. Experiments across multiple domains show that CFW consistently outperforms prior methods in resilience, maintaining a watermark success rate of at least 70.15% in extracted models even under the combined MEA and WRK distortion, while preserving the utility of protected models.",
+    "authors": [
+      "Yaxin Xiao",
+      "Qingqing Ye",
+      "Zi Liang",
+      "Haoyang Li",
+      "RongHua Li",
+      "Huadi Zheng",
+      "Haibo Hu"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07947v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07947v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
     "arxiv_id": "2511.08207v1",
     "title": "FedPoP: Federated Learning Meets Proof of Participation",
     "summary": "Federated learning (FL) offers privacy preserving, distributed machine learning, allowing clients to contribute to a global model without revealing their local data. As models increasingly serve as monetizable digital assets, the ability to prove participation in their training becomes essential for establishing ownership. In this paper, we address this emerging need by introducing FedPoP, a novel FL framework that allows nonlinkable proof of participation while preserving client anonymity and privacy without requiring either extensive computations or a public ledger. FedPoP is designed to seamlessly integrate with existing secure aggregation protocols to ensure compatibility with real-world FL deployments. We provide a proof of concept implementation and an empirical evaluation under realistic client dropouts. In our prototype, FedPoP introduces 0.97 seconds of per-round overhead atop securely aggregated FL and enables a client to prove its participation/contribution to a model held by a third party in 0.0612 seconds. These results indicate FedPoP is practical for real-world deployments that require auditable participation without sacrificing privacy.",
@@ -3811,31 +3836,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08085v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08085v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.57
-  },
-  {
-    "arxiv_id": "2511.07947v1",
-    "title": "Class-feature Watermark: A Resilient Black-box Watermark Against Model Extraction Attacks",
-    "summary": "Machine learning models constitute valuable intellectual property, yet remain vulnerable to model extraction attacks (MEA), where adversaries replicate their functionality through black-box queries. Model watermarking counters MEAs by embedding forensic markers for ownership verification. Current black-box watermarks prioritize MEA survival through representation entanglement, yet inadequately explore resilience against sequential MEAs and removal attacks. Our study reveals that this risk is underestimated because existing removal methods are weakened by entanglement. To address this gap, we propose Watermark Removal attacK (WRK), which circumvents entanglement constraints by exploiting decision boundaries shaped by prevailing sample-level watermark artifacts. WRK effectively reduces watermark success rates by at least 88.79% across existing watermarking benchmarks.   For robust protection, we propose Class-Feature Watermarks (CFW), which improve resilience by leveraging class-level artifacts. CFW constructs a synthetic class using out-of-domain samples, eliminating vulnerable decision boundaries between original domain samples and their artifact-modified counterparts (watermark samples). CFW concurrently optimizes both MEA transferability and post-MEA stability. Experiments across multiple domains show that CFW consistently outperforms prior methods in resilience, maintaining a watermark success rate of at least 70.15% in extracted models even under the combined MEA and WRK distortion, while preserving the utility of protected models.",
-    "authors": [
-      "Yaxin Xiao",
-      "Qingqing Ye",
-      "Zi Liang",
-      "Haoyang Li",
-      "RongHua Li",
-      "Huadi Zheng",
-      "Haibo Hu"
-    ],
-    "categories": [
-      "cs.CR",
-      "cs.CV",
-      "cs.LG"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07947v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07947v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.57
@@ -4262,6 +4262,24 @@
     "research_score": 0.54
   },
   {
+    "arxiv_id": "2511.06906v1",
+    "title": "Counterfactual Explanation for Multivariate Time Series Forecasting with Exogenous Variables",
+    "summary": "Currently, machine learning is widely used across various domains, including time series data analysis. However, some machine learning models function as black boxes, making interpretability a critical concern. One approach to address this issue is counterfactual explanation (CE), which aims to provide insights into model predictions. This study focuses on the relatively underexplored problem of generating counterfactual explanations for time series forecasting. We propose a method for extracting CEs in time series forecasting using exogenous variables, which are frequently encountered in fields such as business and marketing. In addition, we present methods for analyzing the influence of each variable over an entire time series, generating CEs by altering only specific variables, and evaluating the quality of the resulting CEs. We validate the proposed method through theoretical analysis and empirical experiments, showcasing its accuracy and practical applicability. These contributions are expected to support real-world decision-making based on time series data analysis.",
+    "authors": [
+      "Keita Kinjo"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.06906v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06906v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
     "arxiv_id": "2511.06585v1",
     "title": "Learning Biomolecular Motion: The Physics-Informed Machine Learning Paradigm",
     "summary": "The convergence of statistical learning and molecular physics is transforming our approach to modeling biomolecular systems. Physics-informed machine learning (PIML) offers a systematic framework that integrates data-driven inference with physical constraints, resulting in models that are accurate, mechanistic, generalizable, and able to extrapolate beyond observed domains. This review surveys recent advances in physics-informed neural networks and operator learning, differentiable molecular simulation, and hybrid physics-ML potentials, with emphasis on long-timescale kinetics, rare events, and free-energy estimation. We frame these approaches as solutions to the \"biomolecular closure problem\", recovering unresolved interactions beyond classical force fields while preserving thermodynamic consistency and mechanistic interpretability. We examine theoretical foundations, tools and frameworks, computational trade-offs, and unresolved issues, including model expressiveness and stability. We outline prospective research avenues at the intersection of machine learning, statistical physics, and computational chemistry, contending that future advancements will depend on mechanistic inductive biases, and integrated differentiable physical learning frameworks for biomolecular simulation and discovery.",
@@ -4277,24 +4295,6 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06585v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06585v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
-    "arxiv_id": "2511.06906v1",
-    "title": "Counterfactual Explanation for Multivariate Time Series Forecasting with Exogenous Variables",
-    "summary": "Currently, machine learning is widely used across various domains, including time series data analysis. However, some machine learning models function as black boxes, making interpretability a critical concern. One approach to address this issue is counterfactual explanation (CE), which aims to provide insights into model predictions. This study focuses on the relatively underexplored problem of generating counterfactual explanations for time series forecasting. We propose a method for extracting CEs in time series forecasting using exogenous variables, which are frequently encountered in fields such as business and marketing. In addition, we present methods for analyzing the influence of each variable over an entire time series, generating CEs by altering only specific variables, and evaluating the quality of the resulting CEs. We validate the proposed method through theoretical analysis and empirical experiments, showcasing its accuracy and practical applicability. These contributions are expected to support real-world decision-making based on time series data analysis.",
-    "authors": [
-      "Keita Kinjo"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06906v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06906v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.54
