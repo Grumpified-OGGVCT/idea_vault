@@ -1463,30 +1463,6 @@
     "research_score": 0.67
   },
   {
-    "arxiv_id": "2511.08500v1",
-    "title": "SPEAR-MM: Selective Parameter Evaluation and Restoration via Model Merging for Efficient Financial LLM Adaptation",
-    "summary": "Large language models (LLMs) adapted to financial domains often suffer from catastrophic forgetting of general reasoning capabilities essential for customer interactions and complex financial analysis. We introduce Selective Parameter Evaluation and Restoration via Model Merging (SPEAR-MM), a practical framework that preserves critical capabilities while enabling domain adaptation. Our method approximates layer-wise impact on external benchmarks through post-hoc analysis, then selectively freezes or restores transformer layers via spherical interpolation merging. Applied to LLaMA-3.1-8B for financial tasks, SPEAR-MM achieves 91.2% retention of general capabilities versus 69.7% for standard continual pretraining, while maintaining 94% of domain adaptation gains. The approach provides interpretable trade-off control and reduces computational costs by 90% crucial for resource-constrained financial institutions.",
-    "authors": [
-      "Berkcan Kapusuzoglu",
-      "Supriyo Chakraborty",
-      "Renkun Ni",
-      "Stephen Rawls",
-      "Sambit Sahu"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI",
-      "cs.LG",
-      "math.SP"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08500v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08500v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.67
-  },
-  {
     "arxiv_id": "2511.07885v1",
     "title": "Intelligence per Watt: Measuring Intelligence Efficiency of Local AI",
     "summary": "Large language model (LLM) queries are predominantly processed by frontier models in centralized cloud infrastructure. Rapidly growing demand strains this paradigm, and cloud providers struggle to scale infrastructure at pace. Two advances enable us to rethink this paradigm: small LMs (<=20B active parameters) now achieve competitive performance to frontier models on many tasks, and local accelerators (e.g., Apple M4 Max) run these models at interactive latencies. This raises the question: can local inference viably redistribute demand from centralized infrastructure? Answering this requires measuring whether local LMs can accurately answer real-world queries and whether they can do so efficiently enough to be practical on power-constrained devices (i.e., laptops). We propose intelligence per watt (IPW), task accuracy divided by unit of power, as a metric for assessing capability and efficiency of local inference across model-accelerator pairs. We conduct a large-scale empirical study across 20+ state-of-the-art local LMs, 8 accelerators, and a representative subset of LLM traffic: 1M real-world single-turn chat and reasoning queries. For each query, we measure accuracy, energy, latency, and power. Our analysis reveals $3$ findings. First, local LMs can accurately answer 88.7% of single-turn chat and reasoning queries with accuracy varying by domain. Second, from 2023-2025, IPW improved 5.3x and local query coverage rose from 23.2% to 71.3%. Third, local accelerators achieve at least 1.4x lower IPW than cloud accelerators running identical models, revealing significant headroom for optimization. These findings demonstrate that local inference can meaningfully redistribute demand from centralized infrastructure, with IPW serving as the critical metric for tracking this transition. We release our IPW profiling harness for systematic intelligence-per-watt benchmarking.",
@@ -1516,6 +1492,30 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07885v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07885v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.67
+  },
+  {
+    "arxiv_id": "2511.08500v1",
+    "title": "SPEAR-MM: Selective Parameter Evaluation and Restoration via Model Merging for Efficient Financial LLM Adaptation",
+    "summary": "Large language models (LLMs) adapted to financial domains often suffer from catastrophic forgetting of general reasoning capabilities essential for customer interactions and complex financial analysis. We introduce Selective Parameter Evaluation and Restoration via Model Merging (SPEAR-MM), a practical framework that preserves critical capabilities while enabling domain adaptation. Our method approximates layer-wise impact on external benchmarks through post-hoc analysis, then selectively freezes or restores transformer layers via spherical interpolation merging. Applied to LLaMA-3.1-8B for financial tasks, SPEAR-MM achieves 91.2% retention of general capabilities versus 69.7% for standard continual pretraining, while maintaining 94% of domain adaptation gains. The approach provides interpretable trade-off control and reduces computational costs by 90% crucial for resource-constrained financial institutions.",
+    "authors": [
+      "Berkcan Kapusuzoglu",
+      "Supriyo Chakraborty",
+      "Renkun Ni",
+      "Stephen Rawls",
+      "Sambit Sahu"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG",
+      "math.SP"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08500v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08500v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.67
@@ -2384,28 +2384,6 @@
     "research_score": 0.64
   },
   {
-    "arxiv_id": "2511.08225v1",
-    "title": "Benchmarking Educational LLMs with Analytics: A Case Study on Gender Bias in Feedback",
-    "summary": "As teachers increasingly turn to GenAI in their educational practice, we need robust methods to benchmark large language models (LLMs) for pedagogical purposes. This article presents an embedding-based benchmarking framework to detect bias in LLMs in the context of formative feedback. Using 600 authentic student essays from the AES 2.0 corpus, we constructed controlled counterfactuals along two dimensions: (i) implicit cues via lexicon-based swaps of gendered terms within essays, and (ii) explicit cues via gendered author background in the prompt. We investigated six representative LLMs (i.e. GPT-5 mini, GPT-4o mini, DeepSeek-R1, DeepSeek-R1-Qwen, Gemini 2.5 Pro, Llama-3-8B). We first quantified the response divergence with cosine and Euclidean distances over sentence embeddings, then assessed significance via permutation tests, and finally, visualised structure using dimensionality reduction. In all models, implicit manipulations reliably induced larger semantic shifts for male-female counterfactuals than for female-male. Only the GPT and Llama models showed sensitivity to explicit gender cues. These findings show that even state-of-the-art LLMs exhibit asymmetric semantic responses to gender substitutions, suggesting persistent gender biases in feedback they provide learners. Qualitative analyses further revealed consistent linguistic differences (e.g., more autonomy-supportive feedback under male cues vs. more controlling feedback under female cues). We discuss implications for fairness auditing of pedagogical GenAI, propose reporting standards for counterfactual evaluation in learning analytics, and outline practical guidance for prompt design and deployment to safeguard equitable feedback.",
-    "authors": [
-      "Yishan Du",
-      "Conrad Borchers",
-      "Mutlu Cukurova"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI",
-      "cs.CY",
-      "cs.HC"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08225v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08225v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
     "arxiv_id": "2511.08470v1",
     "title": "Binary Split Categorical feature with Mean Absolute Error Criteria in CART",
     "summary": "In the context of the Classification and Regression Trees (CART) algorithm, the efficient splitting of categorical features using standard criteria like GINI and Entropy is well-established. However, using the Mean Absolute Error (MAE) criterion for categorical features has traditionally relied on various numerical encoding methods. This paper demonstrates that unsupervised numerical encoding methods are not viable for the MAE criteria. Furthermore, we present a novel and efficient splitting algorithm that addresses the challenges of handling categorical features with the MAE criterion. Our findings underscore the limitations of existing approaches and offer a promising solution to enhance the handling of categorical data in CART algorithms.",
@@ -2423,6 +2401,28 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08470v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08470v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
+    "arxiv_id": "2511.08225v1",
+    "title": "Benchmarking Educational LLMs with Analytics: A Case Study on Gender Bias in Feedback",
+    "summary": "As teachers increasingly turn to GenAI in their educational practice, we need robust methods to benchmark large language models (LLMs) for pedagogical purposes. This article presents an embedding-based benchmarking framework to detect bias in LLMs in the context of formative feedback. Using 600 authentic student essays from the AES 2.0 corpus, we constructed controlled counterfactuals along two dimensions: (i) implicit cues via lexicon-based swaps of gendered terms within essays, and (ii) explicit cues via gendered author background in the prompt. We investigated six representative LLMs (i.e. GPT-5 mini, GPT-4o mini, DeepSeek-R1, DeepSeek-R1-Qwen, Gemini 2.5 Pro, Llama-3-8B). We first quantified the response divergence with cosine and Euclidean distances over sentence embeddings, then assessed significance via permutation tests, and finally, visualised structure using dimensionality reduction. In all models, implicit manipulations reliably induced larger semantic shifts for male-female counterfactuals than for female-male. Only the GPT and Llama models showed sensitivity to explicit gender cues. These findings show that even state-of-the-art LLMs exhibit asymmetric semantic responses to gender substitutions, suggesting persistent gender biases in feedback they provide learners. Qualitative analyses further revealed consistent linguistic differences (e.g., more autonomy-supportive feedback under male cues vs. more controlling feedback under female cues). We discuss implications for fairness auditing of pedagogical GenAI, propose reporting standards for counterfactual evaluation in learning analytics, and outline practical guidance for prompt design and deployment to safeguard equitable feedback.",
+    "authors": [
+      "Yishan Du",
+      "Conrad Borchers",
+      "Mutlu Cukurova"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CY",
+      "cs.HC"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08225v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08225v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.64
