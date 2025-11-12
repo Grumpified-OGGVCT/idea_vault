@@ -1255,29 +1255,6 @@
     "research_score": 0.68
   },
   {
-    "arxiv_id": "2511.07813v1",
-    "title": "Sparse3DPR: Training-Free 3D Hierarchical Scene Parsing and Task-Adaptive Subgraph Reasoning from Sparse RGB Views",
-    "summary": "Recently, large language models (LLMs) have been explored widely for 3D scene understanding. Among them, training-free approaches are gaining attention for their flexibility and generalization over training-based methods. However, they typically struggle with accuracy and efficiency in practical deployment. To address the problems, we propose Sparse3DPR, a novel training-free framework for open-ended scene understanding, which leverages the reasoning capabilities of pre-trained LLMs and requires only sparse-view RGB inputs. Specifically, we introduce a hierarchical plane-enhanced scene graph that supports open vocabulary and adopts dominant planar structures as spatial anchors, which enables clearer reasoning chains and more reliable high-level inferences. Furthermore, we design a task-adaptive subgraph extraction method to filter query-irrelevant information dynamically, reducing contextual noise and improving 3D scene reasoning efficiency and accuracy. Experimental results demonstrate the superiority of Sparse3DPR, which achieves a 28.7% EM@1 improvement and a 78.2% speedup compared with ConceptGraphs on the Space3D-Bench. Moreover, Sparse3DPR obtains comparable performance to training-based methods on ScanQA, with additional real-world experiments confirming its robustness and generalization capability.",
-    "authors": [
-      "Haida Feng",
-      "Hao Wei",
-      "Zewen Xu",
-      "Haolin Wang",
-      "Chade Li",
-      "Yihong Wu"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07813v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07813v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.68
-  },
-  {
     "arxiv_id": "2511.08143v1",
     "title": "Relation as a Prior: A Novel Paradigm for LLM-based Document-level Relation Extraction",
     "summary": "Large Language Models (LLMs) have demonstrated their remarkable capabilities in document understanding. However, recent research reveals that LLMs still exhibit performance gaps in Document-level Relation Extraction (DocRE) as requiring fine-grained comprehension. The commonly adopted \"extract entities then predict relations\" paradigm in LLM-based methods leads to these gaps due to two main reasons: (1) Numerous unrelated entity pairs introduce noise and interfere with the relation prediction for truly related entity pairs. (2) Although LLMs have identified semantic associations between entities, relation labels beyond the predefined set are still treated as prediction errors. To address these challenges, we propose a novel Relation as a Prior (RelPrior) paradigm for LLM-based DocRE. For challenge (1), RelPrior utilizes binary relation as a prior to extract and determine whether two entities are correlated, thereby filtering out irrelevant entity pairs and reducing prediction noise. For challenge (2), RelPrior utilizes predefined relation as a prior to match entities for triples extraction instead of directly predicting relation. Thus, it avoids misjudgment caused by strict predefined relation labeling. Extensive experiments on two benchmarks demonstrate that RelPrior achieves state-of-the-art performance, surpassing existing LLM-based methods.",
@@ -1296,6 +1273,29 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08143v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08143v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
+    "arxiv_id": "2511.07813v1",
+    "title": "Sparse3DPR: Training-Free 3D Hierarchical Scene Parsing and Task-Adaptive Subgraph Reasoning from Sparse RGB Views",
+    "summary": "Recently, large language models (LLMs) have been explored widely for 3D scene understanding. Among them, training-free approaches are gaining attention for their flexibility and generalization over training-based methods. However, they typically struggle with accuracy and efficiency in practical deployment. To address the problems, we propose Sparse3DPR, a novel training-free framework for open-ended scene understanding, which leverages the reasoning capabilities of pre-trained LLMs and requires only sparse-view RGB inputs. Specifically, we introduce a hierarchical plane-enhanced scene graph that supports open vocabulary and adopts dominant planar structures as spatial anchors, which enables clearer reasoning chains and more reliable high-level inferences. Furthermore, we design a task-adaptive subgraph extraction method to filter query-irrelevant information dynamically, reducing contextual noise and improving 3D scene reasoning efficiency and accuracy. Experimental results demonstrate the superiority of Sparse3DPR, which achieves a 28.7% EM@1 improvement and a 78.2% speedup compared with ConceptGraphs on the Space3D-Bench. Moreover, Sparse3DPR obtains comparable performance to training-based methods on ScanQA, with additional real-world experiments confirming its robustness and generalization capability.",
+    "authors": [
+      "Haida Feng",
+      "Hao Wei",
+      "Zewen Xu",
+      "Haolin Wang",
+      "Chade Li",
+      "Yihong Wu"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07813v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07813v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.68
@@ -1583,24 +1583,6 @@
     "research_score": 0.67
   },
   {
-    "arxiv_id": "2511.07857v1",
-    "title": "A General Method for Proving Networks Universal Approximation Property",
-    "summary": "Deep learning architectures are highly diverse. To prove their universal approximation properties, existing works typically rely on model-specific proofs. Generally, they construct a dedicated mathematical formulation for each architecture (e.g., fully connected networks, CNNs, or Transformers) and then prove their universal approximability. However, this approach suffers from two major limitations: first, every newly proposed architecture often requires a completely new proof from scratch; second, these proofs are largely isolated from one another, lacking a common analytical foundation. This not only incurs significant redundancy but also hinders unified theoretical understanding across different network families. To address these issues, this paper proposes a general and modular framework for proving universal approximation. We define a basic building block (comprising one or multiple layers) that possesses the universal approximation property as a Universal Approximation Module (UAM). Under this condition, we show that any deep network composed of such modules inherently retains the universal approximation property. Moreover, the overall approximation process can be interpreted as a progressive refinement across modules. This perspective not only unifies the analysis of diverse architectures but also enables a step-by-step understanding of how expressive power evolves through the network.",
-    "authors": [
-      "Wei Wang"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07857v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07857v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.67
-  },
-  {
     "arxiv_id": "2511.08465v1",
     "title": "Generalizable Blood Cell Detection via Unified Dataset and Faster R-CNN",
     "summary": "This paper presents a comprehensive methodology and comparative performance analysis for the automated classification and object detection of peripheral blood cells (PBCs) in microscopic images. Addressing the critical challenge of data scarcity and heterogeneity, robust data pipeline was first developed to standardize and merge four public datasets (PBC, BCCD, Chula, Sickle Cell) into a unified resource. Then employed a state-of-the-art Faster R-CNN object detection framework, leveraging a ResNet-50-FPN backbone. Comparative training rigorously evaluated a randomly initialized baseline model (Regimen 1) against a Transfer Learning Regimen (Regimen 2), initialized with weights pre-trained on the Microsoft COCO dataset. The results demonstrate that the Transfer Learning approach achieved significantly faster convergence and superior stability, culminating in a final validation loss of 0.08666, a substantial improvement over the baseline. This validated methodology establishes a robust foundation for building high-accuracy, deployable systems for automated hematological diagnosis.",
@@ -1614,6 +1596,24 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08465v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08465v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.67
+  },
+  {
+    "arxiv_id": "2511.07857v1",
+    "title": "A General Method for Proving Networks Universal Approximation Property",
+    "summary": "Deep learning architectures are highly diverse. To prove their universal approximation properties, existing works typically rely on model-specific proofs. Generally, they construct a dedicated mathematical formulation for each architecture (e.g., fully connected networks, CNNs, or Transformers) and then prove their universal approximability. However, this approach suffers from two major limitations: first, every newly proposed architecture often requires a completely new proof from scratch; second, these proofs are largely isolated from one another, lacking a common analytical foundation. This not only incurs significant redundancy but also hinders unified theoretical understanding across different network families. To address these issues, this paper proposes a general and modular framework for proving universal approximation. We define a basic building block (comprising one or multiple layers) that possesses the universal approximation property as a Universal Approximation Module (UAM). Under this condition, we show that any deep network composed of such modules inherently retains the universal approximation property. Moreover, the overall approximation process can be interpreted as a progressive refinement across modules. This perspective not only unifies the analysis of diverse architectures but also enables a step-by-step understanding of how expressive power evolves through the network.",
+    "authors": [
+      "Wei Wang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07857v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07857v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.67
@@ -2067,28 +2067,6 @@
     "research_score": 0.65
   },
   {
-    "arxiv_id": "2511.07032v1",
-    "title": "Fair Bayesian Data Selection via Generalized Discrepancy Measures",
-    "summary": "Fairness concerns are increasingly critical as machine learning models are deployed in high-stakes applications. While existing fairness-aware methods typically intervene at the model level, they often suffer from high computational costs, limited scalability, and poor generalization. To address these challenges, we propose a Bayesian data selection framework that ensures fairness by aligning group-specific posterior distributions of model parameters and sample weights with a shared central distribution. Our framework supports flexible alignment via various distributional discrepancy measures, including Wasserstein distance, maximum mean discrepancy, and $f$-divergence, allowing geometry-aware control without imposing explicit fairness constraints. This data-centric approach mitigates group-specific biases in training data and improves fairness in downstream tasks, with theoretical guarantees. Experiments on benchmark datasets show that our method consistently outperforms existing data selection and model-based fairness methods in both fairness and accuracy.",
-    "authors": [
-      "Yixuan Zhang",
-      "Jiabin Luo",
-      "Zhenggang Wang",
-      "Feng Zhou",
-      "Quyu Kong"
-    ],
-    "categories": [
-      "cs.LG",
-      "stat.ML"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07032v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07032v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.65
-  },
-  {
     "arxiv_id": "2511.06826v1",
     "title": "Beyond Plain Demos: A Demo-centric Anchoring Paradigm for In-Context Learning in Alzheimer's Disease Detection",
     "summary": "Detecting Alzheimer's disease (AD) from narrative transcripts challenges large language models (LLMs): pre-training rarely covers this out-of-distribution task, and all transcript demos describe the same scene, producing highly homogeneous contexts. These factors cripple both the model's built-in task knowledge (\\textbf{task cognition}) and its ability to surface subtle, class-discriminative cues (\\textbf{contextual perception}). Because cognition is fixed after pre-training, improving in-context learning (ICL) for AD detection hinges on enriching perception through better demonstration (demo) sets. We demonstrate that standard ICL quickly saturates, its demos lack diversity (context width) and fail to convey fine-grained signals (context depth), and that recent task vector (TV) approaches improve broad task adaptation by injecting TV into the LLMs' hidden states (HSs), they are ill-suited for AD detection due to the mismatch of injection granularity, strength and position. To address these bottlenecks, we introduce \\textbf{DA4ICL}, a demo-centric anchoring framework that jointly expands context width via \\emph{\\textbf{Diverse and Contrastive Retrieval}} (DCR) and deepens each demo's signal via \\emph{\\textbf{Projected Vector Anchoring}} (PVA) at every Transformer layer. Across three AD benchmarks, DA4ICL achieves large, stable gains over both ICL and TV baselines, charting a new paradigm for fine-grained, OOD and low-resource LLM adaptation.",
@@ -2112,20 +2090,23 @@
     "research_score": 0.65
   },
   {
-    "arxiv_id": "2511.07836v1",
-    "title": "Hyperellipsoid Density Sampling: Exploitative Sequences to Accelerate High-Dimensional Optimization",
-    "summary": "The curse of dimensionality presents a pervasive challenge in optimization problems, with exponential expansion of the search space rapidly causing traditional algorithms to become inefficient or infeasible. An adaptive sampling strategy is presented to accelerate optimization in this domain as an alternative to uniform quasi-Monte Carlo (QMC) methods.   This method, referred to as Hyperellipsoid Density Sampling (HDS), generates its sequences by defining multiple hyperellipsoids throughout the search space. HDS uses three types of unsupervised learning algorithms to circumvent high-dimensional geometric calculations, producing an intelligent, non-uniform sample sequence that exploits statistically promising regions of the parameter space and improves final solution quality in high-dimensional optimization problems.   A key feature of the method is optional Gaussian weights, which may be provided to influence the sample distribution towards known locations of interest. This capability makes HDS versatile for applications beyond optimization, providing a focused, denser sample distribution where models need to concentrate their efforts on specific, non-uniform regions of the parameter space.   The method was evaluated against Sobol, a standard QMC method, using differential evolution (DE) on the 29 CEC2017 benchmark test functions. The results show statistically significant improvements in solution geometric mean error (p < 0.05), with average performance gains ranging from 3% in 30D to 37% in 10D. This paper demonstrates the efficacy of HDS as a robust alternative to QMC sampling for high-dimensional optimization.",
+    "arxiv_id": "2511.07032v1",
+    "title": "Fair Bayesian Data Selection via Generalized Discrepancy Measures",
+    "summary": "Fairness concerns are increasingly critical as machine learning models are deployed in high-stakes applications. While existing fairness-aware methods typically intervene at the model level, they often suffer from high computational costs, limited scalability, and poor generalization. To address these challenges, we propose a Bayesian data selection framework that ensures fairness by aligning group-specific posterior distributions of model parameters and sample weights with a shared central distribution. Our framework supports flexible alignment via various distributional discrepancy measures, including Wasserstein distance, maximum mean discrepancy, and $f$-divergence, allowing geometry-aware control without imposing explicit fairness constraints. This data-centric approach mitigates group-specific biases in training data and improves fairness in downstream tasks, with theoretical guarantees. Experiments on benchmark datasets show that our method consistently outperforms existing data selection and model-based fairness methods in both fairness and accuracy.",
     "authors": [
-      "Julian Soltes"
+      "Yixuan Zhang",
+      "Jiabin Luo",
+      "Zhenggang Wang",
+      "Feng Zhou",
+      "Quyu Kong"
     ],
     "categories": [
-      "math.NA",
       "cs.LG",
-      "cs.NE"
+      "stat.ML"
     ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07836v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07836v1.pdf",
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07032v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07032v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.65
@@ -2153,6 +2134,25 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08464v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08464v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.65
+  },
+  {
+    "arxiv_id": "2511.07836v1",
+    "title": "Hyperellipsoid Density Sampling: Exploitative Sequences to Accelerate High-Dimensional Optimization",
+    "summary": "The curse of dimensionality presents a pervasive challenge in optimization problems, with exponential expansion of the search space rapidly causing traditional algorithms to become inefficient or infeasible. An adaptive sampling strategy is presented to accelerate optimization in this domain as an alternative to uniform quasi-Monte Carlo (QMC) methods.   This method, referred to as Hyperellipsoid Density Sampling (HDS), generates its sequences by defining multiple hyperellipsoids throughout the search space. HDS uses three types of unsupervised learning algorithms to circumvent high-dimensional geometric calculations, producing an intelligent, non-uniform sample sequence that exploits statistically promising regions of the parameter space and improves final solution quality in high-dimensional optimization problems.   A key feature of the method is optional Gaussian weights, which may be provided to influence the sample distribution towards known locations of interest. This capability makes HDS versatile for applications beyond optimization, providing a focused, denser sample distribution where models need to concentrate their efforts on specific, non-uniform regions of the parameter space.   The method was evaluated against Sobol, a standard QMC method, using differential evolution (DE) on the 29 CEC2017 benchmark test functions. The results show statistically significant improvements in solution geometric mean error (p < 0.05), with average performance gains ranging from 3% in 30D to 37% in 10D. This paper demonstrates the efficacy of HDS as a robust alternative to QMC sampling for high-dimensional optimization.",
+    "authors": [
+      "Julian Soltes"
+    ],
+    "categories": [
+      "math.NA",
+      "cs.LG",
+      "cs.NE"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07836v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07836v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.65
@@ -3733,6 +3733,25 @@
     "research_score": 0.57
   },
   {
+    "arxiv_id": "2511.08082v1",
+    "title": "Prudential Reliability of Large Language Models in Reinsurance: Governance, Assurance, and Capital Efficiency",
+    "summary": "This paper develops a prudential framework for assessing the reliability of large language models (LLMs) in reinsurance. A five-pillar architecture--governance, data lineage, assurance, resilience, and regulatory alignment--translates supervisory expectations from Solvency II, SR 11-7, and guidance from EIOPA (2025), NAIC (2023), and IAIS (2024) into measurable lifecycle controls. The framework is implemented through the Reinsurance AI Reliability and Assurance Benchmark (RAIRAB), which evaluates whether governance-embedded LLMs meet prudential standards for grounding, transparency, and accountability. Across six task families, retrieval-grounded configurations achieved higher grounding accuracy (0.90), reduced hallucination and interpretive drift by roughly 40%, and nearly doubled transparency. These mechanisms lower informational frictions in risk transfer and capital allocation, showing that existing prudential doctrines already accommodate reliable AI when governance is explicit, data are traceable, and assurance is verifiable.",
+    "authors": [
+      "Stella C. Dong"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "econ.GN"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08082v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08082v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
     "arxiv_id": "2511.08314v1",
     "title": "Improving the accuracy and generalizability of molecular property regression models with a substructure-substitution-rule-informed framework",
     "summary": "Artificial Intelligence (AI)-aided drug discovery is an active research field, yet AI models often exhibit poor accuracy in regression tasks for molecular property prediction, and perform catastrophically poorly for out-of-distribution (OOD) molecules. Here, we present MolRuleLoss, a substructure-substitution-rule-informed framework that improves the accuracy and generalizability of multiple molecular property regression models (MPRMs) such as GEM and UniMol for diverse molecular property prediction tasks. MolRuleLoss incorporates partial derivative constraints for substructure substitution rules (SSRs) into an MPRM's loss function. When using GEM models for predicting lipophilicity, water solubility, and solvation-free energy (using lipophilicity, ESOL, and freeSolv datasets from MoleculeNet), the root mean squared error (RMSE) values with and without MolRuleLoss were 0.587 vs. 0.660, 0.777 vs. 0.798, and 1.252 vs. 1.877, respectively, representing 2.6-33.3% performance improvements. We show that both the number and the quality of SSRs contribute to the magnitude of prediction accuracy gains obtained upon adding MolRuleLoss to an MPRM. MolRuleLoss improved the generalizability of MPRMs for \"activity cliff\" molecules in a lipophilicity prediction task and improved the generalizability of MPRMs for OOD molecules in a melting point prediction task. In a molecular weight prediction task for OOD molecules, MolRuleLoss reduced the RMSE value of a GEM model from 29.507 to 0.007. We also provide a formal demonstration that the upper bound of the variation for property change of SSRs is positively correlated with an MPRM's error. Together, we show that using the MolRuleLoss framework as a bolt-on boosts the prediction accuracy and generalizability of multiple MPRMs, supporting diverse applications in areas like cheminformatics and AI-aided drug discovery.",
@@ -3751,25 +3770,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08314v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08314v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.57
-  },
-  {
-    "arxiv_id": "2511.08082v1",
-    "title": "Prudential Reliability of Large Language Models in Reinsurance: Governance, Assurance, and Capital Efficiency",
-    "summary": "This paper develops a prudential framework for assessing the reliability of large language models (LLMs) in reinsurance. A five-pillar architecture--governance, data lineage, assurance, resilience, and regulatory alignment--translates supervisory expectations from Solvency II, SR 11-7, and guidance from EIOPA (2025), NAIC (2023), and IAIS (2024) into measurable lifecycle controls. The framework is implemented through the Reinsurance AI Reliability and Assurance Benchmark (RAIRAB), which evaluates whether governance-embedded LLMs meet prudential standards for grounding, transparency, and accountability. Across six task families, retrieval-grounded configurations achieved higher grounding accuracy (0.90), reduced hallucination and interpretive drift by roughly 40%, and nearly doubled transparency. These mechanisms lower informational frictions in risk transfer and capital allocation, showing that existing prudential doctrines already accommodate reliable AI when governance is explicit, data are traceable, and assurance is verifiable.",
-    "authors": [
-      "Stella C. Dong"
-    ],
-    "categories": [
-      "cs.AI",
-      "cs.LG",
-      "econ.GN"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08082v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08082v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.57
@@ -3928,45 +3928,6 @@
     "research_score": 0.56
   },
   {
-    "arxiv_id": "2511.07011v1",
-    "title": "Multilingual Lexical Feature Analysis of Spoken Language for Predicting Major Depression Symptom Severity",
-    "summary": "Background: Captured between clinical appointments using mobile devices, spoken language has potential for objective, more regular assessment of symptom severity and earlier detection of relapse in major depressive disorder. However, research to date has largely been in non-clinical cross-sectional samples of written language using complex machine learning (ML) approaches with limited interpretability.   Methods: We describe an initial exploratory analysis of longitudinal speech data and PHQ-8 assessments from 5,836 recordings of 586 participants in the UK, Netherlands, and Spain, collected in the RADAR-MDD study. We sought to identify interpretable lexical features associated with MDD symptom severity with linear mixed-effects modelling. Interpretable features and high-dimensional vector embeddings were also used to test the prediction performance of four regressor ML models.   Results: In English data, MDD symptom severity was associated with 7 features including lexical diversity measures and absolutist language. In Dutch, associations were observed with words per sentence and positive word frequency; no associations were observed in recordings collected in Spain. The predictive power of lexical features and vector embeddings was near chance level across all languages.   Limitations: Smaller samples in non-English speech and methodological choices, such as the elicitation prompt, may have also limited the effect sizes observable. A lack of NLP tools in languages other than English restricted our feature choice.   Conclusion: To understand the value of lexical markers in clinical research and practice, further research is needed in larger samples across several languages using improved protocols, and ML models that account for within- and between-individual variations in language.",
-    "authors": [
-      "Anastasiia Tokareva",
-      "Judith Dineley",
-      "Zoe Firth",
-      "Pauline Conde",
-      "Faith Matcham",
-      "Sara Siddi",
-      "Femke Lamers",
-      "Ewan Carr",
-      "Carolin Oetzmann",
-      "Daniel Leightley",
-      "Yuezhou Zhang",
-      "Amos A. Folarin",
-      "Josep Maria Haro",
-      "Brenda W. J. H. Penninx",
-      "Raquel Bailon",
-      "Srinivasan Vairavan",
-      "Til Wykes",
-      "Richard J. B. Dobson",
-      "Vaibhav A. Narayan",
-      "Matthew Hotopf",
-      "Nicholas Cummins",
-      "The RADAR-CNS Consortium"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.LG"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07011v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07011v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.56
-  },
-  {
     "arxiv_id": "2511.06700v1",
     "title": "Place Matters: Comparing LLM Hallucination Rates for Place-Based Legal Queries",
     "summary": "How do we make a meaningful comparison of a large language model's knowledge of the law in one place compared to another? Quantifying these differences is critical to understanding if the quality of the legal information obtained by users of LLM-based chatbots varies depending on their location. However, obtaining meaningful comparative metrics is challenging because legal institutions in different places are not themselves easily comparable. In this work we propose a methodology to obtain place-to-place metrics based on the comparative law concept of functionalism. We construct a dataset of factual scenarios drawn from Reddit posts by users seeking legal advice for family, housing, employment, crime and traffic issues. We use these to elicit a summary of a law from the LLM relevant to each scenario in Los Angeles, London and Sydney. These summaries, typically of a legislative provision, are manually evaluated for hallucinations. We show that the rate of hallucination of legal information by leading closed-source LLMs is significantly associated with place. This suggests that the quality of legal solutions provided by these models is not evenly distributed across geography. Additionally, we show a strong negative correlation between hallucination rate and the frequency of the majority response when the LLM is sampled multiple times, suggesting a measure of uncertainty of model predictions of legal facts.",
@@ -4005,6 +3966,45 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06698v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06698v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.56
+  },
+  {
+    "arxiv_id": "2511.07011v1",
+    "title": "Multilingual Lexical Feature Analysis of Spoken Language for Predicting Major Depression Symptom Severity",
+    "summary": "Background: Captured between clinical appointments using mobile devices, spoken language has potential for objective, more regular assessment of symptom severity and earlier detection of relapse in major depressive disorder. However, research to date has largely been in non-clinical cross-sectional samples of written language using complex machine learning (ML) approaches with limited interpretability.   Methods: We describe an initial exploratory analysis of longitudinal speech data and PHQ-8 assessments from 5,836 recordings of 586 participants in the UK, Netherlands, and Spain, collected in the RADAR-MDD study. We sought to identify interpretable lexical features associated with MDD symptom severity with linear mixed-effects modelling. Interpretable features and high-dimensional vector embeddings were also used to test the prediction performance of four regressor ML models.   Results: In English data, MDD symptom severity was associated with 7 features including lexical diversity measures and absolutist language. In Dutch, associations were observed with words per sentence and positive word frequency; no associations were observed in recordings collected in Spain. The predictive power of lexical features and vector embeddings was near chance level across all languages.   Limitations: Smaller samples in non-English speech and methodological choices, such as the elicitation prompt, may have also limited the effect sizes observable. A lack of NLP tools in languages other than English restricted our feature choice.   Conclusion: To understand the value of lexical markers in clinical research and practice, further research is needed in larger samples across several languages using improved protocols, and ML models that account for within- and between-individual variations in language.",
+    "authors": [
+      "Anastasiia Tokareva",
+      "Judith Dineley",
+      "Zoe Firth",
+      "Pauline Conde",
+      "Faith Matcham",
+      "Sara Siddi",
+      "Femke Lamers",
+      "Ewan Carr",
+      "Carolin Oetzmann",
+      "Daniel Leightley",
+      "Yuezhou Zhang",
+      "Amos A. Folarin",
+      "Josep Maria Haro",
+      "Brenda W. J. H. Penninx",
+      "Raquel Bailon",
+      "Srinivasan Vairavan",
+      "Til Wykes",
+      "Richard J. B. Dobson",
+      "Vaibhav A. Narayan",
+      "Matthew Hotopf",
+      "Nicholas Cummins",
+      "The RADAR-CNS Consortium"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07011v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07011v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.56
@@ -4182,6 +4182,48 @@
     "research_score": 0.54
   },
   {
+    "arxiv_id": "2511.08585v1",
+    "title": "Simulating the Visual World with Artificial Intelligence: A Roadmap",
+    "summary": "The landscape of video generation is shifting, from a focus on generating visually appealing clips to building virtual environments that support interaction and maintain physical plausibility. These developments point toward the emergence of video foundation models that function not only as visual generators but also as implicit world models, models that simulate the physical dynamics, agent-environment interactions, and task planning that govern real or imagined worlds. This survey provides a systematic overview of this evolution, conceptualizing modern video foundation models as the combination of two core components: an implicit world model and a video renderer. The world model encodes structured knowledge about the world, including physical laws, interaction dynamics, and agent behavior. It serves as a latent simulation engine that enables coherent visual reasoning, long-term temporal consistency, and goal-driven planning. The video renderer transforms this latent simulation into realistic visual observations, effectively producing videos as a \"window\" into the simulated world. We trace the progression of video generation through four generations, in which the core capabilities advance step by step, ultimately culminating in a world model, built upon a video generation model, that embodies intrinsic physical plausibility, real-time multimodal interaction, and planning capabilities spanning multiple spatiotemporal scales. For each generation, we define its core characteristics, highlight representative works, and examine their application domains such as robotics, autonomous driving, and interactive gaming. Finally, we discuss open challenges and design principles for next-generation world models, including the role of agent intelligence in shaping and evaluating these systems. An up-to-date list of related works is maintained at this link.",
+    "authors": [
+      "Jingtong Yue",
+      "Ziqi Huang",
+      "Zhaoxi Chen",
+      "Xintao Wang",
+      "Pengfei Wan",
+      "Ziwei Liu"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CV"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08585v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08585v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
+    "arxiv_id": "2511.08570v1",
+    "title": "Automatic Grid Updates for Kolmogorov-Arnold Networks using Layer Histograms",
+    "summary": "Kolmogorov-Arnold Networks (KANs) are a class of neural networks that have received increased attention in recent literature. In contrast to MLPs, KANs leverage parameterized, trainable activation functions and offer several benefits including improved interpretability and higher accuracy on learning symbolic equations. However, the original KAN architecture requires adjustments to the domain discretization of the network (called the \"domain grid\") during training, creating extra overhead for the user in the training process. Typical KAN layers are not designed with the ability to autonomously update their domains in a data-driven manner informed by the changing output ranges of previous layers. As an added benefit, this histogram algorithm may also be applied towards detecting out-of-distribution (OOD) inputs in a variety of settings. We demonstrate that AdaptKAN exceeds or matches the performance of prior KAN architectures and MLPs on four different tasks: learning scientific equations from the Feynman dataset, image classification from frozen features, learning a control Lyapunov function, and detecting OOD inputs on the OpenOOD v1.5 benchmark.",
+    "authors": [
+      "Jamison Moody",
+      "James Usevitch"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08570v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08570v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
     "arxiv_id": "2511.07899v1",
     "title": "Statistically Assuring Safety of Control Systems using Ensembles of Safety Filters and Conformal Prediction",
     "summary": "Safety assurance is a fundamental requirement for deploying learning-enabled autonomous systems. Hamilton-Jacobi (HJ) reachability analysis is a fundamental method for formally verifying safety and generating safe controllers. However, computing the HJ value function that characterizes the backward reachable set (BRS) of a set of user-defined failure states is computationally expensive, especially for high-dimensional systems, motivating the use of reinforcement learning approaches to approximate the value function. Unfortunately, a learned value function and its corresponding safe policy are not guaranteed to be correct. The learned value function evaluated at a given state may not be equal to the actual safety return achieved by following the learned safe policy. To address this challenge, we introduce a conformal prediction-based (CP) framework that bounds such uncertainty. We leverage CP to provide probabilistic safety guarantees when using learned HJ value functions and policies to prevent control systems from reaching failure states. Specifically, we use CP to calibrate the switching between the unsafe nominal controller and the learned HJ-based safe policy and to derive safety guarantees under this switched policy. We also investigate using an ensemble of independently trained HJ value functions as a safety filter and compare this ensemble approach to using individual value functions alone.",
@@ -4220,48 +4262,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08307v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08307v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
-    "arxiv_id": "2511.08585v1",
-    "title": "Simulating the Visual World with Artificial Intelligence: A Roadmap",
-    "summary": "The landscape of video generation is shifting, from a focus on generating visually appealing clips to building virtual environments that support interaction and maintain physical plausibility. These developments point toward the emergence of video foundation models that function not only as visual generators but also as implicit world models, models that simulate the physical dynamics, agent-environment interactions, and task planning that govern real or imagined worlds. This survey provides a systematic overview of this evolution, conceptualizing modern video foundation models as the combination of two core components: an implicit world model and a video renderer. The world model encodes structured knowledge about the world, including physical laws, interaction dynamics, and agent behavior. It serves as a latent simulation engine that enables coherent visual reasoning, long-term temporal consistency, and goal-driven planning. The video renderer transforms this latent simulation into realistic visual observations, effectively producing videos as a \"window\" into the simulated world. We trace the progression of video generation through four generations, in which the core capabilities advance step by step, ultimately culminating in a world model, built upon a video generation model, that embodies intrinsic physical plausibility, real-time multimodal interaction, and planning capabilities spanning multiple spatiotemporal scales. For each generation, we define its core characteristics, highlight representative works, and examine their application domains such as robotics, autonomous driving, and interactive gaming. Finally, we discuss open challenges and design principles for next-generation world models, including the role of agent intelligence in shaping and evaluating these systems. An up-to-date list of related works is maintained at this link.",
-    "authors": [
-      "Jingtong Yue",
-      "Ziqi Huang",
-      "Zhaoxi Chen",
-      "Xintao Wang",
-      "Pengfei Wan",
-      "Ziwei Liu"
-    ],
-    "categories": [
-      "cs.AI",
-      "cs.CV"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08585v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08585v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
-    "arxiv_id": "2511.08570v1",
-    "title": "Automatic Grid Updates for Kolmogorov-Arnold Networks using Layer Histograms",
-    "summary": "Kolmogorov-Arnold Networks (KANs) are a class of neural networks that have received increased attention in recent literature. In contrast to MLPs, KANs leverage parameterized, trainable activation functions and offer several benefits including improved interpretability and higher accuracy on learning symbolic equations. However, the original KAN architecture requires adjustments to the domain discretization of the network (called the \"domain grid\") during training, creating extra overhead for the user in the training process. Typical KAN layers are not designed with the ability to autonomously update their domains in a data-driven manner informed by the changing output ranges of previous layers. As an added benefit, this histogram algorithm may also be applied towards detecting out-of-distribution (OOD) inputs in a variety of settings. We demonstrate that AdaptKAN exceeds or matches the performance of prior KAN architectures and MLPs on four different tasks: learning scientific equations from the Feynman dataset, image classification from frozen features, learning a control Lyapunov function, and detecting OOD inputs on the OpenOOD v1.5 benchmark.",
-    "authors": [
-      "Jamison Moody",
-      "James Usevitch"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08570v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08570v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.54
