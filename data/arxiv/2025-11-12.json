@@ -622,27 +622,6 @@
     "research_score": 0.71
   },
   {
-    "arxiv_id": "2511.07377v1",
-    "title": "Real-Time LiDAR Super-Resolution via Frequency-Aware Multi-Scale Fusion",
-    "summary": "LiDAR super-resolution addresses the challenge of achieving high-quality 3D perception from cost-effective, low-resolution sensors. While recent transformer-based approaches like TULIP show promise, they remain limited to spatial-domain processing with restricted receptive fields. We introduce FLASH (Frequency-aware LiDAR Adaptive Super-resolution with Hierarchical fusion), a novel framework that overcomes these limitations through dual-domain processing. FLASH integrates two key innovations: (i) Frequency-Aware Window Attention that combines local spatial attention with global frequency-domain analysis via FFT, capturing both fine-grained geometry and periodic scanning patterns at log-linear complexity. (ii) Adaptive Multi-Scale Fusion that replaces conventional skip connections with learned position-specific feature aggregation, enhanced by CBAM attention for dynamic feature selection. Extensive experiments on KITTI demonstrate that FLASH achieves state-of-the-art performance across all evaluation metrics, surpassing even uncertainty-enhanced baselines that require multiple forward passes. Notably, FLASH outperforms TULIP with Monte Carlo Dropout while maintaining single-pass efficiency, which enables real-time deployment. The consistent superiority across all distance ranges validates that our dual-domain approach effectively handles uncertainty through architectural design rather than computationally expensive stochastic inference, making it practical for autonomous systems.",
-    "authors": [
-      "June Moh Goo",
-      "Zichao Zeng",
-      "Jan Boehm"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI",
-      "cs.RO"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07377v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07377v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.71
-  },
-  {
     "arxiv_id": "2511.06893v1",
     "title": "DeepBooTS: Dual-Stream Residual Boosting for Drift-Resilient Time-Series Forecasting",
     "summary": "Time-Series (TS) exhibits pronounced non-stationarity. Consequently, most forecasting methods display compromised robustness to concept drift, despite the prevalent application of instance normalization. We tackle this challenge by first analysing concept drift through a bias-variance lens and proving that weighted ensemble reduces variance without increasing bias. These insights motivate DeepBooTS, a novel end-to-end dual-stream residual-decreasing boosting method that progressively reconstructs the intrinsic signal. In our design, each block of a deep model becomes an ensemble of learners with an auxiliary output branch forming a highway to the final prediction. The block-wise outputs correct the residuals of previous blocks, leading to a learning-driven decomposition of both inputs and targets. This method enhances versatility and interpretability while substantially improving robustness to concept drift. Extensive experiments, including those on large-scale datasets, show that the proposed method outperforms existing methods by a large margin, yielding an average performance improvement of 15.8% across various datasets, establishing a new benchmark for TS forecasting.",
@@ -689,6 +668,27 @@
     "research_score": 0.71
   },
   {
+    "arxiv_id": "2511.07377v1",
+    "title": "Real-Time LiDAR Super-Resolution via Frequency-Aware Multi-Scale Fusion",
+    "summary": "LiDAR super-resolution addresses the challenge of achieving high-quality 3D perception from cost-effective, low-resolution sensors. While recent transformer-based approaches like TULIP show promise, they remain limited to spatial-domain processing with restricted receptive fields. We introduce FLASH (Frequency-aware LiDAR Adaptive Super-resolution with Hierarchical fusion), a novel framework that overcomes these limitations through dual-domain processing. FLASH integrates two key innovations: (i) Frequency-Aware Window Attention that combines local spatial attention with global frequency-domain analysis via FFT, capturing both fine-grained geometry and periodic scanning patterns at log-linear complexity. (ii) Adaptive Multi-Scale Fusion that replaces conventional skip connections with learned position-specific feature aggregation, enhanced by CBAM attention for dynamic feature selection. Extensive experiments on KITTI demonstrate that FLASH achieves state-of-the-art performance across all evaluation metrics, surpassing even uncertainty-enhanced baselines that require multiple forward passes. Notably, FLASH outperforms TULIP with Monte Carlo Dropout while maintaining single-pass efficiency, which enables real-time deployment. The consistent superiority across all distance ranges validates that our dual-domain approach effectively handles uncertainty through architectural design rather than computationally expensive stochastic inference, making it practical for autonomous systems.",
+    "authors": [
+      "June Moh Goo",
+      "Zichao Zeng",
+      "Jan Boehm"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.RO"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07377v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07377v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.71
+  },
+  {
     "arxiv_id": "2511.07831v1",
     "title": "Distributionally Robust Online Markov Game with Linear Function Approximation",
     "summary": "The sim-to-real gap, where agents trained in a simulator face significant performance degradation during testing, is a fundamental challenge in reinforcement learning. Extansive works adopt the framework of distributionally robust RL, to learn a policy that acts robustly under worst case environment shift. Within this framework, our objective is to devise algorithms that are sample efficient with interactive data collection and large state spaces. By assuming d-rectangularity of environment dynamic shift, we identify a fundamental hardness result for learning in online Markov game, and address it by adopting minimum value assumption. Then, a novel least square value iteration type algorithm, DR-CCE-LSI, with exploration bonus devised specifically for multiple agents, is proposed to find an \\episilon-approximate robust Coarse Correlated Equilibrium(CCE). To obtain sample efficient learning, we find that: when the feature mapping function satisfies certain properties, our algorithm, DR-CCE-LSI, is able to achieve ε-approximate CCE with a regret bound of O{dHmin{H,1/min{σ_i}}\\sqrt{K}}, where K is the number of interacting episodes, H is the horizon length, d is the feature dimension, and \\simga_i represents the uncertainty level of player i. Our work introduces the first sample-efficient algorithm for this setting, matches the best result so far in single agent setting, and achieves minimax optimalsample complexity in terms of the feature dimension d. Meanwhile, we also conduct simulation study to validate the efficacy of our algorithm in learning a robust equilibrium.",
@@ -703,6 +703,32 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07831v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07831v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.71
+  },
+  {
+    "arxiv_id": "2511.07301v1",
+    "title": "Beyond Boundaries: Leveraging Vision Foundation Models for Source-Free Object Detection",
+    "summary": "Source-Free Object Detection (SFOD) aims to adapt a source-pretrained object detector to a target domain without access to source data. However, existing SFOD methods predominantly rely on internal knowledge from the source model, which limits their capacity to generalize across domains and often results in biased pseudo-labels, thereby hindering both transferability and discriminability. In contrast, Vision Foundation Models (VFMs), pretrained on massive and diverse data, exhibit strong perception capabilities and broad generalization, yet their potential remains largely untapped in the SFOD setting. In this paper, we propose a novel SFOD framework that leverages VFMs as external knowledge sources to jointly enhance feature alignment and label quality. Specifically, we design three VFM-based modules: (1) Patch-weighted Global Feature Alignment (PGFA) distills global features from VFMs using patch-similarity-based weighting to enhance global feature transferability; (2) Prototype-based Instance Feature Alignment (PIFA) performs instance-level contrastive learning guided by momentum-updated VFM prototypes; and (3) Dual-source Enhanced Pseudo-label Fusion (DEPF) fuses predictions from detection VFMs and teacher models via an entropy-aware strategy to yield more reliable supervision. Extensive experiments on six benchmarks demonstrate that our method achieves state-of-the-art SFOD performance, validating the effectiveness of integrating VFMs to simultaneously improve transferability and discriminability.",
+    "authors": [
+      "Huizai Yao",
+      "Sicheng Zhao",
+      "Pengteng Li",
+      "Yi Cui",
+      "Shuo Lu",
+      "Weiyu Guo",
+      "Yunfan Lu",
+      "Yijie Xu",
+      "Hui Xiong"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07301v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07301v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.71
@@ -782,6 +808,27 @@
     "research_score": 0.7
   },
   {
+    "arxiv_id": "2511.08224v1",
+    "title": "2D Representation for Unguided Single-View 3D Super-Resolution in Real-Time",
+    "summary": "We introduce 2Dto3D-SR, a versatile framework for real-time single-view 3D super-resolution that eliminates the need for high-resolution RGB guidance. Our framework encodes 3D data from a single viewpoint into a structured 2D representation, enabling the direct application of existing 2D image super-resolution architectures. We utilize the Projected Normalized Coordinate Code (PNCC) to represent 3D geometry from a visible surface as a regular image, thereby circumventing the complexities of 3D point-based or RGB-guided methods. This design supports lightweight and fast models adaptable to various deployment environments. We evaluate 2Dto3D-SR with two implementations: one using Swin Transformers for high accuracy, and another using Vision Mamba for high efficiency. Experiments show the Swin Transformer model achieves state-of-the-art accuracy on standard benchmarks, while the Vision Mamba model delivers competitive results at real-time speeds. This establishes our geometry-guided pipeline as a surprisingly simple yet viable and practical solution for real-world scenarios, especially where high-resolution RGB data is inaccessible.",
+    "authors": [
+      "Ignasi Mas",
+      "Ivan Huerta",
+      "Ramon Morros",
+      "Javier Ruiz-Hidalgo"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08224v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08224v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.7
+  },
+  {
     "arxiv_id": "2511.06794v1",
     "title": "Beyond Uniform Deletion: A Data Value-Weighted Framework for Certified Machine Unlearning",
     "summary": "As the right to be forgotten becomes legislated worldwide, machine unlearning mechanisms have emerged to efficiently update models for data deletion and enhance user privacy protection. However, existing machine unlearning algorithms frequently neglect the fact that different data points may contribute unequally to model performance (i.e., heterogeneous data values). Treat them equally in machine unlearning procedure can potentially degrading the performance of updated models. To address this limitation, we propose Data Value-Weighted Unlearning (DVWU), a general unlearning framework that accounts for data value heterogeneity into the unlearning process. Specifically, we design a weighting strategy based on data values, which are then integrated into the unlearning procedure to enable differentiated unlearning for data points with varying utility to the model. The DVWU framework can be broadly adapted to various existing machine unlearning methods. We use the one-step Newton update as an example for implementation, developing both output and objective perturbation algorithms to achieve certified unlearning. Experiments on both synthetic and real-world datasets demonstrate that our methods achieve superior predictive performance and robustness compared to conventional unlearning approaches. We further show the extensibility of our framework on gradient ascent method by incorporating the proposed weighting strategy into the gradient terms, highlighting the adaptability of DVWU for broader gradient-based deep unlearning methods.",
@@ -797,29 +844,6 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06794v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06794v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.7
-  },
-  {
-    "arxiv_id": "2511.07923v1",
-    "title": "Exploring the Underwater World Segmentation without Extra Training",
-    "summary": "Accurate segmentation of marine organisms is vital for biodiversity monitoring and ecological assessment, yet existing datasets and models remain largely limited to terrestrial scenes. To bridge this gap, we introduce \\textbf{AquaOV255}, the first large-scale and fine-grained underwater segmentation dataset containing 255 categories and over 20K images, covering diverse categories for open-vocabulary (OV) evaluation. Furthermore, we establish the first underwater OV segmentation benchmark, \\textbf{UOVSBench}, by integrating AquaOV255 with five additional underwater datasets to enable comprehensive evaluation. Alongside, we present \\textbf{Earth2Ocean}, a training-free OV segmentation framework that transfers terrestrial vision--language models (VLMs) to underwater domains without any additional underwater training. Earth2Ocean consists of two core components: a Geometric-guided Visual Mask Generator (\\textbf{GMG}) that refines visual features via self-similarity geometric priors for local structure perception, and a Category-visual Semantic Alignment (\\textbf{CSA}) module that enhances text embeddings through multimodal large language model reasoning and scene-aware template construction. Extensive experiments on the UOVSBench benchmark demonstrate that Earth2Ocean achieves significant performance improvement on average while maintaining efficient inference.",
-    "authors": [
-      "Bingyu Li",
-      "Tao Huo",
-      "Da Zhang",
-      "Zhiyuan Zhao",
-      "Junyu Gao",
-      "Xuelong Li"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07923v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07923v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.7
@@ -849,22 +873,24 @@
     "research_score": 0.7
   },
   {
-    "arxiv_id": "2511.08224v1",
-    "title": "2D Representation for Unguided Single-View 3D Super-Resolution in Real-Time",
-    "summary": "We introduce 2Dto3D-SR, a versatile framework for real-time single-view 3D super-resolution that eliminates the need for high-resolution RGB guidance. Our framework encodes 3D data from a single viewpoint into a structured 2D representation, enabling the direct application of existing 2D image super-resolution architectures. We utilize the Projected Normalized Coordinate Code (PNCC) to represent 3D geometry from a visible surface as a regular image, thereby circumventing the complexities of 3D point-based or RGB-guided methods. This design supports lightweight and fast models adaptable to various deployment environments. We evaluate 2Dto3D-SR with two implementations: one using Swin Transformers for high accuracy, and another using Vision Mamba for high efficiency. Experiments show the Swin Transformer model achieves state-of-the-art accuracy on standard benchmarks, while the Vision Mamba model delivers competitive results at real-time speeds. This establishes our geometry-guided pipeline as a surprisingly simple yet viable and practical solution for real-world scenarios, especially where high-resolution RGB data is inaccessible.",
+    "arxiv_id": "2511.07923v1",
+    "title": "Exploring the Underwater World Segmentation without Extra Training",
+    "summary": "Accurate segmentation of marine organisms is vital for biodiversity monitoring and ecological assessment, yet existing datasets and models remain largely limited to terrestrial scenes. To bridge this gap, we introduce \\textbf{AquaOV255}, the first large-scale and fine-grained underwater segmentation dataset containing 255 categories and over 20K images, covering diverse categories for open-vocabulary (OV) evaluation. Furthermore, we establish the first underwater OV segmentation benchmark, \\textbf{UOVSBench}, by integrating AquaOV255 with five additional underwater datasets to enable comprehensive evaluation. Alongside, we present \\textbf{Earth2Ocean}, a training-free OV segmentation framework that transfers terrestrial vision--language models (VLMs) to underwater domains without any additional underwater training. Earth2Ocean consists of two core components: a Geometric-guided Visual Mask Generator (\\textbf{GMG}) that refines visual features via self-similarity geometric priors for local structure perception, and a Category-visual Semantic Alignment (\\textbf{CSA}) module that enhances text embeddings through multimodal large language model reasoning and scene-aware template construction. Extensive experiments on the UOVSBench benchmark demonstrate that Earth2Ocean achieves significant performance improvement on average while maintaining efficient inference.",
     "authors": [
-      "Ignasi Mas",
-      "Ivan Huerta",
-      "Ramon Morros",
-      "Javier Ruiz-Hidalgo"
+      "Bingyu Li",
+      "Tao Huo",
+      "Da Zhang",
+      "Zhiyuan Zhao",
+      "Junyu Gao",
+      "Xuelong Li"
     ],
     "categories": [
       "cs.CV",
       "cs.AI"
     ],
     "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08224v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08224v1.pdf",
+    "url": "https://arxiv.org/abs/2511.07923v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07923v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.7
@@ -977,6 +1003,25 @@
     "research_score": 0.7
   },
   {
+    "arxiv_id": "2511.07238v1",
+    "title": "Leveraging Text-Driven Semantic Variation for Robust OOD Segmentation",
+    "summary": "In autonomous driving and robotics, ensuring road safety and reliable decision-making critically depends on out-of-distribution (OOD) segmentation. While numerous methods have been proposed to detect anomalous objects on the road, leveraging the vision-language space-which provides rich linguistic knowledge-remains an underexplored field. We hypothesize that incorporating these linguistic cues can be especially beneficial in the complex contexts found in real-world autonomous driving scenarios.   To this end, we present a novel approach that trains a Text-Driven OOD Segmentation model to learn a semantically diverse set of objects in the vision-language space. Concretely, our approach combines a vision-language model's encoder with a transformer decoder, employs Distance-Based OOD prompts located at varying semantic distances from in-distribution (ID) classes, and utilizes OOD Semantic Augmentation for OOD representations. By aligning visual and textual information, our approach effectively generalizes to unseen objects and provides robust OOD segmentation in diverse driving environments.   We conduct extensive experiments on publicly available OOD segmentation datasets such as Fishyscapes, Segment-Me-If-You-Can, and Road Anomaly datasets, demonstrating that our approach achieves state-of-the-art performance across both pixel-level and object-level evaluations. This result underscores the potential of vision-language-based OOD segmentation to bolster the safety and reliability of future autonomous driving systems.",
+    "authors": [
+      "Seungheon Song",
+      "Jaekoo Lee"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07238v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07238v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.7
+  },
+  {
     "arxiv_id": "2511.07685v1",
     "title": "ResearchRubrics: A Benchmark of Prompts and Rubrics For Evaluating Deep Research Agents",
     "summary": "Deep Research (DR) is an emerging agent application that leverages large language models (LLMs) to address open-ended queries. It requires the integration of several capabilities, including multi-step reasoning, cross-document synthesis, and the generation of evidence-backed, long-form answers. Evaluating DR remains challenging because responses are lengthy and diverse, admit many valid solutions, and often depend on dynamic information sources. We introduce ResearchRubrics, a standardized benchmark for DR built with over 2,800+ hours of human labor that pairs realistic, domain-diverse prompts with 2,500+ expert-written, fine-grained rubrics to assess factual grounding, reasoning soundness, and clarity. We also propose a new complexity framework for categorizing DR tasks along three axes: conceptual breadth, logical nesting, and exploration. In addition, we develop human and model-based evaluation protocols that measure rubric adherence for DR agents. We evaluate several state-of-the-art DR systems and find that even leading agents like Gemini's DR and OpenAI's DR achieve under 68% average compliance with our rubrics, primarily due to missed implicit context and inadequate reasoning about retrieved information. Our results highlight the need for robust, scalable assessment of deep research capabilities, to which end we release ResearchRubrics(including all prompts, rubrics, and evaluation code) to facilitate progress toward well-justified research assistants.",
@@ -1077,6 +1122,50 @@
     "research_score": 0.68
   },
   {
+    "arxiv_id": "2511.06817v2",
+    "title": "TiS-TSL: Image-Label Supervised Surgical Video Stereo Matching via Time-Switchable Teacher-Student Learning",
+    "summary": "Stereo matching in minimally invasive surgery (MIS) is essential for next-generation navigation and augmented reality. Yet, dense disparity supervision is nearly impossible due to anatomical constraints, typically limiting annotations to only a few image-level labels acquired before the endoscope enters deep body cavities. Teacher-Student Learning (TSL) offers a promising solution by leveraging a teacher trained on sparse labels to generate pseudo labels and associated confidence maps from abundant unlabeled surgical videos. However, existing TSL methods are confined to image-level supervision, providing only spatial confidence and lacking temporal consistency estimation. This absence of spatio-temporal reliability results in unstable disparity predictions and severe flickering artifacts across video frames. To overcome these challenges, we propose TiS-TSL, a novel time-switchable teacher-student learning framework for video stereo matching under minimal supervision. At its core is a unified model that operates in three distinct modes: Image-Prediction (IP), Forward Video-Prediction (FVP), and Backward Video-Prediction (BVP), enabling flexible temporal modeling within a single architecture. Enabled by this unified model, TiS-TSL adopts a two-stage learning strategy. The Image-to-Video (I2V) stage transfers sparse image-level knowledge to initialize temporal modeling. The subsequent Video-to-Video (V2V) stage refines temporal disparity predictions by comparing forward and backward predictions to calculate bidirectional spatio-temporal consistency. This consistency identifies unreliable regions across frames, filters noisy video-level pseudo labels, and enforces temporal coherence. Experimental results on two public datasets demonstrate that TiS-TSL exceeds other image-based state-of-the-arts by improving TEPE and EPE by at least 2.11% and 4.54%, respectively.",
+    "authors": [
+      "Rui Wang",
+      "Ying Zhou",
+      "Hao Wang",
+      "Wenwei Zhang",
+      "Qiang Li",
+      "Zhiwei Wang"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.06817v2",
+    "pdf_url": "https://arxiv.org/pdf/2511.06817v2.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
+    "arxiv_id": "2511.08090v1",
+    "title": "StableMorph: High-Quality Face Morph Generation with Stable Diffusion",
+    "summary": "Face morphing attacks threaten the integrity of biometric identity systems by enabling multiple individuals to share a single identity. To develop and evaluate effective morphing attack detection (MAD) systems, we need access to high-quality, realistic morphed images that reflect the challenges posed in real-world scenarios. However, existing morph generation methods often produce images that are blurry, riddled with artifacts, or poorly constructed making them easy to detect and not representative of the most dangerous attacks. In this work, we introduce StableMorph, a novel approach that generates highly realistic, artifact-free morphed face images using modern diffusion-based image synthesis. Unlike prior methods, StableMorph produces full-head images with sharp details, avoids common visual flaws, and offers unmatched control over visual attributes. Through extensive evaluation, we show that StableMorph images not only rival or exceed the quality of genuine face images but also maintain a strong ability to fool face recognition systems posing a greater challenge to existing MAD solutions and setting a new standard for morph quality in research and operational testing. StableMorph improves the evaluation of biometric security by creating more realistic and effective attacks and supports the development of more robust detection systems.",
+    "authors": [
+      "Wassim Kabbani",
+      "Kiran Raja",
+      "Raghavendra Ramachandra",
+      "Christoph Busch"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08090v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08090v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
     "arxiv_id": "2511.07755v1",
     "title": "Filtered-ViT: A Robust Defense Against Multiple Adversarial Patch Attacks",
     "summary": "Deep learning vision systems are increasingly deployed in safety-critical domains such as healthcare, yet they remain vulnerable to small adversarial patches that can trigger misclassifications. Most existing defenses assume a single patch and fail when multiple localized disruptions occur, the type of scenario adversaries and real-world artifacts often exploit. We propose Filtered-ViT, a new vision transformer architecture that integrates SMART Vector Median Filtering (SMART-VMF), a spatially adaptive, multi-scale, robustness-aware mechanism that enables selective suppression of corrupted regions while preserving semantic detail. On ImageNet with LaVAN multi-patch attacks, Filtered-ViT achieves 79.8% clean accuracy and 46.3% robust accuracy under four simultaneous 1\\% patches, outperforming existing defenses. Beyond synthetic benchmarks, a real-world case study on radiographic medical imagery shows that Filtered-ViT mitigates natural artifacts such as occlusions and scanner noise without degrading diagnostic content. This establishes Filtered-ViT as the first transformer to demonstrate unified robustness against both adversarial and naturally occurring patch-like disruptions, charting a path toward reliable vision systems in truly high-stakes environments.",
@@ -1140,50 +1229,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07743v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07743v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.68
-  },
-  {
-    "arxiv_id": "2511.08090v1",
-    "title": "StableMorph: High-Quality Face Morph Generation with Stable Diffusion",
-    "summary": "Face morphing attacks threaten the integrity of biometric identity systems by enabling multiple individuals to share a single identity. To develop and evaluate effective morphing attack detection (MAD) systems, we need access to high-quality, realistic morphed images that reflect the challenges posed in real-world scenarios. However, existing morph generation methods often produce images that are blurry, riddled with artifacts, or poorly constructed making them easy to detect and not representative of the most dangerous attacks. In this work, we introduce StableMorph, a novel approach that generates highly realistic, artifact-free morphed face images using modern diffusion-based image synthesis. Unlike prior methods, StableMorph produces full-head images with sharp details, avoids common visual flaws, and offers unmatched control over visual attributes. Through extensive evaluation, we show that StableMorph images not only rival or exceed the quality of genuine face images but also maintain a strong ability to fool face recognition systems posing a greater challenge to existing MAD solutions and setting a new standard for morph quality in research and operational testing. StableMorph improves the evaluation of biometric security by creating more realistic and effective attacks and supports the development of more robust detection systems.",
-    "authors": [
-      "Wassim Kabbani",
-      "Kiran Raja",
-      "Raghavendra Ramachandra",
-      "Christoph Busch"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08090v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08090v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.68
-  },
-  {
-    "arxiv_id": "2511.06817v2",
-    "title": "TiS-TSL: Image-Label Supervised Surgical Video Stereo Matching via Time-Switchable Teacher-Student Learning",
-    "summary": "Stereo matching in minimally invasive surgery (MIS) is essential for next-generation navigation and augmented reality. Yet, dense disparity supervision is nearly impossible due to anatomical constraints, typically limiting annotations to only a few image-level labels acquired before the endoscope enters deep body cavities. Teacher-Student Learning (TSL) offers a promising solution by leveraging a teacher trained on sparse labels to generate pseudo labels and associated confidence maps from abundant unlabeled surgical videos. However, existing TSL methods are confined to image-level supervision, providing only spatial confidence and lacking temporal consistency estimation. This absence of spatio-temporal reliability results in unstable disparity predictions and severe flickering artifacts across video frames. To overcome these challenges, we propose TiS-TSL, a novel time-switchable teacher-student learning framework for video stereo matching under minimal supervision. At its core is a unified model that operates in three distinct modes: Image-Prediction (IP), Forward Video-Prediction (FVP), and Backward Video-Prediction (BVP), enabling flexible temporal modeling within a single architecture. Enabled by this unified model, TiS-TSL adopts a two-stage learning strategy. The Image-to-Video (I2V) stage transfers sparse image-level knowledge to initialize temporal modeling. The subsequent Video-to-Video (V2V) stage refines temporal disparity predictions by comparing forward and backward predictions to calculate bidirectional spatio-temporal consistency. This consistency identifies unreliable regions across frames, filters noisy video-level pseudo labels, and enforces temporal coherence. Experimental results on two public datasets demonstrate that TiS-TSL exceeds other image-based state-of-the-arts by improving TEPE and EPE by at least 2.11% and 4.54%, respectively.",
-    "authors": [
-      "Rui Wang",
-      "Ying Zhou",
-      "Hao Wang",
-      "Wenwei Zhang",
-      "Qiang Li",
-      "Zhiwei Wang"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06817v2",
-    "pdf_url": "https://arxiv.org/pdf/2511.06817v2.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.68
@@ -1256,27 +1301,6 @@
     "research_score": 0.68
   },
   {
-    "arxiv_id": "2511.07103v1",
-    "title": "GEWDiff: Geometric Enhanced Wavelet-based Diffusion Model for Hyperspectral Image Super-resolution",
-    "summary": "Improving the quality of hyperspectral images (HSIs), such as through super-resolution, is a crucial research area. However, generative modeling for HSIs presents several challenges. Due to their high spectral dimensionality, HSIs are too memory-intensive for direct input into conventional diffusion models. Furthermore, general generative models lack an understanding of the topological and geometric structures of ground objects in remote sensing imagery. In addition, most diffusion models optimize loss functions at the noise level, leading to a non-intuitive convergence behavior and suboptimal generation quality for complex data. To address these challenges, we propose a Geometric Enhanced Wavelet-based Diffusion Model (GEWDiff), a novel framework for reconstructing hyperspectral images at 4-times super-resolution. A wavelet-based encoder-decoder is introduced that efficiently compresses HSIs into a latent space while preserving spectral-spatial information. To avoid distortion during generation, we incorporate a geometry-enhanced diffusion process that preserves the geometric features. Furthermore, a multi-level loss function was designed to guide the diffusion process, promoting stable convergence and improved reconstruction fidelity. Our model demonstrated state-of-the-art results across multiple dimensions, including fidelity, spectral accuracy, visual realism, and clarity.",
-    "authors": [
-      "Sirui Wang",
-      "Jiang He",
-      "Natàlia Blasco Andreo",
-      "Xiao Xiang Zhu"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07103v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07103v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.68
-  },
-  {
     "arxiv_id": "2511.07156v1",
     "title": "Conditional Diffusion as Latent Constraints for Controllable Symbolic Music Generation",
     "summary": "Recent advances in latent diffusion models have demonstrated state-of-the-art performance in high-dimensional time-series data synthesis while providing flexible control through conditioning and guidance. However, existing methodologies primarily rely on musical context or natural language as the main modality of interacting with the generative process, which may not be ideal for expert users who seek precise fader-like control over specific musical attributes. In this work, we explore the application of denoising diffusion processes as plug-and-play latent constraints for unconditional symbolic music generation models. We focus on a framework that leverages a library of small conditional diffusion models operating as implicit probabilistic priors on the latents of a frozen unconditional backbone. While previous studies have explored domain-specific use cases, this work, to the best of our knowledge, is the first to demonstrate the versatility of such an approach across a diverse array of musical attributes, such as note density, pitch range, contour, and rhythm complexity. Our experiments show that diffusion-driven constraints outperform traditional attribute regularization and other latent constraints architectures, achieving significantly stronger correlations between target and generated attributes while maintaining high perceptual quality and diversity.",
@@ -1293,30 +1317,6 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07156v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07156v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.68
-  },
-  {
-    "arxiv_id": "2511.08071v1",
-    "title": "Radar-APLANC: Unsupervised Radar-based Heartbeat Sensing via Augmented Pseudo-Label and Noise Contrast",
-    "summary": "Frequency Modulated Continuous Wave (FMCW) radars can measure subtle chest wall oscillations to enable non-contact heartbeat sensing. However, traditional radar-based heartbeat sensing methods face performance degradation due to noise. Learning-based radar methods achieve better noise robustness but require costly labeled signals for supervised training. To overcome these limitations, we propose the first unsupervised framework for radar-based heartbeat sensing via Augmented Pseudo-Label and Noise Contrast (Radar-APLANC). We propose to use both the heartbeat range and noise range within the radar range matrix to construct the positive and negative samples, respectively, for improved noise robustness. Our Noise-Contrastive Triplet (NCT) loss only utilizes positive samples, negative samples, and pseudo-label signals generated by the traditional radar method, thereby avoiding dependence on expensive ground-truth physiological signals. We further design a pseudo-label augmentation approach featuring adaptive noise-aware label selection to improve pseudo-label signal quality. Extensive experiments on the Equipleth dataset and our collected radar dataset demonstrate that our unsupervised method achieves performance comparable to state-of-the-art supervised methods. Our code, dataset, and supplementary materials can be accessed from https://github.com/RadarHRSensing/Radar-APLANC.",
-    "authors": [
-      "Ying Wang",
-      "Zhaodong Sun",
-      "Xu Cheng",
-      "Zuxian He",
-      "Xiaobai Li"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI",
-      "cs.HC",
-      "eess.SP"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08071v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08071v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.68
@@ -1367,6 +1367,51 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07738v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07738v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
+    "arxiv_id": "2511.07103v1",
+    "title": "GEWDiff: Geometric Enhanced Wavelet-based Diffusion Model for Hyperspectral Image Super-resolution",
+    "summary": "Improving the quality of hyperspectral images (HSIs), such as through super-resolution, is a crucial research area. However, generative modeling for HSIs presents several challenges. Due to their high spectral dimensionality, HSIs are too memory-intensive for direct input into conventional diffusion models. Furthermore, general generative models lack an understanding of the topological and geometric structures of ground objects in remote sensing imagery. In addition, most diffusion models optimize loss functions at the noise level, leading to a non-intuitive convergence behavior and suboptimal generation quality for complex data. To address these challenges, we propose a Geometric Enhanced Wavelet-based Diffusion Model (GEWDiff), a novel framework for reconstructing hyperspectral images at 4-times super-resolution. A wavelet-based encoder-decoder is introduced that efficiently compresses HSIs into a latent space while preserving spectral-spatial information. To avoid distortion during generation, we incorporate a geometry-enhanced diffusion process that preserves the geometric features. Furthermore, a multi-level loss function was designed to guide the diffusion process, promoting stable convergence and improved reconstruction fidelity. Our model demonstrated state-of-the-art results across multiple dimensions, including fidelity, spectral accuracy, visual realism, and clarity.",
+    "authors": [
+      "Sirui Wang",
+      "Jiang He",
+      "Natàlia Blasco Andreo",
+      "Xiao Xiang Zhu"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07103v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07103v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
+    "arxiv_id": "2511.08071v1",
+    "title": "Radar-APLANC: Unsupervised Radar-based Heartbeat Sensing via Augmented Pseudo-Label and Noise Contrast",
+    "summary": "Frequency Modulated Continuous Wave (FMCW) radars can measure subtle chest wall oscillations to enable non-contact heartbeat sensing. However, traditional radar-based heartbeat sensing methods face performance degradation due to noise. Learning-based radar methods achieve better noise robustness but require costly labeled signals for supervised training. To overcome these limitations, we propose the first unsupervised framework for radar-based heartbeat sensing via Augmented Pseudo-Label and Noise Contrast (Radar-APLANC). We propose to use both the heartbeat range and noise range within the radar range matrix to construct the positive and negative samples, respectively, for improved noise robustness. Our Noise-Contrastive Triplet (NCT) loss only utilizes positive samples, negative samples, and pseudo-label signals generated by the traditional radar method, thereby avoiding dependence on expensive ground-truth physiological signals. We further design a pseudo-label augmentation approach featuring adaptive noise-aware label selection to improve pseudo-label signal quality. Extensive experiments on the Equipleth dataset and our collected radar dataset demonstrate that our unsupervised method achieves performance comparable to state-of-the-art supervised methods. Our code, dataset, and supplementary materials can be accessed from https://github.com/RadarHRSensing/Radar-APLANC.",
+    "authors": [
+      "Ying Wang",
+      "Zhaodong Sun",
+      "Xu Cheng",
+      "Zuxian He",
+      "Xiaobai Li"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.HC",
+      "eess.SP"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08071v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08071v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.68
@@ -1574,30 +1619,6 @@
     "research_score": 0.67
   },
   {
-    "arxiv_id": "2511.06634v1",
-    "title": "CaberNet: Causal Representation Learning for Cross-Domain HVAC Energy Prediction",
-    "summary": "Cross-domain HVAC energy prediction is essential for scalable building energy management, particularly because collecting extensive labeled data for every new building is both costly and impractical. Yet, this task remains highly challenging due to the scarcity and heterogeneity of data across different buildings, climate zones, and seasonal patterns. In particular, buildings situated in distinct climatic regions introduce variability that often leads existing methods to overfit to spurious correlations, rely heavily on expert intervention, or compromise on data diversity. To address these limitations, we propose CaberNet, a causal and interpretable deep sequence model that learns invariant (Markov blanket) representations for robust cross-domain prediction. In a purely data-driven fashion and without requiring any prior knowledge, CaberNet integrates i) a global feature gate trained with a self-supervised Bernoulli regularization to distinguish superior causal features from inferior ones, and ii) a domain-wise training scheme that balances domain contributions, minimizes cross-domain loss variance, and promotes latent factor independence. We evaluate CaberNet on real-world datasets collected from three buildings located in three climatically diverse cities, and it consistently outperforms all baselines, achieving a 22.9\\% reduction in normalized mean squared error (NMSE) compared to the best benchmark. Our code is available at https://github.com/rickzky1001/CaberNet-CRL.",
-    "authors": [
-      "Kaiyuan Zhai",
-      "Jiacheng Cui",
-      "Zhehao Zhang",
-      "Junyu Xue",
-      "Yang Deng",
-      "Kui Wu",
-      "Guoming Tang"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06634v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06634v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.67
-  },
-  {
     "arxiv_id": "2511.06715v1",
     "title": "Sensor Calibration Model Balancing Accuracy, Real-time, and Efficiency",
     "summary": "Most on-device sensor calibration studies benchmark models only against three macroscopic requirements (i.e., accuracy, real-time, and resource efficiency), thereby hiding deployment bottlenecks such as instantaneous error and worst-case latency. We therefore decompose this triad into eight microscopic requirements and introduce Scare (Sensor Calibration model balancing Accuracy, Real-time, and Efficiency), an ultra-compressed transformer that fulfills them all. SCARE comprises three core components: (1) Sequence Lens Projector (SLP) that logarithmically compresses time-series data while preserving boundary information across bins, (2) Efficient Bitwise Attention (EBA) module that replaces costly multiplications with bitwise operations via binary hash codes, and (3) Hash optimization strategy that ensures stable training without auxiliary loss terms. Together, these components minimize computational overhead while maintaining high accuracy and compatibility with microcontroller units (MCUs). Extensive experiments on large-scale air-quality datasets and real microcontroller deployments demonstrate that Scare outperforms existing linear, hybrid, and deep-learning baselines, making Scare, to the best of our knowledge, the first model to meet all eight microscopic requirements simultaneously.",
@@ -1646,6 +1667,30 @@
     "research_score": 0.67
   },
   {
+    "arxiv_id": "2511.06634v1",
+    "title": "CaberNet: Causal Representation Learning for Cross-Domain HVAC Energy Prediction",
+    "summary": "Cross-domain HVAC energy prediction is essential for scalable building energy management, particularly because collecting extensive labeled data for every new building is both costly and impractical. Yet, this task remains highly challenging due to the scarcity and heterogeneity of data across different buildings, climate zones, and seasonal patterns. In particular, buildings situated in distinct climatic regions introduce variability that often leads existing methods to overfit to spurious correlations, rely heavily on expert intervention, or compromise on data diversity. To address these limitations, we propose CaberNet, a causal and interpretable deep sequence model that learns invariant (Markov blanket) representations for robust cross-domain prediction. In a purely data-driven fashion and without requiring any prior knowledge, CaberNet integrates i) a global feature gate trained with a self-supervised Bernoulli regularization to distinguish superior causal features from inferior ones, and ii) a domain-wise training scheme that balances domain contributions, minimizes cross-domain loss variance, and promotes latent factor independence. We evaluate CaberNet on real-world datasets collected from three buildings located in three climatically diverse cities, and it consistently outperforms all baselines, achieving a 22.9\\% reduction in normalized mean squared error (NMSE) compared to the best benchmark. Our code is available at https://github.com/rickzky1001/CaberNet-CRL.",
+    "authors": [
+      "Kaiyuan Zhai",
+      "Jiacheng Cui",
+      "Zhehao Zhang",
+      "Junyu Xue",
+      "Yang Deng",
+      "Kui Wu",
+      "Guoming Tang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.06634v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06634v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.67
+  },
+  {
     "arxiv_id": "2511.06946v1",
     "title": "Learning to Focus: Prioritizing Informative Histories with Structured Attention Mechanisms in Partially Observable Reinforcement Learning",
     "summary": "Transformers have shown strong ability to model long-term dependencies and are increasingly adopted as world models in model-based reinforcement learning (RL) under partial observability. However, unlike natural language corpora, RL trajectories are sparse and reward-driven, making standard self-attention inefficient because it distributes weight uniformly across all past tokens rather than emphasizing the few transitions critical for control. To address this, we introduce structured inductive priors into the self-attention mechanism of the dynamics head: (i) per-head memory-length priors that constrain attention to task-specific windows, and (ii) distributional priors that learn smooth Gaussian weightings over past state-action pairs. We integrate these mechanisms into UniZero, a model-based RL agent with a Transformer-based world model that supports planning under partial observability. Experiments on the Atari 100k benchmark show that most efficiency gains arise from the Gaussian prior, which smoothly allocates attention to informative transitions, while memory-length priors often truncate useful signals with overly restrictive cut-offs. In particular, Gaussian Attention achieves a 77% relative improvement in mean human-normalized scores over UniZero. These findings suggest that in partially observable RL domains with non-stationary temporal dependencies, discrete memory windows are difficult to learn reliably, whereas smooth distributional priors flexibly adapt across horizons and yield more robust data efficiency. Overall, our results demonstrate that encoding structured temporal priors directly into self-attention improves the prioritization of informative histories for dynamics modeling under partial observability.",
@@ -1664,6 +1709,24 @@
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.67
+  },
+  {
+    "arxiv_id": "2511.08215v1",
+    "title": "Evaluating Gemini LLM in Food Image-Based Recipe and Nutrition Description with EfficientNet-B4 Visual Backbone",
+    "summary": "The proliferation of digital food applications necessitates robust methods for automated nutritional analysis and culinary guidance. This paper presents a comprehensive comparative evaluation of a decoupled, multimodal pipeline for food recognition. We evaluate a system integrating a specialized visual backbone (EfficientNet-B4) with a powerful generative large language model (Google's Gemini LLM). The core objective is to evaluate the trade-offs between visual classification accuracy, model efficiency, and the quality of generative output (nutritional data and recipes). We benchmark this pipeline against alternative vision backbones (VGG-16, ResNet-50, YOLOv8) and a lightweight LLM (Gemma). We introduce a formalization for \"Semantic Error Propagation\" (SEP) to analyze how classification inaccuracies from the visual module cascade into the generative output. Our analysis is grounded in a new Custom Chinese Food Dataset (CCFD) developed to address cultural bias in public datasets. Experimental results demonstrate that while EfficientNet-B4 (89.0\\% Top-1 Acc.) provides the best balance of accuracy and efficiency, and Gemini (9.2/10 Factual Accuracy) provides superior generative quality, the system's overall utility is fundamentally bottlenecked by the visual front-end's perceptive accuracy. We conduct a detailed per-class analysis, identifying high semantic similarity as the most critical failure mode.",
+    "authors": [
+      "Rizal Khoirul Anam"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08215v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08215v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.66
   },
   {
     "arxiv_id": "2511.07943v1",
@@ -1698,24 +1761,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07943v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07943v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.66
-  },
-  {
-    "arxiv_id": "2511.08215v1",
-    "title": "Evaluating Gemini LLM in Food Image-Based Recipe and Nutrition Description with EfficientNet-B4 Visual Backbone",
-    "summary": "The proliferation of digital food applications necessitates robust methods for automated nutritional analysis and culinary guidance. This paper presents a comprehensive comparative evaluation of a decoupled, multimodal pipeline for food recognition. We evaluate a system integrating a specialized visual backbone (EfficientNet-B4) with a powerful generative large language model (Google's Gemini LLM). The core objective is to evaluate the trade-offs between visual classification accuracy, model efficiency, and the quality of generative output (nutritional data and recipes). We benchmark this pipeline against alternative vision backbones (VGG-16, ResNet-50, YOLOv8) and a lightweight LLM (Gemma). We introduce a formalization for \"Semantic Error Propagation\" (SEP) to analyze how classification inaccuracies from the visual module cascade into the generative output. Our analysis is grounded in a new Custom Chinese Food Dataset (CCFD) developed to address cultural bias in public datasets. Experimental results demonstrate that while EfficientNet-B4 (89.0\\% Top-1 Acc.) provides the best balance of accuracy and efficiency, and Gemini (9.2/10 Factual Accuracy) provides superior generative quality, the system's overall utility is fundamentally bottlenecked by the visual front-end's perceptive accuracy. We conduct a detailed per-class analysis, identifying high semantic similarity as the most critical failure mode.",
-    "authors": [
-      "Rizal Khoirul Anam"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.LG"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08215v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08215v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.66
@@ -1890,6 +1935,91 @@
     "research_score": 0.65
   },
   {
+    "arxiv_id": "2511.08231v1",
+    "title": "Real-Time Performance Analysis of Multi-Fidelity Residual Physics-Informed Neural Process-Based State Estimation for Robotic Systems",
+    "summary": "Various neural network architectures are used in many of the state-of-the-art approaches for real-time nonlinear state estimation. With the ever-increasing incorporation of these data-driven models into the estimation domain, model predictions with reliable margins of error are a requirement -- especially for safety-critical applications. This paper discusses the application of a novel real-time, data-driven estimation approach based on the multi-fidelity residual physics-informed neural process (MFR-PINP) toward the real-time state estimation of a robotic system. Specifically, we address the model-mismatch issue of selecting an accurate kinematic model by tasking the MFR-PINP to also learn the residuals between simple, low-fidelity predictions and complex, high-fidelity ground-truth dynamics. To account for model uncertainty present in a physical implementation, robust uncertainty guarantees from the split conformal (SC) prediction framework are modeled in the training and inference paradigms. We provide implementation details of our MFR-PINP-based estimator for a hybrid online learning setting to validate our model's usage in real-time applications. Experimental results of our approach's performance in comparison to the state-of-the-art variants of the Kalman filter (i.e. unscented Kalman filter and deep Kalman filter) in estimation scenarios showed promising results for the MFR-PINP model as a viable option in real-time estimation tasks.",
+    "authors": [
+      "Devin Hunter",
+      "Chinwendu Enyioha"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08231v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08231v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.65
+  },
+  {
+    "arxiv_id": "2511.08226v1",
+    "title": "The Online Patch Redundancy Eliminator (OPRE): A novel approach to online agnostic continual learning using dataset compression",
+    "summary": "In order to achieve Continual Learning (CL), the problem of catastrophic forgetting, one that has plagued neural networks since their inception, must be overcome. The evaluation of continual learning methods relies on splitting a known homogeneous dataset and learning the associated tasks one after the other. We argue that most CL methods introduce a priori information about the data to come and cannot be considered agnostic. We exemplify this point with the case of methods relying on pretrained feature extractors, which are still used in CL. After showing that pretrained feature extractors imply a loss of generality with respect to the data that can be learned by the model, we then discuss other kinds of a priori information introduced in other CL methods. We then present the Online Patch Redundancy Eliminator (OPRE), an online dataset compression algorithm, which, along with the training of a classifier at test time, yields performance on CIFAR-10 and CIFAR-100 superior to a number of other state-of-the-art online continual learning methods. Additionally, OPRE requires only minimal and interpretable hypothesis on the data to come. We suggest that online dataset compression could well be necessary to achieve fully agnostic CL.",
+    "authors": [
+      "Raphaël Bayle",
+      "Martial Mermillod",
+      "Robert M. French"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08226v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08226v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.65
+  },
+  {
+    "arxiv_id": "2511.07210v2",
+    "title": "Breaking the Stealth-Potency Trade-off in Clean-Image Backdoors with Generative Trigger Optimization",
+    "summary": "Clean-image backdoor attacks, which use only label manipulation in training datasets to compromise deep neural networks, pose a significant threat to security-critical applications. A critical flaw in existing methods is that the poison rate required for a successful attack induces a proportional, and thus noticeable, drop in Clean Accuracy (CA), undermining their stealthiness. This paper presents a new paradigm for clean-image attacks that minimizes this accuracy degradation by optimizing the trigger itself. We introduce Generative Clean-Image Backdoors (GCB), a framework that uses a conditional InfoGAN to identify naturally occurring image features that can serve as potent and stealthy triggers. By ensuring these triggers are easily separable from benign task-related features, GCB enables a victim model to learn the backdoor from an extremely small set of poisoned examples, resulting in a CA drop of less than 1%. Our experiments demonstrate GCB's remarkable versatility, successfully adapting to six datasets, five architectures, and four tasks, including the first demonstration of clean-image backdoors in regression and segmentation. GCB also exhibits resilience against most of the existing backdoor defenses.",
+    "authors": [
+      "Binyan Xu",
+      "Fan Yang",
+      "Di Tang",
+      "Xilin Dai",
+      "Kehuan Zhang"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.CR",
+      "cs.LG"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07210v2",
+    "pdf_url": "https://arxiv.org/pdf/2511.07210v2.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.65
+  },
+  {
+    "arxiv_id": "2511.07637v1",
+    "title": "Private-RAG: Answering Multiple Queries with LLMs while Keeping Your Data Private",
+    "summary": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) by retrieving documents from an external corpus at inference time. When this corpus contains sensitive information, however, unprotected RAG systems are at risk of leaking private information. Prior work has introduced differential privacy (DP) guarantees for RAG, but only in single-query settings, which fall short of realistic usage. In this paper, we study the more practical multi-query setting and propose two DP-RAG algorithms. The first, MURAG, leverages an individual privacy filter so that the accumulated privacy loss only depends on how frequently each document is retrieved rather than the total number of queries. The second, MURAG-ADA, further improves utility by privately releasing query-specific thresholds, enabling more precise selection of relevant documents. Our experiments across multiple LLMs and datasets demonstrate that the proposed methods scale to hundreds of queries within a practical DP budget ($\\varepsilon\\approx10$), while preserving meaningful utility.",
+    "authors": [
+      "Ruihan Wu",
+      "Erchi Wang",
+      "Zhiyuan Zhang",
+      "Yu-Xiang Wang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CR"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07637v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07637v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.65
+  },
+  {
     "arxiv_id": "2511.07942v1",
     "title": "Balance Equation-based Distributionally Robust Offline Imitation Learning",
     "summary": "Imitation Learning (IL) has proven highly effective for robotic and control tasks where manually designing reward functions or explicit controllers is infeasible. However, standard IL methods implicitly assume that the environment dynamics remain fixed between training and deployment. In practice, this assumption rarely holds where modeling inaccuracies, real-world parameter variations, and adversarial perturbations can all induce shifts in transition dynamics, leading to severe performance degradation. We address this challenge through Balance Equation-based Distributionally Robust Offline Imitation Learning, a framework that learns robust policies solely from expert demonstrations collected under nominal dynamics, without requiring further environment interaction. We formulate the problem as a distributionally robust optimization over an uncertainty set of transition models, seeking a policy that minimizes the imitation loss under the worst-case transition distribution. Importantly, we show that this robust objective can be reformulated entirely in terms of the nominal data distribution, enabling tractable offline learning. Empirical evaluations on continuous-control benchmarks demonstrate that our approach achieves superior robustness and generalization compared to state-of-the-art offline IL baselines, particularly under perturbed or shifted environments.",
@@ -1932,91 +2062,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08505v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08505v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.65
-  },
-  {
-    "arxiv_id": "2511.07210v2",
-    "title": "Breaking the Stealth-Potency Trade-off in Clean-Image Backdoors with Generative Trigger Optimization",
-    "summary": "Clean-image backdoor attacks, which use only label manipulation in training datasets to compromise deep neural networks, pose a significant threat to security-critical applications. A critical flaw in existing methods is that the poison rate required for a successful attack induces a proportional, and thus noticeable, drop in Clean Accuracy (CA), undermining their stealthiness. This paper presents a new paradigm for clean-image attacks that minimizes this accuracy degradation by optimizing the trigger itself. We introduce Generative Clean-Image Backdoors (GCB), a framework that uses a conditional InfoGAN to identify naturally occurring image features that can serve as potent and stealthy triggers. By ensuring these triggers are easily separable from benign task-related features, GCB enables a victim model to learn the backdoor from an extremely small set of poisoned examples, resulting in a CA drop of less than 1%. Our experiments demonstrate GCB's remarkable versatility, successfully adapting to six datasets, five architectures, and four tasks, including the first demonstration of clean-image backdoors in regression and segmentation. GCB also exhibits resilience against most of the existing backdoor defenses.",
-    "authors": [
-      "Binyan Xu",
-      "Fan Yang",
-      "Di Tang",
-      "Xilin Dai",
-      "Kehuan Zhang"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.CR",
-      "cs.LG"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07210v2",
-    "pdf_url": "https://arxiv.org/pdf/2511.07210v2.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.65
-  },
-  {
-    "arxiv_id": "2511.08231v1",
-    "title": "Real-Time Performance Analysis of Multi-Fidelity Residual Physics-Informed Neural Process-Based State Estimation for Robotic Systems",
-    "summary": "Various neural network architectures are used in many of the state-of-the-art approaches for real-time nonlinear state estimation. With the ever-increasing incorporation of these data-driven models into the estimation domain, model predictions with reliable margins of error are a requirement -- especially for safety-critical applications. This paper discusses the application of a novel real-time, data-driven estimation approach based on the multi-fidelity residual physics-informed neural process (MFR-PINP) toward the real-time state estimation of a robotic system. Specifically, we address the model-mismatch issue of selecting an accurate kinematic model by tasking the MFR-PINP to also learn the residuals between simple, low-fidelity predictions and complex, high-fidelity ground-truth dynamics. To account for model uncertainty present in a physical implementation, robust uncertainty guarantees from the split conformal (SC) prediction framework are modeled in the training and inference paradigms. We provide implementation details of our MFR-PINP-based estimator for a hybrid online learning setting to validate our model's usage in real-time applications. Experimental results of our approach's performance in comparison to the state-of-the-art variants of the Kalman filter (i.e. unscented Kalman filter and deep Kalman filter) in estimation scenarios showed promising results for the MFR-PINP model as a viable option in real-time estimation tasks.",
-    "authors": [
-      "Devin Hunter",
-      "Chinwendu Enyioha"
-    ],
-    "categories": [
-      "cs.RO",
-      "cs.AI",
-      "cs.LG"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08231v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08231v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.65
-  },
-  {
-    "arxiv_id": "2511.08226v1",
-    "title": "The Online Patch Redundancy Eliminator (OPRE): A novel approach to online agnostic continual learning using dataset compression",
-    "summary": "In order to achieve Continual Learning (CL), the problem of catastrophic forgetting, one that has plagued neural networks since their inception, must be overcome. The evaluation of continual learning methods relies on splitting a known homogeneous dataset and learning the associated tasks one after the other. We argue that most CL methods introduce a priori information about the data to come and cannot be considered agnostic. We exemplify this point with the case of methods relying on pretrained feature extractors, which are still used in CL. After showing that pretrained feature extractors imply a loss of generality with respect to the data that can be learned by the model, we then discuss other kinds of a priori information introduced in other CL methods. We then present the Online Patch Redundancy Eliminator (OPRE), an online dataset compression algorithm, which, along with the training of a classifier at test time, yields performance on CIFAR-10 and CIFAR-100 superior to a number of other state-of-the-art online continual learning methods. Additionally, OPRE requires only minimal and interpretable hypothesis on the data to come. We suggest that online dataset compression could well be necessary to achieve fully agnostic CL.",
-    "authors": [
-      "Raphaël Bayle",
-      "Martial Mermillod",
-      "Robert M. French"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.CV"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08226v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08226v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.65
-  },
-  {
-    "arxiv_id": "2511.07637v1",
-    "title": "Private-RAG: Answering Multiple Queries with LLMs while Keeping Your Data Private",
-    "summary": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) by retrieving documents from an external corpus at inference time. When this corpus contains sensitive information, however, unprotected RAG systems are at risk of leaking private information. Prior work has introduced differential privacy (DP) guarantees for RAG, but only in single-query settings, which fall short of realistic usage. In this paper, we study the more practical multi-query setting and propose two DP-RAG algorithms. The first, MURAG, leverages an individual privacy filter so that the accumulated privacy loss only depends on how frequently each document is retrieved rather than the total number of queries. The second, MURAG-ADA, further improves utility by privately releasing query-specific thresholds, enabling more precise selection of relevant documents. Our experiments across multiple LLMs and datasets demonstrate that the proposed methods scale to hundreds of queries within a practical DP budget ($\\varepsilon\\approx10$), while preserving meaningful utility.",
-    "authors": [
-      "Ruihan Wu",
-      "Erchi Wang",
-      "Zhiyuan Zhang",
-      "Yu-Xiang Wang"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI",
-      "cs.CR"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07637v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07637v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.65
@@ -2226,6 +2271,53 @@
     "research_score": 0.64
   },
   {
+    "arxiv_id": "2511.08240v1",
+    "title": "Hierarchical Direction Perception via Atomic Dot-Product Operators for Rotation-Invariant Point Clouds Learning",
+    "summary": "Point cloud processing has become a cornerstone technology in many 3D vision tasks. However, arbitrary rotations introduce variations in point cloud orientations, posing a long-standing challenge for effective representation learning. The core of this issue is the disruption of the point cloud's intrinsic directional characteristics caused by rotational perturbations. Recent methods attempt to implicitly model rotational equivariance and invariance, preserving directional information and propagating it into deep semantic spaces. Yet, they often fall short of fully exploiting the multiscale directional nature of point clouds to enhance feature representations. To address this, we propose the Direction-Perceptive Vector Network (DiPVNet). At its core is an atomic dot-product operator that simultaneously encodes directional selectivity and rotation invariance--endowing the network with both rotational symmetry modeling and adaptive directional perception. At the local level, we introduce a Learnable Local Dot-Product (L2DP) Operator, which enables interactions between a center point and its neighbors to adaptively capture the non-uniform local structures of point clouds. At the global level, we leverage generalized harmonic analysis to prove that the dot-product between point clouds and spherical sampling vectors is equivalent to a direction-aware spherical Fourier transform (DASFT). This leads to the construction of a global directional response spectrum for modeling holistic directional structures. We rigorously prove the rotation invariance of both operators. Extensive experiments on challenging scenarios involving noise and large-angle rotations demonstrate that DiPVNet achieves state-of-the-art performance on point cloud classification and segmentation tasks. Our code is available at https://github.com/wxszreal0/DiPVNet.",
+    "authors": [
+      "Chenyu Hu",
+      "Xiaotong Li",
+      "Hao Zhu",
+      "Biao Hou"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08240v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08240v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
+    "arxiv_id": "2511.08087v1",
+    "title": "Beyond the Pixels: VLM-based Evaluation of Identity Preservation in Reference-Guided Synthesis",
+    "summary": "Evaluating identity preservation in generative models remains a critical yet unresolved challenge. Existing metrics rely on global embeddings or coarse VLM prompting, failing to capture fine-grained identity changes and providing limited diagnostic insight. We introduce Beyond the Pixels, a hierarchical evaluation framework that decomposes identity assessment into feature-level transformations. Our approach guides VLMs through structured reasoning by (1) hierarchically decomposing subjects into (type, style) -> attribute -> feature decision tree, and (2) prompting for concrete transformations rather than abstract similarity scores. This decomposition grounds VLM analysis in verifiable visual evidence, reducing hallucinations and improving consistency. We validate our framework across four state-of-the-art generative models, demonstrating strong alignment with human judgments in measuring identity consistency. Additionally, we introduce a new benchmark specifically designed to stress-test generative models. It comprises 1,078 image-prompt pairs spanning diverse subject types, including underrepresented categories such as anthropomorphic and animated characters, and captures an average of six to seven transformation axes per prompt.",
+    "authors": [
+      "Aditi Singhania",
+      "Krutik Malani",
+      "Riddhi Dhawan",
+      "Arushi Jain",
+      "Garv Tandon",
+      "Nippun Sharma",
+      "Souymodip Chakraborty",
+      "Vineet Batra",
+      "Ankit Phogat"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08087v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08087v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
     "arxiv_id": "2511.07820v1",
     "title": "SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control",
     "summary": "Despite the rise of billion-parameter foundation models trained across thousands of GPUs, similar scaling gains have not been shown for humanoid control. Current neural controllers for humanoids remain modest in size, target a limited behavior set, and are trained on a handful of GPUs over several days. We show that scaling up model capacity, data, and compute yields a generalist humanoid controller capable of creating natural and robust whole-body movements. Specifically, we posit motion tracking as a natural and scalable task for humanoid control, leverageing dense supervision from diverse motion-capture data to acquire human motion priors without manual reward engineering. We build a foundation model for motion tracking by scaling along three axes: network size (from 1.2M to 42M parameters), dataset volume (over 100M frames, 700 hours of high-quality motion data), and compute (9k GPU hours). Beyond demonstrating the benefits of scale, we show the practical utility of our model through two mechanisms: (1) a real-time universal kinematic planner that bridges motion tracking to downstream task execution, enabling natural and interactive control, and (2) a unified token space that supports various motion input interfaces, such as VR teleoperation devices, human videos, and vision-language-action (VLA) models, all using the same policy. Scaling motion tracking exhibits favorable properties: performance improves steadily with increased compute and data diversity, and learned representations generalize to unseen motions, establishing motion tracking at scale as a practical foundation for humanoid control.",
@@ -2267,53 +2359,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07820v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07820v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
-    "arxiv_id": "2511.08087v1",
-    "title": "Beyond the Pixels: VLM-based Evaluation of Identity Preservation in Reference-Guided Synthesis",
-    "summary": "Evaluating identity preservation in generative models remains a critical yet unresolved challenge. Existing metrics rely on global embeddings or coarse VLM prompting, failing to capture fine-grained identity changes and providing limited diagnostic insight. We introduce Beyond the Pixels, a hierarchical evaluation framework that decomposes identity assessment into feature-level transformations. Our approach guides VLMs through structured reasoning by (1) hierarchically decomposing subjects into (type, style) -> attribute -> feature decision tree, and (2) prompting for concrete transformations rather than abstract similarity scores. This decomposition grounds VLM analysis in verifiable visual evidence, reducing hallucinations and improving consistency. We validate our framework across four state-of-the-art generative models, demonstrating strong alignment with human judgments in measuring identity consistency. Additionally, we introduce a new benchmark specifically designed to stress-test generative models. It comprises 1,078 image-prompt pairs spanning diverse subject types, including underrepresented categories such as anthropomorphic and animated characters, and captures an average of six to seven transformation axes per prompt.",
-    "authors": [
-      "Aditi Singhania",
-      "Krutik Malani",
-      "Riddhi Dhawan",
-      "Arushi Jain",
-      "Garv Tandon",
-      "Nippun Sharma",
-      "Souymodip Chakraborty",
-      "Vineet Batra",
-      "Ankit Phogat"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08087v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08087v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
-    "arxiv_id": "2511.08240v1",
-    "title": "Hierarchical Direction Perception via Atomic Dot-Product Operators for Rotation-Invariant Point Clouds Learning",
-    "summary": "Point cloud processing has become a cornerstone technology in many 3D vision tasks. However, arbitrary rotations introduce variations in point cloud orientations, posing a long-standing challenge for effective representation learning. The core of this issue is the disruption of the point cloud's intrinsic directional characteristics caused by rotational perturbations. Recent methods attempt to implicitly model rotational equivariance and invariance, preserving directional information and propagating it into deep semantic spaces. Yet, they often fall short of fully exploiting the multiscale directional nature of point clouds to enhance feature representations. To address this, we propose the Direction-Perceptive Vector Network (DiPVNet). At its core is an atomic dot-product operator that simultaneously encodes directional selectivity and rotation invariance--endowing the network with both rotational symmetry modeling and adaptive directional perception. At the local level, we introduce a Learnable Local Dot-Product (L2DP) Operator, which enables interactions between a center point and its neighbors to adaptively capture the non-uniform local structures of point clouds. At the global level, we leverage generalized harmonic analysis to prove that the dot-product between point clouds and spherical sampling vectors is equivalent to a direction-aware spherical Fourier transform (DASFT). This leads to the construction of a global directional response spectrum for modeling holistic directional structures. We rigorously prove the rotation invariance of both operators. Extensive experiments on challenging scenarios involving noise and large-angle rotations demonstrate that DiPVNet achieves state-of-the-art performance on point cloud classification and segmentation tasks. Our code is available at https://github.com/wxszreal0/DiPVNet.",
-    "authors": [
-      "Chenyu Hu",
-      "Xiaotong Li",
-      "Hao Zhu",
-      "Biao Hou"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08240v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08240v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.64
@@ -2383,39 +2428,6 @@
     "research_score": 0.64
   },
   {
-    "arxiv_id": "2511.07250v1",
-    "title": "MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal LLMs",
-    "summary": "The advent of Multimodal Large Language Models (MLLMs) has expanded AI capabilities to visual modalities, yet existing evaluation benchmarks remain limited to single-video understanding, overlooking the critical need for multi-video understanding in real-world scenarios (e.g., sports analytics and autonomous driving). To address this significant gap, we introduce MVU-Eval, the first comprehensive benchmark for evaluating Multi-Video Understanding for MLLMs. Specifically, our MVU-Eval mainly assesses eight core competencies through 1,824 meticulously curated question-answer pairs spanning 4,959 videos from diverse domains, addressing both fundamental perception tasks and high-order reasoning tasks. These capabilities are rigorously aligned with real-world applications such as multi-sensor synthesis in autonomous systems and cross-angle sports analytics. Through extensive evaluation of state-of-the-art open-source and closed-source models, we reveal significant performance discrepancies and limitations in current MLLMs' ability to perform understanding across multiple videos. The benchmark will be made publicly available to foster future research.",
-    "authors": [
-      "Tianhao Peng",
-      "Haochen Wang",
-      "Yuanxing Zhang",
-      "Zekun Wang",
-      "Zili Wang",
-      "Ge Zhang",
-      "Jian Yang",
-      "Shihao Li",
-      "Yanghai Wang",
-      "Xintao Wang",
-      "Houyi Li",
-      "Wei Ji",
-      "Pengfei Wan",
-      "Wenhao Huang",
-      "Zhaoxiang Zhang",
-      "Jiaheng Liu"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.07250v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07250v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
     "arxiv_id": "2511.06793v1",
     "title": "Cross-Modal Unlearning via Influential Neuron Path Editing in Multimodal Large Language Models",
     "summary": "Multimodal Large Language Models (MLLMs) extend foundation models to real-world applications by integrating inputs such as text and vision. However, their broad knowledge capacity raises growing concerns about privacy leakage, toxicity mitigation, and intellectual property violations. Machine Unlearning (MU) offers a practical solution by selectively forgetting targeted knowledge while preserving overall model utility. When applied to MLLMs, existing neuron-editing-based MU approaches face two fundamental challenges: (1) forgetting becomes inconsistent across modalities because existing point-wise attribution methods fail to capture the structured, layer-by-layer information flow that connects different modalities; and (2) general knowledge performance declines when sensitive neurons that also support important reasoning paths are pruned, as this disrupts the model's ability to generalize. To alleviate these limitations, we propose a multimodal influential neuron path editor (MIP-Editor) for MU. Our approach introduces modality-specific attribution scores to identify influential neuron paths responsible for encoding forget-set knowledge and applies influential-path-aware neuron-editing via representation misdirection. This strategy also enables effective and coordinated forgetting across modalities while preserving the model's general capabilities. Experimental results demonstrate that MIP-Editor achieves a superior unlearning performance on multimodal tasks, with a maximum forgetting rate of 87.75% and up to 54.26% improvement in general knowledge retention. On textual tasks, MIP-Editor achieves up to 80.65% forgetting and preserves 77.9% of general performance. Codes are available at https://github.com/PreckLi/MIP-Editor.",
@@ -2457,6 +2469,39 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06947v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06947v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
+    "arxiv_id": "2511.07250v1",
+    "title": "MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal LLMs",
+    "summary": "The advent of Multimodal Large Language Models (MLLMs) has expanded AI capabilities to visual modalities, yet existing evaluation benchmarks remain limited to single-video understanding, overlooking the critical need for multi-video understanding in real-world scenarios (e.g., sports analytics and autonomous driving). To address this significant gap, we introduce MVU-Eval, the first comprehensive benchmark for evaluating Multi-Video Understanding for MLLMs. Specifically, our MVU-Eval mainly assesses eight core competencies through 1,824 meticulously curated question-answer pairs spanning 4,959 videos from diverse domains, addressing both fundamental perception tasks and high-order reasoning tasks. These capabilities are rigorously aligned with real-world applications such as multi-sensor synthesis in autonomous systems and cross-angle sports analytics. Through extensive evaluation of state-of-the-art open-source and closed-source models, we reveal significant performance discrepancies and limitations in current MLLMs' ability to perform understanding across multiple videos. The benchmark will be made publicly available to foster future research.",
+    "authors": [
+      "Tianhao Peng",
+      "Haochen Wang",
+      "Yuanxing Zhang",
+      "Zekun Wang",
+      "Zili Wang",
+      "Ge Zhang",
+      "Jian Yang",
+      "Shihao Li",
+      "Yanghai Wang",
+      "Xintao Wang",
+      "Houyi Li",
+      "Wei Ji",
+      "Pengfei Wan",
+      "Wenhao Huang",
+      "Zhaoxiang Zhang",
+      "Jiaheng Liu"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.07250v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07250v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.64
@@ -2736,29 +2781,6 @@
     "research_score": 0.62
   },
   {
-    "arxiv_id": "2511.06803v1",
-    "title": "Learning to Fast Unrank in Collaborative Filtering Recommendation",
-    "summary": "Modern data-driven recommendation systems risk memorizing sensitive user behavioral patterns, raising privacy concerns. Existing recommendation unlearning methods, while capable of removing target data influence, suffer from inefficient unlearning speed and degraded performance, failing to meet real-time unlearning demands. Considering the ranking-oriented nature of recommendation systems, we present unranking, the process of reducing the ranking positions of target items while ensuring the formal guarantees of recommendation unlearning. To achieve efficient unranking, we propose Learning to Fast Unrank in Collaborative Filtering Recommendation (L2UnRank), which operates through three key stages: (a) identifying the influenced scope via interaction-based p-hop propagation, (b) computing structural and semantic influences for entities within this scope, and (c) performing efficient, ranking-aware parameter updates guided by influence information. Extensive experiments across multiple datasets and backbone models demonstrate L2UnRank's model-agnostic nature, achieving state-of-the-art unranking effectiveness and maintaining recommendation quality comparable to retraining, while also delivering a 50x speedup over existing methods. Codes are available at https://github.com/Juniper42/L2UnRank.",
-    "authors": [
-      "Junpeng Zhao",
-      "Lin Li",
-      "Ming Li",
-      "Amran Bhuiyan",
-      "Jimmy Huang"
-    ],
-    "categories": [
-      "cs.IR",
-      "cs.AI",
-      "cs.LG"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06803v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06803v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.62
-  },
-  {
     "arxiv_id": "2511.08274v1",
     "title": "Multi-Agent GraphRAG: A Text-to-Cypher Framework for Labeled Property Graphs",
     "summary": "While Retrieval-Augmented Generation (RAG) methods commonly draw information from unstructured documents, the emerging paradigm of GraphRAG aims to leverage structured data such as knowledge graphs. Most existing GraphRAG efforts focus on Resource Description Framework (RDF) knowledge graphs, relying on triple representations and SPARQL queries. However, the potential of Cypher and Labeled Property Graph (LPG) databases to serve as scalable and effective reasoning engines within GraphRAG pipelines remains underexplored in current research literature. To fill this gap, we propose Multi-Agent GraphRAG, a modular LLM agentic system for text-to-Cypher query generation serving as a natural language interface to LPG-based graph data. Our proof-of-concept system features an LLM-based workflow for automated Cypher queries generation and execution, using Memgraph as the graph database backend. Iterative content-aware correction and normalization, reinforced by an aggregated feedback loop, ensures both semantic and syntactic refinement of generated queries. We evaluate our system on the CypherBench graph dataset covering several general domains with diverse types of queries. In addition, we demonstrate performance of the proposed workflow on a property graph derived from the IFC (Industry Foundation Classes) data, representing a digital twin of a building. This highlights how such an approach can bridge AI with real-world applications at scale, enabling industrial digital automation use cases.",
@@ -2777,6 +2799,29 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08274v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08274v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.62
+  },
+  {
+    "arxiv_id": "2511.06803v1",
+    "title": "Learning to Fast Unrank in Collaborative Filtering Recommendation",
+    "summary": "Modern data-driven recommendation systems risk memorizing sensitive user behavioral patterns, raising privacy concerns. Existing recommendation unlearning methods, while capable of removing target data influence, suffer from inefficient unlearning speed and degraded performance, failing to meet real-time unlearning demands. Considering the ranking-oriented nature of recommendation systems, we present unranking, the process of reducing the ranking positions of target items while ensuring the formal guarantees of recommendation unlearning. To achieve efficient unranking, we propose Learning to Fast Unrank in Collaborative Filtering Recommendation (L2UnRank), which operates through three key stages: (a) identifying the influenced scope via interaction-based p-hop propagation, (b) computing structural and semantic influences for entities within this scope, and (c) performing efficient, ranking-aware parameter updates guided by influence information. Extensive experiments across multiple datasets and backbone models demonstrate L2UnRank's model-agnostic nature, achieving state-of-the-art unranking effectiveness and maintaining recommendation quality comparable to retraining, while also delivering a 50x speedup over existing methods. Codes are available at https://github.com/Juniper42/L2UnRank.",
+    "authors": [
+      "Junpeng Zhao",
+      "Lin Li",
+      "Ming Li",
+      "Amran Bhuiyan",
+      "Jimmy Huang"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.06803v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06803v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.62
@@ -2920,6 +2965,25 @@
     "research_score": 0.61
   },
   {
+    "arxiv_id": "2511.07990v1",
+    "title": "Hardware-Aware YOLO Compression for Low-Power Edge AI on STM32U5 for Weeds Detection in Digital Agriculture",
+    "summary": "Weeds significantly reduce crop yields worldwide and pose major challenges to sustainable agriculture. Traditional weed management methods, primarily relying on chemical herbicides, risk environmental contamination and lead to the emergence of herbicide-resistant species. Precision weeding, leveraging computer vision and machine learning methods, offers a promising eco-friendly alternative but is often limited by reliance on high-power computational platforms. This work presents an optimized, low-power edge AI system for weeds detection based on the YOLOv8n object detector deployed on the STM32U575ZI microcontroller. Several compression techniques are applied to the detection model, including structured pruning, integer quantization and input image resolution scaling in order to meet strict hardware constraints. The model is trained and evaluated on the CropAndWeed dataset with 74 plant species, achieving a balanced trade-off between detection accuracy and efficiency. Our system supports real-time, in-situ weeds detection with a minimal energy consumption of 51.8mJ per inference, enabling scalable deployment in power-constrained agricultural environments.",
+    "authors": [
+      "Charalampos S. Kouzinopoulos",
+      "Yuri Manna"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07990v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07990v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
     "arxiv_id": "2511.07876v1",
     "title": "LoopLLM: Transferable Energy-Latency Attacks in LLMs via Repetitive Generation",
     "summary": "As large language models (LLMs) scale, their inference incurs substantial computational resources, exposing them to energy-latency attacks, where crafted prompts induce high energy and latency cost. Existing attack methods aim to prolong output by delaying the generation of termination symbols. However, as the output grows longer, controlling the termination symbols through input becomes difficult, making these methods less effective. Therefore, we propose LoopLLM, an energy-latency attack framework based on the observation that repetitive generation can trigger low-entropy decoding loops, reliably compelling LLMs to generate until their output limits. LoopLLM introduces (1) a repetition-inducing prompt optimization that exploits autoregressive vulnerabilities to induce repetitive generation, and (2) a token-aligned ensemble optimization that aggregates gradients to improve cross-model transferability. Extensive experiments on 12 open-source and 2 commercial LLMs show that LoopLLM significantly outperforms existing methods, achieving over 90% of the maximum output length, compared to 20% for baselines, and improving transferability by around 40% to DeepSeek-V3 and Gemini 2.5 Flash.",
@@ -2940,25 +3004,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07876v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07876v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.61
-  },
-  {
-    "arxiv_id": "2511.07990v1",
-    "title": "Hardware-Aware YOLO Compression for Low-Power Edge AI on STM32U5 for Weeds Detection in Digital Agriculture",
-    "summary": "Weeds significantly reduce crop yields worldwide and pose major challenges to sustainable agriculture. Traditional weed management methods, primarily relying on chemical herbicides, risk environmental contamination and lead to the emergence of herbicide-resistant species. Precision weeding, leveraging computer vision and machine learning methods, offers a promising eco-friendly alternative but is often limited by reliance on high-power computational platforms. This work presents an optimized, low-power edge AI system for weeds detection based on the YOLOv8n object detector deployed on the STM32U575ZI microcontroller. Several compression techniques are applied to the detection model, including structured pruning, integer quantization and input image resolution scaling in order to meet strict hardware constraints. The model is trained and evaluated on the CropAndWeed dataset with 74 plant species, achieving a balanced trade-off between detection accuracy and efficiency. Our system supports real-time, in-situ weeds detection with a minimal energy consumption of 51.8mJ per inference, enabling scalable deployment in power-constrained agricultural environments.",
-    "authors": [
-      "Charalampos S. Kouzinopoulos",
-      "Yuri Manna"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07990v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07990v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.61
@@ -3215,27 +3260,6 @@
     "research_score": 0.6
   },
   {
-    "arxiv_id": "2511.06694v1",
-    "title": "ML-EcoLyzer: Quantifying the Environmental Cost of Machine Learning Inference Across Frameworks and Hardware",
-    "summary": "Machine learning inference occurs at a massive scale, yet its environmental impact remains poorly quantified, especially on low-resource hardware. We present ML-EcoLyzer, a cross-framework tool for measuring the carbon, energy, thermal, and water costs of inference across CPUs, consumer GPUs, and datacenter accelerators. The tool supports both classical and modern models, applying adaptive monitoring and hardware-aware evaluation.   We introduce the Environmental Sustainability Score (ESS), which quantifies the number of effective parameters served per gram of CO$_2$ emitted. Our evaluation covers over 1,900 inference configurations, spanning diverse model architectures, task modalities (text, vision, audio, tabular), hardware types, and precision levels. These rigorous and reliable measurements demonstrate that quantization enhances ESS, huge accelerators can be inefficient for lightweight applications, and even small models may incur significant costs when implemented suboptimally. ML-EcoLyzer sets a standard for sustainability-conscious model selection and offers an extensive empirical evaluation of environmental costs during inference.",
-    "authors": [
-      "Jose Marie Antonio Minoza",
-      "Rex Gregor Laylo",
-      "Christian F Villarin",
-      "Sebastian C. Ibanez"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06694v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06694v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.6
-  },
-  {
     "arxiv_id": "2511.06582v1",
     "title": "TabRAG: Tabular Document Retrieval via Structured Language Representations",
     "summary": "Ingesting data for Retrieval-Augmented Generation (RAG) involves either fine-tuning the embedding model directly on the target corpus or parsing documents for embedding model encoding. The former, while accurate, incurs high computational hardware requirements, while the latter suffers from suboptimal performance when extracting tabular data. In this work, we address the latter by presenting TabRAG, a parsing-based RAG pipeline designed to tackle table-heavy documents via structured language representations. TabRAG outperforms existing popular parsing-based methods for generation and retrieval. Code is available at https://github.com/jacobyhsi/TabRAG.",
@@ -3334,29 +3358,6 @@
     "research_score": 0.59
   },
   {
-    "arxiv_id": "2511.06781v1",
-    "title": "On the Mechanisms of Collaborative Learning in VAE Recommenders",
-    "summary": "Variational Autoencoders (VAEs) are a powerful alternative to matrix factorization for recommendation. A common technique in VAE-based collaborative filtering (CF) consists in applying binary input masking to user interaction vectors, which improves performance but remains underexplored theoretically. In this work, we analyze how collaboration arises in VAE-based CF and show it is governed by latent proximity: we derive a latent sharing radius that informs when an SGD update on one user strictly reduces the loss on another user, with influence decaying as the latent Wasserstein distance increases. We further study the induced geometry: with clean inputs, VAE-based CF primarily exploits \\emph{local} collaboration between input-similar users and under-utilizes global collaboration between far-but-related users. We compare two mechanisms that encourage \\emph{global} mixing and characterize their trade-offs: (1) $β$-KL regularization directly tightens the information bottleneck, promoting posterior overlap but risking representational collapse if too large; (2) input masking induces stochastic geometric contractions and expansions, which can bring distant users onto the same latent neighborhood but also introduce neighborhood drift. To preserve user identity while enabling global consistency, we propose an anchor regularizer that aligns user posteriors with item embeddings, stabilizing users under masking and facilitating signal sharing across related items. Our analyses are validated on the Netflix, MovieLens-20M, and Million Song datasets. We also successfully deployed our proposed algorithm on an Amazon streaming platform following a successful online experiment.",
-    "authors": [
-      "Tung-Long Vuong",
-      "Julien Monteil",
-      "Hien Dang",
-      "Volodymyr Vaskovych",
-      "Trung Le",
-      "Vu Nguyen"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06781v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06781v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.59
-  },
-  {
     "arxiv_id": "2511.06886v1",
     "title": "Inclusion of Role into Named Entity Recognition and Ranking",
     "summary": "Most of the Natural Language Processing systems are involved in entity-based processing for several tasks like Information Extraction, Question-Answering, Text-Summarization and so on. A new challenge comes when entities play roles according to their act or attributes in certain context. Entity Role Detection is the task of assigning such roles to the entities. Usually real-world entities are of types: person, location and organization etc. Roles could be considered as domain-dependent subtypes of these types. In the cases, where retrieving a subset of entities based on their roles is needed, poses the problem of defining the role and entities having those roles. This paper presents the study of study of solving Entity Role Detection problem by modeling it as Named Entity Recognition (NER) and Entity Retrieval/Ranking task. In NER, these roles could be considered as mutually exclusive classes and standard NER methods like sequence tagging could be used. For Entity Retrieval, Roles could be formulated as Query and entities as Collection on which the query needs to be executed. The aspect of Entity Retrieval task, which is different than document retrieval task is that the entities and roles against which they need to be retrieved are indirectly described. We have formulated automated ways of learning representative words and phrases and building representations of roles and entities using them. We have also explored different contexts like sentence and document. Since the roles depend upon context, so it is not always possible to have large domain-specific dataset or knowledge bases for learning purposes, so we have tried to exploit the information from small dataset in domain-agnostic way.",
@@ -3395,6 +3396,29 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.07392v2",
     "pdf_url": "https://arxiv.org/pdf/2511.07392v2.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.59
+  },
+  {
+    "arxiv_id": "2511.06781v1",
+    "title": "On the Mechanisms of Collaborative Learning in VAE Recommenders",
+    "summary": "Variational Autoencoders (VAEs) are a powerful alternative to matrix factorization for recommendation. A common technique in VAE-based collaborative filtering (CF) consists in applying binary input masking to user interaction vectors, which improves performance but remains underexplored theoretically. In this work, we analyze how collaboration arises in VAE-based CF and show it is governed by latent proximity: we derive a latent sharing radius that informs when an SGD update on one user strictly reduces the loss on another user, with influence decaying as the latent Wasserstein distance increases. We further study the induced geometry: with clean inputs, VAE-based CF primarily exploits \\emph{local} collaboration between input-similar users and under-utilizes global collaboration between far-but-related users. We compare two mechanisms that encourage \\emph{global} mixing and characterize their trade-offs: (1) $β$-KL regularization directly tightens the information bottleneck, promoting posterior overlap but risking representational collapse if too large; (2) input masking induces stochastic geometric contractions and expansions, which can bring distant users onto the same latent neighborhood but also introduce neighborhood drift. To preserve user identity while enabling global consistency, we propose an anchor regularizer that aligns user posteriors with item embeddings, stabilizing users under masking and facilitating signal sharing across related items. Our analyses are validated on the Netflix, MovieLens-20M, and Million Song datasets. We also successfully deployed our proposed algorithm on an Amazon streaming platform following a successful online experiment.",
+    "authors": [
+      "Tung-Long Vuong",
+      "Julien Monteil",
+      "Hien Dang",
+      "Volodymyr Vaskovych",
+      "Trung Le",
+      "Vu Nguyen"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.06781v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06781v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.59
@@ -3773,6 +3797,31 @@
     "research_score": 0.57
   },
   {
+    "arxiv_id": "2511.07947v1",
+    "title": "Class-feature Watermark: A Resilient Black-box Watermark Against Model Extraction Attacks",
+    "summary": "Machine learning models constitute valuable intellectual property, yet remain vulnerable to model extraction attacks (MEA), where adversaries replicate their functionality through black-box queries. Model watermarking counters MEAs by embedding forensic markers for ownership verification. Current black-box watermarks prioritize MEA survival through representation entanglement, yet inadequately explore resilience against sequential MEAs and removal attacks. Our study reveals that this risk is underestimated because existing removal methods are weakened by entanglement. To address this gap, we propose Watermark Removal attacK (WRK), which circumvents entanglement constraints by exploiting decision boundaries shaped by prevailing sample-level watermark artifacts. WRK effectively reduces watermark success rates by at least 88.79% across existing watermarking benchmarks.   For robust protection, we propose Class-Feature Watermarks (CFW), which improve resilience by leveraging class-level artifacts. CFW constructs a synthetic class using out-of-domain samples, eliminating vulnerable decision boundaries between original domain samples and their artifact-modified counterparts (watermark samples). CFW concurrently optimizes both MEA transferability and post-MEA stability. Experiments across multiple domains show that CFW consistently outperforms prior methods in resilience, maintaining a watermark success rate of at least 70.15% in extracted models even under the combined MEA and WRK distortion, while preserving the utility of protected models.",
+    "authors": [
+      "Yaxin Xiao",
+      "Qingqing Ye",
+      "Zi Liang",
+      "Haoyang Li",
+      "RongHua Li",
+      "Huadi Zheng",
+      "Haibo Hu"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07947v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07947v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
     "arxiv_id": "2511.08207v1",
     "title": "FedPoP: Federated Learning Meets Proof of Participation",
     "summary": "Federated learning (FL) offers privacy preserving, distributed machine learning, allowing clients to contribute to a global model without revealing their local data. As models increasingly serve as monetizable digital assets, the ability to prove participation in their training becomes essential for establishing ownership. In this paper, we address this emerging need by introducing FedPoP, a novel FL framework that allows nonlinkable proof of participation while preserving client anonymity and privacy without requiring either extensive computations or a public ledger. FedPoP is designed to seamlessly integrate with existing secure aggregation protocols to ensure compatibility with real-world FL deployments. We provide a proof of concept implementation and an empirical evaluation under realistic client dropouts. In our prototype, FedPoP introduces 0.97 seconds of per-round overhead atop securely aggregated FL and enables a client to prove its participation/contribution to a model held by a third party in 0.0612 seconds. These results indicate FedPoP is practical for real-world deployments that require auditable participation without sacrificing privacy.",
@@ -3811,31 +3860,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08085v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08085v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.57
-  },
-  {
-    "arxiv_id": "2511.07947v1",
-    "title": "Class-feature Watermark: A Resilient Black-box Watermark Against Model Extraction Attacks",
-    "summary": "Machine learning models constitute valuable intellectual property, yet remain vulnerable to model extraction attacks (MEA), where adversaries replicate their functionality through black-box queries. Model watermarking counters MEAs by embedding forensic markers for ownership verification. Current black-box watermarks prioritize MEA survival through representation entanglement, yet inadequately explore resilience against sequential MEAs and removal attacks. Our study reveals that this risk is underestimated because existing removal methods are weakened by entanglement. To address this gap, we propose Watermark Removal attacK (WRK), which circumvents entanglement constraints by exploiting decision boundaries shaped by prevailing sample-level watermark artifacts. WRK effectively reduces watermark success rates by at least 88.79% across existing watermarking benchmarks.   For robust protection, we propose Class-Feature Watermarks (CFW), which improve resilience by leveraging class-level artifacts. CFW constructs a synthetic class using out-of-domain samples, eliminating vulnerable decision boundaries between original domain samples and their artifact-modified counterparts (watermark samples). CFW concurrently optimizes both MEA transferability and post-MEA stability. Experiments across multiple domains show that CFW consistently outperforms prior methods in resilience, maintaining a watermark success rate of at least 70.15% in extracted models even under the combined MEA and WRK distortion, while preserving the utility of protected models.",
-    "authors": [
-      "Yaxin Xiao",
-      "Qingqing Ye",
-      "Zi Liang",
-      "Haoyang Li",
-      "RongHua Li",
-      "Huadi Zheng",
-      "Haibo Hu"
-    ],
-    "categories": [
-      "cs.CR",
-      "cs.CV",
-      "cs.LG"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07947v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07947v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.57
@@ -4007,27 +4031,6 @@
     "research_score": 0.55
   },
   {
-    "arxiv_id": "2511.06641v1",
-    "title": "Neyman-Pearson Classification under Both Null and Alternative Distributions Shift",
-    "summary": "We consider the problem of transfer learning in Neyman-Pearson classification, where the objective is to minimize the error w.r.t. a distribution $μ_1$, subject to the constraint that the error w.r.t. a distribution $μ_0$ remains below a prescribed threshold. While transfer learning has been extensively studied in traditional classification, transfer learning in imbalanced classification such as Neyman-Pearson classification has received much less attention. This setting poses unique challenges, as both types of errors must be simultaneously controlled. Existing works address only the case of distribution shift in $μ_1$, whereas in many practical scenarios shifts may occur in both $μ_0$ and $μ_1$. We derive an adaptive procedure that not only guarantees improved Type-I and Type-II errors when the source is informative, but also automatically adapt to situations where the source is uninformative, thereby avoiding negative transfer. In addition to such statistical guarantees, the procedures is efficient, as shown via complementary computational guarantees.",
-    "authors": [
-      "Mohammadreza M. Kalan",
-      "Yuyang Deng",
-      "Eitan J. Neugut",
-      "Samory Kpotufe"
-    ],
-    "categories": [
-      "cs.LG",
-      "stat.ML"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06641v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06641v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.55
-  },
-  {
     "arxiv_id": "2511.07325v1",
     "title": "Garbage Vulnerable Point Monitoring using IoT and Computer Vision",
     "summary": "This paper proposes a smart way to manage municipal solid waste by using the Internet of Things (IoT) and computer vision (CV) to monitor illegal waste dumping at garbage vulnerable points (GVPs) in urban areas. The system can quickly detect and monitor dumped waste using a street-level camera and object detection algorithm. Data was collected from the Sangareddy district in Telangana, India. A series of comprehensive experiments was carried out using the proposed dataset to assess the accuracy and overall performance of various object detection models. Specifically, we performed an in-depth evaluation of YOLOv8, YOLOv10, YOLO11m, and RT-DETR on our dataset. Among these models, YOLO11m achieved the highest accuracy of 92.39\\% in waste detection, demonstrating its effectiveness in detecting waste. Additionally, it attains an mAP@50 of 0.91, highlighting its high precision. These findings confirm that the object detection model is well-suited for monitoring and tracking waste dumping events at GVP locations. Furthermore, the system effectively captures waste disposal patterns, including hourly, daily, and weekly dumping trends, ensuring comprehensive daily and nightly monitoring.",
@@ -4050,23 +4053,43 @@
     "research_score": 0.55
   },
   {
-    "arxiv_id": "2511.07865v1",
-    "title": "LLM-Powered Fully Automated Chaos Engineering: Towards Enabling Anyone to Build Resilient Software Systems at Low Cost",
-    "summary": "Chaos Engineering (CE) is an engineering technique aimed at improving the resilience of distributed systems. It involves intentionally injecting faults into a system to test its resilience, uncover weaknesses, and address them before they cause failures in production. Recent CE tools automate the execution of predefined CE experiments. However, planning such experiments and improving the system based on the experimental results still remain manual. These processes are labor-intensive and require multi-domain expertise. To address these challenges and enable anyone to build resilient systems at low cost, this paper proposes ChaosEater, a system that automates the entire CE cycle with Large Language Models (LLMs). It predefines an agentic workflow according to a systematic CE cycle and assigns subdivided processes within the workflow to LLMs. ChaosEater targets CE for software systems built on Kubernetes. Therefore, the LLMs in ChaosEater complete CE cycles through software engineering tasks, including requirement definition, code generation, testing, and debugging. We evaluate ChaosEater through case studies on small- and large-scale Kubernetes systems. The results demonstrate that it consistently completes reasonable CE cycles with significantly low time and monetary costs. Its cycles are also qualitatively validated by human engineers and LLMs.",
+    "arxiv_id": "2511.08368v1",
+    "title": "A Circular Argument : Does RoPE need to be Equivariant for Vision?",
+    "summary": "Rotary Positional Encodings (RoPE) have emerged as a highly effective technique for one-dimensional sequences in Natural Language Processing spurring recent progress towards generalizing RoPE to higher-dimensional data such as images and videos. The success of RoPE has been thought to be due to its positional equivariance, i.e. its status as a relative positional encoding. In this paper, we mathematically show RoPE to be one of the most general solutions for equivariant positional embedding in one-dimensional data. Moreover, we show Mixed RoPE to be the analogously general solution for M-dimensional data, if we require commutative generators -- a property necessary for RoPE's equivariance. However, we question whether strict equivariance plays a large role in RoPE's performance. We propose Spherical RoPE, a method analogous to Mixed RoPE, but assumes non-commutative generators. Empirically, we find Spherical RoPE to have the equivalent or better learning behavior compared to its equivariant analogues. This suggests that relative positional embeddings are not as important as is commonly believed, at least within computer vision. We expect this discovery to facilitate future work in positional encodings for vision that can be faster and generalize better by removing the preconception that they must be relative.",
     "authors": [
-      "Daisuke Kikuta",
-      "Hiroki Ikeuchi",
-      "Kengo Tajiri"
+      "Chase van de Geijn",
+      "Timo Lüddecke",
+      "Polina Turishcheva",
+      "Alexander S. Ecker"
     ],
     "categories": [
-      "cs.SE",
-      "cs.AI",
-      "cs.CL",
-      "cs.MA"
+      "cs.CV",
+      "cs.AI"
     ],
     "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07865v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07865v1.pdf",
+    "url": "https://arxiv.org/abs/2511.08368v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08368v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.55
+  },
+  {
+    "arxiv_id": "2511.06641v1",
+    "title": "Neyman-Pearson Classification under Both Null and Alternative Distributions Shift",
+    "summary": "We consider the problem of transfer learning in Neyman-Pearson classification, where the objective is to minimize the error w.r.t. a distribution $μ_1$, subject to the constraint that the error w.r.t. a distribution $μ_0$ remains below a prescribed threshold. While transfer learning has been extensively studied in traditional classification, transfer learning in imbalanced classification such as Neyman-Pearson classification has received much less attention. This setting poses unique challenges, as both types of errors must be simultaneously controlled. Existing works address only the case of distribution shift in $μ_1$, whereas in many practical scenarios shifts may occur in both $μ_0$ and $μ_1$. We derive an adaptive procedure that not only guarantees improved Type-I and Type-II errors when the source is informative, but also automatically adapt to situations where the source is uninformative, thereby avoiding negative transfer. In addition to such statistical guarantees, the procedures is efficient, as shown via complementary computational guarantees.",
+    "authors": [
+      "Mohammadreza M. Kalan",
+      "Yuyang Deng",
+      "Eitan J. Neugut",
+      "Samory Kpotufe"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.06641v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06641v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.55
@@ -4094,22 +4117,23 @@
     "research_score": 0.55
   },
   {
-    "arxiv_id": "2511.08368v1",
-    "title": "A Circular Argument : Does RoPE need to be Equivariant for Vision?",
-    "summary": "Rotary Positional Encodings (RoPE) have emerged as a highly effective technique for one-dimensional sequences in Natural Language Processing spurring recent progress towards generalizing RoPE to higher-dimensional data such as images and videos. The success of RoPE has been thought to be due to its positional equivariance, i.e. its status as a relative positional encoding. In this paper, we mathematically show RoPE to be one of the most general solutions for equivariant positional embedding in one-dimensional data. Moreover, we show Mixed RoPE to be the analogously general solution for M-dimensional data, if we require commutative generators -- a property necessary for RoPE's equivariance. However, we question whether strict equivariance plays a large role in RoPE's performance. We propose Spherical RoPE, a method analogous to Mixed RoPE, but assumes non-commutative generators. Empirically, we find Spherical RoPE to have the equivalent or better learning behavior compared to its equivariant analogues. This suggests that relative positional embeddings are not as important as is commonly believed, at least within computer vision. We expect this discovery to facilitate future work in positional encodings for vision that can be faster and generalize better by removing the preconception that they must be relative.",
+    "arxiv_id": "2511.07865v1",
+    "title": "LLM-Powered Fully Automated Chaos Engineering: Towards Enabling Anyone to Build Resilient Software Systems at Low Cost",
+    "summary": "Chaos Engineering (CE) is an engineering technique aimed at improving the resilience of distributed systems. It involves intentionally injecting faults into a system to test its resilience, uncover weaknesses, and address them before they cause failures in production. Recent CE tools automate the execution of predefined CE experiments. However, planning such experiments and improving the system based on the experimental results still remain manual. These processes are labor-intensive and require multi-domain expertise. To address these challenges and enable anyone to build resilient systems at low cost, this paper proposes ChaosEater, a system that automates the entire CE cycle with Large Language Models (LLMs). It predefines an agentic workflow according to a systematic CE cycle and assigns subdivided processes within the workflow to LLMs. ChaosEater targets CE for software systems built on Kubernetes. Therefore, the LLMs in ChaosEater complete CE cycles through software engineering tasks, including requirement definition, code generation, testing, and debugging. We evaluate ChaosEater through case studies on small- and large-scale Kubernetes systems. The results demonstrate that it consistently completes reasonable CE cycles with significantly low time and monetary costs. Its cycles are also qualitatively validated by human engineers and LLMs.",
     "authors": [
-      "Chase van de Geijn",
-      "Timo Lüddecke",
-      "Polina Turishcheva",
-      "Alexander S. Ecker"
+      "Daisuke Kikuta",
+      "Hiroki Ikeuchi",
+      "Kengo Tajiri"
     ],
     "categories": [
-      "cs.CV",
-      "cs.AI"
+      "cs.SE",
+      "cs.AI",
+      "cs.CL",
+      "cs.MA"
     ],
     "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08368v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08368v1.pdf",
+    "url": "https://arxiv.org/abs/2511.07865v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07865v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.55
@@ -4262,6 +4286,24 @@
     "research_score": 0.54
   },
   {
+    "arxiv_id": "2511.06906v1",
+    "title": "Counterfactual Explanation for Multivariate Time Series Forecasting with Exogenous Variables",
+    "summary": "Currently, machine learning is widely used across various domains, including time series data analysis. However, some machine learning models function as black boxes, making interpretability a critical concern. One approach to address this issue is counterfactual explanation (CE), which aims to provide insights into model predictions. This study focuses on the relatively underexplored problem of generating counterfactual explanations for time series forecasting. We propose a method for extracting CEs in time series forecasting using exogenous variables, which are frequently encountered in fields such as business and marketing. In addition, we present methods for analyzing the influence of each variable over an entire time series, generating CEs by altering only specific variables, and evaluating the quality of the resulting CEs. We validate the proposed method through theoretical analysis and empirical experiments, showcasing its accuracy and practical applicability. These contributions are expected to support real-world decision-making based on time series data analysis.",
+    "authors": [
+      "Keita Kinjo"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-10",
+    "url": "https://arxiv.org/abs/2511.06906v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.06906v1.pdf",
+    "date": "2025-11-12",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
     "arxiv_id": "2511.06585v1",
     "title": "Learning Biomolecular Motion: The Physics-Informed Machine Learning Paradigm",
     "summary": "The convergence of statistical learning and molecular physics is transforming our approach to modeling biomolecular systems. Physics-informed machine learning (PIML) offers a systematic framework that integrates data-driven inference with physical constraints, resulting in models that are accurate, mechanistic, generalizable, and able to extrapolate beyond observed domains. This review surveys recent advances in physics-informed neural networks and operator learning, differentiable molecular simulation, and hybrid physics-ML potentials, with emphasis on long-timescale kinetics, rare events, and free-energy estimation. We frame these approaches as solutions to the \"biomolecular closure problem\", recovering unresolved interactions beyond classical force fields while preserving thermodynamic consistency and mechanistic interpretability. We examine theoretical foundations, tools and frameworks, computational trade-offs, and unresolved issues, including model expressiveness and stability. We outline prospective research avenues at the intersection of machine learning, statistical physics, and computational chemistry, contending that future advancements will depend on mechanistic inductive biases, and integrated differentiable physical learning frameworks for biomolecular simulation and discovery.",
@@ -4277,24 +4319,6 @@
     "published": "2025-11-10",
     "url": "https://arxiv.org/abs/2511.06585v1",
     "pdf_url": "https://arxiv.org/pdf/2511.06585v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
-    "arxiv_id": "2511.06906v1",
-    "title": "Counterfactual Explanation for Multivariate Time Series Forecasting with Exogenous Variables",
-    "summary": "Currently, machine learning is widely used across various domains, including time series data analysis. However, some machine learning models function as black boxes, making interpretability a critical concern. One approach to address this issue is counterfactual explanation (CE), which aims to provide insights into model predictions. This study focuses on the relatively underexplored problem of generating counterfactual explanations for time series forecasting. We propose a method for extracting CEs in time series forecasting using exogenous variables, which are frequently encountered in fields such as business and marketing. In addition, we present methods for analyzing the influence of each variable over an entire time series, generating CEs by altering only specific variables, and evaluating the quality of the resulting CEs. We validate the proposed method through theoretical analysis and empirical experiments, showcasing its accuracy and practical applicability. These contributions are expected to support real-world decision-making based on time series data analysis.",
-    "authors": [
-      "Keita Kinjo"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06906v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06906v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.54
@@ -4536,26 +4560,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08086v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08086v1.pdf",
-    "date": "2025-11-12",
-    "source": "arxiv",
-    "research_score": 0.52
-  },
-  {
-    "arxiv_id": "2511.06763v1",
-    "title": "Sensitivity of Small Language Models to Fine-tuning Data Contamination",
-    "summary": "Small Language Models (SLMs) are increasingly being deployed in resource-constrained environments, yet their behavioral robustness to data contamination during instruction tuning remains poorly understood. We systematically investigate the contamination sensitivity of 23 SLMs (270M to 4B parameters) across multiple model families by measuring susceptibility to syntactic and semantic transformation types during instruction tuning: syntactic transformations (character and word reversal) and semantic transformations (irrelevant and counterfactual responses), each applied at contamination levels of 25\\%, 50\\%, 75\\%, and 100\\%. Our results reveal fundamental asymmetries in vulnerability patterns: syntactic transformations cause catastrophic performance degradation, with character reversal producing near-complete failure across all models regardless of size or family, while semantic transformations demonstrate distinct threshold behaviors and greater resilience in core linguistic capabilities. Critically, we discover a ``\\textit{capability curse}\" where larger, more capable models become more susceptible to learning semantic corruptions, effectively following harmful instructions more readily, while our analysis of base versus instruction-tuned variants reveals that alignment provides inconsistent robustness benefits, sometimes even reducing resilience. Our work establishes three core contributions: (1) empirical evidence of SLMs' disproportionate vulnerability to syntactic pattern contamination, (2) identification of asymmetric sensitivity patterns between syntactic and semantic transformations, and (3) systematic evaluation protocols for contamination robustness assessment. These findings have immediate deployment implications, suggesting that current robustness assumptions may not hold for smaller models and highlighting the need for contamination-aware training protocols.",
-    "authors": [
-      "Nicy Scaria",
-      "Silvester John Joseph Kennedy",
-      "Deepak Subramani"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-10",
-    "url": "https://arxiv.org/abs/2511.06763v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.06763v1.pdf",
     "date": "2025-11-12",
     "source": "arxiv",
     "research_score": 0.52
