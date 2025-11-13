@@ -75,7 +75,7 @@
     "authors": [
       "Shanaka Liyanaarachchi",
       "Chathurya Wijethunga",
-      "Shihab Aaquil Ahamed",
+      "Shihab Aaqil Ahamed",
       "Akthas Absar",
       "Ranga Rodrigo"
     ],
@@ -308,6 +308,26 @@
     "research_score": 0.8
   },
   {
+    "arxiv_id": "2511.09404v1",
+    "title": "Spatio-Temporal Graph Unlearning",
+    "summary": "Spatio-temporal graphs are widely used in modeling complex dynamic processes such as traffic forecasting, molecular dynamics, and healthcare monitoring. Recently, stringent privacy regulations such as GDPR and CCPA have introduced significant new challenges for existing spatio-temporal graph models, requiring complete unlearning of unauthorized data. Since each node in a spatio-temporal graph diffuses information globally across both spatial and temporal dimensions, existing unlearning methods primarily designed for static graphs and localized data removal cannot efficiently erase a single node without incurring costs nearly equivalent to full model retraining. Therefore, an effective approach for complete spatio-temporal graph unlearning is a pressing need. To address this, we propose CallosumNet, a divide-and-conquer spatio-temporal graph unlearning framework inspired by the corpus callosum structure that facilitates communication between the brain's two hemispheres. CallosumNet incorporates two novel techniques: (1) Enhanced Subgraph Construction (ESC), which adaptively constructs multiple localized subgraphs based on several factors, including biologically-inspired virtual ganglions; and (2) Global Ganglion Bridging (GGB), which reconstructs global spatio-temporal dependencies from these localized subgraphs, effectively restoring the full graph representation. Empirical results on four diverse real-world datasets show that CallosumNet achieves complete unlearning with only 1%-2% relative MAE loss compared to the gold model, significantly outperforming state-of-the-art baselines. Ablation studies verify the effectiveness of both proposed techniques.",
+    "authors": [
+      "Qiming Guo",
+      "Wenbo Sun",
+      "Wenlu Wang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09404v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09404v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.8
+  },
+  {
     "arxiv_id": "2511.08003v1",
     "title": "Sharp Eyes and Memory for VideoLLMs: Information-Aware Visual Token Pruning for Efficient and Reliable VideoLLM Reasoning",
     "summary": "Current Video Large Language Models (VideoLLMs) suffer from quadratic computational complexity and key-value cache scaling, due to their reliance on processing excessive redundant visual tokens. To address this problem, we propose SharpV, a minimalist and efficient method for adaptive pruning of visual tokens and KV cache. Different from most uniform compression approaches, SharpV dynamically adjusts pruning ratios based on spatial-temporal information. Remarkably, this adaptive mechanism occasionally achieves performance gains over dense models, offering a novel paradigm for adaptive pruning. During the KV cache pruning stage, based on observations of visual information degradation, SharpV prunes degraded visual features via a self-calibration manner, guided by similarity to original visual features. In this way, SharpV achieves hierarchical cache pruning from the perspective of information bottleneck, offering a new insight into VideoLLMs' information flow. Experiments on multiple public benchmarks demonstrate the superiority of SharpV. Moreover, to the best of our knowledge, SharpV is notably the first two-stage pruning framework that operates without requiring access to exposed attention scores, ensuring full compatibility with hardware acceleration techniques like Flash Attention.",
@@ -325,26 +345,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08003v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08003v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.8
-  },
-  {
-    "arxiv_id": "2511.09404v1",
-    "title": "Spatio-Temporal Graph Unlearning",
-    "summary": "Spatio-temporal graphs are widely used in modeling complex dynamic processes such as traffic forecasting, molecular dynamics, and healthcare monitoring. Recently, stringent privacy regulations such as GDPR and CCPA have introduced significant new challenges for existing spatio-temporal graph models, requiring complete unlearning of unauthorized data. Since each node in a spatio-temporal graph diffuses information globally across both spatial and temporal dimensions, existing unlearning methods primarily designed for static graphs and localized data removal cannot efficiently erase a single node without incurring costs nearly equivalent to full model retraining. Therefore, an effective approach for complete spatio-temporal graph unlearning is a pressing need. To address this, we propose CallosumNet, a divide-and-conquer spatio-temporal graph unlearning framework inspired by the corpus callosum structure that facilitates communication between the brain's two hemispheres. CallosumNet incorporates two novel techniques: (1) Enhanced Subgraph Construction (ESC), which adaptively constructs multiple localized subgraphs based on several factors, including biologically-inspired virtual ganglions; and (2) Global Ganglion Bridging (GGB), which reconstructs global spatio-temporal dependencies from these localized subgraphs, effectively restoring the full graph representation. Empirical results on four diverse real-world datasets show that CallosumNet achieves complete unlearning with only 1%-2% relative MAE loss compared to the gold model, significantly outperforming state-of-the-art baselines. Ablation studies verify the effectiveness of both proposed techniques.",
-    "authors": [
-      "Qiming Guo",
-      "Wenbo Sun",
-      "Wenlu Wang"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09404v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09404v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.8
@@ -619,21 +619,23 @@
     "research_score": 0.73
   },
   {
-    "arxiv_id": "2511.08133v1",
-    "title": "OTSNet: A Neurocognitive-Inspired Observation-Thinking-Spelling Pipeline for Scene Text Recognition",
-    "summary": "Scene Text Recognition (STR) remains challenging due to real-world complexities, where decoupled visual-linguistic optimization in existing frameworks amplifies error propagation through cross-modal misalignment. Visual encoders exhibit attention bias toward background distractors, while decoders suffer from spatial misalignment when parsing geometrically deformed text-collectively degrading recognition accuracy for irregular patterns. Inspired by the hierarchical cognitive processes in human visual perception, we propose OTSNet, a novel three-stage network embodying a neurocognitive-inspired Observation-Thinking-Spelling pipeline for unified STR modeling. The architecture comprises three core components: (1) a Dual Attention Macaron Encoder (DAME) that refines visual features through differential attention maps to suppress irrelevant regions and enhance discriminative focus; (2) a Position-Aware Module (PAM) and Semantic Quantizer (SQ) that jointly integrate spatial context with glyph-level semantic abstraction via adaptive sampling; and (3) a Multi-Modal Collaborative Verifier (MMCV) that enforces self-correction through cross-modal fusion of visual, semantic, and character-level features. Extensive experiments demonstrate that OTSNet achieves state-of-the-art performance, attaining 83.5% average accuracy on the challenging Union14M-L benchmark and 79.1% on the heavily occluded OST dataset-establishing new records across 9 out of 14 evaluation scenarios.",
+    "arxiv_id": "2511.08968v1",
+    "title": "Bayesian Mixture of Experts For Large Language Models",
+    "summary": "We present Bayesian Mixture of Experts (Bayesian-MoE), a post-hoc uncertainty estimation framework for fine-tuned large language models (LLMs) based on Mixture-of-Experts architectures. Our method applies a structured Laplace approximation to the second linear layer of each expert, enabling calibrated uncertainty estimation without modifying the original training procedure or introducing new parameters. Unlike prior approaches, which apply Bayesian inference to added adapter modules, Bayesian-MoE directly targets the expert pathways already present in MoE models, leveraging their modular design for tractable block-wise posterior estimation. We use Kronecker-factored low-rank approximations to model curvature and derive scalable estimates of predictive uncertainty and marginal likelihood. Experiments on common-sense reasoning benchmarks with Qwen1.5-MoE and DeepSeek-MoE demonstrate that Bayesian-MoE improves both expected calibration error (ECE) and negative log-likelihood (NLL) over baselines, confirming its effectiveness for reliable downstream decision-making.",
     "authors": [
-      "Lixu Sun",
-      "Nurmemet Yolwas",
-      "Wushour Silamu"
+      "Maryam Dialameh",
+      "Hossein Rajabzadeh",
+      "Weiwei Zhang",
+      "Walid Ahmed",
+      "Hyock Ju Kwon"
     ],
     "categories": [
-      "cs.CV",
-      "cs.AI"
+      "cs.LG",
+      "cs.CL"
     ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08133v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08133v1.pdf",
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.08968v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08968v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.73
@@ -653,6 +655,26 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09332v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09332v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.73
+  },
+  {
+    "arxiv_id": "2511.08133v1",
+    "title": "OTSNet: A Neurocognitive-Inspired Observation-Thinking-Spelling Pipeline for Scene Text Recognition",
+    "summary": "Scene Text Recognition (STR) remains challenging due to real-world complexities, where decoupled visual-linguistic optimization in existing frameworks amplifies error propagation through cross-modal misalignment. Visual encoders exhibit attention bias toward background distractors, while decoders suffer from spatial misalignment when parsing geometrically deformed text-collectively degrading recognition accuracy for irregular patterns. Inspired by the hierarchical cognitive processes in human visual perception, we propose OTSNet, a novel three-stage network embodying a neurocognitive-inspired Observation-Thinking-Spelling pipeline for unified STR modeling. The architecture comprises three core components: (1) a Dual Attention Macaron Encoder (DAME) that refines visual features through differential attention maps to suppress irrelevant regions and enhance discriminative focus; (2) a Position-Aware Module (PAM) and Semantic Quantizer (SQ) that jointly integrate spatial context with glyph-level semantic abstraction via adaptive sampling; and (3) a Multi-Modal Collaborative Verifier (MMCV) that enforces self-correction through cross-modal fusion of visual, semantic, and character-level features. Extensive experiments demonstrate that OTSNet achieves state-of-the-art performance, attaining 83.5% average accuracy on the challenging Union14M-L benchmark and 79.1% on the heavily occluded OST dataset-establishing new records across 9 out of 14 evaluation scenarios.",
+    "authors": [
+      "Lixu Sun",
+      "Nurmemet Yolwas",
+      "Wushour Silamu"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08133v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08133v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.73
@@ -680,28 +702,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09109v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09109v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.73
-  },
-  {
-    "arxiv_id": "2511.08968v1",
-    "title": "Bayesian Mixture of Experts For Large Language Models",
-    "summary": "We present Bayesian Mixture of Experts (Bayesian-MoE), a post-hoc uncertainty estimation framework for fine-tuned large language models (LLMs) based on Mixture-of-Experts architectures. Our method applies a structured Laplace approximation to the second linear layer of each expert, enabling calibrated uncertainty estimation without modifying the original training procedure or introducing new parameters. Unlike prior approaches, which apply Bayesian inference to added adapter modules, Bayesian-MoE directly targets the expert pathways already present in MoE models, leveraging their modular design for tractable block-wise posterior estimation. We use Kronecker-factored low-rank approximations to model curvature and derive scalable estimates of predictive uncertainty and marginal likelihood. Experiments on common-sense reasoning benchmarks with Qwen1.5-MoE and DeepSeek-MoE demonstrate that Bayesian-MoE improves both expected calibration error (ECE) and negative log-likelihood (NLL) over baselines, confirming its effectiveness for reliable downstream decision-making.",
-    "authors": [
-      "Maryam Dialameh",
-      "Hossein Rajabzadeh",
-      "Weiwei Zhang",
-      "Walid Ahmed",
-      "Hyock Ju Kwon"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.CL"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.08968v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08968v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.73
@@ -1773,6 +1773,26 @@
     "research_score": 0.66
   },
   {
+    "arxiv_id": "2511.07935v2",
+    "title": "DiffRegCD: Integrated Registration and Change Detection with Diffusion Features",
+    "summary": "Change detection (CD) is fundamental to computer vision and remote sensing, supporting applications in environmental monitoring, disaster response, and urban development. Most CD models assume co-registered inputs, yet real-world imagery often exhibits parallax, viewpoint shifts, and long temporal gaps that cause severe misalignment. Traditional two stage methods that first register and then detect, as well as recent joint frameworks (e.g., BiFA, ChangeRD), still struggle under large displacements, relying on regression only flow, global homographies, or synthetic perturbations. We present DiffRegCD, an integrated framework that unifies dense registration and change detection in a single model. DiffRegCD reformulates correspondence estimation as a Gaussian smoothed classification task, achieving sub-pixel accuracy and stable training. It leverages frozen multi-scale features from a pretrained denoising diffusion model, ensuring robustness to illumination and viewpoint variation. Supervision is provided through controlled affine perturbations applied to standard CD datasets, yielding paired ground truth for both flow and change detection without pseudo labels. Extensive experiments on aerial (LEVIR-CD, DSIFN-CD, WHU-CD, SYSU-CD) and ground level (VL-CMU-CD) datasets show that DiffRegCD consistently surpasses recent baselines and remains reliable under wide temporal and geometric variation, establishing diffusion features and classification based correspondence as a strong foundation for unified change detection.",
+    "authors": [
+      "Seyedehanita Madani",
+      "Rama Chellappa",
+      "Vishal M. Patel"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07935v2",
+    "pdf_url": "https://arxiv.org/pdf/2511.07935v2.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.66
+  },
+  {
     "arxiv_id": "2511.07737v1",
     "title": "TurboSAT: Gradient-Guided Boolean Satisfiability Accelerated on GPU-CPU Hybrid System",
     "summary": "While accelerated computing has transformed many domains of computing, its impact on logical reasoning, specifically Boolean satisfiability (SAT), remains limited. State-of-the-art SAT solvers rely heavily on inherently sequential conflict-driven search algorithms that offer powerful heuristics but limit the amount of parallelism that could otherwise enable significantly more scalable SAT solving. Inspired by neural network training, we formulate the SAT problem as a binarized matrix-matrix multiplication layer that could be optimized using a differentiable objective function. Enabled by this encoding, we combine the strengths of parallel differentiable optimization and sequential search to accelerate SAT on a hybrid GPU-CPU system. In this system, the GPUs leverage parallel differentiable solving to rapidly evaluate SAT clauses and use gradients to stochastically explore the solution space and optimize variable assignments. Promising partial assignments generated by the GPUs are post-processed on many CPU threads which exploit conflict-driven sequential search to further traverse the solution subspaces and identify complete assignments. Prototyping the hybrid solver on an NVIDIA DGX GB200 node, our solver achieves runtime speedups up to over 200x when compared to a state-of-the-art CPU-based solver on public satisfiable benchmark problems from the SAT Competition.",
@@ -1791,26 +1811,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07737v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07737v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.66
-  },
-  {
-    "arxiv_id": "2511.07935v2",
-    "title": "DiffRegCD: Integrated Registration and Change Detection with Diffusion Features",
-    "summary": "Change detection (CD) is fundamental to computer vision and remote sensing, supporting applications in environmental monitoring, disaster response, and urban development. Most CD models assume co-registered inputs, yet real-world imagery often exhibits parallax, viewpoint shifts, and long temporal gaps that cause severe misalignment. Traditional two stage methods that first register and then detect, as well as recent joint frameworks (e.g., BiFA, ChangeRD), still struggle under large displacements, relying on regression only flow, global homographies, or synthetic perturbations. We present DiffRegCD, an integrated framework that unifies dense registration and change detection in a single model. DiffRegCD reformulates correspondence estimation as a Gaussian smoothed classification task, achieving sub-pixel accuracy and stable training. It leverages frozen multi-scale features from a pretrained denoising diffusion model, ensuring robustness to illumination and viewpoint variation. Supervision is provided through controlled affine perturbations applied to standard CD datasets, yielding paired ground truth for both flow and change detection without pseudo labels. Extensive experiments on aerial (LEVIR-CD, DSIFN-CD, WHU-CD, SYSU-CD) and ground level (VL-CMU-CD) datasets show that DiffRegCD consistently surpasses recent baselines and remains reliable under wide temporal and geometric variation, establishing diffusion features and classification based correspondence as a strong foundation for unified change detection.",
-    "authors": [
-      "Seyedehanita Madani",
-      "Rama Chellappa",
-      "Vishal M. Patel"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07935v2",
-    "pdf_url": "https://arxiv.org/pdf/2511.07935v2.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.66
@@ -2426,6 +2426,29 @@
     "research_score": 0.64
   },
   {
+    "arxiv_id": "2511.09426v1",
+    "title": "BIG5-TPoT: Predicting BIG Five Personality Traits, Facets, and Items Through Targeted Preselection of Texts",
+    "summary": "Predicting an individual's personalities from their generated texts is a challenging task, especially when the text volume is large. In this paper, we introduce a straightforward yet effective novel strategy called targeted preselection of texts (TPoT). This method semantically filters the texts as input to a deep learning model, specifically designed to predict a Big Five personality trait, facet, or item, referred to as the BIG5-TPoT model. By selecting texts that are semantically relevant to a particular trait, facet, or item, this strategy not only addresses the issue of input text limits in large language models but also improves the Mean Absolute Error and accuracy metrics in predictions for the Stream of Consciousness Essays dataset.",
+    "authors": [
+      "Triet M. Le",
+      "Arjun Chandra",
+      "C. Anton Rytting",
+      "Valerie P. Karuzis",
+      "Vladimir Rife",
+      "William A. Simpson"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09426v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09426v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
     "arxiv_id": "2511.08052v1",
     "title": "Dual-Process Scaffold Reasoning for Enhancing LLM Code Debugging",
     "summary": "Recent LLMs have demonstrated sophisticated problem-solving capabilities on various benchmarks through advanced reasoning algorithms. However, the key research question of identifying reasoning steps that balance complexity and computational efficiency remains unsolved. Recent research has increasingly drawn upon psychological theories to explore strategies for optimizing cognitive pathways. The LLM's final outputs and intermediate steps are regarded as System 1 and System 2, respectively. However, an in-depth exploration of the System 2 reasoning is still lacking. Therefore, we propose a novel psychologically backed Scaffold Reasoning framework for code debugging, which encompasses the Scaffold Stream, Analytic Stream, and Integration Stream. The construction of reference code within the Scaffold Stream is integrated with the buggy code analysis results produced by the Analytic Stream through the Integration Stream. Our framework achieves an 88.91% pass rate and an average inference time of 5.36 seconds per-problem on DebugBench, outperforming other reasoning approaches across various LLMs in both reasoning accuracy and efficiency. Further analyses elucidate the advantages and limitations of various cognitive pathways across varying problem difficulties and bug types. Our findings also corroborate the alignment of the proposed Scaffold Reasoning framework with human cognitive processes.",
@@ -2464,29 +2487,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08322v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08322v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
-    "arxiv_id": "2511.09426v1",
-    "title": "BIG5-TPoT: Predicting BIG Five Personality Traits, Facets, and Items Through Targeted Preselection of Texts",
-    "summary": "Predicting an individual's personalities from their generated texts is a challenging task, especially when the text volume is large. In this paper, we introduce a straightforward yet effective novel strategy called targeted preselection of texts (TPoT). This method semantically filters the texts as input to a deep learning model, specifically designed to predict a Big Five personality trait, facet, or item, referred to as the BIG5-TPoT model. By selecting texts that are semantically relevant to a particular trait, facet, or item, this strategy not only addresses the issue of input text limits in large language models but also improves the Mean Absolute Error and accuracy metrics in predictions for the Stream of Consciousness Essays dataset.",
-    "authors": [
-      "Triet M. Le",
-      "Arjun Chandra",
-      "C. Anton Rytting",
-      "Valerie P. Karuzis",
-      "Vladimir Rife",
-      "William A. Simpson"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.LG"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09426v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09426v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.64
@@ -2733,28 +2733,6 @@
     "research_score": 0.62
   },
   {
-    "arxiv_id": "2511.07989v1",
-    "title": "State of the Art in Text Classification for South Slavic Languages: Fine-Tuning or Prompting?",
-    "summary": "Until recently, fine-tuned BERT-like models provided state-of-the-art performance on text classification tasks. With the rise of instruction-tuned decoder-only models, commonly known as large language models (LLMs), the field has increasingly moved toward zero-shot and few-shot prompting. However, the performance of LLMs on text classification, particularly on less-resourced languages, remains under-explored. In this paper, we evaluate the performance of current language models on text classification tasks across several South Slavic languages. We compare openly available fine-tuned BERT-like models with a selection of open-source and closed-source LLMs across three tasks in three domains: sentiment classification in parliamentary speeches, topic classification in news articles and parliamentary speeches, and genre identification in web texts. Our results show that LLMs demonstrate strong zero-shot performance, often matching or surpassing fine-tuned BERT-like models. Moreover, when used in a zero-shot setup, LLMs perform comparably in South Slavic languages and English. However, we also point out key drawbacks of LLMs, including less predictable outputs, significantly slower inference, and higher computational costs. Due to these limitations, fine-tuned BERT-like models remain a more practical choice for large-scale automatic text annotation.",
-    "authors": [
-      "Taja Kuzman Pungeršek",
-      "Peter Rupnik",
-      "Ivan Porupski",
-      "Vuk Dinić",
-      "Nikola Ljubešić"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07989v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07989v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.62
-  },
-  {
     "arxiv_id": "2511.09465v1",
     "title": "Branching Flows: Discrete, Continuous, and Manifold Flow Matching with Splits and Deletions",
     "summary": "Diffusion and flow matching approaches to generative modeling have shown promise in domains where the state space is continuous, such as image generation or protein folding & design, and discrete, exemplified by diffusion large language models. They offer a natural fit when the number of elements in a state is fixed in advance (e.g. images), but require ad hoc solutions when, for example, the length of a response from a large language model, or the number of amino acids in a protein chain is not known a priori.   Here we propose Branching Flows, a generative modeling framework that, like diffusion and flow matching approaches, transports a simple distribution to the data distribution. But in Branching Flows, the elements in the state evolve over a forest of binary trees, branching and dying stochastically with rates that are learned by the model. This allows the model to control, during generation, the number of elements in the sequence. We also show that Branching Flows can compose with any flow matching base process on discrete sets, continuous Euclidean spaces, smooth manifolds, and `multimodal' product spaces that mix these components. We demonstrate this in three domains: small molecule generation (multimodal), antibody sequence generation (discrete), and protein backbone generation (multimodal), and show that Branching Flows is a capable distribution learner with a stable learning objective, and that it enables new capabilities.",
@@ -2774,6 +2752,28 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09465v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09465v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.62
+  },
+  {
+    "arxiv_id": "2511.07989v1",
+    "title": "State of the Art in Text Classification for South Slavic Languages: Fine-Tuning or Prompting?",
+    "summary": "Until recently, fine-tuned BERT-like models provided state-of-the-art performance on text classification tasks. With the rise of instruction-tuned decoder-only models, commonly known as large language models (LLMs), the field has increasingly moved toward zero-shot and few-shot prompting. However, the performance of LLMs on text classification, particularly on less-resourced languages, remains under-explored. In this paper, we evaluate the performance of current language models on text classification tasks across several South Slavic languages. We compare openly available fine-tuned BERT-like models with a selection of open-source and closed-source LLMs across three tasks in three domains: sentiment classification in parliamentary speeches, topic classification in news articles and parliamentary speeches, and genre identification in web texts. Our results show that LLMs demonstrate strong zero-shot performance, often matching or surpassing fine-tuned BERT-like models. Moreover, when used in a zero-shot setup, LLMs perform comparably in South Slavic languages and English. However, we also point out key drawbacks of LLMs, including less predictable outputs, significantly slower inference, and higher computational costs. Due to these limitations, fine-tuned BERT-like models remain a more practical choice for large-scale automatic text annotation.",
+    "authors": [
+      "Taja Kuzman Pungeršek",
+      "Peter Rupnik",
+      "Ivan Porupski",
+      "Vuk Dinić",
+      "Nikola Ljubešić"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07989v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07989v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.62
@@ -2946,28 +2946,6 @@
     "research_score": 0.61
   },
   {
-    "arxiv_id": "2511.08507v1",
-    "title": "Introducing A Bangla Sentence - Gloss Pair Dataset for Bangla Sign Language Translation and Research",
-    "summary": "Bangla Sign Language (BdSL) translation represents a low-resource NLP task due to the lack of large-scale datasets that address sentence-level translation. Correspondingly, existing research in this field has been limited to word and alphabet level detection. In this work, we introduce Bangla-SGP, a novel parallel dataset consisting of 1,000 human-annotated sentence-gloss pairs which was augmented with around 3,000 synthetically generated pairs using syntactic and morphological rules through a rule-based Retrieval-Augmented Generation (RAG) pipeline. The gloss sequences of the spoken Bangla sentences are made up of individual glosses which are Bangla sign supported words and serve as an intermediate representation for a continuous sign. Our dataset consists of 1000 high quality Bangla sentences that are manually annotated into a gloss sequence by a professional signer. The augmentation process incorporates rule-based linguistic strategies and prompt engineering techniques that we have adopted by critically analyzing our human annotated sentence-gloss pairs and by working closely with our professional signer. Furthermore, we fine-tune several transformer-based models such as mBart50, Google mT5, GPT4.1-nano and evaluate their sentence-to-gloss translation performance using BLEU scores, based on these evaluation metrics we compare the model's gloss-translation consistency across our dataset and the RWTH-PHOENIX-2014T benchmark.",
-    "authors": [
-      "Neelavro Saha",
-      "Rafi Shahriyar",
-      "Nafis Ashraf Roudra",
-      "Saadman Sakib",
-      "Annajiat Alim Rasel"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08507v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08507v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.61
-  },
-  {
     "arxiv_id": "2511.09298v1",
     "title": "DensiCrafter: Physically-Constrained Generation and Fabrication of Self-Supporting Hollow Structures",
     "summary": "The rise of 3D generative models has enabled automatic 3D geometry and texture synthesis from multimodal inputs (e.g., text or images). However, these methods often ignore physical constraints and manufacturability considerations. In this work, we address the challenge of producing 3D designs that are both lightweight and self-supporting. We present DensiCrafter, a framework for generating lightweight, self-supporting 3D hollow structures by optimizing the density field. Starting from coarse voxel grids produced by Trellis, we interpret these as continuous density fields to optimize and introduce three differentiable, physically constrained, and simulation-free loss terms. Additionally, a mass regularization penalizes unnecessary material, while a restricted optimization domain preserves the outer surface. Our method seamlessly integrates with pretrained Trellis-based models (e.g., Trellis, DSO) without any architectural changes. In extensive evaluations, we achieve up to 43% reduction in material mass on the text-to-3D task. Compared to state-of-the-art baselines, our method could improve the stability and maintain high geometric fidelity. Real-world 3D-printing experiments confirm that our hollow designs can be reliably fabricated and could be self-supporting.",
@@ -2986,6 +2964,28 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09298v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09298v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
+    "arxiv_id": "2511.08507v1",
+    "title": "Introducing A Bangla Sentence - Gloss Pair Dataset for Bangla Sign Language Translation and Research",
+    "summary": "Bangla Sign Language (BdSL) translation represents a low-resource NLP task due to the lack of large-scale datasets that address sentence-level translation. Correspondingly, existing research in this field has been limited to word and alphabet level detection. In this work, we introduce Bangla-SGP, a novel parallel dataset consisting of 1,000 human-annotated sentence-gloss pairs which was augmented with around 3,000 synthetically generated pairs using syntactic and morphological rules through a rule-based Retrieval-Augmented Generation (RAG) pipeline. The gloss sequences of the spoken Bangla sentences are made up of individual glosses which are Bangla sign supported words and serve as an intermediate representation for a continuous sign. Our dataset consists of 1000 high quality Bangla sentences that are manually annotated into a gloss sequence by a professional signer. The augmentation process incorporates rule-based linguistic strategies and prompt engineering techniques that we have adopted by critically analyzing our human annotated sentence-gloss pairs and by working closely with our professional signer. Furthermore, we fine-tune several transformer-based models such as mBart50, Google mT5, GPT4.1-nano and evaluate their sentence-to-gloss translation performance using BLEU scores, based on these evaluation metrics we compare the model's gloss-translation consistency across our dataset and the RWTH-PHOENIX-2014T benchmark.",
+    "authors": [
+      "Neelavro Saha",
+      "Rafi Shahriyar",
+      "Nafis Ashraf Roudra",
+      "Saadman Sakib",
+      "Annajiat Alim Rasel"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08507v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08507v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.61
@@ -3134,6 +3134,25 @@
     "research_score": 0.6
   },
   {
+    "arxiv_id": "2511.08927v1",
+    "title": "The Double Contingency Problem: AI Recursion and the Limits of Interspecies Understanding",
+    "summary": "Current bioacoustic AI systems achieve impressive cross-species performance by processing animal communication through transformer architectures, foundation model paradigms, and other computational approaches. However, these approaches overlook a fundamental question: what happens when one form of recursive cognition--AI systems with their attention mechanisms, iterative processing, and feedback loops--encounters the recursive communicative processes of other species? Drawing on philosopher Yuk Hui's work on recursivity and contingency, I argue that AI systems are not neutral pattern detectors but recursive cognitive agents whose own information processing may systematically obscure or distort other species' communicative structures. This creates a double contingency problem: each species' communication emerges through contingent ecological and evolutionary conditions, while AI systems process these signals through their own contingent architectural and training conditions. I propose that addressing this challenge requires reconceptualizing bioacoustic AI from universal pattern recognition toward diplomatic encounter between different forms of recursive cognition, with implications for model design, evaluation frameworks, and research methodologies.",
+    "authors": [
+      "Graham L. Bishop"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CY"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.08927v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08927v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.6
+  },
+  {
     "arxiv_id": "2511.08080v1",
     "title": "Hierarchical Structure-Property Alignment for Data-Efficient Molecular Generation and Editing",
     "summary": "Property-constrained molecular generation and editing are crucial in AI-driven drug discovery but remain hindered by two factors: (i) capturing the complex relationships between molecular structures and multiple properties remains challenging, and (ii) the narrow coverage and incomplete annotations of molecular properties weaken the effectiveness of property-based models. To tackle these limitations, we propose HSPAG, a data-efficient framework featuring hierarchical structure-property alignment. By treating SMILES and molecular properties as complementary modalities, the model learns their relationships at atom, substructure, and whole-molecule levels. Moreover, we select representative samples through scaffold clustering and hard samples via an auxiliary variational auto-encoder (VAE), substantially reducing the required pre-training data. In addition, we incorporate a property relevance-aware masking mechanism and diversified perturbation strategies to enhance generation quality under sparse annotations. Experiments demonstrate that HSPAG captures fine-grained structure-property relationships and supports controllable generation under multiple property constraints. Two real-world case studies further validate the editing capabilities of HSPAG.",
@@ -3178,25 +3197,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07897v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07897v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.6
-  },
-  {
-    "arxiv_id": "2511.08927v1",
-    "title": "The Double Contingency Problem: AI Recursion and the Limits of Interspecies Understanding",
-    "summary": "Current bioacoustic AI systems achieve impressive cross-species performance by processing animal communication through transformer architectures, foundation model paradigms, and other computational approaches. However, these approaches overlook a fundamental question: what happens when one form of recursive cognition--AI systems with their attention mechanisms, iterative processing, and feedback loops--encounters the recursive communicative processes of other species? Drawing on philosopher Yuk Hui's work on recursivity and contingency, I argue that AI systems are not neutral pattern detectors but recursive cognitive agents whose own information processing may systematically obscure or distort other species' communicative structures. This creates a double contingency problem: each species' communication emerges through contingent ecological and evolutionary conditions, while AI systems process these signals through their own contingent architectural and training conditions. I propose that addressing this challenge requires reconceptualizing bioacoustic AI from universal pattern recognition toward diplomatic encounter between different forms of recursive cognition, with implications for model design, evaluation frameworks, and research methodologies.",
-    "authors": [
-      "Graham L. Bishop"
-    ],
-    "categories": [
-      "cs.AI",
-      "cs.CL",
-      "cs.CY"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.08927v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08927v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.6
@@ -4276,20 +4276,21 @@
     "research_score": 0.54
   },
   {
-    "arxiv_id": "2511.07787v1",
-    "title": "Physical Consistency of Aurora's Encoder: A Quantitative Study",
-    "summary": "The high accuracy of large-scale weather forecasting models like Aurora is often accompanied by a lack of transparency, as their internal representations remain largely opaque. This \"black box\" nature hinders their adoption in high-stakes operational settings. In this work, we probe the physical consistency of Aurora's encoder by investigating whether its latent representations align with known physical and meteorological concepts. Using a large-scale dataset of embeddings, we train linear classifiers to identify three distinct concepts: the fundamental land-sea boundary, high-impact extreme temperature events, and atmospheric instability. Our findings provide quantitative evidence that Aurora learns physically consistent features, while also highlighting its limitations in capturing the rarest events. This work underscores the critical need for interpretability methods to validate and build trust in the next generation of Al-driven weather models.",
+    "arxiv_id": "2511.09378v1",
+    "title": "The 2025 Planning Performance of Frontier Large Language Models",
+    "summary": "The capacity of Large Language Models (LLMs) for reasoning remains an active area of research, with the capabilities of frontier models continually advancing. We provide an updated evaluation of the end-to-end planning performance of three frontier LLMs as of 2025, where models are prompted to generate a plan from PDDL domain and task descriptions. We evaluate DeepSeek R1, Gemini 2.5 Pro, GPT-5 and as reference the planner LAMA on a subset of domains from the most recent Learning Track of the International Planning Competition. Our results show that on standard PDDL domains, the performance of GPT-5 in terms of solved tasks is competitive with LAMA. When the PDDL domains and tasks are obfuscated to test for pure reasoning, the performance of all LLMs degrades, though less severely than previously reported for other models. These results show substantial improvements over prior generations of LLMs, reducing the performance gap to planners on a challenging benchmark.",
     "authors": [
-      "Benjamin Richards",
-      "Pushpa Kumar Balan"
+      "Augusto B. Corrêa",
+      "André G. Pereira",
+      "Jendrik Seipp"
     ],
     "categories": [
-      "cs.LG",
-      "cs.AI"
+      "cs.AI",
+      "cs.LG"
     ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07787v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07787v1.pdf",
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09378v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09378v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.54
@@ -4321,21 +4322,20 @@
     "research_score": 0.54
   },
   {
-    "arxiv_id": "2511.09378v1",
-    "title": "The 2025 Planning Performance of Frontier Large Language Models",
-    "summary": "The capacity of Large Language Models (LLMs) for reasoning remains an active area of research, with the capabilities of frontier models continually advancing. We provide an updated evaluation of the end-to-end planning performance of three frontier LLMs as of 2025, where models are prompted to generate a plan from PDDL domain and task descriptions. We evaluate DeepSeek R1, Gemini 2.5 Pro, GPT-5 and as reference the planner LAMA on a subset of domains from the most recent Learning Track of the International Planning Competition. Our results show that on standard PDDL domains, the performance of GPT-5 in terms of solved tasks is competitive with LAMA. When the PDDL domains and tasks are obfuscated to test for pure reasoning, the performance of all LLMs degrades, though less severely than previously reported for other models. These results show substantial improvements over prior generations of LLMs, reducing the performance gap to planners on a challenging benchmark.",
+    "arxiv_id": "2511.07787v1",
+    "title": "Physical Consistency of Aurora's Encoder: A Quantitative Study",
+    "summary": "The high accuracy of large-scale weather forecasting models like Aurora is often accompanied by a lack of transparency, as their internal representations remain largely opaque. This \"black box\" nature hinders their adoption in high-stakes operational settings. In this work, we probe the physical consistency of Aurora's encoder by investigating whether its latent representations align with known physical and meteorological concepts. Using a large-scale dataset of embeddings, we train linear classifiers to identify three distinct concepts: the fundamental land-sea boundary, high-impact extreme temperature events, and atmospheric instability. Our findings provide quantitative evidence that Aurora learns physically consistent features, while also highlighting its limitations in capturing the rarest events. This work underscores the critical need for interpretability methods to validate and build trust in the next generation of Al-driven weather models.",
     "authors": [
-      "Augusto B. Corrêa",
-      "André G. Pereira",
-      "Jendrik Seipp"
+      "Benjamin Richards",
+      "Pushpa Kumar Balan"
     ],
     "categories": [
-      "cs.AI",
-      "cs.LG"
+      "cs.LG",
+      "cs.AI"
     ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09378v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09378v1.pdf",
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07787v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07787v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.54
