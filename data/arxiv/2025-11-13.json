@@ -707,27 +707,6 @@
     "research_score": 0.73
   },
   {
-    "arxiv_id": "2511.08864v1",
-    "title": "Transformer-Based Sleep Stage Classification Enhanced by Clinical Information",
-    "summary": "Manual sleep staging from polysomnography (PSG) is labor-intensive and prone to inter-scorer variability. While recent deep learning models have advanced automated staging, most rely solely on raw PSG signals and neglect contextual cues used by human experts. We propose a two-stage architecture that combines a Transformer-based per-epoch encoder with a 1D CNN aggregator, and systematically investigates the effect of incorporating explicit context: subject-level clinical metadata (age, sex, BMI) and per-epoch expert event annotations (apneas, desaturations, arousals, periodic breathing). Using the Sleep Heart Health Study (SHHS) cohort (n=8,357), we demonstrate that contextual fusion substantially improves staging accuracy. Compared to a PSG-only baseline (macro-F1 0.7745, micro-F1 0.8774), our final model achieves macro-F1 0.8031 and micro-F1 0.9051, with event annotations contributing the largest gains. Notably, feature fusion outperforms multi-task alternatives that predict the same auxiliary labels. These results highlight that augmenting learned representations with clinically meaningful features enhances both performance and interpretability, without modifying the PSG montage or requiring additional sensors. Our findings support a practical and scalable path toward context-aware, expert-aligned sleep staging systems.",
-    "authors": [
-      "Woosuk Chung",
-      "Seokwoo Hong",
-      "Wonhyeok Lee",
-      "Sangyoon Bae"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.08864v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08864v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.72
-  },
-  {
     "arxiv_id": "2511.08379v1",
     "title": "SOM Directions are Better than One: Multi-Directional Refusal Suppression in Language Models",
     "summary": "Refusal refers to the functional behavior enabling safety-aligned language models to reject harmful or unethical prompts. Following the growing scientific interest in mechanistic interpretability, recent work encoded refusal behavior as a single direction in the model's latent space; e.g., computed as the difference between the centroids of harmful and harmless prompt representations. However, emerging evidence suggests that concepts in LLMs often appear to be encoded as a low-dimensional manifold embedded in the high-dimensional latent space. Motivated by these findings, we propose a novel method leveraging Self-Organizing Maps (SOMs) to extract multiple refusal directions. To this end, we first prove that SOMs generalize the prior work's difference-in-means technique. We then train SOMs on harmful prompt representations to identify multiple neurons. By subtracting the centroid of harmless representations from each neuron, we derive a set of multiple directions expressing the refusal concept. We validate our method on an extensive experimental setup, demonstrating that ablating multiple directions from models' internals outperforms not only the single-direction baseline but also specialized jailbreak algorithms, leading to an effective suppression of refusal. Finally, we conclude by analyzing the mechanistic implications of our approach.",
@@ -746,6 +725,27 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08379v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08379v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.72
+  },
+  {
+    "arxiv_id": "2511.08864v1",
+    "title": "Transformer-Based Sleep Stage Classification Enhanced by Clinical Information",
+    "summary": "Manual sleep staging from polysomnography (PSG) is labor-intensive and prone to inter-scorer variability. While recent deep learning models have advanced automated staging, most rely solely on raw PSG signals and neglect contextual cues used by human experts. We propose a two-stage architecture that combines a Transformer-based per-epoch encoder with a 1D CNN aggregator, and systematically investigates the effect of incorporating explicit context: subject-level clinical metadata (age, sex, BMI) and per-epoch expert event annotations (apneas, desaturations, arousals, periodic breathing). Using the Sleep Heart Health Study (SHHS) cohort (n=8,357), we demonstrate that contextual fusion substantially improves staging accuracy. Compared to a PSG-only baseline (macro-F1 0.7745, micro-F1 0.8774), our final model achieves macro-F1 0.8031 and micro-F1 0.9051, with event annotations contributing the largest gains. Notably, feature fusion outperforms multi-task alternatives that predict the same auxiliary labels. These results highlight that augmenting learned representations with clinically meaningful features enhances both performance and interpretability, without modifying the PSG montage or requiring additional sensors. Our findings support a practical and scalable path toward context-aware, expert-aligned sleep staging systems.",
+    "authors": [
+      "Woosuk Chung",
+      "Seokwoo Hong",
+      "Wonhyeok Lee",
+      "Sangyoon Bae"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.08864v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08864v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.72
@@ -887,53 +887,6 @@
     "research_score": 0.7
   },
   {
-    "arxiv_id": "2511.09443v1",
-    "title": "BronchOpt : Vision-Based Pose Optimization with Fine-Tuned Foundation Models for Accurate Bronchoscopy Navigation",
-    "summary": "Accurate intra-operative localization of the bronchoscope tip relative to patient anatomy remains challenging due to respiratory motion, anatomical variability, and CT-to-body divergence that cause deformation and misalignment between intra-operative views and pre-operative CT. Existing vision-based methods often fail to generalize across domains and patients, leading to residual alignment errors. This work establishes a generalizable foundation for bronchoscopy navigation through a robust vision-based framework and a new synthetic benchmark dataset that enables standardized and reproducible evaluation. We propose a vision-based pose optimization framework for frame-wise 2D-3D registration between intra-operative endoscopic views and pre-operative CT anatomy. A fine-tuned modality- and domain-invariant encoder enables direct similarity computation between real endoscopic RGB frames and CT-rendered depth maps, while a differentiable rendering module iteratively refines camera poses through depth consistency. To enhance reproducibility, we introduce the first public synthetic benchmark dataset for bronchoscopy navigation, addressing the lack of paired CT-endoscopy data. Trained exclusively on synthetic data distinct from the benchmark, our model achieves an average translational error of 2.65 mm and a rotational error of 0.19 rad, demonstrating accurate and stable localization. Qualitative results on real patient data further confirm strong cross-domain generalization, achieving consistent frame-wise 2D-3D alignment without domain-specific adaptation. Overall, the proposed framework achieves robust, domain-invariant localization through iterative vision-based optimization, while the new benchmark provides a foundation for standardized progress in vision-based bronchoscopy navigation.",
-    "authors": [
-      "Hongchao Shu",
-      "Roger D. Soberanis-Mukul",
-      "Jiru Xu",
-      "Hao Ding",
-      "Morgan Ringel",
-      "Mali Shen",
-      "Saif Iftekar Sayed",
-      "Hedyeh Rafii-Tari",
-      "Mathias Unberath"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09443v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09443v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.7
-  },
-  {
-    "arxiv_id": "2511.08224v1",
-    "title": "2D Representation for Unguided Single-View 3D Super-Resolution in Real-Time",
-    "summary": "We introduce 2Dto3D-SR, a versatile framework for real-time single-view 3D super-resolution that eliminates the need for high-resolution RGB guidance. Our framework encodes 3D data from a single viewpoint into a structured 2D representation, enabling the direct application of existing 2D image super-resolution architectures. We utilize the Projected Normalized Coordinate Code (PNCC) to represent 3D geometry from a visible surface as a regular image, thereby circumventing the complexities of 3D point-based or RGB-guided methods. This design supports lightweight and fast models adaptable to various deployment environments. We evaluate 2Dto3D-SR with two implementations: one using Swin Transformers for high accuracy, and another using Vision Mamba for high efficiency. Experiments show the Swin Transformer model achieves state-of-the-art accuracy on standard benchmarks, while the Vision Mamba model delivers competitive results at real-time speeds. This establishes our geometry-guided pipeline as a surprisingly simple yet viable and practical solution for real-world scenarios, especially where high-resolution RGB data is inaccessible.",
-    "authors": [
-      "Ignasi Mas",
-      "Ivan Huerta",
-      "Ramon Morros",
-      "Javier Ruiz-Hidalgo"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08224v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08224v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.7
-  },
-  {
     "arxiv_id": "2511.07923v1",
     "title": "Exploring the Underwater World Segmentation without Extra Training",
     "summary": "Accurate segmentation of marine organisms is vital for biodiversity monitoring and ecological assessment, yet existing datasets and models remain largely limited to terrestrial scenes. To bridge this gap, we introduce \\textbf{AquaOV255}, the first large-scale and fine-grained underwater segmentation dataset containing 255 categories and over 20K images, covering diverse categories for open-vocabulary (OV) evaluation. Furthermore, we establish the first underwater OV segmentation benchmark, \\textbf{UOVSBench}, by integrating AquaOV255 with five additional underwater datasets to enable comprehensive evaluation. Alongside, we present \\textbf{Earth2Ocean}, a training-free OV segmentation framework that transfers terrestrial vision--language models (VLMs) to underwater domains without any additional underwater training. Earth2Ocean consists of two core components: a Geometric-guided Visual Mask Generator (\\textbf{GMG}) that refines visual features via self-similarity geometric priors for local structure perception, and a Category-visual Semantic Alignment (\\textbf{CSA}) module that enhances text embeddings through multimodal large language model reasoning and scene-aware template construction. Extensive experiments on the UOVSBench benchmark demonstrate that Earth2Ocean achieves significant performance improvement on average while maintaining efficient inference.",
@@ -976,6 +929,53 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08061v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08061v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.7
+  },
+  {
+    "arxiv_id": "2511.09443v1",
+    "title": "BronchOpt : Vision-Based Pose Optimization with Fine-Tuned Foundation Models for Accurate Bronchoscopy Navigation",
+    "summary": "Accurate intra-operative localization of the bronchoscope tip relative to patient anatomy remains challenging due to respiratory motion, anatomical variability, and CT-to-body divergence that cause deformation and misalignment between intra-operative views and pre-operative CT. Existing vision-based methods often fail to generalize across domains and patients, leading to residual alignment errors. This work establishes a generalizable foundation for bronchoscopy navigation through a robust vision-based framework and a new synthetic benchmark dataset that enables standardized and reproducible evaluation. We propose a vision-based pose optimization framework for frame-wise 2D-3D registration between intra-operative endoscopic views and pre-operative CT anatomy. A fine-tuned modality- and domain-invariant encoder enables direct similarity computation between real endoscopic RGB frames and CT-rendered depth maps, while a differentiable rendering module iteratively refines camera poses through depth consistency. To enhance reproducibility, we introduce the first public synthetic benchmark dataset for bronchoscopy navigation, addressing the lack of paired CT-endoscopy data. Trained exclusively on synthetic data distinct from the benchmark, our model achieves an average translational error of 2.65 mm and a rotational error of 0.19 rad, demonstrating accurate and stable localization. Qualitative results on real patient data further confirm strong cross-domain generalization, achieving consistent frame-wise 2D-3D alignment without domain-specific adaptation. Overall, the proposed framework achieves robust, domain-invariant localization through iterative vision-based optimization, while the new benchmark provides a foundation for standardized progress in vision-based bronchoscopy navigation.",
+    "authors": [
+      "Hongchao Shu",
+      "Roger D. Soberanis-Mukul",
+      "Jiru Xu",
+      "Hao Ding",
+      "Morgan Ringel",
+      "Mali Shen",
+      "Saif Iftekar Sayed",
+      "Hedyeh Rafii-Tari",
+      "Mathias Unberath"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09443v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09443v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.7
+  },
+  {
+    "arxiv_id": "2511.08224v1",
+    "title": "2D Representation for Unguided Single-View 3D Super-Resolution in Real-Time",
+    "summary": "We introduce 2Dto3D-SR, a versatile framework for real-time single-view 3D super-resolution that eliminates the need for high-resolution RGB guidance. Our framework encodes 3D data from a single viewpoint into a structured 2D representation, enabling the direct application of existing 2D image super-resolution architectures. We utilize the Projected Normalized Coordinate Code (PNCC) to represent 3D geometry from a visible surface as a regular image, thereby circumventing the complexities of 3D point-based or RGB-guided methods. This design supports lightweight and fast models adaptable to various deployment environments. We evaluate 2Dto3D-SR with two implementations: one using Swin Transformers for high accuracy, and another using Vision Mamba for high efficiency. Experiments show the Swin Transformer model achieves state-of-the-art accuracy on standard benchmarks, while the Vision Mamba model delivers competitive results at real-time speeds. This establishes our geometry-guided pipeline as a surprisingly simple yet viable and practical solution for real-world scenarios, especially where high-resolution RGB data is inaccessible.",
+    "authors": [
+      "Ignasi Mas",
+      "Ivan Huerta",
+      "Ramon Morros",
+      "Javier Ruiz-Hidalgo"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08224v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08224v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.7
@@ -1261,6 +1261,29 @@
     "research_score": 0.68
   },
   {
+    "arxiv_id": "2511.08143v1",
+    "title": "Relation as a Prior: A Novel Paradigm for LLM-based Document-level Relation Extraction",
+    "summary": "Large Language Models (LLMs) have demonstrated their remarkable capabilities in document understanding. However, recent research reveals that LLMs still exhibit performance gaps in Document-level Relation Extraction (DocRE) as requiring fine-grained comprehension. The commonly adopted \"extract entities then predict relations\" paradigm in LLM-based methods leads to these gaps due to two main reasons: (1) Numerous unrelated entity pairs introduce noise and interfere with the relation prediction for truly related entity pairs. (2) Although LLMs have identified semantic associations between entities, relation labels beyond the predefined set are still treated as prediction errors. To address these challenges, we propose a novel Relation as a Prior (RelPrior) paradigm for LLM-based DocRE. For challenge (1), RelPrior utilizes binary relation as a prior to extract and determine whether two entities are correlated, thereby filtering out irrelevant entity pairs and reducing prediction noise. For challenge (2), RelPrior utilizes predefined relation as a prior to match entities for triples extraction instead of directly predicting relation. Thus, it avoids misjudgment caused by strict predefined relation labeling. Extensive experiments on two benchmarks demonstrate that RelPrior achieves state-of-the-art performance, surpassing existing LLM-based methods.",
+    "authors": [
+      "Qiankun Pi",
+      "Yepeng Sun",
+      "Jicang Lu",
+      "Qinlong Fan",
+      "Ningbo Huang",
+      "Shiyu Wang"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08143v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08143v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
     "arxiv_id": "2511.08853v1",
     "title": "Rethinking Graph Super-resolution: Dual Frameworks for Topological Fidelity",
     "summary": "Graph super-resolution, the task of inferring high-resolution (HR) graphs from low-resolution (LR) counterparts, is an underexplored yet crucial research direction that circumvents the need for costly data acquisition. This makes it especially desirable for resource-constrained fields such as the medical domain. While recent GNN-based approaches show promise, they suffer from two key limitations: (1) matrix-based node super-resolution that disregards graph structure and lacks permutation invariance; and (2) reliance on node representations to infer edge weights, which limits scalability and expressivity. In this work, we propose two GNN-agnostic frameworks to address these issues. First, Bi-SR introduces a bipartite graph connecting LR and HR nodes to enable structure-aware node super-resolution that preserves topology and permutation invariance. Second, DEFEND learns edge representations by mapping HR edges to nodes of a dual graph, allowing edge inference via standard node-based GNNs. We evaluate both frameworks on a real-world brain connectome dataset, where they achieve state-of-the-art performance across seven topological measures. To support generalization, we introduce twelve new simulated datasets that capture diverse topologies and LR-HR relationships. These enable comprehensive benchmarking of graph super-resolution methods.",
@@ -1304,24 +1327,25 @@
     "research_score": 0.68
   },
   {
-    "arxiv_id": "2511.08143v1",
-    "title": "Relation as a Prior: A Novel Paradigm for LLM-based Document-level Relation Extraction",
-    "summary": "Large Language Models (LLMs) have demonstrated their remarkable capabilities in document understanding. However, recent research reveals that LLMs still exhibit performance gaps in Document-level Relation Extraction (DocRE) as requiring fine-grained comprehension. The commonly adopted \"extract entities then predict relations\" paradigm in LLM-based methods leads to these gaps due to two main reasons: (1) Numerous unrelated entity pairs introduce noise and interfere with the relation prediction for truly related entity pairs. (2) Although LLMs have identified semantic associations between entities, relation labels beyond the predefined set are still treated as prediction errors. To address these challenges, we propose a novel Relation as a Prior (RelPrior) paradigm for LLM-based DocRE. For challenge (1), RelPrior utilizes binary relation as a prior to extract and determine whether two entities are correlated, thereby filtering out irrelevant entity pairs and reducing prediction noise. For challenge (2), RelPrior utilizes predefined relation as a prior to match entities for triples extraction instead of directly predicting relation. Thus, it avoids misjudgment caused by strict predefined relation labeling. Extensive experiments on two benchmarks demonstrate that RelPrior achieves state-of-the-art performance, surpassing existing LLM-based methods.",
+    "arxiv_id": "2511.08071v1",
+    "title": "Radar-APLANC: Unsupervised Radar-based Heartbeat Sensing via Augmented Pseudo-Label and Noise Contrast",
+    "summary": "Frequency Modulated Continuous Wave (FMCW) radars can measure subtle chest wall oscillations to enable non-contact heartbeat sensing. However, traditional radar-based heartbeat sensing methods face performance degradation due to noise. Learning-based radar methods achieve better noise robustness but require costly labeled signals for supervised training. To overcome these limitations, we propose the first unsupervised framework for radar-based heartbeat sensing via Augmented Pseudo-Label and Noise Contrast (Radar-APLANC). We propose to use both the heartbeat range and noise range within the radar range matrix to construct the positive and negative samples, respectively, for improved noise robustness. Our Noise-Contrastive Triplet (NCT) loss only utilizes positive samples, negative samples, and pseudo-label signals generated by the traditional radar method, thereby avoiding dependence on expensive ground-truth physiological signals. We further design a pseudo-label augmentation approach featuring adaptive noise-aware label selection to improve pseudo-label signal quality. Extensive experiments on the Equipleth dataset and our collected radar dataset demonstrate that our unsupervised method achieves performance comparable to state-of-the-art supervised methods. Our code, dataset, and supplementary materials can be accessed from https://github.com/RadarHRSensing/Radar-APLANC.",
     "authors": [
-      "Qiankun Pi",
-      "Yepeng Sun",
-      "Jicang Lu",
-      "Qinlong Fan",
-      "Ningbo Huang",
-      "Shiyu Wang"
+      "Ying Wang",
+      "Zhaodong Sun",
+      "Xu Cheng",
+      "Zuxian He",
+      "Xiaobai Li"
     ],
     "categories": [
-      "cs.CL",
-      "cs.AI"
+      "cs.CV",
+      "cs.AI",
+      "cs.HC",
+      "eess.SP"
     ],
     "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08143v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08143v1.pdf",
+    "url": "https://arxiv.org/abs/2511.08071v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08071v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.68
@@ -1352,30 +1376,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07738v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07738v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.68
-  },
-  {
-    "arxiv_id": "2511.08071v1",
-    "title": "Radar-APLANC: Unsupervised Radar-based Heartbeat Sensing via Augmented Pseudo-Label and Noise Contrast",
-    "summary": "Frequency Modulated Continuous Wave (FMCW) radars can measure subtle chest wall oscillations to enable non-contact heartbeat sensing. However, traditional radar-based heartbeat sensing methods face performance degradation due to noise. Learning-based radar methods achieve better noise robustness but require costly labeled signals for supervised training. To overcome these limitations, we propose the first unsupervised framework for radar-based heartbeat sensing via Augmented Pseudo-Label and Noise Contrast (Radar-APLANC). We propose to use both the heartbeat range and noise range within the radar range matrix to construct the positive and negative samples, respectively, for improved noise robustness. Our Noise-Contrastive Triplet (NCT) loss only utilizes positive samples, negative samples, and pseudo-label signals generated by the traditional radar method, thereby avoiding dependence on expensive ground-truth physiological signals. We further design a pseudo-label augmentation approach featuring adaptive noise-aware label selection to improve pseudo-label signal quality. Extensive experiments on the Equipleth dataset and our collected radar dataset demonstrate that our unsupervised method achieves performance comparable to state-of-the-art supervised methods. Our code, dataset, and supplementary materials can be accessed from https://github.com/RadarHRSensing/Radar-APLANC.",
-    "authors": [
-      "Ying Wang",
-      "Zhaodong Sun",
-      "Xu Cheng",
-      "Zuxian He",
-      "Xiaobai Li"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI",
-      "cs.HC",
-      "eess.SP"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08071v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08071v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.68
@@ -1609,67 +1609,6 @@
     "research_score": 0.67
   },
   {
-    "arxiv_id": "2511.09179v1",
-    "title": "A Hybrid Search for Complex Table Question Answering in Securities Report",
-    "summary": "Recently, Large Language Models (LLMs) are gaining increased attention in the domain of Table Question Answering (TQA), particularly for extracting information from tables in documents. However, directly entering entire tables as long text into LLMs often leads to incorrect answers because most LLMs cannot inherently capture complex table structures. In this paper, we propose a cell extraction method for TQA without manual identification, even for complex table headers. Our approach estimates table headers by computing similarities between a given question and individual cells via a hybrid retrieval mechanism that integrates a language model and TF-IDF. We then select as the answer the cells at the intersection of the most relevant row and column. Furthermore, the language model is trained using contrastive learning on a small dataset of question-header pairs to enhance performance. We evaluated our approach in the TQA dataset from the U4 shared task at NTCIR-18. The experimental results show that our pipeline achieves an accuracy of 74.6\\%, outperforming existing LLMs such as GPT-4o mini~(63.9\\%). In the future, although we used traditional encoder models for retrieval in this study, we plan to incorporate more efficient text-search models to improve performance and narrow the gap with human evaluation results.",
-    "authors": [
-      "Daiki Shirafuji",
-      "Koji Tanaka",
-      "Tatsuhiko Saito"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09179v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09179v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.66
-  },
-  {
-    "arxiv_id": "2511.08967v1",
-    "title": "AuthSig: Safeguarding Scanned Signatures Against Unauthorized Reuse in Paperless Workflows",
-    "summary": "With the deepening trend of paperless workflows, signatures as a means of identity authentication are gradually shifting from traditional ink-on-paper to electronic formats.Despite the availability of dynamic pressure-sensitive and PKI-based digital signatures, static scanned signatures remain prevalent in practice due to their convenience. However, these static images, having almost lost their authentication attributes, cannot be reliably verified and are vulnerable to malicious copying and reuse. To address these issues, we propose AuthSig, a novel static electronic signature framework based on generative models and watermark, which binds authentication information to the signature image. Leveraging the human visual system's insensitivity to subtle style variations, AuthSig finely modulates style embeddings during generation to implicitly encode watermark bits-enforcing a One Signature, One Use policy.To overcome the scarcity of handwritten signature data and the limitations of traditional augmentation methods, we introduce a keypoint-driven data augmentation strategy that effectively enhances style diversity to support robust watermark embedding. Experimental results show that AuthSig achieves over 98% extraction accuracy under both digital-domain distortions and signature-specific degradations, and remains effective even in print-scan scenarios.",
-    "authors": [
-      "RuiQiang Zhang",
-      "Zehua Ma",
-      "Guanjie Wang",
-      "Chang Liu",
-      "Hengyi Wang",
-      "Weiming Zhang"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.08967v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08967v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.66
-  },
-  {
-    "arxiv_id": "2511.08215v1",
-    "title": "Evaluating Gemini LLM in Food Image-Based Recipe and Nutrition Description with EfficientNet-B4 Visual Backbone",
-    "summary": "The proliferation of digital food applications necessitates robust methods for automated nutritional analysis and culinary guidance. This paper presents a comprehensive comparative evaluation of a decoupled, multimodal pipeline for food recognition. We evaluate a system integrating a specialized visual backbone (EfficientNet-B4) with a powerful generative large language model (Google's Gemini LLM). The core objective is to evaluate the trade-offs between visual classification accuracy, model efficiency, and the quality of generative output (nutritional data and recipes). We benchmark this pipeline against alternative vision backbones (VGG-16, ResNet-50, YOLOv8) and a lightweight LLM (Gemma). We introduce a formalization for \"Semantic Error Propagation\" (SEP) to analyze how classification inaccuracies from the visual module cascade into the generative output. Our analysis is grounded in a new Custom Chinese Food Dataset (CCFD) developed to address cultural bias in public datasets. Experimental results demonstrate that while EfficientNet-B4 (89.0\\% Top-1 Acc.) provides the best balance of accuracy and efficiency, and Gemini (9.2/10 Factual Accuracy) provides superior generative quality, the system's overall utility is fundamentally bottlenecked by the visual front-end's perceptive accuracy. We conduct a detailed per-class analysis, identifying high semantic similarity as the most critical failure mode.",
-    "authors": [
-      "Rizal Khoirul Anam"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.LG"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08215v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08215v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.66
-  },
-  {
     "arxiv_id": "2511.07943v1",
     "title": "Thinker: Training LLMs in Hierarchical Thinking for Deep Search via Multi-Turn Interaction",
     "summary": "Efficient retrieval of external knowledge bases and web pages is crucial for enhancing the reasoning abilities of LLMs. Previous works on training LLMs to leverage external retrievers for solving complex problems have predominantly employed end-to-end reinforcement learning. However, these approaches neglect supervision over the reasoning process, making it difficult to guarantee logical coherence and rigor. To address these limitations, we propose Thinker, a hierarchical thinking model for deep search through multi-turn interaction, making the reasoning process supervisable and verifiable. It decomposes complex problems into independently solvable sub-problems, each dually represented in both natural language and an equivalent logical function to support knowledge base and web searches. Concurrently, dependencies between sub-problems are passed as parameters via these logical functions, enhancing the logical coherence of the problem-solving process. To avoid unnecessary external searches, we perform knowledge boundary determination to check if a sub-problem is within the LLM's intrinsic knowledge, allowing it to answer directly. Experimental results indicate that with as few as several hundred training samples, the performance of Thinker is competitive with established baselines. Furthermore, when scaled to the full training set, Thinker significantly outperforms these methods across various datasets and model sizes. The source code is available at https://github.com/OpenSPG/KAG-Thinker.",
@@ -1725,6 +1664,67 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08704v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08704v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.66
+  },
+  {
+    "arxiv_id": "2511.08967v1",
+    "title": "AuthSig: Safeguarding Scanned Signatures Against Unauthorized Reuse in Paperless Workflows",
+    "summary": "With the deepening trend of paperless workflows, signatures as a means of identity authentication are gradually shifting from traditional ink-on-paper to electronic formats.Despite the availability of dynamic pressure-sensitive and PKI-based digital signatures, static scanned signatures remain prevalent in practice due to their convenience. However, these static images, having almost lost their authentication attributes, cannot be reliably verified and are vulnerable to malicious copying and reuse. To address these issues, we propose AuthSig, a novel static electronic signature framework based on generative models and watermark, which binds authentication information to the signature image. Leveraging the human visual system's insensitivity to subtle style variations, AuthSig finely modulates style embeddings during generation to implicitly encode watermark bits-enforcing a One Signature, One Use policy.To overcome the scarcity of handwritten signature data and the limitations of traditional augmentation methods, we introduce a keypoint-driven data augmentation strategy that effectively enhances style diversity to support robust watermark embedding. Experimental results show that AuthSig achieves over 98% extraction accuracy under both digital-domain distortions and signature-specific degradations, and remains effective even in print-scan scenarios.",
+    "authors": [
+      "RuiQiang Zhang",
+      "Zehua Ma",
+      "Guanjie Wang",
+      "Chang Liu",
+      "Hengyi Wang",
+      "Weiming Zhang"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.08967v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08967v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.66
+  },
+  {
+    "arxiv_id": "2511.09179v1",
+    "title": "A Hybrid Search for Complex Table Question Answering in Securities Report",
+    "summary": "Recently, Large Language Models (LLMs) are gaining increased attention in the domain of Table Question Answering (TQA), particularly for extracting information from tables in documents. However, directly entering entire tables as long text into LLMs often leads to incorrect answers because most LLMs cannot inherently capture complex table structures. In this paper, we propose a cell extraction method for TQA without manual identification, even for complex table headers. Our approach estimates table headers by computing similarities between a given question and individual cells via a hybrid retrieval mechanism that integrates a language model and TF-IDF. We then select as the answer the cells at the intersection of the most relevant row and column. Furthermore, the language model is trained using contrastive learning on a small dataset of question-header pairs to enhance performance. We evaluated our approach in the TQA dataset from the U4 shared task at NTCIR-18. The experimental results show that our pipeline achieves an accuracy of 74.6\\%, outperforming existing LLMs such as GPT-4o mini~(63.9\\%). In the future, although we used traditional encoder models for retrieval in this study, we plan to incorporate more efficient text-search models to improve performance and narrow the gap with human evaluation results.",
+    "authors": [
+      "Daiki Shirafuji",
+      "Koji Tanaka",
+      "Tatsuhiko Saito"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09179v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09179v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.66
+  },
+  {
+    "arxiv_id": "2511.08215v1",
+    "title": "Evaluating Gemini LLM in Food Image-Based Recipe and Nutrition Description with EfficientNet-B4 Visual Backbone",
+    "summary": "The proliferation of digital food applications necessitates robust methods for automated nutritional analysis and culinary guidance. This paper presents a comprehensive comparative evaluation of a decoupled, multimodal pipeline for food recognition. We evaluate a system integrating a specialized visual backbone (EfficientNet-B4) with a powerful generative large language model (Google's Gemini LLM). The core objective is to evaluate the trade-offs between visual classification accuracy, model efficiency, and the quality of generative output (nutritional data and recipes). We benchmark this pipeline against alternative vision backbones (VGG-16, ResNet-50, YOLOv8) and a lightweight LLM (Gemma). We introduce a formalization for \"Semantic Error Propagation\" (SEP) to analyze how classification inaccuracies from the visual module cascade into the generative output. Our analysis is grounded in a new Custom Chinese Food Dataset (CCFD) developed to address cultural bias in public datasets. Experimental results demonstrate that while EfficientNet-B4 (89.0\\% Top-1 Acc.) provides the best balance of accuracy and efficiency, and Gemini (9.2/10 Factual Accuracy) provides superior generative quality, the system's overall utility is fundamentally bottlenecked by the visual front-end's perceptive accuracy. We conduct a detailed per-class analysis, identifying high semantic similarity as the most critical failure mode.",
+    "authors": [
+      "Rizal Khoirul Anam"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08215v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08215v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.66
@@ -1837,46 +1837,6 @@
     "research_score": 0.65
   },
   {
-    "arxiv_id": "2511.08231v1",
-    "title": "Real-Time Performance Analysis of Multi-Fidelity Residual Physics-Informed Neural Process-Based State Estimation for Robotic Systems",
-    "summary": "Various neural network architectures are used in many of the state-of-the-art approaches for real-time nonlinear state estimation. With the ever-increasing incorporation of these data-driven models into the estimation domain, model predictions with reliable margins of error are a requirement -- especially for safety-critical applications. This paper discusses the application of a novel real-time, data-driven estimation approach based on the multi-fidelity residual physics-informed neural process (MFR-PINP) toward the real-time state estimation of a robotic system. Specifically, we address the model-mismatch issue of selecting an accurate kinematic model by tasking the MFR-PINP to also learn the residuals between simple, low-fidelity predictions and complex, high-fidelity ground-truth dynamics. To account for model uncertainty present in a physical implementation, robust uncertainty guarantees from the split conformal (SC) prediction framework are modeled in the training and inference paradigms. We provide implementation details of our MFR-PINP-based estimator for a hybrid online learning setting to validate our model's usage in real-time applications. Experimental results of our approach's performance in comparison to the state-of-the-art variants of the Kalman filter (i.e. unscented Kalman filter and deep Kalman filter) in estimation scenarios showed promising results for the MFR-PINP model as a viable option in real-time estimation tasks.",
-    "authors": [
-      "Devin Hunter",
-      "Chinwendu Enyioha"
-    ],
-    "categories": [
-      "cs.RO",
-      "cs.AI",
-      "cs.LG"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08231v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08231v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.65
-  },
-  {
-    "arxiv_id": "2511.08226v1",
-    "title": "The Online Patch Redundancy Eliminator (OPRE): A novel approach to online agnostic continual learning using dataset compression",
-    "summary": "In order to achieve Continual Learning (CL), the problem of catastrophic forgetting, one that has plagued neural networks since their inception, must be overcome. The evaluation of continual learning methods relies on splitting a known homogeneous dataset and learning the associated tasks one after the other. We argue that most CL methods introduce a priori information about the data to come and cannot be considered agnostic. We exemplify this point with the case of methods relying on pretrained feature extractors, which are still used in CL. After showing that pretrained feature extractors imply a loss of generality with respect to the data that can be learned by the model, we then discuss other kinds of a priori information introduced in other CL methods. We then present the Online Patch Redundancy Eliminator (OPRE), an online dataset compression algorithm, which, along with the training of a classifier at test time, yields performance on CIFAR-10 and CIFAR-100 superior to a number of other state-of-the-art online continual learning methods. Additionally, OPRE requires only minimal and interpretable hypothesis on the data to come. We suggest that online dataset compression could well be necessary to achieve fully agnostic CL.",
-    "authors": [
-      "Raphaël Bayle",
-      "Martial Mermillod",
-      "Robert M. French"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.CV"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08226v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08226v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.65
-  },
-  {
     "arxiv_id": "2511.07942v1",
     "title": "Balance Equation-based Distributionally Robust Offline Imitation Learning",
     "summary": "Imitation Learning (IL) has proven highly effective for robotic and control tasks where manually designing reward functions or explicit controllers is infeasible. However, standard IL methods implicitly assume that the environment dynamics remain fixed between training and deployment. In practice, this assumption rarely holds where modeling inaccuracies, real-world parameter variations, and adversarial perturbations can all induce shifts in transition dynamics, leading to severe performance degradation. We address this challenge through Balance Equation-based Distributionally Robust Offline Imitation Learning, a framework that learns robust policies solely from expert demonstrations collected under nominal dynamics, without requiring further environment interaction. We formulate the problem as a distributionally robust optimization over an uncertainty set of transition models, seeking a policy that minimizes the imitation loss under the worst-case transition distribution. Importantly, we show that this robust objective can be reformulated entirely in terms of the nominal data distribution, enabling tractable offline learning. Empirical evaluations on continuous-control benchmarks demonstrate that our approach achieves superior robustness and generalization compared to state-of-the-art offline IL baselines, particularly under perturbed or shifted environments.",
@@ -1938,6 +1898,46 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07836v2",
     "pdf_url": "https://arxiv.org/pdf/2511.07836v2.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.65
+  },
+  {
+    "arxiv_id": "2511.08231v1",
+    "title": "Real-Time Performance Analysis of Multi-Fidelity Residual Physics-Informed Neural Process-Based State Estimation for Robotic Systems",
+    "summary": "Various neural network architectures are used in many of the state-of-the-art approaches for real-time nonlinear state estimation. With the ever-increasing incorporation of these data-driven models into the estimation domain, model predictions with reliable margins of error are a requirement -- especially for safety-critical applications. This paper discusses the application of a novel real-time, data-driven estimation approach based on the multi-fidelity residual physics-informed neural process (MFR-PINP) toward the real-time state estimation of a robotic system. Specifically, we address the model-mismatch issue of selecting an accurate kinematic model by tasking the MFR-PINP to also learn the residuals between simple, low-fidelity predictions and complex, high-fidelity ground-truth dynamics. To account for model uncertainty present in a physical implementation, robust uncertainty guarantees from the split conformal (SC) prediction framework are modeled in the training and inference paradigms. We provide implementation details of our MFR-PINP-based estimator for a hybrid online learning setting to validate our model's usage in real-time applications. Experimental results of our approach's performance in comparison to the state-of-the-art variants of the Kalman filter (i.e. unscented Kalman filter and deep Kalman filter) in estimation scenarios showed promising results for the MFR-PINP model as a viable option in real-time estimation tasks.",
+    "authors": [
+      "Devin Hunter",
+      "Chinwendu Enyioha"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08231v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08231v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.65
+  },
+  {
+    "arxiv_id": "2511.08226v1",
+    "title": "The Online Patch Redundancy Eliminator (OPRE): A novel approach to online agnostic continual learning using dataset compression",
+    "summary": "In order to achieve Continual Learning (CL), the problem of catastrophic forgetting, one that has plagued neural networks since their inception, must be overcome. The evaluation of continual learning methods relies on splitting a known homogeneous dataset and learning the associated tasks one after the other. We argue that most CL methods introduce a priori information about the data to come and cannot be considered agnostic. We exemplify this point with the case of methods relying on pretrained feature extractors, which are still used in CL. After showing that pretrained feature extractors imply a loss of generality with respect to the data that can be learned by the model, we then discuss other kinds of a priori information introduced in other CL methods. We then present the Online Patch Redundancy Eliminator (OPRE), an online dataset compression algorithm, which, along with the training of a classifier at test time, yields performance on CIFAR-10 and CIFAR-100 superior to a number of other state-of-the-art online continual learning methods. Additionally, OPRE requires only minimal and interpretable hypothesis on the data to come. We suggest that online dataset compression could well be necessary to achieve fully agnostic CL.",
+    "authors": [
+      "Raphaël Bayle",
+      "Martial Mermillod",
+      "Robert M. French"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08226v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08226v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.65
@@ -2104,49 +2104,6 @@
     "research_score": 0.64
   },
   {
-    "arxiv_id": "2511.08980v1",
-    "title": "A Finite Difference Approximation of Second Order Regularization of Neural-SDFs",
-    "summary": "We introduce a finite-difference framework for curvature regularization in neural signed distance field (SDF) learning. Existing approaches enforce curvature priors using full Hessian information obtained via second-order automatic differentiation, which is accurate but computationally expensive. Others reduced this overhead by avoiding explicit Hessian assembly, but still required higher-order differentiation. In contrast, our method replaces these operations with lightweight finite-difference stencils that approximate second derivatives using the well known Taylor expansion with a truncation error of O(h^2), and can serve as drop-in replacements for Gaussian curvature and rank-deficiency losses. Experiments demonstrate that our finite-difference variants achieve reconstruction fidelity comparable to their automatic-differentiation counterparts, while reducing GPU memory usage and training time by up to a factor of two. Additional tests on sparse, incomplete, and non-CAD data confirm that the proposed formulation is robust and general, offering an efficient and scalable alternative for curvature-aware SDF learning.",
-    "authors": [
-      "Haotian Yin",
-      "Aleksander Plocharski",
-      "Michal Jan Wlodarczyk",
-      "Przemyslaw Musialski"
-    ],
-    "categories": [
-      "cs.GR",
-      "cs.CV",
-      "cs.LG"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.08980v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08980v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
-    "arxiv_id": "2511.08240v1",
-    "title": "Hierarchical Direction Perception via Atomic Dot-Product Operators for Rotation-Invariant Point Clouds Learning",
-    "summary": "Point cloud processing has become a cornerstone technology in many 3D vision tasks. However, arbitrary rotations introduce variations in point cloud orientations, posing a long-standing challenge for effective representation learning. The core of this issue is the disruption of the point cloud's intrinsic directional characteristics caused by rotational perturbations. Recent methods attempt to implicitly model rotational equivariance and invariance, preserving directional information and propagating it into deep semantic spaces. Yet, they often fall short of fully exploiting the multiscale directional nature of point clouds to enhance feature representations. To address this, we propose the Direction-Perceptive Vector Network (DiPVNet). At its core is an atomic dot-product operator that simultaneously encodes directional selectivity and rotation invariance--endowing the network with both rotational symmetry modeling and adaptive directional perception. At the local level, we introduce a Learnable Local Dot-Product (L2DP) Operator, which enables interactions between a center point and its neighbors to adaptively capture the non-uniform local structures of point clouds. At the global level, we leverage generalized harmonic analysis to prove that the dot-product between point clouds and spherical sampling vectors is equivalent to a direction-aware spherical Fourier transform (DASFT). This leads to the construction of a global directional response spectrum for modeling holistic directional structures. We rigorously prove the rotation invariance of both operators. Extensive experiments on challenging scenarios involving noise and large-angle rotations demonstrate that DiPVNet achieves state-of-the-art performance on point cloud classification and segmentation tasks. Our code is available at https://github.com/wxszreal0/DiPVNet.",
-    "authors": [
-      "Chenyu Hu",
-      "Xiaotong Li",
-      "Hao Zhu",
-      "Biao Hou"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08240v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08240v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
     "arxiv_id": "2511.07820v1",
     "title": "SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control",
     "summary": "Despite the rise of billion-parameter foundation models trained across thousands of GPUs, similar scaling gains have not been shown for humanoid control. Current neural controllers for humanoids remain modest in size, target a limited behavior set, and are trained on a handful of GPUs over several days. We show that scaling up model capacity, data, and compute yields a generalist humanoid controller capable of creating natural and robust whole-body movements. Specifically, we posit motion tracking as a natural and scalable task for humanoid control, leverageing dense supervision from diverse motion-capture data to acquire human motion priors without manual reward engineering. We build a foundation model for motion tracking by scaling along three axes: network size (from 1.2M to 42M parameters), dataset volume (over 100M frames, 700 hours of high-quality motion data), and compute (9k GPU hours). Beyond demonstrating the benefits of scale, we show the practical utility of our model through two mechanisms: (1) a real-time universal kinematic planner that bridges motion tracking to downstream task execution, enabling natural and interactive control, and (2) a unified token space that supports various motion input interfaces, such as VR teleoperation devices, human videos, and vision-language-action (VLA) models, all using the same policy. Scaling motion tracking exhibits favorable properties: performance improves steadily with increased compute and data diversity, and learned representations generalize to unseen motions, establishing motion tracking at scale as a practical foundation for humanoid control.",
@@ -2214,6 +2171,49 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08087v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08087v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
+    "arxiv_id": "2511.08980v1",
+    "title": "A Finite Difference Approximation of Second Order Regularization of Neural-SDFs",
+    "summary": "We introduce a finite-difference framework for curvature regularization in neural signed distance field (SDF) learning. Existing approaches enforce curvature priors using full Hessian information obtained via second-order automatic differentiation, which is accurate but computationally expensive. Others reduced this overhead by avoiding explicit Hessian assembly, but still required higher-order differentiation. In contrast, our method replaces these operations with lightweight finite-difference stencils that approximate second derivatives using the well known Taylor expansion with a truncation error of O(h^2), and can serve as drop-in replacements for Gaussian curvature and rank-deficiency losses. Experiments demonstrate that our finite-difference variants achieve reconstruction fidelity comparable to their automatic-differentiation counterparts, while reducing GPU memory usage and training time by up to a factor of two. Additional tests on sparse, incomplete, and non-CAD data confirm that the proposed formulation is robust and general, offering an efficient and scalable alternative for curvature-aware SDF learning.",
+    "authors": [
+      "Haotian Yin",
+      "Aleksander Plocharski",
+      "Michal Jan Wlodarczyk",
+      "Przemyslaw Musialski"
+    ],
+    "categories": [
+      "cs.GR",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.08980v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08980v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
+    "arxiv_id": "2511.08240v1",
+    "title": "Hierarchical Direction Perception via Atomic Dot-Product Operators for Rotation-Invariant Point Clouds Learning",
+    "summary": "Point cloud processing has become a cornerstone technology in many 3D vision tasks. However, arbitrary rotations introduce variations in point cloud orientations, posing a long-standing challenge for effective representation learning. The core of this issue is the disruption of the point cloud's intrinsic directional characteristics caused by rotational perturbations. Recent methods attempt to implicitly model rotational equivariance and invariance, preserving directional information and propagating it into deep semantic spaces. Yet, they often fall short of fully exploiting the multiscale directional nature of point clouds to enhance feature representations. To address this, we propose the Direction-Perceptive Vector Network (DiPVNet). At its core is an atomic dot-product operator that simultaneously encodes directional selectivity and rotation invariance--endowing the network with both rotational symmetry modeling and adaptive directional perception. At the local level, we introduce a Learnable Local Dot-Product (L2DP) Operator, which enables interactions between a center point and its neighbors to adaptively capture the non-uniform local structures of point clouds. At the global level, we leverage generalized harmonic analysis to prove that the dot-product between point clouds and spherical sampling vectors is equivalent to a direction-aware spherical Fourier transform (DASFT). This leads to the construction of a global directional response spectrum for modeling holistic directional structures. We rigorously prove the rotation invariance of both operators. Extensive experiments on challenging scenarios involving noise and large-angle rotations demonstrate that DiPVNet achieves state-of-the-art performance on point cloud classification and segmentation tasks. Our code is available at https://github.com/wxszreal0/DiPVNet.",
+    "authors": [
+      "Chenyu Hu",
+      "Xiaotong Li",
+      "Hao Zhu",
+      "Biao Hou"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08240v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08240v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.64
@@ -2330,6 +2330,29 @@
     "research_score": 0.64
   },
   {
+    "arxiv_id": "2511.08717v1",
+    "title": "Optimal Control of the Future via Prospective Foraging",
+    "summary": "Optimal control of the future is the next frontier for AI. Current approaches to this problem are typically rooted in either reinforcement learning or online learning. While powerful, these frameworks for learning are mathematically distinct from Probably Approximately Correct (PAC) learning, which has been the workhorse for the recent technological achievements in AI. We therefore build on the prior work of prospective learning, an extension of PAC learning (without control) in non-stationary environments (De Silva et al., 2023; Silva et al., 2024; Bai et al., 2026). Here, we further extend the PAC learning framework to address learning and control in non-stationary environments. Using this framework, called ''Prospective Control'', we prove that under certain fairly general assumptions, empirical risk minimization (ERM) asymptotically achieves the Bayes optimal policy. We then consider a specific instance of prospective control, foraging, which is a canonical task for any mobile agent, be it natural or artificial. We illustrate that existing reinforcement learning algorithms fail to learn in these non-stationary environments, and even with modifications, they are orders of magnitude less efficient than our prospective foraging agents. Code is available at: https://github.com/neurodata/ProspectiveLearningwithControl.",
+    "authors": [
+      "Yuxin Bai",
+      "Aranyak Acharyya",
+      "Ashwin De Silva",
+      "Zeyu Shen",
+      "James Hassett",
+      "Joshua T. Vogelstein"
+    ],
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08717v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08717v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
     "arxiv_id": "2511.08887v1",
     "title": "FAST-CAD: A Fairness-Aware Framework for Non-Contact Stroke Diagnosis",
     "summary": "Stroke is an acute cerebrovascular disease, and timely diagnosis significantly improves patient survival. However, existing automated diagnosis methods suffer from fairness issues across demographic groups, potentially exacerbating healthcare disparities. In this work we propose FAST-CAD, a theoretically grounded framework that combines domain-adversarial training (DAT) with group distributionally robust optimization (Group-DRO) for fair and accurate non-contact stroke diagnosis. Our approach is built on domain adaptation and minimax fairness theory and provides convergence guarantees and fairness bounds. We curate a multimodal dataset covering 12 demographic subgroups defined by age, gender, and posture. FAST-CAD employs self-supervised encoders with adversarial domain discrimination to learn demographic-invariant representations, while Group-DRO optimizes worst-group risk to ensure robust performance across all subgroups. Extensive experiments show that our method achieves superior diagnostic performance while maintaining fairness across demographic groups, and our theoretical analysis supports the effectiveness of the unified DAT + Group-DRO framework. This work provides both practical advances and theoretical insights for fair medical AI systems.",
@@ -2376,29 +2399,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08823v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08823v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
-    "arxiv_id": "2511.08717v1",
-    "title": "Optimal Control of the Future via Prospective Foraging",
-    "summary": "Optimal control of the future is the next frontier for AI. Current approaches to this problem are typically rooted in either reinforcement learning or online learning. While powerful, these frameworks for learning are mathematically distinct from Probably Approximately Correct (PAC) learning, which has been the workhorse for the recent technological achievements in AI. We therefore build on the prior work of prospective learning, an extension of PAC learning (without control) in non-stationary environments (De Silva et al., 2023; Silva et al., 2024; Bai et al., 2026). Here, we further extend the PAC learning framework to address learning and control in non-stationary environments. Using this framework, called ''Prospective Control'', we prove that under certain fairly general assumptions, empirical risk minimization (ERM) asymptotically achieves the Bayes optimal policy. We then consider a specific instance of prospective control, foraging, which is a canonical task for any mobile agent, be it natural or artificial. We illustrate that existing reinforcement learning algorithms fail to learn in these non-stationary environments, and even with modifications, they are orders of magnitude less efficient than our prospective foraging agents. Code is available at: https://github.com/neurodata/ProspectiveLearningwithControl.",
-    "authors": [
-      "Yuxin Bai",
-      "Aranyak Acharyya",
-      "Ashwin De Silva",
-      "Zeyu Shen",
-      "James Hassett",
-      "Joshua T. Vogelstein"
-    ],
-    "categories": [
-      "stat.ML",
-      "cs.LG"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08717v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08717v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.64
@@ -2869,6 +2869,28 @@
     "research_score": 0.61
   },
   {
+    "arxiv_id": "2511.09216v1",
+    "title": "Controllable protein design through Feynman-Kac steering",
+    "summary": "Diffusion-based models have recently enabled the generation of realistic and diverse protein structures, yet they remain limited in their ability to steer outcomes toward specific functional or biochemical objectives, such as binding affinity or sequence composition. Here we extend the Feynman-Kac (FK) steering framework, an inference-time control approach, to diffusion-based protein design. By coupling FK steering with structure generation, the method guides sampling toward desirable structural or energetic features while maintaining the diversity of the underlying diffusion process. To enable simultaneous generation of both sequence and structure properties, rewards are computed on models refined through ProteinMPNN and all-atom relaxation. Applied to binder design, FK steering consistently improves predicted interface energetics across diverse targets with minimal computational overhead. More broadly, this work demonstrates that inference-time FK control generalizes diffusion-based protein design to arbitrary, non-differentiable, and reward-agnostic objectives, providing a unified and model-independent framework for guided molecular generation.",
+    "authors": [
+      "Erik Hartman",
+      "Jonas Wallin",
+      "Johan Malmström",
+      "Jimmy Olsson"
+    ],
+    "categories": [
+      "cs.LG",
+      "q-bio.QM",
+      "stat.ML"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09216v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09216v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
     "arxiv_id": "2511.08046v1",
     "title": "ProSona: Prompt-Guided Personalization for Multi-Expert Medical Image Segmentation",
     "summary": "Automated medical image segmentation suffers from high inter-observer variability, particularly in tasks such as lung nodule delineation, where experts often disagree. Existing approaches either collapse this variability into a consensus mask or rely on separate model branches for each annotator. We introduce ProSona, a two-stage framework that learns a continuous latent space of annotation styles, enabling controllable personalization via natural language prompts. A probabilistic U-Net backbone captures diverse expert hypotheses, while a prompt-guided projection mechanism navigates this latent space to generate personalized segmentations. A multi-level contrastive objective aligns textual and visual representations, promoting disentangled and interpretable expert styles. Across the LIDC-IDRI lung nodule and multi-institutional prostate MRI datasets, ProSona reduces the Generalized Energy Distance by 17% and improves mean Dice by more than one point compared with DPersona. These results demonstrate that natural-language prompts can provide flexible, accurate, and interpretable control over personalized medical image segmentation. Our implementation is available online 1 .",
@@ -2918,28 +2940,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08399v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08399v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.61
-  },
-  {
-    "arxiv_id": "2511.09216v1",
-    "title": "Controllable protein design through Feynman-Kac steering",
-    "summary": "Diffusion-based models have recently enabled the generation of realistic and diverse protein structures, yet they remain limited in their ability to steer outcomes toward specific functional or biochemical objectives, such as binding affinity or sequence composition. Here we extend the Feynman-Kac (FK) steering framework, an inference-time control approach, to diffusion-based protein design. By coupling FK steering with structure generation, the method guides sampling toward desirable structural or energetic features while maintaining the diversity of the underlying diffusion process. To enable simultaneous generation of both sequence and structure properties, rewards are computed on models refined through ProteinMPNN and all-atom relaxation. Applied to binder design, FK steering consistently improves predicted interface energetics across diverse targets with minimal computational overhead. More broadly, this work demonstrates that inference-time FK control generalizes diffusion-based protein design to arbitrary, non-differentiable, and reward-agnostic objectives, providing a unified and model-independent framework for guided molecular generation.",
-    "authors": [
-      "Erik Hartman",
-      "Jonas Wallin",
-      "Johan Malmström",
-      "Jimmy Olsson"
-    ],
-    "categories": [
-      "cs.LG",
-      "q-bio.QM",
-      "stat.ML"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09216v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09216v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.61
@@ -3548,6 +3548,25 @@
     "research_score": 0.58
   },
   {
+    "arxiv_id": "2511.08082v1",
+    "title": "Prudential Reliability of Large Language Models in Reinsurance: Governance, Assurance, and Capital Efficiency",
+    "summary": "This paper develops a prudential framework for assessing the reliability of large language models (LLMs) in reinsurance. A five-pillar architecture--governance, data lineage, assurance, resilience, and regulatory alignment--translates supervisory expectations from Solvency II, SR 11-7, and guidance from EIOPA (2025), NAIC (2023), and IAIS (2024) into measurable lifecycle controls. The framework is implemented through the Reinsurance AI Reliability and Assurance Benchmark (RAIRAB), which evaluates whether governance-embedded LLMs meet prudential standards for grounding, transparency, and accountability. Across six task families, retrieval-grounded configurations achieved higher grounding accuracy (0.90), reduced hallucination and interpretive drift by roughly 40%, and nearly doubled transparency. These mechanisms lower informational frictions in risk transfer and capital allocation, showing that existing prudential doctrines already accommodate reliable AI when governance is explicit, data are traceable, and assurance is verifiable.",
+    "authors": [
+      "Stella C. Dong"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG",
+      "econ.GN"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08082v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08082v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
     "arxiv_id": "2511.09438v1",
     "title": "LLM-Guided Dynamic-UMAP for Personalized Federated Graph Learning",
     "summary": "We propose a method that uses large language models to assist graph machine learning under personalization and privacy constraints. The approach combines data augmentation for sparse graphs, prompt and instruction tuning to adapt foundation models to graph tasks, and in-context learning to supply few-shot graph reasoning signals. These signals parameterize a Dynamic UMAP manifold of client-specific graph embeddings inside a Bayesian variational objective for personalized federated learning. The method supports node classification and link prediction in low-resource settings and aligns language model latent representations with graph structure via a cross-modal regularizer. We outline a convergence argument for the variational aggregation procedure, describe a differential privacy threat model based on a moments accountant, and present applications to knowledge graph completion, recommendation-style link prediction, and citation and product graphs. We also discuss evaluation considerations for benchmarking LLM-assisted graph machine learning.",
@@ -3640,45 +3659,22 @@
     "research_score": 0.57
   },
   {
-    "arxiv_id": "2511.08082v1",
-    "title": "Prudential Reliability of Large Language Models in Reinsurance: Governance, Assurance, and Capital Efficiency",
-    "summary": "This paper develops a prudential framework for assessing the reliability of large language models (LLMs) in reinsurance. A five-pillar architecture--governance, data lineage, assurance, resilience, and regulatory alignment--translates supervisory expectations from Solvency II, SR 11-7, and guidance from EIOPA (2025), NAIC (2023), and IAIS (2024) into measurable lifecycle controls. The framework is implemented through the Reinsurance AI Reliability and Assurance Benchmark (RAIRAB), which evaluates whether governance-embedded LLMs meet prudential standards for grounding, transparency, and accountability. Across six task families, retrieval-grounded configurations achieved higher grounding accuracy (0.90), reduced hallucination and interpretive drift by roughly 40%, and nearly doubled transparency. These mechanisms lower informational frictions in risk transfer and capital allocation, showing that existing prudential doctrines already accommodate reliable AI when governance is explicit, data are traceable, and assurance is verifiable.",
+    "arxiv_id": "2511.09173v1",
+    "title": "Data Fusion-Enhanced Decision Transformer for Stable Cross-Domain Generalization",
+    "summary": "Cross-domain shifts present a significant challenge for decision transformer (DT) policies. Existing cross-domain policy adaptation methods typically rely on a single simple filtering criterion to select source trajectory fragments and stitch them together. They match either state structure or action feasibility. However, the selected fragments still have poor stitchability: state structures can misalign, the return-to-go (RTG) becomes incomparable when the reward or horizon changes, and actions may jump at trajectory junctions. As a result, RTG tokens lose continuity, which compromises DT's inference ability. To tackle these challenges, we propose Data Fusion-Enhanced Decision Transformer (DFDT), a compact pipeline that restores stitchability. Particularly, DFDT fuses scarce target data with selectively trusted source fragments via a two-level data filter, maximum mean discrepancy (MMD) mismatch for state-structure alignment, and optimal transport (OT) deviation for action feasibility. It then trains on a feasibility-weighted fusion distribution. Furthermore, DFDT replaces RTG tokens with advantage-conditioned tokens, which improves the continuity of the semantics in the token sequence. It also applies a $Q$-guided regularizer to suppress junction value and action jumps. Theoretically, we provide bounds that tie state value and policy performance gaps to the MMD-mismatch and OT-deviation measures, and show that the bounds tighten as these two measures shrink. We show that DFDT improves return and stability over strong offline RL and sequence-model baselines across gravity, kinematic, and morphology shifts on D4RL-style control tasks, and further corroborate these gains with token-stitching and sequence-semantics stability analyses.",
     "authors": [
-      "Stella C. Dong"
+      "Guojian Wang",
+      "Quinson Hon",
+      "Xuyang Chen",
+      "Lin Zhao"
     ],
     "categories": [
-      "cs.AI",
       "cs.LG",
-      "econ.GN"
+      "cs.AI"
     ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08082v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08082v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.57
-  },
-  {
-    "arxiv_id": "2511.07947v1",
-    "title": "Class-feature Watermark: A Resilient Black-box Watermark Against Model Extraction Attacks",
-    "summary": "Machine learning models constitute valuable intellectual property, yet remain vulnerable to model extraction attacks (MEA), where adversaries replicate their functionality through black-box queries. Model watermarking counters MEAs by embedding forensic markers for ownership verification. Current black-box watermarks prioritize MEA survival through representation entanglement, yet inadequately explore resilience against sequential MEAs and removal attacks. Our study reveals that this risk is underestimated because existing removal methods are weakened by entanglement. To address this gap, we propose Watermark Removal attacK (WRK), which circumvents entanglement constraints by exploiting decision boundaries shaped by prevailing sample-level watermark artifacts. WRK effectively reduces watermark success rates by at least 88.79% across existing watermarking benchmarks.   For robust protection, we propose Class-Feature Watermarks (CFW), which improve resilience by leveraging class-level artifacts. CFW constructs a synthetic class using out-of-domain samples, eliminating vulnerable decision boundaries between original domain samples and their artifact-modified counterparts (watermark samples). CFW concurrently optimizes both MEA transferability and post-MEA stability. Experiments across multiple domains show that CFW consistently outperforms prior methods in resilience, maintaining a watermark success rate of at least 70.15% in extracted models even under the combined MEA and WRK distortion, while preserving the utility of protected models.",
-    "authors": [
-      "Yaxin Xiao",
-      "Qingqing Ye",
-      "Zi Liang",
-      "Haoyang Li",
-      "RongHua Li",
-      "Huadi Zheng",
-      "Haibo Hu"
-    ],
-    "categories": [
-      "cs.CR",
-      "cs.CV",
-      "cs.LG"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07947v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07947v1.pdf",
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09173v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09173v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.57
@@ -3727,22 +3723,26 @@
     "research_score": 0.57
   },
   {
-    "arxiv_id": "2511.09173v1",
-    "title": "Data Fusion-Enhanced Decision Transformer for Stable Cross-Domain Generalization",
-    "summary": "Cross-domain shifts present a significant challenge for decision transformer (DT) policies. Existing cross-domain policy adaptation methods typically rely on a single simple filtering criterion to select source trajectory fragments and stitch them together. They match either state structure or action feasibility. However, the selected fragments still have poor stitchability: state structures can misalign, the return-to-go (RTG) becomes incomparable when the reward or horizon changes, and actions may jump at trajectory junctions. As a result, RTG tokens lose continuity, which compromises DT's inference ability. To tackle these challenges, we propose Data Fusion-Enhanced Decision Transformer (DFDT), a compact pipeline that restores stitchability. Particularly, DFDT fuses scarce target data with selectively trusted source fragments via a two-level data filter, maximum mean discrepancy (MMD) mismatch for state-structure alignment, and optimal transport (OT) deviation for action feasibility. It then trains on a feasibility-weighted fusion distribution. Furthermore, DFDT replaces RTG tokens with advantage-conditioned tokens, which improves the continuity of the semantics in the token sequence. It also applies a $Q$-guided regularizer to suppress junction value and action jumps. Theoretically, we provide bounds that tie state value and policy performance gaps to the MMD-mismatch and OT-deviation measures, and show that the bounds tighten as these two measures shrink. We show that DFDT improves return and stability over strong offline RL and sequence-model baselines across gravity, kinematic, and morphology shifts on D4RL-style control tasks, and further corroborate these gains with token-stitching and sequence-semantics stability analyses.",
+    "arxiv_id": "2511.07947v1",
+    "title": "Class-feature Watermark: A Resilient Black-box Watermark Against Model Extraction Attacks",
+    "summary": "Machine learning models constitute valuable intellectual property, yet remain vulnerable to model extraction attacks (MEA), where adversaries replicate their functionality through black-box queries. Model watermarking counters MEAs by embedding forensic markers for ownership verification. Current black-box watermarks prioritize MEA survival through representation entanglement, yet inadequately explore resilience against sequential MEAs and removal attacks. Our study reveals that this risk is underestimated because existing removal methods are weakened by entanglement. To address this gap, we propose Watermark Removal attacK (WRK), which circumvents entanglement constraints by exploiting decision boundaries shaped by prevailing sample-level watermark artifacts. WRK effectively reduces watermark success rates by at least 88.79% across existing watermarking benchmarks.   For robust protection, we propose Class-Feature Watermarks (CFW), which improve resilience by leveraging class-level artifacts. CFW constructs a synthetic class using out-of-domain samples, eliminating vulnerable decision boundaries between original domain samples and their artifact-modified counterparts (watermark samples). CFW concurrently optimizes both MEA transferability and post-MEA stability. Experiments across multiple domains show that CFW consistently outperforms prior methods in resilience, maintaining a watermark success rate of at least 70.15% in extracted models even under the combined MEA and WRK distortion, while preserving the utility of protected models.",
     "authors": [
-      "Guojian Wang",
-      "Quinson Hon",
-      "Xuyang Chen",
-      "Lin Zhao"
+      "Yaxin Xiao",
+      "Qingqing Ye",
+      "Zi Liang",
+      "Haoyang Li",
+      "RongHua Li",
+      "Huadi Zheng",
+      "Haibo Hu"
     ],
     "categories": [
-      "cs.LG",
-      "cs.AI"
+      "cs.CR",
+      "cs.CV",
+      "cs.LG"
     ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09173v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09173v1.pdf",
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07947v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07947v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.57
@@ -3870,27 +3870,6 @@
     "research_score": 0.55
   },
   {
-    "arxiv_id": "2511.08368v1",
-    "title": "A Circular Argument : Does RoPE need to be Equivariant for Vision?",
-    "summary": "Rotary Positional Encodings (RoPE) have emerged as a highly effective technique for one-dimensional sequences in Natural Language Processing spurring recent progress towards generalizing RoPE to higher-dimensional data such as images and videos. The success of RoPE has been thought to be due to its positional equivariance, i.e. its status as a relative positional encoding. In this paper, we mathematically show RoPE to be one of the most general solutions for equivariant positional embedding in one-dimensional data. Moreover, we show Mixed RoPE to be the analogously general solution for M-dimensional data, if we require commutative generators -- a property necessary for RoPE's equivariance. However, we question whether strict equivariance plays a large role in RoPE's performance. We propose Spherical RoPE, a method analogous to Mixed RoPE, but assumes non-commutative generators. Empirically, we find Spherical RoPE to have the equivalent or better learning behavior compared to its equivariant analogues. This suggests that relative positional embeddings are not as important as is commonly believed, at least within computer vision. We expect this discovery to facilitate future work in positional encodings for vision that can be faster and generalize better by removing the preconception that they must be relative.",
-    "authors": [
-      "Chase van de Geijn",
-      "Timo Lüddecke",
-      "Polina Turishcheva",
-      "Alexander S. Ecker"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08368v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08368v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.55
-  },
-  {
     "arxiv_id": "2511.07865v1",
     "title": "LLM-Powered Fully Automated Chaos Engineering: Towards Enabling Anyone to Build Resilient Software Systems at Low Cost",
     "summary": "Chaos Engineering (CE) is an engineering technique aimed at improving the resilience of distributed systems. It involves intentionally injecting faults into a system to test its resilience, uncover weaknesses, and address them before they cause failures in production. Recent CE tools automate the execution of predefined CE experiments. However, planning such experiments and improving the system based on the experimental results still remain manual. These processes are labor-intensive and require multi-domain expertise. To address these challenges and enable anyone to build resilient systems at low cost, this paper proposes ChaosEater, a system that automates the entire CE cycle with Large Language Models (LLMs). It predefines an agentic workflow according to a systematic CE cycle and assigns subdivided processes within the workflow to LLMs. ChaosEater targets CE for software systems built on Kubernetes. Therefore, the LLMs in ChaosEater complete CE cycles through software engineering tasks, including requirement definition, code generation, testing, and debugging. We evaluate ChaosEater through case studies on small- and large-scale Kubernetes systems. The results demonstrate that it consistently completes reasonable CE cycles with significantly low time and monetary costs. Its cycles are also qualitatively validated by human engineers and LLMs.",
@@ -3951,6 +3930,27 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08708v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08708v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.55
+  },
+  {
+    "arxiv_id": "2511.08368v1",
+    "title": "A Circular Argument : Does RoPE need to be Equivariant for Vision?",
+    "summary": "Rotary Positional Encodings (RoPE) have emerged as a highly effective technique for one-dimensional sequences in Natural Language Processing spurring recent progress towards generalizing RoPE to higher-dimensional data such as images and videos. The success of RoPE has been thought to be due to its positional equivariance, i.e. its status as a relative positional encoding. In this paper, we mathematically show RoPE to be one of the most general solutions for equivariant positional embedding in one-dimensional data. Moreover, we show Mixed RoPE to be the analogously general solution for M-dimensional data, if we require commutative generators -- a property necessary for RoPE's equivariance. However, we question whether strict equivariance plays a large role in RoPE's performance. We propose Spherical RoPE, a method analogous to Mixed RoPE, but assumes non-commutative generators. Empirically, we find Spherical RoPE to have the equivalent or better learning behavior compared to its equivariant analogues. This suggests that relative positional embeddings are not as important as is commonly believed, at least within computer vision. We expect this discovery to facilitate future work in positional encodings for vision that can be faster and generalize better by removing the preconception that they must be relative.",
+    "authors": [
+      "Chase van de Geijn",
+      "Timo Lüddecke",
+      "Polina Turishcheva",
+      "Alexander S. Ecker"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08368v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08368v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.55
@@ -4038,27 +4038,6 @@
     "research_score": 0.54
   },
   {
-    "arxiv_id": "2511.08878v1",
-    "title": "Covariance Scattering Transforms",
-    "summary": "Machine learning and data processing techniques relying on covariance information are widespread as they identify meaningful patterns in unsupervised and unlabeled settings. As a prominent example, Principal Component Analysis (PCA) projects data points onto the eigenvectors of their covariance matrix, capturing the directions of maximum variance. This mapping, however, falls short in two directions: it fails to capture information in low-variance directions, relevant when, e.g., the data contains high-variance noise; and it provides unstable results in low-sample regimes, especially when covariance eigenvalues are close. CoVariance Neural Networks (VNNs), i.e., graph neural networks using the covariance matrix as a graph, show improved stability to estimation errors and learn more expressive functions in the covariance spectrum than PCA, but require training and operate in a labeled setup. To get the benefits of both worlds, we propose Covariance Scattering Transforms (CSTs), deep untrained networks that sequentially apply filters localized in the covariance spectrum to the input data and produce expressive hierarchical representations via nonlinearities. We define the filters as covariance wavelets that capture specific and detailed covariance spectral patterns. We improve CSTs' computational and memory efficiency via a pruning mechanism, and we prove that their error due to finite-sample covariance estimations is less sensitive to close covariance eigenvalues compared to PCA, improving their stability. Our experiments on age prediction from cortical thickness measurements on 4 datasets collecting patients with neurodegenerative diseases show that CSTs produce stable representations in low-data settings, as VNNs but without any training, and lead to comparable or better predictions w.r.t. more complex learning models.",
-    "authors": [
-      "Andrea Cavallo",
-      "Ayushman Raghuvanshi",
-      "Sundeep Prabhakar Chepuri",
-      "Elvin Isufi"
-    ],
-    "categories": [
-      "cs.LG",
-      "stat.ML"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.08878v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08878v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
     "arxiv_id": "2511.08877v1",
     "title": "Hallucinate or Memorize? The Two Sides of Probabilistic Learning in Large Language Models",
     "summary": "Large language models (LLMs) have been increasingly applied to a wide range of tasks, from natural language understanding to code generation. While they have also been used to assist in citation recommendation, the hallucination of non-existent papers remains a major issue. Building on prior studies, this study hypothesizes that an LLM's ability to correctly produce bibliographic records depends on whether the underlying knowledge is generated or memorized, with highly cited papers (i.e., more frequently appear in the pretraining corpus) showing lower hallucination rates. We therefore assume citation count as a proxy for training data redundancy (i.e., the frequency with which a given bibliographic record appears in the pretraining corpus) and investigate how citation frequency affects hallucinated references in LLM outputs. Using GPT-4.1, we generated and manually verified 100 citations across twenty computer-science domains, and measured factual consistency via cosine similarity between generated and authentic metadata. The results revealed that (i) citation count is strongly correlated with factual accuracy, (ii) bibliographic information becomes almost verbatim memorized beyond roughly 1,000 citations, and (iii) memory interference occurs when multiple highly cited papers share similar content. These findings indicate a threshold where generalization shifts into memorization, with highly cited papers being nearly verbatim retained in the model.",
@@ -4097,25 +4076,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09067v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09067v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
-    "arxiv_id": "2511.08275v1",
-    "title": "Bi-Objective Evolutionary Optimization for Large-Scale Open Pit Mine Scheduling Problem under Uncertainty with Chance Constraints",
-    "summary": "The open-pit mine scheduling problem (OPMSP) is a complex, computationally expensive process in long-term mine planning, constrained by operational and geological dependencies. Traditional deterministic approaches often ignore geological uncertainty, leading to suboptimal and potentially infeasible production schedules. Chance constraints allow modeling of stochastic components by ensuring probabilistic constraints are satisfied with high probability. This paper presents a bi-objective formulation of the OPMSP that simultaneously maximizes expected net present value and minimizes scheduling risk, independent of the confidence level required for the constraint. Solutions are represented using integer encoding, inherently satisfying reserve constraints. We introduce a domain-specific greedy randomized initialization and a precedence-aware period-swap mutation operator. We integrate these operators into three multi-objective evolutionary algorithms: the global simple evolutionary multi-objective optimizer (GSEMO), a mutation-only variant of multi-objective evolutionary algorithm based on decomposition (MOEA/D), and non-dominated sorting genetic algorithm II (NSGA-II). We compare our bi-objective formulation against the single-objective approach, which depends on a specific confidence level, by analyzing mine deposits consisting of up to 112 687 blocks. Results demonstrate that the proposed bi-objective formulation yields more robust and balanced trade-offs between economic value and risk compared to single-objective, confidence-dependent approach.",
-    "authors": [
-      "Ishara Hewa Pathiranage",
-      "Aneta Neumann"
-    ],
-    "categories": [
-      "cs.NE",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08275v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08275v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.54
@@ -4187,6 +4147,25 @@
     "research_score": 0.54
   },
   {
+    "arxiv_id": "2511.08275v1",
+    "title": "Bi-Objective Evolutionary Optimization for Large-Scale Open Pit Mine Scheduling Problem under Uncertainty with Chance Constraints",
+    "summary": "The open-pit mine scheduling problem (OPMSP) is a complex, computationally expensive process in long-term mine planning, constrained by operational and geological dependencies. Traditional deterministic approaches often ignore geological uncertainty, leading to suboptimal and potentially infeasible production schedules. Chance constraints allow modeling of stochastic components by ensuring probabilistic constraints are satisfied with high probability. This paper presents a bi-objective formulation of the OPMSP that simultaneously maximizes expected net present value and minimizes scheduling risk, independent of the confidence level required for the constraint. Solutions are represented using integer encoding, inherently satisfying reserve constraints. We introduce a domain-specific greedy randomized initialization and a precedence-aware period-swap mutation operator. We integrate these operators into three multi-objective evolutionary algorithms: the global simple evolutionary multi-objective optimizer (GSEMO), a mutation-only variant of multi-objective evolutionary algorithm based on decomposition (MOEA/D), and non-dominated sorting genetic algorithm II (NSGA-II). We compare our bi-objective formulation against the single-objective approach, which depends on a specific confidence level, by analyzing mine deposits consisting of up to 112 687 blocks. Results demonstrate that the proposed bi-objective formulation yields more robust and balanced trade-offs between economic value and risk compared to single-objective, confidence-dependent approach.",
+    "authors": [
+      "Ishara Hewa Pathiranage",
+      "Aneta Neumann"
+    ],
+    "categories": [
+      "cs.NE",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08275v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08275v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
     "arxiv_id": "2511.08570v1",
     "title": "Automatic Grid Updates for Kolmogorov-Arnold Networks using Layer Histograms",
     "summary": "Kolmogorov-Arnold Networks (KANs) are a class of neural networks that have received increased attention in recent literature. In contrast to MLPs, KANs leverage parameterized, trainable activation functions and offer several benefits including improved interpretability and higher accuracy on learning symbolic equations. However, the original KAN architecture requires adjustments to the domain discretization of the network (called the \"domain grid\") during training, creating extra overhead for the user in the training process. Typical KAN layers are not designed with the ability to autonomously update their domains in a data-driven manner informed by the changing output ranges of previous layers. As an added benefit, this histogram algorithm may also be applied towards detecting out-of-distribution (OOD) inputs in a variety of settings. We demonstrate that AdaptKAN exceeds or matches the performance of prior KAN architectures and MLPs on four different tasks: learning scientific equations from the Feynman dataset, image classification from frozen features, learning a control Lyapunov function, and detecting OOD inputs on the OpenOOD v1.5 benchmark.",
@@ -4206,22 +4185,22 @@
     "research_score": 0.54
   },
   {
-    "arxiv_id": "2511.08120v1",
-    "title": "A robust methodology for long-term sustainability evaluation of Machine Learning models",
-    "summary": "Sustainability and efficiency have become essential considerations in the development and deployment of Artificial Intelligence systems, yet existing regulatory and reporting practices lack standardized, model-agnostic evaluation protocols. Current assessments often measure only short-term experimental resource usage and disproportionately emphasize batch learning settings, failing to reflect real-world, long-term AI lifecycles. In this work, we propose a comprehensive evaluation protocol for assessing the long-term sustainability of ML models, applicable to both batch and streaming learning scenarios. Through experiments on diverse classification tasks using a range of model types, we demonstrate that traditional static train-test evaluations do not reliably capture sustainability under evolving data and repeated model updates. Our results show that long-term sustainability varies significantly across models, and in many cases, higher environmental cost yields little performance benefit.",
+    "arxiv_id": "2511.08878v1",
+    "title": "Covariance Scattering Transforms",
+    "summary": "Machine learning and data processing techniques relying on covariance information are widespread as they identify meaningful patterns in unsupervised and unlabeled settings. As a prominent example, Principal Component Analysis (PCA) projects data points onto the eigenvectors of their covariance matrix, capturing the directions of maximum variance. This mapping, however, falls short in two directions: it fails to capture information in low-variance directions, relevant when, e.g., the data contains high-variance noise; and it provides unstable results in low-sample regimes, especially when covariance eigenvalues are close. CoVariance Neural Networks (VNNs), i.e., graph neural networks using the covariance matrix as a graph, show improved stability to estimation errors and learn more expressive functions in the covariance spectrum than PCA, but require training and operate in a labeled setup. To get the benefits of both worlds, we propose Covariance Scattering Transforms (CSTs), deep untrained networks that sequentially apply filters localized in the covariance spectrum to the input data and produce expressive hierarchical representations via nonlinearities. We define the filters as covariance wavelets that capture specific and detailed covariance spectral patterns. We improve CSTs' computational and memory efficiency via a pruning mechanism, and we prove that their error due to finite-sample covariance estimations is less sensitive to close covariance eigenvalues compared to PCA, improving their stability. Our experiments on age prediction from cortical thickness measurements on 4 datasets collecting patients with neurodegenerative diseases show that CSTs produce stable representations in low-data settings, as VNNs but without any training, and lead to comparable or better predictions w.r.t. more complex learning models.",
     "authors": [
-      "Jorge Paz-Ruza",
-      "João Gama",
-      "Amparo Alonso-Betanzos",
-      "Bertha Guijarro-Berdiñas"
+      "Andrea Cavallo",
+      "Ayushman Raghuvanshi",
+      "Sundeep Prabhakar Chepuri",
+      "Elvin Isufi"
     ],
     "categories": [
       "cs.LG",
-      "cs.AI"
+      "stat.ML"
     ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08120v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08120v1.pdf",
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.08878v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08878v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.54
@@ -4245,6 +4224,27 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09105v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09105v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
+    "arxiv_id": "2511.08120v1",
+    "title": "A robust methodology for long-term sustainability evaluation of Machine Learning models",
+    "summary": "Sustainability and efficiency have become essential considerations in the development and deployment of Artificial Intelligence systems, yet existing regulatory and reporting practices lack standardized, model-agnostic evaluation protocols. Current assessments often measure only short-term experimental resource usage and disproportionately emphasize batch learning settings, failing to reflect real-world, long-term AI lifecycles. In this work, we propose a comprehensive evaluation protocol for assessing the long-term sustainability of ML models, applicable to both batch and streaming learning scenarios. Through experiments on diverse classification tasks using a range of model types, we demonstrate that traditional static train-test evaluations do not reliably capture sustainability under evolving data and repeated model updates. Our results show that long-term sustainability varies significantly across models, and in many cases, higher environmental cost yields little performance benefit.",
+    "authors": [
+      "Jorge Paz-Ruza",
+      "João Gama",
+      "Amparo Alonso-Betanzos",
+      "Bertha Guijarro-Berdiñas"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08120v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08120v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.54
@@ -4489,20 +4489,22 @@
     "research_score": 0.53
   },
   {
-    "arxiv_id": "2511.09425v1",
-    "title": "Several Supporting Evidences for the Adaptive Feature Program",
-    "summary": "Theoretically exploring the advantages of neural networks might be one of the most challenging problems in the AI era. An adaptive feature program has recently been proposed to analyze the feature learning characteristic property of neural networks in a more abstract way. Motivated by the celebrated Le Cam equivalence, we advocate the over-parametrized sequence models to further simplify the analysis of the training dynamics of adaptive feature program and present several supporting evidences for the adaptive feature program. More precisely, after having introduced the feature error measure (FEM) to characterize the quality of the learned feature, we show that the FEM is decreasing during the training process of several concrete adaptive feature models including linear regression, single/multiple index models, etc. We believe that this hints at the potential successes of the adaptive feature program.",
+    "arxiv_id": "2511.08565v1",
+    "title": "Moral Susceptibility and Robustness under Persona Role-Play in Large Language Models",
+    "summary": "Large language models (LLMs) increasingly operate in social contexts, motivating analysis of how they express and shift moral judgments. In this work, we investigate the moral response of LLMs to persona role-play, prompting a LLM to assume a specific character. Using the Moral Foundations Questionnaire (MFQ), we introduce a benchmark that quantifies two properties: moral susceptibility and moral robustness, defined from the variability of MFQ scores across and within personas, respectively. We find that, for moral robustness, model family accounts for most of the variance, while model size shows no systematic effect. The Claude family is, by a significant margin, the most robust, followed by Gemini and GPT-4 models, with other families exhibiting lower robustness. In contrast, moral susceptibility exhibits a mild family effect but a clear within-family size effect, with larger variants being more susceptible. Moreover, robustness and susceptibility are positively correlated, an association that is more pronounced at the family level. Additionally, we present moral foundation profiles for models without persona role-play and for personas averaged across models. Together, these analyses provide a systematic view of how persona conditioning shapes moral behavior in large language models.",
     "authors": [
-      "Yicheng Li",
-      "Qian Lin"
+      "Davi Bastos Costa",
+      "Felippe Alves",
+      "Renato Vicente"
     ],
     "categories": [
-      "cs.LG",
-      "stat.ML"
+      "cs.CL",
+      "cs.AI",
+      "cs.CY"
     ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09425v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09425v1.pdf",
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08565v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08565v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.52
@@ -4529,22 +4531,20 @@
     "research_score": 0.52
   },
   {
-    "arxiv_id": "2511.08565v1",
-    "title": "Moral Susceptibility and Robustness under Persona Role-Play in Large Language Models",
-    "summary": "Large language models (LLMs) increasingly operate in social contexts, motivating analysis of how they express and shift moral judgments. In this work, we investigate the moral response of LLMs to persona role-play, prompting a LLM to assume a specific character. Using the Moral Foundations Questionnaire (MFQ), we introduce a benchmark that quantifies two properties: moral susceptibility and moral robustness, defined from the variability of MFQ scores across and within personas, respectively. We find that, for moral robustness, model family accounts for most of the variance, while model size shows no systematic effect. The Claude family is, by a significant margin, the most robust, followed by Gemini and GPT-4 models, with other families exhibiting lower robustness. In contrast, moral susceptibility exhibits a mild family effect but a clear within-family size effect, with larger variants being more susceptible. Moreover, robustness and susceptibility are positively correlated, an association that is more pronounced at the family level. Additionally, we present moral foundation profiles for models without persona role-play and for personas averaged across models. Together, these analyses provide a systematic view of how persona conditioning shapes moral behavior in large language models.",
+    "arxiv_id": "2511.09425v1",
+    "title": "Several Supporting Evidences for the Adaptive Feature Program",
+    "summary": "Theoretically exploring the advantages of neural networks might be one of the most challenging problems in the AI era. An adaptive feature program has recently been proposed to analyze the feature learning characteristic property of neural networks in a more abstract way. Motivated by the celebrated Le Cam equivalence, we advocate the over-parametrized sequence models to further simplify the analysis of the training dynamics of adaptive feature program and present several supporting evidences for the adaptive feature program. More precisely, after having introduced the feature error measure (FEM) to characterize the quality of the learned feature, we show that the FEM is decreasing during the training process of several concrete adaptive feature models including linear regression, single/multiple index models, etc. We believe that this hints at the potential successes of the adaptive feature program.",
     "authors": [
-      "Davi Bastos Costa",
-      "Felippe Alves",
-      "Renato Vicente"
+      "Yicheng Li",
+      "Qian Lin"
     ],
     "categories": [
-      "cs.CL",
-      "cs.AI",
-      "cs.CY"
+      "cs.LG",
+      "stat.ML"
     ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08565v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08565v1.pdf",
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09425v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09425v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.52
