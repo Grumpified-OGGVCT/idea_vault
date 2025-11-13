@@ -641,33 +641,6 @@
     "research_score": 0.73
   },
   {
-    "arxiv_id": "2511.09109v1",
-    "title": "Thinking Forward and Backward: Multi-Objective Reinforcement Learning for Retrieval-Augmented Reasoning",
-    "summary": "Retrieval-augmented generation (RAG) has proven to be effective in mitigating hallucinations in large language models, yet its effectiveness remains limited in complex, multi-step reasoning scenarios.Recent efforts have incorporated search-based interactions into RAG, enabling iterative reasoning with real-time retrieval. Most approaches rely on outcome-based supervision, offering no explicit guidance for intermediate steps. This often leads to reward hacking and degraded response quality. We propose Bi-RAR, a novel retrieval-augmented reasoning framework that evaluates each intermediate step jointly in both forward and backward directions. To assess the information completeness of each step, we introduce a bidirectional information distance grounded in Kolmogorov complexity, approximated via language model generation probabilities. This quantification measures both how far the current reasoning is from the answer and how well it addresses the question. To optimize reasoning under these bidirectional signals, we adopt a multi-objective reinforcement learning framework with a cascading reward structure that emphasizes early trajectory alignment. Empirical results on seven question answering benchmarks demonstrate that Bi-RAR surpasses previous methods and enables efficient interaction and reasoning with the search engine during training and inference.",
-    "authors": [
-      "Wenda Wei",
-      "Yu-An Liu",
-      "Ruqing Zhang",
-      "Jiafeng Guo",
-      "Lixin Su",
-      "Shuaiqiang Wang",
-      "Dawei Yin",
-      "Maarten de Rijke",
-      "Xueqi Cheng"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI",
-      "cs.IR"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09109v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09109v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.73
-  },
-  {
     "arxiv_id": "2511.09332v1",
     "title": "Distribution-Based Feature Attribution for Explaining the Predictions of Any Classifier",
     "summary": "The proliferation of complex, black-box AI models has intensified the need for techniques that can explain their decisions. Feature attribution methods have become a popular solution for providing post-hoc explanations, yet the field has historically lacked a formal problem definition. This paper addresses this gap by introducing a formal definition for the problem of feature attribution, which stipulates that explanations be supported by an underlying probability distribution represented by the given dataset. Our analysis reveals that many existing model-agnostic methods fail to meet this criterion, while even those that do often possess other limitations. To overcome these challenges, we propose Distributional Feature Attribution eXplanations (DFAX), a novel, model-agnostic method for feature attribution. DFAX is the first feature attribution method to explain classifier predictions directly based on the data distribution. We show through extensive experiments that DFAX is more effective and efficient than state-of-the-art baselines.",
@@ -702,6 +675,33 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08133v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08133v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.73
+  },
+  {
+    "arxiv_id": "2511.09109v1",
+    "title": "Thinking Forward and Backward: Multi-Objective Reinforcement Learning for Retrieval-Augmented Reasoning",
+    "summary": "Retrieval-augmented generation (RAG) has proven to be effective in mitigating hallucinations in large language models, yet its effectiveness remains limited in complex, multi-step reasoning scenarios.Recent efforts have incorporated search-based interactions into RAG, enabling iterative reasoning with real-time retrieval. Most approaches rely on outcome-based supervision, offering no explicit guidance for intermediate steps. This often leads to reward hacking and degraded response quality. We propose Bi-RAR, a novel retrieval-augmented reasoning framework that evaluates each intermediate step jointly in both forward and backward directions. To assess the information completeness of each step, we introduce a bidirectional information distance grounded in Kolmogorov complexity, approximated via language model generation probabilities. This quantification measures both how far the current reasoning is from the answer and how well it addresses the question. To optimize reasoning under these bidirectional signals, we adopt a multi-objective reinforcement learning framework with a cascading reward structure that emphasizes early trajectory alignment. Empirical results on seven question answering benchmarks demonstrate that Bi-RAR surpasses previous methods and enables efficient interaction and reasoning with the search engine during training and inference.",
+    "authors": [
+      "Wenda Wei",
+      "Yu-An Liu",
+      "Ruqing Zhang",
+      "Jiafeng Guo",
+      "Lixin Su",
+      "Shuaiqiang Wang",
+      "Dawei Yin",
+      "Maarten de Rijke",
+      "Xueqi Cheng"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.IR"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09109v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09109v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.73
@@ -1282,29 +1282,6 @@
     "research_score": 0.68
   },
   {
-    "arxiv_id": "2511.08143v1",
-    "title": "Relation as a Prior: A Novel Paradigm for LLM-based Document-level Relation Extraction",
-    "summary": "Large Language Models (LLMs) have demonstrated their remarkable capabilities in document understanding. However, recent research reveals that LLMs still exhibit performance gaps in Document-level Relation Extraction (DocRE) as requiring fine-grained comprehension. The commonly adopted \"extract entities then predict relations\" paradigm in LLM-based methods leads to these gaps due to two main reasons: (1) Numerous unrelated entity pairs introduce noise and interfere with the relation prediction for truly related entity pairs. (2) Although LLMs have identified semantic associations between entities, relation labels beyond the predefined set are still treated as prediction errors. To address these challenges, we propose a novel Relation as a Prior (RelPrior) paradigm for LLM-based DocRE. For challenge (1), RelPrior utilizes binary relation as a prior to extract and determine whether two entities are correlated, thereby filtering out irrelevant entity pairs and reducing prediction noise. For challenge (2), RelPrior utilizes predefined relation as a prior to match entities for triples extraction instead of directly predicting relation. Thus, it avoids misjudgment caused by strict predefined relation labeling. Extensive experiments on two benchmarks demonstrate that RelPrior achieves state-of-the-art performance, surpassing existing LLM-based methods.",
-    "authors": [
-      "Qiankun Pi",
-      "Yepeng Sun",
-      "Jicang Lu",
-      "Qinlong Fan",
-      "Ningbo Huang",
-      "Shiyu Wang"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08143v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08143v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.68
-  },
-  {
     "arxiv_id": "2511.08853v1",
     "title": "Rethinking Graph Super-resolution: Dual Frameworks for Topological Fidelity",
     "summary": "Graph super-resolution, the task of inferring high-resolution (HR) graphs from low-resolution (LR) counterparts, is an underexplored yet crucial research direction that circumvents the need for costly data acquisition. This makes it especially desirable for resource-constrained fields such as the medical domain. While recent GNN-based approaches show promise, they suffer from two key limitations: (1) matrix-based node super-resolution that disregards graph structure and lacks permutation invariance; and (2) reliance on node representations to infer edge weights, which limits scalability and expressivity. In this work, we propose two GNN-agnostic frameworks to address these issues. First, Bi-SR introduces a bipartite graph connecting LR and HR nodes to enable structure-aware node super-resolution that preserves topology and permutation invariance. Second, DEFEND learns edge representations by mapping HR edges to nodes of a dual graph, allowing edge inference via standard node-based GNNs. We evaluate both frameworks on a real-world brain connectome dataset, where they achieve state-of-the-art performance across seven topological measures. To support generalization, we introduce twelve new simulated datasets that capture diverse topologies and LR-HR relationships. These enable comprehensive benchmarking of graph super-resolution methods.",
@@ -1348,25 +1325,24 @@
     "research_score": 0.68
   },
   {
-    "arxiv_id": "2511.08071v1",
-    "title": "Radar-APLANC: Unsupervised Radar-based Heartbeat Sensing via Augmented Pseudo-Label and Noise Contrast",
-    "summary": "Frequency Modulated Continuous Wave (FMCW) radars can measure subtle chest wall oscillations to enable non-contact heartbeat sensing. However, traditional radar-based heartbeat sensing methods face performance degradation due to noise. Learning-based radar methods achieve better noise robustness but require costly labeled signals for supervised training. To overcome these limitations, we propose the first unsupervised framework for radar-based heartbeat sensing via Augmented Pseudo-Label and Noise Contrast (Radar-APLANC). We propose to use both the heartbeat range and noise range within the radar range matrix to construct the positive and negative samples, respectively, for improved noise robustness. Our Noise-Contrastive Triplet (NCT) loss only utilizes positive samples, negative samples, and pseudo-label signals generated by the traditional radar method, thereby avoiding dependence on expensive ground-truth physiological signals. We further design a pseudo-label augmentation approach featuring adaptive noise-aware label selection to improve pseudo-label signal quality. Extensive experiments on the Equipleth dataset and our collected radar dataset demonstrate that our unsupervised method achieves performance comparable to state-of-the-art supervised methods. Our code, dataset, and supplementary materials can be accessed from https://github.com/RadarHRSensing/Radar-APLANC.",
+    "arxiv_id": "2511.08143v1",
+    "title": "Relation as a Prior: A Novel Paradigm for LLM-based Document-level Relation Extraction",
+    "summary": "Large Language Models (LLMs) have demonstrated their remarkable capabilities in document understanding. However, recent research reveals that LLMs still exhibit performance gaps in Document-level Relation Extraction (DocRE) as requiring fine-grained comprehension. The commonly adopted \"extract entities then predict relations\" paradigm in LLM-based methods leads to these gaps due to two main reasons: (1) Numerous unrelated entity pairs introduce noise and interfere with the relation prediction for truly related entity pairs. (2) Although LLMs have identified semantic associations between entities, relation labels beyond the predefined set are still treated as prediction errors. To address these challenges, we propose a novel Relation as a Prior (RelPrior) paradigm for LLM-based DocRE. For challenge (1), RelPrior utilizes binary relation as a prior to extract and determine whether two entities are correlated, thereby filtering out irrelevant entity pairs and reducing prediction noise. For challenge (2), RelPrior utilizes predefined relation as a prior to match entities for triples extraction instead of directly predicting relation. Thus, it avoids misjudgment caused by strict predefined relation labeling. Extensive experiments on two benchmarks demonstrate that RelPrior achieves state-of-the-art performance, surpassing existing LLM-based methods.",
     "authors": [
-      "Ying Wang",
-      "Zhaodong Sun",
-      "Xu Cheng",
-      "Zuxian He",
-      "Xiaobai Li"
+      "Qiankun Pi",
+      "Yepeng Sun",
+      "Jicang Lu",
+      "Qinlong Fan",
+      "Ningbo Huang",
+      "Shiyu Wang"
     ],
     "categories": [
-      "cs.CV",
-      "cs.AI",
-      "cs.HC",
-      "eess.SP"
+      "cs.CL",
+      "cs.AI"
     ],
     "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08071v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08071v1.pdf",
+    "url": "https://arxiv.org/abs/2511.08143v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08143v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.68
@@ -1397,6 +1373,30 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07738v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07738v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
+    "arxiv_id": "2511.08071v1",
+    "title": "Radar-APLANC: Unsupervised Radar-based Heartbeat Sensing via Augmented Pseudo-Label and Noise Contrast",
+    "summary": "Frequency Modulated Continuous Wave (FMCW) radars can measure subtle chest wall oscillations to enable non-contact heartbeat sensing. However, traditional radar-based heartbeat sensing methods face performance degradation due to noise. Learning-based radar methods achieve better noise robustness but require costly labeled signals for supervised training. To overcome these limitations, we propose the first unsupervised framework for radar-based heartbeat sensing via Augmented Pseudo-Label and Noise Contrast (Radar-APLANC). We propose to use both the heartbeat range and noise range within the radar range matrix to construct the positive and negative samples, respectively, for improved noise robustness. Our Noise-Contrastive Triplet (NCT) loss only utilizes positive samples, negative samples, and pseudo-label signals generated by the traditional radar method, thereby avoiding dependence on expensive ground-truth physiological signals. We further design a pseudo-label augmentation approach featuring adaptive noise-aware label selection to improve pseudo-label signal quality. Extensive experiments on the Equipleth dataset and our collected radar dataset demonstrate that our unsupervised method achieves performance comparable to state-of-the-art supervised methods. Our code, dataset, and supplementary materials can be accessed from https://github.com/RadarHRSensing/Radar-APLANC.",
+    "authors": [
+      "Ying Wang",
+      "Zhaodong Sun",
+      "Xu Cheng",
+      "Zuxian He",
+      "Xiaobai Li"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.HC",
+      "eess.SP"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08071v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08071v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.68
@@ -1594,24 +1594,6 @@
     "research_score": 0.67
   },
   {
-    "arxiv_id": "2511.08465v1",
-    "title": "Generalizable Blood Cell Detection via Unified Dataset and Faster R-CNN",
-    "summary": "This paper presents a comprehensive methodology and comparative performance analysis for the automated classification and object detection of peripheral blood cells (PBCs) in microscopic images. Addressing the critical challenge of data scarcity and heterogeneity, robust data pipeline was first developed to standardize and merge four public datasets (PBC, BCCD, Chula, Sickle Cell) into a unified resource. Then employed a state-of-the-art Faster R-CNN object detection framework, leveraging a ResNet-50-FPN backbone. Comparative training rigorously evaluated a randomly initialized baseline model (Regimen 1) against a Transfer Learning Regimen (Regimen 2), initialized with weights pre-trained on the Microsoft COCO dataset. The results demonstrate that the Transfer Learning approach achieved significantly faster convergence and superior stability, culminating in a final validation loss of 0.08666, a substantial improvement over the baseline. This validated methodology establishes a robust foundation for building high-accuracy, deployable systems for automated hematological diagnosis.",
-    "authors": [
-      "Siddharth Sahay"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.LG"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08465v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08465v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.67
-  },
-  {
     "arxiv_id": "2511.07857v1",
     "title": "A General Method for Proving Networks Universal Approximation Property",
     "summary": "Deep learning architectures are highly diverse. To prove their universal approximation properties, existing works typically rely on model-specific proofs. Generally, they construct a dedicated mathematical formulation for each architecture (e.g., fully connected networks, CNNs, or Transformers) and then prove their universal approximability. However, this approach suffers from two major limitations: first, every newly proposed architecture often requires a completely new proof from scratch; second, these proofs are largely isolated from one another, lacking a common analytical foundation. This not only incurs significant redundancy but also hinders unified theoretical understanding across different network families. To address these issues, this paper proposes a general and modular framework for proving universal approximation. We define a basic building block (comprising one or multiple layers) that possesses the universal approximation property as a Universal Approximation Module (UAM). Under this condition, we show that any deep network composed of such modules inherently retains the universal approximation property. Moreover, the overall approximation process can be interpreted as a progressive refinement across modules. This perspective not only unifies the analysis of diverse architectures but also enables a step-by-step understanding of how expressive power evolves through the network.",
@@ -1625,6 +1607,24 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.07857v1",
     "pdf_url": "https://arxiv.org/pdf/2511.07857v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.67
+  },
+  {
+    "arxiv_id": "2511.08465v1",
+    "title": "Generalizable Blood Cell Detection via Unified Dataset and Faster R-CNN",
+    "summary": "This paper presents a comprehensive methodology and comparative performance analysis for the automated classification and object detection of peripheral blood cells (PBCs) in microscopic images. Addressing the critical challenge of data scarcity and heterogeneity, robust data pipeline was first developed to standardize and merge four public datasets (PBC, BCCD, Chula, Sickle Cell) into a unified resource. Then employed a state-of-the-art Faster R-CNN object detection framework, leveraging a ResNet-50-FPN backbone. Comparative training rigorously evaluated a randomly initialized baseline model (Regimen 1) against a Transfer Learning Regimen (Regimen 2), initialized with weights pre-trained on the Microsoft COCO dataset. The results demonstrate that the Transfer Learning approach achieved significantly faster convergence and superior stability, culminating in a final validation loss of 0.08666, a substantial improvement over the baseline. This validated methodology establishes a robust foundation for building high-accuracy, deployable systems for automated hematological diagnosis.",
+    "authors": [
+      "Siddharth Sahay"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08465v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08465v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.67
@@ -2330,6 +2330,57 @@
     "research_score": 0.64
   },
   {
+    "arxiv_id": "2511.08887v1",
+    "title": "FAST-CAD: A Fairness-Aware Framework for Non-Contact Stroke Diagnosis",
+    "summary": "Stroke is an acute cerebrovascular disease, and timely diagnosis significantly improves patient survival. However, existing automated diagnosis methods suffer from fairness issues across demographic groups, potentially exacerbating healthcare disparities. In this work we propose FAST-CAD, a theoretically grounded framework that combines domain-adversarial training (DAT) with group distributionally robust optimization (Group-DRO) for fair and accurate non-contact stroke diagnosis. Our approach is built on domain adaptation and minimax fairness theory and provides convergence guarantees and fairness bounds. We curate a multimodal dataset covering 12 demographic subgroups defined by age, gender, and posture. FAST-CAD employs self-supervised encoders with adversarial domain discrimination to learn demographic-invariant representations, while Group-DRO optimizes worst-group risk to ensure robust performance across all subgroups. Extensive experiments show that our method achieves superior diagnostic performance while maintaining fairness across demographic groups, and our theoretical analysis supports the effectiveness of the unified DAT + Group-DRO framework. This work provides both practical advances and theoretical insights for fair medical AI systems.",
+    "authors": [
+      "Tianming Sha",
+      "Zechuan Chen",
+      "Zhan Cheng",
+      "Haotian Zhai",
+      "Xuwei Ding",
+      "Junnan Li",
+      "Haixiang Tang",
+      "Zaoting Sun",
+      "Yanchuan Tang",
+      "Yongzhe Yi",
+      "Yanjie Huang",
+      "Anhao Li",
+      "Yuan Gao",
+      "Keze Wang"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.08887v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08887v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
+    "arxiv_id": "2511.08823v1",
+    "title": "DT-NVS: Diffusion Transformers for Novel View Synthesis",
+    "summary": "Generating novel views of a natural scene, e.g., every-day scenes both indoors and outdoors, from a single view is an under-explored problem, even though it is an organic extension to the object-centric novel view synthesis. Existing diffusion-based approaches focus rather on small camera movements in real scenes or only consider unnatural object-centric scenes, limiting their potential applications in real-world settings. In this paper we move away from these constrained regimes and propose a 3D diffusion model trained with image-only losses on a large-scale dataset of real-world, multi-category, unaligned, and casually acquired videos of everyday scenes. We propose DT-NVS, a 3D-aware diffusion model for generalized novel view synthesis that exploits a transformer-based architecture backbone. We make significant contributions to transformer and self-attention architectures to translate images to 3d representations, and novel camera conditioning strategies to allow training on real-world unaligned datasets. In addition, we introduce a novel training paradigm swapping the role of reference frame between the conditioning image and the sampled noisy input. We evaluate our approach on the 3D task of generalized novel view synthesis from a single input image and show improvements over state-of-the-art 3D aware diffusion models and deterministic approaches, while generating diverse outputs.",
+    "authors": [
+      "Wonbong Jang",
+      "Jonathan Tremblay",
+      "Lourdes Agapito"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08823v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08823v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
     "arxiv_id": "2511.08717v1",
     "title": "Optimal Control of the Future via Prospective Foraging",
     "summary": "Optimal control of the future is the next frontier for AI. Current approaches to this problem are typically rooted in either reinforcement learning or online learning. While powerful, these frameworks for learning are mathematically distinct from Probably Approximately Correct (PAC) learning, which has been the workhorse for the recent technological achievements in AI. We therefore build on the prior work of prospective learning, an extension of PAC learning (without control) in non-stationary environments (De Silva et al., 2023; Silva et al., 2024; Bai et al., 2026). Here, we further extend the PAC learning framework to address learning and control in non-stationary environments. Using this framework, called ''Prospective Control'', we prove that under certain fairly general assumptions, empirical risk minimization (ERM) asymptotically achieves the Bayes optimal policy. We then consider a specific instance of prospective control, foraging, which is a canonical task for any mobile agent, be it natural or artificial. We illustrate that existing reinforcement learning algorithms fail to learn in these non-stationary environments, and even with modifications, they are orders of magnitude less efficient than our prospective foraging agents. Code is available at: https://github.com/neurodata/ProspectiveLearningwithControl.",
@@ -2391,57 +2442,6 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08667v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08667v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
-    "arxiv_id": "2511.08887v1",
-    "title": "FAST-CAD: A Fairness-Aware Framework for Non-Contact Stroke Diagnosis",
-    "summary": "Stroke is an acute cerebrovascular disease, and timely diagnosis significantly improves patient survival. However, existing automated diagnosis methods suffer from fairness issues across demographic groups, potentially exacerbating healthcare disparities. In this work we propose FAST-CAD, a theoretically grounded framework that combines domain-adversarial training (DAT) with group distributionally robust optimization (Group-DRO) for fair and accurate non-contact stroke diagnosis. Our approach is built on domain adaptation and minimax fairness theory and provides convergence guarantees and fairness bounds. We curate a multimodal dataset covering 12 demographic subgroups defined by age, gender, and posture. FAST-CAD employs self-supervised encoders with adversarial domain discrimination to learn demographic-invariant representations, while Group-DRO optimizes worst-group risk to ensure robust performance across all subgroups. Extensive experiments show that our method achieves superior diagnostic performance while maintaining fairness across demographic groups, and our theoretical analysis supports the effectiveness of the unified DAT + Group-DRO framework. This work provides both practical advances and theoretical insights for fair medical AI systems.",
-    "authors": [
-      "Tianming Sha",
-      "Zechuan Chen",
-      "Zhan Cheng",
-      "Haotian Zhai",
-      "Xuwei Ding",
-      "Junnan Li",
-      "Haixiang Tang",
-      "Zaoting Sun",
-      "Yanchuan Tang",
-      "Yongzhe Yi",
-      "Yanjie Huang",
-      "Anhao Li",
-      "Yuan Gao",
-      "Keze Wang"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.08887v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08887v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
-    "arxiv_id": "2511.08823v1",
-    "title": "DT-NVS: Diffusion Transformers for Novel View Synthesis",
-    "summary": "Generating novel views of a natural scene, e.g., every-day scenes both indoors and outdoors, from a single view is an under-explored problem, even though it is an organic extension to the object-centric novel view synthesis. Existing diffusion-based approaches focus rather on small camera movements in real scenes or only consider unnatural object-centric scenes, limiting their potential applications in real-world settings. In this paper we move away from these constrained regimes and propose a 3D diffusion model trained with image-only losses on a large-scale dataset of real-world, multi-category, unaligned, and casually acquired videos of everyday scenes. We propose DT-NVS, a 3D-aware diffusion model for generalized novel view synthesis that exploits a transformer-based architecture backbone. We make significant contributions to transformer and self-attention architectures to translate images to 3d representations, and novel camera conditioning strategies to allow training on real-world unaligned datasets. In addition, we introduce a novel training paradigm swapping the role of reference frame between the conditioning image and the sampled noisy input. We evaluate our approach on the 3D task of generalized novel view synthesis from a single input image and show improvements over state-of-the-art 3D aware diffusion models and deterministic approaches, while generating diverse outputs.",
-    "authors": [
-      "Wonbong Jang",
-      "Jonathan Tremblay",
-      "Lourdes Agapito"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08823v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08823v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.64
@@ -2869,28 +2869,6 @@
     "research_score": 0.61
   },
   {
-    "arxiv_id": "2511.09216v1",
-    "title": "Controllable protein design through Feynman-Kac steering",
-    "summary": "Diffusion-based models have recently enabled the generation of realistic and diverse protein structures, yet they remain limited in their ability to steer outcomes toward specific functional or biochemical objectives, such as binding affinity or sequence composition. Here we extend the Feynman-Kac (FK) steering framework, an inference-time control approach, to diffusion-based protein design. By coupling FK steering with structure generation, the method guides sampling toward desirable structural or energetic features while maintaining the diversity of the underlying diffusion process. To enable simultaneous generation of both sequence and structure properties, rewards are computed on models refined through ProteinMPNN and all-atom relaxation. Applied to binder design, FK steering consistently improves predicted interface energetics across diverse targets with minimal computational overhead. More broadly, this work demonstrates that inference-time FK control generalizes diffusion-based protein design to arbitrary, non-differentiable, and reward-agnostic objectives, providing a unified and model-independent framework for guided molecular generation.",
-    "authors": [
-      "Erik Hartman",
-      "Jonas Wallin",
-      "Johan Malmström",
-      "Jimmy Olsson"
-    ],
-    "categories": [
-      "cs.LG",
-      "q-bio.QM",
-      "stat.ML"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09216v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09216v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.61
-  },
-  {
     "arxiv_id": "2511.08046v1",
     "title": "ProSona: Prompt-Guided Personalization for Multi-Expert Medical Image Segmentation",
     "summary": "Automated medical image segmentation suffers from high inter-observer variability, particularly in tasks such as lung nodule delineation, where experts often disagree. Existing approaches either collapse this variability into a consensus mask or rely on separate model branches for each annotator. We introduce ProSona, a two-stage framework that learns a continuous latent space of annotation styles, enabling controllable personalization via natural language prompts. A probabilistic U-Net backbone captures diverse expert hypotheses, while a prompt-guided projection mechanism navigates this latent space to generate personalized segmentations. A multi-level contrastive objective aligns textual and visual representations, promoting disentangled and interpretable expert styles. Across the LIDC-IDRI lung nodule and multi-institutional prostate MRI datasets, ProSona reduces the Generalized Energy Distance by 17% and improves mean Dice by more than one point compared with DPersona. These results demonstrate that natural-language prompts can provide flexible, accurate, and interpretable control over personalized medical image segmentation. Our implementation is available online 1 .",
@@ -2940,6 +2918,28 @@
     "published": "2025-11-11",
     "url": "https://arxiv.org/abs/2511.08399v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08399v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
+    "arxiv_id": "2511.09216v1",
+    "title": "Controllable protein design through Feynman-Kac steering",
+    "summary": "Diffusion-based models have recently enabled the generation of realistic and diverse protein structures, yet they remain limited in their ability to steer outcomes toward specific functional or biochemical objectives, such as binding affinity or sequence composition. Here we extend the Feynman-Kac (FK) steering framework, an inference-time control approach, to diffusion-based protein design. By coupling FK steering with structure generation, the method guides sampling toward desirable structural or energetic features while maintaining the diversity of the underlying diffusion process. To enable simultaneous generation of both sequence and structure properties, rewards are computed on models refined through ProteinMPNN and all-atom relaxation. Applied to binder design, FK steering consistently improves predicted interface energetics across diverse targets with minimal computational overhead. More broadly, this work demonstrates that inference-time FK control generalizes diffusion-based protein design to arbitrary, non-differentiable, and reward-agnostic objectives, providing a unified and model-independent framework for guided molecular generation.",
+    "authors": [
+      "Erik Hartman",
+      "Jonas Wallin",
+      "Johan Malmström",
+      "Jimmy Olsson"
+    ],
+    "categories": [
+      "cs.LG",
+      "q-bio.QM",
+      "stat.ML"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09216v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09216v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.61
@@ -3111,6 +3111,26 @@
     "research_score": 0.6
   },
   {
+    "arxiv_id": "2511.07930v1",
+    "title": "IBMA: An Imputation-Based Mixup Augmentation Using Self-Supervised Learning for Time Series Data",
+    "summary": "Data augmentation in time series forecasting plays a crucial role in enhancing model performance by introducing variability while maintaining the underlying temporal patterns. However, time series data offers fewer augmentation strategies compared to fields such as image or text, with advanced techniques like Mixup rarely being used. In this work, we propose a novel approach, Imputation-Based Mixup Augmentation (IBMA), which combines Imputation-Augmented data with Mixup augmentation to bolster model generalization and improve forecasting performance. We evaluate the effectiveness of this method across several forecasting models, including DLinear (MLP), TimesNet (CNN), and iTrainformer (Transformer), these models represent some of the most recent advances in time series forecasting. Our experiments, conducted on four datasets (ETTh1, ETTh2, ETTm1, ETTm2) and compared against eight other augmentation techniques, demonstrate that IBMA consistently enhances performance, achieving 22 improvements out of 24 instances, with 10 of those being the best performances, particularly with iTrainformer imputation.",
+    "authors": [
+      "Dang Nha Nguyen",
+      "Hai Dang Nguyen",
+      "Khoa Tho Anh Nguyen"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07930v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07930v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.6
+  },
+  {
     "arxiv_id": "2511.09118v1",
     "title": "Learning to Validate Generative Models: a Goodness-of-Fit Approach",
     "summary": "Generative models are increasingly central to scientific workflows, yet their systematic use and interpretation require a proper understanding of their limitations through rigorous validation. Classic approaches struggle with scalability, statistical power, or interpretability when applied to high-dimensional data, making it difficult to certify the reliability of these models in realistic, high-dimensional scientific settings. Here, we propose the use of the New Physics Learning Machine (NPLM), a learning based approach to goodness-of-fit testing inspired by the Neyman-Pearson construction, to test generative networks trained on high-dimensional scientific data. We demonstrate the performance of NPLM for validation in two benchmark cases: generative models trained on mixtures of Gaussian models with increasing dimensionality, and a public end-to-end generator for the Large Hadron Collider called FlashSim, trained on jet data, typical in the field of high-energy physics. We demonstrate that the NPLM can serve as a powerful validation method while also providing a means to diagnose sub-optimally modeled regions of the data.",
@@ -3130,26 +3150,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09118v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09118v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.6
-  },
-  {
-    "arxiv_id": "2511.07930v1",
-    "title": "IBMA: An Imputation-Based Mixup Augmentation Using Self-Supervised Learning for Time Series Data",
-    "summary": "Data augmentation in time series forecasting plays a crucial role in enhancing model performance by introducing variability while maintaining the underlying temporal patterns. However, time series data offers fewer augmentation strategies compared to fields such as image or text, with advanced techniques like Mixup rarely being used. In this work, we propose a novel approach, Imputation-Based Mixup Augmentation (IBMA), which combines Imputation-Augmented data with Mixup augmentation to bolster model generalization and improve forecasting performance. We evaluate the effectiveness of this method across several forecasting models, including DLinear (MLP), TimesNet (CNN), and iTrainformer (Transformer), these models represent some of the most recent advances in time series forecasting. Our experiments, conducted on four datasets (ETTh1, ETTh2, ETTm1, ETTm2) and compared against eight other augmentation techniques, demonstrate that IBMA consistently enhances performance, achieving 22 improvements out of 24 instances, with 10 of those being the best performances, particularly with iTrainformer imputation.",
-    "authors": [
-      "Dang Nha Nguyen",
-      "Hai Dang Nguyen",
-      "Khoa Tho Anh Nguyen"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.CV"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07930v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07930v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.6
@@ -3548,25 +3548,6 @@
     "research_score": 0.58
   },
   {
-    "arxiv_id": "2511.08082v1",
-    "title": "Prudential Reliability of Large Language Models in Reinsurance: Governance, Assurance, and Capital Efficiency",
-    "summary": "This paper develops a prudential framework for assessing the reliability of large language models (LLMs) in reinsurance. A five-pillar architecture--governance, data lineage, assurance, resilience, and regulatory alignment--translates supervisory expectations from Solvency II, SR 11-7, and guidance from EIOPA (2025), NAIC (2023), and IAIS (2024) into measurable lifecycle controls. The framework is implemented through the Reinsurance AI Reliability and Assurance Benchmark (RAIRAB), which evaluates whether governance-embedded LLMs meet prudential standards for grounding, transparency, and accountability. Across six task families, retrieval-grounded configurations achieved higher grounding accuracy (0.90), reduced hallucination and interpretive drift by roughly 40%, and nearly doubled transparency. These mechanisms lower informational frictions in risk transfer and capital allocation, showing that existing prudential doctrines already accommodate reliable AI when governance is explicit, data are traceable, and assurance is verifiable.",
-    "authors": [
-      "Stella C. Dong"
-    ],
-    "categories": [
-      "cs.AI",
-      "cs.LG",
-      "econ.GN"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08082v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08082v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.57
-  },
-  {
     "arxiv_id": "2511.09438v1",
     "title": "LLM-Guided Dynamic-UMAP for Personalized Federated Graph Learning",
     "summary": "We propose a method that uses large language models to assist graph machine learning under personalization and privacy constraints. The approach combines data augmentation for sparse graphs, prompt and instruction tuning to adapt foundation models to graph tasks, and in-context learning to supply few-shot graph reasoning signals. These signals parameterize a Dynamic UMAP manifold of client-specific graph embeddings inside a Bayesian variational objective for personalized federated learning. The method supports node classification and link prediction in low-resource settings and aligns language model latent representations with graph structure via a cross-modal regularizer. We outline a convergence argument for the variational aggregation procedure, describe a differential privacy threat model based on a moments accountant, and present applications to knowledge graph completion, recommendation-style link prediction, and citation and product graphs. We also discuss evaluation considerations for benchmarking LLM-assisted graph machine learning.",
@@ -3659,22 +3640,45 @@
     "research_score": 0.57
   },
   {
-    "arxiv_id": "2511.09173v1",
-    "title": "Data Fusion-Enhanced Decision Transformer for Stable Cross-Domain Generalization",
-    "summary": "Cross-domain shifts present a significant challenge for decision transformer (DT) policies. Existing cross-domain policy adaptation methods typically rely on a single simple filtering criterion to select source trajectory fragments and stitch them together. They match either state structure or action feasibility. However, the selected fragments still have poor stitchability: state structures can misalign, the return-to-go (RTG) becomes incomparable when the reward or horizon changes, and actions may jump at trajectory junctions. As a result, RTG tokens lose continuity, which compromises DT's inference ability. To tackle these challenges, we propose Data Fusion-Enhanced Decision Transformer (DFDT), a compact pipeline that restores stitchability. Particularly, DFDT fuses scarce target data with selectively trusted source fragments via a two-level data filter, maximum mean discrepancy (MMD) mismatch for state-structure alignment, and optimal transport (OT) deviation for action feasibility. It then trains on a feasibility-weighted fusion distribution. Furthermore, DFDT replaces RTG tokens with advantage-conditioned tokens, which improves the continuity of the semantics in the token sequence. It also applies a $Q$-guided regularizer to suppress junction value and action jumps. Theoretically, we provide bounds that tie state value and policy performance gaps to the MMD-mismatch and OT-deviation measures, and show that the bounds tighten as these two measures shrink. We show that DFDT improves return and stability over strong offline RL and sequence-model baselines across gravity, kinematic, and morphology shifts on D4RL-style control tasks, and further corroborate these gains with token-stitching and sequence-semantics stability analyses.",
+    "arxiv_id": "2511.08082v1",
+    "title": "Prudential Reliability of Large Language Models in Reinsurance: Governance, Assurance, and Capital Efficiency",
+    "summary": "This paper develops a prudential framework for assessing the reliability of large language models (LLMs) in reinsurance. A five-pillar architecture--governance, data lineage, assurance, resilience, and regulatory alignment--translates supervisory expectations from Solvency II, SR 11-7, and guidance from EIOPA (2025), NAIC (2023), and IAIS (2024) into measurable lifecycle controls. The framework is implemented through the Reinsurance AI Reliability and Assurance Benchmark (RAIRAB), which evaluates whether governance-embedded LLMs meet prudential standards for grounding, transparency, and accountability. Across six task families, retrieval-grounded configurations achieved higher grounding accuracy (0.90), reduced hallucination and interpretive drift by roughly 40%, and nearly doubled transparency. These mechanisms lower informational frictions in risk transfer and capital allocation, showing that existing prudential doctrines already accommodate reliable AI when governance is explicit, data are traceable, and assurance is verifiable.",
     "authors": [
-      "Guojian Wang",
-      "Quinson Hon",
-      "Xuyang Chen",
-      "Lin Zhao"
+      "Stella C. Dong"
     ],
     "categories": [
+      "cs.AI",
       "cs.LG",
-      "cs.AI"
+      "econ.GN"
     ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09173v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09173v1.pdf",
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08082v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08082v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
+    "arxiv_id": "2511.07947v1",
+    "title": "Class-feature Watermark: A Resilient Black-box Watermark Against Model Extraction Attacks",
+    "summary": "Machine learning models constitute valuable intellectual property, yet remain vulnerable to model extraction attacks (MEA), where adversaries replicate their functionality through black-box queries. Model watermarking counters MEAs by embedding forensic markers for ownership verification. Current black-box watermarks prioritize MEA survival through representation entanglement, yet inadequately explore resilience against sequential MEAs and removal attacks. Our study reveals that this risk is underestimated because existing removal methods are weakened by entanglement. To address this gap, we propose Watermark Removal attacK (WRK), which circumvents entanglement constraints by exploiting decision boundaries shaped by prevailing sample-level watermark artifacts. WRK effectively reduces watermark success rates by at least 88.79% across existing watermarking benchmarks.   For robust protection, we propose Class-Feature Watermarks (CFW), which improve resilience by leveraging class-level artifacts. CFW constructs a synthetic class using out-of-domain samples, eliminating vulnerable decision boundaries between original domain samples and their artifact-modified counterparts (watermark samples). CFW concurrently optimizes both MEA transferability and post-MEA stability. Experiments across multiple domains show that CFW consistently outperforms prior methods in resilience, maintaining a watermark success rate of at least 70.15% in extracted models even under the combined MEA and WRK distortion, while preserving the utility of protected models.",
+    "authors": [
+      "Yaxin Xiao",
+      "Qingqing Ye",
+      "Zi Liang",
+      "Haoyang Li",
+      "RongHua Li",
+      "Huadi Zheng",
+      "Haibo Hu"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.07947v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.07947v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.57
@@ -3723,26 +3727,22 @@
     "research_score": 0.57
   },
   {
-    "arxiv_id": "2511.07947v1",
-    "title": "Class-feature Watermark: A Resilient Black-box Watermark Against Model Extraction Attacks",
-    "summary": "Machine learning models constitute valuable intellectual property, yet remain vulnerable to model extraction attacks (MEA), where adversaries replicate their functionality through black-box queries. Model watermarking counters MEAs by embedding forensic markers for ownership verification. Current black-box watermarks prioritize MEA survival through representation entanglement, yet inadequately explore resilience against sequential MEAs and removal attacks. Our study reveals that this risk is underestimated because existing removal methods are weakened by entanglement. To address this gap, we propose Watermark Removal attacK (WRK), which circumvents entanglement constraints by exploiting decision boundaries shaped by prevailing sample-level watermark artifacts. WRK effectively reduces watermark success rates by at least 88.79% across existing watermarking benchmarks.   For robust protection, we propose Class-Feature Watermarks (CFW), which improve resilience by leveraging class-level artifacts. CFW constructs a synthetic class using out-of-domain samples, eliminating vulnerable decision boundaries between original domain samples and their artifact-modified counterparts (watermark samples). CFW concurrently optimizes both MEA transferability and post-MEA stability. Experiments across multiple domains show that CFW consistently outperforms prior methods in resilience, maintaining a watermark success rate of at least 70.15% in extracted models even under the combined MEA and WRK distortion, while preserving the utility of protected models.",
+    "arxiv_id": "2511.09173v1",
+    "title": "Data Fusion-Enhanced Decision Transformer for Stable Cross-Domain Generalization",
+    "summary": "Cross-domain shifts present a significant challenge for decision transformer (DT) policies. Existing cross-domain policy adaptation methods typically rely on a single simple filtering criterion to select source trajectory fragments and stitch them together. They match either state structure or action feasibility. However, the selected fragments still have poor stitchability: state structures can misalign, the return-to-go (RTG) becomes incomparable when the reward or horizon changes, and actions may jump at trajectory junctions. As a result, RTG tokens lose continuity, which compromises DT's inference ability. To tackle these challenges, we propose Data Fusion-Enhanced Decision Transformer (DFDT), a compact pipeline that restores stitchability. Particularly, DFDT fuses scarce target data with selectively trusted source fragments via a two-level data filter, maximum mean discrepancy (MMD) mismatch for state-structure alignment, and optimal transport (OT) deviation for action feasibility. It then trains on a feasibility-weighted fusion distribution. Furthermore, DFDT replaces RTG tokens with advantage-conditioned tokens, which improves the continuity of the semantics in the token sequence. It also applies a $Q$-guided regularizer to suppress junction value and action jumps. Theoretically, we provide bounds that tie state value and policy performance gaps to the MMD-mismatch and OT-deviation measures, and show that the bounds tighten as these two measures shrink. We show that DFDT improves return and stability over strong offline RL and sequence-model baselines across gravity, kinematic, and morphology shifts on D4RL-style control tasks, and further corroborate these gains with token-stitching and sequence-semantics stability analyses.",
     "authors": [
-      "Yaxin Xiao",
-      "Qingqing Ye",
-      "Zi Liang",
-      "Haoyang Li",
-      "RongHua Li",
-      "Huadi Zheng",
-      "Haibo Hu"
+      "Guojian Wang",
+      "Quinson Hon",
+      "Xuyang Chen",
+      "Lin Zhao"
     ],
     "categories": [
-      "cs.CR",
-      "cs.CV",
-      "cs.LG"
+      "cs.LG",
+      "cs.AI"
     ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.07947v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.07947v1.pdf",
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09173v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09173v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.57
@@ -4102,24 +4102,20 @@
     "research_score": 0.54
   },
   {
-    "arxiv_id": "2511.08585v1",
-    "title": "Simulating the Visual World with Artificial Intelligence: A Roadmap",
-    "summary": "The landscape of video generation is shifting, from a focus on generating visually appealing clips to building virtual environments that support interaction and maintain physical plausibility. These developments point toward the emergence of video foundation models that function not only as visual generators but also as implicit world models, models that simulate the physical dynamics, agent-environment interactions, and task planning that govern real or imagined worlds. This survey provides a systematic overview of this evolution, conceptualizing modern video foundation models as the combination of two core components: an implicit world model and a video renderer. The world model encodes structured knowledge about the world, including physical laws, interaction dynamics, and agent behavior. It serves as a latent simulation engine that enables coherent visual reasoning, long-term temporal consistency, and goal-driven planning. The video renderer transforms this latent simulation into realistic visual observations, effectively producing videos as a \"window\" into the simulated world. We trace the progression of video generation through four generations, in which the core capabilities advance step by step, ultimately culminating in a world model, built upon a video generation model, that embodies intrinsic physical plausibility, real-time multimodal interaction, and planning capabilities spanning multiple spatiotemporal scales. For each generation, we define its core characteristics, highlight representative works, and examine their application domains such as robotics, autonomous driving, and interactive gaming. Finally, we discuss open challenges and design principles for next-generation world models, including the role of agent intelligence in shaping and evaluating these systems. An up-to-date list of related works is maintained at this link.",
+    "arxiv_id": "2511.08275v1",
+    "title": "Bi-Objective Evolutionary Optimization for Large-Scale Open Pit Mine Scheduling Problem under Uncertainty with Chance Constraints",
+    "summary": "The open-pit mine scheduling problem (OPMSP) is a complex, computationally expensive process in long-term mine planning, constrained by operational and geological dependencies. Traditional deterministic approaches often ignore geological uncertainty, leading to suboptimal and potentially infeasible production schedules. Chance constraints allow modeling of stochastic components by ensuring probabilistic constraints are satisfied with high probability. This paper presents a bi-objective formulation of the OPMSP that simultaneously maximizes expected net present value and minimizes scheduling risk, independent of the confidence level required for the constraint. Solutions are represented using integer encoding, inherently satisfying reserve constraints. We introduce a domain-specific greedy randomized initialization and a precedence-aware period-swap mutation operator. We integrate these operators into three multi-objective evolutionary algorithms: the global simple evolutionary multi-objective optimizer (GSEMO), a mutation-only variant of multi-objective evolutionary algorithm based on decomposition (MOEA/D), and non-dominated sorting genetic algorithm II (NSGA-II). We compare our bi-objective formulation against the single-objective approach, which depends on a specific confidence level, by analyzing mine deposits consisting of up to 112 687 blocks. Results demonstrate that the proposed bi-objective formulation yields more robust and balanced trade-offs between economic value and risk compared to single-objective, confidence-dependent approach.",
     "authors": [
-      "Jingtong Yue",
-      "Ziqi Huang",
-      "Zhaoxi Chen",
-      "Xintao Wang",
-      "Pengfei Wan",
-      "Ziwei Liu"
+      "Ishara Hewa Pathiranage",
+      "Aneta Neumann"
     ],
     "categories": [
-      "cs.AI",
-      "cs.CV"
+      "cs.NE",
+      "cs.AI"
     ],
     "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08585v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08585v1.pdf",
+    "url": "https://arxiv.org/abs/2511.08275v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08275v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.54
@@ -4168,20 +4164,24 @@
     "research_score": 0.54
   },
   {
-    "arxiv_id": "2511.08275v1",
-    "title": "Bi-Objective Evolutionary Optimization for Large-Scale Open Pit Mine Scheduling Problem under Uncertainty with Chance Constraints",
-    "summary": "The open-pit mine scheduling problem (OPMSP) is a complex, computationally expensive process in long-term mine planning, constrained by operational and geological dependencies. Traditional deterministic approaches often ignore geological uncertainty, leading to suboptimal and potentially infeasible production schedules. Chance constraints allow modeling of stochastic components by ensuring probabilistic constraints are satisfied with high probability. This paper presents a bi-objective formulation of the OPMSP that simultaneously maximizes expected net present value and minimizes scheduling risk, independent of the confidence level required for the constraint. Solutions are represented using integer encoding, inherently satisfying reserve constraints. We introduce a domain-specific greedy randomized initialization and a precedence-aware period-swap mutation operator. We integrate these operators into three multi-objective evolutionary algorithms: the global simple evolutionary multi-objective optimizer (GSEMO), a mutation-only variant of multi-objective evolutionary algorithm based on decomposition (MOEA/D), and non-dominated sorting genetic algorithm II (NSGA-II). We compare our bi-objective formulation against the single-objective approach, which depends on a specific confidence level, by analyzing mine deposits consisting of up to 112 687 blocks. Results demonstrate that the proposed bi-objective formulation yields more robust and balanced trade-offs between economic value and risk compared to single-objective, confidence-dependent approach.",
+    "arxiv_id": "2511.08585v1",
+    "title": "Simulating the Visual World with Artificial Intelligence: A Roadmap",
+    "summary": "The landscape of video generation is shifting, from a focus on generating visually appealing clips to building virtual environments that support interaction and maintain physical plausibility. These developments point toward the emergence of video foundation models that function not only as visual generators but also as implicit world models, models that simulate the physical dynamics, agent-environment interactions, and task planning that govern real or imagined worlds. This survey provides a systematic overview of this evolution, conceptualizing modern video foundation models as the combination of two core components: an implicit world model and a video renderer. The world model encodes structured knowledge about the world, including physical laws, interaction dynamics, and agent behavior. It serves as a latent simulation engine that enables coherent visual reasoning, long-term temporal consistency, and goal-driven planning. The video renderer transforms this latent simulation into realistic visual observations, effectively producing videos as a \"window\" into the simulated world. We trace the progression of video generation through four generations, in which the core capabilities advance step by step, ultimately culminating in a world model, built upon a video generation model, that embodies intrinsic physical plausibility, real-time multimodal interaction, and planning capabilities spanning multiple spatiotemporal scales. For each generation, we define its core characteristics, highlight representative works, and examine their application domains such as robotics, autonomous driving, and interactive gaming. Finally, we discuss open challenges and design principles for next-generation world models, including the role of agent intelligence in shaping and evaluating these systems. An up-to-date list of related works is maintained at this link.",
     "authors": [
-      "Ishara Hewa Pathiranage",
-      "Aneta Neumann"
+      "Jingtong Yue",
+      "Ziqi Huang",
+      "Zhaoxi Chen",
+      "Xintao Wang",
+      "Pengfei Wan",
+      "Ziwei Liu"
     ],
     "categories": [
-      "cs.NE",
-      "cs.AI"
+      "cs.AI",
+      "cs.CV"
     ],
     "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08275v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08275v1.pdf",
+    "url": "https://arxiv.org/abs/2511.08585v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08585v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.54
@@ -4206,6 +4206,27 @@
     "research_score": 0.54
   },
   {
+    "arxiv_id": "2511.08120v1",
+    "title": "A robust methodology for long-term sustainability evaluation of Machine Learning models",
+    "summary": "Sustainability and efficiency have become essential considerations in the development and deployment of Artificial Intelligence systems, yet existing regulatory and reporting practices lack standardized, model-agnostic evaluation protocols. Current assessments often measure only short-term experimental resource usage and disproportionately emphasize batch learning settings, failing to reflect real-world, long-term AI lifecycles. In this work, we propose a comprehensive evaluation protocol for assessing the long-term sustainability of ML models, applicable to both batch and streaming learning scenarios. Through experiments on diverse classification tasks using a range of model types, we demonstrate that traditional static train-test evaluations do not reliably capture sustainability under evolving data and repeated model updates. Our results show that long-term sustainability varies significantly across models, and in many cases, higher environmental cost yields little performance benefit.",
+    "authors": [
+      "Jorge Paz-Ruza",
+      "João Gama",
+      "Amparo Alonso-Betanzos",
+      "Bertha Guijarro-Berdiñas"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-11",
+    "url": "https://arxiv.org/abs/2511.08120v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08120v1.pdf",
+    "date": "2025-11-13",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
     "arxiv_id": "2511.09105v1",
     "title": "Cost-Minimized Label-Flipping Poisoning Attack to LLM Alignment",
     "summary": "Large language models (LLMs) are increasingly deployed in real-world systems, making it critical to understand their vulnerabilities. While data poisoning attacks during RLHF/DPO alignment have been studied empirically, their theoretical foundations remain unclear. We investigate the minimum-cost poisoning attack required to steer an LLM's policy toward an attacker's target by flipping preference labels during RLHF/DPO, without altering the compared outputs. We formulate this as a convex optimization problem with linear constraints, deriving lower and upper bounds on the minimum attack cost. As a byproduct of this theoretical analysis, we show that any existing label-flipping attack can be post-processed via our proposed method to reduce the number of label flips required while preserving the intended poisoning effect. Empirical results demonstrate that this cost-minimization post-processing can significantly reduce poisoning costs over baselines, particularly when the reward model's feature dimension is small relative to the dataset size. These findings highlight fundamental vulnerabilities in RLHF/DPO pipelines and provide tools to evaluate their robustness against low-cost poisoning attacks.",
@@ -4224,27 +4245,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09105v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09105v1.pdf",
-    "date": "2025-11-13",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
-    "arxiv_id": "2511.08120v1",
-    "title": "A robust methodology for long-term sustainability evaluation of Machine Learning models",
-    "summary": "Sustainability and efficiency have become essential considerations in the development and deployment of Artificial Intelligence systems, yet existing regulatory and reporting practices lack standardized, model-agnostic evaluation protocols. Current assessments often measure only short-term experimental resource usage and disproportionately emphasize batch learning settings, failing to reflect real-world, long-term AI lifecycles. In this work, we propose a comprehensive evaluation protocol for assessing the long-term sustainability of ML models, applicable to both batch and streaming learning scenarios. Through experiments on diverse classification tasks using a range of model types, we demonstrate that traditional static train-test evaluations do not reliably capture sustainability under evolving data and repeated model updates. Our results show that long-term sustainability varies significantly across models, and in many cases, higher environmental cost yields little performance benefit.",
-    "authors": [
-      "Jorge Paz-Ruza",
-      "João Gama",
-      "Amparo Alonso-Betanzos",
-      "Bertha Guijarro-Berdiñas"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-11",
-    "url": "https://arxiv.org/abs/2511.08120v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08120v1.pdf",
     "date": "2025-11-13",
     "source": "arxiv",
     "research_score": 0.54
