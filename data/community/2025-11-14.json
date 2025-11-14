@@ -212,7 +212,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2025-11-14T15:47:52Z",
+    "date": "2025-11-14T18:20:35Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n> [!WARNING]\nThese dependencies ar",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -560,7 +560,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( 0.6.32 \u2794 v0.6.36 )",
-    "date": "2025-11-14T17:09:26Z",
+    "date": "2025-11-14T18:12:24Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `0.6.32` -> `v0.6.36` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard fo",
     "url": "https://github.com/Aviator-Coding/home-ops/pull/337",
     "source": "github_prs",
@@ -680,7 +680,7 @@
   },
   {
     "title": "[PR] docs: mission control updates",
-    "date": "2025-11-14T17:05:46Z",
+    "date": "2025-11-14T17:59:50Z",
     "summary": "## Description\r\nThis pull request updates documentation throughout the project to rename \"Continue Hub\" to \"Continue Mission Control\" for consistency and clarity. The changes affect references in guides, configuration instructions, and UI descriptions, as well as internal and external links.\r\n\r\nMost",
     "url": "https://github.com/continuedev/continue/pull/8708",
     "source": "github_prs",
@@ -692,7 +692,7 @@
   },
   {
     "title": "[PR] Jsje",
-    "date": "2025-11-13T22:10:42Z",
+    "date": "2025-11-14T17:46:00Z",
     "summary": "# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- [ ] You are listed as the",
     "url": "https://github.com/arthrod/generative-ai/pull/7",
     "source": "github_prs",
@@ -1099,33 +1099,33 @@
     ]
   },
   {
-    "title": "[PR] Add AI-powered photo analysis and marketing content generation using local Ollama",
-    "date": "2025-11-14T17:00:59Z",
-    "summary": "Implements automated photo analysis and educational marketing content generation using local Ollama instance. Based on JeremyLikness/ArtistTool pattern but adapted for local inference instead of cloud AI.\n\n### Core Implementation\n\n**Database Schema**\n- Added 7 nullable fields to `PhotoSubmission`: `",
+    "title": "[PR] Add AI-powered photo analysis with local Ollama using sequential background queue processing",
+    "date": "2025-11-14T18:06:13Z",
+    "summary": "## Description\n\nImplements automated photo analysis and educational marketing content generation using local Ollama instance with sequential queue processing to handle hardware limitations. Based on JeremyLikness/ArtistTool pattern but adapted for local inference instead of cloud AI, with robust que",
     "url": "https://github.com/glensouza/csdac-pathfinder-25-honor-photography/pull/38",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 12",
       "pull request",
       "repo: csdac-pathfinder-25-honor-photography"
     ]
   },
   {
     "title": "[PR] Model: Qwen3 Next",
-    "date": "2025-11-14T16:04:48Z",
+    "date": "2025-11-14T18:11:16Z",
     "summary": "**EDIT: README FIRST**\r\nThis is an implementation of a new type of attention gating in GGML.\r\nTherefore, this implementation will be focused on *CORRECTNESS ONLY*.\r\nSpeed tuning and support for more architectures will come in future PRs.\r\nPlease do not spam this threads with reports about performanc",
     "url": "https://github.com/ggml-org/llama.cpp/pull/16095",
     "source": "github_prs",
     "highlights": [
-      "comments: 245",
+      "comments: 246",
       "pull request",
       "repo: llama.cpp"
     ]
   },
   {
-    "title": "[PR] chore(deps): update n8nio/n8n docker tag to v1.120.2",
-    "date": "2025-11-14T16:23:25Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `1.111.0` -> `1.120.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v1.120.0`](http",
+    "title": "[PR] chore(deps): update n8nio/n8n docker tag to v1.120.3",
+    "date": "2025-11-14T18:01:07Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `1.111.0` -> `1.120.3` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v1.120.0`](http",
     "url": "https://github.com/andrespi97/rack/pull/7",
     "source": "github_prs",
     "highlights": [
@@ -1156,6 +1156,42 @@
       "comments: 52",
       "pull request",
       "repo: ollama"
+    ]
+  },
+  {
+    "title": "Allow importing multi-file GGUF models",
+    "date": "2025-11-14T18:04:58Z",
+    "summary": "### What is the issue?\n\nCurrently Ollama can [import GGUF files](https://github.com/ollama/ollama/blob/main/docs/import.md). However, larger models are sometimes split into separate files. Ollama should support loading multiple GGUF files similar to loading safetensor files.\r\n\n\n### OS\n\n_No response_",
+    "url": "https://github.com/ollama/ollama/issues/5245",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 60",
+      "state: open",
+      "repo: ollama"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency chromadb to v1",
+    "date": "2025-11-14T18:10:14Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | Age | Confidence |\n|---|---|---|---|\n| [chromadb](https://redirect.github.com/chroma-core/chroma) | `0.6.3` -> `1.3.4` | [![age](https://developer.mend.io/api/mc/badges/age/pypi/chromadb/1.3.4?slim=true)](https://docs.renovatebot.com/merg",
+    "url": "https://github.com/masato/langchain_study/pull/1123",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: langchain_study"
+    ]
+  },
+  {
+    "title": "[PR] Complete Pydantic validation migration (Phases 3b, 4, 5, 6)",
+    "date": "2025-11-14T17:34:52Z",
+    "summary": "## Summary\n\nCompletes the Pydantic structured output migration by implementing validation in QADI phases and evolution operators with comprehensive testing and user validation.\n\n## Changes\n\n### Phase 3b: QADI Pydantic Validation\n- \u2705 Implemented Pydantic validation in `execute_deduction_phase()` and ",
+    "url": "https://github.com/TheIllusionOfLife/mad_spark_alt/pull/142",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: mad_spark_alt"
     ]
   }
 ]
