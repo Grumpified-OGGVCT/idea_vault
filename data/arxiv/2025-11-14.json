@@ -1433,27 +1433,6 @@
     "research_score": 0.69
   },
   {
-    "arxiv_id": "2511.10591v1",
-    "title": "Mined Prompting and Metadata-Guided Generation for Wound Care Visual Question Answering",
-    "summary": "The rapid expansion of asynchronous remote care has intensified provider workload, creating demand for AI systems that can assist clinicians in managing patient queries more efficiently. The MEDIQA-WV 2025 shared task addresses this challenge by focusing on generating free-text responses to wound care queries paired with images. In this work, we present two complementary approaches developed for the English track. The first leverages a mined prompting strategy, where training data is embedded and the top-k most similar examples are retrieved to serve as few-shot demonstrations during generation. The second approach builds on a metadata ablation study, which identified four metadata attributes that consistently enhance response quality. We train classifiers to predict these attributes for test cases and incorporate them into the generation pipeline, dynamically adjusting outputs based on prediction confidence. Experimental results demonstrate that mined prompting improves response relevance, while metadata-guided generation further refines clinical precision. Together, these methods highlight promising directions for developing AI-driven tools that can provide reliable and efficient wound care support.",
-    "authors": [
-      "Bavana Durgapraveen",
-      "Sornaraj Sivasankaran",
-      "Abhinand Balachandran",
-      "Sriram Rajkumar"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.10591v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.10591v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.69
-  },
-  {
     "arxiv_id": "2511.10233v1",
     "title": "Bridging Synthetic and Real Routing Problems via LLM-Guided Instance Generation and Progressive Adaptation",
     "summary": "Recent advances in Neural Combinatorial Optimization (NCO) methods have significantly improved the capability of neural solvers to handle synthetic routing instances. Nonetheless, existing neural solvers typically struggle to generalize effectively from synthetic, uniformly-distributed training data to real-world VRP scenarios, including widely recognized benchmark instances from TSPLib and CVRPLib. To bridge this generalization gap, we present Evolutionary Realistic Instance Synthesis (EvoReal), which leverages an evolutionary module guided by large language models (LLMs) to generate synthetic instances characterized by diverse and realistic structural patterns. Specifically, the evolutionary module produces synthetic instances whose structural attributes statistically mimics those observed in authentic real-world instances. Subsequently, pre-trained NCO models are progressively refined, firstly aligning them with these structurally enriched synthetic distributions and then further adapting them through direct fine-tuning on actual benchmark instances. Extensive experimental evaluations demonstrate that EvoReal markedly improves the generalization capabilities of state-of-the-art neural solvers, yielding a notable reduced performance gap compared to the optimal solutions on the TSPLib (1.05%) and CVRPLib (2.71%) benchmarks across a broad spectrum of problem scales.",
@@ -1785,6 +1764,26 @@
     "research_score": 0.67
   },
   {
+    "arxiv_id": "2511.09179v1",
+    "title": "A Hybrid Search for Complex Table Question Answering in Securities Report",
+    "summary": "Recently, Large Language Models (LLMs) are gaining increased attention in the domain of Table Question Answering (TQA), particularly for extracting information from tables in documents. However, directly entering entire tables as long text into LLMs often leads to incorrect answers because most LLMs cannot inherently capture complex table structures. In this paper, we propose a cell extraction method for TQA without manual identification, even for complex table headers. Our approach estimates table headers by computing similarities between a given question and individual cells via a hybrid retrieval mechanism that integrates a language model and TF-IDF. We then select as the answer the cells at the intersection of the most relevant row and column. Furthermore, the language model is trained using contrastive learning on a small dataset of question-header pairs to enhance performance. We evaluated our approach in the TQA dataset from the U4 shared task at NTCIR-18. The experimental results show that our pipeline achieves an accuracy of 74.6\\%, outperforming existing LLMs such as GPT-4o mini~(63.9\\%). In the future, although we used traditional encoder models for retrieval in this study, we plan to incorporate more efficient text-search models to improve performance and narrow the gap with human evaluation results.",
+    "authors": [
+      "Daiki Shirafuji",
+      "Koji Tanaka",
+      "Tatsuhiko Saito"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09179v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09179v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.66
+  },
+  {
     "arxiv_id": "2511.08967v1",
     "title": "AuthSig: Safeguarding Scanned Signatures Against Unauthorized Reuse in Paperless Workflows",
     "summary": "With the deepening trend of paperless workflows, signatures as a means of identity authentication are gradually shifting from traditional ink-on-paper to electronic formats.Despite the availability of dynamic pressure-sensitive and PKI-based digital signatures, static scanned signatures remain prevalent in practice due to their convenience. However, these static images, having almost lost their authentication attributes, cannot be reliably verified and are vulnerable to malicious copying and reuse. To address these issues, we propose AuthSig, a novel static electronic signature framework based on generative models and watermark, which binds authentication information to the signature image. Leveraging the human visual system's insensitivity to subtle style variations, AuthSig finely modulates style embeddings during generation to implicitly encode watermark bits-enforcing a One Signature, One Use policy.To overcome the scarcity of handwritten signature data and the limitations of traditional augmentation methods, we introduce a keypoint-driven data augmentation strategy that effectively enhances style diversity to support robust watermark embedding. Experimental results show that AuthSig achieves over 98% extraction accuracy under both digital-domain distortions and signature-specific degradations, and remains effective even in print-scan scenarios.",
@@ -1803,26 +1802,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.08967v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08967v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.66
-  },
-  {
-    "arxiv_id": "2511.09179v1",
-    "title": "A Hybrid Search for Complex Table Question Answering in Securities Report",
-    "summary": "Recently, Large Language Models (LLMs) are gaining increased attention in the domain of Table Question Answering (TQA), particularly for extracting information from tables in documents. However, directly entering entire tables as long text into LLMs often leads to incorrect answers because most LLMs cannot inherently capture complex table structures. In this paper, we propose a cell extraction method for TQA without manual identification, even for complex table headers. Our approach estimates table headers by computing similarities between a given question and individual cells via a hybrid retrieval mechanism that integrates a language model and TF-IDF. We then select as the answer the cells at the intersection of the most relevant row and column. Furthermore, the language model is trained using contrastive learning on a small dataset of question-header pairs to enhance performance. We evaluated our approach in the TQA dataset from the U4 shared task at NTCIR-18. The experimental results show that our pipeline achieves an accuracy of 74.6\\%, outperforming existing LLMs such as GPT-4o mini~(63.9\\%). In the future, although we used traditional encoder models for retrieval in this study, we plan to incorporate more efficient text-search models to improve performance and narrow the gap with human evaluation results.",
-    "authors": [
-      "Daiki Shirafuji",
-      "Koji Tanaka",
-      "Tatsuhiko Saito"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09179v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09179v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.66
@@ -3904,6 +3883,27 @@
     "research_score": 0.57
   },
   {
+    "arxiv_id": "2511.09748v1",
+    "title": "How Small Can You Go? Compact Language Models for On-Device Critical Error Detection in Machine Translation",
+    "summary": "Large Language Models (LLMs) excel at evaluating machine translation (MT), but their scale and cost hinder deployment on edge devices and in privacy-sensitive workflows. We ask: how small can you get while still detecting meaning-altering translation errors? Focusing on English->German Critical Error Detection (CED), we benchmark sub-2B models (LFM2-350M, Qwen-3-0.6B/1.7B, Llama-3.2-1B-Instruct, Gemma-3-1B) across WMT21, WMT22, and SynCED-EnDe-2025. Our framework standardizes prompts, applies lightweight logit-bias calibration and majority voting, and reports both semantic quality (MCC, F1-ERR/F1-NOT) and compute metrics (VRAM, latency, throughput). Results reveal a clear sweet spot around one billion parameters: Gemma-3-1B provides the best quality-efficiency trade-off, reaching MCC=0.77 with F1-ERR=0.98 on SynCED-EnDe-2025 after merged-weights fine-tuning, while maintaining 400 ms single-sample latency on a MacBook Pro M4 Pro (24 GB). At larger scale, Qwen-3-1.7B attains the highest absolute MCC (+0.11 over Gemma) but with higher compute cost. In contrast, ultra-small models (0.6B) remain usable with few-shot calibration yet under-detect entity and number errors. Overall, compact, instruction-tuned LLMs augmented with lightweight calibration and small-sample supervision can deliver trustworthy, on-device CED for MT, enabling private, low-cost error screening in real-world translation pipelines. All datasets, prompts, and scripts are publicly available at our GitHub repository.",
+    "authors": [
+      "Muskaan Chopra",
+      "Lorenz Sparrenberg",
+      "Sarthak Khanna",
+      "Rafet Sifa"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09748v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09748v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
     "arxiv_id": "2511.09894v1",
     "title": "EgoEMS: A High-Fidelity Multimodal Egocentric Dataset for Cognitive Assistance in Emergency Medical Services",
     "summary": "Emergency Medical Services (EMS) are critical to patient survival in emergencies, but first responders often face intense cognitive demands in high-stakes situations. AI cognitive assistants, acting as virtual partners, have the potential to ease this burden by supporting real-time data collection and decision making. In pursuit of this vision, we introduce EgoEMS, the first end-to-end, high-fidelity, multimodal, multiperson dataset capturing over 20 hours of realistic, procedural EMS activities from an egocentric view in 233 simulated emergency scenarios performed by 62 participants, including 46 EMS professionals. Developed in collaboration with EMS experts and aligned with national standards, EgoEMS is captured using an open-source, low-cost, and replicable data collection system and is annotated with keysteps, timestamped audio transcripts with speaker diarization, action quality metrics, and bounding boxes with segmentation masks. Emphasizing realism, the dataset includes responder-patient interactions reflecting real-world emergency dynamics. We also present a suite of benchmarks for real-time multimodal keystep recognition and action quality estimation, essential for developing AI support tools for EMS. We hope EgoEMS inspires the research community to push the boundaries of intelligent EMS systems and ultimately contribute to improved patient outcomes.",
@@ -4493,6 +4493,25 @@
     "research_score": 0.53
   },
   {
+    "arxiv_id": "2511.09425v1",
+    "title": "Several Supporting Evidences for the Adaptive Feature Program",
+    "summary": "Theoretically exploring the advantages of neural networks might be one of the most challenging problems in the AI era. An adaptive feature program has recently been proposed to analyze the feature learning characteristic property of neural networks in a more abstract way. Motivated by the celebrated Le Cam equivalence, we advocate the over-parametrized sequence models to further simplify the analysis of the training dynamics of adaptive feature program and present several supporting evidences for the adaptive feature program. More precisely, after having introduced the feature error measure (FEM) to characterize the quality of the learned feature, we show that the FEM is decreasing during the training process of several concrete adaptive feature models including linear regression, single/multiple index models, etc. We believe that this hints at the potential successes of the adaptive feature program.",
+    "authors": [
+      "Yicheng Li",
+      "Qian Lin"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09425v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09425v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.52
+  },
+  {
     "arxiv_id": "2511.08846v1",
     "title": "On topological descriptors for graph products",
     "summary": "Topological descriptors have been increasingly utilized for capturing multiscale structural information in relational data. In this work, we consider various filtrations on the (box) product of graphs and the effect on their outputs on the topological descriptors - the Euler characteristic (EC) and persistent homology (PH). In particular, we establish a complete characterization of the expressive power of EC on general color-based filtrations. We also show that the PH descriptors of (virtual) graph products contain strictly more information than the computation on individual graphs, whereas EC does not. Additionally, we provide algorithms to compute the PH diagrams of the product of vertex- and edge-level filtrations on the graph product. We also substantiate our theoretical analysis with empirical investigations on runtime analysis, expressivity, and graph classification performance. Overall, this work paves way for powerful graph persistent descriptors via product filtrations. Code is available at https://github.com/Aalto-QuML/tda_graph_product.",
@@ -4509,25 +4528,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.08846v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08846v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.52
-  },
-  {
-    "arxiv_id": "2511.09425v1",
-    "title": "Several Supporting Evidences for the Adaptive Feature Program",
-    "summary": "Theoretically exploring the advantages of neural networks might be one of the most challenging problems in the AI era. An adaptive feature program has recently been proposed to analyze the feature learning characteristic property of neural networks in a more abstract way. Motivated by the celebrated Le Cam equivalence, we advocate the over-parametrized sequence models to further simplify the analysis of the training dynamics of adaptive feature program and present several supporting evidences for the adaptive feature program. More precisely, after having introduced the feature error measure (FEM) to characterize the quality of the learned feature, we show that the FEM is decreasing during the training process of several concrete adaptive feature models including linear regression, single/multiple index models, etc. We believe that this hints at the potential successes of the adaptive feature program.",
-    "authors": [
-      "Yicheng Li",
-      "Qian Lin"
-    ],
-    "categories": [
-      "cs.LG",
-      "stat.ML"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09425v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09425v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.52
