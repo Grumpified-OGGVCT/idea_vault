@@ -729,25 +729,6 @@
     "research_score": 0.73
   },
   {
-    "arxiv_id": "2511.09332v1",
-    "title": "Distribution-Based Feature Attribution for Explaining the Predictions of Any Classifier",
-    "summary": "The proliferation of complex, black-box AI models has intensified the need for techniques that can explain their decisions. Feature attribution methods have become a popular solution for providing post-hoc explanations, yet the field has historically lacked a formal problem definition. This paper addresses this gap by introducing a formal definition for the problem of feature attribution, which stipulates that explanations be supported by an underlying probability distribution represented by the given dataset. Our analysis reveals that many existing model-agnostic methods fail to meet this criterion, while even those that do often possess other limitations. To overcome these challenges, we propose Distributional Feature Attribution eXplanations (DFAX), a novel, model-agnostic method for feature attribution. DFAX is the first feature attribution method to explain classifier predictions directly based on the data distribution. We show through extensive experiments that DFAX is more effective and efficient than state-of-the-art baselines.",
-    "authors": [
-      "Xinpeng Li",
-      "Kai Ming Ting"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09332v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09332v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.73
-  },
-  {
     "arxiv_id": "2511.08968v1",
     "title": "Bayesian Mixture of Experts For Large Language Models",
     "summary": "We present Bayesian Mixture of Experts (Bayesian-MoE), a post-hoc uncertainty estimation framework for fine-tuned large language models (LLMs) based on Mixture-of-Experts architectures. Our method applies a structured Laplace approximation to the second linear layer of each expert, enabling calibrated uncertainty estimation without modifying the original training procedure or introducing new parameters. Unlike prior approaches, which apply Bayesian inference to added adapter modules, Bayesian-MoE directly targets the expert pathways already present in MoE models, leveraging their modular design for tractable block-wise posterior estimation. We use Kronecker-factored low-rank approximations to model curvature and derive scalable estimates of predictive uncertainty and marginal likelihood. Experiments on common-sense reasoning benchmarks with Qwen1.5-MoE and DeepSeek-MoE demonstrate that Bayesian-MoE improves both expected calibration error (ECE) and negative log-likelihood (NLL) over baselines, confirming its effectiveness for reliable downstream decision-making.",
@@ -765,6 +746,25 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.08968v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08968v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.73
+  },
+  {
+    "arxiv_id": "2511.09332v1",
+    "title": "Distribution-Based Feature Attribution for Explaining the Predictions of Any Classifier",
+    "summary": "The proliferation of complex, black-box AI models has intensified the need for techniques that can explain their decisions. Feature attribution methods have become a popular solution for providing post-hoc explanations, yet the field has historically lacked a formal problem definition. This paper addresses this gap by introducing a formal definition for the problem of feature attribution, which stipulates that explanations be supported by an underlying probability distribution represented by the given dataset. Our analysis reveals that many existing model-agnostic methods fail to meet this criterion, while even those that do often possess other limitations. To overcome these challenges, we propose Distributional Feature Attribution eXplanations (DFAX), a novel, model-agnostic method for feature attribution. DFAX is the first feature attribution method to explain classifier predictions directly based on the data distribution. We show through extensive experiments that DFAX is more effective and efficient than state-of-the-art baselines.",
+    "authors": [
+      "Xinpeng Li",
+      "Kai Ming Ting"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09332v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09332v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.73
@@ -1433,6 +1433,27 @@
     "research_score": 0.69
   },
   {
+    "arxiv_id": "2511.10591v1",
+    "title": "Mined Prompting and Metadata-Guided Generation for Wound Care Visual Question Answering",
+    "summary": "The rapid expansion of asynchronous remote care has intensified provider workload, creating demand for AI systems that can assist clinicians in managing patient queries more efficiently. The MEDIQA-WV 2025 shared task addresses this challenge by focusing on generating free-text responses to wound care queries paired with images. In this work, we present two complementary approaches developed for the English track. The first leverages a mined prompting strategy, where training data is embedded and the top-k most similar examples are retrieved to serve as few-shot demonstrations during generation. The second approach builds on a metadata ablation study, which identified four metadata attributes that consistently enhance response quality. We train classifiers to predict these attributes for test cases and incorporate them into the generation pipeline, dynamically adjusting outputs based on prediction confidence. Experimental results demonstrate that mined prompting improves response relevance, while metadata-guided generation further refines clinical precision. Together, these methods highlight promising directions for developing AI-driven tools that can provide reliable and efficient wound care support.",
+    "authors": [
+      "Bavana Durgapraveen",
+      "Sornaraj Sivasankaran",
+      "Abhinand Balachandran",
+      "Sriram Rajkumar"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.10591v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.10591v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.69
+  },
+  {
     "arxiv_id": "2511.10233v1",
     "title": "Bridging Synthetic and Real Routing Problems via LLM-Guided Instance Generation and Progressive Adaptation",
     "summary": "Recent advances in Neural Combinatorial Optimization (NCO) methods have significantly improved the capability of neural solvers to handle synthetic routing instances. Nonetheless, existing neural solvers typically struggle to generalize effectively from synthetic, uniformly-distributed training data to real-world VRP scenarios, including widely recognized benchmark instances from TSPLib and CVRPLib. To bridge this generalization gap, we present Evolutionary Realistic Instance Synthesis (EvoReal), which leverages an evolutionary module guided by large language models (LLMs) to generate synthetic instances characterized by diverse and realistic structural patterns. Specifically, the evolutionary module produces synthetic instances whose structural attributes statistically mimics those observed in authentic real-world instances. Subsequently, pre-trained NCO models are progressively refined, firstly aligning them with these structurally enriched synthetic distributions and then further adapting them through direct fine-tuning on actual benchmark instances. Extensive experimental evaluations demonstrate that EvoReal markedly improves the generalization capabilities of state-of-the-art neural solvers, yielding a notable reduced performance gap compared to the optimal solutions on the TSPLib (1.05%) and CVRPLib (2.71%) benchmarks across a broad spectrum of problem scales.",
@@ -1691,6 +1712,28 @@
     "research_score": 0.67
   },
   {
+    "arxiv_id": "2511.10583v1",
+    "title": "Evaluating Prompting Strategies with MedGemma for Medical Order Extraction",
+    "summary": "The accurate extraction of medical orders from doctor-patient conversations is a critical task for reducing clinical documentation burdens and ensuring patient safety. This paper details our team submission to the MEDIQA-OE-2025 Shared Task. We investigate the performance of MedGemma, a new domain-specific open-source language model, for structured order extraction. We systematically evaluate three distinct prompting paradigms: a straightforward one-Shot approach, a reasoning-focused ReAct framework, and a multi-step agentic workflow. Our experiments reveal that while more complex frameworks like ReAct and agentic flows are powerful, the simpler one-shot prompting method achieved the highest performance on the official validation set. We posit that on manually annotated transcripts, complex reasoning chains can lead to \"overthinking\" and introduce noise, making a direct approach more robust and efficient. Our work provides valuable insights into selecting appropriate prompting strategies for clinical information extraction in varied data conditions.",
+    "authors": [
+      "Abhinand Balachandran",
+      "Bavana Durgapraveen",
+      "Gowsikkan Sikkan Sudhagar",
+      "Vidhya Varshany J S",
+      "Sriram Rajkumar"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.10583v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.10583v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.67
+  },
+  {
     "arxiv_id": "2511.09893v1",
     "title": "Regional Attention-Enhanced Swin Transformer for Clinically Relevant Medical Image Captioning",
     "summary": "Automated medical image captioning translates complex radiological images into diagnostic narratives that can support reporting workflows. We present a Swin-BART encoder-decoder system with a lightweight regional attention module that amplifies diagnostically salient regions before cross-attention. Trained and evaluated on ROCO, our model achieves state-of-the-art semantic fidelity while remaining compact and interpretable. We report results as mean$\\pm$std over three seeds and include $95\\%$ confidence intervals. Compared with baselines, our approach improves ROUGE (proposed 0.603, ResNet-CNN 0.356, BLIP2-OPT 0.255) and BERTScore (proposed 0.807, BLIP2-OPT 0.645, ResNet-CNN 0.623), with competitive BLEU, CIDEr, and METEOR. We further provide ablations (regional attention on/off and token-count sweep), per-modality analysis (CT/MRI/X-ray), paired significance tests, and qualitative heatmaps that visualize the regions driving each description. Decoding uses beam search (beam size $=4$), length penalty $=1.1$, $no\\_repeat\\_ngram\\_size$ $=3$, and max length $=128$. The proposed design yields accurate, clinically phrased captions and transparent regional attributions, supporting safe research use with a human in the loop.",
@@ -1710,28 +1753,6 @@
     "published": "2025-11-13",
     "url": "https://arxiv.org/abs/2511.09893v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09893v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.67
-  },
-  {
-    "arxiv_id": "2511.10583v1",
-    "title": "Evaluating Prompting Strategies with MedGemma for Medical Order Extraction",
-    "summary": "The accurate extraction of medical orders from doctor-patient conversations is a critical task for reducing clinical documentation burdens and ensuring patient safety. This paper details our team submission to the MEDIQA-OE-2025 Shared Task. We investigate the performance of MedGemma, a new domain-specific open-source language model, for structured order extraction. We systematically evaluate three distinct prompting paradigms: a straightforward one-Shot approach, a reasoning-focused ReAct framework, and a multi-step agentic workflow. Our experiments reveal that while more complex frameworks like ReAct and agentic flows are powerful, the simpler one-shot prompting method achieved the highest performance on the official validation set. We posit that on manually annotated transcripts, complex reasoning chains can lead to \"overthinking\" and introduce noise, making a direct approach more robust and efficient. Our work provides valuable insights into selecting appropriate prompting strategies for clinical information extraction in varied data conditions.",
-    "authors": [
-      "Abhinand Balachandran",
-      "Bavana Durgapraveen",
-      "Gowsikkan Sikkan Sudhagar",
-      "Vidhya Varshany J S",
-      "Sriram Rajkumar"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.10583v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.10583v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.67
@@ -1764,26 +1785,6 @@
     "research_score": 0.67
   },
   {
-    "arxiv_id": "2511.09179v1",
-    "title": "A Hybrid Search for Complex Table Question Answering in Securities Report",
-    "summary": "Recently, Large Language Models (LLMs) are gaining increased attention in the domain of Table Question Answering (TQA), particularly for extracting information from tables in documents. However, directly entering entire tables as long text into LLMs often leads to incorrect answers because most LLMs cannot inherently capture complex table structures. In this paper, we propose a cell extraction method for TQA without manual identification, even for complex table headers. Our approach estimates table headers by computing similarities between a given question and individual cells via a hybrid retrieval mechanism that integrates a language model and TF-IDF. We then select as the answer the cells at the intersection of the most relevant row and column. Furthermore, the language model is trained using contrastive learning on a small dataset of question-header pairs to enhance performance. We evaluated our approach in the TQA dataset from the U4 shared task at NTCIR-18. The experimental results show that our pipeline achieves an accuracy of 74.6\\%, outperforming existing LLMs such as GPT-4o mini~(63.9\\%). In the future, although we used traditional encoder models for retrieval in this study, we plan to incorporate more efficient text-search models to improve performance and narrow the gap with human evaluation results.",
-    "authors": [
-      "Daiki Shirafuji",
-      "Koji Tanaka",
-      "Tatsuhiko Saito"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09179v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09179v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.66
-  },
-  {
     "arxiv_id": "2511.08967v1",
     "title": "AuthSig: Safeguarding Scanned Signatures Against Unauthorized Reuse in Paperless Workflows",
     "summary": "With the deepening trend of paperless workflows, signatures as a means of identity authentication are gradually shifting from traditional ink-on-paper to electronic formats.Despite the availability of dynamic pressure-sensitive and PKI-based digital signatures, static scanned signatures remain prevalent in practice due to their convenience. However, these static images, having almost lost their authentication attributes, cannot be reliably verified and are vulnerable to malicious copying and reuse. To address these issues, we propose AuthSig, a novel static electronic signature framework based on generative models and watermark, which binds authentication information to the signature image. Leveraging the human visual system's insensitivity to subtle style variations, AuthSig finely modulates style embeddings during generation to implicitly encode watermark bits-enforcing a One Signature, One Use policy.To overcome the scarcity of handwritten signature data and the limitations of traditional augmentation methods, we introduce a keypoint-driven data augmentation strategy that effectively enhances style diversity to support robust watermark embedding. Experimental results show that AuthSig achieves over 98% extraction accuracy under both digital-domain distortions and signature-specific degradations, and remains effective even in print-scan scenarios.",
@@ -1802,6 +1803,26 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.08967v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08967v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.66
+  },
+  {
+    "arxiv_id": "2511.09179v1",
+    "title": "A Hybrid Search for Complex Table Question Answering in Securities Report",
+    "summary": "Recently, Large Language Models (LLMs) are gaining increased attention in the domain of Table Question Answering (TQA), particularly for extracting information from tables in documents. However, directly entering entire tables as long text into LLMs often leads to incorrect answers because most LLMs cannot inherently capture complex table structures. In this paper, we propose a cell extraction method for TQA without manual identification, even for complex table headers. Our approach estimates table headers by computing similarities between a given question and individual cells via a hybrid retrieval mechanism that integrates a language model and TF-IDF. We then select as the answer the cells at the intersection of the most relevant row and column. Furthermore, the language model is trained using contrastive learning on a small dataset of question-header pairs to enhance performance. We evaluated our approach in the TQA dataset from the U4 shared task at NTCIR-18. The experimental results show that our pipeline achieves an accuracy of 74.6\\%, outperforming existing LLMs such as GPT-4o mini~(63.9\\%). In the future, although we used traditional encoder models for retrieval in this study, we plan to incorporate more efficient text-search models to improve performance and narrow the gap with human evaluation results.",
+    "authors": [
+      "Daiki Shirafuji",
+      "Koji Tanaka",
+      "Tatsuhiko Saito"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09179v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09179v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.66
@@ -2362,6 +2383,33 @@
     "research_score": 0.63
   },
   {
+    "arxiv_id": "2511.09605v1",
+    "title": "TomoGraphView: 3D Medical Image Classification with Omnidirectional Slice Representations and Graph Neural Networks",
+    "summary": "The growing number of medical tomography examinations has necessitated the development of automated methods capable of extracting comprehensive imaging features to facilitate downstream tasks such as tumor characterization, while assisting physicians in managing their growing workload. However, 3D medical image classification remains a challenging task due to the complex spatial relationships and long-range dependencies inherent in volumetric data. Training models from scratch suffers from low data regimes, and the absence of 3D large-scale multimodal datasets has limited the development of 3D medical imaging foundation models. Recent studies, however, have highlighted the potential of 2D vision foundation models, originally trained on natural images, as powerful feature extractors for medical image analysis. Despite these advances, existing approaches that apply 2D models to 3D volumes via slice-based decomposition remain suboptimal. Conventional volume slicing strategies, which rely on canonical planes such as axial, sagittal, or coronal, may inadequately capture the spatial extent of target structures when these are misaligned with standardized viewing planes. Furthermore, existing slice-wise aggregation strategies rarely account for preserving the volumetric structure, resulting in a loss of spatial coherence across slices. To overcome these limitations, we propose TomoGraphView, a novel framework that integrates omnidirectional volume slicing with spherical graph-based feature aggregation. We publicly share our accessible code base at http://github.com/compai-lab/2025-MedIA-kiechle and provide a user-friendly library for omnidirectional volume slicing at https://pypi.org/project/OmniSlicer.",
+    "authors": [
+      "Johannes Kiechle",
+      "Stefan M. Fischer",
+      "Daniel M. Lang",
+      "Cosmin I. Bercea",
+      "Matthew J. Nyflot",
+      "Lina Felsner",
+      "Julia A. Schnabel",
+      "Jan C. Peeken"
+    ],
+    "categories": [
+      "eess.IV",
+      "cs.AI",
+      "cs.LG",
+      "q-bio.QM"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09605v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09605v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.63
+  },
+  {
     "arxiv_id": "2511.10338v1",
     "title": "BhashaKritika: Building Synthetic Pretraining Data at Scale for Indic Languages",
     "summary": "In the context of pretraining of Large Language Models (LLMs), synthetic data has emerged as an alternative for generating high-quality pretraining data at scale. This is particularly beneficial in low-resource language settings where the benefits of recent LLMs have been unevenly distributed across languages. In this work, we present a systematic study on the generation and evaluation of synthetic multilingual pretraining data for Indic languages, where we construct a large-scale synthetic dataset BhashaKritika, comprising 540B tokens using 5 different techniques for 10 languages. We explore the impact of grounding generation in documents, personas, and topics. We analyze how language choice, both in the prompt instructions and document grounding, affects data quality, and we compare translations of English content with native generation in Indic languages. To support scalable and language-sensitive evaluation, we introduce a modular quality evaluation pipeline that integrates script and language detection, metadata consistency checks, n-gram repetition analysis, and perplexity-based filtering using KenLM models. Our framework enables robust quality control across diverse scripts and linguistic contexts. Empirical results through model runs reveal key trade-offs in generation strategies and highlight best practices for constructing effective multilingual corpora.",
@@ -2429,33 +2477,6 @@
     "published": "2025-11-13",
     "url": "https://arxiv.org/abs/2511.10120v1",
     "pdf_url": "https://arxiv.org/pdf/2511.10120v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.63
-  },
-  {
-    "arxiv_id": "2511.09605v1",
-    "title": "TomoGraphView: 3D Medical Image Classification with Omnidirectional Slice Representations and Graph Neural Networks",
-    "summary": "The growing number of medical tomography examinations has necessitated the development of automated methods capable of extracting comprehensive imaging features to facilitate downstream tasks such as tumor characterization, while assisting physicians in managing their growing workload. However, 3D medical image classification remains a challenging task due to the complex spatial relationships and long-range dependencies inherent in volumetric data. Training models from scratch suffers from low data regimes, and the absence of 3D large-scale multimodal datasets has limited the development of 3D medical imaging foundation models. Recent studies, however, have highlighted the potential of 2D vision foundation models, originally trained on natural images, as powerful feature extractors for medical image analysis. Despite these advances, existing approaches that apply 2D models to 3D volumes via slice-based decomposition remain suboptimal. Conventional volume slicing strategies, which rely on canonical planes such as axial, sagittal, or coronal, may inadequately capture the spatial extent of target structures when these are misaligned with standardized viewing planes. Furthermore, existing slice-wise aggregation strategies rarely account for preserving the volumetric structure, resulting in a loss of spatial coherence across slices. To overcome these limitations, we propose TomoGraphView, a novel framework that integrates omnidirectional volume slicing with spherical graph-based feature aggregation. We publicly share our accessible code base at http://github.com/compai-lab/2025-MedIA-kiechle and provide a user-friendly library for omnidirectional volume slicing at https://pypi.org/project/OmniSlicer.",
-    "authors": [
-      "Johannes Kiechle",
-      "Stefan M. Fischer",
-      "Daniel M. Lang",
-      "Cosmin I. Bercea",
-      "Matthew J. Nyflot",
-      "Lina Felsner",
-      "Julia A. Schnabel",
-      "Jan C. Peeken"
-    ],
-    "categories": [
-      "eess.IV",
-      "cs.AI",
-      "cs.LG",
-      "q-bio.QM"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09605v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09605v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.63
@@ -3694,6 +3715,50 @@
     "research_score": 0.57
   },
   {
+    "arxiv_id": "2511.10643v1",
+    "title": "Black-Box On-Policy Distillation of Large Language Models",
+    "summary": "Black-box distillation creates student large language models (LLMs) by learning from a proprietary teacher model's text outputs alone, without access to its internal logits or parameters. In this work, we introduce Generative Adversarial Distillation (GAD), which enables on-policy and black-box distillation. GAD frames the student LLM as a generator and trains a discriminator to distinguish its responses from the teacher LLM's, creating a minimax game. The discriminator acts as an on-policy reward model that co-evolves with the student, providing stable, adaptive feedback. Experimental results show that GAD consistently surpasses the commonly used sequence-level knowledge distillation. In particular, Qwen2.5-14B-Instruct (student) trained with GAD becomes comparable to its teacher, GPT-5-Chat, on the LMSYS-Chat automatic evaluation. The results establish GAD as a promising and effective paradigm for black-box LLM distillation.",
+    "authors": [
+      "Tianzhu Ye",
+      "Li Dong",
+      "Zewen Chi",
+      "Xun Wu",
+      "Shaohan Huang",
+      "Furu Wei"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.10643v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.10643v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
+    "arxiv_id": "2511.09652v1",
+    "title": "Optimistic Reinforcement Learning with Quantile Objectives",
+    "summary": "Reinforcement Learning (RL) has achieved tremendous success in recent years. However, the classical foundations of RL do not account for the risk sensitivity of the objective function, which is critical in various fields, including healthcare and finance. A popular approach to incorporate risk sensitivity is to optimize a specific quantile of the cumulative reward distribution. In this paper, we develop UCB-QRL, an optimistic learning algorithm for the $τ$-quantile objective in finite-horizon Markov decision processes (MDPs). UCB-QRL is an iterative algorithm in which, at each iteration, we first estimate the underlying transition probability and then optimize the quantile value function over a confidence ball around this estimate. We show that UCB-QRL yields a high-probability regret bound $\\mathcal O\\left((2/κ)^{H+1}H\\sqrt{SATH\\log(2SATH/δ)}\\right)$ in the episodic setting with $S$ states, $A$ actions, $T$ episodes, and $H$ horizons. Here, $κ>0$ is a problem-dependent constant that captures the sensitivity of the underlying MDP's quantile value.",
+    "authors": [
+      "Mohammad Alipour-Vaezi",
+      "Huaiyang Zhong",
+      "Kwok-Leung Tsui",
+      "Sajad Khodadadian"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09652v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09652v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
     "arxiv_id": "2511.09973v1",
     "title": "Difference Vector Equalization for Robust Fine-tuning of Vision-Language Models",
     "summary": "Contrastive pre-trained vision-language models, such as CLIP, demonstrate strong generalization abilities in zero-shot classification by leveraging embeddings extracted from image and text encoders. This paper aims to robustly fine-tune these vision-language models on in-distribution (ID) data without compromising their generalization abilities in out-of-distribution (OOD) and zero-shot settings. Current robust fine-tuning methods tackle this challenge by reusing contrastive learning, which was used in pre-training, for fine-tuning. However, we found that these methods distort the geometric structure of the embeddings, which plays a crucial role in the generalization of vision-language models, resulting in limited OOD and zero-shot performance. To address this, we propose Difference Vector Equalization (DiVE), which preserves the geometric structure during fine-tuning. The idea behind DiVE is to constrain difference vectors, each of which is obtained by subtracting the embeddings extracted from the pre-trained and fine-tuning models for the same data sample. By constraining the difference vectors to be equal across various data samples, we effectively preserve the geometric structure. Therefore, we introduce two losses: average vector loss (AVL) and pairwise vector loss (PVL). AVL preserves the geometric structure globally by constraining difference vectors to be equal to their weighted average. PVL preserves the geometric structure locally by ensuring a consistent multimodal alignment. Our experiments demonstrate that DiVE effectively preserves the geometric structure, achieving strong results across ID, OOD, and zero-shot metrics.",
@@ -3760,50 +3825,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09737v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09737v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.57
-  },
-  {
-    "arxiv_id": "2511.10643v1",
-    "title": "Black-Box On-Policy Distillation of Large Language Models",
-    "summary": "Black-box distillation creates student large language models (LLMs) by learning from a proprietary teacher model's text outputs alone, without access to its internal logits or parameters. In this work, we introduce Generative Adversarial Distillation (GAD), which enables on-policy and black-box distillation. GAD frames the student LLM as a generator and trains a discriminator to distinguish its responses from the teacher LLM's, creating a minimax game. The discriminator acts as an on-policy reward model that co-evolves with the student, providing stable, adaptive feedback. Experimental results show that GAD consistently surpasses the commonly used sequence-level knowledge distillation. In particular, Qwen2.5-14B-Instruct (student) trained with GAD becomes comparable to its teacher, GPT-5-Chat, on the LMSYS-Chat automatic evaluation. The results establish GAD as a promising and effective paradigm for black-box LLM distillation.",
-    "authors": [
-      "Tianzhu Ye",
-      "Li Dong",
-      "Zewen Chi",
-      "Xun Wu",
-      "Shaohan Huang",
-      "Furu Wei"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.10643v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.10643v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.57
-  },
-  {
-    "arxiv_id": "2511.09652v1",
-    "title": "Optimistic Reinforcement Learning with Quantile Objectives",
-    "summary": "Reinforcement Learning (RL) has achieved tremendous success in recent years. However, the classical foundations of RL do not account for the risk sensitivity of the objective function, which is critical in various fields, including healthcare and finance. A popular approach to incorporate risk sensitivity is to optimize a specific quantile of the cumulative reward distribution. In this paper, we develop UCB-QRL, an optimistic learning algorithm for the $τ$-quantile objective in finite-horizon Markov decision processes (MDPs). UCB-QRL is an iterative algorithm in which, at each iteration, we first estimate the underlying transition probability and then optimize the quantile value function over a confidence ball around this estimate. We show that UCB-QRL yields a high-probability regret bound $\\mathcal O\\left((2/κ)^{H+1}H\\sqrt{SATH\\log(2SATH/δ)}\\right)$ in the episodic setting with $S$ states, $A$ actions, $T$ episodes, and $H$ horizons. Here, $κ>0$ is a problem-dependent constant that captures the sensitivity of the underlying MDP's quantile value.",
-    "authors": [
-      "Mohammad Alipour-Vaezi",
-      "Huaiyang Zhong",
-      "Kwok-Leung Tsui",
-      "Sajad Khodadadian"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09652v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09652v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.57
@@ -3878,27 +3899,6 @@
     "published": "2025-11-13",
     "url": "https://arxiv.org/abs/2511.09925v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09925v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.57
-  },
-  {
-    "arxiv_id": "2511.09748v1",
-    "title": "How Small Can You Go? Compact Language Models for On-Device Critical Error Detection in Machine Translation",
-    "summary": "Large Language Models (LLMs) excel at evaluating machine translation (MT), but their scale and cost hinder deployment on edge devices and in privacy-sensitive workflows. We ask: how small can you get while still detecting meaning-altering translation errors? Focusing on English->German Critical Error Detection (CED), we benchmark sub-2B models (LFM2-350M, Qwen-3-0.6B/1.7B, Llama-3.2-1B-Instruct, Gemma-3-1B) across WMT21, WMT22, and SynCED-EnDe-2025. Our framework standardizes prompts, applies lightweight logit-bias calibration and majority voting, and reports both semantic quality (MCC, F1-ERR/F1-NOT) and compute metrics (VRAM, latency, throughput). Results reveal a clear sweet spot around one billion parameters: Gemma-3-1B provides the best quality-efficiency trade-off, reaching MCC=0.77 with F1-ERR=0.98 on SynCED-EnDe-2025 after merged-weights fine-tuning, while maintaining 400 ms single-sample latency on a MacBook Pro M4 Pro (24 GB). At larger scale, Qwen-3-1.7B attains the highest absolute MCC (+0.11 over Gemma) but with higher compute cost. In contrast, ultra-small models (0.6B) remain usable with few-shot calibration yet under-detect entity and number errors. Overall, compact, instruction-tuned LLMs augmented with lightweight calibration and small-sample supervision can deliver trustworthy, on-device CED for MT, enabling private, low-cost error screening in real-world translation pipelines. All datasets, prompts, and scripts are publicly available at our GitHub repository.",
-    "authors": [
-      "Muskaan Chopra",
-      "Lorenz Sparrenberg",
-      "Sarthak Khanna",
-      "Rafet Sifa"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09748v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09748v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.57
@@ -4238,26 +4238,6 @@
     "research_score": 0.54
   },
   {
-    "arxiv_id": "2511.09378v1",
-    "title": "The 2025 Planning Performance of Frontier Large Language Models",
-    "summary": "The capacity of Large Language Models (LLMs) for reasoning remains an active area of research, with the capabilities of frontier models continually advancing. We provide an updated evaluation of the end-to-end planning performance of three frontier LLMs as of 2025, where models are prompted to generate a plan from PDDL domain and task descriptions. We evaluate DeepSeek R1, Gemini 2.5 Pro, GPT-5 and as reference the planner LAMA on a subset of domains from the most recent Learning Track of the International Planning Competition. Our results show that on standard PDDL domains, the performance of GPT-5 in terms of solved tasks is competitive with LAMA. When the PDDL domains and tasks are obfuscated to test for pure reasoning, the performance of all LLMs degrades, though less severely than previously reported for other models. These results show substantial improvements over prior generations of LLMs, reducing the performance gap to planners on a challenging benchmark.",
-    "authors": [
-      "Augusto B. Corrêa",
-      "André G. Pereira",
-      "Jendrik Seipp"
-    ],
-    "categories": [
-      "cs.AI",
-      "cs.LG"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09378v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09378v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
     "arxiv_id": "2511.10054v1",
     "title": "BuddyMoE: Exploiting Expert Redundancy to Accelerate Memory-Constrained Mixture-of-Experts Inference",
     "summary": "Mixture-of-Experts (MoE) architectures scale language models by activating only a subset of specialized expert networks for each input token, thereby reducing the number of floating-point operations. However, the growing size of modern MoE models causes their full parameter sets to exceed GPU memory capacity; for example, Mixtral-8x7B has 45 billion parameters and requires 87 GB of memory even though only 14 billion parameters are used per token. Existing systems alleviate this limitation by offloading inactive experts to CPU memory, but transferring experts across the PCIe interconnect incurs significant latency (about 10 ms). Prefetching heuristics aim to hide this latency by predicting which experts are needed, but prefetch failures introduce significant stalls and amplify inference latency. In the event of a prefetch failure, prior work offers two primary solutions: either fetch the expert on demand, which incurs a long stall due to the PCIe bottleneck, or drop the expert from the computation, which significantly degrades model accuracy. The critical challenge, therefore, is to maintain both high inference speed and model accuracy when prefetching fails.",
@@ -4297,6 +4277,26 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09796v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09796v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
+    "arxiv_id": "2511.09378v1",
+    "title": "The 2025 Planning Performance of Frontier Large Language Models",
+    "summary": "The capacity of Large Language Models (LLMs) for reasoning remains an active area of research, with the capabilities of frontier models continually advancing. We provide an updated evaluation of the end-to-end planning performance of three frontier LLMs as of 2025, where models are prompted to generate a plan from PDDL domain and task descriptions. We evaluate DeepSeek R1, Gemini 2.5 Pro, GPT-5 and as reference the planner LAMA on a subset of domains from the most recent Learning Track of the International Planning Competition. Our results show that on standard PDDL domains, the performance of GPT-5 in terms of solved tasks is competitive with LAMA. When the PDDL domains and tasks are obfuscated to test for pure reasoning, the performance of all LLMs degrades, though less severely than previously reported for other models. These results show substantial improvements over prior generations of LLMs, reducing the performance gap to planners on a challenging benchmark.",
+    "authors": [
+      "Augusto B. Corrêa",
+      "André G. Pereira",
+      "Jendrik Seipp"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09378v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09378v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.54
@@ -4493,25 +4493,6 @@
     "research_score": 0.53
   },
   {
-    "arxiv_id": "2511.09425v1",
-    "title": "Several Supporting Evidences for the Adaptive Feature Program",
-    "summary": "Theoretically exploring the advantages of neural networks might be one of the most challenging problems in the AI era. An adaptive feature program has recently been proposed to analyze the feature learning characteristic property of neural networks in a more abstract way. Motivated by the celebrated Le Cam equivalence, we advocate the over-parametrized sequence models to further simplify the analysis of the training dynamics of adaptive feature program and present several supporting evidences for the adaptive feature program. More precisely, after having introduced the feature error measure (FEM) to characterize the quality of the learned feature, we show that the FEM is decreasing during the training process of several concrete adaptive feature models including linear regression, single/multiple index models, etc. We believe that this hints at the potential successes of the adaptive feature program.",
-    "authors": [
-      "Yicheng Li",
-      "Qian Lin"
-    ],
-    "categories": [
-      "cs.LG",
-      "stat.ML"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09425v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09425v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.52
-  },
-  {
     "arxiv_id": "2511.08846v1",
     "title": "On topological descriptors for graph products",
     "summary": "Topological descriptors have been increasingly utilized for capturing multiscale structural information in relational data. In this work, we consider various filtrations on the (box) product of graphs and the effect on their outputs on the topological descriptors - the Euler characteristic (EC) and persistent homology (PH). In particular, we establish a complete characterization of the expressive power of EC on general color-based filtrations. We also show that the PH descriptors of (virtual) graph products contain strictly more information than the computation on individual graphs, whereas EC does not. Additionally, we provide algorithms to compute the PH diagrams of the product of vertex- and edge-level filtrations on the graph product. We also substantiate our theoretical analysis with empirical investigations on runtime analysis, expressivity, and graph classification performance. Overall, this work paves way for powerful graph persistent descriptors via product filtrations. Code is available at https://github.com/Aalto-QuML/tda_graph_product.",
@@ -4528,6 +4509,25 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.08846v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08846v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.52
+  },
+  {
+    "arxiv_id": "2511.09425v1",
+    "title": "Several Supporting Evidences for the Adaptive Feature Program",
+    "summary": "Theoretically exploring the advantages of neural networks might be one of the most challenging problems in the AI era. An adaptive feature program has recently been proposed to analyze the feature learning characteristic property of neural networks in a more abstract way. Motivated by the celebrated Le Cam equivalence, we advocate the over-parametrized sequence models to further simplify the analysis of the training dynamics of adaptive feature program and present several supporting evidences for the adaptive feature program. More precisely, after having introduced the feature error measure (FEM) to characterize the quality of the learned feature, we show that the FEM is decreasing during the training process of several concrete adaptive feature models including linear regression, single/multiple index models, etc. We believe that this hints at the potential successes of the adaptive feature program.",
+    "authors": [
+      "Yicheng Li",
+      "Qian Lin"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09425v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09425v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.52
