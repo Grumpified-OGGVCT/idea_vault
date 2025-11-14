@@ -729,6 +729,25 @@
     "research_score": 0.73
   },
   {
+    "arxiv_id": "2511.09332v1",
+    "title": "Distribution-Based Feature Attribution for Explaining the Predictions of Any Classifier",
+    "summary": "The proliferation of complex, black-box AI models has intensified the need for techniques that can explain their decisions. Feature attribution methods have become a popular solution for providing post-hoc explanations, yet the field has historically lacked a formal problem definition. This paper addresses this gap by introducing a formal definition for the problem of feature attribution, which stipulates that explanations be supported by an underlying probability distribution represented by the given dataset. Our analysis reveals that many existing model-agnostic methods fail to meet this criterion, while even those that do often possess other limitations. To overcome these challenges, we propose Distributional Feature Attribution eXplanations (DFAX), a novel, model-agnostic method for feature attribution. DFAX is the first feature attribution method to explain classifier predictions directly based on the data distribution. We show through extensive experiments that DFAX is more effective and efficient than state-of-the-art baselines.",
+    "authors": [
+      "Xinpeng Li",
+      "Kai Ming Ting"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09332v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09332v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.73
+  },
+  {
     "arxiv_id": "2511.08968v1",
     "title": "Bayesian Mixture of Experts For Large Language Models",
     "summary": "We present Bayesian Mixture of Experts (Bayesian-MoE), a post-hoc uncertainty estimation framework for fine-tuned large language models (LLMs) based on Mixture-of-Experts architectures. Our method applies a structured Laplace approximation to the second linear layer of each expert, enabling calibrated uncertainty estimation without modifying the original training procedure or introducing new parameters. Unlike prior approaches, which apply Bayesian inference to added adapter modules, Bayesian-MoE directly targets the expert pathways already present in MoE models, leveraging their modular design for tractable block-wise posterior estimation. We use Kronecker-factored low-rank approximations to model curvature and derive scalable estimates of predictive uncertainty and marginal likelihood. Experiments on common-sense reasoning benchmarks with Qwen1.5-MoE and DeepSeek-MoE demonstrate that Bayesian-MoE improves both expected calibration error (ECE) and negative log-likelihood (NLL) over baselines, confirming its effectiveness for reliable downstream decision-making.",
@@ -746,25 +765,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.08968v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08968v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.73
-  },
-  {
-    "arxiv_id": "2511.09332v1",
-    "title": "Distribution-Based Feature Attribution for Explaining the Predictions of Any Classifier",
-    "summary": "The proliferation of complex, black-box AI models has intensified the need for techniques that can explain their decisions. Feature attribution methods have become a popular solution for providing post-hoc explanations, yet the field has historically lacked a formal problem definition. This paper addresses this gap by introducing a formal definition for the problem of feature attribution, which stipulates that explanations be supported by an underlying probability distribution represented by the given dataset. Our analysis reveals that many existing model-agnostic methods fail to meet this criterion, while even those that do often possess other limitations. To overcome these challenges, we propose Distributional Feature Attribution eXplanations (DFAX), a novel, model-agnostic method for feature attribution. DFAX is the first feature attribution method to explain classifier predictions directly based on the data distribution. We show through extensive experiments that DFAX is more effective and efficient than state-of-the-art baselines.",
-    "authors": [
-      "Xinpeng Li",
-      "Kai Ming Ting"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09332v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09332v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.73
@@ -1405,27 +1405,6 @@
     "published": "2025-11-13",
     "url": "https://arxiv.org/abs/2511.10446v1",
     "pdf_url": "https://arxiv.org/pdf/2511.10446v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.69
-  },
-  {
-    "arxiv_id": "2511.10591v1",
-    "title": "Mined Prompting and Metadata-Guided Generation for Wound Care Visual Question Answering",
-    "summary": "The rapid expansion of asynchronous remote care has intensified provider workload, creating demand for AI systems that can assist clinicians in managing patient queries more efficiently. The MEDIQA-WV 2025 shared task addresses this challenge by focusing on generating free-text responses to wound care queries paired with images. In this work, we present two complementary approaches developed for the English track. The first leverages a mined prompting strategy, where training data is embedded and the top-k most similar examples are retrieved to serve as few-shot demonstrations during generation. The second approach builds on a metadata ablation study, which identified four metadata attributes that consistently enhance response quality. We train classifiers to predict these attributes for test cases and incorporate them into the generation pipeline, dynamically adjusting outputs based on prediction confidence. Experimental results demonstrate that mined prompting improves response relevance, while metadata-guided generation further refines clinical precision. Together, these methods highlight promising directions for developing AI-driven tools that can provide reliable and efficient wound care support.",
-    "authors": [
-      "Bavana Durgapraveen",
-      "Sornaraj Sivasankaran",
-      "Abhinand Balachandran",
-      "Sriram Rajkumar"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.10591v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.10591v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.69
@@ -2383,33 +2362,6 @@
     "research_score": 0.63
   },
   {
-    "arxiv_id": "2511.09605v1",
-    "title": "TomoGraphView: 3D Medical Image Classification with Omnidirectional Slice Representations and Graph Neural Networks",
-    "summary": "The growing number of medical tomography examinations has necessitated the development of automated methods capable of extracting comprehensive imaging features to facilitate downstream tasks such as tumor characterization, while assisting physicians in managing their growing workload. However, 3D medical image classification remains a challenging task due to the complex spatial relationships and long-range dependencies inherent in volumetric data. Training models from scratch suffers from low data regimes, and the absence of 3D large-scale multimodal datasets has limited the development of 3D medical imaging foundation models. Recent studies, however, have highlighted the potential of 2D vision foundation models, originally trained on natural images, as powerful feature extractors for medical image analysis. Despite these advances, existing approaches that apply 2D models to 3D volumes via slice-based decomposition remain suboptimal. Conventional volume slicing strategies, which rely on canonical planes such as axial, sagittal, or coronal, may inadequately capture the spatial extent of target structures when these are misaligned with standardized viewing planes. Furthermore, existing slice-wise aggregation strategies rarely account for preserving the volumetric structure, resulting in a loss of spatial coherence across slices. To overcome these limitations, we propose TomoGraphView, a novel framework that integrates omnidirectional volume slicing with spherical graph-based feature aggregation. We publicly share our accessible code base at http://github.com/compai-lab/2025-MedIA-kiechle and provide a user-friendly library for omnidirectional volume slicing at https://pypi.org/project/OmniSlicer.",
-    "authors": [
-      "Johannes Kiechle",
-      "Stefan M. Fischer",
-      "Daniel M. Lang",
-      "Cosmin I. Bercea",
-      "Matthew J. Nyflot",
-      "Lina Felsner",
-      "Julia A. Schnabel",
-      "Jan C. Peeken"
-    ],
-    "categories": [
-      "eess.IV",
-      "cs.AI",
-      "cs.LG",
-      "q-bio.QM"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09605v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09605v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.63
-  },
-  {
     "arxiv_id": "2511.10338v1",
     "title": "BhashaKritika: Building Synthetic Pretraining Data at Scale for Indic Languages",
     "summary": "In the context of pretraining of Large Language Models (LLMs), synthetic data has emerged as an alternative for generating high-quality pretraining data at scale. This is particularly beneficial in low-resource language settings where the benefits of recent LLMs have been unevenly distributed across languages. In this work, we present a systematic study on the generation and evaluation of synthetic multilingual pretraining data for Indic languages, where we construct a large-scale synthetic dataset BhashaKritika, comprising 540B tokens using 5 different techniques for 10 languages. We explore the impact of grounding generation in documents, personas, and topics. We analyze how language choice, both in the prompt instructions and document grounding, affects data quality, and we compare translations of English content with native generation in Indic languages. To support scalable and language-sensitive evaluation, we introduce a modular quality evaluation pipeline that integrates script and language detection, metadata consistency checks, n-gram repetition analysis, and perplexity-based filtering using KenLM models. Our framework enables robust quality control across diverse scripts and linguistic contexts. Empirical results through model runs reveal key trade-offs in generation strategies and highlight best practices for constructing effective multilingual corpora.",
@@ -2477,6 +2429,33 @@
     "published": "2025-11-13",
     "url": "https://arxiv.org/abs/2511.10120v1",
     "pdf_url": "https://arxiv.org/pdf/2511.10120v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.63
+  },
+  {
+    "arxiv_id": "2511.09605v1",
+    "title": "TomoGraphView: 3D Medical Image Classification with Omnidirectional Slice Representations and Graph Neural Networks",
+    "summary": "The growing number of medical tomography examinations has necessitated the development of automated methods capable of extracting comprehensive imaging features to facilitate downstream tasks such as tumor characterization, while assisting physicians in managing their growing workload. However, 3D medical image classification remains a challenging task due to the complex spatial relationships and long-range dependencies inherent in volumetric data. Training models from scratch suffers from low data regimes, and the absence of 3D large-scale multimodal datasets has limited the development of 3D medical imaging foundation models. Recent studies, however, have highlighted the potential of 2D vision foundation models, originally trained on natural images, as powerful feature extractors for medical image analysis. Despite these advances, existing approaches that apply 2D models to 3D volumes via slice-based decomposition remain suboptimal. Conventional volume slicing strategies, which rely on canonical planes such as axial, sagittal, or coronal, may inadequately capture the spatial extent of target structures when these are misaligned with standardized viewing planes. Furthermore, existing slice-wise aggregation strategies rarely account for preserving the volumetric structure, resulting in a loss of spatial coherence across slices. To overcome these limitations, we propose TomoGraphView, a novel framework that integrates omnidirectional volume slicing with spherical graph-based feature aggregation. We publicly share our accessible code base at http://github.com/compai-lab/2025-MedIA-kiechle and provide a user-friendly library for omnidirectional volume slicing at https://pypi.org/project/OmniSlicer.",
+    "authors": [
+      "Johannes Kiechle",
+      "Stefan M. Fischer",
+      "Daniel M. Lang",
+      "Cosmin I. Bercea",
+      "Matthew J. Nyflot",
+      "Lina Felsner",
+      "Julia A. Schnabel",
+      "Jan C. Peeken"
+    ],
+    "categories": [
+      "eess.IV",
+      "cs.AI",
+      "cs.LG",
+      "q-bio.QM"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09605v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09605v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.63
@@ -3899,6 +3878,27 @@
     "published": "2025-11-13",
     "url": "https://arxiv.org/abs/2511.09925v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09925v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
+    "arxiv_id": "2511.09748v1",
+    "title": "How Small Can You Go? Compact Language Models for On-Device Critical Error Detection in Machine Translation",
+    "summary": "Large Language Models (LLMs) excel at evaluating machine translation (MT), but their scale and cost hinder deployment on edge devices and in privacy-sensitive workflows. We ask: how small can you get while still detecting meaning-altering translation errors? Focusing on English->German Critical Error Detection (CED), we benchmark sub-2B models (LFM2-350M, Qwen-3-0.6B/1.7B, Llama-3.2-1B-Instruct, Gemma-3-1B) across WMT21, WMT22, and SynCED-EnDe-2025. Our framework standardizes prompts, applies lightweight logit-bias calibration and majority voting, and reports both semantic quality (MCC, F1-ERR/F1-NOT) and compute metrics (VRAM, latency, throughput). Results reveal a clear sweet spot around one billion parameters: Gemma-3-1B provides the best quality-efficiency trade-off, reaching MCC=0.77 with F1-ERR=0.98 on SynCED-EnDe-2025 after merged-weights fine-tuning, while maintaining 400 ms single-sample latency on a MacBook Pro M4 Pro (24 GB). At larger scale, Qwen-3-1.7B attains the highest absolute MCC (+0.11 over Gemma) but with higher compute cost. In contrast, ultra-small models (0.6B) remain usable with few-shot calibration yet under-detect entity and number errors. Overall, compact, instruction-tuned LLMs augmented with lightweight calibration and small-sample supervision can deliver trustworthy, on-device CED for MT, enabling private, low-cost error screening in real-world translation pipelines. All datasets, prompts, and scripts are publicly available at our GitHub repository.",
+    "authors": [
+      "Muskaan Chopra",
+      "Lorenz Sparrenberg",
+      "Sarthak Khanna",
+      "Rafet Sifa"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09748v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09748v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.57
