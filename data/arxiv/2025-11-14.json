@@ -706,6 +706,25 @@
     "research_score": 0.73
   },
   {
+    "arxiv_id": "2511.09332v1",
+    "title": "Distribution-Based Feature Attribution for Explaining the Predictions of Any Classifier",
+    "summary": "The proliferation of complex, black-box AI models has intensified the need for techniques that can explain their decisions. Feature attribution methods have become a popular solution for providing post-hoc explanations, yet the field has historically lacked a formal problem definition. This paper addresses this gap by introducing a formal definition for the problem of feature attribution, which stipulates that explanations be supported by an underlying probability distribution represented by the given dataset. Our analysis reveals that many existing model-agnostic methods fail to meet this criterion, while even those that do often possess other limitations. To overcome these challenges, we propose Distributional Feature Attribution eXplanations (DFAX), a novel, model-agnostic method for feature attribution. DFAX is the first feature attribution method to explain classifier predictions directly based on the data distribution. We show through extensive experiments that DFAX is more effective and efficient than state-of-the-art baselines.",
+    "authors": [
+      "Xinpeng Li",
+      "Kai Ming Ting"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09332v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09332v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.73
+  },
+  {
     "arxiv_id": "2511.08968v1",
     "title": "Bayesian Mixture of Experts For Large Language Models",
     "summary": "We present Bayesian Mixture of Experts (Bayesian-MoE), a post-hoc uncertainty estimation framework for fine-tuned large language models (LLMs) based on Mixture-of-Experts architectures. Our method applies a structured Laplace approximation to the second linear layer of each expert, enabling calibrated uncertainty estimation without modifying the original training procedure or introducing new parameters. Unlike prior approaches, which apply Bayesian inference to added adapter modules, Bayesian-MoE directly targets the expert pathways already present in MoE models, leveraging their modular design for tractable block-wise posterior estimation. We use Kronecker-factored low-rank approximations to model curvature and derive scalable estimates of predictive uncertainty and marginal likelihood. Experiments on common-sense reasoning benchmarks with Qwen1.5-MoE and DeepSeek-MoE demonstrate that Bayesian-MoE improves both expected calibration error (ECE) and negative log-likelihood (NLL) over baselines, confirming its effectiveness for reliable downstream decision-making.",
@@ -723,25 +742,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.08968v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08968v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.73
-  },
-  {
-    "arxiv_id": "2511.09332v1",
-    "title": "Distribution-Based Feature Attribution for Explaining the Predictions of Any Classifier",
-    "summary": "The proliferation of complex, black-box AI models has intensified the need for techniques that can explain their decisions. Feature attribution methods have become a popular solution for providing post-hoc explanations, yet the field has historically lacked a formal problem definition. This paper addresses this gap by introducing a formal definition for the problem of feature attribution, which stipulates that explanations be supported by an underlying probability distribution represented by the given dataset. Our analysis reveals that many existing model-agnostic methods fail to meet this criterion, while even those that do often possess other limitations. To overcome these challenges, we propose Distributional Feature Attribution eXplanations (DFAX), a novel, model-agnostic method for feature attribution. DFAX is the first feature attribution method to explain classifier predictions directly based on the data distribution. We show through extensive experiments that DFAX is more effective and efficient than state-of-the-art baselines.",
-    "authors": [
-      "Xinpeng Li",
-      "Kai Ming Ting"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09332v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09332v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.73
@@ -905,6 +905,37 @@
     "research_score": 0.71
   },
   {
+    "arxiv_id": "2511.10013v1",
+    "title": "MIRNet: Integrating Constrained Graph-Based Reasoning with Pre-training for Diagnostic Medical Imaging",
+    "summary": "Automated interpretation of medical images demands robust modeling of complex visual-semantic relationships while addressing annotation scarcity, label imbalance, and clinical plausibility constraints. We introduce MIRNet (Medical Image Reasoner Network), a novel framework that integrates self-supervised pre-training with constrained graph-based reasoning. Tongue image diagnosis is a particularly challenging domain that requires fine-grained visual and semantic understanding. Our approach leverages self-supervised masked autoencoder (MAE) to learn transferable visual representations from unlabeled data; employs graph attention networks (GAT) to model label correlations through expert-defined structured graphs; enforces clinical priors via constraint-aware optimization using KL divergence and regularization losses; and mitigates imbalance using asymmetric loss (ASL) and boosting ensembles. To address annotation scarcity, we also introduce TongueAtlas-4K, a comprehensive expert-curated benchmark comprising 4,000 images annotated with 22 diagnostic labels--representing the largest public dataset in tongue analysis. Validation shows our method achieves state-of-the-art performance. While optimized for tongue diagnosis, the framework readily generalizes to broader diagnostic medical imaging tasks.",
+    "authors": [
+      "Shufeng Kong",
+      "Zijie Wang",
+      "Nuan Cui",
+      "Hao Tang",
+      "Yihan Meng",
+      "Yuanyuan Wei",
+      "Feifan Chen",
+      "Yingheng Wang",
+      "Zhuo Cai",
+      "Yaonan Wang",
+      "Yulong Zhang",
+      "Yuzheng Li",
+      "Zibin Zheng",
+      "Caihua Liu"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.10013v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.10013v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.71
+  },
+  {
     "arxiv_id": "2511.10390v1",
     "title": "MonkeyOCR v1.5 Technical Report: Unlocking Robust Document Parsing for Complex Patterns",
     "summary": "Document parsing is a core task in document intelligence, supporting applications such as information extraction, retrieval-augmented generation, and automated document analysis. However, real-world documents often feature complex layouts with multi-level tables, embedded images or formulas, and cross-page structures, which remain challenging for existing OCR systems. We introduce MonkeyOCR v1.5, a unified vision-language framework that enhances both layout understanding and content recognition through a two-stage parsing pipeline. The first stage employs a large multimodal model to jointly predict document layout and reading order, leveraging visual information to ensure structural and sequential consistency. The second stage performs localized recognition of text, formulas, and tables within detected regions, maintaining high visual fidelity while reducing error propagation. To address complex table structures, we propose a visual consistency-based reinforcement learning scheme that evaluates recognition quality via render-and-compare alignment, improving structural accuracy without manual annotations. Additionally, two specialized modules, Image-Decoupled Table Parsing and Type-Guided Table Merging, are introduced to enable reliable parsing of tables containing embedded images and reconstruction of tables crossing pages or columns. Comprehensive experiments on OmniDocBench v1.5 demonstrate that MonkeyOCR v1.5 achieves state-of-the-art performance, outperforming PPOCR-VL and MinerU 2.5 while showing exceptional robustness in visually complex document scenarios.",
@@ -937,37 +968,6 @@
     "published": "2025-11-13",
     "url": "https://arxiv.org/abs/2511.10390v1",
     "pdf_url": "https://arxiv.org/pdf/2511.10390v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.71
-  },
-  {
-    "arxiv_id": "2511.10013v1",
-    "title": "MIRNet: Integrating Constrained Graph-Based Reasoning with Pre-training for Diagnostic Medical Imaging",
-    "summary": "Automated interpretation of medical images demands robust modeling of complex visual-semantic relationships while addressing annotation scarcity, label imbalance, and clinical plausibility constraints. We introduce MIRNet (Medical Image Reasoner Network), a novel framework that integrates self-supervised pre-training with constrained graph-based reasoning. Tongue image diagnosis is a particularly challenging domain that requires fine-grained visual and semantic understanding. Our approach leverages self-supervised masked autoencoder (MAE) to learn transferable visual representations from unlabeled data; employs graph attention networks (GAT) to model label correlations through expert-defined structured graphs; enforces clinical priors via constraint-aware optimization using KL divergence and regularization losses; and mitigates imbalance using asymmetric loss (ASL) and boosting ensembles. To address annotation scarcity, we also introduce TongueAtlas-4K, a comprehensive expert-curated benchmark comprising 4,000 images annotated with 22 diagnostic labels--representing the largest public dataset in tongue analysis. Validation shows our method achieves state-of-the-art performance. While optimized for tongue diagnosis, the framework readily generalizes to broader diagnostic medical imaging tasks.",
-    "authors": [
-      "Shufeng Kong",
-      "Zijie Wang",
-      "Nuan Cui",
-      "Hao Tang",
-      "Yihan Meng",
-      "Yuanyuan Wei",
-      "Feifan Chen",
-      "Yingheng Wang",
-      "Zhuo Cai",
-      "Yaonan Wang",
-      "Yulong Zhang",
-      "Yuzheng Li",
-      "Zibin Zheng",
-      "Caihua Liu"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.10013v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.10013v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.71
@@ -1284,20 +1284,22 @@
     "research_score": 0.69
   },
   {
-    "arxiv_id": "2511.08904v1",
-    "title": "Consistency Change Detection Framework for Unsupervised Remote Sensing Change Detection",
-    "summary": "Unsupervised remote sensing change detection aims to monitor and analyze changes from multi-temporal remote sensing images in the same geometric region at different times, without the need for labeled training data. Previous unsupervised methods attempt to achieve style transfer across multi-temporal remote sensing images through reconstruction by a generator network, and then capture the unreconstructable areas as the changed regions. However, it often leads to poor performance due to generator overfitting. In this paper, we propose a novel Consistency Change Detection Framework (CCDF) to address this challenge. Specifically, we introduce a Cycle Consistency (CC) module to reduce the overfitting issues in the generator-based reconstruction. Additionally, we propose a Semantic Consistency (SC) module to enable detail reconstruction. Extensive experiments demonstrate that our method outperforms other state-of-the-art approaches.",
+    "arxiv_id": "2511.09873v1",
+    "title": "HierRouter: Coordinated Routing of Specialized Large Language Models via Reinforcement Learning",
+    "summary": "Large Language Models (LLMs) deliver state-of-the-art performance across many tasks but impose high computational and memory costs, limiting their deployment in resource-constrained or real-time settings. To address this, we propose HierRouter, a hierarchical routing approach that dynamically assembles inference pipelines from a pool of specialized, lightweight language models. Formulated as a finite-horizon Markov Decision Process (MDP), our approach trains a Proximal Policy Optimization (PPO)-based reinforcement learning agent to iteratively select which models to invoke at each stage of multi-hop inference. The agent conditions on the evolving context and accumulated cost to make context-aware routing decisions. Experiments with three open-source candidate LLMs across six benchmarks, including QA, code generation, and mathematical reasoning, show that HierRouter improves response quality by up to 2.4x compared to using individual models independently, while incurring only a minimal additional inference cost on average. These results highlight the promise of hierarchical routing for cost-efficient, high-performance LLM inference. All codes can be found here https://github.com/ Nikunj-Gupta/hierouter.",
     "authors": [
-      "Yating Liu",
-      "Yan Lu"
+      "Nikunj Gupta",
+      "Bill Guo",
+      "Rajgopal Kannan",
+      "Viktor K. Prasanna"
     ],
     "categories": [
-      "cs.CV",
-      "cs.AI"
+      "cs.CL",
+      "cs.LG"
     ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.08904v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08904v1.pdf",
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.09873v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09873v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.69
@@ -1326,22 +1328,20 @@
     "research_score": 0.69
   },
   {
-    "arxiv_id": "2511.09873v1",
-    "title": "HierRouter: Coordinated Routing of Specialized Large Language Models via Reinforcement Learning",
-    "summary": "Large Language Models (LLMs) deliver state-of-the-art performance across many tasks but impose high computational and memory costs, limiting their deployment in resource-constrained or real-time settings. To address this, we propose HierRouter, a hierarchical routing approach that dynamically assembles inference pipelines from a pool of specialized, lightweight language models. Formulated as a finite-horizon Markov Decision Process (MDP), our approach trains a Proximal Policy Optimization (PPO)-based reinforcement learning agent to iteratively select which models to invoke at each stage of multi-hop inference. The agent conditions on the evolving context and accumulated cost to make context-aware routing decisions. Experiments with three open-source candidate LLMs across six benchmarks, including QA, code generation, and mathematical reasoning, show that HierRouter improves response quality by up to 2.4x compared to using individual models independently, while incurring only a minimal additional inference cost on average. These results highlight the promise of hierarchical routing for cost-efficient, high-performance LLM inference. All codes can be found here https://github.com/ Nikunj-Gupta/hierouter.",
+    "arxiv_id": "2511.08904v1",
+    "title": "Consistency Change Detection Framework for Unsupervised Remote Sensing Change Detection",
+    "summary": "Unsupervised remote sensing change detection aims to monitor and analyze changes from multi-temporal remote sensing images in the same geometric region at different times, without the need for labeled training data. Previous unsupervised methods attempt to achieve style transfer across multi-temporal remote sensing images through reconstruction by a generator network, and then capture the unreconstructable areas as the changed regions. However, it often leads to poor performance due to generator overfitting. In this paper, we propose a novel Consistency Change Detection Framework (CCDF) to address this challenge. Specifically, we introduce a Cycle Consistency (CC) module to reduce the overfitting issues in the generator-based reconstruction. Additionally, we propose a Semantic Consistency (SC) module to enable detail reconstruction. Extensive experiments demonstrate that our method outperforms other state-of-the-art approaches.",
     "authors": [
-      "Nikunj Gupta",
-      "Bill Guo",
-      "Rajgopal Kannan",
-      "Viktor K. Prasanna"
+      "Yating Liu",
+      "Yan Lu"
     ],
     "categories": [
-      "cs.CL",
-      "cs.LG"
+      "cs.CV",
+      "cs.AI"
     ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.09873v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09873v1.pdf",
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.08904v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08904v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.69
@@ -1405,6 +1405,27 @@
     "published": "2025-11-13",
     "url": "https://arxiv.org/abs/2511.10555v1",
     "pdf_url": "https://arxiv.org/pdf/2511.10555v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.69
+  },
+  {
+    "arxiv_id": "2511.10591v1",
+    "title": "Mined Prompting and Metadata-Guided Generation for Wound Care Visual Question Answering",
+    "summary": "The rapid expansion of asynchronous remote care has intensified provider workload, creating demand for AI systems that can assist clinicians in managing patient queries more efficiently. The MEDIQA-WV 2025 shared task addresses this challenge by focusing on generating free-text responses to wound care queries paired with images. In this work, we present two complementary approaches developed for the English track. The first leverages a mined prompting strategy, where training data is embedded and the top-k most similar examples are retrieved to serve as few-shot demonstrations during generation. The second approach builds on a metadata ablation study, which identified four metadata attributes that consistently enhance response quality. We train classifiers to predict these attributes for test cases and incorporate them into the generation pipeline, dynamically adjusting outputs based on prediction confidence. Experimental results demonstrate that mined prompting improves response relevance, while metadata-guided generation further refines clinical precision. Together, these methods highlight promising directions for developing AI-driven tools that can provide reliable and efficient wound care support.",
+    "authors": [
+      "Bavana Durgapraveen",
+      "Sornaraj Sivasankaran",
+      "Abhinand Balachandran",
+      "Sriram Rajkumar"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.10591v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.10591v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.69
@@ -1741,6 +1762,26 @@
     "research_score": 0.67
   },
   {
+    "arxiv_id": "2511.09179v1",
+    "title": "A Hybrid Search for Complex Table Question Answering in Securities Report",
+    "summary": "Recently, Large Language Models (LLMs) are gaining increased attention in the domain of Table Question Answering (TQA), particularly for extracting information from tables in documents. However, directly entering entire tables as long text into LLMs often leads to incorrect answers because most LLMs cannot inherently capture complex table structures. In this paper, we propose a cell extraction method for TQA without manual identification, even for complex table headers. Our approach estimates table headers by computing similarities between a given question and individual cells via a hybrid retrieval mechanism that integrates a language model and TF-IDF. We then select as the answer the cells at the intersection of the most relevant row and column. Furthermore, the language model is trained using contrastive learning on a small dataset of question-header pairs to enhance performance. We evaluated our approach in the TQA dataset from the U4 shared task at NTCIR-18. The experimental results show that our pipeline achieves an accuracy of 74.6\\%, outperforming existing LLMs such as GPT-4o mini~(63.9\\%). In the future, although we used traditional encoder models for retrieval in this study, we plan to incorporate more efficient text-search models to improve performance and narrow the gap with human evaluation results.",
+    "authors": [
+      "Daiki Shirafuji",
+      "Koji Tanaka",
+      "Tatsuhiko Saito"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09179v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09179v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.66
+  },
+  {
     "arxiv_id": "2511.08967v1",
     "title": "AuthSig: Safeguarding Scanned Signatures Against Unauthorized Reuse in Paperless Workflows",
     "summary": "With the deepening trend of paperless workflows, signatures as a means of identity authentication are gradually shifting from traditional ink-on-paper to electronic formats.Despite the availability of dynamic pressure-sensitive and PKI-based digital signatures, static scanned signatures remain prevalent in practice due to their convenience. However, these static images, having almost lost their authentication attributes, cannot be reliably verified and are vulnerable to malicious copying and reuse. To address these issues, we propose AuthSig, a novel static electronic signature framework based on generative models and watermark, which binds authentication information to the signature image. Leveraging the human visual system's insensitivity to subtle style variations, AuthSig finely modulates style embeddings during generation to implicitly encode watermark bits-enforcing a One Signature, One Use policy.To overcome the scarcity of handwritten signature data and the limitations of traditional augmentation methods, we introduce a keypoint-driven data augmentation strategy that effectively enhances style diversity to support robust watermark embedding. Experimental results show that AuthSig achieves over 98% extraction accuracy under both digital-domain distortions and signature-specific degradations, and remains effective even in print-scan scenarios.",
@@ -1759,26 +1800,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.08967v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08967v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.66
-  },
-  {
-    "arxiv_id": "2511.09179v1",
-    "title": "A Hybrid Search for Complex Table Question Answering in Securities Report",
-    "summary": "Recently, Large Language Models (LLMs) are gaining increased attention in the domain of Table Question Answering (TQA), particularly for extracting information from tables in documents. However, directly entering entire tables as long text into LLMs often leads to incorrect answers because most LLMs cannot inherently capture complex table structures. In this paper, we propose a cell extraction method for TQA without manual identification, even for complex table headers. Our approach estimates table headers by computing similarities between a given question and individual cells via a hybrid retrieval mechanism that integrates a language model and TF-IDF. We then select as the answer the cells at the intersection of the most relevant row and column. Furthermore, the language model is trained using contrastive learning on a small dataset of question-header pairs to enhance performance. We evaluated our approach in the TQA dataset from the U4 shared task at NTCIR-18. The experimental results show that our pipeline achieves an accuracy of 74.6\\%, outperforming existing LLMs such as GPT-4o mini~(63.9\\%). In the future, although we used traditional encoder models for retrieval in this study, we plan to incorporate more efficient text-search models to improve performance and narrow the gap with human evaluation results.",
-    "authors": [
-      "Daiki Shirafuji",
-      "Koji Tanaka",
-      "Tatsuhiko Saito"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09179v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09179v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.66
@@ -1929,29 +1950,6 @@
     "research_score": 0.65
   },
   {
-    "arxiv_id": "2511.08993v1",
-    "title": "Fast $k$-means clustering in Riemannian manifolds via Fréchet maps: Applications to large-dimensional SPD matrices",
-    "summary": "We introduce a novel, efficient framework for clustering data on high-dimensional, non-Euclidean manifolds that overcomes the computational challenges associated with standard intrinsic methods. The key innovation is the use of the $p$-Fréchet map $F^p : \\mathcal{M} \\to \\mathbb{R}^\\ell$ -- defined on a generic metric space $\\mathcal{M}$ -- which embeds the manifold data into a lower-dimensional Euclidean space $\\mathbb{R}^\\ell$ using a set of reference points $\\{r_i\\}_{i=1}^\\ell$, $r_i \\in \\mathcal{M}$. Once embedded, we can efficiently and accurately apply standard Euclidean clustering techniques such as k-means. We rigorously analyze the mathematical properties of $F^p$ in the Euclidean space and the challenging manifold of $n \\times n$ symmetric positive definite matrices $\\mathit{SPD}(n)$. Extensive numerical experiments using synthetic and real $\\mathit{SPD}(n)$ data demonstrate significant performance gains: our method reduces runtime by up to two orders of magnitude compared to intrinsic manifold-based approaches, all while maintaining high clustering accuracy, including scenarios where existing alternative methods struggle or fail.",
-    "authors": [
-      "Ji Shi",
-      "Nicolas Charon",
-      "Andreas Mang",
-      "Demetrio Labate",
-      "Robert Azencott"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.CV",
-      "math.DG"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.08993v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.08993v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.65
-  },
-  {
     "arxiv_id": "2511.10087v1",
     "title": "Opinion: Towards Unified Expressive Policy Optimization for Robust Robot Learning",
     "summary": "Offline-to-online reinforcement learning (O2O-RL) has emerged as a promising paradigm for safe and efficient robotic policy deployment but suffers from two fundamental challenges: limited coverage of multimodal behaviors and distributional shifts during online adaptation. We propose UEPO, a unified generative framework inspired by large language model pretraining and fine-tuning strategies. Our contributions are threefold: (1) a multi-seed dynamics-aware diffusion policy that efficiently captures diverse modalities without training multiple models; (2) a dynamic divergence regularization mechanism that enforces physically meaningful policy diversity; and (3) a diffusion-based data augmentation module that enhances dynamics model generalization. On the D4RL benchmark, UEPO achieves +5.9\\% absolute improvement over Uni-O4 on locomotion tasks and +12.4\\% on dexterous manipulation, demonstrating strong generalization and scalability.",
@@ -1972,6 +1970,29 @@
     "published": "2025-11-13",
     "url": "https://arxiv.org/abs/2511.10087v1",
     "pdf_url": "https://arxiv.org/pdf/2511.10087v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.65
+  },
+  {
+    "arxiv_id": "2511.08993v1",
+    "title": "Fast $k$-means clustering in Riemannian manifolds via Fréchet maps: Applications to large-dimensional SPD matrices",
+    "summary": "We introduce a novel, efficient framework for clustering data on high-dimensional, non-Euclidean manifolds that overcomes the computational challenges associated with standard intrinsic methods. The key innovation is the use of the $p$-Fréchet map $F^p : \\mathcal{M} \\to \\mathbb{R}^\\ell$ -- defined on a generic metric space $\\mathcal{M}$ -- which embeds the manifold data into a lower-dimensional Euclidean space $\\mathbb{R}^\\ell$ using a set of reference points $\\{r_i\\}_{i=1}^\\ell$, $r_i \\in \\mathcal{M}$. Once embedded, we can efficiently and accurately apply standard Euclidean clustering techniques such as k-means. We rigorously analyze the mathematical properties of $F^p$ in the Euclidean space and the challenging manifold of $n \\times n$ symmetric positive definite matrices $\\mathit{SPD}(n)$. Extensive numerical experiments using synthetic and real $\\mathit{SPD}(n)$ data demonstrate significant performance gains: our method reduces runtime by up to two orders of magnitude compared to intrinsic manifold-based approaches, all while maintaining high clustering accuracy, including scenarios where existing alternative methods struggle or fail.",
+    "authors": [
+      "Ji Shi",
+      "Nicolas Charon",
+      "Andreas Mang",
+      "Demetrio Labate",
+      "Robert Azencott"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CV",
+      "math.DG"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.08993v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.08993v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.65
@@ -2135,6 +2156,25 @@
     "research_score": 0.64
   },
   {
+    "arxiv_id": "2511.10453v1",
+    "title": "Reasoning About Intent for Ambiguous Requests",
+    "summary": "Large language models often respond to ambiguous requests by implicitly committing to one interpretation. Intent misunderstandings can frustrate users and create safety risks. To address this, we propose generating multiple interpretation-answer pairs in a single structured response to ambiguous requests. Our models are trained with reinforcement learning and customized reward functions using multiple valid answers as supervision. Experiments on conversational question answering and semantic parsing demonstrate that our method achieves higher coverage of valid answers than baseline approaches. Human evaluation confirms that predicted interpretations are highly aligned with their answers. Our approach promotes transparency with explicit interpretations, achieves efficiency by requiring only one generation step, and supports downstream applications through its structured output format.",
+    "authors": [
+      "Irina Saparina",
+      "Mirella Lapata"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.10453v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.10453v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.64
+  },
+  {
     "arxiv_id": "2511.09036v1",
     "title": "FedSDWC: Federated Synergistic Dual-Representation Weak Causal Learning for OOD",
     "summary": "Amid growing demands for data privacy and advances in computational infrastructure, federated learning (FL) has emerged as a prominent distributed learning paradigm. Nevertheless, differences in data distribution (such as covariate and semantic shifts) severely affect its reliability in real-world deployments. To address this issue, we propose FedSDWC, a causal inference method that integrates both invariant and variant features. FedSDWC infers causal semantic representations by modeling the weak causal influence between invariant and variant features, effectively overcoming the limitations of existing invariant learning methods in accurately capturing invariant features and directly constructing causal representations. This approach significantly enhances FL's ability to generalize and detect OOD data. Theoretically, we derive FedSDWC's generalization error bound under specific conditions and, for the first time, establish its relationship with client prior distributions. Moreover, extensive experiments conducted on multiple benchmark datasets validate the superior performance of FedSDWC in handling covariate and semantic shifts. For example, FedSDWC outperforms FedICON, the next best baseline, by an average of 3.04% on CIFAR-10 and 8.11% on CIFAR-100.",
@@ -2182,25 +2222,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.08887v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08887v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.64
-  },
-  {
-    "arxiv_id": "2511.10453v1",
-    "title": "Reasoning About Intent for Ambiguous Requests",
-    "summary": "Large language models often respond to ambiguous requests by implicitly committing to one interpretation. Intent misunderstandings can frustrate users and create safety risks. To address this, we propose generating multiple interpretation-answer pairs in a single structured response to ambiguous requests. Our models are trained with reinforcement learning and customized reward functions using multiple valid answers as supervision. Experiments on conversational question answering and semantic parsing demonstrate that our method achieves higher coverage of valid answers than baseline approaches. Human evaluation confirms that predicted interpretations are highly aligned with their answers. Our approach promotes transparency with explicit interpretations, achieves efficiency by requiring only one generation step, and supports downstream applications through its structured output format.",
-    "authors": [
-      "Irina Saparina",
-      "Mirella Lapata"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.10453v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.10453v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.64
@@ -2295,28 +2316,6 @@
     "research_score": 0.63
   },
   {
-    "arxiv_id": "2511.10260v1",
-    "title": "H3Former: Hypergraph-based Semantic-Aware Aggregation via Hyperbolic Hierarchical Contrastive Loss for Fine-Grained Visual Classification",
-    "summary": "Fine-Grained Visual Classification (FGVC) remains a challenging task due to subtle inter-class differences and large intra-class variations. Existing approaches typically rely on feature-selection mechanisms or region-proposal strategies to localize discriminative regions for semantic analysis. However, these methods often fail to capture discriminative cues comprehensively while introducing substantial category-agnostic redundancy. To address these limitations, we propose H3Former, a novel token-to-region framework that leverages high-order semantic relations to aggregate local fine-grained representations with structured region-level modeling. Specifically, we propose the Semantic-Aware Aggregation Module (SAAM), which exploits multi-scale contextual cues to dynamically construct a weighted hypergraph among tokens. By applying hypergraph convolution, SAAM captures high-order semantic dependencies and progressively aggregates token features into compact region-level representations. Furthermore, we introduce the Hyperbolic Hierarchical Contrastive Loss (HHCL), which enforces hierarchical semantic constraints in a non-Euclidean embedding space. The HHCL enhances inter-class separability and intra-class consistency while preserving the intrinsic hierarchical relationships among fine-grained categories. Comprehensive experiments conducted on four standard FGVC benchmarks validate the superiority of our H3Former framework.",
-    "authors": [
-      "Yongji Zhang",
-      "Siqi Li",
-      "Kuiyang Huang",
-      "Yue Gao",
-      "Yu Jiang"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.10260v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.10260v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.63
-  },
-  {
     "arxiv_id": "2511.09902v1",
     "title": "Incremental Generation is Necessity and Sufficient for Universality in Flow-Based Modelling",
     "summary": "Incremental flow-based denoising models have reshaped generative modelling, but their empirical advantage still lacks a rigorous approximation-theoretic foundation. We show that incremental generation is necessary and sufficient for universal flow-based generation on the largest natural class of self-maps of $[0,1]^d$ compatible with denoising pipelines, namely the orientation-preserving homeomorphisms of $[0,1]^d$. All our guarantees are uniform on the underlying maps and hence imply approximation both samplewise and in distribution.   Using a new topological-dynamical argument, we first prove an impossibility theorem: the class of all single-step autonomous flows, independently of the architecture, width, depth, or Lipschitz activation of the underlying neural network, is meagre and therefore not universal in the space of orientation-preserving homeomorphisms of $[0,1]^d$. By exploiting algebraic properties of autonomous flows, we conversely show that every orientation-preserving Lipschitz homeomorphism on $[0,1]^d$ can be approximated at rate $\\mathcal{O}(n^{-1/d})$ by a composition of at most $K_d$ such flows, where $K_d$ depends only on the dimension. Under additional smoothness assumptions, the approximation rate can be made dimension-free, and $K_d$ can be chosen uniformly over the class being approximated. Finally, by linearly lifting the domain into one higher dimension, we obtain structured universal approximation results for continuous functions and for probability measures on $[0,1]^d$, the latter realized as pushforwards of empirical measures with vanishing $1$-Wasserstein error.",
@@ -2339,28 +2338,23 @@
     "research_score": 0.63
   },
   {
-    "arxiv_id": "2511.09605v1",
-    "title": "TomoGraphView: 3D Medical Image Classification with Omnidirectional Slice Representations and Graph Neural Networks",
-    "summary": "The growing number of medical tomography examinations has necessitated the development of automated methods capable of extracting comprehensive imaging features to facilitate downstream tasks such as tumor characterization, while assisting physicians in managing their growing workload. However, 3D medical image classification remains a challenging task due to the complex spatial relationships and long-range dependencies inherent in volumetric data. Training models from scratch suffers from low data regimes, and the absence of 3D large-scale multimodal datasets has limited the development of 3D medical imaging foundation models. Recent studies, however, have highlighted the potential of 2D vision foundation models, originally trained on natural images, as powerful feature extractors for medical image analysis. Despite these advances, existing approaches that apply 2D models to 3D volumes via slice-based decomposition remain suboptimal. Conventional volume slicing strategies, which rely on canonical planes such as axial, sagittal, or coronal, may inadequately capture the spatial extent of target structures when these are misaligned with standardized viewing planes. Furthermore, existing slice-wise aggregation strategies rarely account for preserving the volumetric structure, resulting in a loss of spatial coherence across slices. To overcome these limitations, we propose TomoGraphView, a novel framework that integrates omnidirectional volume slicing with spherical graph-based feature aggregation. We publicly share our accessible code base at http://github.com/compai-lab/2025-MedIA-kiechle and provide a user-friendly library for omnidirectional volume slicing at https://pypi.org/project/OmniSlicer.",
+    "arxiv_id": "2511.10260v1",
+    "title": "H3Former: Hypergraph-based Semantic-Aware Aggregation via Hyperbolic Hierarchical Contrastive Loss for Fine-Grained Visual Classification",
+    "summary": "Fine-Grained Visual Classification (FGVC) remains a challenging task due to subtle inter-class differences and large intra-class variations. Existing approaches typically rely on feature-selection mechanisms or region-proposal strategies to localize discriminative regions for semantic analysis. However, these methods often fail to capture discriminative cues comprehensively while introducing substantial category-agnostic redundancy. To address these limitations, we propose H3Former, a novel token-to-region framework that leverages high-order semantic relations to aggregate local fine-grained representations with structured region-level modeling. Specifically, we propose the Semantic-Aware Aggregation Module (SAAM), which exploits multi-scale contextual cues to dynamically construct a weighted hypergraph among tokens. By applying hypergraph convolution, SAAM captures high-order semantic dependencies and progressively aggregates token features into compact region-level representations. Furthermore, we introduce the Hyperbolic Hierarchical Contrastive Loss (HHCL), which enforces hierarchical semantic constraints in a non-Euclidean embedding space. The HHCL enhances inter-class separability and intra-class consistency while preserving the intrinsic hierarchical relationships among fine-grained categories. Comprehensive experiments conducted on four standard FGVC benchmarks validate the superiority of our H3Former framework.",
     "authors": [
-      "Johannes Kiechle",
-      "Stefan M. Fischer",
-      "Daniel M. Lang",
-      "Cosmin I. Bercea",
-      "Matthew J. Nyflot",
-      "Lina Felsner",
-      "Julia A. Schnabel",
-      "Jan C. Peeken"
+      "Yongji Zhang",
+      "Siqi Li",
+      "Kuiyang Huang",
+      "Yue Gao",
+      "Yu Jiang"
     ],
     "categories": [
-      "eess.IV",
-      "cs.AI",
-      "cs.LG",
-      "q-bio.QM"
+      "cs.CV",
+      "cs.AI"
     ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09605v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09605v1.pdf",
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.10260v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.10260v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.63
@@ -2438,21 +2432,28 @@
     "research_score": 0.63
   },
   {
-    "arxiv_id": "2511.09741v1",
-    "title": "TawPipe: Topology-Aware Weight Pipeline Parallelism for Accelerating Long-Context Large Models Training",
-    "summary": "Training large language models (LLMs) is fundamentally constrained by limited device memory and costly inter-device communication. Although pipeline parallelism alleviates memory pressure by partitioning models across devices, it incurs activation communication overhead that scales linearly with sequence length, limiting efficiency in long-context training. Recent weight-passing approaches (e.g., WeiPipe) mitigate this by transmitting model weights instead of activations, but suffer from redundant peer-to-peer (P2P) transfers and underutilized intra-node bandwidth. We propose TawPipe--topology-aware weight pipeline parallelism, which exploits hierarchical bandwidth in distributed clusters for improved communication efficiency. TawPipe: (i) groups devices based on topology to optimize intra-node collective and inter-node P2P communication; (ii) assigns each device a fixed shard of model weights and gradients, avoiding redundant transfers; and (iii) overlaps communication with computation to hide latency. Unlike global collective operations used in fully sharded data parallelism (FSDP), TawPipe confines most communication within node boundaries, significantly reducing cross-node traffic. Extensive experiments on up to 24 GPUs with LLaMA-style models show that TawPipe achieves superior throughput and scalability compared to state-of-the-art baselines.",
+    "arxiv_id": "2511.09605v1",
+    "title": "TomoGraphView: 3D Medical Image Classification with Omnidirectional Slice Representations and Graph Neural Networks",
+    "summary": "The growing number of medical tomography examinations has necessitated the development of automated methods capable of extracting comprehensive imaging features to facilitate downstream tasks such as tumor characterization, while assisting physicians in managing their growing workload. However, 3D medical image classification remains a challenging task due to the complex spatial relationships and long-range dependencies inherent in volumetric data. Training models from scratch suffers from low data regimes, and the absence of 3D large-scale multimodal datasets has limited the development of 3D medical imaging foundation models. Recent studies, however, have highlighted the potential of 2D vision foundation models, originally trained on natural images, as powerful feature extractors for medical image analysis. Despite these advances, existing approaches that apply 2D models to 3D volumes via slice-based decomposition remain suboptimal. Conventional volume slicing strategies, which rely on canonical planes such as axial, sagittal, or coronal, may inadequately capture the spatial extent of target structures when these are misaligned with standardized viewing planes. Furthermore, existing slice-wise aggregation strategies rarely account for preserving the volumetric structure, resulting in a loss of spatial coherence across slices. To overcome these limitations, we propose TomoGraphView, a novel framework that integrates omnidirectional volume slicing with spherical graph-based feature aggregation. We publicly share our accessible code base at http://github.com/compai-lab/2025-MedIA-kiechle and provide a user-friendly library for omnidirectional volume slicing at https://pypi.org/project/OmniSlicer.",
     "authors": [
-      "Houming Wu",
-      "Ling Chen"
+      "Johannes Kiechle",
+      "Stefan M. Fischer",
+      "Daniel M. Lang",
+      "Cosmin I. Bercea",
+      "Matthew J. Nyflot",
+      "Lina Felsner",
+      "Julia A. Schnabel",
+      "Jan C. Peeken"
     ],
     "categories": [
-      "cs.LG",
+      "eess.IV",
       "cs.AI",
-      "cs.DC"
+      "cs.LG",
+      "q-bio.QM"
     ],
     "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09741v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09741v1.pdf",
+    "url": "https://arxiv.org/abs/2511.09605v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09605v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.63
@@ -2762,6 +2763,27 @@
     "research_score": 0.61
   },
   {
+    "arxiv_id": "2511.10060v1",
+    "title": "Multivariate Gaussian Representation Learning for Medical Action Evaluation",
+    "summary": "Fine-grained action evaluation in medical vision faces unique challenges due to the unavailability of comprehensive datasets, stringent precision requirements, and insufficient spatiotemporal dynamic modeling of very rapid actions. To support development and evaluation, we introduce CPREval-6k, a multi-view, multi-label medical action benchmark containing 6,372 expert-annotated videos with 22 clinical labels. Using this dataset, we present GaussMedAct, a multivariate Gaussian encoding framework, to advance medical motion analysis through adaptive spatiotemporal representation learning. Multivariate Gaussian Representation projects the joint motions to a temporally scaled multi-dimensional space, and decomposes actions into adaptive 3D Gaussians that serve as tokens. These tokens preserve motion semantics through anisotropic covariance modeling while maintaining robustness to spatiotemporal noise. Hybrid Spatial Encoding, employing a Cartesian and Vector dual-stream strategy, effectively utilizes skeletal information in the form of joint and bone features. The proposed method achieves 92.1% Top-1 accuracy with real-time inference on the benchmark, outperforming the ST-GCN baseline by +5.9% accuracy with only 10% FLOPs. Cross-dataset experiments confirm the superiority of our method in robustness.",
+    "authors": [
+      "Luming Yang",
+      "Haoxian Liu",
+      "Siqing Li",
+      "Alper Yilmaz"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.10060v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.10060v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
     "arxiv_id": "2511.09216v1",
     "title": "Controllable protein design through Feynman-Kac steering",
     "summary": "Diffusion-based models have recently enabled the generation of realistic and diverse protein structures, yet they remain limited in their ability to steer outcomes toward specific functional or biochemical objectives, such as binding affinity or sequence composition. Here we extend the Feynman-Kac (FK) steering framework, an inference-time control approach, to diffusion-based protein design. By coupling FK steering with structure generation, the method guides sampling toward desirable structural or energetic features while maintaining the diversity of the underlying diffusion process. To enable simultaneous generation of both sequence and structure properties, rewards are computed on models refined through ProteinMPNN and all-atom relaxation. Applied to binder design, FK steering consistently improves predicted interface energetics across diverse targets with minimal computational overhead. More broadly, this work demonstrates that inference-time FK control generalizes diffusion-based protein design to arbitrary, non-differentiable, and reward-agnostic objectives, providing a unified and model-independent framework for guided molecular generation.",
@@ -2801,27 +2823,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09316v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09316v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.61
-  },
-  {
-    "arxiv_id": "2511.10060v1",
-    "title": "Multivariate Gaussian Representation Learning for Medical Action Evaluation",
-    "summary": "Fine-grained action evaluation in medical vision faces unique challenges due to the unavailability of comprehensive datasets, stringent precision requirements, and insufficient spatiotemporal dynamic modeling of very rapid actions. To support development and evaluation, we introduce CPREval-6k, a multi-view, multi-label medical action benchmark containing 6,372 expert-annotated videos with 22 clinical labels. Using this dataset, we present GaussMedAct, a multivariate Gaussian encoding framework, to advance medical motion analysis through adaptive spatiotemporal representation learning. Multivariate Gaussian Representation projects the joint motions to a temporally scaled multi-dimensional space, and decomposes actions into adaptive 3D Gaussians that serve as tokens. These tokens preserve motion semantics through anisotropic covariance modeling while maintaining robustness to spatiotemporal noise. Hybrid Spatial Encoding, employing a Cartesian and Vector dual-stream strategy, effectively utilizes skeletal information in the form of joint and bone features. The proposed method achieves 92.1% Top-1 accuracy with real-time inference on the benchmark, outperforming the ST-GCN baseline by +5.9% accuracy with only 10% FLOPs. Cross-dataset experiments confirm the superiority of our method in robustness.",
-    "authors": [
-      "Luming Yang",
-      "Haoxian Liu",
-      "Siqing Li",
-      "Alper Yilmaz"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.10060v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.10060v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.61
@@ -3049,30 +3050,6 @@
     "research_score": 0.6
   },
   {
-    "arxiv_id": "2511.09118v1",
-    "title": "Learning to Validate Generative Models: a Goodness-of-Fit Approach",
-    "summary": "Generative models are increasingly central to scientific workflows, yet their systematic use and interpretation require a proper understanding of their limitations through rigorous validation. Classic approaches struggle with scalability, statistical power, or interpretability when applied to high-dimensional data, making it difficult to certify the reliability of these models in realistic, high-dimensional scientific settings. Here, we propose the use of the New Physics Learning Machine (NPLM), a learning based approach to goodness-of-fit testing inspired by the Neyman-Pearson construction, to test generative networks trained on high-dimensional scientific data. We demonstrate the performance of NPLM for validation in two benchmark cases: generative models trained on mixtures of Gaussian models with increasing dimensionality, and a public end-to-end generator for the Large Hadron Collider called FlashSim, trained on jet data, typical in the field of high-energy physics. We demonstrate that the NPLM can serve as a powerful validation method while also providing a means to diagnose sub-optimally modeled regions of the data.",
-    "authors": [
-      "Pietro Cappelli",
-      "Gaia Grosso",
-      "Marco Letizia",
-      "Humberto Reyes-González",
-      "Marco Zanetti"
-    ],
-    "categories": [
-      "stat.ML",
-      "cs.LG",
-      "hep-ex",
-      "hep-ph"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09118v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09118v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.6
-  },
-  {
     "arxiv_id": "2511.09147v2",
     "title": "PressTrack-HMR: Pressure-Based Top-Down Multi-Person Global Human Mesh Recovery",
     "summary": "Multi-person global human mesh recovery (HMR) is crucial for understanding crowd dynamics and interactions. Traditional vision-based HMR methods sometimes face limitations in real-world scenarios due to mutual occlusions, insufficient lighting, and privacy concerns. Human-floor tactile interactions offer an occlusion-free and privacy-friendly alternative for capturing human motion. Existing research indicates that pressure signals acquired from tactile mats can effectively estimate human pose in single-person scenarios. However, when multiple individuals walk randomly on the mat simultaneously, how to distinguish intermingled pressure signals generated by different persons and subsequently acquire individual temporal pressure data remains a pending challenge for extending pressure-based HMR to the multi-person situation. In this paper, we present \\textbf{PressTrack-HMR}, a top-down pipeline that recovers multi-person global human meshes solely from pressure signals. This pipeline leverages a tracking-by-detection strategy to first identify and segment each individual's pressure signal from the raw pressure data, and subsequently performs HMR for each extracted individual signal. Furthermore, we build a multi-person interaction pressure dataset \\textbf{MIP}, which facilitates further research into pressure-based human motion analysis in multi-person scenarios. Experimental results demonstrate that our method excels in multi-person HMR using pressure data, with 89.2 $mm$ MPJPE and 112.6 $mm$ WA-MPJPE$_{100}$, and these showcase the potential of tactile mats for ubiquitous, privacy-preserving multi-person action recognition. Our dataset & code are available at https://github.com/Jiayue-Yuan/PressTrack-HMR.",
@@ -3095,6 +3072,30 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09147v2",
     "pdf_url": "https://arxiv.org/pdf/2511.09147v2.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.6
+  },
+  {
+    "arxiv_id": "2511.09118v1",
+    "title": "Learning to Validate Generative Models: a Goodness-of-Fit Approach",
+    "summary": "Generative models are increasingly central to scientific workflows, yet their systematic use and interpretation require a proper understanding of their limitations through rigorous validation. Classic approaches struggle with scalability, statistical power, or interpretability when applied to high-dimensional data, making it difficult to certify the reliability of these models in realistic, high-dimensional scientific settings. Here, we propose the use of the New Physics Learning Machine (NPLM), a learning based approach to goodness-of-fit testing inspired by the Neyman-Pearson construction, to test generative networks trained on high-dimensional scientific data. We demonstrate the performance of NPLM for validation in two benchmark cases: generative models trained on mixtures of Gaussian models with increasing dimensionality, and a public end-to-end generator for the Large Hadron Collider called FlashSim, trained on jet data, typical in the field of high-energy physics. We demonstrate that the NPLM can serve as a powerful validation method while also providing a means to diagnose sub-optimally modeled regions of the data.",
+    "authors": [
+      "Pietro Cappelli",
+      "Gaia Grosso",
+      "Marco Letizia",
+      "Humberto Reyes-González",
+      "Marco Zanetti"
+    ],
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "hep-ex",
+      "hep-ph"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09118v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09118v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.6
@@ -3691,50 +3692,6 @@
     "research_score": 0.57
   },
   {
-    "arxiv_id": "2511.10643v1",
-    "title": "Black-Box On-Policy Distillation of Large Language Models",
-    "summary": "Black-box distillation creates student large language models (LLMs) by learning from a proprietary teacher model's text outputs alone, without access to its internal logits or parameters. In this work, we introduce Generative Adversarial Distillation (GAD), which enables on-policy and black-box distillation. GAD frames the student LLM as a generator and trains a discriminator to distinguish its responses from the teacher LLM's, creating a minimax game. The discriminator acts as an on-policy reward model that co-evolves with the student, providing stable, adaptive feedback. Experimental results show that GAD consistently surpasses the commonly used sequence-level knowledge distillation. In particular, Qwen2.5-14B-Instruct (student) trained with GAD becomes comparable to its teacher, GPT-5-Chat, on the LMSYS-Chat automatic evaluation. The results establish GAD as a promising and effective paradigm for black-box LLM distillation.",
-    "authors": [
-      "Tianzhu Ye",
-      "Li Dong",
-      "Zewen Chi",
-      "Xun Wu",
-      "Shaohan Huang",
-      "Furu Wei"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.10643v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.10643v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.57
-  },
-  {
-    "arxiv_id": "2511.09652v1",
-    "title": "Optimistic Reinforcement Learning with Quantile Objectives",
-    "summary": "Reinforcement Learning (RL) has achieved tremendous success in recent years. However, the classical foundations of RL do not account for the risk sensitivity of the objective function, which is critical in various fields, including healthcare and finance. A popular approach to incorporate risk sensitivity is to optimize a specific quantile of the cumulative reward distribution. In this paper, we develop UCB-QRL, an optimistic learning algorithm for the $τ$-quantile objective in finite-horizon Markov decision processes (MDPs). UCB-QRL is an iterative algorithm in which, at each iteration, we first estimate the underlying transition probability and then optimize the quantile value function over a confidence ball around this estimate. We show that UCB-QRL yields a high-probability regret bound $\\mathcal O\\left((2/κ)^{H+1}H\\sqrt{SATH\\log(2SATH/δ)}\\right)$ in the episodic setting with $S$ states, $A$ actions, $T$ episodes, and $H$ horizons. Here, $κ>0$ is a problem-dependent constant that captures the sensitivity of the underlying MDP's quantile value.",
-    "authors": [
-      "Mohammad Alipour-Vaezi",
-      "Huaiyang Zhong",
-      "Kwok-Leung Tsui",
-      "Sajad Khodadadian"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09652v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09652v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.57
-  },
-  {
     "arxiv_id": "2511.09973v1",
     "title": "Difference Vector Equalization for Robust Fine-tuning of Vision-Language Models",
     "summary": "Contrastive pre-trained vision-language models, such as CLIP, demonstrate strong generalization abilities in zero-shot classification by leveraging embeddings extracted from image and text encoders. This paper aims to robustly fine-tune these vision-language models on in-distribution (ID) data without compromising their generalization abilities in out-of-distribution (OOD) and zero-shot settings. Current robust fine-tuning methods tackle this challenge by reusing contrastive learning, which was used in pre-training, for fine-tuning. However, we found that these methods distort the geometric structure of the embeddings, which plays a crucial role in the generalization of vision-language models, resulting in limited OOD and zero-shot performance. To address this, we propose Difference Vector Equalization (DiVE), which preserves the geometric structure during fine-tuning. The idea behind DiVE is to constrain difference vectors, each of which is obtained by subtracting the embeddings extracted from the pre-trained and fine-tuning models for the same data sample. By constraining the difference vectors to be equal across various data samples, we effectively preserve the geometric structure. Therefore, we introduce two losses: average vector loss (AVL) and pairwise vector loss (PVL). AVL preserves the geometric structure globally by constraining difference vectors to be equal to their weighted average. PVL preserves the geometric structure locally by ensuring a consistent multimodal alignment. Our experiments demonstrate that DiVE effectively preserves the geometric structure, achieving strong results across ID, OOD, and zero-shot metrics.",
@@ -3757,31 +3714,6 @@
     "published": "2025-11-13",
     "url": "https://arxiv.org/abs/2511.09973v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09973v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.57
-  },
-  {
-    "arxiv_id": "2511.10383v1",
-    "title": "Operator Models for Continuous-Time Offline Reinforcement Learning",
-    "summary": "Continuous-time stochastic processes underlie many natural and engineered systems. In healthcare, autonomous driving, and industrial control, direct interaction with the environment is often unsafe or impractical, motivating offline reinforcement learning from historical data. However, there is limited statistical understanding of the approximation errors inherent in learning policies from offline datasets. We address this by linking reinforcement learning to the Hamilton-Jacobi-Bellman equation and proposing an operator-theoretic algorithm based on a simple dynamic programming recursion. Specifically, we represent our world model in terms of the infinitesimal generator of controlled diffusion processes learned in a reproducing kernel Hilbert space. By integrating statistical learning methods and operator theory, we establish global convergence of the value function and derive finite-sample guarantees with bounds tied to system properties such as smoothness and stability. Our theoretical and numerical results indicate that operator-based approaches may hold promise in solving offline reinforcement learning using continuous-time optimal control.",
-    "authors": [
-      "Nicolas Hoischen",
-      "Petar Bevanda",
-      "Max Beier",
-      "Stefan Sosnowski",
-      "Boris Houska",
-      "Sandra Hirche"
-    ],
-    "categories": [
-      "stat.ML",
-      "cs.LG",
-      "eess.SY",
-      "math.OC"
-    ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.10383v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.10383v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.57
@@ -3826,6 +3758,75 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09737v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09737v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
+    "arxiv_id": "2511.10383v1",
+    "title": "Operator Models for Continuous-Time Offline Reinforcement Learning",
+    "summary": "Continuous-time stochastic processes underlie many natural and engineered systems. In healthcare, autonomous driving, and industrial control, direct interaction with the environment is often unsafe or impractical, motivating offline reinforcement learning from historical data. However, there is limited statistical understanding of the approximation errors inherent in learning policies from offline datasets. We address this by linking reinforcement learning to the Hamilton-Jacobi-Bellman equation and proposing an operator-theoretic algorithm based on a simple dynamic programming recursion. Specifically, we represent our world model in terms of the infinitesimal generator of controlled diffusion processes learned in a reproducing kernel Hilbert space. By integrating statistical learning methods and operator theory, we establish global convergence of the value function and derive finite-sample guarantees with bounds tied to system properties such as smoothness and stability. Our theoretical and numerical results indicate that operator-based approaches may hold promise in solving offline reinforcement learning using continuous-time optimal control.",
+    "authors": [
+      "Nicolas Hoischen",
+      "Petar Bevanda",
+      "Max Beier",
+      "Stefan Sosnowski",
+      "Boris Houska",
+      "Sandra Hirche"
+    ],
+    "categories": [
+      "stat.ML",
+      "cs.LG",
+      "eess.SY",
+      "math.OC"
+    ],
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.10383v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.10383v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
+    "arxiv_id": "2511.10643v1",
+    "title": "Black-Box On-Policy Distillation of Large Language Models",
+    "summary": "Black-box distillation creates student large language models (LLMs) by learning from a proprietary teacher model's text outputs alone, without access to its internal logits or parameters. In this work, we introduce Generative Adversarial Distillation (GAD), which enables on-policy and black-box distillation. GAD frames the student LLM as a generator and trains a discriminator to distinguish its responses from the teacher LLM's, creating a minimax game. The discriminator acts as an on-policy reward model that co-evolves with the student, providing stable, adaptive feedback. Experimental results show that GAD consistently surpasses the commonly used sequence-level knowledge distillation. In particular, Qwen2.5-14B-Instruct (student) trained with GAD becomes comparable to its teacher, GPT-5-Chat, on the LMSYS-Chat automatic evaluation. The results establish GAD as a promising and effective paradigm for black-box LLM distillation.",
+    "authors": [
+      "Tianzhu Ye",
+      "Li Dong",
+      "Zewen Chi",
+      "Xun Wu",
+      "Shaohan Huang",
+      "Furu Wei"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.10643v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.10643v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
+    "arxiv_id": "2511.09652v1",
+    "title": "Optimistic Reinforcement Learning with Quantile Objectives",
+    "summary": "Reinforcement Learning (RL) has achieved tremendous success in recent years. However, the classical foundations of RL do not account for the risk sensitivity of the objective function, which is critical in various fields, including healthcare and finance. A popular approach to incorporate risk sensitivity is to optimize a specific quantile of the cumulative reward distribution. In this paper, we develop UCB-QRL, an optimistic learning algorithm for the $τ$-quantile objective in finite-horizon Markov decision processes (MDPs). UCB-QRL is an iterative algorithm in which, at each iteration, we first estimate the underlying transition probability and then optimize the quantile value function over a confidence ball around this estimate. We show that UCB-QRL yields a high-probability regret bound $\\mathcal O\\left((2/κ)^{H+1}H\\sqrt{SATH\\log(2SATH/δ)}\\right)$ in the episodic setting with $S$ states, $A$ actions, $T$ episodes, and $H$ horizons. Here, $κ>0$ is a problem-dependent constant that captures the sensitivity of the underlying MDP's quantile value.",
+    "authors": [
+      "Mohammad Alipour-Vaezi",
+      "Huaiyang Zhong",
+      "Kwok-Leung Tsui",
+      "Sajad Khodadadian"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09652v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09652v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.57
@@ -4165,29 +4166,6 @@
     "research_score": 0.54
   },
   {
-    "arxiv_id": "2511.09105v1",
-    "title": "Cost-Minimized Label-Flipping Poisoning Attack to LLM Alignment",
-    "summary": "Large language models (LLMs) are increasingly deployed in real-world systems, making it critical to understand their vulnerabilities. While data poisoning attacks during RLHF/DPO alignment have been studied empirically, their theoretical foundations remain unclear. We investigate the minimum-cost poisoning attack required to steer an LLM's policy toward an attacker's target by flipping preference labels during RLHF/DPO, without altering the compared outputs. We formulate this as a convex optimization problem with linear constraints, deriving lower and upper bounds on the minimum attack cost. As a byproduct of this theoretical analysis, we show that any existing label-flipping attack can be post-processed via our proposed method to reduce the number of label flips required while preserving the intended poisoning effect. Empirical results demonstrate that this cost-minimization post-processing can significantly reduce poisoning costs over baselines, particularly when the reward model's feature dimension is small relative to the dataset size. These findings highlight fundamental vulnerabilities in RLHF/DPO pipelines and provide tools to evaluate their robustness against low-cost poisoning attacks.",
-    "authors": [
-      "Shigeki Kusaka",
-      "Keita Saito",
-      "Mikoto Kudo",
-      "Takumi Tanabe",
-      "Akifumi Wachi",
-      "Youhei Akimoto"
-    ],
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09105v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09105v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
     "arxiv_id": "2511.09576v1",
     "title": "Prostate-VarBench: A Benchmark with Interpretable TabNet Framework for Prostate Cancer Variant Classification",
     "summary": "Variants of Uncertain Significance (VUS) limit the clinical utility of prostate cancer genomics by delaying diagnosis and therapy when evidence for pathogenicity or benignity is incomplete. Progress is further limited by inconsistent annotations across sources and the absence of a prostate-specific benchmark for fair comparison. We introduce Prostate-VarBench, a curated pipeline for creating prostate-specific benchmarks that integrates COSMIC (somatic cancer mutations), ClinVar (expert-curated clinical variants), and TCGA-PRAD (prostate tumor genomics from The Cancer Genome Atlas) into a harmonized dataset of 193,278 variants supporting patient- or gene-aware splits to prevent data leakage. To ensure data integrity, we corrected a Variant Effect Predictor (VEP) issue that merged multiple transcript records, introducing ambiguity in clinical significance fields. We then standardized 56 interpretable features across eight clinically relevant tiers, including population frequency, variant type, and clinical context. AlphaMissense pathogenicity scores were incorporated to enhance missense variant classification and reduce VUS uncertainty. Building on this resource, we trained an interpretable TabNet model to classify variant pathogenicity, whose step-wise sparse masks provide per-case rationales consistent with molecular tumor board review practices. On the held-out test set, the model achieved 89.9% accuracy with balanced class metrics, and the VEP correction yields an 6.5% absolute reduction in VUS.",
@@ -4235,6 +4213,29 @@
     "research_score": 0.54
   },
   {
+    "arxiv_id": "2511.09105v1",
+    "title": "Cost-Minimized Label-Flipping Poisoning Attack to LLM Alignment",
+    "summary": "Large language models (LLMs) are increasingly deployed in real-world systems, making it critical to understand their vulnerabilities. While data poisoning attacks during RLHF/DPO alignment have been studied empirically, their theoretical foundations remain unclear. We investigate the minimum-cost poisoning attack required to steer an LLM's policy toward an attacker's target by flipping preference labels during RLHF/DPO, without altering the compared outputs. We formulate this as a convex optimization problem with linear constraints, deriving lower and upper bounds on the minimum attack cost. As a byproduct of this theoretical analysis, we show that any existing label-flipping attack can be post-processed via our proposed method to reduce the number of label flips required while preserving the intended poisoning effect. Empirical results demonstrate that this cost-minimization post-processing can significantly reduce poisoning costs over baselines, particularly when the reward model's feature dimension is small relative to the dataset size. These findings highlight fundamental vulnerabilities in RLHF/DPO pipelines and provide tools to evaluate their robustness against low-cost poisoning attacks.",
+    "authors": [
+      "Shigeki Kusaka",
+      "Keita Saito",
+      "Mikoto Kudo",
+      "Takumi Tanabe",
+      "Akifumi Wachi",
+      "Youhei Akimoto"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09105v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09105v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
     "arxiv_id": "2511.10054v1",
     "title": "BuddyMoE: Exploiting Expert Redundancy to Accelerate Memory-Constrained Mixture-of-Experts Inference",
     "summary": "Mixture-of-Experts (MoE) architectures scale language models by activating only a subset of specialized expert networks for each input token, thereby reducing the number of floating-point operations. However, the growing size of modern MoE models causes their full parameter sets to exceed GPU memory capacity; for example, Mixtral-8x7B has 45 billion parameters and requires 87 GB of memory even though only 14 billion parameters are used per token. Existing systems alleviate this limitation by offloading inactive experts to CPU memory, but transferring experts across the PCIe interconnect incurs significant latency (about 10 ms). Prefetching heuristics aim to hide this latency by predicting which experts are needed, but prefetch failures introduce significant stalls and amplify inference latency. In the event of a prefetch failure, prior work offers two primary solutions: either fetch the expert on demand, which incurs a long stall due to the PCIe bottleneck, or drop the expert from the computation, which significantly degrades model accuracy. The critical challenge, therefore, is to maintain both high inference speed and model accuracy when prefetching fails.",
@@ -4260,6 +4261,25 @@
     "research_score": 0.54
   },
   {
+    "arxiv_id": "2511.09796v1",
+    "title": "Predicate-Argument Structure Divergences in Chinese and English Parallel Sentences and their Impact on Language Transfer",
+    "summary": "Cross-lingual Natural Language Processing (NLP) has gained significant traction in recent years, offering practical solutions in low-resource settings by transferring linguistic knowledge from resource-rich to low-resource languages. This field leverages techniques like annotation projection and model transfer for language adaptation, supported by multilingual pre-trained language models. However, linguistic divergences hinder language transfer, especially among typologically distant languages. In this paper, we present an analysis of predicate-argument structures in parallel Chinese and English sentences. We explore the alignment and misalignment of predicate annotations, inspecting similarities and differences and proposing a categorization of structural divergences. The analysis and the categorization are supported by a qualitative and quantitative analysis of the results of an annotation projection experiment, in which, in turn, one of the two languages has been used as source language to project annotations into the corresponding parallel sentences. The results of this analysis show clearly that language transfer is asymmetric. An aspect that requires attention when it comes to selecting the source language in transfer learning applications and that needs to be investigated before any scientific claim about cross-lingual NLP is proposed.",
+    "authors": [
+      "Rocco Tripodi",
+      "Xiaoyu Liu"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09796v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09796v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
     "arxiv_id": "2511.09378v1",
     "title": "The 2025 Planning Performance of Frontier Large Language Models",
     "summary": "The capacity of Large Language Models (LLMs) for reasoning remains an active area of research, with the capabilities of frontier models continually advancing. We provide an updated evaluation of the end-to-end planning performance of three frontier LLMs as of 2025, where models are prompted to generate a plan from PDDL domain and task descriptions. We evaluate DeepSeek R1, Gemini 2.5 Pro, GPT-5 and as reference the planner LAMA on a subset of domains from the most recent Learning Track of the International Planning Competition. Our results show that on standard PDDL domains, the performance of GPT-5 in terms of solved tasks is competitive with LAMA. When the PDDL domains and tasks are obfuscated to test for pure reasoning, the performance of all LLMs degrades, though less severely than previously reported for other models. These results show substantial improvements over prior generations of LLMs, reducing the performance gap to planners on a challenging benchmark.",
@@ -4275,25 +4295,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.09378v1",
     "pdf_url": "https://arxiv.org/pdf/2511.09378v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
-    "arxiv_id": "2511.09796v1",
-    "title": "Predicate-Argument Structure Divergences in Chinese and English Parallel Sentences and their Impact on Language Transfer",
-    "summary": "Cross-lingual Natural Language Processing (NLP) has gained significant traction in recent years, offering practical solutions in low-resource settings by transferring linguistic knowledge from resource-rich to low-resource languages. This field leverages techniques like annotation projection and model transfer for language adaptation, supported by multilingual pre-trained language models. However, linguistic divergences hinder language transfer, especially among typologically distant languages. In this paper, we present an analysis of predicate-argument structures in parallel Chinese and English sentences. We explore the alignment and misalignment of predicate annotations, inspecting similarities and differences and proposing a categorization of structural divergences. The analysis and the categorization are supported by a qualitative and quantitative analysis of the results of an annotation projection experiment, in which, in turn, one of the two languages has been used as source language to project annotations into the corresponding parallel sentences. The results of this analysis show clearly that language transfer is asymmetric. An aspect that requires attention when it comes to selecting the source language in transfer learning applications and that needs to be investigated before any scientific claim about cross-lingual NLP is proposed.",
-    "authors": [
-      "Rocco Tripodi",
-      "Xiaoyu Liu"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09796v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09796v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.54
@@ -4385,6 +4386,26 @@
     "research_score": 0.53
   },
   {
+    "arxiv_id": "2511.10010v1",
+    "title": "The Role of Advanced Computer Architectures in Accelerating Artificial Intelligence Workloads",
+    "summary": "The remarkable progress in Artificial Intelligence (AI) is foundation-ally linked to a concurrent revolution in computer architecture. As AI models, particularly Deep Neural Networks (DNNs), have grown in complexity, their massive computational demands have pushed traditional architectures to their limits. This paper provides a structured review of this co-evolution, analyzing the architectural landscape designed to accelerate modern AI workloads. We explore the dominant architectural paradigms Graphics Processing Units (GPUs), Appli-cation-Specific Integrated Circuits (ASICs), and Field-Programmable Gate Ar-rays (FPGAs) by breaking down their design philosophies, key features, and per-formance trade-offs. The core principles essential for performance and energy efficiency, including dataflow optimization, advanced memory hierarchies, spar-sity, and quantization, are analyzed. Furthermore, this paper looks ahead to emerging technologies such as Processing-in-Memory (PIM) and neuromorphic computing, which may redefine future computation. By synthesizing architec-tural principles with quantitative performance data from industry-standard benchmarks, this survey presents a comprehensive picture of the AI accelerator landscape. We conclude that AI and computer architecture are in a symbiotic relationship, where hardware-software co-design is no longer an optimization but a necessity for future progress in computing.",
+    "authors": [
+      "Shahid Amin",
+      "Syed Pervez Hussnain Shah"
+    ],
+    "categories": [
+      "cs.AR",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2025-11-13",
+    "url": "https://arxiv.org/abs/2511.10010v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.10010v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.53
+  },
+  {
     "arxiv_id": "2511.09450v1",
     "title": "How does the Performance of the Data-driven Traffic Flow Forecasting Models deteriorate with Increasing Forecasting Horizon? An Extensive Approach Considering Statistical, Machine Learning and Deep Learning Models",
     "summary": "With rapid urbanization in recent decades, traffic congestion has intensified due to increased movement of people and goods. As planning shifts from demand-based to supply-oriented strategies, Intelligent Transportation Systems (ITS) have become essential for managing traffic within existing infrastructure. A core ITS function is traffic forecasting, enabling proactive measures like ramp metering, signal control, and dynamic routing through platforms such as Google Maps. This study assesses the performance of statistical, machine learning (ML), and deep learning (DL) models in forecasting traffic speed and flow using real-world data from California's Harbor Freeway, sourced from the Caltrans Performance Measurement System (PeMS). Each model was evaluated over 20 forecasting windows (up to 1 hour 40 minutes) using RMSE, MAE, and R-Square metrics. Results show ANFIS-GP performs best at early windows with RMSE of 0.038, MAE of 0.0276, and R-Square of 0.9983, while Bi-LSTM is more robust for medium-term prediction due to its capacity to model long-range temporal dependencies, achieving RMSE of 0.1863, MAE of 0.0833, and R-Square of 0.987 at a forecasting of 20. The degradation in model performance was quantified using logarithmic transformation, with slope values used to measure robustness. Among DL models, Bi-LSTM had the flattest slope (0.0454 RMSE, 0.0545 MAE for flow), whereas ANFIS-GP had 0.1058 for RMSE and 0.1037 for flow MAE. The study concludes by identifying hybrid models as a promising future direction.",
@@ -4449,26 +4470,6 @@
     "research_score": 0.53
   },
   {
-    "arxiv_id": "2511.10010v1",
-    "title": "The Role of Advanced Computer Architectures in Accelerating Artificial Intelligence Workloads",
-    "summary": "The remarkable progress in Artificial Intelligence (AI) is foundation-ally linked to a concurrent revolution in computer architecture. As AI models, particularly Deep Neural Networks (DNNs), have grown in complexity, their massive computational demands have pushed traditional architectures to their limits. This paper provides a structured review of this co-evolution, analyzing the architectural landscape designed to accelerate modern AI workloads. We explore the dominant architectural paradigms Graphics Processing Units (GPUs), Appli-cation-Specific Integrated Circuits (ASICs), and Field-Programmable Gate Ar-rays (FPGAs) by breaking down their design philosophies, key features, and per-formance trade-offs. The core principles essential for performance and energy efficiency, including dataflow optimization, advanced memory hierarchies, spar-sity, and quantization, are analyzed. Furthermore, this paper looks ahead to emerging technologies such as Processing-in-Memory (PIM) and neuromorphic computing, which may redefine future computation. By synthesizing architec-tural principles with quantitative performance data from industry-standard benchmarks, this survey presents a comprehensive picture of the AI accelerator landscape. We conclude that AI and computer architecture are in a symbiotic relationship, where hardware-software co-design is no longer an optimization but a necessity for future progress in computing.",
-    "authors": [
-      "Shahid Amin",
-      "Syed Pervez Hussnain Shah"
-    ],
-    "categories": [
-      "cs.AR",
-      "cs.AI",
-      "cs.LG"
-    ],
-    "published": "2025-11-13",
-    "url": "https://arxiv.org/abs/2511.10010v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.10010v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.53
-  },
-  {
     "arxiv_id": "2511.09396v1",
     "title": "Multimodal Large Language Models for Low-Resource Languages: A Case Study for Basque",
     "summary": "Current Multimodal Large Language Models exhibit very strong performance for several demanding tasks. While commercial MLLMs deliver acceptable performance in low-resource languages, comparable results remain unattained within the open science community. In this paper, we aim to develop a strong MLLM for a low-resource language, namely Basque. For that purpose, we develop our own training and evaluation image-text datasets. Using two different Large Language Models as backbones, the Llama-3.1-Instruct model and a Basque-adapted variant called Latxa, we explore several data mixtures for training. We show that: i) low ratios of Basque multimodal data (around 20%) are already enough to obtain solid results on Basque benchmarks, and ii) contrary to expected, a Basque instructed backbone LLM is not required to obtain a strong MLLM in Basque. Our results pave the way to develop MLLMs for other low-resource languages by openly releasing our resources.",
@@ -4490,6 +4491,25 @@
     "research_score": 0.53
   },
   {
+    "arxiv_id": "2511.09425v1",
+    "title": "Several Supporting Evidences for the Adaptive Feature Program",
+    "summary": "Theoretically exploring the advantages of neural networks might be one of the most challenging problems in the AI era. An adaptive feature program has recently been proposed to analyze the feature learning characteristic property of neural networks in a more abstract way. Motivated by the celebrated Le Cam equivalence, we advocate the over-parametrized sequence models to further simplify the analysis of the training dynamics of adaptive feature program and present several supporting evidences for the adaptive feature program. More precisely, after having introduced the feature error measure (FEM) to characterize the quality of the learned feature, we show that the FEM is decreasing during the training process of several concrete adaptive feature models including linear regression, single/multiple index models, etc. We believe that this hints at the potential successes of the adaptive feature program.",
+    "authors": [
+      "Yicheng Li",
+      "Qian Lin"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09425v1",
+    "pdf_url": "https://arxiv.org/pdf/2511.09425v1.pdf",
+    "date": "2025-11-14",
+    "source": "arxiv",
+    "research_score": 0.52
+  },
+  {
     "arxiv_id": "2511.08846v1",
     "title": "On topological descriptors for graph products",
     "summary": "Topological descriptors have been increasingly utilized for capturing multiscale structural information in relational data. In this work, we consider various filtrations on the (box) product of graphs and the effect on their outputs on the topological descriptors - the Euler characteristic (EC) and persistent homology (PH). In particular, we establish a complete characterization of the expressive power of EC on general color-based filtrations. We also show that the PH descriptors of (virtual) graph products contain strictly more information than the computation on individual graphs, whereas EC does not. Additionally, we provide algorithms to compute the PH diagrams of the product of vertex- and edge-level filtrations on the graph product. We also substantiate our theoretical analysis with empirical investigations on runtime analysis, expressivity, and graph classification performance. Overall, this work paves way for powerful graph persistent descriptors via product filtrations. Code is available at https://github.com/Aalto-QuML/tda_graph_product.",
@@ -4506,25 +4526,6 @@
     "published": "2025-11-12",
     "url": "https://arxiv.org/abs/2511.08846v1",
     "pdf_url": "https://arxiv.org/pdf/2511.08846v1.pdf",
-    "date": "2025-11-14",
-    "source": "arxiv",
-    "research_score": 0.52
-  },
-  {
-    "arxiv_id": "2511.09425v1",
-    "title": "Several Supporting Evidences for the Adaptive Feature Program",
-    "summary": "Theoretically exploring the advantages of neural networks might be one of the most challenging problems in the AI era. An adaptive feature program has recently been proposed to analyze the feature learning characteristic property of neural networks in a more abstract way. Motivated by the celebrated Le Cam equivalence, we advocate the over-parametrized sequence models to further simplify the analysis of the training dynamics of adaptive feature program and present several supporting evidences for the adaptive feature program. More precisely, after having introduced the feature error measure (FEM) to characterize the quality of the learned feature, we show that the FEM is decreasing during the training process of several concrete adaptive feature models including linear regression, single/multiple index models, etc. We believe that this hints at the potential successes of the adaptive feature program.",
-    "authors": [
-      "Yicheng Li",
-      "Qian Lin"
-    ],
-    "categories": [
-      "cs.LG",
-      "stat.ML"
-    ],
-    "published": "2025-11-12",
-    "url": "https://arxiv.org/abs/2511.09425v1",
-    "pdf_url": "https://arxiv.org/pdf/2511.09425v1.pdf",
     "date": "2025-11-14",
     "source": "arxiv",
     "research_score": 0.52
