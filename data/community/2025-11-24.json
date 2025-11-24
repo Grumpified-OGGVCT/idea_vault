@@ -548,7 +548,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( 0.6.32 \u2794 0.6.38 )",
-    "date": "2025-11-24T15:17:15Z",
+    "date": "2025-11-24T16:10:23Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `0.6.32` -> `0.6.38` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for",
     "url": "https://github.com/Aviator-Coding/home-ops/pull/337",
     "source": "github_prs",
@@ -632,24 +632,24 @@
   },
   {
     "title": "[PR] Implement TradePex: Real-time strategy execution system for Hyperliquid with live signal extraction from RBI-approved strategies",
-    "date": "2025-11-24T13:46:43Z",
-    "summary": "## \u2705 ALL CRITICAL FIXES VERIFIED AND COMMITTED\n\n### Latest Fix: Strategy Directory Path Issue (Commit 6cab68d)\n\n**CRITICAL BUG FIXED**: The code was checking for `'successful_strategies'` in the file path, but strategies were actually located in `/root/KEEP_SAFE/v1/APEX/champions/strategies`. This c",
+    "date": "2025-11-24T15:47:31Z",
+    "summary": "## \u2705 ALL CRITICAL FIXES VERIFIED AND COMMITTED\n\n### Latest Fix: Strategy Auto-Approval Issue (Commit 1fe14a7)\n\n**CRITICAL BUG FIXED**: The code was performing redundant validation checks on strategies that were already RBI-approved from the `successful_strategies/` directory. The validation logic at",
     "url": "https://github.com/Iagrocred/apex/pull/4",
     "source": "github_prs",
     "highlights": [
-      "comments: 23",
+      "comments: 25",
       "pull request",
       "repo: apex"
     ]
   },
   {
     "title": "[PR] Model: Qwen3 Next",
-    "date": "2025-11-24T13:23:07Z",
+    "date": "2025-11-24T16:21:48Z",
     "summary": "**EDIT: README FIRST**\r\nThis is an implementation of a new type of attention gating in GGML.\r\nTherefore, this implementation will be focused on *CORRECTNESS ONLY*.\r\nSpeed tuning and support for more architectures will come in future PRs.\r\nPlease do not spam this threads with reports about performanc",
     "url": "https://github.com/ggml-org/llama.cpp/pull/16095",
     "source": "github_prs",
     "highlights": [
-      "comments: 263",
+      "comments: 265",
       "pull request",
       "repo: llama.cpp"
     ]
@@ -788,7 +788,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( v0.6.36 \u2794 0.6.38 )",
-    "date": "2025-11-24T12:50:38Z",
+    "date": "2025-11-24T16:27:12Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.6.36` -> `0.6.38` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>open-webui/open-webui (ghcr.io/open-webui/open-webui",
     "url": "https://github.com/tscibilia/home-ops/pull/1175",
     "source": "github_prs",
@@ -1316,7 +1316,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2025-11-24T15:25:06Z",
+    "date": "2025-11-24T16:02:39Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| docker.io/grafana/promtail | minor | `3.5.8` -> `3.6.1` |\n| [external-secrets](https://redirect.github.com/external-secrets/external-secrets) | minor | `1.0.0` -> `1.1.0` |\n| [ghcr.io/open-webui/open-webui](https:",
     "url": "https://github.com/SimonStiil/k3s-flux/pull/5",
     "source": "github_prs",
@@ -1628,7 +1628,7 @@
   },
   {
     "title": "[PR] Feat/cpk 1.5",
-    "date": "2025-11-24T10:55:44Z",
+    "date": "2025-11-24T16:20:31Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Runtime v2 export and single-endpoint runtime support\n  * Enhanced chat suggestions (dynamic/static) with loading state and new suggestion APIs\n  * Co\u2011agent state renders wit",
     "url": "https://github.com/CopilotKit/CopilotKit/pull/2638",
     "source": "github_prs",
@@ -1924,6 +1924,42 @@
       "comments: 1",
       "pull request",
       "repo: weave"
+    ]
+  },
+  {
+    "title": "[PR] refactor: Agent \uc2dc\uc2a4\ud15c \uc544\ud0a4\ud14d\ucc98 \uac1c\uc120 \ubc0f \ub9ac\ud329\ud1a0\ub9c1",
+    "date": "2025-11-24T16:16:22Z",
+    "summary": "## \uc694\uc57d\n- agent_manager.py\uc640 base_agent.py \ub9ac\ud329\ud1a0\ub9c1\uc73c\ub85c \ub354 \ub098\uc740 \uc870\ud569 \uad6c\uc870 \uad6c\ud604\n- \ubaa8\ub4e0 \ub3c4\uba54\uc778 \uc5d0\uc774\uc804\ud2b8 \uc5c5\ub370\uc774\ud2b8 (\uc601\uc591, \uc758\ub8cc\ubcf5\uc9c0, \ud034\uc988, \uc5f0\uad6c\ub17c\ubb38, \ud2b8\ub80c\ub4dc \uc2dc\uac01\ud654)\n- \ubcd1\uc6d0 \ubc0f \ubcf5\uc9c0 \ub370\uc774\ud130\ubca0\uc774\uc2a4 \uad00\ub9ac \uac1c\uc120\n- \ud5ec\uc2a4\ucf00\uc5b4 \ub370\uc774\ud130 \ucc98\ub9ac \ubc0f API \ud1b5\ud569 \uac1c\uc120\n- \uc5d0\uc774\uc804\ud2b8 \ub808\uc9c0\uc2a4\ud2b8\ub9ac, \uc2e4\ud589 \ud0c0\uc785, \uc608\uc678 \ucc98\ub9ac\ub97c \uc704\ud55c \uc0c8\ub85c\uc6b4 \ucf54\uc5b4 \ubaa8\ub4c8 \ucd94\uac00\n\n\ud83e\udd16 Generated with Claude Code\n\n<!-- This is an auto-generated comment: release notes by coderabbi",
+    "url": "https://github.com/KernelAcademy-AICamp/ai-camp-1st-llm-agent-service-project-mockinjay/pull/23",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ai-camp-1st-llm-agent-service-project-mockinjay"
+    ]
+  },
+  {
+    "title": "[PR] [Embed] feat: Add api_key and url parameters for custom embedding services",
+    "date": "2025-11-24T16:12:13Z",
+    "summary": "  | Q | A |\r\n  |------|----------|\r\n  |  Bug fix | No |\r\n  | New feature | Yes |\r\n  | BC | No |\r\n  | License | MIT |\r\n\r\n  Adds `api_key` and `url` parameters to `embed.model_config`, enabling the use of custom embedding services (Ollama, OpenAI, local models) instead of being limited to Typesense\r\n ",
+    "url": "https://github.com/acseo/TypesenseBundle/pull/137",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: TypesenseBundle"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency robusta-dev/holmesgpt to v0.16.3",
+    "date": "2025-11-24T15:59:04Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [robusta-dev/holmesgpt](https://redirect.github.com/robusta-dev/holmesgpt) | minor | `0.14.2` -> `0.16.3` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for more in",
+    "url": "https://github.com/killo431/tools/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: tools"
     ]
   }
 ]
