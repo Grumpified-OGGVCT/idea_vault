@@ -704,7 +704,7 @@
   },
   {
     "title": "[PR] Theming expirmentaiton part 2 (revamp)",
-    "date": "2025-12-04T02:37:38Z",
+    "date": "2025-12-04T05:13:55Z",
     "summary": "### **User description**\n# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked ",
     "url": "https://github.com/arthrod/open-webui/pull/81",
     "source": "github_prs",
@@ -880,6 +880,42 @@
       "comments: 7",
       "pull request",
       "repo: watercooler-cloud"
+    ]
+  },
+  {
+    "title": "[PR] Migrate document storage to postgres jsonb",
+    "date": "2025-12-04T05:24:22Z",
+    "summary": "Migrate document storage from MongoDB to PostgreSQL with JSONB.\n\nThis change unifies all data storage within the existing PostgreSQL database, simplifying infrastructure, improving data consistency with referential integrity, and streamlining tooling for document processing workers and API endpoints",
+    "url": "https://github.com/IntegerMan/JAIMES-AF/pull/43",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: JAIMES-AF"
+    ]
+  },
+  {
+    "title": "[PR] Add Stripe CLI hosting integration",
+    "date": "2025-12-04T05:22:19Z",
+    "summary": "Implements hosting integration for Stripe CLI to enable local webhook forwarding and testing in Aspire applications.\n\n## Changes\n\n**Integration** (`CommunityToolkit.Aspire.Hosting.Stripe`)\n- `StripeResource` - ExecutableResource wrapping Stripe CLI\n- `AddStripe()` - Registers Stripe CLI resource (ex",
+    "url": "https://github.com/CommunityToolkit/Aspire/pull/950",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: Aspire"
+    ]
+  },
+  {
+    "title": "[PR] Add LlamaCpp provider for local GGUF model inference",
+    "date": "2025-12-04T04:50:13Z",
+    "summary": "Adds LlamaCpp as a third LLM provider alongside Ollama and OpenAI, enabling local inference with quantized GGUF models (~350MB chat + ~140MB embeddings) with automatic GPU acceleration (CUDA/Metal).\n\n## Core Implementation\n\n**`backend/app/llamacpp_client.py`**\n- `LlamaCppClient`: Async streaming cha",
+    "url": "https://github.com/janega/ElectronAIChat/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ElectronAIChat"
     ]
   }
 ]
