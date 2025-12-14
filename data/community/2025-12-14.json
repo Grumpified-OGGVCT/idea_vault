@@ -789,14 +789,26 @@
   },
   {
     "title": "[PR] Luther: update provider guide to cerebras glm46 and include recommended settings for all",
-    "date": "2025-12-14T02:26:35Z",
+    "date": "2025-12-14T03:59:57Z",
     "summary": "## Summary\n- Automated Luther run for #502\n- See workflow run: https://github.com/vybestack/llxprt-code/actions/runs/20195975559\n\nRefs #502\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Expanded provider quick-reference",
     "url": "https://github.com/vybestack/llxprt-code/pull/789",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 6",
       "pull request",
       "repo: llxprt-code"
+    ]
+  },
+  {
+    "title": "[PR] fix: Make web/setup.sh disk space check work on macOS",
+    "date": "2025-12-14T04:21:06Z",
+    "summary": "## Summary\n- Fix `df -BG` command that fails on macOS with \"invalid option -- B\" error\n- Add OS detection to use correct `df` flags per platform (macOS: `-g`, Linux: `-BG`)\n- Add robust validation before numeric comparison to prevent \"integer expression expected\" error\n- Add graceful fallback if dis",
+    "url": "https://github.com/TheIllusionOfLife/Eureka/pull/223",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: Eureka"
     ]
   }
 ]
