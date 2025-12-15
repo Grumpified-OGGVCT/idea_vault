@@ -537,12 +537,12 @@
   },
   {
     "title": "[PR] chore(stack): keep services green (n8n runners + qwen3 embeddings)",
-    "date": "2025-12-15T01:58:42Z",
+    "date": "2025-12-15T03:26:01Z",
     "summary": "Summary:\n- Fix n8n runners auth drift by relying on env_file (no compose-time interpolation)\n- Align default embeddings to Qwen3 via TensorZero/Ollama and update docs/examples (OpenAI-compatible endpoint is /openai/v1)\n- Remove stale inline citation artifacts from docs\n- Add voice.agent.response.v1 ",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/305",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 12",
       "pull request",
       "repo: PMOVES.AI"
     ]
@@ -573,19 +573,19 @@
   },
   {
     "title": "[PR] fix: Make web/setup.sh disk space check work on macOS",
-    "date": "2025-12-15T01:47:05Z",
+    "date": "2025-12-15T03:14:32Z",
     "summary": "## Summary\n- Fix `df -BG` command that fails on macOS with \"invalid option -- B\" error\n- Add OS detection to use correct `df` flags per platform (macOS: `-g`, Linux: `-BG`)\n- Add robust validation before numeric comparison to prevent \"integer expression expected\" error\n- Add graceful fallback if dis",
     "url": "https://github.com/TheIllusionOfLife/Eureka/pull/223",
     "source": "github_prs",
     "highlights": [
-      "comments: 19",
+      "comments: 34",
       "pull request",
       "repo: Eureka"
     ]
   },
   {
     "title": "[PR] Add ML-based prompt injection detection ",
-    "date": "2025-12-15T01:44:25Z",
+    "date": "2025-12-15T03:16:31Z",
     "summary": "## Summary\r\nThis PR adds BERT model prompt injection evaluation alongside the existing pattern-based approach.\r\n\r\n### Context\r\nhttps://docs.google.com/document/d/1GNvriNWLAaJUMpWE1heBapxFshQEED5ZYfn1ixJvGCE/edit?tab=t.0#heading=h.rj4p6llxqvrq \r\n\r\n### Key Changes\r\n* Updated PromptInjectionScanner to ",
     "url": "https://github.com/block/goose/pull/5623",
     "source": "github_prs",
@@ -681,7 +681,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2025-12-14T20:44:09Z",
+    "date": "2025-12-15T02:44:08Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -773,6 +773,210 @@
       "comments: 1",
       "pull request",
       "repo: mistral-cloud-run"
+    ]
+  },
+  {
+    "title": "suggestion: better integration with Llama-server /Llama swap",
+    "date": "2025-12-15T03:21:05Z",
+    "summary": "Unfortunately, Ollama is going down the road of the  [Enshittification](https://en.wikipedia.org/wiki/Enshittification). They're trying to promote their models in the cloud, overturning the original vision of being a tool that simplifies local model management.\nOn the contrary, llama.cpp is constant",
+    "url": "https://github.com/n4ze3m/page-assist/issues/767",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 1",
+      "state: open",
+      "repo: page-assist"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add more Ollama Cloud models and custom model input support",
+    "date": "2025-12-15T03:37:17Z",
+    "summary": "## Description\r\nEnhances the ChatOllama Cloud component with additional model support and improved user experience.\r\n\r\n## Changes Made\r\n- **Added 7 new cloud models:**\r\n  - `qwen3-next:80b-cloud` - Advanced Qwen3 model with 80B parameters\r\n  - `mistral-large-3:675b-cloud` - Large Mistral model with ",
+    "url": "https://github.com/FlowiseAI/Flowise/pull/5557",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Flowise"
+    ]
+  },
+  {
+    "title": "[PR] Add SSH setup documentation for repository with trailing hyphen",
+    "date": "2025-12-15T03:36:15Z",
+    "summary": "Users encounter \"Repository not found\" errors when configuring SSH authentication because the repository name `skh-flamelang-StrategicKhaos-prefix-` has a trailing hyphen that's easily overlooked.\n\n## Changes\n\n- **SSH_SETUP.md**: Comprehensive setup guide with prominent warnings about correct URL fo",
+    "url": "https://github.com/strategickhaos-dao-llc/skh-flamelang-StrategicKhaos-prefix-/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: skh-flamelang-StrategicKhaos-prefix-"
+    ]
+  },
+  {
+    "title": "[PR] adds batch apis support",
+    "date": "2025-12-15T03:27:15Z",
+    "summary": "## Summary\n\nAdd support for asynchronous batch processing APIs to Bifrost, enabling large-scale inference jobs through providers like OpenAI and Anthropic.\n\n## Changes\n\n- Implemented core batch API methods in Bifrost: create, list, retrieve, cancel, and results\n- Added provider-specific implementati",
+    "url": "https://github.com/maximhq/bifrost/pull/955",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] Bump the external-dependencies group across 1 directory with 15 updates",
+    "date": "2025-12-15T03:05:05Z",
+    "summary": "Bumps the external-dependencies group with 13 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [org.bouncycastle:bcprov-jdk18on](https://github.com/bcgit/bc-java) | `1.81` | `1.82` |\n| [com.google.guava:guava](https://github.com/google/guava) | `33.4.8-jre` | `33.5.0-jre` |",
+    "url": "https://github.com/ministryofjustice/laa-ccms-caab/pull/554",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: laa-ccms-caab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 8 updates",
+    "date": "2025-12-15T02:33:20Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/software-bug-assistant directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.19.0` | `1.21.0` |\n| [langchain](https://github.com/langchain-ai/langchain) | `0.3.27` | `1.1",
+    "url": "https://github.com/codespace-labs/adk-samples-codespace/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: adk-samples-codespace"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 8 updates",
+    "date": "2025-12-15T02:32:59Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/software-bug-assistant directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.19.0` | `1.21.0` |\n| [langchain](https://github.com/langchain-ai/langchain) | `0.3.27` | `1.1",
+    "url": "https://github.com/ashishraghav/-adk-samples/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: -adk-samples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/personalized-shopping with 8 updates",
+    "date": "2025-12-15T02:30:36Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/personalized-shopping with 8 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-genai](https://github.com/googleapis/python-genai) | `1.49.0` | `1.55.0` |\n| [google-adk](https://github.com/google/adk-python) | `1.18.0` | `1.21.0` |\n| [p",
+    "url": "https://github.com/google/adk-samples/pull/784",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: adk-samples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/academic-research with 7 updates",
+    "date": "2025-12-15T02:30:35Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/academic-research with 7 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-genai](https://github.com/googleapis/python-genai) | `1.49.0` | `1.55.0` |\n| [pydantic](https://github.com/pydantic/pydantic) | `2.12.4` | `2.12.5` |\n| [google-",
+    "url": "https://github.com/google/adk-samples/pull/783",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: adk-samples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/marketing-agency with 7 updates",
+    "date": "2025-12-15T02:30:06Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/marketing-agency with 7 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-genai](https://github.com/googleapis/python-genai) | `1.49.0` | `1.55.0` |\n| [pydantic](https://github.com/pydantic/pydantic) | `2.12.4` | `2.12.5` |\n| [google-a",
+    "url": "https://github.com/google/adk-samples/pull/782",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: adk-samples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/financial-advisor with 5 updates",
+    "date": "2025-12-15T02:30:04Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/financial-advisor with 5 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-genai](https://github.com/googleapis/python-genai) | `1.52.0` | `1.55.0` |\n| [google-adk](https://github.com/google/adk-python) | `1.19.0` | `1.21.0` |\n| [ruff]",
+    "url": "https://github.com/google/adk-samples/pull/781",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: adk-samples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/customer-service with 7 updates",
+    "date": "2025-12-15T02:30:00Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/customer-service with 7 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.18.0` | `1.21.0` |\n| [pylint](https://github.com/pylint-dev/pylint) | `4.0.2` | `4.0.4` |\n| [ruff](https://github",
+    "url": "https://github.com/google/adk-samples/pull/780",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: adk-samples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/blog-writer with 5 updates",
+    "date": "2025-12-15T02:29:15Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/blog-writer with 5 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-genai](https://github.com/googleapis/python-genai) | `1.52.0` | `1.55.0` |\n| [google-adk](https://github.com/google/adk-python) | `1.19.0` | `1.21.0` |\n| [ruff](https",
+    "url": "https://github.com/google/adk-samples/pull/778",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: adk-samples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/image-scoring with 5 updates",
+    "date": "2025-12-15T02:28:18Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/image-scoring with 5 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.18.0` | `1.21.0` |\n| [ruff](https://github.com/astral-sh/ruff) | `0.14.4` | `0.14.9` |\n| [mypy](https://github.com/p",
+    "url": "https://github.com/google/adk-samples/pull/776",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: adk-samples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 9 updates",
+    "date": "2025-12-15T02:30:19Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/RAG directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.17.0` | `1.19.0` |\n| [pydantic-settings](https://github.com/pydantic/pydantic-settings) | `2.11.0` | `2.12.0` |\n",
+    "url": "https://github.com/MohsseniMahdi/Ai_Agent_Lab/pull/33",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Ai_Agent_Lab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 9 updates",
+    "date": "2025-12-15T02:30:13Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/RAG directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.16.0` | `1.19.0` |\n| [pydantic-settings](https://github.com/pydantic/pydantic-settings) | `2.11.0` | `2.12.0` |\n",
+    "url": "https://github.com/sajinnovation/adksamples/pull/32",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: adksamples"
+    ]
+  },
+  {
+    "title": "[PR] Add ChatOllama Cloud component",
+    "date": "2025-12-15T02:19:47Z",
+    "summary": "Add a dedicated ChatOllama Cloud chat model component to integrate with Ollama Cloud API (https://ollama.com) with complete tool calling functionality.\r\n\r\nFeatures:\r\n- Dropdown selection for available Ollama Cloud models:\r\n  * gpt-oss:120b, gpt-oss:20b\r\n  * deepseek-v3.1:671b\r\n  * qwen3-coder:480b, ",
+    "url": "https://github.com/FlowiseAI/Flowise/pull/5497",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Flowise"
     ]
   }
 ]
