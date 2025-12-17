@@ -297,12 +297,12 @@
   },
   {
     "title": "Allow importing multi-file GGUF models",
-    "date": "2025-12-09T21:58:25Z",
+    "date": "2025-12-17T17:51:32Z",
     "summary": "### What is the issue?\n\nCurrently Ollama can [import GGUF files](https://github.com/ollama/ollama/blob/main/docs/import.md). However, larger models are sometimes split into separate files. Ollama should support loading multiple GGUF files similar to loading safetensor files.\r\n\n\n### OS\n\n_No response_",
     "url": "https://github.com/ollama/ollama/issues/5245",
     "source": "github_issues",
     "highlights": [
-      "comments: 71",
+      "comments: 72",
       "state: open",
       "repo: ollama"
     ]
@@ -549,7 +549,7 @@
   },
   {
     "title": "[PR] chore: sync models.dev upstream",
-    "date": "2025-12-17T12:42:10Z",
+    "date": "2025-12-17T18:31:17Z",
     "summary": "Automated subtree sync from upstream.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added support for 100+ new AI models across multiple providers.\n  * Introduced an input token limit field in model specs.\n\n* **Updates**\n",
     "url": "https://github.com/Vivek-k3/modelsplus/pull/15",
     "source": "github_prs",
@@ -681,7 +681,7 @@
   },
   {
     "title": "[PR] fix(deps): update dependency llama-index to ^0.14.0",
-    "date": "2025-12-17T17:02:49Z",
+    "date": "2025-12-17T17:41:45Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-index](https://redirect.github.com/run-llama/llama_index) | `^0.13.0` -> `^0.14.0` | ![age](",
     "url": "https://github.com/mitodl/mit-learn/pull/2736",
     "source": "github_prs",
@@ -801,7 +801,7 @@
   },
   {
     "title": "[PR] feat: huggingface provider added",
-    "date": "2025-12-17T12:14:12Z",
+    "date": "2025-12-17T18:06:50Z",
     "summary": "## Summary\n\nAdding Hugging Face inference provider.\n\n## Changes\n\n- Added hugginface folder in core/providers with huggingface_test as needed\n- Added changes to makefile which implement search through of local versions of binaries instead of search in global path namespace\n- Updated documentation for",
     "url": "https://github.com/maximhq/bifrost/pull/1006",
     "source": "github_prs",
@@ -1041,7 +1041,7 @@
   },
   {
     "title": "[PR] `General`: Allow users to choose between Cloud AI, On-Premise AI, and No AI",
-    "date": "2025-12-17T13:15:56Z",
+    "date": "2025-12-17T18:17:57Z",
     "summary": "<!-- Thanks for contributing to Artemis! Before you submit your pull request, please make sure to check all tasks by putting an x in the [ ] (don't: [x ], [ x], do: [x]). Remove not applicable tasks and do not leave them unchecked -->\r\n<!-- If your pull request is not ready for review yet, create a ",
     "url": "https://github.com/ls1intum/Artemis/pull/11782",
     "source": "github_prs",
@@ -1113,12 +1113,12 @@
   },
   {
     "title": "[PR] Installation simulation mode fix #103",
-    "date": "2025-12-17T16:33:29Z",
+    "date": "2025-12-17T18:33:28Z",
     "summary": "## Summary\r\n<!-- Brief description of changes -->\r\n- The `--simulate` flag enables preview mode for installations, showing what would be installed without making any changes. This helps users:\r\n- Preview what would be installed with **real package sizes from LLM**\r\n- Check **actual disk space** avai",
     "url": "https://github.com/cortexlinux/cortex/pull/264",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: cortex"
     ]
@@ -1136,13 +1136,13 @@
     ]
   },
   {
-    "title": "[PR] Complete 4-Stream Infrastructure: Caching, OpenAI Integration, Security Remediation, Code Scanning",
-    "date": "2025-12-17T17:24:51Z",
-    "summary": "## Complete Implementation Summary\n\n### Status: \u2705 COMPLETE - All Objectives Achieved & Verified\n\n### Code Review Fixes (All Addressed)\n- [x] Remove unused `hashlib` import (commit 8d4cd88)\n- [x] Remove unused `json` import (commit 8d4cd88)\n- [x] Remove unused `sys` import (commit 8d4cd88)\n- [x] Remo",
+    "title": "[PR] Complete 4-Stream Infrastructure + Python Ingestion Pipeline + High Maturity Achievement: All 40 Capabilities at 100%",
+    "date": "2025-12-17T18:30:18Z",
+    "summary": "# Pull Request Template\n\n> **Version:** 1.2.0  \n> **Generated:** 2025-11-06  \n> **Purpose:** Standardized PR workflow with required safety checks and optional capability controls\n\n---\n\n## \u26a0\ufe0f REQUIRED Safety Confirmations\n\n**These checkboxes MUST be confirmed before merge:**\n\n- [x] **Network Safety A",
     "url": "https://github.com/Aries-Serpent/_codex_/pull/2516",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 19",
       "pull request",
       "repo: _codex_"
     ]
@@ -1205,6 +1205,42 @@
       "comments: 1",
       "pull request",
       "repo: langchain_study"
+    ]
+  },
+  {
+    "title": "[PR] Feature/retry with backoff",
+    "date": "2025-12-17T18:29:47Z",
+    "summary": "## Describe your changes\r\n\r\n#### Problem\r\nWhen an LLM provider (e.g. Mistral, OpenAI, Anthropic) returns a **rate limit error (HTTP 429)**, the evaluation pipeline currently fails immediately. This causes experiments to fail even though the error is often transient and recoverable.\r\n\r\n#### Solution\r",
+    "url": "https://github.com/bluewave-labs/verifywise/pull/2924",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: verifywise"
+    ]
+  },
+  {
+    "title": "[PR] v1.3.0: Integrate llama.cpp LLM inference with GPU acceleration and distributed RPC framework",
+    "date": "2025-12-17T18:23:38Z",
+    "summary": "Consolidates three feature branches (#101, #104, #105) into unified v1.3.0 release: native LLM inference via llama.cpp, distributed RPC framework for inter-shard communication, and infrastructure gap closure.\n\n## Merge Strategy\n\nMerged in dependency order with conflict resolution:\n- **PR #101** (fou",
+    "url": "https://github.com/makr-code/ThemisDB/pull/107",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: ThemisDB"
+    ]
+  },
+  {
+    "title": "[PR] Feature: Interactive Package Conflict Resolution + Saved Preferences(Issue #42)",
+    "date": "2025-12-17T17:55:52Z",
+    "summary": "## Summary\r\n<!-- Brief description of changes -->Implements interactive package conflict resolution UI and persistent conflict-resolution preferences.\r\n\r\n- Add interactive conflict-resolution UI to `cortex/cli.py`.\r\n  - Prompts user to choose which package to keep/remove when conflicts are detected.",
+    "url": "https://github.com/cortexlinux/cortex/pull/203",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 23",
+      "pull request",
+      "repo: cortex"
     ]
   }
 ]
