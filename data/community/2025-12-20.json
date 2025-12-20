@@ -633,7 +633,7 @@
   },
   {
     "title": "[PR] Feature: Interactive Package Conflict Resolution + Saved Preferences(Issue #42)",
-    "date": "2025-12-19T21:44:53Z",
+    "date": "2025-12-20T15:10:12Z",
     "summary": "## Summary\r\n<!-- Brief description of changes -->Implements interactive package conflict resolution UI and persistent conflict-resolution preferences.\r\n\r\n- Add interactive conflict-resolution UI to `cortex/cli.py`.\r\n  - Prompts user to choose which package to keep/remove when conflicts are detected.",
     "url": "https://github.com/cortexlinux/cortex/pull/203",
     "source": "github_prs",
@@ -657,7 +657,7 @@
   },
   {
     "title": "[PR] feat : add Parallel Task Execution for Multi-Step Installs",
-    "date": "2025-12-19T21:44:48Z",
+    "date": "2025-12-20T15:11:23Z",
     "summary": "## Related Issue\r\nCloses #269 <!-- REQUIRED: Issue number -->\r\n\r\n## Summary\r\n<!-- What does this PR do? -->\r\nImplemented parallel task execution system for Cortex that enables concurrent execution of independent installation steps, providing 2-3x speedup for complex multi-step installations.\r\n\r\n### ",
     "url": "https://github.com/cortexlinux/cortex/pull/288",
     "source": "github_prs",
@@ -681,7 +681,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2025-12-20T08:44:08Z",
+    "date": "2025-12-20T14:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -873,12 +873,12 @@
   },
   {
     "title": "[PR] deno: 2.5.6 -> 2.6.2",
-    "date": "2025-12-20T13:24:22Z",
+    "date": "2025-12-20T14:24:44Z",
     "summary": "Supersedes #471731\r\n\r\nOur self-update patch no longer apply, and when I had a closer look, I realized it can also be disabled with a Cargo feature change, we don't need to carry the patch anymore.\r\n\r\n## Things done\r\n\r\n<!-- Please check what applies. Note that these are not hard requirements but mere",
     "url": "https://github.com/NixOS/nixpkgs/pull/472362",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: nixpkgs"
     ]
@@ -1001,6 +1001,30 @@
       "comments: 1",
       "pull request",
       "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Installation simulation mode fix #103",
+    "date": "2025-12-20T15:11:04Z",
+    "summary": "## Summary\r\n<!-- Brief description of changes -->\r\n- The `--simulate` flag enables preview mode for installations, showing what would be installed without making any changes. This helps users:\r\n- Preview what would be installed with **real package sizes from LLM**\r\n- Check **actual disk space** avai",
+    "url": "https://github.com/cortexlinux/cortex/pull/264",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] feat(monitoring): comprehensive monitoring infrastructure for Claude Code agents",
+    "date": "2025-12-20T14:27:02Z",
+    "summary": "## Summary\n\n- Add Slack notifications for auto-claude runs (start, skip, complete, blocked)\n- Create K8s manifests for OTEL Collector, Cribl Edge, and Splunk\n- Add structured JSON event logging to auto-claude\n- Comprehensive documentation in `docs/MONITORING.md` and `docs/monitoring/`\n\n## Known Issu",
+    "url": "https://github.com/JacobPEvans/nix/pull/172",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nix"
     ]
   }
 ]
