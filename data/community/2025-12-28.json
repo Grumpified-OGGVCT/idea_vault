@@ -583,9 +583,9 @@
     ]
   },
   {
-    "title": "[PR] feat(container)!: Update image n8nio/n8n ( 1.122.1 \u2794 2.2.1 )",
-    "date": "2025-12-28T17:59:03Z",
-    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.122.1` -> `2.2.1` |\n\n---\n\n### Release Notes\n\n<details>\n<s",
+    "title": "[PR] feat(container)!: Update image n8nio/n8n ( 1.123.9 \u2794 2.2.1 )",
+    "date": "2025-12-28T19:51:48Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` -> `2.2.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v2.2.0`](https://",
     "url": "https://github.com/casmith/home-ops/pull/121",
     "source": "github_prs",
     "highlights": [
@@ -644,7 +644,7 @@
   },
   {
     "title": "[PR] feat(LTSEL-1): Add letta-toolkit shared SDK package scaffold",
-    "date": "2025-12-28T18:35:20Z",
+    "date": "2025-12-28T20:26:04Z",
     "summary": "## Summary\n\n- Creates the `letta-toolkit` Python package as the shared SDK for Letta tool management\n- Provides unified configuration, HTTP client with retry logic, and tool operations\n\n## Changes\n\n### New Package: `letta-toolkit/`\n\n**Core Modules:**\n- `config.py` - `LettaConfig` dataclass with envi",
     "url": "https://github.com/oculairmedia/Letta-toolselector/pull/1",
     "source": "github_prs",
@@ -752,7 +752,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2025-12-28T18:31:07Z",
+    "date": "2025-12-28T20:25:08Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -1364,19 +1364,19 @@
   },
   {
     "title": "[PR] feat: seal PH20 security & redis monitoring stack",
-    "date": "2025-12-28T18:51:53Z",
+    "date": "2025-12-28T19:40:40Z",
     "summary": "### **User description**\n## \ud83c\udf8a PH20 \uc655\uad6d \ubcf4\uc548 + \ubaa8\ub2c8\ud130\ub9c1 \uccb4\uacc4 \uc644\uc131\n\n### \u2705 \ubd09\uc778 \uc644\ub8cc\ub41c \uc601\uc5ed\ub4e4\n\n**1. Trinity Gate (\u771e)**\n- \ub7f0\ud0c0\uc784 \uba54\ud2b8\ub9ad \uc77c\uad00\uc131 \uac80\uc99d \uccb4\uacc4 \uad6c\ucd95\n- /health vs /metrics \uc790\ub3d9 \ube44\uad50 + EPS \uac80\uc99d\n- warmup\uc73c\ub85c \uba54\ud2b8\ub9ad \ub4f1\ub85d \ud2b8\ub9ac\uac70\n\n**2. Trivy 2-Step + SARIF (\u5584)**  \n- Gate: HIGH/CRITICAL \ucde8\uc57d\uc810 \ubc1c\uacac \uc2dc CI \ucc28\ub2e8\n- SARIF: \uc804\uccb4 \uacb0\uacfc Code Scanning\uc5d0 \uc601\uad6c \uae30\ub85d\n- \uce90\uc2dc \ucd5c\uc801\ud654\ub85c \uc18d\ub3c4 ",
     "url": "https://github.com/lofibrainwav/AFO_Kingdom/pull/10",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 4",
       "pull request",
       "repo: AFO_Kingdom"
     ]
   },
   {
     "title": "[PR] feat: Add support for remote providers and OpenAI integration",
-    "date": "2025-12-28T18:25:09Z",
+    "date": "2025-12-28T20:02:23Z",
     "summary": "## Summary\r\n\r\nThis PR adds a minimal OpenAI-compatible remote bridge so `/v1/responses` can proxy to multiple chat/completions providers. It also introduces CLI helpers to manage remote providers and remote models, and ensures expected OpenAI Codex CLI behavior when using remote providers (Working i",
     "url": "https://github.com/ollama/ollama/pull/13576",
     "source": "github_prs",
@@ -1420,6 +1420,30 @@
       "comments: 9",
       "pull request",
       "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.bleak-retry-connector: fix build on Darwin",
+    "date": "2025-12-28T19:43:36Z",
+    "summary": "Hydra: https://hydra.nixos.org/build/316097571\r\n\r\n1. Move `dbus-fast` from Linux only to all platforms (it's required in the check phase for all).\r\n2. Fix broken home-manager modules built by this change.\r\n\r\n**Note**: The linux rebuild count is due to the home-assistant modules which are a fairly li",
+    "url": "https://github.com/NixOS/nixpkgs/pull/473993",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] feat: Integrate LM Studio as local LLM provider",
+    "date": "2025-12-28T19:42:45Z",
+    "summary": "# New Provider: LM Studio Local LLM Integration\r\n\r\n## Related Issue\r\n<!-- \r\nThis PR addresses the technical assessment requirement to integrate a local open-source LLM into Qwery Core, replacing cloud-based Azure OpenAI dependencies.\r\n-->\r\n\r\n## What\r\n\r\nThis PR integrates **LM Studio** as a local, op",
+    "url": "https://github.com/Guepard-Corp/qwery-core/pull/81",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: qwery-core"
     ]
   }
 ]
