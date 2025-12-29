@@ -572,7 +572,7 @@
   },
   {
     "title": "[PR] feat(LTSEL-1): Add letta-toolkit shared SDK package scaffold",
-    "date": "2025-12-29T02:02:51Z",
+    "date": "2025-12-29T04:08:15Z",
     "summary": "## Summary\n\n- Creates the `letta-toolkit` Python package as the shared SDK for Letta tool management\n- Provides unified configuration, HTTP client with retry logic, and tool operations\n\n## Changes\n\n### New Package: `letta-toolkit/`\n\n**Core Modules:**\n- `config.py` - `LettaConfig` dataclass with envi",
     "url": "https://github.com/oculairmedia/Letta-toolselector/pull/1",
     "source": "github_prs",
@@ -584,24 +584,24 @@
   },
   {
     "title": "[PR] Fix main menu visibility and implement character selection",
-    "date": "2025-12-29T01:58:30Z",
+    "date": "2025-12-29T03:49:23Z",
     "summary": "- Add CharacterSelection component and update GameStore to support character selection\r\n- Add `characters.ts` configuration\r\n- Update ECS spawn logic to use selected character stats\r\n- Fix MainMenu visibility in headless tests by enforcing explicit styles\r\n- Add comprehensive E2E Playwright test for",
     "url": "https://github.com/arcade-cabinet/otter-river-rush/pull/63",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 15",
       "pull request",
       "repo: otter-river-rush"
     ]
   },
   {
     "title": "[PR] Enhancement: Adds OpenRouter Base URL for OpenRouter embedder provider",
-    "date": "2025-12-29T01:58:28Z",
+    "date": "2025-12-29T02:40:24Z",
     "summary": "### Related GitHub Issue\r\n\r\nCloses: #9053 \r\n\r\n### Description\r\n\r\nAllow users to specify a custom OpenRouter API URL when selecting OpenRouter as the embedder provider in Code Index settings.\r\n\r\nI attempted to follow the way oLlama did it's baseUrl config within the code indexing popover. My current ",
     "url": "https://github.com/RooCodeInc/Roo-Code/pull/10342",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 4",
       "pull request",
       "repo: Roo-Code"
     ]
@@ -784,6 +784,186 @@
       "comments: 2",
       "pull request",
       "repo: talos-cluster"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.n8n.io/n8nio/n8n docker tag to v2",
+    "date": "2025-12-29T04:13:16Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.122.1` -> `2.2.1` |\n\n---\n\n> [!WARNING]\n> So",
+    "url": "https://github.com/Tim275/talos-homelab/pull/58",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: talos-homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update ghcr.io/n8n-io/n8n ( 1.123.9 \u2192 2.2.1 ) [network]",
+    "date": "2025-12-29T04:11:02Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | OpenSSF |\n|---|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` \u2192 `2.2.1` | [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/n8",
+    "url": "https://github.com/haraldkoch/kochhaus-home/pull/8943",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kochhaus-home"
+    ]
+  },
+  {
+    "title": "[PR] feat: add resilient LLM infrastructure with Ollama \u2192 OpenRouter fallback",
+    "date": "2025-12-29T04:03:52Z",
+    "summary": "## Summary\n\nAdd three-tier LLM fallback architecture for handling rate limits and provider failures:\n\n- **ResilientLLM**: Ollama (primary) \u2192 OpenRouter free \u2192 OpenRouter paid\n- **RateLimitedLLMInvoker**: Jitter + circuit breaker protection\n- **Error classification**: Rate limit vs service vs timeout",
+    "url": "https://github.com/tnorlund/Portfolio/pull/569",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Portfolio"
+    ]
+  },
+  {
+    "title": "[PR] Update n8nio/n8n Docker tag to v2",
+    "date": "2025-12-29T03:56:58Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` \u2192 `2.2.1` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for more",
+    "url": "https://github.com/walnuts1018/infra/pull/2933",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 34",
+      "pull request",
+      "repo: infra"
+    ]
+  },
+  {
+    "title": "[PR] feat: integrate local llm (llama.cpp) and remove cloud dependencies",
+    "date": "2025-12-29T03:11:57Z",
+    "summary": "# Local LLM Integration (Llama.cpp)\r\n\r\nThis integration enables Qwery to run entirely offline using a local LLM via `llama.cpp`.\r\n\r\n## \ud83e\udde0 Local LLM Used\r\n- **Provider**: `llama.cpp` (server mode)\r\n- **Model**: Mistral 7B Instruct v0.2 (`mistral-7b-instruct-v0.2.Q4_K_M.gguf`)\r\n- **Reasoning**: Chosen ",
+    "url": "https://github.com/Guepard-Corp/qwery-core/pull/83",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: qwery-core"
+    ]
+  },
+  {
+    "title": "[PR] Bump the external-dependencies group across 1 directory with 16 updates",
+    "date": "2025-12-29T03:08:07Z",
+    "summary": "Bumps the external-dependencies group with 14 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [org.bouncycastle:bcprov-jdk18on](https://github.com/bcgit/bc-java) | `1.81` | `1.83` |\n| [com.google.guava:guava](https://github.com/google/guava) | `33.4.8-jre` | `33.5.0-jre` |",
+    "url": "https://github.com/ministryofjustice/laa-ccms-caab/pull/564",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: laa-ccms-caab"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2025-12-29T02:44:15Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] Design content pipeline for user-generated content",
+    "date": "2025-12-29T02:39:55Z",
+    "summary": "This commit introduces a comprehensive content strategy inspired by Unix history resources (like Spinellis's Unix History Repository) and developer content platforms (like Warp Terminus).\r\n\r\nContent Pipeline Design (docs/content/CONTENT_PIPELINE_DESIGN.md):\r\n- Four content categories: Command Spotli",
+    "url": "https://github.com/wildcard/caro/pull/122",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: caro"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 8 updates",
+    "date": "2025-12-29T02:39:08Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/software-bug-assistant directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.19.0` | `1.21.0` |\n| [langchain](https://github.com/langchain-ai/langchain) | `0.3.27` | `1.1",
+    "url": "https://github.com/ashishraghav/-adk-samples/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: -adk-samples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 8 updates",
+    "date": "2025-12-29T02:34:49Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/software-bug-assistant directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.19.0` | `1.21.0` |\n| [langchain](https://github.com/langchain-ai/langchain) | `0.3.27` | `1.1",
+    "url": "https://github.com/codespace-labs/adk-samples-codespace/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: adk-samples-codespace"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 9 updates",
+    "date": "2025-12-29T02:32:40Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/RAG directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.16.0` | `1.19.0` |\n| [pydantic-settings](https://github.com/pydantic/pydantic-settings) | `2.11.0` | `2.12.0` |\n",
+    "url": "https://github.com/sajinnovation/adksamples/pull/32",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: adksamples"
+    ]
+  },
+  {
+    "title": "[PR] Add voice control, network visualization, LLM help, beginner onboarding, complete Kali tool suite, bidirectional command capture, and configurable LLM preferences to StrikePackageGPT",
+    "date": "2025-12-29T02:30:14Z",
+    "summary": "Transforms StrikePackageGPT into a beginner-friendly, AI-assisted security platform by adding voice commands, interactive network mapping, contextual help, guided workflows, the complete Kali Linux arsenal, bidirectional command capture for advanced users, and configurable LLM provider/model selecti",
+    "url": "https://github.com/mblanke/StrikePackageGPT/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 22",
+      "pull request",
+      "repo: StrikePackageGPT"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/medical-pre-authorization with 9 updates",
+    "date": "2025-12-29T02:25:55Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/medical-pre-authorization with 9 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.16.0` | `1.21.0` |\n| [google-genai](https://github.com/googleapis/python-genai) | `1.45.0` | `1.56.0` |\n",
+    "url": "https://github.com/carlospjneda/adk-financial-advisor/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: adk-financial-advisor"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 9 updates",
+    "date": "2025-12-29T02:39:21Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/RAG directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.17.0` | `1.19.0` |\n| [pydantic-settings](https://github.com/pydantic/pydantic-settings) | `2.11.0` | `2.12.0` |\n",
+    "url": "https://github.com/MohsseniMahdi/Ai_Agent_Lab/pull/33",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Ai_Agent_Lab"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.123.9 \u2192 2.2.1 )",
+    "date": "2025-12-29T02:18:11Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` -> `2.2.1` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboar",
+    "url": "https://github.com/dstewen/talos-homecluster/pull/821",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: talos-homecluster"
     ]
   }
 ]
