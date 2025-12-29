@@ -572,7 +572,7 @@
   },
   {
     "title": "[PR] feat(LTSEL-1): Add letta-toolkit shared SDK package scaffold",
-    "date": "2025-12-29T14:26:28Z",
+    "date": "2025-12-29T16:17:13Z",
     "summary": "## Summary\n\n- Creates the `letta-toolkit` Python package as the shared SDK for Letta tool management\n- Provides unified configuration, HTTP client with retry logic, and tool operations\n\n## Changes\n\n### New Package: `letta-toolkit/`\n\n**Core Modules:**\n- `config.py` - `LettaConfig` dataclass with envi",
     "url": "https://github.com/oculairmedia/Letta-toolselector/pull/1",
     "source": "github_prs",
@@ -1340,7 +1340,7 @@
   },
   {
     "title": "[PR] Add 'redundant-exception-message' check (W0720)",
-    "date": "2025-12-29T13:36:48Z",
+    "date": "2025-12-29T15:55:04Z",
     "summary": "Add a new check that detects redundant exception messages when using 'raise ... from'. When exception chaining is used, including the original error message (via str(err), f-string interpolation, or concatenation) is redundant since Python preserves it via __cause__.\r\n\r\nExample of detected pattern:\r",
     "url": "https://github.com/pylint-dev/pylint/pull/10793",
     "source": "github_prs",
@@ -1384,6 +1384,54 @@
       "comments: 1",
       "pull request",
       "repo: infra"
+    ]
+  },
+  {
+    "title": "[feature]: Local-AI support",
+    "date": "2025-12-29T16:08:08Z",
+    "summary": "### Is there an existing issue for this?\n\n- [X] I have searched the existing issues\n\n### Summary\n\nSupport self-hosted LLM endpoints, such as Ollama, next to OpenAI's ChatGPT, to allow a fully self-hosted experience.\n\n### Why should this be worked on?\n\nPrivacy of prompts, OpenAI fees, reduce dependen",
+    "url": "https://github.com/makeplane/plane/issues/5941",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 11",
+      "state: open",
+      "repo: plane"
+    ]
+  },
+  {
+    "title": "[PR] feat: Get live provider and model data from model.dev",
+    "date": "2025-12-29T16:26:17Z",
+    "summary": "This pull request introduces improvements to model selection flexibility and configuration, as well as an environment variable for enabling live model data fetching. The most significant changes include allowing multiple model types to be filtered in the API, updating starter project components to s",
+    "url": "https://github.com/langflow-ai/langflow/pull/11007",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency robusta-dev/holmesgpt to v0.18.1",
+    "date": "2025-12-29T15:43:49Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [robusta-dev/holmesgpt](https://redirect.github.com/robusta-dev/holmesgpt) | minor | `0.14.2` -> `0.18.1` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for more in",
+    "url": "https://github.com/killo431/tools/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: tools"
+    ]
+  },
+  {
+    "title": "[PR] Add manifesto alignment evaluation for base nodes",
+    "date": "2025-12-29T15:33:07Z",
+    "summary": "Evaluates the 600+ base nodes against the 7 core manifesto principles (visual building, data privacy, transparency, tool mixing, sharing, experimentation, infrastructure ownership).\n\n## Deliverables\n\n- **MANIFESTO_EVALUATION.md** - 557-line assessment with 8/10 overall alignment score\n- **README.md*",
+    "url": "https://github.com/nodetool-ai/nodetool-base/pull/75",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nodetool-base"
     ]
   }
 ]
