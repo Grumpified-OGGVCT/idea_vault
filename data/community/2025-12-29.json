@@ -572,7 +572,7 @@
   },
   {
     "title": "[PR] feat(LTSEL-1): Add letta-toolkit shared SDK package scaffold",
-    "date": "2025-12-29T06:34:06Z",
+    "date": "2025-12-29T07:30:28Z",
     "summary": "## Summary\n\n- Creates the `letta-toolkit` Python package as the shared SDK for Letta tool management\n- Provides unified configuration, HTTP client with retry logic, and tool operations\n\n## Changes\n\n### New Package: `letta-toolkit/`\n\n**Core Modules:**\n- `config.py` - `LettaConfig` dataclass with envi",
     "url": "https://github.com/oculairmedia/Letta-toolselector/pull/1",
     "source": "github_prs",
@@ -824,8 +824,8 @@
   },
   {
     "title": "[PR] Update n8nio/n8n Docker tag to v2",
-    "date": "2025-12-29T06:07:08Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` \u2192 `2.2.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v2.2.0`](https://r",
+    "date": "2025-12-29T07:17:06Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` \u2192 `2.2.1` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for more",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
     "highlights": [
@@ -968,7 +968,7 @@
   },
   {
     "title": "[PR] Issue 113",
-    "date": "2025-12-29T06:42:24Z",
+    "date": "2025-12-29T07:01:23Z",
     "summary": "## Related Issue\r\nCloses #113\r\n\r\n## Summary\r\nImplements comprehensive **Uninstall Impact Analysis** feature for Cortex Linux, enabling safe package removal by analyzing dependencies, predicting service impacts, and providing actionable recommendations.\r\n\r\n### What This PR Does:\r\n- **Core Feature**: ",
     "url": "https://github.com/cortexlinux/cortex/pull/391",
     "source": "github_prs",
@@ -992,7 +992,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2025-12-29T06:22:27Z",
+    "date": "2025-12-29T07:23:05Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -1016,12 +1016,12 @@
   },
   {
     "title": "[PR] fix(wizard): allow setup to continue when API key is already present in ENV",
-    "date": "2025-12-29T05:55:38Z",
+    "date": "2025-12-29T07:28:21Z",
     "summary": "Closes #355\r\n\r\n**Summary**\r\nThis PR fixes an issue where [cortex wizard](vscode-file://vscode-app/usr/share/code/resources/app/out/vs/code/electron-browser/workbench/workbench.html) exits early even when a valid API key is already exported in the environment.\r\n\r\nCurrently, the wizard always prompts ",
     "url": "https://github.com/cortexlinux/cortex/pull/356",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: cortex"
     ]
@@ -1084,6 +1084,54 @@
       "comments: 0",
       "pull request",
       "repo: agent-base"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add support for remote providers and OpenAI integration",
+    "date": "2025-12-29T07:22:52Z",
+    "summary": "## Summary\r\n\r\nThis PR adds a minimal OpenAI-compatible remote bridge so `/v1/responses` can proxy to multiple chat/completions providers. It also introduces CLI helpers to manage remote providers and remote models, and ensures expected OpenAI Codex CLI behavior when using remote providers (Working i",
+    "url": "https://github.com/ollama/ollama/pull/13576",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: ollama"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add more Ollama Cloud models and custom model input support",
+    "date": "2025-12-29T07:15:15Z",
+    "summary": "## Description\r\nEnhances the ChatOllama Cloud component with additional model support and improved user experience.\r\n\r\n## Changes Made\r\n- **Added 7 new cloud models:**\r\n  - `qwen3-next:80b-cloud` - Advanced Qwen3 model with 80B parameters\r\n  - `mistral-large-3:675b-cloud` - Large Mistral model with ",
+    "url": "https://github.com/FlowiseAI/Flowise/pull/5557",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Flowise"
+    ]
+  },
+  {
+    "title": "[PR] feat: Comprehensive Testing Dashboard with Neo4j, Services, and Enhanced Agent Testing",
+    "date": "2025-12-29T07:12:25Z",
+    "summary": "## \ud83c\udfaf Overview\n\nThis PR adds a comprehensive testing dashboard for all AMAS system components, including Neo4j graph database testing, core services testing, and enhanced agent testing capabilities.\n\n## \u2728 Features Added\n\n### 1. **Neo4j Graph Database Testing** \u2b50 NEW\n- Added \\GraphDBTestingPanel\\ comp",
+    "url": "https://github.com/over7-maker/Advanced-Multi-Agent-Intelligence-System/pull/277",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 23",
+      "pull request",
+      "repo: Advanced-Multi-Agent-Intelligence-System"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n (1.123.9 \u2192 2.2.1)",
+    "date": "2025-12-29T07:11:55Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` \u2192 `2.2.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (ghcr.io/n8n-io/n8n)</summary>\n\n### [`",
+    "url": "https://github.com/drag0n141/home-ops/pull/3674",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
