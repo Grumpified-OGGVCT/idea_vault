@@ -572,7 +572,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2025-12-30T06:26:07Z",
+    "date": "2025-12-30T09:24:57Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -692,7 +692,7 @@
   },
   {
     "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n (1.123.9 \u2192 2.2.1)",
-    "date": "2025-12-30T08:09:35Z",
+    "date": "2025-12-30T09:09:51Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` \u2192 `2.2.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (ghcr.io/n8n-io/n8n)</summary>\n\n### [`",
     "url": "https://github.com/drag0n141/home-ops/pull/3674",
     "source": "github_prs",
@@ -764,7 +764,7 @@
   },
   {
     "title": "[PR] chore(deps): update automation",
-    "date": "2025-12-30T01:45:03Z",
+    "date": "2025-12-30T08:47:18Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) | minor | `4.3.0` -> `4.5.0` |\n| [caronc/apprise](https://redirect.github.com/caro",
     "url": "https://github.com/hobroker/selfhosted/pull/193",
     "source": "github_prs",
@@ -848,7 +848,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2025-12-30T02:44:15Z",
+    "date": "2025-12-30T08:44:16Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1004,8 +1004,8 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2025-12-30T08:25:49Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Interactive CLI enhancements, MCP server support, custom runbook catalogs, many built-in toolsets and example integrations.\n\n* **Documentation**\n  * Major docs overhaul: AI p",
+    "date": "2025-12-30T09:26:08Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Interactive CLI improvements, MCP server support, custom runbook catalogs, many built-in toolsets and provider integrations.\n\n* **Documentation**\n  * Large docs refresh: AI p",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
     "highlights": [
@@ -1024,6 +1024,78 @@
       "comments: 1",
       "pull request",
       "repo: auto-gpt-review-with-precondition"
+    ]
+  },
+  {
+    "title": "[PR] Feature/custom ai roles",
+    "date": "2025-12-30T09:25:40Z",
+    "summary": "Fixes #270\r\n\r\nThis PR introduces support for custom AI roles/personas for specialized tasks in Cortex.\r\n\r\nKey changes:\r\n- Added a new `--role` CLI flag (default: `default`)\r\n- Implemented YAML-backed role definitions\r\n- Included built-in roles: `default`, `security`, `devops`\r\n- Role-specific `syste",
+    "url": "https://github.com/cortexlinux/cortex/pull/310",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] :arrow_up: (deps): Update ghcr.io/n8n-io/n8n Docker tag to v2",
+    "date": "2025-12-30T09:07:27Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) |  | major | `1.123.9` -> `2.2.1` |\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n",
+    "url": "https://github.com/chezmoidotsh/arcane/pull/605",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: arcane"
+    ]
+  },
+  {
+    "title": "[PR] Add 'redundant-exception-message' check (W0720)",
+    "date": "2025-12-30T09:05:19Z",
+    "summary": "Add a new check that detects redundant exception messages when using 'raise ... from'. When exception chaining is used, including the original error message (via str(err), f-string interpolation, or concatenation) is redundant since Python preserves it via __cause__.\r\n\r\nExample of detected pattern:\r",
+    "url": "https://github.com/pylint-dev/pylint/pull/10793",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: pylint"
+    ]
+  },
+  {
+    "title": "[PR] feat: created autoclaude container",
+    "date": "2025-12-30T08:53:40Z",
+    "summary": "## Summary\r\n\r\n  This PR introduces an **enterprise-grade Docker deployment** of Auto-Claude, transforming the single-user Electron desktop app into a containerized **multi-tenant web platform** with JWT authentication, real-time collaboration, and advanced credential management.\r\n\r\n  This is a **com",
+    "url": "https://github.com/AndyMik90/Auto-Claude/pull/210",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Auto-Claude"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Plane.so integration for project tracking",
+    "date": "2025-12-30T08:41:14Z",
+    "summary": "## Summary\n\n- Adds Plane.so as an alternative to Linear for project management\n- Supports both cloud (api.plane.so) and self-hosted Plane instances\n- Architecture mirrors the Linear import module for consistency\n\n### Backend (Python)\n- Plane API client with workspace/project/work-item operations\n- S",
+    "url": "https://github.com/AndyMik90/Auto-Claude/pull/105",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Auto-Claude"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v1.1.2",
+    "date": "2025-12-30T09:06:22Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-b",
+    "url": "https://github.com/krushnatkhawale/springai-openai-hello-world/pull/29",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: springai-openai-hello-world"
     ]
   }
 ]
