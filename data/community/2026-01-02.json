@@ -236,12 +236,12 @@
   },
   {
     "title": "Meta: Request rate limiting",
-    "date": "2026-01-01T09:07:55Z",
+    "date": "2026-01-02T11:24:37Z",
     "summary": "This meta issue tracks scenarios where chat requests are blocked due to rate limiting.\n\n\ud83d\udc49 To get help with **premium request quota issues**, please comment in https://github.com/microsoft/vscode/issues/252230 .\n\nIn case you experience repeated rate-limiting in GitHub Copilot, please reach out to Git",
     "url": "https://github.com/microsoft/vscode/issues/253124",
     "source": "github_issues",
     "highlights": [
-      "comments: 293",
+      "comments: 294",
       "state: open",
       "repo: vscode"
     ]
@@ -560,12 +560,12 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Fix accessibility issue in SantasWorkshop",
-    "date": "2026-01-02T09:21:59Z",
+    "date": "2026-01-02T12:50:24Z",
     "summary": "\ud83d\udca1 **What:** Added `aria-label=\"Workshop Categories\"` to the tablist in `SantasWorkshop.tsx`.\n\ud83c\udfaf **Why:** To improve accessibility for screen reader users and fix a regression where the unit test was failing because it couldn't find the tablist by label.\n\u267f **Accessibility:** Screen readers will now an",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/69",
     "source": "github_prs",
     "highlights": [
-      "comments: 393",
+      "comments: 408",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -584,8 +584,8 @@
   },
   {
     "title": "[PR] V4",
-    "date": "2026-01-02T10:58:04Z",
-    "summary": "Trying to add gemini live and other features. Running into the 409 Conflict all the time though\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Native real\u2011time audio dialog (WebSocket) with live streaming; many new tools (",
+    "date": "2026-01-02T11:47:29Z",
+    "summary": "Trying to add gemini live and other features. Running into the 409 Conflict all the time though\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Native real\u2011time audio dialog (WebSocket) and a new live audio client; many use",
     "url": "https://github.com/agarw48550/Jarvis/pull/1",
     "source": "github_prs",
     "highlights": [
@@ -596,7 +596,7 @@
   },
   {
     "title": "[PR] chore: sync models.dev upstream",
-    "date": "2026-01-02T06:32:25Z",
+    "date": "2026-01-02T12:39:42Z",
     "summary": "Automated subtree sync from upstream.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added support for 100+ new AI models across multiple providers.\n  * Introduced an input token limit field in model specs.\n\n* **Updates**\n",
     "url": "https://github.com/Vivek-k3/modelsplus/pull/15",
     "source": "github_prs",
@@ -608,7 +608,7 @@
   },
   {
     "title": "[PR] Update n8nio/n8n Docker tag to v2",
-    "date": "2026-01-02T10:38:47Z",
+    "date": "2026-01-02T12:17:04Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v2.2.0`](https://",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
@@ -704,7 +704,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2026-01-02T08:23:29Z",
+    "date": "2026-01-02T12:20:54Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -1480,6 +1480,78 @@
       "comments: 1",
       "pull request",
       "repo: stamp"
+    ]
+  },
+  {
+    "title": "[PR] feat(core): add llm executor type",
+    "date": "2026-01-02T12:50:23Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added LLM executor support enabling steps to invoke multiple LLM providers (OpenAI, Anthropic, Gemini, OpenRouter, local servers).\n  * Implemented LLM conversation message hi",
+    "url": "https://github.com/dagu-org/dagu/pull/1548",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: dagu"
+    ]
+  },
+  {
+    "title": "[PR] Add 'redundant-exception-message' check (W0720)",
+    "date": "2026-01-02T12:38:09Z",
+    "summary": "Add a new check that detects redundant exception messages when using 'raise ... from'. When exception chaining is used, including the original error message (via str(err), f-string interpolation, or concatenation) is redundant since Python preserves it via __cause__.\r\n\r\nExample of detected pattern:\r",
+    "url": "https://github.com/pylint-dev/pylint/pull/10793",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: pylint"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
+    "date": "2026-01-02T12:30:20Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v2.2.0`](https://",
+    "url": "https://github.com/Jadeiin/infra/pull/517",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: infra"
+    ]
+  },
+  {
+    "title": "[PR] Bump Aspire.Hosting.AppHost and 4 others",
+    "date": "2026-01-02T12:06:22Z",
+    "summary": "Updated [Aspire.Hosting.AppHost](https://github.com/dotnet/aspire) from 9.5.1 to 13.1.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Aspire.Hosting.AppHost's releases](https://github.com/dotnet/aspire/releases)._\n\n## 13.1.0\n\nWe are excited to share that our 13.1.0 release of Aspire h",
+    "url": "https://github.com/dgee2/Menu/pull/845",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Menu"
+    ]
+  },
+  {
+    "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
+    "date": "2026-01-02T11:59:29Z",
+    "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
+    "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 114",
+      "pull request",
+      "repo: protocol-silent-night"
+    ]
+  },
+  {
+    "title": "[PR] Update docker.n8n.io/n8nio/n8n Docker tag to v2",
+    "date": "2026-01-02T11:50:58Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | final | major | `1.95.3` \u2192 `2.2.2` |\n\n---\n\n",
+    "url": "https://github.com/alacava/n8n-docker-ffmpeg/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-docker-ffmpeg"
     ]
   }
 ]
