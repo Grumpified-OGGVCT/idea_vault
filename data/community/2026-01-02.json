@@ -560,12 +560,12 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Fix accessibility issue in SantasWorkshop",
-    "date": "2026-01-02T13:31:59Z",
+    "date": "2026-01-02T14:22:40Z",
     "summary": "\ud83d\udca1 **What:** Added `aria-label=\"Workshop Categories\"` to the tablist in `SantasWorkshop.tsx`.\n\ud83c\udfaf **Why:** To improve accessibility for screen reader users and fix a regression where the unit test was failing because it couldn't find the tablist by label.\n\u267f **Accessibility:** Screen readers will now an",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/69",
     "source": "github_prs",
     "highlights": [
-      "comments: 415",
+      "comments: 423",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -704,7 +704,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2026-01-02T12:20:54Z",
+    "date": "2026-01-02T14:21:29Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -1472,7 +1472,7 @@
   },
   {
     "title": "[PR] Update nuget (major)",
-    "date": "2026-01-02T11:21:22Z",
+    "date": "2026-01-02T14:23:18Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [Microsoft.AspNetCore.Authentication.JwtBearer](https://asp.net/) ([source](https://redirect.github.com/dotnet/dotnet)) | nuget | major | ",
     "url": "https://github.com/project-origin/stamp/pull/271",
     "source": "github_prs",
@@ -1484,7 +1484,7 @@
   },
   {
     "title": "[PR] feat(core): add llm executor type",
-    "date": "2026-01-02T13:25:14Z",
+    "date": "2026-01-02T14:24:39Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added LLM executor support enabling steps to invoke multiple LLM providers (OpenAI, Anthropic, Gemini, OpenRouter, local servers).\n  * Implemented LLM conversation message hi",
     "url": "https://github.com/dagu-org/dagu/pull/1548",
     "source": "github_prs",
@@ -1532,12 +1532,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-02T13:05:04Z",
+    "date": "2026-01-02T14:08:40Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 119",
+      "comments: 126",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -1576,6 +1576,78 @@
       "comments: 12",
       "pull request",
       "repo: Artemis"
+    ]
+  },
+  {
+    "title": "[PR] Improving Task Card Title Readability",
+    "date": "2026-01-02T14:19:48Z",
+    "summary": "## Base Branch\r\n\r\n- [x] This PR targets the `develop` branch (required for all feature/fix PRs)\r\n- [ ] This PR targets `main` (hotfix only - maintainers)\r\n\r\n## Description\r\n\r\nThis PR improves task card title readability by restructuring the TaskCard component layout. Previously, the title and status",
+    "url": "https://github.com/AndyMik90/Auto-Claude/pull/461",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: Auto-Claude"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.n8n.io/n8nio/n8n docker tag to v2",
+    "date": "2026-01-02T14:10:45Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` \u2192 `2.2.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (docker.n8n.io/n8nio/n8n)</summar",
+    "url": "https://github.com/oliverziegert/apps/pull/287",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: apps"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/medical-pre-authorization with 9 updates",
+    "date": "2026-01-02T14:02:37Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/medical-pre-authorization with 9 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.16.0` | `1.21.0` |\n| [google-genai](https://github.com/googleapis/python-genai) | `1.45.0` | `1.56.0` |\n",
+    "url": "https://github.com/phrayze/adk-bidi/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: adk-bidi"
+    ]
+  },
+  {
+    "title": "[PR] Fix/kcl cluster nodes append",
+    "date": "2026-01-02T13:54:11Z",
+    "summary": "### **PR Type**\nEnhancement\n\n\n___\n\n### **Description**\nMajor refactoring and expansion of the project with comprehensive infrastructure-as-code and CLI improvements:\n\n**Core Application Changes:**\n\n- Refactored main CLI entry point with improved module organization and new `RunCommand` trait pattern",
+    "url": "https://github.com/yurikrupnik/dotconfig/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: dotconfig"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.io/n8nio/n8n docker tag to v2",
+    "date": "2026-01-02T13:52:10Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` \u2192 `2.2.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (docker.io/n8nio/n8n)</summary>\n\n### ",
+    "url": "https://github.com/PixelJonas/cluster-gitops/pull/758",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: cluster-gitops"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update python-nonmajor",
+    "date": "2026-01-02T13:36:34Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [black](https://redirect.github.com/psf/black) ([changelog](https://redirect.github.com/psf/black/b",
+    "url": "https://github.com/googleapis/mcp-toolbox-sdk-python/pull/470",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mcp-toolbox-sdk-python"
     ]
   }
 ]
