@@ -1532,12 +1532,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-02T14:08:40Z",
+    "date": "2026-01-02T16:12:12Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 126",
+      "comments: 132",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -1652,7 +1652,7 @@
   },
   {
     "title": "[PR] Feat: TUI dashboard fix Interactive TUI Dashboard",
-    "date": "2026-01-02T15:10:55Z",
+    "date": "2026-01-02T15:46:20Z",
     "summary": "## Summary\r\n<!-- Brief description of changes -->\r\n- added a TUI dashboard with interactive features with keyboard like actions with arrows and switch tabs with tab.\r\n- is integrated with existing `cortex install` command to install any packages as intended.\r\n- run both system checks and packages ch",
     "url": "https://github.com/cortexlinux/cortex/pull/277",
     "source": "github_prs",
@@ -1684,6 +1684,78 @@
       "comments: 0",
       "pull request",
       "repo: cafe"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-01-02T16:30:36Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [cert-manager](https://cert-manager.io) ([source](https://redirect.github.com/cert-manager/cert-manager)) | minor | `v1.17.2` \u2192 `v1.19.2` |\n| [extern",
+    "url": "https://github.com/dbirks/home-k8s/pull/32",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-k8s"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/karakeep-app/karakeep ( 0.29.3 \u2192 0.30.0 )",
+    "date": "2026-01-02T16:04:13Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/karakeep-app/karakeep](https://redirect.github.com/karakeep-app/karakeep) | minor | `0.29.3` \u2192 `0.30.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for ",
+    "url": "https://github.com/stevewm/homelab/pull/2092",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] Bringing up to speed",
+    "date": "2026-01-02T15:50:13Z",
+    "summary": "## **CodeAnt-AI Description**\nEnforce external tool domain checks and per-endpoint file upload policies\n\n### What Changed\n- External tools now validate that their server URL matches the allowed domain and uses HTTP/HTTPS only, rejecting internal IPs, localhost, cloud metadata hosts, and other unsafe",
+    "url": "https://github.com/biostochastics/LibreChat-OpenRouter/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 62",
+      "pull request",
+      "repo: LibreChat-OpenRouter"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency n8n to v2",
+    "date": "2026-01-02T15:49:01Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/)",
+    "url": "https://github.com/killo431/tools/pull/481",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: tools"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.n8n.io/n8nio/n8n docker tag to v2",
+    "date": "2026-01-02T15:44:02Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.122.1` \u2192 `2.2.2` |\n\n---\n\n> [!WARNING]\n> Som",
+    "url": "https://github.com/Tim275/talos-homelab/pull/58",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: talos-homelab"
+    ]
+  },
+  {
+    "title": "[PR] 0.2.0 rc",
+    "date": "2026-01-02T15:40:57Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * PR-aware incremental analysis (full or delta), Google AI provider, AST/semantic code splitting, new SKIPPED job status\n  * Manage allowed command users (list/add/remove/enabl",
+    "url": "https://github.com/rostilos/CodeCrow/pull/22",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 28",
+      "pull request",
+      "repo: CodeCrow"
     ]
   }
 ]
