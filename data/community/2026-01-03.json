@@ -692,12 +692,12 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Fix accessibility issue in SantasWorkshop",
-    "date": "2026-01-03T22:24:33Z",
+    "date": "2026-01-03T22:45:57Z",
     "summary": "\ud83d\udca1 **What:** Added `aria-label=\"Workshop Categories\"` to the tablist in `SantasWorkshop.tsx`.\n\ud83c\udfaf **Why:** To improve accessibility for screen reader users and fix a regression where the unit test was failing because it couldn't find the tablist by label.\n\u267f **Accessibility:** Screen readers will now an",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/69",
     "source": "github_prs",
     "highlights": [
-      "comments: 652",
+      "comments: 662",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -728,12 +728,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-03T19:52:53Z",
+    "date": "2026-01-03T22:40:15Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 227",
+      "comments: 234",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -764,7 +764,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2026-01-03T21:25:49Z",
+    "date": "2026-01-03T22:28:10Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -1396,6 +1396,18 @@
       "comments: 0",
       "pull request",
       "repo: mcp-toolbox-sdk-python"
+    ]
+  },
+  {
+    "title": "[PR] chore(pipeline): implement brittleness suite (specs 053-057)",
+    "date": "2026-01-03T22:55:26Z",
+    "summary": "Implements the pipeline brittleness hardening suite (Specs 053\u2013057):\n\n- Spec 053: Evidence quote grounding validation (reject hallucinated quotes; privacy-safe logging)\n- Spec 054: Strict evidence schema validation (fail loudly on wrong JSON types)\n- Spec 055: Embedding validation (NaN/Inf/all-zero ",
+    "url": "https://github.com/The-Obstacle-Is-The-Way/ai-psychiatrist/pull/92",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ai-psychiatrist"
     ]
   }
 ]
