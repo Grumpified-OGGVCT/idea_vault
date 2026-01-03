@@ -596,7 +596,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-01-03T07:49:45Z",
+    "date": "2026-01-03T20:16:01Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [community.docker](https://redirect.github.com/ansible-collections/community.docker) | galaxy-collection | patch | `5.0.4` \u2192 `5.0.5` |\n| [",
     "url": "https://github.com/heywoodlh/nixos-configs/pull/28",
     "source": "github_prs",
@@ -680,8 +680,8 @@
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-03T17:22:02Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for mor",
+    "date": "2026-01-03T20:12:26Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v2.2.0`](https://",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
     "highlights": [
@@ -692,12 +692,12 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Fix accessibility issue in SantasWorkshop",
-    "date": "2026-01-03T19:13:09Z",
+    "date": "2026-01-03T20:25:18Z",
     "summary": "\ud83d\udca1 **What:** Added `aria-label=\"Workshop Categories\"` to the tablist in `SantasWorkshop.tsx`.\n\ud83c\udfaf **Why:** To improve accessibility for screen reader users and fix a regression where the unit test was failing because it couldn't find the tablist by label.\n\u267f **Accessibility:** Screen readers will now an",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/69",
     "source": "github_prs",
     "highlights": [
-      "comments: 601",
+      "comments: 636",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -728,12 +728,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-03T17:16:27Z",
+    "date": "2026-01-03T19:52:53Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 221",
+      "comments: 227",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -764,7 +764,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2026-01-03T17:24:08Z",
+    "date": "2026-01-03T19:28:19Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -1028,7 +1028,7 @@
   },
   {
     "title": "[PR] feat: add Plane.so integration for project tracking",
-    "date": "2026-01-03T07:24:26Z",
+    "date": "2026-01-03T19:21:34Z",
     "summary": "## Summary\n\n- Adds Plane.so as an alternative to Linear for project management\n- Supports both cloud (api.plane.so) and self-hosted Plane instances\n- Architecture mirrors the Linear import module for consistency\n\n### Backend (Python)\n- Plane API client with workspace/project/work-item operations\n- S",
     "url": "https://github.com/AndyMik90/Auto-Claude/pull/105",
     "source": "github_prs",
@@ -1052,7 +1052,7 @@
   },
   {
     "title": "[PR] fix: skip ollama connection when not configured #316",
-    "date": "2026-01-03T18:42:31Z",
+    "date": "2026-01-03T20:05:35Z",
     "summary": "This PR fixes the issue where Cortex attempts to connect to a local Ollama instance even when not configured. The system now verifies user intent before initializing the Ollama client or running health diagnostics.\r\n\r\n#### Key Changes\r\n1) Logic Guardrail: Added ollama_enabled check in LLMRouter to v",
     "url": "https://github.com/cortexlinux/cortex/pull/437",
     "source": "github_prs",
@@ -1256,7 +1256,7 @@
   },
   {
     "title": "[PR] fix: critical performance improvements (PERF-001, PERF-002)",
-    "date": "2026-01-03T18:10:15Z",
+    "date": "2026-01-03T20:02:38Z",
     "summary": "## Summary\n\nThis PR addresses critical performance issues identified in the performance audit:\n\n### [PERF-001] Fix N+1 queries in region sync operations (#197)\n- Replaced N+1 query pattern with TypeORM bulk upsert\n- Reduced database round trips from O(2n) to O(2) queries (~99% reduction)\n- Added lar",
     "url": "https://github.com/CommonwealthLabsCode/qckstrt/pull/235",
     "source": "github_prs",
@@ -1300,6 +1300,42 @@
       "comments: 0",
       "pull request",
       "repo: carbonj"
+    ]
+  },
+  {
+    "title": "[PR] Rag ",
+    "date": "2026-01-03T20:25:55Z",
+    "summary": "",
+    "url": "https://github.com/epsilonstar-02/OpsPulse/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OpsPulse"
+    ]
+  },
+  {
+    "title": "[PR] Feature: Interactive Package Conflict Resolution + Saved Preferences(Issue #42)",
+    "date": "2026-01-03T19:57:48Z",
+    "summary": "## Summary\r\n<!-- Brief description of changes -->Implements interactive package conflict resolution UI and persistent conflict-resolution preferences.\r\n\r\n- Add interactive conflict-resolution UI to `cortex/cli.py`.\r\n  - Prompts user to choose which package to keep/remove when conflicts are detected.",
+    "url": "https://github.com/cortexlinux/cortex/pull/203",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 29",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] feat: created autoclaude container",
+    "date": "2026-01-03T19:21:28Z",
+    "summary": "## Summary\r\n\r\n  This PR introduces an **enterprise-grade Docker deployment** of Auto-Claude, transforming the single-user Electron desktop app into a containerized **multi-tenant web platform** with JWT authentication, real-time collaboration, and advanced credential management.\r\n\r\n  This is a **com",
+    "url": "https://github.com/AndyMik90/Auto-Claude/pull/210",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: Auto-Claude"
     ]
   }
 ]
