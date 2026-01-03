@@ -692,12 +692,12 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Fix accessibility issue in SantasWorkshop",
-    "date": "2026-01-03T08:29:40Z",
+    "date": "2026-01-03T08:56:37Z",
     "summary": "\ud83d\udca1 **What:** Added `aria-label=\"Workshop Categories\"` to the tablist in `SantasWorkshop.tsx`.\n\ud83c\udfaf **Why:** To improve accessibility for screen reader users and fix a regression where the unit test was failing because it couldn't find the tablist by label.\n\u267f **Accessibility:** Screen readers will now an",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/69",
     "source": "github_prs",
     "highlights": [
-      "comments: 495",
+      "comments: 501",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -728,12 +728,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-03T08:28:08Z",
+    "date": "2026-01-03T08:41:22Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 185",
+      "comments: 186",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -764,7 +764,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2026-01-03T06:21:20Z",
+    "date": "2026-01-03T09:20:23Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -800,7 +800,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-01-03T02:44:15Z",
+    "date": "2026-01-03T08:44:19Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1048,6 +1048,54 @@
       "comments: 0",
       "pull request",
       "repo: proxmox-hetzner-ops-prod"
+    ]
+  },
+  {
+    "title": "[PR] fix: skip ollama connection when not configured #316",
+    "date": "2026-01-03T09:04:44Z",
+    "summary": "This PR fixes the issue where Cortex attempts to connect to a local Ollama instance even when not configured. The system now verifies user intent before initializing the Ollama client or running health diagnostics.\r\n\r\n#### Key Changes\r\n1) Logic Guardrail: Added ollama_enabled check in LLMRouter to v",
+    "url": "https://github.com/cortexlinux/cortex/pull/437",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] Environment loading fix",
+    "date": "2026-01-03T08:52:04Z",
+    "summary": "## Description\nThis PR addresses critical issues preventing the Electron app from launching with a functional configuration and reporting an \"offline\" status.\n\nThe key changes ensure:\n1.  **Reliable Online Status**: The `checkOllama()` function now accurately pings the Ollama host, resolving the bug",
+    "url": "https://github.com/Clauskraft/LocalAgentWhybridSkills/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LocalAgentWhybridSkills"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v1.1.2",
+    "date": "2026-01-03T08:35:47Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-b",
+    "url": "https://github.com/kpavlov/spring-ai-llm-proxy/pull/58",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: spring-ai-llm-proxy"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.117.1 \u2192 2.2.2 )",
+    "date": "2026-01-03T09:04:58Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.117.1` \u2192 `2.2.2` |\n\n---\n\n> [!WARNING]\n> Some dep",
+    "url": "https://github.com/astrateam-net/k8s-cluster/pull/463",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: k8s-cluster"
     ]
   }
 ]
