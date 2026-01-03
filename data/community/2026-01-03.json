@@ -560,7 +560,7 @@
   },
   {
     "title": "[PR] Update ghcr.io/karakeep-app/karakeep Docker tag to v0.30.0",
-    "date": "2026-01-03T04:36:28Z",
+    "date": "2026-01-03T15:00:44Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/karakeep-app/karakeep](https://redirect.github.com/karakeep-app/karakeep) | minor | `0.29.3` \u2192 `0.30.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>karakeep-app/karakeep (ghcr.io/karakeep-app/karakeep)<",
     "url": "https://github.com/davegallant/homelab/pull/736",
     "source": "github_prs",
@@ -680,7 +680,7 @@
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-03T13:52:12Z",
+    "date": "2026-01-03T15:02:04Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v2.2.0`](https://",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
@@ -692,12 +692,12 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Fix accessibility issue in SantasWorkshop",
-    "date": "2026-01-03T13:00:56Z",
+    "date": "2026-01-03T14:37:34Z",
     "summary": "\ud83d\udca1 **What:** Added `aria-label=\"Workshop Categories\"` to the tablist in `SantasWorkshop.tsx`.\n\ud83c\udfaf **Why:** To improve accessibility for screen reader users and fix a regression where the unit test was failing because it couldn't find the tablist by label.\n\u267f **Accessibility:** Screen readers will now an",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/69",
     "source": "github_prs",
     "highlights": [
-      "comments: 531",
+      "comments: 539",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -728,12 +728,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-03T14:23:07Z",
+    "date": "2026-01-03T14:35:41Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 213",
+      "comments: 217",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -800,7 +800,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-01-03T08:44:19Z",
+    "date": "2026-01-03T14:44:15Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -932,12 +932,12 @@
   },
   {
     "title": "[PR] feat(core): add chat executor type",
-    "date": "2026-01-03T14:19:38Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added LLM executor support enabling steps to invoke multiple LLM providers (OpenAI, Anthropic, Gemini, OpenRouter, local servers).\n  * Implemented LLM conversation message hi",
+    "date": "2026-01-03T15:24:06Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * LLM/chat executor for AI-powered steps with multi-provider support and streaming responses\n  * DAG-level LLM config with inheritance and per-step overrides (provider, model, ",
     "url": "https://github.com/dagu-org/dagu/pull/1548",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 8",
       "pull request",
       "repo: dagu"
     ]
@@ -1052,7 +1052,7 @@
   },
   {
     "title": "[PR] fix: skip ollama connection when not configured #316",
-    "date": "2026-01-03T12:25:32Z",
+    "date": "2026-01-03T14:36:37Z",
     "summary": "This PR fixes the issue where Cortex attempts to connect to a local Ollama instance even when not configured. The system now verifies user intent before initializing the Ollama client or running health diagnostics.\r\n\r\n#### Key Changes\r\n1) Logic Guardrail: Added ollama_enabled check in LLMRouter to v",
     "url": "https://github.com/cortexlinux/cortex/pull/437",
     "source": "github_prs",
@@ -1156,6 +1156,18 @@
       "comments: 1",
       "pull request",
       "repo: spring-ai-app"
+    ]
+  },
+  {
+    "title": "[PR] docs(windows): simplify installation with native Windows support",
+    "date": "2026-01-03T15:15:40Z",
+    "summary": "## Summary\n\n- Remove WSL requirement - Ollama, wyoming-faster-whisper, and wyoming-piper all work natively on Windows\n- Add \"Quick Start\" section for users who want to use cloud providers (simplest path)\n- Add \"Full Local Setup\" section with step-by-step native Windows installation\n- Include startup",
+    "url": "https://github.com/basnijholt/agent-cli/pull/170",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agent-cli"
     ]
   }
 ]
