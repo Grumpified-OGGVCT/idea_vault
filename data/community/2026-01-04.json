@@ -224,7 +224,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-01-02T21:37:31Z",
+    "date": "2026-01-04T04:53:37Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/3192",
     "source": "github_issues",
@@ -716,7 +716,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2026-01-04T03:28:14Z",
+    "date": "2026-01-04T05:25:51Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -740,7 +740,7 @@
   },
   {
     "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v1.1.2",
-    "date": "2026-01-04T02:04:53Z",
+    "date": "2026-01-04T04:31:46Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-b",
     "url": "https://github.com/kpavlov/spring-ai-llm-proxy/pull/58",
     "source": "github_prs",
@@ -776,19 +776,19 @@
   },
   {
     "title": "[PR] chore(deps): update python-nonmajor",
-    "date": "2026-01-04T00:36:16Z",
+    "date": "2026-01-04T04:38:25Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [aiohttp](https://redirect.github.com/aio-libs/aiohttp) | `==3.13.2` \u2192 `==3.13.3` | ![age](https://",
     "url": "https://github.com/googleapis/mcp-toolbox-sdk-python/pull/470",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: mcp-toolbox-sdk-python"
     ]
   },
   {
     "title": "[PR] fix: skip ollama connection when not configured #316",
-    "date": "2026-01-04T04:13:33Z",
+    "date": "2026-01-04T04:15:02Z",
     "summary": "This PR fixes the issue where Cortex attempts to connect to a local Ollama instance even when not configured. The system now verifies user intent before initializing the Ollama client or running health diagnostics.\r\n\r\n#### Key Changes\r\n1) Logic Guardrail: Added ollama_enabled check in LLMRouter to v",
     "url": "https://github.com/cortexlinux/cortex/pull/437",
     "source": "github_prs",
@@ -800,7 +800,7 @@
   },
   {
     "title": "[PR] feat(core): add chat executor type",
-    "date": "2026-01-04T03:34:47Z",
+    "date": "2026-01-04T04:39:04Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * LLM/chat executor for AI-powered steps with multi-provider support and streaming responses\n  * DAG-level LLM config with inheritance and per-step overrides (provider, model, ",
     "url": "https://github.com/dagu-org/dagu/pull/1548",
     "source": "github_prs",
@@ -844,6 +844,90 @@
       "comments: 1",
       "pull request",
       "repo: kubernetes"
+    ]
+  },
+  {
+    "title": "[PR] test(user): add unit tests for UserUtils token generation and verification",
+    "date": "2026-01-04T05:28:36Z",
+    "summary": "Fixes #52\\n\\nSummary: Adds tests for  and . The test file sets required env vars before importing modules that parse  to avoid  errors in test environment.",
+    "url": "https://github.com/NexGenStudioDev/LocalMind/pull/53",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LocalMind"
+    ]
+  },
+  {
+    "title": "[PR] fix(dataset): await generateResponse in Prepare_DataSet and add unit test",
+    "date": "2026-01-04T05:22:42Z",
+    "summary": "Fixes #50\\n\\nSummary: Add missing  when calling  inside  so the function returns the resolved value. Adds a unit test that mocks  to assert  returns the expected resolved value.,head:morningstarxcdcode:fix/ds-await,base:master",
+    "url": "https://github.com/NexGenStudioDev/LocalMind/pull/51",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: LocalMind"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.murmurhash: 1.0.13 -> 1.0.15",
+    "date": "2026-01-04T04:26:35Z",
+    "summary": "Automatic update generated by [nixpkgs-update](https://github.com/nix-community/nixpkgs-update) tools. This update was made based on information from passthru.updateScript.\n\nmeta.description for python3Packages.murmurhash is: Cython bindings for MurmurHash2\n\nmeta.homepage for python3Packages.murmurh",
+    "url": "https://github.com/NixOS/nixpkgs/pull/476778",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/karakeep-app/karakeep docker tag to v0.30.0",
+    "date": "2026-01-04T04:17:09Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/karakeep-app/karakeep](https://redirect.github.com/karakeep-app/karakeep) | minor | `0.29.3` \u2192 `0.30.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>karakeep-app/karakeep (ghcr.io/karakeep-app/karakeep)<",
+    "url": "https://github.com/arashnrim/homelab/pull/27",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface_hub to v0.36.0",
+    "date": "2026-01-04T05:21:39Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | Age | Confidence |\n|---|---|---|---|\n| [huggingface_hub](https://redirect.github.com/huggingface/huggingface_hub) | `==0.26.0` -> `==0.36.0` | [![age](https://developer.mend.io/api/mc/badges/age/pypi/huggingface-hub/0.36.0?slim=true)](htt",
+    "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/243",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface_hub to v0.36.0",
+    "date": "2026-01-04T05:21:20Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | Age | Confidence |\n|---|---|---|---|\n| [huggingface_hub](https://redirect.github.com/huggingface/huggingface_hub) | `==0.26.0` -> `==0.36.0` | [![age](https://developer.mend.io/api/mc/badges/age/pypi/huggingface-hub/0.36.0?slim=true)](htt",
+    "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/225",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.123.10 \u2192 2.2.2 )",
+    "date": "2026-01-04T04:48:50Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboar",
+    "url": "https://github.com/livhuip/home-ops/pull/1251",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
