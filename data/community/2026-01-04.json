@@ -224,7 +224,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-01-04T04:53:37Z",
+    "date": "2026-01-04T09:38:11Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/3192",
     "source": "github_issues",
@@ -584,12 +584,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-04T09:24:08Z",
+    "date": "2026-01-04T09:36:02Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 261",
+      "comments: 265",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -644,7 +644,7 @@
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-04T08:07:00Z",
+    "date": "2026-01-04T10:21:55Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for mor",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
@@ -716,7 +716,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2026-01-04T06:22:44Z",
+    "date": "2026-01-04T09:28:06Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -1040,12 +1040,12 @@
   },
   {
     "title": "[PR] Support for Ollama Cloud Authentication",
-    "date": "2026-01-04T09:17:36Z",
+    "date": "2026-01-04T10:20:02Z",
     "summary": "Implemented support for Ollama Cloud authentication. Users can now enter their API key in the UI, which is securely passed to the backend and used to authenticate requests to the Ollama server for cloud models. This ensures that users can utilize protected models hosted on their Ollama instance. Als",
     "url": "https://github.com/josemendozaorg/homelab-reasoning-service/pull/15",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: homelab-reasoning-service"
     ]
@@ -1072,6 +1072,42 @@
       "comments: 2",
       "pull request",
       "repo: k8s-cluster"
+    ]
+  },
+  {
+    "title": "[PR] feat: add native Google Cloud Vertex AI support",
+    "date": "2026-01-04T10:25:00Z",
+    "summary": "## Summary\n\nAdd native support for running Auto-Claude with Claude on Google Cloud Vertex AI as an alternative to direct Anthropic API access.\n\nThis enables organizations using Google Cloud infrastructure to run Auto-Claude with Vertex AI without requiring proxies or workarounds.\n\n## Key Features\n\n-",
+    "url": "https://github.com/AndyMik90/Auto-Claude/pull/644",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Auto-Claude"
+    ]
+  },
+  {
+    "title": "[PR] `General`: Allow users to choose between Cloud AI, On-Premise AI, and No AI",
+    "date": "2026-01-04T10:24:58Z",
+    "summary": "<!-- Thanks for contributing to Artemis! Before you submit your pull request, please make sure to check all tasks by putting an x in the [ ] (don't: [x ], [ x], do: [x]). Remove not applicable tasks and do not leave them unchecked -->\r\n<!-- If your pull request is not ready for review yet, create a ",
+    "url": "https://github.com/ls1intum/Artemis/pull/11845",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: Artemis"
+    ]
+  },
+  {
+    "title": "[PR] feat(cli) : add offline diagnose command with safe fallback",
+    "date": "2026-01-04T10:04:15Z",
+    "summary": "### Summary\r\nAdds a minimal MVP implementation of `cortex diagnose`.\r\n\r\n### What\u2019s included\r\n- Text-based diagnosis command\r\n- Offline-safe fallback (works without API keys)\r\n- Graceful handling when no LLM provider is configured\r\n\r\n### Why\r\n- Enables error diagnosis on fresh systems\r\n- Avoids forci",
+    "url": "https://github.com/cortexlinux/cortex/pull/300",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: cortex"
     ]
   }
 ]
