@@ -200,12 +200,12 @@
   },
   {
     "title": "15.0-20260103.1: Build check",
-    "date": "2026-01-03T16:27:54Z",
+    "date": "2026-01-04T02:25:30Z",
     "summary": "#  Overview\n|  | package | i586 | x86_64 | notes | resolution |\n| --- | --- | --- | --- | --- | --- |\n| | misc/fcitx5 | \ud83d\udd34 | \ud83d\udd34 | broken by fmt upgrade (dfc09dc) | Fixed in  #13772 |\n| | misc/fcitx5-chinese-addons | \ud83d\udd34 | \ud83d\udd34 | broken by fmt upgrade (dfc09dc) | Fixed in  #13772 |\n| --- | audio/mpd |\ud83d\udd34 | \ud83d\udd34 ",
     "url": "https://github.com/SlackBuildsOrg/slackbuilds/issues/13768",
     "source": "github_issues",
     "highlights": [
-      "comments: 19",
+      "comments: 24",
       "state: open",
       "repo: slackbuilds"
     ]
@@ -584,12 +584,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-04T01:22:02Z",
+    "date": "2026-01-04T04:02:23Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 241",
+      "comments: 247",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -644,7 +644,7 @@
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-04T00:42:21Z",
+    "date": "2026-01-04T04:12:00Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for mor",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
@@ -716,7 +716,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2026-01-04T01:22:24Z",
+    "date": "2026-01-04T03:28:14Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -784,6 +784,66 @@
       "comments: 0",
       "pull request",
       "repo: mcp-toolbox-sdk-python"
+    ]
+  },
+  {
+    "title": "[PR] fix: skip ollama connection when not configured #316",
+    "date": "2026-01-04T04:13:33Z",
+    "summary": "This PR fixes the issue where Cortex attempts to connect to a local Ollama instance even when not configured. The system now verifies user intent before initializing the Ollama client or running health diagnostics.\r\n\r\n#### Key Changes\r\n1) Logic Guardrail: Added ollama_enabled check in LLMRouter to v",
+    "url": "https://github.com/cortexlinux/cortex/pull/437",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] feat(core): add chat executor type",
+    "date": "2026-01-04T03:34:47Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * LLM/chat executor for AI-powered steps with multi-provider support and streaming responses\n  * DAG-level LLM config with inheritance and per-step overrides (provider, model, ",
+    "url": "https://github.com/dagu-org/dagu/pull/1548",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: dagu"
+    ]
+  },
+  {
+    "title": "[PR] fix: critical performance improvements (PERF-001, PERF-002)",
+    "date": "2026-01-04T03:02:00Z",
+    "summary": "## Summary\n\nThis PR addresses critical performance issues identified in the performance audit:\n\n### [PERF-001] Fix N+1 queries in region sync operations (#197)\n- Replaced N+1 query pattern with TypeORM bulk upsert\n- Reduced database round trips from O(2n) to O(2) queries (~99% reduction)\n- Added lar",
+    "url": "https://github.com/CommonwealthLabsCode/qckstrt/pull/235",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: qckstrt"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-01-04T02:44:21Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] Update n8nio/n8n Docker tag to v2",
+    "date": "2026-01-04T02:29:30Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.121.2` \u2192 `2.2.2` |\n\n---\n\n### Release Notes\n\n<details>\n<su",
+    "url": "https://github.com/albinmedoc/kubernetes/pull/201",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kubernetes"
     ]
   }
 ]
