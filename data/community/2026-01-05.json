@@ -548,12 +548,12 @@
   },
   {
     "title": "[PR] chore(release): staging to production - 2026.01.05",
-    "date": "2026-01-05T02:08:31Z",
-    "summary": "## \ud83d\ude80 Release: Staging to Production\n\n**Release Date:** 2026-01-05\n\n### Changes in this release\n\n- fix: remove packageManager field to let Vercel use default pnpm (7cd41d32)\n- Revert \"fix: upgrade turbo to 2.7.2 and add corepack support for Vercel\" (2ffd3523)\n- fix: upgrade turbo to 2.7.2 and add cor",
+    "date": "2026-01-05T02:24:02Z",
+    "summary": "## \ud83d\ude80 Release: Staging to Production\n\n**Release Date:** 2026-01-05\n\n### Changes in this release\n\n- fix: add missing @aws-sdk/client-s3 and s3-request-presigner dependencies (f91bdc45)\n- fix: pin @opentelemetry/sdk-trace-base to 1.27.0 to resolve version conflict (c43aef5f)\n- fix: remove packageManage",
     "url": "https://github.com/the-answerai/theanswer/pull/775",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 6",
       "pull request",
       "repo: theanswer"
     ]
@@ -572,7 +572,7 @@
   },
   {
     "title": "[PR] feat(container): update image ghcr.io/karakeep-app/karakeep ( 0.24.1 \u2794 0.30.0 )",
-    "date": "2026-01-05T02:00:50Z",
+    "date": "2026-01-05T04:07:39Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/karakeep-app/karakeep](https://redirect.github.com/karakeep-app/karakeep) | minor | `0.24.1` \u2192 `0.30.0` |\n\n---\n\n> [!WARNING]\n> Some dependen",
     "url": "https://github.com/bluevulpine/flux-talos/pull/952",
     "source": "github_prs",
@@ -584,7 +584,7 @@
   },
   {
     "title": "[PR] Add ML-based prompt injection detection ",
-    "date": "2026-01-05T01:59:45Z",
+    "date": "2026-01-05T02:20:59Z",
     "summary": "## Summary\r\nThis PR adds BERT model prompt injection evaluation alongside the existing pattern-based approach.\r\n\r\n### Context\r\nhttps://docs.google.com/document/d/1GNvriNWLAaJUMpWE1heBapxFshQEED5ZYfn1ixJvGCE/edit?tab=t.0#heading=h.rj4p6llxqvrq \r\n\r\n### Key Changes\r\n* Updated PromptInjectionScanner to ",
     "url": "https://github.com/block/goose/pull/5623",
     "source": "github_prs",
@@ -596,12 +596,12 @@
   },
   {
     "title": "[PR] feat: Add optional plugin-based embedding generation system",
-    "date": "2026-01-05T01:57:26Z",
+    "date": "2026-01-05T04:12:02Z",
     "summary": "## Summary\n\nImplements a complete optional embedding generation system with 4 providers while maintaining zero-cost abstraction and full separation from the database layer.\n\n## Features\n\n\u2705 **4 Provider Implementations**: OpenAI, HuggingFace, Ollama, ONNX (placeholder)\n\u2705 **Zero-Cost Abstraction**: No",
     "url": "https://github.com/madmax983/GallifreyDB/pull/172",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 12",
       "pull request",
       "repo: GallifreyDB"
     ]
@@ -620,7 +620,7 @@
   },
   {
     "title": "[PR] feat(hardened): Tier environment architecture and critical service fixes",
-    "date": "2026-01-05T01:32:41Z",
+    "date": "2026-01-05T02:31:58Z",
     "summary": "## Summary\n\nImplements the 6-tier environment architecture for the hardened deployment, separating credentials by service tier with local-first principles.\n\n### Tier Environment Architecture\n- **env.tier-data**: Infrastructure credentials (postgres, neo4j, meilisearch, minio)\n- **env.tier-api**: API",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/455",
     "source": "github_prs",
@@ -740,8 +740,8 @@
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-05T00:56:55Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v2.2.0`](https://",
+    "date": "2026-01-05T03:51:56Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for mor",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
     "highlights": [
@@ -784,6 +784,138 @@
       "comments: 0",
       "pull request",
       "repo: homelab-ops"
+    ]
+  },
+  {
+    "title": "[PR] Phase 3.2 status assessment & Week 1 complete + Week 2 Stage 2 complete: 85-90% done, 764/778 tests, all route modules implemented",
+    "date": "2026-01-05T04:17:59Z",
+    "summary": "Comprehensive system-wide status check for Phase 3.2 \u529f\u80fd\u5b8c\u5584 (Feature Enhancement) milestone. Assessment reveals strong foundation with targeted gaps requiring 2-3 weeks to closure. **Week 1 plan completed with all critical test fixes: EdgeTokenCache, E2E integration, ServiceManager, and EdgeTokenSync.",
+    "url": "https://github.com/ChengTingFung-2425/robot-command-console/pull/191",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 26",
+      "pull request",
+      "repo: robot-command-console"
+    ]
+  },
+  {
+    "title": "[PR] Upgrade changes",
+    "date": "2026-01-05T03:58:58Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n# Release Notes\n\n* **New Features**\n  * Added support for multiple AI providers (Anthropic Claude, Google Gemini, OpenAI GPT, Groq, Ollama)\n  * Introduced intelligent model routing for optimized pr",
+    "url": "https://github.com/mk-knight23/gpt-clone-app/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: gpt-clone-app"
+    ]
+  },
+  {
+    "title": "[PR] Bump the external-dependencies group across 1 directory with 16 updates",
+    "date": "2026-01-05T03:07:45Z",
+    "summary": "Bumps the external-dependencies group with 14 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [org.bouncycastle:bcprov-jdk18on](https://github.com/bcgit/bc-java) | `1.81` | `1.83` |\n| [com.google.guava:guava](https://github.com/google/guava) | `33.4.8-jre` | `33.5.0-jre` |",
+    "url": "https://github.com/ministryofjustice/laa-ccms-caab/pull/564",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: laa-ccms-caab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 8 updates",
+    "date": "2026-01-05T02:44:53Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/software-bug-assistant directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.19.0` | `1.21.0` |\n| [langchain](https://github.com/langchain-ai/langchain) | `0.3.27` | `1.1",
+    "url": "https://github.com/codespace-labs/adk-samples-codespace/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: adk-samples-codespace"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 8 updates",
+    "date": "2026-01-05T02:44:52Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/software-bug-assistant directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.19.0` | `1.21.0` |\n| [langchain](https://github.com/langchain-ai/langchain) | `0.3.27` | `1.1",
+    "url": "https://github.com/ashishraghav/-adk-samples/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: -adk-samples"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-01-05T02:44:22Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 9 updates",
+    "date": "2026-01-05T02:41:30Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/RAG directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.17.0` | `1.19.0` |\n| [pydantic-settings](https://github.com/pydantic/pydantic-settings) | `2.11.0` | `2.12.0` |\n",
+    "url": "https://github.com/MohsseniMahdi/Ai_Agent_Lab/pull/33",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: Ai_Agent_Lab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/medical-pre-authorization with 9 updates",
+    "date": "2026-01-05T02:38:43Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/medical-pre-authorization with 9 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.16.0` | `1.21.0` |\n| [google-genai](https://github.com/googleapis/python-genai) | `1.45.0` | `1.56.0` |\n",
+    "url": "https://github.com/phrayze/adk-bidi/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: adk-bidi"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/medical-pre-authorization with 9 updates",
+    "date": "2026-01-05T02:37:03Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/medical-pre-authorization with 9 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.16.0` | `1.21.0` |\n| [google-genai](https://github.com/googleapis/python-genai) | `1.45.0` | `1.56.0` |\n",
+    "url": "https://github.com/carlospjneda/adk-financial-advisor/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: adk-financial-advisor"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 9 updates",
+    "date": "2026-01-05T02:41:22Z",
+    "summary": "Bumps the all-dependencies group with 8 updates in the /python/agents/RAG directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-adk](https://github.com/google/adk-python) | `1.16.0` | `1.19.0` |\n| [pydantic-settings](https://github.com/pydantic/pydantic-settings) | `2.11.0` | `2.12.0` |\n",
+    "url": "https://github.com/sajinnovation/adksamples/pull/32",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: adksamples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency ravendb.client to v7",
+    "date": "2026-01-05T02:15:38Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [RavenDB.Client](https://ravendb.ne",
+    "url": "https://github.com/candoumbe/DataAccess/pull/260",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DataAccess"
     ]
   }
 ]
