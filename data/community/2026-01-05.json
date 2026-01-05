@@ -224,7 +224,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-01-04T09:38:11Z",
+    "date": "2026-01-05T13:07:06Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/3192",
     "source": "github_issues",
@@ -560,12 +560,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-05T12:54:15Z",
+    "date": "2026-01-05T13:28:43Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 344",
+      "comments: 356",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -740,8 +740,8 @@
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-05T11:46:56Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for mor",
+    "date": "2026-01-05T13:31:49Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v2.2.0`](https://",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
     "highlights": [
@@ -1208,7 +1208,7 @@
   },
   {
     "title": "[PR] Update nuget (major)",
-    "date": "2026-01-05T12:44:29Z",
+    "date": "2026-01-05T13:44:14Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [Microsoft.AspNetCore.Authentication.JwtBearer](https://asp.net/) ([source](https://redirect.github.com/dotnet/dotnet)) | nuget | major | ",
     "url": "https://github.com/project-origin/stamp/pull/271",
     "source": "github_prs",
@@ -1216,6 +1216,18 @@
       "comments: 1",
       "pull request",
       "repo: stamp"
+    ]
+  },
+  {
+    "title": "[PR] [Bug-Fix] Enhance database directory checks for writability in InstallationHistory and SemanticCache; add Ollama model availability checks in tests",
+    "date": "2026-01-05T13:44:36Z",
+    "summary": "## Related Issue\r\nCloses #514 \r\n\r\n## Summary\r\n\r\n**1. Database initialization fails when /var/lib/cortex/ is not writable:**\r\nAdded write permission check (os.access(db_dir, os.W_OK)) in _ensure_db_directory() to properly fallback to ~/.cortex/ when the system directory exists but user lacks write ac",
+    "url": "https://github.com/cortexlinux/cortex/pull/518",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: cortex"
     ]
   }
 ]
