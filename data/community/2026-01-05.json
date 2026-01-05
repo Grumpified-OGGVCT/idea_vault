@@ -548,24 +548,24 @@
   },
   {
     "title": "[PR] chore(release): staging to production - 2026.01.05",
-    "date": "2026-01-05T10:25:20Z",
-    "summary": "## \ud83d\ude80 Release: Staging to Production\n\n**Release Date:** 2026-01-05\n\n### Changes in this release\n\n- fix: force default chatflows to Personal Workspace (7b8e5683)\n- chore: temporarily disable SSO Config and Login Activity menu items (aca6008d)\n- fix: add organizationConfig to AAI backup/restore migrati",
+    "date": "2026-01-05T16:11:18Z",
+    "summary": "## \ud83d\ude80 Release: Staging to Production\n\n**Release Date:** 2026-01-05\n\n### Changes in this release\n\n- chore: reduce billing sync log noise (78d55660)\n- fix: show processed traces on billing page (c554337c)\n- fix: billing sync optimizations and cron feature flags (64934604)\n- fix: force default chatflows",
     "url": "https://github.com/the-answerai/theanswer/pull/775",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 12",
       "pull request",
       "repo: theanswer"
     ]
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-05T13:28:43Z",
+    "date": "2026-01-05T16:16:57Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 356",
+      "comments: 362",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -763,9 +763,9 @@
     ]
   },
   {
-    "title": "[PR] chore(deps): docker.n8n.io/n8nio/n8n Docker tag to v2.2.2",
-    "date": "2026-01-05T01:56:30Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.0.3` \u2192 `2.2.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashbo",
+    "title": "[PR] chore(deps): docker.n8n.io/n8nio/n8n Docker tag to v2.3.0",
+    "date": "2026-01-05T16:32:53Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.0.3` \u2192 `2.3.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashbo",
     "url": "https://github.com/moonlight8978/lbh-lab/pull/372",
     "source": "github_prs",
     "highlights": [
@@ -1051,9 +1051,9 @@
     ]
   },
   {
-    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.113.3 \u2192 2.2.2 )",
-    "date": "2026-01-05T09:32:00Z",
-    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.113.3` \u2192 `2.2.2` |\n\n---\n\n### Release Notes\n\n<det",
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.113.3 \u2192 2.3.0 )",
+    "date": "2026-01-05T16:27:44Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.113.3` \u2192 `2.3.0` |\n\n---\n\n### Release Notes\n\n<det",
     "url": "https://github.com/sarcasticgoat/k8s-gitops/pull/109",
     "source": "github_prs",
     "highlights": [
@@ -1160,8 +1160,8 @@
   },
   {
     "title": "[PR] test: end-to-end testing for chat features",
-    "date": "2026-01-05T15:30:22Z",
-    "summary": "### Summary        \r\n\r\nfixes #197\r\n                                                                                                    \r\n                                                                                                                   \r\nThis PR adds E2E tests for the AI assistant ch",
+    "date": "2026-01-05T16:31:39Z",
+    "summary": "### Summary        \r\n\r\nfixes #197\r\nfixes #208\r\n                                                                                                    \r\n                                                                                                                   \r\nThis PR adds E2E tests for the AI ",
     "url": "https://github.com/stacklok/toolhive-cloud-ui/pull/199",
     "source": "github_prs",
     "highlights": [
@@ -1220,7 +1220,7 @@
   },
   {
     "title": "[PR] [Bug-Fix] Enhance database directory checks for writability in InstallationHistory and SemanticCache; add Ollama model availability checks in tests",
-    "date": "2026-01-05T14:40:04Z",
+    "date": "2026-01-05T16:07:53Z",
     "summary": "## Related Issue\r\nCloses #514 \r\n\r\n## Summary\r\n\r\n**1. Database initialization fails when /var/lib/cortex/ is not writable:**\r\nAdded write permission check (os.access(db_dir, os.W_OK)) in _ensure_db_directory() to properly fallback to ~/.cortex/ when the system directory exists but user lacks write ac",
     "url": "https://github.com/cortexlinux/cortex/pull/518",
     "source": "github_prs",
@@ -1280,8 +1280,8 @@
   },
   {
     "title": "[PR] feat(container): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-05T15:28:34Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://togithub.com/n8n-io/n8n)) | major | `1.11.1` -> `2.2.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for more inform",
+    "date": "2026-01-05T15:58:17Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://togithub.com/n8n-io/n8n)) | major | `1.11.1` -> `2.3.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for more inform",
     "url": "https://github.com/raelix/raelix-cluster-v2/pull/415",
     "source": "github_prs",
     "highlights": [
@@ -1292,8 +1292,8 @@
   },
   {
     "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n to v2",
-    "date": "2026-01-05T15:12:55Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.2.3` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboar",
+    "date": "2026-01-05T16:12:43Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.3.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboar",
     "url": "https://github.com/spiceratops/k8s-gitops/pull/1933",
     "source": "github_prs",
     "highlights": [
@@ -1312,6 +1312,150 @@
       "comments: 1",
       "pull request",
       "repo: transformerlab-app"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.io/n8nio/n8n docker tag to v2",
+    "date": "2026-01-05T16:32:06Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.3.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (docker.io/n8nio/n8n)</summary>\n\n###",
+    "url": "https://github.com/PixelJonas/cluster-gitops/pull/758",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: cluster-gitops"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add AI Settings UI with data privacy controls",
+    "date": "2026-01-05T16:29:36Z",
+    "summary": "## Summary\r\n- Add AI provider configuration UI in Settings (Anthropic Claude / Ollama)\r\n- Add **Block External AI** toggle for data privacy compliance (HIPAA, ITAR, SOX, GDPR)\r\n- Add **SecurityBadge** header indicator showing data privacy status on every page\r\n- Add provider disclaimers explaining c",
+    "url": "https://github.com/Blb3D/filaops/pull/89",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: filaops"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n (1.119.0 \u2192 2.3.0)",
+    "date": "2026-01-05T16:14:06Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.119.0` \u2192 `2.3.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/KyteProject/gitops-homelab/pull/297",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: gitops-homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update ghcr.io/n8n-io/n8n ( 1.123.10 \u2192 2.3.0 ) [network]",
+    "date": "2026-01-05T16:09:33Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | OpenSSF |\n|---|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.3.0` | [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/n",
+    "url": "https://github.com/haraldkoch/kochhaus-home/pull/8943",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kochhaus-home"
+    ]
+  },
+  {
+    "title": "[PR] Update docker.n8n.io/n8nio/n8n Docker tag to v2",
+    "date": "2026-01-05T16:06:21Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` -> `2.3.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (docker.n8n.io/n8nio/n8n)</summa",
+    "url": "https://github.com/jnstockley/infrastructure/pull/2241",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: infrastructure"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency n8n-workflow to v2",
+    "date": "2026-01-05T16:04:48Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [n8n-workflow](https://n8n.io) ([so",
+    "url": "https://github.com/go-vikunja/n8n-vikunja-nodes/pull/194",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-vikunja-nodes"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.n8n.io/n8nio/n8n docker tag to v2",
+    "date": "2026-01-05T16:01:41Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.4` \u2192 `2.3.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the warning logs fo",
+    "url": "https://github.com/coldb/homelab/pull/53",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.n8n.io/n8nio/n8n docker tag to v2",
+    "date": "2026-01-05T16:01:32Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.121.2` \u2192 `2.3.0` |\n\n---\n\n> [!WARNING]\n> Som",
+    "url": "https://github.com/Saharariel/homelab/pull/111",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.n8n.io/n8nio/n8n docker tag to v2",
+    "date": "2026-01-05T16:01:55Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.9` \u2192 `2.3.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (docker.n8n.io/n8nio/n8n)</summar",
+    "url": "https://github.com/GAlexandruD/Homelab/pull/107",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Homelab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.n8n.io/n8nio/n8n docker tag to v2",
+    "date": "2026-01-05T16:00:59Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.5` -> `2.3.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (docker.n8n.io/n8nio/n8n)</summa",
+    "url": "https://github.com/Justin-De-Sio/homelab/pull/94",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat(docker-image): update ghcr.io/home-assistant/home-assistant docker tag to v2024.12.5",
+    "date": "2026-01-05T15:59:44Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/home-assistant/home-assistant](https://www.home-assistant.io/) ([source](https://redirect.github.com/home-assistant/core)) | minor | `2024.7",
+    "url": "https://github.com/devmike18/sturdy-invention/pull/1662",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: sturdy-invention"
+    ]
+  },
+  {
+    "title": "[PR] Update ghcr.io/n8n-io/n8n Docker tag to v2.3.0",
+    "date": "2026-01-05T15:56:05Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.0.1` \u2192 `2.3.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (ghcr.io/n8n-io/n8n)</summary>\n\n### [`v2",
+    "url": "https://github.com/Zuulol/docker-compose/pull/450",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: docker-compose"
     ]
   }
 ]
