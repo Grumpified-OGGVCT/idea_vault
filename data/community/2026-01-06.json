@@ -656,12 +656,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-06T11:40:19Z",
+    "date": "2026-01-06T14:19:44Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 413",
+      "comments: 420",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -944,7 +944,7 @@
   },
   {
     "title": "[PR] fix(deps): update dependency llama-index to ^0.14.0",
-    "date": "2026-01-06T08:30:41Z",
+    "date": "2026-01-06T14:16:18Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-index](https://redirect.github.com/run-llama/llama_index) | `^0.13.0` \u2192 `^0.14.0` | ![age](h",
     "url": "https://github.com/mitodl/mit-learn/pull/2736",
     "source": "github_prs",
@@ -1096,6 +1096,54 @@
       "comments: 2",
       "pull request",
       "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] fix: Unblock evidence embedding pipeline with split Ollama config",
+    "date": "2026-01-06T14:09:55Z",
+    "summary": "## Summary\n- Deploy evidence-embedding worker for semantic duplicate detection\n- Add split Ollama configuration (local for embeddings, cloud for LLM)\n- Fix REGULATORY_DATABASE_URL missing in worker environments\n- Fix Dockerfile.worker to copy prisma.config.regulatory.ts\n\n## Before vs After\n\n| Metric",
+    "url": "https://github.com/Wandeon/FiskAI/pull/1336",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: FiskAI"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-01-06T14:03:22Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [amannn/act",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies (main)",
+    "date": "2026-01-06T14:20:07Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
+    "url": "https://github.com/camunda/connectors/pull/5917",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: connectors"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency n8n-workflow to v2",
+    "date": "2026-01-06T14:00:28Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [n8n-workflow](https://n8n.io) ([so",
+    "url": "https://github.com/go-vikunja/n8n-vikunja-nodes/pull/194",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-vikunja-nodes"
     ]
   }
 ]
