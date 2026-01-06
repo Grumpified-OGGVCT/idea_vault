@@ -656,12 +656,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-06T05:56:13Z",
+    "date": "2026-01-06T08:34:54Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 398",
+      "comments: 402",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -776,7 +776,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-01-06T07:28:59Z",
+    "date": "2026-01-06T07:31:24Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * New evaluation and benchmarking workflows, PR/issue templates, and CLI targets for LLM tests and docs serving\n\n* **Documentation**\n  * Massive docs expansion: installation, A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -908,7 +908,7 @@
   },
   {
     "title": "[PR] Release/odie alpha",
-    "date": "2026-01-06T07:28:59Z",
+    "date": "2026-01-06T07:46:58Z",
     "summary": "\ud83d\ude80 Pull Request: Odie AI Sidecar (Alpha)\r\nTo: OpenDAW Core Team From: Odie Dev Team\r\n\r\n\ud83d\udc4b Introducing Odie: The AI Co-Pilot for OpenDAW\r\nWe are excited to present Odie, a native, zero-dependency AI Sidecar designed specifically for OpenDAW.\r\n\r\nOdie is not just a chatbot. It is a context-aware producti",
     "url": "https://github.com/andremichelle/openDAW/pull/142",
     "source": "github_prs",
@@ -940,6 +940,42 @@
       "comments: 3",
       "pull request",
       "repo: LocalMind"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency llama-index to ^0.14.0",
+    "date": "2026-01-06T08:30:41Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-index](https://redirect.github.com/run-llama/llama_index) | `^0.13.0` \u2192 `^0.14.0` | ![age](h",
+    "url": "https://github.com/mitodl/mit-learn/pull/2736",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mit-learn"
+    ]
+  },
+  {
+    "title": "[PR] UN-3115 [FIX] - Ollama Adapters Failing post LiteLLM Migration",
+    "date": "2026-01-06T08:27:32Z",
+    "summary": "## What\r\n\r\n- Fix Ollama LLM adapter connection issue where api_base URL was being lost during validation\r\n- Fix Ollama Embedding adapter to correctly prefix model names with ollama/ for litellm compatibility\r\n\r\n## Why\r\n\r\n- The validate() method in both OllamaLLMParameters and OllamaEmbeddingParamete",
+    "url": "https://github.com/Zipstack/unstract/pull/1730",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: unstract"
+    ]
+  },
+  {
+    "title": "[PR] Design content pipeline for user-generated content",
+    "date": "2026-01-06T07:55:39Z",
+    "summary": "This commit introduces a comprehensive content strategy inspired by Unix history resources (like Spinellis's Unix History Repository) and developer content platforms (like Warp Terminus).\r\n\r\nContent Pipeline Design (docs/content/CONTENT_PIPELINE_DESIGN.md):\r\n- Four content categories: Command Spotli",
+    "url": "https://github.com/wildcard/caro/pull/122",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: caro"
     ]
   }
 ]
