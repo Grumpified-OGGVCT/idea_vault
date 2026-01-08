@@ -548,12 +548,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-08T01:57:02Z",
+    "date": "2026-01-08T04:42:02Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 506",
+      "comments: 513",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -620,19 +620,19 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Improved accessibility and focus states",
-    "date": "2026-01-08T03:08:17Z",
+    "date": "2026-01-08T04:05:34Z",
     "summary": "This PR addresses two accessibility issues identified during UX review:\n1. Missing accessible name for the tab list in Santa's Workshop, which was causing unit test failures.\n2. Inaccessible focus states on the Start Screen class selection cards.\n\nChanges:\n- Added `aria-label=\"Workshop Categories\"` ",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1015",
+      "comments: 1022",
       "pull request",
       "repo: protocol-silent-night"
     ]
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-08T03:39:19Z",
+    "date": "2026-01-08T04:30:14Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
@@ -788,12 +788,12 @@
   },
   {
     "title": "[PR] test: Establish comprehensive testing standards and refactor R3F tests",
-    "date": "2026-01-08T03:45:05Z",
+    "date": "2026-01-08T04:11:55Z",
     "summary": "## Summary\n- Create comprehensive testing standards documentation (`docs/TESTING_STANDARDS.md`)\n- Update CLAUDE.md with testing guidelines section\n- Configure CodeRabbit to enforce testing standards on PR reviews\n- Add `@react-three/test-renderer` as dev dependency\n- Refactor ClownCarCockpit.test.ts",
     "url": "https://github.com/arcade-cabinet/Beppo-Laughs/pull/80",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 9",
       "pull request",
       "repo: Beppo-Laughs"
     ]
@@ -832,6 +832,18 @@
       "comments: 2",
       "pull request",
       "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n to v2",
+    "date": "2026-01-08T03:54:04Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.119.0` -> `2.3.1` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboar",
+    "url": "https://github.com/tmayweather/home-ops/pull/407",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
