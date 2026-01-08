@@ -548,7 +548,7 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-08T04:42:02Z",
+    "date": "2026-01-08T04:44:10Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
@@ -620,19 +620,19 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Improved accessibility and focus states",
-    "date": "2026-01-08T04:05:34Z",
+    "date": "2026-01-08T05:01:26Z",
     "summary": "This PR addresses two accessibility issues identified during UX review:\n1. Missing accessible name for the tab list in Santa's Workshop, which was causing unit test failures.\n2. Inaccessible focus states on the Start Screen class selection cards.\n\nChanges:\n- Added `aria-label=\"Workshop Categories\"` ",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1022",
+      "comments: 1029",
       "pull request",
       "repo: protocol-silent-night"
     ]
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-08T04:30:14Z",
+    "date": "2026-01-08T05:29:45Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
@@ -692,7 +692,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (main)",
-    "date": "2026-01-08T03:23:58Z",
+    "date": "2026-01-08T05:27:12Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [camunda-pl",
     "url": "https://github.com/camunda/connectors/pull/5917",
     "source": "github_prs",
@@ -728,8 +728,8 @@
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-08T02:56:42Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.3.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v2.3.0`](https://",
+    "date": "2026-01-08T05:11:39Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.10` \u2192 `2.3.1` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for mor",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
     "highlights": [
@@ -844,6 +844,54 @@
       "comments: 0",
       "pull request",
       "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-01-08T05:27:07Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [community.docker](https://redirect.github.com/ansible-collections/community.docker) | galaxy-collection | patch | `5.0.4` \u2192 `5.0.5` |\n| [",
+    "url": "https://github.com/heywoodlh/nixos-configs/pull/28",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nixos-configs"
+    ]
+  },
+  {
+    "title": "[PR] Feat: Onboarding Screen Implementation ",
+    "date": "2026-01-08T05:06:41Z",
+    "summary": "\r\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Redesigned onboarding flow with a welcome screen and new local/remote provider setup steps\n  * Theme selection (Light/Dark) added to Settings\n\n* **UI/UX Improvements**\n  * Re",
+    "url": "https://github.com/sortedstartup/sortedchat/pull/276",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: sortedchat"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.113.3 \u2192 2.3.1 )",
+    "date": "2026-01-08T05:24:57Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.113.3` \u2192 `2.3.1` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/sarcasticgoat/k8s-gitops/pull/109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: k8s-gitops"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v1.1.2",
+    "date": "2026-01-08T04:49:39Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-b",
+    "url": "https://github.com/kpavlov/spring-ai-llm-proxy/pull/58",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: spring-ai-llm-proxy"
     ]
   }
 ]
