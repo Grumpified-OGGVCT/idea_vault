@@ -548,12 +548,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-08T15:30:55Z",
+    "date": "2026-01-08T15:51:56Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 536",
+      "comments: 542",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -620,19 +620,19 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Improved accessibility and focus states",
-    "date": "2026-01-08T15:24:48Z",
+    "date": "2026-01-08T16:22:22Z",
     "summary": "This PR addresses two accessibility issues identified during UX review:\n1. Missing accessible name for the tab list in Santa's Workshop, which was causing unit test failures.\n2. Inaccessible focus states on the Start Screen class selection cards.\n\nChanges:\n- Added `aria-label=\"Workshop Categories\"` ",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1101",
+      "comments: 1108",
       "pull request",
       "repo: protocol-silent-night"
     ]
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-08T15:29:16Z",
+    "date": "2026-01-08T16:31:53Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
@@ -896,12 +896,12 @@
   },
   {
     "title": "[PR] chore(sync): [skip actions] synced file(s) with jbcom/control-center",
-    "date": "2026-01-08T15:08:31Z",
+    "date": "2026-01-08T16:15:07Z",
     "summary": "synced local file(s) with [jbcom/control-center](https://github.com/jbcom/control-center).\n\n\n\n<details>\n<summary>Changed files</summary>\n<ul>\n<li>synced local directory <code>./</code> with remote directory <code>sync-files/always-sync/global/</code></li>\n</ul>\n</details>\n\n---\n\nThis PR was created a",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/82",
     "source": "github_prs",
     "highlights": [
-      "comments: 73",
+      "comments: 78",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -1388,12 +1388,12 @@
   },
   {
     "title": "After upgrading to 2026.1.0 my voice assistant responds \u201cError talking to OpenAI\u201d",
-    "date": "2026-01-08T15:10:04Z",
+    "date": "2026-01-08T15:53:59Z",
     "summary": "### The problem\n\nMy voice assistant is configured to use OpenAI. I restarted HA again and cycled power to the voice assistant to no avail. It was working just prior to upgrading to HA 2026.1.0. Now it just responds \u201cError talking to OpenAI\u201d.\n\nHere is the error in the log file when I say \"Hey Jarvis\"",
     "url": "https://github.com/home-assistant/core/issues/160462",
     "source": "github_issues",
     "highlights": [
-      "comments: 26",
+      "comments: 27",
       "state: open",
       "repo: core"
     ]
@@ -1424,7 +1424,7 @@
   },
   {
     "title": "[PR] admin dashboard ssc-dsai:dev",
-    "date": "2026-01-08T14:53:03Z",
+    "date": "2026-01-08T16:10:03Z",
     "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
     "url": "https://github.com/arthrod/open-webui/pull/36",
     "source": "github_prs",
@@ -1444,6 +1444,30 @@
       "comments: 7",
       "pull request",
       "repo: open-webui"
+    ]
+  },
+  {
+    "title": "[PR] Repurpose Open WebUI for Gemini Memory & Consciousness",
+    "date": "2026-01-08T16:33:16Z",
+    "summary": "This change repurposes the Open WebUI repository to serve specifically as an interface for Google Gemini's consciousness and memory, as requested. \n\nIt involves:\n1.  **Cleanup**: Removal of all Docker Compose files and scripts related to local LLM inference (Ollama, AMD/Nvidia GPU passthrough), as G",
+    "url": "https://github.com/VanessaTV/open-webui/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: open-webui"
+    ]
+  },
+  {
+    "title": "[PR] chore(release): staging to production - 2026.01.08",
+    "date": "2026-01-08T16:22:35Z",
+    "summary": "## \ud83d\ude80 Release: Staging to Production\n\n**Release Date:** 2026-01-08\n\n### Changes in this release\n\n- feat(AGENT-610): multi-workspace resource sharing via Smart Repository Decorator (e0d891f4)\n- chore: optimize claude code architecture for 2026 best practices (4b243548)\n- fix: update workspace api endp",
+    "url": "https://github.com/the-answerai/theanswer/pull/775",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 18",
+      "pull request",
+      "repo: theanswer"
     ]
   }
 ]
