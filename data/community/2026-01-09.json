@@ -560,12 +560,12 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Improved accessibility and focus states",
-    "date": "2026-01-09T08:49:32Z",
+    "date": "2026-01-09T10:00:29Z",
     "summary": "This PR addresses two accessibility issues identified during UX review:\n1. Missing accessible name for the tab list in Santa's Workshop, which was causing unit test failures.\n2. Inaccessible focus states on the Start Screen class selection cards.\n\nChanges:\n- Added `aria-label=\"Workshop Categories\"` ",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1211",
+      "comments: 1217",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -584,12 +584,12 @@
   },
   {
     "title": "[PR] chore(sync): [skip actions] synced file(s) with jbcom/control-center",
-    "date": "2026-01-09T09:21:10Z",
+    "date": "2026-01-09T10:17:14Z",
     "summary": "synced local file(s) with [jbcom/control-center](https://github.com/jbcom/control-center).\n\n\n\n<details>\n<summary>Changed files</summary>\n<ul>\n<li>synced local directory <code>./</code> with remote directory <code>sync-files/always-sync/global/</code></li>\n</ul>\n</details>\n\n---\n\nThis PR was created a",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/82",
     "source": "github_prs",
     "highlights": [
-      "comments: 167",
+      "comments: 172",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -608,7 +608,7 @@
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-09T09:32:50Z",
+    "date": "2026-01-09T10:28:06Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
@@ -632,12 +632,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-09T09:32:35Z",
+    "date": "2026-01-09T09:54:21Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 574",
+      "comments: 579",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -776,7 +776,7 @@
   },
   {
     "title": "[PR] chore(deps): update pip",
-    "date": "2026-01-09T09:18:16Z",
+    "date": "2026-01-09T10:10:40Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [google-adk](https://redirect.github.com/google/adk-python) ([changelog](https://redirect.github.co",
     "url": "https://github.com/googleapis/genai-toolbox/pull/2280",
     "source": "github_prs",
@@ -920,8 +920,8 @@
   },
   {
     "title": "[PR] Implement production-ready Claude.ai alternative with multi-agent orchestration, Builder Suite, zero-cost deployment, comprehensive error handling with welcome experience, and no authentication",
-    "date": "2026-01-09T09:32:03Z",
-    "summary": "## \u2705 Production System - Code Quality Improvements\n\n### Code Review Feedback Addressed:\n\n**1. Avoid Wasting API Quota**\n- Removed test API call from `/api/validate-key`\n- Now only checks if ENVY initialized (means key is configured)\n- Actual validation happens on first real chat message\n- Saves free",
+    "date": "2026-01-09T09:35:47Z",
+    "summary": "## \u2705 Production System - All Issues Resolved\n\n### Final Code Review Cleanup:\n\n**1. Removed Unused Variable** (`server.py`)\n- Removed `provider =` from validation call\n- Variable was assigned but never used\n- Cleaner code, no functionality change\n\n**2. Clarified URL Validation** (`envy/core/config.py",
     "url": "https://github.com/claudenunc/LOVE-WINS/pull/1",
     "source": "github_prs",
     "highlights": [
@@ -944,7 +944,7 @@
   },
   {
     "title": "[PR] fix(deps): update dependency org.springframework.ai:spring-ai-bom to v1.1.2",
-    "date": "2026-01-09T05:47:03Z",
+    "date": "2026-01-09T09:59:59Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `1.",
     "url": "https://github.com/rajadilipkolli/ai-playground/pull/166",
     "source": "github_prs",
@@ -968,7 +968,7 @@
   },
   {
     "title": "[PR] Issue: 113 : Implement Uninstall Impact Analysis with Dependency and Service Impact Detection",
-    "date": "2026-01-09T07:25:09Z",
+    "date": "2026-01-09T10:24:22Z",
     "summary": "## Related Issue\r\nCloses #113\r\n\r\n## Summary\r\nImplements comprehensive **Uninstall Impact Analysis** feature for Cortex Linux, enabling safe package removal by analyzing dependencies, predicting service impacts, and providing actionable recommendations.\r\n\r\n### What This PR Does:\r\n- **Core Feature**: ",
     "url": "https://github.com/cortexlinux/cortex/pull/391",
     "source": "github_prs",
@@ -1040,7 +1040,7 @@
   },
   {
     "title": "[PR] evaluation framework",
-    "date": "2026-01-09T09:32:03Z",
+    "date": "2026-01-09T10:04:08Z",
     "summary": "...\r\n\r\n## Added\r\n* `timer_for_tests` fixture for measuring the run time of unit tests\r\n\r\n## Changed\r\n* version bumped to 0.1.9\r\n\r\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Chores**\n  * Project version bumped to 0.1.9.\n  * Environment con",
     "url": "https://github.com/lars20070/deepresearcher2/pull/21",
     "source": "github_prs",
@@ -1108,6 +1108,18 @@
       "comments: 3",
       "pull request",
       "repo: docs"
+    ]
+  },
+  {
+    "title": "[PR] docs: add PDFMathTranslate tutorial",
+    "date": "2026-01-09T10:08:19Z",
+    "summary": "Title: add tutorial for PDFMathTranslate\r\n\r\n* **Background**\r\nSee title.\r\n\r\n* **Target Version for Merge**\r\n1.12\r\n\r\n* **Related Issues**\r\nNA\r\n\r\n* **PRs Involving Sub-Systems** \r\nNA\r\n\r\n* **Other information**\r\nNA\r\n",
+    "url": "https://github.com/beclab/Olares/pull/2378",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Olares"
     ]
   }
 ]
