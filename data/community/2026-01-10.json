@@ -548,12 +548,12 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Improved accessibility and focus states",
-    "date": "2026-01-10T15:24:26Z",
+    "date": "2026-01-10T16:28:14Z",
     "summary": "This PR addresses two accessibility issues identified during UX review:\n1. Missing accessible name for the tab list in Santa's Workshop, which was causing unit test failures.\n2. Inaccessible focus states on the Start Screen class selection cards.\n\nChanges:\n- Added `aria-label=\"Workshop Categories\"` ",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1387",
+      "comments: 1392",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -740,12 +740,12 @@
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-10T15:09:47Z",
+    "date": "2026-01-10T16:28:57Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: gemini-cli"
     ]
@@ -836,12 +836,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-10T13:34:27Z",
+    "date": "2026-01-10T16:18:48Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 639",
+      "comments: 646",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -884,12 +884,12 @@
   },
   {
     "title": "[PR] pnpm_10: 10.26.1 -> 10.28.0",
-    "date": "2026-01-10T15:22:18Z",
+    "date": "2026-01-10T15:34:02Z",
     "summary": "Releases:\r\n- https://github.com/pnpm/pnpm/releases/tag/v10.26.2\r\n- https://github.com/pnpm/pnpm/releases/tag/v10.27.0\r\n- https://github.com/pnpm/pnpm/releases/tag/v10.28.0\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link",
     "url": "https://github.com/NixOS/nixpkgs/pull/473587",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "pull request",
       "repo: nixpkgs"
     ]
@@ -1220,12 +1220,12 @@
   },
   {
     "title": "[PR] evaluation framework",
-    "date": "2026-01-10T08:04:27Z",
+    "date": "2026-01-10T16:26:36Z",
     "summary": "...\r\n\r\n## Added\r\n* `timer_for_tests` fixture for measuring the run time of unit tests\r\n\r\n## Changed\r\n* version bumped to 0.1.9\r\n\r\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Chores**\n  * Project version bumped to 0.1.9.\n  * Environment con",
     "url": "https://github.com/lars20070/deepresearcher2/pull/21",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 2",
       "pull request",
       "repo: deepresearcher2"
     ]
@@ -1412,7 +1412,7 @@
   },
   {
     "title": "[PR] fix(wizard): allow setup to continue when API key is already present in ENV",
-    "date": "2026-01-10T15:16:35Z",
+    "date": "2026-01-10T16:08:26Z",
     "summary": "Closes #547\r\n\r\n\r\n**Summary**\r\nThis PR fixes an issue where [cortex wizard](vscode-file://vscode-app/usr/share/code/resources/app/out/vs/code/electron-browser/workbench/workbench.html) exits early even when a valid API key is already exported in the environment.\r\n\r\nCurrently, the wizard always prompt",
     "url": "https://github.com/cortexlinux/cortex/pull/356",
     "source": "github_prs",
@@ -1423,13 +1423,13 @@
     ]
   },
   {
-    "title": "[PR] Add comprehensive test suite with 1,320+ new tests, fix circuit breaker API, implement major bot improvements, integrate all unused modules, and add AI/Ollama integration",
-    "date": "2026-01-10T15:05:09Z",
+    "title": "[PR] Add comprehensive test suite with 1,340+ new tests, fix circuit breaker API, implement major bot improvements, integrate all unused modules, and add Llama 3.1 8B AI integration",
+    "date": "2026-01-10T15:42:05Z",
     "summary": "# Pull Request\n\n## Description\n\nAdds comprehensive test suite covering multiple testing methodologies: integration tests, E2E tests, security tests, fuzz/property-based testing (Hypothesis), smoke tests, localization tests, recovery tests, concurrency tests, pairwise tests, risk-based tests, fault i",
     "url": "https://github.com/Dykij/DMarket-Telegram-Bot/pull/95",
     "source": "github_prs",
     "highlights": [
-      "comments: 50",
+      "comments: 52",
       "pull request",
       "repo: DMarket-Telegram-Bot"
     ]
@@ -1444,6 +1444,78 @@
       "comments: 3",
       "pull request",
       "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Bug Squash",
+    "date": "2026-01-10T16:28:46Z",
+    "summary": "### **PR Type**\nDocumentation\n\n\n___\n\n### **Description**\n- Updated project directory structure documentation\n\n- Added new directories: Setup_UI, static, cli, admin-ui, Monitoring\n\n- Clarified organization of backend and frontend components\n\n\n___\n\n### Diagram Walkthrough\n\n\n```mermaid\nflowchart LR\n  R",
+    "url": "https://github.com/rmusser01/tldw_server/pull/720",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: tldw_server"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.123.11 \u2192 2.3.2 )",
+    "date": "2026-01-10T16:23:37Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.3.2` |\n\n---\n\n> [!WARNING]\n> Some de",
+    "url": "https://github.com/dstewen/talos-homecluster/pull/821",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: talos-homecluster"
+    ]
+  },
+  {
+    "title": "[PR] Issue: 113 : Implement Uninstall Impact Analysis with Dependency and Service Impact Detection",
+    "date": "2026-01-10T16:13:29Z",
+    "summary": "## Related Issue\r\nCloses #113\r\n\r\n## Summary\r\nImplements comprehensive **Uninstall Impact Analysis** feature for Cortex Linux, enabling safe package removal by analyzing dependencies, predicting service impacts, and providing actionable recommendations.\r\n\r\n### What This PR Does:\r\n- **Core Feature**: ",
+    "url": "https://github.com/cortexlinux/cortex/pull/391",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] `Iris`: Replace LangSmith with LangFuse for observability",
+    "date": "2026-01-10T16:04:28Z",
+    "summary": "## Summary\n- Replace LangSmith integration with LangFuse for comprehensive AI pipeline observability\n- Add new tracing module with thread-safe initialization and proper cleanup\n- Add @observe decorator coverage across all AI operations\n- Remove debug print statement that leaked system prompts\n\n## Ch",
+    "url": "https://github.com/ls1intum/edutelligence/pull/386",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] `Iris`: Implement centralized logging with request ID tracking",
+    "date": "2026-01-10T16:03:30Z",
+    "summary": "## Description\n\nThis PR implements a comprehensive logging cleanup for the Iris service, introducing centralized logging infrastructure with request ID tracking for better observability and debugging.\n\n### Key Changes\n\n1. **Centralized Logging Module** (`logging_config.py`)\n   - Request ID context t",
+    "url": "https://github.com/ls1intum/edutelligence/pull/385",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.113.3 \u2192 2.3.2 )",
+    "date": "2026-01-10T16:25:50Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.113.3` \u2192 `2.3.2` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/sarcasticgoat/k8s-gitops/pull/109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: k8s-gitops"
     ]
   }
 ]
