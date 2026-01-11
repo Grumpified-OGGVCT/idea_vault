@@ -548,7 +548,7 @@
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-11T07:12:10Z",
+    "date": "2026-01-11T08:30:34Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
@@ -596,7 +596,7 @@
   },
   {
     "title": "[PR] Update Container images",
-    "date": "2026-01-11T01:51:28Z",
+    "date": "2026-01-11T08:23:38Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [dgraziotin/nginx-webdav-nononsense](https://redirect.github.com/dgraziotin/docker-nginx-webdav-nononsense) | patch | `1.29.0` \u2192 `1.29.4` |\n| [docker",
     "url": "https://github.com/bubacoder/infra/pull/261",
     "source": "github_prs",
@@ -620,12 +620,12 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Improved accessibility and focus states",
-    "date": "2026-01-11T07:25:21Z",
+    "date": "2026-01-11T07:41:19Z",
     "summary": "This PR addresses two accessibility issues identified during UX review:\n1. Missing accessible name for the tab list in Santa's Workshop, which was causing unit test failures.\n2. Inaccessible focus states on the Start Screen class selection cards.\n\nChanges:\n- Added `aria-label=\"Workshop Categories\"` ",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1469",
+      "comments: 1472",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -800,7 +800,7 @@
   },
   {
     "title": "[PR] Bug Squash",
-    "date": "2026-01-11T04:15:38Z",
+    "date": "2026-01-11T07:50:06Z",
     "summary": "### **PR Type**\nDocumentation\n\n\n___\n\n### **Description**\n- Updated project directory structure documentation\n\n- Added new directories: Setup_UI, static, cli, admin-ui, Monitoring\n\n- Clarified organization of backend and frontend components\n\n\n___\n\n### Diagram Walkthrough\n\n\n```mermaid\nflowchart LR\n  R",
     "url": "https://github.com/rmusser01/tldw_server/pull/720",
     "source": "github_prs",
@@ -836,12 +836,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-11T06:04:11Z",
+    "date": "2026-01-11T08:32:47Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 679",
+      "comments: 680",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -1012,6 +1012,54 @@
       "comments: 0",
       "pull request",
       "repo: shinyflakes"
+    ]
+  },
+  {
+    "title": "[PR] refactor(ui): Improve SantasWorkshop accessibility",
+    "date": "2026-01-11T08:32:45Z",
+    "summary": "Refactors the SantasWorkshop component to improve accessibility for screen readers. Instead of conditionally rendering tab panels, all panels are now rendered and their visibility is controlled with the 'hidden' attribute. This ensures that assistive technologies can correctly parse the tabbed inter",
+    "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/80",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 49",
+      "pull request",
+      "repo: protocol-silent-night"
+    ]
+  },
+  {
+    "title": "[PR] chore(sync): [skip actions] synced file(s) with jbcom/control-center",
+    "date": "2026-01-11T08:03:19Z",
+    "summary": "synced local file(s) with [jbcom/control-center](https://github.com/jbcom/control-center).\n\n\n\n<details>\n<summary>Changed files</summary>\n<ul>\n<li>synced local directory <code>./</code> with remote directory <code>sync-files/always-sync/global/</code></li>\n</ul>\n</details>\n\n---\n\nThis PR was created a",
+    "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/82",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 305",
+      "pull request",
+      "repo: protocol-silent-night"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): bump the prod-deps group with 6 updates",
+    "date": "2026-01-11T07:29:05Z",
+    "summary": "Bumps the prod-deps group with 6 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) | `3.5.7` | `4.0.1` |\n| [org.springframework.cloud:spring-cloud-dependencies](https://github.com/spring-cloud",
+    "url": "https://github.com/folio-org/mgr-tenant-entitlements/pull/252",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mgr-tenant-entitlements"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-01-11T08:31:56Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [aws-cdk](h",
+    "url": "https://github.com/BranislavBeno/GitLab-Issue-Importer/pull/334",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: GitLab-Issue-Importer"
     ]
   }
 ]
