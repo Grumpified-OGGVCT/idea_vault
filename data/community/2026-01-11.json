@@ -548,7 +548,7 @@
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-11T09:11:24Z",
+    "date": "2026-01-11T10:10:57Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
@@ -1064,8 +1064,8 @@
   },
   {
     "title": "[PR] evaluation framework",
-    "date": "2026-01-11T09:24:23Z",
-    "summary": "...\r\n\r\n## Added\r\n* `timer_for_tests` fixture for measuring the run time of unit tests\r\n* banner in project `README.md`\r\n\r\n## Changed\r\n* version bumped to 0.1.9\r\n* CodeRabbit config including `instructions` for Python code, unit tests and prompts\r\n\r\n<!-- This is an auto-generated comment: release not",
+    "date": "2026-01-11T10:18:28Z",
+    "summary": "...\r\n\r\n## Added\r\n* `timer_for_tests` fixture for measuring the run time of unit tests\r\n* banner in project `README.md`\r\n\r\n## Changed\r\n* version bumped to 0.1.9\r\n* CodeRabbit config including `instructions` for Python code, unit tests and prompts\r\n* UML diagrams moved to `src/deepresearcher2/` direct",
     "url": "https://github.com/lars20070/deepresearcher2/pull/21",
     "source": "github_prs",
     "highlights": [
@@ -1096,6 +1096,42 @@
       "comments: 0",
       "pull request",
       "repo: k3s-gitops"
+    ]
+  },
+  {
+    "title": "[PR] Require explicit -k API key, add Ollama / Ollama\u2011Cloud handling, update docs",
+    "date": "2026-01-11T10:21:59Z",
+    "summary": "Summary:\r\n\r\n- Modified compose behavior to remove environment-variable fallback for API keys: authenticated services must be provided an API key via -k/--api-key.\r\n- Added clearer separation between ollama (local, no auth) and ollama-cloud (cloud models via local Ollama client, requires -k).\r\n- Impl",
+    "url": "https://github.com/d99kris/nchat/pull/452",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nchat"
+    ]
+  },
+  {
+    "title": "[PR] feat: TUI dashboard fix Interactive TUI Dashboard",
+    "date": "2026-01-11T10:06:24Z",
+    "summary": "## Summary\r\n<!-- Brief description of changes -->\r\n- added a TUI dashboard with interactive features with keyboard like actions with arrows and switch tabs with tab.\r\n- is integrated with existing `cortex install` command to install any packages as intended.\r\n- run both system checks and packages ch",
+    "url": "https://github.com/cortexlinux/cortex/pull/277",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] Feature/image error diagnose",
+    "date": "2026-01-11T09:52:21Z",
+    "summary": "## Summary\r\n\r\nThis PR introduces **image-based error diagnosis** to Cortex via a new `diagnose` command.\r\n\r\nUsers can now diagnose system or installation errors directly from **screenshots or clipboard images**, solving a common problem where errors cannot be copy-pasted from terminals or GUI dialog",
+    "url": "https://github.com/cortexlinux/cortex/pull/484",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: cortex"
     ]
   }
 ]
