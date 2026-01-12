@@ -560,7 +560,7 @@
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-12T09:19:16Z",
+    "date": "2026-01-12T10:16:29Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
@@ -668,20 +668,20 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Improved accessibility and focus states",
-    "date": "2026-01-12T08:13:31Z",
+    "date": "2026-01-12T10:01:54Z",
     "summary": "This PR addresses two accessibility issues identified during UX review:\n1. Missing accessible name for the tab list in Santa's Workshop, which was causing unit test failures.\n2. Inaccessible focus states on the Start Screen class selection cards.\n\nChanges:\n- Added `aria-label=\"Workshop Categories\"` ",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1566",
+      "comments: 1572",
       "pull request",
       "repo: protocol-silent-night"
     ]
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-12T07:07:47Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.3.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for mor",
+    "date": "2026-01-12T10:01:58Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.3.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v2.3.0`](https://",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
     "highlights": [
@@ -788,12 +788,12 @@
   },
   {
     "title": "[PR] opencv: 4.12.0 -> 4.13.0",
-    "date": "2026-01-12T04:45:45Z",
+    "date": "2026-01-12T09:56:31Z",
     "summary": "<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or describe changes, this helps your fellow maintainers discover breaking updates.\r\nFor new packages please briefly describe the package or provide a link to",
     "url": "https://github.com/NixOS/nixpkgs/pull/479136",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: nixpkgs"
     ]
@@ -836,12 +836,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-12T08:59:45Z",
+    "date": "2026-01-12T10:04:26Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 739",
+      "comments: 744",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -1148,7 +1148,7 @@
   },
   {
     "title": "[PR] UN-3115 [FIX] - Ollama Adapters Failing post LiteLLM Migration",
-    "date": "2026-01-12T07:23:52Z",
+    "date": "2026-01-12T09:48:21Z",
     "summary": "## What\r\n\r\n- Fix Ollama LLM adapter connection issue where api_base URL was being lost during validation\r\n- Fix Ollama Embedding adapter to correctly prefix model names with ollama/ for litellm compatibility\r\n\r\n## Why\r\n\r\n- The validate() method in both OllamaLLMParameters and OllamaEmbeddingParamete",
     "url": "https://github.com/Zipstack/unstract/pull/1730",
     "source": "github_prs",
@@ -1196,8 +1196,8 @@
   },
   {
     "title": "[PR] Cube 92",
-    "date": "2026-01-12T09:10:06Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **New Features**\n  * Added cloud deployment infrastructure with automated orchestration and service management.\n  * Introduced reverse proxy routing and load balancing capabilit",
+    "date": "2026-01-12T10:21:33Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Cloud deployment workflow and full cloud orchestration added.\n  * Guardrails service: REST API, runtime, DB-backed config/versioning, admin endpoints, and chat integration.\n ",
     "url": "https://github.com/SammyOina/cube/pull/7",
     "source": "github_prs",
     "highlights": [
@@ -1208,7 +1208,7 @@
   },
   {
     "title": "[PR] Add CI failure AI-TL;DR summaries [WIP]",
-    "date": "2026-01-12T09:33:02Z",
+    "date": "2026-01-12T10:29:35Z",
     "summary": "This adds an automated AI summarization for Prow CI job failures:\r\n\r\n- Automatically triggers when nvidia-gpu-operator jobs fail (via status events)\r\n- Posts a concise TL;DR summary as a PR comment\r\n- Identifies root cause and recommends action (retest vs fix)\r\n- Manual re-analysis via workflow_disp",
     "url": "https://github.com/rh-ecosystem-edge/nvidia-ci/pull/407",
     "source": "github_prs",
@@ -1268,7 +1268,7 @@
   },
   {
     "title": "[PR] Release v0.99: Playable Alpha & Core Loop Hardening",
-    "date": "2026-01-12T09:37:38Z",
+    "date": "2026-01-12T09:49:33Z",
     "summary": "## Overview\nRefocusing the v1.0 release into a concrete **v0.99 Alpha** milestone. This release targets a fully playable 'Found-Build-Move-Fight' loop with robust save/load.\n\n## Key Features (Implemented)\n- **ECS Architecture:** Full migration to Entity-Component-System (Miniplex).\n- **Procedural Ma",
     "url": "https://github.com/arcade-cabinet/otter-empire/pull/72",
     "source": "github_prs",
@@ -1312,6 +1312,66 @@
       "comments: 1",
       "pull request",
       "repo: stamp"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency llama-index to ^0.14.0",
+    "date": "2026-01-12T10:17:17Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-index](https://redirect.github.com/run-llama/llama_index) | `^0.13.0` \u2192 `^0.14.0` | ![age](h",
+    "url": "https://github.com/mitodl/mit-learn/pull/2736",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mit-learn"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui ( 0.6.43 \u2192 0.7.2 )",
+    "date": "2026-01-12T10:12:32Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.43` \u2192 `0.7.2` |\n\n---\n\n### Release Notes\n\n<de",
+    "url": "https://github.com/phycoforce/home-ops/pull/1417",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-01-12T10:11:52Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [cert-manager](https://cert-manager.io) ([source](https://redirect.github.com/cert-manager/cert-manager)) | minor | `v1.17.2` \u2192 `v1.19.2` |\n| [extern",
+    "url": "https://github.com/dbirks/home-k8s/pull/32",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-k8s"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.7.2",
+    "date": "2026-01-12T10:10:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.43` \u2192 `0.7.2` |\n\n---\n\n### Release Notes\n\n<de",
+    "url": "https://github.com/kevindurb/k8s/pull/330",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k8s"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui ( 0.6.43 \u2192 0.7.2 )",
+    "date": "2026-01-12T10:09:05Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.43` \u2192 `0.7.2` |\n\n---\n\n> [!WARNING]\n> Some de",
+    "url": "https://github.com/chaijunkin/home-ops/pull/982",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
