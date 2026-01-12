@@ -188,7 +188,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-01-12T01:46:25Z",
+    "date": "2026-01-12T08:37:36Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -356,7 +356,7 @@
   },
   {
     "title": "Custom OpenAI-compatible provider options not being passed to API calls",
-    "date": "2025-12-19T06:14:58Z",
+    "date": "2026-01-12T08:18:47Z",
     "summary": "# Custom OpenAI-compatible provider options not being passed to API calls\n\n## Description\n\n### Summary\n\nWhen using a custom provider with `@ai-sdk/openai-compatible`, the `options` (including `baseURL` and `apiKey`) configured in `opencode.json` are not being passed to the actual API calls. This res",
     "url": "https://github.com/anomalyco/opencode/issues/5674",
     "source": "github_issues",
@@ -560,7 +560,7 @@
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-12T07:16:57Z",
+    "date": "2026-01-12T08:34:36Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
@@ -668,12 +668,12 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Improved accessibility and focus states",
-    "date": "2026-01-12T06:30:34Z",
+    "date": "2026-01-12T08:13:31Z",
     "summary": "This PR addresses two accessibility issues identified during UX review:\n1. Missing accessible name for the tab list in Santa's Workshop, which was causing unit test failures.\n2. Inaccessible focus states on the Start Screen class selection cards.\n\nChanges:\n- Added `aria-label=\"Workshop Categories\"` ",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1559",
+      "comments: 1566",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -1136,8 +1136,8 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-01-12T07:31:52Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Expanded CI/automation: many GitHub workflows, composite actions, PR/status comments, Docker/image builds, KIND cluster support, eval/benchmark automation, and new Make targe",
+    "date": "2026-01-12T07:36:19Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Expanded CI/automation: many workflows and actions for building, testing, benchmarking, Docker images, and PR status reporting.\n\n* **Documentation**\n  * Massive docs overhaul",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
     "highlights": [
@@ -1192,6 +1192,78 @@
       "comments: 2",
       "pull request",
       "repo: talos-homecluster"
+    ]
+  },
+  {
+    "title": "[PR] Cube 92",
+    "date": "2026-01-12T08:39:05Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n# Release Notes\n\n* **New Features**\n  * Added cloud deployment infrastructure with automated service orchestration and health verification\n  * Introduced CVM health monitoring and auto-restart capa",
+    "url": "https://github.com/SammyOina/cube/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cube"
+    ]
+  },
+  {
+    "title": "[PR] Add CI failure AI-TL;DR summaries",
+    "date": "2026-01-12T08:36:12Z",
+    "summary": "This adds an automated AI summarization for Prow CI job failures:\r\n\r\n- Automatically triggers when nvidia-gpu-operator jobs fail (via status events)\r\n- Posts a concise TL;DR summary as a PR comment\r\n- Identifies root cause and recommends action (retest vs fix)\r\n- Manual re-analysis via workflow_disp",
+    "url": "https://github.com/rh-ecosystem-edge/nvidia-ci/pull/407",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: nvidia-ci"
+    ]
+  },
+  {
+    "title": "[PR] feat: support for image generation (#980)",
+    "date": "2026-01-12T08:25:04Z",
+    "summary": "## Summary\n\nBriefly explain the purpose of this PR and the problem it solves.\n\n## Changes\n\n- What was changed and why\n- Any notable design decisions or trade-offs\n\n## Type of change\n\n- [ ] Bug fix\n- [ ] Feature\n- [ ] Refactor\n- [ ] Documentation\n- [ ] Chore/CI\n\n## Affected areas\n\n- [ ] Core (Go)\n- [",
+    "url": "https://github.com/maximhq/bifrost/pull/1256",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] `Iris`: Replace LangSmith with LangFuse for observability",
+    "date": "2026-01-12T08:23:00Z",
+    "summary": "## Summary\n- Replace LangSmith integration with LangFuse for comprehensive AI pipeline observability\n- Add new tracing module with thread-safe initialization and proper cleanup\n- Add @observe decorator coverage across all AI operations\n- Remove debug print statement that leaked system prompts\n\n## Ch",
+    "url": "https://github.com/ls1intum/edutelligence/pull/386",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] postgresqlTestHook: explicitly set encoding to UTF8",
+    "date": "2026-01-12T08:12:11Z",
+    "summary": "Otherwise it appears to default to ASCII, causing issues with the tests from libpqxx. It may also affect other use cases where unicode/utf8 characters are used in tests.\r\n\r\nRelated to https://github.com/NixOS/nixpkgs/pull/476936 where the tests are enabled and the issues with the encoding have poppe",
+    "url": "https://github.com/NixOS/nixpkgs/pull/479043",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): docker.n8n.io/n8nio/n8n Docker tag to v2.3.2",
+    "date": "2026-01-12T08:38:44Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.0.3` \u2192 `2.3.2` |\n\n---\n\n### Release Notes\n\n<",
+    "url": "https://github.com/moonlight8978/lbh-lab/pull/372",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lbh-lab"
     ]
   }
 ]
