@@ -188,7 +188,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-01-12T20:31:38Z",
+    "date": "2026-01-12T23:04:53Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -224,12 +224,12 @@
   },
   {
     "title": "After upgrading to 2026.1.0 my voice assistant responds \u201cError talking to OpenAI\u201d",
-    "date": "2026-01-12T20:57:09Z",
+    "date": "2026-01-12T23:03:51Z",
     "summary": "### The problem\n\nMy voice assistant is configured to use OpenAI. I restarted HA again and cycled power to the voice assistant to no avail. It was working just prior to upgrading to HA 2026.1.0. Now it just responds \u201cError talking to OpenAI\u201d.\n\nHere is the error in the log file when I say \"Hey Jarvis\"",
     "url": "https://github.com/home-assistant/core/issues/160462",
     "source": "github_issues",
     "highlights": [
-      "comments: 50",
+      "comments: 51",
       "state: open",
       "repo: core"
     ]
@@ -752,7 +752,7 @@
   },
   {
     "title": "[PR] chore(deps): update container image ghcr.io/open-webui/open-webui to v0.7.2",
-    "date": "2026-01-12T01:00:27Z",
+    "date": "2026-01-12T22:35:25Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `v0.6.41-ollama` \u2192 `0.7.2-ollama` |\n\n---\n\n### Release No",
     "url": "https://github.com/WolfeCub/home-ops/pull/690",
     "source": "github_prs",
@@ -836,12 +836,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-12T21:51:45Z",
+    "date": "2026-01-12T22:41:24Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 800",
+      "comments: 806",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -2095,12 +2095,12 @@
   },
   {
     "title": "[PR] python313Packages.pytest-postgresql: 6.0.0 -> 7.0.2",
-    "date": "2026-01-12T20:04:50Z",
+    "date": "2026-01-12T22:42:46Z",
     "summary": "python313Packages.port-for: 0.7.1 -> 1.0.0\r\n\r\nRoutine update (note change of repo URL; old now redirects to new) [pytest-postgresql changelog](https://github.com/dbfixtures/pytest-postgresql/blob/main/CHANGES.rst) [port-for changelog](https://github.com/fizyk/port-for/blob/master/CHANGES.rst)\r\n\r\n## ",
     "url": "https://github.com/NixOS/nixpkgs/pull/464037",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: nixpkgs"
     ]
@@ -2223,6 +2223,54 @@
       "comments: 1",
       "pull request",
       "repo: GitLab-Issue-Importer"
+    ]
+  },
+  {
+    "title": "[PR] fix: H2 database compatibility for GitHub integration and improve dev\u2026",
+    "date": "2026-01-12T23:20:57Z",
+    "summary": "\u2026 setup\r\n\r\n- Fixed V43 migration SQL syntax for H2 database compatibility\r\n  * Changed TEXT to CLOB for large text columns\r\n  * Changed UNIQUE KEY to CONSTRAINT UNIQUE syntax\r\n  * Removed incompatible INDEX creation statements\r\n- Updated GitHub entity annotations (@Lob instead of columnDefinition)\r\n",
+    "url": "https://github.com/farzad-sedaghatbin/ShipFlow/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ShipFlow"
+    ]
+  },
+  {
+    "title": "[PR] fix(security): Address all code review feedback",
+    "date": "2026-01-12T22:57:17Z",
+    "summary": "This commit resolves all actionable feedback from the CodeRabbit and Gemini code reviews, resulting in a fully hardened and architecturally sound application.\r\n\r\nKey fixes include:\r\n- **Syntax and Merge Errors**: Removed all merge conflict markers and resolved duplicated code blocks in `api/server.p",
+    "url": "https://github.com/deedk822-lang/The-lab-verse-monitoring-/pull/1252",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: The-lab-verse-monitoring-"
+    ]
+  },
+  {
+    "title": "[PR] chore: version packages",
+    "date": "2026-01-12T22:47:30Z",
+    "summary": "This PR was opened by the [Changesets release](https://github.com/changesets/action) GitHub action. When you're ready to do a release, you can merge this and the packages will be published to npm automatically. If you're not ready to do a release yet, that's fine, whenever you add more changesets to",
+    "url": "https://github.com/langchain-ai/langchainjs/pull/9771",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: langchainjs"
+    ]
+  },
+  {
+    "title": "[PR] feat: add interactive troubleshooting assistant",
+    "date": "2026-01-12T22:34:06Z",
+    "summary": "## Related Issue\r\nCloses #59\r\n\r\n## Summary\r\n<!-- What does this PR do? -->\r\nAdds an interactive AI-powered troubleshooting assistant (cortex troubleshoot) that can diagnose system issues, suggest shell commands, and execute them on behalf of the user with explicit confirmation. Includes a comprehens",
+    "url": "https://github.com/cortexlinux/cortex/pull/584",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: cortex"
     ]
   }
 ]
