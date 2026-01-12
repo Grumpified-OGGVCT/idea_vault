@@ -560,7 +560,7 @@
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-12T19:13:16Z",
+    "date": "2026-01-12T19:52:13Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
@@ -668,20 +668,20 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Improved accessibility and focus states",
-    "date": "2026-01-12T19:08:47Z",
+    "date": "2026-01-12T20:28:41Z",
     "summary": "This PR addresses two accessibility issues identified during UX review:\n1. Missing accessible name for the tab list in Santa's Workshop, which was causing unit test failures.\n2. Inaccessible focus states on the Start Screen class selection cards.\n\nChanges:\n- Added `aria-label=\"Workshop Categories\"` ",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1606",
+      "comments: 1608",
       "pull request",
       "repo: protocol-silent-night"
     ]
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-12T19:12:06Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.4.0` |\n\n---\n\n### Release Notes\n\n<deta",
+    "date": "2026-01-12T19:42:30Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.4.0` |\n\n---\n\n> [!WARNING]\n> Some depe",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
     "highlights": [
@@ -836,12 +836,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-12T19:08:14Z",
+    "date": "2026-01-12T20:06:32Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 786",
+      "comments: 791",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -1255,9 +1255,9 @@
     ]
   },
   {
-    "title": "[PR] chore(deps): docker.n8n.io/n8nio/n8n Docker tag to v2.3.2",
-    "date": "2026-01-12T08:38:44Z",
-    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.0.3` \u2192 `2.3.2` |\n\n---\n\n### Release Notes\n\n<",
+    "title": "[PR] chore(deps): docker.n8n.io/n8nio/n8n Docker tag to v2.4.0",
+    "date": "2026-01-12T20:22:51Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.0.3` \u2192 `2.4.0` |\n\n---\n\n### Release Notes\n\n<",
     "url": "https://github.com/moonlight8978/lbh-lab/pull/372",
     "source": "github_prs",
     "highlights": [
@@ -1460,12 +1460,12 @@
   },
   {
     "title": "[PR] [tutor] Add AI-Powered Installation Tutor (Issue #131) ",
-    "date": "2026-01-12T13:54:13Z",
+    "date": "2026-01-12T20:18:28Z",
     "summary": "\r\n  ## Summary\r\n  Add comprehensive AI-powered tutor for package education with:\r\n  - Interactive tutoring using Plan\u2192Act\u2192Reflect LangGraph workflow\r\n  - LLM-powered lessons, code examples, and Q&A (Claude API via LangChain)\r\n  - SQLite-based progress tracking and student profiling\r\n  - CLI integrat",
     "url": "https://github.com/cortexlinux/cortex/pull/566",
     "source": "github_prs",
     "highlights": [
-      "comments: 15",
+      "comments: 16",
       "pull request",
       "repo: cortex"
     ]
@@ -1520,7 +1520,7 @@
   },
   {
     "title": "[PR] feat: Added voice feature for end-user fix #325",
-    "date": "2026-01-12T17:01:23Z",
+    "date": "2026-01-12T20:19:50Z",
     "summary": "## Related Issue\r\nCloses #325\r\n\r\n## Summary\r\nAdds voice input capability to Cortex Linux, enabling users to speak commands instead of typing them. This implementation uses local speech-to-text processing with Whisper for privacy and low latency.\r\n\r\n### Features Added\r\n- **Voice command mode**: `cort",
     "url": "https://github.com/cortexlinux/cortex/pull/405",
     "source": "github_prs",
@@ -1783,8 +1783,8 @@
   },
   {
     "title": "[PR] Update n8nio/n8n Docker tag to v2",
-    "date": "2026-01-12T17:13:37Z",
-    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.121.2` \u2192 `2.4.0` |\n\n---\n\n### Release Notes\n\n<details>\n<su",
+    "date": "2026-01-12T20:26:20Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.121.2` \u2192 `2.4.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies",
     "url": "https://github.com/albinmedoc/kubernetes/pull/201",
     "source": "github_prs",
     "highlights": [
@@ -2047,7 +2047,7 @@
   },
   {
     "title": "[PR] deno: 2.6.3 -> 2.6.4",
-    "date": "2026-01-12T19:23:56Z",
+    "date": "2026-01-12T19:33:50Z",
     "summary": "Automatic update generated by [nixpkgs-update](https://github.com/nix-community/nixpkgs-update) tools. This update was made based on information from passthru.updateScript.\n\nmeta.description for deno is: Secure runtime for JavaScript and TypeScript\n\nmeta.homepage for deno is: https://deno.land/\n\nmet",
     "url": "https://github.com/NixOS/nixpkgs/pull/477618",
     "source": "github_prs",
@@ -2079,6 +2079,42 @@
       "comments: 2",
       "pull request",
       "repo: curiositi"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/n8n-io/n8n ( 2.0.1 \u2192 2.3.0 )",
+    "date": "2026-01-12T20:05:15Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.0.1` \u2192 `2.3.0` |\n\n---\n\n### Release Notes\n\n<detai",
+    "url": "https://github.com/dapperdivers/dapper-cluster/pull/2099",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dapper-cluster"
+    ]
+  },
+  {
+    "title": "[PR] python313Packages.pytest-postgresql: 6.0.0 -> 7.0.2",
+    "date": "2026-01-12T20:04:50Z",
+    "summary": "python313Packages.port-for: 0.7.1 -> 1.0.0\r\n\r\nRoutine update (note change of repo URL; old now redirects to new) [pytest-postgresql changelog](https://github.com/dbfixtures/pytest-postgresql/blob/main/CHANGES.rst) [port-for changelog](https://github.com/fizyk/port-for/blob/master/CHANGES.rst)\r\n\r\n## ",
+    "url": "https://github.com/NixOS/nixpkgs/pull/464037",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Changed: Update image ghcr.io/open-webui/open-webui to v0.7.2",
+    "date": "2026-01-12T20:04:45Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.43` \u2192 `0.7.2` |\n\n---\n\n### Release Notes\n\n<details>\n",
+    "url": "https://github.com/jlejeune/jlejeune.home-ansible/pull/632",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: jlejeune.home-ansible"
     ]
   }
 ]
