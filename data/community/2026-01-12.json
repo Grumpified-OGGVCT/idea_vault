@@ -560,7 +560,7 @@
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-12T06:18:01Z",
+    "date": "2026-01-12T07:16:57Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
@@ -680,8 +680,8 @@
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-12T06:36:41Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.3.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>n8n-io/n8n (n8nio/n8n)</summary>\n\n### [`v2.3.0`](https://",
+    "date": "2026-01-12T07:07:47Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.3.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for mor",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
     "highlights": [
@@ -836,12 +836,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-12T04:49:07Z",
+    "date": "2026-01-12T06:53:31Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 728",
+      "comments: 733",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -1132,6 +1132,66 @@
       "comments: 2",
       "pull request",
       "repo: k8s-gitops"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-01-12T07:31:52Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Expanded CI/automation: many GitHub workflows, composite actions, PR/status comments, Docker/image builds, KIND cluster support, eval/benchmark automation, and new Make targe",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] UN-3115 [FIX] - Ollama Adapters Failing post LiteLLM Migration",
+    "date": "2026-01-12T07:23:52Z",
+    "summary": "## What\r\n\r\n- Fix Ollama LLM adapter connection issue where api_base URL was being lost during validation\r\n- Fix Ollama Embedding adapter to correctly prefix model names with ollama/ for litellm compatibility\r\n\r\n## Why\r\n\r\n- The validate() method in both OllamaLLMParameters and OllamaEmbeddingParamete",
+    "url": "https://github.com/Zipstack/unstract/pull/1730",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: unstract"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the uv-all group across 1 directory with 13 updates",
+    "date": "2026-01-12T06:51:25Z",
+    "summary": "Bumps the uv-all group with 13 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [google-genai](https://github.com/googleapis/python-genai) | `1.51.0` | `1.57.0` |\n| [pydantic](https://github.com/pydantic/pydantic) | `2.12.4` | `2.12.5` |\n| [gitpython](https://github.com/git",
+    "url": "https://github.com/flare-foundation/flare-ai-kit/pull/135",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: flare-ai-kit"
+    ]
+  },
+  {
+    "title": "[PR] feat: TUI dashboard fix Interactive TUI Dashboard",
+    "date": "2026-01-12T06:51:22Z",
+    "summary": "## Summary\r\n<!-- Brief description of changes -->\r\n- added a TUI dashboard with interactive features with keyboard like actions with arrows and switch tabs with tab.\r\n- is integrated with existing `cortex install` command to install any packages as intended.\r\n- run both system checks and packages ch",
+    "url": "https://github.com/cortexlinux/cortex/pull/277",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.123.11 \u2192 2.3.2 )",
+    "date": "2026-01-12T06:45:41Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.3.2` |\n\n---\n\n> [!WARNING]\n> Some de",
+    "url": "https://github.com/dstewen/talos-homecluster/pull/821",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: talos-homecluster"
     ]
   }
 ]
