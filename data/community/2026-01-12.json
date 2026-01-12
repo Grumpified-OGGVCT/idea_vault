@@ -632,7 +632,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies (minor)",
-    "date": "2026-01-12T01:44:21Z",
+    "date": "2026-01-12T21:30:07Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) | minor | `4.5.0` \u2192 `4.6.0` |\n| [app-template](https://redirect.github.com/bjw-s-l",
     "url": "https://github.com/anthonytam/homelab/pull/264",
     "source": "github_prs",
@@ -668,20 +668,20 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Improved accessibility and focus states",
-    "date": "2026-01-12T20:53:06Z",
+    "date": "2026-01-12T22:19:43Z",
     "summary": "This PR addresses two accessibility issues identified during UX review:\n1. Missing accessible name for the tab list in Santa's Workshop, which was causing unit test failures.\n2. Inaccessible focus states on the Start Screen class selection cards.\n\nChanges:\n- Added `aria-label=\"Workshop Categories\"` ",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1612",
+      "comments: 1616",
       "pull request",
       "repo: protocol-silent-night"
     ]
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-12T20:52:03Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.4.0` |\n\n---\n\n### Release Notes\n\n<deta",
+    "date": "2026-01-12T21:51:50Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.4.0` |\n\n---\n\n> [!WARNING]\n> Some depe",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
     "highlights": [
@@ -836,12 +836,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-12T21:03:01Z",
+    "date": "2026-01-12T21:51:45Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 796",
+      "comments: 800",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -1508,7 +1508,7 @@
   },
   {
     "title": "[PR] Update Container images",
-    "date": "2026-01-12T18:22:05Z",
+    "date": "2026-01-12T21:46:30Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [dgraziotin/nginx-webdav-nononsense](https://redirect.github.com/dgraziotin/docker-nginx-webdav-nononsense) | patch | `1.29.0` \u2192 `1.29.4` |\n| [docker",
     "url": "https://github.com/bubacoder/infra/pull/261",
     "source": "github_prs",
@@ -1693,7 +1693,7 @@
     "url": "https://chromewebstore.google.com/detail/sutra/dpkmikhdmnphoglanaaioifoaognlhdp",
     "source": "hackernews",
     "highlights": [
-      "points: 3",
+      "points: 4",
       "comments: 1"
     ]
   },
@@ -2119,7 +2119,7 @@
   },
   {
     "title": "[PR] feat: Integrate Ollama CI & Improve Robustness",
-    "date": "2026-01-12T21:26:19Z",
+    "date": "2026-01-12T21:33:11Z",
     "summary": "## \ud83d\ude80 CI Evolution: Ollama Integration & Robustness\n\nThis PR overhauls the CI pipeline to use a local **Ollama** instance for end-to-end testing of LLM reports, replacing the previous Gemini configuration. It also introduces critical retry logic to handle the stochastic nature of smaller local models",
     "url": "https://github.com/palakpsheth/pytest-llm-report/pull/24",
     "source": "github_prs",
@@ -2175,6 +2175,54 @@
       "comments: 4",
       "pull request",
       "repo: The-lab-verse-monitoring-"
+    ]
+  },
+  {
+    "title": "[New feature] Local LLM Support for DBeaver Community",
+    "date": "2025-11-12T14:29:44Z",
+    "summary": "**Is your feature request related to a problem? Please describe.**\n\nWhile DBeaver Enterprise Edition already includes AI capabilities, the community version lacks integration with local LLMs like Ollama. This limits the open-source community's ability to leverage AI features for database operations,",
+    "url": "https://github.com/dbeaver/dbeaver/issues/36951",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 10",
+      "state: open",
+      "repo: dbeaver"
+    ]
+  },
+  {
+    "title": "[PR] feat: standardize model selectors across all providers",
+    "date": "2026-01-12T22:18:58Z",
+    "summary": "Closes #10650\n\n## Summary\n\nReplaces various model selection UI patterns with a consistent search-style ModelPicker component across all providers, giving users a unified experience as outlined in `plans/standardize-model-selector.md`.\n\n## Changes\n\n### New Files\n- **`webview-ui/src/components/setting",
+    "url": "https://github.com/RooCodeInc/Roo-Code/pull/10294",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: Roo-Code"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump google-adk from 1.21.0 to 1.22.1",
+    "date": "2026-01-12T22:10:57Z",
+    "summary": "Bumps [google-adk](https://github.com/google/adk-python) from 1.21.0 to 1.22.1.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/google/adk-python/releases\">google-adk's releases</a>.</em></p>\n<blockquote>\n<h2>v1.22.1</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Add bac",
+    "url": "https://github.com/kweinmeister/text-to-sql-agent/pull/33",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: text-to-sql-agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-01-12T21:56:27Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [aws-cdk](h",
+    "url": "https://github.com/BranislavBeno/GitLab-Issue-Importer/pull/334",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: GitLab-Issue-Importer"
     ]
   }
 ]
