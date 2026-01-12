@@ -224,12 +224,12 @@
   },
   {
     "title": "After upgrading to 2026.1.0 my voice assistant responds \u201cError talking to OpenAI\u201d",
-    "date": "2026-01-12T18:17:39Z",
+    "date": "2026-01-12T19:03:08Z",
     "summary": "### The problem\n\nMy voice assistant is configured to use OpenAI. I restarted HA again and cycled power to the voice assistant to no avail. It was working just prior to upgrading to HA 2026.1.0. Now it just responds \u201cError talking to OpenAI\u201d.\n\nHere is the error in the log file when I say \"Hey Jarvis\"",
     "url": "https://github.com/home-assistant/core/issues/160462",
     "source": "github_issues",
     "highlights": [
-      "comments: 48",
+      "comments: 49",
       "state: open",
       "repo: core"
     ]
@@ -560,7 +560,7 @@
   },
   {
     "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
-    "date": "2026-01-12T18:35:13Z",
+    "date": "2026-01-12T19:13:16Z",
     "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
     "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
     "source": "github_prs",
@@ -668,20 +668,20 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Improved accessibility and focus states",
-    "date": "2026-01-12T17:20:07Z",
+    "date": "2026-01-12T19:08:47Z",
     "summary": "This PR addresses two accessibility issues identified during UX review:\n1. Missing accessible name for the tab list in Santa's Workshop, which was causing unit test failures.\n2. Inaccessible focus states on the Start Screen class selection cards.\n\nChanges:\n- Added `aria-label=\"Workshop Categories\"` ",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1599",
+      "comments: 1606",
       "pull request",
       "repo: protocol-silent-night"
     ]
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-12T18:06:59Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.4.0` |\n\n---\n\n> [!WARNING]\n> Some depe",
+    "date": "2026-01-12T19:12:06Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.4.0` |\n\n---\n\n### Release Notes\n\n<deta",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
     "highlights": [
@@ -836,12 +836,12 @@
   },
   {
     "title": "[PR] \u26a1 Bolt: Optimize Enemies re-renders",
-    "date": "2026-01-12T18:37:31Z",
+    "date": "2026-01-12T19:08:14Z",
     "summary": "This PR optimizes the `Enemies` system by decoupling the React render cycle from high-frequency game state updates (spawning, dying, moving).\n\n**Key Changes:**\n1.  **Enemies Component:** Removed `useGameStore((state) => state.enemies)` subscription. The component now only re-renders on phase changes",
     "url": "https://github.com/arcade-cabinet/protocol-silent-night/pull/73",
     "source": "github_prs",
     "highlights": [
-      "comments: 784",
+      "comments: 786",
       "pull request",
       "repo: protocol-silent-night"
     ]
@@ -1544,12 +1544,12 @@
   },
   {
     "title": "[PR] feat(claude): add Claude Code configuration and automation",
-    "date": "2026-01-12T18:39:28Z",
+    "date": "2026-01-12T19:11:13Z",
     "summary": "### **User description**\n## Summary\n\n- Adds comprehensive Claude Code setup for AI-assisted development workflows\n\n## Changes\n\n- **Agents**: senior-engineer, code-simplifier, code-verifier for specialized tasks\n- **Skills**: code-review, commit-push-pr, lf-config-validator, temp-files\n- **Hooks**: c",
     "url": "https://github.com/llama-farm/llamafarm/pull/666",
     "source": "github_prs",
     "highlights": [
-      "comments: 15",
+      "comments: 17",
       "pull request",
       "repo: llamafarm"
     ]
@@ -1693,7 +1693,7 @@
     "url": "https://chromewebstore.google.com/detail/sutra/dpkmikhdmnphoglanaaioifoaognlhdp",
     "source": "hackernews",
     "highlights": [
-      "points: 2",
+      "points: 3",
       "comments: 1"
     ]
   },
@@ -2043,6 +2043,42 @@
       "comments: 2",
       "pull request",
       "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] deno: 2.6.3 -> 2.6.4",
+    "date": "2026-01-12T19:23:56Z",
+    "summary": "Automatic update generated by [nixpkgs-update](https://github.com/nix-community/nixpkgs-update) tools. This update was made based on information from passthru.updateScript.\n\nmeta.description for deno is: Secure runtime for JavaScript and TypeScript\n\nmeta.homepage for deno is: https://deno.land/\n\nmet",
+    "url": "https://github.com/NixOS/nixpkgs/pull/477618",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Native Ollama LLM Integration + Example Project + Full Unit Tests",
+    "date": "2026-01-12T18:48:50Z",
+    "summary": "# \ud83d\ude80 PR: Native Ollama LLM Integration + Example Project + Full Unit Tests  \r\n**Includes: Critical Fix for Ollama Cloud Tool-Calling + Comparison Test with LiteLLM**\r\n\r\n## \ud83d\udd17 Link to Issue or Description of Change\r\nNo existing issue.  \r\nSubmitting this as a **major feature contribution** that fills a ",
+    "url": "https://github.com/google/adk-python/pull/3570",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: adk-python"
+    ]
+  },
+  {
+    "title": "[PR] feat: proper file uploads",
+    "date": "2026-01-12T18:45:28Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Spaces UI and nested App routes for managing spaces\n  * Background file upload processing with queueing and worker processing\n  * PDF parsing and text embedding pipeline for ",
+    "url": "https://github.com/macintushar/curiositi/pull/23",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: curiositi"
     ]
   }
 ]
