@@ -317,6 +317,34 @@
     "research_score": 0.75
   },
   {
+    "arxiv_id": "2601.08828v1",
+    "title": "Motion Attribution for Video Generation",
+    "summary": "Despite the rapid progress of video generation models, the role of data in influencing motion is poorly understood. We present Motive (MOTIon attribution for Video gEneration), a motion-centric, gradient-based data attribution framework that scales to modern, large, high-quality video datasets and models. We use this to study which fine-tuning clips improve or degrade temporal dynamics. Motive isolates temporal dynamics from static appearance via motion-weighted loss masks, yielding efficient and scalable motion-specific influence computation. On text-to-video models, Motive identifies clips that strongly affect motion and guides data curation that improves temporal consistency and physical plausibility. With Motive-selected high-influence data, our method improves both motion smoothness and dynamic degree on VBench, achieving a 74.1% human preference win rate compared with the pretrained base model. To our knowledge, this is the first framework to attribute motion rather than visual appearance in video generative models and to use it to curate fine-tuning data.",
+    "authors": [
+      "Xindi Wu",
+      "Despoina Paschalidou",
+      "Jun Gao",
+      "Antonio Torralba",
+      "Laura Leal-Taix\u00e9",
+      "Olga Russakovsky",
+      "Sanja Fidler",
+      "Jonathan Lorraine"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG",
+      "cs.MM",
+      "cs.RO"
+    ],
+    "published": "2026-01-13",
+    "url": "https://arxiv.org/abs/2601.08828v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.08828v1.pdf",
+    "date": "2026-01-14",
+    "source": "arxiv",
+    "research_score": 0.73
+  },
+  {
     "arxiv_id": "2601.08734v1",
     "title": "TerraFormer: Automated Infrastructure-as-Code with LLMs Fine-Tuned via Policy-Guided Verifier Feedback",
     "summary": "Automating Infrastructure-as-Code (IaC) is challenging, and large language models (LLMs) often produce incorrect configurations from natural language (NL). We present TerraFormer, a neuro-symbolic framework for IaC generation and mutation that combines supervised fine-tuning with verifier-guided reinforcement learning, using formal verification tools to provide feedback on syntax, deployability, and policy compliance. We curate two large, high-quality NL-to-IaC datasets, TF-Gen (152k instances) and TF-Mutn (52k instances), via multi-stage verification and iterative LLM self-correction. Evaluations against 17 state-of-the-art LLMs, including ~50x larger models like Sonnet 3.7, DeepSeek-R1, and GPT-4.1, show that TerraFormer improves correctness over its base LLM by 15.94% on IaC-Eval, 11.65% on TF-Gen (Test), and 19.60% on TF-Mutn (Test). It outperforms larger models on both TF-Gen (Test) and TF-Mutn (Test), ranks third on IaC-Eval, and achieves top best-practices and security compliance.",
@@ -1869,29 +1897,6 @@
     "research_score": 0.61
   },
   {
-    "arxiv_id": "2601.08274v1",
-    "title": "Discovery and Reinforcement of Tool-Integrated Reasoning Chains via Rollout Trees",
-    "summary": "Tool-Integrated Reasoning has emerged as a key paradigm to augment Large Language Models (LLMs) with computational capabilities, yet integrating tool-use into long Chain-of-Thought (long CoT) remains underexplored, largely due to the scarcity of training data and the challenge of integrating tool-use without compromising the model's intrinsic long-chain reasoning. In this paper, we introduce DART (Discovery And Reinforcement of Tool-Integrated Reasoning Chains via Rollout Trees), a reinforcement learning framework that enables spontaneous tool-use during long CoT reasoning without human annotation. DART operates by constructing dynamic rollout trees during training to discover valid tool-use opportunities, branching out at promising positions to explore diverse tool-integrated trajectories. Subsequently, a tree-based process advantage estimation identifies and credits specific sub-trajectories where tool invocation positively contributes to the solution, effectively reinforcing these beneficial behaviors. Extensive experiments on challenging benchmarks like AIME and GPQA-Diamond demonstrate that DART significantly outperforms existing methods, successfully harmonizing tool execution with long CoT reasoning.",
-    "authors": [
-      "Kun Li",
-      "Zenan Xu",
-      "Junan Li",
-      "Zengrui Jin",
-      "Jinghao Deng",
-      "Zexuan Qiu",
-      "Bo Zhou"
-    ],
-    "categories": [
-      "cs.CL"
-    ],
-    "published": "2026-01-13",
-    "url": "https://arxiv.org/abs/2601.08274v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.08274v1.pdf",
-    "date": "2026-01-14",
-    "source": "arxiv",
-    "research_score": 0.61
-  },
-  {
     "arxiv_id": "2601.08811v1",
     "title": "Reasoning Matters for 3D Visual Grounding",
     "summary": "The recent development of Large Language Models (LLMs) with strong reasoning ability has driven research in various domains such as mathematics, coding, and scientific discovery. Meanwhile, 3D visual grounding, as a fundamental task in 3D understanding, still remains challenging due to the limited reasoning ability of recent 3D visual grounding models. Most of the current methods incorporate a text encoder and visual feature encoder to generate cross-modal fuse features and predict the referring object. These models often require supervised training on extensive 3D annotation data. On the other hand, recent research also focus on scaling synthetic data to train stronger 3D visual grounding LLM, however, the performance gain remains limited and non-proportional to the data collection cost. In this work, we propose a 3D visual grounding data pipeline, which is capable of automatically synthesizing 3D visual grounding data along with corresponding reasoning process. Additionally, we leverage the generated data for LLM fine-tuning and introduce Reason3DVG-8B, a strong 3D visual grounding LLM that outperforms previous LLM-based method 3D-GRAND using only 1.6% of their training data, demonstrating the effectiveness of our data and the importance of reasoning in 3D visual grounding.",
@@ -2345,6 +2350,48 @@
     "research_score": 0.6
   },
   {
+    "arxiv_id": "2601.08832v1",
+    "title": "RAVEN: Erasing Invisible Watermarks via Novel View Synthesis",
+    "summary": "Invisible watermarking has become a critical mechanism for authenticating AI-generated image content, with major platforms deploying watermarking schemes at scale. However, evaluating the vulnerability of these schemes against sophisticated removal attacks remains essential to assess their reliability and guide robust design. In this work, we expose a fundamental vulnerability in invisible watermarks by reformulating watermark removal as a view synthesis problem. Our key insight is that generating a perceptually consistent alternative view of the same semantic content, akin to re-observing a scene from a shifted perspective, naturally removes the embedded watermark while preserving visual fidelity. This reveals a critical gap: watermarks robust to pixel-space and frequency-domain attacks remain vulnerable to semantic-preserving viewpoint transformations. We introduce a zero-shot diffusion-based framework that applies controlled geometric transformations in latent space, augmented with view-guided correspondence attention to maintain structural consistency during reconstruction. Operating on frozen pre-trained models without detector access or watermark knowledge, our method achieves state-of-the-art watermark suppression across 15 watermarking methods--outperforming 14 baseline attacks while maintaining superior perceptual quality across multiple datasets.",
+    "authors": [
+      "Fahad Shamshad",
+      "Nils Lukas",
+      "Karthik Nandakumar"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-01-13",
+    "url": "https://arxiv.org/abs/2601.08832v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.08832v1.pdf",
+    "date": "2026-01-14",
+    "source": "arxiv",
+    "research_score": 0.59
+  },
+  {
+    "arxiv_id": "2601.08831v1",
+    "title": "3AM: Segment Anything with Geometric Consistency in Videos",
+    "summary": "Video object segmentation methods like SAM2 achieve strong performance through memory-based architectures but struggle under large viewpoint changes due to reliance on appearance features. Traditional 3D instance segmentation methods address viewpoint consistency but require camera poses, depth maps, and expensive preprocessing. We introduce 3AM, a training-time enhancement that integrates 3D-aware features from MUSt3R into SAM2. Our lightweight Feature Merger fuses multi-level MUSt3R features that encode implicit geometric correspondence. Combined with SAM2's appearance features, the model achieves geometry-consistent recognition grounded in both spatial position and visual similarity. We propose a field-of-view aware sampling strategy ensuring frames observe spatially consistent object regions for reliable 3D correspondence learning. Critically, our method requires only RGB input at inference, with no camera poses or preprocessing. On challenging datasets with wide-baseline motion (ScanNet++, Replica), 3AM substantially outperforms SAM2 and extensions, achieving 90.6% IoU and 71.7% Positive IoU on ScanNet++'s Selected Subset, improving over state-of-the-art VOS methods by +15.9 and +30.4 points. Project page: https://jayisaking.github.io/3AM-Page/",
+    "authors": [
+      "Yang-Che Sun",
+      "Cheng Sun",
+      "Chin-Yang Lin",
+      "Fu-En Yang",
+      "Min-Hung Chen",
+      "Yen-Yu Lin",
+      "Yu-Lun Liu"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-01-13",
+    "url": "https://arxiv.org/abs/2601.08831v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.08831v1.pdf",
+    "date": "2026-01-14",
+    "source": "arxiv",
+    "research_score": 0.59
+  },
+  {
     "arxiv_id": "2601.08790v1",
     "title": "Aggregating Diverse Cue Experts for AI-Generated Image Detection",
     "summary": "The rapid emergence of image synthesis models poses challenges to the generalization of AI-generated image detectors. However, existing methods often rely on model-specific features, leading to overfitting and poor generalization. In this paper, we introduce the Multi-Cue Aggregation Network (MCAN), a novel framework that integrates different yet complementary cues in a unified network. MCAN employs a mixture-of-encoders adapter to dynamically process these cues, enabling more adaptive and robust feature representation. Our cues include the input image itself, which represents the overall content, and high-frequency components that emphasize edge details. Additionally, we introduce a Chromatic Inconsistency (CI) cue, which normalizes intensity values and captures noise information introduced during the image acquisition process in real images, making these noise patterns more distinguishable from those in AI-generated content. Unlike prior methods, MCAN's novelty lies in its unified multi-cue aggregation framework, which integrates spatial, frequency-domain, and chromaticity-based information for enhanced representation learning. These cues are intrinsically more indicative of real images, enhancing cross-model generalization. Extensive experiments on the GenImage, Chameleon, and UniversalFakeDetect benchmark validate the state-of-the-art performance of MCAN. In the GenImage dataset, MCAN outperforms the best state-of-the-art method by up to 7.4% in average ACC across eight different image generators.",
@@ -2542,28 +2589,25 @@
     "research_score": 0.59
   },
   {
-    "arxiv_id": "2601.08273v1",
-    "title": "HIPPO: Accelerating Video Large Language Models Inference via Holistic-aware Parallel Speculative Decoding",
-    "summary": "Speculative decoding (SD) has emerged as a promising approach to accelerate LLM inference without sacrificing output quality. Existing SD methods tailored for video-LLMs primarily focus on pruning redundant visual tokens to mitigate the computational burden of massive visual inputs. However, existing methods do not achieve inference acceleration comparable to text-only LLMs. We observe from extensive experiments that this phenomenon mainly stems from two limitations: (i) their pruning strategies inadequately preserve visual semantic tokens, degrading draft quality and acceptance rates; (ii) even with aggressive pruning (e.g., 90% visual tokens removed), the draft model's remaining inference cost limits overall speedup. To address these limitations, we propose HIPPO, a general holistic-aware parallel speculative decoding framework. Specifically, HIPPO proposes (i) a semantic-aware token preservation method, which fuses global attention scores with local visual semantics to retain semantic information at high pruning ratios; (ii) a video parallel SD algorithm that decouples and overlaps draft generation and target verification phases. Experiments on four video-LLMs across six benchmarks demonstrate HIPPO's effectiveness, yielding up to 3.51x speedup compared to vanilla auto-regressive decoding.",
+    "arxiv_id": "2601.08829v1",
+    "title": "Modeling LLM Agent Reviewer Dynamics in Elo-Ranked Review System",
+    "summary": "In this work, we explore the Large Language Model (LLM) agent reviewer dynamics in an Elo-ranked review system using real-world conference paper submissions. Multiple LLM agent reviewers with different personas are engage in multi round review interactions moderated by an Area Chair. We compare a baseline setting with conditions that incorporate Elo ratings and reviewer memory. Our simulation results showcase several interesting findings, including how incorporating Elo improves Area Chair decision accuracy, as well as reviewers' adaptive review strategy that exploits our Elo system without improving review effort. Our code is available at https://github.com/hsiangwei0903/EloReview.",
     "authors": [
-      "Qitan Lv",
-      "Tianyu Liu",
-      "Wen Wu",
-      "Xuenan Xu",
-      "Bowen Zhou",
-      "Feng Wu",
-      "Chao Zhang"
+      "Hsiang-Wei Huang",
+      "Junbin Lu",
+      "Kuang-Ming Chen",
+      "Jenq-Neng Hwang"
     ],
     "categories": [
-      "cs.CV",
+      "cs.CL",
       "cs.AI"
     ],
     "published": "2026-01-13",
-    "url": "https://arxiv.org/abs/2601.08273v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.08273v1.pdf",
+    "url": "https://arxiv.org/abs/2601.08829v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.08829v1.pdf",
     "date": "2026-01-14",
     "source": "arxiv",
-    "research_score": 0.59
+    "research_score": 0.58
   },
   {
     "arxiv_id": "2601.08773v1",
@@ -3904,31 +3948,6 @@
     "research_score": 0.54
   },
   {
-    "arxiv_id": "2601.08276v1",
-    "title": "ToolACE-MCP: Generalizing History-Aware Routing from MCP Tools to the Agent Web",
-    "summary": "With the rise of the Agent Web and Model Context Protocol (MCP), the agent ecosystem is evolving into an open collaborative network, exponentially increasing accessible tools. However, current architectures face severe scalability and generality bottlenecks. To address this, we propose ToolACE-MCP, a pipeline for training history-aware routers to empower precise navigation in large-scale ecosystems. By leveraging a dependency-rich candidate Graph to synthesize multi-turn trajectories, we effectively train routers with dynamic context understanding to create the plug-and-play Light Routing Agent. Experiments on the real-world benchmarks MCP-Universe and MCP-Mark demonstrate superior performance. Notably, ToolACE-MCP exhibits critical properties for the future Agent Web: it not only generalizes to multi-agent collaboration with minimal adaptation but also maintains exceptional robustness against noise and scales effectively to massive candidate spaces. These findings provide a strong empirical foundation for universal orchestration in open-ended ecosystems.",
-    "authors": [
-      "Zhiyuan Yao",
-      "Zishan Xu",
-      "Yifu Guo",
-      "Zhiguang Han",
-      "Cheng Yang",
-      "Shuo Zhang",
-      "Weinan Zhang",
-      "Xingshan Zeng",
-      "Weiwen Liu"
-    ],
-    "categories": [
-      "cs.AI"
-    ],
-    "published": "2026-01-13",
-    "url": "https://arxiv.org/abs/2601.08276v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.08276v1.pdf",
-    "date": "2026-01-14",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
     "arxiv_id": "2601.08768v1",
     "title": "AI as Entertainment",
     "summary": "Generative AI systems are predominantly designed, evaluated, and marketed as intelligent systems which will benefit society by augmenting or automating human cognitive labor, promising to increase personal, corporate, and macroeconomic productivity. But this mainstream narrative about what AI is and what it can do is in tension with another emerging use case: entertainment. We argue that the field of AI is unprepared to measure or respond to how the proliferation of entertaining AI-generated content will impact society. Emerging data suggest AI is already widely adopted for entertainment purposes -- especially by young people -- and represents a large potential source of revenue. We contend that entertainment will become a primary business model for major AI corporations seeking returns on massive infrastructure investments; this will exert a powerful influence on the technology these companies produce in the coming years. Examining current evaluation practices, we identify a critical asymmetry: while AI assessments rigorously measure both benefits and harms of intelligence, they focus almost exclusively on cultural harms. We lack frameworks for articulating how cultural outputs might be actively beneficial. Drawing on insights from the humanities, we propose \"thick entertainment\" as a framework for evaluating AI-generated cultural content -- one that considers entertainment's role in meaning-making, identity formation, and social connection rather than simply minimizing harm. While AI is often touted for its potential to revolutionize productivity, in the long run we may find that AI turns out to be as much about \"intelligence\" as social media is about social connection.",
@@ -4350,23 +4369,6 @@
     "research_score": 0.5
   },
   {
-    "arxiv_id": "2601.08271v1",
-    "title": "Sparsity Is Necessary: Polynomial-Time Stability for Agentic LLMs in Large Action Spaces",
-    "summary": "Tool-augmented LLM systems expose a control regime that learning theory has largely ignored: sequential decision-making with a massive discrete action universe (tools, APIs, documents) in which only a small, unknown subset is relevant for any fixed task distribution. We formalize this setting as Sparse Agentic Control (SAC), where policies admit block-sparse representations over M >> 1 actions and rewards depend on sparse main effects and (optionally) sparse synergies. We study ell_{1,2}-regularized policy learning through a convex surrogate and establish sharp, compressed-sensing-style results: (i) estimation and value suboptimality scale as k (log M / T)^{1/2} under a Policy-RSC condition; (ii) exact tool-support recovery holds via primal-dual witness arguments when T > k log M under incoherence and beta-min; and (iii) any dense policy class requires Omega(M) samples, explaining the instability of prompt-only controllers. We further show that under partial observability, LLMs matter only through a belief/representation error epsilon_b, yielding an additive O(epsilon_b) degradation while preserving logarithmic dependence on M. Extensions cover tuning-free, online, robust, group-sparse, and interaction-aware SAC.",
-    "authors": [
-      "Angshul Majumdar"
-    ],
-    "categories": [
-      "cs.AI"
-    ],
-    "published": "2026-01-13",
-    "url": "https://arxiv.org/abs/2601.08271v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.08271v1.pdf",
-    "date": "2026-01-14",
-    "source": "arxiv",
-    "research_score": 0.5
-  },
-  {
     "arxiv_id": "2601.08336v1",
     "title": "Tissue Classification and Whole-Slide Images Analysis via Modeling of the Tumor Microenvironment and Biological Pathways",
     "summary": "Automatic integration of whole slide images (WSIs) and gene expression profiles has demonstrated substantial potential in precision clinical diagnosis and cancer progression studies. However, most existing studies focus on individual gene sequences and slide level classification tasks, with limited attention to spatial transcriptomics and patch level applications. To address this limitation, we propose a multimodal network, BioMorphNet, which automatically integrates tissue morphological features and spatial gene expression to support tissue classification and differential gene analysis. For considering morphological features, BioMorphNet constructs a graph to model the relationships between target patches and their neighbors, and adjusts the response strength based on morphological and molecular level similarity, to better characterize the tumor microenvironment. In terms of multimodal interactions, BioMorphNet derives clinical pathway features from spatial transcriptomic data based on a predefined pathway database, serving as a bridge between tissue morphology and gene expression. In addition, a novel learnable pathway module is designed to automatically simulate the biological pathway formation process, providing a complementary representation to existing clinical pathways. Compared with the latest morphology gene multimodal methods, BioMorphNet's average classification metrics improve by 2.67%, 5.48%, and 6.29% for prostate cancer, colorectal cancer, and breast cancer datasets, respectively. BioMorphNet not only classifies tissue categories within WSIs accurately to support tumor localization, but also analyzes differential gene expression between tissue categories based on prediction confidence, contributing to the discovery of potential tumor biomarkers.",
@@ -4521,12 +4523,12 @@
   },
   {
     "title": "[PR] feat(multimodal): ship end-to-end pipeline + persistence",
-    "date": "2026-01-14T01:56:13Z",
+    "date": "2026-01-14T03:48:40Z",
     "summary": "This pull request finalizes and documents the end-to-end multimodal pipeline and persistence architecture for DocMind, superseding previous ADRs and updating configuration, documentation, and developer guides to reflect the new approach. The changes ensure that all multimodal artifacts (such as PDF ",
     "url": "https://github.com/BjornMelin/docmind-ai-llm/pull/60",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: docmind-ai-llm"
     ],
@@ -4595,91 +4597,194 @@
     "research_score": 0.42
   },
   {
-    "model_id": "mefengl/SenseVoiceSmall-coreml",
+    "model_id": "N8Programs/Unslopper-30B-A3B-bf16",
     "author": "unknown",
-    "title": "mefengl/SenseVoiceSmall-coreml",
+    "title": "N8Programs/Unslopper-30B-A3B-bf16",
     "downloads": 0,
     "likes": 0,
     "tags": [
-      "coreml",
-      "speech-recognition",
-      "sensevoice",
-      "asr",
-      "automatic-speech-recognition",
-      "zh",
+      "mlx",
+      "safetensors",
+      "qwen3_moe",
+      "text-generation",
+      "conversational",
       "en",
-      "ja",
-      "ko",
-      "yue",
+      "region:us"
+    ],
+    "pipeline_tag": "text-generation",
+    "library": "mlx",
+    "created_at": "2026-01-14T02:06:43.000Z",
+    "last_modified": "2026-01-14T04:11:36.000Z",
+    "days_since_creation": 0,
+    "url": "https://huggingface.co/N8Programs/Unslopper-30B-A3B-bf16",
+    "date": "2026-01-14",
+    "source": "huggingface_model",
+    "type": "model",
+    "research_score": 0.4
+  },
+  {
+    "model_id": "acezxn/ACI_Cyber_Base_GPT_OSS_20B",
+    "author": "unknown",
+    "title": "acezxn/ACI_Cyber_Base_GPT_OSS_20B",
+    "downloads": 18,
+    "likes": 0,
+    "tags": [
+      "transformers",
+      "safetensors",
+      "gpt_oss",
+      "text-generation",
+      "text-generation-inference",
+      "unsloth",
+      "conversational",
+      "en",
+      "base_model:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+      "base_model:quantized:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
       "license:apache-2.0",
+      "endpoints_compatible",
+      "4-bit",
+      "bitsandbytes",
       "region:us"
     ],
-    "pipeline_tag": "automatic-speech-recognition",
-    "library": "coreml",
-    "created_at": "2026-01-13T21:57:13.000Z",
-    "last_modified": "2026-01-14T02:01:04.000Z",
-    "days_since_creation": 0,
-    "url": "https://huggingface.co/mefengl/SenseVoiceSmall-coreml",
+    "pipeline_tag": "text-generation",
+    "library": "transformers",
+    "created_at": "2026-01-13T04:03:38.000Z",
+    "last_modified": "2026-01-14T04:09:56.000Z",
+    "days_since_creation": 1,
+    "url": "https://huggingface.co/acezxn/ACI_Cyber_Base_GPT_OSS_20B",
     "date": "2026-01-14",
     "source": "huggingface_model",
     "type": "model",
     "research_score": 0.4
   },
   {
-    "model_id": "beerpynew/mx6yeyzBy1VzNhH",
+    "model_id": "AjithBharadwaj/nano-llama-base",
     "author": "unknown",
-    "title": "beerpynew/mx6yeyzBy1VzNhH",
+    "title": "AjithBharadwaj/nano-llama-base",
     "downloads": 0,
     "likes": 0,
     "tags": [
+      "transformers",
+      "safetensors",
+      "nano_llama",
+      "text-generation",
+      "causal-lm",
+      "pytorch",
+      "llama",
+      "rope",
+      "rmsnorm",
+      "swiglu",
+      "custom_code",
+      "en",
+      "dataset:HuggingFaceFW/fineweb",
+      "license:mit",
       "region:us"
     ],
-    "pipeline_tag": "",
-    "library": "",
-    "created_at": "2026-01-14T02:00:25.000Z",
-    "last_modified": "2026-01-14T02:00:25.000Z",
+    "pipeline_tag": "text-generation",
+    "library": "transformers",
+    "created_at": "2026-01-14T03:42:35.000Z",
+    "last_modified": "2026-01-14T04:09:31.000Z",
     "days_since_creation": 0,
-    "url": "https://huggingface.co/beerpynew/mx6yeyzBy1VzNhH",
+    "url": "https://huggingface.co/AjithBharadwaj/nano-llama-base",
     "date": "2026-01-14",
     "source": "huggingface_model",
     "type": "model",
     "research_score": 0.4
   },
   {
-    "model_id": "beerpynew/tIO3TWEW71DQZhd",
+    "model_id": "dduy193/senko-vlm8b",
     "author": "unknown",
-    "title": "beerpynew/tIO3TWEW71DQZhd",
+    "title": "dduy193/senko-vlm8b",
     "downloads": 0,
     "likes": 0,
     "tags": [
+      "peft",
+      "safetensors",
+      "base_model:adapter:/data_hdd_16t/duydang/nixie/.cache/models--Qwen--Qwen3-VL-8B-Instruct/snapshots/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+      "lora",
+      "sft",
+      "transformers",
+      "trl",
+      "unsloth",
+      "text-generation",
+      "conversational",
+      "arxiv:1910.09700",
+      "base_model:Qwen/Qwen3-VL-8B-Instruct",
+      "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
       "region:us"
     ],
-    "pipeline_tag": "",
-    "library": "",
-    "created_at": "2026-01-14T02:00:18.000Z",
-    "last_modified": "2026-01-14T02:00:18.000Z",
+    "pipeline_tag": "text-generation",
+    "library": "peft",
+    "created_at": "2026-01-14T03:47:54.000Z",
+    "last_modified": "2026-01-14T04:03:43.000Z",
     "days_since_creation": 0,
-    "url": "https://huggingface.co/beerpynew/tIO3TWEW71DQZhd",
+    "url": "https://huggingface.co/dduy193/senko-vlm8b",
     "date": "2026-01-14",
     "source": "huggingface_model",
     "type": "model",
     "research_score": 0.4
   },
   {
-    "model_id": "beerpynew/vRZJdDo0yFiNU2Y",
+    "model_id": "junzzhu/atomllama-33K-5x5-DigitMesh",
     "author": "unknown",
-    "title": "beerpynew/vRZJdDo0yFiNU2Y",
+    "title": "junzzhu/atomllama-33K-5x5-DigitMesh",
     "downloads": 0,
     "likes": 0,
     "tags": [
+      "transformers",
+      "safetensors",
+      "llama",
+      "text-generation",
+      "digit-recognition",
+      "pattern-recognition",
+      "minimal-model",
+      "edge-computing",
+      "33k-parameters",
+      "LlamaForCausalLM",
+      "en",
+      "license:apache-2.0",
+      "text-generation-inference",
+      "endpoints_compatible",
       "region:us"
     ],
-    "pipeline_tag": "",
-    "library": "",
-    "created_at": "2026-01-14T02:00:07.000Z",
-    "last_modified": "2026-01-14T02:00:07.000Z",
+    "pipeline_tag": "text-generation",
+    "library": "transformers",
+    "created_at": "2026-01-13T23:28:19.000Z",
+    "last_modified": "2026-01-14T04:03:32.000Z",
     "days_since_creation": 0,
-    "url": "https://huggingface.co/beerpynew/vRZJdDo0yFiNU2Y",
+    "url": "https://huggingface.co/junzzhu/atomllama-33K-5x5-DigitMesh",
+    "date": "2026-01-14",
+    "source": "huggingface_model",
+    "type": "model",
+    "research_score": 0.4
+  },
+  {
+    "model_id": "yejianfei/mobile_functiongemma-270m-it",
+    "author": "unknown",
+    "title": "yejianfei/mobile_functiongemma-270m-it",
+    "downloads": 0,
+    "likes": 0,
+    "tags": [
+      "transformers",
+      "tensorboard",
+      "safetensors",
+      "gemma3_text",
+      "text-generation",
+      "generated_from_trainer",
+      "trl",
+      "sft",
+      "conversational",
+      "base_model:google/functiongemma-270m-it",
+      "base_model:finetune:google/functiongemma-270m-it",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "region:us"
+    ],
+    "pipeline_tag": "text-generation",
+    "library": "transformers",
+    "created_at": "2026-01-14T03:52:44.000Z",
+    "last_modified": "2026-01-14T04:02:59.000Z",
+    "days_since_creation": 0,
+    "url": "https://huggingface.co/yejianfei/mobile_functiongemma-270m-it",
     "date": "2026-01-14",
     "source": "huggingface_model",
     "type": "model",
