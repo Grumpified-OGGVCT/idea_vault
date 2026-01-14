@@ -1064,8 +1064,8 @@
   },
   {
     "title": "[PR] Feature/new-bluebot",
-    "date": "2026-01-14T22:04:54Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added multi-LLM provider support with fallback capabilities; supports Gemini and Ollama.\n  * Introduced health monitoring endpoints and enhanced metrics collection.\n  * Added",
+    "date": "2026-01-14T23:14:23Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Multi-LLM provider support with Gemini and Ollama and provider fallback.\n  * Health & readiness endpoints plus Prometheus metrics and structured logging.\n  * Added environmen",
     "url": "https://github.com/andrewgari/starbunk-js/pull/438",
     "source": "github_prs",
     "highlights": [
@@ -1220,7 +1220,7 @@
   },
   {
     "title": "[PR] Introducing EnvVar",
-    "date": "2026-01-14T22:23:52Z",
+    "date": "2026-01-14T22:35:36Z",
     "summary": "## Summary\n\nThis PR introduces EnvVar type which automatically resolves and maintains different env variables used in the config. This avoid manual efforts or parsing and maintaining the env variables. This also simplifies adding support of env variables for new config properties.\n\n## Changes\n\n- Add",
     "url": "https://github.com/maximhq/bifrost/pull/1316",
     "source": "github_prs",
@@ -1640,7 +1640,7 @@
   },
   {
     "title": "[PR] Update dependency chromadb to v1",
-    "date": "2026-01-14T18:12:30Z",
+    "date": "2026-01-14T22:30:58Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [chromadb](https://redirect.github.",
     "url": "https://github.com/masato/langchain_study/pull/1123",
     "source": "github_prs",
@@ -1972,6 +1972,90 @@
       "comments: 0",
       "pull request",
       "repo: kubernetes"
+    ]
+  },
+  {
+    "title": "[PR] docs: align developer docs",
+    "date": "2026-01-14T23:20:31Z",
+    "summary": "This pull request introduces several documentation and workflow improvements to streamline development and clarify contributor expectations. The most significant changes include the addition of a contributing guide, a major update to the code of conduct, and a refactor of configuration documentation",
+    "url": "https://github.com/BjornMelin/docmind-ai-llm/pull/64",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: docmind-ai-llm"
+    ]
+  },
+  {
+    "title": "[PR] FROM feat/666-suport-aws-models TO development",
+    "date": "2026-01-14T23:13:41Z",
+    "summary": "## Summary\nResolves #666\n\nAdds AWS Bedrock model support via LangChain's `init_chat_model` interface. Users can now use AWS Bedrock models by setting the `AWS_BEDROCK_REGION` environment variable.\n\n## Implementation\n\n### Key Decisions (from Council Review)\n- **Provider prefix:** Uses `bedrock_conver",
+    "url": "https://github.com/ruska-ai/orchestra/pull/668",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: orchestra"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.123.14 \u2192 2.4.2 )",
+    "date": "2026-01-14T22:45:54Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.14` \u2192 `2.4.2` |\n\n---\n\n> [!WARNING]\n> Some de",
+    "url": "https://github.com/livhuip/home-ops/pull/1251",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
+    "date": "2026-01-14T22:37:06Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.108.1` \u2192 `2.4.2` |\n\n---\n\n### Release Notes\n\n<details>\n<su",
+    "url": "https://github.com/nezdemkovski/homelab-helm-charts/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-helm-charts"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n to 2.4.2",
+    "date": "2026-01-14T22:36:31Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.4.2` |\n\n---\n\n> [!WARNING]\n> Some de",
+    "url": "https://github.com/VazardAU/home-ops/pull/267",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image n8nio/n8n ( 1.111.0 \u2794 2.4.2 )",
+    "date": "2026-01-14T22:34:31Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.111.0` \u2192 `2.4.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies",
+    "url": "https://github.com/returnfloat/homelab/pull/1490",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.io/n8nio/n8n docker tag to v2",
+    "date": "2026-01-14T22:29:24Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.11` \u2192 `2.4.2` |\n\n---\n\n### Release Notes\n\n<d",
+    "url": "https://github.com/PixelJonas/cluster-gitops/pull/758",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: cluster-gitops"
     ]
   }
 ]
