@@ -584,7 +584,7 @@
   },
   {
     "title": "[PR] chore: sync models.dev upstream",
-    "date": "2026-01-16T06:33:08Z",
+    "date": "2026-01-16T12:42:38Z",
     "summary": "Automated subtree sync from upstream.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added support for 100+ new AI models across multiple providers.\n  * Introduced an input token limit field in model specs.\n\n* **Updates**\n",
     "url": "https://github.com/Vivek-k3/modelsplus/pull/15",
     "source": "github_prs",
@@ -692,7 +692,7 @@
   },
   {
     "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2",
-    "date": "2026-01-16T11:14:03Z",
+    "date": "2026-01-16T12:54:00Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.15` \u2192 `2.4.3` |\n\n---\n\n> [!WARNING]\n> Some depe",
     "url": "https://github.com/walnuts1018/infra/pull/2933",
     "source": "github_prs",
@@ -716,7 +716,7 @@
   },
   {
     "title": "[PR] SQL ",
-    "date": "2026-01-15T22:35:43Z",
+    "date": "2026-01-16T11:38:57Z",
     "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
     "url": "https://github.com/arthrod/open-webui/pull/65",
     "source": "github_prs",
@@ -920,7 +920,7 @@
   },
   {
     "title": "[PR] feat: add interactive troubleshooting assistant",
-    "date": "2026-01-16T09:55:29Z",
+    "date": "2026-01-16T12:51:40Z",
     "summary": "## Related Issue\r\nCloses #59\r\n\r\n## Summary\r\n<!-- What does this PR do? -->\r\nAdds an interactive AI-powered troubleshooting assistant (cortex troubleshoot) that can diagnose system issues, suggest shell commands, and execute them on behalf of the user with explicit confirmation. Includes a comprehens",
     "url": "https://github.com/cortexlinux/cortex/pull/584",
     "source": "github_prs",
@@ -1088,7 +1088,7 @@
   },
   {
     "title": "[PR] [tutor] Add AI-Powered Installation Tutor (Issue #131) ",
-    "date": "2026-01-16T11:22:52Z",
+    "date": "2026-01-16T12:39:21Z",
     "summary": " ---\r\n  ## Summary\r\n  Add comprehensive AI-powered tutor for package education with:\r\n  - Interactive tutoring using TutorAgent orchestration\r\n  - LLM-powered lessons, code examples, and Q&A (Claude API via cortex.llm_router)\r\n  - SQLite-based progress tracking and student profiling\r\n  - CLI integra",
     "url": "https://github.com/cortexlinux/cortex/pull/566",
     "source": "github_prs",
@@ -1136,24 +1136,24 @@
   },
   {
     "title": "[PR] fix(kanban): remove error column and add backend JSON repair",
-    "date": "2026-01-16T11:20:34Z",
+    "date": "2026-01-16T12:47:09Z",
     "summary": "## Summary\n- Remove the Error column from the Kanban board\n- Add backend retry/repair logic so malformed `implementation_plan.json` is automatically fixed\n- Tasks with parse errors are now skipped instead of displayed in an error state\n\n## Backend Changes\n- Add atomic writes to `subtask.py` and `qa.",
     "url": "https://github.com/AndyMik90/Auto-Claude/pull/1143",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 4",
       "pull request",
       "repo: Auto-Claude"
     ]
   },
   {
     "title": "[PR] Add ebm backend",
-    "date": "2026-01-16T11:19:40Z",
+    "date": "2026-01-16T11:47:23Z",
     "summary": "Dear Annif-Team,\r\n\r\nAs announced in issue #855 we would like to propose a new backend for annif **Embedding Based Matching** (EBM) that has been created by @RietdorfC and myself. \r\n\r\nHere is a first draft for a readme article, to be added to the wiki:\r\n[Backend-EBM.md](https://github.com/user-attach",
     "url": "https://github.com/NatLibFi/Annif/pull/914",
     "source": "github_prs",
     "highlights": [
-      "comments: 27",
+      "comments: 29",
       "pull request",
       "repo: Annif"
     ]
@@ -1172,7 +1172,7 @@
   },
   {
     "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui to v0.7.2",
-    "date": "2026-01-16T10:44:04Z",
+    "date": "2026-01-16T12:51:05Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.43` \u2192 `0.7.2` |\n\n---\n\n### Release Notes\n\n<details>\n",
     "url": "https://github.com/martinjonsson01/cluster/pull/940",
     "source": "github_prs",
@@ -1180,6 +1180,54 @@
       "comments: 2",
       "pull request",
       "repo: cluster"
+    ]
+  },
+  {
+    "title": "[PR] fix(wizard): allow setup to continue when API key is already present in ENV",
+    "date": "2026-01-16T12:53:45Z",
+    "summary": "Closes #547\r\n\r\n\r\n**Summary**\r\nThis PR fixes an issue where [cortex wizard](vscode-file://vscode-app/usr/share/code/resources/app/out/vs/code/electron-browser/workbench/workbench.html) exits early even when a valid API key is already exported in the environment.\r\n\r\nCurrently, the wizard always prompt",
+    "url": "https://github.com/cortexlinux/cortex/pull/356",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] fix(worktree): symlink node_modules to worktrees for TypeScript support",
+    "date": "2026-01-16T12:53:07Z",
+    "summary": "## Summary\n\nFixes the `@lydell/node-pty` TypeScript errors that occur in git worktrees by symlinking `node_modules` from the main project to worktrees at creation time.\n\n## Problem\n\nGit worktrees don't have `node_modules` installed, causing TypeScript checks to fail during pre-commit hooks because `",
+    "url": "https://github.com/AndyMik90/Auto-Claude/pull/1148",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Auto-Claude"
+    ]
+  },
+  {
+    "title": "[PR] feat(services): right click to deploy",
+    "date": "2026-01-16T12:38:57Z",
+    "summary": "**TLDR**: This update introduces a streamlined right-click deployment workflow that allows users to instantly deploy selected services to the cloud or self hosted instances from within the Coolify Docs Services page.\r\n\r\nIntroducing new features to the v4 docs:\r\n\r\n- #226: **Updated service overview U",
+    "url": "https://github.com/coollabsio/coolify-docs/pull/337",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: coolify-docs"
+    ]
+  },
+  {
+    "title": "[PR] Bump the aspire group with 6 updates",
+    "date": "2026-01-16T12:28:29Z",
+    "summary": "Updated [Aspire.Hosting.AppHost](https://github.com/dotnet/aspire) from 9.5.1 to 13.1.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Aspire.Hosting.AppHost's releases](https://github.com/dotnet/aspire/releases)._\n\n## 13.1.0\n\nWe are excited to share that our 13.1.0 release of Aspire h",
+    "url": "https://github.com/dgee2/Menu/pull/863",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Menu"
     ]
   }
 ]
