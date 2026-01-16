@@ -716,7 +716,7 @@
   },
   {
     "title": "[PR] SQL ",
-    "date": "2026-01-16T11:38:57Z",
+    "date": "2026-01-16T13:10:45Z",
     "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
     "url": "https://github.com/arthrod/open-webui/pull/65",
     "source": "github_prs",
@@ -896,7 +896,7 @@
   },
   {
     "title": "[PR] feat: Installation Script Generator ",
-    "date": "2026-01-16T04:12:42Z",
+    "date": "2026-01-16T13:07:07Z",
     "summary": "## Related Issue\r\nCloses #140\r\n\r\n## Summary\r\nGenerates standalone .sh bash scripts AND Ansible .yml playbooks for docker/python/nodejs/ollama stacks. Idempotent (command_exists), colorful logging, error traps. cortex script test validates syntax, cortex script history tracks all.\r\n\r\n### Commands Usa",
     "url": "https://github.com/cortexlinux/cortex/pull/359",
     "source": "github_prs",
@@ -1148,12 +1148,12 @@
   },
   {
     "title": "[PR] Add ebm backend",
-    "date": "2026-01-16T11:47:23Z",
+    "date": "2026-01-16T13:29:41Z",
     "summary": "Dear Annif-Team,\r\n\r\nAs announced in issue #855 we would like to propose a new backend for annif **Embedding Based Matching** (EBM) that has been created by @RietdorfC and myself. \r\n\r\nHere is a first draft for a readme article, to be added to the wiki:\r\n[Backend-EBM.md](https://github.com/user-attach",
     "url": "https://github.com/NatLibFi/Annif/pull/914",
     "source": "github_prs",
     "highlights": [
-      "comments: 29",
+      "comments: 30",
       "pull request",
       "repo: Annif"
     ]
@@ -1184,7 +1184,7 @@
   },
   {
     "title": "[PR] fix(wizard): allow setup to continue when API key is already present in ENV",
-    "date": "2026-01-16T12:53:45Z",
+    "date": "2026-01-16T13:10:57Z",
     "summary": "Closes #547\r\n\r\n\r\n**Summary**\r\nThis PR fixes an issue where [cortex wizard](vscode-file://vscode-app/usr/share/code/resources/app/out/vs/code/electron-browser/workbench/workbench.html) exits early even when a valid API key is already exported in the environment.\r\n\r\nCurrently, the wizard always prompt",
     "url": "https://github.com/cortexlinux/cortex/pull/356",
     "source": "github_prs",
@@ -1196,7 +1196,7 @@
   },
   {
     "title": "[PR] fix(worktree): symlink node_modules to worktrees for TypeScript support",
-    "date": "2026-01-16T12:53:07Z",
+    "date": "2026-01-16T13:22:19Z",
     "summary": "## Summary\n\nFixes the `@lydell/node-pty` TypeScript errors that occur in git worktrees by symlinking `node_modules` from the main project to worktrees at creation time.\n\n## Problem\n\nGit worktrees don't have `node_modules` installed, causing TypeScript checks to fail during pre-commit hooks because `",
     "url": "https://github.com/AndyMik90/Auto-Claude/pull/1148",
     "source": "github_prs",
@@ -1228,6 +1228,90 @@
       "comments: 1",
       "pull request",
       "repo: Menu"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Voxstral service",
+    "date": "2026-01-16T13:40:18Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Voxtral Local Transcription: local, OpenAI\u2011compatible transcription (up to 30 min, 9 languages, auto-detect), two model options, Flutter client support, local-only operation ",
+    "url": "https://github.com/matthiasn/lotti/pull/2596",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: lotti"
+    ]
+  },
+  {
+    "title": "[PR] admin dashboard ssc-dsai:dev",
+    "date": "2026-01-16T13:23:20Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/arthrod/open-webui/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: open-webui"
+    ]
+  },
+  {
+    "title": "[PR] feat: Added voice feature for end-user fix #325",
+    "date": "2026-01-16T13:11:21Z",
+    "summary": "## Related Issue\r\nCloses #325\r\n\r\n## Summary\r\nAdds voice input capability to Cortex Linux, enabling users to speak commands instead of typing them. This implementation uses local speech-to-text processing with Whisper for privacy and low latency.\r\n\r\n### Features Added\r\n- **Voice command mode**: `cort",
+    "url": "https://github.com/cortexlinux/cortex/pull/405",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] feat: Interactive Package Conflict Resolution + Saved Preferences(Issue #42)",
+    "date": "2026-01-16T13:08:38Z",
+    "summary": "## Summary\r\n<!-- Brief description of changes -->Implements interactive package conflict resolution UI and persistent conflict-resolution preferences.\r\n\r\n- Add interactive conflict-resolution UI to `cortex/cli.py`.\r\n  - Prompts user to choose which package to keep/remove when conflicts are detected.",
+    "url": "https://github.com/cortexlinux/cortex/pull/203",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 32",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] feat: TUI dashboard fix Interactive TUI Dashboard",
+    "date": "2026-01-16T13:07:34Z",
+    "summary": "## Summary\r\n<!-- Brief description of changes -->\r\n- added a TUI dashboard with interactive features with keyboard like actions with arrows and switch tabs with tab.\r\n- is integrated with existing `cortex install` command to install any packages as intended.\r\n- run both system checks and packages ch",
+    "url": "https://github.com/cortexlinux/cortex/pull/277",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui to v0.7.2",
+    "date": "2026-01-16T13:05:10Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.40` \u2192 `0.7.2` |\n\n---\n\n### Release Notes\n\n<details>\n",
+    "url": "https://github.com/lenaxia/talos-ops-prod/pull/510",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: talos-ops-prod"
+    ]
+  },
+  {
+    "title": "[PR] Enhance wiki generation to achieve DeepWiki-quality output",
+    "date": "2026-01-16T12:58:04Z",
+    "summary": "Major improvements to the system prompt for generating architectural wikis:\n\n- Add hierarchical page structure guidance with domain-based organization\n- Introduce multi-phase \"Deep Discovery\" process before content generation\n- Add mandatory \"Key Components\" table format for all feature pages\n- Add ",
+    "url": "https://github.com/GhostScientist/semanticwiki/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: semanticwiki"
     ]
   }
 ]
