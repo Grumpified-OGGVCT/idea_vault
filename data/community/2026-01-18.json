@@ -573,7 +573,7 @@
   },
   {
     "title": "[PR] feat!: upgrade to Python 3.13, upgrade to LangChain + LangGraph State Graph and Remove langgraph-supervisor-py",
-    "date": "2026-01-18T22:23:57Z",
+    "date": "2026-01-18T23:22:47Z",
     "summary": "This pull request updates the project to use Python 3.13.11 as the primary runtime and development environment, revises related documentation and configuration, and clarifies the handling of GPU acceleration and vLLM integration. It also removes the `.uvrc` file and updates several workflow and Dock",
     "url": "https://github.com/BjornMelin/docmind-ai-llm/pull/77",
     "source": "github_prs",
@@ -1617,12 +1617,12 @@
   },
   {
     "title": "[PR] chore(deps): update aqua cli varsion manager",
-    "date": "2026-01-18T16:35:48Z",
+    "date": "2026-01-18T22:29:42Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.451.1` \u2192 `v4.457.0` |\n| [bootandy/dust](https://redirect.github.com/bootandy/dust) | patch | `v1.2.3` \u2192 `v1.2.4` |\n| [cli/",
     "url": "https://github.com/Nanamiiiii/dotfiles/pull/246",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: dotfiles"
     ]
@@ -1749,7 +1749,7 @@
   },
   {
     "title": "[PR] feat(ui,api): Add filesystem chat tools and UI components",
-    "date": "2026-01-18T22:18:06Z",
+    "date": "2026-01-18T23:12:51Z",
     "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> Modernizes the chat stack, adds visual analysis, and introduces real-time tool execution.\n> \n> - **WebSocket tools**: New `ChatToolsGateway` + `ChatToolsService` enable client-side tool execution via Socket.IO (dev and prod paths), with validation, timeouts, and r",
     "url": "https://github.com/taucad/tau/pull/123",
     "source": "github_prs",
@@ -1781,6 +1781,54 @@
       "comments: 1",
       "pull request",
       "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Mistral cloud support",
+    "date": "2026-01-18T23:09:59Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Mistral (Voxtral) cloud transcription provider added with automatic M4A\u2192WAV conversion and cross\u2011platform FFmpeg support.\n  * Progressive streaming: transcripts delivered in ",
+    "url": "https://github.com/matthiasn/lotti/pull/2598",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: lotti"
+    ]
+  },
+  {
+    "title": "[PR] refactor: remove all Gamma 3N related code",
+    "date": "2026-01-18T23:00:32Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Removed Features**\n  * Removed Gemma 3n local inference provider, its local service, model install/management UI, and related tooling/configuration.\n\n* **Updated Features**\n  * Replaced Gemma r",
+    "url": "https://github.com/matthiasn/lotti/pull/2599",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: lotti"
+    ]
+  },
+  {
+    "title": "[PR] Feature/chroma memory service",
+    "date": "2026-01-18T22:53:35Z",
+    "summary": "**Problem:**\r\nThe current `InMemoryMemoryService` uses simple keyword matching to search agent memories. This means:\r\n- Synonyms don't work (\"happy\" won't match \"joyful\")\r\n- Context is lost (keyword matching ignores semantic meaning)\r\n- No persistence (all memories are lost on restart)\r\n\r\nThe `Verte",
+    "url": "https://github.com/google/adk-python/pull/4197",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: adk-python"
+    ]
+  },
+  {
+    "title": "[PR] Add comprehensive publication analysis for StrepSuis Suite modules",
+    "date": "2026-01-18T22:38:45Z",
+    "summary": "- Analyzed all 5 modules for SoftwareX publication readiness\n- Identified strengths: professional quality, comprehensive testing, excellent documentation\n- Identified weaknesses: code duplication, overlap between modules, salami slicing risk\n- Key recommendation: Publish 3 papers instead of 5\n  * st",
+    "url": "https://github.com/MK-vet/MKrep/pull/80",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MKrep"
     ]
   }
 ]
