@@ -177,7 +177,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-01-20T16:56:09Z",
+    "date": "2026-01-20T18:38:05Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -537,7 +537,7 @@
   },
   {
     "title": "[PR] chore: sync models.dev upstream",
-    "date": "2026-01-20T12:48:47Z",
+    "date": "2026-01-20T18:35:37Z",
     "summary": "Automated subtree sync from upstream.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added support for 100+ new AI models across multiple providers.\n  * Introduced an input token limit field in model specs.\n\n* **Updates**\n",
     "url": "https://github.com/Vivek-k3/modelsplus/pull/15",
     "source": "github_prs",
@@ -669,7 +669,7 @@
   },
   {
     "title": "[PR] feat: created autoclaude container",
-    "date": "2026-01-19T23:25:00Z",
+    "date": "2026-01-20T18:06:11Z",
     "summary": "## Summary\r\n\r\n  This PR introduces an **enterprise-grade Docker deployment** of Auto-Claude, transforming the single-user Electron desktop app into a containerized **multi-tenant web platform** with JWT authentication, real-time collaboration, and advanced credential management.\r\n\r\n  This is a **com",
     "url": "https://github.com/AndyMik90/Auto-Claude/pull/210",
     "source": "github_prs",
@@ -681,7 +681,7 @@
   },
   {
     "title": "[PR] feat: add native Google Cloud Vertex AI support",
-    "date": "2026-01-19T23:22:11Z",
+    "date": "2026-01-20T18:03:15Z",
     "summary": "## Summary\n\nAdd native support for running Auto-Claude with Claude on Google Cloud Vertex AI as an alternative to direct Anthropic API access.\n\nThis enables organizations using Google Cloud infrastructure to run Auto-Claude with Vertex AI without requiring proxies or workarounds.\n\n## Key Features\n\n-",
     "url": "https://github.com/AndyMik90/Auto-Claude/pull/644",
     "source": "github_prs",
@@ -1005,8 +1005,8 @@
   },
   {
     "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui to v0.7.2",
-    "date": "2026-01-20T13:31:04Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.40` \u2192 `0.7.2` |\n\n---\n\n> [!WARNING]\n> Some de",
+    "date": "2026-01-20T17:50:55Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.40` \u2192 `0.7.2` |\n\n---\n\n### Release Notes\n\n<de",
     "url": "https://github.com/lenaxia/talos-ops-prod/pull/510",
     "source": "github_prs",
     "highlights": [
@@ -1161,7 +1161,7 @@
   },
   {
     "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.7.2",
-    "date": "2026-01-20T10:08:01Z",
+    "date": "2026-01-20T18:09:45Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.43` \u2192 `0.7.2` |\n\n---\n\n### Release Notes\n\n<de",
     "url": "https://github.com/frzifus/hmlb/pull/321",
     "source": "github_prs",
@@ -1521,12 +1521,12 @@
   },
   {
     "title": "[PR] Updated README.md",
-    "date": "2026-01-20T17:05:57Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Global --no-elicitation flag to disable interactive elicitation.\n  * New OpenAI-backed image-generation agent and registry entry for image MCP.\n\n* **Documentation**\n  * Major",
+    "date": "2026-01-20T18:37:59Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Global --no-elicitation flag to disable interactive elicitation.\n  * New OpenAI-backed image-generation agent and registry entry for image MCP; configurable image generation ",
     "url": "https://github.com/truffle-ai/dexto/pull/537",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 5",
       "pull request",
       "repo: dexto"
     ]
@@ -1541,6 +1541,66 @@
       "comments: 2",
       "pull request",
       "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] add optional base URL configuration for LLM providers",
+    "date": "2026-01-20T18:20:02Z",
+    "summary": "Adds Base URL (Optional) input field to provider settings dialogs\r\nfor Anthropic, OpenAI, DeepSeek, Google, Mistral, and xAI.\r\nThis enables using proxies or custom endpoints for these providers\r\n\r\nCloses #1228\r\n\r\n\r\nBefore:\r\n<img width=\"376\" height=\"301\" alt=\"Screenshot 2026-01-20 at 10 10 13 AM\" src",
+    "url": "https://github.com/MCPJam/inspector/pull/1240",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: inspector"
+    ]
+  },
+  {
+    "title": "[PR] Add AI Tools extension to Threat Dragon",
+    "date": "2026-01-20T18:02:07Z",
+    "summary": "**Summary**:\r\nThis is an implementation of proposing threats for a given threat model using generative AI for the desktop version\r\n\r\nThis is a long term initiative that s led by @InfosecOTB from discussion : [AI-Powered Threat Modelling Extension](https://github.com/OWASP/threat-dragon/discussions/1",
+    "url": "https://github.com/OWASP/threat-dragon/pull/1404",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: threat-dragon"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update container image ghcr.io/open-webui/open-webui to v0.7.2",
+    "date": "2026-01-20T17:50:04Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.43` \u2192 `0.7.2` |\n\n---\n\n### Release Notes\n\n<de",
+    "url": "https://github.com/a-mcf/k3s-gitops/pull/1394",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k3s-gitops"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): Implement Workstream E - Model Hosting Infrastructure",
+    "date": "2026-01-20T17:44:34Z",
+    "summary": "## Summary\n\nImplements Workstream E: Model Hosting Infrastructure for the Typogenesis AI font application.\n\n- Enhanced `ModelManager.swift` with model versioning support, download/update functionality, progress reporting, graceful fallback mechanisms, and SHA256 checksum validation\n- Created `CloudI",
+    "url": "https://github.com/cole-christensen/typogenesis/pull/37",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: typogenesis"
+    ]
+  },
+  {
+    "title": "[PR] Update all minor and patch dependencies",
+    "date": "2026-01-20T17:41:26Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.451.1` \u2192 `v4.458.0` |\n| [argoproj/argo-cd](https://",
+    "url": "https://github.com/ShotaKitazawa/dotfiles/pull/250",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dotfiles"
     ]
   }
 ]
