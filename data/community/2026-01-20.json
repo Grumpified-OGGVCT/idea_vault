@@ -537,7 +537,7 @@
   },
   {
     "title": "[PR] chore: sync models.dev upstream",
-    "date": "2026-01-20T06:34:48Z",
+    "date": "2026-01-20T12:48:47Z",
     "summary": "Automated subtree sync from upstream.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added support for 100+ new AI models across multiple providers.\n  * Introduced an input token limit field in model specs.\n\n* **Updates**\n",
     "url": "https://github.com/Vivek-k3/modelsplus/pull/15",
     "source": "github_prs",
@@ -597,8 +597,8 @@
   },
   {
     "title": "[PR] feat(ui,api): Add filesystem chat tools and UI components",
-    "date": "2026-01-20T00:35:12Z",
-    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> Modernizes chat orchestration and adds visual testing.\n> \n> - **WebSocket tools (Socket.IO)**: New `ChatToolsGateway` + `ChatToolsService` for client-executed tools with auth, per-chat routing, Zod validation, structured timeouts/errors, and dev/prod wiring (Redis",
+    "date": "2026-01-20T12:12:47Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> Modernizes the chat pipeline and adds model analysis, with focus on scalability, reliability, and cost visibility.\n> \n> - Refactors `ChatController` to a unified LangChain agent (`createAgent`) using `toBaseMessages`/`toUIMessageStream`, with new transforms and SS",
     "url": "https://github.com/taucad/tau/pull/123",
     "source": "github_prs",
     "highlights": [
@@ -633,7 +633,7 @@
   },
   {
     "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v1.1.2",
-    "date": "2026-01-20T05:22:24Z",
+    "date": "2026-01-20T12:55:37Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
     "url": "https://github.com/kpavlov/spring-ai-llm-proxy/pull/58",
     "source": "github_prs",
@@ -693,7 +693,7 @@
   },
   {
     "title": "[PR] SQL ",
-    "date": "2026-01-20T11:14:19Z",
+    "date": "2026-01-20T12:23:29Z",
     "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
     "url": "https://github.com/arthrod/open-webui/pull/65",
     "source": "github_prs",
@@ -741,7 +741,7 @@
   },
   {
     "title": "[PR] Update testcontainers-node monorepo to v11 (major)",
-    "date": "2026-01-20T07:30:25Z",
+    "date": "2026-01-20T12:26:51Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/redis](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.25.",
     "url": "https://github.com/matrix-org/matrix-hookshot/pull/1129",
     "source": "github_prs",
@@ -789,7 +789,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency org.testcontainers:consul to v1.21.4",
-    "date": "2026-01-20T03:00:54Z",
+    "date": "2026-01-20T12:12:27Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:consul](https://java.testcontainers.org) ([source](https://redirect.github.com/",
     "url": "https://github.com/zextras/carbonio-catalog-service/pull/23",
     "source": "github_prs",
@@ -1149,7 +1149,7 @@
   },
   {
     "title": "[PR] Pii",
-    "date": "2026-01-20T10:13:41Z",
+    "date": "2026-01-20T12:40:37Z",
     "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
     "url": "https://github.com/arthrod/open-webui/pull/64",
     "source": "github_prs",
@@ -1205,6 +1205,90 @@
       "comments: 0",
       "pull request",
       "repo: monorepo-template"
+    ]
+  },
+  {
+    "title": "[PR] feat: improve the event system to emit more data and conventionalize \u2026",
+    "date": "2026-01-20T12:54:49Z",
+    "summary": "Improves the event system and adds new features to the devtools for improved observability!\r\n## \ud83c\udfaf Changes\r\n\r\n<!-- What changes are made in this PR? Describe the change and its motivation. -->\r\n\r\n## \u2705 Checklist\r\n\r\n- [ ] I have followed the steps in the [Contributing guide](https://github.com/TanStack",
+    "url": "https://github.com/TanStack/ai/pull/239",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] Bump the aspire group with 6 updates",
+    "date": "2026-01-20T12:27:02Z",
+    "summary": "Updated [Aspire.Hosting.AppHost](https://github.com/dotnet/aspire) from 9.5.1 to 13.1.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Aspire.Hosting.AppHost's releases](https://github.com/dotnet/aspire/releases)._\n\n## 13.1.0\n\nWe are excited to share that our 13.1.0 release of Aspire h",
+    "url": "https://github.com/dgee2/Menu/pull/863",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Menu"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency robusta-dev/holmesgpt to v0.18.5",
+    "date": "2026-01-20T12:01:59Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [robusta-dev/holmesgpt](https://redirect.github.com/robusta-dev/holmesgpt) | minor | `0.14.2` \u2192 `0.18.5` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for more inf",
+    "url": "https://github.com/killo431/tools/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: tools"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v1.1.2",
+    "date": "2026-01-20T11:53:59Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/asm0dey/bellsoft-docs-bot/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: bellsoft-docs-bot"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency aquaproj/aqua-registry to v4.458.0",
+    "date": "2026-01-20T11:43:32Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.366.0` \u2192 `v4.458.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/ohageeq/dotfiles/pull/20",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency @langchain/community to ^0.3.0 [SECURITY]",
+    "date": "2026-01-20T11:34:38Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Nate-Mina/mongodb-rag-app/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: mongodb-rag-app"
+    ]
+  },
+  {
+    "title": "[PR] Update all non-major dependencies",
+    "date": "2026-01-20T11:34:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.apache.maven.plugins:ma",
+    "url": "https://github.com/valitydev/vortigon/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: vortigon"
     ]
   }
 ]
