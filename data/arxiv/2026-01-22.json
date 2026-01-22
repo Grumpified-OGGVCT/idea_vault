@@ -1092,6 +1092,32 @@
     "research_score": 0.66
   },
   {
+    "arxiv_id": "2601.14955v1",
+    "title": "Multi-Behavior Sequential Modeling with Transition-Aware Graph Attention Network for E-Commerce Recommendation",
+    "summary": "User interactions on e-commerce platforms are inherently diverse, involving behaviors such as clicking, favoriting, adding to cart, and purchasing. The transitions between these behaviors offer valuable insights into user-item interactions, serving as a key signal for understanding evolving preferences. Consequently, there is growing interest in leveraging multi-behavior data to better capture user intent. Recent studies have explored sequential modeling of multi-behavior data, many relying on transformer-based architectures with polynomial time complexity. While effective, these approaches often incur high computational costs, limiting their applicability in large-scale industrial systems with long user sequences. To address this challenge, we propose the Transition-Aware Graph Attention Network (TGA), a linear-complexity approach for modeling multi-behavior transitions. Unlike traditional transformers that treat all behavior pairs equally, TGA constructs a structured sparse graph by identifying informative transitions from three perspectives: (a) item-level transitions, (b) category-level transitions, and (c) neighbor-level transitions. Built upon the structured graph, TGA employs a transition-aware graph Attention mechanism that jointly models user-item interactions and behavior transition types, enabling more accurate capture of sequential patterns while maintaining computational efficiency. Experiments show that TGA outperforms all state-of-the-art models while significantly reducing computational cost. Notably, TGA has been deployed in a large-scale industrial production environment, where it leads to impressive improvements in key business metrics.",
+    "authors": [
+      "Hanqi Jin",
+      "Gaoming Yang",
+      "Zhangming Chan",
+      "Yapeng Yuan",
+      "Longbin Li",
+      "Fei Sun",
+      "Yeqiu Yang",
+      "Jian Wu",
+      "Yuning Jiang",
+      "Bo Zheng"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-01-21",
+    "url": "https://arxiv.org/abs/2601.14955v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.14955v1.pdf",
+    "date": "2026-01-22",
+    "source": "arxiv",
+    "research_score": 0.66
+  },
+  {
     "arxiv_id": "2601.14786v1",
     "title": "Training-Efficient Text-to-Music Generation with State-Space Modeling",
     "summary": "Recent advances in text-to-music generation (TTM) have yielded high-quality results, but often at the cost of extensive compute and the use of large proprietary internal data. To improve the affordability and openness of TTM training, an open-source generative model backbone that is more training- and data-efficient is needed. In this paper, we constrain the number of trainable parameters in the generative model to match that of the MusicGen-small benchmark (with about 300M parameters), and replace its Transformer backbone with the emerging class of state-space models (SSMs). Specifically, we explore different SSM variants for sequence modeling, and compare a single-stage SSM-based design with a decomposable two-stage SSM/diffusion hybrid design. All proposed models are trained from scratch on a purely public dataset comprising 457 hours of CC-licensed music, ensuring full openness. Our experimental findings are three-fold. First, we show that SSMs exhibit superior training efficiency compared to the Transformer counterpart. Second, despite using only 9% of the FLOPs and 2% of the training data size compared to the MusicGen-small benchmark, our model achieves competitive performance in both objective metrics and subjective listening tests based on MusicCaps captions. Finally, our scaling-down experiment demonstrates that SSMs can maintain competitive performance relative to the Transformer baseline even at the same training budget (measured in iterations), when the model size is reduced to four times smaller. To facilitate the democratization of TTM research, the processed captions, model checkpoints, and source code are available on GitHub via the project page: https://lonian6.github.io/ssmttm/.",
@@ -1132,6 +1158,35 @@
     "published": "2026-01-21",
     "url": "https://arxiv.org/abs/2601.14750v1",
     "pdf_url": "https://arxiv.org/pdf/2601.14750v1.pdf",
+    "date": "2026-01-22",
+    "source": "arxiv",
+    "research_score": 0.66
+  },
+  {
+    "arxiv_id": "2601.14732v1",
+    "title": "DeepMoLM: Leveraging Visual and Geometric Structural Information for Molecule-Text Modeling",
+    "summary": "AI models for drug discovery and chemical literature mining must interpret molecular images and generate outputs consistent with 3D geometry and stereochemistry. Most molecular language models rely on strings or graphs, while vision-language models often miss stereochemical details and struggle to map continuous 3D structures into discrete tokens. We propose DeepMoLM: Deep Molecular Language M odeling, a dual-view framework that grounds high-resolution molecular images in geometric invariants derived from molecular conformations. DeepMoLM preserves high-frequency evidence from 1024 $\\times$ 1024 inputs, encodes conformer neighborhoods as discrete Extended 3-Dimensional Fingerprints, and fuses visual and geometric streams with cross-attention, enabling physically grounded generation without atom coordinates. DeepMoLM improves PubChem captioning with a 12.3% relative METEOR gain over the strongest generalist baseline while staying competitive with specialist methods. It produces valid numeric outputs for all property queries and attains MAE 13.64 g/mol on Molecular Weight and 37.89 on Complexity in the specialist setting. On ChEBI-20 description generation from images, it exceeds generalist baselines and matches state-of-the-art vision-language models. Code is available at https://github.com/1anj/DeepMoLM.",
+    "authors": [
+      "Jing Lan",
+      "Hexiao Ding",
+      "Hongzhao Chen",
+      "Yufeng Jiang",
+      "Nga-Chun Ng",
+      "Gwing Kei Yip",
+      "Gerald W. Y. Cheng",
+      "Yunlin Mao",
+      "Jing Cai",
+      "Liang-ting Lin",
+      "Jung Sun Yoo"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.CL",
+      "cs.MM"
+    ],
+    "published": "2026-01-21",
+    "url": "https://arxiv.org/abs/2601.14732v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.14732v1.pdf",
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.66
@@ -1180,32 +1235,6 @@
     "published": "2026-01-21",
     "url": "https://arxiv.org/abs/2601.15016v1",
     "pdf_url": "https://arxiv.org/pdf/2601.15016v1.pdf",
-    "date": "2026-01-22",
-    "source": "arxiv",
-    "research_score": 0.65
-  },
-  {
-    "arxiv_id": "2601.14955v1",
-    "title": "Multi-Behavior Sequential Modeling with Transition-Aware Graph Attention Network for E-Commerce Recommendation",
-    "summary": "User interactions on e-commerce platforms are inherently diverse, involving behaviors such as clicking, favoriting, adding to cart, and purchasing. The transitions between these behaviors offer valuable insights into user-item interactions, serving as a key signal for un- derstanding evolving preferences. Consequently, there is growing interest in leveraging multi-behavior data to better capture user intent. Recent studies have explored sequential modeling of multi- behavior data, many relying on transformer-based architectures with polynomial time complexity. While effective, these approaches often incur high computational costs, limiting their applicability in large-scale industrial systems with long user sequences. To address this challenge, we propose the Transition-Aware Graph Attention Network (TGA), a linear-complexity approach for modeling multi-behavior transitions. Unlike traditional trans- formers that treat all behavior pairs equally, TGA constructs a structured sparse graph by identifying informative transitions from three perspectives: (a) item-level transitions, (b) category-level transitions, and (c) neighbor-level transitions. Built upon the structured graph, TGA employs a transition-aware graph Attention mechanism that jointly models user-item interactions and behav- ior transition types, enabling more accurate capture of sequential patterns while maintaining computational efficiency. Experiments show that TGA outperforms all state-of-the-art models while sig- nificantly reducing computational cost. Notably, TGA has been deployed in a large-scale industrial production environment, where it leads to impressive improvements in key business metrics.",
-    "authors": [
-      "Hanqi Jin",
-      "Gaoming Yang",
-      "Zhangming Chan",
-      "Yapeng Yuan",
-      "Longbin Li",
-      "Fei Sun",
-      "Yeqiu Yang",
-      "Jian Wu",
-      "Yuning Jiang",
-      "Bo Zheng"
-    ],
-    "categories": [
-      "cs.AI"
-    ],
-    "published": "2026-01-21",
-    "url": "https://arxiv.org/abs/2601.14955v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.14955v1.pdf",
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.65
@@ -1401,7 +1430,7 @@
   },
   {
     "arxiv_id": "2601.15074v1",
-    "title": "SmartOracle - An Agentic Approach to Mitigate Noise in Differential Oracles",
+    "title": "SmartOracle -- An Agentic Approach to Mitigate Noise in Differential Oracles",
     "summary": "Differential fuzzers detect bugs by executing identical inputs across distinct implementations of the same specification, such as JavaScript interpreters. Validating the outputs requires an oracle and for differential testing of JavaScript, these are constructed manually, making them expensive, time-consuming, and prone to false positives. Worse, when the specification evolves, this manual effort must be repeated.   Inspired by the success of agentic systems in other SE domains, this paper introduces SmartOracle. SmartOracle decomposes the manual triage workflow into specialized Large Language Model (LLM) sub-agents. These agents synthesize independently gathered evidence from terminal runs and targeted specification queries to reach a final verdict.   For historical benchmarks, SmartOracle achieves 0.84 recall with an 18% false positive rate. Compared to a sequential Gemini 2.5 Pro baseline, it improves triage accuracy while reducing analysis time by 4$\\times$ and API costs by 10$\\times$. In active fuzzing campaigns, SmartOracle successfully identified and reported previously unknown specification-level issues across major engines, including bugs in V8, JavaScriptCore, and GraalJS.   The success of SmartOracle's agentic architecture on Javascript suggests it might be useful other software systems- a research direction we will explore in future work.",
     "authors": [
       "Srinath Srinivasan",
@@ -1785,35 +1814,6 @@
     "published": "2026-01-21",
     "url": "https://arxiv.org/abs/2601.14780v1",
     "pdf_url": "https://arxiv.org/pdf/2601.14780v1.pdf",
-    "date": "2026-01-22",
-    "source": "arxiv",
-    "research_score": 0.62
-  },
-  {
-    "arxiv_id": "2601.14732v1",
-    "title": "DeepMoLM: Leveraging Visual and Geometric Structural Information for Molecule-Text Modeling",
-    "summary": "AI models for drug discovery and chemical literature mining must interpret molecular images and generate outputs consistent with 3D geometry and stereochemistry. Most molecular language models rely on strings or graphs, while vision-language models often miss stereochemical details and struggle to map continuous 3D structures into discrete tokens. We propose DeepMoLM: Deep Molecular Language M odeling, a dual-view framework that grounds high-resolution molecular images in geometric invariants derived from molecular conformations. DeepMoLM preserves high-frequency evidence from 1024 $\\times$ 1024 inputs, encodes conformer neighborhoods as discrete Extended 3-Dimensional Fingerprints, and fuses visual and geometric streams with cross-attention, enabling physically grounded generation without atom coordinates. DeepMoLM improves PubChem captioning with a 12.3% relative METEOR gain over the strongest generalist baseline while staying competitive with specialist methods. It produces valid numeric outputs for all property queries and attains MAE 13.64 g/mol on Molecular Weight and 37.89 on Complexity in the specialist setting. On ChEBI-20 description generation from images, it exceeds generalist baselines and matches state-of- the-art vision-language models. Code is available at https://github.com/1anj/DeepMoLM.",
-    "authors": [
-      "Jing Lan",
-      "Hexiao Ding",
-      "Hongzhao Chen",
-      "Yufeng Jiang",
-      "Nga-Chun Ng",
-      "Gwing Kei Yip",
-      "Gerald W. Y. Cheng",
-      "Yunlin Mao",
-      "Jing Cai",
-      "Liang-ting Lin",
-      "Jung Sun Yoo"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.CL",
-      "cs.MM"
-    ],
-    "published": "2026-01-21",
-    "url": "https://arxiv.org/abs/2601.14732v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.14732v1.pdf",
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.62
@@ -3081,7 +3081,7 @@
   },
   {
     "arxiv_id": "2601.15013v1",
-    "title": "RadixMLP - Intra-batch Deduplication for Causal Transformers",
+    "title": "RadixMLP -- Intra-batch Deduplication for Causal Transformers",
     "summary": "Batch inference workloads for causal transformer models frequently process sequences that share common prefixes, such as system prompts, few-shot examples, or shared queries. Standard inference engines treat each sequence independently, redundantly recomputing identical MLP activations for every copy of the shared prefix. We introduce RadixMLP, a technique that exploits the position-wise nature of MLPs, LayerNorms, linear projections, and embeddings to eliminate this redundancy. RadixMLP dynamically maps batches to a prefix trie, gathering shared segments into a compressed representation for position-wise computation and scattering results back only at attention boundaries. RadixMLP is stateless and operates within a single forward pass. In end-to-end serving benchmarks on MS~MARCO v1.1 with Qwen3 models (0.6B to 8B parameters), RadixMLP achieves 1.44-1.59$\\times$ speedups in realistic reranking workloads, with up to $5\\times$ speedups on synthetic benchmarks with longer shared prefixes. Our code is available at https://github.com/michaelfeil/radix-mlp.",
     "authors": [
       "Michael Feil",
@@ -4282,7 +4282,7 @@
   {
     "arxiv_id": "2601.15071v1",
     "title": "The Pictorial Cortex: Zero-Shot Cross-Subject fMRI-to-Image Reconstruction via Compositional Latent Modeling",
-    "summary": "Decoding visual experiences from human brain activity remains a central challenge at the intersection of neuroscience, neuroimaging, and artificial intelligence. A critical obstacle is the inherent variability of cortical responses: neural activity elicited by the same visual stimulus differs across individuals and trials due to anatomical, functional, cognitive, and experimental factors, making fMRI-to-image reconstruction non-injective. In this paper, we tackle a challenging yet practically meaningful problem: zero-shot cross-subject fMRI-to-image reconstruction, where the visual experience of a previously unseen individual must be reconstructed without subject-specific training. To enable principled evaluation, we present a unified cortical-surface dataset -- UniCortex-fMRI, assembled from multiple visual-stimulus fMRI datasets to provide broad coverage of subjects and stimuli. Our UniCortex-fMRI is particularly processed by standardized data formats to make it possible to explore this possibility in the zero-shot scenario of cross-subject fMRI-to-image reconstruction. To tackle the modeling challenge, we propose PictorialCortex, which models fMRI activity using a compositional latent formulation that structures stimulus-driven representations under subject-, dataset-, and trial-related variability. PictorialCortex operates in a universal cortical latent space and implements this formulation through a latent factorization--composition module, reinforced by paired factorization and re-factorizing consistency regularization. During inference, surrogate latents synthesized under multiple seen-subject conditions are aggregated to guide diffusion-based image synthesis for unseen subjects. Extensive experiments show that PictorialCortex improves zero-shot cross-subject visual reconstruction, highlighting the benefits of compositional latent modeling and multi-dataset training.",
+    "summary": "Decoding visual experiences from human brain activity remains a central challenge at the intersection of neuroscience, neuroimaging, and artificial intelligence. A critical obstacle is the inherent variability of cortical responses: neural activity elicited by the same visual stimulus differs across individuals and trials due to anatomical, functional, cognitive, and experimental factors, making fMRI-to-image reconstruction non-injective. In this paper, we tackle a challenging yet practically meaningful problem: zero-shot cross-subject fMRI-to-image reconstruction, where the visual experience of a previously unseen individual must be reconstructed without subject-specific training. To enable principled evaluation, we present a unified cortical-surface dataset -- UniCortex-fMRI, assembled from multiple visual-stimulus fMRI datasets to provide broad coverage of subjects and stimuli. Our UniCortex-fMRI is particularly processed by standardized data formats to make it possible to explore this possibility in the zero-shot scenario of cross-subject fMRI-to-image reconstruction. To tackle the modeling challenge, we propose PictorialCortex, which models fMRI activity using a compositional latent formulation that structures stimulus-driven representations under subject-, dataset-, and trial-related variability. PictorialCortex operates in a universal cortical latent space and implements this formulation through a latent factorization-composition module, reinforced by paired factorization and re-factorizing consistency regularization. During inference, surrogate latents synthesized under multiple seen-subject conditions are aggregated to guide diffusion-based image synthesis for unseen subjects. Extensive experiments show that PictorialCortex improves zero-shot cross-subject visual reconstruction, highlighting the benefits of compositional latent modeling and multi-dataset training.",
     "authors": [
       "Jingyang Huo",
       "Yikai Wang",
