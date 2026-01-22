@@ -549,12 +549,12 @@
   },
   {
     "title": "[PR] feat(ui,api): Add filesystem chat tools and UI components",
-    "date": "2026-01-22T01:56:41Z",
-    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> Modernizes the chat/runtime stack and adds visual analysis.\n> \n> - **WebSockets for tools**: New `ChatToolsGateway` (Socket.IO), `ChatToolsService` with input/output validation, timeouts, per-chat connection tracking, and tests; dev namespace via `DevWebSocketServ",
+    "date": "2026-01-22T03:49:36Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> Introduces real-time client RPC and multi-view visual testing, and modernizes the chat pipeline for reliability, caching, and clearer errors.\n> \n> - **New**: `AnalysisModule` with `POST /v1/analysis/visual-tests` using a single multi-view LLM call, structured DTOs",
     "url": "https://github.com/taucad/tau/pull/123",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 12",
       "pull request",
       "repo: tau"
     ]
@@ -657,12 +657,12 @@
   },
   {
     "title": "[PR] feat(ai): AI reading assistant phase 2",
-    "date": "2026-01-22T01:03:06Z",
+    "date": "2026-01-22T04:01:04Z",
     "summary": "closes #2738.\r\ncloses #2740 (this was phase 1, this current PR supersedes it).\r\n\r\nthis PR represents the implementation of the AI reading assistant (phase 2). it combines the foundation laid phase 1 with a fully working code.\r\n\r\n### `features (non exhaustive)`\r\n- \"readest\" persona: AI reading compan",
     "url": "https://github.com/readest/readest/pull/3023",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 3",
       "pull request",
       "repo: readest"
     ]
@@ -773,6 +773,162 @@
       "comments: 3",
       "pull request",
       "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] Android app setup",
+    "date": "2026-01-22T04:07:30Z",
+    "summary": "## Summary\r\n\r\nBrief description of what this PR does.\r\n\r\n## Related Issues\r\n\r\nFixes #(issue number)\r\n\r\n## Type of Change\r\n\r\n- [x] Bug fix (non-breaking change that fixes an issue)\r\n- [x] New feature (non-breaking change that adds functionality)\r\n- [ ] Breaking change (fix or feature that would cause",
+    "url": "https://github.com/UnaMentis/unamentis-android/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: unamentis-android"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-01-22T03:47:09Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.432.0` \u2192 `v4.461.0` |\n| [checkmake/checkmake](https",
+    "url": "https://github.com/ianlewis/quietus/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: quietus"
+    ]
+  },
+  {
+    "title": "[PR] feat: Refactor configuration management and enhance embedding job settings",
+    "date": "2026-01-22T03:32:23Z",
+    "summary": "",
+    "url": "https://github.com/Axeloooo/BridgeMart/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: BridgeMart"
+    ]
+  },
+  {
+    "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
+    "date": "2026-01-22T02:59:55Z",
+    "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
+    "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: gemini-cli"
+    ]
+  },
+  {
+    "title": "[PR] fix: make the atom format spec-compliant",
+    "date": "2026-01-22T02:49:16Z",
+    "summary": "<!--\r\nIf you have any difficulties in filling out this form, please refer to https://docs.rsshub.app/joinus/new-rss/submit-route\r\n\u5982\u679c\u4f60\u5728\u586b\u5199\u6b64\u8868\u5355\u65f6\u9047\u5230\u4efb\u4f55\u56f0\u96be\uff0c\u8bf7\u53c2\u8003 https://docs.rsshub.app/zh/joinus/new-rss/submit-route\r\n-->\r\n\r\n## Involved Issue / \u8be5 PR \u76f8\u5173 Issue\r\n\r\nfix #20866\r\n\r\n## Example for the Proposed Route(s",
+    "url": "https://github.com/DIYgod/RSSHub/pull/20723",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: RSSHub"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.460.1",
+    "date": "2026-01-22T02:46:15Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.368.0` \u2192 `v4.460.1` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/aereal/otelgqlgen/pull/129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 93",
+      "pull request",
+      "repo: otelgqlgen"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-01-22T02:44:10Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency aquaproj/aqua-registry to v4.460.1",
+    "date": "2026-01-22T02:38:30Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.27.0` \u2192 `v4.460.1` |\n\n---\n\n### Release Notes\n\n<deta",
+    "url": "https://github.com/szksh-lab-2/test-circleci/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: test-circleci"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui to v0.7.2",
+    "date": "2026-01-22T02:31:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.40` \u2192 `0.7.2` |\n\n---\n\n### Release Notes\n\n<de",
+    "url": "https://github.com/lenaxia/talos-ops-prod/pull/510",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: talos-ops-prod"
+    ]
+  },
+  {
+    "title": "[PR] feat!: Update dependency open-webui/open-webui to v0.7.2",
+    "date": "2026-01-22T02:13:59Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `v0.6.41` \u2192 `v0.7.2` |\n| [open-webui/open-webui](https://",
+    "url": "https://github.com/mikesmitty/wyoming-helm/pull/95",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: wyoming-helm"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.458.0",
+    "date": "2026-01-22T02:12:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.404.0` \u2192 `v4.458.0` | `v4.460.1` (+2)",
+    "url": "https://github.com/tosuke/secrets-store-csi-driver-provider-sakuracloud/pull/78",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: secrets-store-csi-driver-provider-sakuracloud"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.458.0",
+    "date": "2026-01-22T02:08:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.416.0` \u2192 `v4.458.0` | `v4.460.1` (+2)",
+    "url": "https://github.com/barrydobson/dotfiles/pull/46",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-01-22T02:06:37Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: k8sgpt"
     ]
   }
 ]

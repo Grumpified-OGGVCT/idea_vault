@@ -1,5 +1,26 @@
 [
   {
+    "arxiv_id": "2601.15287v1",
+    "title": "Towards Understanding Best Practices for Quantization of Vision-Language Models",
+    "summary": "Large language models (LLMs) deliver impressive results for a variety of tasks, but state-of-the-art systems require fast GPUs with large amounts of memory. To reduce both the memory and latency of these systems, practitioners quantize their learned parameters, typically at half precision. A growing body of research focuses on preserving the model performance with more aggressive bit widths, and some work has been done to apply these strategies to other models, like vision transformers. In our study we investigate how a variety of quantization methods, including state-of-the-art GPTQ and AWQ, can be applied effectively to multimodal pipelines comprised of vision models, language models, and their connectors. We address how performance on captioning, retrieval, and question answering can be affected by bit width, quantization method, and which portion of the pipeline the quantization is used for. Results reveal that ViT and LLM exhibit comparable importance in model performance, despite significant differences in parameter size, and that lower-bit quantization of the LLM achieves high accuracy at reduced bits per weight (bpw). These findings provide practical insights for efficient deployment of MLLMs and highlight the value of exploration for understanding component sensitivities in multimodal models. Our code is available at https://github.com/gautomdas/mmq.",
+    "authors": [
+      "Gautom Das",
+      "Vincent La",
+      "Ethan Lau",
+      "Abhinav Shrivastava",
+      "Matthew Gwilliam"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-01-21",
+    "url": "https://arxiv.org/abs/2601.15287v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.15287v1.pdf",
+    "date": "2026-01-22",
+    "source": "arxiv",
+    "research_score": 0.84
+  },
+  {
     "arxiv_id": "2601.14973v1",
     "title": "HumanDiffusion: A Vision-Based Diffusion Trajectory Planner with Human-Conditioned Goals for Search and Rescue UAV",
     "summary": "Reliable human--robot collaboration in emergency scenarios requires autonomous systems that can detect humans, infer navigation goals, and operate safely in dynamic environments. This paper presents HumanDiffusion, a lightweight image-conditioned diffusion planner that generates human-aware navigation trajectories directly from RGB imagery. The system combines YOLO-11--based human detection with diffusion-driven trajectory generation, enabling a quadrotor to approach a target person and deliver medical assistance without relying on prior maps or computationally intensive planning pipelines. Trajectories are predicted in pixel space, ensuring smooth motion and a consistent safety margin around humans. We evaluate HumanDiffusion in simulation and real-world indoor mock-disaster scenarios. On a 300-sample test set, the model achieves a mean squared error of 0.02 in pixel-space trajectory reconstruction. Real-world experiments demonstrate an overall mission success rate of 80% across accident-response and search-and-locate tasks with partial occlusions. These results indicate that human-conditioned diffusion planning offers a practical and robust solution for human-aware UAV navigation in time-critical assistance settings.",
@@ -22,6 +43,30 @@
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.84
+  },
+  {
+    "arxiv_id": "2601.15283v1",
+    "title": "LuxRemix: Lighting Decomposition and Remixing for Indoor Scenes",
+    "summary": "We present a novel approach for interactive light editing in indoor scenes from a single multi-view scene capture. Our method leverages a generative image-based light decomposition model that factorizes complex indoor scene illumination into its constituent light sources. This factorization enables independent manipulation of individual light sources, specifically allowing control over their state (on/off), chromaticity, and intensity. We further introduce multi-view lighting harmonization to ensure consistent propagation of the lighting decomposition across all scene views. This is integrated into a relightable 3D Gaussian splatting representation, providing real-time interactive control over the individual light sources. Our results demonstrate highly photorealistic lighting decomposition and relighting outcomes across diverse indoor scenes. We evaluate our method on both synthetic and real-world datasets and provide a quantitative and qualitative comparison to state-of-the-art techniques. For video results and interactive demos, see https://luxremix.github.io.",
+    "authors": [
+      "Ruofan Liang",
+      "Norman Müller",
+      "Ethan Weber",
+      "Duncan Zauss",
+      "Nandita Vijaykumar",
+      "Peter Kontschieder",
+      "Christian Richardt"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.GR"
+    ],
+    "published": "2026-01-21",
+    "url": "https://arxiv.org/abs/2601.15283v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.15283v1.pdf",
+    "date": "2026-01-22",
+    "source": "arxiv",
+    "research_score": 0.79
   },
   {
     "arxiv_id": "2601.15195v1",
@@ -131,6 +176,25 @@
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.78
+  },
+  {
+    "arxiv_id": "2601.15277v1",
+    "title": "Robust Fake News Detection using Large Language Models under Adversarial Sentiment Attacks",
+    "summary": "Misinformation and fake news have become a pressing societal challenge, driving the need for reliable automated detection methods. Prior research has highlighted sentiment as an important signal in fake news detection, either by analyzing which sentiments are associated with fake news or by using sentiment and emotion features for classification. However, this poses a vulnerability since adversaries can manipulate sentiment to evade detectors especially with the advent of large language models (LLMs). A few studies have explored adversarial samples generated by LLMs, but they mainly focus on stylistic features such as writing style of news publishers. Thus, the crucial vulnerability of sentiment manipulation remains largely unexplored. In this paper, we investigate the robustness of state-of-the-art fake news detectors under sentiment manipulation. We introduce AdSent, a sentiment-robust detection framework designed to ensure consistent veracity predictions across both original and sentiment-altered news articles. Specifically, we (1) propose controlled sentiment-based adversarial attacks using LLMs, (2) analyze the impact of sentiment shifts on detection performance. We show that changing the sentiment heavily impacts the performance of fake news detection models, indicating biases towards neutral articles being real, while non-neutral articles are often classified as fake content. (3) We introduce a novel sentiment-agnostic training strategy that enhances robustness against such perturbations. Extensive experiments on three benchmark datasets demonstrate that AdSent significantly outperforms competitive baselines in both accuracy and robustness, while also generalizing effectively to unseen datasets and adversarial scenarios.",
+    "authors": [
+      "Sahar Tahmasebi",
+      "Eric Müller-Budack",
+      "Ralph Ewerth"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-01-21",
+    "url": "https://arxiv.org/abs/2601.15277v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.15277v1.pdf",
+    "date": "2026-01-22",
+    "source": "arxiv",
+    "research_score": 0.77
   },
   {
     "arxiv_id": "2601.15251v1",
@@ -397,6 +461,33 @@
     "research_score": 0.72
   },
   {
+    "arxiv_id": "2601.15282v1",
+    "title": "Rethinking Video Generation Model for the Embodied World",
+    "summary": "Video generation models have significantly advanced embodied intelligence, unlocking new possibilities for generating diverse robot data that capture perception, reasoning, and action in the physical world. However, synthesizing high-quality videos that accurately reflect real-world robotic interactions remains challenging, and the lack of a standardized benchmark limits fair comparisons and progress. To address this gap, we introduce a comprehensive robotics benchmark, RBench, designed to evaluate robot-oriented video generation across five task domains and four distinct embodiments. It assesses both task-level correctness and visual fidelity through reproducible sub-metrics, including structural consistency, physical plausibility, and action completeness. Evaluation of 25 representative models highlights significant deficiencies in generating physically realistic robot behaviors. Furthermore, the benchmark achieves a Spearman correlation coefficient of 0.96 with human evaluations, validating its effectiveness. While RBench provides the necessary lens to identify these deficiencies, achieving physical realism requires moving beyond evaluation to address the critical shortage of high-quality training data. Driven by these insights, we introduce a refined four-stage data pipeline, resulting in RoVid-X, the largest open-source robotic dataset for video generation with 4 million annotated video clips, covering thousands of tasks and enriched with comprehensive physical property annotations. Collectively, this synergistic ecosystem of evaluation and data establishes a robust foundation for rigorous assessment and scalable training of video models, accelerating the evolution of embodied AI toward general intelligence.",
+    "authors": [
+      "Yufan Deng",
+      "Zilin Pan",
+      "Hongyu Zhang",
+      "Xiaojie Li",
+      "Ruoqing Hu",
+      "Yufei Ding",
+      "Yiming Zou",
+      "Yan Zeng",
+      "Daquan Zhou"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.RO"
+    ],
+    "published": "2026-01-21",
+    "url": "https://arxiv.org/abs/2601.15282v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.15282v1.pdf",
+    "date": "2026-01-22",
+    "source": "arxiv",
+    "research_score": 0.71
+  },
+  {
     "arxiv_id": "2601.15197v1",
     "title": "BayesianVLA: Bayesian Decomposition of Vision Language Action Models via Latent Action Queries",
     "summary": "Vision-Language-Action (VLA) models have shown promise in robot manipulation but often struggle to generalize to new instructions or complex multi-task scenarios. We identify a critical pathology in current training paradigms where goal-driven data collection creates a dataset bias. In such datasets, language instructions are highly predictable from visual observations alone, causing the conditional mutual information between instructions and actions to vanish, a phenomenon we term Information Collapse. Consequently, models degenerate into vision-only policies that ignore language constraints and fail in out-of-distribution (OOD) settings. To address this, we propose BayesianVLA, a novel framework that enforces instruction following via Bayesian decomposition. By introducing learnable Latent Action Queries, we construct a dual-branch architecture to estimate both a vision-only prior $p(a \\mid v)$ and a language-conditioned posterior $π(a \\mid v, \\ell)$. We then optimize the policy to maximize the conditional Pointwise Mutual Information (PMI) between actions and instructions. This objective effectively penalizes the vision shortcut and rewards actions that explicitly explain the language command. Without requiring new data, BayesianVLA significantly improves generalization. Extensive experiments across on SimplerEnv and RoboCasa demonstrate substantial gains, including an 11.3% improvement on the challenging OOD SimplerEnv benchmark, validating the ability of our approach to robustly ground language in action.",
@@ -443,27 +534,6 @@
     "published": "2026-01-21",
     "url": "https://arxiv.org/abs/2601.14952v1",
     "pdf_url": "https://arxiv.org/pdf/2601.14952v1.pdf",
-    "date": "2026-01-22",
-    "source": "arxiv",
-    "research_score": 0.71
-  },
-  {
-    "arxiv_id": "2601.14647v1",
-    "title": "TRSVR: An Adaptive Stochastic Trust-Region Method with Variance Reduction",
-    "summary": "We propose a stochastic trust-region method for unconstrained nonconvex optimization that incorporates stochastic variance-reduced gradients (SVRG) to accelerate convergence. Unlike classical trust-region methods, the proposed algorithm relies solely on stochastic gradient information and does not require function value evaluations. The trust-region radius is adaptively adjusted based on a radius-control parameter and the stochastic gradient estimate. Under mild assumptions, we establish that the algorithm converges in expectation to a first-order stationary point. Moreover, the method achieves iteration and sample complexity bounds that match those of SVRG-based first-order methods, while allowing stochastic and potentially gradient-dependent second-order information. Extensive numerical experiments demonstrate that incorporating SVRG accelerates convergence, and that the use of trust-region methods and Hessian information further improves performance. We also highlight the impact of batch size and inner-loop length on efficiency, and show that the proposed method outperforms SGD and Adam on several machine learning tasks.",
-    "authors": [
-      "Yuchen Fang",
-      "Xinshou Zheng",
-      "Javad Lavaei"
-    ],
-    "categories": [
-      "math.OC",
-      "cs.LG",
-      "stat.ML"
-    ],
-    "published": "2026-01-21",
-    "url": "https://arxiv.org/abs/2601.14647v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.14647v1.pdf",
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.71
@@ -939,28 +1009,6 @@
     "research_score": 0.67
   },
   {
-    "arxiv_id": "2601.14637v1",
-    "title": "Forest-Chat: Adapting Vision-Language Agents for Interactive Forest Change Analysis",
-    "summary": "The increasing availability of high-resolution satellite imagery, together with advances in deep learning, creates new opportunities for enhancing forest monitoring workflows. Two central challenges in this domain are pixel-level change detection and semantic change interpretation, particularly for complex forest dynamics. While large language models (LLMs) are increasingly adopted for data exploration, their integration with vision-language models (VLMs) for remote sensing image change interpretation (RSICI) remains underexplored, especially beyond urban environments. We introduce Forest-Chat, an LLM-driven agent designed for integrated forest change analysis. The proposed framework enables natural language querying and supports multiple RSICI tasks, including change detection, change captioning, object counting, deforestation percentage estimation, and change reasoning. Forest-Chat builds upon a multi-level change interpretation (MCI) vision-language backbone with LLM-based orchestration, and incorporates zero-shot change detection via a foundation change detection model together with an interactive point-prompt interface to support fine-grained user guidance. To facilitate adaptation and evaluation in forest environments, we introduce the Forest-Change dataset, comprising bi-temporal satellite imagery, pixel-level change masks, and multi-granularity semantic change captions generated through a combination of human annotation and rule-based methods. Experimental results demonstrate that Forest-Chat achieves strong performance on Forest-Change and on LEVIR-MCI-Trees, a tree-focused subset of LEVIR-MCI, for joint change detection and captioning, highlighting the potential of interactive, LLM-driven RSICI systems to improve accessibility, interpretability, and analytical efficiency in forest change analysis.",
-    "authors": [
-      "James Brock",
-      "Ce Zhang",
-      "Nantheera Anantrasirichai"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI",
-      "cs.CL",
-      "cs.HC"
-    ],
-    "published": "2026-01-21",
-    "url": "https://arxiv.org/abs/2601.14637v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.14637v1.pdf",
-    "date": "2026-01-22",
-    "source": "arxiv",
-    "research_score": 0.67
-  },
-  {
     "arxiv_id": "2601.15235v1",
     "title": "Tracing 3D Anatomy in 2D Strokes: A Multi-Stage Projection Driven Approach to Cervical Spine Fracture Identification",
     "summary": "Cervical spine fractures are critical medical conditions requiring precise and efficient detection for effective clinical management. This study explores the viability of 2D projection-based vertebra segmentation for vertebra-level fracture detection in 3D CT volumes, presenting an end-to-end pipeline for automated analysis of cervical vertebrae (C1-C7). By approximating a 3D volume through optimized 2D axial, sagittal, and coronal projections, regions of interest are identified using the YOLOv8 model from all views and combined to approximate the 3D cervical spine area, achieving a 3D mIoU of 94.45 percent. This projection-based localization strategy reduces computational complexity compared to traditional 3D segmentation methods while maintaining high performance. It is followed by a DenseNet121-Unet-based multi-label segmentation leveraging variance- and energy-based projections, achieving a Dice score of 87.86 percent. Strategic approximation of 3D vertebral masks from these 2D segmentation masks enables the extraction of individual vertebra volumes. The volumes are analyzed for fractures using an ensemble of 2.5D Spatio-Sequential models incorporating both raw slices and projections per vertebra for complementary evaluation. This ensemble achieves vertebra-level and patient-level F1 scores of 68.15 and 82.26, and ROC-AUC scores of 91.62 and 83.04, respectively. We further validate our approach through an explainability study that provides saliency map visualizations highlighting anatomical regions relevant for diagnosis, and an interobserver variability analysis comparing our model's performance with expert radiologists, demonstrating competitive results.",
@@ -1262,6 +1310,33 @@
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.65
+  },
+  {
+    "arxiv_id": "2601.15286v1",
+    "title": "Iterative Refinement Improves Compositional Image Generation",
+    "summary": "Text-to-image (T2I) models have achieved remarkable progress, yet they continue to struggle with complex prompts that require simultaneously handling multiple objects, relations, and attributes. Existing inference-time strategies, such as parallel sampling with verifiers or simply increasing denoising steps, can improve prompt alignment but remain inadequate for richly compositional settings where many constraints must be satisfied. Inspired by the success of chain-of-thought reasoning in large language models, we propose an iterative test-time strategy in which a T2I model progressively refines its generations across multiple steps, guided by feedback from a vision-language model as the critic in the loop. Our approach is simple, requires no external tools or priors, and can be flexibly applied to a wide range of image generators and vision-language models. Empirically, we demonstrate consistent gains on image generation across benchmarks: a 16.9% improvement in all-correct rate on ConceptMix (k=7), a 13.8% improvement on T2I-CompBench (3D-Spatial category) and a 12.5% improvement on Visual Jenga scene decomposition compared to compute-matched parallel sampling. Beyond quantitative gains, iterative refinement produces more faithful generations by decomposing complex prompts into sequential corrections, with human evaluators preferring our method 58.7% of the time over 41.3% for the parallel baseline. Together, these findings highlight iterative self-correction as a broadly applicable principle for compositional image generation. Results and visualizations are available at https://iterative-img-gen.github.io/",
+    "authors": [
+      "Shantanu Jaiswal",
+      "Mihir Prabhudesai",
+      "Nikash Bhardwaj",
+      "Zheyang Qin",
+      "Amir Zadeh",
+      "Chuan Li",
+      "Katerina Fragkiadaki",
+      "Deepak Pathak"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG",
+      "cs.RO"
+    ],
+    "published": "2026-01-21",
+    "url": "https://arxiv.org/abs/2601.15286v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.15286v1.pdf",
+    "date": "2026-01-22",
+    "source": "arxiv",
+    "research_score": 0.64
   },
   {
     "arxiv_id": "2601.15164v1",
@@ -1576,27 +1651,6 @@
     "research_score": 0.63
   },
   {
-    "arxiv_id": "2601.14631v1",
-    "title": "Semi-Supervised Mixture Models under the Concept of Missing at Radom with Margin Confidence and Aranda Ordaz Function",
-    "summary": "This paper presents a semi-supervised learning framework for Gaussian mixture modelling under a Missing at Random (MAR) mechanism. The method explicitly parameterizes the missingness mechanism by modelling the probability of missingness as a function of classification uncertainty. To quantify classification uncertainty, we introduce margin confidence and incorporate the Aranda Ordaz (AO) link function to flexibly capture the asymmetric relationships between uncertainty and missing probability. Based on this formulation, we develop an efficient Expectation Conditional Maximization (ECM) algorithm that jointly estimates all parameters appearing in both the Gaussian mixture model (GMM) and the missingness mechanism, and subsequently imputes the missing labels by a Bayesian classifier derived from the fitted mixture model. This method effectively alleviates the bias induced by ignoring the missingness mechanism while enhancing the robustness of semi-supervised learning. The resulting uncertainty-aware framework delivers reliable classification performance in realistic MAR scenarios with substantial proportions of missing labels.",
-    "authors": [
-      "Jinyang Liao",
-      "Ziyang Lyu"
-    ],
-    "categories": [
-      "stat.ML",
-      "cs.LG",
-      "stat.CO",
-      "stat.ME"
-    ],
-    "published": "2026-01-21",
-    "url": "https://arxiv.org/abs/2601.14631v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.14631v1.pdf",
-    "date": "2026-01-22",
-    "source": "arxiv",
-    "research_score": 0.63
-  },
-  {
     "arxiv_id": "2601.15131v1",
     "title": "Vehicle Routing with Finite Time Horizon using Deep Reinforcement Learning with Improved Network Embedding",
     "summary": "In this paper, we study the vehicle routing problem with a finite time horizon. In this routing problem, the objective is to maximize the number of customer requests served within a finite time horizon. We present a novel routing network embedding module which creates local node embedding vectors and a context-aware global graph representation. The proposed Markov decision process for the vehicle routing problem incorporates the node features, the network adjacency matrix and the edge features as components of the state space. We incorporate the remaining finite time horizon into the network embedding module to provide a proper routing context to the embedding module. We integrate our embedding module with a policy gradient-based deep Reinforcement Learning framework to solve the vehicle routing problem with finite time horizon. We trained and validated our proposed routing method on real-world routing networks, as well as synthetically generated Euclidean networks. Our experimental results show that our method achieves a higher customer service rate than the existing routing methods. Additionally, the solution time of our method is significantly lower than that of the existing methods.",
@@ -1855,29 +1909,6 @@
     "research_score": 0.62
   },
   {
-    "arxiv_id": "2601.14653v1",
-    "title": "Efficient Imputation for Patch-based Missing Single-cell Data via Cluster-regularized Optimal Transport",
-    "summary": "Missing data in single-cell sequencing datasets poses significant challenges for extracting meaningful biological insights. However, existing imputation approaches, which often assume uniformity and data completeness, struggle to address cases with large patches of missing data. In this paper, we present CROT, an optimal transport-based imputation algorithm designed to handle patch-based missing data in tabular formats. Our approach effectively captures the underlying data structure in the presence of significant missingness. Notably, it achieves superior imputation accuracy while significantly reducing runtime, demonstrating its scalability and efficiency for large-scale datasets. This work introduces a robust solution for imputation in heterogeneous, high-dimensional datasets with structured data absence, addressing critical challenges in both biological and clinical data analysis. Our code is available at Anomalous Github.",
-    "authors": [
-      "Yuyu Liu",
-      "Jiannan Yang",
-      "Ziyang Yu",
-      "Weishen Pan",
-      "Fei Wang",
-      "Tengfei Ma"
-    ],
-    "categories": [
-      "cs.LG",
-      "q-bio.GN"
-    ],
-    "published": "2026-01-21",
-    "url": "https://arxiv.org/abs/2601.14653v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.14653v1.pdf",
-    "date": "2026-01-22",
-    "source": "arxiv",
-    "research_score": 0.62
-  },
-  {
     "arxiv_id": "2601.15250v1",
     "title": "FlowSSC: Universal Generative Monocular Semantic Scene Completion via One-Step Latent Diffusion",
     "summary": "Semantic Scene Completion (SSC) from monocular RGB images is a fundamental yet challenging task due to the inherent ambiguity of inferring occluded 3D geometry from a single view. While feed-forward methods have made progress, they often struggle to generate plausible details in occluded regions and preserve the fundamental spatial relationships of objects. Such accurate generative reasoning capability for the entire 3D space is critical in real-world applications. In this paper, we present FlowSSC, the first generative framework applied directly to monocular semantic scene completion. FlowSSC treats the SSC task as a conditional generation problem and can seamlessly integrate with existing feed-forward SSC methods to significantly boost their performance. To achieve real-time inference without compromising quality, we introduce Shortcut Flow-matching that operates in a compact triplane latent space. Unlike standard diffusion models that require hundreds of steps, our method utilizes a shortcut mechanism to achieve high-fidelity generation in a single step, enabling practical deployment in autonomous systems. Extensive experiments on SemanticKITTI demonstrate that FlowSSC achieves state-of-the-art performance, significantly outperforming existing baselines.",
@@ -2029,33 +2060,6 @@
     "published": "2026-01-21",
     "url": "https://arxiv.org/abs/2601.14678v1",
     "pdf_url": "https://arxiv.org/pdf/2601.14678v1.pdf",
-    "date": "2026-01-22",
-    "source": "arxiv",
-    "research_score": 0.61
-  },
-  {
-    "arxiv_id": "2601.14652v1",
-    "title": "MAS-Orchestra: Understanding and Improving Multi-Agent Reasoning Through Holistic Orchestration and Controlled Benchmarks",
-    "summary": "While multi-agent systems (MAS) promise elevated intelligence through coordination of agents, current approaches to automatic MAS design under-deliver. Such shortcomings stem from two key factors: (1) methodological complexity - agent orchestration is performed using sequential, code-level execution that limits global system-level holistic reasoning and scales poorly with agent complexity - and (2) efficacy uncertainty - MAS are deployed without understanding if there are tangible benefits compared to single-agent systems (SAS). We propose MAS-Orchestra, a training-time framework that formulates MAS orchestration as a function-calling reinforcement learning problem with holistic orchestration, generating an entire MAS at once. In MAS-Orchestra, complex, goal-oriented sub-agents are abstracted as callable functions, enabling global reasoning over system structure while hiding internal execution details. To rigorously study when and why MAS are beneficial, we introduce MASBENCH, a controlled benchmark that characterizes tasks along five axes: Depth, Horizon, Breadth, Parallel, and Robustness. Our analysis reveals that MAS gains depend critically on task structure, verification protocols, and the capabilities of both orchestrator and sub-agents, rather than holding universally. Guided by these insights, MAS-Orchestra achieves consistent improvements on public benchmarks including mathematical reasoning, multi-hop QA, and search-based QA. Together, MAS-Orchestra and MASBENCH enable better training and understanding of MAS in the pursuit of multi-agent intelligence.",
-    "authors": [
-      "Zixuan Ke",
-      "Yifei Ming",
-      "Austin Xu",
-      "Ryan Chin",
-      "Xuan-Phi Nguyen",
-      "Prathyusha Jwalapuram",
-      "Semih Yavuz",
-      "Caiming Xiong",
-      "Shafiq Joty"
-    ],
-    "categories": [
-      "cs.AI",
-      "cs.CL",
-      "cs.MA"
-    ],
-    "published": "2026-01-21",
-    "url": "https://arxiv.org/abs/2601.14652v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.14652v1.pdf",
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.61
@@ -2322,32 +2326,6 @@
     "published": "2026-01-21",
     "url": "https://arxiv.org/abs/2601.14855v1",
     "pdf_url": "https://arxiv.org/pdf/2601.14855v1.pdf",
-    "date": "2026-01-22",
-    "source": "arxiv",
-    "research_score": 0.6
-  },
-  {
-    "arxiv_id": "2601.14651v1",
-    "title": "READ-Net: Clarifying Emotional Ambiguity via Adaptive Feature Recalibration for Audio-Visual Depression Detection",
-    "summary": "Depression is a severe global mental health issue that impairs daily functioning and overall quality of life. Although recent audio-visual approaches have improved automatic depression detection, methods that ignore emotional cues often fail to capture subtle depressive signals hidden within emotional expressions. Conversely, those incorporating emotions frequently confuse transient emotional expressions with stable depressive symptoms in feature representations, a phenomenon termed \\emph{Emotional Ambiguity}, thereby leading to detection errors. To address this critical issue, we propose READ-Net, the first audio-visual depression detection framework explicitly designed to resolve Emotional Ambiguity through Adaptive Feature Recalibration (AFR). The core insight of AFR is to dynamically adjust the weights of emotional features to enhance depression-related signals. Rather than merely overlooking or naively combining emotional information, READ-Net innovatively identifies and preserves depressive-relevant cues within emotional features, while adaptively filtering out irrelevant emotional noise. This recalibration strategy significantly clarifies feature representations, and effectively mitigates the persistent challenge of emotional interference. Additionally, READ-Net can be easily integrated into existing frameworks for improved performance. Extensive evaluations on three publicly available datasets show that READ-Net outperforms state-of-the-art methods, with average gains of 4.55\\% in accuracy and 1.26\\% in F1-score, demonstrating its robustness to emotional disturbances and improving audio-visual depression detection.",
-    "authors": [
-      "Chenglizhao Chen",
-      "Boze Li",
-      "Mengke Song",
-      "Dehao Feng",
-      "Xinyu Liu",
-      "Shanchen Pang",
-      "Jufeng Yang",
-      "Hui Yu"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.MM",
-      "cs.SD"
-    ],
-    "published": "2026-01-21",
-    "url": "https://arxiv.org/abs/2601.14651v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.14651v1.pdf",
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.6
@@ -2974,26 +2952,6 @@
     "research_score": 0.58
   },
   {
-    "arxiv_id": "2601.14658v1",
-    "title": "Say Anything but This: When Tokenizer Betrays Reasoning in LLMs",
-    "summary": "Large language models (LLMs) reason over discrete token ID sequences, yet modern subword tokenizers routinely produce non-unique encodings: multiple token ID sequences can detokenize to identical surface strings. This representational mismatch creates an unmeasured fragility wherein reasoning processes can fail. LLMs may treat two internal representations as distinct \"words\" even when they are semantically identical at the text level. In this work, we show that tokenization can betray LLM reasoning through one-to-many token ID mappings. We introduce a tokenization-consistency probe that requires models to replace designated target words in context while leaving all other content unchanged. The task is intentionally simple at the surface level, enabling us to attribute failures to tokenizer-detokenizer artifacts rather than to knowledge gaps or parameter limitations. Through analysis of over 11000 replacement trials across state-of-the-art open-source LLMs, we find a non-trivial rate of outputs exhibit phantom edits: cases where models operate under the illusion of correct reasoning, a phenomenon arising from tokenizer-induced representational defects. We further analyze these cases and provide a taxonomy of eight systematic tokenizer artifacts, including whitespace-boundary shifts and intra-word resegmentation. These findings indicate that part of apparent reasoning deficiency originates in the tokenizer layer, motivating tokenizer-level remedies before incurring the cost of training ever-larger models on ever-larger corpora.",
-    "authors": [
-      "Navid Ayoobi",
-      "Marcus I Armstrong",
-      "Arjun Mukherjee"
-    ],
-    "categories": [
-      "cs.CL",
-      "cs.AI"
-    ],
-    "published": "2026-01-21",
-    "url": "https://arxiv.org/abs/2601.14658v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.14658v1.pdf",
-    "date": "2026-01-22",
-    "source": "arxiv",
-    "research_score": 0.58
-  },
-  {
     "arxiv_id": "2601.15249v1",
     "title": "Recommending Best Paper Awards for ML/AI Conferences via the Isotonic Mechanism",
     "summary": "Machine learning and artificial intelligence conferences such as NeurIPS and ICML now regularly receive tens of thousands of submissions, posing significant challenges to maintaining the quality and consistency of the peer review process. This challenge is particularly acute for best paper awards, which are an important part of the peer review process, yet whose selection has increasingly become a subject of debate in recent years. In this paper, we introduce an author-assisted mechanism to facilitate the selection of best paper awards. Our method employs the Isotonic Mechanism for eliciting authors' assessments of their own submissions in the form of a ranking, which is subsequently utilized to adjust the raw review scores for optimal estimation of the submissions' ground-truth quality. We demonstrate that authors are incentivized to report truthfully when their utility is a convex additive function of the adjusted scores, and we validate this convexity assumption for best paper awards using publicly accessible review data of ICLR from 2019 to 2023 and NeurIPS from 2021 to 2023. Crucially, in the special case where an author has a single quota -- that is, may nominate only one paper -- we prove that truthfulness holds even when the utility function is merely nondecreasing and additive. This finding represents a substantial relaxation of the assumptions required in prior work. For practical implementation, we extend our mechanism to accommodate the common scenario of overlapping authorship. Finally, simulation results demonstrate that our mechanism significantly improves the quality of papers selected for awards.",
@@ -3222,6 +3180,28 @@
     "research_score": 0.57
   },
   {
+    "arxiv_id": "2601.15284v1",
+    "title": "Walk through Paintings: Egocentric World Models from Internet Priors",
+    "summary": "What if a video generation model could not only imagine a plausible future, but the correct one, accurately reflecting how the world changes with each action? We address this question by presenting the Egocentric World Model (EgoWM), a simple, architecture-agnostic method that transforms any pretrained video diffusion model into an action-conditioned world model, enabling controllable future prediction. Rather than training from scratch, we repurpose the rich world priors of Internet-scale video models and inject motor commands through lightweight conditioning layers. This allows the model to follow actions faithfully while preserving realism and strong generalization. Our approach scales naturally across embodiments and action spaces, ranging from 3-DoF mobile robots to 25-DoF humanoids, where predicting egocentric joint-angle-driven dynamics is substantially more challenging. The model produces coherent rollouts for both navigation and manipulation tasks, requiring only modest fine-tuning. To evaluate physical correctness independently of visual appearance, we introduce the Structural Consistency Score (SCS), which measures whether stable scene elements evolve consistently with the provided actions. EgoWM improves SCS by up to 80 percent over prior state-of-the-art navigation world models, while achieving up to six times lower inference latency and robust generalization to unseen environments, including navigation inside paintings.",
+    "authors": [
+      "Anurag Bagchi",
+      "Zhipeng Bao",
+      "Homanga Bharadhwaj",
+      "Yu-Xiong Wang",
+      "Pavel Tokmakov",
+      "Martial Hebert"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-01-21",
+    "url": "https://arxiv.org/abs/2601.15284v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.15284v1.pdf",
+    "date": "2026-01-22",
+    "source": "arxiv",
+    "research_score": 0.56
+  },
+  {
     "arxiv_id": "2601.15239v1",
     "title": "Multi-context principal component analysis",
     "summary": "Principal component analysis (PCA) is a tool to capture factors that explain variation in data. Across domains, data are now collected across multiple contexts (for example, individuals with different diseases, cells of different types, or words across texts). While the factors explaining variation in data are undoubtedly shared across subsets of contexts, no tools currently exist to systematically recover such factors. We develop multi-context principal component analysis (MCPCA), a theoretical and algorithmic framework that decomposes data into factors shared across subsets of contexts. Applied to gene expression, MCPCA reveals axes of variation shared across subsets of cancer types and an axis whose variability in tumor cells, but not mean, is associated with lung cancer progression. Applied to contextualized word embeddings from language models, MCPCA maps stages of a debate on human nature, revealing a discussion between science and fiction over decades. These axes are not found by combining data across contexts or by restricting to individual contexts. MCPCA is a principled generalization of PCA to address the challenge of understanding factors underlying data across contexts.",
@@ -3348,24 +3328,6 @@
     "published": "2026-01-21",
     "url": "https://arxiv.org/abs/2601.14686v1",
     "pdf_url": "https://arxiv.org/pdf/2601.14686v1.pdf",
-    "date": "2026-01-22",
-    "source": "arxiv",
-    "research_score": 0.56
-  },
-  {
-    "arxiv_id": "2601.14633v1",
-    "title": "Relational Graph Modeling for Credit Default Prediction: Heterogeneous GNNs and Hybrid Ensemble Learning",
-    "summary": "Credit default risk arises from complex interactions among borrowers, financial institutions, and transaction-level behaviors. While strong tabular models remain highly competitive in credit scoring, they may fail to explicitly capture cross-entity dependencies embedded in multi-table financial histories. In this work, we construct a massive-scale heterogeneous graph containing over 31 million nodes and more than 50 million edges, integrating borrower attributes with granular transaction-level entities such as installment payments, POS cash balances, and credit card histories.   We evaluate heterogeneous graph neural networks (GNNs), including heterogeneous GraphSAGE and a relation-aware attentive heterogeneous GNN, against strong tabular baselines. We find that standalone GNNs provide limited lift over a competitive gradient-boosted tree baseline, while a hybrid ensemble that augments tabular features with GNN-derived customer embeddings achieves the best overall performance, improving both ROC-AUC and PR-AUC. We further observe that contrastive pretraining can improve optimization stability but yields limited downstream gains under generic graph augmentations. Finally, we conduct structured explainability and fairness analyses to characterize how relational signals affect subgroup behavior and screening-oriented outcomes.",
-    "authors": [
-      "Yvonne Yang",
-      "Eranki Vasistha"
-    ],
-    "categories": [
-      "cs.LG"
-    ],
-    "published": "2026-01-21",
-    "url": "https://arxiv.org/abs/2601.14633v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.14633v1.pdf",
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.56
@@ -3577,24 +3539,27 @@
     "research_score": 0.55
   },
   {
-    "arxiv_id": "2601.14660v1",
-    "title": "NeuroFilter: Privacy Guardrails for Conversational LLM Agents",
-    "summary": "This work addresses the computational challenge of enforcing privacy for agentic Large Language Models (LLMs), where privacy is governed by the contextual integrity framework. Indeed, existing defenses rely on LLM-mediated checking stages that add substantial latency and cost, and that can be undermined in multi-turn interactions through manipulation or benign-looking conversational scaffolding. Contrasting this background, this paper makes a key observation: internal representations associated with privacy-violating intent can be separated from benign requests using linear structure. Using this insight, the paper proposes NeuroFilter, a guardrail framework that operationalizes contextual integrity by mapping norm violations to simple directions in the model's activation space, enabling detection even when semantic filters are bypassed. The proposed filter is also extended to capture threats arising during long conversations using the concept of activation velocity, which measures cumulative drift in internal representations across turns. A comprehensive evaluation across over 150,000 interactions and covering models from 7B to 70B parameters, illustrates the strong performance of NeuroFilter in detecting privacy attacks while maintaining zero false positives on benign prompts, all while reducing the computational inference cost by several orders of magnitude when compared to LLM-based agentic privacy defenses.",
+    "arxiv_id": "2601.15279v1",
+    "title": "MolecularIQ: Characterizing Chemical Reasoning Capabilities Through Symbolic Verification on Molecular Graphs",
+    "summary": "A molecule's properties are fundamentally determined by its composition and structure encoded in its molecular graph. Thus, reasoning about molecular properties requires the ability to parse and understand the molecular graph. Large Language Models (LLMs) are increasingly applied to chemistry, tackling tasks such as molecular name conversion, captioning, text-guided generation, and property or reaction prediction. Most existing benchmarks emphasize general chemical knowledge, rely on literature or surrogate labels that risk leakage or bias, or reduce evaluation to multiple-choice questions. We introduce MolecularIQ, a molecular structure reasoning benchmark focused exclusively on symbolically verifiable tasks. MolecularIQ enables fine-grained evaluation of reasoning over molecular graphs and reveals capability patterns that localize model failures to specific tasks and molecular structures. This provides actionable insights into the strengths and limitations of current chemistry LLMs and guides the development of models that reason faithfully over molecular structure.",
     "authors": [
-      "Saswat Das",
-      "Ferdinando Fioretto"
+      "Christoph Bartmann",
+      "Johannes Schimunek",
+      "Mykyta Ielanskyi",
+      "Philipp Seidl",
+      "Günter Klambauer",
+      "Sohvi Luukkonen"
     ],
     "categories": [
-      "cs.CR",
-      "cs.AI",
-      "cs.CL"
+      "cs.LG",
+      "cs.AI"
     ],
     "published": "2026-01-21",
-    "url": "https://arxiv.org/abs/2601.14660v1",
-    "pdf_url": "https://arxiv.org/pdf/2601.14660v1.pdf",
+    "url": "https://arxiv.org/abs/2601.15279v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.15279v1.pdf",
     "date": "2026-01-22",
     "source": "arxiv",
-    "research_score": 0.55
+    "research_score": 0.54
   },
   {
     "arxiv_id": "2601.15209v1",
@@ -3775,6 +3740,31 @@
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.54
+  },
+  {
+    "arxiv_id": "2601.15288v1",
+    "title": "APPLE: Attribute-Preserving Pseudo-Labeling for Diffusion-Based Face Swapping",
+    "summary": "Face swapping aims to transfer the identity of a source face onto a target face while preserving target-specific attributes such as pose, expression, lighting, skin tone, and makeup. However, since real ground truth for face swapping is unavailable, achieving both accurate identity transfer and high-quality attribute preservation remains challenging. In addition, recent diffusion-based approaches attempt to improve visual fidelity through conditional inpainting on masked target images, but the masked condition removes crucial appearance cues of target, resulting in plausible yet misaligned attributes. To address these limitations, we propose APPLE (Attribute-Preserving Pseudo-Labeling), a diffusion-based teacher-student framework that enhances attribute fidelity through attribute-aware pseudo-label supervision. We reformulate face swapping as a conditional deblurring task to more faithfully preserve target-specific attributes such as lighting, skin tone, and makeup. In addition, we introduce an attribute-aware inversion scheme to further improve detailed attribute preservation. Through an elaborate attribute-preserving design for teacher learning, APPLE produces high-quality pseudo triplets that explicitly provide the student with direct face-swapping supervision. Overall, APPLE achieves state-of-the-art performance in terms of attribute preservation and identity transfer, producing more photorealistic and target-faithful results.",
+    "authors": [
+      "Jiwon Kang",
+      "Yeji Choi",
+      "JoungBin Lee",
+      "Wooseok Jang",
+      "Jinhyeok Choi",
+      "Taekeun Kang",
+      "Yongjae Park",
+      "Myungin Kim",
+      "Seungryong Kim"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-01-21",
+    "url": "https://arxiv.org/abs/2601.15288v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.15288v1.pdf",
+    "date": "2026-01-22",
+    "source": "arxiv",
+    "research_score": 0.53
   },
   {
     "arxiv_id": "2601.15247v1",
@@ -4245,6 +4235,31 @@
     "date": "2026-01-22",
     "source": "arxiv",
     "research_score": 0.48
+  },
+  {
+    "arxiv_id": "2601.15281v1",
+    "title": "StableWorld: Towards Stable and Consistent Long Interactive Video Generation",
+    "summary": "In this paper, we explore the overlooked challenge of stability and temporal consistency in interactive video generation, which synthesizes dynamic and controllable video worlds through interactive behaviors such as camera movements and text prompts. Despite remarkable progress in world modeling, current methods still suffer from severe instability and temporal degradation, often leading to spatial drift and scene collapse during long-horizon interactions. To better understand this issue, we initially investigate the underlying causes of instability and identify that the major source of error accumulation originates from the same scene, where generated frames gradually deviate from the initial clean state and propagate errors to subsequent frames. Building upon this observation, we propose a simple yet effective method, \\textbf{StableWorld}, a Dynamic Frame Eviction Mechanism. By continuously filtering out degraded frames while retaining geometrically consistent ones, StableWorld effectively prevents cumulative drift at its source, leading to more stable and temporal consistency of interactive generation. Promising results on multiple interactive video models, \\eg, Matrix-Game, Open-Oasis, and Hunyuan-GameCraft, demonstrate that StableWorld is model-agnostic and can be applied to different interactive video generation frameworks to substantially improve stability, temporal consistency, and generalization across diverse interactive scenarios.",
+    "authors": [
+      "Ying Yang",
+      "Zhengyao Lv",
+      "Tianlin Pan",
+      "Haofan Wang",
+      "Binxin Yang",
+      "Hubery Yin",
+      "Chen Li",
+      "Ziwei Liu",
+      "Chenyang Si"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-01-21",
+    "url": "https://arxiv.org/abs/2601.15281v1",
+    "pdf_url": "https://arxiv.org/pdf/2601.15281v1.pdf",
+    "date": "2026-01-22",
+    "source": "arxiv",
+    "research_score": 0.47
   },
   {
     "arxiv_id": "2601.14969v1",
