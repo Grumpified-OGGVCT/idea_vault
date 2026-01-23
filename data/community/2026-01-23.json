@@ -705,7 +705,7 @@
   },
   {
     "title": "[PR] chore: sync models.dev upstream",
-    "date": "2026-01-23T06:34:06Z",
+    "date": "2026-01-23T12:45:04Z",
     "summary": "Automated subtree sync from upstream.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added support for 100+ new AI models across multiple providers.\n  * Introduced an input token limit field in model specs.\n\n* **Updates**\n",
     "url": "https://github.com/Vivek-k3/modelsplus/pull/15",
     "source": "github_prs",
@@ -729,7 +729,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-01-23T07:44:06Z",
+    "date": "2026-01-23T12:14:33Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -873,7 +873,7 @@
   },
   {
     "title": "[PR] Native Ollama LLM Integration + Example Project + Full Unit Tests",
-    "date": "2026-01-23T04:32:49Z",
+    "date": "2026-01-23T12:39:19Z",
     "summary": "# \ud83d\ude80 PR: Native Ollama LLM Integration + Example Project + Full Unit Tests  \r\n**Includes: Critical Fix for Ollama Cloud Tool-Calling + Comparison Test with LiteLLM**\r\n\r\n## \ud83d\udd17 Link to Issue or Description of Change\r\nNo existing issue.  \r\nSubmitting this as a **major feature contribution** that fills a ",
     "url": "https://github.com/google/adk-python/pull/3570",
     "source": "github_prs",
@@ -1029,7 +1029,7 @@
   },
   {
     "title": "[PR] Feature/chroma memory service",
-    "date": "2026-01-23T04:43:49Z",
+    "date": "2026-01-23T12:39:11Z",
     "summary": "**Problem:**\r\nThe current `InMemoryMemoryService` uses simple keyword matching to search agent memories. This means:\r\n- Synonyms don't work (\"happy\" won't match \"joyful\")\r\n- Context is lost (keyword matching ignores semantic meaning)\r\n- No persistence (all memories are lost on restart)\r\n\r\nThe `Verte",
     "url": "https://github.com/google/adk-python/pull/4197",
     "source": "github_prs",
@@ -1473,7 +1473,7 @@
   },
   {
     "title": "[PR] evaluation framework",
-    "date": "2026-01-23T11:16:31Z",
+    "date": "2026-01-23T12:43:58Z",
     "summary": "...\r\n\r\n## Added\r\n* `assays` pytest plugin\r\n* `timer_for_tests` fixture for measuring the run time of unit tests\r\n* banner in project `README.md`\r\n* `zstd` package in dev container. Ollama switched from `*.tgz` to `*.tar.zst` compression.\r\n* Codecov config for test coverage targets\r\n\r\n## Changed\r\n* v",
     "url": "https://github.com/lars20070/deepresearcher2/pull/21",
     "source": "github_prs",
@@ -1613,6 +1613,126 @@
       "comments: 2",
       "pull request",
       "repo: open-webui"
+    ]
+  },
+  {
+    "title": "[PR] mcp(function-gemma): add function-gemma service with exec/embed endpoints",
+    "date": "2026-01-23T12:53:37Z",
+    "summary": "Adds function-gemma MVP: FastAPI service that provides /execute (LLM-driven function execution) and /embed (embeddings stored in ChromaDB). Includes Ollama CLI integration with safe fallbacks. Runs on port 3111 by default.\n\n- /health\n- /execute { function_name, parameters }\n- /embed { texts, ids }\n\n",
+    "url": "https://github.com/valentinuuiuiu/clean_rehoboam_project/pull/52",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: clean_rehoboam_project"
+    ]
+  },
+  {
+    "title": "[PR] `Iris`: Add LLM Selection",
+    "date": "2026-01-23T12:40:23Z",
+    "summary": "## Motivation\r\n\r\nCurrently, Iris lacks a clear mechanism to distinguish between local and cloud-based LLMs. This makes it impossible for users to determine which type of LLM infrastructure should be used. To improve flexibility and make LLM selection more transparent, we need a systematic way to ind",
+    "url": "https://github.com/ls1intum/edutelligence/pull/346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency llama-index to ^0.14.0",
+    "date": "2026-01-23T12:33:57Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-index](https://redirect.github.com/run-llama/llama_index) | `^0.13.0` \u2192 `^0.14.0` | ![age](h",
+    "url": "https://github.com/mitodl/mit-learn/pull/2736",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mit-learn"
+    ]
+  },
+  {
+    "title": "[PR] mcp(vanguard): add Vanguard MCP (vsh companion)",
+    "date": "2026-01-23T12:30:32Z",
+    "summary": "Adds Vanguard MCP server that exposes /execute for companion personas (vetala/akenaton) and /health. Uses Ollama when available and falls back to mock responses. Includes basic tests.\n\n## Summary by Sourcery\n\nIntroduce a standalone payment and subscription API with deployment configurations and comp",
+    "url": "https://github.com/valentinuuiuiu/clean_rehoboam_project/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: clean_rehoboam_project"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency n8n to v2",
+    "date": "2026-01-23T12:27:32Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/killo431/tools/pull/481",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: tools"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/karakeep-app/karakeep ( 0.28.0 \u2192 0.30.0 )",
+    "date": "2026-01-23T12:24:22Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/karakeep-app/karakeep](https://redirect.github.com/karakeep-app/karakeep) | minor | `0.28.0` \u2192 `0.30.0` |\n\n---\n\n> [!WARNING]\n> Some d",
+    "url": "https://github.com/judahrand/home-ops/pull/886",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] Bump the aspire group with 6 updates",
+    "date": "2026-01-23T12:26:51Z",
+    "summary": "Updated [Aspire.Hosting.AppHost](https://github.com/dotnet/aspire) from 9.5.1 to 13.1.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Aspire.Hosting.AppHost's releases](https://github.com/dotnet/aspire/releases)._\n\n## 13.1.0\n\nWe are excited to share that our 13.1.0 release of Aspire h",
+    "url": "https://github.com/dgee2/Menu/pull/863",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Menu"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency danielmiessler/fabric to v1.4.388",
+    "date": "2026-01-23T12:19:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [danielmiessler/fabric](https://redirect.github.com/danielmiessler/fabric) | patch | `1.4.319` \u2192 `1.4.388` |\n\n---\n\n> [!WARNING]\n> Some depende",
+    "url": "https://github.com/killo431/tools/pull/39",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: tools"
+    ]
+  },
+  {
+    "title": "[PR] `General`: Allow users to choose between Cloud AI, On-Premise AI, and No AI",
+    "date": "2026-01-23T12:18:00Z",
+    "summary": "<!-- Thanks for contributing to Artemis! Before you submit your pull request, please make sure to check all tasks by putting an x in the [ ] (don't: [x ], [ x], do: [x]). Remove not applicable tasks and do not leave them unchecked -->\r\n<!-- If your pull request is not ready for review yet, create a ",
+    "url": "https://github.com/ls1intum/Artemis/pull/11845",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 29",
+      "pull request",
+      "repo: Artemis"
+    ]
+  },
+  {
+    "title": "[PR] Teigaku Genzei (the fixed-amount tax reduction) is an example of SDG with Japanese documents.",
+    "date": "2026-01-23T11:41:40Z",
+    "summary": "<!--- Provide a general summary of your changes in the Title above -->\r\n\r\n## Description\r\n<!--- Describe your changes in detail -->\r\nThis example is located in `scripts/teigaku_genzei/`. I created this new directory.\r\n\r\nThis example contains a set of python scripts to \r\n- preprocess documents  (comm",
+    "url": "https://github.com/opendatahub-io/data-processing/pull/26",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: data-processing"
     ]
   }
 ]
