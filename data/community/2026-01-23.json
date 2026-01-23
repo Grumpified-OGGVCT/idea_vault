@@ -693,7 +693,7 @@
   },
   {
     "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui to v0.7.2",
-    "date": "2026-01-23T04:48:26Z",
+    "date": "2026-01-23T10:16:17Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.40` \u2192 `0.7.2` |\n\n---\n\n### Release Notes\n\n<de",
     "url": "https://github.com/lenaxia/talos-ops-prod/pull/510",
     "source": "github_prs",
@@ -813,12 +813,12 @@
   },
   {
     "title": "[PR] Add AI Tools extension to Threat Dragon",
-    "date": "2026-01-23T03:19:12Z",
+    "date": "2026-01-23T10:09:22Z",
     "summary": "**Summary**:\r\nThis is an implementation of proposing threats for a given threat model using generative AI for the desktop version\r\n\r\nThis is a long term initiative that s led by @InfosecOTB from discussion : [AI-Powered Threat Modelling Extension](https://github.com/OWASP/threat-dragon/discussions/1",
     "url": "https://github.com/OWASP/threat-dragon/pull/1404",
     "source": "github_prs",
     "highlights": [
-      "comments: 19",
+      "comments: 21",
       "pull request",
       "repo: threat-dragon"
     ]
@@ -1329,7 +1329,7 @@
   },
   {
     "title": "[PR] Update dependency aquaproj/aqua-registry to v4.462.0",
-    "date": "2026-01-23T05:57:43Z",
+    "date": "2026-01-23T09:50:52Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.411.1` \u2192 `v4.462.0` |\n\n---\n\n### Release Notes\n\n<det",
     "url": "https://github.com/walnuts1018/kubebuilder-devcontainer-image/pull/126",
     "source": "github_prs",
@@ -1437,7 +1437,7 @@
   },
   {
     "title": "[PR] Update nuget (major)",
-    "date": "2026-01-23T09:33:26Z",
+    "date": "2026-01-23T10:26:25Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [MassTransit](https://massient.com/) ([source](https://redirect.github.com/Massient/MassTransit)) | nuget | major | `8.5.2` \u2192 `9.0.",
     "url": "https://github.com/project-origin/stamp/pull/271",
     "source": "github_prs",
@@ -1473,20 +1473,20 @@
   },
   {
     "title": "[PR] evaluation framework",
-    "date": "2026-01-23T09:33:21Z",
+    "date": "2026-01-23T10:26:38Z",
     "summary": "...\r\n\r\n## Added\r\n* `assays` pytest plugin\r\n* `timer_for_tests` fixture for measuring the run time of unit tests\r\n* banner in project `README.md`\r\n* `zstd` package in dev container. Ollama switched from `*.tgz` to `*.tar.zst` compression.\r\n* Codecov config for test coverage targets\r\n\r\n## Changed\r\n* v",
     "url": "https://github.com/lars20070/deepresearcher2/pull/21",
     "source": "github_prs",
     "highlights": [
-      "comments: 19",
+      "comments: 21",
       "pull request",
       "repo: deepresearcher2"
     ]
   },
   {
     "title": "[PR] v2.0.0 Release",
-    "date": "2026-01-23T09:31:18Z",
-    "summary": "Layout makeover.\r\nFixed and reworked most widgets.\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!NOTE]\n> Major v2.0.0 update focusing on security analytics, operability, and robustness.\n> \n> - **Security analytics:** Range-aware endpoints (alerts, MITRE, country, top IPs) with per-range timeline rates and block",
+    "date": "2026-01-23T10:17:10Z",
+    "summary": "Layout makeover.\r\nFixed and reworked most widgets.\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!NOTE]\n> **v2.0.0 platform updates**\n> \n> - Makes security endpoints range-aware (15m\u20137d), adds timeline rates/peaks, 24h summaries, and blocklist match-rate sampling\n> - Hardens and unifies nfdump CSV parsing across",
     "url": "https://github.com/legato3/PHOBOS-NET/pull/95",
     "source": "github_prs",
     "highlights": [
@@ -1541,6 +1541,54 @@
       "comments: 40",
       "pull request",
       "repo: careco"
+    ]
+  },
+  {
+    "title": "[PR] Improve error messages for missing api keys",
+    "date": "2026-01-23T10:30:19Z",
+    "summary": "-  Early API key validation before expensive operations\r\n-  Clear, helpful error messages\r\n-  Provider-specific instructions (OpenAI, Anthropic, Google, etc.)\r\n-  Suggests Ollama as an alternative\r\n-  Works correctly for both missing keys (shows error) and Ollama (no error)\r\n\r\nCloses #243 ",
+    "url": "https://github.com/vitali87/code-graph-rag/pull/256",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: code-graph-rag"
+    ]
+  },
+  {
+    "title": "[PR] Logos/db rework",
+    "date": "2026-01-23T10:18:37Z",
+    "summary": "Please go to the `Preview` tab and select the appropriate sub-template:\r\n\r\n* [Athena](?expand=1&template=athena.md)\r\n* [Atlas](?expand=1&template=atlas.md)\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added provider typ",
+    "url": "https://github.com/ls1intum/edutelligence/pull/397",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.n8n.io/n8nio/n8n docker tag to v2.4.4",
+    "date": "2026-01-23T10:02:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.0.1` \u2192 `2.4.4` |\n\n---\n\n### Release N",
+    "url": "https://github.com/pedrotchang/homelab/pull/60",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] Bump AWSSDK.BedrockAgentRuntime and 27 others",
+    "date": "2026-01-23T09:48:37Z",
+    "summary": "Updated [AWSSDK.BedrockAgentRuntime](https://github.com/aws/aws-sdk-net/) from 4.0.1.1 to 4.0.8.7.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [AWSSDK.BedrockAgentRuntime's releases](https://github.com/aws/aws-sdk-net//releases)._\n\nNo release notes found for this version range.\n\nCommi",
+    "url": "https://github.com/tryAGI/LangChain.Providers/pull/251",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LangChain.Providers"
     ]
   }
 ]
