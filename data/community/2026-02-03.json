@@ -189,7 +189,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-02-03T05:03:08Z",
+    "date": "2026-02-03T06:03:21Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -561,8 +561,8 @@
   },
   {
     "title": "[PR] Update Docker images",
-    "date": "2026-02-03T02:09:09Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| alpine | digest | `865b95f` \u2192 `2510918` |  |\n| bbernhard/signal-cli-rest-api | minor | `0.96` \u2192 `0.97` |  |\n| busybox | digest | `2383baa` \u2192 `e226d63` |  |\n| code.forgejo.org/oci/docker | digest | `3",
+    "date": "2026-02-03T06:00:56Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| alpine | digest | `865b95f` \u2192 `2510918` |  |\n| bbernhard/signal-cli-rest-api | minor | `0.96` \u2192 `0.97` |  |\n| busybox | digest | `2383baa` \u2192 `b3255e7` |  |\n| code.forgejo.org/oci/docker | digest | `3",
     "url": "https://github.com/morten-olsen/homelab-apps/pull/60",
     "source": "github_prs",
     "highlights": [
@@ -597,7 +597,7 @@
   },
   {
     "title": "[PR] chore: sync models.dev upstream",
-    "date": "2026-02-03T02:03:50Z",
+    "date": "2026-02-03T06:50:35Z",
     "summary": "Automated subtree sync from upstream.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added support for 100+ new AI models across multiple providers.\n  * Introduced an input token limit field in model specs.\n\n* **Updates**\n",
     "url": "https://github.com/Vivek-k3/modelsplus/pull/15",
     "source": "github_prs",
@@ -825,7 +825,7 @@
   },
   {
     "title": "[PR] [pull] main from lobehub:main",
-    "date": "2026-02-03T03:05:06Z",
+    "date": "2026-02-03T06:54:38Z",
     "summary": "See [Commits](/rcy1314/lobe-chat/pull/66/commits) and [Changes](/rcy1314/lobe-chat/pull/66/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.1)\n\n_Can you help keep this open source ser",
     "url": "https://github.com/rcy1314/lobe-chat/pull/66",
     "source": "github_prs",
@@ -873,12 +873,12 @@
   },
   {
     "title": "[PR] chore(main): release 2.12.0",
-    "date": "2026-02-03T05:54:02Z",
+    "date": "2026-02-03T06:56:36Z",
     "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [2.12.0](https://github.com/RaphaEnterprises-AI/argus-backend/compare/v2.11.0...v2.12.0) (2026-02-03)\n\n\n### Features\n\n* **a2a:** implement Agent-to-Agent communication architecture ([a6bdddc](https://github.com/RaphaEnterprises-AI/argus-backend",
     "url": "https://github.com/RaphaEnterprises-AI/argus-backend/pull/15",
     "source": "github_prs",
     "highlights": [
-      "comments: 79",
+      "comments: 81",
       "pull request",
       "repo: argus-backend"
     ]
@@ -977,6 +977,54 @@
       "comments: 5",
       "pull request",
       "repo: adk-python"
+    ]
+  },
+  {
+    "title": "[PR] Integrate production-deployment branch into main",
+    "date": "2026-02-03T06:57:12Z",
+    "summary": "Merged the `production-deployment` branch into `main`. The `production-deployment` branch was an orphaned branch with a standalone production setup. Instead of a raw merge that would have deleted 8000+ files, this integration keeps both the original system and adds the new production deployment vari",
+    "url": "https://github.com/deedk822-lang/The-lab-verse-monitoring-/pull/1469",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: The-lab-verse-monitoring-"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): Improve CX Linux native model integration and CLI UX",
+    "date": "2026-02-03T06:52:50Z",
+    "summary": "# feat: Improve CX Linux native model integration and CLI UX\r\n\r\n## Type of Change\r\n- [x] `feat` (New feature)\r\n- [ ] `fix` (Bug fix)\r\n- [ ] `docs` (Documentation)\r\n- [ ] `refactor` (Refactoring)\r\n- [ ] `style` (Formatting)\r\n- [ ] `test` (Adding tests)\r\n\r\n---\r\n\r\n## Description\r\nThis PR improves the n",
+    "url": "https://github.com/cxlinux-ai/cx-core/pull/691",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: cx-core"
+    ]
+  },
+  {
+    "title": "[PR] fix: Resolve SSRFBlocker ImportError and update dependencies",
+    "date": "2026-02-03T06:12:37Z",
+    "summary": "- Re-introduced SSRFBlocker class in vaal_ai_empire/api/secure_requests.py\r\n- Implemented synchronous SSRF protection in create_ssrf_safe_session\r\n- Added missing transformers and torch dependencies to pyproject.toml\r\n- Verified all 52 tests pass successfully\r\n- Cleaned up accidental build artifacts",
+    "url": "https://github.com/deedk822-lang/The-lab-verse-monitoring-/pull/1467",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: The-lab-verse-monitoring-"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.40.0",
+    "date": "2026-02-03T06:10:07Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/DoodleScheduling/saml-exporter/pull/334",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: saml-exporter"
     ]
   }
 ]
