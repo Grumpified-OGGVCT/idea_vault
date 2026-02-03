@@ -1,0 +1,818 @@
+[
+  {
+    "arxiv_id": "2602.00956v1",
+    "title": "Hybrid Topological and Deep Feature Fusion for Accurate MRI-Based Alzheimer's Disease Severity Classification",
+    "summary": "Early and accurate diagnosis of Alzheimer's disease (AD) remains a critical challenge in neuroimaging-based clinical decision support systems. In this work, we propose a novel hybrid deep learning framework that integrates Topological Data Analysis (TDA) with a DenseNet121 backbone for four-class Alzheimer's disease classification using structural MRI data from the OASIS dataset. TDA is employed to capture complementary topological characteristics of brain structures that are often overlooked by conventional neural networks, while DenseNet121 efficiently learns hierarchical spatial features from MRI slices. The extracted deep and topological features are fused to enhance class separability across the four AD stages.   Extensive experiments conducted on the OASIS-1 Kaggle MRI dataset demonstrate that the proposed TDA+DenseNet121 model significantly outperforms existing state-of-the-art approaches. The model achieves an accuracy of 99.93% and an AUC of 100%, surpassing recently published CNN-based, transfer learning, ensemble, and multi-scale architectures. These results confirm the effectiveness of incorporating topological insights into deep learning pipelines and highlight the potential of the proposed framework as a robust and highly accurate tool for automated Alzheimer's disease diagnosis.",
+    "authors": [
+      "Faisal Ahmed"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00956v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00956v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.79
+  },
+  {
+    "arxiv_id": "2602.00945v1",
+    "title": "Neural FOXP2 -- Language Specific Neuron Steering for Targeted Language Improvement in LLMs",
+    "summary": "LLMs are multilingual by training, yet their lingua franca is often English, reflecting English language dominance in pretraining. Other languages remain in parametric memory but are systematically suppressed. We argue that language defaultness is governed by a sparse, low-rank control circuit, language neurons, that can be mechanistically isolated and safely steered.   We introduce Neural FOXP2, that makes a chosen language (Hindi or Spanish) primary in a model by steering language-specific neurons. Neural FOXP2 proceeds in three stages: (i) Localize: We train per-layer SAEs so each activation decomposes into a small set of active feature components. For every feature, we quantify English vs. Hindi/Spanish selectivity overall logit-mass lift toward the target-language token set. Tracing the top-ranked features back to their strongest contributing units yields a compact language-neuron set. (ii) Steering directions: We localize controllable language-shift geometry via a spectral low-rank analysis. For each layer, we build English to target activation-difference matrices and perform layerwise SVD to extract the dominant singular directions governing language change. The eigengap and effective-rank spectra identify a compact steering subspace and an empirically chosen intervention window (where these directions are strongest and most stable). (iii) Steer: We apply a signed, sparse activation shift targeted to the language neurons. Concretely, within low to mid layers we add a positive steering along the target-language dominant directions and a compensating negative shift toward the null space for the English neurons, yielding controllable target-language defaultness.",
+    "authors": [
+      "Anusa Saha",
+      "Tanmay Joshi",
+      "Vinija Jain",
+      "Aman Chadha",
+      "Amitava Das"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00945v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00945v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.76
+  },
+  {
+    "arxiv_id": "2602.00949v1",
+    "title": "Data Augmentation for High-Fidelity Generation of CAR-T/NK Immunological Synapse Images",
+    "summary": "Chimeric antigen receptor (CAR)-T and NK cell immunotherapies have transformed cancer treatment, and recent studies suggest that the quality of the CAR-T/NK cell immunological synapse (IS) may serve as a functional biomarker for predicting therapeutic efficacy. Accurate detection and segmentation of CAR-T/NK IS structures using artificial neural networks (ANNs) can greatly increase the speed and reliability of IS quantification. However, a persistent challenge is the limited size of annotated microscopy datasets, which restricts the ability of ANNs to generalize. To address this challenge, we integrate two complementary data-augmentation frameworks. First, we employ Instance Aware Automatic Augmentation (IAAA), an automated, instance-preserving augmentation method that generates synthetic CAR-T/NK IS images and corresponding segmentation masks by applying optimized augmentation policies to original IS data. IAAA supports multiple imaging modalities (e.g., fluorescence and brightfield) and can be applied directly to CAR-T/NK IS images derived from patient samples. In parallel, we introduce a Semantic-Aware AI Augmentation (SAAA) pipeline that combines a diffusion-based mask generator with a Pix2Pix conditional image synthesizer. This second method enables the creation of diverse, anatomically realistic segmentation masks and produces high-fidelity CAR-T/NK IS images aligned with those masks, further expanding the training corpus beyond what IAAA alone can provide. Together, these augmentation strategies generate synthetic images whose visual and structural properties closely match real IS data, significantly improving CAR-T/NK IS detection and segmentation performance. By enhancing the robustness and accuracy of IS quantification, this work supports the development of more reliable imaging-based biomarkers for predicting patient response to CAR-T/NK immunotherapy.",
+    "authors": [
+      "Xiang Zhang",
+      "Boxuan Zhang",
+      "Alireza Naghizadeh",
+      "Mohab Mohamed",
+      "Dongfang Liu",
+      "Ruixiang Tang",
+      "Dimitris Metaxas",
+      "Dongfang Liu"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00949v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00949v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.73
+  },
+  {
+    "arxiv_id": "2602.00994v1",
+    "title": "Reasoning and Tool-use Compete in Agentic RL:From Quantifying Interference to Disentangled Tuning",
+    "summary": "Agentic Reinforcement Learning (ARL) focuses on training large language models (LLMs) to interleave reasoning with external tool execution to solve complex tasks. Most existing ARL methods train a single shared model parameters to support both reasoning and tool use behaviors, implicitly assuming that joint training leads to improved overall agent performance. Despite its widespread adoption, this assumption has rarely been examined empirically. In this paper, we systematically investigate this assumption by introducing a Linear Effect Attribution System(LEAS), which provides quantitative evidence of interference between reasoning and tool-use behaviors. Through an in-depth analysis, we show that these two capabilities often induce misaligned gradient directions, leading to training interference that undermines the effectiveness of joint optimization and challenges the prevailing ARL paradigm. To address this issue, we propose Disentangled Action Reasoning Tuning(DART), a simple and efficient framework that explicitly decouples parameter updates for reasoning and tool-use via separate low-rank adaptation modules. Experimental results show that DART consistently outperforms baseline methods with averaged 6.35 percent improvements and achieves performance comparable to multi-agent systems that explicitly separate tool-use and reasoning using a single model.",
+    "authors": [
+      "Yu Li",
+      "Mingyang Yi",
+      "Xiuyu Li",
+      "Ju Fan",
+      "Fuxin Jiang",
+      "Binbin Chen",
+      "Peng Li",
+      "Jie Song",
+      "Tieying Zhang"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00994v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00994v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.7
+  },
+  {
+    "arxiv_id": "2602.00987v1",
+    "title": "Scalable Random Wavelet Features: Efficient Non-Stationary Kernel Approximation with Convergence Guarantees",
+    "summary": "Modeling non-stationary processes, where statistical properties vary across the input domain, is a critical challenge in machine learning; yet most scalable methods rely on a simplifying assumption of stationarity. This forces a difficult trade-off: use expressive but computationally demanding models like Deep Gaussian Processes, or scalable but limited methods like Random Fourier Features (RFF). We close this gap by introducing Random Wavelet Features (RWF), a framework that constructs scalable, non-stationary kernel approximations by sampling from wavelet families. By harnessing the inherent localization and multi-resolution structure of wavelets, RWF generates an explicit feature map that captures complex, input-dependent patterns. Our framework provides a principled way to generalize RFF to the non-stationary setting and comes with a comprehensive theoretical analysis, including positive definiteness, unbiasedness, and uniform convergence guarantees. We demonstrate empirically on a range of challenging synthetic and real-world datasets that RWF outperforms stationary random features and offers a compelling accuracy-efficiency trade-off against more complex models, unlocking scalable and expressive kernel methods for a broad class of real-world non-stationary problems.",
+    "authors": [
+      "Sawan Kumar",
+      "Souvik Chakraborty"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00987v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00987v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
+    "arxiv_id": "2602.00997v1",
+    "title": "Error Taxonomy-Guided Prompt Optimization",
+    "summary": "Automatic Prompt Optimization (APO) is a powerful approach for extracting performance from large language models without modifying their weights. Many existing methods rely on trial-and-error, testing different prompts or in-context examples until a good configuration emerges, often consuming substantial compute. Recently, natural language feedback derived from execution logs has shown promise as a way to identify how prompts can be improved. However, most prior approaches operate in a bottom-up manner, iteratively adjusting the prompt based on feedback from individual problems, which can cause them to lose the global perspective. In this work, we propose Error Taxonomy-Guided Prompt Optimization (ETGPO), a prompt optimization algorithm that adopts a top-down approach. ETGPO focuses on the global failure landscape by collecting model errors, categorizing them into a taxonomy, and augmenting the prompt with guidance targeting the most frequent failure modes. Across multiple benchmarks spanning mathematics, question answering, and logical reasoning, ETGPO achieves accuracy that is comparable to or better than state-of-the-art methods, while requiring roughly one third of the optimization-phase token usage and evaluation budget.",
+    "authors": [
+      "Mayank Singh",
+      "Vikas Yadav",
+      "Eduardo Blanco"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00997v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00997v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.67
+  },
+  {
+    "arxiv_id": "2602.00952v1",
+    "title": "Optimal Budgeted Adaptation of Large Language Models",
+    "summary": "The trade-off between labeled data availability and downstream accuracy remains a central challenge in fine-tuning large language models (LLMs). We propose a principled framework for \\emph{budget-aware supervised fine-tuning} by casting LLM adaptation as a contextual Stackelberg game. In our formulation, the learner (leader) commits to a scoring policy and a label-querying strategy, while an adaptive environment (follower) selects challenging supervised alternatives in response. To explicitly address label efficiency, we incorporate a finite supervision budget directly into the learning objective. Our algorithm operates in the full-feedback regime and achieves $\\tilde{O}(d\\sqrt{T})$ regret under standard linear contextual assumptions. We extend the framework with a Largest-Latency-First (LLF) confidence gate that selectively queries labels, achieving a budget-aware regret bound of $\\tilde{O}(\\sqrt{dB} + c\\sqrt{B})$ with $B=βT$.",
+    "authors": [
+      "Jing Wang",
+      "Jie Shen",
+      "Dean Foster",
+      "Zohar Karnin",
+      "Jeremy C Weiss"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00952v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00952v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.67
+  },
+  {
+    "arxiv_id": "2602.00981v1",
+    "title": "MedSpeak: A Knowledge Graph-Aided ASR Error Correction Framework for Spoken Medical QA",
+    "summary": "Spoken question-answering (SQA) systems relying on automatic speech recognition (ASR) often struggle with accurately recognizing medical terminology. To this end, we propose MedSpeak, a novel knowledge graph-aided ASR error correction framework that refines noisy transcripts and improves downstream answer prediction by leveraging both semantic relationships and phonetic information encoded in a medical knowledge graph, together with the reasoning power of LLMs. Comprehensive experimental results on benchmarks demonstrate that MedSpeak significantly improves the accuracy of medical term recognition and overall medical SQA performance, establishing MedSpeak as a state-of-the-art solution for medical SQA. The code is available at https://github.com/RainieLLM/MedSpeak.",
+    "authors": [
+      "Yutong Song",
+      "Shiva Shrestha",
+      "Chenhan Lyu",
+      "Elahe Khatibi",
+      "Pengfei Zhang",
+      "Honghui Xu",
+      "Nikil Dutt",
+      "Amir Rahmani"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00981v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00981v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.66
+  },
+  {
+    "arxiv_id": "2602.00974v1",
+    "title": "Forest-Guided Semantic Transport for Label-Supervised Manifold Alignment",
+    "summary": "Label-supervised manifold alignment bridges the gap between unsupervised and correspondence-based paradigms by leveraging shared label information to align multimodal datasets. Still, most existing methods rely on Euclidean geometry to model intra-domain relationships. This approach can fail when features are only weakly related to the task of interest, leading to noisy, semantically misleading structure and degraded alignment quality. To address this limitation, we introduce FoSTA (Forest-guided Semantic Transport Alignment), a scalable alignment framework that leverages forest-induced geometry to denoise intra-domain structure and recover task-relevant manifolds prior to alignment. FoSTA builds semantic representations directly from label-informed forest affinities and aligns them via fast, hierarchical semantic transport, capturing meaningful cross-domain relationships. Extensive comparisons with established baselines demonstrate that FoSTA improves correspondence recovery and label transfer on synthetic benchmarks and delivers strong performance in practical single-cell applications, including batch correction and biological conservation.",
+    "authors": [
+      "Adrien Aumon",
+      "Myriam Lizotte",
+      "Guy Wolf",
+      "Kevin R. Moon",
+      "Jake S. Rhodes"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00974v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00974v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.66
+  },
+  {
+    "arxiv_id": "2602.01000v1",
+    "title": "CortiNet: A Physics-Perception Hybrid Cortical-Inspired Dual-Stream Network for Gallbladder Disease Diagnosis from Ultrasound",
+    "summary": "Ultrasound imaging is the primary diagnostic modality for detecting Gallbladder diseases due to its non-invasive nature, affordability, and wide accessibility. However, the low resolution and speckle noise inherent to ultrasound images hinder diagnostic reliability, prompting the use of large convolutional neural networks that are difficult to deploy in routine clinical settings. In this work, we propose CortiNet, a lightweight, cortical-inspired dual-stream neural architecture for gallbladder disease diagnosis that integrates physically interpretable multi-scale signal decomposition with perception-driven feature learning. Inspired by parallel processing pathways in the human visual cortex, CortiNet explicitly separates low-frequency structural information from high-frequency perceptual details and processes them through specialized encoding streams. By operating directly on structured, frequency-selective representations rather than raw pixel intensities, the architecture embeds strong physics-based inductive bias, enabling efficient feature learning with a significantly reduced parameter footprint. A late-stage cortical-style fusion mechanism integrates complementary structural and textural cues while preserving computational efficiency. Additionally, we propose a structure-aware explainability framework wherein gradient-weighted class activation mapping is only applied to the structural branch of the proposed CortiNet architecture. This choice allows the model to only focus on the structural features, making it robust against speckle noise. We evaluate CortiNet on 10,692 expert-annotated images spanning nine clinically relevant gallbladder disease categories. Experimental results demonstrate that CortiNet achieves high diagnostic accuracy (98.74%) with only a fraction of the parameters required by conventional deep convolutional models.",
+    "authors": [
+      "Vagish Kumar",
+      "Souvik Chakraborty"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.01000v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01000v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.65
+  },
+  {
+    "arxiv_id": "2602.00970v1",
+    "title": "Verification Required: The Impact of Information Credibility on AI Persuasion",
+    "summary": "Agents powered by large language models (LLMs) are increasingly deployed in settings where communication shapes high-stakes decisions, making a principled understanding of strategic communication essential. Prior work largely studies either unverifiable cheap-talk or fully verifiable disclosure, failing to capture realistic domains in which information has probabilistic credibility. We introduce MixTalk, a strategic communication game for LLM-to-LLM interaction that models information credibility. In MixTalk, a sender agent strategically combines verifiable and unverifiable claims to communicate private information, while a receiver agent allocates a limited budget to costly verification and infers the underlying state from prior beliefs, claims, and verification outcomes. We evaluate state-of-the-art LLM agents in large-scale tournaments across three realistic deployment settings, revealing their strengths and limitations in reasoning about information credibility and the explicit behavior that shapes these interactions. Finally, we propose Tournament Oracle Policy Distillation (TOPD), an offline method that distills tournament oracle policy from interaction logs and deploys it in-context at inference time. Our results show that TOPD significantly improves receiver robustness to persuasion.",
+    "authors": [
+      "Saaduddin Mahmud",
+      "Eugene Bagdasarian",
+      "Shlomo Zilberstein"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.GT"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00970v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00970v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.65
+  },
+  {
+    "arxiv_id": "2602.00977v1",
+    "title": "Trust in One Round: Confidence Estimation for Large Language Models via Structural Signals",
+    "summary": "Large language models (LLMs) are increasingly deployed in domains where errors carry high social, scientific, or safety costs. Yet standard confidence estimators, such as token likelihood, semantic similarity and multi-sample consistency, remain brittle under distribution shift, domain-specialised text, and compute limits. In this work, we present Structural Confidence, a single-pass, model-agnostic framework that enhances output correctness prediction based on multi-scale structural signals derived from a model's final-layer hidden-state trajectory. By combining spectral, local-variation, and global shape descriptors, our method captures internal stability patterns that are missed by probabilities and sentence embeddings. We conduct extensive, cross-domain evaluation across four heterogeneous benchmarks-FEVER (fact verification), SciFact (scientific claims), WikiBio-hallucination (biographical consistency), and TruthfulQA (truthfulness-oriented QA). Our Structural Confidence framework demonstrates strong performance compared with established baselines in terms of AUROC and AUPR. More importantly, unlike sampling-based consistency methods which require multiple stochastic generations and an auxiliary model, our approach uses a single deterministic forward pass, offering a practical basis for efficient, robust post-hoc confidence estimation in socially impactful, resource-constrained LLM applications.",
+    "authors": [
+      "Pengyue Yang",
+      "Jiawen Wen",
+      "Haolin Jin",
+      "Linghan Huang",
+      "Huaming Chen",
+      "Ling Chen"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00977v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00977v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.62
+  },
+  {
+    "arxiv_id": "2602.00954v1",
+    "title": "Small-Margin Preferences Still Matter-If You Train Them Right",
+    "summary": "Preference optimization methods such as DPO align large language models (LLMs) using paired comparisons, but their effectiveness can be highly sensitive to the quality and difficulty of preference pairs. A common heuristic treats small-margin (ambiguous) pairs as noisy and filters them out. In this paper, we revisit this assumption and show that pair difficulty interacts strongly with the optimization objective: when trained with preference-based losses, difficult pairs can destabilize training and harm alignment, yet these same pairs still contain useful supervision signals when optimized with supervised fine-tuning (SFT). Motivated by this observation, we propose MixDPO, a simple yet effective difficulty-aware training strategy that (i) orders preference data from easy to hard (a curriculum over margin-defined difficulty), and (ii) routes difficult pairs to an SFT objective while applying a preference loss to easy pairs. This hybrid design provides a practical mechanism to leverage ambiguous pairs without incurring the optimization failures often associated with preference losses on low-margin data. Across three LLM-judge benchmarks, MixDPO consistently improves alignment over DPO and a range of widely-used variants, with particularly strong gains on AlpacaEval~2 length-controlled (LC) win rate.",
+    "authors": [
+      "Jinlong Pang",
+      "Zhaowei Zhu",
+      "Na Di",
+      "Yichi Zhang",
+      "Yaxuan Wang",
+      "Chen Qian",
+      "Yang Liu"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00954v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00954v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.62
+  },
+  {
+    "arxiv_id": "2602.00996v1",
+    "title": "DeALOG: Decentralized Multi-Agents Log-Mediated Reasoning Framework",
+    "summary": "Complex question answering across text, tables and images requires integrating diverse information sources. A framework supporting specialized processing with coordination and interpretability is needed. We introduce DeALOG, a decentralized multi-agent framework for multimodal question answering. It uses specialized agents: Table, Context, Visual, Summarizing and Verification, that communicate through a shared natural-language log as persistent memory. This log-based approach enables collaborative error detection and verification without central control, improving robustness. Evaluations on FinQA, TAT-QA, CRT-QA, WikiTableQuestions, FeTaQA, and MultiModalQA show competitive performance. Analysis confirms the importance of the shared log, agent specialization, and verification for accuracy. DeALOG, provides a scalable approach through modular components using natural-language communication.",
+    "authors": [
+      "Abhijit Chakraborty",
+      "Ashish Raj Shekhar",
+      "Shiven Agarwal",
+      "Vivek Gupta"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00996v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00996v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
+    "arxiv_id": "2602.00993v1",
+    "title": "HERMES: A Holistic End-to-End Risk-Aware Multimodal Embodied System with Vision-Language Models for Long-Tail Autonomous Driving",
+    "summary": "End-to-end autonomous driving models increasingly benefit from large vision--language models for semantic understanding, yet ensuring safe and accurate operation under long-tail conditions remains challenging. These challenges are particularly prominent in long-tail mixed-traffic scenarios, where autonomous vehicles must interact with heterogeneous road users, including human-driven vehicles and vulnerable road users, under complex and uncertain conditions. This paper proposes HERMES, a holistic risk-aware end-to-end multimodal driving framework designed to inject explicit long-tail risk cues into trajectory planning. HERMES employs a foundation-model-assisted annotation pipeline to produce structured Long-Tail Scene Context and Long-Tail Planning Context, capturing hazard-centric cues together with maneuver intent and safety preference, and uses these signals to guide end-to-end planning. HERMES further introduces a Tri-Modal Driving Module that fuses multi-view perception, historical motion cues, and semantic guidance, ensuring risk-aware accurate trajectory planning under long-tail scenarios. Experiments on the real-world long-tail dataset demonstrate that HERMES consistently outperforms representative end-to-end and VLM-driven baselines under long-tail mixed-traffic scenarios. Ablation studies verify the complementary contributions of key components.",
+    "authors": [
+      "Weizhe Tang",
+      "Junwei You",
+      "Jiaxi Liu",
+      "Zhaoyi Wang",
+      "Rui Gan",
+      "Zilin Huang",
+      "Feng Wei",
+      "Bin Ran"
+    ],
+    "categories": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00993v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00993v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
+    "arxiv_id": "2602.00982v1",
+    "title": "Navigating Simply, Aligning Deeply: Winning Solutions for Mouse vs. AI 2025",
+    "summary": "Visual robustness and neural alignment remain critical challenges in developing artificial agents that can match biological vision systems. We present the winning approaches from Team HCMUS_TheFangs for both tracks of the NeurIPS 2025 Mouse vs. AI: Robust Visual Foraging Competition. For Track 1 (Visual Robustness), we demonstrate that architectural simplicity combined with targeted components yields superior generalization, achieving 95.4% final score with a lightweight two-layer CNN enhanced by Gated Linear Units and observation normalization. For Track 2 (Neural Alignment), we develop a deep ResNet-like architecture with 16 convolutional layers and GLU-based gating that achieves top-1 neural prediction performance with 17.8 million parameters. Our systematic analysis of ten model checkpoints trained between 60K to 1.14M steps reveals that training duration exhibits a non-monotonic relationship with performance, with optimal results achieved around 200K steps. Through comprehensive ablation studies and failure case analysis, we provide insights into why simpler architectures excel at visual robustness while deeper models with increased capacity achieve better neural alignment. Our results challenge conventional assumptions about model complexity in visuomotor learning and offer practical guidance for developing robust, biologically-inspired visual agents.",
+    "authors": [
+      "Phu-Hoa Pham",
+      "Chi-Nguyen Tran",
+      "Dao Sy Duy Minh",
+      "Nguyen Lam Phu Quy",
+      "Huynh Trung Kiet"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.NE",
+      "cs.RO"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00982v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00982v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.6
+  },
+  {
+    "arxiv_id": "2602.00979v1",
+    "title": "GradingAttack: Attacking Large Language Models Towards Short Answer Grading Ability",
+    "summary": "Large language models (LLMs) have demonstrated remarkable potential for automatic short answer grading (ASAG), significantly boosting student assessment efficiency and scalability in educational scenarios. However, their vulnerability to adversarial manipulation raises critical concerns about automatic grading fairness and reliability. In this paper, we introduce GradingAttack, a fine-grained adversarial attack framework that systematically evaluates the vulnerability of LLM based ASAG models. Specifically, we align general-purpose attack methods with the specific objectives of ASAG by designing token-level and prompt-level strategies that manipulate grading outcomes while maintaining high camouflage. Furthermore, to quantify attack camouflage, we propose a novel evaluation metric that balances attack success and camouflage. Experiments on multiple datasets demonstrate that both attack strategies effectively mislead grading models, with prompt-level attacks achieving higher success rates and token-level attacks exhibiting superior camouflage capability. Our findings underscore the need for robust defenses to ensure fairness and reliability in ASAG. Our code and datasets are available at https://anonymous.4open.science/r/GradingAttack.",
+    "authors": [
+      "Xueyi Li",
+      "Zhuoneng Zhou",
+      "Zitao Liu",
+      "Yongdong Wu",
+      "Weiqi Luo"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00979v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00979v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.6
+  },
+  {
+    "arxiv_id": "2602.00948v1",
+    "title": "FinEvo: From Isolated Backtests to Ecological Market Games for Multi-Agent Financial Strategy Evolution",
+    "summary": "Conventional financial strategy evaluation relies on isolated backtests in static environments. Such evaluations assess each policy independently, overlook correlations and interactions, and fail to explain why strategies ultimately persist or vanish in evolving markets. We shift to an ecological perspective, where trading strategies are modeled as adaptive agents that interact and learn within a shared market. Instead of proposing a new strategy, we present FinEvo, an ecological game formalism for studying the evolutionary dynamics of multi-agent financial strategies. At the individual level, heterogeneous ML-based traders-rule-based, deep learning, reinforcement learning, and large language model (LLM) agents-adapt using signals such as historical prices and external news. At the population level, strategy distributions evolve through three designed mechanisms-selection, innovation, and environmental perturbation-capturing the dynamic forces of real markets. Together, these two layers of adaptation link evolutionary game theory with modern learning dynamics, providing a principled environment for studying strategic behavior. Experiments with external shocks and real-world news streams show that FinEvo is both stable for reproducibility and expressive in revealing context-dependent outcomes. Strategies may dominate, collapse, or form coalitions depending on their competitors-patterns invisible to static backtests. By reframing strategy evaluation as an ecological game formalism, FinEvo provides a unified, mechanism-level protocol for analyzing robustness, adaptation, and emergent dynamics in multi-agent financial markets, and may offer a means to explore the potential impact of macroeconomic policies and financial regulations on price evolution and equilibrium.",
+    "authors": [
+      "Mingxi Zou",
+      "Jiaxiang Chen",
+      "Aotian Luo",
+      "Jingyi Dai",
+      "Chi Zhang",
+      "Dongning Sun",
+      "Zenglin Xu"
+    ],
+    "categories": [
+      "physics.soc-ph",
+      "cs.AI",
+      "cs.GT",
+      "cs.MA"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00948v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00948v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.6
+  },
+  {
+    "arxiv_id": "2602.00946v1",
+    "title": "ConsensusDrop: Fusing Visual and Cross-Modal Saliency for Efficient Vision Language Models",
+    "summary": "Vision-Language Models (VLMs) are expensive because the LLM processes hundreds of largely redundant visual tokens. Existing token reduction methods typically exploit \\textit{either} vision-encoder saliency (broad but query-agnostic) \\textit{or} LLM cross-attention (query-aware but sparse and costly). We show that neither signal alone is sufficient: fusing them consistently improves performance compared to unimodal visual token selection (ranking). However, making such fusion practical is non-trivial: cross-modal saliency is usually only available \\emph{inside} the LLM (too late for efficient pre-LLM pruning), and the two signals are inherently asymmetric, so naive fusion underutilizes their complementary strengths. We propose \\textbf{ConsensusDrop}, a training-free framework that derives a \\emph{consensus} ranking by reconciling vision encoder saliency with query-aware cross-attention, retaining the most informative tokens while compressing the remainder via encoder-guided token merging. Across LLaVA-1.5/NeXT, Video-LLaVA, and other open-source VLMs, ConsensusDrop consistently outperforms prior pruning methods under identical token budgets and delivers a stronger accuracy-efficiency Pareto frontier -- preserving near-baseline accuracy even at aggressive token reductions while reducing TTFT and KV cache footprint. Our code will be open-sourced.",
+    "authors": [
+      "Dhruv Parikh",
+      "Haoyang Fan",
+      "Rajgopal Kannan",
+      "Viktor Prasanna"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00946v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00946v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.6
+  },
+  {
+    "arxiv_id": "2602.00989v1",
+    "title": "Optimal Decision-Making Based on Prediction Sets",
+    "summary": "Prediction sets can wrap around any ML model to cover unknown test outcomes with a guaranteed probability. Yet, it remains unclear how to use them optimally for downstream decision-making. Here, we propose a decision-theoretic framework that seeks to minimize the expected loss (risk) against a worst-case distribution consistent with the prediction set's coverage guarantee. We first characterize the minimax optimal policy for a fixed prediction set, showing that it balances the worst-case loss inside the set with a penalty for potential losses outside the set. Building on this, we derive the optimal prediction set construction that minimizes the resulting robust risk subject to a coverage constraint. Finally, we introduce Risk-Optimal Conformal Prediction (ROCP), a practical algorithm that targets these risk-minimizing sets while maintaining finite-sample distribution-free marginal coverage. Empirical evaluations on medical diagnosis and safety-critical decision-making tasks demonstrate that ROCP reduces critical mistakes compared to baselines, particularly when out-of-set errors are costly.",
+    "authors": [
+      "Tao Wang",
+      "Edgar Dobriban"
+    ],
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00989v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00989v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.59
+  },
+  {
+    "arxiv_id": "2602.01002v1",
+    "title": "How RLHF Amplifies Sycophancy",
+    "summary": "Large language models often exhibit increased sycophantic behavior after preference-based post-training, showing a stronger tendency to affirm a user's stated or implied belief even when this conflicts with factual accuracy or sound judgment. We present a formal analysis of how alignment from human feedback can increase this failure mode by identifying an explicit amplification mechanism that causally links optimization against a learned reward to bias in the human preference data used for alignment. We show that the direction of behavioral drift is determined by a covariance under the base policy between endorsing the belief signal in the prompt and the learned reward, and that the first-order effect reduces to a simple mean-gap condition. We then analyze reward learning from pairwise comparisons under random utility models like Bradley-Terry and characterize when bias in human annotators' preferences induces this reward gap. Next, we propose a training-time intervention designed to neutralize the amplification mechanism itself. Among all post-trained policies that prevent sycophantic behavior from increasing, we characterize the unique policy closest in KL divergence to the unconstrained post-trained policy, and derive the corresponding minimal reward correction as a closed-form agreement penalty. Computational experiments find that reward gaps are common and cause behavioral drift in all the configurations considered.",
+    "authors": [
+      "Itai Shapira",
+      "Gerdus Benade",
+      "Ariel D. Procaccia"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.01002v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.01002v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.58
+  },
+  {
+    "arxiv_id": "2602.00983v1",
+    "title": "DISPO: Enhancing Training Efficiency and Stability in Reinforcement Learning for Large Language Model Mathematical Reasoning",
+    "summary": "Reinforcement learning with verifiable rewards has emerged as a promising paradigm for enhancing the reasoning capabilities of large language models particularly in mathematics. Current approaches in this domain present a clear trade-off: PPO-style methods (e.g., GRPO/DAPO) offer training stability but exhibit slow learning trajectories due to their trust-region constraints on policy updates, while REINFORCE-style approaches (e.g., CISPO) demonstrate improved learning efficiency but suffer from performance instability as they clip importance sampling weights while still permitting non-zero gradients outside the trust-region. To address these limitations, we introduce DISPO, a simple yet effective REINFORCE-style algorithm that decouples the up-clipping and down-clipping of importance sampling weights for correct and incorrect responses, yielding four controllable policy update regimes. Through targeted ablations, we uncover how each regime impacts training: for correct responses, weights >1 increase the average token entropy (i.e., exploration) while weights <1 decrease it (i.e., distillation) -- both beneficial but causing gradual performance degradation when excessive. For incorrect responses, overly restrictive clipping triggers sudden performance collapse through repetitive outputs (when weights >1) or vanishing response lengths (when weights <1). By separately tuning these four clipping parameters, DISPO maintains the exploration-distillation balance while preventing catastrophic failures, achieving 61.04% on AIME'24 (vs. 55.42% CISPO and 50.21% DAPO) with similar gains across various benchmarks and models.",
+    "authors": [
+      "Batuhan K. Karaman",
+      "Aditya Rawal",
+      "Suhaila Shakiah",
+      "Mohammad Ghavamzadeh",
+      "Mingyi Hong",
+      "Arijit Biswas",
+      "Ruida Zhou"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00983v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00983v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.58
+  },
+  {
+    "arxiv_id": "2602.00942v1",
+    "title": "SALAAD: Sparse And Low-Rank Adaptation via ADMM",
+    "summary": "Modern large language models are increasingly deployed under compute and memory constraints, making flexible control of model capacity a central challenge. While sparse and low-rank structures naturally trade off capacity and performance, existing approaches often rely on heuristic designs that ignore layer and matrix heterogeneity or require model-specific architectural modifications. We propose SALAAD, a plug-and-play framework applicable to different model architectures that induces sparse and low-rank structures during training. By formulating structured weight learning under an augmented Lagrangian framework and introducing an adaptive controller that dynamically balances the training loss and structural constraints, SALAAD preserves the stability of standard training dynamics while enabling explicit control over the evolution of effective model capacity during training. Experiments across model scales show that SALAAD substantially reduces memory consumption during deployment while achieving performance comparable to ad-hoc methods. Moreover, a single training run yields a continuous spectrum of model capacities, enabling smooth and elastic deployment across diverse memory budgets without the need for retraining.",
+    "authors": [
+      "Hao Ma",
+      "Melis Ilayda Bal",
+      "Liang Zhang",
+      "Bingcong Li",
+      "Niao He",
+      "Melanie Zeilinger",
+      "Michael Muehlebach"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00942v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00942v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.58
+  },
+  {
+    "arxiv_id": "2602.00960v1",
+    "title": "Multimodal Scientific Learning Beyond Diffusions and Flows",
+    "summary": "Scientific machine learning (SciML) increasingly requires models that capture multimodal conditional uncertainty arising from ill-posed inverse problems, multistability, and chaotic dynamics. While recent work has favored highly expressive implicit generative models such as diffusion and flow-based methods, these approaches are often data-hungry, computationally costly, and misaligned with the structured solution spaces frequently found in scientific problems. We demonstrate that Mixture Density Networks (MDNs) provide a principled yet largely overlooked alternative for multimodal uncertainty quantification in SciML. As explicit parametric density estimators, MDNs impose an inductive bias tailored to low-dimensional, multimodal physics, enabling direct global allocation of probability mass across distinct solution branches. This structure delivers strong data efficiency, allowing reliable recovery of separated modes in regimes where scientific data is scarce. We formalize these insights through a unified probabilistic framework contrasting explicit and implicit distribution networks, and demonstrate empirically that MDNs achieve superior generalization, interpretability, and sample efficiency across a range of inverse, multistable, and chaotic scientific regression tasks.",
+    "authors": [
+      "Leonardo Ferreira Guilhoto",
+      "Akshat Kaushal",
+      "Paris Perdikaris"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CE",
+      "stat.CO",
+      "stat.ML"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00960v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00960v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
+    "arxiv_id": "2602.00959v1",
+    "title": "Probing the Knowledge Boundary: An Interactive Agentic Framework for Deep Knowledge Extraction",
+    "summary": "Large Language Models (LLMs) can be seen as compressed knowledge bases, but it remains unclear what knowledge they truly contain and how far their knowledge boundaries extend. Existing benchmarks are mostly static and provide limited support for systematic knowledge probing. In this paper, we propose an interactive agentic framework to systematically extract and quantify the knowledge of LLMs. Our method includes four adaptive exploration policies to probe knowledge at different granularities. To ensure the quality of extracted knowledge, we introduce a three-stage knowledge processing pipeline that combines vector-based filtering to remove exact duplicates, LLM-based adjudication to resolve ambiguous semantic overlaps, and domain-relevance auditing to retain valid knowledge units. Through extensive experiments, we find that recursive taxonomy is the most effective exploration strategy. We also observe a clear knowledge scaling law, where larger models consistently extract more knowledge. In addition, we identify a Pass@1-versus-Pass@k trade-off: domain-specialized models achieve higher initial accuracy but degrade rapidly, while general-purpose models maintain stable performance during extended extraction. Finally, our results show that differences in training data composition lead to distinct and measurable knowledge profiles across model families.",
+    "authors": [
+      "Yuheng Yang",
+      "Siqi Zhu",
+      "Tao Feng",
+      "Ge Liu",
+      "Jiaxuan You"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00959v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00959v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
+    "arxiv_id": "2602.00953v1",
+    "title": "SAGE: Agentic Framework for Interpretable and Clinically Translatable Computational Pathology Biomarker Discovery",
+    "summary": "Despite significant progress in computational pathology, many AI models remain black-box and difficult to interpret, posing a major barrier to clinical adoption due to limited transparency and explainability. This has motivated continued interest in engineered image-based biomarkers, which offer greater interpretability but are often proposed based on anecdotal evidence or fragmented prior literature rather than systematic biological validation. We introduce SAGE (Structured Agentic system for hypothesis Generation and Evaluation), an agentic AI system designed to identify interpretable, engineered pathology biomarkers by grounding them in biological evidence. SAGE integrates literature-anchored reasoning with multimodal data analysis to correlate image-derived features with molecular biomarkers, such as gene expression, and clinically relevant outcomes. By coordinating specialized agents for biological contextualization and empirical hypothesis validation, SAGE prioritizes transparent, biologically supported biomarkers and advances the clinical translation of computational pathology.",
+    "authors": [
+      "Sahar Almahfouz Nasser",
+      "Juan Francisco Pesantez Borja",
+      "Jincheng Liu",
+      "Tanvir Hasan",
+      "Zenghan Wang",
+      "Suman Ghosh",
+      "Sandeep Manandhar",
+      "Shikhar Shiromani",
+      "Twisha Shah",
+      "Naoto Tokuyama",
+      "Anant Madabhushi"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00953v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00953v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
+    "arxiv_id": "2602.00995v1",
+    "title": "VAMOS-OCTA: Vessel-Aware Multi-Axis Orthogonal Supervision for Inpainting Motion-Corrupted OCT Angiography Volumes",
+    "summary": "Handheld Optical Coherence Tomography Angiography (OCTA) enables noninvasive retinal imaging in uncooperative or pediatric subjects, but is highly susceptible to motion artifacts that severely degrade volumetric image quality. Sudden motion during 3D acquisition can lead to unsampled retinal regions across entire B-scans (cross-sectional slices), resulting in blank bands in en face projections. We propose VAMOS-OCTA, a deep learning framework for inpainting motion-corrupted B-scans using vessel-aware multi-axis supervision. We employ a 2.5D U-Net architecture that takes a stack of neighboring B-scans as input to reconstruct a corrupted center B-scan, guided by a novel Vessel-Aware Multi-Axis Orthogonal Supervision (VAMOS) loss. This loss combines vessel-weighted intensity reconstruction with axial and lateral projection consistency, encouraging vascular continuity in native B-scans and across orthogonal planes. Unlike prior work that focuses primarily on restoring the en face MIP, VAMOS-OCTA jointly enhances both cross-sectional B-scan sharpness and volumetric projection accuracy, even under severe motion corruptions. We trained our model on both synthetic and real-world corrupted volumes and evaluated its performance using both perceptual quality and pixel-wise accuracy metrics. VAMOS-OCTA consistently outperforms prior methods, producing reconstructions with sharp capillaries, restored vessel continuity, and clean en face projections. These results demonstrate that multi-axis supervision offers a powerful constraint for restoring motion-degraded 3D OCTA data. Our source code is available at https://github.com/MedICL-VU/VAMOS-OCTA.",
+    "authors": [
+      "Nick DiSanto",
+      "Ehsan Khodapanah Aghdam",
+      "Han Liu",
+      "Jacob Watson",
+      "Yuankai K. Tao",
+      "Hao Li",
+      "Ipek Oguz"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00995v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00995v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.56
+  },
+  {
+    "arxiv_id": "2602.00986v1",
+    "title": "Sparse Reward Subsystem in Large Language Models",
+    "summary": "In this paper, we identify a sparse reward subsystem within the hidden states of Large Language Models (LLMs), drawing an analogy to the biological reward subsystem in the human brain. We demonstrate that this subsystem contains value neurons that represent the model's internal expectation of state value, and through intervention experiments, we establish the importance of these neurons for reasoning. Our experiments reveal that these value neurons are robust across diverse datasets, model scales, and architectures; furthermore, they exhibit significant transferability across different datasets and models fine-tuned from the same base model. By examining cases where value predictions and actual rewards diverge, we identify dopamine neurons within the reward subsystem which encode reward prediction errors (RPE). These neurons exhibit high activation when the reward is higher than expected and low activation when the reward is lower than expected.",
+    "authors": [
+      "Guowei Xu",
+      "Mert Yuksekgonul",
+      "James Zou"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00986v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00986v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.55
+  },
+  {
+    "arxiv_id": "2602.00969v1",
+    "title": "On the Spectral Flattening of Quantized Embeddings",
+    "summary": "Training Large Language Models (LLMs) at ultra-low precision is critically impeded by instability rooted in the conflict between discrete quantization constraints and the intrinsic heavy-tailed spectral nature of linguistic data. By formalizing the connection between Zipfian statistics and random matrix theory, we prove that the power-law decay in the singular value spectra of embeddings is a fundamental requisite for semantic encoding. We derive theoretical bounds showing that uniform quantization introduces a noise floor that disproportionately truncates this spectral tail, which induces spectral flattening and a strictly provable increase in the stable rank of representations. Empirical validation across diverse architectures including GPT-2 and TinyLlama corroborates that this geometric degradation precipitates representational collapse. This work not only quantifies the spectral sensitivity of LLMs but also establishes spectral fidelity as a necessary condition for stable low-bit optimization.",
+    "authors": [
+      "Junlin Huang",
+      "Wenyi Fang",
+      "Zhenheng Tang",
+      "Yuxin Wang",
+      "Xueze Kang",
+      "Yang Zheng",
+      "Bo Li",
+      "Xiaowen Chu"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00969v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00969v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
+    "arxiv_id": "2602.00957v1",
+    "title": "From drift to adaptation to the failed ml model: Transfer Learning in Industrial MLOps",
+    "summary": "Model adaptation to production environment is critical for reliable Machine Learning Operations (MLOps), less attention is paid to developing systematic framework for updating the ML models when they fail under data drift. This paper compares the transfer learning enabled model update strategies including ensemble transfer learning (ETL), all-layers transfer learning (ALTL), and last-layer transfer learning (LLTL) for updating the failed feedforward artificial neural network (ANN) model. The flue gas differential pressure across the air preheater unit installed in a 660 MW thermal power plant is analyzed as a case study since it mimics the batch processes due to load cycling in the power plant. Updating the failed ANN model by three transfer learning techniques reveals that ETL provides relatively higher predictive accuracy for the batch size of 5 days than those of LLTL and ALTL. However, ALTL is found to be suitable for effective update of the model trained on large batch size (8 days). A mixed trend is observed for computational requirement (hyperparameter tuning and model training) of model update techniques for different batch sizes. These fundamental and empiric insights obtained from the batch process-based industrial case study can assist the MLOps practitioners in adapting the failed models to data drifts for the accurate monitoring of industrial processes.",
+    "authors": [
+      "Waqar Muhammad Ashraf",
+      "Talha Ansar",
+      "Fahad Ahmed",
+      "Jawad Hussain",
+      "Muhammad Mujtaba Abbas",
+      "Vivek Dua"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00957v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00957v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
+    "arxiv_id": "2602.00947v1",
+    "title": "The Keyhole Effect: Why Chat Interfaces Fail at Data Analysis",
+    "summary": "Chat has become the default interface for AI-assisted data analysis. For multi-step, state-dependent analytical tasks, this is a mistake. Building on Woods (1984) Keyhole Effect, the cognitive cost of viewing large information spaces through narrow viewports, I show that chat interfaces systematically degrade analytical performance through five mechanisms: (1) constant content displacement defeats hippocampal spatial memory systems; (2) hidden state variables exceed working memory capacity (approximately 4 chunks under load); (3) forced verbalization triggers verbal overshadowing, degrading visual pattern recognition; (4) linear text streams block epistemic action and cognitive offloading; (5) serialization penalties scale with data dimensionality. I formalize cognitive overload as O = max(0, m - v - W) where m is task-relevant items, v is visible items, and W is working memory capacity. When O > 0, error probability increases and analytical biases (anchoring, confirmation, change blindness) amplify. Eight hybrid design patterns address these failures: Generative UI, Infinite Canvas, Deictic Interaction, State Rail, Ghost Layers, Mise en Place, Semantic Zoom, and Probabilistic UI. Each pattern targets specific cognitive bottlenecks while preserving natural language for intent specification and synthesis. Well-scaffolded conversational systems that encode expert priors may reduce load for guided tasks; the framework applies most strongly to open-ended exploration. The paper concludes with falsifiable hypotheses and experimental paradigms for empirical validation.",
+    "authors": [
+      "Mohan Reddy"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00947v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00947v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
+    "arxiv_id": "2602.00943v1",
+    "title": "Dynamic Prior Thompson Sampling for Cold-Start Exploration in Recommender Systems",
+    "summary": "Cold-start exploration is a core challenge in large-scale recommender systems: new or data-sparse items must receive traffic to estimate value, but over-exploration harms users and wastes impressions. In practice, Thompson Sampling (TS) is often initialized with a uniform Beta(1,1) prior, implicitly assuming a 50% success rate for unseen items. When true base rates are far lower, this optimistic prior systematically over-allocates to weak items. The impact is amplified by batched policy updates and pipeline latency: for hours, newly launched items can remain effectively \"no data,\" so the prior dominates allocation before feedback is incorporated. We propose Dynamic Prior Thompson Sampling, a prior design that directly controls the probability that a new arm outcompetes the incumbent winner. Our key contribution is a closed-form quadratic solution for the prior mean that enforces P(X_j > Y_k) = epsilon at introduction time, making exploration intensity predictable and tunable while preserving TS Bayesian updates. Across Monte Carlo validation, offline batched simulations, and a large-scale online experiment on a thumbnail personalization system serving millions of users, dynamic priors deliver precise exploration control and improved efficiency versus a uniform-prior baseline.",
+    "authors": [
+      "Zhenyu Zhao",
+      "David Zhang",
+      "Ellie Zhao",
+      "Ehsan Saberian"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00943v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00943v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
+    "arxiv_id": "2602.00998v1",
+    "title": "Reliable Use of Lemmas via Eligibility Reasoning and Section$-$Aware Reinforcement Learning",
+    "summary": "Recent large language models (LLMs) perform strongly on mathematical benchmarks yet often misapply lemmas, importing conclusions without validating assumptions. We formalize lemma$-$judging as a structured prediction task: given a statement and a candidate lemma, the model must output a precondition check and a conclusion$-$utility check, from which a usefulness decision is derived. We present RULES, which encodes this specification via a two$-$section output and trains with reinforcement learning plus section$-$aware loss masking to assign penalty to the section responsible for errors. Training and evaluation draw on diverse natural language and formal proof corpora; robustness is assessed with a held$-$out perturbation suite; and end$-$to$-$end evaluation spans competition$-$style, perturbation$-$aligned, and theorem$-$based problems across various LLMs. Results show consistent in$-$domain gains over both a vanilla model and a single$-$label RL baseline, larger improvements on applicability$-$breaking perturbations, and parity or modest gains on end$-$to$-$end tasks; ablations indicate that the two$-$section outputs and section$-$aware reinforcement are both necessary for robustness.",
+    "authors": [
+      "Zhikun Xu",
+      "Xiaodong Yu",
+      "Ben Zhou",
+      "Jiang Liu",
+      "Jialian Wu",
+      "Ze Wang",
+      "Ximeng Sun",
+      "Hao Chen",
+      "Zicheng Liu"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00998v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00998v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.53
+  },
+  {
+    "arxiv_id": "2602.00971v1",
+    "title": "Unveiling the Cognitive Compass: Theory-of-Mind-Guided Multimodal Emotion Reasoning",
+    "summary": "Despite rapid progress in multimodal large language models (MLLMs), their capability for deep emotional understanding remains limited. We argue that genuine affective intelligence requires explicit modeling of Theory of Mind (ToM), the cognitive substrate from which emotions arise. To this end, we introduce HitEmotion, a ToM-grounded hierarchical benchmark that diagnoses capability breakpoints across increasing levels of cognitive depth. Second, we propose a ToM-guided reasoning chain that tracks mental states and calibrates cross-modal evidence to achieve faithful emotional reasoning. We further introduce TMPO, a reinforcement learning method that uses intermediate mental states as process-level supervision to guide and strengthen model reasoning. Extensive experiments show that HitEmotion exposes deep emotional reasoning deficits in state-of-the-art models, especially on cognitively demanding tasks. In evaluation, the ToM-guided reasoning chain and TMPO improve end-task accuracy and yield more faithful, more coherent rationales. In conclusion, our work provides the research community with a practical toolkit for evaluating and enhancing the cognition-based emotional understanding capabilities of MLLMs. Our dataset and code are available at: https://HitEmotion.github.io/.",
+    "authors": [
+      "Meng Luo",
+      "Bobo Li",
+      "Shanqing Xu",
+      "Shize Zhang",
+      "Qiuchan Chen",
+      "Menglu Han",
+      "Wenhao Chen",
+      "Yanxiang Huang",
+      "Hao Fei",
+      "Mong-Li Lee",
+      "Wynne Hsu"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00971v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00971v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.52
+  },
+  {
+    "arxiv_id": "2602.00951v1",
+    "title": "R-HTN: Rebellious Online HTN Planning for Safety and Game AI",
+    "summary": "We introduce online Hierarchical Task Network (HTN) agents whose behaviors are governed by a set of built-in directives \\D. Like other agents that are capable of rebellion (i.e., {\\it intelligent disobedience}), our agents will, under some conditions, not perform a user-assigned task and instead act in ways that do not meet a user's expectations. Our work combines three concepts: HTN planning, online planning, and the directives \\D, which must be considered when performing user-assigned tasks. We investigate two agent variants: (1) a Nonadaptive agent that stops execution if it finds itself in violation of \\D~ and (2) an Adaptive agent that, in the same situation, instead modifies its HTN plan to search for alternative ways to achieve its given task. We present R-HTN (for: Rebellious-HTN), a general algorithm for online HTN planning under directives \\D. We evaluate R-HTN in two task domains where the agent must not violate some directives for safety reasons or as dictated by their personality traits. We found that R-HTN agents never violate directives, and aim to achieve the user-given goals if feasible though not necessarily as the user expected.",
+    "authors": [
+      "Hector Munoz-Avila",
+      "David W. Aha",
+      "Paola Rizzo"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00951v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00951v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.52
+  },
+  {
+    "arxiv_id": "2602.00950v1",
+    "title": "MindGuard: Guardrail Classifiers for Multi-Turn Mental Health Support",
+    "summary": "Large language models are increasingly used for mental health support, yet their conversational coherence alone does not ensure clinical appropriateness. Existing general-purpose safeguards often fail to distinguish between therapeutic disclosures and genuine clinical crises, leading to safety failures. To address this gap, we introduce a clinically grounded risk taxonomy, developed in collaboration with PhD-level psychologists, that identifies actionable harm (e.g., self-harm and harm to others) while preserving space for safe, non-crisis therapeutic content. We release MindGuard-testset, a dataset of real-world multi-turn conversations annotated at the turn level by clinical experts. Using synthetic dialogues generated via a controlled two-agent setup, we train MindGuard, a family of lightweight safety classifiers (with 4B and 8B parameters). Our classifiers reduce false positives at high-recall operating points and, when paired with clinician language models, help achieve lower attack success and harmful engagement rates in adversarial multi-turn interactions compared to general-purpose safeguards. We release all models and human evaluation data.",
+    "authors": [
+      "António Farinhas",
+      "Nuno M. Guerreiro",
+      "José Pombal",
+      "Pedro Henrique Martins",
+      "Laura Melton",
+      "Alex Conway",
+      "Cara Dochat",
+      "Maya D'Eon",
+      "Ricardo Rei"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00950v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00950v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.52
+  },
+  {
+    "arxiv_id": "2602.00978v1",
+    "title": "Organismal Agency and Rapid Adaptation: The Phenopoiesis Algorithm for Phenotype-First Evolution",
+    "summary": "Evolutionary success depends on the capacity to adapt: organisms must respond to environmental challenges through both genetic innovation and lifetime learning. The gene-centric paradigm attributes evolutionary causality exclusively to genes, while Denis Noble's phenotype-first framework argues that organisms are active agents capable of interpreting genetic resources, learning from experience, and shaping their own development. However, this framework has remained philosophically intuitive but algorithmically opaque.   We show for the first time that organismal agency can be implemented as a concrete computational process through heritable phenotypic patterns. We introduce the Phenopoiesis Algorithm, where organisms inherit not just genes but also successful phenotypic patterns discovered during lifetime learning. Through experiments in changing environments, these pattern-inheriting organisms achieve 3.4 times faster adaptation compared to gene-centric models. Critically, these gains require cross-generational inheritance of learned patterns rather than within-lifetime learning alone.   We conclude that organismal agency is not a philosophical abstraction but an algorithmic mechanism with measurable adaptive value. The mechanism works through compositional reuse: organisms discover how to compose primitive elements into solutions, encode those compositional recipes, and transmit them to offspring. Evolution operates across multiple timescales -- fast, reversible phenotypic inheritance and slow, permanent genetic inheritance -- providing adaptive flexibility that single-channel mechanisms cannot achieve.",
+    "authors": [
+      "Nam H. Le"
+    ],
+    "categories": [
+      "cs.NE",
+      "q-bio.PE"
+    ],
+    "published": "2026-02-01",
+    "url": "https://arxiv.org/abs/2602.00978v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.00978v1.pdf",
+    "date": "2026-02-03",
+    "source": "arxiv",
+    "research_score": 0.51
+  }
+]
