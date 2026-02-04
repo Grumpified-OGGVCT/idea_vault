@@ -789,7 +789,7 @@
   },
   {
     "title": "[PR] Update Docker images",
-    "date": "2026-02-04T04:30:26Z",
+    "date": "2026-02-04T10:28:53Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| alpine | digest | `865b95f` \u2192 `2510918` |  |\n| bbernhard/signal-cli-rest-api | minor | `0.96` \u2192 `0.97` |  |\n| busybox | digest | `2383baa` \u2192 `b3255e7` |  |\n| code.forgejo.org/oci/docker | digest | `3",
     "url": "https://github.com/morten-olsen/homelab-apps/pull/60",
     "source": "github_prs",
@@ -801,7 +801,7 @@
   },
   {
     "title": "[PR] [pull] main from lobehub:main",
-    "date": "2026-02-04T09:26:08Z",
+    "date": "2026-02-04T10:26:59Z",
     "summary": "See [Commits](/rcy1314/lobe-chat/pull/66/commits) and [Changes](/rcy1314/lobe-chat/pull/66/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.1)\n\n_Can you help keep this open source ser",
     "url": "https://github.com/rcy1314/lobe-chat/pull/66",
     "source": "github_prs",
@@ -885,8 +885,8 @@
   },
   {
     "title": "[PR] chore(deps): update aqua",
-    "date": "2026-02-04T06:09:54Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.460.0` | `v4.466.0` (+6)",
+    "date": "2026-02-04T10:14:34Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.460.1` | `v4.466.0` (+5)",
     "url": "https://github.com/ianlewis/fx/pull/137",
     "source": "github_prs",
     "highlights": [
@@ -945,7 +945,7 @@
   },
   {
     "title": "[PR] fix(deps): update dependency org.springframework.ai:spring-ai-bom to v1.1.2",
-    "date": "2026-02-04T02:27:47Z",
+    "date": "2026-02-04T10:00:33Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `1.",
     "url": "https://github.com/rajadilipkolli/ai-playground/pull/166",
     "source": "github_prs",
@@ -1065,8 +1065,8 @@
   },
   {
     "title": "[PR] [MCP-192]-Feature/replicate inference support",
-    "date": "2026-02-04T09:24:00Z",
-    "summary": "# Add Replicate Cloud Inference Support + Unified LLM Architecture\r\n\r\n## \ud83c\udfaf Overview\r\n\r\nThis PR adds **Replicate cloud inference support** to FluidMCP and refactors the LLM configuration architecture to use a **unified `llmModels` section with type-based dispatch**. This enables running AI models via",
+    "date": "2026-02-04T10:35:49Z",
+    "summary": "# Add Replicate Cloud Inference + Unified LLM Architecture\r\n\r\n## Summary\r\n\r\nThis PR enables FluidMCP to orchestrate both **local inference servers** (vLLM) and **cloud inference APIs** (Replicate) through a unified configuration and consistent REST API.\r\n\r\n**What you get:**\r\n- Run AI models on Repli",
     "url": "https://github.com/Fluid-AI/fluidmcp/pull/279",
     "source": "github_prs",
     "highlights": [
@@ -1265,6 +1265,78 @@
       "comments: 1",
       "pull request",
       "repo: LangChain.Providers"
+    ]
+  },
+  {
+    "title": "[PR] chore(py): bump version to 0.5.0",
+    "date": "2026-02-04T10:43:58Z",
+    "summary": "# Release: Genkit Python SDK v0.5.0\n\n## Overview\n\nThis is a **major release** of the Genkit Python SDK with **178 commits** and **680 files changed** over **8 months** since v0.4.0 (May 2025). This release represents the most significant update to the Python SDK to date, adding extensive new model p",
+    "url": "https://github.com/firebase/genkit/pull/4417",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: genkit"
+    ]
+  },
+  {
+    "title": "[PR] evaluation framework",
+    "date": "2026-02-04T10:42:46Z",
+    "summary": "...\r\n\r\n## Added\r\n* `assays` pytest plugin\r\n* `timer_for_tests` fixture for measuring the run time of unit tests\r\n* banner in project `README.md`\r\n* `zstd` package in dev container. Ollama switched from `*.tgz` to `*.tar.zst` compression.\r\n* Codecov config for test coverage targets\r\n* Claude Code CLI",
+    "url": "https://github.com/lars20070/deepresearcher2/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 23",
+      "pull request",
+      "repo: deepresearcher2"
+    ]
+  },
+  {
+    "title": "[PR] feat: Universal LiteLLM Backend (Issue #234)",
+    "date": "2026-02-04T10:39:50Z",
+    "summary": "## Summary\nThis PR replaces the legacy multi-provider architecture (Google, OpenAI, Ollama specific classes) with a single `LiteLLMProvider`. This enables support for 100+ LLM providers including OpenAI, Anthropic, Gemini, DeepSeek, Ollama, Azure, and more\u2014all without code changes.\n\nIt also introduc",
+    "url": "https://github.com/vitali87/code-graph-rag/pull/296",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: code-graph-rag"
+    ]
+  },
+  {
+    "title": "[PR] Update Mend: high confidence minor and patch dependency updates",
+    "date": "2026-02-04T10:38:21Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/)",
+    "url": "https://github.com/jgeraigery/carbonj/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: carbonj"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui (0.6.41 \u2192 0.7.2)",
+    "date": "2026-02-04T10:31:32Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.6.41` \u2192 `0.7.2` |\n\n---\n\n### Release Notes\n\n<de",
+    "url": "https://github.com/lkmgr/homelab/pull/1608",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] `General`: Allow users to choose between Cloud AI, On-Premise AI, and No AI",
+    "date": "2026-02-04T10:27:05Z",
+    "summary": "<!-- Thanks for contributing to Artemis! Before you submit your pull request, please make sure to check all tasks by putting an x in the [ ] (don't: [x ], [ x], do: [x]). Remove not applicable tasks and do not leave them unchecked -->\r\n<!-- If your pull request is not ready for review yet, create a ",
+    "url": "https://github.com/ls1intum/Artemis/pull/11845",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 83",
+      "pull request",
+      "repo: Artemis"
     ]
   }
 ]
