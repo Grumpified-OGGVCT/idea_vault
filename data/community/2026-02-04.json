@@ -789,8 +789,8 @@
   },
   {
     "title": "[PR] Update Docker images",
-    "date": "2026-02-04T10:28:53Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| alpine | digest | `865b95f` \u2192 `2510918` |  |\n| bbernhard/signal-cli-rest-api | minor | `0.96` \u2192 `0.97` |  |\n| busybox | digest | `2383baa` \u2192 `b3255e7` |  |\n| code.forgejo.org/oci/docker | digest | `3",
+    "date": "2026-02-04T13:30:07Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| alpine | digest | `865b95f` \u2192 `2510918` |  |\n| bbernhard/signal-cli-rest-api | minor | `0.96` \u2192 `0.97` |  |\n| busybox | digest |",
     "url": "https://github.com/morten-olsen/homelab-apps/pull/60",
     "source": "github_prs",
     "highlights": [
@@ -801,7 +801,7 @@
   },
   {
     "title": "[PR] [pull] main from lobehub:main",
-    "date": "2026-02-04T10:26:59Z",
+    "date": "2026-02-04T14:11:30Z",
     "summary": "See [Commits](/rcy1314/lobe-chat/pull/66/commits) and [Changes](/rcy1314/lobe-chat/pull/66/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.1)\n\n_Can you help keep this open source ser",
     "url": "https://github.com/rcy1314/lobe-chat/pull/66",
     "source": "github_prs",
@@ -837,7 +837,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-02-04T08:44:11Z",
+    "date": "2026-02-04T14:44:12Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1017,7 +1017,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-02-04T05:01:35Z",
+    "date": "2026-02-04T13:49:47Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1065,7 +1065,7 @@
   },
   {
     "title": "[PR] [MCP-192]-Feature/replicate inference support",
-    "date": "2026-02-04T13:03:30Z",
+    "date": "2026-02-04T13:33:13Z",
     "summary": "# Add Replicate Cloud Inference + Unified LLM Architecture\r\n\r\n## Summary\r\n\r\nThis PR enables FluidMCP to orchestrate both **local inference servers** (vLLM) and **cloud inference APIs** (Replicate) through a unified configuration and consistent REST API.\r\n\r\n**What you get:**\r\n- Run AI models on Repli",
     "url": "https://github.com/Fluid-AI/fluidmcp/pull/279",
     "source": "github_prs",
@@ -1293,12 +1293,12 @@
   },
   {
     "title": "[PR] feat: Universal LiteLLM Backend (Issue #234)",
-    "date": "2026-02-04T13:01:40Z",
+    "date": "2026-02-04T13:57:58Z",
     "summary": "## Summary\r\nThis PR replaces the legacy multi-provider architecture (Google, OpenAI, Ollama specific classes) with a single `LiteLLMProvider`. This enables support for 100+ LLM providers including OpenAI, Anthropic, Gemini, DeepSeek, Ollama, Azure, and more\u2014all without code changes.\r\n\r\nIt also intro",
     "url": "https://github.com/vitali87/code-graph-rag/pull/296",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 10",
       "pull request",
       "repo: code-graph-rag"
     ]
@@ -1329,12 +1329,12 @@
   },
   {
     "title": "[PR] `General`: Allow users to choose between Cloud AI, On-Premise AI, and No AI",
-    "date": "2026-02-04T13:05:03Z",
+    "date": "2026-02-04T14:31:50Z",
     "summary": "<!-- Thanks for contributing to Artemis! Before you submit your pull request, please make sure to check all tasks by putting an x in the [ ] (don't: [x ], [ x], do: [x]). Remove not applicable tasks and do not leave them unchecked -->\r\n<!-- If your pull request is not ready for review yet, create a ",
     "url": "https://github.com/ls1intum/Artemis/pull/11845",
     "source": "github_prs",
     "highlights": [
-      "comments: 85",
+      "comments: 87",
       "pull request",
       "repo: Artemis"
     ]
@@ -1517,6 +1517,78 @@
       "comments: 1",
       "pull request",
       "repo: quietus"
+    ]
+  },
+  {
+    "title": "[PR] `Iris`: Add LLM Selection",
+    "date": "2026-02-04T14:34:05Z",
+    "summary": "## Motivation\r\n\r\nCurrently, Iris lacks a clear mechanism to distinguish between local and cloud-based LLMs. This makes it impossible for users to determine which type of LLM infrastructure should be used. To improve flexibility and make LLM selection more transparent, we need a systematic way to ind",
+    "url": "https://github.com/ls1intum/edutelligence/pull/346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the e2e group across 1 directory with 4 updates",
+    "date": "2026-02-04T14:16:51Z",
+    "summary": "Bumps the e2e group with 4 updates in the /e2e directory: [github.com/fsouza/fake-gcs-server](https://github.com/fsouza/fake-gcs-server), [github.com/open-policy-agent/opa](https://github.com/open-policy-agent/opa), [github.com/redpanda-data/benthos/v4](https://github.com/redpanda-data/benthos) and ",
+    "url": "https://github.com/open-policy-agent/eopa/pull/301",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: eopa"
+    ]
+  },
+  {
+    "title": "[PR] Update langchain4j monorepo",
+    "date": "2026-02-04T14:06:30Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
+    "url": "https://github.com/kpavlov/elven/pull/85",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: elven"
+    ]
+  },
+  {
+    "title": "[PR] feat: add web deployment support with Docker and web server",
+    "date": "2026-02-04T13:58:50Z",
+    "summary": "## Description\r\n\r\n\r\nThis PR adds comprehensive web deployment support to Auto Claude, allowing it to run as a web application on any server. It includes a new Express-based web server that replaces the Electron main process, a web-compatible API client using Socket.IO for real-time communication, Do",
+    "url": "https://github.com/AndyMik90/Auto-Claude/pull/1624",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: Auto-Claude"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency dev.langchain4j:langchain4j-bom to v1.11.0",
+    "date": "2026-02-04T13:37:24Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
+    "url": "https://github.com/kpavlov/quarkus-assistant-demo/pull/51",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: quarkus-assistant-demo"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency dev.langchain4j:langchain4j-ollama to v1",
+    "date": "2026-02-04T13:36:13Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
+    "url": "https://github.com/DiverOfDark/TelegramSummarizer/pull/42",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: TelegramSummarizer"
     ]
   }
 ]
