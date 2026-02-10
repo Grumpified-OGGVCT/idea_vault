@@ -177,7 +177,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-02-10T20:44:08Z",
+    "date": "2026-02-10T23:18:12Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -1317,7 +1317,7 @@
   },
   {
     "title": "[PR] 012 visual builder update",
-    "date": "2026-02-10T20:49:16Z",
+    "date": "2026-02-10T23:42:17Z",
     "summary": "[Merge pull request](https://github.com/MikePfunk28/agent_builder_application/commit/2d92fc398e78ceaced8cc647928d7f399df2aef0) https://github.com/MikePfunk28/agent_builder_application/pull/19 [from MikePfunk28/main](https://github.com/MikePfunk28/agent_builder_application/commit/2d92fc398e78ceaced8c",
     "url": "https://github.com/MikePfunk28/agent_builder_application/pull/24",
     "source": "github_prs",
@@ -1425,7 +1425,7 @@
   },
   {
     "title": "[PR] Fix Swift 6.0 Compatibility Updates",
-    "date": "2026-02-10T22:43:05Z",
+    "date": "2026-02-10T23:19:28Z",
     "summary": "This PR updates CodingReviewer for Swift 6.0 compatibility and adds new features.\n\n## Changes Made\n\n- **Project Settings**: Updated Xcode project to recommended Swift 6.0 settings\n- **Test Suite**: Fixed and modernized test files, removed deprecated tests\n- **New Services**: Added GitHub, Git, and O",
     "url": "https://github.com/dboone323/coding-reviewer/pull/15",
     "source": "github_prs",
@@ -1437,12 +1437,12 @@
   },
   {
     "title": "[PR] Add OpenClaw VPS deployment documentation and planning",
-    "date": "2026-02-10T20:24:43Z",
-    "summary": "## Summary\n\nThis PR adds comprehensive documentation for deploying OpenClaw (clawdbot) to a dedicated Hetzner Cloud VPS named \"claw\", including detailed implementation guides, token optimization strategies, and infrastructure planning.\n\n## Key Changes\n\n- **PLAN.md** \u2014 High-level deployment plan with",
+    "date": "2026-02-10T23:03:30Z",
+    "summary": "## Summary\n\nThis PR adds comprehensive documentation for deploying OpenClaw (clawdbot) to a dedicated Hetzner Cloud VPS named `claw`.\n\nThis revision also hardens the plan to enforce strict isolation from personal machines and personal logins.\n\n## Isolation Updates (This Revision)\n\n- Dedicated SSH/ad",
     "url": "https://github.com/orther/goodlab/pull/39",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: goodlab"
     ]
@@ -1473,7 +1473,7 @@
   },
   {
     "title": "[PR] MCP MVP",
-    "date": "2026-02-10T22:43:46Z",
+    "date": "2026-02-10T22:49:05Z",
     "summary": "> [!NOTE] \r\n> PR Description is WIP\r\n\r\n## New features\r\n\r\n- Adding System Message to conversation or injecting it to an existing one\r\n- CORS Proxy on llama-server backend side\r\n- MCP\r\n    - Servers Selector\r\n    - Settings with Server cards showing capabilities, instructions and other information\r\n ",
     "url": "https://github.com/ggml-org/llama.cpp/pull/18655",
     "source": "github_prs",
@@ -1565,6 +1565,78 @@
       "comments: 0",
       "pull request",
       "repo: test-renovate-2"
+    ]
+  },
+  {
+    "title": "[PR] fix: telegram bot graceful shutdown \u2014 prevent EADDRINUSE crash loop",
+    "date": "2026-02-10T23:18:37Z",
+    "summary": "## Summary\n- Added SIGTERM/SIGINT handlers that call `server.stop(true)` + `bot.stop()` before exit\n- Prevents EADDRINUSE when launchd KeepAlive restarts the bot \u2014 old process now releases port 3847 cleanly\n- Captures `notifyServer` reference from `Bun.serve()` for shutdown access\n\n## Test plan\n- [x",
+    "url": "https://github.com/EtanHey/golems/pull/99",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: golems"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.468.0",
+    "date": "2026-02-10T22:47:23Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.377.0` \u2192 `v4.468.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/miyamo2/qilin/pull/34",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: qilin"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.468.0",
+    "date": "2026-02-10T22:47:13Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.155.0` \u2192 `v4.468.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/Syu-fu/dotfiles-old/pull/73",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dotfiles-old"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.468.0",
+    "date": "2026-02-10T22:46:36Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.368.0` \u2192 `v4.468.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/aereal/otelgqlgen/pull/129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 96",
+      "pull request",
+      "repo: otelgqlgen"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency aquaproj/aqua-registry to v4.468.0",
+    "date": "2026-02-10T22:46:36Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.442.0` \u2192 `v4.468.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>aquaproj/aqua-registry (aquaproj/aqua-registry)</summary",
+    "url": "https://github.com/guni1192/dotfiles/pull/76",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.468.0",
+    "date": "2026-02-10T22:46:04Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.371.2` \u2192 `v4.468.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/watarukura/clineusage/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: clineusage"
     ]
   }
 ]
