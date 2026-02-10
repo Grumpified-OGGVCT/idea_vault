@@ -597,7 +597,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-02-10T05:12:16Z",
+    "date": "2026-02-10T09:26:20Z",
     "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change | Pending | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|---|\n| [actions/cache](https://redirect.github.com/actions/cache) | ",
     "url": "https://github.com/yashikota/scene-hunter/pull/114",
     "source": "github_prs",
@@ -849,7 +849,7 @@
   },
   {
     "title": "[PR] Update",
-    "date": "2026-02-10T02:44:44Z",
+    "date": "2026-02-10T09:38:28Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Many new and expanded blog posts, diagrams and docs covering cloud-native, Kubernetes, DevOps, tooling, and developer workflows.\n  * Automated daily data-sync job to refresh ",
     "url": "https://github.com/humzamalak/dca-prep-kit/pull/1",
     "source": "github_prs",
@@ -909,7 +909,7 @@
   },
   {
     "title": "[PR] feat(runner): implement OpenRouter provider and cascading fallback en\u2026",
-    "date": "2026-02-10T09:00:33Z",
+    "date": "2026-02-10T09:47:50Z",
     "summary": "\u2026gine\r\n\r\n- Added OpenRouter support to LLMService\r\n- Refactored LLMService to support provider fallback chains\r\n- Configured Agent to use LLM_FALLBACK_ORDER env var\r\n- Updated OpenAIProvider to support custom headers\r\n\r\nAdd to .Env\r\n\r\nOPENROUTER_API_KEY=sk-or-your-key-here\r\nLLM_FALLBACK_ORDER=openro",
     "url": "https://github.com/heidi-dang/aiwebapp/pull/48",
     "source": "github_prs",
@@ -921,7 +921,7 @@
   },
   {
     "title": "[PR] [MCP-210]-feat: Add unified LLM API with Replicate support and production-ready observability",
-    "date": "2026-02-10T08:59:07Z",
+    "date": "2026-02-10T09:37:51Z",
     "summary": "This PR delivers production-ready observability for FluidMCP's unified LLM API architecture. It integrates comprehensive metrics collection into all inference endpoints, providing visibility into model usage, performance, and reliability across vLLM, Ollama, LM Studio, and Replicate providers.\r\n\r\nBu",
     "url": "https://github.com/Fluid-AI/fluidmcp/pull/302",
     "source": "github_prs",
@@ -956,13 +956,13 @@
     ]
   },
   {
-    "title": "[PR] feat: Spice Gate v2.0 \u2014 Ship Gate Verification (Sprints 10-12)",
-    "date": "2026-02-10T08:17:07Z",
-    "summary": "## Summary\n\nSpice Gate v2.0 hardening and ship gate verification. Continues from merged PR #40 with three additional sprints implementing PRD v1.3.0 / SDD v2.0.0 delta requirements.\n\n- **Sprint 10 (Input Hardening)**: Input validation limits, abort propagation, rate limit transparency, ALREADY_RESER",
+    "title": "[PR] feat: Spice Gate v2.0 \u2014 Full Hardening (Sprints 0-14)",
+    "date": "2026-02-10T10:04:24Z",
+    "summary": "## Summary\n\nSpice Gate v2.0 \u2014 complete agent gateway implementation with production hardening across 14 sprints. Implements PRD v1.3.0 / SDD v2.0.0 requirements for the Hounfour Phase 4 agent gateway system.\n\n### Sprint Breakdown\n\n| Phase | Sprints | Description |\n|-------|---------|-------------|\n|",
     "url": "https://github.com/0xHoneyJar/arrakis/pull/47",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 8",
       "pull request",
       "repo: arrakis"
     ]
@@ -1001,6 +1001,66 @@
       "comments: 1",
       "pull request",
       "repo: spring-ai-app"
+    ]
+  },
+  {
+    "title": "\ud83d\udd0d Reconocimiento Profundo Fase 1 - 5 Simbiontes: Configuraciones, L\u00edmites y Capacidades \u00danicas",
+    "date": "2025-11-23T12:32:47Z",
+    "summary": "## \ud83c\udf1f Reconocimiento Profundo Completado\n\n**5 simbiontes explorados**: ChatGPT, Claude, Gemini, DeepSeek, Mistral\n\n**M\u00e9todo aplicado**: \n- Revisi\u00f3n de historial y proyectos concretos\n- Exploraci\u00f3n de configuraciones avanzadas\n- Consulta de manuales y documentaci\u00f3n oficial\n- Documentaci\u00f3n de l\u00edmites r",
+    "url": "https://github.com/1rec3/holobionte-1rec3/issues/18",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 6",
+      "state: open",
+      "repo: holobionte-1rec3"
+    ]
+  },
+  {
+    "title": "[PR] Added toggle list view to service page and started adding image upload",
+    "date": "2026-02-10T10:08:49Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Service photo uploads and display with cloud storage.\n  * Tag-based service categorization and filtering.\n  * View mode toggle (grid/list) for service browsing.\n  * Enhanced",
+    "url": "https://github.com/tom-sk/booking-app/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: booking-app"
+    ]
+  },
+  {
+    "title": "[PR] Add optimizer packages and infrastructure (non-functional)",
+    "date": "2026-02-10T10:08:47Z",
+    "summary": "## Summary\n\nThis PR adds the core optimizer implementation without wiring it into the server startup. The optimizer provides semantic tool discovery using embeddings to reduce token usage for LLMs working with large toolsets.\n\n**This is part 1 of a 3-part PR split from #3440:**\n- **PR 1 (this)**: No",
+    "url": "https://github.com/stacklok/toolhive/pull/3516",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: toolhive"
+    ]
+  },
+  {
+    "title": "[PR] LCORE-1307: Switch server image to upstream llama-stack 0.4.3",
+    "date": "2026-02-10T10:01:41Z",
+    "summary": "## Description\r\n\r\nReverted server image to upstream llama-stack 0.4.3\r\n\r\n## Type of change\r\n\r\n- [x] Refactor\r\n- [ ] New feature\r\n- [ ] Bug fix\r\n- [ ] CVE fix\r\n- [ ] Optimization\r\n- [ ] Documentation Update\r\n- [ ] Configuration Update\r\n- [ ] Bump-up service version\r\n- [ ] Bump-up dependent library\r\n-",
+    "url": "https://github.com/lightspeed-core/lightspeed-stack/pull/1130",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: lightspeed-stack"
+    ]
+  },
+  {
+    "title": "[PR] Refactor/model configuration",
+    "date": "2026-02-10T09:53:41Z",
+    "summary": "Closes #113\r\nCloses #96\r\n\r\nAdd Concrete classes for every supported model. Models can be either Local or Cloud and can implement various capability interfaces such as IReasoning or IVision... (more will be added soon). It is a foundation for safer runtime behavior eg. text to text model to generate ",
+    "url": "https://github.com/wisedev-code/MaIN.NET/pull/119",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MaIN.NET"
     ]
   }
 ]
