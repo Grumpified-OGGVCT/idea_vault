@@ -1521,7 +1521,7 @@
   },
   {
     "title": "[PR] feat: Add service_tier parameter support",
-    "date": "2026-02-13T18:21:17Z",
+    "date": "2026-02-13T19:11:59Z",
     "summary": "# What does this PR do?\r\n<!-- Provide a short summary of what this PR does and why. Link to relevant issues if applicable. -->\r\n\r\n<!-- If resolving an issue, uncomment and update the line below -->\r\nFixed #4705 \r\n\r\n## Test Plan\r\n<!-- Describe the tests you ran to verify your changes with result summ",
     "url": "https://github.com/llamastack/llama-stack/pull/4816",
     "source": "github_prs",
@@ -1709,6 +1709,30 @@
       "comments: 2",
       "pull request",
       "repo: golems"
+    ]
+  },
+  {
+    "title": "[PR] feat: local perception layer \u2014 Qwen2.5-VL-32B via Ollama",
+    "date": "2026-02-13T19:46:06Z",
+    "summary": "## Summary\n\n- **Switch vision from cloud to local**: Replace Kimi K2.5 Thinking (Together AI) + Gemini 3 Flash with local **Qwen2.5-VL-32B-Q8_0** served by Ollama\n- **DRY refactor**: Extract `OpenAICompatibleClient` base class shared by Together and Ollama clients\n- **VisionService overhaul**: Local",
+    "url": "https://github.com/jayusctrojan/Empire/pull/164",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Empire"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): add JSON repair for malformed tool call arguments from LLM providers",
+    "date": "2026-02-13T19:36:30Z",
+    "summary": "## Description\r\n\r\n  - Add `tryRepairJson()` to fix common JSON errors from LLM providers (e.g., Kimi/K2) before tool call arguments are silently set to `undefined`\r\n  - Handles 4 malformation patterns: missing opening quotes on property names, fully unquoted keys, single quotes instead of double quo",
+    "url": "https://github.com/mastra-ai/mastra/pull/12823",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: mastra"
     ]
   }
 ]
