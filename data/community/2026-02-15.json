@@ -598,7 +598,7 @@
   },
   {
     "title": "[PR] Update Container images",
-    "date": "2026-02-15T06:41:08Z",
+    "date": "2026-02-15T08:00:50Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [adminer](https://redirect.github.com/vrana/adminer) | patch | `5.4.1-standalone` \u2192 `5.4.2-standalone` |\n| [deluan/navidrome](https://redirect",
     "url": "https://github.com/bubacoder/infra/pull/283",
     "source": "github_prs",
@@ -706,8 +706,8 @@
   },
   {
     "title": "[PR] fix(services): update docker.io/homeassistant/home-assistant docker tag to v2026.2.2",
-    "date": "2026-02-15T06:02:06Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/homeassistant/home-assistant](https://www.home-assistant.io/) ([source](https://redirect.github.com/home-assistant/core)) | patch | `2026.2.1` -> `2026.2.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies coul",
+    "date": "2026-02-15T08:02:08Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/homeassistant/home-assistant](https://www.home-assistant.io/) ([source](https://redirect.github.com/home-assistant/core)) | patch | `2026.2.1` -> `2026.2.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary",
     "url": "https://github.com/clemak27/homelab/pull/1611",
     "source": "github_prs",
     "highlights": [
@@ -918,6 +918,78 @@
       "comments: 3",
       "pull request",
       "repo: IncidentManagement"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update python-nonmajor",
+    "date": "2026-02-15T08:35:31Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [google-adk](https://redirec",
+    "url": "https://github.com/googleapis/mcp-toolbox-sdk-python/pull/478",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 19",
+      "pull request",
+      "repo: mcp-toolbox-sdk-python"
+    ]
+  },
+  {
+    "title": "[PR] Implement Knowledge Foundry Features: Local Models, MCP Integration, and Testing Infrastructure",
+    "date": "2026-02-15T08:28:17Z",
+    "summary": "## Critical Bug Fix + Complete Implementation Status\n\n**\ud83d\udc1b CRITICAL BUG FIX**: Frontend was completely broken due to missing lib files\n\n### Issues Fixed\n\n1. **Missing frontend/src/lib files** - The LocalProviderDiscovery component imports `@/lib/api` and `@/lib/types` but these were never committed\n2",
+    "url": "https://github.com/mukundajmera/knowledge-foundry/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: knowledge-foundry"
+    ]
+  },
+  {
+    "title": "[PR] api: restrict ollama import URL to loopback hosts",
+    "date": "2026-02-15T08:24:45Z",
+    "summary": "## Summary\n- add route-level validation for optional `ollamaUrl` in `POST /api/training/models/:id/import-ollama`\n- require `ollamaUrl` to be a valid `http://` or `https://` URL\n- restrict `ollamaUrl` hosts to loopback only (`localhost`, `127.0.0.1`, `::1`, including bracketed IPv6 form)\n- prevent r",
+    "url": "https://github.com/milady-ai/milaidy/pull/273",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: milaidy"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.8.1",
+    "date": "2026-02-15T08:16:53Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.7.2` \u2192 `v0.8.1` |\n\n---\n\n> [!WARNING]\n> Some de",
+    "url": "https://github.com/MichielMak/docker-stacks/pull/1330",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: docker-stacks"
+    ]
+  },
+  {
+    "title": "[PR] feat: i18n chinese support",
+    "date": "2026-02-15T08:05:27Z",
+    "summary": "## Description\r\n\r\nAdd full internationalization (i18n) support to Accomplish. Ships English and Simplified Chinese, with architecture designed for easy addition of new languages.\r\n\r\n**Three capabilities:**\r\n\r\n1. **Static UI translation** \u2014 All user-facing strings across 38 components, 4 pages, store",
+    "url": "https://github.com/accomplish-ai/accomplish/pull/376",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: accomplish"
+    ]
+  },
+  {
+    "title": "[PR] Add LiteLLM Integration for Expanded Model Support",
+    "date": "2026-02-15T08:04:27Z",
+    "summary": "This is a big change.  I'll say up front, feel free to reject (if its not a direction you're interested in) or tell me to break it up into smaller changes (if you like some of it, or want to integrate in smaller chunks).  It does allow using non-local AIs, but I try to bias toward running local AIs ",
+    "url": "https://github.com/balisujohn/localwriter/pull/30",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: localwriter"
     ]
   }
 ]
