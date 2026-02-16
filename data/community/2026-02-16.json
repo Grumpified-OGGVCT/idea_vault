@@ -549,12 +549,12 @@
   },
   {
     "title": "[PR] feat: implement AWS cloud browser integration",
-    "date": "2026-02-16T02:27:50Z",
+    "date": "2026-02-16T03:02:04Z",
     "summary": "## Description\r\n\r\nImplements the **Cloud Browsers** settings tab and integration with **AWS AgentCore** (Issue #397). This allows users to configure AWS credentials to run browser-based tasks via remote Bedrock agents.\r\n\r\n**Changes:**\r\n- **Agent Core**: Added `AwsAgentCoreConfig` type and exported i",
     "url": "https://github.com/accomplish-ai/accomplish/pull/462",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 10",
       "pull request",
       "repo: accomplish"
     ]
@@ -585,7 +585,7 @@
   },
   {
     "title": "[PR] Local llm providers",
-    "date": "2026-02-16T02:26:05Z",
+    "date": "2026-02-16T03:14:19Z",
     "summary": "",
     "url": "https://github.com/lepapillonterrible/aicoven-local-opensource/pull/1",
     "source": "github_prs",
@@ -773,6 +773,150 @@
       "comments: 0",
       "pull request",
       "repo: google-apps-scripts"
+    ]
+  },
+  {
+    "title": "[PR] fix(services): update docker.io/homeassistant/home-assistant docker tag to v2026.2.2",
+    "date": "2026-02-16T05:02:06Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/homeassistant/home-assistant](https://www.home-assistant.io/) ([source](https://redirect.github.com/home-assistant/core)) | patch | `2026.2.1` -> `2026.2.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary",
+    "url": "https://github.com/clemak27/homelab/pull/1611",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] Add self-hosted Ollama service for Railway deployment\n\nOllama Cloud only serves official library models \u2014 custom user uploads like\ndtarkent2/sprocket-gex-v1 are NOT available for cloud inference. This adds\nan Ollama service (Dockerfile + startup script) that can be deployed as a\nsecond Railway service, auto-pulls the custom model, and connects via\nRailway internal networking.\n\n- ollama/Dockerfile: based on ollama/ollama, pulls model on startup\n- ollama/start.sh: waits for server ready, pulls configured model(s)\n- .env.example: document 3 Ollama options (Railway self-hosted, cloud, local)\n- ai-engine.js: align env var to read OLLAMA_HOST (matching config.js)\n\nhttps://claude.ai/code/session_01RcLN5KYLEMNifCdRZqJoZq",
+    "date": "2026-02-16T04:58:27Z",
+    "summary": "",
+    "url": "https://github.com/dtarkent2-sys/Discord-bot/pull/234",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Discord-bot"
+    ]
+  },
+  {
+    "title": "[PR] deps: Bump Testcontainers from 3.8.0 to 4.10.0",
+    "date": "2026-02-16T04:22:24Z",
+    "summary": "Updated [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet) from 3.8.0 to 4.10.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.10.0\n\n# What's Changed\n\nHappy New Y",
+    "url": "https://github.com/rivoli-ai/andy-guard/pull/76",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: andy-guard"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency aquaproj/aqua-registry to v4.471.0",
+    "date": "2026-02-16T04:14:20Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.246.0` \u2192 `v4.471.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/ponkio-o/argocd-diff-preview-sample/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: argocd-diff-preview-sample"
+    ]
+  },
+  {
+    "title": "[PR] Implement modular PowerShell profile with unified AI integration",
+    "date": "2026-02-16T04:04:25Z",
+    "summary": "Creates a high-performance PowerShell profile (~50ms load time) with 50+ utility functions and native support for cloud and local AI models.\n\n## Architecture\n\n**Modular function library** organized by domain:\n- `FileSystem.ps1` - Navigation (`.., ...`), operations (`ll, la, mkcd`), utilities (`dirsi",
+    "url": "https://github.com/voltaire-toledo/PS-Profile/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: PS-Profile"
+    ]
+  },
+  {
+    "title": "[PR] Vite/react, uv architecture rewrite",
+    "date": "2026-02-16T04:03:39Z",
+    "summary": "This needs a lot more testing. I will probably cherry pick the auto launcher from this before merging if I ever do.\r\n\r\nBased on #380 \r\n\r\n- Soft rewrite of the gui with support for hot reloading using Vite/React, keeping some of the files intact like OCR, and home.\r\n- Game Settings / Auto Launcher\r\n-",
+    "url": "https://github.com/bpwhelan/GameSentenceMiner/pull/381",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: GameSentenceMiner"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-02-16T04:01:11Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.432.0` \u2192 `v4.471.0` |\n| [checkmake/checkmake](https",
+    "url": "https://github.com/ianlewis/quietus/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: quietus"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency aquaproj/aqua-registry to v4.471.0",
+    "date": "2026-02-16T03:53:37Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.366.0` \u2192 `v4.471.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/ohageeq/dotfiles/pull/20",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] Merge critical features from merge-all-features: AI providers, experiments, WebRTC, browser automation",
+    "date": "2026-02-16T03:46:45Z",
+    "summary": "Integrates features from `merge-all-features` (762f9401) that were developed in parallel: AI provider abstraction, founder experiments dashboard, WebRTC communication, and browser automation infrastructure.\n\n## AI & Routing\n- **Multi-provider support**: MiniMax, Ollama (local), OpenRouter with Polic",
+    "url": "https://github.com/thecubiqo/thecubiqo/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: thecubiqo"
+    ]
+  },
+  {
+    "title": "[PR] feat(blog): migrate to Chirpy theme with content from internal Confluence (batch 2)",
+    "date": "2026-02-16T03:06:24Z",
+    "summary": "## Summary\n\n- **91 new technical posts** migrated from internal Confluence documentation, bringing the total to 135 posts\n- **21-point quality system** applied across all 135 posts \u2014 front matter standardization, related posts cross-linking, orphan resolution, future-dated link fixes, title mismatch",
+    "url": "https://github.com/juspay/neurolink-blog/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: neurolink-blog"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-02-16T02:44:10Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add service_tier parameter support",
+    "date": "2026-02-16T02:39:12Z",
+    "summary": "# What does this PR do?\r\n<!-- Provide a short summary of what this PR does and why. Link to relevant issues if applicable. -->\r\n\r\n<!-- If resolving an issue, uncomment and update the line below -->\r\nFixed #4705 \r\n\r\n## Test Plan\r\n<!-- Describe the tests you ran to verify your changes with result summ",
+    "url": "https://github.com/llamastack/llama-stack/pull/4816",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: llama-stack"
     ]
   }
 ]
