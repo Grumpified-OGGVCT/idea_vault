@@ -405,12 +405,12 @@
   },
   {
     "title": "Brew update memo",
-    "date": "2026-01-07T02:06:01Z",
+    "date": "2026-02-17T15:17:44Z",
     "summary": "## 2023-11-20 (Mon)\r\n\r\n```\r\n$ brew update\r\nUpdated 5 taps (tailwarden/komiser, minio/stable, cduggn/cduggn, homebrew/core and homebrew/cask).\r\n==> New Formulae\r\naction-validator              ghc@9.6                       python-jinja                  ruler\r\namass                         intercept   ",
     "url": "https://github.com/yteraoka/blog-1q77-com/issues/160",
     "source": "github_issues",
     "highlights": [
-      "comments: 49",
+      "comments: 50",
       "state: open",
       "repo: blog-1q77-com"
     ]
@@ -1005,7 +1005,7 @@
   },
   {
     "title": "[PR] docs: comprehensive documentation (EN + CN) + Chinese README",
-    "date": "2026-02-17T13:36:55Z",
+    "date": "2026-02-17T15:00:34Z",
     "summary": "## Summary\n\nAdds complete documentation for ZeroClaw in both English and Chinese, plus a Chinese translation of the README.\n\n### Files Added\n- `docs/DOCUMENTATION.md` \u2014 Full 15-section English documentation (1310 lines)\n- `docs/DOCUMENTATION_CN.md` \u2014 Complete Simplified Chinese translation (1310 lin",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/494",
     "source": "github_prs",
@@ -1593,7 +1593,7 @@
   },
   {
     "title": "[PR] refactor: Convert Tanzu provider to declarative JSON config",
-    "date": "2026-02-17T14:46:53Z",
+    "date": "2026-02-17T15:46:42Z",
     "summary": "## Summary\n\nReplaces the dedicated ~1,000-line Rust Tanzu provider with a 21-line declarative JSON config, per feedback from @DOsinga and @katzdave. Adds generic `env_vars` and `dynamic_models` support to the declarative provider framework so all providers benefit.\n\nThis addresses all the review fee",
     "url": "https://github.com/block/goose/pull/7124",
     "source": "github_prs",
@@ -1641,7 +1641,7 @@
   },
   {
     "title": "[PR] lnaguage config fixes and updates audit checkpoint",
-    "date": "2026-02-17T13:41:18Z",
+    "date": "2026-02-17T14:58:48Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Suggested chat prompts are now resolved at runtime and shown directly to users.\n  * Admin and initiation screens use translated UI text.\n\n* **Improvements**\n  * Massive expan",
     "url": "https://github.com/enclave-free/enclave.free/pull/54",
     "source": "github_prs",
@@ -1689,7 +1689,7 @@
   },
   {
     "title": "[PR] admin dashboard ssc-dsai:dev",
-    "date": "2026-02-17T13:20:12Z",
+    "date": "2026-02-17T15:40:02Z",
     "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
     "url": "https://github.com/arthrod/open-webui/pull/36",
     "source": "github_prs",
@@ -1745,6 +1745,90 @@
       "comments: 5",
       "pull request",
       "repo: ironclaw"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency testcontainers to v11",
+    "date": "2026-02-17T15:57:22Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [testcontainers](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.28.0` \u2192 `^",
+    "url": "https://github.com/bryopsida/nest-couchdb/pull/267",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nest-couchdb"
+    ]
+  },
+  {
+    "title": "[PR] Summarize updated memory doc",
+    "date": "2026-02-17T15:57:20Z",
+    "summary": "## Description\r\nUpdate the Memory docs to reflect the new pluggable MemoryService architecture: added provider-based examples (storage, summary, embeddings), vector store options (File/Qdrant), tool list, manual store/search flows, and migration notes for deprecated services.\r\n\r\n## Related Issue\r\nN/",
+    "url": "https://github.com/IQAIcom/adk-ts/pull/575",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: adk-ts"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency testcontainers to v11",
+    "date": "2026-02-17T15:39:29Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [testcontainers](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.7.1` \u2192 `^1",
+    "url": "https://github.com/andreacioni/nestjs-kafka-module/pull/139",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nestjs-kafka-module"
+    ]
+  },
+  {
+    "title": "[PR] feat(cli): add zeroclaw providers command to list supported providers",
+    "date": "2026-02-17T15:27:58Z",
+    "summary": "## Summary\r\n\r\nDescribe this PR in 2-5 bullets:\r\n\r\n## Summary\r\n  - Add `zeroclaw providers` CLI command that lists all 28 supported AI providers\r\n  - Each entry shows: config ID, display name, local/cloud tag, active marker, and aliases\r\n  - Also shows `custom:<URL>` and `anthropic-custom:<URL>` esca",
+    "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/536",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "[PR] Fix Gemini API errors from empty reasoning parts",
+    "date": "2026-02-17T15:19:29Z",
+    "summary": "## Description\n\nFixed Gemini API call failures caused by empty reasoning parts stored in message memory. When using Gemini Flash with reasoning tokens enabled, empty reasoning parts `{\"type\":\"reasoning\",\"text\":\"\"}` get stored in memory. When these messages are sent back to Gemini on subsequent turns",
+    "url": "https://github.com/mastra-ai/mastra/pull/13047",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: mastra"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency testcontainers to v11",
+    "date": "2026-02-17T15:16:23Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/bryopsida/redis-key-store/pull/557",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: redis-key-store"
+    ]
+  },
+  {
+    "title": "[PR] fix: correct benchmark workflow syntax and add missing import os",
+    "date": "2026-02-17T15:04:29Z",
+    "summary": "- Fixed YAML syntax for branch triggers\r\n- Added missing 'import os' in Python summary script\r\n- Cleaned up escaping in Python strings for reliability\r\n\r\n## Description\r\nPlease include a summary of the changes and which issue is fixed.\r\n\r\n## Type of change\r\n- [ ] Bug fix\r\n- [ ] New feature\r\n- [ ] Br",
+    "url": "https://github.com/deedk822-lang/vaal-ai-empire-site/pull/62",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: vaal-ai-empire-site"
     ]
   }
 ]
