@@ -321,7 +321,7 @@
   },
   {
     "title": "[TESTING][LLMCHAT]: LLM Chat with All Provider Models Test Plan",
-    "date": "2026-02-06T15:10:28Z",
+    "date": "2026-02-19T14:59:28Z",
     "summary": "# [TESTING] LLM Chat with All Provider Models Test Plan\n\n## Goal\n\nValidate that the MCP Gateway's LLM Chat functionality works correctly with all supported LLM providers (OpenAI, Anthropic, Azure OpenAI, AWS Bedrock, Google Vertex AI, IBM watsonx.ai, Ollama, and OpenAI-compatible servers), ensuring ",
     "url": "https://github.com/IBM/mcp-context-forge/issues/2494",
     "source": "github_issues",
@@ -705,8 +705,8 @@
   },
   {
     "title": "[PR] feat: add Alibaba Cloud (Qwen) as AI inference provider",
-    "date": "2026-02-19T11:22:54Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added Alibaba Cloud (Qwen) as an AI inference provider with multiple text, vision, reasoning, and code models via DashScope.\n\n* **UI**\n  * Provider icon and color added; prov",
+    "date": "2026-02-19T15:52:14Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added Alibaba Cloud (Qwen) as a new AI inference provider with support for text, vision, reasoning, and audio models via DashScope API.\n  * Added provider icons and colors fo",
     "url": "https://github.com/matthiasn/lotti/pull/2680",
     "source": "github_prs",
     "highlights": [
@@ -741,7 +741,7 @@
   },
   {
     "title": "[PR] Modernize the Get Started content",
-    "date": "2026-02-19T14:51:07Z",
+    "date": "2026-02-19T14:56:22Z",
     "summary": "**TL;DR:** Update the C# \"Get Started\" section to serve four audiences (Learner, Student, Early-in-career, Professional) by: creating a new workloads overview article, reshaping the two index/landing pages, adding audience signposts and Fundamentals cross-links to all Tour of C# articles and tutoria",
     "url": "https://github.com/dotnet/docs/pull/51565",
     "source": "github_prs",
@@ -813,7 +813,7 @@
   },
   {
     "title": "[PR] [MCP-263]-Dynamic LLM Model Registration for Unified Platform Architecture  ",
-    "date": "2026-02-19T14:52:31Z",
+    "date": "2026-02-19T15:29:44Z",
     "summary": "# PR: Dynamic LLM Model Registration for fmcp serve\r\n\r\n## \ud83c\udfaf Overview\r\n\r\nThis PR adds **dynamic LLM model registration** to FluidMCP, enabling the unified platform architecture that supports MCP servers, LLM models, and future expansions (image/video generation). This transforms FluidMCP from a stati",
     "url": "https://github.com/Fluid-AI/fluidmcp/pull/367",
     "source": "github_prs",
@@ -1449,7 +1449,7 @@
   },
   {
     "title": "[PR] fix: harden openai-compatible tool flow and add Ollama support",
-    "date": "2026-02-19T14:48:34Z",
+    "date": "2026-02-19T15:13:07Z",
     "summary": "## Summary\n\nHardens the OpenAI-compatible LLM path for robust tool calling and adds Ollama support for both inference and embeddings.\n\n### Changes\n\n**LLM Providers**\n- New `OpenAiCompatibleChatProvider`: 707-line native HTTP client implementing Chat Completions API with proper tool-calling support (",
     "url": "https://github.com/nearai/ironclaw/pull/216",
     "source": "github_prs",
@@ -1613,6 +1613,54 @@
       "comments: 0",
       "pull request",
       "repo: k8s-tools"
+    ]
+  },
+  {
+    "title": "[PR] Code cleanups",
+    "date": "2026-02-19T15:44:34Z",
+    "summary": "Multiple small code cleanups\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **Refactor**\n  * Simplified code by removing intermediate variables and using more idiomatic patterns throughout the codebase.\n  * Improved null-checking logic with O",
+    "url": "https://github.com/KaotoIO/forage/pull/201",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: forage"
+    ]
+  },
+  {
+    "title": "[PR] fix: lost spans with default exporter",
+    "date": "2026-02-19T15:32:32Z",
+    "summary": "## Description\r\n\r\n<!-- Provide a brief description of the changes in this PR -->\r\nUpdate DefaultExporter to wait for initialization call to be completed \r\n## Related Issue(s)\r\nMastra constructor makes a fire-and-forget call to exporter init, \r\nspans are not exported if init is not completed by the t",
+    "url": "https://github.com/mastra-ai/mastra/pull/12936",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: mastra"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-02-19T15:01:08Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.466.1` | `v4.472.1` (+6)",
+    "url": "https://github.com/ianlewis/fx/pull/137",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: fx"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.466.1",
+    "date": "2026-02-19T14:58:02Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.229.0` \u2192 `v4.466.1` | `v4.472.1` (+6)",
+    "url": "https://github.com/korosuke613/grpshuffle/pull/180",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: grpshuffle"
     ]
   }
 ]
