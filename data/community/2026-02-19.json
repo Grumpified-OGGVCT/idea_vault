@@ -177,7 +177,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-02-19T07:32:28Z",
+    "date": "2026-02-19T08:18:30Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -789,8 +789,8 @@
   },
   {
     "title": "[PR] Ca provider",
-    "date": "2026-02-19T05:00:16Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added OpenBao-based PKI infrastructure for secure certificate generation and management\n  * Introduced dedicated certificate database service for persistent credential storag",
+    "date": "2026-02-19T08:41:57Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added OpenBao-based PKI service with automated initialization, unsealing, CA generation and export for TLS/attestation.\n  * Added a dedicated certificate database service for",
     "url": "https://github.com/SammyOina/cube/pull/12",
     "source": "github_prs",
     "highlights": [
@@ -813,7 +813,7 @@
   },
   {
     "title": "[PR] [MCP-263]-Dynamic LLM Model Registration for Unified Platform Architecture  ",
-    "date": "2026-02-19T07:46:42Z",
+    "date": "2026-02-19T08:53:01Z",
     "summary": "# PR: Dynamic LLM Model Registration for fmcp serve\r\n\r\n## \ud83c\udfaf Overview\r\n\r\nThis PR adds **dynamic LLM model registration** to FluidMCP, enabling the unified platform architecture that supports MCP servers, LLM models, and future expansions (image/video generation). This transforms FluidMCP from a stati",
     "url": "https://github.com/Fluid-AI/fluidmcp/pull/367",
     "source": "github_prs",
@@ -909,7 +909,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-02-19T02:44:10Z",
+    "date": "2026-02-19T08:44:12Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -957,12 +957,12 @@
   },
   {
     "title": "[PR] (docs) prd for model registry",
-    "date": "2026-02-19T05:28:27Z",
+    "date": "2026-02-19T08:51:59Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Expanded Model Registry PRD into a full product spec: added Key Concepts (canonical model ID, provider slug, tenant hierarchy, provider plugins), provider-cost metadata, aut",
     "url": "https://github.com/cyberfabric/cyberfabric-core/pull/606",
     "source": "github_prs",
     "highlights": [
-      "comments: 14",
+      "comments: 15",
       "pull request",
       "repo: cyberfabric-core"
     ]
@@ -1025,6 +1025,78 @@
       "comments: 1",
       "pull request",
       "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] Fork Sync",
+    "date": "2026-02-19T08:48:37Z",
+    "summary": "### **User description**\n<!--\ud83d\uded1 New scripts must be submitted to [ProxmoxVED](https://github.com/community-scripts/ProxmoxVED) for testing.\r\nPRs without prior testing will be closed. -->\r\n\r\n## \u270d\ufe0f Description\r\n\r\n\r\n## \ud83d\udd17 Related Issue\r\n\r\nFixes #\r\n\r\n## \u2705 Prerequisites (**X** in brackets)\r\n\r\n- [ ] **Self-",
+    "url": "https://github.com/Brandon-Anubis/Ankh-Prox-Scripts/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: Ankh-Prox-Scripts"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): add JSON repair for malformed tool call arguments from LLM providers",
+    "date": "2026-02-19T08:41:12Z",
+    "summary": "## Description\r\n\r\nWhen LLM providers return malformed JSON in tool call arguments, tool calls silently fail with `args: undefined`. This PR adds three layers of defense:\r\n\r\n  **Auto-repair (`tryRepairJson`)** \u2014 Strips trailing LLM special tokens like `<|call|>` and `<|endoftext|>` appended by OpenAI",
+    "url": "https://github.com/mastra-ai/mastra/pull/12823",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: mastra"
+    ]
+  },
+  {
+    "title": "[PR] feat: add vllm provider support",
+    "date": "2026-02-19T08:37:59Z",
+    "summary": "## Summary\n\nAdded support for vLLM, an OpenAI-compatible provider for self-hosted inference. This integration allows users to connect to vLLM servers for chat completions, text completions, embeddings, and streaming capabilities.\n\n## Changes\n\n- Added a new `vllm` provider package that implements the",
+    "url": "https://github.com/maximhq/bifrost/pull/1649",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] Update all non-major dependencies",
+    "date": "2026-02-19T08:15:04Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.apache.maven.plugins:ma",
+    "url": "https://github.com/valitydev/vortigon/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: vortigon"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-02-19T08:04:33Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.432.0` \u2192 `v4.472.0` |\n| [checkmake/checkmake](https",
+    "url": "https://github.com/ianlewis/quietus/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: quietus"
+    ]
+  },
+  {
+    "title": "[PR] Airgapped plugin",
+    "date": "2026-02-19T07:54:09Z",
+    "summary": "## Purpose\r\n\r\nThis PR converts Continue into a **strictly air-gapped, deterministic local-LLM deployment** suitable for constrained or regulated environments.\r\n\r\nThe focus is not feature expansion, but **risk reduction, operational determinism, and explicit architectural trade-offs** aligned with th",
+    "url": "https://github.com/tgutu/continue/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: continue"
     ]
   }
 ]
