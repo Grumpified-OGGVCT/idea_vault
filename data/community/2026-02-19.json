@@ -609,8 +609,8 @@
   },
   {
     "title": "[PR] Update Container images",
-    "date": "2026-02-19T09:06:58Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [adminer](https://redirect.github.com/vrana/adminer) | patch | `5.4.1-standalone` \u2192 `5.4.2-standalone` |\n| [deluan/navidrome](https://redirect",
+    "date": "2026-02-19T16:56:47Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [adguard/adguardhome](https://adguard.com/en/adguard-home/overview.html) ([source](https://redirect.github.com/AdguardTeam/AdGuardHome)) | pat",
     "url": "https://github.com/bubacoder/infra/pull/283",
     "source": "github_prs",
     "highlights": [
@@ -621,7 +621,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-02-19T04:48:52Z",
+    "date": "2026-02-19T16:54:21Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -705,7 +705,7 @@
   },
   {
     "title": "[PR] feat: add Alibaba Cloud (Qwen) as AI inference provider",
-    "date": "2026-02-19T15:52:14Z",
+    "date": "2026-02-19T15:56:26Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added Alibaba Cloud (Qwen) as a new AI inference provider with support for text, vision, reasoning, and audio models via DashScope API.\n  * Added provider icons and colors fo",
     "url": "https://github.com/matthiasn/lotti/pull/2680",
     "source": "github_prs",
@@ -1185,12 +1185,12 @@
   },
   {
     "title": "[PR] fix(usage): fix usage token and context window live updates",
-    "date": "2026-02-19T10:30:14Z",
+    "date": "2026-02-19T16:02:53Z",
     "summary": "## What\r\nThis PR fixes inaccurate token usage reporting in chat sessions where the UI showed `0/0` or only updated after a full page refresh.\r\nSpecifically, it addresses:\r\n- missing token usage values for OpenAI-compatible/Ollama Cloud streaming responses\r\n- context window size not being persisted c",
     "url": "https://github.com/Guepard-Corp/qwery-core/pull/150",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: qwery-core"
     ]
@@ -1605,7 +1605,7 @@
   },
   {
     "title": "[PR] Update dependency aquaproj/aqua-registry to v4.472.1",
-    "date": "2026-02-19T14:07:42Z",
+    "date": "2026-02-19T16:26:51Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.147.0` \u2192 `v4.472.1` |\n\n---\n\n### Release Notes\n\n<det",
     "url": "https://github.com/zoetrope/k8s-tools/pull/594",
     "source": "github_prs",
@@ -1617,8 +1617,8 @@
   },
   {
     "title": "[PR] Code cleanups",
-    "date": "2026-02-19T15:44:34Z",
-    "summary": "Multiple small code cleanups\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **Refactor**\n  * Simplified code by removing intermediate variables and using more idiomatic patterns throughout the codebase.\n  * Improved null-checking logic with O",
+    "date": "2026-02-19T16:17:16Z",
+    "summary": "Multiple small code cleanups\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Refactor**\n  * Streamlined internals with more idiomatic patterns and fewer temporary variables.\n  * Increased immutability and simplified exception boundaries for c",
     "url": "https://github.com/KaotoIO/forage/pull/201",
     "source": "github_prs",
     "highlights": [
@@ -1661,6 +1661,138 @@
       "comments: 0",
       "pull request",
       "repo: grpshuffle"
+    ]
+  },
+  {
+    "title": "[PR] feat: add SSRF protection via k8s `NetworkPolicy` for MCP servers",
+    "date": "2026-02-19T16:55:41Z",
+    "summary": "## Summary\r\nThis PR implements Server-Side Request Forgery (SSRF) protection for MCP server pods by deploying a Kubernetes NetworkPolicy that blocks egress traffic to private/internal IP ranges while allowing DNS resolution and public internet access.\r\n\r\n## Key Changes\r\n\r\n- **NetworkPolicy Template*",
+    "url": "https://github.com/archestra-ai/archestra/pull/2904",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: archestra"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.472.1",
+    "date": "2026-02-19T16:54:17Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.332.1` \u2192 `v4.472.1` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/szksh-lab-2/test-1/pull/27",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: test-1"
+    ]
+  },
+  {
+    "title": "[PR] chore(main): release 2.12.0",
+    "date": "2026-02-19T16:49:07Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [2.12.0](https://github.com/RaphaEnterprises-AI/argus-backend/compare/v2.11.0...v2.12.0) (2026-02-19)\n\n\n### Features\n\n* **a2a:** implement Agent-to-Agent communication architecture ([a6bdddc](https://github.com/RaphaEnterprises-AI/argus-backend",
+    "url": "https://github.com/RaphaEnterprises-AI/argus-backend/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 159",
+      "pull request",
+      "repo: argus-backend"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-02-19T16:37:58Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [clo",
+    "url": "https://github.com/get-eventually/go-eventually/pull/285",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: go-eventually"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency aquaproj/aqua-registry to v4.466.1",
+    "date": "2026-02-19T16:33:10Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.446.0` \u2192 `v4.466.1` | `v4.472.1` (+6) |\n\n---\n\n### Release Notes\n\n<details>\n<summary>aquaproj/aqua-registry (",
+    "url": "https://github.com/blck-snwmn/toychacha/pull/69",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: toychacha"
+    ]
+  },
+  {
+    "title": "[PR] feat(security): add configurable security levels for importing trusted builtins / modules",
+    "date": "2026-02-19T16:28:47Z",
+    "summary": "Allows users to specify configurable levels of security to block system-level access builtins and modules, such as `eval`, `subprocess`, etc. Works during validation and during execution.\r\n\r\nDoes not block builtins or modules in core (trusted) components. \r\n\r\nNote that this isn't a true isolated san",
+    "url": "https://github.com/langflow-ai/langflow/pull/10696",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] fix(docker): enable container-to-host connectivity for localhost services (e.g., Ollama)",
+    "date": "2026-02-19T16:11:07Z",
+    "summary": "## \ud83d\udcdd Description\r\n\r\nFixes Docker containers unable to access Ollama when running on the host machine.\r\n\r\n## \ud83d\udde3\ufe0f Type of Change\r\n- [x] \ud83d\udc1e Bug fix (non-breaking change which fixes an issue)\r\n- [ ] \u2728 New feature (non-breaking change which adds functionality)\r\n- [ ] \ud83d\udcd6 Documentation update\r\n- [ ] \u26a1 Code re",
+    "url": "https://github.com/sipeed/picoclaw/pull/491",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: picoclaw"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency aquaproj/aqua-registry to v4.472.1",
+    "date": "2026-02-19T16:08:29Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.27.0` \u2192 `v4.472.1` |\n\n---\n\n### Release Notes\n\n<deta",
+    "url": "https://github.com/szksh-lab-2/test-circleci/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: test-circleci"
+    ]
+  },
+  {
+    "title": "[PR] v7: Production hardening + student-friendly deployment + modern UI stack",
+    "date": "2026-02-19T16:06:58Z",
+    "summary": "System lacked production readiness, free-tier deployment path, and modern UI. Target: students with zero budget, UPI-only payments (India), no credit card access.\n\n## Documentation (99KB added)\n\nCreated comprehensive guides for zero-cost deployment:\n- **FREE_ALTERNATIVES.md** - 10+ free service alte",
+    "url": "https://github.com/Kiran-svelte/Super-Manager-11/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Super-Manager-11"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-02-19T16:05:13Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [act",
+    "url": "https://github.com/tak848/zenn-contents/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: zenn-contents"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-02-19T16:00:34Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/arthrod/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: generative-ai"
     ]
   }
 ]
