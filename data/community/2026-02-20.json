@@ -2010,5 +2010,29 @@
       "pull request",
       "repo: todo-demo-app"
     ]
+  },
+  {
+    "title": "[PR] \u26a1 Optimize synchronous file I/O in router",
+    "date": "2026-02-20T19:26:55Z",
+    "summary": "\ud83d\udca1 **What:**\n- Optimized `backend-setup/agent/router.py` to use `aiofiles` for asynchronous file reading.\n- Updated `backend-setup/agent/base_agent.py` to await the asynchronous config loading.\n\n\ud83c\udfaf **Why:**\n- The previous implementation used synchronous `open()` calls inside an async handler, which bl",
+    "url": "https://github.com/DuckshotPro/terovoice/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: terovoice"
+    ]
+  },
+  {
+    "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
+    "date": "2026-02-20T19:03:19Z",
+    "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
+    "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: gemini-cli"
+    ]
   }
 ]
