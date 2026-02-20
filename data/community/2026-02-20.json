@@ -177,7 +177,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-02-20T07:39:18Z",
+    "date": "2026-02-20T13:42:10Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -393,12 +393,12 @@
   },
   {
     "title": "Allow importing multi-file GGUF models",
-    "date": "2026-01-30T15:11:14Z",
+    "date": "2026-02-20T14:12:17Z",
     "summary": "### What is the issue?\n\nCurrently Ollama can [import GGUF files](https://github.com/ollama/ollama/blob/main/docs/import.md). However, larger models are sometimes split into separate files. Ollama should support loading multiple GGUF files similar to loading safetensor files.\r\n\n\n### OS\n\n_No response_",
     "url": "https://github.com/ollama/ollama/issues/5245",
     "source": "github_issues",
     "highlights": [
-      "comments: 74",
+      "comments: 75",
       "state: open",
       "repo: ollama"
     ]
@@ -1425,8 +1425,8 @@
   },
   {
     "title": "[PR] chore(AYC-000): tighten backend eslint config with sonarjs and stricter rules",
-    "date": "2026-02-20T12:22:21Z",
-    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Main risk is developer/CI friction from stricter lint rules and one behavioral touchpoint around auth/cookie and MCP integration auth handling; runtime logic changes are small but could surface in edge cases (e.g., missing credentials now throwin",
+    "date": "2026-02-20T14:39:53Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Mostly tooling/lint configuration, but it also touches runtime logic (cookie handling, file-type detection, MCP auth flow) where subtle behavior changes could affect authentication or uploads.\n> \n> **Overview**\n> Tightens backend linting by addin",
     "url": "https://github.com/ayunis-core/ayunis-core/pull/179",
     "source": "github_prs",
     "highlights": [
@@ -1449,7 +1449,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-02-20T09:20:15Z",
+    "date": "2026-02-20T14:26:17Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1593,8 +1593,8 @@
   },
   {
     "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui ( 0.7.2 \u2794 v0.8.3 )",
-    "date": "2026-02-20T11:21:55Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.7.2` \u2192 `v0.8.3` |\n\n---\n\n> [!WARNING]\n> Some de",
+    "date": "2026-02-20T13:34:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.7.2` \u2192 `v0.8.3` |\n\n---\n\n### Release Notes\n\n<de",
     "url": "https://github.com/Aviator-Coding/home-ops/pull/558",
     "source": "github_prs",
     "highlights": [
@@ -1653,7 +1653,7 @@
   },
   {
     "title": "[PR] Add ebm backend",
-    "date": "2026-02-20T12:53:39Z",
+    "date": "2026-02-20T13:42:19Z",
     "summary": "Dear Annif-Team,\r\n\r\nAs announced in issue #855 we would like to propose a new backend for annif **Embedding Based Matching** (EBM) that has been created by @RietdorfC and myself. \r\n\r\nHere is a first draft for a readme article, to be added to the wiki:\r\n[Backend-EBM.md](https://github.com/user-attach",
     "url": "https://github.com/NatLibFi/Annif/pull/914",
     "source": "github_prs",
@@ -1733,6 +1733,66 @@
       "comments: 0",
       "pull request",
       "repo: openclaw-with-skills"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency RavenDB.Client to v7",
+    "date": "2026-02-20T14:40:35Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [RavenDB.Client](https://rav",
+    "url": "https://github.com/jobbrIO/jobbr/pull/92",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: jobbr"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all helm/docker dependencies (2025-07-13)",
+    "date": "2026-02-20T13:35:51Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [airflow](https://airflow.apache.org/) ([source](https://redirect.github.com/apache/airflow)) | minor | `1.18.0` \u2192 `1.19.0` |\n| [cluster](https://cloudnative-pg.io) ([source](https://redirect.github.com/cloudnativ",
+    "url": "https://github.com/datahub-local/datahub-local-core/pull/138",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: datahub-local-core"
+    ]
+  },
+  {
+    "title": "[PR] admin dashboard ssc-dsai:dev",
+    "date": "2026-02-20T13:11:49Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/arthrod/open-webui/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: open-webui"
+    ]
+  },
+  {
+    "title": "[PR] feat: video gen support",
+    "date": "2026-02-20T13:07:46Z",
+    "summary": "## Summary\n\nThis PR adds support for video generation endpoints for openai, replicate, runway ml and gemini.\n\n## Changes\n\n- Video related provider methods\n\n## Type of change\n\n- [ ] Bug fix\n- [x] Feature\n- [ ] Refactor\n- [ ] Documentation\n- [ ] Chore/CI\n\n## Affected areas\n\n- [ ] Core (Go)\n- [ ] Trans",
+    "url": "https://github.com/maximhq/bifrost/pull/1684",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] Update nuget (major)",
+    "date": "2026-02-20T14:04:44Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [MassTransit](https://massient.com/) ([source](https://redirect.github.com/Massient/MassTransit)) | nuget | major | `8.5.2` \u2192 `9.0.",
+    "url": "https://github.com/project-origin/stamp/pull/271",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: stamp"
     ]
   }
 ]
