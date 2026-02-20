@@ -1425,7 +1425,7 @@
   },
   {
     "title": "[PR] chore(AYC-000): tighten backend eslint config with sonarjs and stricter rules",
-    "date": "2026-02-20T15:11:32Z",
+    "date": "2026-02-20T16:39:50Z",
     "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Lint rule changes can introduce widespread CI failures and require follow-up fixes, and MCP auth handling changes affect integration setup paths; functional runtime changes are otherwise small and localized.\n> \n> **Overview**\n> **Lints and CI che",
     "url": "https://github.com/ayunis-core/ayunis-core/pull/179",
     "source": "github_prs",
@@ -1485,12 +1485,12 @@
   },
   {
     "title": "[PR] feat(ollama): add tools support filtering, configurable timeouts, and\u2026",
-    "date": "2026-02-20T07:55:10Z",
+    "date": "2026-02-20T16:38:32Z",
     "summary": "# feat(ollama): add tools support filtering, configurable timeouts, and improved UI\r\n\r\nFeatures added\r\n<img width=\"1964\" height=\"1709\" alt=\"image\" src=\"https://github.com/user-attachments/assets/5b44e6ae-b62a-4a34-89b5-f7e295b0ae79\" />\r\n\r\nConnection settings\r\n<img width=\"1601\" height=\"641\" alt=\"imag",
     "url": "https://github.com/RooCodeInc/Roo-Code/pull/10947",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 10",
       "pull request",
       "repo: Roo-Code"
     ]
@@ -1641,7 +1641,7 @@
   },
   {
     "title": "[PR] [pull] main from lobehub:main",
-    "date": "2026-02-20T13:04:43Z",
+    "date": "2026-02-20T16:44:14Z",
     "summary": "See [Commits](/rcy1314/lobe-chat/pull/66/commits) and [Changes](/rcy1314/lobe-chat/pull/66/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.1)\n\n_Can you help keep this open source ser",
     "url": "https://github.com/rcy1314/lobe-chat/pull/66",
     "source": "github_prs",
@@ -1829,6 +1829,102 @@
       "comments: 0",
       "pull request",
       "repo: home-k8s"
+    ]
+  },
+  {
+    "title": "[PR] feat(knowledge-indexing): add comprehensive RAG-based knowledge indexing",
+    "date": "2026-02-20T16:44:21Z",
+    "summary": "## Summary\nAdd comprehensive RAG-based knowledge indexing and search system.\n\n### Changes\n- Add RAG Manager with multi-strategy retrieval system\n- Implement query analysis with intent classification\n- Create hybrid retrieval (category, full-text, vector, agent-specific)\n- Add result ranking and cont",
+    "url": "https://github.com/Forge-Space/mcp-gateway/pull/28",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: mcp-gateway"
+    ]
+  },
+  {
+    "title": "[PR] feat: Phase 2 golems \u2014 MLX default backend + auto-indexing",
+    "date": "2026-02-20T16:43:13Z",
+    "summary": "## Summary\n\nPhase 2 (golems side) of the Layers v2 launch plan. Switches local LLM backend from Ollama to MLX as default on Apple Silicon, with automatic fallback.\n\n- **GLM MCP server**: Auto-detects arm64 \u2192 defaults to MLX. Falls back to Ollama if MLX is unavailable\n- **Doctor**: Reads `GLM_BACKEND",
+    "url": "https://github.com/EtanHey/golems/pull/226",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: golems"
+    ]
+  },
+  {
+    "title": "[PR] Add Dexie database schema and expand setup documentation",
+    "date": "2026-02-20T16:41:44Z",
+    "summary": "## Summary\nThis PR introduces the Dexie.js database schema for Capybara and significantly expands the setup and configuration documentation for users.\n\n## Key Changes\n\n### Database Schema (`packages/web-extension/src/domain/services/db.ts`)\n- **New file** defining the complete IndexedDB schema using",
+    "url": "https://github.com/acpguedes/capybara/pull/52",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: capybara"
+    ]
+  },
+  {
+    "title": "[PR] refactor: Convert Tanzu provider to declarative JSON config",
+    "date": "2026-02-20T16:39:22Z",
+    "summary": "## Summary\n\nReplaces the dedicated ~1,000-line Rust Tanzu provider with a 21-line declarative JSON config, per feedback from @DOsinga and @katzdave. Adds generic `env_vars` and `dynamic_models` support to the declarative provider framework so all providers benefit.\n\nThis addresses all the review fee",
+    "url": "https://github.com/block/goose/pull/7124",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: goose"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-02-20T16:28:13Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/arthrod/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] Persist fraud results to database before publishing to Kafka",
+    "date": "2026-02-20T16:15:56Z",
+    "summary": "### **User description**\n### Motivation\n- Ensure fraud classifications are durably stored so results can be queried and audited before they are emitted to downstream systems. \n- Provide transactional consistency between persisting a fraud result and publishing the same payload to Kafka. \n- Meet the ",
+    "url": "https://github.com/thillainirmal-tech/Kafka-Microservice-Payment-wallet/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Kafka-Microservice-Payment-wallet"
+    ]
+  },
+  {
+    "title": "[PR] Add flexible multi-provider model routing and configurable tool backend",
+    "date": "2026-02-20T15:59:44Z",
+    "summary": "### Motivation\n- Remove the hard dependency on a single model provider so the planner/chat flows can run against local or cheaper providers (e.g. Ollama) and avoid forcing users to pay for one cloud provider.\n- Make the frontend tool backend URL configurable and surface clearer error messages when t",
+    "url": "https://github.com/Soweto7/ECHOMEN/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ECHOMEN"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Ollama AI post-processing for transcription refinement",
+    "date": "2026-02-20T15:48:27Z",
+    "summary": "## Summary\n\n- Adds optional AI-powered transcription refinement via a local [Ollama](https://ollama.com) instance\n- After transcription (and dictionary post-processing), text is sent to a locally-running Ollama model to remove filler words, false starts, repetitions, and verbal noise before pasting\n",
+    "url": "https://github.com/zachswift615/speak2/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: speak2"
     ]
   }
 ]
