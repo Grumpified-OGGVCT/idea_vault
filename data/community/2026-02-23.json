@@ -189,7 +189,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-02-23T21:16:24Z",
+    "date": "2026-02-23T22:38:15Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -777,12 +777,12 @@
   },
   {
     "title": "[PR] fix: remove Whisper hallucination loops and trailing hallucinations from transcription",
-    "date": "2026-02-23T15:30:02Z",
+    "date": "2026-02-23T22:21:57Z",
     "summary": "## Summary\n\nWhisper models are prone to two classes of hallucinations that corrupt transcription output:\n\n1. **Repetition loops** \u2014 Whisper gets stuck repeating a phrase hundreds of times (detectable via `compression_ratio` in `verbose_json` responses)\n2. **Trailing hallucinations** \u2014 Whisper invent",
     "url": "https://github.com/openplaud/openplaud/pull/31",
     "source": "github_prs",
     "highlights": [
-      "comments: 29",
+      "comments: 31",
       "pull request",
       "repo: openplaud"
     ]
@@ -1636,6 +1636,30 @@
       "comments: 4",
       "pull request",
       "repo: llamafarm"
+    ]
+  },
+  {
+    "title": "[PR] refactor: clean architecture loan_service package (no HTTP changes)",
+    "date": "2026-02-23T22:32:55Z",
+    "summary": "## Summary\n- New scripts/loan_service package (domain, ports, disk/subprocess adapters, service, router)\n- loan_api.py is now a thin composition root\n- job_runner.py remains as a facade for backward compatibility\n- HTTP routes and response shapes unchanged\n\n## Test plan\n- python3 -m py_compile scrip",
+    "url": "https://github.com/billdwalters/mortgagedocai/pull/12",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mortgagedocai"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the production-dependencies group across 1 directory with 20 updates",
+    "date": "2026-02-23T22:32:43Z",
+    "summary": "Bumps the production-dependencies group with 11 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [cloud.google.com/go/auth](https://github.com/googleapis/google-cloud-go) | `0.17.0` | `0.18.1` |\n| [cloud.google.com/go/bigtable](https://github.com/googleapis/google-cloud-go)",
+    "url": "https://github.com/wombatwisdom/wombat/pull/161",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: wombat"
     ]
   }
 ]
