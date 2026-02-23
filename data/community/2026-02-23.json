@@ -705,7 +705,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-02-23T01:33:25Z",
+    "date": "2026-02-23T04:42:28Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -773,6 +773,138 @@
       "comments: 0",
       "pull request",
       "repo: ironclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix: remove Whisper hallucination loops and trailing hallucinations from transcription",
+    "date": "2026-02-23T05:02:51Z",
+    "summary": "## Summary\n\nWhisper models are prone to two classes of hallucinations that corrupt transcription output:\n\n1. **Repetition loops** \u2014 Whisper gets stuck repeating a phrase hundreds of times (detectable via `compression_ratio` in `verbose_json` responses)\n2. **Trailing hallucinations** \u2014 Whisper invent",
+    "url": "https://github.com/openplaud/openplaud/pull/31",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 19",
+      "pull request",
+      "repo: openplaud"
+    ]
+  },
+  {
+    "title": "[PR] feat: Q1 Genesis PoC + RISC Zero scaffold",
+    "date": "2026-02-23T05:02:17Z",
+    "summary": "## Summary\n- complete Phase 0 PoC architecture wrappers, convergence core, tests and benchmark runner\n- add RISC Zero guest/host scaffold for execution-proof commitment flow\n- add Q1 validation script and CI workflow for pytest\n- add contributor onboarding issue templates and create 4 GitHub issues\n",
+    "url": "https://github.com/rodrigooler/raxion/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: raxion"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-02-23T04:53:45Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [cert-manager](https://cert-manager.io) ([source](https://redirect.github.com/cert-manager/cert-manager)) | minor | `v1.17.2` \u2192 `v1.19.3` |\n| ",
+    "url": "https://github.com/dbirks/home-k8s/pull/32",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-k8s"
+    ]
+  },
+  {
+    "title": "[PR] [staging-next] python3Packages.{sqlglot: 28.6.0 -> 28.9.0,sqlframe: 3.45.0 -> 3.46.2,narwhals: 2.15.0 -> 2.16.0}",
+    "date": "2026-02-23T04:38:23Z",
+    "summary": "Fixes [python3Packages.narwhals](https://hydra.nixos.org/build/322071348) build.\r\n\r\nsqlglot 28.10.1 is actually current, but it seems incompatible with sqlframe.\r\n\r\n## Things done\r\n\r\n<!-- Please check what applies. Note that these are not hard requirements but merely serve as information for reviewe",
+    "url": "https://github.com/NixOS/nixpkgs/pull/493158",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] feat: video gen support",
+    "date": "2026-02-23T04:22:25Z",
+    "summary": "## Summary\n\nThis PR adds support for video generation endpoints for openai, replicate, runway ml and gemini.\n\n## Changes\n\n- Video related provider methods\n\n## Type of change\n\n- [ ] Bug fix\n- [x] Feature\n- [ ] Refactor\n- [ ] Documentation\n- [ ] Chore/CI\n\n## Affected areas\n\n- [ ] Core (Go)\n- [ ] Trans",
+    "url": "https://github.com/maximhq/bifrost/pull/1684",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/hoarder-app/hoarder docker tag to v0.31.0",
+    "date": "2026-02-23T04:21:34Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/hoarder-app/hoarder](https://redirect.github.com/karakeep-app/karakeep) | minor | `0.27.1` \u2192 `0.31.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/plpetkov-tech/homelab/pull/56",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] Mvp design polish",
+    "date": "2026-02-23T03:38:14Z",
+    "summary": "",
+    "url": "https://github.com/cjrutherford/optimistic-tanuki/pull/76",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: optimistic-tanuki"
+    ]
+  },
+  {
+    "title": "[PR] feat(examples): add RAG financial research agent",
+    "date": "2026-02-23T03:24:43Z",
+    "summary": "# Pull Request the OpenBB Platform\r\n\r\n## Description\r\n\r\n- [x] **Summary:** Add a RAG (Retrieval-Augmented Generation) financial research agent example that indexes SEC filings, earnings transcripts, and research reports, then combines retrieved context with live OpenBB widget data to answer complex ",
+    "url": "https://github.com/OpenBB-finance/OpenBB/pull/7350",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OpenBB"
+    ]
+  },
+  {
+    "title": "[PR] hotfix: ollama api key for cloud models",
+    "date": "2026-02-23T03:06:39Z",
+    "summary": "## Summary\r\n\r\nAPI key support for the Ollama provider required for cloud models: https://docs.ollama.com/api/authentication\r\n\r\n## Changes\r\n\r\nExclude Ollama from the keyless providers. It won't hurt local setups.\r\n\r\n## Type of change\r\n\r\n- [x] Bug fix\r\n- [ ] Feature\r\n- [ ] Refactor\r\n- [ ] Documentatio",
+    "url": "https://github.com/maximhq/bifrost/pull/1452",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-02-23T02:44:16Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] Add shell script to deploy LLM service on AMD GPU",
+    "date": "2026-02-23T02:37:18Z",
+    "summary": "## \ud83d\ude80 Key Changes\r\n\r\nThis update extends LLM inference and serving capabilities to **AMD GPUs**, in addition to the existing NVIDIA support.\r\n\r\nWe have added shell scripts to automate ROCm driver installation, vLLM/Ollama environment setup, and model serving(vLLM). This allows users on cloud environm",
+    "url": "https://github.com/cloud-barista/cb-tumblebug/pull/2321",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: cb-tumblebug"
     ]
   }
 ]
