@@ -177,7 +177,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-02-23T01:47:39Z",
+    "date": "2026-02-23T13:04:45Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -189,7 +189,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-02-23T11:39:32Z",
+    "date": "2026-02-23T12:50:15Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -669,7 +669,7 @@
   },
   {
     "title": "[PR] chore: sync models.dev upstream",
-    "date": "2026-02-23T07:03:13Z",
+    "date": "2026-02-23T13:02:40Z",
     "summary": "Automated subtree sync from upstream.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added support for 100+ new AI models across multiple providers.\n  * Introduced an input token limit field in model specs.\n\n* **Updates**\n",
     "url": "https://github.com/Vivek-k3/modelsplus/pull/15",
     "source": "github_prs",
@@ -777,12 +777,12 @@
   },
   {
     "title": "[PR] fix: remove Whisper hallucination loops and trailing hallucinations from transcription",
-    "date": "2026-02-23T11:35:45Z",
+    "date": "2026-02-23T13:13:19Z",
     "summary": "## Summary\n\nWhisper models are prone to two classes of hallucinations that corrupt transcription output:\n\n1. **Repetition loops** \u2014 Whisper gets stuck repeating a phrase hundreds of times (detectable via `compression_ratio` in `verbose_json` responses)\n2. **Trailing hallucinations** \u2014 Whisper invent",
     "url": "https://github.com/openplaud/openplaud/pull/31",
     "source": "github_prs",
     "highlights": [
-      "comments: 23",
+      "comments: 25",
       "pull request",
       "repo: openplaud"
     ]
@@ -945,7 +945,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.474.0",
-    "date": "2026-02-23T05:44:19Z",
+    "date": "2026-02-23T13:10:33Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\n<!-- metadata {\"name\":\"toJSON\",\"hash\":{\"versioning\":\"semver-coerced\",\"upgrades\":[{\"gitAuthor\":\"renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>\",\"versioning\":\"semver-coerced\",\"separateMajorMinor\":true,\"separateMino",
     "url": "https://github.com/szksh-lab-2/test-renovate-2/pull/152",
     "source": "github_prs",
@@ -1089,7 +1089,7 @@
   },
   {
     "title": "[PR] Update nuget (major)",
-    "date": "2026-02-23T11:43:05Z",
+    "date": "2026-02-23T13:00:47Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [MassTransit](https://massient.com/) ([source](https://redirect.github.com/Massient/MassTransit)) | nuget | major | `8.5.2` \u2192 `9.0.",
     "url": "https://github.com/project-origin/stamp/pull/271",
     "source": "github_prs",
@@ -1161,7 +1161,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-02-23T10:23:26Z",
+    "date": "2026-02-23T13:08:23Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1289,6 +1289,54 @@
       "comments: 2",
       "pull request",
       "repo: calendar-automate"
+    ]
+  },
+  {
+    "title": "Choose your own LLM for the workflow",
+    "date": "2026-02-23T12:09:56Z",
+    "summary": "<!-- CLI GENERATED FEEDBACK v0.1.12 -->\n\n<details>\n<summary>Diagnostic Information</summary>\n\n| Property | Value |\n|----------|-------|\n| CLI Version | 0.1.12 |\n| Node.js Version | v24.5.0 |\n| OS | darwin |\n| OS Version | 25.0.0 |\n| Architecture | x64 |\n\n</details>\n\n\nIt would be great to be able cho",
+    "url": "https://github.com/iloom-ai/iloom-cli/issues/203",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 1",
+      "state: open",
+      "repo: iloom-cli"
+    ]
+  },
+  {
+    "title": "[PR] fix: add hook events to nima-memory plugin.json (v2.0.9)",
+    "date": "2026-02-23T13:12:43Z",
+    "summary": "## Problem\nnima-memory was registered as a memory slot but never triggered \u2014 resulting in zero memory captures.\n\n**Root cause:** `openclaw.plugin.json` was missing the `events` array. Without it, the gateway has no events to fire the plugin on.\n\n## Fix\nAdded:\n```json\n\"events\": [\"agent_end\", \"message",
+    "url": "https://github.com/lilubot/nima-core/pull/67",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: nima-core"
+    ]
+  },
+  {
+    "title": "[PR] Feat/configurable ai provider",
+    "date": "2026-02-23T12:41:57Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added AI Settings UI to configure multiple providers (Gemini, OpenAI, Anthropic) with API keys, base URLs, and model selection.\n  * Extended task breakdown feature to suppor",
+    "url": "https://github.com/peak-flow/tasker/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: tasker"
+    ]
+  },
+  {
+    "title": "[PR] \u2b06\ufe0f Update ghcr.io/home-assistant/home-assistant Docker tag to v2026.2.3 [skip-tests]",
+    "date": "2026-02-23T12:10:22Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/home-assistant/home-assistant](https://www.home-assistant.io/) ([source](https://redirect.github.com/home-assistant/core)) | patch | `2026.2.0` \u2192 `2026.2.3` |\n\n---\n\n> [!WARNING]\n> Some dependencies could ",
+    "url": "https://github.com/FaserF/hassio-addons/pull/642",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 18",
+      "pull request",
+      "repo: hassio-addons"
     ]
   }
 ]
