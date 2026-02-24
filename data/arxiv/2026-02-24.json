@@ -2250,6 +2250,26 @@
     "research_score": 0.59
   },
   {
+    "arxiv_id": "2602.19610v1",
+    "title": "Variational Inference for Bayesian MIDAS Regression",
+    "summary": "We develop a Coordinate Ascent Variational Inference (CAVI) algorithm for Bayesian Mixed Data Sampling (MIDAS) regression with linear weight parameterizations. The model separates impact coeffcients from weighting function parameters through a normalization constraint, creating a bilinear structure that renders generic Hamiltonian Monte Carlo samplers unreliable while preserving conditional conjugacy exploitable by CAVI. Each variational update admits a closed-form solution: Gaussian for regression coefficients and weight parameters, Inverse-Gamma for the error variance. The algorithm propagates uncertainty across blocks through second moments, distinguishing it from naive plug-in approximations. In a Monte Carlo study spanning 21 data-generating configurations with up to 50 predictors, CAVI produces posterior means nearly identical to a block Gibbs sampler benchmark while achieving speedups of 107x to 1,772x (Table 9). Generic automatic differentiation VI (ADVI), by contrast, produces bias 714 times larger while being orders of magnitude slower, confirming the value of model-specific derivations. Weight function parameters maintain excellent calibration (coverage above 92%) across all configurations. Impact coefficient credible intervals exhibit the underdispersion characteristic of mean-field approximations, with coverage declining from 89% to 55% as the number of predictors grows a documented trade-off between speed and interval calibration that structured variational methods can address. An empirical application to realized volatility forecasting on S&P 500 daily returns cofirms that CAVI and Gibbs sampling yield virtually identical point forecasts, with CAVI completing each monthly estimation in under 10 milliseconds.",
+    "authors": [
+      "Luigi Simeone"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.CO",
+      "stat.ME",
+      "stat.ML"
+    ],
+    "published": "2026-02-23",
+    "url": "https://arxiv.org/abs/2602.19610v1",
+    "pdf_url": "https://arxiv.org/pdf/2602.19610v1.pdf",
+    "date": "2026-02-24",
+    "source": "arxiv",
+    "research_score": 0.59
+  },
+  {
     "arxiv_id": "2602.19594v1",
     "title": "ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?",
     "summary": "We introduce ISO-Bench, a benchmark for coding agents to test their capabilities on real-world inference optimization tasks. These tasks were taken from vLLM and SGLang, two of the most popular LLM serving frameworks. Each task provides an agent with a codebase and bottleneck description, whereby the agent must produce an optimization patch evaluated against expert human solutions. We curated 54 tasks from merged pull requests with measurable performance improvements. While existing benchmarks heavily use runtime-based metrics, such approaches can be gamed to pass tests without capturing the actual intent of the code changes. Therefore, we combine both hard (execution-based) and soft (LLM-based) metrics to show that both are necessary for complete evaluation. While evaluating both closed and open-source coding agents, we find no single agent dominates across codebases. Surprisingly, agents often identify correct bottlenecks but fail to execute working solutions. We also show that agents with identical underlying models differ substantially, suggesting scaffolding is as important as the model.",
@@ -3604,26 +3624,6 @@
     "published": "2026-02-23",
     "url": "https://arxiv.org/abs/2602.19611v1",
     "pdf_url": "https://arxiv.org/pdf/2602.19611v1.pdf",
-    "date": "2026-02-24",
-    "source": "arxiv",
-    "research_score": 0.54
-  },
-  {
-    "arxiv_id": "2602.19610v1",
-    "title": "Variational Inference for Bayesian MIDAS Regression",
-    "summary": "We develop a Coordinate Ascent Variational Inference (CAVI) algorithm for Bayesian Mixed Data Sampling (MIDAS) regression with linear weight parameteri zations. The model separates impact coe cients from weighting function parameters through a normalization constraint, creating a bilinear structure that renders generic Hamiltonian Monte Carlo samplers unreliable while preserving conditional conju gacy exploitable by CAVI. Each variational update admits a closed-form solution: Gaussian for regression coe cients and weight parameters, Inverse-Gamma for the error variance. The algorithm propagates uncertainty across blocks through second moments, distinguishing it from naive plug-in approximations. In a Monte Carlo study spanning 21 data-generating con gurations with up to 50 predictors, CAVI produces posterior means nearly identical to a block Gibbs sampler benchmark while achieving speedups of 107x to 1,772x (Table 9). Generic automatic di eren tiation VI (ADVI), by contrast, produces bias 714 times larger while being orders of magnitude slower, con rming the value of model-speci c derivations. Weight function parameters maintain excellent calibration (coverage above 92%) across all con gurations. Impact coe cient credible intervals exhibit the underdispersion characteristic of mean- eld approximations, with coverage declining from 89% to 55% as the number of predictors grows a documented trade-o between speed and interval calibration that structured variational methods can address. An empirical application to realized volatility forecasting on S&P 500 daily returns con rms that CAVI and Gibbs sampling yield virtually identical point forecasts, with CAVI completing each monthly estimation in under 10 milliseconds.",
-    "authors": [
-      "Luigi Simeone"
-    ],
-    "categories": [
-      "cs.LG",
-      "stat.CO",
-      "stat.ME",
-      "stat.ML"
-    ],
-    "published": "2026-02-23",
-    "url": "https://arxiv.org/abs/2602.19610v1",
-    "pdf_url": "https://arxiv.org/pdf/2602.19610v1.pdf",
     "date": "2026-02-24",
     "source": "arxiv",
     "research_score": 0.54
