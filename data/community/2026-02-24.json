@@ -189,7 +189,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-02-24T01:25:05Z",
+    "date": "2026-02-24T15:25:33Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -825,12 +825,12 @@
   },
   {
     "title": "[PR] fix: remove Whisper hallucination loops and trailing hallucinations from transcription",
-    "date": "2026-02-24T03:59:32Z",
+    "date": "2026-02-24T15:10:14Z",
     "summary": "## Summary\n\nWhisper models are prone to two classes of hallucinations that corrupt transcription output:\n\n1. **Repetition loops** \u2014 Whisper gets stuck repeating a phrase hundreds of times (detectable via `compression_ratio` in `verbose_json` responses)\n2. **Trailing hallucinations** \u2014 Whisper invent",
     "url": "https://github.com/openplaud/openplaud/pull/31",
     "source": "github_prs",
     "highlights": [
-      "comments: 39",
+      "comments: 40",
       "pull request",
       "repo: openplaud"
     ]
@@ -1040,9 +1040,9 @@
     ]
   },
   {
-    "title": "[PR] docs: update readme and incorporate Tyler's feedback",
-    "date": "2026-02-24T05:43:58Z",
-    "summary": "## Problem\n\nOur README was a developer reference doc (config, endpoints, architecture, troubleshooting) that buried the value proposition. Users hitting the repo for the first time couldn't quickly understand what Luthien does or how to get started. This was validated by:\n\n- **Tyler Tracy's live ins",
+    "title": "[PR] docs: add value-prop intro to README (Jai + Tyler feedback)",
+    "date": "2026-02-24T15:42:28Z",
+    "summary": "## Summary\n\nPrepends value-prop content above the existing README, per Jai's Feb 12 instruction: *\"just adding or and editing what's on top of the readme to make onboarding as smooth and easy as possible.\"*\n\n**What's new above Quick Start:**\n- Intro tagline (\"Let AI code. Stay in control.\") + one-se",
     "url": "https://github.com/LuthienResearch/luthien-proxy/pull/179",
     "source": "github_prs",
     "highlights": [
@@ -1257,7 +1257,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-02-24T09:19:23Z",
+    "date": "2026-02-24T15:35:02Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | Pending | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|-",
     "url": "https://github.com/yashikota/scene-hunter/pull/114",
     "source": "github_prs",
@@ -1425,12 +1425,12 @@
   },
   {
     "title": "[PR] feat: migrate from Python Claude Agent SDK to Vercel AI SDK v6 (TypeScript)",
-    "date": "2026-02-24T13:02:29Z",
+    "date": "2026-02-24T15:43:56Z",
     "summary": "## Summary\n\n- **Complete migration** of all AI agent execution from Python `claude-agent-sdk` subprocess calls to a native TypeScript agent layer using Vercel AI SDK v6 (`ai` package)\n- **190+ new TypeScript files** in `apps/frontend/src/main/ai/` implementing providers, tools, security, orchestrati",
     "url": "https://github.com/AndyMik90/Auto-Claude/pull/1891",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: Auto-Claude"
     ]
@@ -1517,6 +1517,54 @@
       "comments: 0",
       "pull request",
       "repo: jobbr"
+    ]
+  },
+  {
+    "title": "[PR] feat(AYC-95): add feature toggle system for knowledge bases and skills",
+    "date": "2026-02-24T16:02:36Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Introduces new config-driven gating for multiple HTTP controllers and frontend routes; misconfiguration or default values could unintentionally hide or expose endpoints/UI.\n> \n> **Overview**\n> Adds a first-class feature toggle system with backend",
+    "url": "https://github.com/ayunis-core/ayunis-core/pull/251",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: ayunis-core"
+    ]
+  },
+  {
+    "title": "[PR] maple only ai provider first pass",
+    "date": "2026-02-24T15:49:41Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Docs and README updated to reference Maple-specific LLM configuration, connectivity checks, and MAPLE_API_KEY fallback.\n\n* **Refactor**\n  * LLM integration consolidated to M",
+    "url": "https://github.com/enclave-free/enclave.free/pull/55",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: enclave.free"
+    ]
+  },
+  {
+    "title": "[PR] New appliance: SLM-Copilot (sovereign AI coding assistant)",
+    "date": "2026-02-24T15:44:06Z",
+    "summary": "# Appliance\n\nNew appliance submission for **SLM-Copilot** sovereign AI coding assistant.\n\n## Appliance Name\n\n:app: **slm-copilot**\n\n## Type of Contribution\n\n- [x] New Appliance\n- [ ] Update to an Existing Appliance\n\n## Description of Changes\n\nThis PR adds a new SLM-Copilot appliance to the OpenNebul",
+    "url": "https://github.com/OpenNebula/marketplace-community/pull/116",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: marketplace-community"
+    ]
+  },
+  {
+    "title": "[PR] admin dashboard ssc-dsai:dev",
+    "date": "2026-02-24T15:41:51Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/arthrod/open-webui/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: open-webui"
     ]
   }
 ]
