@@ -609,12 +609,12 @@
   },
   {
     "title": "[PR] docs: add value-prop intro to README (Jai + Tyler feedback)",
-    "date": "2026-02-25T01:51:21Z",
+    "date": "2026-02-25T04:47:58Z",
     "summary": "## Summary\n\nAdds value-prop content above the existing README and simplifies the Quick Start, per Jai's Feb 12 direction. Reference material (bottom half) mostly unchanged \u2014 only clear duplicates removed.\n\n**Jai (Feb 12):** *\"just adding or and editing what's on top of the readme to make onboarding ",
     "url": "https://github.com/LuthienResearch/luthien-proxy/pull/179",
     "source": "github_prs",
     "highlights": [
-      "comments: 31",
+      "comments: 32",
       "pull request",
       "repo: luthien-proxy"
     ]
@@ -773,6 +773,150 @@
       "comments: 2",
       "pull request",
       "repo: bot_qwen3"
+    ]
+  },
+  {
+    "title": "Feature: Add OpenRouter AI Provider Integration - Phase 1 Foundation",
+    "date": "2026-02-25T02:51:34Z",
+    "summary": "# Issue: Add OpenRouter AI Provider Integration - Phase 1 Implementation\n\n## \ud83d\udccb Issue Summary\nThis issue tracks the implementation of OpenRouter as a new AI provider in Hive, following comprehensive research and design planning. OpenRouter provides unified access to 300+ AI models including GPT-4, Cl",
+    "url": "https://github.com/sakibsadmanshajib/hive/issues/31",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 3",
+      "state: open",
+      "repo: hive"
+    ]
+  },
+  {
+    "title": "[PR] [wip] Reasoning presets + toggle reasoning with tab",
+    "date": "2026-02-25T04:57:10Z",
+    "summary": "- reasoning traces now visible in CLI UI\r\n- tab in CLI to cycle reasoning value\r\n- internally, we refer to LLM registry to verify if model supports reasoning or not\r\n- new reasoning presets: `off`, `auto`, `low`, `medium`, `high`, `max` - these are constant names we use for all models\r\n- for openai ",
+    "url": "https://github.com/truffle-ai/dexto/pull/569",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: dexto"
+    ]
+  },
+  {
+    "title": "[PR] Add ResourceConfig for zero-config resource provisioning and Pythonic client wrappers",
+    "date": "2026-02-25T04:34:02Z",
+    "summary": "Completes developer experience by enabling `stack()` with zero arguments to provision working Postgres + Redis, and providing Pythonic client wrappers for all resource types.\n\n## Changes\n\n**`fastops/connect.py` (new, 358 lines)**\n- `ResourceConfig` class for config management:\n  - `from_env()` / `lo",
+    "url": "https://github.com/Karthik777/fastops/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: fastops"
+    ]
+  },
+  {
+    "title": "[PR] Add cloud-agnostic resource provisioning layer (databases, caches, queues, storage, LLM, search)",
+    "date": "2026-02-25T04:23:01Z",
+    "summary": "Adds `fastops/resources.py` - a unified provisioning layer for application services. While `azure.py`/`aws.py` handle infrastructure (VMs, networks), this handles dependencies (databases, caches, queues, storage buckets, LLM endpoints, serverless functions, search engines).\n\n## Core Design\n\nEvery re",
+    "url": "https://github.com/Karthik777/fastops/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: fastops"
+    ]
+  },
+  {
+    "title": "[PR] Native Ollama LLM Integration + Example Project + Full Unit Tests",
+    "date": "2026-02-25T04:11:26Z",
+    "summary": "# \ud83d\ude80 PR: Native Ollama LLM Integration + Example Project + Full Unit Tests  \r\n**Includes: Critical Fix for Ollama Cloud Tool-Calling + Comparison Test with LiteLLM**\r\n\r\n## \ud83d\udd17 Link to Issue or Description of Change\r\nNo existing issue.  \r\nSubmitting this as a **major feature contribution** that fills a ",
+    "url": "https://github.com/google/adk-python/pull/3570",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: adk-python"
+    ]
+  },
+  {
+    "title": "[PR] Feature/chroma memory service",
+    "date": "2026-02-25T04:11:21Z",
+    "summary": "**Problem:**\r\nThe current `InMemoryMemoryService` uses simple keyword matching to search agent memories. This means:\r\n- Synonyms don't work (\"happy\" won't match \"joyful\")\r\n- Context is lost (keyword matching ignores semantic meaning)\r\n- No persistence (all memories are lost on restart)\r\n\r\nThe `Verte",
+    "url": "https://github.com/google/adk-python/pull/4197",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: adk-python"
+    ]
+  },
+  {
+    "title": "[PR] chore: release v0.1.4",
+    "date": "2026-02-25T04:04:01Z",
+    "summary": "\n\n\n## \ud83e\udd16 New release\n\n* `ironclaw`: 0.1.3 -> 0.1.4 (\u2713 API compatible changes)\n\n<details><summary><i><b>Changelog</b></i></summary><p>\n\n<blockquote>\n\n## [0.1.4](https://github.com/danielsimonjr/ironclaw/compare/v0.1.3...v0.1.4) - 2026-02-25\n\n### Added\n\n- implement Edge TTS WebSocket, WIT introspection",
+    "url": "https://github.com/danielsimonjr/ironclaw/pull/23",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ironclaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.468.0",
+    "date": "2026-02-25T02:59:13Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.445.0` \u2192 `v4.468.0` | `v4.475.0` (+7) |\n\n---\n\n### Release Notes\n\n<details>\n<summary>aquaproj/aqua-registry (",
+    "url": "https://github.com/blck-snwmn/toyaes/pull/27",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: toyaes"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.468.0",
+    "date": "2026-02-25T02:52:36Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.433.0` \u2192 `v4.468.0` | `v4.475.0` (+7) |\n\n---\n\n### Release Notes\n\n<details>\n<summary>aquaproj/aqua-registry (",
+    "url": "https://github.com/blck-snwmn/toyrsa/pull/20",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: toyrsa"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-02-25T02:44:10Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all helm/docker dependencies (2025-07-13)",
+    "date": "2026-02-25T02:37:12Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [airflow](https://airflow.apache.org/) ([source](https://redirect.github.com/apache/airflow)) | minor | `1.18.0` \u2192 `1.19.0` |\n| [cluster](http",
+    "url": "https://github.com/datahub-local/datahub-local-core/pull/138",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: datahub-local-core"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/hoarder-app/hoarder ( 0.23.1 \u2192 0.31.0 )",
+    "date": "2026-02-25T04:53:37Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/hoarder-app/hoarder](https://redirect.github.com/karakeep-app/karakeep) | minor | `0.23.1` \u2192 `0.31.0` |\n\n---\n\n> [!WARNING]\n> Some dep",
+    "url": "https://github.com/DragonHunter274/proxmox-hetzner-ops-prod/pull/105",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: proxmox-hetzner-ops-prod"
     ]
   }
 ]
