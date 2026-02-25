@@ -201,12 +201,12 @@
   },
   {
     "title": "API rate limits - Utilise multiple cloud models with free tiers in rotation, taking advantage of free daily limits from various different providers by systematically creating fallbacks in jelly's openclaw.json",
-    "date": "2026-02-25T06:04:30Z",
+    "date": "2026-02-25T22:01:05Z",
     "summary": "We have a critical problem we are currently facing, The ai gent Jelly the brains behind the team is hitting a constant rate limit due to the high cost in credits to run the intense workflows.\n\nThe objective: research across various providers and models to verify if they have a free tier to their api",
     "url": "https://github.com/jelly-legs-ai/Jelly-legs-unsteady-workshop/issues/6",
     "source": "github_issues",
     "highlights": [
-      "comments: 25",
+      "comments: 26",
       "state: open",
       "repo: Jelly-legs-unsteady-workshop"
     ]
@@ -825,7 +825,7 @@
   },
   {
     "title": "[PR] Native Ollama LLM Integration + Example Project + Full Unit Tests",
-    "date": "2026-02-25T08:07:18Z",
+    "date": "2026-02-25T22:20:22Z",
     "summary": "# \ud83d\ude80 PR: Native Ollama LLM Integration + Example Project + Full Unit Tests  \r\n**Includes: Critical Fix for Ollama Cloud Tool-Calling + Comparison Test with LiteLLM**\r\n\r\n## \ud83d\udd17 Link to Issue or Description of Change\r\nNo existing issue.  \r\nSubmitting this as a **major feature contribution** that fills a ",
     "url": "https://github.com/google/adk-python/pull/3570",
     "source": "github_prs",
@@ -837,7 +837,7 @@
   },
   {
     "title": "[PR] Feature/chroma memory service",
-    "date": "2026-02-25T08:07:14Z",
+    "date": "2026-02-25T22:20:55Z",
     "summary": "**Problem:**\r\nThe current `InMemoryMemoryService` uses simple keyword matching to search agent memories. This means:\r\n- Synonyms don't work (\"happy\" won't match \"joyful\")\r\n- Context is lost (keyword matching ignores semantic meaning)\r\n- No persistence (all memories are lost on restart)\r\n\r\nThe `Verte",
     "url": "https://github.com/google/adk-python/pull/4197",
     "source": "github_prs",
@@ -957,7 +957,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-02-25T19:43:46Z",
+    "date": "2026-02-25T22:04:18Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1857,7 +1857,7 @@
   },
   {
     "title": "[PR] feat: add Jakarta EE migration scripts and YAWL observability enhancements",
-    "date": "2026-02-25T18:34:01Z",
+    "date": "2026-02-25T22:38:39Z",
     "summary": "## Summary\n\nThis PR provides a comprehensive modernization of the YAWL workflow engine with complete Jakarta EE migration tooling and enhanced observability capabilities. The changes represent a significant enhancement to the YAWL platform with modern Java features, observability, and automation.\n\n#",
     "url": "https://github.com/seanchatmangpt/yawl/pull/122",
     "source": "github_prs",
@@ -1917,7 +1917,7 @@
   },
   {
     "title": "[PR] python3Packages.plotly: fix build with pytest 9 and numpy 2.4",
-    "date": "2026-02-25T21:16:33Z",
+    "date": "2026-02-25T21:52:45Z",
     "summary": "Hydra: https://hydra.nixos.org/build/322261587/nixlog/4\r\n\r\npytest 9 and numpy 2.4 introduced a bunch of backward-incompatible changes that broke plotly in a few ways.\r\n\r\n- https://docs.pytest.org/en/latest/deprecations.html#py-path-local-arguments-for-hooks-replaced-with-pathlib-path\r\n  - Upstream P",
     "url": "https://github.com/NixOS/nixpkgs/pull/493409",
     "source": "github_prs",
@@ -2033,6 +2033,66 @@
       "comments: 1",
       "pull request",
       "repo: db-controller"
+    ]
+  },
+  {
+    "title": "[PR] Agents markdown file",
+    "date": "2026-02-25T22:32:42Z",
+    "summary": "## Description\n\nEnriched `AGENTS.md` with comprehensive operational details, architecture overview, build/test/deploy commands, monitoring, and key file references, mirroring information previously scattered or only present in `CLAUDE.md` and system context files. This update aims to make `AGENTS.md",
+    "url": "https://github.com/OrionArchitekton/cosmocrat-core/pull/275",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: cosmocrat-core"
+    ]
+  },
+  {
+    "title": "[PR] chore(main): release 1.0.0",
+    "date": "2026-02-25T22:11:53Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.0.0](https://github.com/ddobrin/adk-java/compare/v0.6.0...v1.0.0) (2026-02-25)\n\n\n### \u26a0 BREAKING CHANGES\n\n* Use RxJava for VertexAiClient\n* update default agent dir for the compiled agent loader to match old compiler loader behavior\n* update ",
+    "url": "https://github.com/ddobrin/adk-java/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: adk-java"
+    ]
+  },
+  {
+    "title": "[PR] feat(setup): add `zeroclaw setup channels` CLI subcommand (#25)",
+    "date": "2026-02-25T22:05:46Z",
+    "summary": "## Summary\n\n- Adds `zeroclaw setup channels` \u2014 a new CLI subcommand that provisions a Mattermost workspace from a TOML manifest\n- All operations are idempotent (safe to re-run against an already-provisioned workspace)\n- No ZeroClaw config required \u2014 standalone admin tool that takes URL + token + man",
+    "url": "https://github.com/cmbays/zeroclaw/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "[PR] Add Google Gemini AI infrastructure with 99% token cost reduction via skill caching + VS Code workspace + WSL Ubuntu YOLO mode + Unified Orchestration (196 repos) + OpenSearch ecosystem",
+    "date": "2026-02-25T21:59:41Z",
+    "summary": "Integrates Google Gemini CLI, Jules Agent (20GB VM), Conductor master planner, and procedural RAG/CAG system with skill-based caching to eliminate token costs for heavy data like templates, dependencies, and documentation. Includes complete VS Code workspace configuration for Windows development env",
+    "url": "https://github.com/SpiralCloudOmega/DevTeam6/pull/28",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 24",
+      "pull request",
+      "repo: DevTeam6"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add Usage-to-USD Cost Calculation for v0.4",
+    "date": "2026-02-25T21:40:51Z",
+    "summary": "## Description\r\nThis PR implements the 'Usage-to-USD' Cost Calculation extension for AutoGen v0.4 as requested in the migration roadmap. \r\n\r\nFollowing the new Actor-model architecture, I have implemented this using the `InterventionHandler` pattern. This allows for real-time cost tracking without mo",
+    "url": "https://github.com/microsoft/autogen/pull/7273",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: autogen"
     ]
   }
 ]
