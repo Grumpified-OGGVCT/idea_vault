@@ -189,7 +189,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-02-25T01:28:32Z",
+    "date": "2026-02-25T07:19:19Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -249,7 +249,7 @@
   },
   {
     "title": "[TESTING][LLMCHAT]: LLM Chat with All Provider Models Test Plan",
-    "date": "2026-02-23T15:51:12Z",
+    "date": "2026-02-25T07:53:00Z",
     "summary": "# [TESTING] LLM Chat with All Provider Models Test Plan\n\n## Goal\n\nValidate that the MCP Gateway's LLM Chat functionality works correctly with all supported LLM providers (OpenAI, Anthropic, Azure OpenAI, AWS Bedrock, Google Vertex AI, IBM watsonx.ai, Ollama, and OpenAI-compatible servers), ensuring ",
     "url": "https://github.com/IBM/mcp-context-forge/issues/2494",
     "source": "github_issues",
@@ -585,7 +585,7 @@
   },
   {
     "title": "[PR] chore: sync models.dev upstream",
-    "date": "2026-02-25T02:04:16Z",
+    "date": "2026-02-25T07:01:12Z",
     "summary": "Automated subtree sync from upstream.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added support for 100+ new AI models across multiple providers.\n  * Introduced an input token limit field in model specs.\n\n* **Updates**\n",
     "url": "https://github.com/Vivek-k3/modelsplus/pull/15",
     "source": "github_prs",
@@ -609,7 +609,7 @@
   },
   {
     "title": "[PR] docs: add value-prop intro to README (Jai + Tyler feedback)",
-    "date": "2026-02-25T06:04:18Z",
+    "date": "2026-02-25T06:07:49Z",
     "summary": "## Summary\n\nAdds value-prop content above the existing README and simplifies the Quick Start, per Jai's Feb 12 direction. Reference material (bottom half) mostly unchanged \u2014 only clear duplicates removed.\n\n**Jai (Feb 12):** *\"just adding or and editing what's on top of the readme to make onboarding ",
     "url": "https://github.com/LuthienResearch/luthien-proxy/pull/179",
     "source": "github_prs",
@@ -788,9 +788,9 @@
     ]
   },
   {
-    "title": "[PR] [wip] Reasoning presets + toggle reasoning with tab",
-    "date": "2026-02-25T05:23:26Z",
-    "summary": "- reasoning traces now visible in CLI UI\r\n- tab in CLI to cycle reasoning value\r\n- internally, we refer to LLM registry to verify if model supports reasoning or not\r\n- new reasoning presets: `off`, `low`, `medium`, `high`, `max` - these are constant names we use for all models\r\n- for openai models a",
+    "title": "[PR] Reasoning presets + toggle reasoning with tab",
+    "date": "2026-02-25T07:40:51Z",
+    "summary": "- reasoning traces now visible in CLI UI\r\n- tab in CLI to cycle reasoning value\r\n- internally, we refer to LLM registry to verify if model supports reasoning or not\r\n- new reasoning presets: `off`, `low`, `medium`, `high`, `xhigh`,`max`\r\n- for openai models and other models with `reasoningEffort`, t",
     "url": "https://github.com/truffle-ai/dexto/pull/569",
     "source": "github_prs",
     "highlights": [
@@ -965,6 +965,54 @@
       "comments: 2",
       "pull request",
       "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] fix: remove Whisper hallucination loops and trailing hallucinations from transcription",
+    "date": "2026-02-25T07:55:29Z",
+    "summary": "## Summary\n\nWhisper models are prone to two classes of hallucinations that corrupt transcription output:\n\n1. **Repetition loops** \u2014 Whisper gets stuck repeating a phrase hundreds of times (detectable via `compression_ratio` in `verbose_json` responses)\n2. **Trailing hallucinations** \u2014 Whisper invent",
+    "url": "https://github.com/openplaud/openplaud/pull/31",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 41",
+      "pull request",
+      "repo: openplaud"
+    ]
+  },
+  {
+    "title": "[PR] Remove ollama/opencode systemd services \u2014 they are programs, not services",
+    "date": "2026-02-25T07:39:15Z",
+    "summary": "Ollama and OpenCode were incorrectly modeled as systemd services. They are user-invoked programs that should be installed on-demand via their setup scripts, not auto-started at boot.\n\n### Removed\n- `airootfs/etc/systemd/system/setup-ollama.service`\n- `airootfs/etc/systemd/system/setup-opencode.servi",
+    "url": "https://github.com/madkoding/mad-os/pull/189",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mad-os"
+    ]
+  },
+  {
+    "title": "[PR] Develop",
+    "date": "2026-02-25T07:07:41Z",
+    "summary": "This PR will be reviewed by an AI agent. Provide clear context to help it assess your changes.\r\n\r\nAesthetic/UI changes that don't improve agent capability are out of scope and will be rejected.\r\n\r\n## Category\r\n- [ ] Bug fix\r\n- [ ] Security fix\r\n- [ ] Performance improvement\r\n- [ ] New feature\r\n- [ ]",
+    "url": "https://github.com/Dexploarer/milaidy/pull/120",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: milaidy"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker images (minor/patch/digest)",
+    "date": "2026-02-25T06:43:32Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [calciumion/new-api](https://redirect.github.com/QuantumNous/new-api) | patch | `v0.10.8` \u2192 `v0.10.9` |\n| docker.cnb.cool/mliev/open/dwz-server | minor | `v2.10.2` \u2192 `v2.12.0` |\n| [getmeili/meilisearch](https://re",
+    "url": "https://github.com/acepanel/templates/pull/52",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: templates"
     ]
   }
 ]
