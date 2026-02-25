@@ -788,9 +788,9 @@
     ]
   },
   {
-    "title": "[PR] Reasoning presets + toggle reasoning with tab",
-    "date": "2026-02-25T14:19:44Z",
-    "summary": "- reasoning traces now visible in CLI UI\r\n- tab in CLI to cycle reasoning value\r\n- internally, we refer to LLM registry to verify if model supports reasoning or not\r\n- new reasoning presets: `off`, `low`, `medium`, `high`, `xhigh`,`max`\r\n- for openai models and other models with `reasoningEffort`, t",
+    "title": "[PR] Reasoning variants + toggle reasoning with tab",
+    "date": "2026-02-25T16:07:35Z",
+    "summary": "- reasoning traces now visible in CLI UI\r\n- tab in CLI to cycle reasoning value\r\n- internally, we refer to LLM registry to verify if model supports reasoning or not\r\n- new reasoning variants based on underlying supported one\r\n- for openai models and other models with `reasoningEffort`, these map to ",
     "url": "https://github.com/truffle-ai/dexto/pull/569",
     "source": "github_prs",
     "highlights": [
@@ -1137,7 +1137,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.476.0",
-    "date": "2026-02-25T09:47:10Z",
+    "date": "2026-02-25T15:10:44Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.371.1` \u2192 `v4.476.0` |\n\n---\n\n### Release Notes\n\n<det",
     "url": "https://github.com/koyashiro/k8s-manifests/pull/7",
     "source": "github_prs",
@@ -1569,7 +1569,7 @@
   },
   {
     "title": "[PR] 2 create ollama setup",
-    "date": "2026-02-25T14:50:26Z",
+    "date": "2026-02-25T15:32:10Z",
     "summary": "",
     "url": "https://github.com/BNSS-hACME/acme-infrastructure/pull/18",
     "source": "github_prs",
@@ -1665,7 +1665,7 @@
   },
   {
     "title": "[PR] Mvp design polish",
-    "date": "2026-02-25T14:54:14Z",
+    "date": "2026-02-25T15:02:45Z",
     "summary": "",
     "url": "https://github.com/cjrutherford/optimistic-tanuki/pull/76",
     "source": "github_prs",
@@ -1713,7 +1713,7 @@
   },
   {
     "title": "[PR] python3Packages.requests-hardened: init at 1.2.0",
-    "date": "2026-02-25T14:40:21Z",
+    "date": "2026-02-25T15:08:35Z",
     "summary": "Needed for #485582\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or describe changes, this helps your fellow maintainers discover breaking updates.\r\nFor new packages please briefly describe the packag",
     "url": "https://github.com/NixOS/nixpkgs/pull/490605",
     "source": "github_prs",
@@ -1733,6 +1733,54 @@
       "comments: 2",
       "pull request",
       "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "PR-Agent fails to process large PRs with multiple model configurations",
+    "date": "2026-02-25T16:00:10Z",
+    "summary": "### Git provider\n\nGithub Cloud\n\n### System Info\n\n- **Platform**: macOS ARM64 running linux/amd64 Docker image\n- **PR Size**: 97,419 tokens\n- **Repository**: Private repository\n\n\n### Bug details\n\nPR-Agent fails with \"Failed to generate prediction\" errors across all tested model configurations, even w",
+    "url": "https://github.com/qodo-ai/pr-agent/issues/2042",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 3",
+      "state: open",
+      "repo: pr-agent"
+    ]
+  },
+  {
+    "title": "Backend: Add OpenAI provider for AI Query Engine",
+    "date": "2026-02-25T15:57:21Z",
+    "summary": "## User Story\n**As a** user without local GPU resources,\n**I want to** use OpenAI's GPT models for SQL generation,\n**So that** I can leverage cloud AI without running local LLM infrastructure.\n\n## Context Diagram\n```mermaid\nflowchart LR\n    subgraph CloudBench\n        PROMPT[Prompt Builder]\n        ",
+    "url": "https://github.com/kartoza/kartoza-cloudbench/issues/58",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: kartoza-cloudbench"
+    ]
+  },
+  {
+    "title": "[PR] feat: Get live provider and model data from model.dev",
+    "date": "2026-02-25T15:43:00Z",
+    "summary": "This pull request introduces improvements to model selection flexibility and configuration, as well as an environment variable for enabling live model data fetching. The most significant changes include allowing multiple model types to be filtered in the API, updating starter project components to s",
+    "url": "https://github.com/langflow-ai/langflow/pull/11007",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] feat: add ESP-WROOM-32 (4MB flash, no PSRAM) support",
+    "date": "2026-02-25T15:11:39Z",
+    "summary": "Add ESP32 target alongside existing ESP32-S3. Includes:\r\n\r\n- New partition table (partitions_esp32.csv) for 4MB flash\r\n- New sdkconfig.defaults.esp32 (no PSRAM, UART-only console)\r\n- PSRAM-conditional allocation macros (mimi_alloc/mimi_realloc) that fall back to standard calloc/realloc on chips with",
+    "url": "https://github.com/memovai/mimiclaw/pull/94",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mimiclaw"
     ]
   }
 ]
