@@ -585,7 +585,7 @@
   },
   {
     "title": "[PR] chore(deps): bump the uv group across 19 directories with 9 updates",
-    "date": "2026-02-26T08:34:56Z",
+    "date": "2026-02-26T09:28:58Z",
     "summary": "Bumps the uv group with 2 updates in the /libs/core directory: [langsmith](https://github.com/langchain-ai/langsmith-sdk) and [nbconvert](https://github.com/jupyter/nbconvert).\nBumps the uv group with 7 updates in the /libs/langchain directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langsmi",
     "url": "https://github.com/preechapon250/langchain/pull/3",
     "source": "github_prs",
@@ -741,12 +741,12 @@
   },
   {
     "title": "[PR] feat: Add Usage-to-USD Cost Calculation for v0.4",
-    "date": "2026-02-26T06:48:44Z",
+    "date": "2026-02-26T09:30:38Z",
     "summary": "## Description\r\nThis PR implements the 'Usage-to-USD' Cost Calculation extension for AutoGen v0.4 as requested in the migration roadmap. \r\n\r\nFollowing the new Actor-model architecture, I have implemented this using the `InterventionHandler` pattern. This allows for real-time cost tracking without mo",
     "url": "https://github.com/microsoft/autogen/pull/7273",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: autogen"
     ]
@@ -789,7 +789,7 @@
   },
   {
     "title": "[PR] feat: Add multi-translation engine support with cloud APIs, LLM translation, and custom AI prompts",
-    "date": "2026-02-26T06:19:03Z",
+    "date": "2026-02-26T09:49:22Z",
     "summary": "## Summary\n\nImplements a comprehensive multi-translation engine system for ScreenTranslate, enabling users to:\n\n- Use multiple translation providers (Apple, Google, DeepL, Baidu, OpenAI-compatible APIs)\n- Configure unlimited OpenAI-compatible engine instances with custom base URLs, models, and API k",
     "url": "https://github.com/hubo1989/ScreenTranslate/pull/19",
     "source": "github_prs",
@@ -969,7 +969,7 @@
   },
   {
     "title": "[PR] Ci/auto refresh hashes",
-    "date": "2026-02-26T08:55:08Z",
+    "date": "2026-02-26T09:53:04Z",
     "summary": "",
     "url": "https://github.com/allaunthefox/deploy-system-unified/pull/176",
     "source": "github_prs",
@@ -981,19 +981,19 @@
   },
   {
     "title": "[PR] feat(examples): add custom HTTP embedding example for LM Studio / Ollama",
-    "date": "2026-02-26T08:40:34Z",
+    "date": "2026-02-26T09:16:51Z",
     "summary": "## Summary\n\nThis PR adds a self-contained example showing how to use any **OpenAI-compatible HTTP embedding endpoint** (LM Studio, Ollama, vLLM, LocalAI, \u2026) as the embedding source in zvec.\n\n## What's added\n\n**`examples/custom_http_embedding.py`**\n\n| | |\n|---|---|\n| **`HTTPEmbeddingFunction`** | A z",
     "url": "https://github.com/alibaba/zvec/pull/149",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: zvec"
     ]
   },
   {
     "title": "[PR] chore(deps): bump the uv group across 20 directories with 7 updates",
-    "date": "2026-02-26T08:34:27Z",
+    "date": "2026-02-26T09:28:31Z",
     "summary": "Bumps the uv group with 2 updates in the /libs/core directory: [langsmith](https://github.com/langchain-ai/langsmith-sdk) and [nbconvert](https://github.com/jupyter/nbconvert).\nBumps the uv group with 7 updates in the /libs/langchain directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langsmi",
     "url": "https://github.com/preechapon250/langchain/pull/2",
     "source": "github_prs",
@@ -1029,7 +1029,7 @@
   },
   {
     "title": "[PR] chore(main): release 2.12.0",
-    "date": "2026-02-26T07:33:11Z",
+    "date": "2026-02-26T09:53:45Z",
     "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [2.12.0](https://github.com/RaphaEnterprises-AI/argus-backend/compare/v2.11.0...v2.12.0) (2026-02-26)\n\n\n### Features\n\n* **a2a:** implement Agent-to-Agent communication architecture ([a6bdddc](https://github.com/RaphaEnterprises-AI/argus-backend",
     "url": "https://github.com/RaphaEnterprises-AI/argus-backend/pull/15",
     "source": "github_prs",
@@ -1041,7 +1041,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-02-26T07:20:07Z",
+    "date": "2026-02-26T08:59:10Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1049,6 +1049,42 @@
       "comments: 1",
       "pull request",
       "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] Feat: enhance AI guidance workflow for pentesting support",
+    "date": "2026-02-26T09:54:44Z",
+    "summary": "### Description of the Change\r\n\r\n#### Problem\r\n\r\nTwo separate issues were addressed in this PR:\r\n\r\n**1. Silent error handling in `ftester` tool executor (Bug)**\r\n\r\nIn `backend/cmd/ftester/worker/executor.go`, `GetTool` called `GetFlowPrimaryContainer` with an optimistic `if err == nil` guard. When t",
+    "url": "https://github.com/vxcontrol/pentagi/pull/148",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: pentagi"
+    ]
+  },
+  {
+    "title": "[PR] chore: replay heliosCLI stash for governance work",
+    "date": "2026-02-26T09:33:13Z",
+    "summary": "## Summary\\n- Replay pending stash payload into a dedicated branch for review.\\n- Resolves all auto-merge conflicts by taking stash content in conflict files.\\n- Includes staged documentation/transport/config groundwork from the previous local stash.\\n\\n## Notes\\n- This PR is intentionally non-clean",
+    "url": "https://github.com/KooshaPari/helios-cli/pull/223",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: helios-cli"
+    ]
+  },
+  {
+    "title": "[PR] Fix CI and Optimize AnalyticsChart",
+    "date": "2026-02-26T09:25:15Z",
+    "summary": "- Removed sensitive files (id_kiro, id_ed25519.txt) and ignored node_modules/__pycache__ to fix Security Check failure.\r\n- Applied performance optimization to AnalyticsChart.jsx (replaced spread operator with loop).",
+    "url": "https://github.com/DuckshotPro/terovoice/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: terovoice"
     ]
   }
 ]
