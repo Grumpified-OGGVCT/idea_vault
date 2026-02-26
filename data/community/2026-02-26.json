@@ -201,7 +201,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-02-25T21:14:14Z",
+    "date": "2026-02-26T02:56:10Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -549,7 +549,7 @@
   },
   {
     "title": "[PR] Migrate agent to Ollama and Google Custom Search",
-    "date": "2026-02-26T02:00:19Z",
+    "date": "2026-02-26T04:12:06Z",
     "summary": "This PR migrates the backend agent from using Google Gemini cloud models to using local Ollama models (defaulting to `qwen3:4b`) and the Google Custom Search JSON API.\n\nKey changes:\n- **Dependencies**: Added `langchain-ollama` and `langchain-google-community`.\n- **Configuration**: Added `local_model",
     "url": "https://github.com/vrangayyan6/bot_qwen3/pull/1",
     "source": "github_prs",
@@ -669,7 +669,7 @@
   },
   {
     "title": "[PR] Feature/chroma memory service",
-    "date": "2026-02-25T22:20:55Z",
+    "date": "2026-02-26T02:35:41Z",
     "summary": "**Problem:**\r\nThe current `InMemoryMemoryService` uses simple keyword matching to search agent memories. This means:\r\n- Synonyms don't work (\"happy\" won't match \"joyful\")\r\n- Context is lost (keyword matching ignores semantic meaning)\r\n- No persistence (all memories are lost on restart)\r\n\r\nThe `Verte",
     "url": "https://github.com/google/adk-python/pull/4197",
     "source": "github_prs",
@@ -681,7 +681,7 @@
   },
   {
     "title": "[PR] Native Ollama LLM Integration + Example Project + Full Unit Tests",
-    "date": "2026-02-25T22:20:22Z",
+    "date": "2026-02-26T02:35:46Z",
     "summary": "# \ud83d\ude80 PR: Native Ollama LLM Integration + Example Project + Full Unit Tests  \r\n**Includes: Critical Fix for Ollama Cloud Tool-Calling + Comparison Test with LiteLLM**\r\n\r\n## \ud83d\udd17 Link to Issue or Description of Change\r\nNo existing issue.  \r\nSubmitting this as a **major feature contribution** that fills a ",
     "url": "https://github.com/google/adk-python/pull/3570",
     "source": "github_prs",
@@ -705,7 +705,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-02-25T22:04:18Z",
+    "date": "2026-02-26T03:53:23Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -773,6 +773,90 @@
       "comments: 1",
       "pull request",
       "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] docs(architecture): TOGAF documentation suite with ontologies and diagrams",
+    "date": "2026-02-26T04:45:17Z",
+    "summary": "## **User description**\n## Summary\n\nAdds a comprehensive TOGAF architecture documentation suite derived directly from the Zora codebase. All component names, source file paths, TypeScript interface references, and line numbers are grounded in the actual implementation.\n\n- 4 TOGAF ADM documents: Arch",
+    "url": "https://github.com/ryaker/zora/pull/126",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: zora"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add multi-translation engine support with cloud APIs, LLM translation, and custom AI prompts",
+    "date": "2026-02-26T04:26:00Z",
+    "summary": "## Summary\n\nImplements a comprehensive multi-translation engine system for ScreenTranslate, enabling users to:\n\n- Use multiple translation providers (Apple, Google, DeepL, Baidu, OpenAI-compatible APIs)\n- Configure unlimited OpenAI-compatible engine instances with custom base URLs, models, and API k",
+    "url": "https://github.com/hubo1989/ScreenTranslate/pull/19",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ScreenTranslate"
+    ]
+  },
+  {
+    "title": "[PR] chore: release v0.1.4",
+    "date": "2026-02-26T04:07:19Z",
+    "summary": "\n\n\n## \ud83e\udd16 New release\n\n* `ironclaw`: 0.1.3 -> 0.1.4 (\u2713 API compatible changes)\n\n<details><summary><i><b>Changelog</b></i></summary><p>\n\n<blockquote>\n\n## [0.1.4](https://github.com/danielsimonjr/ironclaw/compare/v0.1.3...v0.1.4) - 2026-02-26\n\n### Added\n\n- implement Edge TTS WebSocket, WIT introspection",
+    "url": "https://github.com/danielsimonjr/ironclaw/pull/23",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ironclaw"
+    ]
+  },
+  {
+    "title": "[PR] perf(providers): reduce Ollama availability check timeout",
+    "date": "2026-02-26T03:23:07Z",
+    "summary": "Reduced the timeout for Ollama availability checks to fail fast when the service is unreachable. This prevents a 2-second delay for users who have Ollama in their provider chain (default) but do not have the service running, allowing the tool to fallback to other providers (like Anthropic or OpenAI)",
+    "url": "https://github.com/alexey1312/clai/pull/89",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: clai"
+    ]
+  },
+  {
+    "title": "[PR] Add local GPU-accelerated RAG pipeline (AI Assistant) to SmartScan",
+    "date": "2026-02-26T03:15:14Z",
+    "summary": "Adds a fully local RAG (Retrieval-Augmented Generation) feature powered by Ollama, enabling users to index scanned documents and query them with a local LLM running on their GPU \u2014 no cloud, no data egress.\n\nAlso fixes the broken `SmartScanUI.csproj` which referenced non-existent `UserControls\\` path",
+    "url": "https://github.com/rajeshcragy/SmartScan/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: SmartScan"
+    ]
+  },
+  {
+    "title": "[PR] feat(core): add GEMINI_API_BASE_URL env var for custom API endpoints",
+    "date": "2026-02-26T03:03:41Z",
+    "summary": "## Summary\n\nThis PR adds support for a `GEMINI_API_BASE_URL` environment variable that allows users to override the default Gemini API endpoint. This enables using the CLI as a frontend for local-first workflows with OpenAI-compatible proxies like Ollama and LiteLLM.\n\n## Details\n\n- **New Environment",
+    "url": "https://github.com/google-gemini/gemini-cli/pull/16010",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: gemini-cli"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-02-26T02:44:10Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
     ]
   }
 ]
