@@ -645,7 +645,7 @@
   },
   {
     "title": "[PR] chore(deps): update all helm/docker dependencies (2025-07-13)",
-    "date": "2026-02-26T20:46:04Z",
+    "date": "2026-02-26T21:12:52Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [airflow](https://airflow.apache.org/) ([source](https://redirect.github.com/apache/airflow)) | minor | `1.18.0` \u2192 `1.19.0` |\n| [cluster](http",
     "url": "https://github.com/datahub-local/datahub-local-core/pull/138",
     "source": "github_prs",
@@ -1005,7 +1005,7 @@
   },
   {
     "title": "[PR] patch webhint",
-    "date": "2026-02-26T08:27:42Z",
+    "date": "2026-02-26T21:35:34Z",
     "summary": "@coderabbitai summary\r\n@gemini-code-assist review\r\n@sentry review\r\n\r\nTesting the Webhint CI to verify this works.",
     "url": "https://github.com/quisido/quisi.do/pull/287",
     "source": "github_prs",
@@ -1385,6 +1385,78 @@
       "comments: 30",
       "pull request",
       "repo: mcp-toolbox-sdk-python"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-buddy): Implement buddy conversation service with LLM provider integration",
+    "date": "2026-02-26T21:35:11Z",
+    "summary": "## Summary\nImplements the core conversation management and LLM integration for the Buddy module, enabling users to chat with an AI assistant about their smart home. This includes conversation persistence, message history management, and support for multiple LLM providers (Claude, OpenAI, Ollama).\n\n#",
+    "url": "https://github.com/FastyBird/smart-panel/pull/338",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: smart-panel"
+    ]
+  },
+  {
+    "title": "[PR] chore(llm): add Ollama nightly tests",
+    "date": "2026-02-26T21:33:58Z",
+    "summary": "## Description\n\n<!--- Provide a brief description of the changes in this PR --->\n\n## How Has This Been Tested?\n\n<!--- Describe the tests you ran to verify your changes --->\n\n## Additional Options\n\n- [ ] [Optional] Please cherry-pick this PR to the latest release version.\n- [x] [Optional] Override Li",
+    "url": "https://github.com/onyx-dot-app/onyx/pull/8817",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: onyx"
+    ]
+  },
+  {
+    "title": "[PR] feat(extensions): add TokenRanger context compression extension",
+    "date": "2026-02-26T21:33:30Z",
+    "summary": "## Summary\n\n**TokenRanger** is a new extension that compresses session context through a local SLM (Ollama) before it reaches cloud LLMs, reducing input token costs by **50-80%** with 1-3 second latency overhead.\n\n- **TypeScript plugin** hooks into `before_agent_start` and prepends compressed contex",
+    "url": "https://github.com/openclaw/openclaw/pull/27918",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] Initial project scaffold: NestJS API, Prisma schema, React web, Docker compose and docs",
+    "date": "2026-02-26T21:25:49Z",
+    "summary": "### Motivation\n\n- Provide a complete MVP scaffold for a forensic-first OSINT platform with a modular NestJS backend, Prisma/Postgres metadata store and MinIO S3 evidence storage. \n- Enable a reproducible local development environment and smoke-testable flow (auth \u2192 cases \u2192 ingest \u2192 normalize \u2192 audit",
+    "url": "https://github.com/miguelsilv6/cyberosint/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cyberosint"
+    ]
+  },
+  {
+    "title": "[PR] feat(gemini): \u65b0\u589e\u6587\u4ef6\u8bfb\u53d6\u5de5\u5177\u5e76\u5b8c\u5584\u6587\u4ef6/\u97f3\u89c6\u9891\u8f93\u5165\u94fe\u8def",
+    "date": "2026-02-26T21:05:10Z",
+    "summary": "## \u80cc\u666f\n\u672c PR \u76ee\u6807\u662f\u4e3a Gemini \u6a21\u578b\u8865\u9f50\u6587\u4ef6\u8bfb\u53d6\u80fd\u529b\uff0c\u5e76\u6253\u901a\u4ece\u6d88\u606f\u8f93\u5165\u3001\u5de5\u5177\u8c03\u7528\u5230\u5386\u53f2\u5199\u5165\u7684\u591a\u6a21\u6001\u4f20\u9012\u94fe\u8def\uff0c\u540c\u65f6\u964d\u4f4e\u65e5\u5fd7\u4e0e\u4e0a\u4e0b\u6587\u4e2d\u7684\u5927\u4f53\u79ef payload \u98ce\u9669\u3002\n\n## \u4e3b\u8981\u53d8\u66f4\n\n### 1. adapter-gemini \u65b0\u589e\u6587\u4ef6\u8bfb\u53d6\u5de5\u5177\n- \u65b0\u589e `gemini_read_files` \u5de5\u5177\uff1a`packages/adapter-gemini/src/tools.ts`\n- \u63d2\u4ef6\u914d\u7f6e\u65b0\u589e\u5f00\u5173\uff1a`geminiReadFilesTool`\uff0c\u5f00\u542f\u540e\u6ce8\u518c\u5de5\u5177\uff1a`packages/adapter-gemini/src/index.ts`\n- \u5de5\u5177\u53c2\u6570\u652f\u6301\u5355\u4e2a/\u591a\u4e2a URL\uff08\u6700\u591a 10",
+    "url": "https://github.com/ChatLunaLab/chatluna/pull/739",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: chatluna"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-02-26T21:20:56Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.468.0` | `v4.476.0` (+8)",
+    "url": "https://github.com/ianlewis/repo-template-py/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: repo-template-py"
     ]
   }
 ]
