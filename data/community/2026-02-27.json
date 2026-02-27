@@ -189,7 +189,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-02-27T09:02:57Z",
+    "date": "2026-02-27T18:07:03Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -405,7 +405,7 @@
   },
   {
     "title": "Flow uploaded via API doesn't resolve global variables until opened in frontend",
-    "date": "2026-02-19T19:10:42Z",
+    "date": "2026-02-27T17:40:46Z",
     "summary": "### Bug Description\n\nWhen uploading a flow via API and immediately running it (also via API), global variables configured with \"Apply to Fields\" are not resolved. The flow fails with:\n\nOpenAI API key is required when using OpenAI provider\n\nHowever, opening the same flow in the frontend Playground an",
     "url": "https://github.com/langflow-ai/langflow/issues/11781",
     "source": "github_issues",
@@ -861,12 +861,12 @@
   },
   {
     "title": "[PR] Add autonomous CFO executive system with multi-agent orchestration",
-    "date": "2026-02-27T17:29:43Z",
+    "date": "2026-02-27T18:02:46Z",
     "summary": "## Summary\nThis PR introduces a comprehensive autonomous CFO executive system with multi-agent orchestration capabilities. It adds three main components: an autonomous CFO executive with 10 virtual background screens, a task manager CLI supporting 8 different AI agents, and a master CFO team with fo",
     "url": "https://github.com/appsefilepro-cell/Private-Claude/pull/245",
     "source": "github_prs",
     "highlights": [
-      "comments: 57",
+      "comments: 58",
       "pull request",
       "repo: Private-Claude"
     ]
@@ -885,7 +885,7 @@
   },
   {
     "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v1.1.2",
-    "date": "2026-02-27T08:55:17Z",
+    "date": "2026-02-27T18:32:53Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/barakb/spring-ai-app/pull/6",
     "source": "github_prs",
@@ -1305,7 +1305,7 @@
   },
   {
     "title": "[PR] feat: \u591a\u6a21\u6001\u8f93\u5165\u652f\u6301\uff0c\u5de5\u5177\u8c03\u7528\u8f93\u51fa\u591a\u6a21\u6001\u652f\u6301\uff0c\u5168\u65b0\u4e0a\u4e0b\u6587\u6ce8\u5165 API",
-    "date": "2026-02-27T17:38:46Z",
+    "date": "2026-02-27T18:50:45Z",
     "summary": "## \u80cc\u666f\n\u672c PR \u76ee\u6807\u662f\u4e3a Gemini \u6a21\u578b\u8865\u9f50\u6587\u4ef6\u8bfb\u53d6\u80fd\u529b\uff0c\u5e76\u6253\u901a\u4ece\u6d88\u606f\u8f93\u5165\u3001\u5de5\u5177\u8c03\u7528\u5230\u5386\u53f2\u5199\u5165\u7684\u591a\u6a21\u6001\u4f20\u9012\u94fe\u8def\uff0c\u540c\u65f6\u964d\u4f4e\u65e5\u5fd7\u4e0e\u4e0a\u4e0b\u6587\u4e2d\u7684\u5927\u4f53\u79ef payload \u98ce\u9669\u3002\n\n## \u4e3b\u8981\u53d8\u66f4\n\n### 1. adapter-gemini \u65b0\u589e\u6587\u4ef6\u8bfb\u53d6\u5de5\u5177\n- \u65b0\u589e `gemini_read_files` \u5de5\u5177\uff1a`packages/adapter-gemini/src/tools.ts`\n- \u63d2\u4ef6\u914d\u7f6e\u65b0\u589e\u5f00\u5173\uff1a`geminiReadFilesTool`\uff0c\u5f00\u542f\u540e\u6ce8\u518c\u5de5\u5177\uff1a`packages/adapter-gemini/src/index.ts`\n- \u5de5\u5177\u53c2\u6570\u652f\u6301\u5355\u4e2a/\u591a\u4e2a URL\uff08\u6700\u591a 10",
     "url": "https://github.com/ChatLunaLab/chatluna/pull/739",
     "source": "github_prs",
@@ -1361,6 +1361,114 @@
       "comments: 1",
       "pull request",
       "repo: db-controller"
+    ]
+  },
+  {
+    "title": "[PR] \u6a5f\u80fd\u304c\u5b89\u5b9a\u3057\u3066\u304d\u305f\u306e\u3067\u4e00\u65e6main\u306b\u30de\u30fc\u30b8\u3057\u307e\u3059",
+    "date": "2026-02-27T18:52:38Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n# \u30ea\u30ea\u30fc\u30b9\u30ce\u30fc\u30c8\n\n* **\u65b0\u6a5f\u80fd**\n  * ASR\u3001LLM\u3001TTS\u306e\u30de\u30eb\u30c1\u30b9\u30c6\u30fc\u30b8\u30d5\u30a9\u30fc\u30eb\u30d0\u30c3\u30af\u6a5f\u80fd\u3092\u8ffd\u52a0\uff08\u30ed\u30fc\u30ab\u30eb\u2192\u30af\u30e9\u30a6\u30c9\u2192Raspberry Pi\u512a\u5148\u9806\u4f4d\u5bfe\u5fdc\uff09\n  * OpenAI\u30af\u30e9\u30a6\u30c9\u30d7\u30ed\u30d0\u30a4\u30c0\u30fc\u3092\u7d71\u5408\uff08ASR\u3001LLM\u3001TTS\u3001\u30a4\u30f3\u30c6\u30f3\u30c8\u5206\u985e\u5bfe\u5fdc\uff09\n  * LLM\u3001ASR\u3001TTS\u306e\u30b9\u30c8\u30ea\u30fc\u30df\u30f3\u30b0\u6a5f\u80fd\u306b\u3088\u308a\u4f4e\u30ec\u30a4\u30c6\u30f3\u30b7\u3092\u5b9f\u73fe\n  * Whisper ASR\u30b5\u30fc\u30d3\u30b9\u3092Dock",
+    "url": "https://github.com/MasanoriSuda/virtual_voicebot/pull/261",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: virtual_voicebot"
+    ]
+  },
+  {
+    "title": "[PR] feat(cli): add deploy command and bundle packaging",
+    "date": "2026-02-27T18:52:06Z",
+    "summary": "## Summary\n\n- **`lf deploy [environment]`** \u2014 push project config to a remote LlamaFarm server, trigger parallel model downloads with per-model progress, health check, upsert logic, dry-run mode\n- **`lf bundle`** \u2014 package CLI + PyApp binaries + torch wheels + addons into a single tar.gz for offline",
+    "url": "https://github.com/llama-farm/llamafarm/pull/772",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: llamafarm"
+    ]
+  },
+  {
+    "title": "[PR] chore(all): update module github.com/dapr/dapr to v1.17.0",
+    "date": "2026-02-27T18:36:32Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/dapr/dapr](https",
+    "url": "https://github.com/AndriyKalashnykov/dapr-go-hero/pull/198",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dapr-go-hero"
+    ]
+  },
+  {
+    "title": "[PR] [Docs] Add unified evaluation workflow strategy support documentation with Native vs Third-Party classification",
+    "date": "2026-02-27T18:23:15Z",
+    "summary": "## Description\n\nAnalyzed lmms-eval v0.5.0 against the unified evaluation workflow framework to document which of 28 evaluation strategies are supported, using a classification framework that distinguishes between native support and third-party integration.\n\n### Changes\n\n- **Added `/docs/evaluation_w",
+    "url": "https://github.com/zhimin-z/lmms-eval/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lmms-eval"
+    ]
+  },
+  {
+    "title": "[PR] MCP MVP",
+    "date": "2026-02-27T18:11:37Z",
+    "summary": "> [!NOTE] \r\n> Demos and description are WIP\r\n\r\n## New features\r\n\r\n- Adding System Message to conversation or injecting it to an existing one\r\n- CORS Proxy on llama-server backend side\r\n- MCP\r\n    - Servers Selector\r\n    - Settings with Server cards showing capabilities, instructions and other inform",
+    "url": "https://github.com/ggml-org/llama.cpp/pull/18655",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 71",
+      "pull request",
+      "repo: llama.cpp"
+    ]
+  },
+  {
+    "title": "[PR] admin dashboard ssc-dsai:dev",
+    "date": "2026-02-27T18:09:10Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/arthrod/open-webui/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: open-webui"
+    ]
+  },
+  {
+    "title": "[PR] Blackboxai/fix orchestrator async init",
+    "date": "2026-02-27T17:41:54Z",
+    "summary": "",
+    "url": "https://github.com/dorel14/SoniqueBay/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: SoniqueBay"
+    ]
+  },
+  {
+    "title": "[PR] Update all dependencies (major)",
+    "date": "2026-02-27T18:36:42Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [act",
+    "url": "https://github.com/JacksonKuo/app-springboot/pull/99",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: app-springboot"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.testcontainers:testcontainers to v1.21.4",
+    "date": "2026-02-27T17:41:28Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:testcont",
+    "url": "https://github.com/chains-project/besu/pull/68",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: besu"
     ]
   }
 ]
