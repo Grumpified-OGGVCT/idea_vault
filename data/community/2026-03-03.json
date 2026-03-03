@@ -633,12 +633,12 @@
   },
   {
     "title": "[PR] Add autonomous CFO executive system with multi-agent orchestration",
-    "date": "2026-03-03T14:40:04Z",
+    "date": "2026-03-03T15:42:04Z",
     "summary": "## Summary\nThis PR introduces a comprehensive autonomous CFO executive system with multi-agent orchestration capabilities. It adds three main components: an autonomous CFO executive with 10 virtual background screens, a task manager CLI supporting 8 different AI agents, and a master CFO team with fo",
     "url": "https://github.com/appsefilepro-cell/Private-Claude/pull/245",
     "source": "github_prs",
     "highlights": [
-      "comments: 184",
+      "comments: 185",
       "pull request",
       "repo: Private-Claude"
     ]
@@ -1089,7 +1089,7 @@
   },
   {
     "title": "[PR] read screenshots with llm for UI tests",
-    "date": "2026-03-03T08:14:02Z",
+    "date": "2026-03-03T15:26:48Z",
     "summary": "This PR was reworked to use Claude Haiku.\r\nFew challenges resolved: \r\n\r\n1. To get more precise results and lower costs of one screenshot we started to crop screenshot to a portion of a viewport that has necessary data - \"left_side\" or \"right_side\". Can be expanded in future to \"top\" and \"bottom\"\r\nIn",
     "url": "https://github.com/red-hat-storage/ocs-ci/pull/14451",
     "source": "github_prs",
@@ -1317,7 +1317,7 @@
   },
   {
     "title": "[PR] feat(ai-buddy): Add LLM plugin architecture and admin UI for buddy module",
-    "date": "2026-03-03T14:44:39Z",
+    "date": "2026-03-03T15:52:19Z",
     "summary": "## Summary\n\nAdds the complete AI Buddy feature across the full stack:\n\n- **Backend**: Buddy module with conversation service, LLM provider integration (plugin-based architecture), suggestion engine with proactive evaluators (anomaly detection, energy management, scene suggestions, conflict detection",
     "url": "https://github.com/FastyBird/smart-panel/pull/353",
     "source": "github_prs",
@@ -1340,9 +1340,9 @@
     ]
   },
   {
-    "title": "[PR] feat(190B): Coding Benchmark Panel \u2014 backend service + frontend UI (Wave 1 + Wave 2)",
-    "date": "2026-03-03T14:47:39Z",
-    "summary": "## Summary\n\nAdds end-to-end coding benchmark capability: a backend service that runs Ollama coding tasks via scheduler subprocess, REST API wiring, and a frontend tab panel on the Benchmark page.\n\n**Wave 1 \u2014 Backend**\n- `venom_core/api/schemas/benchmark_coding.py` \u2014 Pydantic schemas for all coding b",
+    "title": "[PR] feat(190B): Coding Benchmark Panel \u2014 Wave 2 + Wave 3 (3-tab /benchmark UI with Chart.js)",
+    "date": "2026-03-03T15:45:11Z",
+    "summary": "Adds full coding benchmark frontend on top of the Wave 1 backend. `/benchmark` gains two new tabs \u2014 **Code Models** (start/status) and **Code Results** (history + jobs table + Chart.js charts) \u2014 alongside the existing LLM Models tab. Also cleans up the `coding-benchmark-*` naming duplication left fr",
     "url": "https://github.com/mpieniak01/Venom/pull/430",
     "source": "github_prs",
     "highlights": [
@@ -1401,7 +1401,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-03-03T13:26:51Z",
+    "date": "2026-03-03T15:26:43Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1409,6 +1409,138 @@
       "comments: 1",
       "pull request",
       "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] docs: chunky overhaul",
+    "date": "2026-03-03T15:46:03Z",
+    "summary": "# Description\r\n\r\nIncludes work from #3025 and many more changes and examples\r\n\r\n## Type of change\r\n\r\n- [x] Documentation change (pure documentation change)\r\n",
+    "url": "https://github.com/hatchet-dev/hatchet/pull/3129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hatchet"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-03-03T15:39:31Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/arthrod/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] fix: persist API keys when switching LLM providers",
+    "date": "2026-03-03T15:36:49Z",
+    "summary": "## Summary\n\nFixes #674\n\nWhen users switch between AI providers (e.g., OpenAI \u2192 Anthropic) in the Settings page, the previous provider's API key is lost. Switching back requires re-entering the key.\n\n**Root cause:** The config stores a single flat `api_key` field that gets overwritten on every provid",
+    "url": "https://github.com/srbhr/Resume-Matcher/pull/691",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Resume-Matcher"
+    ]
+  },
+  {
+    "title": "[PR] docs: add comprehensive Infrastructure.md for personal AI setup",
+    "date": "2026-03-03T15:31:45Z",
+    "summary": "Covers NAS Docker infrastructure, Tailscale networking (IP fix for WLAN),\nOpenWebUI + OpenNotebook integration with Tailscale sidecars, Claude Flow\nworker pool, SONA self-learning agent architecture, security hardening,\nand development environment comparison (Claude Code vs OpenCode vs\nAntigravity v",
+    "url": "https://github.com/Pahuut420/claude-flow-main/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: claude-flow-main"
+    ]
+  },
+  {
+    "title": "[PR] Graphiti Memory Pattern Learning",
+    "date": "2026-03-03T15:29:27Z",
+    "summary": "Enhanced memory system that actively learns and stores codebase patterns, architectural decisions, and coding conventions. Enables agents to apply learned patterns to new code.",
+    "url": "https://github.com/OBenner/Auto-Coding/pull/12",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: Auto-Coding"
+    ]
+  },
+  {
+    "title": "[PR] feat(platform): Add dynamic LLM model registry with admin UI",
+    "date": "2026-03-03T15:21:35Z",
+    "summary": "## Summary\r\n\r\nReplaces the hardcoded `LlmModel` enum with a fully database-driven LLM registry system. Admins can now add, edit, disable, and delete LLM models without code changes or redeployment.\r\n\r\n### Changes \ud83c\udfd7\ufe0f\r\n\r\n**Database Schema:**\r\n- Added 5 new tables: `LlmProvider`, `LlmModel`, `LlmModelC",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/11699",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 81",
+      "pull request",
+      "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] Fix SQL validation, add PlatformSQL GraphQL support, deactivate deprecated AI model pairs",
+    "date": "2026-03-03T15:19:04Z",
+    "summary": "## Summary\n- **Fix SQL validation regex** in `databaseProviderBase.ts` that was incorrectly blocking legitimate string values containing SQL keywords (e.g., `'Active'` being flagged because it contains partial keyword matches)\n- **Add PlatformSQL support** to `GraphQLSystemUserClient` input types, e",
+    "url": "https://github.com/MemberJunction/MJ/pull/2054",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Add Neon integration",
+    "date": "2026-03-03T15:18:03Z",
+    "summary": "<!-- \ud83d\udea8 Please Do Not skip any instructions and information mentioned below as they are all required and essential to evaluate and test the PR. By fulfilling all the required information you will be able to reduce the volume of questions and most likely help merge the PR faster \ud83d\udea8 -->\n\n<!-- \u26a0\ufe0f We will",
+    "url": "https://github.com/CommunityToolkit/Aspire/pull/1136",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: Aspire"
+    ]
+  },
+  {
+    "title": "[PR] Rewrite Node C OpenClaw installer into Fedora-local turnkey bundle",
+    "date": "2026-03-03T15:17:33Z",
+    "summary": "### Motivation\n- Provide a fully local, turnkey installer for OpenClaw on Fedora 44+ (Node C) instead of an SSH-remote installer to simplify local deployments and automation.\n- Improve reproducibility by querying upstream versions (GitHub release / GHCR digest) and baking safer defaults for KVM oper",
+    "url": "https://github.com/Enigmaticjoe/onemoreytry/pull/53",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: onemoreytry"
+    ]
+  },
+  {
+    "title": "[PR] feat: replace llmspy with LiteLLM as LLM gateway",
+    "date": "2026-03-03T15:12:36Z",
+    "summary": "## Summary\n\nReplace the llmspy fork (4600-line Python monolith) with [LiteLLM](https://github.com/BerriAI/litellm) as the cluster LLM gateway. Fixes fake streaming, fragile tool calling (4 Obol-specific patches), and the broken default Ollama pathway that blocked Anthropic adoption.\n\n- **14 files ch",
+    "url": "https://github.com/ObolNetwork/obol-stack/pull/243",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: obol-stack"
+    ]
+  },
+  {
+    "title": "[PR] Update k8s-manifests",
+    "date": "2026-03-03T15:04:18Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [fluxcd/flux2](https://redirect.github.com/fluxcd/flux2) | minor | `v2.7.5` -> `v2.8.1` |\n| [ghcr.io/fluxcd/helm-controller](https://redirect.github.com/fluxcd/helm-controller) | minor | `v1.4.5` -> `v1.5.1` |\n| [",
+    "url": "https://github.com/JacobMillward/homelab/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
     ]
   }
 ]
