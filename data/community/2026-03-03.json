@@ -789,7 +789,7 @@
   },
   {
     "title": "[PR] feat: LangGraph integration with observability and startup scripts",
-    "date": "2026-03-03T04:47:15Z",
+    "date": "2026-03-03T05:19:06Z",
     "summary": "- Implement LangGraph supervisor agent with stateful workflow\r\n- Add Redis and Postgres checkpointers for state persistence\r\n- Create Langfuse integration for tracing and scoring\r\n- Add dual-mode scoring system (LLM + rule-based fallback)\r\n- Create one-command startup scripts and Makefile\r\n- Add ADR",
     "url": "https://github.com/Aparnap2/smart_commerce_agent/pull/3",
     "source": "github_prs",
@@ -812,9 +812,9 @@
     ]
   },
   {
-    "title": "[PR] [WIP] Direct requests to Ollama without dependencies",
-    "date": "2026-03-03T04:45:27Z",
-    "summary": "Thanks for asking me to work on this. I will get started on it and keep this PR's description up to date as I form a plan and make progress.\n\n\n<!-- START COPILOT ORIGINAL PROMPT -->\n\n\n\n<details>\n\n<summary>Original prompt</summary>\n\n> I want you to verify if my systems are also being used. When I ent",
+    "title": "[PR] Route @copilot, @lucidia, @blackboxprogramming, @ollama mentions to local Ollama",
+    "date": "2026-03-03T05:29:12Z",
+    "summary": "All AI-mention aliases should resolve exclusively to the local Ollama instance \u2014 no dependency on OpenAI, Claude, GitHub Copilot, or any external provider.\n\n## Changes\n\n### `src/ollama_router.py` (new)\n- `OLLAMA_ALIASES` \u2014 frozen set of recognised handles: `copilot`, `lucidia`, `blackboxprogramming`",
     "url": "https://github.com/BlackRoad-Cloud/blackroad-container-registry/pull/1",
     "source": "github_prs",
     "highlights": [
@@ -824,9 +824,9 @@
     ]
   },
   {
-    "title": "[PR] [WIP] Redirect queries to Ollama for local processing",
-    "date": "2026-03-03T04:45:13Z",
-    "summary": "Thanks for asking me to work on this. I will get started on it and keep this PR's description up to date as I form a plan and make progress.\n\n\n<!-- START COPILOT ORIGINAL PROMPT -->\n\n\n\n<details>\n\n<summary>Original prompt</summary>\n\n> I want you to verify if my systems are also being used. When I ent",
+    "title": "[PR] Route @mention aliases (@copilot, @lucidia, @blackboxprogramming, @ollama) directly to local Ollama",
+    "date": "2026-03-03T04:57:35Z",
+    "summary": "All four `@mention` aliases must resolve exclusively to the local Ollama instance \u2014 no external AI provider (ChatGPT, Claude, GitHub Copilot, etc.) is contacted under any path.\n\n## Core additions (`src/service_mesh.py`)\n\n- **`OLLAMA_ALIASES`** \u2014 `frozenset` of all recognized mentions; single place t",
     "url": "https://github.com/BlackRoad-Cloud/blackroad-service-mesh/pull/1",
     "source": "github_prs",
     "highlights": [
@@ -917,6 +917,114 @@
       "comments: 2",
       "pull request",
       "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] Fix health-check CI, add Ollama local LLM proxy, revive README with dynamic stats",
+    "date": "2026-03-03T05:29:18Z",
+    "summary": "The repo had a stale \"DEPRECATED\" README, a health-check workflow hard-failing every hour against unreachable production endpoints, and no local LLM execution path.\n\n## Workflow fix\n- **`health-check.yml`**: replaced `exit 1` with `::warning::` \u2014 unreachable services no longer break CI; alert still ",
+    "url": "https://github.com/blackboxprogramming/BlackRoad-Operating-System/pull/187",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: BlackRoad-Operating-System"
+    ]
+  },
+  {
+    "title": "[PR] Route @copilot, @lucidia, @blackboxprogramming, @ollama mentions directly to local Ollama",
+    "date": "2026-03-03T05:27:49Z",
+    "summary": "Any message containing `@copilot`, `@lucidia`, `@blackboxprogramming`, or `@ollama` now bypasses all external providers (OpenAI, Anthropic, etc.) and is routed directly to the local Ollama instance \u2014 no API keys required, no fallback to cloud.\n\n## Python operator (`br_operator/`)\n\n- **`llm_client.py",
+    "url": "https://github.com/BlackRoad-OS/blackroad-os-operator/pull/110",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: blackroad-os-operator"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update cli-tools",
+    "date": "2026-03-03T05:25:45Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [cli/cli](https://redirect.github.com/cli/cli) | patch | `2.87.0` \u2192 `2.87.3` |\n| [fluxcd/flux2](https://redirect.github.com/fluxcd/flux2) | mi",
+    "url": "https://github.com/rajsinghtech/openclaw-workspace/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-workspace"
+    ]
+  },
+  {
+    "title": "[PR] feat: Route @copilot, @lucidia, @blackboxprogramming, @ollama directly to local Ollama",
+    "date": "2026-03-03T05:19:28Z",
+    "summary": "All AI-assistant @mentions should be resolved locally via Ollama \u2014 no external provider (ChatGPT, Copilot, Claude) dependency.\n\n## Changes\n\n### `src/ollama_router.py`\nNew stdlib-only routing module (no added dependencies):\n\n| Symbol | Role |\n|---|---|\n| `ROUTED_MENTIONS` | Frozen set of trigger ment",
+    "url": "https://github.com/BlackRoad-Cloud/blackroad-kubernetes-orchestrator/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: blackroad-kubernetes-orchestrator"
+    ]
+  },
+  {
+    "title": "[PR] Route @copilot / @lucidia / @blackboxprogramming directly to local Ollama",
+    "date": "2026-03-03T05:17:33Z",
+    "summary": "All `@copilot`, `@lucidia`, and `@blackboxprogramming` mentions must resolve to the local Ollama instance \u2014 no external provider (ChatGPT, Claude, etc.) ever contacted.\n\n## Changes\n\n### `src/ai_models_enhanced.py`\n- **`OLLAMA_BASE_URL`** \u2014 constant defaulting to `http://localhost:11434`\n- **`OllamaR",
+    "url": "https://github.com/BlackRoad-AI/lucidia-ai-models-enhanced/pull/795",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: lucidia-ai-models-enhanced"
+    ]
+  },
+  {
+    "title": "[PR] Assessing JeecgBoot Application",
+    "date": "2026-03-03T05:13:02Z",
+    "summary": "Runs AppCAT static analysis on the JeecgBoot codebase for Azure migration readiness, and captures a high-level architecture diagram of the system.\n\n## Assessment\n- Executed AppCAT CLI targeting Azure AKS, App Service, and Container Apps\n- Consolidated report saved to `.github/modernize/appcat/report",
+    "url": "https://github.com/bzssm/JeecgBoot/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: JeecgBoot"
+    ]
+  },
+  {
+    "title": "[PR] Add Ollama-backed GitHub Copilot Extension Agent \u2014 zero cloud provider dependency",
+    "date": "2026-03-03T05:12:20Z",
+    "summary": "All `@copilot`, `@lucidia`, and `@blackboxprogramming` chat requests should route exclusively to a self-hosted Ollama instance rather than any cloud AI provider.\n\n## What's added\n\n- **`src/index.js`** \u2014 Express server implementing the [GitHub Copilot Extension Agent API](https://docs.github.com/en/c",
+    "url": "https://github.com/blackboxprogramming/blackboxprogramming/pull/216",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: blackboxprogramming"
+    ]
+  },
+  {
+    "title": "[PR] Add BlackRoad OS architectural framework documentation",
+    "date": "2026-03-03T04:58:02Z",
+    "summary": "Documents the full BlackRoad OS technical framework: multi-agent orchestration scaffold, infrastructure offloading strategy, domain registry, and platform routing matrix.\n\n### `BLACKROAD_ARCHITECTURE.md`\n- **Domain Registry** \u2014 14 domains mapped to orgs, backed by `routes/domains.yaml`\n- **@blackroa",
+    "url": "https://github.com/BlackRoad-OS/.github/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: .github"
+    ]
+  },
+  {
+    "title": "[PR] feat: add LiteLLM proxy service with PostgreSQL support",
+    "date": "2026-03-03T04:50:37Z",
+    "summary": "## Summary\n\nAdds LiteLLM proxy service with PostgreSQL backend for credential storage:\n- Darwin (macOS) module using launchd\n- NixOS module using systemd\n- PostgreSQL service modules for both platforms\n- `llm-server` role integration in bundles.nix\n\n## Dependencies\n\n**This PR depends on #138 (feat/o",
+    "url": "https://github.com/funkymonkeymonk/nix/pull/139",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nix"
     ]
   }
 ]
