@@ -1,0 +1,800 @@
+[
+  {
+    "arxiv_id": "2603.00842v1",
+    "title": "MedGPT-oss: Training a General-Purpose Vision-Language Model for Biomedicine",
+    "summary": "Biomedical multimodal assistants have the potential to unify radiology, pathology, and clinical-text reasoning, yet a critical deployment gap remains: top-performing systems are either closed-source or computationally prohibitive, precluding the on-premises deployment required for patient privacy and PHI compliance. We introduce MEDGPT-OSS, an open-weight, 20B-parameter generalist vision-language model designed to facilitate open research in clinical AI. Rather than relying on architectural complexity, MEDGPT-OSS pairs the GPT-oss language backbone with a visual front-end via a optimized, three-stage training curriculum. By progressively domain-adapting these modules through rigorous data curation and long-context multimodal alignment, we demonstrate that a 20B model can bridge the capacity gap. It successfully outperforms larger open medical models on out-of-distribution (OOD) multimodal reasoning and complex text-only clinical tasks. By unifying diverse modalities under a single instruction-following interface, MEDGPT-OSS maintains a parameter-efficient footprint fully compatible with commodity GPUs. We release the complete training recipe, open-weight checkpoints, and a rigorous evaluation harness to serve as a verifiable foundation for privacy-preserving, institution-specific clinical AI research.",
+    "authors": [
+      "Kai Zhang",
+      "Zhengqing Yuan",
+      "Cheng Peng",
+      "Songlin Zhao",
+      "Mengxian Lyu",
+      "Ziyi Chen",
+      "Yanfang Ye",
+      "Wei Liu",
+      "Ying Zhang",
+      "Kaleb E Smith",
+      "Lifang He",
+      "Lichao Sun",
+      "Yonghui Wu"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00842v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00842v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.88
+  },
+  {
+    "arxiv_id": "2603.00870v1",
+    "title": "PPC-MT: Parallel Point Cloud Completion with Mamba-Transformer Hybrid Architecture",
+    "summary": "Existing point cloud completion methods struggle to balance high-quality reconstruction with computational efficiency. To address this, we propose PPC-MT, a novel parallel framework for point cloud completion leveraging a hybrid Mamba-Transformer architecture. Our approach introduces an innovative parallel completion strategy guided by Principal Component Analysis (PCA), which imposes a geometrically meaningful structure on unordered point clouds, transforming them into ordered sets and decomposing them into multiple subsets. These subsets are reconstructed in parallel using a multi-head reconstructor. This structured parallel synthesis paradigm significantly enhances the uniformity of point distribution and detail fidelity, while preserving computational efficiency. By integrating Mamba's linear complexity for efficient feature extraction during encoding with the Transformer's capability to model fine-grained multi-sequence relationships during decoding, PPC-MT effectively balances efficiency and reconstruction accuracy. Extensive quantitative and qualitative experiments on benchmark datasets, including PCN, ShapeNet-55/34, and KITTI, demonstrate that PPC-MT outperforms state-of-the-art methods across multiple metrics, validating the efficacy of our proposed framework.",
+    "authors": [
+      "Jie Li",
+      "Shengwei Tian",
+      "Long Yu",
+      "Xin Ning"
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00870v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00870v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.77
+  },
+  {
+    "arxiv_id": "2603.00907v1",
+    "title": "KVSlimmer: Theoretical Insights and Practical Optimizations for Asymmetric KV Merging",
+    "summary": "The growing computational and memory demands of the Key-Value (KV) cache significantly limit the ability of Large Language Models (LLMs). While KV merging has emerged as a promising solution, existing methods that rely on empirical observations of KV asymmetry and gradient-based Hessian approximations lack a theoretical foundation and incur suboptimal compression and inference overhead. To bridge these gaps, we establish a theoretical framework that characterizes this asymmetry through the spectral energy distribution of projection weights, demonstrating that concentrated spectra in Query/Key weights induce feature homogeneity, whereas dispersed spectra in Value weights preserve heterogeneity. Then, we introduce KVSlimmer, an efficient algorithm that captures exact Hessian information through a mathematically exact formulation, and derives a closed-form solution utilizing only forward-pass variables, resulting in a gradient-free approach that is both memory- and time-efficient. Extensive experiments across various models and benchmarks demonstrate that KVSlimmer consistently outperforms SOTA methods. For instance, on Llama3.1-8B-Instruct, it improves the LongBench average score by 0.92 while reducing memory costs and latency by 29% and 28%, respectively.",
+    "authors": [
+      "Lianjun Liu",
+      "Hongli An",
+      "Weiqi Yan",
+      "Xin Du",
+      "Shengchuan Zhang",
+      "Huazhong Liu",
+      "Yunshan Zhong"
+    ],
+    "categories": [
+      "cs.CL"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00907v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00907v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.76
+  },
+  {
+    "arxiv_id": "2603.00854v1",
+    "title": "GeMi: A Graph-based, Multimodal Recommendation System for Narrative Scroll Paintings",
+    "summary": "Recommendation Systems are effective in managing the ever-increasing amount of multimodal data available today and help users discover interesting new items. These systems can handle various media types such as images, text, audio, and video data, and this has made it possible to handle content-based recommendation utilizing features extracted from items while also incorporating user preferences. Graph Neural Network (GNN)-based recommendation systems are a special class of recommendation systems that can handle relationships between items and users, making them particularly attractive for content-based recommendations. Their popularity also stems from the fact that they use advanced machine learning techniques, such as deep learning on graph-structured data, to exploit user-to-item interactions. The nodes in the graph can access higher-order neighbor information along with state-of-the-art vision-language models for processing multimodal content, and there are well-designed algorithms for embedding, message passing, and propagation. In this work, we present the design of a GNN-based recommendation system on a novel data set collected from field research. Designed for an endangered performing art form, the recommendation system uses multimodal content (text and image data) to suggest similar paintings for viewing and purchase. To the best of our knowledge, there is no recommendation system designed for narrative scroll paintings -- our work therefore serves several purposes, including art conservation, a data storage system for endangered art objects, and a state-of-the-art recommendation system that leverages both the novel characteristics of the data and preferences of the user population interested in narrative scroll paintings.",
+    "authors": [
+      "Haimonti Dutta",
+      "Pruthvi Moluguri",
+      "Jin Dai",
+      "Saurabh Amarnath Mahindre"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.IR"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00854v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00854v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.71
+  },
+  {
+    "arxiv_id": "2603.00906v1",
+    "title": "ShiftLUT: Spatial Shift Enhanced Look-Up Tables for Efficient Image Restoration",
+    "summary": "Look-Up Table based methods have emerged as a promising direction for efficient image restoration tasks. Recent LUT-based methods focus on improving their performance by expanding the receptive field. However, they inevitably introduce extra computational and storage overhead, which hinders their deployment in edge devices. To address this issue, we propose ShiftLUT, a novel framework that attains the largest receptive field among all LUT-based methods while maintaining high efficiency. Our key insight lies in three complementary components. First, Learnable Spatial Shift module (LSS) is introduced to expand the receptive field by applying learnable, channel-wise spatial offsets on feature maps. Second, we propose an asymmetric dual-branch architecture that allocates more computation to the information-dense branch, substantially reducing inference latency without compromising restoration quality. Finally, we incorporate a feature-level LUT compression strategy called Error-bounded Adaptive Sampling (EAS) to minimize the storage overhead. Compared to the previous state-of-the-art method TinyLUT, ShiftLUT achieves a 3.8$\\times$ larger receptive field and improves an average PSNR by over 0.21 dB across multiple standard benchmarks, while maintaining a small storage size and inference time.",
+    "authors": [
+      "Xiaolong Zeng",
+      "Yitong Yu",
+      "Shiyao Xiong",
+      "Jinhua Hao",
+      "Ming Sun",
+      "Chao Zhou",
+      "Bin Wang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00906v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00906v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.7
+  },
+  {
+    "arxiv_id": "2603.00873v1",
+    "title": "MC-Search: Evaluating and Enhancing Multimodal Agentic Search with Structured Long Reasoning Chains",
+    "summary": "With the increasing demand for step-wise, cross-modal, and knowledge-grounded reasoning, multimodal large language models (MLLMs) are evolving beyond the traditional fixed retrieve-then-generate paradigm toward more sophisticated agentic multimodal retrieval-augmented generation (MM-RAG). Existing benchmarks, however, mainly focus on simplified QA with short retrieval chains, leaving adaptive planning and multimodal reasoning underexplored. We present MC-Search, the first benchmark for agentic MM-RAG with long, step-wise annotated reasoning chains spanning five representative reasoning structures. Each example specifies sub-questions, retrieval modalities, supporting facts, and intermediate answers, with fidelity ensured by HAVE (Hop-wise Attribution and Verification of Evidence), resulting in 3,333 high-quality examples averaging 3.7 hops. Beyond answer accuracy, MC-Search introduces new process-level metrics for reasoning quality, stepwise retrieval and planning accuracy. By developing a unified agentic MM-RAG pipeline, we benchmark six leading MLLMs and reveal systematic issues such as over- and under-retrieval and modality-misaligned planning. Finally, we introduce Search-Align, a process-supervised fine-tuning framework leveraging verified reasoning chains, showing that our data not only enables faithful evaluation but also improves planning and retrieval fidelity in open-source MLLMs.",
+    "authors": [
+      "Xuying Ning",
+      "Dongqi Fu",
+      "Tianxin Wei",
+      "Mengting Ai",
+      "Jiaru Zou",
+      "Ting-Wei Li",
+      "Hanghang Tong",
+      "Yada Zhu",
+      "Hendrik Hamann",
+      "Jingrui He"
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00873v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00873v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.7
+  },
+  {
+    "arxiv_id": "2603.00846v1",
+    "title": "Tiny-Critic RAG: Empowering Agentic Fallback with Parameter-Efficient Small Language Models",
+    "summary": "Retrieval-Augmented Generation (RAG) grounds Large Language Models (LLMs) to mitigate factual hallucinations. Recent paradigms shift from static pipelines to Modular and Agentic RAG frameworks, granting models autonomy for multi-hop reasoning or self-correction. However, current reflective RAG heavily relies on massive LLMs as universal evaluators. In high-throughput systems, executing complete forward passes for billion-parameter models merely for binary routing introduces severe computational redundancy. Furthermore, in autonomous agent scenarios, inaccurate retrieval causes models to expend excessive tokens on spurious reasoning and redundant tool calls, inflating Time-to-First-Token (TTFT) and costs. We propose Tiny-Critic RAG, decoupling evaluation by deploying a parameter-efficient Small Language Model (SLM) via Low-Rank Adaptation (LoRA). Acting as a deterministic gatekeeper, Tiny-Critic employs constrained decoding and non-thinking inference modes for ultra-low latency binary routing. Evaluations on noise-injected datasets demonstrate Tiny-Critic RAG achieves routing accuracy comparable to GPT-4o-mini while reducing latency by an order of magnitude, establishing a highly cost-effective paradigm for agent deployment.",
+    "authors": [
+      "Yichao Wu",
+      "Penghao Liang",
+      "Yafei Xiang",
+      "Mengwei Yuan",
+      "Jianan Liu",
+      "Jing Yang",
+      "Xianyou Li",
+      "Weiran Yan"
+    ],
+    "categories": [
+      "cs.IR",
+      "cs.LG"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00846v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00846v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.69
+  },
+  {
+    "arxiv_id": "2603.00889v1",
+    "title": "CHIMERA: Compact Synthetic Data for Generalizable LLM Reasoning",
+    "summary": "Large Language Models (LLMs) have recently exhibited remarkable reasoning capabilities, largely enabled by supervised fine-tuning (SFT)- and reinforcement learning (RL)-based post-training on high-quality reasoning data. However, reproducing and extending these capabilities in open and scalable settings is hindered by three fundamental data-centric challenges: (1) the cold-start problem, arising from the lack of seed datasets with detailed, long Chain-of-Thought (CoT) trajectories needed to initialize reasoning policies; (2) limited domain coverage, as most existing open-source reasoning datasets are concentrated in mathematics, with limited coverage of broader scientific disciplines; and (3) the annotation bottleneck, where the difficulty of frontier-level reasoning tasks makes reliable human annotation prohibitively expensive or infeasible. To address these challenges, we introduce CHIMERA, a compact synthetic reasoning dataset comprising 9K samples for generalizable cross-domain reasoning. CHIMERA is constructed with three key properties: (1) it provides rich, long CoT reasoning trajectories synthesized by state-of-the-art reasoning models; (2) it has broad and structured coverage, spanning 8 major scientific disciplines and over 1K fine-grained topics organized via a model-generated hierarchical taxonomy; and (3) it employs a fully automated, scalable evaluation pipeline that uses strong reasoning models to cross-validate both problem validity and answer correctness. We use CHIMERA to post-train a 4B Qwen3 model. Despite the dataset's modest size, the resulting model achieves strong performance on a suite of challenging reasoning benchmarks, including GPQA-Diamond, AIME 24/25/26, HMMT 25, and Humanity's Last Exam, approaching or matching the reasoning performance of substantially larger models such as DeepSeek-R1 and Qwen3-235B.",
+    "authors": [
+      "Xinyu Zhu",
+      "Yihao Feng",
+      "Yanchao Sun",
+      "Xianzhi Du",
+      "Pingzhi Li",
+      "Olli Saarikivi",
+      "Yun Zhu",
+      "Yu Meng"
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00889v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00889v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.68
+  },
+  {
+    "arxiv_id": "2603.00857v1",
+    "title": "MultiPUFFIN: A Multimodal Domain-Constrained Foundation Model for Molecular Property Prediction of Small Molecules",
+    "summary": "Predicting physicochemical properties across chemical space is vital for chemical engineering, drug discovery, and materials science. Current molecular foundation models lack thermodynamic consistency, while domain-informed approaches are limited to single properties and small datasets. We introduce MultiPUFFIN, a domain-constrained multimodal foundation model addressing both limitations simultaneously. MultiPUFFIN features: (i) an encoder fusing SMILES, graphs, and 3D geometries via gated cross-modal attention, alongside experimental condition and descriptor encoders; (ii) prediction heads embedding established correlations (e.g., Wagner, Andrade, van't Hoff, and Shomate equations) as inductive biases to ensure thermodynamic consistency; and (iii) a two-stage multi-task training strategy.Extending prior frameworks, MultiPUFFIN predicts nine thermophysical properties simultaneously. It is trained on a multi-source dataset of 37,968 unique molecules (40,904 rows). With roughly 35 million parameters, MultiPUFFIN achieves a mean $R^2 = 0.716$ on a challenging scaffold-split test set of 8,877 molecules. Compared to ChemBERTa-2 (pre-trained on 77 million molecules), MultiPUFFIN outperforms the fine-tuned baseline across all nine properties despite using 2000x fewer training molecules. Advantages are strikingly apparent for temperature-dependent properties, where ChemBERTa-2 lacks the architectural capacity to incorporate thermodynamic conditions.These results demonstrate that multimodal encoding and domain-informed biases substantially reduce data and compute requirements compared to brute-force pre-training. Furthermore, MultiPUFFIN handles missing modalities and recovers meaningful thermodynamic parameters without explicit supervision. Systematic ablation studies confirm the property-specific benefits of these domain-informed prediction heads.",
+    "authors": [
+      "Idelfonso B. R. Nogueira",
+      "Carine M. Rebelloa",
+      "Mumin Enis Leblebici",
+      "Erick Giovani Sperandio Nascimento"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00857v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00857v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.67
+  },
+  {
+    "arxiv_id": "2603.00903v1",
+    "title": "Principled Fast and Meta Knowledge Learners for Continual Reinforcement Learning",
+    "summary": "Inspired by the human learning and memory system, particularly the interplay between the hippocampus and cerebral cortex, this study proposes a dual-learner framework comprising a fast learner and a meta learner to address continual Reinforcement Learning~(RL) problems. These two learners are coupled to perform distinct yet complementary roles: the fast learner focuses on knowledge transfer, while the meta learner ensures knowledge integration. In contrast to traditional multi-task RL approaches that share knowledge through average return maximization, our meta learner incrementally integrates new experiences by explicitly minimizing catastrophic forgetting, thereby supporting efficient cumulative knowledge transfer for the fast learner. To facilitate rapid adaptation in new environments, we introduce an adaptive meta warm-up mechanism that selectively harnesses past knowledge. We conduct experiments in various pixel-based and continuous control benchmarks, revealing the superior performance of continual learning for our proposed dual-learner approach relative to baseline methods. The code is released in https://github.com/datake/FAME.",
+    "authors": [
+      "Ke Sun",
+      "Hongming Zhang",
+      "Jun Jin",
+      "Chao Gao",
+      "Xi Chen",
+      "Wulong Liu",
+      "Linglong Kong"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00903v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00903v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.65
+  },
+  {
+    "arxiv_id": "2603.00905v1",
+    "title": "pySpatial: Generating 3D Visual Programs for Zero-Shot Spatial Reasoning",
+    "summary": "Multi-modal Large Language Models (MLLMs) have demonstrated strong capabilities in general-purpose perception and reasoning, but they still struggle with tasks that require spatial understanding of the 3D world. To address this, we introduce pySpatial, a visual programming framework that equips MLLMs with the ability to interface with spatial tools via Python code generation. Given an image sequence and a natural-language query, the model composes function calls to spatial tools including 3D reconstruction, camera-pose recovery, novel-view rendering, etc. These operations convert raw 2D inputs into an explorable 3D scene, enabling MLLMs to reason explicitly over structured spatial representations. Notably, pySpatial requires no gradient-based fine-tuning and operates in a fully zero-shot setting. Experimental evaluations on the challenging MindCube and Omni3D-Bench benchmarks demonstrate that our framework pySpatial consistently surpasses strong MLLM baselines; for instance, it outperforms GPT-4.1-mini by 12.94% on MindCube. Furthermore, we conduct real-world indoor navigation experiments where the robot can successfully traverse complex environments using route plans generated by pySpatial, highlighting the practical effectiveness of our approach.",
+    "authors": [
+      "Zhanpeng Luo",
+      "Ce Zhang",
+      "Silong Yong",
+      "Cunxi Dai",
+      "Qianwei Wang",
+      "Haoxi Ran",
+      "Guanya Shi",
+      "Katia Sycara",
+      "Yaqi Xie"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00905v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00905v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.62
+  },
+  {
+    "arxiv_id": "2603.00859v1",
+    "title": "AMDS: Attack-Aware Multi-Stage Defense System for Network Intrusion Detection with Two-Stage Adaptive Weight Learning",
+    "summary": "Machine learning based network intrusion detection systems are vulnerable to adversarial attacks that degrade classification performance under both gradient-based and distribution shift threat models. Existing defenses typically apply uniform detection strategies, which may not account for heterogeneous attack characteristics. This paper proposes an attack-aware multi-stage defense framework that learns attack-specific detection strategies through a weighted combination of ensemble disagreement, predictive uncertainty, and distributional anomaly signals. Empirical analysis across seven adversarial attack types reveals distinct detection signatures, enabling a two-stage adaptive detection mechanism. Experimental evaluation on a benchmark intrusion detection dataset indicates that the proposed system attains 94.2% area under the receiver operating characteristic curve and improves classification accuracy by 4.5 percentage points and F1-score by 9.0 points over adversarially trained ensembles. Under adaptive white-box attacks with full architectural knowledge, the system appears to maintain 94.4% accuracy with a 4.2% attack success rate, though this evaluation is limited to two adaptive variants and does not constitute a formal robustness guarantee. Cross-dataset validation further suggests that defense effectiveness depends on baseline classifier competence and may vary with feature dimensionality. These results suggest that attack-specific optimization combined with multi-signal integration can provide a practical approach to improving adversarial robustness in machine learning-based intrusion detection systems.",
+    "authors": [
+      "Oluseyi Olukola",
+      "Nick Rahimi"
+    ],
+    "categories": [
+      "cs.CR",
+      "cs.AI"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00859v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00859v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.62
+  },
+  {
+    "arxiv_id": "2603.00853v1",
+    "title": "Neural Discrimination-Prompted Transformers for Efficient UHD Image Restoration and Enhancement",
+    "summary": "We propose a simple yet effective UHDPromer, a neural discrimination-prompted Transformer, for Ultra-High-Definition (UHD) image restoration and enhancement. Our UHDPromer is inspired by an interesting observation that there implicitly exist neural differences between high-resolution and low-resolution features, and exploring such differences can facilitate low-resolution feature representation. To this end, we first introduce Neural Discrimination Priors (NDP) to measure the differences and then integrate NDP into the proposed Neural Discrimination-Prompted Attention (NDPA) and Neural Discrimination-Prompted Network (NDPN). The proposed NDPA re-formulates the attention by incorporating NDP to globally perceive useful discrimination information, while the NDPN explores a continuous gating mechanism guided by NDP to selectively permit the passage of beneficial content. To enhance the quality of restored images, we propose a super-resolution-guided reconstruction approach, which is guided by super-resolving low-resolution features to facilitate final UHD image restoration. Experiments show that UHDPromer achieves the best computational efficiency while still maintaining state-of-the-art performance on $3$ UHD image restoration and enhancement tasks, including low-light image enhancement, image dehazing, and image deblurring. The source codes and pre-trained models will be made available at https://github.com/supersupercong/uhdpromer.",
+    "authors": [
+      "Cong Wang",
+      "Jinshan Pan",
+      "Liyan Wang",
+      "Wei Wang",
+      "Yang Yang"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00853v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00853v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.62
+  },
+  {
+    "arxiv_id": "2603.00910v1",
+    "title": "Curvature-Weighted Capacity Allocation: A Minimum Description Length Framework for Layer-Adaptive Large Language Model Optimization",
+    "summary": "Layer-wise capacity in large language models is highly non-uniform: some layers contribute disproportionately to loss reduction while others are near-redundant. Existing methods for exploiting this non-uniformity, such as influence-function-based layer scoring, produce sensitivity estimates but offer no principled mechanism for translating them into allocation or pruning decisions under hardware constraints. We address this gap with a unified, curvature-aware framework grounded in the Minimum Description Length (MDL) principle. Our central quantity is the curvature-adjusted layer gain $\u03b6_k^2 = g_k^\\top \\widetilde{H}_{kk}^{-1} g_k$, which we show equals twice the maximal second-order reduction in empirical risk achievable by updating layer $k$ alone, and which strictly dominates gradient-norm-based scores by incorporating local curvature. Normalizing these gains into layer quality scores $q_k$, we formulate two convex MDL programs: a capacity allocation program that distributes expert slots or LoRA rank preferentially to high-curvature layers under diminishing returns, and a pruning program that concentrates sparsity on low-gain layers while protecting high-gain layers from degradation. Both programs admit unique closed-form solutions parameterized by a single dual variable, computable in $O(K \\log 1/\\varepsilon)$ via bisection. We prove an $O(\u03b4^2)$ transfer regret bound showing that source-domain allocations remain near-optimal on target tasks when curvature scores drift by $\u03b4$, with explicit constants tied to the condition number of the target program. Together, these results elevate layer-wise capacity optimization from an empirical heuristic to a theoretically grounded, computationally efficient framework with provable optimality and generalization guarantees.",
+    "authors": [
+      "Theophilus Amaefuna",
+      "Hitesh Vaidya",
+      "Anshuman Chhabra",
+      "Ankur Mali"
+    ],
+    "categories": [
+      "cs.IT",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00910v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00910v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
+    "arxiv_id": "2603.00888v1",
+    "title": "Probabilistic Learning and Generation in Deep Sequence Models",
+    "summary": "Despite exceptional predictive performance of Deep sequence models (DSMs), the main concern of their deployment centers around the lack of uncertainty awareness. In contrast, probabilistic models quantify the uncertainty associated with unobserved variables with rules of probability. Notably, Bayesian methods leverage Bayes' rule to express our belief of unobserved variables in a principled way. Since exact Bayesian inference is computationally infeasible at scale, approximate inference is required in practice. Two major bottlenecks of Bayesian methods, especially when applied in deep neural networks, are prior specification and approximation quality. In Chapter 3 & 4, we investigate how the architectures of DSMs themselves can be informative for the design of priors or approximations in probabilistic models. We first develop an approximate Bayesian inference method tailored to the Transformer based on the similarity between attention and sparse Gaussian process. Next, we exploit the long-range memory preservation capability of HiPPOs (High-order Polynomial Projection Operators) to construct an interdomain inducing point for Gaussian process, which successfully memorizes the history in online learning. In addition to the progress of DSMs in predictive tasks, sequential generative models consisting of a sequence of latent variables are popularized in the domain of deep generative models. Inspired by the explicit self-supervised signals for these latent variables in diffusion models, in Chapter 5, we explore the possibility of improving other generative models with self-supervision for their sequential latent states, and investigate desired probabilistic structures over them. Overall, this thesis leverages inductive biases in DSMs to design probabilistic inference or structure, which bridges the gap between DSMs and probabilistic models, leading to mutually reinforced improvement.",
+    "authors": [
+      "Wenlong Chen"
+    ],
+    "categories": [
+      "cs.LG",
+      "stat.ML"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00888v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00888v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
+    "arxiv_id": "2603.00881v1",
+    "title": "Uncertainty-Aware Concept and Motion Segmentation for Semi-Supervised Angiography Videos",
+    "summary": "Segmentation of the main coronary artery from X-ray coronary angiography (XCA) sequences is crucial for the diagnosis of coronary artery diseases. However, this task is challenging due to issues such as blurred boundaries, inconsistent radiation contrast, complex motion patterns, and a lack of annotated images for training. Although Semi-Supervised Learning (SSL) can alleviate the annotation burden, conventional methods struggle with complicated temporal dynamics and unreliable uncertainty quantification. To address these challenges, we propose SAM3-based Teacher-student framework with Motion-Aware consistency and Progressive Confidence Regularization (SMART), a semi-supervised vessel segmentation approach for X-ray angiography videos. First, our method utilizes SAM3's unique promptable concept segmentation design and innovates a SAM3-based teacher-student framework to maximize the performance potential of both the teacher and the student. Second, we enhance segmentation by integrating the vessel mask warping technique and motion consistency loss to model complex vessel dynamics. To address the issue of unreliable teacher predictions caused by blurred boundaries and minimal contrast, we further propose a progressive confidence-aware consistency regularization to mitigate the risk of unreliable outputs. Extensive experiments on three datasets of XCA sequences from different institutions demonstrate that SMART achieves state-of-the-art performance while requiring significantly fewer annotations, making it particularly valuable for real-world clinical applications where labeled data is scarce. Our code is available at: https://github.com/qimingfan10/SMART.",
+    "authors": [
+      "Yu Luo",
+      "Guangyu Wei",
+      "Yangfan Li",
+      "Jieyu He",
+      "Yueming Lyu"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00881v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00881v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
+    "arxiv_id": "2603.00876v1",
+    "title": "BioProAgent: Neuro-Symbolic Grounding for Constrained Scientific Planning",
+    "summary": "Large language models (LLMs) have demonstrated significant reasoning capabilities in scientific discovery but struggle to bridge the gap to physical execution in wet-labs. In these irreversible environments, probabilistic hallucinations are not merely incorrect, but also cause equipment damage or experimental failure. To address this, we propose \\textbf{BioProAgent}, a neuro-symbolic framework that anchors probabilistic planning in a deterministic Finite State Machine (FSM). We introduce a State-Augmented Planning mechanism that enforces a rigorous \\textit{Design-Verify-Rectify} workflow, ensuring hardware compliance before execution. Furthermore, we address the context bottleneck inherent in complex device schemas by \\textit{Semantic Symbol Grounding}, reducing token consumption by $\\sim$6$\\times$ through symbolic abstraction. In the extended BioProBench benchmark, BioProAgent achieves 95.6\\% physical compliance (compared to 21.0\\% for ReAct), demonstrating that neuro-symbolic constraints are essential for reliable autonomy in irreversible physical environments. \\footnote{Code at https://github.com/YuyangSunshine/bioproagent and project at https://yuyangsunshine.github.io/BioPro-Project/}",
+    "authors": [
+      "Yuyang Liu",
+      "Jingya Wang",
+      "Liuzhenghao Lv",
+      "Yonghong Tian"
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.MA"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00876v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00876v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.61
+  },
+  {
+    "arxiv_id": "2603.00855v1",
+    "title": "Navigating Time's Possibilities: Plausible Counterfactual Explanations for Multivariate Time-Series Forecast through Genetic Algorithms",
+    "summary": "Counterfactual learning has become promising for understanding and modeling causality in complex and dynamic systems. This paper presents a novel method for counterfactual learning in the context of multivariate time series analysis and forecast. The primary objective is to uncover hidden causal relationships and identify potential interventions to achieve desired outcomes. The proposed methodology integrates genetic algorithms and rigorous causality tests to infer and validate counterfactual dependencies within temporal sequences. More specifically, we employ Granger causality to enhance the reliability of identified causal relationships, rigorously assessing their statistical significance. Then, genetic algorithms, in conjunction with quantile regression, are used to exploit these intricate causal relationships to project future scenarios. The synergy between genetic algorithms and causality tests ensures a thorough exploration of the temporal dynamics present in the data, revealing hidden dependencies and enabling the projection of outcomes under hypothetical interventions. We evaluate the performance of our algorithm on real-world data, showcasing its ability to handle complex causal relationships, revealing meaningful counterfactual insights, and allowing for the prediction of outcomes under hypothetical interventions.",
+    "authors": [
+      "Gianlucca Zuin",
+      "Adriano Veloso"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00855v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00855v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.6
+  },
+  {
+    "arxiv_id": "2603.00887v1",
+    "title": "VEMamba: Efficient Isotropic Reconstruction of Volume Electron Microscopy with Axial-Lateral Consistent Mamba",
+    "summary": "Volume Electron Microscopy (VEM) is crucial for 3D tissue imaging but often produces anisotropic data with poor axial resolution, hindering visualization and downstream analysis. Existing methods for isotropic reconstruction often suffer from neglecting abundant axial information and employing simple downsampling to simulate anisotropic data. To address these limitations, we propose VEMamba, an efficient framework for isotropic reconstruction. The core of VEMamba is a novel 3D Dependency Reordering paradigm, implemented via two key components: an Axial-Lateral Chunking Selective Scan Module (ALCSSM), which intelligently re-maps complex 3D spatial dependencies (both axial and lateral) into optimized 1D sequences for efficient Mamba-based modeling, explicitly enforcing axial-lateral consistency; and a Dynamic Weights Aggregation Module (DWAM) to adaptively aggregate these reordered sequence outputs for enhanced representational power. Furthermore, we introduce a realistic degradation simulation and then leverage Momentum Contrast (MoCo) to integrate this degradation-aware knowledge into the network for superior reconstruction. Extensive experiments on both simulated and real-world anisotropic VEM datasets demonstrate that VEMamba achieves highly competitive performance across various metrics while maintaining a lower computational footprint. The source code is available on GitHub: https://github.com/I2-Multimedia-Lab/VEMamba",
+    "authors": [
+      "Longmi Gao",
+      "Pan Gao"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00887v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00887v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.58
+  },
+  {
+    "arxiv_id": "2603.00911v1",
+    "title": "On the Exact Algorithmic Extraction of Finite Tesselations Through Prime Extraction of Minimal Representative Forms",
+    "summary": "The identification of repeating patterns in discrete grids is rudimentary within symbolic reasoning, algorithm synthesis and structural optimization across diverse computational domains. Although statistical approaches targeting noisy data can approximately recognize patterns, symbolic analysis utilizing deterministic extraction of periodic structures is underdeveloped. This paper aims to fill this gap by employing a hierarchical algorithm that discovers exact tessellations in finite planar grids, addressing the problem where multiple independent patterns may coexist within a hierarchical structure. The proposed method utilizes composite discovery (dual inspection and breadth-first pruning) for identifying rectangular regions with internal repetition, normalization to a minimal representative form, and prime extraction (selective duplication and hierarchical memoization) to account for irregular dimensions and to achieve efficient computation time. We evaluate scalability on grid sizes from 2x2 to 32x32, showing overlap detection on simple repeating tiles exhibits processing time under 1ms, while complex patterns which require exhaustive search and systematic exploration shows exponential growth. This algorithm provides deterministic behavior for exact, axis-aligned, rectangular tessellations, addressing a critical gap in symbolic grid analysis techniques, applicable to puzzle solving reasoning tasks and identification of exact repeating structures in discrete symbolic domains.",
+    "authors": [
+      "Sushish Baral",
+      "Paulo Garcia",
+      "Warisa Sritriratanarak"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00911v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00911v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
+    "arxiv_id": "2603.00877v1",
+    "title": "Active Flow Matching",
+    "summary": "Discrete diffusion and flow matching models capture complex, non-additive and non-autoregressive structure in high-dimensional objective landscapes through parallel, iterative refinement. However, their implicit generative nature precludes direct integration with principled variational frameworks for online black-box optimisation, such as variational search distributions (VSD) and conditioning by adaptive sampling (CbAS). We introduce Active Flow Matching (AFM), which reformulates variational objectives to operate on conditional endpoint distributions along the flow, enabling gradient-based steering of flow models toward high-fitness regions while preserving the rigour of VSD and CbAS. We derive forward and reverse Kullback-Leibler (KL) variants using self-normalised importance sampling. Across a suite of online protein and small molecule design tasks, forward-KL AFM consistently performs competitively compared to state-of-the-art baselines, demonstrating effective exploration-exploitation under tight experimental budgets.",
+    "authors": [
+      "Yashvir S. Grewal",
+      "Daniel M. Steinberg",
+      "Thang D. Bui",
+      "Cheng Soon Ong",
+      "Edwin V. Bonilla"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00877v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00877v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
+    "arxiv_id": "2603.00895v1",
+    "title": "Evaluating AI Grading on Real-World Handwritten College Mathematics: A Large-Scale Study Toward a Benchmark",
+    "summary": "Grading in large undergraduate STEM courses often yields minimal feedback due to heavy instructional workloads. We present a large-scale empirical study of AI grading on real, handwritten single-variable calculus work from UC Irvine. Using OCR-conditioned large language models with structured, rubric-guided prompting, our system produces scores and formative feedback for thousands of free-response quiz submissions from nearly 800 students. In a setting with no single ground-truth label, we evaluate performance against official teaching-assistant grades, student surveys, and independent human review, finding strong alignment with TA scoring and a large majority of AI-generated feedback rated as correct or acceptable across quizzes.   Beyond calculus, this setting highlights core challenges in OCR-conditioned mathematical reasoning and partial-credit assessment. We analyze key failure modes, propose practical rubric- and prompt-design principles, and introduce a multi-perspective evaluation protocol for reliable, real-course deployment. Building on the dataset and evaluation framework developed here, we outline a standardized benchmark for AI grading of handwritten mathematics to support reproducible comparison and future research.",
+    "authors": [
+      "Zhiqi Yu",
+      "Xingping Liu",
+      "Haobin Mao",
+      "Mingshuo Liu",
+      "Long Chen",
+      "Jack Xin",
+      "Yifeng Yu"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00895v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00895v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.55
+  },
+  {
+    "arxiv_id": "2603.00856v1",
+    "title": "PARCER as an Operational Contract to Reduce Variance, Cost, and Risk in LLM Systems",
+    "summary": "Systems based on Large Language Models (LLMs) have become formidable tools for automating research and software production. However, their governance remains a challenge when technical requirements demand absolute consistency, auditability, and predictable control over cost and latency. Recent literature highlights two phenomena that aggravate this scenario: the stochastic variance inherent in the model's judgment (often treated as \"systemic noise\") and the substantial degradation of context utilization in long inputs, with critical losses when decisive information is diluted in the middle of the prompt. This article proposes PARCER as an engineering response to these limitations. The framework acts as a declarative \"operational contract\" in YAML, transforming unstructured interactions into versioned and executable artifacts. PARCER imposes strict governance structured into seven operational phases, introducing decision hygiene practices inspired by legal judgments to mitigate noise, adaptive token budgeting, formalized recovery routes (fallbacks) for context preservation, and systemic observability via OpenTelemetry. The objective of this work is to present the conceptual and technical architecture of PARCER, positioning it as a necessary transition from simple \"prompt engineering\" to \"context engineering with governable governance\".",
+    "authors": [
+      "Elzo Brito dos Santos Filho"
+    ],
+    "categories": [
+      "cs.SE",
+      "cs.AI"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00856v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00856v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.55
+  },
+  {
+    "arxiv_id": "2603.00883v1",
+    "title": "Knowledge without Wisdom: Measuring Misalignment between LLMs and Intended Impact",
+    "summary": "LLMs increasingly excel on AI benchmarks, but doing so does not guarantee validity for downstream tasks. This study evaluates the performance of leading foundation models (FMs, i.e., generative pre-trained base LLMs) with out-of-distribution (OOD) tasks of the teaching and learning of schoolchildren. Across all FMs, inter-model behaviors on disparate tasks correlate higher than they do with expert human behaviors on target tasks. These biases shared across LLMs are poorly aligned with downstream measures of teaching quality and often \\textit{negatively aligned with learning outcomes}. Further, we find multi-model ensembles, both unanimous model voting and expert-weighting by benchmark performance, further exacerbate misalignment with learning. We measure that 50\\% of the variation in misalignment error is shared across foundation models, suggesting that common pretraining accounts for much of the misalignment in these tasks. We demonstrate methods for robustly measuring alignment of complex tasks and provide unique insights into both educational applications of foundation models and to understanding limitations of models.",
+    "authors": [
+      "Michael Hardy",
+      "Yunsung Kim"
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CY",
+      "stat.AP"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00883v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00883v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.54
+  },
+  {
+    "arxiv_id": "2603.00908v1",
+    "title": "UD-SfPNet: An Underwater Descattering Shape-from-Polarization Network for 3D Normal Reconstruction",
+    "summary": "Underwater optical imaging is severely hindered by scattering, but polarization imaging offers the unique dual advantages of descattering and shape-from-polarization (SfP) 3D reconstruction. To exploit these advantages, this paper proposes UD-SfPNet, an underwater descattering shape-from-polarization network that leverages polarization cues for improved 3D surface normal prediction. The framework jointly models polarization-based image descattering and SfP normal estimation in a unified pipeline, avoiding error accumulation from sequential processing and enabling global optimization across both tasks. UD-SfPNet further incorporates a novel color embedding module to enhance geometric consistency by exploiting the relationship between color encodings and surface orientation. A detail enhancement convolution module is also included to better preserve high-frequency geometric details that are lost under scattering. Experiments on the MuS-Polar3D dataset show that the proposed method significantly improves reconstruction accuracy, achieving a mean surface normal angular error of 15.12$^\\circ$ (the lowest among compared methods). These results confirm the efficacy of combining descattering with polarization-based shape inference, and highlight the practical significance and potential applications of UD-SfPNet for optical 3D imaging in challenging underwater environments. The code is available at https://github.com/WangPuyun/UD-SfPNet.",
+    "authors": [
+      "Puyun Wang",
+      "Kaimin Yu",
+      "Huayang He",
+      "Feng Huang",
+      "Xianyu Wu",
+      "Yating Chen"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00908v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00908v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.53
+  },
+  {
+    "arxiv_id": "2603.00858v1",
+    "title": "Artificial Superintelligence May be Useless: Equilibria in the Economy of Multiple AI Agents",
+    "summary": "With recent development of artificial intelligence, it is more common to adopt AI agents in economic activities. This paper explores the economic actions of agents, including human agents and AI agents, in an economic game of trading products/services, and the equilibria in this economy involving multiple agents. We derive a range of equilibrium results and their corresponding conditions using a Markov chain stationary distribution based model. One distinct feature of our model is that we consider the long-term utility generated by economic activities instead of their short-term benefits. For the model consisting of two agents, we fully characterize all the possible economic equilibria and conditions. Interestingly, we show that unless each agent can at least double (not merely increase) its marginal utility by purchasing the other agent's products/services, purchasing the other agent's products/services will not happen in any economic equilibrium. We further extend our results to three and more agents, where we characterize more economic equilibria. We find that in some equilibria, the ``more powerful'' AI agents contribute zero utility to ``less capable'' agents.",
+    "authors": [
+      "Huan Cai",
+      "Ziqing Lu",
+      "Catherine Xu",
+      "Weiyu Xu",
+      "Jie Zheng"
+    ],
+    "categories": [
+      "econ.TH",
+      "cs.AI",
+      "cs.IT",
+      "eess.SY"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00858v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00858v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.52
+  },
+  {
+    "arxiv_id": "2603.00882v1",
+    "title": "Solving a Nonlinear Blind Inverse Problem for Tagged MRI with Physics and Deep Generative Priors",
+    "summary": "Tagged MRI enables tracking internal tissue motion non-invasively. It encodes motion by modulating anatomy with periodic tags, which deform along with tissue. However, the entanglement between anatomy, tags and motion poses significant challenges for post-processing. The existence of tags and imaging blur hinders downstream tasks such as segmenting anatomy. Tag fading, due to T1-relaxation, disrupts the brightness constancy assumption for motion tracking. For decades, these challenges have been handled in isolation and sub-optimally. In contrast, we introduce a blind and nonlinear inverse framework for tagged MRI that, for the first time, unifies these tasks: anatomical image recovery, high-resolution cine image synthesis, and motion estimation. At its core, the synergy of MR physics and generative priors enables us to blindly estimate the unknown forward imaging models and high-resolution underlying anatomy, while simultaneously tracking 3D diffeomorphic Lagrangian motion over time. Experiments on tagged brain MRI demonstrate that our approach yields high-resolution anatomy images, cine images, and more accurate motion than specialized methods.",
+    "authors": [
+      "Zhangxing Bian",
+      "Shuwen Wei",
+      "Samuel W. Remedios",
+      "Junyu Chen",
+      "Aaron Carass",
+      "Blake E. Dewey",
+      "Jerry L. Prince"
+    ],
+    "categories": [
+      "eess.IV",
+      "cs.CV",
+      "eess.SP"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00882v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00882v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.51
+  },
+  {
+    "arxiv_id": "2603.00878v1",
+    "title": "MMTA: Multi Membership Temporal Attention for Fine-Grained Stroke Rehabilitation Assessment",
+    "summary": "To empower the iterative assessments involved during a person's rehabilitation, automated assessment of a person's abilities during daily activities requires temporally precise segmentation of fine-grained actions in therapy videos. Existing temporal action segmentation (TAS) models struggle to capture sub-second micro-movements while retaining exercise context, blurring rapid phase transitions and limiting reliable downstream assessment of motor recovery. We introduce Multi-Membership Temporal Attention (MMTA), a high-resolution temporal transformer for fine-grained rehabilitation assessment. Unlike standard temporal attention, which assigns each frame a single attention context per layer, MMTA lets each frame attend to multiple locally normalized temporal attention windows within the same layer. We fuse these concurrent temporal views via feature-space overlap resolution, preserving competing local contexts near transitions while enabling longer-range reasoning through layer-wise propagation. This increases boundary sensitivity without additional depth or multi-stage refinement. MMTA supports both video and wearable IMU inputs within a unified single-stage architecture, making it applicable to both clinical and home settings. MMTA consistently improves over the Global Attention transformer, boosting Edit Score by +1.3 (Video) and +1.6 (IMU) on StrokeRehab while further improving 50Salads by +3.3. Ablations confirm that performance gains stem from multi-membership temporal views rather than architectural complexity, offering a practical solution for resource-constrained rehabilitation assessment.",
+    "authors": [
+      "Halil Ismail Helvaci",
+      "Justin Huber",
+      "Jihye Bae",
+      "Sen-ching Samson Cheung"
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "published": "2026-03-01",
+    "url": "https://arxiv.org/abs/2603.00878v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.00878v1.pdf",
+    "date": "2026-03-03",
+    "source": "arxiv",
+    "research_score": 0.48
+  },
+  {
+    "model_id": "newnewnew/Qwen2-VL-7B-Instruct_RETINA_1shot_more_seed3_aug1_TTRL_fix_accum2_bs3_new_uncertainty_new",
+    "author": "unknown",
+    "title": "newnewnew/Qwen2-VL-7B-Instruct_RETINA_1shot_more_seed3_aug1_TTRL_fix_accum2_bs3_new_uncertainty_new",
+    "downloads": 0,
+    "likes": 0,
+    "tags": [
+      "safetensors",
+      "region:us"
+    ],
+    "pipeline_tag": "",
+    "library": "",
+    "created_at": "2026-03-03T01:50:53.000Z",
+    "last_modified": "2026-03-03T02:29:08.000Z",
+    "days_since_creation": 0,
+    "url": "https://huggingface.co/newnewnew/Qwen2-VL-7B-Instruct_RETINA_1shot_more_seed3_aug1_TTRL_fix_accum2_bs3_new_uncertainty_new",
+    "date": "2026-03-03",
+    "source": "huggingface_model",
+    "type": "model",
+    "research_score": 0.4
+  },
+  {
+    "model_id": "dungca/whisper-tiny-ja-lora",
+    "author": "unknown",
+    "title": "dungca/whisper-tiny-ja-lora",
+    "downloads": 0,
+    "likes": 0,
+    "tags": [
+      "transformers",
+      "safetensors",
+      "automatic-speech-recognition",
+      "speech",
+      "whisper",
+      "peft",
+      "lora",
+      "japanese",
+      "ja",
+      "dataset:reazon-research/reazonspeech",
+      "base_model:openai/whisper-tiny",
+      "base_model:adapter:openai/whisper-tiny",
+      "model-index",
+      "endpoints_compatible",
+      "region:us"
+    ],
+    "pipeline_tag": "automatic-speech-recognition",
+    "library": "transformers",
+    "created_at": "2026-03-01T17:01:09.000Z",
+    "last_modified": "2026-03-03T02:27:34.000Z",
+    "days_since_creation": 1,
+    "url": "https://huggingface.co/dungca/whisper-tiny-ja-lora",
+    "date": "2026-03-03",
+    "source": "huggingface_model",
+    "type": "model",
+    "research_score": 0.4
+  },
+  {
+    "model_id": "AlienKevin/swe-smith-rs-base-qwen2.5-coder-32b-instruct-teacher-glm-4.6",
+    "author": "unknown",
+    "title": "AlienKevin/swe-smith-rs-base-qwen2.5-coder-32b-instruct-teacher-glm-4.6",
+    "downloads": 0,
+    "likes": 0,
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2",
+      "text-generation",
+      "code",
+      "codeqwen",
+      "chat",
+      "qwen",
+      "qwen-coder",
+      "conversational",
+      "en",
+      "arxiv:2409.12186",
+      "arxiv:2309.00071",
+      "arxiv:2407.10671",
+      "base_model:Qwen/Qwen2.5-Coder-32B",
+      "base_model:finetune:Qwen/Qwen2.5-Coder-32B",
+      "license:apache-2.0",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "region:us"
+    ],
+    "pipeline_tag": "text-generation",
+    "library": "transformers",
+    "created_at": "2026-03-03T01:42:28.000Z",
+    "last_modified": "2026-03-03T02:26:43.000Z",
+    "days_since_creation": 0,
+    "url": "https://huggingface.co/AlienKevin/swe-smith-rs-base-qwen2.5-coder-32b-instruct-teacher-glm-4.6",
+    "date": "2026-03-03",
+    "source": "huggingface_model",
+    "type": "model",
+    "research_score": 0.4
+  },
+  {
+    "model_id": "osirisbrain/OsirisPtah-Coder-v5",
+    "author": "unknown",
+    "title": "osirisbrain/OsirisPtah-Coder-v5",
+    "downloads": 0,
+    "likes": 0,
+    "tags": [
+      "safetensors",
+      "qwen2",
+      "abliteration",
+      "uncensored",
+      "qwen2.5",
+      "coder",
+      "osiris",
+      "text-generation",
+      "conversational",
+      "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+      "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "pipeline_tag": "text-generation",
+    "library": "",
+    "created_at": "2026-03-03T01:43:02.000Z",
+    "last_modified": "2026-03-03T02:26:24.000Z",
+    "days_since_creation": 0,
+    "url": "https://huggingface.co/osirisbrain/OsirisPtah-Coder-v5",
+    "date": "2026-03-03",
+    "source": "huggingface_model",
+    "type": "model",
+    "research_score": 0.4
+  },
+  {
+    "model_id": "HUNG3107/roberta-ai-human-detector",
+    "author": "unknown",
+    "title": "HUNG3107/roberta-ai-human-detector",
+    "downloads": 0,
+    "likes": 0,
+    "tags": [
+      "transformers",
+      "safetensors",
+      "roberta",
+      "text-classification",
+      "arxiv:1910.09700",
+      "text-embeddings-inference",
+      "endpoints_compatible",
+      "region:us"
+    ],
+    "pipeline_tag": "text-classification",
+    "library": "transformers",
+    "created_at": "2026-03-03T02:25:51.000Z",
+    "last_modified": "2026-03-03T02:26:24.000Z",
+    "days_since_creation": 0,
+    "url": "https://huggingface.co/HUNG3107/roberta-ai-human-detector",
+    "date": "2026-03-03",
+    "source": "huggingface_model",
+    "type": "model",
+    "research_score": 0.4
+  },
+  {
+    "model_id": "g4me/QwenRolina3-Base-LR1e5-b32g2gc8-order-domain-2ep",
+    "author": "unknown",
+    "title": "g4me/QwenRolina3-Base-LR1e5-b32g2gc8-order-domain-2ep",
+    "downloads": 0,
+    "likes": 0,
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen3",
+      "text-generation",
+      "generated_from_trainer",
+      "trl",
+      "sft",
+      "conversational",
+      "base_model:Qwen/Qwen3-1.7B-Base",
+      "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "region:us"
+    ],
+    "pipeline_tag": "text-generation",
+    "library": "transformers",
+    "created_at": "2026-03-02T20:44:16.000Z",
+    "last_modified": "2026-03-03T02:26:22.000Z",
+    "days_since_creation": 0,
+    "url": "https://huggingface.co/g4me/QwenRolina3-Base-LR1e5-b32g2gc8-order-domain-2ep",
+    "date": "2026-03-03",
+    "source": "huggingface_model",
+    "type": "model",
+    "research_score": 0.4
+  }
+]
