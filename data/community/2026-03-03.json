@@ -774,5 +774,149 @@
       "pull request",
       "repo: worldmonitor"
     ]
+  },
+  {
+    "title": "[PR] Route @copilot, @lucidia, @blackboxprogramming, @ollama exclusively to local Ollama",
+    "date": "2026-03-03T04:47:47Z",
+    "summary": "Any prompt containing `@copilot`, `@lucidia`, `@blackboxprogramming`, or `@ollama` must be handled entirely by the local Ollama instance \u2014 no cloud provider (OpenAI, Anthropic, etc.) should be contacted.\n\n## Changes\n\n### `ai_router/routing/router.py`\n- Added `OLLAMA_MENTIONS` regex at module level\n-",
+    "url": "https://github.com/BlackRoad-OS/.github/pull/39",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: .github"
+    ]
+  },
+  {
+    "title": "[PR] feat: LangGraph integration with observability and startup scripts",
+    "date": "2026-03-03T04:47:15Z",
+    "summary": "- Implement LangGraph supervisor agent with stateful workflow\r\n- Add Redis and Postgres checkpointers for state persistence\r\n- Create Langfuse integration for tracing and scoring\r\n- Add dual-mode scoring system (LLM + rule-based fallback)\r\n- Create one-command startup scripts and Makefile\r\n- Add ADR",
+    "url": "https://github.com/Aparnap2/smart_commerce_agent/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: smart_commerce_agent"
+    ]
+  },
+  {
+    "title": "[PR] [GraphRAG][v2] Implementation of Agentic Retrieval and Performance enhancement of KG construction & Semantic Beam Search",
+    "date": "2026-03-03T04:46:27Z",
+    "summary": "## Summary\r\nThis PR introduces the new  Agentic Retrieval and  improvements in **Knowledge Graph (KG) construction** and **semantic search**, focusing on performance, scalability, and reliability.\r\n\r\n---\r\n## 1. Agentic Retrieval\r\n- Introduced **session-based agent orchestration** initiated from the ",
+    "url": "https://github.com/miyurud/jasminegraph/pull/350",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: jasminegraph"
+    ]
+  },
+  {
+    "title": "[PR] [WIP] Direct requests to Ollama without dependencies",
+    "date": "2026-03-03T04:45:27Z",
+    "summary": "Thanks for asking me to work on this. I will get started on it and keep this PR's description up to date as I form a plan and make progress.\n\n\n<!-- START COPILOT ORIGINAL PROMPT -->\n\n\n\n<details>\n\n<summary>Original prompt</summary>\n\n> I want you to verify if my systems are also being used. When I ent",
+    "url": "https://github.com/BlackRoad-Cloud/blackroad-container-registry/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: blackroad-container-registry"
+    ]
+  },
+  {
+    "title": "[PR] [WIP] Redirect queries to Ollama for local processing",
+    "date": "2026-03-03T04:45:13Z",
+    "summary": "Thanks for asking me to work on this. I will get started on it and keep this PR's description up to date as I form a plan and make progress.\n\n\n<!-- START COPILOT ORIGINAL PROMPT -->\n\n\n\n<details>\n\n<summary>Original prompt</summary>\n\n> I want you to verify if my systems are also being used. When I ent",
+    "url": "https://github.com/BlackRoad-Cloud/blackroad-service-mesh/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: blackroad-service-mesh"
+    ]
+  },
+  {
+    "title": "[PR] feat: route @copilot/@lucidia/@blackboxprogramming/@ollama exclusively to local Ollama",
+    "date": "2026-03-03T04:42:47Z",
+    "summary": "All four `@mention` triggers should route to the local Ollama instance with zero reliance on external AI providers (OpenAI, Anthropic, GitHub Copilot, Gemini, etc.).\n\n### Changes\n\n**`templates/orchestration/ollama.yml`** *(new)*\n- Declares the four mention triggers: `@ollama`, `@copilot`, `@lucidia`",
+    "url": "https://github.com/blackboxprogramming/Holiday-Activity/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Holiday-Activity"
+    ]
+  },
+  {
+    "title": "[PR] Route @copilot/@lucidia/@blackboxprogramming mentions exclusively to local Ollama",
+    "date": "2026-03-03T04:32:55Z",
+    "summary": "All `@copilot`, `@lucidia`, and `@blackboxprogramming` mentions must route to the local Ollama instance \u2014 no external AI providers (ChatGPT, Copilot, Claude, etc.).\n\n## Changes\n\n- **`lucidiaAI/LUCIDIA_CORE/ollama_router.py`** _(new)_\n  - `OLLAMA_TRIGGERS` regex matches all three mentions case-insens",
+    "url": "https://github.com/blackboxprogramming/new_world/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: new_world"
+    ]
+  },
+  {
+    "title": "[PR] tesst",
+    "date": "2026-03-03T04:31:48Z",
+    "summary": "## Base Branch\r\n\r\n- [x] This PR targets the `develop` branch (required for all feature/fix PRs)\r\n- [x] This PR targets `main` (hotfix only - maintainers)\r\n\r\n## Description\r\n\r\n<!-- What does this PR do? 2-3 sentences -->\r\n\r\n## Related Issue\r\n\r\nCloses #\r\n\r\n## Type of Change\r\n\r\n- [ ] \ud83d\udc1b Bug fix\r\n- [ ] \u2728",
+    "url": "https://github.com/AndyMik90/Auto-Claude/pull/1912",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Auto-Claude"
+    ]
+  },
+  {
+    "title": "[PR] Add Ollama local AI inference \u2014 no external provider dependency",
+    "date": "2026-03-03T04:24:48Z",
+    "summary": "Eliminates reliance on external AI providers (OpenAI, Anthropic, etc.) by wiring in [Ollama](https://ollama.com) for fully local model inference.\n\n## Changes\n\n- **`docker-compose.yml`** \u2014 Ollama service with persistent volume + `ollama-init` sidecar that waits for readiness (60 s bounded retry) then",
+    "url": "https://github.com/blackboxprogramming/blackboxprogramming/pull/214",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: blackboxprogramming"
+    ]
+  },
+  {
+    "title": "[PR] patch webhint",
+    "date": "2026-03-03T04:11:47Z",
+    "summary": "@coderabbitai summary\r\n@gemini-code-assist review\r\n@sentry review\r\n\r\nTesting the Webhint CI to verify this works.",
+    "url": "https://github.com/quisido/quisi.do/pull/287",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: quisi.do"
+    ]
+  },
+  {
+    "title": "[PR] Rewrite search mechanism to adapt more common",
+    "date": "2026-03-03T03:12:24Z",
+    "summary": "Added ollama search Enhance search result by agent before return to user\r\n\r\n## Summary\r\nRefactors web search to a unified provider model and improves reliability/observability of provider selection and Ollama response handling.\r\n\r\n## What Changed\r\n- Unified web search provider configuration through ",
+    "url": "https://github.com/sipeed/picoclaw/pull/431",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: picoclaw"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-03-03T02:44:10Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
   }
 ]
