@@ -645,12 +645,12 @@
   },
   {
     "title": "[PR] added azureopenai support & extandable architecture for pydanticai",
-    "date": "2026-03-05T00:19:31Z",
+    "date": "2026-03-05T18:34:10Z",
     "summary": "This pull request refactors the model resolution logic in the `PydanticAIHook` to use a modular builder pattern, improving extensibility and clarity for handling different AI providers, especially Azure OpenAI. It introduces dedicated builder classes for Azure OpenAI, custom endpoints, and default r",
     "url": "https://github.com/apache/airflow/pull/62816",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "pull request",
       "repo: airflow"
     ]
@@ -693,7 +693,7 @@
   },
   {
     "title": "[PR] feat(agent-chain-core): add reasoning feedback via additional kwargs",
-    "date": "2026-03-05T18:01:22Z",
+    "date": "2026-03-05T19:40:43Z",
     "summary": "## \ud83e\udde2 Changes\r\n\r\n## \u2615\ufe0f Reasoning\r\n\r\n<!--\r\nIf this PR is related to a specific issue, uncomment this section\r\nand link it via the following text:\r\n\r\n## \ud83c\udfab Affected issues\r\n\r\nFixes: INSERT_ISSUE_NUMBER\r\n\r\n-->\r\n\r\n<!--\r\nIf this is a WIP PR and you have todos left, feel free to uncomment this and turn this",
     "url": "https://github.com/eurora-labs/eurora/pull/629",
     "source": "github_prs",
@@ -741,7 +741,7 @@
   },
   {
     "title": "[PR] webui: Agentic Loop + MCP Client with support for Tools, Resources and Prompts",
-    "date": "2026-03-05T15:19:18Z",
+    "date": "2026-03-05T19:05:24Z",
     "summary": "## New features\r\n\r\n- Adding System Message to conversation or injecting it to an existing one\r\n- CORS Proxy on llama-server backend side (run `llama-server` command witg `--webui-mcp-proxy` flag to enable it)\r\n- MCP\r\n    - Servers Selector\r\n    - Settings with Server cards showing capabilities, inst",
     "url": "https://github.com/ggml-org/llama.cpp/pull/18655",
     "source": "github_prs",
@@ -957,7 +957,7 @@
   },
   {
     "title": "[PR] Update testcontainers-node monorepo to v11 (major)",
-    "date": "2026-03-05T14:06:44Z",
+    "date": "2026-03-05T19:47:50Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/redis](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.25.",
     "url": "https://github.com/matrix-org/matrix-hookshot/pull/1129",
     "source": "github_prs",
@@ -1077,7 +1077,7 @@
   },
   {
     "title": "[PR] Update dependency testcontainers to v11",
-    "date": "2026-03-05T14:48:14Z",
+    "date": "2026-03-05T19:07:09Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [testcontainers](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.0.0` \u2192 `^1",
     "url": "https://github.com/bryopsida/patchwork/pull/524",
     "source": "github_prs",
@@ -1113,7 +1113,7 @@
   },
   {
     "title": "[PR] admin dashboard ssc-dsai:dev",
-    "date": "2026-03-05T17:19:50Z",
+    "date": "2026-03-05T18:48:33Z",
     "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
     "url": "https://github.com/arthrod/open-webui/pull/36",
     "source": "github_prs",
@@ -1257,12 +1257,12 @@
   },
   {
     "title": "[PR] feat(embedding): local embedding support via Ollama/ONNX \u2014 closes #153",
-    "date": "2026-03-05T18:07:38Z",
+    "date": "2026-03-05T19:55:54Z",
     "summary": "## Summary\n\n- Adds `EmbeddingProvider` interface with `embed()`, `embedBatch()`, `dimensions`, and `modelName`\n- Implements `OllamaEmbeddingProvider` calling Ollama REST API (`POST /api/embed`) with configurable endpoint and batch size\n- Implements `FallbackEmbeddingProvider` wrapper for automatic O",
     "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/181",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 5",
       "pull request",
       "repo: openclaw-hybrid-memory"
     ]
@@ -1361,6 +1361,174 @@
       "comments: 2",
       "pull request",
       "repo: paperless-gpt"
+    ]
+  },
+  {
+    "title": "Train and publish demo model on HuggingFace",
+    "date": "2026-03-05T19:51:19Z",
+    "summary": "## Problem\n\nSmithery claims a 3B model can achieve 96% tool-calling accuracy. That claim needs proof. We need a published, downloadable model that anyone can verify.\n\n## Proposed Solution\n\n### Demo Tool Set\n\nCreate a representative tool set for the demo (10-15 tools across common categories):\n\n| Cat",
+    "url": "https://github.com/NP-compete/smithery/issues/12",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: smithery"
+    ]
+  },
+  {
+    "title": "[PR] patch flux all helmreleases",
+    "date": "2026-03-05T19:55:02Z",
+    "summary": "- **fix the kustomize patch for helmreleases**\n- **use flux to apply helmrelease on all helmreleases**\n",
+    "url": "https://github.com/Sironheart/home-cluster/pull/840",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-cluster"
+    ]
+  },
+  {
+    "title": "[PR] CodeRabbit Full Codebase Review: LLM Gateway (All Changes)",
+    "date": "2026-03-05T19:50:46Z",
+    "summary": "## Purpose\nRequest CodeRabbit to perform a **comprehensive review of the entire llm-gateway codebase**.\n\nThis PR contains ALL commits from the initial architecture docs through the current state.\n\n## Codebase Overview\n- **15,000+ lines** of Python code\n- **880 unit tests** with 90% coverage\n- FastAP",
+    "url": "https://github.com/kevin-toles/llm-gateway/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: llm-gateway"
+    ]
+  },
+  {
+    "title": "[PR] fix: prompt enhancer uses slow deepseek-v3.2 \u2014 switch to gpt-oss:120b",
+    "date": "2026-03-05T19:47:46Z",
+    "summary": "# fix: prompt enhancer still uses slow deepseek-v3.2 \u2014 switch to gpt-oss:120b\n\n## Summary\n\nThe prompt enhancer (`lib/agents/promptEnhancer.ts:41`) was missed in PR #88's model migration. It still hardcoded `deepseek-v3.2` (671B), which queues for 10+ minutes on Ollama Cloud. Since the enhancer runs ",
+    "url": "https://github.com/Reshigan/Pablo/pull/89",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Pablo"
+    ]
+  },
+  {
+    "title": "[PR] feat: unified merge of all remaining milestone-a features",
+    "date": "2026-03-05T19:44:28Z",
+    "summary": "## Summary\n\nMerges all 8 remaining features (#153, #143, #147, #146, #148, #141, #149, #140) into a single PR.\n\n- **#140** Shortest-path graph traversal\n- **#141** Knowledge gap analysis\n- **#143** Dream cycle (nightly reflection pipeline)\n- **#146** Topic cluster detection\n- **#147** Confidence rei",
+    "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/194",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: openclaw-hybrid-memory"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency dev.langchain4j:langchain4j-bom to v1.12.1",
+    "date": "2026-03-05T19:40:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
+    "url": "https://github.com/kpavlov/lc4j-kotlin-demo/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: lc4j-kotlin-demo"
+    ]
+  },
+  {
+    "title": "[PR] 190E: align runtime stacks, model catalog, adapter flow + stabilize CI tests",
+    "date": "2026-03-05T19:32:45Z",
+    "summary": "## Summary\nThis PR finalizes the 190E runtime-alignment work and includes the follow-up test/mypy stabilizations needed to keep the branch reviewable and green.\n\n### Runtime + model/adaptor alignment\n- Unified runtime/model handling across Academy and Cockpit paths.\n- Improved local model discovery ",
+    "url": "https://github.com/mpieniak01/Venom/pull/438",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Venom"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency testcontainers to v11",
+    "date": "2026-03-05T19:17:24Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/bryopsida/redis-key-store/pull/557",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: redis-key-store"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): add OpenRouter built-in provider and align model test token floor",
+    "date": "2026-03-05T19:13:03Z",
+    "summary": "## Description\r\n\r\nThis PR adds OpenRouter as a built-in provider and updates provider probing behavior for better compatibility.\r\n\r\nChanges included:\r\n- add OpenRouter as a built-in provider with curated model ordering\r\n- update models docs (EN/ZH) to include OpenRouter\r\n- raise provider model test ",
+    "url": "https://github.com/agentscope-ai/CoPaw/pull/759",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: CoPaw"
+    ]
+  },
+  {
+    "title": "[PR] feat: add LocalAGI LXC helper script",
+    "date": "2026-03-05T19:03:23Z",
+    "summary": "## \u270d\ufe0f Description  \r\n\r\nHand Reviewed code, no nested functions, removed useless error checking, minimized steps, removed unneeded apt steps.\r\n\r\nAdds and refines the new LocalAGI CT integration with a source-build install flow and frontend metadata.\r\nThis PR now targets external LLM backend mode (Oll",
+    "url": "https://github.com/community-scripts/ProxmoxVED/pull/1536",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ProxmoxVED"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency testcontainers to v11",
+    "date": "2026-03-05T18:56:16Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [testcontainers](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.28.0` \u2192 `^",
+    "url": "https://github.com/bryopsida/nest-couchdb/pull/267",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nest-couchdb"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency dev.langchain4j:langchain4j-bom to v1.12.1",
+    "date": "2026-03-05T18:43:29Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
+    "url": "https://github.com/kpavlov/quarkus-assistant-demo/pull/51",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: quarkus-assistant-demo"
+    ]
+  },
+  {
+    "title": "[PR] feat: knowledge graph connectors (Jira + Confluence)",
+    "date": "2026-03-05T18:29:54Z",
+    "summary": "## Summary\n\n- Add **Knowledge Graphs** management with full CRUD, sidebar navigation, and database-backed storage (seeded from env vars for backward compatibility)\n- Add **Jira** and **Confluence connectors** that ingest external data into knowledge graphs on configurable schedules via K8s CronJobs\n",
+    "url": "https://github.com/archestra-ai/archestra/pull/3092",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: archestra"
+    ]
+  },
+  {
+    "title": "[PR] Feat/llm merged main",
+    "date": "2026-03-05T18:28:39Z",
+    "summary": "## Summary\r\n\r\nThis PR merges the changes from PR #594 (`feat/api_llm_cost`) into the latest `main` branch.\r\n\r\n## Changes Included\r\n\r\n- Resolved all merge conflicts with `main`\r\n- Added structured logs including:\r\n  - `user_id`\r\n  - `conversation_id`\r\n  - `project_id`\r\n- Introduced `agent_run_usage` ",
+    "url": "https://github.com/potpie-ai/potpie/pull/644",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: potpie"
     ]
   }
 ]
