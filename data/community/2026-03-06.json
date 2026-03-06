@@ -562,7 +562,7 @@
   },
   {
     "title": "[PR] docs: Add comprehensive Mintlify documentation website",
-    "date": "2026-03-06T02:11:54Z",
+    "date": "2026-03-06T20:32:04Z",
     "summary": "# Documentation Website for IronClaw\r\n\r\nSee the like working example site: https://logicminds-ironclaw-81.mintlify.app/\r\n\r\nPlease note this will require some post merge setup and configuration on Mintlify and DNS entries.  Local devs can run via `cd docs && pnpm dev`\r\n\r\nThis PR introduces a comprehe",
     "url": "https://github.com/nearai/ironclaw/pull/581",
     "source": "github_prs",
@@ -730,7 +730,7 @@
   },
   {
     "title": "[PR] refactor(docs): reimplement language routing logic, language selection UX, and some clean up",
-    "date": "2026-03-06T17:32:00Z",
+    "date": "2026-03-06T20:32:47Z",
     "summary": "",
     "url": "https://github.com/genkit-ai/docsite/pull/236",
     "source": "github_prs",
@@ -850,7 +850,7 @@
   },
   {
     "title": "[PR] Update k8s-manifests",
-    "date": "2026-03-06T19:03:54Z",
+    "date": "2026-03-06T20:03:59Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [fluxcd/flux2](https://redirect.github.com/fluxcd/flux2) | minor | `v2.7.5` -> `v2.8.1` |\n| [ghcr.io/fluxcd/helm-controller](https://redirect.github.com/fluxcd/helm-controller) | minor | `v1.4.5` -> `v1.5.1` |\n| [",
     "url": "https://github.com/JacobMillward/homelab/pull/18",
     "source": "github_prs",
@@ -862,12 +862,12 @@
   },
   {
     "title": "[PR] Add autonomous CFO executive system with multi-agent orchestration",
-    "date": "2026-03-06T19:07:43Z",
+    "date": "2026-03-06T20:24:31Z",
     "summary": "## Summary\nThis PR introduces a comprehensive autonomous CFO executive system with multi-agent orchestration capabilities. It adds three main components: an autonomous CFO executive with 10 virtual background screens, a task manager CLI supporting 8 different AI agents, and a master CFO team with fo",
     "url": "https://github.com/appsefilepro-cell/Private-Claude/pull/245",
     "source": "github_prs",
     "highlights": [
-      "comments: 265",
+      "comments: 267",
       "pull request",
       "repo: Private-Claude"
     ]
@@ -1786,12 +1786,12 @@
   },
   {
     "title": "[PR] Add Personal AI Client \u2014 Expo mobile app with multi-provider streaming chat",
-    "date": "2026-03-06T18:59:53Z",
+    "date": "2026-03-06T20:28:01Z",
     "summary": "Mobile AI chat client (iOS/Android) built with Expo + React Native that connects to local vLLM/Ollama instances or cloud APIs (OpenAI, Anthropic, Mistral), with a custom agent system and persistent conversation history.\n\n## Core architecture\n\n- **`src/types/`** \u2014 Shared TypeScript types: `Provider`,",
     "url": "https://github.com/MarkusBansky/personal-ai-client/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 2",
       "pull request",
       "repo: personal-ai-client"
     ]
@@ -1806,6 +1806,54 @@
       "comments: 6",
       "pull request",
       "repo: extensions"
+    ]
+  },
+  {
+    "title": "[PR] Phase 103: P0 revamp \u2014 plan caps, Groq tier 3, history fix, plan name cleanup",
+    "date": "2026-03-06T20:33:04Z",
+    "summary": "## Summary\n\n- **Plan cap normalization** \u2014 IMAGE_DAILY_CAPS in \\`image.ts\\` (async) and \\`images.ts\\` (sync) updated to real plan names (\\`pilot/intro/halfyear/yearly\\`), removing invalid \\`basic\\`/\\`pro\\`/\\`team\\` keys. \\`images.ts\\` now reads \\`users.plan\\` (was incorrectly reading \\`subscription_",
+    "url": "https://github.com/trendywink247-afk/GeekSpace2.0/pull/121",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: GeekSpace2.0"
+    ]
+  },
+  {
+    "title": "[PR] Voxi MVP build",
+    "date": "2026-03-06T20:32:08Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\nBuild MVP: Voxi daemon+worker, tests, setup, and docs\n\nThis PR delivers the full Voxi MVP, including the Go daemon/CLI, Python ML worker, comprehensive tests, setup automation, and documentation, to enable voice-driven text insertion.\n\n---\n\n### Implemented scope\n\n",
+    "url": "https://github.com/Gaurav23V/voxi/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: voxi"
+    ]
+  },
+  {
+    "title": "[PR] Add SovereignNode: modular DePIN home node overlay for Olares",
+    "date": "2026-03-06T20:23:55Z",
+    "summary": "Adds a `sovereign-node/` overlay to the Olares repo that turns affordable mini PCs into self-hosted, DePIN-earning nodes \u2014 combining Proxmox/K3s-based infrastructure, one-click services, mesh networking, local AI, and a Solana token economy into a unified system.\n\n## Structure\n\n- **`README.md` / `CO",
+    "url": "https://github.com/WestCope/Olares---Freenode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Olares---Freenode"
+    ]
+  },
+  {
+    "title": "[PR] Feat/mvp 0 scaffold",
+    "date": "2026-03-06T20:11:38Z",
+    "summary": "## Summary\r\n\r\n- **Problem:** The `feat/mvp-0-scaffold` branch started from a monolithic `src/` layout with no routing intelligence, no agent pipeline, no mobile app, no VS Code extension, and a broken CI gate.\r\n- **Why:** None of the P1\u2013P4 roadmap features existed \u2014 query classification, local/cloud",
+    "url": "https://github.com/manojmallick/lokaflow/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lokaflow"
     ]
   }
 ]
