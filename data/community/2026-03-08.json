@@ -538,7 +538,7 @@
   },
   {
     "title": "[PR] feat: Vertex AI backend",
-    "date": "2026-03-08T02:12:28Z",
+    "date": "2026-03-08T07:27:11Z",
     "summary": "hello! I have implemented a Vertex AI backend connection for carapace, with utmost respect to the contributor who has the other Vertex PR open. I wanted to produce a PR that is narrower in scope so I could focus on getting this one feature added. I am not a programmer and I used Gemini to code this,",
     "url": "https://github.com/puremachinery/carapace/pull/106",
     "source": "github_prs",
@@ -586,12 +586,12 @@
   },
   {
     "title": "[PR] Add autonomous CFO executive system with multi-agent orchestration",
-    "date": "2026-03-08T06:01:58Z",
+    "date": "2026-03-08T07:05:50Z",
     "summary": "## Summary\nThis PR introduces a comprehensive autonomous CFO executive system with multi-agent orchestration capabilities. It adds three main components: an autonomous CFO executive with 10 virtual background screens, a task manager CLI supporting 8 different AI agents, and a master CFO team with fo",
     "url": "https://github.com/appsefilepro-cell/Private-Claude/pull/245",
     "source": "github_prs",
     "highlights": [
-      "comments: 317",
+      "comments: 318",
       "pull request",
       "repo: Private-Claude"
     ]
@@ -730,7 +730,7 @@
   },
   {
     "title": "[PR] Feat/mvp 0 scaffold",
-    "date": "2026-03-07T21:23:12Z",
+    "date": "2026-03-08T07:31:56Z",
     "summary": "## Summary\r\n\r\n- **Problem:** The `feat/mvp-0-scaffold` branch started from a monolithic `src/` layout with no routing intelligence, no agent pipeline, no mobile app, no VS Code extension, and a broken CI gate.\r\n- **Why:** None of the P1\u2013P4 roadmap features existed \u2014 query classification, local/cloud",
     "url": "https://github.com/manojmallick/lokaflow/pull/2",
     "source": "github_prs",
@@ -942,6 +942,42 @@
       "comments: 1",
       "pull request",
       "repo: spring-ai-app"
+    ]
+  },
+  {
+    "title": "fix: providers.yaml uses outdated Claude model name, causing silent fallback to Ollama",
+    "date": "2026-03-08T07:33:58Z",
+    "summary": "## Problem\n\n`deploy/config/providers.yaml` specifies `claude-sonnet-4-20250514` as the\ndefault Claude model. This model name is outdated \u2014 the current correct model\nstring is `claude-sonnet-4-6`.\n\nWhen the dispatcher routes an issue to the Claude provider, the API returns an\nerror (invalid model). T",
+    "url": "https://github.com/HerbHall/samverk/issues/216",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 6",
+      "state: open",
+      "repo: samverk"
+    ]
+  },
+  {
+    "title": "[PR] WIP: runtime/adapters flow recovery snapshot (PR197)",
+    "date": "2026-03-08T07:33:46Z",
+    "summary": "## Summary\r\n\r\n<!-- Kr\u00f3tki opis: co i dlaczego -->\r\n\r\n## Scope\r\n\r\n<!-- In scope / out of scope -->\r\n\r\n## Quality Gates (Hard Gate)\r\n\r\n- [ ] `make pr-fast` passed\r\n- [ ] CI required checks passed (`Forbidden Paths Guard`, `Architecture drift guard`, `Backend lite (pytest)`, `Frontend lite (lint)`, `Op",
+    "url": "https://github.com/mpieniak01/Venom/pull/442",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Venom"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-03-08T07:29:51Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
     ]
   }
 ]
