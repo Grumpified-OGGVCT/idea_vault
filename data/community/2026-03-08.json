@@ -166,12 +166,12 @@
   },
   {
     "title": "[Bug]: Silent fallback to OpenAI in Retrievers and Indexes compromises Air-Gapped/Local-First deployments",
-    "date": "2026-03-08T14:27:10Z",
+    "date": "2026-03-08T14:37:16Z",
     "summary": "### Bug Description\n\nWhen instantiating components like `VectorStoreIndex` or `QueryFusionRetriever` without explicitly passing the `llm` or `embed_model` kwargs, LlamaIndex silently falls back to OpenAI's models (`gpt-3.5-turbo` and `text-embedding-ada-002`). \n\nWhile this default behavior is conven",
     "url": "https://github.com/run-llama/llama_index/issues/20912",
     "source": "github_issues",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "state: open",
       "repo: llama_index"
     ]
@@ -586,12 +586,12 @@
   },
   {
     "title": "[PR] Add autonomous CFO executive system with multi-agent orchestration",
-    "date": "2026-03-08T14:19:29Z",
+    "date": "2026-03-08T15:17:42Z",
     "summary": "## Summary\nThis PR introduces a comprehensive autonomous CFO executive system with multi-agent orchestration capabilities. It adds three main components: an autonomous CFO executive with 10 virtual background screens, a task manager CLI supporting 8 different AI agents, and a master CFO team with fo",
     "url": "https://github.com/appsefilepro-cell/Private-Claude/pull/245",
     "source": "github_prs",
     "highlights": [
-      "comments: 330",
+      "comments: 332",
       "pull request",
       "repo: Private-Claude"
     ]
@@ -694,7 +694,7 @@
   },
   {
     "title": "[PR] refactor(docs): reimplement language routing logic, language selection UX, and some clean up",
-    "date": "2026-03-07T22:29:11Z",
+    "date": "2026-03-08T15:16:44Z",
     "summary": "",
     "url": "https://github.com/genkit-ai/docsite/pull/236",
     "source": "github_prs",
@@ -862,7 +862,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-03-08T08:44:09Z",
+    "date": "2026-03-08T14:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -946,12 +946,12 @@
   },
   {
     "title": "fix: providers.yaml uses outdated Claude model name, causing silent fallback to Ollama",
-    "date": "2026-03-08T14:29:34Z",
+    "date": "2026-03-08T14:55:11Z",
     "summary": "## Problem\n\n`deploy/config/providers.yaml` specifies `claude-sonnet-4-20250514` as the\ndefault Claude model. This model name is outdated \u2014 the current correct model\nstring is `claude-sonnet-4-6`.\n\nWhen the dispatcher routes an issue to the Claude provider, the API returns an\nerror (invalid model). T",
     "url": "https://github.com/HerbHall/samverk/issues/216",
     "source": "github_issues",
     "highlights": [
-      "comments: 43",
+      "comments: 45",
       "state: open",
       "repo: samverk"
     ]
@@ -1066,7 +1066,7 @@
   },
   {
     "title": "[PR] Feature/Add Cortex Memory as optional memory backend",
-    "date": "2026-03-08T10:31:20Z",
+    "date": "2026-03-08T14:53:19Z",
     "summary": "# Add Cortex-Memory Backend Integration\r\n\r\n## Summary\r\nThis PR integrates [Cortex-Memory](https://github.com/cortex-mem/cortex-memory) as an advanced memory backend option for ZeroClaw, providing L0/L1/L2 layered memory architecture with semantic vector search capabilities via Qdrant.\r\n\r\n## Key Feat",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/2948",
     "source": "github_prs",
@@ -1558,7 +1558,7 @@
   },
   {
     "title": "[PR] refactor: Convert Tanzu provider to declarative JSON config",
-    "date": "2026-03-08T14:24:30Z",
+    "date": "2026-03-08T14:52:09Z",
     "summary": "## Summary\n\nReplaces the dedicated ~1,000-line Rust Tanzu provider with a 21-line declarative JSON config, per feedback from @DOsinga and @katzdave. Adds generic `env_vars` and `dynamic_models` support to the declarative provider framework so all providers benefit.\n\nThis addresses all the review fee",
     "url": "https://github.com/block/goose/pull/7124",
     "source": "github_prs",
@@ -1678,7 +1678,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-03-08T14:01:40Z",
+    "date": "2026-03-08T14:58:12Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1746,6 +1746,18 @@
       "comments: 0",
       "pull request",
       "repo: devcontainer-aqua-sample"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): add OpenRouter built-in provider and align model test token floor",
+    "date": "2026-03-08T14:37:07Z",
+    "summary": "## Description\r\n\r\nThis PR adds OpenRouter as a built-in provider and updates provider probing behavior for better compatibility.\r\n\r\nChanges included:\r\n- add OpenRouter as a built-in provider with curated model ordering\r\n- update models docs (EN/ZH) to include OpenRouter\r\n- raise provider model test ",
+    "url": "https://github.com/agentscope-ai/CoPaw/pull/759",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: CoPaw"
     ]
   }
 ]
