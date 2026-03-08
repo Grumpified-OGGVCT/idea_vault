@@ -190,12 +190,12 @@
   },
   {
     "title": "Experimental ROCM & PYTORCH builds for ALL GFX103X (rdna2)",
-    "date": "2026-03-08T19:21:52Z",
+    "date": "2026-03-08T20:31:52Z",
     "summary": "https://app.mediafire.com/folder/mvrwkgj96lkua\n\nTDLR ; everything in this post https://github.com/patientx/ComfyUI-Zluda/issues/431 is the same except you download the rocm & pytorch packages manually into a folder and install them from that folder not from a web link.\n\nYes it is as the title says. ",
     "url": "https://github.com/patientx/ComfyUI-Zluda/issues/435",
     "source": "github_issues",
     "highlights": [
-      "comments: 81",
+      "comments: 93",
       "state: open",
       "repo: ComfyUI-Zluda"
     ]
@@ -586,12 +586,12 @@
   },
   {
     "title": "[PR] Add autonomous CFO executive system with multi-agent orchestration",
-    "date": "2026-03-08T19:20:52Z",
+    "date": "2026-03-08T20:18:38Z",
     "summary": "## Summary\nThis PR introduces a comprehensive autonomous CFO executive system with multi-agent orchestration capabilities. It adds three main components: an autonomous CFO executive with 10 virtual background screens, a task manager CLI supporting 8 different AI agents, and a master CFO team with fo",
     "url": "https://github.com/appsefilepro-cell/Private-Claude/pull/245",
     "source": "github_prs",
     "highlights": [
-      "comments: 340",
+      "comments: 342",
       "pull request",
       "repo: Private-Claude"
     ]
@@ -802,7 +802,7 @@
   },
   {
     "title": "[PR] Introducing Atmos AI",
-    "date": "2026-03-08T16:41:40Z",
+    "date": "2026-03-08T20:29:58Z",
     "summary": "## what\n\nIntroducing **Atmos AI** - an intelligent assistant built directly into Atmos CLI that understands your infrastructure-as-code.\n\nAtmos AI provides **deep understanding of Atmos stacks, components, inheritance patterns, and infrastructure workflows**. It combines the productivity features of",
     "url": "https://github.com/cloudposse/atmos/pull/2030",
     "source": "github_prs",
@@ -970,7 +970,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-03-08T15:43:55Z",
+    "date": "2026-03-08T19:57:05Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1042,7 +1042,7 @@
   },
   {
     "title": "[PR] home-assistant: 2026.2.3 -> 2026.3.1",
-    "date": "2026-03-08T18:39:36Z",
+    "date": "2026-03-08T20:20:50Z",
     "summary": "https://www.home-assistant.io/blog/2026/03/04/release-20263/\r\n\r\ndepends on https://github.com/NixOS/nixpkgs/pull/496457\r\n\r\nCloses #491659\r\nCloses #495670\r\nCloses #491969\r\nCloses #490765\r\nCloses #492951\r\ncloses https://github.com/NixOS/nixpkgs/pull/496381\r\n\r\n\r\n## Things done\r\n\r\n<!-- Please check what",
     "url": "https://github.com/NixOS/nixpkgs/pull/496442",
     "source": "github_prs",
@@ -1762,7 +1762,7 @@
   },
   {
     "title": "[PR] Release v0.6.0 - The Enterprise Security Update",
-    "date": "2026-03-08T17:06:31Z",
+    "date": "2026-03-08T20:25:35Z",
     "summary": "This PR merges the v0.6 feature branch into main, representing a significant architectural evolution for EctoLedger. The tool has transitioned from a CLI-centric audit tool to a comprehensive platform for verifiable AI agent execution.\r\n\r\n### Key Changes\r\n\r\n* **Multi-Backend Support:** Introduced pl",
     "url": "https://github.com/EctoSpace/EctoLedger/pull/2",
     "source": "github_prs",
@@ -1834,7 +1834,7 @@
   },
   {
     "title": "[PR] feat: add Vite configuration and update wrangler.toml for new environ\u2026",
-    "date": "2026-03-08T19:23:15Z",
+    "date": "2026-03-08T20:23:08Z",
     "summary": "\u2026ment variables\r\n\r\n- Created a new Vite configuration file to set up plugins including Sentry, Tailwind CSS, and React support.\r\n- Configured SSR target and enabled source maps for Sentry.\r\n- Updated wrangler.toml to include new compatibility flags and environment variables for Convex URL and site U",
     "url": "https://github.com/MikePfunk28/agentic-search/pull/28",
     "source": "github_prs",
@@ -1878,6 +1878,30 @@
       "comments: 37",
       "pull request",
       "repo: threat-dragon"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard): use container-aware URLs for local AI providers",
+    "date": "2026-03-08T20:22:03Z",
+    "summary": "## Summary\n\nWhen running ZeroClaw in Docker, the onboarding wizard now detects container environments and suggests `host.docker.internal` instead of `localhost` for local AI providers.\n\n**Problem:** Users selecting \"local llama\" or similar during Docker-based onboarding got non-working `localhost` U",
+    "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/2933",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "[PR] feat: migrate from Python Claude Agent SDK to Vercel AI SDK v6 (TypeScript)",
+    "date": "2026-03-08T19:56:13Z",
+    "summary": "## Summary\n\n- **Complete migration** of all AI agent execution from Python `claude-agent-sdk` subprocess calls to a native TypeScript agent layer using Vercel AI SDK v6 (`ai` package)\n- **190+ new TypeScript files** in `apps/frontend/src/main/ai/` implementing providers, tools, security, orchestrati",
+    "url": "https://github.com/AndyMik90/Aperant/pull/1891",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 20",
+      "pull request",
+      "repo: Aperant"
     ]
   }
 ]
