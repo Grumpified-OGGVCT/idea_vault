@@ -538,12 +538,12 @@
   },
   {
     "title": "[PR] feat: Vertex AI backend",
-    "date": "2026-03-08T07:27:11Z",
+    "date": "2026-03-08T08:19:43Z",
     "summary": "hello! I have implemented a Vertex AI backend connection for carapace, with utmost respect to the contributor who has the other Vertex PR open. I wanted to produce a PR that is narrower in scope so I could focus on getting this one feature added. I am not a programmer and I used Gemini to code this,",
     "url": "https://github.com/puremachinery/carapace/pull/106",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "pull request",
       "repo: carapace"
     ]
@@ -586,12 +586,12 @@
   },
   {
     "title": "[PR] Add autonomous CFO executive system with multi-agent orchestration",
-    "date": "2026-03-08T07:05:50Z",
+    "date": "2026-03-08T08:23:26Z",
     "summary": "## Summary\nThis PR introduces a comprehensive autonomous CFO executive system with multi-agent orchestration capabilities. It adds three main components: an autonomous CFO executive with 10 virtual background screens, a task manager CLI supporting 8 different AI agents, and a master CFO team with fo",
     "url": "https://github.com/appsefilepro-cell/Private-Claude/pull/245",
     "source": "github_prs",
     "highlights": [
-      "comments: 318",
+      "comments: 320",
       "pull request",
       "repo: Private-Claude"
     ]
@@ -634,12 +634,12 @@
   },
   {
     "title": "[PR] Perf/e2e latency memory fixes",
-    "date": "2026-03-08T00:45:22Z",
+    "date": "2026-03-08T08:30:21Z",
     "summary": "## Summary\r\n\r\nThis PR merges `perf/e2e-latency-memory-fixes` back into `rust/dev` and consolidates a large set of Rust-node improvements across correctness, performance, and operational stability.\r\n\r\nPrimary outcomes:\r\n- Fixes state/merge consistency issues and finality-lag stalls seen in long-runni",
     "url": "https://github.com/F1R3FLY-io/f1r3node/pull/422",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: f1r3node"
     ]
@@ -730,7 +730,7 @@
   },
   {
     "title": "[PR] Feat/mvp 0 scaffold",
-    "date": "2026-03-08T07:31:56Z",
+    "date": "2026-03-08T08:28:44Z",
     "summary": "## Summary\r\n\r\n- **Problem:** The `feat/mvp-0-scaffold` branch started from a monolithic `src/` layout with no routing intelligence, no agent pipeline, no mobile app, no VS Code extension, and a broken CI gate.\r\n- **Why:** None of the P1\u2013P4 roadmap features existed \u2014 query classification, local/cloud",
     "url": "https://github.com/manojmallick/lokaflow/pull/2",
     "source": "github_prs",
@@ -946,19 +946,19 @@
   },
   {
     "title": "fix: providers.yaml uses outdated Claude model name, causing silent fallback to Ollama",
-    "date": "2026-03-08T07:33:58Z",
+    "date": "2026-03-08T08:36:28Z",
     "summary": "## Problem\n\n`deploy/config/providers.yaml` specifies `claude-sonnet-4-20250514` as the\ndefault Claude model. This model name is outdated \u2014 the current correct model\nstring is `claude-sonnet-4-6`.\n\nWhen the dispatcher routes an issue to the Claude provider, the API returns an\nerror (invalid model). T",
     "url": "https://github.com/HerbHall/samverk/issues/216",
     "source": "github_issues",
     "highlights": [
-      "comments: 6",
+      "comments: 14",
       "state: open",
       "repo: samverk"
     ]
   },
   {
     "title": "[PR] WIP: runtime/adapters flow recovery snapshot (PR197)",
-    "date": "2026-03-08T07:33:46Z",
+    "date": "2026-03-08T08:31:36Z",
     "summary": "## Summary\r\n\r\n<!-- Kr\u00f3tki opis: co i dlaczego -->\r\n\r\n## Scope\r\n\r\n<!-- In scope / out of scope -->\r\n\r\n## Quality Gates (Hard Gate)\r\n\r\n- [ ] `make pr-fast` passed\r\n- [ ] CI required checks passed (`Forbidden Paths Guard`, `Architecture drift guard`, `Backend lite (pytest)`, `Frontend lite (lint)`, `Op",
     "url": "https://github.com/mpieniak01/Venom/pull/442",
     "source": "github_prs",
@@ -970,7 +970,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-03-08T07:29:51Z",
+    "date": "2026-03-08T08:28:39Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -978,6 +978,42 @@
       "comments: 1",
       "pull request",
       "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] feat: LangGraph integration with observability and startup scripts",
+    "date": "2026-03-08T08:34:54Z",
+    "summary": "- Implement LangGraph supervisor agent with stateful workflow\r\n- Add Redis and Postgres checkpointers for state persistence\r\n- Create Langfuse integration for tracing and scoring\r\n- Add dual-mode scoring system (LLM + rule-based fallback)\r\n- Create one-command startup scripts and Makefile\r\n- Add ADR",
+    "url": "https://github.com/Aparnap2/smart_commerce_agent/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: smart_commerce_agent"
+    ]
+  },
+  {
+    "title": "[PR] feat: API extraction, bonus sources, global compression",
+    "date": "2026-03-08T07:59:05Z",
+    "summary": "## Summary\n\n- **API extraction** for walled-garden sites: Twitter/X (FxTwitter), Reddit (JSON API), Wikipedia (MediaWiki), GitHub (REST API), ArXiv (Atom API)\n- **Wayback Machine fallback** for paywalled/failed pages\n- **Bonus search sources**: DDG News + Reddit Search API supplement web results (ru",
+    "url": "https://github.com/itohnobue/web_search_agent/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: web_search_agent"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency dev.langchain4j:langchain4j-ollama to v1",
+    "date": "2026-03-08T07:45:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
+    "url": "https://github.com/DiverOfDark/TelegramSummarizer/pull/42",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: TelegramSummarizer"
     ]
   }
 ]
