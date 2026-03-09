@@ -346,12 +346,12 @@
   },
   {
     "title": "Brew update memo",
-    "date": "2026-03-02T01:10:24Z",
+    "date": "2026-03-09T03:36:06Z",
     "summary": "## 2023-11-20 (Mon)\r\n\r\n```\r\n$ brew update\r\nUpdated 5 taps (tailwarden/komiser, minio/stable, cduggn/cduggn, homebrew/core and homebrew/cask).\r\n==> New Formulae\r\naction-validator              ghc@9.6                       python-jinja                  ruler\r\namass                         intercept   ",
     "url": "https://github.com/yteraoka/blog-1q77-com/issues/160",
     "source": "github_issues",
     "highlights": [
-      "comments: 52",
+      "comments: 53",
       "state: open",
       "repo: blog-1q77-com"
     ]
@@ -562,8 +562,8 @@
   },
   {
     "title": "[PR] Introducing Atmos AI",
-    "date": "2026-03-09T02:10:29Z",
-    "summary": "## Summary\n\nIntroduces Atmos AI, MCP Server, and LSP integration with comprehensive documentation, CLI commands, and examples.\n\n### AI Assistant (`atmos ai`)\n- **`atmos ai chat`** \u2014 Interactive TUI chat with tool calling, sessions, skills, and multi-provider support\n- **`atmos ai ask`** \u2014 Single-que",
+    "date": "2026-03-09T04:42:59Z",
+    "summary": "## Summary\r\n\r\nAtmos integrates AI directly into infrastructure management, providing intelligent assistance for understanding configurations, analyzing stacks, troubleshooting issues, and automating workflows. This PR introduces Atmos AI, MCP Server, and LSP integration with comprehensive documentat",
     "url": "https://github.com/cloudposse/atmos/pull/2030",
     "source": "github_prs",
     "highlights": [
@@ -718,7 +718,7 @@
   },
   {
     "title": "[PR] refactor(docs): reimplement language routing logic, language selection UX, and some clean up",
-    "date": "2026-03-09T00:05:34Z",
+    "date": "2026-03-09T04:02:40Z",
     "summary": "",
     "url": "https://github.com/genkit-ai/docsite/pull/236",
     "source": "github_prs",
@@ -762,6 +762,114 @@
       "comments: 8",
       "pull request",
       "repo: airflow"
+    ]
+  },
+  {
+    "title": "[PR] fix: stop setup before wrong provider path",
+    "date": "2026-03-09T04:55:06Z",
+    "summary": "## Summary\n- stop the interactive setup wizard before it writes Anthropic/OpenAI config for alternate-provider first runs unless the user explicitly opts in\n- add tests for the safe-exit path and the explicit override path\n- update the public provider/first-run docs to match the current wizard behav",
+    "url": "https://github.com/puremachinery/carapace/pull/142",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: carapace"
+    ]
+  },
+  {
+    "title": "[PR] Add Ollama local AI inference \u2014 no external provider dependency",
+    "date": "2026-03-09T04:53:46Z",
+    "summary": "Eliminates reliance on external AI providers (OpenAI, Anthropic, etc.) by wiring in [Ollama](https://ollama.com) for fully local model inference.\n\n## Changes\n\n- **`docker-compose.yml`** \u2014 Ollama service with persistent volume + `ollama-init` sidecar that waits for readiness (60 s bounded retry) then",
+    "url": "https://github.com/blackboxprogramming/blackboxprogramming/pull/214",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: blackboxprogramming"
+    ]
+  },
+  {
+    "title": "[PR] feat(provider) Refactor Provider",
+    "date": "2026-03-09T04:49:52Z",
+    "summary": "## Description\r\n\r\n\r\n**Related Issue:** Fixes #693 \r\n\r\n**Security Considerations:** [If applicable, e.g. channel auth, env/config handling]\r\n\r\n## Type of Change\r\n\r\n- [ ] Bug fix\r\n- [x] New feature\r\n- [ ] Breaking change\r\n- [ ] Documentation\r\n- [ ] Refactoring\r\n\r\n## Component(s) Affected\r\n\r\n- [ ] Core",
+    "url": "https://github.com/agentscope-ai/CoPaw/pull/734",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: CoPaw"
+    ]
+  },
+  {
+    "title": "[PR] feat: Railway deployment setup for XPS Intelligence System",
+    "date": "2026-03-09T04:37:03Z",
+    "summary": "Adds all required configuration files and documentation to deploy the XPS Intelligence System backend on Railway with AWS RDS PostgreSQL, Groq LLM, Redis, and Qdrant.\n\n## Config changes\n\n- **`Procfile`** \u2014 corrected `web` entry point to `node api/gateway.js`; added `worker: python -m task_queue.work",
+    "url": "https://github.com/InfinityXOneSystems/XPS_INTELLIGENCE_SYSTEM/pull/135",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: XPS_INTELLIGENCE_SYSTEM"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add Forge as LLM provider",
+    "date": "2026-03-09T03:35:43Z",
+    "summary": "## Summary\nAdds Forge API support by introducing environment variable handling and utility functions to route requests through Forge's OpenAI-compatible gateway. Updates the pipeline to use Forge for LLM and embedding services when configured.\n\n## Changes\n- `.env.example`: Added `FORGE_API_KEY` and ",
+    "url": "https://github.com/NirDiamant/Controllable-RAG-Agent/pull/26",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Controllable-RAG-Agent"
+    ]
+  },
+  {
+    "title": "[PR] [Backport release-25.11] python3Packages.requests-hardened: init at 1.2.0",
+    "date": "2026-03-09T03:31:41Z",
+    "summary": "Bot-based backport to `release-25.11`, triggered by a label in #490605.\n\n**Before merging, ensure that this backport is [acceptable for the release](https://github.com/NixOS/nixpkgs/blob/master/CONTRIBUTING.md#changes-acceptable-for-releases).**\n\nEven as a non-committer, if you find that it is not a",
+    "url": "https://github.com/NixOS/nixpkgs/pull/497929",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Mcp server integration",
+    "date": "2026-03-09T02:50:52Z",
+    "summary": "",
+    "url": "https://github.com/lepapillonterrible/aicoven-local-opensource/pull/19",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: aicoven-local-opensource"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-03-09T02:44:09Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v1.1.2",
+    "date": "2026-03-09T04:50:12Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/krushnatkhawale/springai-openai-hello-world/pull/29",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: springai-openai-hello-world"
     ]
   }
 ]
