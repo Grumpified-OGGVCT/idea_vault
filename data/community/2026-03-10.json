@@ -358,12 +358,12 @@
   },
   {
     "title": "Allow importing multi-file GGUF models",
-    "date": "2026-03-03T19:24:05Z",
+    "date": "2026-03-10T12:50:36Z",
     "summary": "### What is the issue?\n\nCurrently Ollama can [import GGUF files](https://github.com/ollama/ollama/blob/main/docs/import.md). However, larger models are sometimes split into separate files. Ollama should support loading multiple GGUF files similar to loading safetensor files.\r\n\n\n### OS\n\n_No response_",
     "url": "https://github.com/ollama/ollama/issues/5245",
     "source": "github_issues",
     "highlights": [
-      "comments: 81",
+      "comments: 83",
       "state: open",
       "repo: ollama"
     ]
@@ -550,7 +550,7 @@
   },
   {
     "title": "[PR] STABILITY_PATCH + DOC_SYNC: importacao, GUI menus e docs v4.32",
-    "date": "2026-03-10T11:36:40Z",
+    "date": "2026-03-10T13:08:03Z",
     "summary": "## **User description**\n## Escopo\\n- estabilizacao de importacao/upsert no fluxo normal\\n- ajustes de GUI sem mudanca de layout estrutural\\n- sincronizacao de docs e baseline v4.31/v4.32\\n\\n## Evidencias\\n- gates locais executados nos slices (py_compile, ruff, ty, pytest focado)\\n- backlog/migration",
     "url": "https://github.com/mauriciomenon/SSA_Consulta_Rapida/pull/45",
     "source": "github_prs",
@@ -970,7 +970,7 @@
   },
   {
     "title": "[PR] fix: resolve eslint errors and test type issues",
-    "date": "2026-03-10T07:43:34Z",
+    "date": "2026-03-10T11:48:52Z",
     "summary": "## Summary\n- Fix eslint errors and warnings across test files\n- Add proper type assertions for alert button callbacks\n- Use valid providerType in RemoteServersScreen tests\n- Fix undefined/null handling in test mocks\n- Add missing providerType to addServer test calls\n- Simplify Blob mock in httpClien",
     "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/130",
     "source": "github_prs",
@@ -1018,7 +1018,7 @@
   },
   {
     "title": "[PR] PR197C: finalize Makefile modularization docs and quality-tooling contract",
-    "date": "2026-03-10T11:29:47Z",
+    "date": "2026-03-10T11:40:48Z",
     "summary": "## Summary\nThis PR extends `197C` beyond Makefile modularization docs and delivers **Phase 2 configuration-contract alignment**:\n- one shared shell env contract for stack/runtime scripts,\n- reduced config drift between `Makefile`, `.env*`, and script-local fallbacks,\n- updated EN/PL operator docs to",
     "url": "https://github.com/mpieniak01/Venom/pull/443",
     "source": "github_prs",
@@ -1186,7 +1186,7 @@
   },
   {
     "title": "[PR] Update nuget (major)",
-    "date": "2026-03-10T10:41:54Z",
+    "date": "2026-03-10T12:57:42Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [MassTransit](https://massient.com/) ([source](https://redirect.github.com/Massient/MassTransit)) | nuget | major | `8.5.2` \u2192 `9.0.",
     "url": "https://github.com/project-origin/stamp/pull/271",
     "source": "github_prs",
@@ -1222,7 +1222,7 @@
   },
   {
     "title": "[PR] feat(platform): Add dynamic LLM model registry with admin UI",
-    "date": "2026-03-10T10:59:04Z",
+    "date": "2026-03-10T11:51:04Z",
     "summary": "## Summary\r\n\r\nReplaces the hardcoded `LlmModel` enum with a fully database-driven LLM registry system. Admins can now add, edit, disable, and delete LLM models without code changes or redeployment.\r\n\r\n### Changes \ud83c\udfd7\ufe0f\r\n\r\n**Database Schema:**\r\n- Added 5 new tables: `LlmProvider`, `LlmModel`, `LlmModelC",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/11699",
     "source": "github_prs",
@@ -1270,7 +1270,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-03-10T10:49:47Z",
+    "date": "2026-03-10T13:00:13Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1278,6 +1278,78 @@
       "comments: 2",
       "pull request",
       "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] fix: normalize response images missing index + guard audio duration o\u2026",
+    "date": "2026-03-10T13:08:44Z",
+    "summary": "\u2026verflow (#22950)\r\n\r\n* feat(spend-logs): add truncation note when error logs are truncated for DB storage (#22936)\r\n\r\nWhen the messages or response JSON fields in spend logs are truncated before being written to the database, the truncation marker now includes a note explaining:\r\n- This is a DB stor",
+    "url": "https://github.com/BerriAI/litellm/pull/22955",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: litellm"
+    ]
+  },
+  {
+    "title": "[PR] Update langchain4j monorepo to v1 (major)",
+    "date": "2026-03-10T13:08:30Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
+    "url": "https://github.com/showpune/azure-java-migration-copilot/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: azure-java-migration-copilot"
+    ]
+  },
+  {
+    "title": "[PR] admin dashboard ssc-dsai:dev",
+    "date": "2026-03-10T13:00:22Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/arthrod/open-webui/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: open-webui"
+    ]
+  },
+  {
+    "title": "[PR] Native Ollama LLM Integration + Example Project + Full Unit Tests",
+    "date": "2026-03-10T12:47:37Z",
+    "summary": "# \ud83d\ude80 PR: Native Ollama LLM Integration + Example Project + Full Unit Tests  \r\n**Includes: Critical Fix for Ollama Cloud Tool-Calling + Comparison Test with LiteLLM**\r\n\r\n## \ud83d\udd17 Link to Issue or Description of Change\r\nNo existing issue.  \r\nSubmitting this as a **major feature contribution** that fills a ",
+    "url": "https://github.com/google/adk-python/pull/3570",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: adk-python"
+    ]
+  },
+  {
+    "title": "[PR] Feature/chroma memory service",
+    "date": "2026-03-10T12:47:29Z",
+    "summary": "**Problem:**\r\nThe current `InMemoryMemoryService` uses simple keyword matching to search agent memories. This means:\r\n- Synonyms don't work (\"happy\" won't match \"joyful\")\r\n- Context is lost (keyword matching ignores semantic meaning)\r\n- No persistence (all memories are lost on restart)\r\n\r\nThe `Verte",
+    "url": "https://github.com/google/adk-python/pull/4197",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: adk-python"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Ollama usage tracking provider",
+    "date": "2026-03-10T12:12:08Z",
+    "summary": "[AI-assisted: GLM-5 on Ollama Cloud via OpenClaw]\r\n\r\nAdds Ollama Cloud usage tracking to OpenClaw, enabling users to monitor their Ollama session and weekly usage limits.\r\n\r\nChanges:\r\n- Add 'ollama' to UsageProviderId type\r\n- Create fetchOllamaUsage to scrape ollama.com/settings\r\n- Support session c",
+    "url": "https://github.com/openclaw/openclaw/pull/28128",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw"
     ]
   }
 ]
