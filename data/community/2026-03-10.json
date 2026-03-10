@@ -202,12 +202,12 @@
   },
   {
     "title": "Custom OpenAI-compatible provider options not being passed to API calls",
-    "date": "2026-03-10T06:55:40Z",
+    "date": "2026-03-10T07:01:04Z",
     "summary": "# Custom OpenAI-compatible provider options not being passed to API calls\n\n## Description\n\n### Summary\n\nWhen using a custom provider with `@ai-sdk/openai-compatible`, the `options` (including `baseURL` and `apiKey`) configured in `opencode.json` are not being passed to the actual API calls. This res",
     "url": "https://github.com/anomalyco/opencode/issues/5674",
     "source": "github_issues",
     "highlights": [
-      "comments: 19",
+      "comments: 20",
       "state: open",
       "repo: opencode"
     ]
@@ -754,7 +754,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-03-09T23:30:50Z",
+    "date": "2026-03-10T07:40:45Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -874,7 +874,7 @@
   },
   {
     "title": "[PR] feat: added passthrough support",
-    "date": "2026-03-10T05:50:18Z",
+    "date": "2026-03-10T07:00:44Z",
     "summary": "## Summary\n\nThis PR adds comprehensive batch delete functionality and passthrough support across all providers, along with an in-memory KV store for transport-level protocol coordination. It also enhances the GenAI integration with improved batch operations, file handling, and provider detection.\n\n#",
     "url": "https://github.com/maximhq/bifrost/pull/1867",
     "source": "github_prs",
@@ -954,6 +954,198 @@
       "comments: 0",
       "pull request",
       "repo: secrets-store-csi-driver-provider-sakuracloud"
+    ]
+  },
+  {
+    "title": "[PR] feat: initialize remote server providers on app startup",
+    "date": "2026-03-10T07:44:13Z",
+    "summary": "## Summary\n- Initialize remote server providers on app startup",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/143",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] fix: resolve eslint errors and test type issues",
+    "date": "2026-03-10T07:43:34Z",
+    "summary": "## Summary\n- Fix eslint errors and warnings across test files\n- Add proper type assertions for alert button callbacks\n- Use valid providerType in RemoteServersScreen tests\n- Fix undefined/null handling in test mocks\n- Add missing providerType to addServer test calls\n- Simplify Blob mock in httpClien",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/130",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: enable remote model usage in chat",
+    "date": "2026-03-10T07:42:12Z",
+    "summary": "## Summary\n- Enable remote model usage in chat",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/146",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: add remote model selection to ModelSelectorModal",
+    "date": "2026-03-10T07:41:01Z",
+    "summary": "## Summary\n- Add remote model selection to ModelSelectorModal",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/144",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: integrate remote providers into generation service v2",
+    "date": "2026-03-10T07:38:00Z",
+    "summary": "## Summary\n- Integrate remote providers into generation service",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/148",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] PR197C: finalize Makefile modularization docs and quality-tooling contract",
+    "date": "2026-03-10T07:37:29Z",
+    "summary": "## Summary\nThis PR finalizes the `197C` scope by closing documentation backlog after Makefile modularization and quality-tooling rollout.\n\nIt also confirms the `197` umbrella recovery status as complete from the implementation perspective (A..G already delivered on branch history), with this PR focu",
+    "url": "https://github.com/mpieniak01/Venom/pull/443",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Venom"
+    ]
+  },
+  {
+    "title": "[PR] test: fix test mocks and imports",
+    "date": "2026-03-10T07:36:15Z",
+    "summary": "## Summary\n- Fix pending settings warning test timing\n- Update useChatGenerationActions for hasActiveModel and tool patterns\n- Use activeModelService mock correctly in ModelSelectorModal tests\n- Fix provider registry import path in unifiedModelSelection\n- Add loadedSettings to resetStores helper",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/137",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] test: add tests for remoteServerManager with Keychain mock",
+    "date": "2026-03-10T07:35:46Z",
+    "summary": "## Summary\n- Add tests for remoteServerManager\n- Add Keychain.ACCESSIBLE mock for tests\n\n## Test plan\n- [ ] Run npm test",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/133",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] test: add tests for RemoteServersScreen",
+    "date": "2026-03-10T07:35:10Z",
+    "summary": "## Summary\n- Add comprehensive tests for RemoteServersScreen component\n- Test server management UI interactions\n- Test error handling and edge cases\n\n## Test plan\n- [ ] Run `npm test` to verify tests pass",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/132",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] fix: improve remote model reliability and logging",
+    "date": "2026-03-10T07:35:08Z",
+    "summary": "## Summary\n- Improve remote model reliability and generation stats\n- Add logging for remote generation debugging\n- Merge: resolve conflicts with main branch",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/140",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] test: add tests for remote server functionality",
+    "date": "2026-03-10T07:35:04Z",
+    "summary": "## Summary\n- Add comprehensive tests for remote server functionality",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/142",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: add remote model selection to homescreen",
+    "date": "2026-03-10T07:34:47Z",
+    "summary": "## Summary\n- Add remote model selection to homescreen",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/145",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] test: add comprehensive tests for useKeyboardAwarePopover hook",
+    "date": "2026-03-10T07:34:17Z",
+    "summary": "## Summary\n- Add comprehensive tests for useKeyboardAwarePopover hook\n\n## Test plan\n- [ ] Run npm test",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/134",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: add remote server management UI",
+    "date": "2026-03-10T07:34:02Z",
+    "summary": "## Summary\n- Add remote server management UI",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/147",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the uv group across 19 directories with 9 updates",
+    "date": "2026-03-10T07:06:38Z",
+    "summary": "[//]: # (dependabot-start)\n\u26a0\ufe0f  **Dependabot is rebasing this PR** \u26a0\ufe0f \n\nRebasing might not happen immediately, so don't worry if this takes some time.\n\nNote: if you make any changes to this PR yourself, they will take precedence over the rebase.\n\n---\n\n[//]: # (dependabot-end)\n\nBumps the uv group with",
+    "url": "https://github.com/preechapon250/langchain/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: langchain"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the uv group across 20 directories with 7 updates",
+    "date": "2026-03-10T07:06:38Z",
+    "summary": "[//]: # (dependabot-start)\n\u26a0\ufe0f  **Dependabot is rebasing this PR** \u26a0\ufe0f \n\nRebasing might not happen immediately, so don't worry if this takes some time.\n\nNote: if you make any changes to this PR yourself, they will take precedence over the rebase.\n\n---\n\n[//]: # (dependabot-end)\n\nBumps the uv group with",
+    "url": "https://github.com/preechapon250/langchain/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: langchain"
     ]
   }
 ]
