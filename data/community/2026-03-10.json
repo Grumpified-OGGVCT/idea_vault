@@ -550,7 +550,7 @@
   },
   {
     "title": "[PR] STABILITY_PATCH + DOC_SYNC: importacao, GUI menus e docs v4.32",
-    "date": "2026-03-10T19:39:29Z",
+    "date": "2026-03-10T20:04:00Z",
     "summary": "## **User description**\n## Escopo\\n- estabilizacao de importacao/upsert no fluxo normal\\n- ajustes de GUI sem mudanca de layout estrutural\\n- sincronizacao de docs e baseline v4.31/v4.32\\n\\n## Evidencias\\n- gates locais executados nos slices (py_compile, ruff, ty, pytest focado)\\n- backlog/migration",
     "url": "https://github.com/mauriciomenon/SSA_Consulta_Rapida/pull/45",
     "source": "github_prs",
@@ -730,7 +730,7 @@
   },
   {
     "title": "[PR] Onboard: add Ollama auth flow and improve model defaults",
-    "date": "2026-03-10T18:27:21Z",
+    "date": "2026-03-10T20:03:40Z",
     "summary": "## Summary\r\n\r\n- **Problem:** Ollama has no onboarding path. Users must configure auth cases through Ollama externally.\r\n- **Why it matters:** Trying to use Ollama cloud models requires auth, but this is not obvious through the onboarding.\r\n- **What changed:** Added Ollama as a first-class onboarding",
     "url": "https://github.com/openclaw/openclaw/pull/41529",
     "source": "github_prs",
@@ -754,7 +754,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-03-10T18:08:01Z",
+    "date": "2026-03-10T19:44:33Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1546,7 +1546,7 @@
   },
   {
     "title": "[PR] Update langchain4j monorepo",
-    "date": "2026-03-10T17:05:42Z",
+    "date": "2026-03-10T20:37:14Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
     "url": "https://github.com/kpavlov/elven/pull/85",
     "source": "github_prs",
@@ -1678,24 +1678,24 @@
   },
   {
     "title": "[PR] feat(autorag): migrate LSD models endpoint to secret-based credentials",
-    "date": "2026-03-10T19:41:25Z",
+    "date": "2026-03-10T20:05:39Z",
     "summary": "https://issues.redhat.com/browse/RHOAIENG-52473\r\n## Description\r\n\r\nMigrates the LSD models endpoint from LlamaStackDistribution CRD-based auto-discovery to a secret-based approach. Instead of scanning for LSD custom resources to find a service URL, the frontend now passes a `secretName` query parame",
     "url": "https://github.com/opendatahub-io/odh-dashboard/pull/6649",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "pull request",
       "repo: odh-dashboard"
     ]
   },
   {
     "title": "[PR] 20 switch the provider for the embedding service to modal",
-    "date": "2026-03-10T19:40:20Z",
+    "date": "2026-03-10T20:38:46Z",
     "summary": "",
     "url": "https://github.com/acadiagit/vecinita/pull/23",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: vecinita"
     ]
@@ -1714,7 +1714,7 @@
   },
   {
     "title": "[PR] chore(py): re-organize file structure, api signatures, types",
-    "date": "2026-03-10T19:34:52Z",
+    "date": "2026-03-10T20:32:05Z",
     "summary": "",
     "url": "https://github.com/firebase/genkit/pull/4879",
     "source": "github_prs",
@@ -1746,6 +1746,102 @@
       "comments: 2",
       "pull request",
       "repo: opkssh"
+    ]
+  },
+  {
+    "title": "[PR] [skip-release] Update bump-dependencies",
+    "date": "2026-03-10T20:38:45Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [actions/checkout](https://redirect.github.com/actions/checkout) ([changelog](https://redirect.github.com/actions/checkout/compare/8e8c483db84b4bee98b60c0593521ed34d9990e8..de0fac2e4500dabe0009e67214ff5",
+    "url": "https://github.com/lehigh-university-libraries/mistral-cloud-run/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mistral-cloud-run"
+    ]
+  },
+  {
+    "title": "[PR] Support Render endpoint config via constants or WP options in AiProviderService",
+    "date": "2026-03-10T20:38:39Z",
+    "summary": "### Motivation\n- Allow the plugin to configure the Render AI endpoint and API key via constants or WordPress options while keeping existing Ollama behavior unchanged.\n- Provide a predictable priority: prefer constants, fallback to options, and fail cleanly if configuration is missing.\n\n### Descripti",
+    "url": "https://github.com/JayKerb/kerbcycle-qr-code-manager-final/pull/239",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kerbcycle-qr-code-manager-final"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Google Gemini provider and true batch LLM scoring",
+    "date": "2026-03-10T20:36:28Z",
+    "summary": "# feat: add Google Gemini provider and true batch LLM scoring\n\n## What is this PR about?\n\nAdds Google Gemini as a second LLM provider and reworks the scoring pipeline to process entire batches of articles in a single LLM call instead of one call per article.\n\n## Why is this change needed?\n\nThe app p",
+    "url": "https://github.com/cstalhem/rss-reader/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: rss-reader"
+    ]
+  },
+  {
+    "title": "[PR] Refactor/agent workflow",
+    "date": "2026-03-10T20:35:41Z",
+    "summary": "[Issue](https://github.com/viennguyen24/Multi-agent-Research-Synthesis/issues/9)\r\n\r\n**Overview**\r\nThe original graph was a simple loop where a single orchestrator handled both planning and reviewing, and each agent worked in isolation with no one checking overall quality. This PR restructures the wo",
+    "url": "https://github.com/viennguyen24/Multi-agent-Research-Synthesis/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Multi-agent-Research-Synthesis"
+    ]
+  },
+  {
+    "title": "[PR] Add Render provider adapter to AiProviderService",
+    "date": "2026-03-10T20:34:20Z",
+    "summary": "### Motivation\n- No Codex skills were required or used for this change. \n- Enable `AiProviderService` to call an alternative AI provider named `render` while preserving the existing `ollama` flow. \n- Keep the change surgical and confined to the service so REST controllers, admin UI, and the prompt b",
+    "url": "https://github.com/JayKerb/kerbcycle-qr-code-manager-final/pull/238",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kerbcycle-qr-code-manager-final"
+    ]
+  },
+  {
+    "title": "[PR] Update README with professional architecture and features documentation",
+    "date": "2026-03-10T20:03:55Z",
+    "summary": "Rewrites the `Readme.md` to provide a highly accurate and professional documentation of the Engwah Leasing Portal. The update includes Mermaid.js diagrams directly derived from the application logic and setup, a detailed feature list, and clear instructions for running the project via Docker Compose",
+    "url": "https://github.com/syafiqabdha/engwah-leasing-portal/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: engwah-leasing-portal"
+    ]
+  },
+  {
+    "title": "[PR] added azureopenai support & extandable architecture for pydanticai",
+    "date": "2026-03-10T19:53:43Z",
+    "summary": "This pull request refactors the model resolution logic in the `PydanticAIHook` to use a modular builder pattern, improving extensibility and clarity for handling different AI providers, especially Azure OpenAI. It introduces dedicated builder classes for Azure OpenAI, custom endpoints, and default r",
+    "url": "https://github.com/apache/airflow/pull/62816",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: airflow"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-go monorepo to v0.41.0",
+    "date": "2026-03-10T19:51:02Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/cloudposse/test-helpers/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: test-helpers"
     ]
   }
 ]
