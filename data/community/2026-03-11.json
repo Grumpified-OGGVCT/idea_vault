@@ -706,7 +706,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-03-11T05:06:55Z",
+    "date": "2026-03-11T09:40:03Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) |  | patch | `9.4.2` \u2192 `9.4.10` |\n| [argo-workflows](https://redirect.git",
     "url": "https://github.com/nolte/k8s-home-lab/pull/821",
     "source": "github_prs",
@@ -946,7 +946,7 @@
   },
   {
     "title": "[PR] Update langchain4j monorepo",
-    "date": "2026-03-11T05:34:56Z",
+    "date": "2026-03-11T09:11:07Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
     "url": "https://github.com/kpavlov/elven/pull/85",
     "source": "github_prs",
@@ -982,8 +982,8 @@
   },
   {
     "title": "[PR] chore(deps): update aqua",
-    "date": "2026-03-11T03:34:39Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.475.0` | `v4.481.0` (+5)",
+    "date": "2026-03-11T09:04:37Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.476.0` | `v4.481.0` (+4)",
     "url": "https://github.com/ianlewis/fx/pull/137",
     "source": "github_prs",
     "highlights": [
@@ -1210,7 +1210,7 @@
   },
   {
     "title": "[PR] Develop => main",
-    "date": "2026-03-11T08:49:50Z",
+    "date": "2026-03-11T08:52:43Z",
     "summary": "## \u65b0\u6a5f\u80fd\n\n- \u30e2\u30fc\u30b7\u30e7\u30f3\u30bf\u30b0\u6a5f\u80fd\u3068\u30dd\u30fc\u30ba\u7ba1\u7406\u30b7\u30b9\u30c6\u30e0\u3092\u8ffd\u52a0\u3057\u307e\u3057\u305f\u3002\n  - AI\u306e\u5fdc\u7b54\u30c6\u30ad\u30b9\u30c8\u5185\u306e`[motion:\u30dd\u30fc\u30ba\u540d]`\u30bf\u30b0\u3067\u30ad\u30e3\u30e9\u30af\u30bf\u30fc\u306e\u30dd\u30fc\u30ba\u3092\u52d5\u7684\u306b\u5207\u308a\u66ff\u3048\u308b\u6a5f\u80fd\u3092\u5b9f\u88c5\u3057\u307e\u3057\u305f\u3002\n  - VRM Web Pose\u5f62\u5f0f\u306e\u30dd\u30fc\u30baJSON\u306b\u5bfe\u5fdc\u3057\u3001`public/poses/`\u306b14\u7a2e\u985e\u306e\u30dd\u30fc\u30ba\u30c7\u30fc\u30bf\uff08think, cheer, cross, mouth_cover, crossed_arms, bow, shrug, shy, wave1/2, clap1/2, cover_mouth, finger_touch\uff09\u3092\u53ce\u9332\u3057\u307e\u3057\u305f\u3002\n  - \u30ad\u30e3\u30e9\u30af\u30bf\u30fc\u8a2d\u5b9a\u30bf\u30d6\u304b\u3089\u30dd\u30fc\u30ba\u306e\u8ffd\u52a0",
     "url": "https://github.com/tegnike/aituber-kit/pull/503",
     "source": "github_prs",
@@ -1234,7 +1234,7 @@
   },
   {
     "title": "[PR] Feat/project scoped rag knowledge base 1",
-    "date": "2026-03-11T08:45:49Z",
+    "date": "2026-03-11T09:48:09Z",
     "summary": "## Summary\r\n\r\n<!-- Briefly describe what this PR does and why -->\r\n\r\n## Type of Change\r\n\r\n- [ ] Bug fix (non-breaking change that fixes an issue)\r\n- [ ] New feature (non-breaking change that adds functionality)\r\n- [ ] Breaking change (fix or feature that would cause existing functionality to not wor",
     "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/151",
     "source": "github_prs",
@@ -1290,6 +1290,66 @@
       "comments: 3",
       "pull request",
       "repo: litellm"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add local Ollama models to nano tier + generic local LLM support (#310)",
+    "date": "2026-03-11T09:48:06Z",
+    "summary": "## Summary\n\n- **`ollama` provider in `resolveClient()`**: `ollama/qwen3:8b` (and any `ollama/*` model) now routes to `http://127.0.0.1:11434/v1` out of the box (configurable via `llm.providers.ollama.baseURL`)\n- **Proactive health check**: fast `/api/tags` ping before each Ollama call (2 s timeout, ",
+    "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/316",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: openclaw-hybrid-memory"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-03-11T09:33:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.476.0` | `v4.481.0` (+4)",
+    "url": "https://github.com/ianlewis/resume/pull/122",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: resume"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-03-11T09:12:25Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.476.0` | `v4.481.0` (+4)",
+    "url": "https://github.com/ianlewis/repo-template-py/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: repo-template-py"
+    ]
+  },
+  {
+    "title": "[PR] feat(platform): Add dynamic LLM model registry with admin UI",
+    "date": "2026-03-11T09:08:19Z",
+    "summary": "## Summary\r\n\r\nReplaces the hardcoded `LlmModel` enum with a fully database-driven LLM registry system. Admins can now add, edit, disable, and delete LLM models without code changes or redeployment.\r\n\r\n### Changes \ud83c\udfd7\ufe0f\r\n\r\n**Database Schema:**\r\n- Added 5 new tables: `LlmProvider`, `LlmModel`, `LlmModelC",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/11699",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 86",
+      "pull request",
+      "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-node monorepo to v11 (major)",
+    "date": "2026-03-11T09:03:23Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/redis](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.25.",
+    "url": "https://github.com/matrix-org/matrix-hookshot/pull/1129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: matrix-hookshot"
     ]
   }
 ]
