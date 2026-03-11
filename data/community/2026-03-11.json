@@ -1030,7 +1030,7 @@
   },
   {
     "title": "[PR] feat: Use local LLM (Ollama) for bulk session pre-filtering before cloud LLM analysis (#290)",
-    "date": "2026-03-11T07:28:13Z",
+    "date": "2026-03-11T08:31:32Z",
     "summary": "## Summary\n\n- Implements two-tier LLM architecture for bulk session processing: local Ollama model pre-filters sessions, cloud LLM only processes flagged-as-interesting sessions\n- New `services/session-pre-filter.ts` service with `preFilterSessions()` \u2014 classifies each session JSONL file using a loc",
     "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/323",
     "source": "github_prs",
@@ -1186,7 +1186,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-03-11T07:48:39Z",
+    "date": "2026-03-11T08:15:29Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1210,12 +1210,12 @@
   },
   {
     "title": "[PR] Develop => main",
-    "date": "2026-03-11T07:31:52Z",
-    "summary": "## \u65b0\u6a5f\u80fd\n\n- \u4eba\u611f\u691c\u77e5\uff08Presence Detection\uff09\u6a5f\u80fd\u3092\u8ffd\u52a0\u3057\u307e\u3057\u305f\u3002\n  - face-api.js\uff08TinyFaceDetector\uff09\u3092\u4f7f\u7528\u3057\u3001Web\u30ab\u30e1\u30e9\u3067\u6765\u5834\u8005\u306e\u9854\u3092\u81ea\u52d5\u691c\u77e5\u3057\u307e\u3059\u3002\n  - \u691c\u77e5\u6642\u306bAI\u304c\u6328\u62f6\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u81ea\u52d5\u767a\u8a71\u3059\u308b\u30d5\u30ed\u30fc\u3092\u5b9f\u88c5\u3057\u307e\u3057\u305f\u3002\n  - 4\u3064\u306e\u72b6\u614b\uff08\u5f85\u6a5f\u2192\u691c\u77e5\u2192\u6328\u62f6\u4e2d\u2192\u4f1a\u8a71\u6e96\u5099\u5b8c\u4e86\uff09\u306b\u3088\u308b\u72b6\u614b\u9077\u79fb\u3092\u7ba1\u7406\u3057\u307e\u3059\u3002\n  - \u96e2\u8131\u5224\u5b9a\u6642\u9593\uff081\u301c10\u79d2\uff09\u3068\u30af\u30fc\u30eb\u30c0\u30a6\u30f3\u6642\u9593\uff081\u301c10\u79d2\uff09\u3092\u8a2d\u5b9a\u3067\u304d\u308b\u3088\u3046\u306b\u3057\u307e\u3057\u305f\u3002\n  - \u691c\u51fa\u611f\u5ea6\u30923\u6bb5\u968e\uff08\u4f4e\uff1a500ms / \u4e2d\uff1a300ms / \u9ad8\uff1a150ms\uff09\u304b\u3089\u9078\u629e\u3067\u304d\u308b\u3088\u3046\u306b\u3057\u307e\u3057\u305f\u3002\n  - \u30c7\u30d0\u30c3\u30b0\u30e2\u30fc\u30c9",
+    "date": "2026-03-11T08:49:50Z",
+    "summary": "## \u65b0\u6a5f\u80fd\n\n- \u30e2\u30fc\u30b7\u30e7\u30f3\u30bf\u30b0\u6a5f\u80fd\u3068\u30dd\u30fc\u30ba\u7ba1\u7406\u30b7\u30b9\u30c6\u30e0\u3092\u8ffd\u52a0\u3057\u307e\u3057\u305f\u3002\n  - AI\u306e\u5fdc\u7b54\u30c6\u30ad\u30b9\u30c8\u5185\u306e`[motion:\u30dd\u30fc\u30ba\u540d]`\u30bf\u30b0\u3067\u30ad\u30e3\u30e9\u30af\u30bf\u30fc\u306e\u30dd\u30fc\u30ba\u3092\u52d5\u7684\u306b\u5207\u308a\u66ff\u3048\u308b\u6a5f\u80fd\u3092\u5b9f\u88c5\u3057\u307e\u3057\u305f\u3002\n  - VRM Web Pose\u5f62\u5f0f\u306e\u30dd\u30fc\u30baJSON\u306b\u5bfe\u5fdc\u3057\u3001`public/poses/`\u306b14\u7a2e\u985e\u306e\u30dd\u30fc\u30ba\u30c7\u30fc\u30bf\uff08think, cheer, cross, mouth_cover, crossed_arms, bow, shrug, shy, wave1/2, clap1/2, cover_mouth, finger_touch\uff09\u3092\u53ce\u9332\u3057\u307e\u3057\u305f\u3002\n  - \u30ad\u30e3\u30e9\u30af\u30bf\u30fc\u8a2d\u5b9a\u30bf\u30d6\u304b\u3089\u30dd\u30fc\u30ba\u306e\u8ffd\u52a0",
     "url": "https://github.com/tegnike/aituber-kit/pull/503",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 11",
       "pull request",
       "repo: aituber-kit"
     ]
@@ -1230,6 +1230,66 @@
       "comments: 1",
       "pull request",
       "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] Feat/project scoped rag knowledge base 1",
+    "date": "2026-03-11T08:45:49Z",
+    "summary": "## Summary\r\n\r\n<!-- Briefly describe what this PR does and why -->\r\n\r\n## Type of Change\r\n\r\n- [ ] Bug fix (non-breaking change that fixes an issue)\r\n- [ ] New feature (non-breaking change that adds functionality)\r\n- [ ] Breaking change (fix or feature that would cause existing functionality to not wor",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/151",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR]  feat(skills): add local-llm-expert",
+    "date": "2026-03-11T08:45:00Z",
+    "summary": "\r\n## What\r\nThis PR introduces the `local-llm-expert` skill to provide authoritative guidance on running, configuring, and optimizing large language models locally on consumer and enterprise hardware.\r\n\r\n## Why\r\nWhile the current catalog has extensive coverage of cloud-based AI services and API integ",
+    "url": "https://github.com/sickn33/antigravity-awesome-skills/pull/266",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: antigravity-awesome-skills"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-03-11T08:44:11Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] Update nuget (major)",
+    "date": "2026-03-11T08:43:47Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [MassTransit](https://massient.com/) ([source](https://redirect.github.com/Massient/MassTransit)) | nuget | major | `8.5.2` \u2192 `9.0.",
+    "url": "https://github.com/project-origin/stamp/pull/271",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: stamp"
+    ]
+  },
+  {
+    "title": "[PR] fix: normalize response images missing index + guard audio duration o\u2026",
+    "date": "2026-03-11T08:35:54Z",
+    "summary": "\u2026verflow (#22950)\r\n\r\n* feat(spend-logs): add truncation note when error logs are truncated for DB storage (#22936)\r\n\r\nWhen the messages or response JSON fields in spend logs are truncated before being written to the database, the truncation marker now includes a note explaining:\r\n- This is a DB stor",
+    "url": "https://github.com/BerriAI/litellm/pull/22955",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: litellm"
     ]
   }
 ]
