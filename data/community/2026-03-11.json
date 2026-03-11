@@ -1018,7 +1018,7 @@
   },
   {
     "title": "[PR] feat: added passthrough support",
-    "date": "2026-03-11T11:05:46Z",
+    "date": "2026-03-11T13:09:14Z",
     "summary": "## Summary\n\nThis PR adds comprehensive batch delete functionality and passthrough support across all providers, along with an in-memory KV store for transport-level protocol coordination. It also enhances the GenAI integration with improved batch operations, file handling, and provider detection.\n\n#",
     "url": "https://github.com/maximhq/bifrost/pull/1867",
     "source": "github_prs",
@@ -1030,7 +1030,7 @@
   },
   {
     "title": "[PR] feat: Use local LLM (Ollama) for bulk session pre-filtering before cloud LLM analysis (#290)",
-    "date": "2026-03-11T11:37:42Z",
+    "date": "2026-03-11T12:40:41Z",
     "summary": "## Summary\n\n- Implements two-tier LLM architecture for bulk session processing: local Ollama model pre-filters sessions, cloud LLM only processes flagged-as-interesting sessions\n- New `services/session-pre-filter.ts` service with `preFilterSessions()` \u2014 classifies each session JSONL file using a loc",
     "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/323",
     "source": "github_prs",
@@ -1162,12 +1162,12 @@
   },
   {
     "title": "[PR] added azureopenai support & extandable architecture for pydanticai",
-    "date": "2026-03-11T06:10:14Z",
+    "date": "2026-03-11T11:54:24Z",
     "summary": "This pull request refactors the model resolution logic in the `PydanticAIHook` to use a modular builder pattern, improving extensibility and clarity for handling different AI providers, especially Azure OpenAI. It introduces dedicated builder classes for Azure OpenAI, custom endpoints, and default r",
     "url": "https://github.com/apache/airflow/pull/62816",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 11",
       "pull request",
       "repo: airflow"
     ]
@@ -1210,19 +1210,19 @@
   },
   {
     "title": "[PR] Develop => main",
-    "date": "2026-03-11T10:08:35Z",
+    "date": "2026-03-11T12:50:53Z",
     "summary": "## \u65b0\u6a5f\u80fd\n\n- \u30e2\u30fc\u30b7\u30e7\u30f3\u30bf\u30b0\u6a5f\u80fd\u3068\u30dd\u30fc\u30ba\u7ba1\u7406\u30b7\u30b9\u30c6\u30e0\u3092\u8ffd\u52a0\u3057\u307e\u3057\u305f\u3002\n  - AI\u306e\u5fdc\u7b54\u30c6\u30ad\u30b9\u30c8\u5185\u306e`[motion:\u30dd\u30fc\u30ba\u540d]`\u30bf\u30b0\u3067\u30ad\u30e3\u30e9\u30af\u30bf\u30fc\u306e\u30dd\u30fc\u30ba\u3092\u52d5\u7684\u306b\u5207\u308a\u66ff\u3048\u308b\u6a5f\u80fd\u3092\u5b9f\u88c5\u3057\u307e\u3057\u305f\u3002\n  - VRM Web Pose\u5f62\u5f0f\u306e\u30dd\u30fc\u30baJSON\u306b\u5bfe\u5fdc\u3057\u3001`public/poses/`\u306b14\u7a2e\u985e\u306e\u30dd\u30fc\u30ba\u30c7\u30fc\u30bf\uff08think, cheer, cross, mouth_cover, crossed_arms, bow, shrug, shy, wave1/2, clap1/2, cover_mouth, finger_touch\uff09\u3092\u53ce\u9332\u3057\u307e\u3057\u305f\u3002\n  - \u30ad\u30e3\u30e9\u30af\u30bf\u30fc\u8a2d\u5b9a\u30bf\u30d6\u304b\u3089\u30dd\u30fc\u30ba\u306e\u8ffd\u52a0",
     "url": "https://github.com/tegnike/aituber-kit/pull/503",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 13",
       "pull request",
       "repo: aituber-kit"
     ]
   },
   {
     "title": "[PR] main",
-    "date": "2026-03-11T07:14:35Z",
+    "date": "2026-03-11T12:50:41Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1366,7 +1366,7 @@
   },
   {
     "title": "[PR] feat(sandbox): modular multi-backend sandbox + Windows Job Objects",
-    "date": "2026-03-11T11:32:08Z",
+    "date": "2026-03-11T11:39:16Z",
     "summary": "## Summary\n\n- Refactored monolithic `sandbox_exec.rs` (2,242 LOC) into modular `src/tools/sandbox/` architecture (11 files, ~2,400 LOC)\n- Implemented all sandbox milestones SBX-1 through SBX-6:\n  - **SBX-1**: Unified backend abstraction with `build_process_command()` facade\n  - **SBX-2**: Linux nati",
     "url": "https://github.com/homunbot/homunbot/pull/31",
     "source": "github_prs",
@@ -1446,6 +1446,66 @@
       "comments: 0",
       "pull request",
       "repo: azure-java-migration-copilot"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.479.0",
+    "date": "2026-03-11T13:08:42Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.416.0` \u2192 `v4.479.0` | `v4.481.0` (+1)",
+    "url": "https://github.com/barrydobson/dotfiles/pull/46",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] feat(autorag): migrate LSD models endpoint to secret-based credentials",
+    "date": "2026-03-11T12:52:26Z",
+    "summary": "https://issues.redhat.com/browse/RHOAIENG-52473\r\n## Description\r\n\r\nMigrates the LSD models endpoint from LlamaStackDistribution CRD-based auto-discovery to a secret-based approach. Instead of scanning for LSD custom resources to find a service URL, the frontend now passes a `secretName` query parame",
+    "url": "https://github.com/opendatahub-io/odh-dashboard/pull/6649",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: odh-dashboard"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.479.0",
+    "date": "2026-03-11T12:51:41Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.404.0` \u2192 `v4.479.0` | `v4.481.0` (+1)",
+    "url": "https://github.com/tosuke/secrets-store-csi-driver-provider-sakuracloud/pull/78",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: secrets-store-csi-driver-provider-sakuracloud"
+    ]
+  },
+  {
+    "title": "[PR] `Iris`: Centralize LLM model configuration and selection",
+    "date": "2026-03-11T12:05:56Z",
+    "summary": "## Motivation and Context\r\nLLM model selection was previously scattered across individual pipelines with hardcoded model names and environment-variable-based overrides. The `application.yml` configuration matched against `LanguageModel.model` for most roles but `LanguageModel.id` for the `reranker` ",
+    "url": "https://github.com/ls1intum/edutelligence/pull/411",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] feat: Pin image digest",
+    "date": "2026-03-11T11:56:16Z",
+    "summary": "## What does this PR do?\r\n\r\nThe PR pins container images using their digests. It specifically pins the images for Ryuk and SSHD provided by the Testcontainers library, along with most images used in our tests. Images tagged as `latest`, and some Dockerfiles required for specific tests are not pinned",
+    "url": "https://github.com/testcontainers/testcontainers-dotnet/pull/1658",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: testcontainers-dotnet"
     ]
   }
 ]
