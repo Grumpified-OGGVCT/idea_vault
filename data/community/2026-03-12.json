@@ -166,12 +166,12 @@
   },
   {
     "title": "Support for other local llm provider",
-    "date": "2026-03-11T22:30:09Z",
+    "date": "2026-03-12T11:04:47Z",
     "summary": "Enable the use of any OpenAI-compatible provider by allowing users to override the default API base URL and model strings. This facilitates integration with other local providers like LM Studio, and routers, as well as alternative cloud endpoints.",
     "url": "https://github.com/Kieirra/murmure/issues/207",
     "source": "github_issues",
     "highlights": [
-      "comments: 12",
+      "comments: 13",
       "state: open",
       "repo: murmure"
     ]
@@ -202,7 +202,7 @@
   },
   {
     "title": "Experimental ROCM & PYTORCH builds for ALL GFX103X (rdna2)",
-    "date": "2026-03-11T18:06:51Z",
+    "date": "2026-03-12T11:00:53Z",
     "summary": "https://app.mediafire.com/folder/mvrwkgj96lkua\n\nTDLR ; everything in this post https://github.com/patientx/ComfyUI-Zluda/issues/431 is the same except you download the rocm & pytorch packages manually into a folder and install them from that folder not from a web link.\n\nYes it is as the title says. ",
     "url": "https://github.com/patientx/ComfyUI-Zluda/issues/435",
     "source": "github_issues",
@@ -802,7 +802,7 @@
   },
   {
     "title": "[PR] feat(landing): comprehensive mobile redesign for all landing page components",
-    "date": "2026-03-12T09:47:39Z",
+    "date": "2026-03-12T10:48:50Z",
     "summary": "## Summary\n\n- Complete mobile redesign across all 13 landing page components (14 files, +1049/-332 lines)\n- Preserves the full desktop experience with zero regressions (verified via browser automation at 1440x900)\n- Verified on mobile viewport (375x812) with browser automation \u2014 all sections pass\n\n#",
     "url": "https://github.com/juspay/neurolink/pull/866",
     "source": "github_prs",
@@ -970,7 +970,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/openclaw/openclaw ( 2026.3.8 \u2192 2026.3.11 )",
-    "date": "2026-03-12T10:19:36Z",
+    "date": "2026-03-12T11:17:12Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.8` -> `2026.3.11` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check",
     "url": "https://github.com/solanyn/home-ops/pull/3096",
     "source": "github_prs",
@@ -1378,8 +1378,8 @@
   },
   {
     "title": "[PR] Update k8s-manifests",
-    "date": "2026-03-12T10:39:09Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [fluxcd/flux2](https://redirect.github.com/fluxcd/flux2) | minor | `v2.7.5` -> `v2.8.1` |\n| [ghcr.io/fluxcd/helm-controller](https://redirect.github.com/fluxcd/helm-controller) | minor | `v1.4.5` -> `v1.5.1` |\n| [",
+    "date": "2026-03-12T11:04:07Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [fluxcd/flux2](https://redirect.github.com/fluxcd/flux2) | minor | `v2.7.5` \u2192 `v2.8.1` |\n| [ghcr.io/fluxcd/helm-controller](https://redirect.g",
     "url": "https://github.com/JacobMillward/homelab/pull/18",
     "source": "github_prs",
     "highlights": [
@@ -1446,6 +1446,66 @@
       "comments: 0",
       "pull request",
       "repo: carbonj"
+    ]
+  },
+  {
+    "title": "[PR] pull up with a couple nixies",
+    "date": "2026-03-12T11:34:49Z",
+    "summary": "pull up with a couple nixies\n\nai doom\n\nfuck it, just start the history\n\nrewrite md-sync: configurable roots, repo suffix qualification, disable service\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added automated code v",
+    "url": "https://github.com/0xgleb/dotconfig/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: dotconfig"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update pip",
+    "date": "2026-03-12T11:34:09Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [google-adk](https://redirect.github.com/google/adk-python) ([changelog](https://redirect.github.co",
+    "url": "https://github.com/googleapis/genai-toolbox/pull/2280",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: genai-toolbox"
+    ]
+  },
+  {
+    "title": "[PR] fix: consolidate DB paths \u2014 single canonical brainlayer.db",
+    "date": "2026-03-12T10:56:37Z",
+    "summary": "## Summary\n- **Removed dual-path (zikaron/brainlayer) logic** \u2014 all 27 files now use `paths.py:get_db_path()` with single canonical path `~/.local/share/brainlayer/brainlayer.db`\n- **Fixed server.json env var mismatch** \u2014 `BRAINLAYER_DB_PATH` \u2192 `BRAINLAYER_DB` to match what `paths.py` actually reads",
+    "url": "https://github.com/EtanHey/brainlayer/pull/77",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: brainlayer"
+    ]
+  },
+  {
+    "title": "[PR] Implement TTSProcessor Helper Methods for Voice Discovery and Provider Capabilities",
+    "date": "2026-03-12T10:48:51Z",
+    "summary": "# Pull Request\n\n## Description\n\nImplements helper methods in TTSProcessor for getting available voices and provider capabilities. This utility provides voice discovery and capability checking for Text-to-Speech functionality across supported Google Cloud providers.\n\n## Type of Change\n\n- [ ] \ud83d\udc1b Bug fi",
+    "url": "https://github.com/juspay/neurolink/pull/602",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: neurolink"
+    ]
+  },
+  {
+    "title": "[PR] Update README.md",
+    "date": "2026-03-12T10:45:01Z",
+    "summary": "- [arthurpanhku/Arthor-Agent](https://github.com/arthurpanhku/Arthor-Agent) - Security assessment agent built with LangChain, supporting RAG, local LLMs (Ollama), and MCP integration. \ud83d\udc0d ",
+    "url": "https://github.com/punkpeye/awesome-mcp-servers/pull/2805",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: awesome-mcp-servers"
     ]
   }
 ]
