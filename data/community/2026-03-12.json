@@ -562,7 +562,7 @@
   },
   {
     "title": "[PR] chore(py): re-organize file structure, api signatures, types",
-    "date": "2026-03-12T17:44:24Z",
+    "date": "2026-03-12T19:59:24Z",
     "summary": "",
     "url": "https://github.com/firebase/genkit/pull/4879",
     "source": "github_prs",
@@ -850,7 +850,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-03-12T19:48:13Z",
+    "date": "2026-03-12T19:53:05Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1282,7 +1282,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-03-12T10:39:53Z",
+    "date": "2026-03-12T20:29:10Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1402,7 +1402,7 @@
   },
   {
     "title": "[PR] Update Growatt docs for SPH support (core #165314)",
-    "date": "2026-03-12T19:48:10Z",
+    "date": "2026-03-12T19:53:18Z",
     "summary": "## Proposed change\n\nUpdates the Growatt integration documentation to match the current behavior and scope of the corresponding Home Assistant Core changes in PR #165314.\n\nThis PR adds and clarifies:\n- SPH inverter support details and model series in the API token compatibility section.\n- New SPH act",
     "url": "https://github.com/home-assistant/home-assistant.io/pull/44045",
     "source": "github_prs",
@@ -1570,7 +1570,7 @@
   },
   {
     "title": "[PR] Update dependency llama-stack to v0.6.0",
-    "date": "2026-03-12T18:41:19Z",
+    "date": "2026-03-12T20:09:09Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-stack](https://redirect.github.com/llamastack/llama-stack) | `==0.4.3` -> `==0.6.0` | ![age]",
     "url": "https://github.com/syedriko/lightspeed-core-rag-content/pull/31",
     "source": "github_prs",
@@ -1762,7 +1762,7 @@
   },
   {
     "title": "[PR] feat: profile archives, document extraction, and retrieval-based synthesis",
-    "date": "2026-03-12T18:44:49Z",
+    "date": "2026-03-12T20:37:36Z",
     "summary": "## Summary\n\nAdds a persistent profile archive system for multi-document candidates, alongside document extraction, retrieval-based synthesis, and several resume quality improvements. Direct upload mode is fully preserved \u2014 no breaking changes to the existing flow.\n\n## What's new\n\n### Profile archive",
     "url": "https://github.com/btseytlin/hr-breaker/pull/23",
     "source": "github_prs",
@@ -1786,7 +1786,7 @@
   },
   {
     "title": "[PR] feat(atlas): add Cognee MCP knowledge-graph memory service",
-    "date": "2026-03-12T19:37:00Z",
+    "date": "2026-03-12T19:54:46Z",
     "summary": "## Summary\n- Adds `cognee-mcp` Docker service to base and Atlas compose files (port 8094, Tailscale-only, profile `cognee`)\n- Patches MCP SDK DNS rebinding protection bug via entrypoint `sed` (FastMCP defaults host=127.0.0.1 before entrypoint overrides to 0.0.0.0)\n- Updates CLAUDE.md rule 6 to permi",
     "url": "https://github.com/OrionArchitekton/cosmocrat-core/pull/548",
     "source": "github_prs",
@@ -1926,6 +1926,150 @@
       "comments: 2",
       "pull request",
       "repo: opkssh"
+    ]
+  },
+  {
+    "title": "[PR] fix: use presigned S3 URLs for W3 OCR to eliminate 413 errors",
+    "date": "2026-03-12T20:35:13Z",
+    "summary": "## Summary\n- Generate presigned S3 URLs from `s3_key` so W3 downloads files directly from S3 \u2014 no more base64 through the gateway\n- Replace client-side PDF page splitting with W3 async OCR (`submit_ocr_job` + `check_ocr_job` polling)\n- All three processing paths (`_process_small_document`, `_process",
+    "url": "https://github.com/dkariv/financial-ai-agent/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: financial-ai-agent"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump openclaw from 2026.3.8 to 2026.3.11 in /extensions/memory-hybrid",
+    "date": "2026-03-12T20:34:55Z",
+    "summary": "Bumps [openclaw](https://github.com/openclaw/openclaw) from 2026.3.8 to 2026.3.11.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</a>.</em></p>\n<blockquote>\n<h2>openclaw 2026.3.11</h2>\n<h3>Security</h3>\n<ul>\n",
+    "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/431",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaw-hybrid-memory"
+    ]
+  },
+  {
+    "title": "[PR] Bump openclaw from 2026.3.1 to 2026.3.11",
+    "date": "2026-03-12T20:34:44Z",
+    "summary": "Bumps [openclaw](https://github.com/openclaw/openclaw) from 2026.3.1 to 2026.3.11.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</a>.</em></p>\n<blockquote>\n<h2>openclaw 2026.3.11</h2>\n<h3>Security</h3>\n<ul>\n",
+    "url": "https://github.com/wooters/openclaw-plugin/pull/20",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-plugin"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump the npm_and_yarn group across 1 directory with 3 updates",
+    "date": "2026-03-12T20:34:44Z",
+    "summary": "Bumps the npm_and_yarn group with 1 update in the / directory: [openclaw](https://github.com/openclaw/openclaw).\n\nUpdates `openclaw` from 2026.3.8 to 2026.3.11\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</",
+    "url": "https://github.com/pawastation/wechat-kf/pull/20",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: wechat-kf"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump openclaw from 2026.3.8 to 2026.3.11",
+    "date": "2026-03-12T20:34:41Z",
+    "summary": "Bumps [openclaw](https://github.com/openclaw/openclaw) from 2026.3.8 to 2026.3.11.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</a>.</em></p>\n<blockquote>\n<h2>openclaw 2026.3.11</h2>\n<h3>Security</h3>\n<ul>\n",
+    "url": "https://github.com/VatsalSy/memory-worthydb/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: memory-worthydb"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump openclaw from 2026.3.8 to 2026.3.11 in the npm_and_yarn group across 1 directory",
+    "date": "2026-03-12T20:34:25Z",
+    "summary": "Bumps the npm_and_yarn group with 1 update in the / directory: [openclaw](https://github.com/openclaw/openclaw).\n\nUpdates `openclaw` from 2026.3.8 to 2026.3.11\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</",
+    "url": "https://github.com/evansantos/slimclaw/pull/62",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: slimclaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump openclaw from 2026.3.8 to 2026.3.11",
+    "date": "2026-03-12T20:34:24Z",
+    "summary": "Bumps [openclaw](https://github.com/openclaw/openclaw) from 2026.3.8 to 2026.3.11.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</a>.</em></p>\n<blockquote>\n<h2>openclaw 2026.3.11</h2>\n<h3>Security</h3>\n<ul>\n",
+    "url": "https://github.com/legendaryvibecoder/gigabrain/pull/34",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: gigabrain"
+    ]
+  },
+  {
+    "title": "[PR] Bump openclaw from 2026.3.8 to 2026.3.11 in /packages/openclaw-plugin",
+    "date": "2026-03-12T20:34:17Z",
+    "summary": "Bumps [openclaw](https://github.com/openclaw/openclaw) from 2026.3.8 to 2026.3.11.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</a>.</em></p>\n<blockquote>\n<h2>openclaw 2026.3.11</h2>\n<h3>Security</h3>\n<ul>\n",
+    "url": "https://github.com/troykelly/openclaw-projects/pull/2490",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-projects"
+    ]
+  },
+  {
+    "title": "[PR] build(deps-dev): bump openclaw from 2026.2.6-3 to 2026.3.11",
+    "date": "2026-03-12T20:34:13Z",
+    "summary": "Bumps [openclaw](https://github.com/openclaw/openclaw) from 2026.2.6-3 to 2026.3.11.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</a>.</em></p>\n<blockquote>\n<h2>openclaw 2026.3.11</h2>\n<h3>Security</h3>\n<ul",
+    "url": "https://github.com/cnjack/openclaw-bigmodel-websarch/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-bigmodel-websarch"
+    ]
+  },
+  {
+    "title": "[PR] Bump openclaw from 2026.3.1 to 2026.3.11",
+    "date": "2026-03-12T20:34:11Z",
+    "summary": "Bumps [openclaw](https://github.com/openclaw/openclaw) from 2026.3.1 to 2026.3.11.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</a>.</em></p>\n<blockquote>\n<h2>openclaw 2026.3.11</h2>\n<h3>Security</h3>\n<ul>\n",
+    "url": "https://github.com/massalabs/openclaw-gossip-plugin/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-gossip-plugin"
+    ]
+  },
+  {
+    "title": "[PR] fix: Bug: Ollama model OOM \u2014 qwen3:8b requires 18.2 GiB but only ~8 GiB available (#387)",
+    "date": "2026-03-12T20:31:06Z",
+    "summary": "## Summary\n\n- Adds `isOllamaOOM()` detection helper to identify Ollama out-of-memory responses (e.g. `model requires more system memory (18.2 GiB) than is available (8.0 GiB)`)\n- OOM errors are now suppressed from GlitchTip reporting across all affected subsystems (`auto-recall-hyde-generation`, `cl",
+    "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/391",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaw-hybrid-memory"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/karakeep-app/karakeep ( 0.28.0 \u2192 0.31.0 )",
+    "date": "2026-03-12T20:29:12Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/karakeep-app/karakeep](https://redirect.github.com/karakeep-app/karakeep) | minor | `0.28.0` \u2192 `0.31.0` |\n\n---\n\n> [!WARNING]\n> Some d",
+    "url": "https://github.com/judahrand/home-ops/pull/886",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
