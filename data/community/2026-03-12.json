@@ -550,12 +550,12 @@
   },
   {
     "title": "[PR] feat: add official DeepL provider with native batching",
-    "date": "2026-03-12T05:51:32Z",
+    "date": "2026-03-12T06:16:14Z",
     "summary": "## Summary\r\n- add official `deepl` as a pure translation provider alongside `deeplx`\r\n- implement an official DeepL adapter with API key based endpoint detection and native `text[]` batching\r\n- route official DeepL through the batch queue while keeping `deeplx` on the existing single-request path\r\n-",
     "url": "https://github.com/mengxi-ream/read-frog/pull/1099",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: read-frog"
     ]
@@ -682,7 +682,7 @@
   },
   {
     "title": "[PR] feat: Bun CLI installer with management commands",
-    "date": "2026-03-12T04:47:54Z",
+    "date": "2026-03-12T06:22:17Z",
     "summary": "## Summary\r\n\r\nReplaces the shell installer with a compiled **Bun CLI binary** that serves as both installer and management tool. Achieves **100% feature parity** with all 13 shell installer phases plus adds lifecycle commands (`status`, `update`, `doctor`, `config`, `uninstall`).\r\n\r\n### Highlights\r\n",
     "url": "https://github.com/Light-Heart-Labs/DreamServer/pull/113",
     "source": "github_prs",
@@ -970,7 +970,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/openclaw/openclaw ( 2026.3.8 \u2192 2026.3.11 )",
-    "date": "2026-03-12T05:28:24Z",
+    "date": "2026-03-12T06:23:22Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.8` -> `2026.3.11` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check",
     "url": "https://github.com/solanyn/home-ops/pull/3096",
     "source": "github_prs",
@@ -982,7 +982,7 @@
   },
   {
     "title": "[PR] fix(container): update ghcr.io/openclaw/openclaw ( 2026.3.8 \u2192 2026.3.11 )",
-    "date": "2026-03-12T05:28:38Z",
+    "date": "2026-03-12T06:23:58Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.8` \u2192 `2026.3.11` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check ",
     "url": "https://github.com/wipash/homelab/pull/5494",
     "source": "github_prs",
@@ -994,7 +994,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/openclaw/openclaw ( 2026.3.8 \u2794 2026.3.11 )",
-    "date": "2026-03-12T05:24:37Z",
+    "date": "2026-03-12T06:16:16Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.8` \u2192 `2026.3.11` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check ",
     "url": "https://github.com/gavinmcfall/home-ops/pull/1706",
     "source": "github_prs",
@@ -1074,6 +1074,114 @@
       "comments: 0",
       "pull request",
       "repo: k8s-home-lab"
+    ]
+  },
+  {
+    "title": "[PR] fix: add NSCameraUsageDescription to Info.plist",
+    "date": "2026-03-12T07:01:57Z",
+    "summary": "## Summary\n- Added missing `NSCameraUsageDescription` key to `ios/OffgridMobile/Info.plist`\n- iOS requires this privacy usage description before any code can access the camera; without it the app crashes immediately on real devices\n- Simulators do not enforce privacy usage descriptions, which is why",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/156",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update image ghcr.io/openclaw/openclaw (2026.3.8 \u2192 2026.3.11)",
+    "date": "2026-03-12T07:01:49Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.8` \u2192 `2026.3.11` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>openclaw/openclaw (ghcr.i",
+    "url": "https://github.com/joryirving/home-ops/pull/6296",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update image ghcr.io/openclaw/openclaw ( 2026.3.2 \u2794 2026.3.11 )",
+    "date": "2026-03-12T06:28:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.2` \u2192 `2026.3.11` ",
+    "url": "https://github.com/Aviator-Coding/home-ops/pull/574",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] chore: bump openclaw to v2026.3.11",
+    "date": "2026-03-12T06:27:15Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.8`\n- **Latest**: `v2026.3.11`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.11\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/22",
+    "url": "https://github.com/jedwards1230/openclaw-charts/pull/105",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw-charts"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update minor and patch updates",
+    "date": "2026-03-12T06:07:07Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.8` \u2192 `2026.3.11` |\n| [renovate/renovate](https://renovatebot.com) ([source](https://redi",
+    "url": "https://github.com/charchess/vixens/pull/2025",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: vixens"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency openclaw to v2026.3.11",
+    "date": "2026-03-12T06:06:06Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [openclaw](https://redirect.github.com/openclaw/openclaw) | `2026.3.8` \u2192 `2026.3.11` | ![age](https",
+    "url": "https://github.com/BaptTF/openclaw-lea-config/pull/28",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-lea-config"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update ghcr.io/openclaw/openclaw ( 2026.3.8 \u2192 2026.3.11 )",
+    "date": "2026-03-12T06:03:54Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.8` \u2192 `2026.3.11` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check ",
+    "url": "https://github.com/ekenheim/home-ops-upgrade/pull/4896",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops-upgrade"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.482.0",
+    "date": "2026-03-12T06:00:12Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.440.0` \u2192 `v4.482.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/windsorcli/git-livereload/pull/106",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: git-livereload"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-03-12T05:59:14Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.397.0` \u2192 `v4.482.0` |\n| [ianlewis/todos](https://re",
+    "url": "https://github.com/ianlewis/ianlewis/pull/22",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ianlewis"
     ]
   }
 ]
