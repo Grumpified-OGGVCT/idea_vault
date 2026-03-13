@@ -850,7 +850,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/openclaw/openclaw ( 2026.3.2 \u2794 2026.3.12 )",
-    "date": "2026-03-13T06:26:28Z",
+    "date": "2026-03-13T08:20:31Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.2` \u2192 `2026.3.12` ",
     "url": "https://github.com/Aviator-Coding/home-ops/pull/574",
     "source": "github_prs",
@@ -1258,8 +1258,8 @@
   },
   {
     "title": "[PR] chore(deps): update homelab-containers",
-    "date": "2026-03-13T06:09:58Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [frooodle/s-pdf](https://redirect.github.com/Stirling-Tools/Stirling-PDF) | patch | `2.7.0` \u2192 `2.7.1` |\n| [ghcr.io/dgtlmoon/changedetection.io](https://redirect.github.com/dgtlmoon/changedetection.io) | patch | `0",
+    "date": "2026-03-13T08:41:12Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [frooodle/s-pdf](https://redirect.github.com/Stirling-Tools/Stirling-PDF) | patch | `2.7.0` \u2192 `2.7.1` |\n| ghcr.io/cleanuparr/cleanuparr | minor | `2.7.9` \u2192 `2.8.0` |\n| [ghcr.io/dgtlmoon/changedetection.io](https:/",
     "url": "https://github.com/gaelgoth/nix-homelab/pull/289",
     "source": "github_prs",
     "highlights": [
@@ -1282,7 +1282,7 @@
   },
   {
     "title": "[PR] chore(deps): update container image ghcr.io/openclaw/openclaw to v2026.3.12",
-    "date": "2026-03-13T06:05:42Z",
+    "date": "2026-03-13T08:44:16Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.11` \u2192 `2026.3.12` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check",
     "url": "https://github.com/mrwulf/home-cluster/pull/3819",
     "source": "github_prs",
@@ -1318,7 +1318,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-03-13T06:00:51Z",
+    "date": "2026-03-13T08:46:16Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1374,6 +1374,90 @@
       "comments: 1",
       "pull request",
       "repo: GithubStarsManager"
+    ]
+  },
+  {
+    "title": "[PR] Add Ollama Cloud support with automatic deployment detection",
+    "date": "2026-03-13T08:44:24Z",
+    "summary": "Adds cloud deployment option for Ollama while preserving local deployment capability. System automatically detects deployment mode via URL parsing.\n\n## Changes\n\n**Core Service** (`backend/src/ai/ai.service.ts`)\n- Cloud detection via URL hostname parsing (`api.ollama.com`, `ollama.com/api`)\n- Bearer ",
+    "url": "https://github.com/DaddyFilth/ai-art/pull/38",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ai-art"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-03-13T08:44:11Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] Update nuget (major)",
+    "date": "2026-03-13T08:42:20Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [MassTransit](https://massient.com/) ([source](https://redirect.github.com/Massient/MassTransit)) | nuget | major | `8.5.2` \u2192 `9.0.",
+    "url": "https://github.com/project-origin/stamp/pull/271",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: stamp"
+    ]
+  },
+  {
+    "title": "[PR] Add FastAPI multi-translator app with Ollama Cloud backend",
+    "date": "2026-03-13T08:38:24Z",
+    "summary": "Greenfield implementation of a translation service: single FastAPI endpoint that translates text into multiple languages concurrently, backed by Ollama Cloud (`gemini-3-flash-preview`), with a pure HTML/CSS/JS frontend.\n\n## Backend (`main.py`)\n\n- `POST /translate` \u2014 accepts `{\"text\": str, \"languages",
+    "url": "https://github.com/ynonp/magic-translator/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: magic-translator"
+    ]
+  },
+  {
+    "title": "[PR] Feat/llm merged main",
+    "date": "2026-03-13T08:38:23Z",
+    "summary": "## Summary\r\n\r\nThis PR merges the changes from PR #594 (`feat/api_llm_cost`) into the latest `main` branch.\r\n\r\n## Changes Included\r\n\r\n- Resolved all merge conflicts with `main`\r\n- Added structured logs including:\r\n  - `user_id`\r\n  - `conversation_id`\r\n  - `project_id`\r\n- Introduced `agent_run_usage` ",
+    "url": "https://github.com/potpie-ai/potpie/pull/644",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: potpie"
+    ]
+  },
+  {
+    "title": "[PR] Update k8s-manifests",
+    "date": "2026-03-13T08:04:00Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [fluxcd/flux2](https://redirect.github.com/fluxcd/flux2) | minor | `v2.7.5` \u2192 `v2.8.2` |\n| [ghcr.io/fluxcd/helm-controller](https://redirect.g",
+    "url": "https://github.com/JacobMillward/homelab/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat: profile archives, document extraction, and retrieval-based synthesis",
+    "date": "2026-03-13T07:56:50Z",
+    "summary": "## Summary\n\nAdds a persistent profile archive system for multi-document candidates, alongside document extraction, retrieval-based synthesis, and several resume quality improvements. Direct upload mode is fully preserved \u2014 no breaking changes to the existing flow.\n\n## What's new\n\n### Profile archive",
+    "url": "https://github.com/btseytlin/hr-breaker/pull/23",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: hr-breaker"
     ]
   }
 ]
