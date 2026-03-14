@@ -538,7 +538,7 @@
   },
   {
     "title": "[PR] feat(atlas): add Cognee MCP knowledge-graph memory service",
-    "date": "2026-03-14T01:58:42Z",
+    "date": "2026-03-14T02:36:27Z",
     "summary": "## Summary\n- Adds `cognee-mcp` Docker service to base and Atlas compose files (port 8094, Tailscale-only, profile `cognee`)\n- Patches MCP SDK DNS rebinding protection bug via entrypoint `sed` (FastMCP defaults host=127.0.0.1 before entrypoint overrides to 0.0.0.0)\n- Updates CLAUDE.md rule 6 to permi",
     "url": "https://github.com/OrionArchitekton/cosmocrat-core/pull/548",
     "source": "github_prs",
@@ -574,24 +574,24 @@
   },
   {
     "title": "[PR] chore(deps): bump the uv group across 19 directories with 9 updates",
-    "date": "2026-03-14T01:54:30Z",
+    "date": "2026-03-14T04:00:19Z",
     "summary": "[//]: # (dependabot-start)\n\u26a0\ufe0f  **Dependabot is rebasing this PR** \u26a0\ufe0f \n\nRebasing might not happen immediately, so don't worry if this takes some time.\n\nNote: if you make any changes to this PR yourself, they will take precedence over the rebase.\n\n---\n\n[//]: # (dependabot-end)\n\nBumps the uv group with",
     "url": "https://github.com/preechapon250/langchain/pull/3",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 13",
       "pull request",
       "repo: langchain"
     ]
   },
   {
     "title": "[PR] chore(deps): bump the uv group across 20 directories with 7 updates",
-    "date": "2026-03-14T01:54:24Z",
+    "date": "2026-03-14T04:00:03Z",
     "summary": "[//]: # (dependabot-start)\n\u26a0\ufe0f  **Dependabot is rebasing this PR** \u26a0\ufe0f \n\nRebasing might not happen immediately, so don't worry if this takes some time.\n\nNote: if you make any changes to this PR yourself, they will take precedence over the rebase.\n\n---\n\n[//]: # (dependabot-end)\n\nBumps the uv group with",
     "url": "https://github.com/preechapon250/langchain/pull/2",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 13",
       "pull request",
       "repo: langchain"
     ]
@@ -762,6 +762,162 @@
       "comments: 0",
       "pull request",
       "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] fix: Ollama tool calling, stream parsing, and default knowledge base tool",
+    "date": "2026-03-14T04:46:50Z",
+    "summary": "## Summary\n- **Fix Ollama tool calls dropped**: Accumulate `tool_calls` from all streaming `done:false` messages instead of only the final `done:true` message (where they're absent)\n- **Fix HTTP 400 on tool result round-trips**: Convert `tool_call` arguments from JSON strings to objects for Ollama's",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/168",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/openclaw/openclaw docker tag to v2026.3.12",
+    "date": "2026-03-14T04:45:59Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | final | minor | `2026.",
+    "url": "https://github.com/rajsinghtech/openclaw-workspace/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-workspace"
+    ]
+  },
+  {
+    "title": "[PR] fix: left over dbrefactor work?",
+    "date": "2026-03-14T04:46:57Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Medium risk because it changes the `IDatabaseAdapter` TypeScript contract (mutation methods now return `Promise<boolean>`), which can break downstream builds and assumptions, and it adjusts model prompt validation/build tooling in `plugin-elizacl",
+    "url": "https://github.com/elizaOS/eliza/pull/6576",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.484.0",
+    "date": "2026-03-14T04:45:25Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.336.1` \u2192 `v4.484.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/ponkio-o/portfolio/pull/638",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: portfolio"
+    ]
+  },
+  {
+    "title": "[PR] feat: CME knowledge base, frontend search, session stats endpoints",
+    "date": "2026-03-14T04:43:43Z",
+    "summary": "## Summary\n- **CME Knowledge Base**: Compliance-ready database schema with RAG embeddings, search & retrieval endpoints in registry-api\n- **Frontend Search**: New search page, agent document extraction fixes, pipeline failure feedback in project header\n- **Session Stats**: 3 new GET endpoints (`/ses",
+    "url": "https://github.com/sdnydude/dhgaifactory3.5/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: dhgaifactory3.5"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update testcontainers-node monorepo to v11 (major)",
+    "date": "2026-03-14T04:42:28Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change | OpenSSF |\n|---|---|---|---|---|\n| [@testcontainers/postgresql](https://redirect.github.com/testcontainers/testcontainers-node) | devDependencies | major | [`10.25.0` \u2192 `11.12.0`](https://renovatebot.com/diffs/npm/@testcont",
+    "url": "https://github.com/zpratt/lousy-agents/pull/237",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: lousy-agents"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update image ghcr.io/openclaw/openclaw ( 2026.3.2 \u2794 2026.3.12 )",
+    "date": "2026-03-14T04:39:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.2` \u2192 `2026.3.12` ",
+    "url": "https://github.com/Aviator-Coding/home-ops/pull/574",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-java monorepo to v1.21.4",
+    "date": "2026-03-14T04:35:11Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:junit-ju",
+    "url": "https://github.com/ktorio/ktor-answers/pull/46",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ktor-answers"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency openclaw to v2026.3.12",
+    "date": "2026-03-14T04:17:01Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [openclaw](https://redirect.github.com/openclaw/openclaw) | `2026.3.11` \u2192 `2026.3.12` | ![age](http",
+    "url": "https://github.com/larsschilling/openclaw-docker-config/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-docker-config"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump openclaw from 2026.3.8 to 2026.3.12 in /extensions/memory-hybrid",
+    "date": "2026-03-14T04:10:23Z",
+    "summary": "Bumps [openclaw](https://github.com/openclaw/openclaw) from 2026.3.8 to 2026.3.12.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</a>.</em></p>\n<blockquote>\n<h2>openclaw 2026.3.12</h2>\n<h3>Changes</h3>\n<ul>\n<",
+    "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/470",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaw-hybrid-memory"
+    ]
+  },
+  {
+    "title": "[PR] [pull] main from lobehub:main",
+    "date": "2026-03-14T04:04:31Z",
+    "summary": "See [Commits](/rcy1314/lobe-chat/pull/66/commits) and [Changes](/rcy1314/lobe-chat/pull/66/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.1)\n\n_Can you help keep this open source ser",
+    "url": "https://github.com/rcy1314/lobe-chat/pull/66",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2500",
+      "pull request",
+      "repo: lobe-chat"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): Bump the npm_and_yarn group across 22 directories with 3 updates",
+    "date": "2026-03-14T03:34:08Z",
+    "summary": "Bumps the npm_and_yarn group with 1 update in the /skills/anishtr4/x-trends directory: [undici](https://github.com/nodejs/undici).\nBumps the npm_and_yarn group with 1 update in the /skills/anishtr4/x-trends-dev directory: [undici](https://github.com/nodejs/undici).\nBumps the npm_and_yarn group with ",
+    "url": "https://github.com/frannunpal/openclawskills/pull/39",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclawskills"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-03-14T02:44:09Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
     ]
   }
 ]
