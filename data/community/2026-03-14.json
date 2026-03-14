@@ -238,24 +238,24 @@
   },
   {
     "title": "Experimental ROCM & PYTORCH builds for ALL GFX103X (rdna2)",
-    "date": "2026-03-12T11:00:53Z",
+    "date": "2026-03-14T16:07:58Z",
     "summary": "https://app.mediafire.com/folder/mvrwkgj96lkua\n\nTDLR ; everything in this post https://github.com/patientx/ComfyUI-Zluda/issues/431 is the same except you download the rocm & pytorch packages manually into a folder and install them from that folder not from a web link.\n\nYes it is as the title says. ",
     "url": "https://github.com/patientx/ComfyUI-Zluda/issues/435",
     "source": "github_issues",
     "highlights": [
-      "comments: 124",
+      "comments: 125",
       "state: open",
       "repo: ComfyUI-Zluda"
     ]
   },
   {
     "title": "Allow importing multi-file GGUF models",
-    "date": "2026-03-11T04:38:59Z",
+    "date": "2026-03-14T16:32:38Z",
     "summary": "### What is the issue?\n\nCurrently Ollama can [import GGUF files](https://github.com/ollama/ollama/blob/main/docs/import.md). However, larger models are sometimes split into separate files. Ollama should support loading multiple GGUF files similar to loading safetensor files.\r\n\n\n### OS\n\n_No response_",
     "url": "https://github.com/ollama/ollama/issues/5245",
     "source": "github_issues",
     "highlights": [
-      "comments: 87",
+      "comments: 89",
       "state: open",
       "repo: ollama"
     ]
@@ -670,7 +670,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-03-14T01:45:40Z",
+    "date": "2026-03-14T16:15:03Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) |  | patch | `9.4.2` \u2192 `9.4.10` |\n| [argo-workflows](https://redirect.git",
     "url": "https://github.com/nolte/k8s-home-lab/pull/821",
     "source": "github_prs",
@@ -1554,6 +1554,66 @@
       "comments: 3",
       "pull request",
       "repo: specs"
+    ]
+  },
+  {
+    "title": "[PR] fix: add SSRF hostname validation to Ollama/vLLM model discovery and stream",
+    "date": "2026-03-14T16:36:19Z",
+    "summary": "## Vulnerability: Ollama/vLLM Model Discovery and Stream SSRF\n\n**Severity:** Medium (CVSS 6.8)\n\n## Root Cause\n\nOllama model discovery, vLLM/sglang model discovery, and the Ollama stream function all use raw `fetch()` with user-controlled `baseUrl` from configuration without SSRF validation. An attac",
+    "url": "https://github.com/openclaw/openclaw/pull/46359",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency aquaproj/aqua-registry to v4.484.0",
+    "date": "2026-03-14T16:06:25Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.45.0` \u2192 `v4.484.0` |\n\n---\n\n### Release Notes\n\n<deta",
+    "url": "https://github.com/Sho2010/istio-action/pull/26",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: istio-action"
+    ]
+  },
+  {
+    "title": "[PR] Dev",
+    "date": "2026-03-14T16:04:49Z",
+    "summary": "<!--\r\nThank you for contributing to DeepTutor! \ud83d\ude80\r\nPlease ensure your PR is ready for review and follows our contribution guidelines.\r\nFor more details, see our [CONTRIBUTING.md](https://github.com/HKUDS/DeepTutor/blob/dev/CONTRIBUTING.md).\r\n-->\r\n\r\n### Description\r\n*A clear and concise description of",
+    "url": "https://github.com/scrrlt/DeepTutor/pull/50",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DeepTutor"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.484.0",
+    "date": "2026-03-14T16:02:06Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.332.1` \u2192 `v4.484.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/szksh-lab-2/test-1/pull/27",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: test-1"
+    ]
+  },
+  {
+    "title": "[PR] \ud83d\udcda Complete HTML Documentation Overhaul with Dark Mode UI",
+    "date": "2026-03-14T15:43:19Z",
+    "summary": "## \ud83c\udfaf Description\n\nThis PR introduces a comprehensive HTML documentation system with beautiful UI, dark mode support, and complete deployment options.\n\n### \u2728 What's New\n\n#### \ud83d\udcd6 HTML Documentation (15 Pages)\n- Complete documentation converted to HTML format\n- Beautiful responsive design with Tailwind ",
+    "url": "https://github.com/swadhinbiswas/opengrammar/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: opengrammar"
     ]
   }
 ]
