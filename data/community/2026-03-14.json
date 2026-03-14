@@ -166,12 +166,12 @@
   },
   {
     "title": "Feature: OpenAI Whisper API Option for Cloud Transcription",
-    "date": "2026-03-13T22:59:30Z",
+    "date": "2026-03-14T18:20:41Z",
     "summary": "## Summary\nAdd OpenAI Whisper API as an alternative transcription backend for users without GPU hardware.\n\n## Motivation\n- Not all users have NVIDIA GPUs for local Whisper acceleration\n- CPU-only transcription is very slow (10-30x realtime)\n- Cloud Whisper API provides fast transcription without loc",
     "url": "https://github.com/ttlequals0/MinusPod/issues/7",
     "source": "github_issues",
     "highlights": [
-      "comments: 12",
+      "comments: 13",
       "state: open",
       "repo: MinusPod"
     ]
@@ -538,7 +538,7 @@
   },
   {
     "title": "[PR] feat(atlas): add Cognee MCP knowledge-graph memory service",
-    "date": "2026-03-14T02:36:27Z",
+    "date": "2026-03-14T18:20:35Z",
     "summary": "## Summary\n- Adds `cognee-mcp` Docker service to base and Atlas compose files (port 8094, Tailscale-only, profile `cognee`)\n- Patches MCP SDK DNS rebinding protection bug via entrypoint `sed` (FastMCP defaults host=127.0.0.1 before entrypoint overrides to 0.0.0.0)\n- Updates CLAUDE.md rule 6 to permi",
     "url": "https://github.com/OrionArchitekton/cosmocrat-core/pull/548",
     "source": "github_prs",
@@ -1053,13 +1053,13 @@
     ]
   },
   {
-    "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.13",
-    "date": "2026-03-14T12:16:16Z",
-    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.13`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.13\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2",
+    "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.13-1",
+    "date": "2026-03-14T18:16:17Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.13-1`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.13-1\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/ru",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/106",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 7",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -1626,6 +1626,78 @@
       "comments: 0",
       "pull request",
       "repo: kubebuilder-devcontainer-image"
+    ]
+  },
+  {
+    "title": "[PR] Add localhost OpenAI-compatible provider flow",
+    "date": "2026-03-14T18:41:55Z",
+    "summary": "## Summary\n- Add the localhost OpenAI-compatible store and schema foundation, including preset hydration and validation defaults.\n- Probe localhost VLM connections in settings IPC and restrict runtime usage to legacy UI-TARS local operators.\n- Gate the renderer dialog and settings page flows on succ",
+    "url": "https://github.com/Musket1920/UI-TARS-desktop/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 30",
+      "pull request",
+      "repo: UI-TARS-desktop"
+    ]
+  },
+  {
+    "title": "[PR] feat: add MiniMax as an alternative LLM provider",
+    "date": "2026-03-14T18:31:26Z",
+    "summary": "## Summary\n- Add [MiniMax](https://www.minimaxi.com/) as an optional cloud LLM provider alongside the existing Ollama (local) backend\n- MiniMax offers an OpenAI-compatible API with models like MiniMax-M2.5 (204K context window)\n- Users can switch by setting `LLM_PROVIDER=minimax` and providing a `MI",
+    "url": "https://github.com/RoXsaita/NumbyAI-Public/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: NumbyAI-Public"
+    ]
+  },
+  {
+    "title": "[PR] Add Extended Providers experiment",
+    "date": "2026-03-14T18:28:02Z",
+    "summary": "\r\n<img width=\"3024\" height=\"1722\" alt=\"CleanShot 2025-12-19 at 09 15 39@2x\" src=\"https://github.com/user-attachments/assets/5dc20184-346e-44bb-a5c6-c572281796a7\" />\r\n\r\n\r\n## What?\r\n\r\nAdds a new Extended Providers experiment that registers 9 additional AI provider integrations:\r\n- Cloudflare Workers A",
+    "url": "https://github.com/WordPress/ai/pull/148",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 18",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.481.0",
+    "date": "2026-03-14T18:00:54Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.404.0` \u2192 `v4.481.0` | `v4.484.0` (+2)",
+    "url": "https://github.com/tosuke/secrets-store-csi-driver-provider-sakuracloud/pull/78",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: secrets-store-csi-driver-provider-sakuracloud"
+    ]
+  },
+  {
+    "title": "[PR] Update Container images",
+    "date": "2026-03-14T17:55:34Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [darthsim/imgproxy](https://redirect.github.com/imgproxy/imgproxy) | minor | `v3.30.1` \u2192 `v3.31.0` |\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | patch | `2.12.1",
+    "url": "https://github.com/bubacoder/infra/pull/296",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: infra"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/openclaw/openclaw docker tag to v2026.3.12",
+    "date": "2026-03-14T17:51:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) |  | minor | `2026.2.17`",
+    "url": "https://github.com/dels78/homeops/pull/2668",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: homeops"
     ]
   }
 ]
