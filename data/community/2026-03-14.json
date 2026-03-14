@@ -178,7 +178,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-03-13T21:05:14Z",
+    "date": "2026-03-14T06:39:46Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -790,12 +790,12 @@
   },
   {
     "title": "[PR] fix: left over dbrefactor work?",
-    "date": "2026-03-14T05:02:27Z",
-    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Medium risk because it changes the TypeScript `IDatabaseAdapter`/`DatabaseAdapter` contract for several mutation methods and adjusts runtime/plugin behavior around model prompting and token resolution, which could surface previously-ignored failu",
+    "date": "2026-03-14T06:13:19Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Medium risk because it changes TypeScript contracts for `IDatabaseAdapter` mutation methods (can break downstream compilation) and tightens `plugin-elizacloud` prompt validation to throw on empty prompts, which may surface new runtime errors in m",
     "url": "https://github.com/elizaOS/eliza/pull/6576",
     "source": "github_prs",
     "highlights": [
-      "comments: 19",
+      "comments: 20",
       "pull request",
       "repo: eliza"
     ]
@@ -978,6 +978,114 @@
       "comments: 4",
       "pull request",
       "repo: sport-photos-backend"
+    ]
+  },
+  {
+    "title": "[PR] fix: address production crashes across Android and iOS",
+    "date": "2026-03-14T06:53:56Z",
+    "summary": "## Summary\n\nComprehensive fix for production crashes and ANRs reported in Play Console and Xcode Organizer (v0.0.58-0.0.70).\n\n### Android Fixes\n- **GPU ANR (35.8% of users)**: Cap GPU layers by RAM tier on Android Adreno devices + 8s timeout with CPU fallback\n- **ReactViewGroup crash (1.6%)**: Disab",
+    "url": "https://github.com/alichherawalla/off-grid-mobile-ai/pull/170",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: off-grid-mobile-ai"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface_hub to v0.36.2",
+    "date": "2026-03-14T06:51:56Z",
+    "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface_hub](https://redirect.",
+    "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/243",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] Update ghcr.io/openclaw/openclaw Docker tag to v2026.3.12",
+    "date": "2026-03-14T06:50:38Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | minor | `2026.2.26` \u2192 `2026.3.12`",
+    "url": "https://github.com/ansg191-lab/anshulg-cluster/pull/2672",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: anshulg-cluster"
+    ]
+  },
+  {
+    "title": "[PR] Add external API service factory + Send Updates feature (Jira & Azure DevOps)",
+    "date": "2026-03-14T06:45:29Z",
+    "summary": "Adds a factory-pattern API integration layer for Jira Cloud (API v3) and Azure DevOps, with a consent-gated \"Send Updates\" flow on the home screen that lets users post AI-drafted comments to external tickets without leaving the app \u2014 and without sending any data without explicit confirmation.\n\n## Ne",
+    "url": "https://github.com/Chadders13/SheepCat-TrackingMyWork/pull/39",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: SheepCat-TrackingMyWork"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go/modules/mongodb to v0.41.0",
+    "date": "2026-03-14T06:41:49Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/emerconn/workout-tracker/pull/47",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: workout-tracker"
+    ]
+  },
+  {
+    "title": "[PR] Add devcontainer config to auto-install Ollama and pull qwen3.5",
+    "date": "2026-03-14T06:26:05Z",
+    "summary": "Users had to manually install Ollama and pull the `qwen3.5` model each time a Codespace was opened. This automates the setup via a devcontainer post-create hook.\n\n## Changes\n\n- **`.devcontainer/devcontainer.json`** \u2014 Wires up the post-create script as the Codespace lifecycle command\n- **`.devcontain",
+    "url": "https://github.com/qawsedrftgyhujikolpa/testrooms/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: testrooms"
+    ]
+  },
+  {
+    "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.13",
+    "date": "2026-03-14T06:24:32Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.13`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.13\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2",
+    "url": "https://github.com/jedwards1230/openclaw-charts/pull/106",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: openclaw-charts"
+    ]
+  },
+  {
+    "title": "[PR] Bump openclaw from 2026.3.8 to 2026.3.12",
+    "date": "2026-03-14T06:13:40Z",
+    "summary": "Bumps [openclaw](https://github.com/openclaw/openclaw) from 2026.3.8 to 2026.3.12.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</a>.</em></p>\n<blockquote>\n<h2>openclaw 2026.3.12</h2>\n<h3>Changes</h3>\n<ul>\n<",
+    "url": "https://github.com/troykelly/openclaw-projects/pull/2508",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-projects"
+    ]
+  },
+  {
+    "title": "[PR] Bump openclaw from 2026.3.8 to 2026.3.12 in /packages/openclaw-plugin",
+    "date": "2026-03-14T06:12:58Z",
+    "summary": "Bumps [openclaw](https://github.com/openclaw/openclaw) from 2026.3.8 to 2026.3.12.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/openclaw/openclaw/releases\">openclaw's releases</a>.</em></p>\n<blockquote>\n<h2>openclaw 2026.3.12</h2>\n<h3>Changes</h3>\n<ul>\n<",
+    "url": "https://github.com/troykelly/openclaw-projects/pull/2507",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-projects"
     ]
   }
 ]
