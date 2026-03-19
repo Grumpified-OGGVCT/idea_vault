@@ -202,12 +202,12 @@
   },
   {
     "title": "Meta: Request rate limiting",
-    "date": "2026-03-19T03:58:33Z",
+    "date": "2026-03-19T06:30:58Z",
     "summary": "This meta issue tracks scenarios where chat requests are blocked due to rate limiting.\n\n\ud83d\udc49 To get help with **premium request quota issues**, please comment in https://github.com/microsoft/vscode/issues/252230 .\n\nIn case you experience repeated rate-limiting in GitHub Copilot, please reach out to Git",
     "url": "https://github.com/microsoft/vscode/issues/253124",
     "source": "github_issues",
     "highlights": [
-      "comments: 342",
+      "comments: 344",
       "state: open",
       "repo: vscode"
     ]
@@ -526,7 +526,7 @@
   },
   {
     "title": "[PR] docs: finalize harness-based consolidation to 9 test binaries",
-    "date": "2026-03-19T02:39:34Z",
+    "date": "2026-03-19T07:44:00Z",
     "summary": "## Summary\n- Consolidated integration tests into a harness-based layout, now 9 harness-driven binaries. Tests are organized under harness-aligned modules and entrypoints.\n- The final structure consolidates end-to-end traces, channels, DB/infrastructure, tooling/config, and OpenAI channel integration",
     "url": "https://github.com/leynos/axinite/pull/23",
     "source": "github_prs",
@@ -538,7 +538,7 @@
   },
   {
     "title": "[PR] Development -> Main",
-    "date": "2026-03-19T02:55:58Z",
+    "date": "2026-03-19T06:16:30Z",
     "summary": "This pull request introduces several updates and improvements across the monitoring, networking, and productivity stacks, with a focus on enhancing service reliability, observability, and expanding automation capabilities. Key changes include the addition of an automation stack with n8n and Redis, i",
     "url": "https://github.com/FarDust/homelab-stack/pull/52",
     "source": "github_prs",
@@ -646,7 +646,7 @@
   },
   {
     "title": "[PR] Add development environment setup (AGENTS.md + lockfile)",
-    "date": "2026-03-19T01:22:21Z",
+    "date": "2026-03-19T06:28:07Z",
     "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nSets up the development environment configuration for cloud agents and new developers.\n\n### Changes\n- **`AGENTS.md`** \u2014 New file with Cursor Cloud-specific instructions: service table (backend/frontend/marketing site/AI proxy), startup commands, ports,",
     "url": "https://github.com/jdboatman1/Integrity-Flow/pull/2",
     "source": "github_prs",
@@ -706,7 +706,7 @@
   },
   {
     "title": "[PR] Shared transport for hosted remote tool catalog fetch",
-    "date": "2026-03-19T01:01:01Z",
+    "date": "2026-03-19T07:34:35Z",
     "summary": "## Summary by Sourcery\n\nImplement a shared worker-orchestrator transport around hosted remote tool catalog fetch, enabling hosted workers to fetch the orchestrator catalog at startup and register local proxy tools that mirror orchestrator-owned tool definitions. The remote-tool proxy now shares a co",
     "url": "https://github.com/leynos/axinite/pull/18",
     "source": "github_prs",
@@ -858,6 +858,90 @@
       "comments: 2",
       "pull request",
       "repo: open-smart-grid-platform"
+    ]
+  },
+  {
+    "title": "youtube\u30a4\u30f3\u30b8\u30a7\u30b9\u30bf\u30fc",
+    "date": "2026-03-19T07:43:00Z",
+    "summary": "youtube\u306e\u52d5\u753b\u5185\u5bb9\u3092\u53d6\u308a\u8fbc\u3080\u30a4\u30f3\u30b8\u30a7\u30b9\u30bf\u30fc\u306e\u4f5c\u6210",
+    "url": "https://github.com/becky3/rag-knowledge/issues/289",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 1",
+      "state: open",
+      "repo: rag-knowledge"
+    ]
+  },
+  {
+    "title": "[PR] Leiwang/0315",
+    "date": "2026-03-19T07:49:48Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Introduces new automated trading-analysis pipeline (exchange data fetching, indicator computation, scheduled execution) plus new schemas/models, increasing operational and correctness risk around market data handling and task orchestration.\n> \n> ",
+    "url": "https://github.com/crewAIInc/crewAI/pull/4894",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: crewAI"
+    ]
+  },
+  {
+    "title": "[PR] QA harness: make cockpit boot work in cloud",
+    "date": "2026-03-19T07:37:47Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\nFix `scripts/start_config.env` to point `ENGINE_ROOT` at `/workspace/financial-engine_v2` so Cockpit can start services in Cursor Cloud environments.\n\nDisable llama.cpp compose-network preflight by default (`LLAMACPP_URL_CONTAINER=\"\"`) because Cursor Cloud VMs don",
+    "url": "https://github.com/0rl4nd0l/tenn/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: tenn"
+    ]
+  },
+  {
+    "title": "[PR] Refactor Island runtime boundaries",
+    "date": "2026-03-19T07:15:58Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n- add baseline docs and repo hygiene for the Island runtime, including ignored/runtime `var/` paths and removal of committed backend artifacts\n- reorganize `Source/MyProject` into `Core`, `Island`, `AI`, `Dialogue`, and `Social` domains with module-rela",
+    "url": "https://github.com/dawsonblock/ISLAND/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: ISLAND"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-03-19T06:48:39Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] deps(go): bump module github.com/testcontainers/testcontainers-go to v0.41.0",
+    "date": "2026-03-19T06:33:50Z",
+    "summary": "\n\n\n<Actions>\n    <action id=\"83ab38fcda5079af067caeafe5c61020d52689318e64fd4b6b691ab8cde2254c\">\n        <h3>deps(go): bump module github.com/testcontainers/testcontainers-go</h3>\n        <details id=\"118a1de593252b71f178cef60ae8b6af7c484a51bead92a6671a2630b548e68e\">\n            <summary>clean: go mo",
+    "url": "https://github.com/updatecli/updatecli/pull/8045",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: updatecli"
+    ]
+  },
+  {
+    "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.13-1",
+    "date": "2026-03-19T06:29:19Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.13-1`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.13-1\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/ru",
+    "url": "https://github.com/jedwards1230/openclaw-charts/pull/106",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 43",
+      "pull request",
+      "repo: openclaw-charts"
     ]
   }
 ]
