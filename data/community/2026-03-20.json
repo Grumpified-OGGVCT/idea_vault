@@ -766,19 +766,19 @@
   },
   {
     "title": "[PR] fix(ollama): send think=false when thinking is off",
-    "date": "2026-03-20T05:00:52Z",
+    "date": "2026-03-20T06:36:56Z",
     "summary": "## Summary\n- send `options.think = false` for native Ollama requests when the resolved thinking level is `off`\n- let the native Ollama stream path honor `onPayload` mutations before serializing the request body\n- add regression coverage for both the extra-params wrapper path and the final Ollama req",
     "url": "https://github.com/openclaw/openclaw/pull/50741",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "pull request",
       "repo: openclaw"
     ]
   },
   {
     "title": "[PR] Development -> Main",
-    "date": "2026-03-20T05:42:39Z",
+    "date": "2026-03-20T06:25:30Z",
     "summary": "This pull request introduces several updates and improvements across the monitoring, networking, and productivity stacks, with a focus on enhancing service reliability, observability, and expanding automation capabilities. Key changes include the addition of an automation stack with n8n and Redis, i",
     "url": "https://github.com/FarDust/homelab-stack/pull/52",
     "source": "github_prs",
@@ -790,7 +790,7 @@
   },
   {
     "title": "[PR] fix: normalize response images missing index + guard audio duration o\u2026",
-    "date": "2026-03-20T04:42:04Z",
+    "date": "2026-03-20T06:12:10Z",
     "summary": "\u2026verflow (#22950)\r\n\r\n* feat(spend-logs): add truncation note when error logs are truncated for DB storage (#22936)\r\n\r\nWhen the messages or response JSON fields in spend logs are truncated before being written to the database, the truncation marker now includes a note explaining:\r\n- This is a DB stor",
     "url": "https://github.com/BerriAI/litellm/pull/22955",
     "source": "github_prs",
@@ -802,7 +802,7 @@
   },
   {
     "title": "[PR] fix(setup): remove redundant LLM config and API keys from bootstrap .env",
-    "date": "2026-03-20T04:27:37Z",
+    "date": "2026-03-20T06:59:13Z",
     "summary": "## Summary\n\nSupersedes #266.\n\nInvestigation revealed that `~/.ironclaw/.env` should only contain true chicken-and-egg vars \u2014 things needed before the DB connects or to decrypt secrets. Everything else is redundant:\n\n- **LLM settings** (`LLM_BACKEND`, `LLM_BASE_URL`, `OLLAMA_BASE_URL`, model name, Be",
     "url": "https://github.com/nearai/ironclaw/pull/1448",
     "source": "github_prs",
@@ -906,6 +906,78 @@
       "comments: 0",
       "pull request",
       "repo: secrets-store-csi-driver-provider-sakuracloud"
+    ]
+  },
+  {
+    "title": "[PR] release: ctx 1.0.0",
+    "date": "2026-03-20T07:01:45Z",
+    "summary": "## Summary\n\nShip ctx 1.0.0 \u2014 the first production-stable release.\n\n- **Version bump**: `0.8.0` \u2192 `1.0.0`, PyPI classifier updated to Production/Stable\n- **Local provider timeout**: 60s timeout for Ollama/LM Studio to prevent hanging on slow inference\n- **README rewrite**: cost benchmarks from real-w",
+    "url": "https://github.com/mschwar/context-project/pull/65",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: context-project"
+    ]
+  },
+  {
+    "title": "[PR] [agento] docs: add WIP README + install bootstrap script",
+    "date": "2026-03-20T07:00:50Z",
+    "summary": "## Summary\n- Main documentation is now README.md with WIP/prototype warning\n- Files copied from jleechanorg/jleechanclaw (sanitized):\n  - docs/HARNESS_ENGINEERING.md\n  - roadmap/ORCHESTRATION_DESIGN.md\n  - openclaw.json (runtime config template)\n  - agent-orchestrator.yaml (orchestrator config templ",
+    "url": "https://github.com/jleechanorg/smartclaw/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 16",
+      "pull request",
+      "repo: smartclaw"
+    ]
+  },
+  {
+    "title": "[PR] Scaffold hybrid enterprise AI agent stack monorepo",
+    "date": "2026-03-20T07:00:20Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n- scaffold a hardened monorepo layout for infrastructure, backend, frontend, and MCP services\n- add production and local Docker Compose topologies for Traefik, Entra ID forward auth, vLLM/Ollama, n8n, 1Password Connect, and Qdrant\n- implement an MCP n8n",
+    "url": "https://github.com/VollcomDigital/zeroclaw-hetzner-k8s-boilerplate/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: zeroclaw-hetzner-k8s-boilerplate"
+    ]
+  },
+  {
+    "title": "[PR] Add cloud/local mode switching for GLM OCR",
+    "date": "2026-03-20T06:53:32Z",
+    "summary": "## Summary\n- keep GLM OCR as a single provider with cloud and local MLX-VLM modes\n- route cloud mode to layout_parsing and local mode to OpenAI-compatible chat/completions\n- add settings persistence, UI mode switching, connectivity checks, and tests for both response formats\n\n## Testing\n- xcodebuild",
+    "url": "https://github.com/hubo1989/ScreenTranslate/pull/67",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ScreenTranslate"
+    ]
+  },
+  {
+    "title": "[PR] feat: add /add-mem0-graph skill \u2014 persistent memory with Qdrant + Neo4j + local embeddings",
+    "date": "2026-03-20T06:31:28Z",
+    "summary": "## Summary\n\nAdds `/add-mem0-graph` skill that gives NanoClaw agents persistent, graph-enhanced memory using the [mem0](https://github.com/mem0ai/mem0) library (50k+ stars, Apache 2.0) against **existing** Qdrant + Neo4j infrastructure.\n\n- **Zero new Docker containers** \u2014 reuses running Qdrant (vecto",
+    "url": "https://github.com/qwibitai/nanoclaw/pull/1256",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nanoclaw"
+    ]
+  },
+  {
+    "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.13-1",
+    "date": "2026-03-20T06:26:43Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.13-1`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.13-1\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/ru",
+    "url": "https://github.com/jedwards1230/openclaw-charts/pull/106",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 51",
+      "pull request",
+      "repo: openclaw-charts"
     ]
   }
 ]
