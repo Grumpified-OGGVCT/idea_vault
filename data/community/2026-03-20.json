@@ -622,7 +622,7 @@
   },
   {
     "title": "[PR] Shared transport for hosted remote tool catalog fetch",
-    "date": "2026-03-20T09:46:52Z",
+    "date": "2026-03-20T10:41:10Z",
     "summary": "## Summary by Sourcery\n\nImplement a shared worker-orchestrator transport around hosted remote tool catalog fetch, enabling hosted workers to fetch the orchestrator catalog at startup and register local proxy tools that mirror orchestrator-owned tool definitions. The remote-tool proxy now shares a co",
     "url": "https://github.com/leynos/axinite/pull/18",
     "source": "github_prs",
@@ -682,7 +682,7 @@
   },
   {
     "title": "[PR] docs: finalize harness-based consolidation to 9 test binaries",
-    "date": "2026-03-20T09:44:31Z",
+    "date": "2026-03-20T10:31:49Z",
     "summary": "## Summary\n- Consolidated integration tests into a harness-based layout, now 9 harness-driven binaries. Tests are organized under harness-aligned modules and entrypoints.\n- The final structure consolidates end-to-end traces, channels, DB/infrastructure, tooling/config, and OpenAI channel integration",
     "url": "https://github.com/leynos/axinite/pull/23",
     "source": "github_prs",
@@ -922,19 +922,19 @@
   },
   {
     "title": "[PR] [agento] docs: add WIP README + install bootstrap script",
-    "date": "2026-03-20T09:41:04Z",
+    "date": "2026-03-20T10:42:21Z",
     "summary": "## Summary\n- Main documentation is now README.md with WIP/prototype warning\n- Files copied from jleechanorg/jleechanclaw (sanitized):\n  - docs/HARNESS_ENGINEERING.md\n  - roadmap/ORCHESTRATION_DESIGN.md\n  - openclaw.json (runtime config template)\n  - agent-orchestrator.yaml (orchestrator config templ",
     "url": "https://github.com/jleechanorg/smartclaw/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 73",
+      "comments: 89",
       "pull request",
       "repo: smartclaw"
     ]
   },
   {
     "title": "[PR] Scaffold hybrid enterprise AI agent stack monorepo",
-    "date": "2026-03-20T09:43:47Z",
+    "date": "2026-03-20T10:22:11Z",
     "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n- scaffold a hardened monorepo layout for infrastructure, backend, frontend, and MCP services\n- add production and local Docker Compose topologies for Traefik, Entra ID forward auth, vLLM/Ollama, n8n, 1Password Connect, and Qdrant\n- implement an MCP n8n",
     "url": "https://github.com/VollcomDigital/zeroclaw-hetzner-k8s-boilerplate/pull/25",
     "source": "github_prs",
@@ -1038,6 +1038,102 @@
       "comments: 11",
       "pull request",
       "repo: extensions"
+    ]
+  },
+  {
+    "title": "[PR] [WIP] Fix inconsistencies between frontend UI and backend API for StockSense",
+    "date": "2026-03-20T10:42:31Z",
+    "summary": "- [x] Explored repository structure\n- [x] Create `app/models/llm_factory.py` \u2014 factory that selects Ollama (dev) or cloud LLM (production) based on `APP_ENV`\n- [x] Create `app/models/cloud_llm_model.py` \u2014 unified cloud LLM adapter (Anthropic / OpenAI / Gemini) using only `requests` + existing `googl",
+    "url": "https://github.com/upamanyu92/stocksense/pull/27",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: stocksense"
+    ]
+  },
+  {
+    "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
+    "date": "2026-03-20T10:42:20Z",
+    "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
+    "url": "https://github.com/juninmd/github-assistance/pull/102",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: github-assistance"
+    ]
+  },
+  {
+    "title": "[PR] [pull] main from lobehub:main",
+    "date": "2026-03-20T10:40:14Z",
+    "summary": "See [Commits](/rcy1314/lobe-chat/pull/66/commits) and [Changes](/rcy1314/lobe-chat/pull/66/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.1)\n\n_Can you help keep this open source ser",
+    "url": "https://github.com/rcy1314/lobe-chat/pull/66",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2500",
+      "pull request",
+      "repo: lobe-chat"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.pyrsistent: 0.20.0 -> 0.21.0",
+    "date": "2026-03-20T10:32:47Z",
+    "summary": "This update fixes compatibility with Python 3.13+; in the previous version, the C-extension would not be built, thus degrading performance significantly.\r\n\r\nChangelog: https://github.com/tobgu/pyrsistent/blob/v0.21.0/CHANGES.txt\r\n\r\n## Things done\r\n\r\n<!-- Please check what applies. Note that these ar",
+    "url": "https://github.com/NixOS/nixpkgs/pull/489128",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-03-20T10:23:00Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-03-20T10:09:18Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] Add 3-stage web fetch pipeline and LLM-based extraction for importing skills",
+    "date": "2026-03-20T10:06:57Z",
+    "summary": "### Motivation\n- Improve reliability of importing skill definitions from arbitrary URLs by reducing noise and token bloat from raw HTML.\n- Provide multiple fallback fetch strategies so imports succeed even when one extractor fails or returns too little content.\n- Make extracted skill metadata safer ",
+    "url": "https://github.com/xiaotukema/myskill-creator/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: myskill-creator"
+    ]
+  },
+  {
+    "title": "[PR] [Security Solution] Automated Alert-to-Investigation Pipeline \u2014 E2E Spike",
+    "date": "2026-03-20T10:03:40Z",
+    "summary": "## Summary\n\nE2E spike implementing the Automated Alert-to-Investigation Pipeline from elastic/security-team#16339. This connects alert processing, deduplication, entity extraction, case matching, and incremental Attack Discovery into a single automated pipeline.\n\n### Architecture\n\nThe pipeline runs ",
+    "url": "https://github.com/elastic/kibana/pull/257957",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kibana"
     ]
   }
 ]
