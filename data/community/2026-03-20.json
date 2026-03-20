@@ -562,7 +562,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.486.0",
-    "date": "2026-03-20T13:10:48Z",
+    "date": "2026-03-20T16:43:23Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.416.0` \u2192 `v4.486.0` |\n\n---\n\n### Release Notes\n\n<det",
     "url": "https://github.com/barrydobson/dotfiles/pull/46",
     "source": "github_prs",
@@ -574,7 +574,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-03-20T13:43:19Z",
+    "date": "2026-03-20T16:46:30Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) |  | patch | `9.4.2` \u2192 `9.4.15` |\n| [argo-events](https://redirect.github",
     "url": "https://github.com/nolte/k8s-home-lab/pull/821",
     "source": "github_prs",
@@ -622,12 +622,12 @@
   },
   {
     "title": "[PR] Shared transport for hosted remote tool catalog fetch",
-    "date": "2026-03-20T15:47:51Z",
+    "date": "2026-03-20T16:41:01Z",
     "summary": "## Summary by Sourcery\n\nImplement a shared worker-orchestrator transport around hosted remote tool catalog fetch, enabling hosted workers to fetch the orchestrator catalog at startup and register local proxy tools that mirror orchestrator-owned tool definitions. The remote-tool proxy now shares a co",
     "url": "https://github.com/leynos/axinite/pull/18",
     "source": "github_prs",
     "highlights": [
-      "comments: 75",
+      "comments: 77",
       "pull request",
       "repo: axinite"
     ]
@@ -682,12 +682,12 @@
   },
   {
     "title": "[PR] docs: finalize harness-based consolidation to 9 test binaries",
-    "date": "2026-03-20T15:47:50Z",
+    "date": "2026-03-20T16:44:11Z",
     "summary": "## Summary\n- Consolidated integration tests into a harness-based layout, now 9 harness-driven binaries. Tests are organized under harness-aligned modules and entrypoints.\n- The final structure consolidates end-to-end traces, channels, DB/infrastructure, tooling/config, and OpenAI channel integration",
     "url": "https://github.com/leynos/axinite/pull/23",
     "source": "github_prs",
     "highlights": [
-      "comments: 90",
+      "comments: 129",
       "pull request",
       "repo: axinite"
     ]
@@ -802,7 +802,7 @@
   },
   {
     "title": "[PR] fix(setup): remove redundant LLM config and API keys from bootstrap .env",
-    "date": "2026-03-20T07:41:10Z",
+    "date": "2026-03-20T16:50:25Z",
     "summary": "## Summary\n\nSupersedes #266.\n\nInvestigation revealed that `~/.ironclaw/.env` should only contain true chicken-and-egg vars \u2014 things needed before the DB connects or to decrypt secrets. Everything else is redundant:\n\n- **LLM settings** (`LLM_BACKEND`, `LLM_BASE_URL`, `OLLAMA_BASE_URL`, model name, Be",
     "url": "https://github.com/nearai/ironclaw/pull/1448",
     "source": "github_prs",
@@ -1294,7 +1294,7 @@
   },
   {
     "title": "[PR] Dev podman",
-    "date": "2026-03-20T15:45:27Z",
+    "date": "2026-03-20T15:50:25Z",
     "summary": "This pull request introduces a new system for managing Podman container stacks declaratively using NixOS modules. It adds reusable modules for defining, configuring, and enabling groups of related containers (\"stacks\") per host, with examples for subtitle translation and generation services. Documen",
     "url": "https://github.com/telometto/nix-config/pull/5539",
     "source": "github_prs",
@@ -1362,6 +1362,18 @@
       "comments: 4",
       "pull request",
       "repo: developer.konghq.com"
+    ]
+  },
+  {
+    "title": "[PR] test: harden translation pipeline regressions",
+    "date": "2026-03-20T16:40:24Z",
+    "summary": "## Summary\n- replace ad-hoc debug prints in translation-related paths with structured logging\n- harden translation service prompt configuration, fallback aggregation, and provider abstractions\n- add regression coverage for translation configuration, orchestration, and UI-facing text translation flow",
+    "url": "https://github.com/hubo1989/ScreenTranslate/pull/69",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ScreenTranslate"
     ]
   }
 ]
