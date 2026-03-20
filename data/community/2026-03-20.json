@@ -622,7 +622,7 @@
   },
   {
     "title": "[PR] Shared transport for hosted remote tool catalog fetch",
-    "date": "2026-03-20T14:15:12Z",
+    "date": "2026-03-20T15:47:51Z",
     "summary": "## Summary by Sourcery\n\nImplement a shared worker-orchestrator transport around hosted remote tool catalog fetch, enabling hosted workers to fetch the orchestrator catalog at startup and register local proxy tools that mirror orchestrator-owned tool definitions. The remote-tool proxy now shares a co",
     "url": "https://github.com/leynos/axinite/pull/18",
     "source": "github_prs",
@@ -634,12 +634,12 @@
   },
   {
     "title": "[PR] feat: add Jetson Orin Nano support",
-    "date": "2026-03-20T01:25:25Z",
-    "summary": "Closes #404\n\n## Summary\n\n- **GPU detection**: `nvidia-smi` reports `[N/A]` for `memory.total` on Jetson (unified memory). Added fallback via GPU name (`Orin`/`Thor`) and `/proc/device-tree/model`, reading system RAM with `free(1)`.\n- **iptables-legacy fix**: Tegra kernel lacks `nft_chain_filter` mod",
+    "date": "2026-03-20T15:36:07Z",
+    "summary": "Closes #404\n\n## Summary\n\nAdds end-to-end Jetson Orin Nano support: from GPU detection through to a working OpenClaw agent with local Ollama inference.\n\n- **GPU detection**: nvidia-smi reports `[N/A]` for memory.total on Jetson (unified memory). Added fallback via GPU name + `/proc/device-tree/model`",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/405",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -682,12 +682,12 @@
   },
   {
     "title": "[PR] docs: finalize harness-based consolidation to 9 test binaries",
-    "date": "2026-03-20T14:36:05Z",
+    "date": "2026-03-20T15:47:50Z",
     "summary": "## Summary\n- Consolidated integration tests into a harness-based layout, now 9 harness-driven binaries. Tests are organized under harness-aligned modules and entrypoints.\n- The final structure consolidates end-to-end traces, channels, DB/infrastructure, tooling/config, and OpenAI channel integration",
     "url": "https://github.com/leynos/axinite/pull/23",
     "source": "github_prs",
     "highlights": [
-      "comments: 85",
+      "comments: 90",
       "pull request",
       "repo: axinite"
     ]
@@ -1054,7 +1054,7 @@
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-20T14:10:46Z",
+    "date": "2026-03-20T15:46:00Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -1294,7 +1294,7 @@
   },
   {
     "title": "[PR] Dev podman",
-    "date": "2026-03-20T14:08:57Z",
+    "date": "2026-03-20T15:45:27Z",
     "summary": "This pull request introduces a new system for managing Podman container stacks declaratively using NixOS modules. It adds reusable modules for defining, configuring, and enabling groups of related containers (\"stacks\") per host, with examples for subtitle translation and generation services. Documen",
     "url": "https://github.com/telometto/nix-config/pull/5539",
     "source": "github_prs",
@@ -1350,6 +1350,18 @@
       "comments: 0",
       "pull request",
       "repo: claude-warden"
+    ]
+  },
+  {
+    "title": "[PR] Release: Kong Gateway 3.14",
+    "date": "2026-03-20T15:04:36Z",
+    "summary": "## Description\r\n\r\nRelease roll-up PR for 3.14 previews.\r\n\r\nDO NOT MERGE.\r\n\r\n## Preview links\r\n\r\n### Features\r\n\r\n**OIDC multiple consumer claims:**\r\n* [Example](https://deploy-preview-4545--kongdeveloper.netlify.app/plugins/openid-connect/examples/consumer-auth/)\r\n* [How-to guide](https://deploy-prev",
+    "url": "https://github.com/Kong/developer.konghq.com/pull/4545",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: developer.konghq.com"
     ]
   }
 ]
