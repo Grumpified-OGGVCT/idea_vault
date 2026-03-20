@@ -766,12 +766,12 @@
   },
   {
     "title": "[PR] fix(ollama): send think=false when thinking is off",
-    "date": "2026-03-20T06:36:56Z",
+    "date": "2026-03-20T07:32:16Z",
     "summary": "## Summary\n- send `options.think = false` for native Ollama requests when the resolved thinking level is `off`\n- let the native Ollama stream path honor `onPayload` mutations before serializing the request body\n- add regression coverage for both the extra-params wrapper path and the final Ollama req",
     "url": "https://github.com/openclaw/openclaw/pull/50741",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "pull request",
       "repo: openclaw"
     ]
@@ -790,7 +790,7 @@
   },
   {
     "title": "[PR] fix: normalize response images missing index + guard audio duration o\u2026",
-    "date": "2026-03-20T06:12:10Z",
+    "date": "2026-03-20T07:04:01Z",
     "summary": "\u2026verflow (#22950)\r\n\r\n* feat(spend-logs): add truncation note when error logs are truncated for DB storage (#22936)\r\n\r\nWhen the messages or response JSON fields in spend logs are truncated before being written to the database, the truncation marker now includes a note explaining:\r\n- This is a DB stor",
     "url": "https://github.com/BerriAI/litellm/pull/22955",
     "source": "github_prs",
@@ -802,7 +802,7 @@
   },
   {
     "title": "[PR] fix(setup): remove redundant LLM config and API keys from bootstrap .env",
-    "date": "2026-03-20T06:59:13Z",
+    "date": "2026-03-20T07:41:10Z",
     "summary": "## Summary\n\nSupersedes #266.\n\nInvestigation revealed that `~/.ironclaw/.env` should only contain true chicken-and-egg vars \u2014 things needed before the DB connects or to decrypt secrets. Everything else is redundant:\n\n- **LLM settings** (`LLM_BACKEND`, `LLM_BASE_URL`, `OLLAMA_BASE_URL`, model name, Be",
     "url": "https://github.com/nearai/ironclaw/pull/1448",
     "source": "github_prs",
@@ -922,19 +922,19 @@
   },
   {
     "title": "[PR] [agento] docs: add WIP README + install bootstrap script",
-    "date": "2026-03-20T07:00:50Z",
+    "date": "2026-03-20T07:53:15Z",
     "summary": "## Summary\n- Main documentation is now README.md with WIP/prototype warning\n- Files copied from jleechanorg/jleechanclaw (sanitized):\n  - docs/HARNESS_ENGINEERING.md\n  - roadmap/ORCHESTRATION_DESIGN.md\n  - openclaw.json (runtime config template)\n  - agent-orchestrator.yaml (orchestrator config templ",
     "url": "https://github.com/jleechanorg/smartclaw/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 16",
+      "comments: 26",
       "pull request",
       "repo: smartclaw"
     ]
   },
   {
     "title": "[PR] Scaffold hybrid enterprise AI agent stack monorepo",
-    "date": "2026-03-20T07:00:20Z",
+    "date": "2026-03-20T07:51:12Z",
     "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n- scaffold a hardened monorepo layout for infrastructure, backend, frontend, and MCP services\n- add production and local Docker Compose topologies for Traefik, Entra ID forward auth, vLLM/Ollama, n8n, 1Password Connect, and Qdrant\n- implement an MCP n8n",
     "url": "https://github.com/VollcomDigital/zeroclaw-hetzner-k8s-boilerplate/pull/25",
     "source": "github_prs",
@@ -978,6 +978,18 @@
       "comments: 51",
       "pull request",
       "repo: openclaw-charts"
+    ]
+  },
+  {
+    "title": "[PR] feat: Prompt Batching/Dispatcher, task system upgrade, and prompt caching support",
+    "date": "2026-03-20T07:25:18Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **High Risk**\n> Touches core runtime model invocation (new `promptSegments`/nested schema JSON handling) and task/memory adapter contracts (`agentIds`, `roomIds`), which can affect scheduling, multi-tenant filtering, and LLM provider behavior across deployments.\n>",
+    "url": "https://github.com/elizaOS/eliza/pull/6575",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 35",
+      "pull request",
+      "repo: eliza"
     ]
   }
 ]
