@@ -574,7 +574,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-03-20T16:46:30Z",
+    "date": "2026-03-20T20:34:04Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) |  | patch | `9.4.2` \u2192 `9.4.15` |\n| [argo-events](https://redirect.github",
     "url": "https://github.com/nolte/k8s-home-lab/pull/821",
     "source": "github_prs",
@@ -622,7 +622,7 @@
   },
   {
     "title": "[PR] Shared transport for hosted remote tool catalog fetch",
-    "date": "2026-03-20T19:26:30Z",
+    "date": "2026-03-20T20:25:51Z",
     "summary": "## Summary by Sourcery\n\nImplement a shared worker-orchestrator transport around hosted remote tool catalog fetch, enabling hosted workers to fetch the orchestrator catalog at startup and register local proxy tools that mirror orchestrator-owned tool definitions. The remote-tool proxy now shares a co",
     "url": "https://github.com/leynos/axinite/pull/18",
     "source": "github_prs",
@@ -682,7 +682,7 @@
   },
   {
     "title": "[PR] docs: finalize harness-based consolidation to 9 test binaries",
-    "date": "2026-03-20T19:33:12Z",
+    "date": "2026-03-20T19:50:32Z",
     "summary": "## Summary\n- Consolidated integration tests into a harness-based layout, now 9 harness-driven binaries. Tests are organized under harness-aligned modules and entrypoints.\n- The final structure consolidates end-to-end traces, channels, DB/infrastructure, tooling/config, and OpenAI channel integration",
     "url": "https://github.com/leynos/axinite/pull/23",
     "source": "github_prs",
@@ -958,7 +958,7 @@
   },
   {
     "title": "[PR] feat: add /add-mem0-graph skill \u2014 persistent memory with Qdrant + Neo4j + local embeddings",
-    "date": "2026-03-20T19:29:22Z",
+    "date": "2026-03-20T20:03:44Z",
     "summary": "## Summary\n\nAdds `/add-mem0-graph` skill that gives NanoClaw agents persistent, graph-enhanced memory using the [mem0](https://github.com/mem0ai/mem0) library (50k+ stars, Apache 2.0) against **existing** Qdrant + Neo4j infrastructure.\n\n- **Zero new Docker containers** \u2014 reuses running Qdrant (vecto",
     "url": "https://github.com/qwibitai/nanoclaw/pull/1256",
     "source": "github_prs",
@@ -1054,7 +1054,7 @@
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-20T18:46:05Z",
+    "date": "2026-03-20T20:33:24Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -1126,12 +1126,12 @@
   },
   {
     "title": "[PR] [Security Solution] Automated Alert-to-Investigation Pipeline \u2014 E2E Spike",
-    "date": "2026-03-20T19:18:09Z",
+    "date": "2026-03-20T20:33:42Z",
     "summary": "## Summary\n\nE2E spike implementing the Automated Alert-to-Investigation Pipeline from elastic/security-team#16339. This connects alert processing, deduplication, entity extraction, case matching, and incremental Attack Discovery into a single automated pipeline.\n\n### Architecture\n\nThe pipeline runs ",
     "url": "https://github.com/elastic/kibana/pull/257957",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: kibana"
     ]
@@ -1378,12 +1378,12 @@
   },
   {
     "title": "[PR] feat: SoundChain extension \u2014 music streaming + agent citizenship",
-    "date": "2026-03-20T19:32:36Z",
+    "date": "2026-03-20T20:35:01Z",
     "summary": "## Summary\n\nSoundChain is a P2P decentralized music social network where AI agents and humans coexist in the same feed. This extension makes SoundChain a first-class OpenClaw plugin.\n\n**What agents get when they `openclaw use soundchain`:**\n- Register as a REAL user \u2014 @handle, profile, avatar, follo",
     "url": "https://github.com/openclaw/openclaw/pull/50339",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 6",
       "pull request",
       "repo: openclaw"
     ]
@@ -1458,6 +1458,30 @@
       "comments: 1",
       "pull request",
       "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Dynamo vLLM provider for external K8s endpoints",
+    "date": "2026-03-20T20:36:16Z",
+    "summary": "## Summary\n\n- Adds `NEMOCLAW_PROVIDER=dynamo` option for connecting to external vLLM endpoints (e.g., Dynamo on Kubernetes)\n- Enables NemoClaw to use GPU inference from K8s clusters without running GPUs locally\n- Builds on top of the non-interactive mode from #318\n\n## New Environment Variables\n\n| Va",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/365",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Threat radar platform snapshot (\u03a0 2026-03-16)",
+    "date": "2026-03-20T20:04:44Z",
+    "summary": "This PR captures the current workspace snapshot from branch `feature/threat-radar-platform`.\n\nHighlights:\n- OpenCode skill docs updates under `.opencode/skills/*`\n- Workspace docs/scripts/config updates (`README.md`, `REPOSITORY_INDEX.md`, `docs/*`, `bb.edn`, `clojure-dev.clj`, `pnpm-workspace.yaml`",
+    "url": "https://github.com/riatzukiza/devel/pull/28",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: devel"
     ]
   }
 ]
