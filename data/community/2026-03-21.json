@@ -573,20 +573,20 @@
     ]
   },
   {
-    "title": "[PR] Threat radar platform snapshot (\u03a0 2026-03-16)",
-    "date": "2026-03-21T22:20:14Z",
-    "summary": "This PR captures the current workspace snapshot from branch `feature/threat-radar-platform`.\n\nHighlights:\n- OpenCode skill docs updates under `.opencode/skills/*`\n- Workspace docs/scripts/config updates (`README.md`, `REPOSITORY_INDEX.md`, `docs/*`, `bb.edn`, `clojure-dev.clj`, `pnpm-workspace.yaml`",
+    "title": "[PR] \u03a0: workspace snapshot chain through 2026-03-21",
+    "date": "2026-03-21T22:42:22Z",
+    "summary": "This existing PR is now carrying the current 2026-03-21 workspace snapshot chain from `feature/threat-radar-platform`.\n\nLatest high-signal additions on the branch:\n- eta-mu GitHub rollout foundation\n  - workflow files\n  - rollout CLI/docs\n  - branch-protection helper expansion\n  - rollout and triage",
     "url": "https://github.com/riatzukiza/devel/pull/28",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 7",
       "pull request",
       "repo: devel"
     ]
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-21T22:27:45Z",
+    "date": "2026-03-21T23:29:41Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -670,8 +670,8 @@
   },
   {
     "title": "[PR] [Security Solution] Automated Alert-to-Investigation Pipeline \u2014 E2E Spike",
-    "date": "2026-03-21T22:12:17Z",
-    "summary": "## Summary\n\nE2E spike implementing the Automated Alert-to-Investigation Pipeline from elastic/security-team#16339. This connects alert processing, deduplication, entity extraction, case matching, and incremental Attack Discovery into a single automated pipeline.\n\n### Architecture\n\nThe pipeline runs ",
+    "date": "2026-03-21T22:59:29Z",
+    "summary": "# [Security Solution] Automated Alert-to-Investigation Pipeline \u2014 Native Elastic Stack Implementation\n\n## Overview\n\nThis spike implements an **end-to-end automated pipeline** that transforms raw security alerts into organized investigation cases with Attack Discovery insights, using **100% native El",
     "url": "https://github.com/elastic/kibana/pull/257957",
     "source": "github_prs",
     "highlights": [
@@ -802,12 +802,12 @@
   },
   {
     "title": "[PR] feat(agentjet): Cohezion Autonomous Learning Loop (CALL) + 11 code review fixes",
-    "date": "2026-03-21T03:46:28Z",
+    "date": "2026-03-21T22:49:42Z",
     "summary": "## Summary\n\nImplements the **Cohezion Autonomous Learning Loop (CALL)** \u2014 a closed RL loop that\nconverts runtime execution experience (phi_score, 12D FLUME trajectories) into fine-tuning\nsignal for local LLMs on the Ryzen AI MAX+ 395 (128 GB unified memory).\n\n### New modules\n\n**`src/cohezion/agentje",
     "url": "https://github.com/manderson240/cohezion/pull/40",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: cohezion"
     ]
@@ -1386,6 +1386,54 @@
       "comments: 15",
       "pull request",
       "repo: adk-python"
+    ]
+  },
+  {
+    "title": "[PR] refactor: Result Pattern + Pipeline architecture migration",
+    "date": "2026-03-21T23:30:01Z",
+    "summary": "## Summary\n\n- **Result Pattern**: Migrate entire codebase to `Procedure<T> = IProcedureSuccess<T> | IProcedureFailure` \u2014 every service returns typed results instead of throwing, returning void, or returning null\n- **Pipeline Architecture**: Build composable import pipeline in `src/Scrapers/Pipeline/",
+    "url": "https://github.com/sergienko4/israeli-bank-scrapers-to-actual-budget/pull/263",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: israeli-bank-scrapers-to-actual-budget"
+    ]
+  },
+  {
+    "title": "[PR] Add full-stack self-hosting dashboard to replace paid subscriptions",
+    "date": "2026-03-21T22:55:39Z",
+    "summary": "Implements a complete self-hosting discovery and deployment platform covering 47 open-source alternatives to popular paid services (Google Drive, Spotify, Netflix, Gmail, etc.) across 13 categories.\n\n## Backend (`backend/`)\n- Node.js/Express REST API serving a service catalog with search, category f",
+    "url": "https://github.com/HRnewcoll/Degoogle/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Degoogle"
+    ]
+  },
+  {
+    "title": "[PR] feat(ci): ratchet integration coverage floor 30% \u2192 45% (#856)",
+    "date": "2026-03-21T22:49:32Z",
+    "summary": "## Summary\n\nLocks in branch-coverage gains from PRs #945 and #947. Integration branch coverage measured at **49%** (2,677 tests); ratchet floor raised from 30% \u2192 45% (4pp safety margin).\n\n## Ratchet history\n\n| Date | Floor | Notes |\n|------|-------|-------|\n| 2026-03-17 | 35.43% line | 173 integrati",
+    "url": "https://github.com/curdriceaurora/Local-File-Organizer/pull/949",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Local-File-Organizer"
+    ]
+  },
+  {
+    "title": "[PR] feat: support custom LLM provider configuration via web UI",
+    "date": "2026-03-21T22:45:37Z",
+    "summary": "Users can now define custom LLM providers through the web UI and have them take effect without modifying environment variables or config files.\r\n\r\n- Add `CustomLlmProviderSettings` struct and `llm_custom_providers` field to `Settings` so custom provider definitions are persisted and loaded from the ",
+    "url": "https://github.com/nearai/ironclaw/pull/1340",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ironclaw"
     ]
   }
 ]
