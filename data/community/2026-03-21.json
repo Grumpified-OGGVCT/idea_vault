@@ -574,7 +574,7 @@
   },
   {
     "title": "[PR] Threat radar platform snapshot (\u03a0 2026-03-16)",
-    "date": "2026-03-21T04:34:48Z",
+    "date": "2026-03-21T19:45:11Z",
     "summary": "This PR captures the current workspace snapshot from branch `feature/threat-radar-platform`.\n\nHighlights:\n- OpenCode skill docs updates under `.opencode/skills/*`\n- Workspace docs/scripts/config updates (`README.md`, `REPOSITORY_INDEX.md`, `docs/*`, `bb.edn`, `clojure-dev.clj`, `pnpm-workspace.yaml`",
     "url": "https://github.com/riatzukiza/devel/pull/28",
     "source": "github_prs",
@@ -586,7 +586,7 @@
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-21T18:36:50Z",
+    "date": "2026-03-21T20:30:08Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -1266,6 +1266,54 @@
       "comments: 0",
       "pull request",
       "repo: 01_k3s_ops"
+    ]
+  },
+  {
+    "title": "[PR] feat(indexer): v3 overhaul \u2014 batch embeddings, 16-lang AST, sqlite-vec, native watching",
+    "date": "2026-03-21T20:32:44Z",
+    "summary": "## Summary\n\nMajor overhaul of the indexer pipeline based on deep comparison with SocratiCode. Implements improvements across 4 phases:\n\n- **Plan 1: Embedding Pipeline** \u2014 batch embedding (32/call), Ollama provider, model-aware truncation, task prefixes for asymmetric retrieval, retry with backoff, p",
+    "url": "https://github.com/genesiscz/GenesisTools/pull/116",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: GenesisTools"
+    ]
+  },
+  {
+    "title": "[PR] feat: Port catalog entities as K8s CRDs",
+    "date": "2026-03-21T20:25:53Z",
+    "summary": "## Summary\n- Migrates 78 Backstage catalog entities to Port `ClusterEntity` CRDs (1 domain, 1 team, 1 user, 13 systems, 50 components, 11 resources)\n- Installs the Port `ClusterEntity` CRD in the cluster\n- Adds CRD entity mapping to the K8s exporter so it syncs ClusterEntities to Port\n- Catalog enti",
+    "url": "https://github.com/Diixtra/diixtra-forge/pull/835",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: diixtra-forge"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update image ghcr.io/openclaw/openclaw ( 2026.3.8 \u2794 2026.3.12 )",
+    "date": "2026-03-21T20:04:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.8` \u2192 `2026.3.12` ",
+    "url": "https://github.com/gavinmcfall/home-ops/pull/1706",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] Implement full WhoDoYouKnow application from design docs",
+    "date": "2026-03-21T19:34:26Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nFull implementation of the WhoDoYouKnow one-shot personal CRM generator, built from the PRD and Behavior & Design docs. This is a one-time-payment ($9) service where users connect Gmail, configure scan filters, and receive a CSV of their network enrich",
+    "url": "https://github.com/FrejusGdm/who-do-i-know/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: who-do-i-know"
     ]
   }
 ]
