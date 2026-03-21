@@ -586,7 +586,7 @@
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-21T13:47:44Z",
+    "date": "2026-03-21T14:29:28Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -634,7 +634,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.486.0",
-    "date": "2026-03-21T09:38:37Z",
+    "date": "2026-03-21T14:07:55Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.454.0` \u2192 `v4.486.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency Dashboard](../i",
     "url": "https://github.com/windsorcli/core/pull/1398",
     "source": "github_prs",
@@ -910,12 +910,12 @@
   },
   {
     "title": "[PR] fix(hi-rag): neutralise Windows SSL_CERT_FILE leak + sync 7 submodules",
-    "date": "2026-03-21T05:10:35Z",
+    "date": "2026-03-21T14:25:48Z",
     "summary": "## Summary\n- **SSL fix:** Add `SSL_CERT_FILE=` and `SSL_CERT_DIR=` to hi-rag-gateway-v2 (CPU + GPU) `environment:` blocks, overriding Windows host env leak that caused `FileNotFoundError` on startup\n- **Submodule sync:** A2UI, AgentGym, BoTZ, ClawZ, DoX (enterprise HEAD 832017f), autoresearch, n8n\n-",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/1048",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: PMOVES.AI"
     ]
@@ -1054,7 +1054,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.486.0",
-    "date": "2026-03-21T10:01:50Z",
+    "date": "2026-03-21T13:54:21Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.416.0` \u2192 `v4.486.0` |\n\n---\n\n### Release Notes\n\n<det",
     "url": "https://github.com/44smkn/google-apps-scripts/pull/322",
     "source": "github_prs",
@@ -1078,7 +1078,7 @@
   },
   {
     "title": "[PR] home-assistant: 2026.3.2 -> 2026.3.3",
-    "date": "2026-03-21T13:43:16Z",
+    "date": "2026-03-21T14:31:35Z",
     "summary": "Diff: https://github.com/home-assistant/core/compare/2026.3.2...2026.3.3\r\n\r\nChangelog: https://github.com/home-assistant/core/releases/tag/2026.3.3\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or des",
     "url": "https://github.com/NixOS/nixpkgs/pull/501842",
     "source": "github_prs",
@@ -1194,6 +1194,42 @@
       "comments: 2",
       "pull request",
       "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] feat: dashboard LLM routing controls",
+    "date": "2026-03-21T14:30:10Z",
+    "summary": "## Summary\n\n- **3-mode routing selector**: Always Claude / Smart routing / Always local LLM \u2014 persisted to `agent-orchestrator.yaml`\n- **LLM switcher panel**: baseURL input + model dropdown (fetched live from `/v1/models`) with Test connection button\n- **Dashboard integration**: \"Routing\" button in ",
+    "url": "https://github.com/ComposioHQ/agent-orchestrator/pull/596",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agent-orchestrator"
+    ]
+  },
+  {
+    "title": "[PR] docs: clarify sqlite-vec is local CLI, cloud uses Turso vectors",
+    "date": "2026-03-21T14:27:31Z",
+    "summary": "Adds a note box at the top of the sqlite-vec guide distinguishing between the local CLI vector setup (sqlite-vec) and the cloud service (Turso native vectors + Gemini embeddings).\n\nCloses #111\n\n<!-- greptile_comment -->\n\nPR Review by [Greptile](https://greptile.com) \n\n<h3>Greptile Summary</h3>\n\nThis",
+    "url": "https://github.com/BigInformatics/wagl/pull/123",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: wagl"
+    ]
+  },
+  {
+    "title": "[PR] Dev podman v2",
+    "date": "2026-03-21T14:11:37Z",
+    "summary": "This pull request migrates the container management system from a custom Podman stack module to the upstream [quadlet-nix](https://github.com/SEIAROTg/quadlet-nix) approach, bringing rootless Podman container support via Home Manager modules and improving modularity, maintainability, and user-level ",
+    "url": "https://github.com/telometto/nix-config/pull/5547",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: nix-config"
     ]
   }
 ]
