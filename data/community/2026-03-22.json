@@ -550,7 +550,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-03-22T05:04:06Z",
+    "date": "2026-03-22T12:44:14Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -574,7 +574,7 @@
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-22T10:33:19Z",
+    "date": "2026-03-22T11:34:47Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -598,12 +598,12 @@
   },
   {
     "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.13-1",
-    "date": "2026-03-22T06:24:44Z",
+    "date": "2026-03-22T12:16:13Z",
     "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.13-1`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.13-1\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/ru",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/106",
     "source": "github_prs",
     "highlights": [
-      "comments: 67",
+      "comments: 69",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -622,7 +622,7 @@
   },
   {
     "title": "[PR] refactor: Result Pattern + Pipeline architecture migration",
-    "date": "2026-03-22T11:18:54Z",
+    "date": "2026-03-22T12:51:26Z",
     "summary": "## Summary\n\n- **Result Pattern**: Migrate entire codebase to `Procedure<T> = IProcedureSuccess<T> | IProcedureFailure` \u2014 every service returns typed results instead of throwing, returning void, or returning null\n- **Pipeline Architecture**: Build composable import pipeline in `src/Scrapers/Pipeline/",
     "url": "https://github.com/sergienko4/israeli-bank-scrapers-to-actual-budget/pull/263",
     "source": "github_prs",
@@ -718,8 +718,8 @@
   },
   {
     "title": "[PR] chore(deps): update aqua",
-    "date": "2026-03-21T22:04:24Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.444.0` \u2192 `v4.478.0` | `v4.486.0` (+7)",
+    "date": "2026-03-22T12:45:01Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.444.0` \u2192 `v4.479.0` | `v4.486.0` (+6)",
     "url": "https://github.com/ianlewis/todos/pull/1823",
     "source": "github_prs",
     "highlights": [
@@ -910,7 +910,7 @@
   },
   {
     "title": "[PR] Add Gemini AI Provider support",
-    "date": "2026-03-22T11:26:50Z",
+    "date": "2026-03-22T11:29:06Z",
     "summary": "Added configuration for the Google Gemini API to run AI summaries on the client side as requested. Modified `Settings.jsx` to toggle between Ollama and Gemini, updated `App.jsx`, `Feed.jsx`, `HeroSection.jsx` and `NewsCard.jsx` to process news with the selected provider, using the existing `geminiSe",
     "url": "https://github.com/juninmd/fast-news/pull/57",
     "source": "github_prs",
@@ -930,6 +930,78 @@
       "comments: 12",
       "pull request",
       "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-03-22T12:54:09Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.479.0` | `v4.486.0` (+6)",
+    "url": "https://github.com/ianlewis/repo-template-py/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: repo-template-py"
+    ]
+  },
+  {
+    "title": "[PR] fix(#487): fail-fast on missing LLM credentials at startup [1.1.0-rc5]",
+    "date": "2026-03-22T12:50:00Z",
+    "summary": "## Summary\n\n* **#487**: Fail-fast on missing LLM credentials at startup (ADR-032 \u00a72)\n\nAfter `_inject_runtime_env` bridges mounted secrets into `os.environ`, a new `_validate_llm_credentials` check verifies the configured provider has its required credential env var. Cloud providers (`openai`, `anthr",
+    "url": "https://github.com/jordigilh/kubernaut/pull/491",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kubernaut"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-03-22T12:43:39Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.479.0` | `v4.486.0` (+6)",
+    "url": "https://github.com/ianlewis/repo-template-ts/pull/80",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: repo-template-ts"
+    ]
+  },
+  {
+    "title": "[PR] Code coverage and quality",
+    "date": "2026-03-22T12:42:46Z",
+    "summary": "- [x] Enabled code coverage reporting using `llvm-cov`.\r\n- [x] Enabled SonarQube Scan but this may not be necessary.\r\n- [x] Added integration tests for testing model downloads.\r\n\r\nKeep #5 open as this is the first cohort of code coverage and quality improvement. This issue needs to be worked on agai",
+    "url": "https://github.com/anirbanbasu/odir/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: odir"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update updates-patch-minor",
+    "date": "2026-03-22T12:26:36Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| alexta69/metube | patch | `2026.03.20` \u2192 `2026.03.21` |\n| [alpine/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/opencla",
+    "url": "https://github.com/truenas/apps/pull/4656",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: apps"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Jetson device support (tested on Orin Nano)",
+    "date": "2026-03-22T12:02:32Z",
+    "summary": "## Summary\n\nAdds `scripts/setup-jetson.sh`, Jetson documentation, and an `ollama` blueprint profile to enable NemoClaw on NVIDIA Jetson devices running L4T (Linux for Tegra).\n\nThe setup script is self-contained (does not delegate to `setup.sh`) because the gateway image must be patched between the p",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/249",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: NemoClaw"
     ]
   }
 ]
