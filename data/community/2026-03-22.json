@@ -166,7 +166,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-03-22T02:03:57Z",
+    "date": "2026-03-22T13:12:54Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -562,7 +562,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.486.0",
-    "date": "2026-03-22T05:48:39Z",
+    "date": "2026-03-22T13:02:24Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.454.0` \u2192 `v4.486.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency Dashboard](../i",
     "url": "https://github.com/windsorcli/core/pull/1398",
     "source": "github_prs",
@@ -574,7 +574,7 @@
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-22T11:34:47Z",
+    "date": "2026-03-22T13:49:00Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -622,12 +622,12 @@
   },
   {
     "title": "[PR] refactor: Result Pattern + Pipeline architecture migration",
-    "date": "2026-03-22T12:51:26Z",
+    "date": "2026-03-22T13:44:34Z",
     "summary": "## Summary\n\n- **Result Pattern**: Migrate entire codebase to `Procedure<T> = IProcedureSuccess<T> | IProcedureFailure` \u2014 every service returns typed results instead of throwing, returning void, or returning null\n- **Pipeline Architecture**: Build composable import pipeline in `src/Scrapers/Pipeline/",
     "url": "https://github.com/sergienko4/israeli-bank-scrapers-to-actual-budget/pull/263",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 4",
       "pull request",
       "repo: israeli-bank-scrapers-to-actual-budget"
     ]
@@ -994,14 +994,110 @@
   },
   {
     "title": "[PR] feat: add Jetson device support (tested on Orin Nano)",
-    "date": "2026-03-22T12:02:32Z",
+    "date": "2026-03-22T13:46:01Z",
     "summary": "## Summary\n\nAdds `scripts/setup-jetson.sh`, Jetson documentation, and an `ollama` blueprint profile to enable NemoClaw on NVIDIA Jetson devices running L4T (Linux for Tegra).\n\nThe setup script is self-contained (does not delegate to `setup.sh`) because the gateway image must be patched between the p",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/249",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(ollama): send think=false when thinking is off",
+    "date": "2026-03-22T13:45:44Z",
+    "summary": "## Summary\n- send `options.think = false` for native Ollama requests when the resolved thinking level is `off`\n- let the native Ollama stream path honor `onPayload` mutations before serializing the request body\n- add regression coverage for both the extra-params wrapper path and the final Ollama req",
+    "url": "https://github.com/openclaw/openclaw/pull/50741",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-03-22T13:41:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.479.0` | `v4.486.0` (+6)",
+    "url": "https://github.com/ianlewis/resume/pull/122",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: resume"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.479.0",
+    "date": "2026-03-22T13:38:15Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.229.0` \u2192 `v4.479.0` | `v4.486.0` (+6)",
+    "url": "https://github.com/korosuke613/grpshuffle/pull/180",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: grpshuffle"
+    ]
+  },
+  {
+    "title": "[PR] Add local-first AI food diary feature with CLI, rule-based parser, and SQLite persistence",
+    "date": "2026-03-22T13:32:54Z",
+    "summary": "Implements an end-to-end \"enter food diary\" workflow designed to run locally on a Raspberry Pi 4 \u2014 typed input \u2192 rule-based NLP parse \u2192 structured SQLite storage \u2192 review/edit/confirm loop \u2192 CSV export. All parsing is offline-first with optional Ollama and Whisper STT extension points.\n\n## New `app/",
+    "url": "https://github.com/timmbass/henryfood/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: henryfood"
+    ]
+  },
+  {
+    "title": "[PR] feat(pricing): implement scoped pricing overrides",
+    "date": "2026-03-22T13:31:58Z",
+    "summary": "## Changes\n\n- Added dedicated pricing override domain model + validation in Go schemas.\n- Added persistent storage for overrides in config store with migration/reconcile logic.\n- Added governance HTTP CRUD endpoints for pricing overrides.\n- Added model catalog compile/resolve/apply flow for scoped o",
+    "url": "https://github.com/maximhq/bifrost/pull/1825",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] feat: generative UI frontend + waitlist auth gate",
+    "date": "2026-03-22T13:15:34Z",
+    "summary": "## Summary\n\n- **Generative UI frontend** \u2014 Next.js 16 + React 19 + Tailwind v4 chat interface with intent-driven rendering (map, grid, route visualization, clarification cards)\n- **Waitlist + Magic Link auth** \u2014 Internal beta access control via Supabase Auth. Users submit email to waitlist, admin ap",
+    "url": "https://github.com/lifeodyssey/Seichijunrei-agent/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Seichijunrei-agent"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency aquaproj/aqua-registry to v4.479.0",
+    "date": "2026-03-22T13:10:02Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.433.0` \u2192 `v4.479.0` | `v4.486.0` (+6)",
+    "url": "https://github.com/blck-snwmn/prngo/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: prngo"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-03-22T13:08:07Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.439.0` \u2192 `v4.479.0` | `v4.486.0` (+6)",
+    "url": "https://github.com/ianlewis/fx/pull/137",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: fx"
     ]
   }
 ]
