@@ -538,7 +538,7 @@
   },
   {
     "title": "[PR] Staging",
-    "date": "2026-03-23T19:25:14Z",
+    "date": "2026-03-23T23:25:39Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Hosts fleet dashboard page + API for per-host inventory & aggregated overview\n  * Z.ai (Zhipu) provider support, new ob1 provider mapping, and GLM provider ordering\n  * Optio",
     "url": "https://github.com/open-hax/proxx/pull/103",
     "source": "github_prs",
@@ -610,7 +610,7 @@
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-23T22:34:37Z",
+    "date": "2026-03-23T23:34:21Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -1678,12 +1678,12 @@
   },
   {
     "title": "[PR] feat: dedicated pipeline endpoints for 4 prompt types with optimized RAG",
-    "date": "2026-03-23T22:35:05Z",
+    "date": "2026-03-23T22:39:39Z",
     "summary": "## YouTrack\r\n\r\nV26J-182, V26J-183, V26J-184, V26J-187\r\nhttps://utrechtuniversity.youtrack.cloud/issue/V26J-164/Complete-RAG-pipeline\r\n\r\n## Beschrijving\r\nThe 4 prompt buttons each now have their own RAG pipeline instead of using the generic /generate endpoint. Each is optimized for what it needs to a",
     "url": "https://github.com/Triple-One-Intelligence/research-ai/pull/59",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: research-ai"
     ]
@@ -1710,6 +1710,42 @@
       "comments: 3",
       "pull request",
       "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] feat: cloud compilation endpoint and orchestrator temperature support",
+    "date": "2026-03-23T23:33:32Z",
+    "summary": "## Summary\n\n### Cloud Compilation (Proposal 188 Phase 2)\n- Cloud Run service (`services/compile-worker/`) \u2014 Hono + @google/genai, deployed to `totem-488722`\n- Fans out to Gemini at concurrency 50, temperature 0\n- **25x speedup**: 35 min \u2192 1:25 for full 762-lesson corpus\n- CLI `--cloud <url>` flag: `",
+    "url": "https://github.com/mmnto-ai/totem/pull/900",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: totem"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.wandb: 0.25.0 -> 0.25.1",
+    "date": "2026-03-23T23:27:13Z",
+    "summary": "\n<!--\n^ Please summarise the changes you have done and explain why they are necessary here ^\n\nFor package updates please link to a changelog or describe changes, this helps your fellow maintainers discover breaking updates.\nFor new packages please briefly describe the package or provide a link to it",
+    "url": "https://github.com/NixOS/nixpkgs/pull/501733",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Add SovereignNode: modular DePIN home node overlay for Olares",
+    "date": "2026-03-23T23:14:29Z",
+    "summary": "Adds a `sovereign-node/` overlay to the Olares repo that turns affordable mini PCs into self-hosted, DePIN-earning nodes \u2014 combining Proxmox/K3s-based infrastructure, one-click services, mesh networking, local AI, and a Solana token economy into a unified system.\n\n## Structure\n\n- **`README.md` / `CO",
+    "url": "https://github.com/WestCope/Olares---Freenode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Olares---Freenode"
     ]
   }
 ]
