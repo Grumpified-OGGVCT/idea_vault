@@ -586,7 +586,7 @@
   },
   {
     "title": "[PR] feat: add Jetson Orin Nano support",
-    "date": "2026-03-23T01:43:45Z",
+    "date": "2026-03-23T11:22:59Z",
     "summary": "Closes #404\n\n## Summary\n\nAdds end-to-end Jetson Orin Nano support: from GPU detection through to a working OpenClaw agent with local Ollama inference.\n\n- **GPU detection**: nvidia-smi reports `[N/A]` for memory.total on Jetson (unified memory). Added fallback via GPU name + `/proc/device-tree/model`",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/405",
     "source": "github_prs",
@@ -598,7 +598,7 @@
   },
   {
     "title": "[PR] test: harden translation pipeline regressions",
-    "date": "2026-03-23T01:37:48Z",
+    "date": "2026-03-23T11:47:27Z",
     "summary": "## Summary\n- replace ad-hoc debug prints in translation-related paths with structured logging\n- harden translation service prompt configuration, fallback aggregation, and provider abstractions\n- add regression coverage for translation configuration, orchestration, and UI-facing text translation flow",
     "url": "https://github.com/hubo1989/ScreenTranslate/pull/69",
     "source": "github_prs",
@@ -610,7 +610,7 @@
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-23T10:08:45Z",
+    "date": "2026-03-23T10:58:20Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -934,7 +934,7 @@
   },
   {
     "title": "[PR] Update nuget (major)",
-    "date": "2026-03-23T10:05:26Z",
+    "date": "2026-03-23T11:47:26Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [MassTransit](https://massient.com/) ([source](https://redirect.github.com/Massient/MassTransit)) | nuget | major | `8.5.2` \u2192 `9.0.",
     "url": "https://github.com/project-origin/stamp/pull/271",
     "source": "github_prs",
@@ -1126,7 +1126,7 @@
   },
   {
     "title": "[PR] feat: add Stability AI image edit models support to Bedrock provider",
-    "date": "2026-03-23T10:37:44Z",
+    "date": "2026-03-23T11:45:35Z",
     "summary": "## Summary\n\nAdds support for Stability AI image editing models in the Bedrock provider, expanding image editing capabilities beyond the existing Titan and Nova Canvas models.\n\n## Changes\n\n- Added `getStabilityAIEditTaskType()` function to infer edit task types from Stability AI model names (inpaint,",
     "url": "https://github.com/maximhq/bifrost/pull/2225",
     "source": "github_prs",
@@ -1302,6 +1302,30 @@
       "comments: 0",
       "pull request",
       "repo: platform-infra"
+    ]
+  },
+  {
+    "title": "[PR] Scaffold hybrid enterprise AI agent stack monorepo",
+    "date": "2026-03-23T11:43:42Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n- scaffold a hardened monorepo layout for infrastructure, backend, frontend, and MCP services\n- add production and local Docker Compose topologies for Traefik, Entra ID forward auth, vLLM/Ollama, n8n, 1Password Connect, and Qdrant\n- implement an MCP n8n",
+    "url": "https://github.com/VollcomDigital/zeroclaw-hetzner-k8s-boilerplate/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: zeroclaw-hetzner-k8s-boilerplate"
+    ]
+  },
+  {
+    "title": "[PR] Tailor improvements v2",
+    "date": "2026-03-23T11:33:47Z",
+    "summary": "# Pull Request Title\r\n<!-- Provide a concise and descriptive title for the pull request -->\r\n\r\n## Related Issue\r\n<!-- If this pull request is related to an issue, please link it here using the \"#\" symbol followed by the issue number (e.g., #123) -->\r\n\r\n## Description\r\n<!-- Describe the changes made ",
+    "url": "https://github.com/srbhr/Resume-Matcher/pull/723",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Resume-Matcher"
     ]
   }
 ]
