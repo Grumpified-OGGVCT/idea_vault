@@ -610,7 +610,7 @@
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-23T04:30:48Z",
+    "date": "2026-03-23T06:18:14Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -622,7 +622,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-03-23T01:18:45Z",
+    "date": "2026-03-23T05:37:24Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -646,12 +646,12 @@
   },
   {
     "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.13-1",
-    "date": "2026-03-23T00:46:31Z",
+    "date": "2026-03-23T06:36:14Z",
     "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.13-1`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.13-1\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/ru",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/106",
     "source": "github_prs",
     "highlights": [
-      "comments: 73",
+      "comments: 75",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -682,7 +682,7 @@
   },
   {
     "title": "[PR] feat(knowledge): add Ollama embedding provider support",
-    "date": "2026-03-23T00:39:00Z",
+    "date": "2026-03-23T07:16:55Z",
     "summary": "## Summary\r\n- Adds Ollama as an embedding provider for knowledge bases, enabling fully offline/private RAG workflows\r\n- Implements per-KB dynamic pgvector tables to handle variable embedding dimensions across Ollama models\r\n- Auto-detects embedding dimension and context length from Ollama's `/api/sh",
     "url": "https://github.com/simstudioai/sim/pull/3714",
     "source": "github_prs",
@@ -822,6 +822,54 @@
       "comments: 1",
       "pull request",
       "repo: home-ops"
+    ]
+  },
+  {
+    "title": "Backend: Add OpenAI provider for AI Query Engine",
+    "date": "2026-02-25T16:27:39Z",
+    "summary": "## User Story\n**As a** user without local GPU resources,\n**I want to** use OpenAI's GPT models for SQL generation,\n**So that** I can leverage cloud AI without running local LLM infrastructure.\n\n## Context Diagram\n```mermaid\nflowchart LR\n    subgraph CloudBench\n        PROMPT[Prompt Builder]\n        ",
+    "url": "https://github.com/kartoza/kartoza-cloudbench/issues/58",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: kartoza-cloudbench"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): add built-in AI assistant with mentions, context awareness,\u2026",
+    "date": "2026-03-23T07:16:07Z",
+    "summary": "## \ud83d\ude80 Built-in AI Assistant for Rocket.Chat\r\n\r\n### \u2728 Features\r\n- @ai mention support\r\n- Context-aware responses (last 10 messages)\r\n- Rate limiting (prevents abuse)\r\n- \"Thinking...\" loading indicator\r\n- Admin settings for enabling AI\r\n- OpenAI API integration\r\n\r\n### \ud83e\udde0 Why this feature?\r\nModern chat p",
+    "url": "https://github.com/RocketChat/Rocket.Chat/pull/39807",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: Rocket.Chat"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add shared Helm chart, Makefiles, and improve deployment scaffolding",
+    "date": "2026-03-23T05:48:20Z",
+    "summary": "- Add a shared Helm chart  for deploying agents to OpenShift/Kubernetes, replacing per-agent k8s/ manifests and shell scripts (deploy.sh, init.sh)\r\n\r\n- Add per-agent Makefile with standardized targets (build, run, deploy, test) and agent.yaml/values.yaml metadata for consistent local dev and deploym",
+    "url": "https://github.com/red-hat-data-services/agentic-starter-kits/pull/31",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: agentic-starter-kits"
+    ]
+  },
+  {
+    "title": "[PR] Dev",
+    "date": "2026-03-23T05:21:50Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Chores**\n  * Broadened ignore rules for env files and removed sensitive env data.\n  * Added a runtime dependency.\n\n* **New Features**\n  * Sandboxes now use persistent per-project directories an",
+    "url": "https://github.com/jasonviipers/yald/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: yald"
     ]
   }
 ]
