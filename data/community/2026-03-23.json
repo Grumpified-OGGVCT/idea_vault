@@ -598,19 +598,19 @@
   },
   {
     "title": "[PR] test: harden translation pipeline regressions",
-    "date": "2026-03-23T11:47:27Z",
+    "date": "2026-03-23T12:27:05Z",
     "summary": "## Summary\n- replace ad-hoc debug prints in translation-related paths with structured logging\n- harden translation service prompt configuration, fallback aggregation, and provider abstractions\n- add regression coverage for translation configuration, orchestration, and UI-facing text translation flow",
     "url": "https://github.com/hubo1989/ScreenTranslate/pull/69",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: ScreenTranslate"
     ]
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-23T10:58:20Z",
+    "date": "2026-03-23T13:00:10Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -645,13 +645,13 @@
     ]
   },
   {
-    "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.13-1",
-    "date": "2026-03-23T06:36:14Z",
-    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.13-1`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.13-1\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/ru",
+    "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.22",
+    "date": "2026-03-23T12:26:55Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.22`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.22\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/106",
     "source": "github_prs",
     "highlights": [
-      "comments: 75",
+      "comments: 79",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -778,7 +778,7 @@
   },
   {
     "title": "[PR] feat: support custom LLM provider configuration via web UI",
-    "date": "2026-03-23T04:29:22Z",
+    "date": "2026-03-23T12:40:31Z",
     "summary": "Users can now define custom LLM providers through the web UI and have them take effect without modifying environment variables or config files.\r\n\r\n- Add `CustomLlmProviderSettings` struct and `llm_custom_providers` field to `Settings` so custom provider definitions are persisted and loaded from the ",
     "url": "https://github.com/nearai/ironclaw/pull/1340",
     "source": "github_prs",
@@ -1102,7 +1102,7 @@
   },
   {
     "title": "[PR] Feat/add api key subscription coding plans",
-    "date": "2026-03-23T10:46:19Z",
+    "date": "2026-03-23T13:16:10Z",
     "summary": "\n\n<!-- This is an auto-generated description by cubic. -->\n## Summary by cubic\nAdds token-based subscriptions for Z.ai coding plans and new providers `ollama-cloud`, `opencode-go`, and `opencode`, with proper routing, discovery fallbacks, and $0 billing for subscription usage. Keeps provider/model i",
     "url": "https://github.com/guillaumegay13/manifest/pull/3",
     "source": "github_prs",
@@ -1126,7 +1126,7 @@
   },
   {
     "title": "[PR] feat: add Stability AI image edit models support to Bedrock provider",
-    "date": "2026-03-23T11:45:35Z",
+    "date": "2026-03-23T12:04:00Z",
     "summary": "## Summary\n\nAdds support for Stability AI image editing models in the Bedrock provider, expanding image editing capabilities beyond the existing Titan and Nova Canvas models.\n\n## Changes\n\n- Added `getStabilityAIEditTaskType()` function to infer edit task types from Stability AI model names (inpaint,",
     "url": "https://github.com/maximhq/bifrost/pull/2225",
     "source": "github_prs",
@@ -1150,7 +1150,7 @@
   },
   {
     "title": "[PR] chore(deps): update aqua",
-    "date": "2026-03-23T10:17:50Z",
+    "date": "2026-03-23T12:31:38Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.398.0` \u2192 `v4.487.0` |\n| [ianlewis/todos](https://re",
     "url": "https://github.com/ianlewis/todo-issue-reopener/pull/3874",
     "source": "github_prs",
@@ -1326,6 +1326,54 @@
       "comments: 1",
       "pull request",
       "repo: Resume-Matcher"
+    ]
+  },
+  {
+    "title": "[PR] Refactor: Modularize generate_chapter_art.py into art_gen package",
+    "date": "2026-03-23T13:14:31Z",
+    "summary": "# Technical Debt Reduction\n\nThis PR refactors `scripts/generate_chapter_art.py` to resolve code complexity and strict length constraints.\n\n## Changes:\n- **Modularization**: Broke the single large file down into the `scripts/art_gen/` package.\n- **Components Extracted**:\n  - `config.py`: Model altern",
+    "url": "https://github.com/juninmd/meu-livro/pull/185",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: meu-livro"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.487.0",
+    "date": "2026-03-23T12:48:29Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.371.1` \u2192 `v4.487.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/koyashiro/k8s-manifests/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k8s-manifests"
+    ]
+  },
+  {
+    "title": "[PR] deps: Bump Testcontainers from 3.10.0 to 4.11.0",
+    "date": "2026-03-23T12:26:11Z",
+    "summary": "Updated [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet) from 3.10.0 to 4.11.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.11.0\n\n# What's Changed\n\nThanks to ",
+    "url": "https://github.com/StreamLineLabs/streamline-dotnet-sdk/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: streamline-dotnet-sdk"
+    ]
+  },
+  {
+    "title": "[PR] `Iris`: Centralize LLM model configuration and selection",
+    "date": "2026-03-23T12:10:16Z",
+    "summary": "## Motivation and Context\r\nLLM model selection was previously scattered across individual pipelines with hardcoded model names and environment-variable-based overrides. The `application.yml` configuration matched against `LanguageModel.model` for most roles but `LanguageModel.id` for the `reranker` ",
+    "url": "https://github.com/ls1intum/edutelligence/pull/411",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: edutelligence"
     ]
   }
 ]
