@@ -730,7 +730,7 @@
   },
   {
     "title": "[PR] Staging",
-    "date": "2026-03-24T08:10:04Z",
+    "date": "2026-03-24T09:28:45Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Hosts fleet dashboard page + API for per-host inventory & aggregated overview\n  * Z.ai (Zhipu) provider support, new ob1 provider mapping, and GLM provider ordering\n  * Optio",
     "url": "https://github.com/open-hax/proxx/pull/103",
     "source": "github_prs",
@@ -814,7 +814,7 @@
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-24T08:51:52Z",
+    "date": "2026-03-24T09:59:20Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -946,12 +946,12 @@
   },
   {
     "title": "[PR] Add `ollama` overlay for local LLM inference",
-    "date": "2026-03-24T08:56:25Z",
+    "date": "2026-03-24T09:59:34Z",
     "summary": "Adds an `ollama` overlay that runs [Ollama](https://ollama.com) as a Docker Compose sidecar, giving devcontainer stacks a self-hosted, OpenAI-compatible inference endpoint on port `11434`.\n\n## New overlay: `overlays/ollama/`\n\n- **`overlay.yml`** \u2014 `category: dev`, `supports: [compose]`, port `11434`",
     "url": "https://github.com/veggerby/container-superposition/pull/124",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 2",
       "pull request",
       "repo: container-superposition"
     ]
@@ -1006,7 +1006,7 @@
   },
   {
     "title": "[PR] Integrated Code Search with Graphiti",
-    "date": "2026-03-24T08:57:45Z",
+    "date": "2026-03-24T10:02:35Z",
     "summary": "Powerful semantic code search leveraging Graphiti memory to find code by intent, not just text, with natural language queries.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Integrated Code Search (unified, purpose, patter",
     "url": "https://github.com/OBenner/Auto-Coding/pull/174",
     "source": "github_prs",
@@ -1026,6 +1026,66 @@
       "comments: 1",
       "pull request",
       "repo: tabpilot"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Dynamo vLLM provider for external K8s endpoints",
+    "date": "2026-03-24T09:52:36Z",
+    "summary": "## Summary\n\n- Adds `NEMOCLAW_PROVIDER=dynamo` option for connecting to external vLLM endpoints (e.g., Dynamo on Kubernetes)\n- Enables NemoClaw to use GPU inference from K8s clusters without running GPUs locally\n- Builds on top of the non-interactive mode from #318\n\n## New Environment Variables\n\n| Va",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/365",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Add n8n AI Workflow Templates to Developer tools",
+    "date": "2026-03-24T09:51:19Z",
+    "summary": "## Summary\n\n- Adds [n8n AI Workflow Templates](https://github.com/bonskari/n8n-ai-workflows) to the **Developer tools** section\n- 11 self-hosted AI workflow templates for n8n + Ollama (blog writer, email responder, social media manager, lead scoring, meeting notes, and more)\n- All workflows run 100%",
+    "url": "https://github.com/janhq/awesome-local-ai/pull/63",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: awesome-local-ai"
+    ]
+  },
+  {
+    "title": "[PR] docs(kilo-docs): add platform tabs to AI provider pages",
+    "date": "2026-03-24T09:46:58Z",
+    "summary": "## Summary\n\nAdds VSCode (Pre-release) and CLI tabs to all 30 AI provider pages. **PR 8 of 8** from the docs platform tabs effort.\n\n### Pages updated\n\n- **index.md** \u2014 Overview with platform-specific provider configuration\n- **29 individual provider pages** \u2014 Each gets VSCode, Pre-release, and CLI ta",
+    "url": "https://github.com/Kilo-Org/kilocode/pull/7513",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-03-24T09:26:49Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] Pii",
+    "date": "2026-03-24T09:04:45Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/arthrod/open-webui/pull/64",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: open-webui"
     ]
   }
 ]
