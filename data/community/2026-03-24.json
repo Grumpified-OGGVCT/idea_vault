@@ -178,7 +178,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-03-23T21:59:03Z",
+    "date": "2026-03-24T04:45:51Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -730,7 +730,7 @@
   },
   {
     "title": "[PR] Staging",
-    "date": "2026-03-24T01:23:29Z",
+    "date": "2026-03-24T04:57:03Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Hosts fleet dashboard page + API for per-host inventory & aggregated overview\n  * Z.ai (Zhipu) provider support, new ob1 provider mapping, and GLM provider ordering\n  * Optio",
     "url": "https://github.com/open-hax/proxx/pull/103",
     "source": "github_prs",
@@ -762,6 +762,126 @@
       "comments: 102",
       "pull request",
       "repo: terraform-cicd-test"
+    ]
+  },
+  {
+    "title": "prebuilt==1.0.5 breaks create_react_agent when passing a list of BaseTool",
+    "date": "2026-03-24T04:33:22Z",
+    "summary": "### Checked other resources\n\n- [x] This is a bug, not a usage question. For questions, please use the LangChain Forum (https://forum.langchain.com/).\n- [x] I added a clear and detailed title that summarizes the issue.\n- [x] I read what a minimal reproducible example is (https://stackoverflow.com/hel",
+    "url": "https://github.com/langchain-ai/langgraph/issues/6477",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 3",
+      "state: open",
+      "repo: langgraph"
+    ]
+  },
+  {
+    "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.23",
+    "date": "2026-03-24T04:33:31Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.23`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.23\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2",
+    "url": "https://github.com/jedwards1230/openclaw-charts/pull/106",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 86",
+      "pull request",
+      "repo: openclaw-charts"
+    ]
+  },
+  {
+    "title": "[PR] feat: Grymoire x Interlinear \u2014 Old Norse public reading preview",
+    "date": "2026-03-24T04:30:07Z",
+    "summary": "## Summary\n\nPublic preview page for Grymoire Old Norse readings on Interlinear, with ensk.is dictionary integration for supplemental vocabulary.\n\n- Grymoire MDX ingestion pipeline: parses frontmatter, passage, Modern Icelandic, vocabulary, generates TTS audio, upserts to Supabase\n- Public preview pa",
+    "url": "https://github.com/Peleke/interlinear/pull/271",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 35",
+      "pull request",
+      "repo: interlinear"
+    ]
+  },
+  {
+    "title": "[PR] litellm: 1.80.0 -> 1.81.14",
+    "date": "2026-03-24T04:25:39Z",
+    "summary": "## Summary\n- Bump `litellm` to `1.81.14`.\n- Set `LITELLM_UI_PATH` for the NixOS `services.litellm` unit to a writable state directory, avoiding runtime attempts to rewrite UI assets in the read-only Nix store.\n\n## Test plan\n- [x] `nix build .#litellm`\n- [ ] `nix build .#nixosTests.litellm`\n\n\ud83e\udd16 Genera",
+    "url": "https://github.com/NixOS/nixpkgs/pull/497015",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
+    "date": "2026-03-24T04:20:38Z",
+    "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
+    "url": "https://github.com/juninmd/github-assistance/pull/102",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: github-assistance"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): add built-in AI assistant with mentions, context awareness,\u2026",
+    "date": "2026-03-24T04:13:34Z",
+    "summary": "## \ud83d\ude80 Built-in AI Assistant for Rocket.Chat\r\n\r\n### \u2728 Features\r\n- @ai mention support\r\n- Context-aware responses (last 10 messages)\r\n- Rate limiting (prevents abuse)\r\n- \"Thinking...\" loading indicator\r\n- Admin settings for enabling AI\r\n- OpenAI API integration\r\n\r\n### \ud83e\udde0 Why this feature?\r\nModern chat p",
+    "url": "https://github.com/RocketChat/Rocket.Chat/pull/39807",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: Rocket.Chat"
+    ]
+  },
+  {
+    "title": "[PR] feat(server): add pickupLoadForPlayer method to PlayerService",
+    "date": "2026-03-24T04:06:48Z",
+    "summary": "Atomic load pickup with FOR UPDATE row locking, capacity validation via shared getTrainCapacity(), and best-effort dropped-load clearing. Used by both human players and bots. \n <div id='description'>\n<a href=\"https://bito.ai#summarystart\"></a>\n<h3>Summary by Bito</h3>\n\n<p>This PR introduces a new me",
+    "url": "https://github.com/jeffgabriel/eurorails_ai/pull/229",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: eurorails_ai"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-03-24T03:55:13Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-03-24T02:44:09Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.wandb: 0.25.0 -> 0.25.1",
+    "date": "2026-03-24T02:33:19Z",
+    "summary": "\n<!--\n^ Please summarise the changes you have done and explain why they are necessary here ^\n\nFor package updates please link to a changelog or describe changes, this helps your fellow maintainers discover breaking updates.\nFor new packages please briefly describe the package or provide a link to it",
+    "url": "https://github.com/NixOS/nixpkgs/pull/501733",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: nixpkgs"
     ]
   }
 ]
