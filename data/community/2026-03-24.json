@@ -814,7 +814,7 @@
   },
   {
     "title": "[PR] Add comprehensive tests for `ai_client.py` and `ci_health` agent",
-    "date": "2026-03-24T09:59:20Z",
+    "date": "2026-03-24T10:53:16Z",
     "summary": "This submission completes the test coverage checks ensuring the codebase achieves 100% code coverage. Importantly, it implements tests for `ci_health` agent along with edge cases in configuring and executing Gemini, Ollama and OpenAI provider features in `src/ai_client.py`.\n\n---\n*PR created automati",
     "url": "https://github.com/juninmd/github-assistance/pull/102",
     "source": "github_prs",
@@ -1006,7 +1006,7 @@
   },
   {
     "title": "[PR] Integrated Code Search with Graphiti",
-    "date": "2026-03-24T10:02:35Z",
+    "date": "2026-03-24T10:10:37Z",
     "summary": "Powerful semantic code search leveraging Graphiti memory to find code by intent, not just text, with natural language queries.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Integrated Code Search (unified, purpose, patter",
     "url": "https://github.com/OBenner/Auto-Coding/pull/174",
     "source": "github_prs",
@@ -1030,12 +1030,12 @@
   },
   {
     "title": "[PR] feat: add Dynamo vLLM provider for external K8s endpoints",
-    "date": "2026-03-24T09:52:36Z",
+    "date": "2026-03-24T11:45:42Z",
     "summary": "## Summary\n\n- Adds `NEMOCLAW_PROVIDER=dynamo` option for connecting to external vLLM endpoints (e.g., Dynamo on Kubernetes)\n- Enables NemoClaw to use GPU inference from K8s clusters without running GPUs locally\n- Builds on top of the non-interactive mode from #318\n\n## New Environment Variables\n\n| Va",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/365",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -1086,6 +1086,126 @@
       "comments: 2",
       "pull request",
       "repo: open-webui"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add Render Free Tier support with Lite mode",
+    "date": "2026-03-24T11:45:57Z",
+    "summary": "- Implement GoogleGenAIGemmaClient using `google-genai` for API-based model inference.\n- Support API-based RAG embeddings with `GoogleGenAIEmbedderAdapter` in `DeepSearchRAG`.\n- Overrode default local model strings to Google-supported equivalents (`gemini-1.5-flash`, `text-embedding-004`) when using",
+    "url": "https://github.com/MasumRab/gemini-fullstack-langgraph-quickstart/pull/354",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: gemini-fullstack-langgraph-quickstart"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Render Free Tier Lite Mode deployment and optimizations",
+    "date": "2026-03-24T11:40:50Z",
+    "summary": "- Documented deployment guide in `DEPLOY_RENDER.md` for manual web service without Blueprint requirements.\n- Implemented `GoogleGenAIGemmaClient` using `google-genai` to offload local Ollama compute to API, mapped via `GEMMA_PROVIDER=google_genai`.\n- Optimized `agent.rag` by adding an adapter to use",
+    "url": "https://github.com/MasumRab/gemini-fullstack-langgraph-quickstart/pull/352",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: gemini-fullstack-langgraph-quickstart"
+    ]
+  },
+  {
+    "title": "[PR] feat: dedicated pipeline endpoints for 4 prompt types with optimized RAG",
+    "date": "2026-03-24T11:31:35Z",
+    "summary": "## YouTrack\r\n\r\nV26J-182, V26J-183, V26J-184, V26J-187\r\nhttps://utrechtuniversity.youtrack.cloud/issue/V26J-164/Complete-RAG-pipeline\r\n\r\n## Beschrijving\r\nThe 4 prompt buttons each now have their own RAG pipeline instead of using the generic /generate endpoint. Each is optimized for what it needs to a",
+    "url": "https://github.com/Triple-One-Intelligence/research-ai/pull/59",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: research-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: add /add-mem0-graph skill \u2014 persistent memory with Qdrant + Neo4j + local embeddings",
+    "date": "2026-03-24T11:25:27Z",
+    "summary": "## Summary\n\nAdds `/add-mem0-graph` skill that gives NanoClaw agents persistent, graph-enhanced memory using the [mem0](https://github.com/mem0ai/mem0) library (50k+ stars, Apache 2.0) against **existing** Qdrant + Neo4j infrastructure.\n\n- **Zero new Docker containers** \u2014 reuses running Qdrant (vecto",
+    "url": "https://github.com/qwibitai/nanoclaw/pull/1256",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nanoclaw"
+    ]
+  },
+  {
+    "title": "[PR] UI fixes, transcript enhancements, and codebase refactoring",
+    "date": "2026-03-24T11:07:55Z",
+    "summary": "## Summary\n\nMajor update covering transcript display enhancements, UI/UX fixes, performance improvements, and a comprehensive codebase refactoring pass.\n\n### Transcript & Display\n- **Sentence Highlight mode**: paragraph-grouped transcript display with per-segment time-based highlighting and tap-to-s",
+    "url": "https://github.com/bobcode99/PodcastAnalyzer/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: PodcastAnalyzer"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update testcontainers-node monorepo to v11 (major)",
+    "date": "2026-03-24T10:34:39Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/localstack](https://redirect.github.com/testcontainers/testcontainers-node) | [`10",
+    "url": "https://github.com/zoran995/geoportal-server/pull/107",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: geoportal-server"
+    ]
+  },
+  {
+    "title": "[PR] Flavours",
+    "date": "2026-03-24T10:26:28Z",
+    "summary": "## Description\r\nIntroduce Flavors as [specified in ADR](Introduce Flavors as specified: https://docs.google.com/document/d/1CgxFZt7ITVb8LsbxZ1YRJP5CZZw7WMIZA3I_vUL8SmE/edit?tab=t.0\r\n\r\n\r\n## Which issue(s) does this PR fix or relate to\r\n\r\nhttps://issues.redhat.com/browse/RHIDP-11505\r\n\r\n## PR acceptanc",
+    "url": "https://github.com/redhat-developer/rhdh-operator/pull/2415",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 26",
+      "pull request",
+      "repo: rhdh-operator"
+    ]
+  },
+  {
+    "title": "[PR] fix: normalize response images missing index + guard audio duration o\u2026",
+    "date": "2026-03-24T10:19:15Z",
+    "summary": "\u2026verflow (#22950)\r\n\r\n* feat(spend-logs): add truncation note when error logs are truncated for DB storage (#22936)\r\n\r\nWhen the messages or response JSON fields in spend logs are truncated before being written to the database, the truncation marker now includes a note explaining:\r\n- This is a DB stor",
+    "url": "https://github.com/BerriAI/litellm/pull/22955",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: litellm"
+    ]
+  },
+  {
+    "title": "[PR] Update Mend: high confidence minor and patch dependency updates",
+    "date": "2026-03-24T10:12:54Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/jgeraigery/carbonj/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: carbonj"
+    ]
+  },
+  {
+    "title": "[PR] Update nuget (major)",
+    "date": "2026-03-24T10:54:06Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [MassTransit](https://massient.com/) ([source](https://redirect.github.com/Massient/MassTransit)) | nuget | major | `8.5.2` \u2192 `9.0.",
+    "url": "https://github.com/project-origin/stamp/pull/271",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: stamp"
     ]
   }
 ]
