@@ -226,7 +226,7 @@
   },
   {
     "title": "Experimental ROCM & PYTORCH builds for ALL GFX103X (rdna2)",
-    "date": "2026-03-25T14:24:03Z",
+    "date": "2026-03-25T19:30:55Z",
     "summary": "- https://app.mediafire.com/folder/mvrwkgj96lkua\n\n* First make sure you have these installed : \n\n> git :: https://git-scm.com/download/win\n> python 3.12 :: https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe \n> Visual C++ Runtime Library :: https://aka.ms/vs/17/release/vc_redist.x64.e",
     "url": "https://github.com/patientx/ComfyUI-Zluda/issues/435",
     "source": "github_issues",
@@ -1186,12 +1186,12 @@
   },
   {
     "title": "[PR] Flavours",
-    "date": "2026-03-25T18:47:02Z",
+    "date": "2026-03-25T19:27:53Z",
     "summary": "## Description\r\nIntroduce Flavors as [specified in ADR](Introduce Flavors as specified: https://docs.google.com/document/d/1CgxFZt7ITVb8LsbxZ1YRJP5CZZw7WMIZA3I_vUL8SmE/edit?tab=t.0\r\n\r\n\r\n## Which issue(s) does this PR fix or relate to\r\n\r\nhttps://issues.redhat.com/browse/RHIDP-11505\r\n\r\n## PR acceptanc",
     "url": "https://github.com/redhat-developer/rhdh-operator/pull/2415",
     "source": "github_prs",
     "highlights": [
-      "comments: 32",
+      "comments: 33",
       "pull request",
       "repo: rhdh-operator"
     ]
@@ -1210,7 +1210,7 @@
   },
   {
     "title": "[PR] fix: harden installer and onboard resiliency",
-    "date": "2026-03-25T17:11:31Z",
+    "date": "2026-03-25T19:49:31Z",
     "summary": "## Summary\n\nHardens NemoClaw install and onboarding resiliency across repeat runs, partial failures, and restart/runtime drift.\n\nAddresses:\n- #446 resumable onboarding\n- #623 onboarding timeout during sandbox image push/import\n- #427 image upload timeout during onboard\n- #245 sandbox image push conn",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/770",
     "source": "github_prs",
@@ -1378,7 +1378,7 @@
   },
   {
     "title": "[PR] feat: claude summarize + subscription OAuth + tail enhancements",
-    "date": "2026-03-25T19:00:46Z",
+    "date": "2026-03-25T19:53:04Z",
     "summary": "- **Promote `claude summarize`** to top-level command with cross-project session fallback and `--project` option\n- **Fix subscription OAuth** for Sonnet/Opus models \u2014 billing header injection, system prompt prefix, beta flags\n- **Refactor provider auth** \u2014 extract `subscription-billing.ts` shared ut",
     "url": "https://github.com/genesiscz/GenesisTools/pull/129",
     "source": "github_prs",
@@ -1390,7 +1390,7 @@
   },
   {
     "title": "[PR] docs: Resolve API hallucinations and fix various code examples (Bugs 41-60)",
-    "date": "2026-03-25T18:39:43Z",
+    "date": "2026-03-25T19:50:03Z",
     "summary": "This PR addresses numerous documentation errors and API hallucinations identified in bugs 41-60. \n\n### Key Fixes:\n* **Express & Fastify**: Fixed `verbatimModuleSyntax` TS errors (`TS1484`) with type-only imports and resolved missing optional `?` context references.\n* **Flask Plugin**: Completely rew",
     "url": "https://github.com/genkit-ai/docsite/pull/254",
     "source": "github_prs",
@@ -1402,7 +1402,7 @@
   },
   {
     "title": "[PR] Add shared service methods pt2: discardHand decomposition + buildTrack tests",
-    "date": "2026-03-25T18:33:16Z",
+    "date": "2026-03-25T19:08:36Z",
     "summary": "## Summary\n- Extract `discardHandCore` private method from `discardHandForUser` for card discard/draw/update logic reuse\n- Add unified `discardHandForPlayer` method (accepts playerId, no turn advancement) \u2014 usable by both human and bot callers\n- Fix `buildTrackForPlayer` test data to include require",
     "url": "https://github.com/jeffgabriel/eurorails_ai/pull/230",
     "source": "github_prs",
@@ -1482,6 +1482,42 @@
       "comments: 0",
       "pull request",
       "repo: ai-toolkit-components"
+    ]
+  },
+  {
+    "title": "[PR] feat(knowledge): add Ollama embedding provider support",
+    "date": "2026-03-25T19:45:18Z",
+    "summary": "## Summary\r\n- Adds Ollama as an embedding provider for knowledge bases, enabling fully offline/private RAG workflows\r\n- Implements per-KB dynamic pgvector tables to handle variable embedding dimensions across Ollama models\r\n- Auto-detects embedding dimension and context length from Ollama's `/api/sh",
+    "url": "https://github.com/simstudioai/sim/pull/3714",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: sim"
+    ]
+  },
+  {
+    "title": "[PR] Refactor UI, expand news sources, and enhance Telegram summary formatting",
+    "date": "2026-03-25T19:40:36Z",
+    "summary": "This submission addresses the final requested points:\n- Reformulated the project by improving the UI (`App.jsx` background gradient, `NewsCard.jsx` rounded corners and shadows).\n- Added more news portals (`src/services/newsService.js` now includes 4 additional Brazilian RSS feeds).\n- Ensured Ollama ",
+    "url": "https://github.com/juninmd/fast-news/pull/61",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: fast-news"
+    ]
+  },
+  {
+    "title": "[PR] fix(security): add SSRF protection to HTTP request node",
+    "date": "2026-03-25T19:32:23Z",
+    "summary": "## Summary\n\n- Add URL validation to the HTTP request node that blocks requests to private/internal networks\n- Prevents Server-Side Request Forgery (SSRF) attacks through pipeline configuration\n\n## Bug Description\n\n**File**: `nodes/src/nodes/tool_http_request/http_client.py`\n\nThe `execute_request()` ",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/337",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: rocketride-server"
     ]
   }
 ]
