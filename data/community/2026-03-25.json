@@ -742,7 +742,7 @@
   },
   {
     "title": "[PR] ci: nightly job for inference test using Ollama on GPU runners",
-    "date": "2026-03-24T23:59:48Z",
+    "date": "2026-03-25T16:19:52Z",
     "summary": "## Summary\r\n\r\nAdd a `gpu-e2e` job to the nightly E2E workflow that tests the Ollama local inference path on a GPU-enabled self-hosted runner. Renamed the existing job from `full-e2e` to `cloud-e2e` to clearly distinguish the two inference paths.\r\n\r\n## What it tests\r\n\r\nThe test follows the real user ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/839",
     "source": "github_prs",
@@ -1018,7 +1018,7 @@
   },
   {
     "title": "[PR] feat: metrics & observability audit \u2014 fix all 26 broken Grafana panels",
-    "date": "2026-03-25T09:02:05Z",
+    "date": "2026-03-25T16:59:47Z",
     "summary": "## Summary\n\nComprehensive metrics and observability audit that takes the Grafana dashboard from **63% working (44/70 panels) to 100%**. Every work item from `docs/local-backlog/metrics-observability-audit.md` is complete.\n\n### WB-1: Wire eval worker operational metrics\n- Call `RecordEvalExecuted()`,",
     "url": "https://github.com/AltairaLabs/Omnia/pull/659",
     "source": "github_prs",
@@ -1137,9 +1137,9 @@
     ]
   },
   {
-    "title": "[PR] [Security Solution] Automated Alert-to-Investigation Pipeline \u2014 E2E Spike",
-    "date": "2026-03-25T12:08:39Z",
-    "summary": "# [Security Solution] Automated Alert-to-Investigation Pipeline \u2014 Native Elastic Stack Implementation\n\n## Overview\n\nThis spike implements an **end-to-end automated pipeline** that transforms raw security alerts into organized investigation cases with Attack Discovery insights, using **100% native El",
+    "title": "[PR] [Spike] Alert Investigation Pipeline - Elastic Workflows + Agent Builder Skills",
+    "date": "2026-03-25T15:15:35Z",
+    "summary": "## Summary\n\nAutomated Alert Investigation Pipeline that processes security alerts through a 6-stage workflow: fetch, deduplicate, extract entities, match to cases, trigger Attack Discovery, and tag as processed. Exposed as both autonomous Elastic Workflows (scheduled every 15 min) and interactive Ag",
     "url": "https://github.com/elastic/kibana/pull/257957",
     "source": "github_prs",
     "highlights": [
@@ -1186,7 +1186,7 @@
   },
   {
     "title": "[PR] Flavours",
-    "date": "2026-03-25T14:55:45Z",
+    "date": "2026-03-25T17:06:59Z",
     "summary": "## Description\r\nIntroduce Flavors as [specified in ADR](Introduce Flavors as specified: https://docs.google.com/document/d/1CgxFZt7ITVb8LsbxZ1YRJP5CZZw7WMIZA3I_vUL8SmE/edit?tab=t.0\r\n\r\n\r\n## Which issue(s) does this PR fix or relate to\r\n\r\nhttps://issues.redhat.com/browse/RHIDP-11505\r\n\r\n## PR acceptanc",
     "url": "https://github.com/redhat-developer/rhdh-operator/pull/2415",
     "source": "github_prs",
@@ -1198,20 +1198,20 @@
   },
   {
     "title": "[PR] [Rule Tuning] Update Mitre Mappings and tags",
-    "date": "2026-03-25T13:15:52Z",
+    "date": "2026-03-25T17:08:01Z",
     "summary": "<!--\r\nThank you for your interest in and contributing to Detection Rules!\r\nThere are a few simple things to check before submitting your pull request\r\nthat can help with the review process. You should delete these items\r\nfrom your submission, but they are here to help bring them to your attention.\r\n",
     "url": "https://github.com/elastic/detection-rules/pull/5876",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 13",
       "pull request",
       "repo: detection-rules"
     ]
   },
   {
     "title": "[PR] fix: harden installer and onboard resiliency",
-    "date": "2026-03-25T15:05:11Z",
-    "summary": "Fixes #446\n\nAddresses #623, #427, #245, #486, #716, and #532 as part of the installer/onboard resiliency pass.\n\n## Summary\n- harden installer and uninstall behavior around PATH readiness, shim cleanup, and the deprecated `scripts/install.sh` wrapper\n- add persisted onboard session state, `nemoclaw d",
+    "date": "2026-03-25T16:46:29Z",
+    "summary": "## Summary\n\nHardens NemoClaw install and onboarding resiliency across repeat runs, partial failures, and restart/runtime drift.\n\nAddresses:\n- #446 resumable onboarding\n- #623 onboarding timeout during sandbox image push/import\n- #427 image upload timeout during onboard\n- #245 sandbox image push conn",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/770",
     "source": "github_prs",
     "highlights": [
@@ -1222,8 +1222,8 @@
   },
   {
     "title": "[PR] Migration to docker",
-    "date": "2026-03-25T15:04:43Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **New Features**\n  * Docker Compose configuration for simplified local deployment\n  * Health check endpoints for service monitoring\n  * Dynamic rate limiting with automatic retr",
+    "date": "2026-03-25T15:11:01Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Local Docker Compose stack for easy local deployment\n  * Health endpoints for service and API status\n  * Automatic retry behavior for rate-limit errors\n  * Support for pre-ge",
     "url": "https://github.com/monkscode/Natural-Language-to-Robot-Framework/pull/49",
     "source": "github_prs",
     "highlights": [
@@ -1258,7 +1258,7 @@
   },
   {
     "title": "[PR] fix: arena session recording \u2014 ghost sessions and failed status",
-    "date": "2026-03-25T14:21:09Z",
+    "date": "2026-03-25T17:03:42Z",
     "summary": "## Summary\n\nFixes arena session recording bugs from `docs/local-backlog/arena-session-recording-analysis.md`. All fixes verified end-to-end against a live ArenaJob (`session-fix-test`).\n\n### P0: Stop creating ghost sessions from OTLP traceID fallback (\u00a72.1)\n- Removed traceID-to-sessionID fallback in",
     "url": "https://github.com/AltairaLabs/Omnia/pull/660",
     "source": "github_prs",
@@ -1302,6 +1302,78 @@
       "comments: 7",
       "pull request",
       "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Dev environment setup: tooling, security fixes, agent quickstart",
+    "date": "2026-03-25T16:52:23Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nSets up a proper development environment for the Neuro-Spicy DevKit. Removes hardcoded tooling versions, fixes security issues, implements missing phantom scripts, integrates OpenClaw with a hardened Docker image, and makes the repo self-bootstrapping ",
+    "url": "https://github.com/k-dot-greyz/neuro-spicy-devkit/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: neuro-spicy-devkit"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): add built-in AI assistant with mentions, context awareness,\u2026",
+    "date": "2026-03-25T16:50:09Z",
+    "summary": "## \ud83d\ude80 Built-in AI Assistant for Rocket.Chat\r\n\r\n### \u2728 Features\r\n- @ai mention support\r\n- Context-aware responses (last 10 messages)\r\n- Rate limiting (prevents abuse)\r\n- \"Thinking...\" loading indicator\r\n- Admin settings for enabling AI\r\n- OpenAI API integration\r\n\r\n### \ud83e\udde0 Why this feature?\r\nModern chat p",
+    "url": "https://github.com/RocketChat/Rocket.Chat/pull/39807",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: Rocket.Chat"
+    ]
+  },
+  {
+    "title": "[PR] fix(indexer): GPU-first embedding, Ollama auto-pull, interactive remove, model selector",
+    "date": "2026-03-25T16:39:49Z",
+    "summary": "## Summary\n\nUX fixes for the indexer discovered during real-world testing. GPU embedding was technically available but never actually used by default.\n\n### GPU-First Embedding\n- **Fallback order changed**: Ollama (GPU) > CoreML (GPU/ANE) > DarwinKit (CPU) > local-hf (WASM) > cloud\n- **Previously**: ",
+    "url": "https://github.com/genesiscz/GenesisTools/pull/122",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: GenesisTools"
+    ]
+  },
+  {
+    "title": "[PR] hotfix: ollama api key for cloud models",
+    "date": "2026-03-25T16:17:04Z",
+    "summary": "## Summary\r\n\r\nAPI key support for the Ollama provider required for cloud models: https://docs.ollama.com/api/authentication\r\n\r\n## Changes\r\n\r\nExclude Ollama from the keyless providers. It won't hurt local setups.\r\n\r\n## Type of change\r\n\r\n- [x] Bug fix\r\n- [ ] Feature\r\n- [ ] Refactor\r\n- [ ] Documentatio",
+    "url": "https://github.com/maximhq/bifrost/pull/1452",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR]  fix: gemini api key invalid cause by ollama cloud key overwrite",
+    "date": "2026-03-25T15:47:53Z",
+    "summary": "Gemini give error\r\n```\r\nWARNING  | pr_agent.algo.ai_handlers.litellm_ai_handler:chat_completion:420 - Error during LLM inference: litellm.AuthenticationError: GeminiException - {\r\n  \"error\": {\r\n    \"code\": 400,\r\n    \"message\": \"API key not valid. Please pass a valid API key.\",\r\n    \"status\": \"INVALI",
+    "url": "https://github.com/qodo-ai/pr-agent/pull/2288",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: pr-agent"
+    ]
+  },
+  {
+    "title": "[PR] Custom QAI branding: logo, favicon, login pages",
+    "date": "2026-03-25T15:10:39Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Scheduled workflow execution with configurable intervals\n  * Document classification into custom categories using AI\n  * Email monitoring with automatic attachment extractio",
+    "url": "https://github.com/langflow-ai/langflow/pull/12320",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: langflow"
     ]
   }
 ]
