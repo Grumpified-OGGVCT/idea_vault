@@ -645,13 +645,13 @@
     ]
   },
   {
-    "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.23",
-    "date": "2026-03-25T12:25:11Z",
-    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.23`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.23\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2",
+    "title": "[PR] chore: bump openclaw v2026.3.11 \u2192 v2026.3.24",
+    "date": "2026-03-25T18:29:08Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.3.11`\n- **Latest**: `v2026.3.24`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.3.24\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/106",
     "source": "github_prs",
     "highlights": [
-      "comments: 109",
+      "comments: 115",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -1186,31 +1186,31 @@
   },
   {
     "title": "[PR] Flavours",
-    "date": "2026-03-25T17:06:59Z",
+    "date": "2026-03-25T18:47:02Z",
     "summary": "## Description\r\nIntroduce Flavors as [specified in ADR](Introduce Flavors as specified: https://docs.google.com/document/d/1CgxFZt7ITVb8LsbxZ1YRJP5CZZw7WMIZA3I_vUL8SmE/edit?tab=t.0\r\n\r\n\r\n## Which issue(s) does this PR fix or relate to\r\n\r\nhttps://issues.redhat.com/browse/RHIDP-11505\r\n\r\n## PR acceptanc",
     "url": "https://github.com/redhat-developer/rhdh-operator/pull/2415",
     "source": "github_prs",
     "highlights": [
-      "comments: 30",
+      "comments: 32",
       "pull request",
       "repo: rhdh-operator"
     ]
   },
   {
     "title": "[PR] [Rule Tuning] Update Mitre Mappings and tags",
-    "date": "2026-03-25T17:08:01Z",
+    "date": "2026-03-25T17:42:03Z",
     "summary": "<!--\r\nThank you for your interest in and contributing to Detection Rules!\r\nThere are a few simple things to check before submitting your pull request\r\nthat can help with the review process. You should delete these items\r\nfrom your submission, but they are here to help bring them to your attention.\r\n",
     "url": "https://github.com/elastic/detection-rules/pull/5876",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 15",
       "pull request",
       "repo: detection-rules"
     ]
   },
   {
     "title": "[PR] fix: harden installer and onboard resiliency",
-    "date": "2026-03-25T16:46:29Z",
+    "date": "2026-03-25T17:11:31Z",
     "summary": "## Summary\n\nHardens NemoClaw install and onboarding resiliency across repeat runs, partial failures, and restart/runtime drift.\n\nAddresses:\n- #446 resumable onboarding\n- #623 onboarding timeout during sandbox image push/import\n- #427 image upload timeout during onboard\n- #245 sandbox image push conn",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/770",
     "source": "github_prs",
@@ -1342,7 +1342,7 @@
   },
   {
     "title": "[PR] hotfix: ollama api key for cloud models",
-    "date": "2026-03-25T16:17:04Z",
+    "date": "2026-03-25T17:31:06Z",
     "summary": "## Summary\r\n\r\nAPI key support for the Ollama provider required for cloud models: https://docs.ollama.com/api/authentication\r\n\r\n## Changes\r\n\r\nExclude Ollama from the keyless providers. It won't hurt local setups.\r\n\r\n## Type of change\r\n\r\n- [x] Bug fix\r\n- [ ] Feature\r\n- [ ] Refactor\r\n- [ ] Documentatio",
     "url": "https://github.com/maximhq/bifrost/pull/1452",
     "source": "github_prs",
@@ -1374,6 +1374,114 @@
       "comments: 2",
       "pull request",
       "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] feat: claude summarize + subscription OAuth + tail enhancements",
+    "date": "2026-03-25T19:00:46Z",
+    "summary": "- **Promote `claude summarize`** to top-level command with cross-project session fallback and `--project` option\n- **Fix subscription OAuth** for Sonnet/Opus models \u2014 billing header injection, system prompt prefix, beta flags\n- **Refactor provider auth** \u2014 extract `subscription-billing.ts` shared ut",
+    "url": "https://github.com/genesiscz/GenesisTools/pull/129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: GenesisTools"
+    ]
+  },
+  {
+    "title": "[PR] docs: Resolve API hallucinations and fix various code examples (Bugs 41-60)",
+    "date": "2026-03-25T18:39:43Z",
+    "summary": "This PR addresses numerous documentation errors and API hallucinations identified in bugs 41-60. \n\n### Key Fixes:\n* **Express & Fastify**: Fixed `verbatimModuleSyntax` TS errors (`TS1484`) with type-only imports and resolved missing optional `?` context references.\n* **Flask Plugin**: Completely rew",
+    "url": "https://github.com/genkit-ai/docsite/pull/254",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: docsite"
+    ]
+  },
+  {
+    "title": "[PR] Add shared service methods pt2: discardHand decomposition + buildTrack tests",
+    "date": "2026-03-25T18:33:16Z",
+    "summary": "## Summary\n- Extract `discardHandCore` private method from `discardHandForUser` for card discard/draw/update logic reuse\n- Add unified `discardHandForPlayer` method (accepts playerId, no turn advancement) \u2014 usable by both human and bot callers\n- Fix `buildTrackForPlayer` test data to include require",
+    "url": "https://github.com/jeffgabriel/eurorails_ai/pull/230",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: eurorails_ai"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-03-25T18:30:08Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/arthrod/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] Add CI, Deploy, Quality, and Security workflows; enhance observabilit\u2026",
+    "date": "2026-03-25T18:17:12Z",
+    "summary": "\u2026y and logging\r\n\r\n- Created GitHub Actions workflows for CI, deployment, code quality checks, and security scans.\r\n- Implemented structured logging with correlation IDs and thread/context isolation.\r\n- Enhanced the chatbot backend with PDF ingestion, FAISS indexing, and tool integration.\r\n- Updated ",
+    "url": "https://github.com/Tapash565/chatbot-langgraph/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: chatbot-langgraph"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the production-dependencies group across 1 directory with 10 updates",
+    "date": "2026-03-25T18:13:14Z",
+    "summary": "Bumps the production-dependencies group with 10 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [node-addon-api](https://github.com/nodejs/node-addon-api) | `8.5.0` | `8.6.0` |\n| [@prisma/driver-adapter-utils](https://github.com/prisma/prisma/tree/HEAD/packages/driver-adap",
+    "url": "https://github.com/oceanbase/seekdb-js/pull/29",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: seekdb-js"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard): pre-select suggested policy presets in visual display",
+    "date": "2026-03-25T18:08:11Z",
+    "summary": "## Summary\n\nFixes #706\n\nSuggested policy presets (e.g. `npm`, `pypi`) now display with a filled `\u25cf` bullet instead of an empty `\u25cb`, matching the prompt behavior that applies them by default.\n\n## Details\n\n**Before** (all presets show `\u25cb`):\n```\n\u25cb npm \u2014 npm and Yarn registry access (suggested)\n\u25cb pypi \u2014",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/777",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(skills): add harper-best-practices skill and rules",
+    "date": "2026-03-25T18:08:04Z",
+    "summary": "## What Changed\r\n\r\nThis PR adds a `harper-best-practices` skill and corresponding ruleset. This is based on the dedicated [Harper Skills](https://github.com/HarperFast/skills) repository.\r\n\r\n## Why This Change\r\n\r\nHarper is an open source, enterprise application platform and many of our users are lev",
+    "url": "https://github.com/affaan-m/everything-claude-code/pull/640",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: everything-claude-code"
+    ]
+  },
+  {
+    "title": "[PR] Add Extracta: LLM-based PII redaction and field extraction pipeline",
+    "date": "2026-03-25T17:20:04Z",
+    "summary": "## Summary\r\n\r\n- Adds three pipeline components: `pii_eval`, `pii_cleanse`, and `data_extractor` \u2014 an end-to-end LLM-based PII redaction and structured field extraction pipeline for free-text records\r\n- Adds `applications/extracta` with a Docker Compose orchestration and sample data (`synthetic_incid",
+    "url": "https://github.com/i-dot-ai/ai-toolkit-components/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ai-toolkit-components"
     ]
   }
 ]
