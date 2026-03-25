@@ -178,12 +178,12 @@
   },
   {
     "title": "New daily trending repos in Ruby",
-    "date": "2026-03-25T00:08:30Z",
+    "date": "2026-03-25T22:02:48Z",
     "summary": "Subscribe to this issue and stay notified about new [daily trending repos in Ruby](https://github.com/trending/ruby?since=daily)!",
     "url": "https://github.com/vitalets/github-trending-repos/issues/9",
     "source": "github_issues",
     "highlights": [
-      "comments: 29",
+      "comments: 28",
       "state: open",
       "repo: github-trending-repos"
     ]
@@ -1138,7 +1138,7 @@
   },
   {
     "title": "[PR] [Spike] Alert Investigation Pipeline - Elastic Workflows + Agent Builder Skills",
-    "date": "2026-03-25T21:40:56Z",
+    "date": "2026-03-25T22:40:36Z",
     "summary": "## Summary\n\nAutomated Alert Investigation Pipeline that processes security alerts through a 6-stage workflow: fetch, deduplicate, extract entities, match to cases, trigger Attack Discovery, and tag as processed. Exposed as both autonomous Elastic Workflows (scheduled every 15 min) and interactive Ag",
     "url": "https://github.com/elastic/kibana/pull/257957",
     "source": "github_prs",
@@ -1210,7 +1210,7 @@
   },
   {
     "title": "[PR] fix: harden installer and onboard resiliency",
-    "date": "2026-03-25T20:38:03Z",
+    "date": "2026-03-25T22:34:25Z",
     "summary": "## Summary\n\nHardens NemoClaw install and onboarding resiliency across repeat runs, partial failures, and restart/runtime drift.\n\nAddresses:\n- #446 resumable onboarding\n- #623 onboarding timeout during sandbox image push/import\n- #427 image upload timeout during onboard\n- #245 sandbox image push conn",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/770",
     "source": "github_prs",
@@ -1378,7 +1378,7 @@
   },
   {
     "title": "[PR] feat: claude summarize + subscription OAuth + tail enhancements",
-    "date": "2026-03-25T21:14:38Z",
+    "date": "2026-03-25T22:40:04Z",
     "summary": "- **Promote `claude summarize`** to top-level command with cross-project session fallback and `--project` option\n- **Fix subscription OAuth** for Sonnet/Opus models \u2014 billing header injection, system prompt prefix, beta flags\n- **Refactor provider auth** \u2014 extract `subscription-billing.ts` shared ut",
     "url": "https://github.com/genesiscz/GenesisTools/pull/129",
     "source": "github_prs",
@@ -1638,6 +1638,114 @@
       "comments: 4",
       "pull request",
       "repo: Apex"
+    ]
+  },
+  {
+    "title": "[PR] feat(training): Sprint 2.5 \u2014 improve model quality for structured JSON output",
+    "date": "2026-03-25T22:40:56Z",
+    "summary": "## Summary\n\n- **Increased training data**: PAIRS_PER_TASK 300\u21921000, yielding 434-478 train examples per task after dedup (up from ~115)\n- **Fixed chat template**: Replaced manual ChatML string concatenation with `tokenizer.apply_chat_template()` in the Colab notebook\n- **Increased training epochs**:",
+    "url": "https://github.com/William-Hill/d4bl_ai_agent/pull/129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: d4bl_ai_agent"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.llama-cloud: 0.1.45 -> 1.6.0; upgrade dependents",
+    "date": "2026-03-25T22:34:47Z",
+    "summary": "Fixes building for Python 3.14 (tracking: #475732)\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or describe changes, this helps your fellow maintainers discover breaking updates.\r\nFor new packages plea",
+    "url": "https://github.com/NixOS/nixpkgs/pull/499644",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] feat: v2.0 \u2014 PySide6 GUI, multi-provider AI, multi-format export",
+    "date": "2026-03-25T22:24:46Z",
+    "summary": "## Summary\n- Complete rewrite from single-file tkinter to modular PySide6 three-panel architecture (video info | transcript | AI analysis)\n- Hybrid provider registry: 8 AI services (Ollama, OpenRouter, OpenAI, Anthropic, Groq, Together, DeepSeek, Manual) via 4 Python classes \u2014 one `OpenAICompatProvi",
+    "url": "https://github.com/mamba-mental/youtube-bulk-transcriber/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: youtube-bulk-transcriber"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update python-nonmajor",
+    "date": "2026-03-25T22:24:22Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [black](https://redirect.git",
+    "url": "https://github.com/googleapis/llama-index-cloud-sql-pg-python/pull/203",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: llama-index-cloud-sql-pg-python"
+    ]
+  },
+  {
+    "title": "[PR] fix(model-compat): preserve streaming usage for local inference endpoints (llama.cpp, Ollama, vLLM)",
+    "date": "2026-03-25T22:18:32Z",
+    "summary": "## Problem\n\nFixes #41542\n\nLocal OpenAI-compatible inference servers (llama.cpp, Ollama, vLLM, LMStudio, llamafile) support `stream_options: { include_usage: true }` and return a valid token-usage chunk at the end of the stream.\n\nPreviously, `normalizeModelCompat()` unconditionally set `supportsUsage",
+    "url": "https://github.com/openclaw/openclaw/pull/41544",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency llama-index to v0.14.19",
+    "date": "2026-03-25T22:15:08Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-index](https://redire",
+    "url": "https://github.com/pabl-o-ce/dolphin-bot/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dolphin-bot"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency llama-index-core to v0.14.19",
+    "date": "2026-03-25T22:10:40Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-index-core](https://r",
+    "url": "https://github.com/tesserahq/quore/pull/72",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: quore"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency llama-index to v0.14.19",
+    "date": "2026-03-25T22:10:23Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-index](https://redire",
+    "url": "https://github.com/tesserahq/quore/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: quore"
+    ]
+  },
+  {
+    "title": "[PR] feat: full production implementation of New Coworker platform",
+    "date": "2026-03-25T22:06:44Z",
+    "summary": "- Tailwind CSS + Organic Intelligence design system (Button, Card, Badge, Input, StatusDot, Sidebar, Navbar)\r\n- Supabase SSR auth with middleware, RLS migrations, login/signup pages, magic link\r\n- Data access layer: businesses, logs, configs, subscriptions, notifications\r\n- Stripe checkout + webhook",
+    "url": "https://github.com/brianlane/newCoworker/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: newCoworker"
     ]
   }
 ]
