@@ -526,7 +526,7 @@
   },
   {
     "title": "[PR] feat: full production implementation of New Coworker platform",
-    "date": "2026-03-26T02:39:24Z",
+    "date": "2026-03-26T04:09:11Z",
     "summary": "- Tailwind CSS + Organic Intelligence design system (Button, Card, Badge, Input, StatusDot, Sidebar, Navbar)\r\n- Supabase SSR auth with middleware, RLS migrations, login/signup pages, magic link\r\n- Data access layer: businesses, logs, configs, subscriptions, notifications\r\n- Stripe checkout + webhook",
     "url": "https://github.com/brianlane/newCoworker/pull/1",
     "source": "github_prs",
@@ -762,6 +762,138 @@
       "comments: 0",
       "pull request",
       "repo: docker"
+    ]
+  },
+  {
+    "title": "native ollama-go-engine: TurboQuant implementation",
+    "date": "2026-03-26T05:07:59Z",
+    "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
+    "url": "https://github.com/ollama/ollama/issues/15051",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 8",
+      "state: open",
+      "repo: ollama"
+    ]
+  },
+  {
+    "title": "[PR] fix: harden installer and onboard resiliency",
+    "date": "2026-03-26T05:10:06Z",
+    "summary": "## Summary\n\nHardens NemoClaw install and onboarding resiliency across repeat runs, partial failures, and restart/runtime drift.\n\nAddresses:\n- #446 resumable onboarding\n- #623 onboarding timeout during sandbox image push/import\n- #427 image upload timeout during onboard\n- #245 sandbox image push conn",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/770",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] sync: rebase on upstream (2026-03-26)",
+    "date": "2026-03-26T05:09:51Z",
+    "summary": "## Automated upstream sync\n\nRebased our WOPR sidecar commits onto upstream/main (NVIDIA/NemoClaw).\n\n### What this does\n- Pulls in latest upstream changes (security fixes, features, CI improvements)\n- Resolves any rebase conflicts (preserving wopr/ sidecar)\n- Verifies sidecar + Dockerfile integrity\n\n",
+    "url": "https://github.com/wopr-network/nemoclaw/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: nemoclaw"
+    ]
+  },
+  {
+    "title": "[PR] Add interrupt-driven DIO handling for LoRa driver",
+    "date": "2026-03-26T05:07:26Z",
+    "summary": "## Summary\nReplace busy-wait polling with FreeRTOS event group and GPIO ISR for LoRa TX/RX completion.\n\n## Changes\n- Add `LORA_EVENT_TX_DONE_BIT`, `LORA_EVENT_RX_DONE_BIT`, `LORA_EVENT_RX_TIMEOUT_BIT` event bits\n- Add `dio1_isr_handler()` static ISR that sets event group bits and calls user callback",
+    "url": "https://github.com/gdellis/esp32-pet-tracker/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: esp32-pet-tracker"
+    ]
+  },
+  {
+    "title": "[PR] feat: add MiniMax as optional cloud LLM provider",
+    "date": "2026-03-26T04:29:43Z",
+    "summary": "## Summary\n\nAdds [MiniMax](https://platform.minimax.io) as an optional cloud LLM provider alongside the existing Ollama local models. When `MINIMAX_API_KEY` is configured, MiniMax cloud models (MiniMax-M2.7 and MiniMax-M2.7-highspeed) appear in the model selector, giving users access to powerful clo",
+    "url": "https://github.com/Crosstalk-Solutions/project-nomad/pull/556",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: project-nomad"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( v0.8.10 \u2192 v0.8.11 )",
+    "date": "2026-03-26T04:28:28Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.11` |\n\n---\n\n### Release Notes\n\n",
+    "url": "https://github.com/ewatkins/talos-cluster/pull/1571",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: talos-cluster"
+    ]
+  },
+  {
+    "title": "[PR] Build(deps): Bump open-webui/open-webui from v0.8.10 to v0.8.11 in /topic/machine-learning/open-webui",
+    "date": "2026-03-26T03:49:31Z",
+    "summary": "Bumps [open-webui/open-webui](https://github.com/open-webui/open-webui) from v0.8.10 to v0.8.11.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/open-webui/open-webui/releases\">open-webui/open-webui's releases</a>.</em></p>\n<blockquote>\n<h2>v0.8.11</h2>\n<h3",
+    "url": "https://github.com/crate/cratedb-examples/pull/1515",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: cratedb-examples"
+    ]
+  },
+  {
+    "title": "[PR] fix(ghcr.io/open-webui/open-webui): Update patch containers",
+    "date": "2026-03-26T03:48:50Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | final | patch | `v0.8.10` \u2192 `v0.8.11` |\n| olla",
+    "url": "https://github.com/dedsxc/labs/pull/254",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: labs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.8.11",
+    "date": "2026-03-26T03:11:49Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.11` |\n\n---\n\n### Release Notes\n\n",
+    "url": "https://github.com/gabe565/home-ops/pull/2985",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-03-26T02:44:10Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.8.11",
+    "date": "2026-03-26T02:40:52Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.11` |\n\n---\n\n### Release Notes\n\n",
+    "url": "https://github.com/dreadster3/home-ops/pull/133",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
