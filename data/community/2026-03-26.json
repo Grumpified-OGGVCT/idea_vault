@@ -766,12 +766,12 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant implementation",
-    "date": "2026-03-26T05:45:41Z",
+    "date": "2026-03-26T07:50:16Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "state: open",
       "repo: ollama"
     ]
@@ -874,7 +874,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-03-26T02:44:10Z",
+    "date": "2026-03-26T08:44:11Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -909,9 +909,9 @@
     ]
   },
   {
-    "title": "[PR] [WIP] Add MCP client service for context-aware nudges",
-    "date": "2026-03-26T07:15:38Z",
-    "summary": "- [ ] Create `src/git_mcp_client.py` \u2014 `GitMCPClient` class that uses the `mcp` SDK to connect to the Git MCP server via `stdio_client`, fetch `git_status`, and generate a context-aware nudge via Ollama\n- [ ] Add MCP-related settings to `src/settings_manager.py` (`mcp_enabled`, `mcp_repo_path`)\n- [ ",
+    "title": "[PR] feat: Git MCP Client for context-aware check-in nudges",
+    "date": "2026-03-26T07:27:56Z",
+    "summary": "Turns SheepCat into an MCP client: when the interval timer fires, it optionally connects to the local `@modelcontextprotocol/server-git` server, fetches uncommitted changes, and feeds them to Ollama to generate a personalised nudge instead of a blank prompt.\n\n## New: `src/git_mcp_client.py`\n- `GitMC",
     "url": "https://github.com/Chadders13/SheepCat-TrackingMyWork/pull/57",
     "source": "github_prs",
     "highlights": [
@@ -934,7 +934,7 @@
   },
   {
     "title": "[PR] Release: Kong Gateway 3.14",
-    "date": "2026-03-26T07:03:08Z",
+    "date": "2026-03-26T07:18:17Z",
     "summary": "## Description\r\n\r\nRelease roll-up PR for 3.14 previews.\r\n\r\nDO NOT MERGE.\r\n\r\n## Preview links\r\n\r\n### Features\r\n\r\n**OIDC multiple consumer claims:**\r\n* [Example](https://deploy-preview-4545--kongdeveloper.netlify.app/plugins/openid-connect/examples/consumer-auth/)\r\n* [How-to guide](https://deploy-prev",
     "url": "https://github.com/Kong/developer.konghq.com/pull/4545",
     "source": "github_prs",
@@ -982,8 +982,8 @@
   },
   {
     "title": "[PR] Add native Vertex AI gateway provider",
-    "date": "2026-03-26T06:49:27Z",
-    "summary": "## \ud83e\udd5e Stacked PR\nUse this [link](https://github.com/mlflow/mlflow/pull/21998/files/2fa969103e11c2053d1dd6104df9f8bac0fa4680..17930994f6315e8334461db844c609d51e4fb530) to review incremental changes.\n- [stack/openai-compatible-base](https://github.com/mlflow/mlflow/pull/21990) [[Files changed](https://",
+    "date": "2026-03-26T08:16:33Z",
+    "summary": "## \ud83e\udd5e Stacked PR\nUse this [link](https://github.com/mlflow/mlflow/pull/21998/files/f1b5781ee2e5bbe4a5dcbe22e9c086ebad7634c5..539069f06f98571a423a527b8482d74e932d30bf) to review incremental changes.\n- [stack/groq-provider](https://github.com/mlflow/mlflow/pull/21991) [[Files changed](https://github.co",
     "url": "https://github.com/mlflow/mlflow/pull/21998",
     "source": "github_prs",
     "highlights": [
@@ -1042,12 +1042,12 @@
   },
   {
     "title": "[PR] Feature/performance improvement",
-    "date": "2026-03-26T06:11:34Z",
+    "date": "2026-03-26T08:17:18Z",
     "summary": "Address performance/bugs found\r\n\r\n* Chat history gets messed up between characters if we try multiple chats (especially when we resize the screen, which triggers a chat history reload)\r\n* Issues with accuracy. Once in a while, the recipe gets messed up (although very rare since we switched to Ollama",
     "url": "https://github.com/CS26-13/minecraft-ollama/pull/61",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: minecraft-ollama"
     ]
@@ -1078,12 +1078,12 @@
   },
   {
     "title": "[PR] fix(security): add SSRF protection to HTTP request node",
-    "date": "2026-03-26T05:40:51Z",
+    "date": "2026-03-26T08:53:21Z",
     "summary": "## Summary\n\n- Add URL validation to the HTTP request node that blocks requests to private/internal networks\n- Prevents Server-Side Request Forgery (SSRF) attacks through pipeline configuration\n\n## Bug Description\n\n**File**: `nodes/src/nodes/tool_http_request/http_client.py`\n\nThe `execute_request()` ",
     "url": "https://github.com/rocketride-org/rocketride-server/pull/337",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: rocketride-server"
     ]
@@ -1134,6 +1134,54 @@
       "comments: 6",
       "pull request",
       "repo: kibana"
+    ]
+  },
+  {
+    "title": "[PR] Update nuget (major)",
+    "date": "2026-03-26T08:55:33Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [MassTransit](https://massient.com/) ([source](https://redirect.github.com/Massient/MassTransit)) | nuget | major | `8.5.2` \u2192 `9.0.",
+    "url": "https://github.com/project-origin/stamp/pull/271",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: stamp"
+    ]
+  },
+  {
+    "title": "[PR] feat: support custom LLM provider configuration via web UI",
+    "date": "2026-03-26T08:37:36Z",
+    "summary": "Users can now define custom LLM providers through the web UI and have them take effect without modifying environment variables or config files.\r\n\r\n- Add `CustomLlmProviderSettings` struct and `llm_custom_providers` field to `Settings` so custom provider definitions are persisted and loaded from the ",
+    "url": "https://github.com/nearai/ironclaw/pull/1340",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ironclaw"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-03-26T08:32:14Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): add Google Vertex AI provider",
+    "date": "2026-03-26T07:40:51Z",
+    "summary": "## Summary\n\nCloses #363\n\nAdds first-class Google Vertex AI provider for Gemini models via regional endpoint with enterprise-grade auth.\n\n- **Auth priority:** `VERTEX_ACCESS_TOKEN` env var (static bearer) \u2192 `google-cloud-auth` ADC (auto-refresh via service account or `gcloud auth application-default ",
+    "url": "https://github.com/qhkm/zeptoclaw/pull/447",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: zeptoclaw"
     ]
   }
 ]
