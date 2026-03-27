@@ -214,7 +214,7 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant+RotorQuant implementation",
-    "date": "2026-03-27T08:30:45Z",
+    "date": "2026-03-27T09:08:55Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
@@ -262,12 +262,12 @@
   },
   {
     "title": "Meta: Request rate limiting",
-    "date": "2026-03-27T06:55:20Z",
+    "date": "2026-03-27T09:55:28Z",
     "summary": "This meta issue tracks scenarios where chat requests are blocked due to rate limiting.\n\n\ud83d\udc49 To get help with **premium request quota issues**, please comment in https://github.com/microsoft/vscode/issues/252230 .\n\nIn case you experience repeated rate-limiting in GitHub Copilot, please reach out to Git",
     "url": "https://github.com/microsoft/vscode/issues/253124",
     "source": "github_issues",
     "highlights": [
-      "comments: 436",
+      "comments: 437",
       "state: open",
       "repo: vscode"
     ]
@@ -718,7 +718,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( v0.8.10 \u2192 v0.8.12 )",
-    "date": "2026-03-27T01:38:41Z",
+    "date": "2026-03-27T09:22:02Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n",
     "url": "https://github.com/chaijunkin/home-ops/pull/1311",
     "source": "github_prs",
@@ -850,7 +850,7 @@
   },
   {
     "title": "[PR] [DO NOT MERGE] Server dev",
-    "date": "2026-03-27T08:51:14Z",
+    "date": "2026-03-27T09:27:24Z",
     "summary": "## Description\r\n\r\n<!-- Please insert your description here and especially provide info about the \"what\" this PR is solving -->\r\n\r\n## Linked Issues\r\n\r\n<!-- Optional, if you have any -->\r\n\r\n## Additional Context\r\n\r\n<!-- e.g. is there anything you'd like reviewers to focus on? -->\r\n",
     "url": "https://github.com/moeru-ai/airi/pull/1376",
     "source": "github_prs",
@@ -1102,7 +1102,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-03-27T05:49:37Z",
+    "date": "2026-03-27T09:39:00Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1162,7 +1162,7 @@
   },
   {
     "title": "[PR] feat: add routing and model discovery for more API-key providers",
-    "date": "2026-03-27T08:42:56Z",
+    "date": "2026-03-27T09:42:53Z",
     "summary": "## Summary\n- add routing and dynamic model discovery support for Cohere, Cerebras, Cloudflare Workers AI, GitHub Models, Groq, Hugging Face, LLM7.io, and Ollama Cloud\n- use provider-native catalogs where needed, including Cloudflare account-scoped discovery and Hugging Face router model listing, whi",
     "url": "https://github.com/mnfst/manifest/pull/1283",
     "source": "github_prs",
@@ -1230,6 +1230,54 @@
       "comments: 0",
       "pull request",
       "repo: home-server"
+    ]
+  },
+  {
+    "title": "[PR] feat: support custom LLM provider configuration via web UI",
+    "date": "2026-03-27T09:47:50Z",
+    "summary": "Users can now define custom LLM providers through the web UI and have them take effect without modifying environment variables or config files.\r\n\r\n- Add `CustomLlmProviderSettings` struct and `llm_custom_providers` field to `Settings` so custom provider definitions are persisted and loaded from the ",
+    "url": "https://github.com/nearai/ironclaw/pull/1340",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ironclaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(vision): YOLO26 + VLM cooperative inspection pipeline \u2014 3-provider secondary verification",
+    "date": "2026-03-27T09:41:35Z",
+    "summary": "- [x] Review all open review threads on PR #1345\n- [x] Fix `%%` double-percent typo + remove unsubstantiated `~40%` claim in 3 `use_vlm` descriptions\n- [x] Consolidate duplicate `VLMVerificationStatus` enum \u2014 import from `vlm_verifier` in `schemas.py` (Thread 27)\n- [x] Change `VLMVerification.provid",
+    "url": "https://github.com/kafaat/sahool-unified-v15-idp/pull/1345",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: sahool-unified-v15-idp"
+    ]
+  },
+  {
+    "title": "[PR] fix: sync protobuf schema with Memgraph schema",
+    "date": "2026-03-27T09:07:41Z",
+    "summary": "## Summary\n- Add missing protobuf messages for Interface, Enum, Type, Union node types\n- Add EXPORTS and EXPORTS_MODULE to protobuf RelationshipType enum\n- Update LABEL_TO_ONEOF_FIELD mapping in protobuf_service.py\n- Prevents silent data loss when exporting graphs via `cgr index`\n\nCloses #499",
+    "url": "https://github.com/vitali87/code-graph-rag/pull/510",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: code-graph-rag"
+    ]
+  },
+  {
+    "title": "[PR] deps(go): bump module github.com/testcontainers/testcontainers-go to v0.41.0",
+    "date": "2026-03-27T09:06:33Z",
+    "summary": "\n\n\n<Actions>\n    <action id=\"83ab38fcda5079af067caeafe5c61020d52689318e64fd4b6b691ab8cde2254c\">\n        <h3>deps(go): bump module github.com/testcontainers/testcontainers-go</h3>\n        <details id=\"118a1de593252b71f178cef60ae8b6af7c484a51bead92a6671a2630b548e68e\">\n            <summary>clean: go mo",
+    "url": "https://github.com/updatecli/updatecli/pull/8191",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: updatecli"
     ]
   }
 ]
