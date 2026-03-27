@@ -166,7 +166,7 @@
   },
   {
     "title": "Allow importing multi-file GGUF models",
-    "date": "2026-03-27T01:11:08Z",
+    "date": "2026-03-27T16:06:56Z",
     "summary": "### What is the issue?\n\nCurrently Ollama can [import GGUF files](https://github.com/ollama/ollama/blob/main/docs/import.md). However, larger models are sometimes split into separate files. Ollama should support loading multiple GGUF files similar to loading safetensor files.\r\n\n\n### OS\n\n_No response_",
     "url": "https://github.com/ollama/ollama/issues/5245",
     "source": "github_issues",
@@ -1090,7 +1090,7 @@
   },
   {
     "title": "[PR] feat: add LLM_ALLOW_LOCAL_NETWORK to permit LAN IP endpoints",
-    "date": "2026-03-27T05:52:05Z",
+    "date": "2026-03-27T16:10:37Z",
     "summary": "The SSRF validation in validate_base_url blocked all private/LAN IPs, preventing users from configuring self-hosted LLMs (Ollama, vLLM, etc.) on other machines in the local network. Setting LLM_ALLOW_LOCAL_NETWORK=true now allows HTTP and HTTPS URLs with private IPs (10.x, 192.168.x, 172.16-31.x) wh",
     "url": "https://github.com/nearai/ironclaw/pull/1696",
     "source": "github_prs",
@@ -1174,12 +1174,12 @@
   },
   {
     "title": "[PR] fix(ci): Resolve CI failures - SECURITY DEFINER REVOKE and regex fix",
-    "date": "2026-03-27T08:39:09Z",
+    "date": "2026-03-27T16:50:14Z",
     "summary": "## Summary\n\nFixes the CI failures on main branch by addressing two root causes:\n\n### 1. Layer 5 Security Definer Check Failure\n- Added `REVOKE ALL ON FUNCTION ... FROM PUBLIC` to all migrations containing SECURITY DEFINER functions\n- Affected migrations: 002, 006, 007, 011, 013, 014, 016\n- This foll",
     "url": "https://github.com/johanneslungelo021-cmd/Apex/pull/60",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 11",
       "pull request",
       "repo: Apex"
     ]
@@ -1462,7 +1462,7 @@
   },
   {
     "title": "[PR] LCORE-1452: Update llama stack to 0.5.x in rag-content",
-    "date": "2026-03-27T15:44:42Z",
+    "date": "2026-03-27T16:08:42Z",
     "summary": "## Description\r\n\r\nUpgrade llama stack dependency in LCORE to 0.5.0 to match the rest of Lightspeed Core.\r\n\r\n## Type of change\r\n\r\n- [ ] Refactor\r\n- [ ] New feature\r\n- [ ] Bug fix\r\n- [ ] CVE fix\r\n- [ ] Optimization\r\n- [ ] Documentation Update\r\n- [ ] Configuration Update\r\n- [ ] Bump-up service version\r",
     "url": "https://github.com/lightspeed-core/rag-content/pull/142",
     "source": "github_prs",
@@ -1482,6 +1482,78 @@
       "comments: 21",
       "pull request",
       "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( v0.8.10 \u2192 v0.8.12 )",
+    "date": "2026-03-27T16:58:38Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.12` |\n\n---\n\n> [!WARNING]\n> Some",
+    "url": "https://github.com/jfrazx/home-ops/pull/1278",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR]  fix: Gemini API key invalid due to Ollama Cloud key overwrite",
+    "date": "2026-03-27T16:44:53Z",
+    "summary": "Log\r\n```\r\nWARNING  | pr_agent.algo.ai_handlers.litellm_ai_handler:chat_completion:420 - Error during LLM inference: litellm.AuthenticationError: GeminiException - {\r\n  \"error\": {\r\n    \"code\": 400,\r\n    \"message\": \"API key not valid. Please pass a valid API key.\",\r\n    \"status\": \"INVALID_ARGUMENT\",\r\n",
+    "url": "https://github.com/qodo-ai/pr-agent/pull/2288",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: pr-agent"
+    ]
+  },
+  {
+    "title": "[PR] admin dashboard ssc-dsai:dev",
+    "date": "2026-03-27T16:37:35Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/arthrod/open-webui/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: open-webui"
+    ]
+  },
+  {
+    "title": "[PR] fix(security): add SSRF protection to HTTP request node",
+    "date": "2026-03-27T16:33:54Z",
+    "summary": "## Summary\n\n- Add URL validation to the HTTP request node that blocks requests to private/internal networks\n- Prevents Server-Side Request Forgery (SSRF) attacks through pipeline configuration\n\n## Bug Description\n\n**File**: `nodes/src/nodes/tool_http_request/http_client.py`\n\nThe `execute_request()` ",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/337",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] Blog: AI Inference on AKS Arc - Part 0 and Part 1",
+    "date": "2026-03-27T16:21:07Z",
+    "summary": "Add two blog posts for the AI Inference on AKS Arc series:\r\nPart 0: Series introduction and prerequisites\r\nPart 1: AI Inference with Ollama and vLLM on Azure Arc",
+    "url": "https://github.com/Azure/AKS/pull/5679",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AKS"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m4",
+    "date": "2026-03-27T16:45:49Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
+    "url": "https://github.com/MartinWitt/BootFleet/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: BootFleet"
     ]
   }
 ]
