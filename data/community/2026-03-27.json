@@ -1150,7 +1150,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-03-27T14:44:12Z",
+    "date": "2026-03-27T20:44:10Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1174,12 +1174,12 @@
   },
   {
     "title": "[PR] fix(ci): Resolve CI failures - SECURITY DEFINER REVOKE and regex fix",
-    "date": "2026-03-27T16:50:14Z",
+    "date": "2026-03-27T21:28:30Z",
     "summary": "## Summary\n\nFixes the CI failures on main branch by addressing two root causes:\n\n### 1. Layer 5 Security Definer Check Failure\n- Added `REVOKE ALL ON FUNCTION ... FROM PUBLIC` to all migrations containing SECURITY DEFINER functions\n- Affected migrations: 002, 006, 007, 011, 013, 014, 016\n- This foll",
     "url": "https://github.com/johanneslungelo021-cmd/Apex/pull/60",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 12",
       "pull request",
       "repo: Apex"
     ]
@@ -1222,7 +1222,7 @@
   },
   {
     "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.8.12",
-    "date": "2026-03-27T08:54:14Z",
+    "date": "2026-03-27T21:32:35Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n",
     "url": "https://github.com/davydehaas98/home-server/pull/1530",
     "source": "github_prs",
@@ -1474,7 +1474,7 @@
   },
   {
     "title": "[PR] jetbrains.jdk: 21.0.9-1163.86 -> 25.0.1-268.52",
-    "date": "2026-03-27T20:23:24Z",
+    "date": "2026-03-27T21:02:29Z",
     "summary": "Updates the Jetbrains Runtime from Java 21 to  Java 25. The Jetbrains IDEs packages default to JBR as the JDK, updating the Jetbrains JDK to Java 25 allows the IDEs to have access to Java 25 by default. JBR is also often used for developing with DCEVM.\r\n\r\n## Things done\r\n\r\n<!-- Please check what app",
     "url": "https://github.com/NixOS/nixpkgs/pull/485812",
     "source": "github_prs",
@@ -1642,12 +1642,12 @@
   },
   {
     "title": "[PR] Initial Audio-AI-Module",
-    "date": "2026-03-27T20:31:19Z",
+    "date": "2026-03-27T20:52:52Z",
     "summary": "I worked on an AI-Module to analyze the audio files.\r\n\r\nIt uses pyhton with faster-whisper for Speech-to-Text and transcribing.\r\nAfter that it uses locally running Ollama to analyze the transcript and format it into a .json file which could be used to pre-fill information into the inspection form.\r\n",
     "url": "https://github.com/martinhrvn/hive-pal/pull/138",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: hive-pal"
     ]
@@ -1686,6 +1686,42 @@
       "comments: 1",
       "pull request",
       "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] feat: one-click Ollama installer, OS-aware download buttons, and AI parsing fixes",
+    "date": "2026-03-27T21:35:49Z",
+    "summary": "## Summary\r\n\r\n- **One-click Windows installer** (`install-win.bat`) handles the full setup end-to-end: downloads Ollama runtime, pulls the two required AI models (`llama3.2:1b` + `nomic-embed-text`), compiles the native messaging `helper.exe`, and sets `OLLAMA_ORIGINS` with non-technical friendly pr",
+    "url": "https://github.com/joelnishanth/offlyn-apply/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: offlyn-apply"
+    ]
+  },
+  {
+    "title": "[PR] feat: Providers page with backend rework -- health, CRUD, subscription auth",
+    "date": "2026-03-27T21:32:38Z",
+    "summary": "## Summary\n\n- **Backend rework**: Decouple provider display name from LiteLLM routing via new `litellm_provider` field; add `AuthType.SUBSCRIPTION` for OAuth bearer tokens (Claude Pro/Max style); expand presets from 4 to 11 (Anthropic, OpenAI, Google AI, Mistral, Groq, DeepSeek, Azure + existing loc",
+    "url": "https://github.com/Aureliolo/synthorg/pull/893",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: synthorg"
+    ]
+  },
+  {
+    "title": "[PR] Bump the langchain4j group with 17 updates",
+    "date": "2026-03-27T21:16:16Z",
+    "summary": "Bumps the langchain4j group with 17 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [dev.langchain4j:langchain4j](https://github.com/langchain4j/langchain4j) | `1.11.0` | `1.12.2` |\n| [dev.langchain4j:langchain4j-open-ai](https://github.com/langchain4j/langchain4j) | `1.11.0` | `1.12.2` |\n| ",
+    "url": "https://github.com/sg-benchmarks/camel--1006f047/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: camel--1006f047"
     ]
   }
 ]
