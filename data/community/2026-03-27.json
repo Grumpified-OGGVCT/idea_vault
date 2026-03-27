@@ -946,12 +946,12 @@
   },
   {
     "title": "[PR] feat: add Amazon Bedrock as inference provider",
-    "date": "2026-03-27T04:04:38Z",
+    "date": "2026-03-27T20:34:17Z",
     "summary": "   Add Bedrock's OpenAI-compatible endpoint as a first-class provider,\r\n   enabling NemoClaw to run on AWS without GPU infrastructure.\r\n\r\n   - Add bedrock provider config, endpoint URL, and 7 curated models\r\n   - Add bedrock to non-interactive mode and interactive menu\r\n   - Skip endpoint validation",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/963",
     "source": "github_prs",
     "highlights": [
-      "comments: 17",
+      "comments: 18",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -1354,12 +1354,12 @@
   },
   {
     "title": "[PR] test: agent skills infrastructure and marker taxonomy audit (#727, #728)",
-    "date": "2026-03-27T18:58:37Z",
+    "date": "2026-03-27T20:33:39Z",
     "summary": "<!-- mellea-pr-edited-marker: do not remove this marker -->\n# Marker Taxonomy & Agent Skills\n\n## Type of PR\n\n- [ ] Bug Fix\n- [x] New Feature\n- [x] Documentation\n- [x] Other\n\n## Description\n\nFixes #727, #728\n\nIntroduces a four-tier test marker taxonomy (`unit` / `integration` / `e2e` / `qualitative`)",
     "url": "https://github.com/generative-computing/mellea/pull/742",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: mellea"
     ]
@@ -1474,12 +1474,12 @@
   },
   {
     "title": "[PR] jetbrains.jdk: 21.0.9-1163.86 -> 25.0.1-268.52",
-    "date": "2026-03-27T15:02:04Z",
+    "date": "2026-03-27T20:23:24Z",
     "summary": "Updates the Jetbrains Runtime from Java 21 to  Java 25. The Jetbrains IDEs packages default to JBR as the JDK, updating the Jetbrains JDK to Java 25 allows the IDEs to have access to Java 25 by default. JBR is also often used for developing with DCEVM.\r\n\r\n## Things done\r\n\r\n<!-- Please check what app",
     "url": "https://github.com/NixOS/nixpkgs/pull/485812",
     "source": "github_prs",
     "highlights": [
-      "comments: 21",
+      "comments: 22",
       "pull request",
       "repo: nixpkgs"
     ]
@@ -1594,7 +1594,7 @@
   },
   {
     "title": "[PR] Dev web UI implementation , + optimizations in semantic caching",
-    "date": "2026-03-27T19:02:24Z",
+    "date": "2026-03-27T19:25:36Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **New Features**\n  * Added web-based user interface with login and account registration\n  * Implemented authenticated search functionality with real-time results\n  * Added admin",
     "url": "https://github.com/Somnerd/SearchBoost/pull/6",
     "source": "github_prs",
@@ -1606,8 +1606,8 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-03-27T17:31:19Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [cert-manager](https://cert-manager.io) ([source](https://redirect.github.com/cert-manager/cert-manager)) | minor | `v1.17.2` \u2192 `v1.20.0` |\n| ",
+    "date": "2026-03-27T20:35:08Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [cert-manager](https://cert-manager.io) ([source](https://redirect.github.com/cert-manager/cert-manager)) | minor | `v1.17.2` \u2192 `v1.20.1` |\n| ",
     "url": "https://github.com/dbirks/home-k8s/pull/32",
     "source": "github_prs",
     "highlights": [
@@ -1618,7 +1618,7 @@
   },
   {
     "title": "[PR] Feature/openrouter",
-    "date": "2026-03-27T19:03:19Z",
+    "date": "2026-03-27T19:12:52Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **Chores**\n  * Migrated from Ollama to OpenRouter for LLM generation and SiliconFlow for embeddings\n  * Updated PostgreSQL port configuration (5432\u21925000) and embedding vector d",
     "url": "https://github.com/MIPyao/mipyao-ai-app-monorepo/pull/2",
     "source": "github_prs",
@@ -1638,6 +1638,54 @@
       "comments: 0",
       "pull request",
       "repo: nixos_config"
+    ]
+  },
+  {
+    "title": "[PR] Initial Audio-AI-Module",
+    "date": "2026-03-27T20:31:19Z",
+    "summary": "I worked on an AI-Module to analyze the audio files.\r\n\r\nIt uses pyhton with faster-whisper for Speech-to-Text and transcribing.\r\nAfter that it uses locally running Ollama to analyze the transcript and format it into a .json file which could be used to pre-fill information into the inspection form.\r\n",
+    "url": "https://github.com/martinhrvn/hive-pal/pull/138",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: hive-pal"
+    ]
+  },
+  {
+    "title": "[PR] feat: OC provider adapter \u2014 cloud model adaptation (OC-203)",
+    "date": "2026-03-27T20:26:55Z",
+    "summary": "## OC-203: RASPUTIN Memory System \u2014 Phase 1+2\n\n### What\n\nCloud adaptation of the RASPUTIN memory system for use without local GPU infrastructure. Replaces hard-coded Ollama/vLLM calls with a provider abstraction layer that routes through OC's cloud model stack, while maintaining full backward-compat",
+    "url": "https://github.com/sibunting/rasputin-memory/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: rasputin-memory"
+    ]
+  },
+  {
+    "title": "[PR] Staging",
+    "date": "2026-03-27T20:16:07Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Shared-state federation, bridge relay, host fleet dashboard, auto-model selection, and z.ai/zhipu GLM support.\n\n* **Improvements**\n  * Quota monitoring/cooldowns, SQL-backed ",
+    "url": "https://github.com/open-hax/proxx/pull/138",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: proxx"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update image docker.io/openwebui/open-webui ( 0.8.10 \u2794 0.8.12 )",
+    "date": "2026-03-27T20:13:28Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/openwebui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `0.8.10` \u2192 `0.8.12` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for",
+    "url": "https://github.com/gavinmcfall/home-ops/pull/1782",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
