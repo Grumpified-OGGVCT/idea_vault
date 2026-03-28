@@ -538,7 +538,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-03-28T02:19:12Z",
+    "date": "2026-03-28T19:57:14Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -562,8 +562,8 @@
   },
   {
     "title": "[PR] Dev web UI implementation , + optimizations in semantic caching",
-    "date": "2026-03-28T19:28:38Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **New Features**\n  * Added web-based dashboard with React UI for interactive search\n  * Implemented multi-session concurrent chat support with persistent history\n  * Launched ad",
+    "date": "2026-03-28T19:46:23Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added JWT-based authentication system with secure login/register pages.\n  * Introduced React dashboard UI with multi-session conversation history tracking.\n  * Added admin pa",
     "url": "https://github.com/Somnerd/SearchBoost/pull/6",
     "source": "github_prs",
     "highlights": [
@@ -970,7 +970,7 @@
   },
   {
     "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m4",
-    "date": "2026-03-28T17:38:43Z",
+    "date": "2026-03-28T20:27:52Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
     "url": "https://github.com/MartinWitt/BootFleet/pull/49",
     "source": "github_prs",
@@ -1246,12 +1246,12 @@
   },
   {
     "title": "[PR] Infrastructure",
-    "date": "2026-03-28T19:25:12Z",
+    "date": "2026-03-28T20:36:32Z",
     "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Medium risk due to large infrastructure changes (new CI workflows, image publishing/deploy, new Docker Compose topology) and introduction of a new Python `classifier-service` with training/evaluation endpoints and ML dependencies that could affec",
     "url": "https://github.com/sergio-tr/rag-spring-ai-ollama/pull/5",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 4",
       "pull request",
       "repo: rag-spring-ai-ollama"
     ]
@@ -1450,12 +1450,12 @@
   },
   {
     "title": "[PR] fix(ops): cipher-api Known Roads + compose fixes",
-    "date": "2026-03-28T19:34:28Z",
+    "date": "2026-03-28T19:38:05Z",
     "summary": "## Summary\n- **Compose fix:** cipher-api healthcheck changed from `localhost` to `127.0.0.1` \u2014 Alpine BusyBox wget resolves to IPv6 `[::1]` first, but Node.js `0.0.0.0` only binds IPv4\n- **Compose env:** Added `OLLAMA_BASE_URL=http://pmoves-ollama:11434` so cipher-api can reach in-network Ollama (in",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/1154",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: PMOVES.AI"
     ]
@@ -1482,6 +1482,42 @@
       "comments: 1",
       "pull request",
       "repo: nima-core"
+    ]
+  },
+  {
+    "title": "[PR] feat: full article scraping, AI rewrite, and image hosting",
+    "date": "2026-03-28T20:35:51Z",
+    "summary": "## Summary\n\n- **Article scraper** (`pipeline/ingest/article_scraper.py`): fetches the full source page for each new article using trafilatura, downloads all significant images, uploads them to Google Cloud Storage (falls back to original URLs if GCS not configured), stores full text in `full_content",
+    "url": "https://github.com/savvydealer-adam/techtakedown/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: techtakedown"
+    ]
+  },
+  {
+    "title": "[PR] feat(4090): coding workstation stack + provider activation cascade",
+    "date": "2026-03-28T20:30:03Z",
+    "summary": "## Summary\n\n- **4090 Coding Workstation Stack**: Full laptop-4090 profile with 5 cloud coding plans (Claude, Codex, GLM-5.1, MiniMax, Alibaba), each with local GPU fallback. VRAM budget management (16GB, max 2 concurrent models). Cross-node awareness via Tailscale mesh.\n- **Provider Activation Casca",
+    "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/1155",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: PMOVES.AI"
+    ]
+  },
+  {
+    "title": "[PR] Bug fixes and improvements: UI enhancements, API configuration, and reliability fixes",
+    "date": "2026-03-28T19:41:10Z",
+    "summary": "## Summary\r\nThis PR includes several bug fixes and improvements to the application, focusing on UI/UX enhancements, configuration flexibility, and reliability.\r\n\r\n## Changes Made\r\n\r\n### UI/UX Improvements\r\n- Fixed model list race condition in settings\r\n- Improved run button state management\r\n- Added",
+    "url": "https://github.com/virattt/ai-hedge-fund/pull/558",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ai-hedge-fund"
     ]
   }
 ]
