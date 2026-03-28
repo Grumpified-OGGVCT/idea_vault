@@ -562,8 +562,8 @@
   },
   {
     "title": "[PR] Dev web UI implementation , + optimizations in semantic caching",
-    "date": "2026-03-28T17:17:26Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **New Features**\n  * React-based web dashboard with user authentication (login/register)\n  * Integrated search interface with persistent conversation history\n  * Multi-threaded ",
+    "date": "2026-03-28T19:28:38Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **New Features**\n  * Added web-based dashboard with React UI for interactive search\n  * Implemented multi-session concurrent chat support with persistent history\n  * Launched ad",
     "url": "https://github.com/Somnerd/SearchBoost/pull/6",
     "source": "github_prs",
     "highlights": [
@@ -1246,12 +1246,12 @@
   },
   {
     "title": "[PR] Infrastructure",
-    "date": "2026-03-28T18:46:41Z",
+    "date": "2026-03-28T19:25:12Z",
     "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Medium risk due to large infrastructure changes (new CI workflows, image publishing/deploy, new Docker Compose topology) and introduction of a new Python `classifier-service` with training/evaluation endpoints and ML dependencies that could affec",
     "url": "https://github.com/sergio-tr/rag-spring-ai-ollama/pull/5",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "pull request",
       "repo: rag-spring-ai-ollama"
     ]
@@ -1446,6 +1446,42 @@
       "comments: 1",
       "pull request",
       "repo: ironclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(ops): cipher-api Known Roads + compose fixes",
+    "date": "2026-03-28T19:34:28Z",
+    "summary": "## Summary\n- **Compose fix:** cipher-api healthcheck changed from `localhost` to `127.0.0.1` \u2014 Alpine BusyBox wget resolves to IPv6 `[::1]` first, but Node.js `0.0.0.0` only binds IPv4\n- **Compose env:** Added `OLLAMA_BASE_URL=http://pmoves-ollama:11434` so cipher-api can reach in-network Ollama (in",
+    "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/1154",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: PMOVES.AI"
+    ]
+  },
+  {
+    "title": "[PR] Enhance UI, add Brazilian news portals, and refine Ollama Telegram integration",
+    "date": "2026-03-28T19:32:01Z",
+    "summary": "This PR addresses multiple user requests to reformulate the project:\n1.  **UI Improvements:** The main layout has been updated with a cleaner aesthetic, featuring a subtle gradient background and a modern glassmorphism header. The news cards have increased padding and larger titles for better readab",
+    "url": "https://github.com/juninmd/fast-news/pull/63",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: fast-news"
+    ]
+  },
+  {
+    "title": "[PR] feat: replace Voyage AI with nomic-embed-text via Ollama (768D, local, free)",
+    "date": "2026-03-28T19:21:54Z",
+    "summary": "## What\n\n- New canonical module: `nima_core/embeddings.py` \u2014 all embedding calls go here\n- Replaces Voyage AI across 5 files\n- `sqlite-rembed` added for SQL-layer embedding support\n- Migration 7: `embedding_dim` column + `memories_vec` rebuilt at float[768]\n- `scripts/backfill_embeddings.py` for re-",
+    "url": "https://github.com/lilubot/nima-core/pull/193",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nima-core"
     ]
   }
 ]
