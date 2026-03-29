@@ -622,7 +622,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-03-29T16:56:22Z",
+    "date": "2026-03-29T17:44:45Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -658,7 +658,7 @@
   },
   {
     "title": "[PR] feat(kilo): claw config with GLM-5.1 taxonomy, Proxmox provisioning, 4090 activation",
-    "date": "2026-03-29T07:02:37Z",
+    "date": "2026-03-29T18:51:37Z",
     "summary": "## Summary\n\nKiloCode claw configuration for 5090 node \u2014 GLM Coding Plan (glm-5.1) per official Z.AI documentation, Proxmox migration readiness, 4090 activation, PMOVES.Flare model namespace, and claw taxonomy.\n\n**32 files changed, +1653 / -60 lines**\n\n### Bespoke Model Integration (Not Auto-Label)\n\n",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/1151",
     "source": "github_prs",
@@ -1006,7 +1006,7 @@
   },
   {
     "title": "[PR] Update dependency huggingface_hub to v0.36.2",
-    "date": "2026-03-29T10:02:37Z",
+    "date": "2026-03-29T18:10:25Z",
     "summary": "> **Note:** This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface_hub](https://redirect.",
     "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/225",
     "source": "github_prs",
@@ -1290,6 +1290,78 @@
       "comments: 2",
       "pull request",
       "repo: cluster"
+    ]
+  },
+  {
+    "title": "15.0-20260328.1: Build check",
+    "date": "2026-03-29T17:48:04Z",
+    "summary": "#  Overview\n|  | package | i586 | x86_64 | notes | resolution |\n| --- | --- | --- | --- | --- | --- |\n| --- | development/stm32cubeprog | --- | :x: | --- | --- |\n| --- | games/puzzles | --- | :x: | --- | --- |\n  \n\n  \n# Notes \n\n## Raw list x86_64\n\nhttps://github.com/SlackBuildsOrg/slackbuilds/issues/",
+    "url": "https://github.com/SlackBuildsOrg/slackbuilds/issues/14974",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 6",
+      "state: open",
+      "repo: slackbuilds"
+    ]
+  },
+  {
+    "title": "[PR] fix: improve provider setup in wizard, subscription auth, dashboard bugs",
+    "date": "2026-03-29T18:51:48Z",
+    "summary": "## Summary\n\n- **Provider form**: Replace right-side drawer with centered modal for better visibility; enlarge preset tiles and fix text cutoff (`line-clamp-2`)\n- **Subscription auth**: Pass token as LiteLLM `auth_token` kwarg instead of `extra_headers` so Anthropic handler picks it up correctly (fix",
+    "url": "https://github.com/Aureliolo/synthorg/pull/914",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: synthorg"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency llama-stack-api to v0.6.0",
+    "date": "2026-03-29T18:47:21Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-stack-api](https://redirect.github.com/llamastack/llama-stack) | `==0.5.0` -> `==0.6.0` | ![",
+    "url": "https://github.com/syedriko/lightspeed-core-rag-content/pull/134",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: lightspeed-core-rag-content"
+    ]
+  },
+  {
+    "title": "[PR] fix(nexus): support Ollama in Docker via OLLAMA_HOST env var + extend model registry",
+    "date": "2026-03-29T18:41:14Z",
+    "summary": "## Problem\n\nWhen Nexus runs inside a Docker container, `localhost:11434` resolves to the **container itself** \u2014 not the host machine where Ollama is installed. This silently breaks all Ollama inference when running the ABI stack via Docker Compose.\n\nAdditionally, `_resolve_provider()` in `chat.py` h",
+    "url": "https://github.com/jupyter-naas/abi/pull/816",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: abi"
+    ]
+  },
+  {
+    "title": "[PR] feat(knowledge): add Ollama embedding provider support",
+    "date": "2026-03-29T18:29:16Z",
+    "summary": "## Summary\r\n- Adds Ollama as an embedding provider for knowledge bases, enabling fully offline/private RAG workflows\r\n- Implements per-KB dynamic pgvector tables to handle variable embedding dimensions across Ollama models\r\n- Auto-detects embedding dimension and context length from Ollama's `/api/sh",
+    "url": "https://github.com/simstudioai/sim/pull/3714",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: sim"
+    ]
+  },
+  {
+    "title": "[PR] Implement AI-powered outfit curation with multiple providers",
+    "date": "2026-03-29T18:27:07Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * AI-powered outfit scoring with on-device (Nano) and cloud providers, provider picker, encrypted API key storage, model discovery, and Nano init/progress status in Settings\n  ",
+    "url": "https://github.com/Masked-Kunsiquat/closet/pull/33",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: closet"
     ]
   }
 ]
