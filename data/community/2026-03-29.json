@@ -238,12 +238,12 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant+RotorQuant implementation",
-    "date": "2026-03-28T11:19:20Z",
+    "date": "2026-03-29T16:13:31Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
     "highlights": [
-      "comments: 17",
+      "comments: 18",
       "state: open",
       "repo: ollama"
     ]
@@ -682,7 +682,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-03-29T13:42:20Z",
+    "date": "2026-03-29T16:31:40Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -706,7 +706,7 @@
   },
   {
     "title": "[PR] Refactor TTS synthesis to use provider-agnostic API and add REST API",
-    "date": "2026-03-28T21:16:56Z",
+    "date": "2026-03-29T16:07:57Z",
     "summary": "## Summary\nThis PR refactors the text-to-speech synthesis architecture to be provider-agnostic, removes direct Kokoro API coupling, and introduces a new FastAPI-based REST API for Audify functionality. The changes consolidate duplicated M4B assembly logic and improve testability by using configurati",
     "url": "https://github.com/garciadias/audify/pull/10",
     "source": "github_prs",
@@ -814,7 +814,7 @@
   },
   {
     "title": "[PR] feat: MCP server integrations \u2014 connect Atmos to external MCP servers",
-    "date": "2026-03-29T15:29:51Z",
+    "date": "2026-03-29T16:16:01Z",
     "summary": "## what\r\n\r\n- Connect Atmos to **external MCP servers** (AWS, GCP, Azure, custom) and use their tools in `atmos ai ask`, `atmos ai chat`, and `atmos ai exec`\r\n- Add CLI MCP management commands: `atmos mcp list`, `tools`, `test`, `status`, `restart`, `generate-config`\r\n- Add **smart server routing** \u2014",
     "url": "https://github.com/cloudposse/atmos/pull/2267",
     "source": "github_prs",
@@ -1078,7 +1078,7 @@
   },
   {
     "title": "[PR] feat: add Jetson Orin Nano support",
-    "date": "2026-03-29T13:17:02Z",
+    "date": "2026-03-29T16:17:04Z",
     "summary": "Closes #404\n\n## Summary\n\nAdds end-to-end Jetson Orin Nano support: from GPU detection through to a working OpenClaw agent with local Ollama inference.\n\n- **GPU detection**: nvidia-smi reports `[N/A]` for memory.total on Jetson (unified memory). Added fallback via GPU name + `/proc/device-tree/model`",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/405",
     "source": "github_prs",
@@ -1218,6 +1218,18 @@
       "comments: 0",
       "pull request",
       "repo: AKS"
+    ]
+  },
+  {
+    "title": "[PR] fix: queue:medium \u2014 security, FTS, Lance fallback, SQLite hygiene, CLI",
+    "date": "2026-03-29T16:21:30Z",
+    "summary": "## Summary\n\nImplements fixes and small features for open issues labeled `queue:medium` (see table below).\n\n### Highlights\n\n- **Stability**: `buildDailyNarrative` wraps async prep in `try/catch`; Python bridge uses single-flight startup; LanceDB init failure no longer bricks the plugin (FTS/SQLite co",
+    "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/918",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaw-hybrid-memory"
     ]
   }
 ]
