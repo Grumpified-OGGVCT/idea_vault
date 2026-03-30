@@ -190,7 +190,7 @@
   },
   {
     "title": "Meta: Request rate limiting",
-    "date": "2026-03-30T13:42:53Z",
+    "date": "2026-03-30T18:51:23Z",
     "summary": "This meta issue tracks scenarios where chat requests are blocked due to rate limiting.\n\n\ud83d\udc49 To get help with **premium request quota issues**, please comment in https://github.com/microsoft/vscode/issues/252230 .\n\nIn case you experience repeated rate-limiting in GitHub Copilot, please reach out to Git",
     "url": "https://github.com/microsoft/vscode/issues/253124",
     "source": "github_issues",
@@ -238,12 +238,12 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant+RotorQuant implementation",
-    "date": "2026-03-30T15:26:15Z",
+    "date": "2026-03-30T18:36:41Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
     "highlights": [
-      "comments: 22",
+      "comments: 23",
       "state: open",
       "repo: ollama"
     ]
@@ -562,7 +562,7 @@
   },
   {
     "title": "[PR] feat: MCP server integrations \u2014 connect Atmos to external MCP servers",
-    "date": "2026-03-30T17:48:32Z",
+    "date": "2026-03-30T18:02:21Z",
     "summary": "## what\r\n\r\n- Connect Atmos to **external MCP servers** (AWS, GCP, Azure, custom) and use their tools in `atmos ai ask`, `atmos ai chat`, and `atmos ai exec`\r\n- Add CLI MCP management commands: `atmos mcp list`, `tools`, `test`, `status`, `restart`, `start`, `export`\r\n- Add **smart server routing** \u2014",
     "url": "https://github.com/cloudposse/atmos/pull/2267",
     "source": "github_prs",
@@ -1018,7 +1018,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-03-30T13:59:32Z",
+    "date": "2026-03-30T19:07:33Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1066,7 +1066,7 @@
   },
   {
     "title": "[PR] Initial Audio-AI-Module",
-    "date": "2026-03-30T18:00:49Z",
+    "date": "2026-03-30T18:21:58Z",
     "summary": "I worked on an AI-Module to analyze the audio files.\r\n\r\nIt uses pyhton with faster-whisper for Speech-to-Text and transcribing.\r\nAfter that it uses locally running Ollama to analyze the transcript and format it into a .json file which could be used to pre-fill information into the inspection form.\r\n",
     "url": "https://github.com/martinhrvn/hive-pal/pull/138",
     "source": "github_prs",
@@ -1678,14 +1678,74 @@
   },
   {
     "title": "[PR] feat: add Amazon Bedrock as inference provider",
-    "date": "2026-03-30T17:21:03Z",
+    "date": "2026-03-30T18:56:16Z",
     "summary": "   Add Bedrock's OpenAI-compatible endpoint as a first-class provider,\r\n   enabling NemoClaw to run on AWS without GPU infrastructure.\r\n\r\n   - Add bedrock provider config, endpoint URL, and 7 curated models\r\n   - Add bedrock to non-interactive mode and interactive menu\r\n   - Skip endpoint validation",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/963",
     "source": "github_prs",
     "highlights": [
-      "comments: 18",
+      "comments: 19",
       "pull request",
       "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] [integrations] Fully local Docker setup with Ollama, pgvector, and management tools",
+    "date": "2026-03-30T19:14:54Z",
+    "summary": "Replaces Supabase + OpenRouter with a self-hosted stack:\n- PostgreSQL 17 + pgvector for storage and semantic search\n- Ollama with nomic-embed-text and llama3 for local AI\n- Deno MCP server (adapted from server/index.ts)\n- Open WebUI for Ollama management\n- pgAdmin for database management\n- NVIDIA GP",
+    "url": "https://github.com/NateBJones-Projects/OB1/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: OB1"
+    ]
+  },
+  {
+    "title": "[PR] Changed: Update image ghcr.io/open-webui/open-webui to v0.8.12",
+    "date": "2026-03-30T18:46:13Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.3` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n<",
+    "url": "https://github.com/jlejeune/k3s-homelab/pull/663",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k3s-homelab"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-03-30T18:34:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [clo",
+    "url": "https://github.com/get-eventually/go-eventually/pull/285",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: go-eventually"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency browser-use to v0.1.45 [security]",
+    "date": "2026-03-30T18:31:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [browser-use](https://redire",
+    "url": "https://github.com/AReid987/stellarAgent/pull/168",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: stellarAgent"
+    ]
+  },
+  {
+    "title": "[PR] docs: add .env.example to Python client package",
+    "date": "2026-03-30T18:26:37Z",
+    "summary": "Adds `packages/client-python/.env.example` with all environment variables used by the SDK and common pipeline nodes.\n\nCovers:\n- Engine connection (`ROCKETRIDE_URI`, `ROCKETRIDE_APIKEY`)\n- LLM provider keys (OpenAI, Anthropic, Gemini, Ollama)\n- GMI Cloud env vars (`GMI_API_KEY`, `GMI_BASE`) for `llm_",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/492",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: rocketride-server"
     ]
   }
 ]
