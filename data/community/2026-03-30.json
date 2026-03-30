@@ -238,12 +238,12 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant+RotorQuant implementation",
-    "date": "2026-03-29T16:13:31Z",
+    "date": "2026-03-30T07:41:55Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
     "highlights": [
-      "comments: 18",
+      "comments: 20",
       "state: open",
       "repo: ollama"
     ]
@@ -634,7 +634,7 @@
   },
   {
     "title": "[PR] Update dependency aquaproj/aqua-registry to v4.489.0",
-    "date": "2026-03-30T01:52:03Z",
+    "date": "2026-03-30T05:46:40Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.430.0` \u2192 `v4.489.0` |\n\n---\n\n### Release Notes\n\n<det",
     "url": "https://github.com/mab/dotfiles/pull/362",
     "source": "github_prs",
@@ -670,7 +670,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies (minor)",
-    "date": "2026-03-30T01:48:22Z",
+    "date": "2026-03-30T05:31:18Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) | minor | `4.5.0` \u2192 `4.6.2` |\n| [app-template](https://redirect.github.com/",
     "url": "https://github.com/anthonytam/homelab/pull/264",
     "source": "github_prs",
@@ -682,7 +682,7 @@
   },
   {
     "title": "[PR] Update dependency aquaproj/aqua-registry to v4.489.0",
-    "date": "2026-03-30T01:43:20Z",
+    "date": "2026-03-30T05:30:37Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.184.0` \u2192 `v4.489.0` |\n\n---\n\n> [!WARNING]\n> Some dep",
     "url": "https://github.com/tsuzu-home/k8s/pull/48",
     "source": "github_prs",
@@ -718,7 +718,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.489.0",
-    "date": "2026-03-30T01:37:27Z",
+    "date": "2026-03-30T05:49:33Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.332.1` \u2192 `v4.489.0` |\n\n---\n\n### Release Notes\n\n<det",
     "url": "https://github.com/szksh-lab-2/test-1/pull/27",
     "source": "github_prs",
@@ -778,8 +778,8 @@
   },
   {
     "title": "[PR] Staging",
-    "date": "2026-03-30T05:26:32Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Shared-state federation, bridge relay & host fleet dashboard; auto-model selection and new provider support (z.ai/ZHIPU/ob1).\n\n* **Improvements**\n  * Quota monitoring and coo",
+    "date": "2026-03-30T07:34:47Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Shared-state federation, outbound bridge relay, host fleet dashboard, auto-model selection, and added provider support (z.ai/ZHIPU/ob1); new federation UI pages and e2e feder",
     "url": "https://github.com/open-hax/proxx/pull/138",
     "source": "github_prs",
     "highlights": [
@@ -990,6 +990,102 @@
       "comments: 1",
       "pull request",
       "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] fix(nexus): support Ollama in Docker via OLLAMA_HOST env var + extend model registry",
+    "date": "2026-03-30T07:36:57Z",
+    "summary": "## Problem\n\nWhen Nexus runs inside a Docker container, `localhost:11434` resolves to the **container itself** \u2014 not the host machine where Ollama is installed. This silently breaks all Ollama inference when running the ABI stack via Docker Compose.\n\nAdditionally, `_resolve_provider()` in `chat.py` h",
+    "url": "https://github.com/jupyter-naas/abi/pull/816",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: abi"
+    ]
+  },
+  {
+    "title": "[PR]  fix: Gemini API key invalid due to Ollama Cloud key overwrite",
+    "date": "2026-03-30T07:27:23Z",
+    "summary": "Log\r\n```\r\nWARNING  | pr_agent.algo.ai_handlers.litellm_ai_handler:chat_completion:420 - Error during LLM inference: litellm.AuthenticationError: GeminiException - {\r\n  \"error\": {\r\n    \"code\": 400,\r\n    \"message\": \"API key not valid. Please pass a valid API key.\",\r\n    \"status\": \"INVALID_ARGUMENT\",\r\n",
+    "url": "https://github.com/qodo-ai/pr-agent/pull/2288",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: pr-agent"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-03-30T07:18:35Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] refactor: improve code quality and performance",
+    "date": "2026-03-30T06:26:59Z",
+    "summary": "## \u6539\u8fdb\u7c7b\u578b\n\u4ee3\u7801\u4f18\u5316\n\n## \u63cf\u8ff0\n- \u4f18\u5316\u5bfc\u5165: build.py\n\n## \u66f4\u6539\u5185\u5bb9\n- \u4f18\u5316: ./workflow_runner/js/graph.js\n- \u4f18\u5316: ./workflow_runner/js/ui.js\n- \u4f18\u5316: ./workflow_runner/js/main.js\n- \u4f18\u5316: ./workflow_runner/js/utils.js\n- \u4f18\u5316: ./workflow_runner/js/workflow-runner.js\n- \u4f18\u5316: ./web/jest.setup.js\n- \u4f18\u5316: ./web/vite.config.ts\n- \u4f18\u5316: ./web/tes",
+    "url": "https://github.com/nodetool-ai/nodetool/pull/2444",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nodetool"
+    ]
+  },
+  {
+    "title": "[PR] feat: add LLM_ALLOW_LOCAL_NETWORK to permit LAN IP endpoints",
+    "date": "2026-03-30T06:15:00Z",
+    "summary": "The SSRF validation in validate_base_url blocked all private/LAN IPs, preventing users from configuring self-hosted LLMs (Ollama, vLLM, etc.) on other machines in the local network. Setting LLM_ALLOW_LOCAL_NETWORK=true now allows HTTP and HTTPS URLs with private IPs (10.x, 192.168.x, 172.16-31.x) wh",
+    "url": "https://github.com/nearai/ironclaw/pull/1696",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ironclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix: add local-inference policy preset for Ollama/vLLM host access (#693)",
+    "date": "2026-03-30T06:08:33Z",
+    "summary": "## Summary\n\n```mermaid\ngraph LR\n    S[Sandbox] -->|local-inference preset| G[host.openshell.internal]\n    G -->|:11434| O[Ollama]\n    G -->|:8000| V[vLLM]\n    style S fill:#bbf\n    style O fill:#9f9\n    style V fill:#9f9\n```\n\nNew `local-inference.yaml` preset allows `host.openshell.internal` on port",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/781",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Initial Audio-AI-Module",
+    "date": "2026-03-30T06:06:34Z",
+    "summary": "I worked on an AI-Module to analyze the audio files.\r\n\r\nIt uses pyhton with faster-whisper for Speech-to-Text and transcribing.\r\nAfter that it uses locally running Ollama to analyze the transcript and format it into a .json file which could be used to pre-fill information into the inspection form.\r\n",
+    "url": "https://github.com/martinhrvn/hive-pal/pull/138",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: hive-pal"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.489.0",
+    "date": "2026-03-30T05:50:06Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.368.0` \u2192 `v4.489.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/aereal/otelgqlgen/pull/129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 105",
+      "pull request",
+      "repo: otelgqlgen"
     ]
   }
 ]
