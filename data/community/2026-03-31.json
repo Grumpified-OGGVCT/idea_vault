@@ -538,12 +538,12 @@
   },
   {
     "title": "[PR] feat(4090): Shift Crew tools \u2014 BoTZ Trinity CLI, voice binding, beats pipeline, ClawZ tests, AgentGym runner",
-    "date": "2026-03-31T03:34:26Z",
+    "date": "2026-03-31T18:24:38Z",
     "summary": "## Summary\n\n5 new tools and extensions built by the 4090-claude Shift Crew \u2014 parallel agent deployment across independent file domains.\n\n- **BoTZ CLI plan+audit**: `\u2302 botz plan` (architect) and `\u2696 botz audit` (auditor) commands with agent-attributed output\n- **Voice Persona Binding**: Maps all 15 ag",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/1160",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: PMOVES.AI"
     ]
@@ -562,12 +562,12 @@
   },
   {
     "title": "[PR] fix(infra): revert BIND defaults to 0.0.0.0 for fleet connectivity",
-    "date": "2026-03-31T16:31:54Z",
+    "date": "2026-03-31T17:22:14Z",
     "summary": "## Summary\n- Reverts all 80 `${*_BIND:-127.0.0.1}` defaults to `${*_BIND:-0.0.0.0}` in `pmoves/docker-compose.yml`\n- PR #1122 changed these to localhost-only, breaking inter-node communication across the fleet\n- Per TAC tree `networking-defense-in-depth`: services bind `0.0.0.0`, security is ACL-enf",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/1162",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: PMOVES.AI"
     ]
@@ -622,7 +622,7 @@
   },
   {
     "title": "[PR] test: agent skills infrastructure and marker taxonomy audit (#727, #728)",
-    "date": "2026-03-31T13:39:31Z",
+    "date": "2026-03-31T18:09:46Z",
     "summary": "<!-- mellea-pr-edited-marker: do not remove this marker -->\n# Marker Taxonomy & Agent Skills\n\n## Type of PR\n\n- [ ] Bug Fix\n- [x] New Feature\n- [x] Documentation\n- [x] Other\n\n## Description\n\nFixes #727, #728\n\nIntroduces a four-tier test marker taxonomy (`unit` / `integration` / `e2e` / `qualitative`)",
     "url": "https://github.com/generative-computing/mellea/pull/742",
     "source": "github_prs",
@@ -1102,7 +1102,7 @@
   },
   {
     "title": "[PR] fix(container): update image docker.io/openwebui/open-webui ( 0.8.10 \u2794 0.8.12 )",
-    "date": "2026-03-31T09:56:59Z",
+    "date": "2026-03-31T17:06:29Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/openwebui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `0.8.10` \u2192 `0.8.12` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for",
     "url": "https://github.com/gavinmcfall/home-ops/pull/1782",
     "source": "github_prs",
@@ -1354,7 +1354,7 @@
   },
   {
     "title": "[PR] \u6a21\u677f\u7cfb\u7d71",
-    "date": "2026-03-31T17:01:13Z",
+    "date": "2026-03-31T17:05:42Z",
     "summary": "",
     "url": "https://github.com/ntubclass/Campus-Cloud/pull/42",
     "source": "github_prs",
@@ -1377,8 +1377,8 @@
     ]
   },
   {
-    "title": "[PR] [Rule Tuning] Update Mitre Mappings and tags",
-    "date": "2026-03-31T16:15:08Z",
+    "title": "[PR] [Rule Tuning] Add Supplemental Mitre Mappings",
+    "date": "2026-03-31T18:21:01Z",
     "summary": "<!--\r\nThank you for your interest in and contributing to Detection Rules!\r\nThere are a few simple things to check before submitting your pull request\r\nthat can help with the review process. You should delete these items\r\nfrom your submission, but they are here to help bring them to your attention.\r\n",
     "url": "https://github.com/elastic/detection-rules/pull/5876",
     "source": "github_prs",
@@ -1422,6 +1422,138 @@
       "comments: 0",
       "pull request",
       "repo: FireForm"
+    ]
+  },
+  {
+    "title": "[PR] deps(go): bump module github.com/testcontainers/testcontainers-go to v0.41.0",
+    "date": "2026-03-31T18:59:50Z",
+    "summary": "\n\n\n<Actions>\n    <action id=\"83ab38fcda5079af067caeafe5c61020d52689318e64fd4b6b691ab8cde2254c\">\n        <h3>deps(go): bump module github.com/testcontainers/testcontainers-go</h3>\n        <details id=\"118a1de593252b71f178cef60ae8b6af7c484a51bead92a6671a2630b548e68e\">\n            <summary>clean: go mo",
+    "url": "https://github.com/updatecli/updatecli/pull/8250",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: updatecli"
+    ]
+  },
+  {
+    "title": "[PR] feat: add assist service layer, knowledge base, CLI, and settings integration",
+    "date": "2026-03-31T18:57:19Z",
+    "summary": "RAG-powered AI assistant with:\n- Knowledge base: MDX ingestion, chunking, embedding, ChromaDB persistent storage, hash-based change detection\n- Prompt assembler: trust boundaries (product/user/untrusted), adaptive context budgeting via litellm model info\n- Service layer: litellm acompletion wrapper ",
+    "url": "https://github.com/q-uestionable-AI/qai/pull/82",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: qai"
+    ]
+  },
+  {
+    "title": "[PR] feat(lightspeed): add MCP servers settings panel",
+    "date": "2026-03-31T18:54:22Z",
+    "summary": "## Hey, I just made a Pull Request!\r\n\r\n<!-- Please describe what you added, and add a screenshot if possible.\r\n     That makes it easier to understand the change so we can :shipit: faster. -->\r\nFor [RHIDP-12076](https://redhat.atlassian.net/browse/RHIDP-12076)\r\n\r\nChangeset and documentation updates ",
+    "url": "https://github.com/redhat-developer/rhdh-plugins/pull/2582",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: rhdh-plugins"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-03-31T18:52:58Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] Release: Kong Gateway 3.14",
+    "date": "2026-03-31T18:36:08Z",
+    "summary": "## Description\r\n\r\nRelease roll-up PR for 3.14 previews.\r\n\r\nDO NOT MERGE.\r\n\r\n## Preview links\r\n\r\n### Features\r\n\r\n**OIDC multiple consumer claims:**\r\n* [Example](https://deploy-preview-4545--kongdeveloper.netlify.app/plugins/openid-connect/examples/consumer-auth/)\r\n* [How-to guide](https://deploy-prev",
+    "url": "https://github.com/Kong/developer.konghq.com/pull/4545",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: developer.konghq.com"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.8.12",
+    "date": "2026-03-31T18:07:00Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.2` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n<",
+    "url": "https://github.com/rdeselle07/boilerplates/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: boilerplates"
+    ]
+  },
+  {
+    "title": "[PR] [BLOCKED] Cataclysm Forge Operator Scaffolding",
+    "date": "2026-03-31T17:57:19Z",
+    "summary": "## **User description**\nThis PR contains the initial scaffolding for the Cataclysm Forge operator. The work is incomplete and blocked due to a persistent issue with the pre-commit hook in the development environment, which prevents any file modifications. All attempts to resolve this issue have fail",
+    "url": "https://github.com/GlacierEQ/affine/pull/32",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: affine"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update image ghcr.io/openclaw/openclaw ( 2026.3.8 \u2794 2026.3.28 )",
+    "date": "2026-03-31T18:50:02Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.3.8` \u2192 `2026.3.28` ",
+    "url": "https://github.com/gavinmcfall/home-ops/pull/1706",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] feat(cron): add --tools flag for per-job tool allow-list",
+    "date": "2026-03-31T17:51:32Z",
+    "summary": "## Summary\n\nAdd a `--tools` flag to `openclaw cron add` and `openclaw cron edit` that restricts which tool schemas are sent to the model for a given cron job.\n\n**Closes #58435**\n\n## Problem\n\nSmall local models (e.g. granite4:7b-a1b-h MoE with 1B active parameters) used as cron script runners receive",
+    "url": "https://github.com/openclaw/openclaw/pull/58504",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] Pin langchain to latest version 1.2.14",
+    "date": "2026-03-31T17:20:36Z",
+    "summary": "\nThis PR pins [langchain](https://pypi.org/project/langchain) to the latest release **1.2.14**.\n\n\n\n<details>\n  <summary>Changelog</summary>\n  \n  \n   ### 1.2.14\n   ```\n   Patch Changes\n\n-   [9870](https://github.com/langchain-ai/langchainjs/pull/9870) [`070b4d1`](https://github.com/langchain-ai/langc",
+    "url": "https://github.com/eracle/OpenOutreach/pull/774",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: OpenOutreach"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.489.0",
+    "date": "2026-03-31T17:03:23Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.220.1` \u2192 `v4.489.0` |\n\n---\n\n### Release Notes\n\n<det",
+    "url": "https://github.com/tennashi/monorepo-template/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: monorepo-template"
     ]
   }
 ]
