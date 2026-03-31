@@ -862,7 +862,7 @@
   },
   {
     "title": "[PR] feat: AI-powered `generate` command \u2014 prompt-to-manifest via Vercel AI SDK",
-    "date": "2026-03-31T10:57:07Z",
+    "date": "2026-03-31T11:19:04Z",
     "summary": "Adds a `cs generate` command that accepts a natural-language prompt and produces a validated `superposition.yml` manifest (or full `.devcontainer/` scaffold) by mapping LLM-extracted intent to the existing overlay catalog and feeding it through the unchanged composition pipeline.\n\n## Architecture\n\n`",
     "url": "https://github.com/veggerby/container-superposition/pull/114",
     "source": "github_prs",
@@ -1122,6 +1122,42 @@
       "comments: 1",
       "pull request",
       "repo: forgememo"
+    ]
+  },
+  {
+    "title": "[PR] feat(bedrock): add AWS SigV4 and STS web identity authentication",
+    "date": "2026-03-31T11:53:39Z",
+    "summary": "## What does this PR do?\r\n\r\nThe Bedrock inference provider previously depended on a pre-signed bearer token (`AWS_BEARER_TOKEN_BEDROCK`). That works for short-lived manual setups, but it is a poor fit for environments that already rely on AWS identity, like Kubernetes/OpenShift with IRSA, GitHub Act",
+    "url": "https://github.com/skamenan7/llama-stack/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: llama-stack"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency RavenDB.Embedded to v7",
+    "date": "2026-03-31T11:31:55Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Particular/ServiceControl/pull/5079",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ServiceControl"
+    ]
+  },
+  {
+    "title": "[PR] docs(llm-gateway): OpenResponses as public LLM invocation API",
+    "date": "2026-03-31T11:21:23Z",
+    "summary": "ADR for llm-gateway Responses API.\r\nHere I propose to use OpenResponses as main protocol for invoking LLMs. OpenResponses is heavily based on OpenAI Responses API, should be interoperable with existing clients that use OpenAI Responses and is extendable by design.\n\n<!-- This is an auto-generated com",
+    "url": "https://github.com/cyberfabric/cyberfabric-core/pull/1152",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: cyberfabric-core"
     ]
   }
 ]
