@@ -850,7 +850,7 @@
   },
   {
     "title": "[PR] feat: first-time user experience improvements \u2014 42-issue UX audit",
-    "date": "2026-04-02T15:00:55Z",
+    "date": "2026-04-02T15:06:09Z",
     "summary": "## Summary\n\nComprehensive first-time user experience improvements addressing all 42 issues identified in a full UX audit across 3 personas (self-hosted single-user, multi-user admin, hosted SaaS customer).\n\n### Phase 1: Unblock First Chat\n- `make quickstart` now prints API key, URLs, and next steps\n",
     "url": "https://github.com/rmusser01/tldw_server/pull/973",
     "source": "github_prs",
@@ -910,7 +910,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-04-02T10:48:39Z",
+    "date": "2026-04-02T15:09:09Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -922,7 +922,7 @@
   },
   {
     "title": "[PR] feat(feedback): close the learning loop \u2014 closes #612",
-    "date": "2026-04-02T12:59:56Z",
+    "date": "2026-04-02T15:30:02Z",
     "summary": "## Summary\n\nCloses #612. Implements the full learning loop so warden gets smarter from user feedback.\n\n- **`warden feedback mark --false-positives <ids>`** \u2014 marks findings as FP, persists patterns to `.warden/learned_patterns.yaml`\n- **`warden feedback list`** \u2014 shows accumulated patterns with conf",
     "url": "https://github.com/alperduzgun/warden-core/pull/624",
     "source": "github_prs",
@@ -1246,7 +1246,7 @@
   },
   {
     "title": "[PR] Feat/rr 411 add text to audio node",
-    "date": "2026-04-02T14:50:42Z",
+    "date": "2026-04-02T16:04:41Z",
     "summary": "## Summary\r\n<img width=\"1501\" height=\"876\" alt=\"Captura de pantalla 2026-04-02 a las 14 42 12\" src=\"https://github.com/user-attachments/assets/95c2f212-276d-4b2b-ba45-c746eba169e3\" />\r\n\r\n<img width=\"1510\" height=\"914\" alt=\"Captura de pantalla 2026-04-02 a las 14 42 19\" src=\"https://github.com/user-a",
     "url": "https://github.com/rocketride-org/rocketride-server/pull/583",
     "source": "github_prs",
@@ -1282,7 +1282,7 @@
   },
   {
     "title": "[PR] UNS-481 [FEAT] Add Gemini embedding adapter for Google AI Studio",
-    "date": "2026-04-02T13:07:55Z",
+    "date": "2026-04-02T15:40:40Z",
     "summary": "## What\n\n- Add a new Gemini embedding adapter to the Unstract SDK, enabling Google's Gemini embedding models (e.g. `gemini/text-embedding-004`) via LiteLLM's `gemini/` provider prefix.\n\n## Why\n\n- Expands embedding provider options for users who want to use Google's Gemini embedding API alongside exi",
     "url": "https://github.com/Zipstack/unstract/pull/1891",
     "source": "github_prs",
@@ -1354,7 +1354,7 @@
   },
   {
     "title": "[PR] APP-115: Parallel episode transcription + stale jobs cleanup",
-    "date": "2026-04-02T15:00:50Z",
+    "date": "2026-04-02T16:09:38Z",
     "summary": "## Summary\n\n- **Parallel episode processing**: configurable `localloom.import.parallel-episodes` (default 4) using `Semaphore` + virtual threads + `CompletableFuture`. Each episode still runs download\u2192transcribe\u2192embed sequentially, but multiple episodes run concurrently. Increase to 8+ when Ollama i",
     "url": "https://github.com/jsohi/localloom/pull/52",
     "source": "github_prs",
@@ -1366,7 +1366,7 @@
   },
   {
     "title": "[PR] feat: auto-select embedding model + fine-tuning pipeline wiring",
-    "date": "2026-04-02T14:32:39Z",
+    "date": "2026-04-02T15:53:20Z",
     "summary": "## Summary\n\nImplements embedding model auto-selection from LMEB rankings (#965) and wires the fine-tuning checkpoint lookup into the Mem0 adapter (#966).\n\n### #965: Auto-Select Embedding Model\n\n- **LMEB ranking data** (`memory/embedding/rankings.py`): 6 models with per-memory-type NDCG@10 scores, de",
     "url": "https://github.com/Aureliolo/synthorg/pull/999",
     "source": "github_prs",
@@ -1414,7 +1414,7 @@
   },
   {
     "title": "[PR] Release: Kong Gateway 3.14",
-    "date": "2026-04-02T13:38:51Z",
+    "date": "2026-04-02T15:56:50Z",
     "summary": "## Description\r\n\r\nRelease roll-up PR for 3.14 previews.\r\n\r\nDO NOT MERGE.\r\n\r\n## Preview links\r\n\r\n### Features\r\n\r\n**OIDC multiple consumer claims:**\r\n* [Example](https://deploy-preview-4545--kongdeveloper.netlify.app/plugins/openid-connect/examples/consumer-auth/)\r\n* [How-to guide](https://deploy-prev",
     "url": "https://github.com/Kong/developer.konghq.com/pull/4545",
     "source": "github_prs",
@@ -1470,6 +1470,78 @@
       "comments: 0",
       "pull request",
       "repo: k8s-gitops"
+    ]
+  },
+  {
+    "title": "[PR] feat: Ollamito - AI Chat UI with Ollama Integration",
+    "date": "2026-04-02T16:09:27Z",
+    "summary": "Adds the Ollamito project: a Next.js 15 AI chat UI powered by Ollama open-source models.\n\n## What is included\n\n- **Next.js 15 App Router** project in `ollamito/` directory\n- **Streaming chat interface** with real-time response from Ollama models\n- **Model selector** with auto-detection of installed ",
+    "url": "https://github.com/salouma563/ABDUCTR/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ABDUCTR"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency llama-stack-api to v0.7.0",
+    "date": "2026-04-02T16:06:18Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-stack-api](https://redirect.github.com/llamastack/llama-stack) | `==0.5.0` -> `==0.7.0` | ![",
+    "url": "https://github.com/lightspeed-core/rag-content/pull/155",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: rag-content"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency llama-stack-api to v0.7.0",
+    "date": "2026-04-02T16:06:16Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-stack-api](https://redirect.github.com/llamastack/llama-stack) | `==0.5.0` -> `==0.7.0` | ![",
+    "url": "https://github.com/syedriko/lightspeed-core-rag-content/pull/134",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: lightspeed-core-rag-content"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency llama-stack to v0.7.0",
+    "date": "2026-04-02T16:06:15Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-stack](https://redirect.github.com/llamastack/llama-stack) | `==0.5.0` -> `==0.7.0` | ![age]",
+    "url": "https://github.com/lightspeed-core/rag-content/pull/154",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: rag-content"
+    ]
+  },
+  {
+    "title": "[PR] feat(search): add Ollama as local reranker provider (#70)",
+    "date": "2026-04-02T16:00:27Z",
+    "summary": "## Summary\n- Add `OllamaReranker` \u2014 local, free reranking via Ollama's `/api/generate`\n- Prompt-based relevance scoring on a 0-1 scale\n- No API key required, uses existing `OLLAMA_BASE_URL` setting\n\n## Usage\n```python\nupdate_search_config(\n    context_id=ctx,\n    use_rerank=True,\n    reranker_provid",
+    "url": "https://github.com/kagura-ai/memory-cloud/pull/116",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: memory-cloud"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency RavenDB.Embedded to v7",
+    "date": "2026-04-02T15:38:47Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Particular/ServiceControl/pull/5079",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ServiceControl"
     ]
   }
 ]
