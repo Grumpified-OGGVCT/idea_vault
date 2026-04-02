@@ -742,7 +742,7 @@
   },
   {
     "title": "[PR] feat: add Jetson Orin Nano support",
-    "date": "2026-04-02T11:42:59Z",
+    "date": "2026-04-02T11:54:47Z",
     "summary": "Closes #404\nAlso fixes #539, relates to #65, #300, #511, #1076\n\n## Summary\n\nAdds end-to-end Jetson Orin Nano support: from GPU detection through to a working OpenClaw agent with local Ollama inference.\n\n- **GPU detection**: nvidia-smi reports `[N/A]` for memory.total on Jetson (unified memory). Adde",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/405",
     "source": "github_prs",
@@ -898,7 +898,7 @@
   },
   {
     "title": "[PR] Update nuget (major)",
-    "date": "2026-04-02T11:48:32Z",
+    "date": "2026-04-02T13:10:11Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [MassTransit](https://massient.com/) ([source](https://redirect.github.com/Massient/MassTransit)) | nuget | major | `8.5.2` \u2192 `9.1.",
     "url": "https://github.com/project-origin/stamp/pull/271",
     "source": "github_prs",
@@ -922,7 +922,7 @@
   },
   {
     "title": "[PR] feat(feedback): close the learning loop \u2014 closes #612",
-    "date": "2026-04-02T11:17:15Z",
+    "date": "2026-04-02T12:59:56Z",
     "summary": "## Summary\n\nCloses #612. Implements the full learning loop so warden gets smarter from user feedback.\n\n- **`warden feedback mark --false-positives <ids>`** \u2014 marks findings as FP, persists patterns to `.warden/learned_patterns.yaml`\n- **`warden feedback list`** \u2014 shows accumulated patterns with conf",
     "url": "https://github.com/alperduzgun/warden-core/pull/624",
     "source": "github_prs",
@@ -958,7 +958,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( v0.8.10 \u2794 v0.8.12 )",
-    "date": "2026-04-02T08:26:57Z",
+    "date": "2026-04-02T12:23:55Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n",
     "url": "https://github.com/Aviator-Coding/home-ops/pull/648",
     "source": "github_prs",
@@ -1162,7 +1162,7 @@
   },
   {
     "title": "[PR] feature: telemetry adapter abstraction (TelemetryPort + NoopAdapter + factory)",
-    "date": "2026-04-02T11:45:59Z",
+    "date": "2026-04-02T11:54:03Z",
     "summary": "## Summary\n\n- Introduces `TelemetryPort` interface with `capture()`, `identify()`, `shutdown()` \u2014 matching the `StoragePort` pattern\n- `NoopTelemetryAdapter` for opt-out and misconfiguration fallback\n- `TelemetryClientFactory` reads `TELEMETRY_PROVIDER` and `BETTERDB_TELEMETRY` from NestJS `ConfigSe",
     "url": "https://github.com/BetterDB-inc/monitor/pull/77",
     "source": "github_prs",
@@ -1186,12 +1186,12 @@
   },
   {
     "title": "[PR] Publish: 7 Best Tactiq Alternatives in 2026",
-    "date": "2026-04-02T11:50:07Z",
+    "date": "2026-04-02T11:55:00Z",
     "summary": "## Article Ready for Publication\n\n**Title:** 7 Best Tactiq Alternatives in 2026\n**Author:** John Jeong\n**Date:** 2026-04-02\n**Category:** Comparisons\n\n**Branch:** blog/tactiq-alternatives\n**File:** apps/web/content/articles/tactiq-alternatives.mdx\n\n---\nAuto-generated PR from admin panel.",
     "url": "https://github.com/fastrepl/char/pull/4872",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "pull request",
       "repo: char"
     ]
@@ -1230,6 +1230,126 @@
       "comments: 0",
       "pull request",
       "repo: Nova"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.8.12",
+    "date": "2026-04-02T13:22:15Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n",
+    "url": "https://github.com/dreadster3/home-ops/pull/133",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] Feat/rr 411 add text to audio node",
+    "date": "2026-04-02T13:20:22Z",
+    "summary": "## Summary\r\n\r\n\r\n**This is a text-to-speech node:** it takes **text** on the `text` lane and produces speech. Depending on how the pipe is wired, output goes out on **audio** (PCM) and/or **text** (JSON with mime and base64). The **TTS profile** you pick in the node panel selects the engine and its o",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/583",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] [skip-release] Update github-actions (major)",
+    "date": "2026-04-02T13:18:08Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [docker/build-push-action](https://redirect.github.com/docker/build-push-action) | action | major | `v6` \u2192 `v7` |\n| [docker/login-action](https://redirect.github.com/docker/login-action) | action | majo",
+    "url": "https://github.com/lehigh-university-libraries/mistral-cloud-run/pull/12",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mistral-cloud-run"
+    ]
+  },
+  {
+    "title": "[PR] Add AI agentic framework for workout generation and web scraping with local LLM support",
+    "date": "2026-04-02T13:14:57Z",
+    "summary": "Adds a tool-based AI agent that can autonomously generate personalized workouts via OpenAI or locally hosted LLMs (Ollama, LM Studio, LocalAI, vLLM) and discover exercises by scraping fitness databases/websites.\n\n## Agent Architecture\n\nThe `WorkoutAgent` follows a **plan \u2192 execute \u2192 synthesize** loo",
+    "url": "https://github.com/kavishkafer/Gymnie/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Gymnie"
+    ]
+  },
+  {
+    "title": "[PR] UNS-481 [FEAT] Add Gemini embedding adapter for Google AI Studio",
+    "date": "2026-04-02T13:07:55Z",
+    "summary": "## What\n\n- Add a new Gemini embedding adapter to the Unstract SDK, enabling Google's Gemini embedding models (e.g. `gemini/text-embedding-004`) via LiteLLM's `gemini/` provider prefix.\n\n## Why\n\n- Expands embedding provider options for users who want to use Google's Gemini embedding API alongside exi",
+    "url": "https://github.com/Zipstack/unstract/pull/1891",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: unstract"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui ( 0.7.2 \u2192 v0.8.12 )",
+    "date": "2026-04-02T13:07:54Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.7.2` \u2192 `v0.8.12` |\n\n---\n\n> [!WARNING]\n> Some d",
+    "url": "https://github.com/rafaribe/home-ops/pull/5378",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update aqua",
+    "date": "2026-04-02T12:56:22Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.398.0` \u2192 `v4.491.0` |\n| [ianlewis/todos](https://re",
+    "url": "https://github.com/ianlewis/todo-issue-reopener/pull/3874",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: todo-issue-reopener"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency testcontainers to v4",
+    "date": "2026-04-02T12:54:23Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [Testcontainers](https://dot",
+    "url": "https://github.com/meenzen/Matrix/pull/85",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: Matrix"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.8.12",
+    "date": "2026-04-02T12:32:51Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n",
+    "url": "https://github.com/davydehaas98/home-server/pull/1530",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-server"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( v0.8.10 \u2192 v0.8.12 )",
+    "date": "2026-04-02T12:23:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n",
+    "url": "https://github.com/chaijunkin/home-ops/pull/1311",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
