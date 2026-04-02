@@ -226,12 +226,12 @@
   },
   {
     "title": "Econom'IA 2026: experimental design and slide deck",
-    "date": "2026-04-01T21:00:37Z",
+    "date": "2026-04-02T06:14:50Z",
     "summary": "## Goal\n\nPresent AEDIST findings at Econom'IA (April 11, 2026) with a slide deck backed by reproducible experiments.\n\n**Deadline**: Draft report April 2 morning. Final slides April 10.\n\n## Narrative\n\n**\"Can AI produce energy statistics? We tested it, progressively.\"**\n\nBenchmark: inventory of Vietna",
     "url": "https://github.com/MinhHaDuong/aedist-technical-report/issues/1",
     "source": "github_issues",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "state: open",
       "repo: aedist-technical-report"
     ]
@@ -538,7 +538,7 @@
   },
   {
     "title": "[PR] Update langchain4j monorepo",
-    "date": "2026-04-02T02:03:57Z",
+    "date": "2026-04-02T05:41:29Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
     "url": "https://github.com/kpavlov/elven/pull/85",
     "source": "github_prs",
@@ -586,12 +586,12 @@
   },
   {
     "title": "[PR] home-assistant: 2026.3.4 -> 2026.4.0",
-    "date": "2026-04-02T05:03:11Z",
+    "date": "2026-04-02T05:13:28Z",
     "summary": "https://www.home-assistant.io/blog/2026/04/01/release-20264/\r\n\r\ncloses https://github.com/NixOS/nixpkgs/pull/505163\r\ncloses https://github.com/NixOS/nixpkgs/pull/495670\r\ncloses https://github.com/NixOS/nixpkgs/pull/504876\r\ncloses https://github.com/NixOS/nixpkgs/pull/505569\r\n\r\n<!--\r\n^ Please summari",
     "url": "https://github.com/NixOS/nixpkgs/pull/504899",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: nixpkgs"
     ]
@@ -646,7 +646,7 @@
   },
   {
     "title": "[PR] Update langchain4j monorepo to v1 (major)",
-    "date": "2026-04-02T01:23:56Z",
+    "date": "2026-04-02T05:39:05Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
     "url": "https://github.com/showpune/azure-java-migration-copilot/pull/41",
     "source": "github_prs",
@@ -670,12 +670,12 @@
   },
   {
     "title": "[PR] Add MLflow-native model catalog with `update_model_catalog` transform script",
-    "date": "2026-04-02T05:05:14Z",
-    "summary": "${STACK_VIEW}\n\n### Related Issues/PRs\n\nRelates to #21986\n\n### What changes are proposed in this pull request?\n\nAdds `dev/update_model_catalog.py` that converts upstream data sources (currently LiteLLM) into per-provider MLflow-native catalog files under `mlflow/utils/model_catalog/`.\n\nKey features:\n",
+    "date": "2026-04-02T07:10:28Z",
+    "summary": "## \ud83e\udd5e Stacked PR\nUse this [link](https://github.com/mlflow/mlflow/pull/22258/files) to review incremental changes.\n- [**stack/model-catalog/1-transform**](https://github.com/mlflow/mlflow/pull/22258) [[Files changed](https://github.com/mlflow/mlflow/pull/22258/files)]\n  - [stack/model-catalog/2-loade",
     "url": "https://github.com/mlflow/mlflow/pull/22258",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 2",
       "pull request",
       "repo: mlflow"
     ]
@@ -790,7 +790,7 @@
   },
   {
     "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go to v0.41.0",
-    "date": "2026-04-02T02:51:34Z",
+    "date": "2026-04-02T06:42:23Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
     "url": "https://github.com/newrelic/nri-statsd/pull/115",
     "source": "github_prs",
@@ -822,6 +822,78 @@
       "comments: 2",
       "pull request",
       "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] feat: add LLM_ALLOW_LOCAL_NETWORK to permit LAN IP endpoints",
+    "date": "2026-04-02T07:17:37Z",
+    "summary": "## Change type\r\nEnhancement (new configuration option)\r\n\r\n## Security impact\r\n- Adds `LLM_ALLOW_LOCAL_NETWORK=true` env var to relax SSRF validation for RFC 1918 private IPs\r\n- Cloud metadata (169.254.169.254), CGN (100.64.0.0/10), link-local, multicast, and unspecified addresses remain **always blo",
+    "url": "https://github.com/nearai/ironclaw/pull/1696",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ironclaw"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-go monorepo to v0.41.0",
+    "date": "2026-04-02T06:46:15Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/cloudposse/test-helpers/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: test-helpers"
+    ]
+  },
+  {
+    "title": "[PR] feat: first-time user experience improvements \u2014 42-issue UX audit",
+    "date": "2026-04-02T06:46:06Z",
+    "summary": "## Summary\n\nComprehensive first-time user experience improvements addressing all 42 issues identified in a full UX audit across 3 personas (self-hosted single-user, multi-user admin, hosted SaaS customer).\n\n### Phase 1: Unblock First Chat\n- `make quickstart` now prints API key, URLs, and next steps\n",
+    "url": "https://github.com/rmusser01/tldw_server/pull/973",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: tldw_server"
+    ]
+  },
+  {
+    "title": "[PR] [FIX] Unified retry for LLM and embedding providers",
+    "date": "2026-04-02T06:35:58Z",
+    "summary": "## What\n\n- Unified retry with exponential backoff for all LLM and embedding provider calls\n- Exposed `max_retries` in UI for embedding adapters (OpenAI, Azure, VertexAI, Ollama) and Ollama LLM \u2014 previously missing from the adapter form\n- DRY consolidation of retry decision logic into a single `_get_",
+    "url": "https://github.com/Zipstack/unstract/pull/1886",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: unstract"
+    ]
+  },
+  {
+    "title": "[PR] fix: add local-inference policy preset for Ollama/vLLM host access (#693)",
+    "date": "2026-04-02T06:07:55Z",
+    "summary": "## Summary\n\n```mermaid\ngraph LR\n    S[Sandbox] -->|local-inference preset| G[host.openshell.internal]\n    G -->|:11434| O[Ollama]\n    G -->|:8000| V[vLLM]\n    style S fill:#bbf\n    style O fill:#9f9\n    style V fill:#9f9\n```\n\nNew `local-inference.yaml` preset allows `host.openshell.internal` on port",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/781",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Update ghcr.io/open-webui/open-webui Docker tag to v0.8.12",
+    "date": "2026-04-02T05:24:09Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n",
+    "url": "https://github.com/rothgar/homelab-flux/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-flux"
     ]
   }
 ]
