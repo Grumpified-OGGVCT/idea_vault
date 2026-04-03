@@ -526,7 +526,7 @@
   },
   {
     "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go to v0.41.0",
-    "date": "2026-04-03T02:35:39Z",
+    "date": "2026-04-03T06:48:18Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
     "url": "https://github.com/newrelic/nri-statsd/pull/115",
     "source": "github_prs",
@@ -682,7 +682,7 @@
   },
   {
     "title": "[PR] feat(search): add Ollama as local reranker provider (#70)",
-    "date": "2026-04-03T04:28:23Z",
+    "date": "2026-04-03T07:10:42Z",
     "summary": "## Summary\n- Add `OllamaReranker` \u2014 local, free reranking via Ollama's `/api/generate`\n- Prompt-based relevance scoring on a 0-1 scale\n- No API key required, uses existing `OLLAMA_BASE_URL` setting\n\n## Usage\n```python\nupdate_search_config(\n    context_id=ctx,\n    use_rerank=True,\n    reranker_provid",
     "url": "https://github.com/kagura-ai/memory-cloud/pull/116",
     "source": "github_prs",
@@ -742,7 +742,7 @@
   },
   {
     "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m4",
-    "date": "2026-04-03T00:28:29Z",
+    "date": "2026-04-03T05:32:45Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
     "url": "https://github.com/MartinWitt/BootFleet/pull/49",
     "source": "github_prs",
@@ -858,6 +858,126 @@
       "comments: 2",
       "pull request",
       "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] feature: telemetry adapter abstraction (TelemetryPort + NoopAdapter + factory)",
+    "date": "2026-04-03T07:13:04Z",
+    "summary": "## Summary\n\n- Introduces `TelemetryPort` interface with `capture()`, `identify()`, `shutdown()` \u2014 matching the `StoragePort` pattern\n- `NoopTelemetryAdapter` for opt-out and misconfiguration fallback\n- `TelemetryClientFactory` reads `TELEMETRY_PROVIDER` and `BETTERDB_TELEMETRY` from NestJS `ConfigSe",
+    "url": "https://github.com/BetterDB-inc/monitor/pull/77",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: monitor"
+    ]
+  },
+  {
+    "title": "[PR] UI fixes, transcript enhancements, and codebase refactoring",
+    "date": "2026-04-03T06:53:23Z",
+    "summary": "## Summary\n\nMajor update covering transcript display enhancements, UI/UX fixes, performance improvements, and a comprehensive codebase refactoring pass.\n\n### Transcript & Display\n- **Sentence Highlight mode**: paragraph-grouped transcript display with per-segment time-based highlighting and tap-to-s",
+    "url": "https://github.com/bobcode99/PodcastAnalyzer/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: PodcastAnalyzer"
+    ]
+  },
+  {
+    "title": "[PR] feat(route/infoq): add article cover url",
+    "date": "2026-04-03T06:50:09Z",
+    "summary": "<!--\r\nIf you have any difficulties in filling out this form, please refer to https://docs.rsshub.app/joinus/new-rss/submit-route\r\n\u5982\u679c\u4f60\u5728\u586b\u5199\u6b64\u8868\u5355\u65f6\u9047\u5230\u4efb\u4f55\u56f0\u96be\uff0c\u8bf7\u53c2\u8003 https://docs.rsshub.app/zh/joinus/new-rss/submit-route\r\n-->\r\n\r\n## Involved Issue / \u8be5 PR \u76f8\u5173 Issue\r\n\r\nClose #\r\n\r\n## Example for the Proposed Route(s) /",
+    "url": "https://github.com/DIYgod/RSSHub/pull/21608",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 18",
+      "pull request",
+      "repo: RSSHub"
+    ]
+  },
+  {
+    "title": "[PR] Add Local CLI LLM provider for Claude Code and Codex subscriptions",
+    "date": "2026-04-03T06:19:50Z",
+    "summary": "## Summary\n\n- Adds a new `Local CLI` LLM provider so users can run `claude -p`, `codex exec`, or a custom command for summaries, chat, and text transforms without configuring separate API keys in the app\n- Routes LLM requests through a dedicated routing layer so HTTP providers and local CLI executio",
+    "url": "https://github.com/moona3k/macparakeet/pull/47",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: macparakeet"
+    ]
+  },
+  {
+    "title": "[PR] Feat/demo replay root cause",
+    "date": "2026-04-03T05:59:50Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\nHead SHA: 04d7df6866091b3c2f5148adc9b285cf0a922b9b\n\n## Overview\nThis PR implements a comprehensive scheduled-action system for Deiphobe with supporting infrastructure for local LLM integration and enhanced tool governance.",
+    "url": "https://github.com/anoner9000/ClawDawg/pull/105",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ClawDawg"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.testcontainers:testcontainers-bom to v1.21.4",
+    "date": "2026-04-03T05:58:09Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:testcont",
+    "url": "https://github.com/MarienL1995/RenovatePractical/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: RenovatePractical"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes): add human-in-the-loop approval node for pipeline oversight",
+    "date": "2026-04-03T05:25:51Z",
+    "summary": "#Hack-with-bay-2\n\n## Contribution Type\n**Feature** \u2014 Human-in-the-loop approval node for enterprise AI oversight\n\n## Problem / Use Case\nEnterprise AI deployments require human oversight for high-stakes decisions. RocketRide pipelines run fully automated with no pause/approval mechanism. There is no ",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/542",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.testcontainers:testcontainers-bom to v1.21.4",
+    "date": "2026-04-03T05:24:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:testcont",
+    "url": "https://github.com/Sport-Photos/sport-photos-backend/pull/131",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: sport-photos-backend"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes): add Cohere Rerank pipeline node for RAG quality improvement",
+    "date": "2026-04-03T05:23:36Z",
+    "summary": "#Hack-with-bay-2\n\n## Contribution Type\n**Feature** \u2014 Add Cohere Rerank pipeline node for RAG quality improvement\n\n## Problem / Use Case\nRocketRide's RAG pipeline currently retrieves documents via vector similarity search (Pinecone, Chroma, Qdrant, etc.), but vector search alone has a known limitatio",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/499",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.testcontainers:testcontainers to v1.21.4",
+    "date": "2026-04-03T05:15:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:testcont",
+    "url": "https://github.com/chains-project/besu/pull/68",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: besu"
     ]
   }
 ]
