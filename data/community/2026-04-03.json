@@ -178,12 +178,12 @@
   },
   {
     "title": "[Bug]: sisyphus-junior keep using gpt-5.4-mini although I have set in oh-my-opencode.json",
-    "date": "2026-04-02T09:20:59Z",
+    "date": "2026-04-03T08:16:22Z",
     "summary": "### Prerequisites\n\n- [x] I will write this issue in English (see our [Language Policy](https://github.com/code-yeongyu/oh-my-opencode/blob/dev/CONTRIBUTING.md#language-policy))\n- [x] I have searched existing issues to avoid duplicates\n- [x] I am using the latest version of oh-my-opencode\n- [x] I hav",
     "url": "https://github.com/code-yeongyu/oh-my-openagent/issues/2941",
     "source": "github_issues",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "state: open",
       "repo: oh-my-openagent"
     ]
@@ -634,7 +634,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui ( v0.8.10 \u2794 v0.8.12 )",
-    "date": "2026-04-03T04:48:23Z",
+    "date": "2026-04-03T08:21:20Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.10` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n",
     "url": "https://github.com/Aviator-Coding/home-ops/pull/648",
     "source": "github_prs",
@@ -850,7 +850,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-04-03T02:44:09Z",
+    "date": "2026-04-03T08:44:10Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -862,7 +862,7 @@
   },
   {
     "title": "[PR] feature: telemetry adapter abstraction (TelemetryPort + NoopAdapter + factory)",
-    "date": "2026-04-03T07:13:04Z",
+    "date": "2026-04-03T08:23:20Z",
     "summary": "## Summary\n\n- Introduces `TelemetryPort` interface with `capture()`, `identify()`, `shutdown()` \u2014 matching the `StoragePort` pattern\n- `NoopTelemetryAdapter` for opt-out and misconfiguration fallback\n- `TelemetryClientFactory` reads `TELEMETRY_PROVIDER` and `BETTERDB_TELEMETRY` from NestJS `ConfigSe",
     "url": "https://github.com/BetterDB-inc/monitor/pull/77",
     "source": "github_prs",
@@ -946,7 +946,7 @@
   },
   {
     "title": "[PR] Update dependency org.testcontainers:testcontainers-bom to v1.21.4",
-    "date": "2026-04-03T05:24:46Z",
+    "date": "2026-04-03T08:57:15Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:testcont",
     "url": "https://github.com/Sport-Photos/sport-photos-backend/pull/131",
     "source": "github_prs",
@@ -978,6 +978,66 @@
       "comments: 0",
       "pull request",
       "repo: besu"
+    ]
+  },
+  {
+    "title": "[PR] Add build_corpus: local RAG pipeline via GROBID + Ollama",
+    "date": "2026-04-03T08:59:29Z",
+    "summary": "## Summary\n\n- Fully local pipeline to build the RAG corpus (no cloud APIs for conversion or scoring)\n- 5 stages: Zotero search \u2192 document-level fuzzy reranking \u2192 PDF download \u2192 GROBID conversion \u2192 Ollama section scoring\n- Each table gets its own markdown section with context breadcrumb (`Doc > Secti",
+    "url": "https://github.com/MinhHaDuong/aedist-technical-report/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: aedist-technical-report"
+    ]
+  },
+  {
+    "title": "[PR] Add remote model catalog fetch with bundled fallback",
+    "date": "2026-04-03T08:58:34Z",
+    "summary": "## \ud83e\udd5e Stacked PR\nUse this [link](https://github.com/mlflow/mlflow/pull/22260/files) to review incremental changes.\n- [**stack/model-catalog/3-remote-fetch**](https://github.com/mlflow/mlflow/pull/22260) [[Files changed](https://github.com/mlflow/mlflow/pull/22260/files)]\n  - [stack/model-catalog/4-wo",
+    "url": "https://github.com/mlflow/mlflow/pull/22260",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: mlflow"
+    ]
+  },
+  {
+    "title": "[PR] Add streaming aggregation mode to avoid intra-batch issues",
+    "date": "2026-04-03T08:57:51Z",
+    "summary": "## Why\nBatch decisions can produce intra-batch confusion (especially ADD target/index mixups).\n\nThis PR moves aggregation to a lean streaming mode (1 item per LLM call), improves parser robustness, adds provider/timeout controls, and documents benchmark traces.\n\n## What changed\n\n### Core aggregation",
+    "url": "https://github.com/jeromevde/Pyfooda/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: Pyfooda"
+    ]
+  },
+  {
+    "title": "[PR] Feat/rr 411 add text to audio node",
+    "date": "2026-04-03T07:44:44Z",
+    "summary": "## Summary\r\n<img width=\"1438\" height=\"471\" alt=\"Captura de pantalla 2026-04-03 a las 9 42 19\" src=\"https://github.com/user-attachments/assets/54eeb7e1-2006-4f54-a286-9ebca15756c7\" />\r\n\r\n<img width=\"1507\" height=\"881\" alt=\"Captura de pantalla 2026-04-03 a las 9 43 11\" src=\"https://github.com/user-att",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/583",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): pin dependencies",
+    "date": "2026-04-03T07:28:59Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | Pending | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|-",
+    "url": "https://github.com/ystkfujii/nyamber/pull/17",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nyamber"
     ]
   }
 ]
