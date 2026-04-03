@@ -1090,7 +1090,7 @@
   },
   {
     "title": "[PR] feat(feedback): close the learning loop \u2014 closes #612",
-    "date": "2026-04-03T20:57:27Z",
+    "date": "2026-04-03T22:45:58Z",
     "summary": "## Summary\n\nCloses #612. Implements the full learning loop so warden gets smarter from user feedback.\n\n- **`warden feedback mark --false-positives <ids>`** \u2014 marks findings as FP, persists patterns to `.warden/learned_patterns.yaml`\n- **`warden feedback list`** \u2014 shows accumulated patterns with conf",
     "url": "https://github.com/alperduzgun/warden-core/pull/624",
     "source": "github_prs",
@@ -1306,7 +1306,7 @@
   },
   {
     "title": "[PR] Blog: AI Inference on AKS Arc - Part 0 and Part 1",
-    "date": "2026-04-03T20:30:29Z",
+    "date": "2026-04-03T23:32:25Z",
     "summary": "Add two blog posts for the AI Inference on AKS Arc series:\r\nIntroduction Blog\r\nPart 0: Series introduction and prerequisites\r\nPart 1: AI Inference with Ollama and vLLM on Azure Arc",
     "url": "https://github.com/Azure/AKS/pull/5679",
     "source": "github_prs",
@@ -1450,7 +1450,7 @@
   },
   {
     "title": "[PR] Fork tax/20260330 205903 aco route quota cooldowns",
-    "date": "2026-04-03T21:04:12Z",
+    "date": "2026-04-03T23:06:20Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added account enable/disable controls in credentials management.\n  * Added vision auto-model routing with `auto:vision` token and fallback chain.\n  * Added Rotussy provider s",
     "url": "https://github.com/open-hax/proxx/pull/156",
     "source": "github_prs",
@@ -1686,6 +1686,54 @@
       "comments: 2",
       "pull request",
       "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Copilot provider, Anduril.App entry point, and parallel sta\u2026",
+    "date": "2026-04-03T23:36:54Z",
+    "summary": "\u2026rtup init\r\n\r\nIntroduces GitHub Copilot as an AI provider, extracts a new Anduril.App project as the publishable host, and parallelizes the startup pipeline.\r\n\r\nAI providers:\r\n- Add CopilotProvider and CopilotChatClientAdapter using GitHub.Copilot.SDK\r\n- Add IAiProvider.GetAvailableModelsAsync() and",
+    "url": "https://github.com/steingran/Anduril/pull/82",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Anduril"
+    ]
+  },
+  {
+    "title": "[PR] feat(knowledge): add Ollama embedding provider support",
+    "date": "2026-04-03T23:18:17Z",
+    "summary": "## Summary\r\n- Adds Ollama as an embedding provider for knowledge bases, enabling fully offline/private RAG workflows\r\n- Implements per-KB dynamic pgvector tables to handle variable embedding dimensions across Ollama models\r\n- Auto-detects embedding dimension and context length from Ollama's `/api/sh",
+    "url": "https://github.com/simstudioai/sim/pull/3714",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: sim"
+    ]
+  },
+  {
+    "title": "[PR] fix(llm): max_completion_tokens for Azure + GPT-4.1 (proxy + callers)",
+    "date": "2026-04-03T23:00:58Z",
+    "summary": "## Problem\n\n- `chat.completions.create` proxy only remapped `max_tokens` \u2192 `max_completion_tokens` for `openai/` (or bare) models. **`azure-foundry/...`** and other prefixes skipped remapping, so Foundry returned 400 (e.g. classify with `azure-foundry/gpt-5.4-nano`).\n- **GPT-4.1** models also requir",
+    "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/1020",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw-hybrid-memory"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the pip group across 4 directories with 14 updates",
+    "date": "2026-04-03T22:53:40Z",
+    "summary": "\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</s",
+    "url": "https://github.com/HYOSUNG-ITX-AI-Business-Department/litellm/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: litellm"
     ]
   }
 ]
