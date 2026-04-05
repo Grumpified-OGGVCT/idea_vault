@@ -670,7 +670,7 @@
   },
   {
     "title": "[PR] feat: add public API surface + export bundle (issue #1027)",
-    "date": "2026-04-05T12:02:11Z",
+    "date": "2026-04-05T14:34:52Z",
     "summary": "## Summary\n- add a compact public REST surface under `/plugins/memory-public`\n- implement endpoints for health, search, timeline, stats, export, and fact lookup\n- add a stable export bundle builder with facts, episodes, procedures, narratives, provenance links, and manifest/version metadata\n- wire n",
     "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/1040",
     "source": "github_prs",
@@ -706,7 +706,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-04-04T22:01:38Z",
+    "date": "2026-04-05T13:30:23Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -826,7 +826,7 @@
   },
   {
     "title": "[PR] provider  (api) \u6307\u4ee4\u67e5\u8be2/\u5207\u6362\u6a21\u578bapi\u7c7b\u578b \u5206\u79bbOpenAl\u548cAnthropic\u6a21\u578b\u7684\u73af\u5883\u53d8\u91cf",
-    "date": "2026-04-05T12:12:05Z",
+    "date": "2026-04-05T14:18:22Z",
     "summary": "<img width=\"1483\" height=\"762\" alt=\"image\" src=\"https://github.com/user-attachments/assets/9bdc823c-9a07-4357-a164-11a5bc294fb2\" />\r\n<img width=\"1264\" height=\"864\" alt=\"image\" src=\"https://github.com/user-attachments/assets/8f080e94-5c21-4a2a-b70a-1c143d44b97c\" />\r\n\n\n<!-- This is an auto-generated c",
     "url": "https://github.com/claude-code-best/claude-code/pull/129",
     "source": "github_prs",
@@ -942,6 +942,42 @@
       "comments: 11",
       "pull request",
       "repo: neurolink"
+    ]
+  },
+  {
+    "title": "[PR] feat(skills): add cron-model-fallback skill",
+    "date": "2026-04-05T14:34:26Z",
+    "summary": "## Summary\n\nAdds a **cron model fallback chain** skill that tries models in priority order until one succeeds. Solves the problem of silent cron job failures when a model provider is unavailable.\n\n## Problem\n\nOpenClaw cron jobs accept a single `model` string. If that model is unreachable, the job fa",
+    "url": "https://github.com/openclaw/openclaw/pull/61353",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] Fix production embedder: configurable provider for Fly.io deployment",
+    "date": "2026-04-05T14:28:06Z",
+    "summary": "## Summary\n- Add `EMBEDDER_PROVIDER` env var to select between `ollama` (local dev, default) and `google` (production)\n- When `google`, uses `gemini-embedding-001` via the existing `LLM_API_KEY` \u2014 no new API key needed\n- Add `google-generativeai` to `requirements.txt` for the embedder package\n\nThis ",
+    "url": "https://github.com/William-Hill/d4bl_ai_agent/pull/170",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: d4bl_ai_agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(wiki-generator): harden workflow inputs, TS parsing, Gemini/Reviewer error handling",
+    "date": "2026-04-05T13:27:36Z",
+    "summary": "### Motivation\n- Prevent command-injection and unsafe shell expansion from workflow_dispatch inputs and make CLI invocation robust.\n- Ensure generator paths resolve correctly whether running from the repo root or the wiki-generator working directory.\n- Make AI provider callers and response parsing r",
+    "url": "https://github.com/samueljackson-collab/Portfolio-Projects-Wiki-/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Portfolio-Projects-Wiki-"
     ]
   }
 ]
