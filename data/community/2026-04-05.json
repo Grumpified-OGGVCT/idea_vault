@@ -538,7 +538,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-04-05T02:44:08Z",
+    "date": "2026-04-05T08:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -858,6 +858,30 @@
       "comments: 1",
       "pull request",
       "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] fix: async migrate, Trakt token error logging, Ollama independent registration",
+    "date": "2026-04-05T08:37:22Z",
+    "summary": "## Changes\n\n### DatabaseManager.migrate() \u2192 async throws\n- Wraps GRDB's `asyncMigrate` via `CheckedThrowingContinuation`\n- Prevents blocking the actor's serial executor during migrations\n- Especially important as migration count grows in v1.1+\n\n### Trakt token refresh error handling\n- `onTokensRefre",
+    "url": "https://github.com/Tgk-30/VPStudio/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: VPStudio"
+    ]
+  },
+  {
+    "title": "[PR] fix: normalize response images missing index + guard audio duration o\u2026",
+    "date": "2026-04-05T08:22:26Z",
+    "summary": "\u2026verflow (#22950)\r\n\r\n* feat(spend-logs): add truncation note when error logs are truncated for DB storage (#22936)\r\n\r\nWhen the messages or response JSON fields in spend logs are truncated before being written to the database, the truncation marker now includes a note explaining:\r\n- This is a DB stor",
+    "url": "https://github.com/BerriAI/litellm/pull/22955",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: litellm"
     ]
   }
 ]
