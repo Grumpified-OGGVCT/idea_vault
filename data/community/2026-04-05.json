@@ -550,7 +550,7 @@
   },
   {
     "title": "[PR] feat+fix: C# support, investigation-grade trace, semantic search, execution flows, channels, cross-repo intelligence",
-    "date": "2026-04-05T02:38:13Z",
+    "date": "2026-04-05T03:45:03Z",
     "summary": "## Summary\n\n40 commits adding major features and fixing critical bugs across the MCP handler, extraction layer, pipeline, store, and Cypher engine. Developed while stress-testing against large enterprise codebases and running real investigation scenarios.\n\n**Highlights:** C# blast radius analysis (0",
     "url": "https://github.com/DeusData/codebase-memory-mcp/pull/162",
     "source": "github_prs",
@@ -574,12 +574,12 @@
   },
   {
     "title": "[PR] feat: add agent/ like starter in develop",
-    "date": "2026-04-05T01:55:58Z",
-    "summary": "just something to boot up the repo\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!NOTE]\n> **Medium Risk**\n> Adds a new runnable harness plus new git-submodule/workspace automation and dependency/lockfile changes; this can break installs or runtime boot if workspace/submodule state differs across environments.\n> ",
+    "date": "2026-04-05T03:54:58Z",
+    "summary": "just something to boot up the repo\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!NOTE]\n> **Medium Risk**\n> Medium risk because it changes monorepo workspace layout and dependency resolution (adds `agent` workspace, optional plugin git submodules, and lockfile updates), which can break fresh installs/CI if submo",
     "url": "https://github.com/elizaOS/eliza/pull/6702",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 10",
       "pull request",
       "repo: eliza"
     ]
@@ -598,7 +598,7 @@
   },
   {
     "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m4",
-    "date": "2026-04-05T01:42:13Z",
+    "date": "2026-04-05T04:57:05Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
     "url": "https://github.com/MartinWitt/BootFleet/pull/49",
     "source": "github_prs",
@@ -762,6 +762,66 @@
       "comments: 4",
       "pull request",
       "repo: Anduril"
+    ]
+  },
+  {
+    "title": "Japanese speech recognition does not insert punctuation marks (\u3001\u3002)",
+    "date": "2026-04-05T04:38:37Z",
+    "summary": "**Describe the bug**\nA clear and concise description of what the bug is.\n\n**App Version**\nWhat version of Amica**Describe the bug**\nWhen using speech recognition in Japanese, punctuation marks (\u3001 (comma) and \u3002 (period)) are not automatically inserted into the transcription output. While other langua",
+    "url": "https://github.com/amicalhq/amical/issues/132",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 7",
+      "state: open",
+      "repo: amical"
+    ]
+  },
+  {
+    "title": "[PR] feat: add MiniMax as first-class LLM provider",
+    "date": "2026-04-05T05:00:29Z",
+    "summary": "## Summary\n\nAdds [MiniMax](https://www.minimax.io/) as a first-class LLM provider alongside OpenAI, Google, Anthropic, Ollama, Custom, and Codex.\n\nMiniMax provides OpenAI-compatible API endpoints at `https://api.minimax.io/v1`, so the implementation cleanly reuses the existing OpenAI SDK methods (`A",
+    "url": "https://github.com/presenton/presenton/pull/460",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: presenton"
+    ]
+  },
+  {
+    "title": "[PR] Bump the all-dependencies group across 1 directory with 23 updates",
+    "date": "2026-04-05T04:17:37Z",
+    "summary": "Bumps the all-dependencies group with 23 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [org.springframework.boot:spring-boot-starter-parent](https://github.com/spring-projects/spring-boot) | `4.0.2` | `4.0.4` |\n| [org.testcontainers:testcontainers-bom](https://github.com",
+    "url": "https://github.com/navikt/familie-klage/pull/795",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: familie-klage"
+    ]
+  },
+  {
+    "title": "[PR] feat: Disruptive OS V6.0 \u2014 Complete NixOS + Kirobi AI repository scaffold",
+    "date": "2026-04-05T04:03:59Z",
+    "summary": "Bootstraps the **Disruptive OS V6.0** repository from a stub `README.md` into a fully populated, immediately deployable NixOS infrastructure for two dedicated machines: a local-first AI workstation (Ryzen 9 5900X + RTX 3090) and a ZFS-backed home server.\n\n## Root\n- **`README.md`** \u2014 Full project doc",
+    "url": "https://github.com/Kirobi92/Disruptive-OS-V6.0/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Disruptive-OS-V6.0"
+    ]
+  },
+  {
+    "title": "[PR] Update flake.lock",
+    "date": "2026-04-05T02:56:09Z",
+    "summary": "Automated changes by the [update-flake-lock](https://github.com/DeterminateSystems/update-flake-lock) GitHub Action.\n\n```\nFlake lock file updates:\n\n\u2022 Updated input 'home-manager':\n    'github:nix-community/home-manager/c6ed3eab64d23520bcbb858aa53fe2b533725d4a' (2026-02-21)\n  \u2192 'github:nix-community/",
+    "url": "https://github.com/ErnWong/dotfiles/pull/80",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dotfiles"
     ]
   }
 ]
