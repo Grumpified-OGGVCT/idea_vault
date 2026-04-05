@@ -550,12 +550,12 @@
   },
   {
     "title": "[PR] feat+fix: C# support, investigation-grade trace, semantic search, execution flows, channels, cross-repo intelligence",
-    "date": "2026-04-05T03:45:03Z",
+    "date": "2026-04-05T23:00:43Z",
     "summary": "## Summary\n\n40 commits adding major features and fixing critical bugs across the MCP handler, extraction layer, pipeline, store, and Cypher engine. Developed while stress-testing against large enterprise codebases and running real investigation scenarios.\n\n**Highlights:** C# blast radius analysis (0",
     "url": "https://github.com/DeusData/codebase-memory-mcp/pull/162",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "pull request",
       "repo: codebase-memory-mcp"
     ]
@@ -718,7 +718,7 @@
   },
   {
     "title": "[PR] feat: multi-layer model passthrough and SLM fallback improvements",
-    "date": "2026-04-05T22:32:27Z",
+    "date": "2026-04-05T22:51:40Z",
     "summary": "## Summary\n\nThis PR introduces significant enhancements to Isartor's multi-layer caching and request handling architecture.\n\n### Key Changes\n\n#### 1. **Model Passthrough Enhancement** (src/handler.rs)\n- Simplified OpenAI chat completions handling to forward full client requests\n- Preserves original ",
     "url": "https://github.com/isartor-ai/Isartor/pull/97",
     "source": "github_prs",
@@ -1182,6 +1182,54 @@
       "comments: 12",
       "pull request",
       "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] added custom api support for  the OpenYak",
+    "date": "2026-04-05T23:37:59Z",
+    "summary": "## Summary\r\n- Adds support for user-defined custom LLM providers via OpenAI-compatible endpoints\r\n- Adds backend APIs and startup registration for custom providers, including model discovery and connection testing\r\n- Fixes desktop backend startup and verifies Linux RPM packaging for the updated desk",
+    "url": "https://github.com/openyak/openyak/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: openyak"
+    ]
+  },
+  {
+    "title": "[PR] Knowledge Hub Phase 3-4, JSONType strong typing, agent latency optimization, and startup dead-state fix",
+    "date": "2026-04-05T23:34:57Z",
+    "summary": "## Summary\n\nLarge feature branch spanning Knowledge Hub Phase 3-4, JSONType improvements, agent performance optimization, and a critical startup bug fix.\n\n### Knowledge Hub Phase 3: Autotagging & Taxonomy\n- Pluggable content source types with JSON-driven configuration\n- Taxonomy bridge: connect MJ T",
+    "url": "https://github.com/MemberJunction/MJ/pull/2309",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(structural): extend CJS require() scope to var declarations",
+    "date": "2026-04-05T23:28:02Z",
+    "summary": "## Summary\n- The `const`-only restriction added in PR #65 (per CodeRabbit review) was too aggressive for CJS codebases like integrator-service that use `var x = require('./x')` at module top-level\n- Top-level `var` require assignments are effectively immutable in CJS modules \u2014 they are not reassigne",
+    "url": "https://github.com/john-wilmes/multi-model-analyzer/pull/105",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: multi-model-analyzer"
+    ]
+  },
+  {
+    "title": "[PR] feat: core Prism tools \u2014 SpendingSummary, AccountBalances, Cashflow",
+    "date": "2026-04-05T22:50:57Z",
+    "summary": "## Summary\n\nAdds the first three composable Prism tools. Each tool resolves its dependencies from the container, runs data through the privacy transformer, and returns a minimal `CloudPayload` JSON string the calling agent feeds directly into its next prompt.\n\n- `GetSpendingSummaryTool` \u2014 spending b",
+    "url": "https://github.com/the-shit/finance/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: finance"
     ]
   }
 ]
