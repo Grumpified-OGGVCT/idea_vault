@@ -166,7 +166,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-07T18:18:05Z",
+    "date": "2026-04-07T21:11:02Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -622,7 +622,7 @@
   },
   {
     "title": "[PR] feat: AIBOM v2 \u2014 1.0.0rc1",
-    "date": "2026-04-07T00:29:29Z",
+    "date": "2026-04-07T21:35:11Z",
     "summary": "## Summary\n\nComplete rewrite of the AIBOM scanning engine, replacing the v1 symbol-matching approach with a multi-tier detection pipeline that surfaces actionable signal instead of noise.\n\n**Version:** `1.0.0rc1`\n\n### What changed\n\n- **v2 data model**: Pydantic v2 models with 24 AI component types, ",
     "url": "https://github.com/cisco-ai-defense/aibom/pull/35",
     "source": "github_prs",
@@ -790,7 +790,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-04-07T17:34:08Z",
+    "date": "2026-04-07T21:21:04Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1042,8 +1042,8 @@
   },
   {
     "title": "[PR] chore(deps): Update terraform providers",
-    "date": "2026-04-07T09:49:18Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| amazon/aws-cli | kubernetes_cron_job_v1 | patch | `2.34.23` \u2192 `2.34.25` |\n| [ghcr.io/home-assistant/home-assistant](https://www.hom",
+    "date": "2026-04-07T21:14:16Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| amazon/aws-cli | kubernetes_cron_job_v1 | patch | `2.34.23` \u2192 `2.34.26` |\n| [ghcr.io/home-assistant/home-assistant](https://www.hom",
     "url": "https://github.com/STollenaar/infrastructure/pull/106",
     "source": "github_prs",
     "highlights": [
@@ -1338,6 +1338,30 @@
       "comments: 2",
       "pull request",
       "repo: Hermes-Desktop"
+    ]
+  },
+  {
+    "title": "[PR] fix: MCP Server full_access scope not granting permissions on OAuth tool calls",
+    "date": "2026-04-07T21:36:12Z",
+    "summary": "## Summary\n- **Primary fix**: `scopeMatchesHierarchically()` in Server.ts had no awareness of the `full_access` wildcard scope \u2014 when a user selected \"Full Access\" on the consent screen, every tool call was denied because `\"full_access\"` never matched required scopes like `\"entity:read\"`\n- **Seconda",
+    "url": "https://github.com/MemberJunction/MJ/pull/2324",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Bump the langchain4j group with 17 updates",
+    "date": "2026-04-07T21:18:58Z",
+    "summary": "Bumps the langchain4j group with 17 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [dev.langchain4j:langchain4j](https://github.com/langchain4j/langchain4j) | `1.11.0` | `1.12.2` |\n| [dev.langchain4j:langchain4j-open-ai](https://github.com/langchain4j/langchain4j) | `1.11.0` | `1.12.2` |\n| ",
+    "url": "https://github.com/sg-benchmarks/camel--1006f047/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: camel--1006f047"
     ]
   }
 ]
