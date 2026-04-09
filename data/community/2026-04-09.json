@@ -166,7 +166,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-09T00:45:40Z",
+    "date": "2026-04-09T05:26:44Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -586,7 +586,7 @@
   },
   {
     "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m4",
-    "date": "2026-04-09T01:50:38Z",
+    "date": "2026-04-09T06:52:54Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
     "url": "https://github.com/MartinWitt/BootFleet/pull/49",
     "source": "github_prs",
@@ -682,7 +682,7 @@
   },
   {
     "title": "[PR] Update langchain4j monorepo",
-    "date": "2026-04-09T00:47:33Z",
+    "date": "2026-04-09T05:32:37Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
     "url": "https://github.com/kpavlov/elven/pull/85",
     "source": "github_prs",
@@ -693,13 +693,13 @@
     ]
   },
   {
-    "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.8",
-    "date": "2026-04-09T00:40:41Z",
-    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.8`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.8\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2416",
+    "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.9",
+    "date": "2026-04-09T06:43:43Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.9`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.9\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2417",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
     "source": "github_prs",
     "highlights": [
-      "comments: 18",
+      "comments: 24",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -778,8 +778,8 @@
   },
   {
     "title": "[PR] feat: AIBOM v2 \u2014 1.0.0rc1",
-    "date": "2026-04-09T04:58:36Z",
-    "summary": "## Summary\n\nComplete rewrite of the AIBOM scanning engine, replacing the v1 symbol-matching approach with a multi-tier detection pipeline that surfaces actionable signal instead of noise.\n\n**Version:** `1.0.0rc1`\n\n### What changed\n\n- **v2 data model**: Pydantic v2 models with 24 AI component types, ",
+    "date": "2026-04-09T06:47:37Z",
+    "summary": "## Summary\n\nComplete rewrite of the AIBOM scanning engine, replacing the v1 symbol-matching approach with an agent-first, multi-tier detection pipeline that surfaces actionable signal instead of noise.\n\n**Version:** `1.0.0rc1`\n\n### Architecture\n\n```\nSource repo(s)\n      |\n  Repo Triage Agent (deep-s",
     "url": "https://github.com/cisco-ai-defense/aibom/pull/35",
     "source": "github_prs",
     "highlights": [
@@ -802,7 +802,7 @@
   },
   {
     "title": "[PR] feat: add Databricks serving provider plugin",
-    "date": "2026-04-09T04:47:14Z",
+    "date": "2026-04-09T06:16:13Z",
     "summary": "Address architectural feedback from the previous PR #62230.\r\n\r\n## Summary\r\n\r\nDescribe the problem and fix in 2\u20135 bullets:\r\n\r\n- **Problem**: OpenClaw lacked native support for Databricks Serving Models. Interacting with Databricks APIs via standard OpenAI proxy setups failed because Databricks requir",
     "url": "https://github.com/openclaw/openclaw/pull/63031",
     "source": "github_prs",
@@ -918,6 +918,54 @@
       "comments: 0",
       "pull request",
       "repo: infra"
+    ]
+  },
+  {
+    "title": "[PR] feat(docs): Add and update documentation for each node",
+    "date": "2026-04-09T07:15:36Z",
+    "summary": "## Summary\r\n\r\n<!-- Describe your changes in 1-3 bullet points -->\r\n\r\nPer internal discussions and conversations regarding [Issue 630](https://github.com/rocketride-org/rocketride-server/issues/630) - we are consolidating documentation in the monorepo with the objective of utilizing a RocketRide pipe",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/639",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] Fix JsonSchemaExist error handling and alert",
+    "date": "2026-04-09T06:59:35Z",
+    "summary": "This PR resolves the TODO in `JsonSchemaExist.java` (and the identical TODO in `JsonEventMatcher.java`) by properly alerting the user and throwing an exception when an invalid JSON string is encountered, instead of simply printing the stack trace.\n\nChanges made:\n- Added `org.slf4j.Logger` to `JsonSc",
+    "url": "https://github.com/pohi99999/mcp-brunella-core/pull/154",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: mcp-brunella-core"
+    ]
+  },
+  {
+    "title": "[PR] Fix: Throw RuntimeException on JsonProcessingException",
+    "date": "2026-04-09T05:59:59Z",
+    "summary": "Replaced `e.printStackTrace();` in `JsonProcessingException` catch blocks within `JsonEventMatcher.java` and `JsonSchemaExist.java` with a `RuntimeException` to adequately propagate failures and address TODOs.\n\n---\n*PR created automatically by Jules for task [11639822922501404645](https://jules.goog",
+    "url": "https://github.com/pohi99999/mcp-brunella-core/pull/150",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: mcp-brunella-core"
+    ]
+  },
+  {
+    "title": "[PR] feat: file-based artifact I/O \u2014 agents can generate and receive PDF, Excel, and Word files",
+    "date": "2026-04-09T05:55:32Z",
+    "summary": "## Summary\n\nEnd-to-end implementation enabling MemberJunction AI agents to both **generate** (PDF, Excel, Word) and **view** (PDF, Excel, Word) files as first-class artifacts in conversations. Agents build documents incrementally across multiple turns, store them in MJStorage, and the artifact viewe",
+    "url": "https://github.com/MemberJunction/MJ/pull/2129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
