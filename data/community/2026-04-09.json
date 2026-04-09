@@ -958,7 +958,7 @@
   },
   {
     "title": "[PR] feat: file-based artifact I/O \u2014 agents can generate and receive PDF, Excel, and Word files",
-    "date": "2026-04-09T05:55:32Z",
+    "date": "2026-04-09T17:01:43Z",
     "summary": "## Summary\n\nEnd-to-end implementation enabling MemberJunction AI agents to both **generate** (PDF, Excel, Word) and **view** (PDF, Excel, Word) files as first-class artifacts in conversations. Agents build documents incrementally across multiple turns, store them in MJStorage, and the artifact viewe",
     "url": "https://github.com/MemberJunction/MJ/pull/2129",
     "source": "github_prs",
@@ -982,7 +982,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-09T14:40:31Z",
+    "date": "2026-04-09T17:01:41Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/LLRHook/kilocode/pull/1",
     "source": "github_prs",
@@ -994,7 +994,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-09T14:39:34Z",
+    "date": "2026-04-09T17:01:43Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1006,7 +1006,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-09T14:41:51Z",
+    "date": "2026-04-09T17:01:44Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/thomasboom/kilocode/pull/1",
     "source": "github_prs",
@@ -1078,12 +1078,12 @@
   },
   {
     "title": "[PR] python3Packages.tenacity: 9.1.2 -> 9.1.4",
-    "date": "2026-04-09T11:18:26Z",
+    "date": "2026-04-09T17:09:14Z",
     "summary": "<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or describe changes, this helps your fellow maintainers discover breaking updates.\r\nFor new packages please briefly describe the package or provide a link to",
     "url": "https://github.com/NixOS/nixpkgs/pull/403127",
     "source": "github_prs",
     "highlights": [
-      "comments: 17",
+      "comments: 20",
       "pull request",
       "repo: nixpkgs"
     ]
@@ -1126,12 +1126,12 @@
   },
   {
     "title": "[PR] wip(mcp): implement admin oauth step 10 (AYC-110)",
-    "date": "2026-04-09T14:12:17Z",
-    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Touches MCP OAuth state handling and frontend redirect logic; mistakes could cause broken OAuth flows or unsafe redirect behavior, though the PR adds explicit path sanitization to mitigate this.\n> \n> **Overview**\n> Adds a `returnPath` to the MCP ",
+    "date": "2026-04-09T16:18:43Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Touches OAuth state/redirect handling and adds a user-provided `returnTo` parameter, which is security-sensitive (open-redirect) even though paths are sanitized; also changes authorization UX across admin/user screens and assignment gating.\n> \n> ",
     "url": "https://github.com/ayunis-core/ayunis-core/pull/550",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 4",
       "pull request",
       "repo: ayunis-core"
     ]
@@ -1150,7 +1150,7 @@
   },
   {
     "title": "[PR] feat: integrate GLM-OCR Pro local extraction dashboard",
-    "date": "2026-04-09T13:38:51Z",
+    "date": "2026-04-09T16:34:05Z",
     "summary": "Adds a high-performance local-first OCR dashboard utilizing GLM-OCR and Streamlit for structured document extraction.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Introduced GLM-OCR Pro: local document extraction UI with",
     "url": "https://github.com/Sumanth077/Hands-On-AI-Engineering/pull/28",
     "source": "github_prs",
@@ -1210,7 +1210,7 @@
   },
   {
     "title": "[PR] Update to CodeIgniter 4.7.2",
-    "date": "2026-04-09T15:09:33Z",
+    "date": "2026-04-09T16:59:51Z",
     "summary": "This Pull Request updates all necessary files to bring the application to CodeIgniter 4.7.2. 4.6.3 has known vulnerabilities, so this change must happen.\r\n\r\n- [ ] PHP 8.2 is now required for this project. Update existing Wiki, Readme and documentation to reflect this.\r\n- [x] Upgrade 4.6.3 > 4.6.4\r\n-",
     "url": "https://github.com/opensourcepos/opensourcepos/pull/4485",
     "source": "github_prs",
@@ -1278,6 +1278,150 @@
       "comments: 2",
       "pull request",
       "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update go-minor to v0.42.0",
+    "date": "2026-04-09T17:09:01Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-site-management/pull/175",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-site-management"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update go-minor to v0.42.0",
+    "date": "2026-04-09T17:07:13Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-lib-go-dbaas-postgres-client/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-lib-go-dbaas-postgres-client"
+    ]
+  },
+  {
+    "title": "[PR] fix(cli): recurse into subdirectories when scanning HF cache for GGUFs",
+    "date": "2026-04-09T17:06:23Z",
+    "summary": "## Summary\n- `ListCachedFiles` only scanned the top level of each snapshot directory, so GGUF files in subdirectories (e.g. `gguf/navlink-v2-Q8_0.gguf`) were invisible to `LocateGGUF` and `lf models path`.\n- Replaced the flat `os.ReadDir` loop with `filepath.WalkDir` to recurse into subdirectories, ",
+    "url": "https://github.com/llama-farm/llamafarm/pull/814",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: llamafarm"
+    ]
+  },
+  {
+    "title": "[PR] chore(main): release 1.0.0",
+    "date": "2026-04-09T17:05:52Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## 1.0.0 (2026-04-09)\n\n\n### Features\n\n* **#1465:** brain health probes \u2014 exercise services with real inputs ([158eea3](https://github.com/Glad-Labs/glad-labs-engine/commit/158eea30b6f6ff7196d6eb5d8b6af67cc99f7326))\n* 15 self-healing tasks in idle ",
+    "url": "https://github.com/Glad-Labs/glad-labs-engine/pull/1516",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: glad-labs-engine"
+    ]
+  },
+  {
+    "title": "[PR] feat(deps): update module github.com/testcontainers/testcontainers-go (v0.40.0 \u2192 v0.42.0)",
+    "date": "2026-04-09T17:05:43Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/rkoosaar/containers/pull/80",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: containers"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency dev.langchain4j:langchain4j-bom to v1.13.0",
+    "date": "2026-04-09T17:05:35Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
+    "url": "https://github.com/kpavlov/quarkus-assistant-demo/pull/51",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: quarkus-assistant-demo"
+    ]
+  },
+  {
+    "title": "[PR] feat(deps): update module github.com/testcontainers/testcontainers-go (v0.40.0 \u2192 v0.42.0)",
+    "date": "2026-04-09T17:05:15Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/denniseffing/containers/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: containers"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-04-09T17:02:58Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [clo",
+    "url": "https://github.com/get-eventually/go-eventually/pull/285",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: go-eventually"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-04-09T17:01:16Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-go monorepo to v0.42.0",
+    "date": "2026-04-09T16:56:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/cloudposse/test-helpers/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: test-helpers"
+    ]
+  },
+  {
+    "title": "[PR] feat(deps): update module github.com/testcontainers/testcontainers-go (v0.40.0 \u2192 v0.42.0)",
+    "date": "2026-04-09T16:22:44Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | Age | Confidence |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontainers-go) | `v0.40.0` -> `v0.42.0` | [![age](https://developer.mend.io/api/mc/badges/age/go/github.co",
+    "url": "https://github.com/6ixfalls/containers/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: containers"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go to v0.42.0",
+    "date": "2026-04-09T16:16:50Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/camunda-community-hub/zeebe-client-go/pull/12",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: zeebe-client-go"
     ]
   }
 ]
