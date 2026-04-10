@@ -754,12 +754,12 @@
   },
   {
     "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.9",
-    "date": "2026-04-10T06:46:42Z",
-    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.9`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.9\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2423",
+    "date": "2026-04-10T12:25:48Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.9`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.9\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2424",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
     "source": "github_prs",
     "highlights": [
-      "comments: 43",
+      "comments: 48",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -886,7 +886,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-10T11:39:21Z",
+    "date": "2026-04-10T12:51:54Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/thomasboom/kilocode/pull/1",
     "source": "github_prs",
@@ -898,7 +898,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-10T11:37:46Z",
+    "date": "2026-04-10T12:51:41Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/LLRHook/kilocode/pull/1",
     "source": "github_prs",
@@ -910,7 +910,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-10T11:37:45Z",
+    "date": "2026-04-10T12:50:10Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1162,12 +1162,12 @@
   },
   {
     "title": "[PR] Coding Agent Project Files",
-    "date": "2026-04-10T11:26:11Z",
+    "date": "2026-04-10T12:52:00Z",
     "summary": "These are initially created by opencode and Claude Code, then hand crafted with all the nuances of the project.  There are a lot of nuances.\r\n\r\nThere are a series of CLAUDE.md \"working knowledge\" files in the \"framework/\" directory documenting the classes in them.  There is a set of \"WORKING MEMORY\"",
     "url": "https://github.com/pradosoft/prado/pull/1034",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 13",
       "pull request",
       "repo: prado"
     ]
@@ -1258,12 +1258,12 @@
   },
   {
     "title": "[PR] wip(mcp): implement admin oauth step 10 (AYC-110)",
-    "date": "2026-04-10T11:56:45Z",
-    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Touches the MCP OAuth flow and callback redirect behavior, which is security-sensitive (open-redirect risk) and user-facing. Mitigations are added via return-path sanitization, but incorrect handling could break OAuth completion or redirects.\n> \n",
+    "date": "2026-04-10T12:27:38Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Touches the MCP OAuth authorization flow end-to-end (state payload, redirect URIs, controller redirects, and use-case return types), so regressions could break login/redirect behavior. Adds open-redirect hardening, but the new return-path handlin",
     "url": "https://github.com/ayunis-core/ayunis-core/pull/550",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 11",
       "pull request",
       "repo: ayunis-core"
     ]
@@ -1314,6 +1314,66 @@
       "comments: 0",
       "pull request",
       "repo: funnel"
+    ]
+  },
+  {
+    "title": "\u5168\u4e16\u754c\u6700\u597d\u7684\u5927\u8bed\u8a00\u6a21\u578b\u8d44\u6e90\u6c47\u603b",
+    "date": "2026-03-23T14:45:10Z",
+    "summary": "\n\n#### Contents\n\n- [\u6570\u636e Data](#\u6570\u636e-Data)\n- [\u5fae\u8c03 Fine-Tuning](#\u5fae\u8c03-Fine-Tuning)\n- [\u63a8\u7406 Inference](#\u63a8\u7406-Inference)\n- [\u8bc4\u4f30 Evaluation](#\u8bc4\u4f30-Evaluation)\n- [\u4f53\u9a8c Usage](#\u4f53\u9a8c-Usage)\n- [\u77e5\u8bc6\u5e93 RAG](#\u77e5\u8bc6\u5e93-RAG)\n- [\u667a\u80fd\u4f53 Agents](#\u667a\u80fd\u4f53-Agents)\n- [\u641c\u7d22 Search](#\u641c\u7d22-Search)\n- [\u4e66\u7c4d Book](#\u4e66\u7c4d-Book)\n- [\u8bfe\u7a0b Course](#\u8bfe\u7a0b-Course)\n- [\u6559\u7a0b Tutor",
+    "url": "https://github.com/kaozb/ai-arctl/issues/11",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 3",
+      "state: open",
+      "repo: ai-arctl"
+    ]
+  },
+  {
+    "title": "[PR] Update to CodeIgniter 4.7.2",
+    "date": "2026-04-10T13:17:36Z",
+    "summary": "This Pull Request updates all necessary files to bring the application to CodeIgniter 4.7.2. 4.6.3 has known vulnerabilities, so this change must happen.\r\n\r\n- [x] PHP 8.2 is now required for this project. Update existing Wiki, Readme and documentation to reflect this.\r\n- [x] Upgrade 4.6.3 > 4.6.4\r\n-",
+    "url": "https://github.com/opensourcepos/opensourcepos/pull/4485",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: opensourcepos"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the llm group across 1 directory with 4 updates",
+    "date": "2026-04-10T13:13:38Z",
+    "summary": "Bumps the llm group with 4 updates in the /api directory: [langsmith](https://github.com/langchain-ai/langsmith-sdk), [mlflow-skinny](https://github.com/mlflow/mlflow), [opik](https://github.com/comet-ml/opik) and [transformers](https://github.com/huggingface/transformers).\n\nUpdates `langsmith` from",
+    "url": "https://github.com/jason23452/dify-open-parent_message_id/pull/46",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dify-open-parent_message_id"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update testcontainers-go monorepo to v0.42.0",
+    "date": "2026-04-10T12:58:43Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/mdelapenya/testcontainers-go-examples/pull/72",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: testcontainers-go-examples"
+    ]
+  },
+  {
+    "title": "[PR] deps: update mlflow to v3.11.1 [SECURITY]",
+    "date": "2026-04-10T12:58:41Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [mlflow](https://redirect.gi",
+    "url": "https://github.com/bapt-dbn/course_mlops_spam_classifier/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: course_mlops_spam_classifier"
     ]
   }
 ]
