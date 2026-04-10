@@ -346,12 +346,12 @@
   },
   {
     "title": "OpenAI Node: Analyze Image only shows GPT-4o models, excludes newer vision-capable models",
-    "date": "2026-04-10T18:18:10Z",
+    "date": "2026-04-10T20:06:14Z",
     "summary": "### Bug Description\n\nThe Analyze Image operation's model dropdown only shows models containing `vision` or `gpt-4o` in their ID. This is because `imageModelSearch` in `listSearch.ts` uses a stale whitelist filter:\n\n```typescript\n(model) => model.id.includes('vision') || model.id.includes('gpt-4o')\n`",
     "url": "https://github.com/n8n-io/n8n/issues/28056",
     "source": "github_issues",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "state: open",
       "repo: n8n"
     ]
@@ -610,12 +610,12 @@
   },
   {
     "title": "[PR] Implement codebase indexing for CLI and new extension",
-    "date": "2026-04-10T19:40:29Z",
+    "date": "2026-04-10T20:38:20Z",
     "summary": "## Context\r\n\r\nCloses #6144\r\n\r\n## Implementation\r\n\r\nFor the backend, migrates the legacy codebase indexing backend into the new codebase, locating as much code as possible in a `kilo-indexing` package as an opencode plugin, which currently is automatically enabled, but allows the indexing backend to ",
     "url": "https://github.com/Kilo-Org/kilocode/pull/6966",
     "source": "github_prs",
     "highlights": [
-      "comments: 47",
+      "comments: 48",
       "pull request",
       "repo: kilocode"
     ]
@@ -742,12 +742,12 @@
   },
   {
     "title": "[PR] feat: AIBOM v2 \u2014 1.0.0rc1",
-    "date": "2026-04-10T19:06:57Z",
+    "date": "2026-04-10T19:55:07Z",
     "summary": "## Summary\n\nComplete rewrite of the AIBOM scanning engine, replacing the v1 symbol-matching approach with an agent-first, multi-tier detection pipeline that surfaces actionable signal instead of noise.\n\n**Version:** `1.0.0rc1`\n\n### Architecture\n\n```\nSource repo(s) / container image(s)\n      \u2502\n  Repo",
     "url": "https://github.com/cisco-ai-defense/aibom/pull/35",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 2",
       "pull request",
       "repo: aibom"
     ]
@@ -886,7 +886,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-10T19:51:09Z",
+    "date": "2026-04-10T20:38:44Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/thomasboom/kilocode/pull/1",
     "source": "github_prs",
@@ -910,7 +910,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-10T19:50:00Z",
+    "date": "2026-04-10T20:38:42Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -933,8 +933,8 @@
     ]
   },
   {
-    "title": "[PR] Update dependency llama-stack-api to v0.7.1",
-    "date": "2026-04-10T17:59:21Z",
+    "title": "[PR] fix(deps): update dependency llama-stack-api to v0.7.1",
+    "date": "2026-04-10T20:10:36Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-stack-api](https://redirect.github.com/llamastack/llama-stack) | `==0.5.0` \u2192 `==0.7.1` | ![a",
     "url": "https://github.com/syedriko/lightspeed-core-rag-content/pull/134",
     "source": "github_prs",
@@ -982,7 +982,7 @@
   },
   {
     "title": "[PR] Phase 0: RadAI backend, Docker stack, and infrastructure",
-    "date": "2026-04-10T08:18:18Z",
+    "date": "2026-04-10T20:04:27Z",
     "summary": "## Summary\n- **FastAPI backend** with full API routes (auth, studies, AI jobs, reports, voice dictation)\n- **7-service Docker Compose stack**: OHIF v3.12, Orthanc PACS, PostgreSQL 16, Redis 7, FastAPI, Celery worker, Nginx reverse proxy\n- **AI model integrations**: TotalSegmentator, nnInteractive, M",
     "url": "https://github.com/hasanbegzadeh/MedAI/pull/1",
     "source": "github_prs",
@@ -1162,7 +1162,7 @@
   },
   {
     "title": "[PR] Coding Agent Project Files",
-    "date": "2026-04-10T19:42:46Z",
+    "date": "2026-04-10T20:24:47Z",
     "summary": "These are initially created by opencode and Claude Code, then hand crafted with all the nuances of the project.  There are a lot of nuances.\r\n\r\nThere are a series of CLAUDE.md \"working knowledge\" files in the \"framework/\" directory documenting the classes in them.  There is a set of \"WORKING MEMORY\"",
     "url": "https://github.com/pradosoft/prado/pull/1034",
     "source": "github_prs",
@@ -1402,7 +1402,7 @@
   },
   {
     "title": "[PR] Add AI assistant with provider-agnostic chat and tool use",
-    "date": "2026-04-10T19:25:11Z",
+    "date": "2026-04-10T20:27:51Z",
     "summary": "## Summary\nIntroduces a comprehensive AI assistant feature that enables users to interact with inventory and warehouse management through natural language. The system supports multiple AI providers (Claude, OpenAI, OpenRouter, Ollama) and includes 20+ tools for querying and managing tools, chemicals",
     "url": "https://github.com/PapaBear1981/SupplyLine-V2/pull/51",
     "source": "github_prs",
@@ -1486,7 +1486,7 @@
   },
   {
     "title": "[PR] Changed: Update image ghcr.io/open-webui/open-webui to v0.8.12",
-    "date": "2026-04-10T15:06:31Z",
+    "date": "2026-04-10T20:37:21Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.3` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n<",
     "url": "https://github.com/jlejeune/k3s-homelab/pull/663",
     "source": "github_prs",
@@ -1714,12 +1714,12 @@
   },
   {
     "title": "[PR] docs: hybrid retrieval + multilingual design plan",
-    "date": "2026-04-10T19:51:15Z",
+    "date": "2026-04-10T20:37:40Z",
     "summary": "## Summary\n\nThree-layer design plan closing the framing of #195 (chunked storage) in favor of a lower-blast-radius approach. Tracked across three new issues: #238 (hybrid retrieval), #239 (bge-m3 multilingual embeddings), #240 (proposition extraction, experimental).\n\n**Full design:** `docs/design/hy",
     "url": "https://github.com/cmeans/mcp-awareness/pull/241",
     "source": "github_prs",
     "highlights": [
-      "comments: 14",
+      "comments: 17",
       "pull request",
       "repo: mcp-awareness"
     ]
@@ -1734,6 +1734,42 @@
       "comments: 0",
       "pull request",
       "repo: Mentra-Notes-local"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Ollama Cloud as a subscription provider",
+    "date": "2026-04-10T20:38:58Z",
+    "summary": "## Summary\n\nAdds **Ollama Cloud** (https://ollama.com) as a new subscription-tab provider alongside the existing local Ollama integration. Users connect it by pasting an API key from `ollama.com/settings/keys`. Discovery hits `https://ollama.com/api/tags` and the proxy forwards chat completions to `",
+    "url": "https://github.com/mnfst/manifest/pull/1516",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: manifest"
+    ]
+  },
+  {
+    "title": "[PR] fix(social): migrate Buffer integration from deprecated REST v1 to GraphQL API",
+    "date": "2026-04-10T20:00:47Z",
+    "summary": "## Summary\n\n- Migrate all Buffer actions from the deprecated v1 REST API (`api.bufferapp.com/1`) to the new GraphQL API (`api.buffer.com`) \u2014 the old endpoints reject new API keys\n- Rename profiles \u2192 channels, updates \u2192 posts to match Buffer's new API concepts\n- Add `BufferPostStatus` and `BufferShar",
+    "url": "https://github.com/MemberJunction/MJ/pull/2345",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the pip group across 1 directory with 11 updates",
+    "date": "2026-04-10T19:52:40Z",
+    "summary": "Bumps the pip group with 11 updates in the /climate-advisor/service directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [cryptography](https://github.com/pyca/cryptography) | `46.0.3` | `46.0.7` |\n| [langchain-core](https://github.com/langchain-ai/langchain) | `1.2.7` | `1.2.28` |\n| [langgraph",
+    "url": "https://github.com/Open-Earth-Foundation/CityCatalyst/pull/2477",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: CityCatalyst"
     ]
   }
 ]
