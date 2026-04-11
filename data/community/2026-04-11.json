@@ -166,12 +166,12 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant+RotorQuant implementation",
-    "date": "2026-04-11T19:27:28Z",
+    "date": "2026-04-11T23:33:03Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
     "highlights": [
-      "comments: 31",
+      "comments: 33",
       "state: open",
       "repo: ollama"
     ]
@@ -1102,7 +1102,7 @@
   },
   {
     "title": "[PR] feat(dreamer): local background walks, signal scoring, digests, UI",
-    "date": "2026-04-11T21:06:38Z",
+    "date": "2026-04-11T23:37:34Z",
     "summary": "## Summary\r\n\r\nAdds a **Dreamer** background worker inside Hermes Desktop: periodic free-association walks on a **local** LLM (Ollama-compatible via existing `OpenAiClient`), heuristic **signal scoring** with decay and echo discount, optional **Discord digests** (postcards), and a **sandboxed project",
     "url": "https://github.com/RedWoodOG/Hermes-Desktop/pull/21",
     "source": "github_prs",
@@ -1174,7 +1174,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-11T17:58:59Z",
+    "date": "2026-04-11T23:01:03Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1570,7 +1570,7 @@
   },
   {
     "title": "[PR] llm/open-router: add retry logic for 429 rate limit responses",
-    "date": "2026-04-11T22:20:36Z",
+    "date": "2026-04-11T23:25:17Z",
     "summary": "# Summary\r\n- Implement retry mechanism for OpenRouter LLM client to handle 429 (Too Many Requests) responses\r\n- Automatically retries requests when OpenRouter returns rate limit errors\r\n\r\n# Changes\r\n- Added retry logic to handle HTTP 429 responses from OpenRouter API\r\n- Allows failed requests to be ",
     "url": "https://github.com/meschbach/marvin/pull/2",
     "source": "github_prs",
@@ -1614,6 +1614,30 @@
       "comments: 0",
       "pull request",
       "repo: PHMNP-Private-Practice-"
+    ]
+  },
+  {
+    "title": "[PR] fix(openclaw): bypass LiteLLM for Responses API to fix streaming 500s",
+    "date": "2026-04-11T23:35:31Z",
+    "summary": "## Summary\n\n- Routes OpenClaw directly to Lemonade `/api/v1` endpoint on **AMD deployments only**, bypassing LiteLLM\n- Fixes HTTP 500 errors when OpenClaw uses the streaming Responses API through LiteLLM v1.81.3\n- Uses the existing `compose.{gpu_backend}.yaml` overlay mechanism \u2014 no changes to non-A",
+    "url": "https://github.com/Light-Heart-Labs/DreamServer/pull/913",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: DreamServer"
+    ]
+  },
+  {
+    "title": "[PR] release/1.2.0",
+    "date": "2026-04-11T22:59:42Z",
+    "summary": "",
+    "url": "https://github.com/tmseidel/ai-git-bot/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ai-git-bot"
     ]
   }
 ]
