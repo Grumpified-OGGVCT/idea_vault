@@ -166,12 +166,12 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant+RotorQuant implementation",
-    "date": "2026-04-11T01:28:43Z",
+    "date": "2026-04-11T19:27:28Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
     "highlights": [
-      "comments: 30",
+      "comments: 31",
       "state: open",
       "repo: ollama"
     ]
@@ -1458,6 +1458,30 @@
       "comments: 15",
       "pull request",
       "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Switch default Gemini model to flash-lite; add per-model !switch shortcuts",
+    "date": "2026-04-11T19:17:48Z",
+    "summary": "Default Gemini model was `gemini-2.5-flash`; switching to `gemini-2.5-flash-lite` (15 RPM, ~200ms TTFT \u2014 best free-tier latency). Adds runtime Gemini model switching so users can swap models without redeploying.\n\n## Model state\n- `GEMINI_MODEL` constant \u2192 mutable `_gemini_model` global with `get_gem",
+    "url": "https://github.com/xrvk/scout-report/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: scout-report"
+    ]
+  },
+  {
+    "title": "[PR] cmd/tui: add interactive model browser for pull command",
+    "date": "2026-04-11T19:05:31Z",
+    "summary": "Closes #286\n\n## What this does\n\nRunning `ollama pull` with no arguments now launches an interactive TUI\nmodel browser. Use \u2191/\u2193 to navigate, \u2192 to drill into available tags for\na model, \u2190 to go back, and Enter to pull. The existing `ollama pull\n<model>` flow is completely unchanged \u2014 the menu only act",
+    "url": "https://github.com/ollama/ollama/pull/15492",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ollama"
     ]
   }
 ]
