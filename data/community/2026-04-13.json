@@ -190,7 +190,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-13T09:48:54Z",
+    "date": "2026-04-13T13:56:00Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -286,12 +286,12 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant+RotorQuant implementation",
-    "date": "2026-04-13T08:52:33Z",
+    "date": "2026-04-13T13:46:40Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
     "highlights": [
-      "comments: 36",
+      "comments: 37",
       "state: open",
       "repo: ollama"
     ]
@@ -550,7 +550,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-04-13T08:44:14Z",
+    "date": "2026-04-13T14:44:12Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1017,9 +1017,9 @@
     ]
   },
   {
-    "title": "[PR] refactor: migrate to make critical infrastructure easier to manage",
-    "date": "2026-04-13T11:57:27Z",
-    "summary": "# Tasks Completed\r\n- Single Infrastructure Kustomization -> Multiple Kustomizations with proper dependencies set\r\n- Redis Operator (unstable operator) -> Dragonfly operator\r\n- Redis Databases -> Dragonfly databases\r\n- Ingress -> Gateway API\r\n- Vault -> Cloud Infisical [makes bootstraping clusters ea",
+    "title": "[PR] feat: migrate to Gateway API, DragonflyDB, Infisical, and per-service Kustomization structure",
+    "date": "2026-04-13T13:22:52Z",
+    "summary": "## Summary\r\n\r\nThis is a major infrastructure overhaul developed and validated on a dev cluster before merging to production. It touches four distinct areas:\r\n\r\n- **Gateway API**: Replace Traefik with Envoy Gateway for all ingress, using `HTTPRoute`/`TLSRoute`/`TCPRoute`\r\n- **DragonflyDB**: Replace R",
     "url": "https://github.com/dreadster3/home-ops/pull/153",
     "source": "github_prs",
     "highlights": [
@@ -1042,7 +1042,7 @@
   },
   {
     "title": "[PR] [GraphRAG][v2] Implementation of Agentic Retrieval and Performance enhancement of KG construction & Semantic Beam Search",
-    "date": "2026-04-13T10:35:40Z",
+    "date": "2026-04-13T14:01:23Z",
     "summary": "## Summary\r\nThis PR introduces the new  Agentic Retrieval and  improvements in **Knowledge Graph (KG) construction** and **semantic search**, focusing on performance, scalability, and reliability.\r\n\r\n---\r\n## 1. Agentic Retrieval\r\n- Introduced **session-based agent orchestration** initiated from the ",
     "url": "https://github.com/miyurud/jasminegraph/pull/350",
     "source": "github_prs",
@@ -1066,7 +1066,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-04-13T10:19:33Z",
+    "date": "2026-04-13T14:37:09Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1078,7 +1078,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-13T11:41:28Z",
+    "date": "2026-04-13T14:52:37Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1114,7 +1114,7 @@
   },
   {
     "title": "[PR] fix: add SSRF protection to AI model provider URLs",
-    "date": "2026-04-13T09:35:15Z",
+    "date": "2026-04-13T14:11:27Z",
     "summary": "## Summary\n\nCloses SSRF vulnerability in AI model endpoints (`/api/ai/model/chat` and `/api/ai/model`).\n\nA tenant admin could specify an internal network address (e.g. `http://172.17.0.1:22`) as a provider base URL and use \"Check connectivity\" to scan internal services. The server would make the req",
     "url": "https://github.com/thingsboard/thingsboard/pull/15412",
     "source": "github_prs",
@@ -1230,6 +1230,174 @@
       "comments: 1",
       "pull request",
       "repo: PodcastAnalyzer"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-04-13T14:53:24Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/arthrod/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] Feat/lightspeed notebook chat",
+    "date": "2026-04-13T14:44:14Z",
+    "summary": "## Hey, I just made a Pull Request!\r\n\r\nDepends on this https://github.com/redhat-developer/rhdh-plugins/pull/2704 , this should be merged only after https://github.com/redhat-developer/rhdh-plugins/pull/2704 got merged.\r\n\r\nDepends on this backend PR too. https://github.com/redhat-developer/rhdh-plug",
+    "url": "https://github.com/redhat-developer/rhdh-plugins/pull/2754",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: rhdh-plugins"
+    ]
+  },
+  {
+    "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
+    "date": "2026-04-13T14:33:09Z",
+    "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
+    "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: OpenMAIC"
+    ]
+  },
+  {
+    "title": "[PR] Bump the llm group in /api with 4 updates",
+    "date": "2026-04-13T14:29:23Z",
+    "summary": "Bumps the llm group in /api with 4 updates: [langfuse](https://github.com/langfuse/langfuse), [langsmith](https://github.com/langchain-ai/langsmith-sdk), [mlflow-skinny](https://github.com/mlflow/mlflow) and [opik](https://github.com/comet-ml/opik).\n\nUpdates `langfuse` from 4.0.1 to 4.2.0\n<details>\n",
+    "url": "https://github.com/tienlinhkh79/dify-vismarttech/pull/13",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dify-vismarttech"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps)(deps): bump the python-dependencies group across 1 directory with 13 updates",
+    "date": "2026-04-13T14:16:09Z",
+    "summary": "Updates the requirements on [mcp](https://github.com/modelcontextprotocol/python-sdk), [pydantic](https://github.com/pydantic/pydantic), [uvicorn](https://github.com/Kludex/uvicorn), [pytest](https://github.com/pytest-dev/pytest), [charset-normalizer](https://github.com/jawah/charset_normalizer), [c",
+    "url": "https://github.com/itstanner5216/multi-mcp/pull/22",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: multi-mcp"
+    ]
+  },
+  {
+    "title": "[PR] deps: bump the python-dependencies group with 19 updates",
+    "date": "2026-04-13T14:09:00Z",
+    "summary": "Updates the requirements on [rich](https://github.com/Textualize/rich), [langsmith](https://github.com/langchain-ai/langsmith-sdk), [langchain-core](https://github.com/langchain-ai/langchain), [langchain-openai](https://github.com/langchain-ai/langchain), [langchain-anthropic](https://github.com/lan",
+    "url": "https://github.com/langchain-ai/langsmith-data-migration-tool/pull/69",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: langsmith-data-migration-tool"
+    ]
+  },
+  {
+    "title": "[PR] deps(deps): bump the python-minor group with 3 updates",
+    "date": "2026-04-13T14:02:44Z",
+    "summary": "Bumps the python-minor group with 3 updates: [langchain-core](https://github.com/langchain-ai/langchain), [langsmith](https://github.com/langchain-ai/langsmith-sdk) and [pydantic](https://github.com/pydantic/pydantic).\n\nUpdates `langchain-core` from 1.2.26 to 1.2.28\n<details>\n<summary>Release notes<",
+    "url": "https://github.com/stranske/Portable-Alpha-Extension-Model/pull/1559",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: Portable-Alpha-Extension-Model"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump github.com/testcontainers/testcontainers-go from 0.41.0 to 0.42.0",
+    "date": "2026-04-13T14:00:09Z",
+    "summary": "Bumps [github.com/testcontainers/testcontainers-go](https://github.com/testcontainers/testcontainers-go) from 0.41.0 to 0.42.0.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/testcontainers/testcontainers-go/releases\">github.com/testcontainers/testcontaine",
+    "url": "https://github.com/bsv-blockchain/go-bsv-middleware/pull/218",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: go-bsv-middleware"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-04-13T13:44:28Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/onedr0p/home-assistant to v2025",
+    "date": "2026-04-13T13:37:14Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/onedr0p/home-assistant](https://ghcr.io/onedr0p/home-assistant) ([source](https://togithub.com/home-assistant/core)) | major | `2023.6.3` -> `2025.1.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not b",
+    "url": "https://github.com/apheon-terra/01_k3s_ops/pull/13964",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: 01_k3s_ops"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-04-13T13:26:57Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] Pii",
+    "date": "2026-04-13T13:21:35Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/arthrod/open-webui/pull/64",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: open-webui"
+    ]
+  },
+  {
+    "title": "[PR] Update langchain4j monorepo to v1.13.0",
+    "date": "2026-04-13T13:19:37Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
+    "url": "https://github.com/kpavlov/langchain4j-kotlin/pull/186",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: langchain4j-kotlin"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Update terraform providers",
+    "date": "2026-04-13T13:16:00Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| amazon/aws-cli | kubernetes_cron_job_v1 | patch | `2.34.23` \u2192 `2.34.29` |\n| [ghcr.io/haveagitgat/tdarr](https://redirect.github.com",
+    "url": "https://github.com/STollenaar/infrastructure/pull/106",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: infrastructure"
     ]
   }
 ]
