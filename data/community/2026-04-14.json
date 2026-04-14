@@ -178,7 +178,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-14T08:46:38Z",
+    "date": "2026-04-14T14:36:41Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -526,7 +526,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-04-14T08:44:11Z",
+    "date": "2026-04-14T14:44:12Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -874,7 +874,7 @@
   },
   {
     "title": "[PR] Release 2.4.4: Mobile Local LLM adapter & production hardening",
-    "date": "2026-04-14T13:50:15Z",
+    "date": "2026-04-14T15:17:25Z",
     "summary": "## Summary\n\n- **Mobile Local LLM Adapter**: New adapter for on-device Gemma 4 inference on capable Android devices\n- **Desktop Capability Detection**: Actual RAM/disk detection for local inference server support\n- **Local Server Discovery**: UI to discover and start local LLM servers (llama.cpp, Oll",
     "url": "https://github.com/CIRISAI/CIRISAgent/pull/673",
     "source": "github_prs",
@@ -922,7 +922,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-14T13:09:34Z",
+    "date": "2026-04-14T14:26:54Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -945,9 +945,9 @@
     ]
   },
   {
-    "title": "[PR] Add memory consolidation spec and implementation plan",
-    "date": "2026-04-14T12:22:09Z",
-    "summary": "Comprehensive specification inspired by Claude Code's Auto Dream feature.\nIncludes comparative analysis of MJ memory vs Auto Dream, identification\nof consolidation as the key gap, and a 10-task implementation plan to\nactivate the existing dormant consolidation infrastructure.\n\nhttps://claude.ai/code",
+    "title": "[PR] Activate Memory Manager consolidation pipeline (spec + impl + observability)",
+    "date": "2026-04-14T13:54:44Z",
+    "summary": "## Summary\n\nActivates the dormant Memory Manager consolidation pipeline end-to-end. Started as a spec inspired by Claude Code's Auto Dream feature; grew into the full schema migration, code implementation, observability expansion, write-side vector-store invariant fix, and a validated UI-driven E2E ",
     "url": "https://github.com/MemberJunction/MJ/pull/2265",
     "source": "github_prs",
     "highlights": [
@@ -994,8 +994,8 @@
   },
   {
     "title": "[PR] wip(image-gen): add image generation model support (AYC-111)",
-    "date": "2026-04-14T13:29:51Z",
-    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Adds a new `image-generation` model type end-to-end (domain, persistence, APIs) and tightens permitted-model constraints, which can affect model availability and org configuration behavior. Risk is moderate due to new branching logic and reposito",
+    "date": "2026-04-14T14:58:59Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Introduces a new `image-generation` model type across persistence, APIs, and permitted-model constraints; mistakes could break model availability/default selection or permit invalid providers. Includes a new DB migration and refactors permitted-m",
     "url": "https://github.com/ayunis-core/ayunis-core/pull/551",
     "source": "github_prs",
     "highlights": [
@@ -1294,7 +1294,7 @@
   },
   {
     "title": "[PR] Implement codebase indexing for CLI and new extension",
-    "date": "2026-04-14T13:03:51Z",
+    "date": "2026-04-14T14:57:46Z",
     "summary": "## Context\r\n\r\nCloses #6144\r\n\r\n## Implementation\r\n\r\nFor the backend, migrates the legacy codebase indexing backend into the new codebase, locating as much code as possible in a `kilo-indexing` package as an opencode plugin, which currently is automatically enabled, but allows the indexing backend to ",
     "url": "https://github.com/Kilo-Org/kilocode/pull/6966",
     "source": "github_prs",
@@ -1314,6 +1314,66 @@
       "comments: 2",
       "pull request",
       "repo: Hands-On-AI-Engineering"
+    ]
+  },
+  {
+    "title": "[PR] chore(release): release version 1.31.0",
+    "date": "2026-04-14T15:03:00Z",
+    "summary": "# Release v1.31.0\n\n## How to Release\n\nPush the release tag to trigger the release:\n   ```bash\n   git fetch && git tag v1.31.0 origin/release/1.31.0\n   git push origin v1.31.0\n   ```\nThe tag push will trigger the release build. This PR will be automatically closed.\n\n## Cherry-Picks\n\nIf you need to in",
+    "url": "https://github.com/aaif-goose/goose/pull/8529",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: goose"
+    ]
+  },
+  {
+    "title": "[PR] Update dyrnq/open-webui Docker tag to v0.8.12",
+    "date": "2026-04-14T15:00:59Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [dyrnq/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `v0.6.3` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n<details>\n<sum",
+    "url": "https://github.com/ngresbach11/k3s-homelab/pull/126",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k3s-homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat: add OpenCode as an AI provider",
+    "date": "2026-04-14T14:57:14Z",
+    "summary": "## Summary\n\nAdds OpenCode as a new CLI-backed AI provider, mirroring the existing `claude-code`, `codex-cli`, and `gemini-cli` integrations. Task Master delegates authentication, model routing, and provider selection to a running OpenCode server via [`ai-sdk-provider-opencode-sdk`](https://github.co",
+    "url": "https://github.com/eyaltoledano/claude-task-master/pull/1685",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: claude-task-master"
+    ]
+  },
+  {
+    "title": "[PR] Feat: smart routing",
+    "date": "2026-04-14T14:35:02Z",
+    "summary": "## Summary\r\n\r\n- Implemented an intelligent, policy-driven routing layer that selects local vs remote model execution by task complexity and runtime conditions.\r\n- Added deterministic task categorization (`Lightweight`, `Medium`, `Heavy`) and routing policy using task type, privacy constraints, laten",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/569",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump the langchain4j group with 17 updates",
+    "date": "2026-04-14T14:20:33Z",
+    "summary": "Bumps the langchain4j group with 17 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [dev.langchain4j:langchain4j](https://github.com/langchain4j/langchain4j) | `1.11.0` | `1.12.2` |\n| [dev.langchain4j:langchain4j-open-ai](https://github.com/langchain4j/langchain4j) | `1.11.0` | `1.12.2` |\n| ",
+    "url": "https://github.com/yeikel/camel/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: camel"
     ]
   }
 ]
