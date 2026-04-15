@@ -1318,12 +1318,12 @@
   },
   {
     "title": "[PR] CUAI-65: DEPLOY-002 \u2014 Terraform Data VM",
-    "date": "2026-04-15T21:56:18Z",
+    "date": "2026-04-15T21:58:50Z",
     "summary": "## Summary\n\n- `infra/data-vm.tf`: e2-medium VM, static internal IP (10.0.0.10), 50GB persistent disk, `data-vm-sa` service account, Secret Manager secret shells for all 4 passwords with IAM accessor bindings, GCS `vm-assets` bucket that uploads `docker-compose.yml` + `docker-compose.prod.yml` from t",
     "url": "https://github.com/Andrewcook08/cu-student-ai-assistant/pull/117",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: cu-student-ai-assistant"
     ]
@@ -1534,7 +1534,7 @@
   },
   {
     "title": "[PR] Release 2.5.0: Local LLM Discovery & On-Device Inference",
-    "date": "2026-04-15T21:41:44Z",
+    "date": "2026-04-15T22:27:06Z",
     "summary": "## Summary\n- **Local LLM Discovery**: mDNS-based discovery of local LLM servers (Ollama, llama.cpp, etc.)\n- **On-Device Inference**: Support for 64-bit Android devices with ARM64 local inference\n- **BYOK Mode Fixes**: Fixed CIRIS_SERVICES_DISABLED state not reflected in mobile UI\n- **LLM Settings UI",
     "url": "https://github.com/CIRISAI/CIRISAgent/pull/675",
     "source": "github_prs",
@@ -1618,7 +1618,7 @@
   },
   {
     "title": "[PR] fix(ollama): better default API Base URLs when running in docker",
-    "date": "2026-04-15T18:10:48Z",
+    "date": "2026-04-15T22:42:47Z",
     "summary": "## Description\r\n\r\nWhen the Onyx API server is running from inside a container, more times than not, these default API Base/Base URLs being `http://localhost` or `http://127.0.0.1` aren't really helpful since these resolve to the container's loopback address rather than the host where Ollama is presu",
     "url": "https://github.com/onyx-dot-app/onyx/pull/10045",
     "source": "github_prs",
@@ -1818,6 +1818,18 @@
       "comments: 0",
       "pull request",
       "repo: awesome-ai-apps"
+    ]
+  },
+  {
+    "title": "[PR] Ollama as first-class LLM backend (OSS + cloud)",
+    "date": "2026-04-15T22:32:54Z",
+    "summary": "closes #330\n\nAdds Ollama as a first-class `IAiProvider` for both OSS single-host and cloud\nmulti-tenant deployments, with CPU-container, NVIDIA-GPU-container, and\nmacOS host-install paths.\n\n## Current state (pre-PR)\n\nThe platform has a single `IAiProvider` abstraction in\n`src/Cvoya.Spring.Core/Execu",
+    "url": "https://github.com/cvoya-com/spring-voyage/pull/333",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: spring-voyage"
     ]
   }
 ]
