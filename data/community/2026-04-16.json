@@ -538,7 +538,7 @@
   },
   {
     "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
-    "date": "2026-04-16T04:26:20Z",
+    "date": "2026-04-16T07:32:03Z",
     "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
     "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
     "source": "github_prs",
@@ -658,7 +658,7 @@
   },
   {
     "title": "[PR] feat: add Databricks serving provider plugin",
-    "date": "2026-04-16T05:31:12Z",
+    "date": "2026-04-16T06:23:35Z",
     "summary": "Address architectural feedback from the previous PR #62230.\r\n\r\n## Summary\r\n\r\nDescribe the problem and fix in 2\u20135 bullets:\r\n\r\n- **Problem**: OpenClaw lacked native support for Databricks Serving Models. Interacting with Databricks APIs via standard OpenAI proxy setups failed because Databricks requir",
     "url": "https://github.com/openclaw/openclaw/pull/63031",
     "source": "github_prs",
@@ -670,12 +670,12 @@
   },
   {
     "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.14",
-    "date": "2026-04-16T00:54:31Z",
+    "date": "2026-04-16T06:48:13Z",
     "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.14`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.14\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/24",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
     "source": "github_prs",
     "highlights": [
-      "comments: 211",
+      "comments: 220",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -766,7 +766,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-16T03:30:46Z",
+    "date": "2026-04-16T06:12:30Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -858,6 +858,138 @@
       "comments: 0",
       "pull request",
       "repo: pi-ollama-provider"
+    ]
+  },
+  {
+    "title": "[PR] feat: JARVIS \u2014 AI Agent with persistent memory, tool suite, and bilingual CLI",
+    "date": "2026-04-16T07:35:29Z",
+    "summary": "Greenfield implementation of a GPT-4o-powered AI agent with persistent cross-session memory, a full tool suite, and an interactive CLI supporting Arabic (including Egyptian dialect) and English.\n\n## Core Agent (`jarvis/agent.py`)\n- Agentic tool-calling loop (up to 5 iterations) with streaming suppor",
+    "url": "https://github.com/fagera99/JARVIS/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: JARVIS"
+    ]
+  },
+  {
+    "title": "[PR] docs: production airgap prerequisites \u2014 external PostgreSQL, S3, inference",
+    "date": "2026-04-16T07:28:46Z",
+    "summary": "## Summary\n\nProduction air-gapped deployments use external services (PostgreSQL, S3, inference backend) as customer-managed prerequisites. This PR documents all required prerequisites with real-world setup examples for multiple providers.\n\nCloses #73\nEpic: #252\n\n## DoD Level\n\n- [x] **Level 3 \u2014 Docum",
+    "url": "https://github.com/lpasquali/rune-airgapped/pull/83",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: rune-airgapped"
+    ]
+  },
+  {
+    "title": "[PR] Add AI-assisted inspection workflow, backend service integration, and deployment improvements",
+    "date": "2026-04-16T07:23:56Z",
+    "summary": "**Overview**\r\n\r\nThis PR introduces an AI-assisted inspection workflow to HivePal, including backend integration, frontend enhancements, and improved deployment setup.\r\n\r\nThe goal is to enable users to generate, review, and optionally apply AI-generated inspection suggestions based on hive data.\r\n\r\n*",
+    "url": "https://github.com/martinhrvn/hive-pal/pull/164",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hive-pal"
+    ]
+  },
+  {
+    "title": "[PR] feat(lightspeed): creating a new notebook and upload the documents",
+    "date": "2026-04-16T07:04:34Z",
+    "summary": "## Description\r\n\r\nAdds notebook creation and document upload functionality to the Lightspeed plugin. Users can create new notebook sessions, upload documents with file type/size validation and drag-and-drop support, and track upload progress via real-time status polling. The notebook detail view inc",
+    "url": "https://github.com/redhat-developer/rhdh-plugins/pull/2704",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: rhdh-plugins"
+    ]
+  },
+  {
+    "title": "[PR] docs: update authentication methods to reflect OAuth discontinuation",
+    "date": "2026-04-16T06:48:31Z",
+    "summary": "## Summary\n\nUpdate documentation to reflect the Qwen OAuth free tier discontinuation on 2026-04-15, directing users to valid authentication methods (API Key, Coding Plan, or Local Inference).\n\nCloses #3316\n\n## Changes\n\n### `README.md`\n- **Authentication section**: Replaced OAuth-first approach with ",
+    "url": "https://github.com/QwenLM/qwen-code/pull/3325",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qwen-code"
+    ]
+  },
+  {
+    "title": "[PR] fix: add SSRF protection to AI model provider URLs",
+    "date": "2026-04-16T06:38:38Z",
+    "summary": "## Summary\n\nCloses SSRF vulnerability in AI model endpoints (`/api/ai/model/chat` and `/api/ai/model`).\n\nA tenant admin could specify an internal network address (e.g. `http://172.17.0.1:22`) as a provider base URL and use \"Check connectivity\" to scan internal services. The server would make the req",
+    "url": "https://github.com/thingsboard/thingsboard/pull/15412",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: thingsboard"
+    ]
+  },
+  {
+    "title": "[PR] deps: Update all non-major dependencies (main)",
+    "date": "2026-04-16T06:26:59Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| infra-preview-environments-ingress |  | patch | `1.8.8` \u2192 `1.8.9` | ![age](",
+    "url": "https://github.com/camunda/connectors/pull/6924",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: connectors"
+    ]
+  },
+  {
+    "title": "[PR] deps: Update all non-major dependencies (stable/8.9)",
+    "date": "2026-04-16T06:26:52Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| infra-preview-environments-ingress |  | patch | `1.8.8` \u2192 `1.8.9` | ![age](",
+    "url": "https://github.com/camunda/connectors/pull/6926",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: connectors"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-node monorepo to v11 (major)",
+    "date": "2026-04-16T06:19:57Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/redis](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.25.",
+    "url": "https://github.com/matrix-org/matrix-hookshot/pull/1129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: matrix-hookshot"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-04-16T06:13:19Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] Add agentic-memory MCP server (LightRAG read bridge)",
+    "date": "2026-04-16T06:11:35Z",
+    "summary": "## Summary\nImplements issue **#16**: in-house `agentic-memory` MCP under `servers/agentic-memory/` with read-only LightRAG HTTP tools, `fleet_registry.toml` loading (`[[vaults]]`, schema `1`), host allowlist via `AGENTIC_MEMORY_ALLOWED_WORKSPACES`, structured JSON errors, startup probes (partial ava",
+    "url": "https://github.com/agorokh/mcp-servers/pull/17",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: mcp-servers"
     ]
   }
 ]
