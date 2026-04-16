@@ -166,7 +166,7 @@
   },
   {
     "title": "Meta: Request rate limiting",
-    "date": "2026-04-16T00:33:08Z",
+    "date": "2026-04-16T03:32:19Z",
     "summary": "This meta issue tracks scenarios where chat requests are blocked due to rate limiting.\n\n\ud83d\udc49 To get help with **premium request quota issues**, please comment in https://github.com/microsoft/vscode/issues/252230 .\n\nIn case you experience repeated rate-limiting in GitHub Copilot, please reach out to Git",
     "url": "https://github.com/microsoft/vscode/issues/253124",
     "source": "github_issues",
@@ -538,7 +538,7 @@
   },
   {
     "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
-    "date": "2026-04-16T02:34:16Z",
+    "date": "2026-04-16T04:26:20Z",
     "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
     "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
     "source": "github_prs",
@@ -646,7 +646,7 @@
   },
   {
     "title": "[PR] feat: implement codebase indexing",
-    "date": "2026-04-16T01:20:50Z",
+    "date": "2026-04-16T04:05:49Z",
     "summary": "## Context\r\n\r\nCloses #6144\r\n\r\n## Implementation\r\n\r\nFor the backend, migrates the legacy codebase indexing backend into the new codebase, locating as much code as possible in a `kilo-indexing` package as an opencode plugin, which currently is automatically enabled, but allows the indexing backend to ",
     "url": "https://github.com/Kilo-Org/kilocode/pull/6966",
     "source": "github_prs",
@@ -658,7 +658,7 @@
   },
   {
     "title": "[PR] feat: add Databricks serving provider plugin",
-    "date": "2026-04-16T01:04:56Z",
+    "date": "2026-04-16T05:31:12Z",
     "summary": "Address architectural feedback from the previous PR #62230.\r\n\r\n## Summary\r\n\r\nDescribe the problem and fix in 2\u20135 bullets:\r\n\r\n- **Problem**: OpenClaw lacked native support for Databricks Serving Models. Interacting with Databricks APIs via standard OpenAI proxy setups failed because Databricks requir",
     "url": "https://github.com/openclaw/openclaw/pull/63031",
     "source": "github_prs",
@@ -718,7 +718,7 @@
   },
   {
     "title": "[PR] Release 2.5.0: Local LLM Discovery & On-Device Inference",
-    "date": "2026-04-16T00:17:05Z",
+    "date": "2026-04-16T05:03:50Z",
     "summary": "## Summary\n- **Local LLM Discovery**: mDNS-based discovery of local LLM servers (Ollama, llama.cpp, etc.)\n- **On-Device Inference**: Support for 64-bit Android devices with ARM64 local inference\n- **BYOK Mode Fixes**: Fixed CIRIS_SERVICES_DISABLED state not reflected in mobile UI\n- **LLM Settings UI",
     "url": "https://github.com/CIRISAI/CIRISAgent/pull/675",
     "source": "github_prs",
@@ -762,6 +762,102 @@
       "comments: 0",
       "pull request",
       "repo: camel--1006f047"
+    ]
+  },
+  {
+    "title": "Dependency Dashboard",
+    "date": "2026-04-16T03:30:46Z",
+    "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
+    "url": "https://github.com/n8n-io/n8n/issues/18322",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 2",
+      "state: open",
+      "repo: n8n"
+    ]
+  },
+  {
+    "title": "[feature]: Local-AI support",
+    "date": "2026-04-16T03:23:37Z",
+    "summary": "### Is there an existing issue for this?\n\n- [X] I have searched the existing issues\n\n### Summary\n\nSupport self-hosted LLM endpoints, such as Ollama, next to OpenAI's ChatGPT, to allow a fully self-hosted experience.\n\n### Why should this be worked on?\n\nPrivacy of prompts, OpenAI fees, reduce dependen",
+    "url": "https://github.com/makeplane/plane/issues/5941",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 14",
+      "state: open",
+      "repo: plane"
+    ]
+  },
+  {
+    "title": "[PR] feat: pipeline hooks",
+    "date": "2026-04-16T05:33:30Z",
+    "summary": "useful for DPE prompt optimizer, plugin-typography and more\r\n\r\n<h2 class=\"mt-6 mb-2 font-semibold text-2xl\" data-streamdown=\"heading-2\" style=\"--tw-space-y-reverse: 0; margin-block: 0px 16px; margin-bottom: 10px; --tw-font-weight: 600; font-weight: 600; color: rgba(228, 228, 228, 0.92); line-height:",
+    "url": "https://github.com/elizaOS/eliza/pull/6733",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "[PR] Add local-only AI mode + polish (Gemma GPU offload, a11y)",
+    "date": "2026-04-16T05:23:17Z",
+    "summary": "## Summary\n- **Local-only mode toggle** in Settings \u2192 Local AI. Pins primary model to local Gemma and clears fallbacks; restores previous cloud config on disable. New endpoint `/setup-api/local-ai/exclusive` persists the prior state and surfaces gateway-restart failures as a warning.\n- **GPU layer h",
+    "url": "https://github.com/ID-Robots/clawbox/pull/59",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: clawbox"
+    ]
+  },
+  {
+    "title": "[PR] [NEUTRAL] Update dependency @mariozechner/pi-ai to v0.67.3",
+    "date": "2026-04-16T04:52:13Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/snowdensb/openclaw_2/pull/59",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw_2"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-04-16T04:25:34Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] feat(local_ai): default to cloud fallback on <8GB RAM devices",
+    "date": "2026-04-16T03:37:31Z",
+    "summary": "## Summary\n\n- Adds a soft RAM floor (8 GB) for local AI: devices below 8 GB default to **disabled (cloud fallback)** instead of downloading and running the 1B param Gemma model via Ollama.\n- The user can still opt into local AI on a low-RAM device \u2014 this is a **default**, not a hard gate.\n- On suffi",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/589",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add /ollama-setup wizard for local and cloud configuration",
+    "date": "2026-04-16T03:34:02Z",
+    "summary": "## Summary\n\nImplements #1 \u2014 adds an interactive `/ollama-setup` command that guides users through connecting to Ollama, whether locally or via ollama.com cloud.\n\n## What changed\n\n- **`/ollama-setup` command** \u2014 interactive TUI wizard:\n  - **Step 1**: Local vs Cloud\n  - **Local**: installs Ollama CLI",
+    "url": "https://github.com/v2nic/pi-ollama-provider/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: pi-ollama-provider"
     ]
   }
 ]
