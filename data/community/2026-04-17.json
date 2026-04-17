@@ -526,7 +526,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency openclaw to v2026.4.15",
-    "date": "2026-04-17T09:40:28Z",
+    "date": "2026-04-17T15:11:28Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [openclaw](https://redirect.github.com/openclaw/openclaw) | `2026.4.12` \u2192 `2026.4.15` | ![age](http",
     "url": "https://github.com/tardigrde/openclaw-deploy/pull/104",
     "source": "github_prs",
@@ -646,7 +646,7 @@
   },
   {
     "title": "[PR] fix(deps): update python non-major dependencies",
-    "date": "2026-04-17T09:13:49Z",
+    "date": "2026-04-17T15:16:08Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [fastapi](https://redirect.g",
     "url": "https://github.com/ilanbenb/wa_llm/pull/141",
     "source": "github_prs",
@@ -862,7 +862,7 @@
   },
   {
     "title": "[PR] fix(onboard): use container-aware URLs for local AI providers",
-    "date": "2026-04-17T14:08:00Z",
+    "date": "2026-04-17T15:04:28Z",
     "summary": "## Summary\n\n- Base branch target: `master`\n- **Problem:** Users selecting local AI providers (Ollama, llama.cpp, etc.) during Docker-based onboarding get non-working `localhost` URLs, since `localhost` inside a container refers to the container itself, not the host machine running the AI server.\n- *",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/5552",
     "source": "github_prs",
@@ -1066,7 +1066,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-17T14:47:51Z",
+    "date": "2026-04-17T15:57:30Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1078,7 +1078,7 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/openclaw/openclaw ( 2026.4.12 \u2794 2026.4.15 )",
-    "date": "2026-04-17T08:34:18Z",
+    "date": "2026-04-17T15:25:19Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.4.12` \u2192 `2026.4.15`",
     "url": "https://github.com/gavinmcfall/home-ops/pull/1832",
     "source": "github_prs",
@@ -1174,7 +1174,7 @@
   },
   {
     "title": "[PR] feat(container): update image ghcr.io/ferretdb/ferretdb ( 2.1.0 \u2794 2.7.0 )",
-    "date": "2026-04-17T14:09:14Z",
+    "date": "2026-04-17T15:02:36Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/ferretdb/ferretdb](https://www.ferretdb.com/) ([source](https://redirect.github.com/FerretDB/FerretDB)) | minor | `2.1.0` \u2192 `2.7.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check t",
     "url": "https://github.com/lucas-dclrcq/homelabitty/pull/3883",
     "source": "github_prs",
@@ -1222,7 +1222,7 @@
   },
   {
     "title": "[PR] feat: add Ollama as first-class LLM provider",
-    "date": "2026-04-17T14:51:24Z",
+    "date": "2026-04-17T15:40:11Z",
     "summary": "## Summary\n\nAdds Ollama as a first-class LLM provider in Pilot \u2014 local LLMs by default, no API key required, with optional cloud model support.\n\n### Core Features\n- **Zero-config local Ollama** \u2014 auto-detects running instance at `localhost:11434`, registers all local models\n- **Optional API key** \u2014 ",
     "url": "https://github.com/espennilsen/pilot/pull/29",
     "source": "github_prs",
@@ -1446,6 +1446,30 @@
       "comments: 0",
       "pull request",
       "repo: camel"
+    ]
+  },
+  {
+    "title": "Allow importing multi-file GGUF models",
+    "date": "2026-04-17T15:05:06Z",
+    "summary": "### What is the issue?\n\nCurrently Ollama can [import GGUF files](https://github.com/ollama/ollama/blob/main/docs/import.md). However, larger models are sometimes split into separate files. Ollama should support loading multiple GGUF files similar to loading safetensor files.\r\n\n\n### OS\n\n_No response_",
+    "url": "https://github.com/ollama/ollama/issues/5245",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 98",
+      "state: open",
+      "repo: ollama"
+    ]
+  },
+  {
+    "title": "[PR] docs: Iteration 1 \u2014 SSOT v1 + Sprint 0 foundation docs (Gate 4 review)",
+    "date": "2026-04-17T15:44:36Z",
+    "summary": "## Summary\n\nIteration 1 ho\u00e0n t\u1ea5t \u2014 x\u00e2y d\u1ef1ng b\u1ed9 Single Source of Truth v1 cho BKNS OS.\n\nTheo spec design t\u1ea1i [`docs/superpowers/specs/2026-04-17-bkns-os-docs-completion-and-sprint0-kickoff-design.md`](docs/superpowers/specs/2026-04-17-bkns-os-docs-completion-and-sprint0-kickoff-design.md) v\u00e0 implemen",
+    "url": "https://github.com/hanhbk/bkns-ops/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: bkns-ops"
     ]
   }
 ]
