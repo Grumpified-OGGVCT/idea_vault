@@ -178,7 +178,7 @@
   },
   {
     "title": "Renovate Dashboard \ud83e\udd16",
-    "date": "2026-04-18T04:40:03Z",
+    "date": "2026-04-18T08:15:25Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Tanguille/cluster).\n\n## Pending Status Checks\n\nT",
     "url": "https://github.com/Tanguille/cluster/issues/2",
     "source": "github_issues",
@@ -862,12 +862,12 @@
   },
   {
     "title": "[PR] Feat/native hook sovereignty 7187051578697538718",
-    "date": "2026-04-18T03:40:20Z",
+    "date": "2026-04-18T08:44:01Z",
     "summary": "",
     "url": "https://github.com/AuraFrameFxDev/A.u.r.a.k.a.i_ReGenesis/pull/59",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "pull request",
       "repo: A.u.r.a.k.a.i_ReGenesis"
     ]
@@ -910,7 +910,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-04-18T02:44:09Z",
+    "date": "2026-04-18T08:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -922,12 +922,12 @@
   },
   {
     "title": "[PR] \ud83e\udd16 fix: harden Ollama refresh flows and reconnect behavior",
-    "date": "2026-04-18T07:14:56Z",
+    "date": "2026-04-18T08:21:51Z",
     "summary": "## Summary\nThis PR hardens Ollama and Ollama Cloud catalog refresh behavior across Settings, model persistence, and workspace lifecycle. It removes unsafe non-null API assumptions in the Settings refresh UI, enforces success-aware persistence in model seeding, and ensures workspace one-shot refresh ",
     "url": "https://github.com/XcluEzy7/mux/pull/8",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 5",
       "pull request",
       "repo: mux"
     ]
@@ -946,12 +946,12 @@
   },
   {
     "title": "[PR] feat: add Ollama as first-class LLM provider",
-    "date": "2026-04-18T06:43:09Z",
+    "date": "2026-04-18T07:42:16Z",
     "summary": "## Summary\n\nAdds Ollama as a first-class LLM provider in Pilot \u2014 local LLMs by default, no API key required, with optional cloud model support.\n\n### Core Features\n- **Zero-config local Ollama** \u2014 auto-detects running instance at `localhost:11434`, registers all local models\n- **Optional API key** \u2014 ",
     "url": "https://github.com/espennilsen/pilot/pull/29",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: pilot"
     ]
@@ -970,7 +970,7 @@
   },
   {
     "title": "[PR] chore(deps): update ghcr.io/openclaw/openclaw docker tag to v2026.4.15",
-    "date": "2026-04-18T06:27:45Z",
+    "date": "2026-04-18T08:28:53Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | minor | `2026.3.24` \u2192 `2026.4.15`",
     "url": "https://github.com/kyleseneker/homelab/pull/40",
     "source": "github_prs",
@@ -982,7 +982,7 @@
   },
   {
     "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
-    "date": "2026-04-18T06:00:17Z",
+    "date": "2026-04-18T07:29:56Z",
     "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
     "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
     "source": "github_prs",
@@ -1014,6 +1014,78 @@
       "comments: 2",
       "pull request",
       "repo: open-smart-grid-platform"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Copilot provider, Anduril.App entry point, and parallel sta\u2026",
+    "date": "2026-04-18T08:52:10Z",
+    "summary": "\u2026rtup init\r\n\r\nIntroduces GitHub Copilot as an AI provider, extracts a new Anduril.App project as the publishable host, and parallelizes the startup pipeline.\r\n\r\nAI providers:\r\n- Add CopilotProvider and CopilotChatClientAdapter using GitHub.Copilot.SDK\r\n- Add IAiProvider.GetAvailableModelsAsync() and",
+    "url": "https://github.com/steingran/Anduril/pull/82",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: Anduril"
+    ]
+  },
+  {
+    "title": "[PR] onboard (ollama): populate cloud-only model list from ollama.com/api/tags",
+    "date": "2026-04-18T08:37:15Z",
+    "summary": "## Summary\n\n- Problem: `openclaw onboard` in Ollama cloud-only mode populated the provider's model list from a hardcoded, stale array (`kimi-k2.5:cloud`, `minimax-m2.7:cloud`, `glm-5.1:cloud`). The local-only and cloud+local modes already discovered models via `/api/tags` against the local daemon, b",
+    "url": "https://github.com/openclaw/openclaw/pull/68463",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] Migrate AI backend from Gemini to local Ollama (qwen2.5:3b)",
+    "date": "2026-04-18T08:14:46Z",
+    "summary": "## Summary\n- Replaces cloud **Gemini** (`@google/genai`) with in-cluster **Ollama** (`qwen2.5:3b-instruct-q4_K_M` on node `one6t`) via native `fetch` against `/api/generate`.\n- **Vision AI and obstruction AI removed entirely.** Camera (Frigate/cam01) is now observational only; obstruction is hardwar",
+    "url": "https://github.com/ivemcfire/chickenFlow/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: chickenFlow"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go/modules/localstack to v0.42.0",
+    "date": "2026-04-18T07:21:21Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/securestart/sstart/pull/112",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: sstart"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.42.0",
+    "date": "2026-04-18T07:21:15Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/securestart/sstart/pull/111",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: sstart"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-04-18T07:18:50Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
     ]
   }
 ]
