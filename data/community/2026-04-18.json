@@ -538,12 +538,12 @@
   },
   {
     "title": "[PR] \ud83e\udd16 feat: add Ollama Cloud provider refresh flow",
-    "date": "2026-04-18T03:16:15Z",
+    "date": "2026-04-18T07:12:50Z",
     "summary": "## Summary\nAdd a dedicated Ollama Cloud provider with authoritative catalog refresh while keeping local Ollama custom models separate and preserving unmatched local entries during refresh.\n\n## Background\nWe needed Ollama Cloud to live as its own provider line item instead of being mixed into the exi",
     "url": "https://github.com/XcluEzy7/mux/pull/7",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 14",
       "pull request",
       "repo: mux"
     ]
@@ -790,12 +790,12 @@
   },
   {
     "title": "[PR] feat(gigazine): add English news full-text feed",
-    "date": "2026-04-18T05:10:32Z",
+    "date": "2026-04-18T05:40:21Z",
     "summary": "## Involved Issue / \u8be5 PR \u76f8\u5173 Issue\n\nClose #\n\n## Example for the Proposed Route(s) / \u8def\u7531\u5730\u5740\u793a\u4f8b\n\n```routes\n/gigazine/en\n```\n\n## New RSS Route Checklist / \u65b0 RSS \u8def\u7531\u68c0\u67e5\u8868\n\n- [x] New Route / \u65b0\u7684\u8def\u7531\n    - [x] Follows [Script Standard](https://docs.rsshub.app/joinus/advanced/script-standard) / \u8ddf\u968f [\u8def\u7531\u89c4\u8303](https://doc",
     "url": "https://github.com/DIYgod/RSSHub/pull/21757",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 9",
       "pull request",
       "repo: RSSHub"
     ]
@@ -918,6 +918,102 @@
       "comments: 2",
       "pull request",
       "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] \ud83e\udd16 fix: harden Ollama refresh flows and reconnect behavior",
+    "date": "2026-04-18T07:14:56Z",
+    "summary": "## Summary\nThis PR hardens Ollama and Ollama Cloud catalog refresh behavior across Settings, model persistence, and workspace lifecycle. It removes unsafe non-null API assumptions in the Settings refresh UI, enforces success-aware persistence in model seeding, and ensures workspace one-shot refresh ",
+    "url": "https://github.com/XcluEzy7/mux/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mux"
+    ]
+  },
+  {
+    "title": "[PR] [WIP] Add new source URL for Anthropic Claude Opus 4.7",
+    "date": "2026-04-18T06:47:55Z",
+    "summary": "Thanks for asking me to work on this. I will get started on it and keep this PR's description up to date as I form a plan and make progress.\n\n> ----\n> \n> *This section details on the original issue you should resolve*\n> \n> <issue_title>New Source</issue_title>\n> <issue_description>Source URL: Matt T",
+    "url": "https://github.com/2ooks/knowledge-base/pull/122",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: knowledge-base"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Ollama as first-class LLM provider",
+    "date": "2026-04-18T06:43:09Z",
+    "summary": "## Summary\n\nAdds Ollama as a first-class LLM provider in Pilot \u2014 local LLMs by default, no API key required, with optional cloud model support.\n\n### Core Features\n- **Zero-config local Ollama** \u2014 auto-detects running instance at `localhost:11434`, registers all local models\n- **Optional API key** \u2014 ",
+    "url": "https://github.com/espennilsen/pilot/pull/29",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: pilot"
+    ]
+  },
+  {
+    "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.15",
+    "date": "2026-04-18T06:34:50Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.15`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.15\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/24",
+    "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 298",
+      "pull request",
+      "repo: openclaw-charts"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/openclaw/openclaw docker tag to v2026.4.15",
+    "date": "2026-04-18T06:27:45Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | minor | `2026.3.24` \u2192 `2026.4.15`",
+    "url": "https://github.com/kyleseneker/homelab/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
+    "date": "2026-04-18T06:00:17Z",
+    "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
+    "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: OpenMAIC"
+    ]
+  },
+  {
+    "title": "[PR] Add HK Company Secretary LLM knowledge base with Docker + WhatsApp RAG bot",
+    "date": "2026-04-18T05:41:48Z",
+    "summary": "Sets up an llm-wiki\u2013style knowledge base for Hong Kong company secretary services, with a Docker-based RAG pipeline that answers queries via WhatsApp using a locally-served LLM (Ollama-compatible: llama3, mistral, nemoclaw, openclaw, or any GGUF model).\n\n## Knowledge Base (`wiki/`)\n15 self-contained",
+    "url": "https://github.com/bughunt8/hong-kong-company-secretary/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: hong-kong-company-secretary"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-java monorepo to v1.20.6 - abandoned",
+    "date": "2026-04-18T05:15:59Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | Age | Adoption | Passing | Confidence |\n|---|---|---|---|---|---|\n| [org.testcontainers:postgresql](https://java.testcontainers.org) ([source](https://redirect.github.com/testcontainers/testcontainers-java)) | `1.19.8` -> `1.20.6` | [![ag",
+    "url": "https://github.com/lf-energy-projects-renovation-state/open-smart-grid-platform/pull/79",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: open-smart-grid-platform"
     ]
   }
 ]
