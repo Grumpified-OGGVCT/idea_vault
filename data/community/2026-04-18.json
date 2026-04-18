@@ -922,7 +922,7 @@
   },
   {
     "title": "[PR] \ud83e\udd16 fix: harden Ollama refresh flows and reconnect behavior",
-    "date": "2026-04-18T09:46:08Z",
+    "date": "2026-04-18T09:55:52Z",
     "summary": "## Summary\nThis PR hardens Ollama and Ollama Cloud catalog refresh behavior across Settings, model persistence, and workspace lifecycle. It removes unsafe non-null API assumptions in the Settings refresh UI, enforces success-aware persistence in model seeding, and ensures workspace one-shot refresh ",
     "url": "https://github.com/XcluEzy7/mux/pull/8",
     "source": "github_prs",
@@ -1018,12 +1018,12 @@
   },
   {
     "title": "[PR] feat: add Copilot provider, Anduril.App entry point, and parallel sta\u2026",
-    "date": "2026-04-18T09:52:18Z",
-    "summary": "\u2026rtup init\r\n\r\nIntroduces GitHub Copilot as an AI provider, extracts a new Anduril.App project as the publishable host, and parallelizes the startup pipeline.\r\n\r\nAI providers:\r\n- Add CopilotProvider and CopilotChatClientAdapter using GitHub.Copilot.SDK\r\n- Add IAiProvider.GetAvailableModelsAsync() and",
+    "date": "2026-04-18T10:06:35Z",
+    "summary": "\u2026rtup init\n\nIntroduces GitHub Copilot as an AI provider, extracts a new Anduril.App project as the publishable host, and parallelizes the startup pipeline.\n\nAI providers:\n- Add CopilotProvider and CopilotChatClientAdapter using GitHub.Copilot.SDK\n- Add IAiProvider.GetAvailableModelsAsync() and GetCh",
     "url": "https://github.com/steingran/Anduril/pull/82",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 10",
       "pull request",
       "repo: Anduril"
     ]
@@ -1122,6 +1122,18 @@
       "comments: 0",
       "pull request",
       "repo: dify-workflow_build"
+    ]
+  },
+  {
+    "title": "[PR] wip(image-gen): add image generation model support (AYC-111)",
+    "date": "2026-04-18T10:31:13Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Adds a new model type and threads it through persistence, DTOs/controllers, and permitted-model enforcement, plus a DB migration; changes touch core model management paths and can affect org configuration and validation behavior.\n> \n> **Overview*",
+    "url": "https://github.com/ayunis-core/ayunis-core/pull/551",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ayunis-core"
     ]
   }
 ]
