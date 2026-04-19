@@ -202,7 +202,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-18T17:36:21Z",
+    "date": "2026-04-19T07:18:49Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -598,12 +598,12 @@
   },
   {
     "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.15",
-    "date": "2026-04-19T00:54:25Z",
+    "date": "2026-04-19T06:43:42Z",
     "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.15`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.15\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/24",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
     "source": "github_prs",
     "highlights": [
-      "comments: 328",
+      "comments: 338",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -778,7 +778,7 @@
   },
   {
     "title": "[PR] feat(deps): update module github.com/testcontainers/testcontainers-go (v0.40.0 \u2192 v0.42.0)",
-    "date": "2026-04-19T05:25:13Z",
+    "date": "2026-04-19T07:20:24Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | Age | Confidence |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontainers-go) | `v0.40.0` -> `v0.42.0` | [![age](https://developer.mend.io/api/mc/badges/age/go/github.co",
     "url": "https://github.com/6ixfalls/containers/pull/21",
     "source": "github_prs",
@@ -834,6 +834,54 @@
       "comments: 0",
       "pull request",
       "repo: familie-klage"
+    ]
+  },
+  {
+    "title": "[PR] Phase 1: Bidirectional sync engine, HubSpot/YM overhaul (44\u2192130/58\u2192228 objects), custom field discovery, RSU improvements, Explorer sync UI",
+    "date": "2026-04-19T07:05:45Z",
+    "summary": "",
+    "url": "https://github.com/MemberJunction/MJ/pull/2401",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Ollama: honor Modelfile num_ctx and auto-detect tool support",
+    "date": "2026-04-19T06:41:39Z",
+    "summary": "## Summary\n\n- Problem: On a local Ollama setup, a Modelfile `PARAMETER num_ctx 32768` override was ignored during discovery (only the base model's `.context_length` was read), which tripped `context-window-guard` with \"Model context window too small (8192 tokens)\". Non-tool models (e.g. plain `llama",
+    "url": "https://github.com/openclaw/openclaw/pull/68349",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(cli): DX-1 S1 CLI Foundation (cobra + version + providers) [LOO-142]",
+    "date": "2026-04-19T06:38:31Z",
+    "summary": "## Summary\n\nDX-1 Slice 1 \u2014 CLI Foundation. First feature to flow end-to-end through the new A1+A2+A3 pipeline (workspace dogfood).\n\nImplements the approved brief: `research/briefs/2026-04-19-dx1-s1-cli-foundation.md` (visible only inside the multi-repo workspace).\n\nLinear: closes LOO-142 (framework ",
+    "url": "https://github.com/lookatitude/beluga-ai/pull/308",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: beluga-ai"
+    ]
+  },
+  {
+    "title": "[PR] Env-driven config + backend-resilient startup for prod migration",
+    "date": "2026-04-19T05:37:18Z",
+    "summary": "## Summary\n\n- Moves every `slice-test`/`stg.samtg.xyz` hardcode into `ollama/config.py` so identity/registry are env-driven (`SC_DEVICE`, `SC_BASE`, `SC_SERVICE_NAME`, `SC_RESOURCE_ID`, `MODELS_DIR`, `LLAMA_SERVER_BIN`, etc.). Defaults now target prod (`cloud.samtg.xyz`) and device `claude-services-",
+    "url": "https://github.com/phoria-sam-tg/samcloud-services/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: samcloud-services"
     ]
   }
 ]
