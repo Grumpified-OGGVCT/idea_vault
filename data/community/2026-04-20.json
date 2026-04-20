@@ -1006,7 +1006,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-04-20T21:51:02Z",
+    "date": "2026-04-20T21:53:06Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1570,7 +1570,7 @@
   },
   {
     "title": "[PR] \ud83c\udfa8 Palette: Add ARIA labels to icon-only buttons",
-    "date": "2026-04-20T20:31:19Z",
+    "date": "2026-04-20T22:10:24Z",
     "summary": "\ud83d\udca1 What: Added `aria-label` attributes to icon-only buttons (e.g. close, go back, drill open) in multiple dashboard/dialog components.\n\n\ud83c\udfaf Why: Icon-only buttons using FontAwesome `<i>` tags are inaccessible to screen readers. Adding aria-labels makes the intent clear.\n\n\ud83d\udcf8 Before/After: Not applicable ",
     "url": "https://github.com/MemberJunction/MJ/pull/2418",
     "source": "github_prs",
@@ -1674,6 +1674,66 @@
       "comments: 4",
       "pull request",
       "repo: sablier"
+    ]
+  },
+  {
+    "title": "[PR] Implement Hybrid WSL Architecture with Ollama/Groq Actor and Gemini Researcher",
+    "date": "2026-04-20T22:45:59Z",
+    "summary": "This PR upgrades the trading simulator to utilize a hybrid architecture optimal for WSL environments. The `ActorAgent` now evaluates trade lifecycles autonomously utilizing a high-frequency local Ollama model (`llama3.2:1b`), falling back to the Groq API (via the new `GROQ_API_KEY` environment varia",
+    "url": "https://github.com/techted89/AiCryptoSimulater/pull/12",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: AiCryptoSimulater"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): add OpenAI and Anthropic providers for LLM triage (LAB-1804)",
+    "date": "2026-04-20T22:35:30Z",
+    "summary": "## Description\r\nAdds OpenAI and Anthropic as LLM providers for finding triage (LAB-1804), alongside the existing Ollama support. Users can now run `--llm-provider openai` or `--llm-provider anthropic` to use cloud LLMs for more accurate vulnerability classification. Shared prompt building and respon",
+    "url": "https://github.com/praetorian-inc/hadrian/pull/57",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: hadrian"
+    ]
+  },
+  {
+    "title": "[PR] Feat/improvements",
+    "date": "2026-04-20T22:07:20Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added LM Studio local provider and local-host override; provider health UI with connection/model checks and key management; privacy preview and staged-snapshot freshness guar",
+    "url": "https://github.com/0xshikhar/opengit-composer/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: opengit-composer"
+    ]
+  },
+  {
+    "title": "[PR] refactor(medkb): collapse graded_chunks into retrieved_chunks",
+    "date": "2026-04-20T22:05:34Z",
+    "summary": "## Summary\n\nThe CRAG graph mutates `retrieved_chunks` in place, so the separate `graded_chunks` field on `RAGState` was redundant \u2014 `grade_docs_node` writes the filtered list back into `retrieved_chunks` instead of a second field.\n\n- `state.py` \u2014 drop `graded_chunks` field from `RAGState` and `make_",
+    "url": "https://github.com/sdnydude/dhgaifactory3.5/pull/13",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: dhgaifactory3.5"
+    ]
+  },
+  {
+    "title": "[PR] docs(claude.md): catch up services table, paths, and test counts",
+    "date": "2026-04-20T22:04:15Z",
+    "summary": "## Summary\n\nCLAUDE.md was out of sync with recently-landed work. This is a pure documentation catch-up \u2014 no code or config changes.\n\n- Adds `dhg-remediator` entry to infrastructure services table (incident remediation sidecar that polls registry for active incidents, matches to runbooks, executes st",
+    "url": "https://github.com/sdnydude/dhgaifactory3.5/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: dhgaifactory3.5"
     ]
   }
 ]
