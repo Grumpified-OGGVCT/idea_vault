@@ -178,7 +178,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-20T10:45:04Z",
+    "date": "2026-04-20T11:29:22Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -886,7 +886,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-20T09:59:28Z",
+    "date": "2026-04-20T12:00:27Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1006,7 +1006,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-04-20T10:42:00Z",
+    "date": "2026-04-20T11:14:54Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1018,12 +1018,12 @@
   },
   {
     "title": "[PR] feat: add Qwen/Alibaba provider with cross-provider mappings and reasoning middleware",
-    "date": "2026-04-20T10:37:31Z",
+    "date": "2026-04-20T12:01:54Z",
     "summary": "Add Alibaba Cloud (Qwen) as a new first-class provider using `@ai-sdk/alibaba`. Includes 15 canonical model IDs across Qwen3, 3.5, 3.6, Coder, and VL families with cross-provider mappings for Groq, Bedrock, Vertex AI, and Azure. Adds reasoning middleware that maps OpenAI-compatible reasoning_effort ",
     "url": "https://github.com/8monkey-ai/hebo-gateway/pull/151",
     "source": "github_prs",
     "highlights": [
-      "comments: 47",
+      "comments: 55",
       "pull request",
       "repo: hebo-gateway"
     ]
@@ -1158,6 +1158,102 @@
       "comments: 6",
       "pull request",
       "repo: ayunis-core"
+    ]
+  },
+  {
+    "title": "[PR] feat(docker): connect self-hosted Manifest to local LLM servers on the host",
+    "date": "2026-04-20T12:06:08Z",
+    "summary": "## Summary\n\nReplaces the `--profile ollama` bundled-but-empty Ollama container with a `host-gateway` alias so the Manifest container can reach **any** OpenAI-compatible server running on the host \u2014 Ollama, vLLM, LM Studio, llama.cpp, text-generation-webui \u2014 at `host.docker.internal:<port>`. No profi",
+    "url": "https://github.com/mnfst/manifest/pull/1630",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: manifest"
+    ]
+  },
+  {
+    "title": "[PR] feat(runtime)!: remove LiteLLM proxy and inject local provider env vars directly (ADR-040)",
+    "date": "2026-04-20T12:05:47Z",
+    "summary": "## Summary\n\nRemoves the bundled **LiteLLM proxy** container in response to the [March 2026 supply-chain compromise](https://github.com/BerriAI/litellm/security/advisories). Claude Code now talks **directly** to local LLM providers \u2014 no intermediate proxy.\n\n**Supported local providers:**\n- Ollama (0.",
+    "url": "https://github.com/speednet-software/speedwave/pull/528",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: speedwave"
+    ]
+  },
+  {
+    "title": "[PR] Update Mend: high confidence minor and patch dependency updates",
+    "date": "2026-04-20T11:58:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/jgeraigery/carbonj/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: carbonj"
+    ]
+  },
+  {
+    "title": "[PR] feat: add setting to show/hide chat window",
+    "date": "2026-04-20T11:55:54Z",
+    "summary": "Add a `chat.showChatWindow` boolean setting (default: true) that\r\ncontrols visibility of the chat window and its navigation item.\r\nWhen disabled, the home route falls back to Agent Workspaces.\r\n\r\nhttps://github.com/user-attachments/assets/bd76867d-25de-4146-a77f-dc8bcd1135b4\r\n\r\nFixes #1329",
+    "url": "https://github.com/openkaiden/kaiden/pull/1332",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] Add docker support",
+    "date": "2026-04-20T11:32:50Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **New Features**\n  * Added Docker containerization support for production deployment\n  * Introduced Ollama LLM service integration with API key authentication\n  * Added configu",
+    "url": "https://github.com/lojzatran/job-applicator/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: job-applicator"
+    ]
+  },
+  {
+    "title": "[PR] Feat/latex formula ocr",
+    "date": "2026-04-20T11:22:12Z",
+    "summary": "## Description\r\n\r\nAdds a LaTeX Formula OCR pipeline that extracts mathematical equations from images and PDFs, converts them to LaTeX markup using GLM-OCR via Ollama, and renders them in a clean web UI using KaTeX \u2014 fully local, no API keys required.\r\n",
+    "url": "https://github.com/Sumanth077/Hands-On-AI-Engineering/pull/34",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Hands-On-AI-Engineering"
+    ]
+  },
+  {
+    "title": "[PR] Rebuild Atomic Search: private meta-search (DDG+Bing+Brave+Luxxle), proxy, AI mode, music player, multi-host deploy",
+    "date": "2026-04-20T11:13:35Z",
+    "summary": "## Summary\n\nFull rewrite of Atomic Search into a working, privacy-first meta-search engine.\n\n**Meta-search aggregator** \u2014 queries DuckDuckGo, Bing, Brave and Luxxle (via a public SearXNG instance) in parallel, decodes tracking redirects, merges with reciprocal rank fusion and de-duplicates by URL. E",
+    "url": "https://github.com/KGECMD/Atomic-Search-/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Atomic-Search-"
+    ]
+  },
+  {
+    "title": "[PR] Update go modules (main)",
+    "date": "2026-04-20T11:06:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot",
+    "url": "https://github.com/conforma/cli/pull/3131",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cli"
     ]
   }
 ]
