@@ -358,12 +358,12 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant+RotorQuant implementation",
-    "date": "2026-04-13T17:43:23Z",
+    "date": "2026-04-21T23:19:37Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
     "highlights": [
-      "comments: 38",
+      "comments: 40",
       "state: open",
       "repo: ollama"
     ]
@@ -970,7 +970,7 @@
   },
   {
     "title": "[PR] feat(container): update image ghcr.io/ferretdb/ferretdb ( 2.1.0 \u2794 2.7.0 )",
-    "date": "2026-04-21T07:26:24Z",
+    "date": "2026-04-21T22:51:52Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/ferretdb/ferretdb](https://www.ferretdb.com/) ([source](https://redirect.github.com/FerretDB/FerretDB)) | minor | `2.1.0` \u2192 `2.7.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check t",
     "url": "https://github.com/lucas-dclrcq/homelabitty/pull/3883",
     "source": "github_prs",
@@ -1654,7 +1654,7 @@
   },
   {
     "title": "[PR] Jsje",
-    "date": "2026-04-21T21:05:39Z",
+    "date": "2026-04-21T23:29:54Z",
     "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
     "url": "https://github.com/arthrod/generative-ai/pull/7",
     "source": "github_prs",
@@ -1678,7 +1678,7 @@
   },
   {
     "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.9.1",
-    "date": "2026-04-21T14:15:57Z",
+    "date": "2026-04-21T23:16:57Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `v0.8.12` \u2192 `v0.9.1` |\n\n---\n\n### Release Notes\n\n<",
     "url": "https://github.com/davydehaas98/home-server/pull/1585",
     "source": "github_prs",
@@ -1882,7 +1882,7 @@
   },
   {
     "title": "[PR] jetbrains.jdk: 21.0.9-1163.86 -> 25.0.2-b329.72",
-    "date": "2026-04-21T22:37:56Z",
+    "date": "2026-04-21T22:54:06Z",
     "summary": "Updates the Jetbrains Runtime from Java 21 to  Java 25. The Jetbrains IDEs packages default to JBR as the JDK, updating the Jetbrains JDK to Java 25 allows the IDEs to have access to Java 25 by default. JBR is also often used for developing with DCEVM.\r\n\r\n## Things done\r\n\r\n<!-- Please check what app",
     "url": "https://github.com/NixOS/nixpkgs/pull/485812",
     "source": "github_prs",
@@ -2062,7 +2062,7 @@
   },
   {
     "title": "[PR] Update ghcr.io/openclaw/openclaw Docker tag to v2026.4.20",
-    "date": "2026-04-21T21:29:32Z",
+    "date": "2026-04-21T22:54:42Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.4.8` \u2192 `2026.4.20` ",
     "url": "https://github.com/claytono/infra/pull/1977",
     "source": "github_prs",
@@ -2109,9 +2109,9 @@
     ]
   },
   {
-    "title": "[PR] fix(nodes) -  tool_exa_search test",
-    "date": "2026-04-21T20:22:32Z",
-    "summary": "## Summary\r\n\r\n- Fixes `tool_exa_search` test\r\n\r\n## Type\r\n\r\nfix\r\n\r\n## Testing\r\n\r\n- [ ] Tests added or updated\r\n- [ ] Tested locally\r\n- [ ] `./builder test` passes\r\n\r\n## Checklist\r\n\r\n- [ ] Commit messages follow [conventional commits](https://www.conventionalcommits.org/)\r\n- [ ] No secrets or credenti",
+    "title": "[PR] feat(nodes): full node test improvements and mock cleanup",
+    "date": "2026-04-21T23:31:50Z",
+    "summary": "## Summary\r\n\r\n- Remove `sys.modules` stubs for internal modules (`depends`, `engLib`, `rocketlib`, `ai.*`) across 8 test files \u2014 use real modules, patch `doesCollectionExist`/`_checkCollectionExists` at instance level where needed\r\n- Extract test deps to `nodes/test/requirements.txt`, add `pytest-ti",
     "url": "https://github.com/rocketride-org/rocketride-server/pull/687",
     "source": "github_prs",
     "highlights": [
@@ -2370,6 +2370,162 @@
       "comments: 1",
       "pull request",
       "repo: event-sourced-account-go"
+    ]
+  },
+  {
+    "title": "[Bug] Image tool uses openai-completions instead of provider-zai-endpoint, causing 404 on zai VL models",
+    "date": "2026-04-21T23:29:18Z",
+    "summary": "## Summary\n\nThe image analysis tool (`image`) routes zai VL models (e.g. `zai/glm-4.6v`, `zai/glm-5v-turbo`) through the generic `openai-completions` API surface instead of the dedicated `provider-zai-endpoint` transport. This causes two problems:\n\n1. **baseUrl `/v1` appending**: The `openai-complet",
+    "url": "https://github.com/openclaw/openclaw/issues/69871",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix: replace hardcoded AWS access key with safe test value",
+    "date": "2026-04-21T23:39:02Z",
+    "summary": "## Security Fix: Remove Hardcoded AWS Access Key from Test Code\n\n**Issue**: #1330 - [SECURITY][trivy] aws-access-key-id in scripts/deploy-terminal-dlp.sh:50\n\n### Problem\nThe trivy security scanner detected a hardcoded AWS access key ID in the DLP test code:\n```\nexport AWS_ACCESS_KEY_ID=AKIA123456789",
+    "url": "https://github.com/kushin77/code-server/pull/1334",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: code-server"
+    ]
+  },
+  {
+    "title": "[PR] feat: Implement terminal output DLP for issue #1274",
+    "date": "2026-04-21T23:35:28Z",
+    "summary": "",
+    "url": "https://github.com/kushin77/code-server/pull/1332",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: code-server"
+    ]
+  },
+  {
+    "title": "[PR] feat(openclaw): update openclaw base image to v2026.4.20",
+    "date": "2026-04-21T23:35:22Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | final | patch | `2026.",
+    "url": "https://github.com/stefanhoth/openclaw-custom/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-custom"
+    ]
+  },
+  {
+    "title": "[PR] feat: implement zero-trust network access for issue #1273",
+    "date": "2026-04-21T23:34:00Z",
+    "summary": "Implement zero-trust network access with mTLS, certificate rotation, and audit logging.\n\n## Changes\n- **mTLS Between Services**: Configure mutual TLS authentication between all services (code-server, session-broker, postgres, redis, ollama, caddy, etc.)\n- **24h Certificate Rotation**: Automated cert",
+    "url": "https://github.com/kushin77/code-server/pull/1331",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: code-server"
+    ]
+  },
+  {
+    "title": "[PR] feat: implement terminal output DLP for issue #1274",
+    "date": "2026-04-21T23:30:07Z",
+    "summary": "Implement terminal output DLP to prevent credential leakage in terminal sessions.\n\n## Changes\n- Add TerminalOutputDLP class with 25+ regex patterns for credentials/PII detection\n- Integrate DLP scanning into terminal output processing with redact/block modes  \n- Add comprehensive audit logging for s",
+    "url": "https://github.com/kushin77/code-server/pull/1329",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: code-server"
+    ]
+  },
+  {
+    "title": "[PR] Moon Dreams Dev \u2014 brand site from scratch",
+    "date": "2026-04-21T23:20:45Z",
+    "summary": "Builds the full Moon Dreams Dev LLC single-page brand site replacing the generic placeholder. Dark-first (\"Midnight Precision\") design: `#020617` background, violet-400 accent, Inter + JetBrains Mono typography. All content is written in first-person as Nova's own voice \u2014 honest, grounded, and witho",
+    "url": "https://github.com/NovaMoonX/moon-dreams-dev-core/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: moon-dreams-dev-core"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui ( v0.8.12 \u2794 v0.9.1 )",
+    "date": "2026-04-21T23:17:38Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `v0.8.12` \u2192 `v0.9.1` |\n\n---\n\n> [!WARNING]\n> Some ",
+    "url": "https://github.com/dstewen/talos-homelab/pull/496",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: talos-homelab"
+    ]
+  },
+  {
+    "title": "[PR] Update ghcr.io/open-webui/open-webui Docker tag to v0.9.1",
+    "date": "2026-04-21T23:02:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.8.5` \u2192 `v0.9.1` |\n\n---\n\n> [!WARNING]\n> Some de",
+    "url": "https://github.com/EislM0203/fluxcd/pull/97",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: fluxcd"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/openclaw/openclaw docker tag to v2026.4.20",
+    "date": "2026-04-21T23:00:39Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.4.14` \u2192 `2026.4.20`",
+    "url": "https://github.com/ivanversluis/homelabs/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelabs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/openclaw/openclaw docker tag to v2026.4.20",
+    "date": "2026-04-21T22:55:58Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | minor | `2026.3.24` \u2192 `2026.4.20`",
+    "url": "https://github.com/kyleseneker/homelab/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui ( v0.8.12 \u2794 v0.9.1 )",
+    "date": "2026-04-21T22:52:16Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `v0.8.12` \u2192 `v0.9.1` |\n\n---\n\n> [!WARNING]\n> Some ",
+    "url": "https://github.com/lucas-dclrcq/homelabitty/pull/3946",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: homelabitty"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency pydantic-ai to >=1.85.0",
+    "date": "2026-04-21T22:49:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pydantic-ai](https://redire",
+    "url": "https://github.com/StacklokLabs/mcp-tef/pull/123",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mcp-tef"
     ]
   }
 ]
