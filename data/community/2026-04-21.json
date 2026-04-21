@@ -214,8 +214,8 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-20T21:16:01Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://de",
+    "date": "2026-04-21T05:11:32Z",
+    "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
     "highlights": [
@@ -526,12 +526,12 @@
   },
   {
     "title": "[PR] fix: aligns TypeScript typecheck across lifeops, agent, app-core, and shared, and folds the phone-companion surface ",
-    "date": "2026-04-21T02:52:37Z",
-    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Medium risk: adds new iOS native/Capacitor functionality (APNs, local notifications, remote-session viewer + input WebSocket) and changes core message flow to bypass LLM classification/response when no text model is registered, which could affect",
+    "date": "2026-04-21T05:20:34Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **Medium Risk**\n> Touches multiple LifeOps action flows (calendar creation, scheduling, inbox, Twilio escalation) and adds new trigger-based automation, increasing behavior and integration surface area; failures could affect owner-facing automation and scheduling ",
     "url": "https://github.com/elizaOS/eliza/pull/6984",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 9",
       "pull request",
       "repo: eliza"
     ]
@@ -562,7 +562,7 @@
   },
   {
     "title": "[PR] feat: MJ Archiving Engine \u2014 metadata-driven database archiving system",
-    "date": "2026-04-21T02:23:15Z",
+    "date": "2026-04-21T05:14:36Z",
     "summary": "## Summary\n\nImplements the full [Archiving Engine spec (PR #2024)](https://github.com/MemberJunction/MJ/pull/2024) end-to-end:\n\n- **3 new packages**: `@memberjunction/archiving-engine`, `@memberjunction/archiving-action`, `@memberjunction/ng-archive-manager`\n- **3 SQL migrations**: 4 archive tables ",
     "url": "https://github.com/MemberJunction/MJ/pull/2306",
     "source": "github_prs",
@@ -622,12 +622,12 @@
   },
   {
     "title": "[PR] fix(security): prevent SSRF via DNS bypass in provider URL validation",
-    "date": "2026-04-21T01:05:17Z",
+    "date": "2026-04-21T03:17:13Z",
     "summary": "## Summary\n\n- **SSRF vulnerability confirmed via live exploit** on deployment at `10.10.27.30:18790`\n- `validateProviderURL` only checked literal IPs (`net.ParseIP` returns nil for hostnames), allowing wildcard DNS services (`nip.io`, `sslip.io`) or attacker-controlled domains resolving to private I",
     "url": "https://github.com/nextlevelbuilder/goclaw/pull/974",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: goclaw"
     ]
@@ -658,7 +658,7 @@
   },
   {
     "title": "[PR] Feat: Filesystem Tool",
-    "date": "2026-04-21T00:49:14Z",
+    "date": "2026-04-21T03:10:20Z",
     "summary": "## Summary\r\n\r\n<!-- Describe your changes in 1-3 bullet points -->\r\n\r\n  Adds a tool_filesystem node that exposes the existing account-scoped FileStore as agent tools.                                           \r\n                                                                                          ",
     "url": "https://github.com/rocketride-org/rocketride-server/pull/682",
     "source": "github_prs",
@@ -762,6 +762,150 @@
       "comments: 1",
       "pull request",
       "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] Fix start.sh WSL conflicts and hide console spam",
+    "date": "2026-04-21T05:08:53Z",
+    "summary": "This final PR fixes a few critical environment bugs discovered when pulling this branch on a fresh WSL instance. It updates `requirements.txt` to include `aiohttp` and `google-generativeai` explicitly. It also modifies `start.sh` to forcefully unbind ports `:3000` and `:8000` before starting service",
+    "url": "https://github.com/techted89/AiCryptoSimulater/pull/13",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: AiCryptoSimulater"
+    ]
+  },
+  {
+    "title": "[PR] Add Qwen2.5 Coder model support to registry and chat templates",
+    "date": "2026-04-21T05:02:46Z",
+    "summary": "Replacement for #3436 due to Studio rebasing\n\n- Added model info class and metadata for 0.5B-32B sizes\n- Implemented registration function with quantization support\n- Added chat template aliases\n- Updated registry documentation\n",
+    "url": "https://github.com/unslothai/unsloth/pull/4221",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: unsloth"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go to v0.42.0",
+    "date": "2026-04-21T05:00:15Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/newrelic/nrdot-collector-components/pull/226",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nrdot-collector-components"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Qwen/Alibaba provider with cross-provider mappings and reasoning middleware",
+    "date": "2026-04-21T04:47:56Z",
+    "summary": "Add Alibaba Cloud (Qwen) as a new first-class provider using `@ai-sdk/alibaba`. Includes 15 canonical model IDs across Qwen3, 3.5, 3.6, Coder, and VL families with cross-provider mappings for Groq, Bedrock, Vertex AI, and Azure. Adds reasoning middleware that maps OpenAI-compatible reasoning_effort ",
+    "url": "https://github.com/8monkey-ai/hebo-gateway/pull/151",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 67",
+      "pull request",
+      "repo: hebo-gateway"
+    ]
+  },
+  {
+    "title": "[PR] feat(agents): local model fallback + semantic cache store",
+    "date": "2026-04-21T04:29:24Z",
+    "summary": "#THIS CODE IS AUTONOMOUSLY WRITTEN USING [NEO](https://heyneo.so/)- Your Autonomous AI Engineering Agent\r\n## What this PR does\r\n\r\nTwo new reliability/performance features wired end-to-end into the agent run path:\r\n\r\n### 1. Local Model Fallback (`src/agents/local-model-fallback.ts`)\r\n\r\nWhen a cloud A",
+    "url": "https://github.com/openclaw/openclaw/pull/38160",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] [WIP] Add new source URL for distraction-free reading",
+    "date": "2026-04-21T04:21:35Z",
+    "summary": "Thanks for asking me to work on this. I will get started on it and keep this PR's description up to date as I form a plan and make progress.\n\n> ----\n> \n> *This section details on the original issue you should resolve*\n> \n> <issue_title>New Source</issue_title>\n> <issue_description>Source URL: Read d",
+    "url": "https://github.com/2ooks/knowledge-base/pull/128",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: knowledge-base"
+    ]
+  },
+  {
+    "title": "[PR] security: hardening pass \u2014 closes #54 #55 #56 #57 #58 #59 #60 #61",
+    "date": "2026-04-21T04:19:15Z",
+    "summary": "## Summary\n\nEight security and correctness issues shipped together because later fixes build on the state primitives introduced by earlier ones (e.g. the session integrity work in #58 is a prerequisite for the JWT hardening in #59). Each commit corresponds to exactly one issue and can be reviewed in",
+    "url": "https://github.com/aflock-ai/aflock/pull/67",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: aflock"
+    ]
+  },
+  {
+    "title": "[PR] feat: integrate router policy v1.0.0 with tests and CI (#341)",
+    "date": "2026-04-21T04:11:07Z",
+    "summary": "This PR integrates the router policy spec with comprehensive testing and CI validation.\n\n## Changes\n- **Router Policy v1.0.0**: Added versioned policy spec to router.agent.md with keyword-based lane classification and escalation rules\n- **Unit Tests**: Created tests/router-policy.test.js with 5 test",
+    "url": "https://github.com/chf3198/devenv-ops/pull/342",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: devenv-ops"
+    ]
+  },
+  {
+    "title": "[PR] feat(actions): Runtime Actions \u2014 Phase 1 complete (bridge, ActionSmith, approval UI)",
+    "date": "2026-04-21T03:27:57Z",
+    "summary": "## Summary\n\nImplements **Phase 1** of the Runtime Actions plan in full: a new `Action.Type='Runtime'` that lets agents (via the new **ActionSmith** meta-agent) dynamically generate, test, and persist sandboxed-JavaScript actions that compose existing MJ capabilities. Delivered across eight sub-phase",
+    "url": "https://github.com/MemberJunction/MJ/pull/2446",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): add OpenAI and Anthropic providers for LLM triage (LAB-1804)",
+    "date": "2026-04-21T03:21:30Z",
+    "summary": "## Description\r\nAdds OpenAI and Anthropic as LLM providers for finding triage (LAB-1804), alongside the existing Ollama support. Users can now run `--llm-provider openai` or `--llm-provider anthropic` to use cloud LLMs for more accurate vulnerability classification. Shared prompt building and respon",
+    "url": "https://github.com/praetorian-inc/hadrian/pull/57",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: hadrian"
+    ]
+  },
+  {
+    "title": "[PR] fix(security): enforce URL validation for local provider types (SSRF)",
+    "date": "2026-04-21T03:17:51Z",
+    "summary": "## Summary\n\n- **Fix SSRF via `provider_type=ollama/claude_cli/acp`** \u2014 `validateProviderURL()` previously returned `nil` unconditionally for local provider types, allowing any tenant admin to point `api_base` at arbitrary internal hosts (cloud metadata endpoints, Docker-internal DNS, localhost servi",
+    "url": "https://github.com/nextlevelbuilder/goclaw/pull/972",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: goclaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.492.0",
+    "date": "2026-04-21T04:54:16Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.229.0` \u2192 `v4.492.0` | `v4.496.0` (+4)",
+    "url": "https://github.com/korosuke613/grpshuffle/pull/180",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: grpshuffle"
     ]
   }
 ]
