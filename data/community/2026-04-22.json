@@ -214,7 +214,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-22T13:07:56Z",
+    "date": "2026-04-22T15:59:07Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Deprecations / Replacements\n> [",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -586,7 +586,7 @@
   },
   {
     "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.42.0",
-    "date": "2026-04-22T06:05:54Z",
+    "date": "2026-04-22T16:47:00Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/DoodleScheduling/db-controller/pull/208",
     "source": "github_prs",
@@ -790,7 +790,7 @@
   },
   {
     "title": "[PR] Update ghcr.io/openclaw/openclaw Docker tag to v2026.4.21",
-    "date": "2026-04-22T15:02:14Z",
+    "date": "2026-04-22T16:48:32Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.4.8` \u2192 `2026.4.21` ",
     "url": "https://github.com/claytono/infra/pull/1977",
     "source": "github_prs",
@@ -1006,7 +1006,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-22T15:14:37Z",
+    "date": "2026-04-22T16:34:47Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1462,24 +1462,24 @@
   },
   {
     "title": "[PR] fix(container): update image ghcr.io/openclaw/openclaw (2026.4.20 \u2192 2026.4.21)",
-    "date": "2026-04-22T15:19:26Z",
+    "date": "2026-04-22T17:05:51Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.4.20` \u2192 `2026.4.21` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>openclaw/openclaw (ghcr.",
     "url": "https://github.com/joryirving/home-ops/pull/6826",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 3",
       "pull request",
       "repo: home-ops"
     ]
   },
   {
     "title": "[PR] fix speech input flow and settings UX",
-    "date": "2026-04-22T15:17:28Z",
+    "date": "2026-04-22T15:56:47Z",
     "summary": "## Summary\n- replace the heavier speech-model-selection setup with a single global `Use local speech to text` setting in the main Settings page\n- make raw audio the default submission path, but submit transcript-only when local speech-to-text is enabled so text-only models still work\n- restore the v",
     "url": "https://github.com/memex-lab/memex/pull/13",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: memex"
     ]
@@ -1602,6 +1602,186 @@
       "comments: 1",
       "pull request",
       "repo: que_bang"
+    ]
+  },
+  {
+    "title": "[PR] fix(agents): resolve imageModel 'Unknown model' for custom providers (#33185)",
+    "date": "2026-04-22T17:08:11Z",
+    "summary": "## Summary\n\nFixes #33185 \u2014 The `imageModel` configuration fails with `\"Unknown model\"` for any valid custom provider (vllm, nvidia-api, iflow, etc.) because the image tool's model resolution used a bare registry lookup that only finds built-in models.\n\n### Root Cause\n\n`resolveImageRuntime()` in `ima",
+    "url": "https://github.com/openclaw/openclaw/pull/51150",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(conversations): Redesign non-image attachment tiles, fix snapshot \"0 B\"",
+    "date": "2026-04-22T17:07:32Z",
+    "summary": "## Summary\r\n\r\n- **Fix \"0 B\" on data snapshots.** `AnalyzeArtifactService.CreateSnapshotArtifact` never populated `ContentSizeBytes`, so every data snapshot rendered as \"0 B\" in the conversation attachment tile. Fixed once at the save layer (`MJArtifactVersionEntityServer.Save()`) alongside the exist",
+    "url": "https://github.com/MemberJunction/MJ/pull/2450",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: add API connectivity test with indicator lights",
+    "date": "2026-04-22T17:02:28Z",
+    "summary": "## Summary\n\nAdd a visual API connectivity testing feature to the API Key settings page. Users can manually test whether each configured API endpoint is reachable and the key is valid, with colored indicator lights showing the result.\n\n### Architecture\n\n**Two testing modes for built-in vs custom APIs",
+    "url": "https://github.com/Project-N-E-K-O/N.E.K.O/pull/915",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: N.E.K.O"
+    ]
+  },
+  {
+    "title": "[PR] FG-25 Enhance rag with binary quantization",
+    "date": "2026-04-22T17:02:04Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Conversational booking chatbot (floating, sidebar, embedded) with streaming, multilingual semantic RAG, tool-driven bookings and Stripe checkout.\n  * Optional Qdrant vector s",
+    "url": "https://github.com/afkatja/fincaguarumo/pull/57",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: fincaguarumo"
+    ]
+  },
+  {
+    "title": "[PR] feat(tools): add automated LLM model sync tool and update provider profiles",
+    "date": "2026-04-22T16:59:06Z",
+    "summary": "## Summary\r\n\r\nAdds a sync tool that keeps each LLM node's `services.json` aligned with its provider's live model catalog, exposes where each model ID was discovered (`modelSource`), and wires a weekly CI job so humans don't have to remember.\r\n\r\n## What's new\r\n\r\n**`sync_models` tool** (`tools/src/syn",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/651",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] Bug reporting",
+    "date": "2026-04-22T16:44:34Z",
+    "summary": "Summary                                                                                                                              \r\n                                                                                                                                       \r\n  - Add in-app feedback syst",
+    "url": "https://github.com/MemberJunction/MJ/pull/2380",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): model catalog + multi-wire cloud dispatch",
+    "date": "2026-04-22T16:37:43Z",
+    "summary": "## Summary\n\nAdds a central **model catalog** that maps `(cloud, model-id)` \u2192 **wire format** (`anthropic`, `openai-compat`, `google-native`), so cloud providers (Bedrock, Vertex AI, Azure Foundry) dispatch per-model instead of pattern-matching names. Adding a newly-released model is now a one-line `",
+    "url": "https://github.com/decisionbox-io/decisionbox-platform/pull/177",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: decisionbox-platform"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-04-22T16:37:07Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [adguard/adguardhome](https://adguard.com/en/adguard-home/overview.html) ([source](https://redirect.github.com/AdguardTeam/AdGuardHome)) | pat",
+    "url": "https://github.com/arashnrim/homelab/pull/213",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat: AoE engine & event card effect processing",
+    "date": "2026-04-22T16:28:34Z",
+    "summary": "## Summary\n\n- Adds `AreaOfEffectService` for spatial zone computation (BFS on hex grid, terrain filtering, coastal detection, player/track identification)\n- Adds `TrackService.removeSegmentsCrossingRiver()` for Flood event JSONB segment filtering and `total_cost` recomputation\n- Adds `EventCardServi",
+    "url": "https://github.com/jeffgabriel/eurorails_ai/pull/235",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: eurorails_ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(audio): silence and pause detection via Silero VAD [KAN-11]",
+    "date": "2026-04-22T16:17:34Z",
+    "summary": "# KAN-11: Silence and pause detection and handling\n\n## Status\n<!-- PR_BLOCK:STATUS:BEGIN -->\n<!-- MUTABLE | owners: orchestrator, pr-author | updated-at: each phase transition -->\n\n| Field | Value |\n|-------|-------|\n| Phase | `Implementing` |\n| Draft | `true` |\n| Last Updated | 2026-04-22T15:37:40Z",
+    "url": "https://github.com/aranjandev/voice2voice-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: voice2voice-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Jetson Orin Nano support",
+    "date": "2026-04-22T16:13:29Z",
+    "summary": "Closes #404\nAlso fixes #539, relates to #65, #300, #511, #1076\n\n## Summary\n\nAdds end-to-end Jetson Orin Nano support: from GPU detection through to a working OpenClaw agent with local Ollama inference.\n\n- **GPU detection**: nvidia-smi reports `[N/A]` for memory.total on Jetson (unified memory). Adde",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/405",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 18",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] [Aikido] Fix 54 critical issues in undici, cheerio, fast-xml-parser and 18 more",
+    "date": "2026-04-22T16:11:51Z",
+    "summary": "Upgrade dependencies to fix critical vulnerabilities: axios proxy bypass/SSRF, undici HTTP request smuggling, form-data insufficient randomness, fast-xml-parser XSS via entity injection, and LangChain serialization injection. This update includes <b>breaking changes</b> that require manual migration",
+    "url": "https://github.com/awell-health/awell-extensions/pull/766",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: awell-extensions"
+    ]
+  },
+  {
+    "title": "[PR] Add Extended Providers experiment",
+    "date": "2026-04-22T16:09:29Z",
+    "summary": "\r\n<img width=\"3024\" height=\"1722\" alt=\"CleanShot 2025-12-19 at 09 15 39@2x\" src=\"https://github.com/user-attachments/assets/5dc20184-346e-44bb-a5c6-c572281796a7\" />\r\n\r\n\r\n## What?\r\n\r\nAdds a new Extended Providers experiment that registers 9 additional AI provider integrations:\r\n- Cloudflare Workers A",
+    "url": "https://github.com/WordPress/ai/pull/148",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 18",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-04-22T16:05:36Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/arthrod/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(audio_tts): add Kokoro-only Text To Speech node (RR-411)",
+    "date": "2026-04-22T15:54:25Z",
+    "summary": "\r\n\r\n## Summary\r\n\r\n\r\n- Node: IGlobal/IInstance/TTSEngine aligned with reference for engine=kokoro\r\n- services.json: single kokoro profile and voice catalog\r\n- packages/ai: KokoroLoader, spacy_en_model,  requirements_kokoro\r\n- depends() installs slim requirements (no piper/transformers/cloud)\r\n- Tests",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/662",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: rocketride-server"
     ]
   }
 ]
