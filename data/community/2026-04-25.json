@@ -755,7 +755,7 @@
   },
   {
     "title": "[PR] feat: Explore + AI Agent + Map Picker + Chat Persistence (Phase A-D)",
-    "date": "2026-04-25T14:15:14Z",
+    "date": "2026-04-25T14:50:54Z",
     "summary": "## \u6982\u8ff0\n\u5b8c\u6210 4 \u4efd\u8ba1\u5212\u6587\u6863\u7684 SOTA \u7ea7\u91cd\u6784\uff0c\u6db5\u76d6 Phase A\uff08\u57fa\u5efa\u5c42\uff09\u5230 Phase D\uff08\u7edf\u4e00\u58f3\u5c42\uff09\u3002\n\n### Phase A \u2014 \u57fa\u5efa\u5c42\n- Schema v20 \u5408\u5e76\u8fc1\u79fb\uff1a`poi_name` + `chat_sessions` + `chat_messages` \u8868\n- ChatMessage / ChatSession \u6a21\u578b\uff08toMap/fromMap/copyWith\uff09\n- Quote.poiName \u5b57\u6bb5 + \u4e09\u7ea7\u663e\u793a\u4f18\u5148\u7ea7\n- ChatSessionService \u6301\u4e45\u5316\u670d\u52a1\n- PlaceSearchService\uff08Nominatim\uff0c\u514d\u8d39\u65e0 Key\uff09\n- AI",
     "url": "https://github.com/Shangjin-Xiao/ThoughtEcho/pull/181",
     "source": "github_prs",
@@ -1055,7 +1055,7 @@
   },
   {
     "title": "[PR] Text-to-SQL: Help agents turn natural language into SQL queries",
-    "date": "2026-04-25T14:14:54Z",
+    "date": "2026-04-25T15:16:50Z",
     "summary": "## About\r\nExploring Text-to-SQL with LlamaIndex and frontier and non-frontier models.\r\n\r\n## What's inside\r\nDataQuery is the little sister of Vanna AI and Google's QueryData product, tailored to CrateDB.\r\n\r\n## Documentation\r\nPreview: https://cratedb-toolkit--762.org.readthedocs.build/query/nlsql/\r\n\r\n",
     "url": "https://github.com/crate/cratedb-toolkit/pull/762",
     "source": "github_prs",
@@ -1135,6 +1135,54 @@
       "comments: 2",
       "pull request",
       "repo: opkssh"
+    ]
+  },
+  {
+    "title": "[PR] feat(judge): LLM-based transcription criteria + judge CLI wiring + per-record persistence",
+    "date": "2026-04-25T15:38:29Z",
+    "summary": "## Summary\n\nAdds two LLM criteria to `TranscriptionJudge` for failure modes the\nheuristic stages cannot detect, wires the judge into the production CLI\nand SLURM path, and unifies transcription quality storage on\n`JudgePipelineResult` so verdicts land per-record instead of in a side\nfile. Verified e",
+    "url": "https://github.com/FredDsR/arandu/pull/88",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: arandu"
+    ]
+  },
+  {
+    "title": "[PR] Add CLI input validation, argparse, dry-run, and verbose flags",
+    "date": "2026-04-25T15:37:31Z",
+    "summary": "## Summary\n\n- Replaced sys.argv with argparse for proper CLI help and flag support\n- Added input validation for file existence, PDF readability, and service connectivity\n- Added --dry-run flag to preview processing without sending to vault\n- Added --verbose/-v flag to enable debug logging\n\n## Change",
+    "url": "https://github.com/aarupthomas-rgb/KC-1/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: KC-1"
+    ]
+  },
+  {
+    "title": "[PR] feat: AoE engine & event card effect processing",
+    "date": "2026-04-25T15:19:43Z",
+    "summary": "## Summary\n\n- Adds `AreaOfEffectService` for spatial zone computation (BFS on hex grid, terrain filtering, coastal detection, player/track identification)\n- Adds `TrackService.removeSegmentsCrossingRiver()` for Flood event JSONB segment filtering and `total_cost` recomputation\n- Adds `EventCardServi",
+    "url": "https://github.com/jeffgabriel/eurorails_ai/pull/235",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: eurorails_ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): support local OpenAI-compatible runtimes via LLM_JSON_MODE",
+    "date": "2026-04-25T15:14:55Z",
+    "summary": "## Problem\n\nMiroFish hard-codes `response_format={\"type\": \"json_object\"}` on every JSON-producing LLM call. That works for OpenAI, Qwen/Dashscope, and Ollama, but several popular OpenAI-compatible runtimes reject it with `HTTP 400 - 'response_format.type' must be 'json_schema' or 'text'`. The result",
+    "url": "https://github.com/666ghj/MiroFish/pull/580",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: MiroFish"
     ]
   }
 ]
