@@ -179,7 +179,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-25T01:09:53Z",
+    "date": "2026-04-25T06:08:21Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Deprecations / Replacements\n> [",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -263,7 +263,7 @@
   },
   {
     "title": "Meta: Request rate limiting",
-    "date": "2026-04-23T03:17:35Z",
+    "date": "2026-04-25T06:33:16Z",
     "summary": "This meta issue tracks scenarios where chat requests are blocked due to rate limiting.\n\n\ud83d\udc49 To get help with **premium request quota issues**, please comment in https://github.com/microsoft/vscode/issues/252230 .\n\nIn case you experience repeated rate-limiting in GitHub Copilot, please reach out to Git",
     "url": "https://github.com/microsoft/vscode/issues/253124",
     "source": "github_issues",
@@ -659,7 +659,7 @@
   },
   {
     "title": "[PR] fix(deps): update python non-major dependencies",
-    "date": "2026-04-25T01:33:10Z",
+    "date": "2026-04-25T06:14:43Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [cachetools](https://redirec",
     "url": "https://github.com/ilanbenb/wa_llm/pull/141",
     "source": "github_prs",
@@ -695,12 +695,12 @@
   },
   {
     "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.23",
-    "date": "2026-04-25T00:50:36Z",
+    "date": "2026-04-25T06:39:39Z",
     "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.23`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.23\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/24",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
     "source": "github_prs",
     "highlights": [
-      "comments: 601",
+      "comments: 615",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -755,7 +755,7 @@
   },
   {
     "title": "[PR] feat: Explore + AI Agent + Map Picker + Chat Persistence (Phase A-D)",
-    "date": "2026-04-25T05:14:17Z",
+    "date": "2026-04-25T06:57:33Z",
     "summary": "## \u6982\u8ff0\n\u5b8c\u6210 4 \u4efd\u8ba1\u5212\u6587\u6863\u7684 SOTA \u7ea7\u91cd\u6784\uff0c\u6db5\u76d6 Phase A\uff08\u57fa\u5efa\u5c42\uff09\u5230 Phase D\uff08\u7edf\u4e00\u58f3\u5c42\uff09\u3002\n\n### Phase A \u2014 \u57fa\u5efa\u5c42\n- Schema v20 \u5408\u5e76\u8fc1\u79fb\uff1a`poi_name` + `chat_sessions` + `chat_messages` \u8868\n- ChatMessage / ChatSession \u6a21\u578b\uff08toMap/fromMap/copyWith\uff09\n- Quote.poiName \u5b57\u6bb5 + \u4e09\u7ea7\u663e\u793a\u4f18\u5148\u7ea7\n- ChatSessionService \u6301\u4e45\u5316\u670d\u52a1\n- PlaceSearchService\uff08Nominatim\uff0c\u514d\u8d39\u65e0 Key\uff09\n- AI",
     "url": "https://github.com/Shangjin-Xiao/ThoughtEcho/pull/181",
     "source": "github_prs",
@@ -767,7 +767,7 @@
   },
   {
     "title": "[PR] perf(startup): tighten fast-start window, compress local metadata, scope user data",
-    "date": "2026-04-25T05:10:59Z",
+    "date": "2026-04-25T05:28:25Z",
     "summary": "## Summary\n- **Defer background metadata validation** until after `StartupManager` finishes so IndexedDB writes no longer contend with engine cache reads during startup.\n- **Hold `FastStartupMode` open across all parallel engine loads** \u2014 `StartupManager` now closes it via `ProviderBase.ConsumeFastS",
     "url": "https://github.com/MemberJunction/MJ/pull/2462",
     "source": "github_prs",
@@ -799,6 +799,114 @@
       "comments: 4",
       "pull request",
       "repo: qwen-code"
+    ]
+  },
+  {
+    "title": "[PR] feat(lightspeed): notebook chat",
+    "date": "2026-04-25T07:22:14Z",
+    "summary": "## Description\r\nAdds the Notebook Chat feature to the Lightspeed plugin, enabling users to interact with AI Notebooks through a chat interface.\r\n\r\n\r\n- Fixing https://redhat.atlassian.net/browse/RHIDP-12874\r\n## Steps to test \r\n\r\n1. clone [lightspeed-configs](https://github.com/redhat-ai-dev/lightspee",
+    "url": "https://github.com/redhat-developer/rhdh-plugins/pull/2754",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: rhdh-plugins"
+    ]
+  },
+  {
+    "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
+    "date": "2026-04-25T07:18:49Z",
+    "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
+    "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: OpenMAIC"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-04-25T06:56:48Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] home-assistant: 2026.4.3 -> 2026.4.4",
+    "date": "2026-04-25T06:55:32Z",
+    "summary": "Diff: https://github.com/home-assistant/core/compare/2026.4.3...2026.4.4\r\n\r\nChangelog: https://github.com/home-assistant/core/releases/tag/2026.4.4\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or des",
+    "url": "https://github.com/NixOS/nixpkgs/pull/513176",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): OpenTelemetry middleware",
+    "date": "2026-04-25T06:54:59Z",
+    "summary": "## Summary\n\n- New `otelMiddleware({ tracer, meter?, ... })` factory in `@tanstack/ai/middlewares`.\n- Emits GenAI-semconv root/iteration/tool spans + duration and token histograms.\n- Opt-in content capture with optional redactor; four extension points for customization.\n- `@opentelemetry/api` added a",
+    "url": "https://github.com/TanStack/ai/pull/500",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] fix(agents): resolve imageModel 'Unknown model' for custom providers (#33185)",
+    "date": "2026-04-25T06:24:01Z",
+    "summary": "## Summary\n\nFixes #33185 \u2014 The `imageModel` configuration fails with `\"Unknown model\"` for any valid custom provider (vllm, nvidia-api, iflow, etc.) because the image tool's model resolution used a bare registry lookup that only finds built-in models.\n\n### Root Cause\n\n`resolveImageRuntime()` in `ima",
+    "url": "https://github.com/openclaw/openclaw/pull/51150",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix: Make ALL features fully functional \u2014 dark mode, user menu, notifications, API proxy, generators, exports, editors",
+    "date": "2026-04-25T06:11:34Z",
+    "summary": "## Summary\n\nComprehensive fix for all non-functional features in PinHub. Every interactive element, button, toggle, and feature has been audited and fixed.\n\n### What's Fixed\n\n**Critical UI Features:**\n- **Dark Mode** \u2014 Theme toggle now works. Added CSS variable system + `ThemeProvider` that applies ",
+    "url": "https://github.com/sgd-lab/PinHub__Devin_AI/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: PinHub__Devin_AI"
+    ]
+  },
+  {
+    "title": "[PR] Bump the testcontainers group with 3 updates",
+    "date": "2026-04-25T05:56:47Z",
+    "summary": "Updated [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet) from 3.10.0 to 4.11.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.11.0\n\n# What's Changed\n\nThanks to ",
+    "url": "https://github.com/sassy-solutions/compendium/pull/12",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: compendium"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-04-25T05:53:39Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [adguard/adguardhome](https://adguard.com/en/adguard-home/overview.html) ([source](https://redirect.github.com/AdguardTeam/AdGuardHome)) | pat",
+    "url": "https://github.com/arashnrim/homelab/pull/213",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
     ]
   }
 ]
