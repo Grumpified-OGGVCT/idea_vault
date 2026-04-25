@@ -1163,12 +1163,12 @@
   },
   {
     "title": "[PR] feat: AoE engine & event card effect processing",
-    "date": "2026-04-25T15:19:43Z",
+    "date": "2026-04-25T16:22:22Z",
     "summary": "## Summary\n\n- Adds `AreaOfEffectService` for spatial zone computation (BFS on hex grid, terrain filtering, coastal detection, player/track identification)\n- Adds `TrackService.removeSegmentsCrossingRiver()` for Flood event JSONB segment filtering and `total_cost` recomputation\n- Adds `EventCardServi",
     "url": "https://github.com/jeffgabriel/eurorails_ai/pull/235",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: eurorails_ai"
     ]
@@ -1183,6 +1183,54 @@
       "comments: 0",
       "pull request",
       "repo: MiroFish"
+    ]
+  },
+  {
+    "title": "[PR] chore: portable everything-claude-code reviewer agents",
+    "date": "2026-04-25T16:45:50Z",
+    "summary": "## Summary\n\nSelf-contains the four `everything-claude-code` (ECC) reviewer agents that synthorg actually uses (`python-reviewer`, `security-reviewer`, `persistence-reviewer`, `go-reviewer`) so the global ECC plugin and its 65+ skills can be uninstalled without breaking the `pre-pr-review` and `aurel",
+    "url": "https://github.com/Aureliolo/synthorg/pull/1583",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: synthorg"
+    ]
+  },
+  {
+    "title": "[PR] feat(codegen): archive entity metadata and field updates",
+    "date": "2026-04-25T16:38:50Z",
+    "summary": "## Summary\n- Add CodeGen migration for archive run detail view with joined ArchiveRun timestamp and updated stored procedures\n- Fix `RuntimeActionConfiguration` Zod type from `z.any` to `z.string` in generated entity subclasses\n- Add field descriptions for MCP Tool Favorite entity (UserID, MCPServer",
+    "url": "https://github.com/MemberJunction/MJ/pull/2459",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] 4.0.1",
+    "date": "2026-04-25T16:28:20Z",
+    "summary": "refer to changelog\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!NOTE]\n> **Medium Risk**\n> Touches core NPC spawn/despawn flow, LLM request plumbing, and SQLite persistence; regressions could surface as NPCs failing to spawn/respond or conversation data being lost/duplicated.\n> \n> **Overview**\n> **Adds OpenWebU",
+    "url": "https://github.com/mr2wei/ThirdBrain/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ThirdBrain"
+    ]
+  },
+  {
+    "title": "[PR] feat: Phase 10 post-training completion (v0.4.0)",
+    "date": "2026-04-25T16:17:17Z",
+    "summary": "Closes the \"trained, now what?\" gap with five new modules:\r\n\r\n- forgelm/inference.py: shared generation primitives (load_model, generate, generate_stream, logit_stats, adaptive_sample) used by chat, judge, synthetic\r\n- forgelm/chat.py: interactive REPL with streaming, /reset /save /temperature /syst",
+    "url": "https://github.com/cemililik/ForgeLM/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ForgeLM"
     ]
   }
 ]
