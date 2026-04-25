@@ -839,7 +839,7 @@
   },
   {
     "title": "[PR] home-assistant: 2026.4.3 -> 2026.4.4",
-    "date": "2026-04-25T06:55:32Z",
+    "date": "2026-04-25T23:33:03Z",
     "summary": "Diff: https://github.com/home-assistant/core/compare/2026.4.3...2026.4.4\r\n\r\nChangelog: https://github.com/home-assistant/core/releases/tag/2026.4.4\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or des",
     "url": "https://github.com/NixOS/nixpkgs/pull/513176",
     "source": "github_prs",
@@ -1247,7 +1247,7 @@
   },
   {
     "title": "[PR] fix(cli): recognize OpenAI-compatible providers in `qwen auth status`",
-    "date": "2026-04-25T17:34:59Z",
+    "date": "2026-04-25T23:01:32Z",
     "summary": "## Summary\n\n- `qwen auth status` previously treated all `selectedType=openai` as Coding Plan, showing misleading \"Alibaba Cloud Coding Plan (Incomplete)\" for users with generic OpenAI-compatible providers (e.g. Xunfei, DeepSeek, Ollama)\n- Split the `USE_OPENAI` branch into Coding Plan path (detected",
     "url": "https://github.com/QwenLM/qwen-code/pull/3623",
     "source": "github_prs",
@@ -1447,6 +1447,18 @@
       "comments: 0",
       "pull request",
       "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): add claude-code provider (#1193)",
+    "date": "2026-04-25T23:02:54Z",
+    "summary": "## Summary\n\nAdds a `claude-code` LLM provider in `mempalace/llm_client.py` that routes through the local `claude` CLI binary using the user's Claude Pro/Max subscription via `claude auth login`. Mirrors the existing `OllamaProvider` / `OpenAICompatProvider` / `AnthropicProvider` shape so `mempalace ",
+    "url": "https://github.com/MemPalace/mempalace/pull/1200",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: mempalace"
     ]
   }
 ]
