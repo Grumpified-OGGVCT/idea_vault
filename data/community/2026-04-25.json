@@ -743,12 +743,12 @@
   },
   {
     "title": "[PR] feat: implement codebase indexing",
-    "date": "2026-04-25T18:47:23Z",
+    "date": "2026-04-25T19:41:23Z",
     "summary": "## Context\n\nCloses #6144\n\nRelated indexing/search issues: #7986, #8385, #7352, #8311, #6391, #6453, #6490, #6936, #6482, #6047, #1105, #912, #4080, #4635.\n\n## Implementation\n\nFor the backend, migrates the legacy codebase indexing backend into the new codebase, locating as much code as possible in a ",
     "url": "https://github.com/Kilo-Org/kilocode/pull/6966",
     "source": "github_prs",
     "highlights": [
-      "comments: 62",
+      "comments: 63",
       "pull request",
       "repo: kilocode"
     ]
@@ -1055,7 +1055,7 @@
   },
   {
     "title": "[PR] Text-to-SQL: Help agents turn natural language into SQL queries",
-    "date": "2026-04-25T15:16:50Z",
+    "date": "2026-04-25T19:23:15Z",
     "summary": "## About\r\nExploring Text-to-SQL with LlamaIndex and frontier and non-frontier models.\r\n\r\n## What's inside\r\nDataQuery is the little sister of Vanna AI and Google's QueryData product, tailored to CrateDB.\r\n\r\n## Documentation\r\nPreview: https://cratedb-toolkit--762.org.readthedocs.build/query/nlsql/\r\n\r\n",
     "url": "https://github.com/crate/cratedb-toolkit/pull/762",
     "source": "github_prs",
@@ -1223,7 +1223,7 @@
   },
   {
     "title": "[PR] feat: Phase 10 post-training completion (v0.4.0)",
-    "date": "2026-04-25T17:31:19Z",
+    "date": "2026-04-25T19:27:38Z",
     "summary": "Closes the \"trained, now what?\" gap with five new modules:\r\n\r\n- forgelm/inference.py: shared generation primitives (load_model, generate, generate_stream, logit_stats, adaptive_sample) used by chat, judge, synthetic\r\n- forgelm/chat.py: interactive REPL with streaming, /reset /save /temperature /syst",
     "url": "https://github.com/cemililik/ForgeLM/pull/7",
     "source": "github_prs",
@@ -1351,6 +1351,30 @@
       "comments: 0",
       "pull request",
       "repo: code-server"
+    ]
+  },
+  {
+    "title": "[PR] fix(mjcore): gate Fields override on cache eligibility in PreRunView/PreRunViews",
+    "date": "2026-04-25T19:33:56Z",
+    "summary": "\r\nThe MJ 5.24 cache-poisoning fix unconditionally rewrote params.Fields to all entity columns in PreRunView/PreRunViews. That guarantees one cache entry per entity+filter satisfies any field subset, but it also fired for calls that will never be cached (entity has AllowCaching=0, BypassCache=true, n",
+    "url": "https://github.com/MemberJunction/MJ/pull/2466",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): provider pluggable \u2014 DeepSeek cloud + Ollama local fallback",
+    "date": "2026-04-25T19:17:09Z",
+    "summary": "## Summary\n\nAnticipe la **Phase 5 v1.1** de la [ROADMAP IA](https://github.com/benjsant/FusionDex-IA/blob/main/ROADMAP.md) : abstraction \\`LLMProvider\\` qui permet \u00e0 l'agent de basculer entre **DeepSeek** (cloud, qualit\u00e9 maximale) et **Ollama** (local, sans cl\u00e9) sans toucher \u00e0 la boucle tool-calling",
+    "url": "https://github.com/benjsant/FusionDex-IA/pull/19",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: FusionDex-IA"
     ]
   }
 ]
