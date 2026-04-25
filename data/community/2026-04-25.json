@@ -1223,7 +1223,7 @@
   },
   {
     "title": "[PR] feat: Phase 10 post-training completion (v0.4.0)",
-    "date": "2026-04-25T16:17:17Z",
+    "date": "2026-04-25T17:31:19Z",
     "summary": "Closes the \"trained, now what?\" gap with five new modules:\r\n\r\n- forgelm/inference.py: shared generation primitives (load_model, generate, generate_stream, logit_stats, adaptive_sample) used by chat, judge, synthetic\r\n- forgelm/chat.py: interactive REPL with streaming, /reset /save /temperature /syst",
     "url": "https://github.com/cemililik/ForgeLM/pull/7",
     "source": "github_prs",
@@ -1231,6 +1231,42 @@
       "comments: 5",
       "pull request",
       "repo: ForgeLM"
+    ]
+  },
+  {
+    "title": "[PR] fix(cluster-sync): daemon reliability fixes for replica node",
+    "date": "2026-04-25T17:38:28Z",
+    "summary": "Fixes all remaining cluster-sync-daemon failures on replica 192.168.168.42. FETCH_HEAD for commit comparison, docker-compose v1/v2 detection, user-writable paths, user crontab fallback, k8s port-80 skip, env vars in cron, branch auto-detection. Daemon verified idempotent on replica.",
+    "url": "https://github.com/kushin77/code-server/pull/1792",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: code-server"
+    ]
+  },
+  {
+    "title": "[PR] fix(cli): recognize OpenAI-compatible providers in `qwen auth status`",
+    "date": "2026-04-25T17:34:59Z",
+    "summary": "## Summary\n\n- `qwen auth status` previously treated all `selectedType=openai` as Coding Plan, showing misleading \"Alibaba Cloud Coding Plan (Incomplete)\" for users with generic OpenAI-compatible providers (e.g. Xunfei, DeepSeek, Ollama)\n- Split the `USE_OPENAI` branch into Coding Plan path (detected",
+    "url": "https://github.com/QwenLM/qwen-code/pull/3623",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: qwen-code"
+    ]
+  },
+  {
+    "title": "[PR] Update ghcr.io/open-webui/open-webui Docker tag to v0.8.12",
+    "date": "2026-04-25T17:34:42Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.2` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n<",
+    "url": "https://github.com/ChristianLempa/boilerplates-library/pull/100",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: boilerplates-library"
     ]
   }
 ]
