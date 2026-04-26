@@ -791,7 +791,7 @@
   },
   {
     "title": "[PR] feat: Victoria Logs Integration",
-    "date": "2026-04-26T10:26:41Z",
+    "date": "2026-04-26T18:55:56Z",
     "summary": "Resolves #126 by adding a complete Victoria Logs integration. This implements a VictoriaLogsClient and a new VictoriaLogsTool that queries using LogsQL.",
     "url": "https://github.com/Tracer-Cloud/opensre/pull/663",
     "source": "github_prs",
@@ -887,12 +887,12 @@
   },
   {
     "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.24",
-    "date": "2026-04-26T12:25:04Z",
+    "date": "2026-04-26T18:22:43Z",
     "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.24`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.24\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/24",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
     "source": "github_prs",
     "highlights": [
-      "comments: 689",
+      "comments: 704",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -1079,7 +1079,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-04-26T17:28:46Z",
+    "date": "2026-04-26T17:54:13Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1091,7 +1091,7 @@
   },
   {
     "title": "[PR] feat(provider): add local OpenAI-compatible runtimes (mlx-lm, ollama, exo)",
-    "date": "2026-04-26T17:37:21Z",
+    "date": "2026-04-26T18:58:26Z",
     "summary": "## Summary\n- Adds three local LLM provider Kinds \u2014 `mlx-lm`, `ollama`, `exo` \u2014 sharing one OpenAI-compatible SSE streamer in `internal/provider/openai_compat.go`. Per-kind defaults plus `WUPHF_<KIND>_BASE_URL` / `WUPHF_<KIND>_MODEL` env overrides and a `provider_endpoints` map in `~/.wuphf/config.js",
     "url": "https://github.com/nex-crm/wuphf/pull/329",
     "source": "github_prs",
@@ -1139,7 +1139,7 @@
   },
   {
     "title": "[PR] feat: add Ollama provider for local-model support",
-    "date": "2026-04-26T17:42:50Z",
+    "date": "2026-04-26T17:50:37Z",
     "summary": "## Summary\n\nAdds [Ollama](https://ollama.com) as an alternative model provider so users can run chat, summary, completions, rewrite, and agent tool-calling against a local model instead of the Gemini API. Closes the local-model ask in discussion #576 (Phase 1).\n\nThe seam is the existing `ModelApi` i",
     "url": "https://github.com/allenhutchison/obsidian-gemini/pull/694",
     "source": "github_prs",
@@ -1235,7 +1235,7 @@
   },
   {
     "title": "[PR] chore: upgrade OpenClaw from 2026.4.9 to 2026.4.24",
-    "date": "2026-04-26T17:37:51Z",
+    "date": "2026-04-26T18:44:39Z",
     "summary": "## Summary\n\nUpgrades OpenClaw from **2026.4.9** to **2026.4.24** (latest stable, CalVer).\n\nThree fixes were required for the upgrade. Two are merged into this PR; the third is a test-side timeout that did not fully resolve a final hang, see Status below.\n\n### Code/config changes\n\n1. **Version bumps*",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/2484",
     "source": "github_prs",
@@ -1247,24 +1247,24 @@
   },
   {
     "title": "[PR] feat(init): context-aware corpus detection",
-    "date": "2026-04-26T17:33:29Z",
+    "date": "2026-04-26T19:00:32Z",
     "summary": "10 files changed. 2,563 insertions, 30 deletions. 48 new tests, including end-to-end coverage live-tested with Anthropic Haiku 4.5.\r\n\r\nThis PR overhauls the first-run experience of `mempalace init` end-to-end, ships a new corpus-origin detection module from scratch, wires it into entity classificati",
     "url": "https://github.com/MemPalace/mempalace/pull/1211",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 7",
       "pull request",
       "repo: mempalace"
     ]
   },
   {
     "title": "[PR] feat(codegen): scope Pass 2 manageEntityFields to changed entities",
-    "date": "2026-04-26T17:27:40Z",
-    "summary": "## Summary\n\nAdds **changed-entity scoping** to CodeGen's `manageEntityFields` Pass 2 so the most expensive phase only re-processes entities that actually mutated. The dominant developer workflow (\"no schema change since last run\") now does ~zero work in Pass 2 instead of three full schema scans.\n\n##",
+    "date": "2026-04-26T18:43:42Z",
+    "summary": "## Summary\r\n\r\nAdds **changed-entity scoping** to CodeGen's `manageEntityFields` Pass 2 so the most expensive phase only re-processes entities that actually mutated. The dominant developer workflow (\"no schema change since last run\") now does ~zero work in Pass 2 instead of three full schema scans, a",
     "url": "https://github.com/MemberJunction/MJ/pull/2342",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 13",
       "pull request",
       "repo: MJ"
     ]
@@ -1279,6 +1279,90 @@
       "comments: 1",
       "pull request",
       "repo: DataAccess"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): redesign wizard step + batch probe + Ollama Cloud preset + brand logos",
+    "date": "2026-04-26T18:59:24Z",
+    "summary": "Closes #1628.\nRefs #1603 (umbrella), #1629 (follow-up: OAuth/subscription research + new presets), #1635 (unrelated pre-existing flake found during full-suite run).\n\n## What this PR does\n\nFoundational rework of the provider setup wizard step + supporting infrastructure. Closes the 11-vs-10 rate-limi",
+    "url": "https://github.com/Aureliolo/synthorg/pull/1636",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: synthorg"
+    ]
+  },
+  {
+    "title": "[PR] feat(judge): LLM-based transcription criteria + judge CLI wiring + per-record persistence",
+    "date": "2026-04-26T18:58:44Z",
+    "summary": "## Summary\n\nAdds two LLM criteria to `TranscriptionJudge` for failure modes the\nheuristic stages cannot detect, wires the judge into the production CLI\nand SLURM path, and unifies transcription quality storage on\n`JudgePipelineResult` so verdicts land per-record instead of in a side\nfile. Verified e",
+    "url": "https://github.com/FredDsR/arandu/pull/88",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: arandu"
+    ]
+  },
+  {
+    "title": "[PR] Iteration 3: Multi-LLM Provider Support",
+    "date": "2026-04-26T18:56:41Z",
+    "summary": "Iteration 3 \u2014 Development Team\r\n\r\nThis PR implements all 3 mandatory features for Iteration 3:\r\n\r\nFeatures Implemented\r\n1. Backend LLM Selection: Users can choose which LLM model to use via dropdown on chat page\r\n2. Local Models: Full Ollama support (llama3.2, llama3.1, gemma3, etc.)\r\n3. Cloud Model",
+    "url": "https://github.com/838blue838/Software-Engineering-Iteration-1/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Software-Engineering-Iteration-1"
+    ]
+  },
+  {
+    "title": "[PR] feat(adapters): drop Ollama + torch; switch to fastembed-only ONNX stack",
+    "date": "2026-04-26T18:55:17Z",
+    "summary": "## Summary\n\nReplace Tessera's two-runtime model stack (Ollama for embedding, sentence-transformers for reranking) with a single in-process ONNX Runtime stack via `fastembed`. Removes the entire torch dependency closure plus every cloud adapter that had been registered alongside the local one.\n\nAfter",
+    "url": "https://github.com/Mathews-Tom/Tessera/pull/42",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Tessera"
+    ]
+  },
+  {
+    "title": "[PR] Gemini Embedding & Chroma Support",
+    "date": "2026-04-26T18:47:55Z",
+    "summary": "## Summary\r\n\r\nAdds support for Gemini embedding models and ChromaDB as a vector store, enabling RAG (Retrieval-Augmented Generation) pipelines with Google's embedding API backed by ChromaDB persistence.\r\nAlso adds mise configuration for easy management of java and maven version & adds common task fr",
+    "url": "https://github.com/labsai/EDDI/pull/459",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: EDDI"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update rust crate adk-rust to 0.7.0",
+    "date": "2026-04-26T18:32:37Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [adk-rust](https://redirect.github.com/zavora-ai/adk-rust) | dependencies | minor | `0.6.0` \u2192 `0.7.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>zavora-ai/adk-rust (adk-rust)</summary>\n\n### [`v0.7.0`",
+    "url": "https://github.com/elcoosp/skilldeck/pull/284",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: skilldeck"
+    ]
+  },
+  {
+    "title": "[PR] \ud83d\udcdd docs: open-source teaching-tool overhaul of docs/",
+    "date": "2026-04-26T17:46:03Z",
+    "summary": "## Summary\n\nBrings `docs/` to open-source teaching-tool quality. The repo went public on\n2026-04-22 as the open-source companion to a Cloud Next '26 keynote;\ndocumentation shipped with several known gaps that this PR closes.\n\nA three-pronged audit (architecture, guides, misc) found four tiers of\niss",
+    "url": "https://github.com/GoogleCloudPlatform/race-condition/pull/55",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: race-condition"
     ]
   }
 ]
