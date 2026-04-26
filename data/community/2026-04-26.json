@@ -875,7 +875,7 @@
   },
   {
     "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
-    "date": "2026-04-26T06:52:18Z",
+    "date": "2026-04-26T11:41:19Z",
     "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
     "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
     "source": "github_prs",
@@ -979,6 +979,30 @@
       "comments: 0",
       "pull request",
       "repo: infra"
+    ]
+  },
+  {
+    "title": "[PR] Composer repair",
+    "date": "2026-04-26T11:09:56Z",
+    "summary": "## Summary\n\nBrings the auditor onto the new host layout and lands the **diff-aware audit + repair loop** (Phases 1, 2, 6).\n\n- **Diff-aware audit** \u2014 only code touched by a branch diff is sent to the LLM, keeping token cost proportional to the change size.\n- **Per-repo validator** \u2014 language-aware te",
+    "url": "https://github.com/smk762/ai-code-auditor/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ai-code-auditor"
+    ]
+  },
+  {
+    "title": "[PR] sec: URL guard for agent tools \u2014 SSRF + size caps",
+    "date": "2026-04-26T10:53:08Z",
+    "summary": "## Summary                                                                                                                                                                                            \r\n  - New `src/security/url_guard.rs` with three primitives every URL-accepting agent tool now uses: `",
+    "url": "https://github.com/dunelabsco/fennec/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: fennec"
     ]
   }
 ]
