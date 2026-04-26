@@ -935,12 +935,12 @@
   },
   {
     "title": "[PR] feat: auth module with token generation and HTTP transport (#128)",
-    "date": "2026-04-26T21:15:55Z",
+    "date": "2026-04-26T21:44:23Z",
     "summary": "## Summary\\n- Add `auth.rs` with `AuthToken` (redacted Debug), `TokenStore`, constant-time validation\\n- Add `mcp/http.rs` with HTTP JSON-RPC server and Bearer token auth middleware\\n- Token written to file with 0600 permissions; never appears in logs or errors\\n- Stdio transport remains unauthentic",
     "url": "https://github.com/DominicBurkart/nanna-coder/pull/133",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "pull request",
       "repo: nanna-coder"
     ]
@@ -1367,7 +1367,7 @@
   },
   {
     "title": "[PR] perf(startup): tighten fast-start window, compress local metadata, scope user data",
-    "date": "2026-04-26T21:34:44Z",
+    "date": "2026-04-26T22:40:15Z",
     "summary": "## Summary\n- **Defer background metadata validation** until after `StartupManager` finishes so IndexedDB writes no longer contend with engine cache reads during startup.\n- **Hold `FastStartupMode` open across all parallel engine loads** \u2014 `StartupManager` now closes it via `ProviderBase.ConsumeFastS",
     "url": "https://github.com/MemberJunction/MJ/pull/2462",
     "source": "github_prs",
@@ -1439,7 +1439,7 @@
   },
   {
     "title": "[PR] docs: rewrite README for users, add DEVELOPER.md for contributors",
-    "date": "2026-04-26T21:39:39Z",
+    "date": "2026-04-26T22:24:06Z",
     "summary": "## Summary\n\n- **README.md** rewritten for end-users: prerequisites first, fixed tagline, clean install path, consistent commands table, CI/version/license badges, links out to existing docs/\n- **DEVELOPER.md** (new): architecture overview, local setup, test markers, coverage gate table, links to doc",
     "url": "https://github.com/curdriceaurora/fo-core/pull/225",
     "source": "github_prs",
@@ -1463,7 +1463,7 @@
   },
   {
     "title": "[PR] feat(search): add local embedding provider for on-premise semantic search (Ollama)",
-    "date": "2026-04-26T21:36:33Z",
+    "date": "2026-04-26T22:36:01Z",
     "summary": "## Summary\n\nAdds a `local` embedding provider so DataHub can run fully on-premise semantic search without cloud API keys. The provider calls any locally-running OpenAI-compatible embeddings server \u2014 primarily [Ollama](https://ollama.com) \u2014 using `java.net.http.HttpClient` and Jackson (zero new depen",
     "url": "https://github.com/datahub-project/datahub/pull/17201",
     "source": "github_prs",
@@ -1487,7 +1487,7 @@
   },
   {
     "title": "[PR] feat(agents): semantic action search for large action sets",
-    "date": "2026-04-26T21:16:09Z",
+    "date": "2026-04-26T22:34:01Z",
     "summary": "## Summary\n- Above a 25-action threshold, `BaseAgent` now replaces the full action dump in the system prompt with a category summary plus instructions for a built-in `_searchActions` meta-tool\n- The LLM invokes `_searchActions` (query, topK) like any other action and gets back a ranked list of match",
     "url": "https://github.com/MemberJunction/MJ/pull/2470",
     "source": "github_prs",
@@ -1499,7 +1499,7 @@
   },
   {
     "title": "[PR] docs: add Mintlify documentation site",
-    "date": "2026-04-26T20:52:56Z",
+    "date": "2026-04-26T22:31:49Z",
     "summary": "## Description\n\nAdds a complete Mintlify documentation site under `docs/` \u2014 20+ pages covering getting started, features, privacy, models, comparisons, and FAQ. Content is structured for AEO (Answer Engine Optimization) with definition blocks, comparison tables, and FAQ accordions to maximise citati",
     "url": "https://github.com/ruzin/stenoai/pull/96",
     "source": "github_prs",
@@ -1507,6 +1507,42 @@
       "comments: 0",
       "pull request",
       "repo: stenoai"
+    ]
+  },
+  {
+    "title": "[PR] feat(agent): Stream /agent/query/stream as Server-Sent Events",
+    "date": "2026-04-26T22:39:40Z",
+    "summary": "## Summary\n- Adds POST /agent/query/stream that emits Spring AI ChatClient.stream() output as SSE (event: token, event: done, event: error).\n- Reuses the SystemPromptSelector / ChatModelSelector / ToolSelector pipeline and the cache + model AnthropicChatOptions override from #807.\n- /agent/query is ",
+    "url": "https://github.com/monowai/beancounter/pull/808",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: beancounter"
+    ]
+  },
+  {
+    "title": "[PR] docs(plans): #744 BaseChatServer implementation plan",
+    "date": "2026-04-26T22:26:56Z",
+    "summary": "## Summary\n\n- Plan-only PR for #744 (`BaseChatServer` \u2014 OpenAI-compatible HTTP target).\n- No source changes; ships `docs/plans/744-basechatserver.md`.\n- Records 17 design decisions, the module split (`BaseChatServerCore` library + thin executable), wire mapping (`GenerationEvent` \u2192 OpenAI SSE chunks",
+    "url": "https://github.com/roryford/BaseChatKit/pull/806",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: BaseChatKit"
+    ]
+  },
+  {
+    "title": "[PR] FG-25 Enhance rag with binary quantization",
+    "date": "2026-04-26T22:06:09Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Multilingual semantic RAG with embeddings, hybrid retrieval, and migration support to Qdrant Cloud (optional binary quantization)\n  * Booking-focused chat UI: floating, sideb",
+    "url": "https://github.com/afkatja/fincaguarumo/pull/57",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: fincaguarumo"
     ]
   }
 ]
