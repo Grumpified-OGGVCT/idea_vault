@@ -179,7 +179,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-25T22:05:04Z",
+    "date": "2026-04-26T05:17:32Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -514,9 +514,9 @@
     ]
   },
   {
-    "title": "[PR] fix(codegen): exclude virtual fields from native geo detection; cap related-entity tabs",
-    "date": "2026-04-26T03:03:46Z",
-    "summary": "## Summary\n\nTwo small, independent CodeGen robustness fixes that surfaced while exercising the pipeline against a large Salesforce-derived schema.\n\n### 1. Native geo-field detection ignores virtual fields ([sql_codegen.ts:1466-1495](packages/CodeGenLib/src/Database/sql_codegen.ts#L1466-L1495))\n\n`has",
+    "title": "[PR] fix(codegen): exclude virtual fields from native geo detection; relax strictTemplates on generated forms",
+    "date": "2026-04-26T03:56:55Z",
+    "summary": "## Summary\n\nTwo small CodeGen / generated-Angular robustness fixes that surfaced while exercising the pipeline against a large Salesforce-derived schema.\n\n### 1. Native geo-field detection ignores virtual fields ([sql_codegen.ts:1466-1495](packages/CodeGenLib/src/Database/sql_codegen.ts#L1466-L1495)",
     "url": "https://github.com/MemberJunction/MJ/pull/2469",
     "source": "github_prs",
     "highlights": [
@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] feat: Explore + AI Agent + Map Picker + Chat Persistence (Phase A-D)",
-    "date": "2026-04-26T03:01:30Z",
+    "date": "2026-04-26T05:23:59Z",
     "summary": "## \u6982\u8ff0\n\u5b8c\u6210 4 \u4efd\u8ba1\u5212\u6587\u6863\u7684 SOTA \u7ea7\u91cd\u6784\uff0c\u6db5\u76d6 Phase A\uff08\u57fa\u5efa\u5c42\uff09\u5230 Phase D\uff08\u7edf\u4e00\u58f3\u5c42\uff09\u3002\n\n### Phase A \u2014 \u57fa\u5efa\u5c42\n- Schema v20 \u5408\u5e76\u8fc1\u79fb\uff1a`poi_name` + `chat_sessions` + `chat_messages` \u8868\n- ChatMessage / ChatSession \u6a21\u578b\uff08toMap/fromMap/copyWith\uff09\n- Quote.poiName \u5b57\u6bb5 + \u4e09\u7ea7\u663e\u793a\u4f18\u5148\u7ea7\n- ChatSessionService \u6301\u4e45\u5316\u670d\u52a1\n- PlaceSearchService\uff08Nominatim\uff0c\u514d\u8d39\u65e0 Key\uff09\n- AI",
     "url": "https://github.com/Shangjin-Xiao/ThoughtEcho/pull/181",
     "source": "github_prs",
@@ -623,7 +623,7 @@
   },
   {
     "title": "[PR] feat(agents): local model fallback + semantic cache store",
-    "date": "2026-04-26T01:33:43Z",
+    "date": "2026-04-26T04:36:00Z",
     "summary": "#THIS CODE IS AUTONOMOUSLY WRITTEN USING [NEO](https://heyneo.so/)- Your Autonomous AI Engineering Agent\r\n## What this PR does\r\n\r\nTwo new reliability/performance features wired end-to-end into the agent run path:\r\n\r\n### 1. Local Model Fallback (`src/agents/local-model-fallback.ts`)\r\n\r\nWhen a cloud A",
     "url": "https://github.com/openclaw/openclaw/pull/38160",
     "source": "github_prs",
@@ -751,6 +751,78 @@
       "comments: 63",
       "pull request",
       "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the uv group across 2 directories with 5 updates",
+    "date": "2026-04-26T06:03:06Z",
+    "summary": "Bumps the uv group with 4 updates in the /gemini/agents/genai-experience-concierge/langgraph-demo/frontend directory: [requests](https://github.com/psf/requests), [urllib3](https://github.com/urllib3/urllib3), [langchain-core](https://github.com/langchain-ai/langchain) and [pillow](https://github.co",
+    "url": "https://github.com/Lalita-suthimoon/generative-ai/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(notion): Expand Notion plugin with complete API coverage (20 tools)",
+    "date": "2026-04-26T05:39:40Z",
+    "summary": "## Summary\n\nMigrate the Notion API client to use the official `@notionhq/client` SDK (v5.13.0) internally while preserving the existing external `NotionApiClient` interface. Updated for full compatibility with Notion API 2026-03-11 data source model.\n\n## API 2026-03-11 Compatibility Updates\n\n### Ext",
+    "url": "https://github.com/openclaw/openclaw/pull/69604",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Databricks serving provider plugin",
+    "date": "2026-04-26T05:29:34Z",
+    "summary": "Address architectural feedback from the previous PR #62230.\r\n\r\n## Summary\r\n\r\nDescribe the problem and fix in 2\u20135 bullets:\r\n\r\n- **Problem**: OpenClaw lacked native support for Databricks Serving Models. Interacting with Databricks APIs via standard OpenAI proxy setups failed because Databricks requir",
+    "url": "https://github.com/openclaw/openclaw/pull/63031",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] feat: Victoria Logs Integration",
+    "date": "2026-04-26T04:35:23Z",
+    "summary": "Resolves #126 by adding a complete Victoria Logs integration. This implements a VictoriaLogsClient and a new VictoriaLogsTool that queries using LogsQL.",
+    "url": "https://github.com/Tracer-Cloud/opensre/pull/663",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: opensre"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the pip group across 1 directory with 4 updates",
+    "date": "2026-04-26T04:19:40Z",
+    "summary": "Bumps the pip group with 4 updates in the /ocr-service directory: [python-multipart](https://github.com/Kludex/python-multipart), [langchain-core](https://github.com/langchain-ai/langchain), [langchain-text-splitters](https://github.com/langchain-ai/langchain) and [pytest](https://github.com/pytest-",
+    "url": "https://github.com/perezjoseph/Gestion-inmobiliaria/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Gestion-inmobiliaria"
+    ]
+  },
+  {
+    "title": "[PR] Text-to-SQL: Help agents turn natural language into SQL queries",
+    "date": "2026-04-26T03:54:22Z",
+    "summary": "## About\r\nExploring Text-to-SQL with LlamaIndex and frontier and non-frontier models.\r\n\r\n## What's inside\r\nDataQuery is the little sister of Vanna AI and Google's QueryData product, tailored to CrateDB.\r\n\r\n## Documentation\r\nPreview: https://cratedb-toolkit--762.org.readthedocs.build/query/nlsql/\r\n\r\n",
+    "url": "https://github.com/crate/cratedb-toolkit/pull/762",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cratedb-toolkit"
     ]
   }
 ]
