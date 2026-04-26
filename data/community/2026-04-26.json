@@ -155,7 +155,7 @@
   },
   {
     "title": "Bug: Multimodal (Vision) Messages Ignored for Custom Ollama Cloud Models",
-    "date": "2026-04-26T16:15:49Z",
+    "date": "2026-04-26T17:04:51Z",
     "summary": "# Bug: Multimodal (Vision) Messages Ignored for Custom Ollama Cloud Models\n\n## Summary\nOpenClaw silently strips images from messages when using custom Ollama Cloud models, even when the model is explicitly configured with input: [\"text\", \"image\"] in the provider config.\n\n## Root Cause Found\nIn dist/",
     "url": "https://github.com/openclaw/openclaw/issues/39690",
     "source": "github_issues",
@@ -179,7 +179,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-26T13:12:45Z",
+    "date": "2026-04-26T17:23:39Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -515,7 +515,7 @@
   },
   {
     "title": "[PR] fix(codegen): exclude virtual fields from native geo detection; relax strictTemplates on generated forms",
-    "date": "2026-04-26T03:56:55Z",
+    "date": "2026-04-26T17:36:56Z",
     "summary": "## Summary\n\nTwo small CodeGen / generated-Angular robustness fixes that surfaced while exercising the pipeline against a large Salesforce-derived schema.\n\n### 1. Native geo-field detection ignores virtual fields ([sql_codegen.ts:1466-1495](packages/CodeGenLib/src/Database/sql_codegen.ts#L1466-L1495)",
     "url": "https://github.com/MemberJunction/MJ/pull/2469",
     "source": "github_prs",
@@ -1043,8 +1043,8 @@
   },
   {
     "title": "[PR] chore(deps): bump the backend-dependencies group across 1 directory with 16 updates",
-    "date": "2026-04-26T12:33:52Z",
-    "summary": "Bumps the backend-dependencies group with 16 updates in the /backend directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [fastapi](https://github.com/fastapi/fastapi) | `0.128.0` | `0.136.0` |\n| [uvicorn](https://github.com/Kludex/uvicorn) | `0.40.0` | `0.44.0` |\n| [pydantic](https://github.co",
+    "date": "2026-04-26T17:03:46Z",
+    "summary": "Bumps the backend-dependencies group with 16 updates in the /backend directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [fastapi](https://github.com/fastapi/fastapi) | `0.128.0` | `0.136.1` |\n| [uvicorn](https://github.com/Kludex/uvicorn) | `0.40.0` | `0.46.0` |\n| [pydantic](https://github.co",
     "url": "https://github.com/LiVrariaDev/LiVraria/pull/80",
     "source": "github_prs",
     "highlights": [
@@ -1079,7 +1079,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-04-26T16:19:23Z",
+    "date": "2026-04-26T17:28:46Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1091,12 +1091,12 @@
   },
   {
     "title": "[PR] feat(provider): add local OpenAI-compatible runtimes (mlx-lm, ollama, exo)",
-    "date": "2026-04-26T15:10:03Z",
+    "date": "2026-04-26T17:37:21Z",
     "summary": "## Summary\n- Adds three local LLM provider Kinds \u2014 `mlx-lm`, `ollama`, `exo` \u2014 sharing one OpenAI-compatible SSE streamer in `internal/provider/openai_compat.go`. Per-kind defaults plus `WUPHF_<KIND>_BASE_URL` / `WUPHF_<KIND>_MODEL` env overrides and a `provider_endpoints` map in `~/.wuphf/config.js",
     "url": "https://github.com/nex-crm/wuphf/pull/329",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "pull request",
       "repo: wuphf"
     ]
@@ -1139,7 +1139,7 @@
   },
   {
     "title": "[PR] feat: add Ollama provider for local-model support",
-    "date": "2026-04-26T16:44:29Z",
+    "date": "2026-04-26T17:42:50Z",
     "summary": "## Summary\n\nAdds [Ollama](https://ollama.com) as an alternative model provider so users can run chat, summary, completions, rewrite, and agent tool-calling against a local model instead of the Gemini API. Closes the local-model ask in discussion #576 (Phase 1).\n\nThe seam is the existing `ModelApi` i",
     "url": "https://github.com/allenhutchison/obsidian-gemini/pull/694",
     "source": "github_prs",
@@ -1151,7 +1151,7 @@
   },
   {
     "title": "[PR] fix(config): make models.providers.<id>.models optional to allow credential-only entries",
-    "date": "2026-04-26T16:16:09Z",
+    "date": "2026-04-26T17:05:15Z",
     "summary": "## Problem\n\nWhen a user configures `models.providers.openai` with a custom `baseUrl` (e.g. an OpenAI-compatible embedding endpoint) but without a `models` array, OpenClaw's config validation rejects the entry with **`INVALID_CONFIG`**:\n\n```json\n{\n  \"models\": {\n    \"providers\": {\n      \"openai\": {\n  ",
     "url": "https://github.com/openclaw/openclaw/pull/39766",
     "source": "github_prs",
@@ -1195,6 +1195,90 @@
       "comments: 0",
       "pull request",
       "repo: quarkus-assistant-demo"
+    ]
+  },
+  {
+    "title": "Weekly audit 2026-04-26",
+    "date": "2026-04-26T17:22:39Z",
+    "summary": "## Top-line summary\n\n- **5 pages are overdue** for content updates: `local-models.html` and `prompting.html` (both Nov 2025), `llm-thinking.html`, `image-video.html`, and `glossary.html` (all Dec 2025).\n- **GPT-5.5** (Apr 23), **ChatGPT Images 2.0** (Apr 21), and **DeepSeek V4** (Apr 24) all landed ",
+    "url": "https://github.com/dochobbs/ai101/issues/1",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: ai101"
+    ]
+  },
+  {
+    "title": "[PR] Feat/ollama cloud integration",
+    "date": "2026-04-26T17:41:20Z",
+    "summary": "## Summary\r\n\r\n- Add Ollama Cloud as a new provider option via `ollama.com/v1` endpoint\r\n- Support `OLLAMA_API_KEY` authentication for cloud-hosted models\r\n- Implement provider detection, profile setup, and API integration across CLI, scripts, and service layers\r\n- Fix Ollama API compatibility: handl",
+    "url": "https://github.com/Gitlawb/openclaude/pull/890",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(obs): expand OpenInference instrumentation to Gemini + OpenAI-compat + Claude CLI",
+    "date": "2026-04-26T17:38:55Z",
+    "summary": "## Summary\n\nSprint candidate 3 (Phase 0) of the OSS injection plan \u2014 see `~/Desktop/brainstorm_oss_2026-04-26/00_SYNTHESIS.md`. Wires up missing OpenInference instrumentors so Langfuse can finally see every LLM call we make in production:\n\n- **Anthropic** instrumentor was already wired (PR `feat/obs",
+    "url": "https://github.com/Balizero1987/Teman2/pull/312",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Teman2"
+    ]
+  },
+  {
+    "title": "[PR] chore: upgrade OpenClaw from 2026.4.9 to 2026.4.24",
+    "date": "2026-04-26T17:37:51Z",
+    "summary": "## Summary\n\nUpgrades OpenClaw from **2026.4.9** to **2026.4.24** (latest stable, CalVer).\n\nThree fixes were required for the upgrade. Two are merged into this PR; the third is a test-side timeout that did not fully resolve a final hang, see Status below.\n\n### Code/config changes\n\n1. **Version bumps*",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/2484",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(init): context-aware corpus detection",
+    "date": "2026-04-26T17:33:29Z",
+    "summary": "10 files changed. 2,563 insertions, 30 deletions. 48 new tests, including end-to-end coverage live-tested with Anthropic Haiku 4.5.\r\n\r\nThis PR overhauls the first-run experience of `mempalace init` end-to-end, ships a new corpus-origin detection module from scratch, wires it into entity classificati",
+    "url": "https://github.com/MemPalace/mempalace/pull/1211",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: mempalace"
+    ]
+  },
+  {
+    "title": "[PR] feat(codegen): scope Pass 2 manageEntityFields to changed entities",
+    "date": "2026-04-26T17:27:40Z",
+    "summary": "## Summary\n\nAdds **changed-entity scoping** to CodeGen's `manageEntityFields` Pass 2 so the most expensive phase only re-processes entities that actually mutated. The dominant developer workflow (\"no schema change since last run\") now does ~zero work in Pass 2 instead of three full schema scans.\n\n##",
+    "url": "https://github.com/MemberJunction/MJ/pull/2342",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency ravendb.client to v7",
+    "date": "2026-04-26T17:17:14Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [RavenDB.Client](https://rav",
+    "url": "https://github.com/candoumbe/DataAccess/pull/260",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DataAccess"
     ]
   }
 ]
