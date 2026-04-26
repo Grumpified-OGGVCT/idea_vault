@@ -191,7 +191,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-26T11:55:32Z",
+    "date": "2026-04-26T21:24:51Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Deprecations / Replacements\n> [",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -551,7 +551,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-04-26T14:44:10Z",
+    "date": "2026-04-26T20:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -935,7 +935,7 @@
   },
   {
     "title": "[PR] feat: auth module with token generation and HTTP transport (#128)",
-    "date": "2026-04-26T20:36:50Z",
+    "date": "2026-04-26T21:15:55Z",
     "summary": "## Summary\\n- Add `auth.rs` with `AuthToken` (redacted Debug), `TokenStore`, constant-time validation\\n- Add `mcp/http.rs` with HTTP JSON-RPC server and Bearer token auth middleware\\n- Token written to file with 0600 permissions; never appears in logs or errors\\n- Stdio transport remains unauthentic",
     "url": "https://github.com/DominicBurkart/nanna-coder/pull/133",
     "source": "github_prs",
@@ -947,7 +947,7 @@
   },
   {
     "title": "[PR] [IN-PROGRESS] feat(integration): Salesforce + Sage Intacct sync pipeline hardening",
-    "date": "2026-04-26T20:35:35Z",
+    "date": "2026-04-26T21:36:11Z",
     "summary": "> [!WARNING]\r\n> **Almost complete \u2014 DO NOT MERGE.** Open for incremental review and discussion. Several follow-ups still pending; see the \"Known limitations / TODO\" section below.\r\n\r\n## Summary\r\n\r\nCatches multiple silent-loss / silent-drop bugs across the Salesforce and Sage Intacct connectors and t",
     "url": "https://github.com/MemberJunction/MJ/pull/2472",
     "source": "github_prs",
@@ -1079,7 +1079,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-04-26T17:54:13Z",
+    "date": "2026-04-26T21:14:28Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1367,7 +1367,7 @@
   },
   {
     "title": "[PR] perf(startup): tighten fast-start window, compress local metadata, scope user data",
-    "date": "2026-04-26T20:10:38Z",
+    "date": "2026-04-26T21:34:44Z",
     "summary": "## Summary\n- **Defer background metadata validation** until after `StartupManager` finishes so IndexedDB writes no longer contend with engine cache reads during startup.\n- **Hold `FastStartupMode` open across all parallel engine loads** \u2014 `StartupManager` now closes it via `ProviderBase.ConsumeFastS",
     "url": "https://github.com/MemberJunction/MJ/pull/2462",
     "source": "github_prs",
@@ -1435,6 +1435,78 @@
       "comments: 3",
       "pull request",
       "repo: paperclip"
+    ]
+  },
+  {
+    "title": "[PR] docs: rewrite README for users, add DEVELOPER.md for contributors",
+    "date": "2026-04-26T21:39:39Z",
+    "summary": "## Summary\n\n- **README.md** rewritten for end-users: prerequisites first, fixed tagline, clean install path, consistent commands table, CI/version/license badges, links out to existing docs/\n- **DEVELOPER.md** (new): architecture overview, local setup, test markers, coverage gate table, links to doc",
+    "url": "https://github.com/curdriceaurora/fo-core/pull/225",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: fo-core"
+    ]
+  },
+  {
+    "title": "[PR] Add GuideThomas/obsidian-intelligence to Knowledge & Memory",
+    "date": "2026-04-26T21:37:17Z",
+    "summary": "Adds [GuideThomas/obsidian-intelligence](https://github.com/GuideThomas/obsidian-intelligence) to the **Knowledge & Memory** category.\n\n### What it is\nTurns an Obsidian vault into an MCP server. Exposes 14 tools for graph analysis (orphans, hubs, backlinks, related, broken links, tag cloud, engageme",
+    "url": "https://github.com/punkpeye/awesome-mcp-servers/pull/4372",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: awesome-mcp-servers"
+    ]
+  },
+  {
+    "title": "[PR] feat(search): add local embedding provider for on-premise semantic search (Ollama)",
+    "date": "2026-04-26T21:36:33Z",
+    "summary": "## Summary\n\nAdds a `local` embedding provider so DataHub can run fully on-premise semantic search without cloud API keys. The provider calls any locally-running OpenAI-compatible embeddings server \u2014 primarily [Ollama](https://ollama.com) \u2014 using `java.net.http.HttpClient` and Jackson (zero new depen",
+    "url": "https://github.com/datahub-project/datahub/pull/17201",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: datahub"
+    ]
+  },
+  {
+    "title": "[PR] \ud83e\udd16\ud83e\udd16\ud83e\udd16 Add Nexlayer MCP to Cloud Platforms",
+    "date": "2026-04-26T21:31:42Z",
+    "summary": "## Nexlayer MCP \u2014 Agentic Cloud Platform\n\nAdding [Nexlayer MCP](https://github.com/Nexlayer/nexlayer-cloud) to the **Cloud Platforms** category.\n\n### What is Nexlayer MCP?\n\nNexlayer MCP is a cloud platform built natively for AI agents. It provides 45+ MCP tools that enable any compatible agent (Clau",
+    "url": "https://github.com/punkpeye/awesome-mcp-servers/pull/4404",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: awesome-mcp-servers"
+    ]
+  },
+  {
+    "title": "[PR] feat(agents): semantic action search for large action sets",
+    "date": "2026-04-26T21:16:09Z",
+    "summary": "## Summary\n- Above a 25-action threshold, `BaseAgent` now replaces the full action dump in the system prompt with a category summary plus instructions for a built-in `_searchActions` meta-tool\n- The LLM invokes `_searchActions` (query, topK) like any other action and gets back a ranked list of match",
+    "url": "https://github.com/MemberJunction/MJ/pull/2470",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] docs: add Mintlify documentation site",
+    "date": "2026-04-26T20:52:56Z",
+    "summary": "## Description\n\nAdds a complete Mintlify documentation site under `docs/` \u2014 20+ pages covering getting started, features, privacy, models, comparisons, and FAQ. Content is structured for AEO (Answer Engine Optimization) with definition blocks, comparison tables, and FAQ accordions to maximise citati",
+    "url": "https://github.com/ruzin/stenoai/pull/96",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: stenoai"
     ]
   }
 ]
