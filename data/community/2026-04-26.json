@@ -155,7 +155,7 @@
   },
   {
     "title": "Bug: Multimodal (Vision) Messages Ignored for Custom Ollama Cloud Models",
-    "date": "2026-04-26T10:10:30Z",
+    "date": "2026-04-26T12:18:48Z",
     "summary": "# Bug: Multimodal (Vision) Messages Ignored for Custom Ollama Cloud Models\n\n## Summary\nOpenClaw silently strips images from messages when using custom Ollama Cloud models, even when the model is explicitly configured with input: [\"text\", \"image\"] in the provider config.\n\n## Root Cause Found\nIn dist/",
     "url": "https://github.com/openclaw/openclaw/issues/39690",
     "source": "github_issues",
@@ -179,7 +179,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-26T05:17:32Z",
+    "date": "2026-04-26T13:12:45Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -191,7 +191,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-25T17:58:39Z",
+    "date": "2026-04-26T11:55:32Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Deprecations / Replacements\n> [",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -623,7 +623,7 @@
   },
   {
     "title": "[PR] feat(agents): local model fallback + semantic cache store",
-    "date": "2026-04-26T10:15:00Z",
+    "date": "2026-04-26T13:03:38Z",
     "summary": "#THIS CODE IS AUTONOMOUSLY WRITTEN USING [NEO](https://heyneo.so/)- Your Autonomous AI Engineering Agent\r\n## What this PR does\r\n\r\nTwo new reliability/performance features wired end-to-end into the agent run path:\r\n\r\n### 1. Local Model Fallback (`src/agents/local-model-fallback.ts`)\r\n\r\nWhen a cloud A",
     "url": "https://github.com/openclaw/openclaw/pull/38160",
     "source": "github_prs",
@@ -887,19 +887,19 @@
   },
   {
     "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.24",
-    "date": "2026-04-26T06:47:45Z",
+    "date": "2026-04-26T12:25:04Z",
     "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.24`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.24\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/24",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
     "source": "github_prs",
     "highlights": [
-      "comments: 674",
+      "comments: 689",
       "pull request",
       "repo: openclaw-charts"
     ]
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-04-26T06:40:47Z",
+    "date": "2026-04-26T13:02:57Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1003,6 +1003,66 @@
       "comments: 0",
       "pull request",
       "repo: fennec"
+    ]
+  },
+  {
+    "title": "[PR] feat(rag): BGE-M3 column + backfill + flag-gated RAG path (PR-A of 2)",
+    "date": "2026-04-26T13:02:10Z",
+    "summary": "## Summary\n\nPR-A of the embedding upgrade. Adds the destination column + IVFFlat index alongside the existing one and ships an idempotent backfill that re-embeds every row with **bge-m3** (1024 dim, multilingual, 8192 ctx) into the new column.\n\nA feature flag \\`AGENTICORG_RAG_USE_BGE_M3\\` (default O",
+    "url": "https://github.com/mishrasanjeev/agentic-org/pull/324",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agentic-org"
+    ]
+  },
+  {
+    "title": "[PR] [NEUTRAL] Update dependency @mariozechner/pi-ai to v0.70.2",
+    "date": "2026-04-26T12:57:51Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/snowdensb/openclaw_2/pull/59",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw_2"
+    ]
+  },
+  {
+    "title": "[PR] Update updates-patch-minor",
+    "date": "2026-04-26T12:34:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [alpine/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.4.21` \u2192 `2026.4.22` |\n| dupli",
+    "url": "https://github.com/truenas/apps/pull/4878",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: apps"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the backend-dependencies group across 1 directory with 16 updates",
+    "date": "2026-04-26T12:33:52Z",
+    "summary": "Bumps the backend-dependencies group with 16 updates in the /backend directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [fastapi](https://github.com/fastapi/fastapi) | `0.128.0` | `0.136.0` |\n| [uvicorn](https://github.com/Kludex/uvicorn) | `0.40.0` | `0.44.0` |\n| [pydantic](https://github.co",
+    "url": "https://github.com/LiVrariaDev/LiVraria/pull/80",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: LiVraria"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aquaproj/aqua-registry to v4.492.0",
+    "date": "2026-04-26T12:50:38Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| [aquaproj/aqua-registry](https://redirect.github.com/aquaproj/aqua-registry) | minor | `v4.229.0` \u2192 `v4.492.0` | `v4.499.0` (+7)",
+    "url": "https://github.com/korosuke613/grpshuffle/pull/180",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: grpshuffle"
     ]
   }
 ]
