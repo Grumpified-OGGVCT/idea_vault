@@ -167,12 +167,12 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant+RotorQuant implementation",
-    "date": "2026-04-25T22:10:57Z",
+    "date": "2026-04-26T13:39:08Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
     "highlights": [
-      "comments: 43",
+      "comments: 44",
       "state: open",
       "repo: ollama"
     ]
@@ -551,7 +551,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-04-26T08:44:09Z",
+    "date": "2026-04-26T14:44:10Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -743,7 +743,7 @@
   },
   {
     "title": "[PR] feat: implement codebase indexing",
-    "date": "2026-04-26T00:57:33Z",
+    "date": "2026-04-26T13:19:46Z",
     "summary": "## Context\n\nCloses #6144\n\nRelated indexing/search issues: #7986, #8385, #7352, #8311, #6391, #6453, #6490, #6936, #6482, #6047, #1105, #912, #4080, #4635.\n\n## Implementation\n\nFor the backend, migrates the legacy codebase indexing backend into the new codebase, locating as much code as possible in a ",
     "url": "https://github.com/Kilo-Org/kilocode/pull/6966",
     "source": "github_prs",
@@ -1063,6 +1063,66 @@
       "comments: 0",
       "pull request",
       "repo: grpshuffle"
+    ]
+  },
+  {
+    "title": "[PR] fix(cli): recognize OpenAI-compatible providers in `qwen auth status`",
+    "date": "2026-04-26T14:50:01Z",
+    "summary": "## Summary\n\n- `qwen auth status` previously treated all `selectedType=openai` as Coding Plan, showing misleading \"Alibaba Cloud Coding Plan (Incomplete)\" for users with generic OpenAI-compatible providers (e.g. Xunfei, DeepSeek, Ollama)\n- Split the `USE_OPENAI` branch into Coding Plan path (detected",
+    "url": "https://github.com/QwenLM/qwen-code/pull/3623",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: qwen-code"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-04-26T14:42:22Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] feat(provider): add local OpenAI-compatible runtimes (mlx-lm, ollama, exo)",
+    "date": "2026-04-26T14:22:34Z",
+    "summary": "## Summary\n- Adds three local LLM provider Kinds \u2014 `mlx-lm`, `ollama`, `exo` \u2014 sharing one OpenAI-compatible SSE streamer in `internal/provider/openai_compat.go`. Per-kind defaults plus `WUPHF_<KIND>_BASE_URL` / `WUPHF_<KIND>_MODEL` env overrides and a `provider_endpoints` map in `~/.wuphf/config.js",
+    "url": "https://github.com/nex-crm/wuphf/pull/329",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: wuphf"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency dev.langchain4j:langchain4j-bom to v1.13.0",
+    "date": "2026-04-26T13:55:34Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change | Pending |\n|---|---|---|---|---|\n| [dev.langchain4j:langchain4j-bom](https://redirect.github.com/langchain4j/langchain4j/tree/main/langchain4j-bom) ([source](https://redirect.github.com/langchain4j/langchain4j/tree/HEAD/lan",
+    "url": "https://github.com/apache/solr/pull/3990",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: solr"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker images",
+    "date": "2026-04-26T14:09:52Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.17.2` \u2192 `2.18.3` |\n| [ghcr.io/advplyr/audiobookshelf](https://redirect.github.com/advplyr/audiobookshelf) |",
+    "url": "https://github.com/khelias/khe-homelab/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: khe-homelab"
     ]
   }
 ]
