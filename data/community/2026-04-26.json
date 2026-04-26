@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] feat: Explore + AI Agent + Map Picker + Chat Persistence (Phase A-D)",
-    "date": "2026-04-26T05:23:59Z",
+    "date": "2026-04-26T07:38:47Z",
     "summary": "## \u6982\u8ff0\n\u5b8c\u6210 4 \u4efd\u8ba1\u5212\u6587\u6863\u7684 SOTA \u7ea7\u91cd\u6784\uff0c\u6db5\u76d6 Phase A\uff08\u57fa\u5efa\u5c42\uff09\u5230 Phase D\uff08\u7edf\u4e00\u58f3\u5c42\uff09\u3002\n\n### Phase A \u2014 \u57fa\u5efa\u5c42\n- Schema v20 \u5408\u5e76\u8fc1\u79fb\uff1a`poi_name` + `chat_sessions` + `chat_messages` \u8868\n- ChatMessage / ChatSession \u6a21\u578b\uff08toMap/fromMap/copyWith\uff09\n- Quote.poiName \u5b57\u6bb5 + \u4e09\u7ea7\u663e\u793a\u4f18\u5148\u7ea7\n- ChatSessionService \u6301\u4e45\u5316\u670d\u52a1\n- PlaceSearchService\uff08Nominatim\uff0c\u514d\u8d39\u65e0 Key\uff09\n- AI",
     "url": "https://github.com/Shangjin-Xiao/ThoughtEcho/pull/181",
     "source": "github_prs",
@@ -823,6 +823,114 @@
       "comments: 1",
       "pull request",
       "repo: cratedb-toolkit"
+    ]
+  },
+  {
+    "title": "Ing\u00e9rer, identifier et indexer le contenu des images (standalone et embarqu\u00e9es dans les documents)",
+    "date": "2026-04-26T07:57:14Z",
+    "summary": "## Probl\u00e8me m\u00e9tier\n\nLes documents professionnels contiennent fr\u00e9quemment des images riches en information : captures d'\u00e9cran d'outils, sch\u00e9mas d'architecture, organigrammes, graphiques de performance, tableaux photographi\u00e9s. Ces contenus sont aujourd'hui invisibles pour le moteur RAG : une image emb",
+    "url": "https://github.com/jbuget/raggae/issues/82",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: raggae"
+    ]
+  },
+  {
+    "title": "[PR] docs(linux): add production setup guide for nvm, Tailscale, GPU, and firewall",
+    "date": "2026-04-26T08:02:21Z",
+    "summary": "## Summary\r\n\r\nExtends `docs/platforms/linux.md` with a practical production setup section\r\nfor Ubuntu 24.04+ desktop/server machines.\r\n\r\n## What's added\r\n\r\n- **nvm caveat**: systemd can't find nvm-installed Node; shows absolute paths or system Node alternative\r\n- **Tailscale**: recommended over SSH ",
+    "url": "https://github.com/openclaw/openclaw/pull/46979",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] feat: LLM post-processing, expanded models, Ollama default, background download UX",
+    "date": "2026-04-26T08:01:33Z",
+    "summary": "## Summary\n\nCloses #8. Ships the LLM post-processing feature with **local-first defaults** (Ollama + `gemma4:e2b`, no API key required) plus a fix for the model-download UI freeze.\n\n- **LLM post-processing** between whisper and text injection. Default = Ollama running `gemma4:e2b`. Cloud providers (",
+    "url": "https://github.com/marc1107/whisper-type/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: whisper-type"
+    ]
+  },
+  {
+    "title": "[PR] Update ghcr.io/open-webui/open-webui Docker tag to v0.8.12",
+    "date": "2026-04-26T07:20:47Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.2` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n<",
+    "url": "https://github.com/ChristianLempa/boilerplates-library/pull/100",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: boilerplates-library"
+    ]
+  },
+  {
+    "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
+    "date": "2026-04-26T06:52:18Z",
+    "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
+    "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: OpenMAIC"
+    ]
+  },
+  {
+    "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.24",
+    "date": "2026-04-26T06:47:45Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.24`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.24\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/24",
+    "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 674",
+      "pull request",
+      "repo: openclaw-charts"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-04-26T06:40:47Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): add claude-code provider (#1193)",
+    "date": "2026-04-26T06:30:06Z",
+    "summary": "## Summary\n\nAdds a `claude-code` LLM provider in `mempalace/llm_client.py` that routes through the local `claude` CLI binary using the user's Claude Pro/Max subscription via `claude auth login`. Mirrors the existing `OllamaProvider` / `OpenAICompatProvider` / `AnthropicProvider` shape so `mempalace ",
+    "url": "https://github.com/MemPalace/mempalace/pull/1200",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: mempalace"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the pip group across 6 directories with 9 updates",
+    "date": "2026-04-26T06:16:38Z",
+    "summary": "Bumps the pip group with 1 update in the /gemini/sample-apps/genwealth/function-scripts/analyze-prospectus directory: [langchain-core](https://github.com/langchain-ai/langchain).\nBumps the pip group with 2 updates in the /gemini/sample-apps/genwealth/function-scripts/process-pdf directory: [langchai",
+    "url": "https://github.com/Lalita-suthimoon/generative-ai/pull/38",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: generative-ai"
     ]
   }
 ]
