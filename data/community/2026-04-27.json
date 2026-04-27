@@ -179,7 +179,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-27T17:23:43Z",
+    "date": "2026-04-27T23:53:13Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -539,7 +539,7 @@
   },
   {
     "title": "[PR] fix(cli): recognize OpenAI-compatible providers in `qwen auth status`",
-    "date": "2026-04-27T16:59:12Z",
+    "date": "2026-04-27T23:28:26Z",
     "summary": "## Summary\n\n- `qwen auth status` previously treated all `selectedType=openai` as Coding Plan, showing misleading \"Alibaba Cloud Coding Plan (Incomplete)\" for users with generic OpenAI-compatible providers (e.g. Xunfei, DeepSeek, Ollama)\n- Split the `USE_OPENAI` branch into Coding Plan path and gener",
     "url": "https://github.com/QwenLM/qwen-code/pull/3623",
     "source": "github_prs",
@@ -875,7 +875,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-27T19:42:26Z",
+    "date": "2026-04-27T23:27:16Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1211,12 +1211,12 @@
   },
   {
     "title": "[PR] Feature/connector architecture v3",
-    "date": "2026-04-27T22:12:18Z",
+    "date": "2026-04-27T23:54:40Z",
     "summary": "# Connector Architecture v3 \u2014 Executive Summary\r\n\r\n**Branch**: `feature/connector-architecture-v3`\r\n**Date**: 2026-04-24\r\n\r\n---\r\n\r\n## Problem\r\n\r\nDefenseClaw's guardrail proxy was hardcoded to work only with OpenClaw. Every authentication check, request signal extraction, hook script, and telemetry l",
     "url": "https://github.com/cisco-ai-defense/defenseclaw/pull/141",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "pull request",
       "repo: defenseclaw"
     ]
@@ -1259,7 +1259,7 @@
   },
   {
     "title": "[PR] fix(deps): update python non-major dependencies",
-    "date": "2026-04-27T18:03:32Z",
+    "date": "2026-04-27T23:45:18Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [cachetools](https://redirec",
     "url": "https://github.com/ilanbenb/wa_llm/pull/141",
     "source": "github_prs",
@@ -1379,12 +1379,12 @@
   },
   {
     "title": "[PR] Add async-openai cloud LLM backend with per-model dispatch",
-    "date": "2026-04-27T22:55:37Z",
+    "date": "2026-04-27T23:55:52Z",
     "summary": "Introduces an OpenAI-compatible cloud inference backend (OpenAI, Azure, Ollama, LiteLLM, Groq, OpenRouter, vLLM) alongside the existing local MistralRS backend. Per-model registration drives backend selection; an opt-in fallback retries once against another model when the primary fails to start stre",
     "url": "https://github.com/KB-Helios/rag-engine/pull/18",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 6",
       "pull request",
       "repo: rag-engine"
     ]
@@ -1523,7 +1523,7 @@
   },
   {
     "title": "[PR] feat: add Ollama Cloud as alternative LLM provider",
-    "date": "2026-04-27T22:50:35Z",
+    "date": "2026-04-27T23:09:35Z",
     "summary": "## Summary\n\nAdds [Ollama Cloud](https://ollama.com) as an alternative LLM provider alongside Anthropic. Users can provide an Anthropic key, an Ollama Cloud key, or both during setup, and route any AI feature (analysis, drafts, agent chat, etc.) to either provider per-feature.\n\nThe default Ollama mod",
     "url": "https://github.com/ankitvgupta/exo/pull/111",
     "source": "github_prs",
@@ -1547,12 +1547,12 @@
   },
   {
     "title": "[PR] \ud83e\udd16 feat(providers): support custom OpenAI-compatible providers (closes #1435)",
-    "date": "2026-04-27T22:31:42Z",
+    "date": "2026-04-27T23:53:01Z",
     "summary": "## Summary\n\nAdds support for **custom OpenAI-compatible providers** so users can wire mux up to llama.cpp, vLLM, LM Studio, Ollama, or any other Chat Completions-compatible endpoint without code changes. Closes #1435.\n\nConfiguration lives in `~/.mux/providers.jsonc` under `providers.<id>` with `prov",
     "url": "https://github.com/coder/mux/pull/3202",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 6",
       "pull request",
       "repo: mux"
     ]
@@ -1567,6 +1567,18 @@
       "comments: 1",
       "pull request",
       "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(chain): add provider and vector store factories",
+    "date": "2026-04-27T23:23:25Z",
+    "summary": "## What and why\n\nCloses #15\nRefs aharbii/movie-finder#42\nRelated closed sibling work checked: aharbii/movie-finder-rag#21, aharbii/movie-finder#43\n\nImplements the ADR-0008 provider/vector-store direction for `movie-finder-chain`. The chain no longer constructs hardcoded Anthropic/OpenAI/Qdrant clien",
+    "url": "https://github.com/aharbii/movie-finder-chain/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: movie-finder-chain"
     ]
   }
 ]
