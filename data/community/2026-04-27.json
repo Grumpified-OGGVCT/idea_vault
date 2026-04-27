@@ -155,8 +155,8 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-27T09:20:17Z",
-    "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
+    "date": "2026-04-27T11:46:47Z",
+    "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Deprecations / Replacements\n> [",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
     "highlights": [
@@ -515,12 +515,12 @@
   },
   {
     "title": "[PR] feat(lightspeed): notebook chat",
-    "date": "2026-04-27T09:13:45Z",
+    "date": "2026-04-27T10:25:16Z",
     "summary": "## Description\r\nAdds the Notebook Chat feature to the Lightspeed plugin, enabling users to interact with AI Notebooks through a chat interface.\r\n\r\n\r\n- Fixing https://redhat.atlassian.net/browse/RHIDP-12874\r\n## Steps to test \r\n\r\n1. clone [lightspeed-configs](https://github.com/redhat-ai-dev/lightspee",
     "url": "https://github.com/redhat-developer/rhdh-plugins/pull/2754",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: rhdh-plugins"
     ]
@@ -539,7 +539,7 @@
   },
   {
     "title": "[PR] fix(cli): recognize OpenAI-compatible providers in `qwen auth status`",
-    "date": "2026-04-27T03:16:00Z",
+    "date": "2026-04-27T11:41:23Z",
     "summary": "## Summary\n\n- `qwen auth status` previously treated all `selectedType=openai` as Coding Plan, showing misleading \"Alibaba Cloud Coding Plan (Incomplete)\" for users with generic OpenAI-compatible providers (e.g. Xunfei, DeepSeek, Ollama)\n- Split the `USE_OPENAI` branch into Coding Plan path and gener",
     "url": "https://github.com/QwenLM/qwen-code/pull/3623",
     "source": "github_prs",
@@ -779,7 +779,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-04-27T05:51:57Z",
+    "date": "2026-04-27T10:55:10Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [adguard/adguardhome](https://adguard.com/en/adguard-home/overview.html) ([source](https://redirect.github.com/AdguardTeam/AdGuardHome)) | pat",
     "url": "https://github.com/arashnrim/homelab/pull/213",
     "source": "github_prs",
@@ -827,12 +827,12 @@
   },
   {
     "title": "[PR] feat: add Jetson Orin Nano support",
-    "date": "2026-04-27T04:54:28Z",
+    "date": "2026-04-27T11:23:14Z",
     "summary": "Closes #404\nAlso fixes #539, relates to #65, #300, #511, #1076\n\n## Summary\n\nAdds end-to-end Jetson Orin Nano support: from GPU detection through to a working OpenClaw agent with local Ollama inference.\n\n- **GPU detection**: nvidia-smi reports `[N/A]` for memory.total on Jetson (unified memory). Adde",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/405",
     "source": "github_prs",
     "highlights": [
-      "comments: 21",
+      "comments: 22",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -875,7 +875,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-27T09:17:13Z",
+    "date": "2026-04-27T11:46:18Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -899,12 +899,12 @@
   },
   {
     "title": "[PR] feat: implement codebase indexing",
-    "date": "2026-04-27T09:07:24Z",
+    "date": "2026-04-27T10:42:18Z",
     "summary": "## Context\n\nCloses #6144\n\nRelated indexing/search issues: #7986, #8385, #7352, #8311, #6391, #6453, #6490, #6936, #6482, #6047, #1105, #912, #4080, #4635.\n\n## Implementation\n\nFor the backend, migrates the legacy codebase indexing backend into the new codebase, locating as much code as possible in a ",
     "url": "https://github.com/Kilo-Org/kilocode/pull/6966",
     "source": "github_prs",
     "highlights": [
-      "comments: 63",
+      "comments: 64",
       "pull request",
       "repo: kilocode"
     ]
@@ -967,6 +967,126 @@
       "comments: 0",
       "pull request",
       "repo: hawtio-ai-plugin"
+    ]
+  },
+  {
+    "title": "[PR] v1.4.2 \u2014 \u043f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0438\u0442\u044c\u0441\u044f \u043d\u0430 qwen2.5:32b \u043a\u0430\u043a \u0434\u0435\u0444\u043e\u043b\u0442\u043d\u0443\u044e \u043c\u043e\u0434\u0435\u043b\u044c",
+    "date": "2026-04-27T11:41:09Z",
+    "summary": "## Summary\n\n\u041f\u043e\u0441\u043b\u0435 v1.4.1 (warmup, PR #5) \u043e\u0442\u0432\u0435\u0442\u044b \u043f\u043e-\u043f\u0440\u0435\u0436\u043d\u0435\u043c\u0443 \u0440\u0432\u0430\u043b\u0438\u0441\u044c \u043f\u043e \u0442\u0430\u0439\u043c\u0430\u0443\u0442\u0443:\nqwen3:30b-a3b \u043d\u0430 \u0431\u043e\u0435\u0432\u043e\u043c \u0442\u0435\u043a\u0441\u0442\u0435 \u0433\u0435\u043d\u0435\u0440\u0438\u0440\u0443\u0435\u0442 ~3+ \u043c\u0438\u043d\u0443\u0442\u044b, \u043f\u043e\u0442\u043e\u043c\u0443 \u0447\u0442\u043e\nthinking-\u0440\u0435\u0436\u0438\u043c **\u0438\u0433\u043d\u043e\u0440\u0438\u0440\u0443\u0435\u0442 `think:false`** \u043d\u0430 \u044d\u0442\u0438\u0445 \u0432\u0435\u0441\u0430\u0445\n(\u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u043e \u043d\u0430 Ollama 0.21.2 + \u043f\u043e\u043b\u0435 `thinking` \u0432 JSON \u043e\u0442\u0432\u0435\u0442\u0430).\n\n\u0420\u0435\u0430\u043b\u044c\u043d\u044b\u0439 \u0431\u0435\u043d\u0447\u043c\u0430\u0440\u043a \u043d\u0430 \u0442\u0438\u043f\u0438\u0447\u043d\u043e\u043c ",
+    "url": "https://github.com/Jadessswq/MainCheck/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MainCheck"
+    ]
+  },
+  {
+    "title": "[PR] Initial project MR",
+    "date": "2026-04-27T11:29:05Z",
+    "summary": "## \u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u043e\r\n- PaddleOCR \u0441\u0435\u0440\u0432\u0438\u0441 \u043f\u043e \u0430\u043d\u0430\u043b\u043e\u0433\u0438\u0438 \u0441 extraction (\u0441\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e, \u043e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u043e \u0440\u0430\u0441\u043f\u043e\u0437\u043d\u0430\u0432\u0430\u043d\u0438\u0435 \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u044b \u0438 \u0442\u0430\u0431\u043b\u0438\u0446 \u043f\u043e-\u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e, \u0442\u0430\u043a \u043d\u0430\u043c\u043d\u043e\u0433\u043e \u0431\u044b\u0441\u0442\u0440\u0435\u0435 \u0438 \u043c\u0435\u043d\u044c\u0448\u0435 \u0442\u0435\u043a\u0441\u0442\u0430 \u0442\u0435\u0440\u044f\u0435\u0442\u0441\u044f)\r\n- \u041d\u043e\u0432\u044b\u0439 gsp2-potok FastStream \u0441\u0435\u0440\u0432\u0438\u0441, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0435\u0442 \u043d\u0430 \u0432\u0445\u043e\u0434 \u0441\u0441\u044b\u043b\u043a\u0443 \u043d\u0430 .pdf \u0447\u0435\u0440\u0435\u0437 RabbitMQ, \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u044f\u0435\u0442 \u0435\u0435 \u0432 OCR (\u0442\u043e\u0436\u0435 \u0447\u0435\u0440",
+    "url": "https://github.com/tmp120210/gsp2-potok/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: gsp2-potok"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-04-27T11:25:11Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] LCORE-1849: Get the  providers e2e tests to run properly",
+    "date": "2026-04-27T10:30:58Z",
+    "summary": "## Description\r\n\r\nGet the  providers e2e tests to run properly. \r\nSee https://github.com/are-ces/lightspeed-stack/actions/runs/24983078532/job/73149647408\r\n\r\n## Type of change\r\n\r\n- [ ] Refactor\r\n- [ ] New feature\r\n- [ ] Bug fix\r\n- [ ] CVE fix\r\n- [ ] Optimization\r\n- [ ] Documentation Update\r\n- [ ] Co",
+    "url": "https://github.com/lightspeed-core/lightspeed-stack/pull/1596",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: lightspeed-stack"
+    ]
+  },
+  {
+    "title": "[PR] deps(deps): bump the go-dependencies group across 1 directory with 13 updates",
+    "date": "2026-04-27T10:28:08Z",
+    "summary": "Bumps the go-dependencies group with 12 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [github.com/aws/aws-sdk-go](https://github.com/aws/aws-sdk-go) | `1.55.5` | `1.55.8` |\n| [github.com/fatih/color](https://github.com/fatih/color) | `1.14.1` | `1.19.0` |\n| [github.com/j",
+    "url": "https://github.com/replicatedhq/chartsmith/pull/245",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: chartsmith"
+    ]
+  },
+  {
+    "title": "[PR] jetbrains.jdk: 21.0.9-1163.86 -> 25.0.2-b329.72",
+    "date": "2026-04-27T10:15:18Z",
+    "summary": "Updates the Jetbrains Runtime from Java 21 to  Java 25. The Jetbrains IDEs packages default to JBR as the JDK, updating the Jetbrains JDK to Java 25 allows the IDEs to have access to Java 25 by default. JBR is also often used for developing with DCEVM.\r\n\r\n## Things done\r\n\r\n<!-- Please check what app",
+    "url": "https://github.com/NixOS/nixpkgs/pull/485812",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 50",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] docs(linux): add production setup guide for nvm, Tailscale, GPU, and firewall",
+    "date": "2026-04-27T09:53:30Z",
+    "summary": "## Summary\r\n\r\nExtends `docs/platforms/linux.md` with a practical production setup section\r\nfor Ubuntu 24.04+ desktop/server machines.\r\n\r\n## What's added\r\n\r\n- **nvm caveat**: systemd can't find nvm-installed Node; shows absolute paths or system Node alternative\r\n- **Tailscale**: recommended over SSH ",
+    "url": "https://github.com/BingqingLyu/openclaw/pull/748",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.42.0",
+    "date": "2026-04-27T09:48:44Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-lib-go-bg-state-monitor/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-lib-go-bg-state-monitor"
+    ]
+  },
+  {
+    "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
+    "date": "2026-04-27T09:44:01Z",
+    "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
+    "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: OpenMAIC"
+    ]
+  },
+  {
+    "title": "[PR] fix: add SSRF hostname validation to Ollama/vLLM model discovery and stream",
+    "date": "2026-04-27T09:43:40Z",
+    "summary": "## Vulnerability: Ollama/vLLM Model Discovery and Stream SSRF\n\n**Severity:** Medium (CVSS 6.8)\n\n## Root Cause\n\nOllama model discovery, vLLM/sglang model discovery, and the Ollama stream function all use raw `fetch()` with user-controlled `baseUrl` from configuration without SSRF validation. An attac",
+    "url": "https://github.com/BingqingLyu/openclaw/pull/700",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw"
     ]
   }
 ]
