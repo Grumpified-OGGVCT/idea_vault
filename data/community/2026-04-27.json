@@ -155,8 +155,8 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-27T20:05:57Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://de",
+    "date": "2026-04-27T21:32:24Z",
+    "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Deprecations / Replacements\n> [",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
     "highlights": [
@@ -743,8 +743,8 @@
   },
   {
     "title": "[PR] chore(deps): Update terraform providers",
-    "date": "2026-04-27T01:46:46Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| amazon/aws-cli | kubernetes_cron_job_v1 | patch | `2.34.23` \u2192 `2.34.37` |\n| busybox | kubernetes_deployment | minor | `1.36` \u2192 `1.3",
+    "date": "2026-04-27T21:00:12Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| amazon/aws-cli | kubernetes_cron_job_v1 | patch | `2.34.23` \u2192 `2.34.38` |\n| busybox | kubernetes_deployment | minor | `1.36` \u2192 `1.3",
     "url": "https://github.com/STollenaar/infrastructure/pull/106",
     "source": "github_prs",
     "highlights": [
@@ -1211,12 +1211,12 @@
   },
   {
     "title": "[PR] Feature/connector architecture v3",
-    "date": "2026-04-27T19:54:32Z",
+    "date": "2026-04-27T21:28:27Z",
     "summary": "# Connector Architecture v3 \u2014 Executive Summary\r\n\r\n**Branch**: `feature/connector-architecture-v3`\r\n**Date**: 2026-04-24\r\n\r\n---\r\n\r\n## Problem\r\n\r\nDefenseClaw's guardrail proxy was hardcoded to work only with OpenClaw. Every authentication check, request signal extraction, hook script, and telemetry l",
     "url": "https://github.com/cisco-ai-defense/defenseclaw/pull/141",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 8",
       "pull request",
       "repo: defenseclaw"
     ]
@@ -1283,7 +1283,7 @@
   },
   {
     "title": "[PR] fix(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m5",
-    "date": "2026-04-27T17:35:28Z",
+    "date": "2026-04-27T21:27:58Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
     "url": "https://github.com/nramc/journey-api/pull/820",
     "source": "github_prs",
@@ -1331,7 +1331,7 @@
   },
   {
     "title": "[PR] fix(deps): update minor go modules",
-    "date": "2026-04-27T17:14:28Z",
+    "date": "2026-04-27T20:46:33Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [cloud.google.com/go/pubsub/",
     "url": "https://github.com/Tochemey/gopack/pull/109",
     "source": "github_prs",
@@ -1367,7 +1367,7 @@
   },
   {
     "title": "[PR] feat(infra): migrate to PostgreSQL and implement OpenTelemetry stack",
-    "date": "2026-04-27T16:28:01Z",
+    "date": "2026-04-27T20:19:42Z",
     "summary": "Migrate the primary data store from SQLite to PostgreSQL with pgvector support and replace the custom telemetry implementation with a standardized OpenTelemetry-based observability stack.\r\n\r\nInfrastructure changes:\r\n- Add PostgreSQL, Prometheus, Loki, Jaeger, and Grafana to the stack\r\n- Integrate Mi",
     "url": "https://github.com/jasonviipers/okx/pull/14",
     "source": "github_prs",
@@ -1375,6 +1375,150 @@
       "comments: 1",
       "pull request",
       "repo: okx"
+    ]
+  },
+  {
+    "title": "[PR] Add async-openai cloud LLM backend with per-model dispatch",
+    "date": "2026-04-27T21:52:30Z",
+    "summary": "Introduces an OpenAI-compatible cloud inference backend (OpenAI, Azure, Ollama, LiteLLM, Groq, OpenRouter, vLLM) alongside the existing local MistralRS backend. Per-model registration drives backend selection; an opt-in fallback retries once against another model when the primary fails to start stre",
+    "url": "https://github.com/KB-Helios/rag-engine/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: rag-engine"
+    ]
+  },
+  {
+    "title": "[PR] feat: expose compiled backend build profiles",
+    "date": "2026-04-27T21:52:06Z",
+    "summary": "## Summary\n- add a `CompiledBackends` runtime contract in `BaseChatInference` with build profile, enabled inference traits, compiled local model types, and compiled remote providers\n- reuse that contract from `DefaultBackends`, `APIProvider.availableInBuild`, and `FrameworkCapabilityService` instead",
+    "url": "https://github.com/roryford/BaseChatKit/pull/867",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: BaseChatKit"
+    ]
+  },
+  {
+    "title": "[PR] deps: bump the production-dependencies group across 1 directory with 35 updates",
+    "date": "2026-04-27T21:47:28Z",
+    "summary": "Bumps the production-dependencies group with 31 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [tiktoken](https://github.com/openai/tiktoken) | `0.11.0` | `0.12.0` |\n| [schema](https://github.com/keleshev/schema) | `0.7.7` | `0.7.8` |\n| [pyyaml](https://github.com/yaml/py",
+    "url": "https://github.com/griptape-ai/griptape/pull/2149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: griptape"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency browser-use to v0.1.45 [SECURITY]",
+    "date": "2026-04-27T21:29:01Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [browser-use](https://redire",
+    "url": "https://github.com/AReid987/stellarAgent/pull/168",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: stellarAgent"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): OAuth/subscription auth survey + auto-derived LiteLLM presets + 8 branded entries (#1629)",
+    "date": "2026-04-27T21:27:03Z",
+    "summary": "Closes #1629.\n\n## Summary\n\nTwo-phase work shipped in a single PR.\n\n**Phase 1 \u2014 Research note** (`docs/research/llm-provider-auth-survey.md`).\nCatalogues OAuth and subscription-based auth across 17 LLM providers, cross-referenced against 7 reference tools (Cursor, Continue, Aider, OpenCode, Cline, Cl",
+    "url": "https://github.com/Aureliolo/synthorg/pull/1653",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: synthorg"
+    ]
+  },
+  {
+    "title": "[PR] Gerar AGENTS.md",
+    "date": "2026-04-27T21:16:51Z",
+    "summary": "Analise todo o codigo deste projeto e gere um arquivo AGENTS.md na raiz com instrucoes claras para agentes de IA: arquitetura do projeto, convencoes de codigo, comandos de build/test/lint, areas sensiveis e guias de contribuicao. O arquivo deve ser objetivo e util para que futuros agentes entendam r",
+    "url": "https://github.com/juninmd/quiz-shorts-generator/pull/46",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: quiz-shorts-generator"
+    ]
+  },
+  {
+    "title": "[PR] Gemini Embedding & Chroma Support",
+    "date": "2026-04-27T20:39:22Z",
+    "summary": "## Summary\r\n\r\nAdds support for Gemini embedding models and ChromaDB as a vector store, enabling RAG (Retrieval-Augmented Generation) pipelines with Google's embedding API backed by ChromaDB persistence.\r\nAlso adds mise configuration for easy management of java and maven version & adds common task fr",
+    "url": "https://github.com/labsai/EDDI/pull/459",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: EDDI"
+    ]
+  },
+  {
+    "title": "[PR] 90 feature add pengine cli",
+    "date": "2026-04-27T20:34:30Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Full Terminal CLI: interactive REPL, one-shot commands, JSON output, progress/formatting, doctor, session persistence, mention/file inlining, MCP management, model/tool/skill",
+    "url": "https://github.com/pengine-ai/pengine/pull/94",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: pengine"
+    ]
+  },
+  {
+    "title": "[PR] feat: SIP AI Client \u2014 \u0433\u043e\u043b\u043e\u0441\u043e\u0432\u043e\u0439 \u0418\u0418-\u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043d\u0442 \u0441 Whisper, Piper, Ollama/Cloud LLM",
+    "date": "2026-04-27T20:17:24Z",
+    "summary": "## Summary\n\n\u041f\u043e\u043b\u043d\u043e\u0446\u0435\u043d\u043d\u044b\u0439 SIP AI Client \u2014 \u0433\u043e\u043b\u043e\u0441\u043e\u0432\u043e\u0439 \u0418\u0418-\u0430\u0441\u0441\u0438\u0441\u0442\u0435\u043d\u0442, \u0440\u0430\u0431\u043e\u0442\u0430\u044e\u0449\u0438\u0439 \u043f\u043e SIP-\u043f\u0440\u043e\u0442\u043e\u043a\u043e\u043b\u0443.\n\n### \u041a\u043e\u043c\u043f\u043e\u043d\u0435\u043d\u0442\u044b:\n- **SIP-\u043a\u043b\u0438\u0435\u043d\u0442** (`sip_client.py`) \u2014 \u043f\u0440\u0438\u0451\u043c/\u0441\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u0435 \u0437\u0432\u043e\u043d\u043a\u043e\u0432 \u0447\u0435\u0440\u0435\u0437 pyVoIP, \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0430 \u0430\u0443\u0434\u0438\u043e-\u043f\u043e\u0442\u043e\u043a\u043e\u0432 G.711 \u03bc-law\n- **Whisper STT** (`stt/whisper_stt.py`) \u2014 \u0440\u0430\u0441\u043f\u043e\u0437\u043d\u0430\u0432\u0430\u043d\u0438\u0435 \u0440\u0443\u0441\u0441\u043a\u043e\u0439 \u0440\u0435\u0447\u0438 \u0447\u0435\u0440\u0435\u0437 fa",
+    "url": "https://github.com/asscol/sip-ai-client/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: sip-ai-client"
+    ]
+  },
+  {
+    "title": "[PR] Simplify provider architecture to OpenRouter + Ollama + AzureOpenAI",
+    "date": "2026-04-27T20:14:18Z",
+    "summary": "Six providers (`OpenAI`, `Anthropic`, `Gemini`, `Mistral`, `Ollama`, `AzureOpenAI`) collapsed to three by routing all cloud providers through OpenRouter (OpenAI-compatible, 200+ models). Eliminates ~1,000 lines of provider-branching code across 18 files.\n\n## Core (`chatty-core`)\n\n- **`ProviderType`*",
+    "url": "https://github.com/boersmamarcel/chatty2/pull/444",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: chatty2"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M5",
+    "date": "2026-04-27T19:33:09Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
+    "url": "https://github.com/ThomasVitale/scaling-on-satisfaction/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: scaling-on-satisfaction"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m5",
+    "date": "2026-04-27T19:28:49Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/nicholasM95/meyers-ai/pull/45",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: meyers-ai"
     ]
   }
 ]
