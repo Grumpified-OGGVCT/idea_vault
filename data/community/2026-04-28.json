@@ -155,7 +155,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-28T04:44:27Z",
+    "date": "2026-04-28T09:26:17Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Deprecations / Replacements\n> [",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -599,7 +599,7 @@
   },
   {
     "title": "[PR] Feature/connector architecture v3",
-    "date": "2026-04-28T02:13:09Z",
+    "date": "2026-04-28T09:21:56Z",
     "summary": "# Connector Architecture v3 \u2014 Executive Summary\r\n\r\n**Branch**: `feature/connector-architecture-v3`\r\n**Date**: 2026-04-24\r\n\r\n---\r\n\r\n## Problem\r\n\r\nDefenseClaw's guardrail proxy was hardcoded to work only with OpenClaw. Every authentication check, request signal extraction, hook script, and telemetry l",
     "url": "https://github.com/cisco-ai-defense/defenseclaw/pull/141",
     "source": "github_prs",
@@ -658,13 +658,13 @@
     ]
   },
   {
-    "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.25",
-    "date": "2026-04-28T01:01:06Z",
-    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.25`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.25\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/25",
+    "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.4.26",
+    "date": "2026-04-28T07:06:01Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.4.26`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.4.26\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/25",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
     "source": "github_prs",
     "highlights": [
-      "comments: 766",
+      "comments: 782",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -755,7 +755,7 @@
   },
   {
     "title": "[PR] feat(providers): OAuth/subscription auth survey + auto-derived LiteLLM presets + 8 branded entries (#1629)",
-    "date": "2026-04-28T06:32:24Z",
+    "date": "2026-04-28T08:40:22Z",
     "summary": "Closes #1629.\n\n## Summary\n\nTwo-phase work shipped in a single PR.\n\n**Phase 1 \u2014 Research note** (`docs/research/llm-provider-auth-survey.md`).\nCatalogues OAuth and subscription-based auth across 17 LLM providers, cross-referenced against 7 reference tools (Cursor, Continue, Aider, OpenCode, Cline, Cl",
     "url": "https://github.com/Aureliolo/synthorg/pull/1653",
     "source": "github_prs",
@@ -767,7 +767,7 @@
   },
   {
     "title": "[PR] feat(infra): migrate to PostgreSQL and implement OpenTelemetry stack",
-    "date": "2026-04-28T06:20:29Z",
+    "date": "2026-04-28T09:20:41Z",
     "summary": "Migrate the primary data store from SQLite to PostgreSQL with pgvector support and replace the custom telemetry implementation with a standardized OpenTelemetry-based observability stack.\r\n\r\nInfrastructure changes:\r\n- Add PostgreSQL, Prometheus, Loki, Jaeger, and Grafana to the stack\r\n- Integrate Mi",
     "url": "https://github.com/jasonviipers/okx/pull/14",
     "source": "github_prs",
@@ -827,7 +827,7 @@
   },
   {
     "title": "[PR] MTA-6811, 6812, 6813 CQA April Developer Lightspeed work",
-    "date": "2026-04-28T05:53:49Z",
+    "date": "2026-04-28T09:13:30Z",
     "summary": "### JIRA\r\n\r\n* [MTA-6811](https://redhat.atlassian.net/browse/MTA-6811)\r\n* [MTA-6812](https://redhat.atlassian.net/browse/MTA-6812)\r\n* [MTA-6813](https://redhat.atlassian.net/browse/MTA-6813)\r\n* [MTA-6814](https://redhat.atlassian.net/browse/MTA-6814)\r\n* [MTA-6815](https://redhat.atlassian.net/browse",
     "url": "https://github.com/migtools/mta-documentation/pull/357",
     "source": "github_prs",
@@ -899,12 +899,12 @@
   },
   {
     "title": "[PR] fix(docker): include api-key header in external Qdrant readiness probe",
-    "date": "2026-04-28T04:54:52Z",
+    "date": "2026-04-28T09:00:05Z",
     "summary": "Fixes #35.\n\n## What\n\nForward `QDRANT_API_KEY` as an `api-key` request header from `ensureExternalQdrantReady()` by extending `waitForService()` with an optional `RequestInit` argument.\n\n## Why\n\nQdrant Cloud requires authentication on **every** endpoint, including `/healthz`. The current readiness pr",
     "url": "https://github.com/giancarloerra/SocratiCode/pull/36",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: SocratiCode"
     ]
@@ -943,6 +943,114 @@
       "comments: 7",
       "pull request",
       "repo: OpenMAIC"
+    ]
+  },
+  {
+    "title": "[PR] feat(search): add local embedding provider for on-premise semantic search (Ollama)",
+    "date": "2026-04-28T09:22:12Z",
+    "summary": "## Summary\n\nAdds a `local` embedding provider so DataHub can run fully on-premise semantic search without cloud API keys. The provider calls any locally-running OpenAI-compatible embeddings server \u2014 primarily [Ollama](https://ollama.com) \u2014 using `java.net.http.HttpClient` and Jackson (zero new depen",
+    "url": "https://github.com/datahub-project/datahub/pull/17201",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: datahub"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-04-28T09:12:06Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] feat/multi language summary",
+    "date": "2026-04-28T08:40:13Z",
+    "summary": "## Description\r\n\r\nEnable users to generate summaries in a selected output language independent of transcript language.\r\n\r\n**Changes**\r\n- Settings page consists of a summary selection section with an option to pin default language for all summaries.\r\n- Using a two pass translation\r\n  - **Pass 1**: su",
+    "url": "https://github.com/Zackriya-Solutions/meetily/pull/447",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: meetily"
+    ]
+  },
+  {
+    "title": "[PR] jetbrains.jdk: 21.0.9-1163.86 -> 25.0.2-b329.72",
+    "date": "2026-04-28T08:27:00Z",
+    "summary": "Updates the Jetbrains Runtime from Java 21 to  Java 25. The Jetbrains IDEs packages default to JBR as the JDK, updating the Jetbrains JDK to Java 25 allows the IDEs to have access to Java 25 by default. JBR is also often used for developing with DCEVM.\r\n\r\n## Things done\r\n\r\n<!-- Please check what app",
+    "url": "https://github.com/NixOS/nixpkgs/pull/485812",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 52",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] docs(linux): add production setup guide for nvm, Tailscale, GPU, and firewall",
+    "date": "2026-04-28T07:40:46Z",
+    "summary": "## Summary\r\n\r\nExtends `docs/platforms/linux.md` with a practical production setup section\r\nfor Ubuntu 24.04+ desktop/server machines.\r\n\r\n## What's added\r\n\r\n- **nvm caveat**: systemd can't find nvm-installed Node; shows absolute paths or system Node alternative\r\n- **Tailscale**: recommended over SSH ",
+    "url": "https://github.com/BingqingLyu/openclaw/pull/748",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix: add SSRF hostname validation to Ollama/vLLM model discovery and stream",
+    "date": "2026-04-28T07:38:54Z",
+    "summary": "## Vulnerability: Ollama/vLLM Model Discovery and Stream SSRF\n\n**Severity:** Medium (CVSS 6.8)\n\n## Root Cause\n\nOllama model discovery, vLLM/sglang model discovery, and the Ollama stream function all use raw `fetch()` with user-controlled `baseUrl` from configuration without SSRF validation. An attac",
+    "url": "https://github.com/BingqingLyu/openclaw/pull/700",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-04-28T07:37:43Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-04-28T06:54:39Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M5",
+    "date": "2026-04-28T09:13:48Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
+    "url": "https://github.com/ThomasVitale/scaling-on-satisfaction/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: scaling-on-satisfaction"
     ]
   }
 ]
