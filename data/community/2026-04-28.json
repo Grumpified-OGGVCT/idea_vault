@@ -155,7 +155,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-28T01:01:53Z",
+    "date": "2026-04-28T04:44:27Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Deprecations / Replacements\n> [",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -515,12 +515,12 @@
   },
   {
     "title": "[PR] \ud83e\udd16 feat(providers): support custom OpenAI-compatible providers (closes #1435)",
-    "date": "2026-04-28T03:45:07Z",
+    "date": "2026-04-28T05:07:47Z",
     "summary": "## Summary\n\nAdds support for **custom OpenAI-compatible providers** so users can wire mux up to llama.cpp, vLLM, LM Studio, Ollama, or any other Chat Completions-compatible endpoint without code changes. Closes #1435.\n\nConfiguration lives in `~/.mux/providers.jsonc` under `providers.<id>` with `prov",
     "url": "https://github.com/coder/mux/pull/3202",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 13",
       "pull request",
       "repo: mux"
     ]
@@ -539,12 +539,12 @@
   },
   {
     "title": "[PR] fix(launch): smooth npx wuphf cold-start for Product Hunt visitors",
-    "date": "2026-04-28T03:33:53Z",
+    "date": "2026-04-28T03:48:17Z",
     "summary": "## Summary\n\nFour surgical fixes to remove friction in the first 60 seconds of `npx wuphf` ahead of today's Product Hunt launch.\n\n- **No-TTY-safe Nex prompt** (`internal/team/launcher.go`). `fmt.Scanln` returned empty for non-interactive stdin (npx pipes, Docker, CI), and we silently treated that as ",
     "url": "https://github.com/nex-crm/wuphf/pull/364",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: wuphf"
     ]
@@ -751,6 +751,198 @@
       "comments: 2",
       "pull request",
       "repo: movie-finder-chain"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): OAuth/subscription auth survey + auto-derived LiteLLM presets + 8 branded entries (#1629)",
+    "date": "2026-04-28T06:32:24Z",
+    "summary": "Closes #1629.\n\n## Summary\n\nTwo-phase work shipped in a single PR.\n\n**Phase 1 \u2014 Research note** (`docs/research/llm-provider-auth-survey.md`).\nCatalogues OAuth and subscription-based auth across 17 LLM providers, cross-referenced against 7 reference tools (Cursor, Continue, Aider, OpenCode, Cline, Cl",
+    "url": "https://github.com/Aureliolo/synthorg/pull/1653",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: synthorg"
+    ]
+  },
+  {
+    "title": "[PR] feat(infra): migrate to PostgreSQL and implement OpenTelemetry stack",
+    "date": "2026-04-28T06:20:29Z",
+    "summary": "Migrate the primary data store from SQLite to PostgreSQL with pgvector support and replace the custom telemetry implementation with a standardized OpenTelemetry-based observability stack.\r\n\r\nInfrastructure changes:\r\n- Add PostgreSQL, Prometheus, Loki, Jaeger, and Grafana to the stack\r\n- Integrate Mi",
+    "url": "https://github.com/jasonviipers/okx/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: okx"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update go-minor",
+    "date": "2026-04-28T06:19:48Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-site-management/pull/175",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-site-management"
+    ]
+  },
+  {
+    "title": "[PR] docs: add FAQ and Troubleshooting section to README",
+    "date": "2026-04-28T06:16:38Z",
+    "summary": "## Summary\n\nThis PR adds a comprehensive FAQ and Troubleshooting section to the README to help new users get started faster and solve common issues without needing to open issues.\n\n## Changes\n\n- Added FAQ section covering common questions about:\n  - What is Sim and what does it do\n  - Free vs cloud-",
+    "url": "https://github.com/simstudioai/sim/pull/4267",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: sim"
+    ]
+  },
+  {
+    "title": "[PR] feat: local backend \u2014 Ollama LLM + ComfyUI/SD image gen for Yggdrasil",
+    "date": "2026-04-28T06:13:31Z",
+    "summary": "## Summary\n\n- Adds `backend/setup.ps1` \u2014 one-time bootstrap for Yggdrasil (Windows/CUDA): installs Ollama, ComfyUI portable, pulls LLM models and SD 1.5 weights, writes initial OpenClaw config\n- Adds `backend/start.ps1` \u2014 per-session launcher for Ollama + ComfyUI background services\n- Adds `backend/",
+    "url": "https://github.com/DavesFromTheGrave/Local-Auto-Claw/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Local-Auto-Claw"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Jetson Orin Nano support",
+    "date": "2026-04-28T06:07:05Z",
+    "summary": "Closes #404\nAlso fixes #539, relates to #65, #300, #511, #1076\n\n## Summary\n\nAdds end-to-end Jetson Orin Nano support: from GPU detection through to a working OpenClaw agent with local Ollama inference.\n\n- **GPU detection**: nvidia-smi reports `[N/A]` for memory.total on Jetson (unified memory). Adde",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/405",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 22",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] MTA-6811, 6812, 6813 CQA April Developer Lightspeed work",
+    "date": "2026-04-28T05:53:49Z",
+    "summary": "### JIRA\r\n\r\n* [MTA-6811](https://redhat.atlassian.net/browse/MTA-6811)\r\n* [MTA-6812](https://redhat.atlassian.net/browse/MTA-6812)\r\n* [MTA-6813](https://redhat.atlassian.net/browse/MTA-6813)\r\n* [MTA-6814](https://redhat.atlassian.net/browse/MTA-6814)\r\n* [MTA-6815](https://redhat.atlassian.net/browse",
+    "url": "https://github.com/migtools/mta-documentation/pull/357",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mta-documentation"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update minor go modules",
+    "date": "2026-04-28T05:53:45Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [cloud.google.com/go/pubsub/",
+    "url": "https://github.com/Tochemey/gopack/pull/109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: gopack"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency openclaw to v2026.4.26",
+    "date": "2026-04-28T05:48:04Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [openclaw](https://redirect.",
+    "url": "https://github.com/tardigrde/openclaw-deploy/pull/109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaw-deploy"
+    ]
+  },
+  {
+    "title": "[PR] feat(ilmu): register ILMU as a built-in LLM provider plugin",
+    "date": "2026-04-28T05:30:46Z",
+    "summary": "## Summary\n\n- Problem: ILMU is the platform's own OpenAI-compatible LLM service, but it isn't visible at the OpenClaw layer \u2014 users picking a model see Anthropic / OpenAI / vLLM / Ollama / DeepSeek / Moonshot but never ILMU. External OpenClaw users and operators of ILMU's sovereign deployments have ",
+    "url": "https://github.com/openclaw/openclaw/pull/72859",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(launch): combined npx wuphf cold-start + onboarding-resilience fixes (supersedes #364, #365)",
+    "date": "2026-04-28T05:20:04Z",
+    "summary": "## Summary\n\nCombines #364 (Product Hunt cold-start friction) and #365 (onboarding resilience) into a single bundle and resolves the issues each reviewer flagged. Closes both.\n\n### From #364 \u2014 first-60-seconds friction\n- **No-TTY-safe Nex prompt** (`internal/team/launcher.go`). `fmt.Scanln` returned ",
+    "url": "https://github.com/nex-crm/wuphf/pull/367",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: wuphf"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-04-28T05:07:46Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] fix(docker): include api-key header in external Qdrant readiness probe",
+    "date": "2026-04-28T04:54:52Z",
+    "summary": "Fixes #35.\n\n## What\n\nForward `QDRANT_API_KEY` as an `api-key` request header from `ensureExternalQdrantReady()` by extending `waitForService()` with an optional `RequestInit` argument.\n\n## Why\n\nQdrant Cloud requires authentication on **every** endpoint, including `/healthz`. The current readiness pr",
+    "url": "https://github.com/giancarloerra/SocratiCode/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: SocratiCode"
+    ]
+  },
+  {
+    "title": "[PR] Local-scraping rebuild: delete Trigger.dev, add Bree+PM2 scheduler, AutoScrape repair, DeepSeek-OCR vision (8 phases)",
+    "date": "2026-04-28T04:48:50Z",
+    "summary": "8-phase rebuild that deletes Trigger.dev entirely and replaces it with a local Bree+PM2 scheduler, plus prevention layers, AutoScrape repair, and self-hosted DeepSeek-OCR vision. Trigger.dev cloud deploys had been failing for 16+ days due to an upstream Playwright extension bug.\n\n## What ships\n\n| Ph",
+    "url": "https://github.com/jamesbarge/pictures/pull/469",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: pictures"
+    ]
+  },
+  {
+    "title": "[PR] [NEUTRAL] Update dependency @mariozechner/pi-ai to v0.70.5",
+    "date": "2026-04-28T04:28:33Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/snowdensb/openclaw_2/pull/59",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw_2"
+    ]
+  },
+  {
+    "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
+    "date": "2026-04-28T04:04:38Z",
+    "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
+    "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: OpenMAIC"
     ]
   }
 ]
