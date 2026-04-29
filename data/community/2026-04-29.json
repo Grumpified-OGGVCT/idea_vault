@@ -155,7 +155,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-29T09:02:22Z",
+    "date": "2026-04-29T11:33:35Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -167,7 +167,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-29T06:19:26Z",
+    "date": "2026-04-29T11:12:17Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -743,7 +743,7 @@
   },
   {
     "title": "[PR] feat(container): update image docker.io/openwebui/open-webui ( 0.8.12 \u2794 0.9.2 )",
-    "date": "2026-04-28T22:22:40Z",
+    "date": "2026-04-29T09:45:27Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/openwebui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.8.12` \u2192 `0.9.2` |\n\n---\n\n> [!WARNING]\n> Some d",
     "url": "https://github.com/gavinmcfall/home-ops/pull/1870",
     "source": "github_prs",
@@ -947,7 +947,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-29T07:09:22Z",
+    "date": "2026-04-29T10:38:53Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -967,6 +967,222 @@
       "comments: 2",
       "pull request",
       "repo: t3code"
+    ]
+  },
+  {
+    "title": "[PR] feat(tools): add automated LLM model sync tool and update provider profiles",
+    "date": "2026-04-29T11:36:28Z",
+    "summary": "## Summary\r\n\r\nAdds a sync tool that keeps each LLM node's `services.json` aligned with its provider's live model catalog, exposes where each model ID was discovered (`modelSource`), and wires a weekly CI job so humans don't have to remember.\r\n\r\n## What's new\r\n\r\n**`sync_models` tool** (`tools/src/syn",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/651",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): client-side reasoning-tag parsing for local models",
+    "date": "2026-04-29T11:34:50Z",
+    "summary": "## Summary\n\n- Local reasoning models (DeepSeek-R1, Qwen3/QwQ, Magistral, Phi-4-mini, SmolLM3, etc.) now render with a clean response area + collapsible thinking lane, matching the UX of cloud reasoning models. Today their `<think>...</think>` tags leak straight into the user-visible response when st",
+    "url": "https://github.com/lvndry/jazz/pull/208",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: jazz"
+    ]
+  },
+  {
+    "title": "[PR] Provider-Agnostic Architecture & LLM Service Consolidation (Bye bye ollama)",
+    "date": "2026-04-29T11:27:54Z",
+    "summary": "## Summary\r\n\r\n- Eliminate all hardcoded Ollama references across the stack; every provider (Ollama, LM Studio, OpenAI, Anthropic, \u2026) is now selected, configured, and called through a single unified path\r\n- Replace the module-level `lock.py` singleton with per-call GPU locking inside `LitellmService`",
+    "url": "https://github.com/cmorlok/AI-Paperless-Organizer/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AI-Paperless-Organizer"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-04-29T11:25:28Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go to v0.42.0",
+    "date": "2026-04-29T11:16:35Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/pandorasNox/lettr/pull/166",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lettr"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/onedr0p/home-assistant to v2025",
+    "date": "2026-04-29T11:10:07Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/onedr0p/home-assistant](https://ghcr.io/onedr0p/home-assistant) ([source](https://togithub.com/home-assistant/core)) | major | `2023.6.3` -> `2025.1.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not b",
+    "url": "https://github.com/apheon-terra/01_k3s_ops/pull/13964",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: 01_k3s_ops"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency testcontainers to v11",
+    "date": "2026-04-29T11:08:03Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/bryopsida/redis-key-store/pull/557",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: redis-key-store"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update testcontainers-go monorepo to v0.42.0",
+    "date": "2026-04-29T10:58:02Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/vexxhost/openstack_database_exporter/pull/87",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openstack_database_exporter"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/karakeep-app/karakeep ( 0.29.3 \u2192 0.31.0 )",
+    "date": "2026-04-29T10:55:24Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/karakeep-app/karakeep](https://redirect.github.com/karakeep-app/karakeep) | minor | `0.29.3` \u2192 `0.31.0` |\n\n---\n\n### Release Notes\n\n<d",
+    "url": "https://github.com/sarcasticgoat/k8s-gitops/pull/116",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: k8s-gitops"
+    ]
+  },
+  {
+    "title": "[PR] Add LlmSandbox and LLM-Sim-Alpha projects",
+    "date": "2026-04-29T10:46:27Z",
+    "summary": "## What's being added\r\n\r\nTwo open-source, locally-running LLM agent simulation tools:\r\n\r\n## Summary\r\n\r\n**LlmSandbox** (https://github.com/Trainerx7979/LlmSandbox)   A real-time 2D NPC sandbox where agents make live LLM-powered decisions, form memories and relationships, and respond to world events. ",
+    "url": "https://github.com/Jenqyang/Awesome-AI-Agents/pull/180",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Awesome-AI-Agents"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update gitguardian/ggshield action to v1.50.1",
+    "date": "2026-04-29T10:26:22Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [GitGuardian/ggshield](https://redirect.github.com/GitGuardian/ggshield) | action | minor | `v1.49.0` \u2192 `v1.50.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>GitGuardian/ggshield (GitGuardian/ggshield",
+    "url": "https://github.com/frostplexx/dotfiles.nix/pull/1207",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dotfiles.nix"
+    ]
+  },
+  {
+    "title": "[PR] Bump the go-minor-patch group with 8 updates",
+    "date": "2026-04-29T10:17:40Z",
+    "summary": "Bumps the go-minor-patch group with 8 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [connectrpc.com/connect](https://github.com/connectrpc/connect-go) | `1.19.1` | `1.19.2` |\n| [github.com/ClickHouse/clickhouse-go/v2](https://github.com/ClickHouse/clickhouse-go) | `2.43.0` | `2.45.0` |\n| [",
+    "url": "https://github.com/dtunikov/peerdb-playground/pull/12",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: peerdb-playground"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency testcontainers to v11",
+    "date": "2026-04-29T10:00:56Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [testcontainers](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.7.1` \u2192 `^1",
+    "url": "https://github.com/andreacioni/nestjs-kafka-module/pull/139",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nestjs-kafka-module"
+    ]
+  },
+  {
+    "title": "[PR] [NEUTRAL] Update dependency modelscope to v1.36.3",
+    "date": "2026-04-29T09:56:29Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/shaneclarke-whitesource/fish-speech/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: fish-speech"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update testcontainers-go monorepo to v0.42.0",
+    "date": "2026-04-29T09:56:07Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/dhpollack/football-pool/pull/108",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: football-pool"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-04-29T09:49:05Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] Multi agents",
+    "date": "2026-04-29T09:40:37Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n# Release Notes\n\n* **New Features**\n  * Complete anomaly detection system for EC2 metrics with severity classification\n  * Automated root cause diagnosis for infrastructure issues with LLM integra",
+    "url": "https://github.com/Mmomtez/AIOps_AWS/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AIOps_AWS"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/karakeep-app/karakeep to v0.31.0",
+    "date": "2026-04-29T09:32:11Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/karakeep-app/karakeep](https://redirect.github.com/karakeep-app/karakeep) | minor | `0.29.3` \u2192 `0.31.0` |\n\n---\n\n> [!WARNING]\n> Some d",
+    "url": "https://github.com/jw2dotorg/home-ops/pull/1161",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
