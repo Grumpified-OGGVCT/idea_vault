@@ -155,7 +155,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-04-29T16:19:20Z",
+    "date": "2026-04-29T17:36:59Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://de",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -551,7 +551,7 @@
   },
   {
     "title": "[PR] fix(deps): resolve docmind Python security alerts",
-    "date": "2026-04-29T08:21:37Z",
+    "date": "2026-04-29T18:13:59Z",
     "summary": "## Summary\r\n- Resolves Python Dependabot security remediation by moving the runtime/toolchain baseline to Python 3.12.13-compatible patched dependencies.\r\n- Removes vulnerable/no-patched-release dependency chains: `diskcache`, in-process `llama-cpp-python`, `llama-index-llms-llama-cpp`, `dspy-ai`/`l",
     "url": "https://github.com/BjornMelin/docmind-ai-llm/pull/87",
     "source": "github_prs",
@@ -647,12 +647,12 @@
   },
   {
     "title": "[PR] Refactor launcher runtime and chat flow",
-    "date": "2026-04-29T16:13:07Z",
+    "date": "2026-04-29T18:02:27Z",
     "summary": "## Summary\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Native voice recognition on Windows and quick link to voice privacy settings\n  * Cancel in-progress chat generation; explicit \u201cThinking...\u201d status and Regenerate co",
     "url": "https://github.com/F0RLE/Axelate/pull/79",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: Axelate"
     ]
@@ -947,7 +947,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-04-29T15:31:11Z",
+    "date": "2026-04-29T18:12:47Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -958,9 +958,9 @@
     ]
   },
   {
-    "title": "[PR] Introduce provider instance registry and unify settings parity",
-    "date": "2026-04-29T16:45:51Z",
-    "summary": "## Summary\n\nStacked on top of #2246. Replaces the per-driver `Provider*Registry` / `Provider*Provider` services with a central `ProviderInstanceRegistry` driven by the settings-level `providerInstances` map plus a per-driver catalog, and brings the settings UI to built-in/custom parity.\n\n- **Registr",
+    "title": "[PR] feat: Multi-Provider support",
+    "date": "2026-04-29T18:04:01Z",
+    "summary": "Core foundation for multi-providers with some UX improvements to nicely support multi-account codex or custom claude code instances for example\r\n\r\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!NOTE]\n> **Medium Risk**\n> Touches core text-generation wiring and provider-session identifiers; misconfiguration or mis",
     "url": "https://github.com/pingdotgg/t3code/pull/2277",
     "source": "github_prs",
     "highlights": [
@@ -1007,7 +1007,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-04-29T12:28:40Z",
+    "date": "2026-04-29T17:24:31Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1091,7 +1091,7 @@
   },
   {
     "title": "[PR] chore(deps): update gitguardian/ggshield action to v1.50.2",
-    "date": "2026-04-29T16:20:09Z",
+    "date": "2026-04-29T18:04:36Z",
     "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [GitGuardian/ggshield](https://redirect.github.com/GitGuardian/ggshield) | action | minor | `v1.49.0` \u2192 `v1.50.2` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>GitGuardian/ggshield (GitGuardian/ggshield",
     "url": "https://github.com/frostplexx/dotfiles.nix/pull/1207",
     "source": "github_prs",
@@ -1367,12 +1367,12 @@
   },
   {
     "title": "[PR] perf(MetadataSync): incremental sync, indexed lookups, batched pull, lazy embeddings",
-    "date": "2026-04-29T16:17:03Z",
+    "date": "2026-04-29T17:50:22Z",
     "summary": "## Summary\n\nAdds `--incremental` flag to `mj sync push` and `mj sync pull` that skips unchanged files and records. Also includes transparent performance improvements to push lookups and pull queries, plus lazy embedding model loading in AIEngine.\n\n**Measured improvement**: Push of ~550 records in a ",
     "url": "https://github.com/MemberJunction/MJ/pull/2330",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: MJ"
     ]
@@ -1507,6 +1507,78 @@
       "comments: 2",
       "pull request",
       "repo: wa_llm"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the production-dependencies group across 1 directory with 13 updates",
+    "date": "2026-04-29T18:14:09Z",
+    "summary": "Bumps the production-dependencies group with 13 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [node-addon-api](https://github.com/nodejs/node-addon-api) | `8.5.0` | `8.7.0` |\n| [@prisma/driver-adapter-utils](https://github.com/prisma/prisma/tree/HEAD/packages/driver-adap",
+    "url": "https://github.com/oceanbase/seekdb-js/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: seekdb-js"
+    ]
+  },
+  {
+    "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
+    "date": "2026-04-29T18:01:16Z",
+    "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
+    "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: OpenMAIC"
+    ]
+  },
+  {
+    "title": "[PR] feat(agent-workspaces): implement step 2 \u2014 agent & model selection",
+    "date": "2026-04-29T17:39:37Z",
+    "summary": "- Add AgentWorkspaceCreateStepAgentModel step component with agent\r\n  tile grid (4-col, icon-on-top layout) and filtered model catalog\r\n- Add brand icon components for OpenCode, Claude Code, Cursor, Goose\r\n  \u2014 each self-contained with dark brand background, works in both\r\n  light and dark themes wit",
+    "url": "https://github.com/openkaiden/kaiden/pull/1509",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] feat: @elizaos/vault \u2014 full integration (primitive + Settings UI + runtime-ops + headless fallback + e2e)",
+    "date": "2026-04-29T17:30:10Z",
+    "summary": "Long-running `feat/vault` synced back onto `develop`. Headline feature is **`@elizaos/vault`** (cross-platform secrets primitive + Settings UI integration), but the branch has accumulated 429 commits across multiple workstreams since it forked, so this is effectively a \"develop merge for `feat/vault",
+    "url": "https://github.com/milady-ai/eliza/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "[PR] feat: support OpenAI-compatible backends (vLLM, OpenAI, etc.) and make Ollama optional",
+    "date": "2026-04-29T16:54:22Z",
+    "summary": "## Summary\n\nAdds first-class support for **OpenAI-compatible backends** in Open WebUI alongside Ollama, and makes the Ollama dependency optional.\n\n### Why no `vllm` dependency?\n\nThere is no `vllm` package on the StartOS registry yet. Since vLLM exposes an OpenAI-compatible API, it slots cleanly into",
+    "url": "https://github.com/Start9Labs/open-webui-startos/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: open-webui-startos"
+    ]
+  },
+  {
+    "title": "[PR] Update go modules (main)",
+    "date": "2026-04-29T16:58:00Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot",
+    "url": "https://github.com/conforma/cli/pull/3131",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cli"
     ]
   }
 ]
