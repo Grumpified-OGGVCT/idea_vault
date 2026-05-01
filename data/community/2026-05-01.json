@@ -1235,7 +1235,7 @@
   },
   {
     "title": "[PR] feat(messages): add structured chatroom core memory pipeline",
-    "date": "2026-05-01T11:26:28Z",
+    "date": "2026-05-01T23:49:00Z",
     "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n- add a per-chatroom structured core-state memory pipeline backed by new `chatroom_facts` Prisma model/migration and repository/services in `MemoryModule`\n- add structured-output inference port and Ollama adapter, then wire structured retrieval/extracti",
     "url": "https://github.com/wndgur2/chatty/pull/46",
     "source": "github_prs",
@@ -1283,7 +1283,7 @@
   },
   {
     "title": "[PR] Phase 1: tolerant SP signatures + publish-no-break policy",
-    "date": "2026-05-01T22:40:29Z",
+    "date": "2026-05-01T23:09:32Z",
     "summary": "## Summary\n\nPhase 1 of the cross-app migration architecture from the 2026-04-29 meeting (see [plans/cross-app-migration-ordering.md](https://github.com/MemberJunction/MJ/blob/plan/cross-app-migration-ordering/plans/cross-app-migration-ordering.md), tracked in #2487 and the planning PR #2488). Two pi",
     "url": "https://github.com/MemberJunction/MJ/pull/2495",
     "source": "github_prs",
@@ -1723,6 +1723,66 @@
       "comments: 2",
       "pull request",
       "repo: EDDI"
+    ]
+  },
+  {
+    "title": "[PR] Features/intermediate stage",
+    "date": "2026-05-01T23:57:01Z",
+    "summary": "Restructure whole product\n\n<!-- This is an auto-generated description by cubic. -->\n---\n## Summary by cubic\nShips `ruflo` v3 with a `.claude-flow` runtime, public `/tour` (SSE) and `/self-scan/`, polyglot deep\u2011code analysis (TS/JS/Java), real reachability via a call\u2011graph, and a scheduler that conti",
+    "url": "https://github.com/DevOpsMadDog/Fixops/pull/249",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Fixops"
+    ]
+  },
+  {
+    "title": "[PR] perf(core): lazy field hydration in BaseEntity + smarter engine startup (~30x warm-load speedup)",
+    "date": "2026-05-01T23:48:09Z",
+    "summary": "## Summary\n\n- Cuts warm-load engine startup from **~14s to ~470ms (~30\u00d7)** by deferring per-row BaseEntity Field construction until something actually mutates or walks Fields, and removing a speculative per-view fast-start path that had a duplicated cache-read fall-through.\n- Structural improvement,",
+    "url": "https://github.com/MemberJunction/MJ/pull/2504",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Add per-subject Ask UI (NotebookLM split + Mac Mini RAG backend)",
+    "date": "2026-05-01T23:29:16Z",
+    "summary": "## Summary\n- **Ask CTA on subject detail** opens `/[locale]/subjects/[slug]/ask` \u2014 a NotebookLM-style two-column split with a read-only `SourcesPanel` and an `AskPanel` that posts the question to the Python `rag_service` with a Firebase ID token.\n- **`useAsk` hook** owns the `idle | loading | succes",
+    "url": "https://github.com/zymer4him2024/email2ppt/pull/26",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: email2ppt"
+    ]
+  },
+  {
+    "title": "[PR] Add rag_service: HTTP wrapper around folder-scoped RAG",
+    "date": "2026-05-01T23:16:12Z",
+    "summary": "## Summary\n\n- New \\`rag_service/\\` FastAPI package exposing folder-scoped RAG over HTTP \u2014 single \\`POST /ask\\` endpoint plus \\`/healthz\\`.\n- Firebase ID token auth via \\`Authorization: Bearer \u2026\\`; Pydantic validation at the boundary; CORS gated by env.\n- LLM provider is one env var (\\`LLM_PROVIDER\\`",
+    "url": "https://github.com/zymer4him2024/email2ppt/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: email2ppt"
+    ]
+  },
+  {
+    "title": "[PR] Add Seer provider: local PaliGemma2 image descriptions",
+    "date": "2026-05-01T23:05:05Z",
+    "summary": "  ## What this adds\r\n                   \r\n  A new **Seer** provider that calls a local [Seer daemon](https://github.com/recursia-lab/Seer) running PaliGemma2 on the user's own machine. No API key, no cloud, no subscription.\r\n                                                                           ",
+    "url": "https://github.com/cartertemm/AI-content-describer/pull/86",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AI-content-describer"
     ]
   }
 ]
