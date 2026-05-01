@@ -695,8 +695,8 @@
   },
   {
     "title": "[PR] chore(deps): Update terraform providers",
-    "date": "2026-05-01T12:30:47Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| amazon/aws-cli | kubernetes_cron_job_v1 | patch | `2.34.23` \u2192 `2.34.40` |\n| busybox | kubernetes_deployment | minor | `1.36` \u2192 `1.3",
+    "date": "2026-05-01T22:44:32Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| amazon/aws-cli | kubernetes_cron_job_v1 | patch | `2.34.23` \u2192 `2.34.41` |\n| busybox | kubernetes_deployment | minor | `1.36` \u2192 `1.3",
     "url": "https://github.com/STollenaar/infrastructure/pull/106",
     "source": "github_prs",
     "highlights": [
@@ -719,7 +719,7 @@
   },
   {
     "title": "[PR] chore(deps): update gitguardian/ggshield action to v1.50.3",
-    "date": "2026-05-01T20:19:30Z",
+    "date": "2026-05-01T22:24:45Z",
     "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [GitGuardian/ggshield](https://redirect.github.com/GitGuardian/ggshield) | action | minor | `v1.49.0` \u2192 `v1.50.3` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>GitGuardian/ggshield (GitGuardian/ggshield",
     "url": "https://github.com/frostplexx/dotfiles.nix/pull/1207",
     "source": "github_prs",
@@ -779,7 +779,7 @@
   },
   {
     "title": "[PR] fix(litellm-amd): re-enable master-key auth + rotate sk-lemonade",
-    "date": "2026-05-01T03:41:43Z",
+    "date": "2026-05-01T22:44:37Z",
     "summary": "## What\n- Re-enable LiteLLM master-key auth on AMD installs (was explicitly unset by the AMD overlay's entrypoint)\n- Rotate the static `sk-lemonade` outbound key (LiteLLM \u2192 Lemonade) to a per-install `LITELLM_LEMONADE_API_KEY`\n- Bundle cross-extension fixes for **perplexica** and **privacy-shield**,",
     "url": "https://github.com/Light-Heart-Labs/DreamServer/pull/1081",
     "source": "github_prs",
@@ -851,7 +851,7 @@
   },
   {
     "title": "[PR] fix(windows-amd): add readiness sidecar gating open-webui on native inference (Lemonade or llama-server.exe)",
-    "date": "2026-05-01T01:03:56Z",
+    "date": "2026-05-01T22:44:25Z",
     "summary": "## What\nAdd a busybox readiness sidecar (`llama-server-ready`) for the Windows AMD install path that polls the native inference server's health endpoint and gates `open-webui` on it becoming healthy. Delivered as a NEW overlay file `installers/windows/docker-compose.windows-amd.local.yml` loaded con",
     "url": "https://github.com/Light-Heart-Labs/DreamServer/pull/1070",
     "source": "github_prs",
@@ -1199,7 +1199,7 @@
   },
   {
     "title": "[PR] fix(deps): update python non-major dependencies",
-    "date": "2026-05-01T12:44:15Z",
+    "date": "2026-05-01T22:39:34Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [cachetools](https://redirec",
     "url": "https://github.com/ilanbenb/wa_llm/pull/141",
     "source": "github_prs",
@@ -1283,7 +1283,7 @@
   },
   {
     "title": "[PR] Phase 1: tolerant SP signatures + publish-no-break policy",
-    "date": "2026-05-01T21:22:52Z",
+    "date": "2026-05-01T22:40:29Z",
     "summary": "## Summary\n\nPhase 1 of the cross-app migration architecture from the 2026-04-29 meeting (see [plans/cross-app-migration-ordering.md](https://github.com/MemberJunction/MJ/blob/plan/cross-app-migration-ordering/plans/cross-app-migration-ordering.md), tracked in #2487 and the planning PR #2488). Two pi",
     "url": "https://github.com/MemberJunction/MJ/pull/2495",
     "source": "github_prs",
@@ -1687,6 +1687,42 @@
       "comments: 7",
       "pull request",
       "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update testcontainers-go monorepo to v0.42.0",
+    "date": "2026-05-01T22:35:25Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/henok321/translation-service/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: translation-service"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the testcontainers-go group across 1 directory with 4 updates",
+    "date": "2026-05-01T22:25:48Z",
+    "summary": "Bumps the testcontainers-go group with 4 updates in the / directory: [github.com/testcontainers/testcontainers-go](https://github.com/testcontainers/testcontainers-go), [github.com/testcontainers/testcontainers-go/modules/dind](https://github.com/testcontainers/testcontainers-go), [github.com/testco",
+    "url": "https://github.com/sablierapp/sablier/pull/861",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: sablier"
+    ]
+  },
+  {
+    "title": "[PR] feat: Tenant-Scoped Global Variable Store + Prefix Rename (vars/vault)",
+    "date": "2026-05-01T22:08:09Z",
+    "summary": "## Summary\r\n\r\nAdds a **Global Variable Store** \u2014 a non-encrypted, tenant-scoped key-value store for operational configuration (default LLM model, API endpoints, feature flags). Enables fleet-wide config changes across all agents without redeployment. Also renames late-binding prefixes for consistenc",
+    "url": "https://github.com/labsai/EDDI/pull/470",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: EDDI"
     ]
   }
 ]
