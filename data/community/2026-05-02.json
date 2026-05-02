@@ -155,7 +155,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-02T01:05:15Z",
+    "date": "2026-05-02T04:54:32Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Deprecations / Replacements\n> [",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -167,7 +167,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-02T00:42:09Z",
+    "date": "2026-05-02T04:33:47Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -551,12 +551,12 @@
   },
   {
     "title": "[PR] Jhionnea Private AI Employee System \u2014 Full Foundation + Browser Automation",
-    "date": "2026-05-02T02:42:35Z",
+    "date": "2026-05-02T03:23:47Z",
     "summary": "## Summary\n\nComplete foundation for **Jhionnea**, a private role-based AI employee system for Katia (boss) and Stanley (trusted user).\n\n### What's included:\n\n**Backend (FastAPI + SQLAlchemy + SQLite)**\n- JWT authentication with role-based access control (boss/user)\n- 5 core modules with full CRUD AP",
     "url": "https://github.com/ksain019/jhionnea/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: jhionnea"
     ]
@@ -587,7 +587,7 @@
   },
   {
     "title": "[PR] chore(deps): update gitguardian/ggshield action to v1.50.3",
-    "date": "2026-05-02T02:18:01Z",
+    "date": "2026-05-02T04:18:36Z",
     "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [GitGuardian/ggshield](https://redirect.github.com/GitGuardian/ggshield) | action | minor | `v1.49.0` \u2192 `v1.50.3` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>GitGuardian/ggshield (GitGuardian/ggshield",
     "url": "https://github.com/frostplexx/dotfiles.nix/pull/1207",
     "source": "github_prs",
@@ -751,6 +751,114 @@
       "comments: 4",
       "pull request",
       "repo: sablier"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker images",
+    "date": "2026-05-02T05:41:07Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.18.3` \u2192 `2.19.2` |\n| [ghcr.io/advplyr/audiobookshelf](https://redirect.github.com/advplyr/audiobookshelf) |",
+    "url": "https://github.com/khelias/khe-homelab/pull/22",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: khe-homelab"
+    ]
+  },
+  {
+    "title": "[PR] Feat/ollama cloud integration",
+    "date": "2026-05-02T05:30:59Z",
+    "summary": "## Summary\r\n\r\n- Add Ollama Cloud as a new provider option via `ollama.com/v1` endpoint\r\n- Support `OLLAMA_API_KEY` authentication for cloud-hosted models\r\n- Implement provider detection, profile setup, and API integration across CLI, scripts, and service layers\r\n- Fix Ollama API compatibility: handl",
+    "url": "https://github.com/Gitlawb/openclaude/pull/890",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Add local model support via Ollama",
+    "date": "2026-05-02T05:17:33Z",
+    "summary": "## Summary\r\nThis PR adds support for running the agent with local models via Ollama. It enables users to use the intern without incurring API costs or requiring external API keys for inference.\r\n## Key Changes\r\n- **Ollama Integration**: Integrated local model support using Ollama's OpenAI-compatible",
+    "url": "https://github.com/huggingface/ml-intern/pull/44",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: ml-intern"
+    ]
+  },
+  {
+    "title": "[PR] fix(codegen): include composite-PK columns in spCreate INSERT statements",
+    "date": "2026-05-02T04:34:39Z",
+    "summary": "## Summary\n\nFixes a real bug in `@memberjunction/codegen-lib` where the generated `spCreate<Entity>` stored procedure for tables with **composite (multi-column) primary keys** omits every PK column from its `INSERT` statement, producing a proc that fails at runtime with `NOT NULL` violations the fir",
+    "url": "https://github.com/MemberJunction/MJ/pull/2507",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(permissions): surface Resource Permission shares in \"Shared with me\"",
+    "date": "2026-05-02T04:28:38Z",
+    "summary": "ResourcePermissionProvider was missing GetPermissionsSharedWithUser, so conversations (and every other resource type backed by MJ: Resource Permissions) never appeared in the Sharing Center's \"Shared with me\" tab. Added the override to mirror GetPermissionsGrantedByUser: Approved User grants where t",
+    "url": "https://github.com/MemberJunction/MJ/pull/2503",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(migrations): RLS filter for AI runs/steps/prompts uses base view",
+    "date": "2026-05-02T04:26:05Z",
+    "summary": "## Summary\r\n\r\n- Patches two `RowLevelSecurityFilter` rows seeded by `V202604241700` (shipped in v5.30.0/v5.30.1) whose `FilterText` referenced `AIAgentRun` as a bare base table \u2014 at runtime this fails with `Msg 208 (Invalid object name)` and, even schema-qualified, `Msg 229 (SELECT permission was de",
+    "url": "https://github.com/MemberJunction/MJ/pull/2506",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Home Assistant MCP integration skill",
+    "date": "2026-05-02T04:21:10Z",
+    "summary": "## Summary\n\nAdds a Home Assistant REST API integration so the container agent can query and control a Home Assistant instance:\n\n- **`homeassistant-mcp-stdio.ts`** \u2014 stdio MCP server wrapping the HA REST API, authenticated via a Long-Lived Access Token (`HA_URL` + `HA_TOKEN`)\n- **`container/agent-run",
+    "url": "https://github.com/qwibitai/nanoclaw/pull/1327",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: nanoclaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update testcontainers-node monorepo to v11 (major)",
+    "date": "2026-05-02T03:47:29Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/postgresql](https://redirect.github.com/testcontainers/testcontainers-node) | [`^1",
+    "url": "https://github.com/frederikb96/postimap/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: postimap"
+    ]
+  },
+  {
+    "title": "[PR] Mvi pattern",
+    "date": "2026-05-02T03:32:39Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added Firebase integration for data persistence and offline support\n  * Implemented offline capability with network connectivity checking\n  * Enhanced news tab with improved",
+    "url": "https://github.com/john-safwat/news-c16-mon/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: news-c16-mon"
     ]
   }
 ]
