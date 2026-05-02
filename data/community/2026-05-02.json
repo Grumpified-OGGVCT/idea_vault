@@ -587,7 +587,7 @@
   },
   {
     "title": "[PR] chore(deps): update gitguardian/ggshield action to v1.50.3",
-    "date": "2026-05-02T20:19:12Z",
+    "date": "2026-05-02T22:15:26Z",
     "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [GitGuardian/ggshield](https://redirect.github.com/GitGuardian/ggshield) | action | minor | `v1.49.0` \u2192 `v1.50.3` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>GitGuardian/ggshield (GitGuardian/ggshield",
     "url": "https://github.com/frostplexx/dotfiles.nix/pull/1207",
     "source": "github_prs",
@@ -695,7 +695,7 @@
   },
   {
     "title": "[PR] fix(litellm-amd): re-enable master-key auth + rotate sk-lemonade",
-    "date": "2026-05-01T22:44:37Z",
+    "date": "2026-05-02T22:14:16Z",
     "summary": "## What\n- Re-enable LiteLLM master-key auth on AMD installs (was explicitly unset by the AMD overlay's entrypoint)\n- Rotate the static `sk-lemonade` outbound key (LiteLLM \u2192 Lemonade) to a per-install `LITELLM_LEMONADE_API_KEY`\n- Bundle cross-extension fixes for **perplexica** and **privacy-shield**,",
     "url": "https://github.com/Light-Heart-Labs/DreamServer/pull/1081",
     "source": "github_prs",
@@ -719,7 +719,7 @@
   },
   {
     "title": "[PR] fix(windows-amd): add readiness sidecar gating open-webui on native inference (Lemonade or llama-server.exe)",
-    "date": "2026-05-02T19:45:06Z",
+    "date": "2026-05-02T22:23:10Z",
     "summary": "## What\nAdd a busybox readiness sidecar (`llama-server-ready`) for the Windows AMD install path that polls the native inference server's health endpoint and gates `open-webui` on it becoming healthy. Delivered as a NEW overlay file `installers/windows/docker-compose.windows-amd.local.yml` loaded con",
     "url": "https://github.com/Light-Heart-Labs/DreamServer/pull/1070",
     "source": "github_prs",
@@ -1355,7 +1355,7 @@
   },
   {
     "title": "[PR] Update dependency huggingface_hub to v0.36.2",
-    "date": "2026-05-02T18:26:50Z",
+    "date": "2026-05-02T22:29:08Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface_hub](https://re",
     "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/225",
     "source": "github_prs",
@@ -1367,7 +1367,7 @@
   },
   {
     "title": "[PR] Update dependency huggingface_hub to v0.36.2",
-    "date": "2026-05-02T18:27:02Z",
+    "date": "2026-05-02T22:29:35Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface_hub](https://re",
     "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/243",
     "source": "github_prs",
@@ -1435,6 +1435,42 @@
       "comments: 1",
       "pull request",
       "repo: playground"
+    ]
+  },
+  {
+    "title": "[PR] chore(release): version packages",
+    "date": "2026-05-02T22:43:49Z",
+    "summary": "This PR was opened by the [Changesets release](https://github.com/changesets/action) GitHub action. When you're ready to do a release, you can merge this and the packages will be published to npm automatically. If you're not ready to do a release yet, that's fine, whenever you add more changesets to",
+    "url": "https://github.com/cogitave/namzu/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: namzu"
+    ]
+  },
+  {
+    "title": "[PR] feat: ActiveEffectManager core service for persistent event effects",
+    "date": "2026-05-02T22:41:26Z",
+    "summary": "## Summary\n- Implements `ActiveEffectManager` stateless service with 7 methods for managing persistent event card effects (movement/build/pickup-delivery restrictions, lost turn consumption, cleanup)\n- Adds 5 new shared types to `EventCard.ts`: `MovementRestriction`, `BuildRestriction`, `PickupDeliv",
+    "url": "https://github.com/jeffgabriel/eurorails_ai/pull/238",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: eurorails_ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): add claude-code provider (#1193)",
+    "date": "2026-05-02T21:49:40Z",
+    "summary": "## Summary\n\nAdds a `claude-code` LLM provider in `mempalace/llm_client.py` that routes through the local `claude` CLI binary using the user's Claude Pro/Max subscription via `claude auth login`. Mirrors the existing `OllamaProvider` / `OpenAICompatProvider` / `AnthropicProvider` shape so `mempalace ",
+    "url": "https://github.com/MemPalace/mempalace/pull/1200",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: mempalace"
     ]
   }
 ]
