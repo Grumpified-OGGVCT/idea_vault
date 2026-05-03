@@ -1139,7 +1139,7 @@
   },
   {
     "title": "[PR] feat(P3-SP2): enforce event card action restrictions in PlayerService",
-    "date": "2026-05-03T15:37:22Z",
+    "date": "2026-05-03T15:53:30Z",
     "summary": "## Summary\n- Wire `ActiveEffectManager` restriction queries into PlayerService action methods to enforce active event card effects\n- **Movement**: `moveTrainForUser` enforces `half_rate`, `blocked_terrain`, and `no_movement_on_player_rail` restrictions\n- **Build**: `buildTrackForPlayer` enforces `bl",
     "url": "https://github.com/jeffgabriel/eurorails_ai/pull/240",
     "source": "github_prs",
@@ -1163,7 +1163,7 @@
   },
   {
     "title": "[PR] Ollama Cloud + Railway deploy + EAS Android build pipeline",
-    "date": "2026-05-03T15:37:46Z",
+    "date": "2026-05-03T15:59:46Z",
     "summary": "## Summary\n- **Backend**: optional `OLLAMA_API_KEY` bearer-auth on the existing Ollama client \u2014 works against ollama.com Cloud and any Ollama-API-compatible host with zero shape changes\n- **Deploy**: `Dockerfile` + `railway.json` + `.dockerignore` for one-command Railway deploys (Postgres+PostGIS + ",
     "url": "https://github.com/sambawy01/Security-Ops-App/pull/1",
     "source": "github_prs",
@@ -1171,6 +1171,42 @@
       "comments: 0",
       "pull request",
       "repo: Security-Ops-App"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): add claude-code provider (#1193)",
+    "date": "2026-05-03T16:24:18Z",
+    "summary": "## Summary\n\nAdds a `claude-code` LLM provider in `mempalace/llm_client.py` that routes through the local `claude` CLI binary using the user's Claude Pro/Max subscription via `claude auth login`. Mirrors the existing `OllamaProvider` / `OpenAICompatProvider` / `AnthropicProvider` shape so `mempalace ",
+    "url": "https://github.com/MemPalace/mempalace/pull/1200",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: mempalace"
+    ]
+  },
+  {
+    "title": "[PR] Local Formatting Model: bundled Python cleanup CLI (rules / MLX / auto)",
+    "date": "2026-05-03T16:23:47Z",
+    "summary": "## Summary\n\nAdds a new **Local Formatting Model** LLM provider \u2014 a fully-local cleanup path that runs through a bundled Python CLI (`macparakeet-cleanup`). It can do deterministic rules-only cleanup, run a local MLX model, or auto-route between the two based on input complexity. No network, no API k",
+    "url": "https://github.com/moona3k/macparakeet/pull/184",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: macparakeet"
+    ]
+  },
+  {
+    "title": "[PR] Update langchain4j monorepo",
+    "date": "2026-05-03T16:40:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j",
+    "url": "https://github.com/kpavlov/elven/pull/85",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: elven"
     ]
   }
 ]
