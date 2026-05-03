@@ -551,7 +551,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-05-03T08:44:09Z",
+    "date": "2026-05-03T14:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -635,7 +635,7 @@
   },
   {
     "title": "[PR] Add self-hosted Pantry AI Planner (FastAPI + Postgres + React + Ollama)",
-    "date": "2026-05-03T01:05:03Z",
+    "date": "2026-05-03T14:48:32Z",
     "summary": "### Motivation\n- Provide a fully local dinner-planning app that uses a self-hosted LLM (Ollama) and local services so no cloud APIs are required. \n- Enable quick iteration and local-first workflows by wiring the backend, database, AI, and frontend with `docker-compose` and seed data. \n- Prioritize r",
     "url": "https://github.com/Smottte/Test/pull/1",
     "source": "github_prs",
@@ -995,7 +995,7 @@
   },
   {
     "title": "[PR] feat: Automation Health UI + Lint Gates + SonarQube Quality Pipeline",
-    "date": "2026-05-03T13:17:05Z",
+    "date": "2026-05-03T14:25:29Z",
     "summary": "## What this PR ships\n\n### 1. Automation Health Dashboard (/automation)\nNew Control Plane page with 4 tabs: Framework scan, Last Results (Cucumber report), Traces (trace.zip list + RCA dispatch), Run Tests (manual trigger with tag filter).\nNew FastAPI endpoints: GET /automation/health, GET /automati",
     "url": "https://github.com/lokeshsharma99/QAP/pull/26",
     "source": "github_prs",
@@ -1043,7 +1043,7 @@
   },
   {
     "title": "[PR] feat(Chatbot): create campaign for admin",
-    "date": "2026-05-03T12:44:10Z",
+    "date": "2026-05-03T13:34:10Z",
     "summary": "- **feat(chatbot): add dependency injection**\n- **feat(chatbot): configure environment variables**\n- **feat(chatbot): implement bot generate campaign with statistics data**\n- **feat(chatbot): implement generate campaign return streaming data**\n- **feat(chatbot): configure schema for RAG bot**\n\n\n<!--",
     "url": "https://github.com/tqha1011/ShoeStore/pull/263",
     "source": "github_prs",
@@ -1099,6 +1099,66 @@
       "comments: 0",
       "pull request",
       "repo: Dreamtalk_Emotion_Engine_v.1.0.0"
+    ]
+  },
+  {
+    "title": "[PR] feat(agent-workspaces): implement step 2 \u2014 agent & model selection",
+    "date": "2026-05-03T14:49:54Z",
+    "summary": "- Add AgentWorkspaceCreateStepAgentModel step component with agent\r\n  tile grid (4-col, icon-on-top layout) and filtered model catalog\r\n- Add brand icon components for OpenCode, Claude Code, Cursor, Goose\r\n  \u2014 each self-contained with dark brand background, works in both\r\n  light and dark themes wit",
+    "url": "https://github.com/openkaiden/kaiden/pull/1509",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] chore: remove ollama path; route LLM traffic through inference engine",
+    "date": "2026-05-03T14:48:54Z",
+    "summary": "## Summary\n\nRetires the `ollama` provider entirely from DeclarAI now that PR #2 routes local-inference traffic through the new `engine` provider (the OpenAI-compatible llm-inference-engine). The dedicated ollama container was duplicative \u2014 it served the same GGUF blobs the inference engine now serve",
+    "url": "https://github.com/caglarsubas/auto_ml/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: auto_ml"
+    ]
+  },
+  {
+    "title": "[PR] feat(v0.6): anonymous role rotation + Hermes Agent USER bridge",
+    "date": "2026-05-03T14:47:42Z",
+    "summary": "**Task ID: HP-V0.6-ANON-AGENT****Hermes evidence chain: PASS****Gate runs:** `hermes_run_gate gateId=tests.unit` (64 existing + 15 new = 79 tests, all green); `hermes_run_gate gateId=server.stdio_handshake` (returns 34 tools after this PR)## SummaryHermesProof v0.6 adds two coordinated subsystems fo",
+    "url": "https://github.com/Ghenghis/HermesProof/pull/20",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: HermesProof"
+    ]
+  },
+  {
+    "title": "[PR] feat(P3-SP2): enforce event card action restrictions in PlayerService",
+    "date": "2026-05-03T14:40:17Z",
+    "summary": "## Summary\n- Wire `ActiveEffectManager` restriction queries into PlayerService action methods to enforce active event card effects\n- **Movement**: `moveTrainForUser` enforces `half_rate`, `blocked_terrain`, and `no_movement_on_player_rail` restrictions\n- **Build**: `buildTrackForPlayer` enforces `bl",
+    "url": "https://github.com/jeffgabriel/eurorails_ai/pull/240",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: eurorails_ai"
+    ]
+  },
+  {
+    "title": "[PR] docs: rewrite CLAUDE.md as tool-agnostic playbook, retire AGENTS.md",
+    "date": "2026-05-03T13:36:35Z",
+    "summary": "## Summary\n\n- Rewrite `CLAUDE.md` from 294 \u2192 ~130 lines. Cut content that is already in `.env.example`, `package.json`, or `docs/architecture/` (full env-var dump, full directory tree, tech-stack manifest). Keep mandatory rules, security policy, mocking discipline, ADR pointers, domain-boundary sema",
+    "url": "https://github.com/Compendiq/compendiq-ce/pull/511",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: compendiq-ce"
     ]
   }
 ]
