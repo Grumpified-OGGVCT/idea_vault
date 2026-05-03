@@ -155,7 +155,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-03T03:26:35Z",
+    "date": "2026-05-03T17:13:16Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -587,8 +587,8 @@
   },
   {
     "title": "[PR] Update Container images",
-    "date": "2026-05-03T12:40:14Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [darthsim/imgproxy](https://redirect.github.com/imgproxy/imgproxy) | patch | `v3.31.2` \u2192 `v3.31.3` |\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.18.3",
+    "date": "2026-05-03T17:41:18Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [darthsim/imgproxy](https://redirect.github.com/imgproxy/imgproxy) | patch | `v3.31.2` \u2192 `v3.31.3` |\n| [docker.n8n.io/n8nio/n8n](https://n8n.i",
     "url": "https://github.com/bubacoder/infra/pull/324",
     "source": "github_prs",
     "highlights": [
@@ -815,7 +815,7 @@
   },
   {
     "title": "[PR] chore(deps): Update terraform providers",
-    "date": "2026-05-03T09:30:53Z",
+    "date": "2026-05-03T17:45:46Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| amazon/aws-cli | kubernetes_cron_job_v1 | patch | `2.34.23` \u2192 `2.34.41` |\n| busybox | kubernetes_deployment | minor | `1.36` \u2192 `1.3",
     "url": "https://github.com/STollenaar/infrastructure/pull/106",
     "source": "github_prs",
@@ -1019,7 +1019,7 @@
   },
   {
     "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M5",
-    "date": "2026-05-03T12:52:58Z",
+    "date": "2026-05-03T17:42:13Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
     "url": "https://github.com/ThomasVitale/scaling-on-satisfaction/pull/9",
     "source": "github_prs",
@@ -1175,7 +1175,7 @@
   },
   {
     "title": "[PR] feat(llm): add claude-code provider (#1193)",
-    "date": "2026-05-03T16:24:18Z",
+    "date": "2026-05-03T17:50:07Z",
     "summary": "## Summary\n\nAdds a `claude-code` LLM provider in `mempalace/llm_client.py` that routes through the local `claude` CLI binary using the user's Claude Pro/Max subscription via `claude auth login`. Mirrors the existing `OllamaProvider` / `OpenAICompatProvider` / `AnthropicProvider` shape so `mempalace ",
     "url": "https://github.com/MemPalace/mempalace/pull/1200",
     "source": "github_prs",
@@ -1207,6 +1207,54 @@
       "comments: 0",
       "pull request",
       "repo: elven"
+    ]
+  },
+  {
+    "title": "[PR] Feat/ollama cloud integration",
+    "date": "2026-05-03T17:50:27Z",
+    "summary": "## Summary\r\n\r\n- Add Ollama Cloud as a new provider option via `ollama.com/v1` endpoint\r\n- Support `OLLAMA_API_KEY` authentication for cloud-hosted models\r\n- Implement provider detection, profile setup, and API integration across CLI, scripts, and service layers\r\n- Fix Ollama API compatibility: handl",
+    "url": "https://github.com/Gitlawb/openclaude/pull/890",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Update ghcr.io/open-webui/open-webui Docker tag to v0.8.12",
+    "date": "2026-05-03T17:47:05Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.8.2` \u2192 `v0.8.12` |\n\n---\n\n### Release Notes\n\n<",
+    "url": "https://github.com/ChristianLempa/boilerplates-library/pull/100",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: boilerplates-library"
+    ]
+  },
+  {
+    "title": "[PR] fix(geo): prevent OOM crash loops in ScheduledGeocodingAction",
+    "date": "2026-05-03T17:46:42Z",
+    "summary": "## Summary\n- **Paginate RunView calls** \u2014 `processMissingForEntity`, `processFailedRetries`, and `cleanupOrphanedRecords` now fetch pages of 500 records instead of loading unbounded result sets with `IgnoreMaxRows: true`. Previous pages' BaseEntity objects are released between pages for GC.\n- **Bulk",
+    "url": "https://github.com/MemberJunction/MJ/pull/2528",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Fix/kcl cluster nodes append",
+    "date": "2026-05-03T17:32:26Z",
+    "summary": "### **PR Type**\nEnhancement\n\n\n___\n\n### **Description**\nMajor refactoring and expansion of the project with comprehensive infrastructure-as-code and CLI improvements:\n\n**Core Application Changes:**\n\n- Refactored main CLI entry point with improved module organization and new `RunCommand` trait pattern",
+    "url": "https://github.com/yurikrupnik/dotconfig/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: dotconfig"
     ]
   }
 ]
