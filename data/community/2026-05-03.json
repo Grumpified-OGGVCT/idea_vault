@@ -995,7 +995,7 @@
   },
   {
     "title": "[PR] feat: Automation Health UI + Lint Gates + SonarQube Quality Pipeline",
-    "date": "2026-05-03T21:33:04Z",
+    "date": "2026-05-03T22:48:54Z",
     "summary": "## What this PR ships\n\n### 1. Automation Health Dashboard (/automation)\nNew Control Plane page with 4 tabs: Framework scan, Last Results (Cucumber report), Traces (trace.zip list + RCA dispatch), Run Tests (manual trigger with tag filter).\nNew FastAPI endpoints: GET /automation/health, GET /automati",
     "url": "https://github.com/lokeshsharma99/QAP/pull/26",
     "source": "github_prs",
@@ -1351,6 +1351,42 @@
       "comments: 6",
       "pull request",
       "repo: logic-ui-builder"
+    ]
+  },
+  {
+    "title": "[PR] feat(imessage-bridge): add system LaunchDaemon mode with user option",
+    "date": "2026-05-03T22:46:23Z",
+    "summary": "## Summary\n\nAdd a `user` option to the imessage-bridge nix-darwin module that switches from a user LaunchAgent to a system LaunchDaemon, following the PR 513 (Ollama) pattern.\n\nWhen `user` is set (e.g. `\"plato\"`):\n- Generates `launchd.daemons` instead of `launchd.user.agents`\n- Startup script create",
+    "url": "https://github.com/jmmaloney4/jackpkgs/pull/250",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: jackpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Phase 0: stop the bleeding (secure defaults, async fixes, CI test gate)",
+    "date": "2026-05-03T22:07:06Z",
+    "summary": "## Summary\n\nPhase 0 of the backend refactor (per `.claude/plans/based-on-what-we-jazzy-chipmunk.md`). The deployed system was actively dangerous: the JWT secret defaulted to a public placeholder, the Neo4j password defaulted to `test1234`, the WS audio download blocked the async loop, `models/sessio",
+    "url": "https://github.com/hallelx2/aurasense-backend/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: aurasense-backend"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update python non-major dependencies",
+    "date": "2026-05-03T21:58:40Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [cachetools](https://redirec",
+    "url": "https://github.com/ilanbenb/wa_llm/pull/141",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: wa_llm"
     ]
   }
 ]
