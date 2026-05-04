@@ -179,7 +179,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-04T00:49:55Z",
+    "date": "2026-05-04T04:34:04Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Deprecations / Replacements\n> [",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -227,12 +227,12 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant+RotorQuant implementation",
-    "date": "2026-05-03T01:52:33Z",
+    "date": "2026-05-04T05:30:46Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
     "highlights": [
-      "comments: 56",
+      "comments: 57",
       "state: open",
       "repo: ollama"
     ]
@@ -551,7 +551,7 @@
   },
   {
     "title": "[PR] Security fixes: upload limit, OIDC gate, header hardening",
-    "date": "2026-05-04T03:15:11Z",
+    "date": "2026-05-04T05:33:29Z",
     "summary": "## Problem\n\nEight security issues identified in a manual review:\n\n1. Image upload endpoint had no size limit \u2014 authenticated users could exhaust server RAM.\n2. OIDC callback created new accounts unconditionally, bypassing `ENABLE_PUBLIC_REGISTRATION`.\n3. Import parse endpoints forwarded raw Python e",
     "url": "https://github.com/Morelitea/initiative/pull/448",
     "source": "github_prs",
@@ -575,7 +575,7 @@
   },
   {
     "title": "[PR] fix(pg): unblock fresh-DB PostgreSQL end-to-end + codegen idempotency",
-    "date": "2026-05-04T02:58:26Z",
+    "date": "2026-05-04T04:26:24Z",
     "summary": "## Summary\n\n**14 PG-specific bugs fixed** to get a fresh PostgreSQL mint through `mj migrate` and `mj codegen` cleanly. Per \"one migration per PR\" convention, all DDL changes are consolidated into a single new PG-only migration: `V202605032134__v5.32.x__Unblock_PostgreSQL_End_To_End.pg-only.sql`. Th",
     "url": "https://github.com/MemberJunction/MJ/pull/2531",
     "source": "github_prs",
@@ -587,12 +587,12 @@
   },
   {
     "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go to v0.42.0",
-    "date": "2026-05-04T02:56:47Z",
+    "date": "2026-05-04T04:28:12Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/timo-reymann/SchemaNest/pull/430",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: SchemaNest"
     ]
@@ -611,7 +611,7 @@
   },
   {
     "title": "[PR] feat(krubua): \u0e04\u0e23\u0e39\u0e1a\u0e31\u0e27 AI module \u2014 RAG LINE chatbot + admin UI + LIFF PLC tabs",
-    "date": "2026-05-04T02:40:49Z",
+    "date": "2026-05-04T04:16:01Z",
     "summary": "## Summary\n- New `KrubuaAiModule` \u0e43\u0e19 `apps/api/src/krubua-ai/` \u2014 dual-AI Thai LINE chatbot \u0e1c\u0e48\u0e32\u0e19 Ollama Gemma 4 + bge-m3 (primary) + Gemini 2.5 Flash (fallback) + Qdrant vector store\n- Admin UI 5 \u0e2b\u0e19\u0e49\u0e32\u0e43\u0e15\u0e49 `/admin/krubua/*` \u2014 dashboard / knowledge CRUD (text + PDF + Markdown upload) / conversations dri",
     "url": "https://github.com/sooksun/teachermon/pull/3",
     "source": "github_prs",
@@ -751,6 +751,210 @@
       "comments: 1",
       "pull request",
       "repo: scaling-on-satisfaction"
+    ]
+  },
+  {
+    "title": "\ud83d\udcca AI CLI \u5de5\u5177\u793e\u533a\u52a8\u6001\u65e5\u62a5 2026-05-04",
+    "date": "2026-05-04T03:42:23Z",
+    "summary": "# AI CLI \u5de5\u5177\u793e\u533a\u52a8\u6001\u65e5\u62a5 2026-05-04\n\n> \u751f\u6210\u65f6\u95f4: 2026-05-04 03:30 UTC | \u8986\u76d6\u5de5\u5177: 7 \u4e2a\n\n- [Claude Code](https://github\u200b.com/anthropics/claude-code)\n- [OpenAI Codex](https://github\u200b.com/openai/codex)\n- [Gemini CLI](https://github\u200b.com/google-gemini/gemini-cli)\n- [GitHub Copilot CLI](https://github\u200b.com/github/copilo",
+    "url": "https://github.com/rollysys/agents-radar/issues/329",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: agents-radar"
+    ]
+  },
+  {
+    "title": "[PR] Feature: Terraform Deployment",
+    "date": "2026-05-04T06:41:38Z",
+    "summary": "This pull request introduces several important changes to standardize project naming, improve documentation, update development workflows, and add production deployment automation. The main focus is on renaming the backend from `server` to `api`, updating all related references, and enhancing the de",
+    "url": "https://github.com/Axeloooo/TheDataBay/pull/32",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: TheDataBay"
+    ]
+  },
+  {
+    "title": "[PR] feat: Ollama local LLM support (THU-MAIC#94)",
+    "date": "2026-05-04T06:21:45Z",
+    "summary": "* feat: Ollama local LLM support\r\n\r\n- Ollama as a built-in provider (OpenAI-compatible, no API key needed)\r\n- 8 default models: llama3.3, llama3.2, qwen2.5, qwen2.5:32b, mistral, gemma3, deepseek-r1, phi4\r\n- Keyless provider activation: providers with only a baseUrl (no API key) now activate correct",
+    "url": "https://github.com/ALikesToCode/OpenMAIC/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: OpenMAIC"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the npm_and_yarn group across 23 directories with 17 updates",
+    "date": "2026-05-04T06:18:38Z",
+    "summary": "Bumps the npm_and_yarn group with 17 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langsmith](https://github.com/langchain-ai/langsmith-sdk) | `0.3.67` | `0.5.19` |\n| [uuid](https://github.com/uuidjs/uuid) | `10.0.0` | `14.0.0` |\n| [yaml](https://github.com/eemeli/yaml)",
+    "url": "https://github.com/jeheskielSunloy77/langchainjs/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: langchainjs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the npm_and_yarn group across 23 directories with 17 updates",
+    "date": "2026-05-04T06:17:43Z",
+    "summary": "Bumps the npm_and_yarn group with 17 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langsmith](https://github.com/langchain-ai/langsmith-sdk) | `0.3.46` | `0.5.19` |\n| [uuid](https://github.com/uuidjs/uuid) | `10.0.0` | `14.0.0` |\n| [yaml](https://github.com/eemeli/yaml)",
+    "url": "https://github.com/ANT0071/langchainjs/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: langchainjs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the npm_and_yarn group across 23 directories with 17 updates",
+    "date": "2026-05-04T06:15:12Z",
+    "summary": "Bumps the npm_and_yarn group with 17 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langsmith](https://github.com/langchain-ai/langsmith-sdk) | `0.3.33` | `0.5.19` |\n| [uuid](https://github.com/uuidjs/uuid) | `10.0.0` | `14.0.0` |\n| [yaml](https://github.com/eemeli/yaml)",
+    "url": "https://github.com/idgrou/langchainjsN8N/pull/79",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: langchainjsN8N"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-05-04T06:14:50Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the npm_and_yarn group across 23 directories with 17 updates",
+    "date": "2026-05-04T06:13:45Z",
+    "summary": "Bumps the npm_and_yarn group with 17 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langsmith](https://github.com/langchain-ai/langsmith-sdk) | `0.3.46` | `0.5.19` |\n| [uuid](https://github.com/uuidjs/uuid) | `10.0.0` | `14.0.0` |\n| [yaml](https://github.com/eemeli/yaml)",
+    "url": "https://github.com/c6ai/langchainjs/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: langchainjs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the npm_and_yarn group across 23 directories with 17 updates",
+    "date": "2026-05-04T06:12:38Z",
+    "summary": "Bumps the npm_and_yarn group with 17 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langsmith](https://github.com/langchain-ai/langsmith-sdk) | `0.3.29` | `0.5.19` |\n| [uuid](https://github.com/uuidjs/uuid) | `10.0.0` | `14.0.0` |\n| [yaml](https://github.com/eemeli/yaml)",
+    "url": "https://github.com/enorthcutt/langchainjs/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: langchainjs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the npm_and_yarn group across 23 directories with 18 updates",
+    "date": "2026-05-04T06:11:17Z",
+    "summary": "Bumps the npm_and_yarn group with 17 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langsmith](https://github.com/langchain-ai/langsmith-sdk) | `0.2.15` | `0.5.19` |\n| [uuid](https://github.com/uuidjs/uuid) | `10.0.0` | `14.0.0` |\n| [yaml](https://github.com/eemeli/yaml)",
+    "url": "https://github.com/24601/langchainjs/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: langchainjs"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): OpenTelemetry middleware",
+    "date": "2026-05-04T05:50:23Z",
+    "summary": "## Summary\n\n- New `otelMiddleware({ tracer, meter?, ... })` factory in `@tanstack/ai/middlewares`.\n- Emits GenAI-semconv root/iteration/tool spans + duration and token histograms.\n- Opt-in content capture with optional redactor; four extension points for customization.\n- `@opentelemetry/api` added a",
+    "url": "https://github.com/TanStack/ai/pull/500",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] anthropic computer use fixes across proivder",
+    "date": "2026-05-04T05:28:55Z",
+    "summary": "## Summary\n\nBriefly explain the purpose of this PR and the problem it solves.\n\n## Changes\n\n- What was changed and why\n- Any notable design decisions or trade-offs\n\n## Type of change\n\n- [ ] Bug fix\n- [ ] Feature\n- [ ] Refactor\n- [ ] Documentation\n- [ ] Chore/CI\n\n## Affected areas\n\n- [ ] Core (Go)\n- [",
+    "url": "https://github.com/maximhq/bifrost/pull/3195",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] Update Container images",
+    "date": "2026-05-04T05:15:15Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [darthsim/imgproxy](https://redirect.github.com/imgproxy/imgproxy) | patch | `v3.31.2` \u2192 `v3.31.3` |\n| [docker.n8n.io/n8nio/n8n](https://n8n.i",
+    "url": "https://github.com/bubacoder/infra/pull/324",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: infra"
+    ]
+  },
+  {
+    "title": "[PR] feat: scaffold Jarvis 3.0 \u2014 assistant domotique auto-h\u00e9berg\u00e9",
+    "date": "2026-05-04T05:14:51Z",
+    "summary": "## R\u00e9sum\u00e9\n\nSquelette mono-repo Docker Compose pour un **Jarvis** auto-h\u00e9berg\u00e9 sur Proxmox aux c\u00f4t\u00e9s d'[Argus](https://github.com/Micka420-collab/Argus). Couvre voix bidirectionnelle, avatar 3D, m\u00e9moire long-terme, IoT multi-protocole, vision et s\u00e9curit\u00e9 r\u00e9seau, avec une couche provider-agnostic pour",
+    "url": "https://github.com/Micka420-collab/Jarvis3.0/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Jarvis3.0"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Ollama Cloud as alternative LLM provider",
+    "date": "2026-05-04T05:01:33Z",
+    "summary": "## Summary\n\nAdds [Ollama Cloud](https://ollama.com) as an alternative LLM provider alongside Anthropic. Users can provide an Anthropic key, an Ollama Cloud key, or both during setup, and route any AI feature (analysis, drafts, agent chat, etc.) to either provider per-feature.\n\nDefault Ollama model i",
+    "url": "https://github.com/ankitvgupta/exo/pull/111",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: exo"
+    ]
+  },
+  {
+    "title": "[PR] Claude/pg toolchain clean",
+    "date": "2026-05-04T04:08:20Z",
+    "summary": "",
+    "url": "https://github.com/MemberJunction/MJ/pull/2535",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-05-04T03:39:00Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
     ]
   }
 ]
