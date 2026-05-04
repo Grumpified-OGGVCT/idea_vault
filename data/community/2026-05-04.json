@@ -167,8 +167,8 @@
   },
   {
     "title": "15.0-20260502.1: Build check",
-    "date": "2026-05-04T00:56:49Z",
-    "summary": "#  Overview\n|  | package | i586 | x86_64 | notes | resolution |\n| --- | --- | --- | --- | --- | --- |\n| --- | academic/dwave-ocean-sdk |  --- | --- | Failed md5sum: dwave-graphs-0.8.12.tar.gz - dwave-networkx renamed to dwave-graphs, python3-numpy too new | fixed in 1c8e694a3541ec5b4723d06147a1bb2d7",
+    "date": "2026-05-04T13:02:29Z",
+    "summary": "#  Overview\n| package | i586 | x86_64 | notes | resolution |\n| --- | --- | --- | --- | --- |\n| academic/dwave-ocean-sdk |  --- | --- | Failed md5sum: dwave-graphs-0.8.12.tar.gz - dwave-networkx renamed to dwave-graphs, python3-numpy too new | fixed in 1c8e694a3541ec5b4723d06147a1bb2d78624516 |\n|netw",
     "url": "https://github.com/SlackBuildsOrg/slackbuilds/issues/15461",
     "source": "github_issues",
     "highlights": [
@@ -179,8 +179,8 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-04T11:15:52Z",
-    "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Deprecations / Replacements\n> [",
+    "date": "2026-05-04T14:03:45Z",
+    "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
     "highlights": [
@@ -611,7 +611,7 @@
   },
   {
     "title": "[PR] feat(krubua): \u0e04\u0e23\u0e39\u0e1a\u0e31\u0e27 AI module \u2014 RAG LINE chatbot + admin UI + LIFF PLC tabs",
-    "date": "2026-05-04T09:41:02Z",
+    "date": "2026-05-04T13:59:31Z",
     "summary": "## Summary\n- New `KrubuaAiModule` \u0e43\u0e19 `apps/api/src/krubua-ai/` \u2014 dual-AI Thai LINE chatbot \u0e1c\u0e48\u0e32\u0e19 Ollama Gemma 4 + bge-m3 (primary) + Gemini 2.5 Flash (fallback) + Qdrant vector store\n- Admin UI 5 \u0e2b\u0e19\u0e49\u0e32\u0e43\u0e15\u0e49 `/admin/krubua/*` \u2014 dashboard / knowledge CRUD (text + PDF + Markdown upload) / conversations dri",
     "url": "https://github.com/sooksun/teachermon/pull/3",
     "source": "github_prs",
@@ -671,7 +671,7 @@
   },
   {
     "title": "[PR] feat: Automation Health UI + Lint Gates + SonarQube Quality Pipeline",
-    "date": "2026-05-04T11:22:42Z",
+    "date": "2026-05-04T12:59:00Z",
     "summary": "## What this PR ships\n\n### 1. Automation Health Dashboard (/automation)\nNew Control Plane page with 4 tabs: Framework scan, Last Results (Cucumber report), Traces (trace.zip list + RCA dispatch), Run Tests (manual trigger with tag filter).\nNew FastAPI endpoints: GET /automation/health, GET /automati",
     "url": "https://github.com/lokeshsharma99/QAP/pull/26",
     "source": "github_prs",
@@ -947,7 +947,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-04T11:34:24Z",
+    "date": "2026-05-04T14:07:16Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1031,7 +1031,7 @@
   },
   {
     "title": "[PR] feat(agent-workspaces): implement step 2 \u2014 agent & model selection",
-    "date": "2026-05-04T10:32:44Z",
+    "date": "2026-05-04T14:07:58Z",
     "summary": "- Add AgentWorkspaceCreateStepAgentModel step component with agent\r\n  tile grid (4-col, icon-on-top layout) and filtered model catalog\r\n- Add brand icon components for OpenCode, Claude Code, Cursor, Goose\r\n  \u2014 each self-contained with dark brand background, works in both\r\n  light and dark themes wit",
     "url": "https://github.com/openkaiden/kaiden/pull/1509",
     "source": "github_prs",
@@ -1255,6 +1255,198 @@
       "comments: 0",
       "pull request",
       "repo: agentic"
+    ]
+  },
+  {
+    "title": "[PR] feat: turn lifecycle & draw loop integration (P3-SP3)",
+    "date": "2026-05-04T14:08:35Z",
+    "summary": "## Summary\n- Refactored `PlayerService.updateCurrentPlayerIndex` to accept optional `PoolClient` for transactional operations, calling `cleanupExpiredEffects` for the previous player and `consumeLostTurn` for the next player with recursive advancement and infinite loop guard\n- Integrated `ActiveEffe",
+    "url": "https://github.com/jeffgabriel/eurorails_ai/pull/241",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: eurorails_ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: add copilot community provider",
+    "date": "2026-05-04T14:07:18Z",
+    "summary": "## Summary\n\n- Problem: Archon had no GitHub Copilot CLI provider, so workflows could not run with `provider: copilot`.\n- Why it matters: users with Copilot CLI access can now run Archon AI nodes through `copilot -p` with workflow-level controls.\n- What changed: added a community Copilot provider, co",
+    "url": "https://github.com/coleam00/Archon/pull/1515",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Archon"
+    ]
+  },
+  {
+    "title": "[PR] feat: add uf ollama-proxy command \u2014 Ollama-compatible API backed by Vertex AI",
+    "date": "2026-05-04T14:03:48Z",
+    "summary": "## Summary\n\nCloses #150.\n\n- **New `uf ollama-proxy` command** \u2014 Ollama-compatible HTTP API on port 11434 backed by Vertex AI, enabling GPU-less developers to use Dewey's semantic search and knowledge compilation without local Ollama or GPU hardware\n- **Extracted `internal/auth/`** \u2014 `TokenManager` s",
+    "url": "https://github.com/unbound-force/unbound-force/pull/154",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: unbound-force"
+    ]
+  },
+  {
+    "title": "[PR] build: apply minor/patch go package updates",
+    "date": "2026-05-04T13:51:53Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/go-surreal/sdbc/pull/145",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: sdbc"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update go-minor",
+    "date": "2026-05-04T13:47:05Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-site-management/pull/175",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-site-management"
+    ]
+  },
+  {
+    "title": "[PR] feat(app-template)!: Update helm-release ( 4.6.2 \u2192 5.0.0 )",
+    "date": "2026-05-04T13:45:48Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | OpenSSF |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) | major | `4.6.2` \u2192 `5.0.0` | [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/bjw-s-labs/helm-charts/ba",
+    "url": "https://github.com/tyriis/home-ops/pull/8680",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes): add Cohere Rerank pipeline node for RAG quality improvement",
+    "date": "2026-05-04T13:45:38Z",
+    "summary": "#Hack-with-bay-2\n\n## Contribution Type\n**Feature** \u2014 Add Cohere Rerank pipeline node for RAG quality improvement\n\n## Problem / Use Case\nRocketRide's RAG pipeline currently retrieves documents via vector similarity search (Pinecone, Chroma, Qdrant, etc.), but vector search alone has a known limitatio",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/499",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] feat(backend/copilot): local-LLM AutoPilot for the no-API-key install",
+    "date": "2026-05-04T13:39:01Z",
+    "summary": "## Why\n\n`backend/backend/copilot/config.py` (`ChatConfig`) hard-wires the AutoPilot chat path to OpenRouter / Anthropic via OpenRouter-format model slugs. Operators trying to run AutoPilot without a Claude / OpenAI / OpenRouter key today hit two failure modes:\n\n1. The baseline path 401s because `CHA",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/12993",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/bjw-s-labs/helm/app-template ( 4.6.2 \u2192 5.0.0 )",
+    "date": "2026-05-04T13:35:36Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/bjw-s-labs/helm/app-template](https://redirect.github.com/bjw-s-labs/helm-charts) | major | `4.6.2` \u2192 `5.0.0` |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (in timezone Europe/London)\n\n- Branch creation\n  - ",
+    "url": "https://github.com/phycoforce/home-ops/pull/1915",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] byok: source from ollama.com/v1/models for canonical routing keys",
+    "date": "2026-05-04T13:11:10Z",
+    "summary": "## Summary\nOllama Cloud's OpenAI-compatible surface routes only on its canonical model ids (the ``data[].id`` values returned by ``GET https://ollama.com/v1/models``).  Many of those ids carry an explicit size tag \u2014 ``cogito-2.1:671b``, ``gpt-oss:20b``, ``gemma3:4b``, ``mistral-large-3:675b`` \u2014 and ",
+    "url": "https://github.com/unitysvc-labs/unitysvc-services-ollama/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: unitysvc-services-ollama"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update go-minor to v0.42.0",
+    "date": "2026-05-04T13:09:42Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-lib-go-dbaas-postgres-client/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-lib-go-dbaas-postgres-client"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update go-minor",
+    "date": "2026-05-04T13:09:01Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-lib-go-bg-kafka/pull/62",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-lib-go-bg-kafka"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update go-minor",
+    "date": "2026-05-04T13:07:56Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-lib-go-dbaas-opensearch-client/pull/65",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-lib-go-dbaas-opensearch-client"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update ghcr.io/bjw-s-labs/helm/app-template ( 4.6.2 \u2794 5.0.0 )",
+    "date": "2026-05-04T13:06:23Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/bjw-s-labs/helm/app-template](https://redirect.github.com/bjw-s-labs/helm-charts) | major | `4.6.2` \u2192 `5.0.0` |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (in timezone Europe/Berlin)\n\n- Branch creation\n  - ",
+    "url": "https://github.com/drag0n141/home-ops/pull/5683",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.42.0",
+    "date": "2026-05-04T13:06:02Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-lib-go-bg-state-monitor/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-lib-go-bg-state-monitor"
+    ]
+  },
+  {
+    "title": "[PR] Implement LLM-based entity extractor",
+    "date": "2026-05-04T12:52:39Z",
+    "summary": "This pull request introduces comprehensive improvements to Docker support, multi-provider LLM configuration, and file handling in the backend. It adds a production-ready `Dockerfile`, `.dockerignore`, and detailed Docker usage instructions. The LLM configuration is now more flexible, supporting both",
+    "url": "https://github.com/tashifkhan/agentic-browser/pull/118",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: agentic-browser"
     ]
   }
 ]
