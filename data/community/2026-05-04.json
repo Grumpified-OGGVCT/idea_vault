@@ -179,7 +179,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-04T16:47:54Z",
+    "date": "2026-05-04T18:09:23Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://de",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -191,7 +191,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-04T09:43:40Z",
+    "date": "2026-05-04T17:32:30Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -551,7 +551,7 @@
   },
   {
     "title": "[PR] Security fixes: upload limit, OIDC gate, header hardening",
-    "date": "2026-05-04T15:06:37Z",
+    "date": "2026-05-04T17:32:05Z",
     "summary": "## Problem\n\nEight security issues identified in a manual review:\n\n1. Image upload endpoint had no size limit \u2014 authenticated users could exhaust server RAM.\n2. OIDC callback created new accounts unconditionally, bypassing `ENABLE_PUBLIC_REGISTRATION`.\n3. Import parse endpoints forwarded raw Python e",
     "url": "https://github.com/Morelitea/initiative/pull/448",
     "source": "github_prs",
@@ -947,7 +947,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-04T16:34:46Z",
+    "date": "2026-05-04T18:04:15Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1283,12 +1283,12 @@
   },
   {
     "title": "[PR] feat: add uf ollama-proxy command \u2014 Ollama-compatible API backed by Vertex AI",
-    "date": "2026-05-04T14:03:48Z",
+    "date": "2026-05-04T17:54:53Z",
     "summary": "## Summary\n\nCloses #150.\n\n- **New `uf ollama-proxy` command** \u2014 Ollama-compatible HTTP API on port 11434 backed by Vertex AI, enabling GPU-less developers to use Dewey's semantic search and knowledge compilation without local Ollama or GPU hardware\n- **Extracted `internal/auth/`** \u2014 `TokenManager` s",
     "url": "https://github.com/unbound-force/unbound-force/pull/154",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 2",
       "pull request",
       "repo: unbound-force"
     ]
@@ -1307,7 +1307,7 @@
   },
   {
     "title": "[PR] chore(deps): update go-minor",
-    "date": "2026-05-04T14:18:49Z",
+    "date": "2026-05-04T17:34:02Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/Netcracker/qubership-core-site-management/pull/175",
     "source": "github_prs",
@@ -1439,7 +1439,7 @@
   },
   {
     "title": "[PR] Implement LLM-based entity extractor",
-    "date": "2026-05-04T12:52:39Z",
+    "date": "2026-05-04T16:51:41Z",
     "summary": "This pull request introduces comprehensive improvements to Docker support, multi-provider LLM configuration, and file handling in the backend. It adds a production-ready `Dockerfile`, `.dockerignore`, and detailed Docker usage instructions. The LLM configuration is now more flexible, supporting both",
     "url": "https://github.com/tashifkhan/agentic-browser/pull/118",
     "source": "github_prs",
@@ -1487,7 +1487,7 @@
   },
   {
     "title": "[PR] feat(onboarding): add model selection step and persist workspace settings",
-    "date": "2026-05-04T16:28:06Z",
+    "date": "2026-05-04T17:55:02Z",
     "summary": "Implement Step 2 of the guided setup wizard where users pick a default model for their chosen agent. Models are fetched from provider extensions and grouped into Local, In-house, and Cloud sections. For Claude on Vertex AI, a new discovery service exchanges ADC credentials for an access token and qu",
     "url": "https://github.com/openkaiden/kaiden/pull/1603",
     "source": "github_prs",
@@ -1567,6 +1567,78 @@
       "comments: 1",
       "pull request",
       "repo: claude-code"
+    ]
+  },
+  {
+    "title": "[PR] Add local_code_gen/ pipeline (architect \u2192 dispatch_sprints \u2192 qwen runner)",
+    "date": "2026-05-04T18:17:26Z",
+    "summary": "## Summary\n\n- Adds **`local_code_gen/`** \u2014 a self-contained pipeline directory for taking a product spec to working code using cloud models for architecture (Opus + Sonnet) and a local model for bulk code generation (qwen3.6:35b-a3b). Forks Harper's `spec_to_sprints.dip` for the local-codegen use ca",
+    "url": "https://github.com/2389-research/pipelines/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: pipelines"
+    ]
+  },
+  {
+    "title": "[PR] fix(policy): allow local inference host gateway",
+    "date": "2026-05-04T18:10:36Z",
+    "summary": "## Summary\n- allowlist private RFC1918 host-gateway IP ranges on the `local-inference` preset endpoints for Ollama, the auth proxy, and vLLM\n- keep the existing host/port/binary restrictions in place for `host.openshell.internal`\n- add a regression test so the Ollama/proxy/vLLM endpoints cannot lose",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/2993",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Removing ollama dependency for wizard setup",
+    "date": "2026-05-04T18:06:30Z",
+    "summary": "### Add multi-provider LLM support with setup wizard\r\n                                                                                                                                                                                                                                              \r\n  Repl",
+    "url": "https://github.com/lefoulkrod/computron_9000/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: computron_9000"
+    ]
+  },
+  {
+    "title": "[PR] fix(docker): pin container-side workspace and config dirs in compose",
+    "date": "2026-05-04T18:06:27Z",
+    "summary": "## Summary\n\nFixes #77436 \u2014 fresh \\`./scripts/docker/setup.sh\\` Docker setups on macOS started failing after 04.29 with the first agent reply dying on:\n\n\\`\\`\\`\nEACCES: permission denied, mkdir '/Users'\n\\`\\`\\`\n\nThe reporter confirmed the same flow worked on 2026.04.29 and reproduces consistently from ",
+    "url": "https://github.com/openclaw/openclaw/pull/77446",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(api,db,frontend): multi-provider LLM adapter with cost aggregation fixes (#546)",
+    "date": "2026-05-04T18:05:23Z",
+    "summary": "## Summary\n\nCloses #546\n\nMulti-provider LLM adapter refactor with cost-grade schema fixes.\n\n## Changes\n\n### Backend\n- **Adapter Foundation**: `LLMProvider` ABC following `RerankerProvider` pattern\n  - `backend/src/services/llm_providers/base.py` \u2014 ABC + `Usage`/`ProviderResponse` dataclasses\n  - `ba",
+    "url": "https://github.com/kagura-ai/memory-cloud/pull/549",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: memory-cloud"
+    ]
+  },
+  {
+    "title": "[PR] [Rule Tuning] Update XDR tags for Cross-Platform",
+    "date": "2026-05-04T17:44:40Z",
+    "summary": "# Related\n* https://github.com/elastic/ia-trade-team/issues/692\n\n## Summary - What I changed\nAdjusts the tags for Cross-Platform regarding XDR tag changes for OOTB detection rules. Only tags have been adjusted.\n\n## How To Test\nTests were abstracted to a separate branch (https://github.com/elastic/de",
+    "url": "https://github.com/elastic/detection-rules/pull/6048",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: detection-rules"
     ]
   }
 ]
