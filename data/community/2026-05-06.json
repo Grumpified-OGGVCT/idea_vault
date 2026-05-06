@@ -155,12 +155,12 @@
   },
   {
     "title": "Make mint LLM-agnostic: allow users to choose the model that performs the audit",
-    "date": "2026-05-06T16:09:46Z",
+    "date": "2026-05-06T19:02:29Z",
     "summary": "# RFC: LLM-Agnostic Provider Support for mint\n \n## Summary\n \nToday, mint is tightly coupled to Anthropic Claude. The model (`claude-4-sonnet-20241022`) is hardcoded in `lib/prompts.mjs:6`, and every call goes through `callAnthropic()` (`lib/prompts.mjs:307-331`), which does a direct fetch to the Ant",
     "url": "https://github.com/nujovich/mint/issues/17",
     "source": "github_issues",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "state: open",
       "repo: mint"
     ]
@@ -611,7 +611,7 @@
   },
   {
     "title": "[PR] ruInS",
-    "date": "2026-05-06T16:13:26Z",
+    "date": "2026-05-06T19:08:29Z",
     "summary": "## **User description**\nwaste of my time\n\n<!-- This is an auto-generated description by cubic. -->\n---\n## Summary by cubic\nFinalizes `[ROLE_SELECT]` first\u2011response routing with a `continue` flag, adds cross\u2011platform desktop automation and ripgrep\u2011powered code search, and hardens streaming/self\u2011heali",
     "url": "https://github.com/quazfenton/binG/pull/79",
     "source": "github_prs",
@@ -694,13 +694,13 @@
     ]
   },
   {
-    "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.5.4",
-    "date": "2026-05-06T07:07:18Z",
-    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.5.4`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.5.4\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2542",
+    "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.5.6",
+    "date": "2026-05-06T18:45:52Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.5.6`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.5.6\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2545",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
     "source": "github_prs",
     "highlights": [
-      "comments: 1357",
+      "comments: 1407",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -983,7 +983,7 @@
   },
   {
     "title": "[PR] feat(coren-ui): add B.2 auth pages and quadlets route, resolve base-branch conflicts",
-    "date": "2026-05-06T15:25:37Z",
+    "date": "2026-05-06T18:29:56Z",
     "summary": "Delivers Prompt 1 (B.2) from `.plans/cloud-task-prompt-bundle-2026-05-05.md` \u2014 login page, session management, and quadlets listing \u2014 implemented in `coren-ui/` (the correct location per the `copilot/update-build-strategy` base branch architecture). Also resolves all conflict-surface files between t",
     "url": "https://github.com/jasonkolodziej/n5-fcos/pull/7",
     "source": "github_prs",
@@ -1475,7 +1475,7 @@
   },
   {
     "title": "[PR] fix: top-7 memory/resource leaks from audit baseline",
-    "date": "2026-05-06T18:20:08Z",
+    "date": "2026-05-06T18:22:56Z",
     "summary": "## Summary\n\nImplements all 7 critical findings from `plans/MEMORY_LEAK_AUDIT.md` (PR #2527 baseline). Foundational fixes (`IShutdownable` + `ShutdownRegistry`, `MJLruCache`) land first so individual leak fixes use shared helpers instead of one-off patterns.\n\n| # | Fix | Location |\n|---|---|---|\n| **",
     "url": "https://github.com/MemberJunction/MJ/pull/2540",
     "source": "github_prs",
@@ -1499,8 +1499,8 @@
   },
   {
     "title": "[PR] feat(plugins): add localmem \u2014 local-first memory provider (Ollama + ChromaDB)",
-    "date": "2026-05-06T18:15:04Z",
-    "summary": "## The Gap\n\nHermes ships with eight memory providers. Every single one requires a cloud API key. Mem0, Supermemory, RetainDB, Byterover \u2014 all route your conversation data through third-party servers for extraction and search. The two local-first options (Honcho, Holographic) are unmaintained and lac",
+    "date": "2026-05-06T18:35:07Z",
+    "summary": "## What This PR Delivers\n\nA complete local-first memory provider for Hermes \u2014 `localmem` \u2014 that runs entirely on-device using Ollama for extraction and ChromaDB for storage. Four files, three tools, zero cloud dependencies.\n\n## The Gap It Closes\n\nEvery existing Hermes memory provider requires a clou",
     "url": "https://github.com/NousResearch/hermes-agent/pull/20853",
     "source": "github_prs",
     "highlights": [
@@ -1511,7 +1511,7 @@
   },
   {
     "title": "[PR] feat(new-connectors)",
-    "date": "2026-05-06T18:09:55Z",
+    "date": "2026-05-06T20:18:02Z",
     "summary": "# RFC: New Agent Connectors + Continuous AI Discovery Visibility\n\n## Status\n\nDraft PR. This branch now covers four related implementation slices:\n\n1. First-class hook connectors for Hermes, Cursor, Windsurf, Gemini CLI, and GitHub Copilot CLI.\n2. Full connector surface metadata and setup behavior fo",
     "url": "https://github.com/cisco-ai-defense/defenseclaw/pull/215",
     "source": "github_prs",
@@ -1559,7 +1559,7 @@
   },
   {
     "title": "[PR] Install local Helicone gateway stack",
-    "date": "2026-05-06T16:51:37Z",
+    "date": "2026-05-06T20:23:34Z",
     "summary": "## Summary\n\n- Adds opt-in installer support for a local Helicone gateway stack.\n- Installs Helicone all-in-one Docker dashboard/Jawn/storage plus standalone `@helicone/ai-gateway@0.2.0-beta.30` for actual routing.\n- Wires Calciforge `[proxy]` to `backend_type = \"helicone\"`, exposes `gateway_ui_url`,",
     "url": "https://github.com/bglusman/calciforge/pull/131",
     "source": "github_prs",
@@ -1567,6 +1567,102 @@
       "comments: 1",
       "pull request",
       "repo: calciforge"
+    ]
+  },
+  {
+    "title": "[PR] home-assistant: 2026.4.4 -> 2026.5.0",
+    "date": "2026-05-06T20:20:23Z",
+    "summary": "https://www.home-assistant.io/blog/2026/05/06/release-20265/\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or describe changes, this helps your fellow maintainers discover breaking updates.\r\nFor new p",
+    "url": "https://github.com/NixOS/nixpkgs/pull/517365",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] RFC: standardize AI model/vendor fallback \u2014 audit + Phase 1 ModelResolver spec",
+    "date": "2026-05-06T20:12:35Z",
+    "summary": "## The guarantee this PR is the spec for\n\n> **For every AI capability MJ uses (LLM, Embeddings, Reranker, Image Generator, TTS, STT, Video), if a deployment has at least one configured vendor that supports that capability, the corresponding feature works.** No feature should require a *specific* ven",
+    "url": "https://github.com/MemberJunction/MJ/pull/2471",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-05-06T19:44:44Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@antfu/ni](https://redirect",
+    "url": "https://github.com/moeru-ai/hf-inspector/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hf-inspector"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/n8n-io/n8n ( 2.17.3 \u2192 2.20.1 )",
+    "date": "2026-05-06T18:58:09Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.17.3` \u2192 `2.20.1` |\n\n---\n\n### Release Note",
+    "url": "https://github.com/zednotdead/gensokyo/pull/1386",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: gensokyo"
+    ]
+  },
+  {
+    "title": "[PR] marisa: 0.3.0 -> 0.3.1",
+    "date": "2026-05-06T18:55:20Z",
+    "summary": "Diff: https://github.com/s-yata/marisa-trie/compare/v0.3.0...v0.3.1\r\n\r\nChangelog: https://github.com/s-yata/marisa-trie/releases/tag/v0.3.1\r\n\r\ncloses https://github.com/NixOS/nixpkgs/pull/426943\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor pack",
+    "url": "https://github.com/NixOS/nixpkgs/pull/458247",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the testcontainers-go group across 1 directory with 4 updates",
+    "date": "2026-05-06T18:55:15Z",
+    "summary": "Bumps the testcontainers-go group with 4 updates in the / directory: [github.com/testcontainers/testcontainers-go](https://github.com/testcontainers/testcontainers-go), [github.com/testcontainers/testcontainers-go/modules/dind](https://github.com/testcontainers/testcontainers-go), [github.com/testco",
+    "url": "https://github.com/sablierapp/sablier/pull/861",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: sablier"
+    ]
+  },
+  {
+    "title": "[PR] Update n8nio/n8n Docker tag to v2",
+    "date": "2026-05-06T18:25:44Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | stage | major | `1.123.39` \u2192 `2.20.1` |\n\n---\n\n### ",
+    "url": "https://github.com/akarthik10/docker-images/pull/448",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: docker-images"
+    ]
+  },
+  {
+    "title": "[PR] [Docs] Add unified evaluation workflow strategy support documentation with Native vs Third-Party classification",
+    "date": "2026-05-06T18:23:15Z",
+    "summary": "## Description\n\nAnalyzed lmms-eval v0.5.0 against the unified evaluation workflow framework to document which of 28 evaluation strategies are supported, using a classification framework that distinguishes between native support and third-party integration.\n\n### Changes\n\n- **Added `/docs/evaluation_w",
+    "url": "https://github.com/zhimin-z/lmms-eval/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lmms-eval"
     ]
   }
 ]
