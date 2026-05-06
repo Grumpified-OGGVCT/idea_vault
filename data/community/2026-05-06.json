@@ -155,12 +155,12 @@
   },
   {
     "title": "Make mint LLM-agnostic: allow users to choose the model that performs the audit",
-    "date": "2026-05-06T13:47:11Z",
+    "date": "2026-05-06T16:09:46Z",
     "summary": "# RFC: LLM-Agnostic Provider Support for mint\n \n## Summary\n \nToday, mint is tightly coupled to Anthropic Claude. The model (`claude-4-sonnet-20241022`) is hardcoded in `lib/prompts.mjs:6`, and every call goes through `callAnthropic()` (`lib/prompts.mjs:307-331`), which does a direct fetch to the Ant",
     "url": "https://github.com/nujovich/mint/issues/17",
     "source": "github_issues",
     "highlights": [
-      "comments: 3",
+      "comments: 6",
       "state: open",
       "repo: mint"
     ]
@@ -191,7 +191,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-06T05:14:24Z",
+    "date": "2026-05-06T14:33:11Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -515,7 +515,7 @@
   },
   {
     "title": "[PR] Claude/pg combined",
-    "date": "2026-05-06T11:31:10Z",
+    "date": "2026-05-06T16:42:48Z",
     "summary": "## Summary\r\n\r\nThis PR combines the work from **PR #2535** (`claude/pg-toolchain-clean` \u2014 Josue) and **PR #2531** (`fix/pg-vwsqlcolumns-boolean-types` \u2014 Madhav) into a single branch.\r\n\r\n* **Madhav's 14 commits** (forward base of this branch): SQL Server \u2194 PostgreSQL alignment for `mj migrate` / `mj c",
     "url": "https://github.com/MemberJunction/MJ/pull/2541",
     "source": "github_prs",
@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] feat(llm): make provider display name optional and allow renaming",
-    "date": "2026-05-06T03:12:44Z",
+    "date": "2026-05-06T16:35:19Z",
     "summary": "## Description\r\n\r\nMakes `llm_provider.name` a nullable, non-unique cosmetic label. The integer PK (`id`) is the stable identity; name is now purely for display.\r\n\r\n**Migration (`c1d2e3f4a5b6`):**\r\n- Drops the `llm_provider_name_key` unique constraint.\r\n- Makes `name` nullable.\r\n- Downgrade fills NUL",
     "url": "https://github.com/onyx-dot-app/onyx/pull/10847",
     "source": "github_prs",
@@ -575,7 +575,7 @@
   },
   {
     "title": "[PR] fix(SqlLogger): prevent silent NVARCHAR truncation in metadata migrations",
-    "date": "2026-05-06T14:02:26Z",
+    "date": "2026-05-06T15:13:18Z",
     "summary": "## Summary\r\n\r\nComponent `Specification` rows with many `${\u2026}` template literals (e.g. `DataExportPanel`, 21 expressions, ~65 KB encoded) were silently truncated to ~57 KB on every fresh-install `mj migrate`, surfacing in the React runtime as `Failed to compile component: Unexpected token` at line 13",
     "url": "https://github.com/MemberJunction/MJ/pull/2551",
     "source": "github_prs",
@@ -611,12 +611,12 @@
   },
   {
     "title": "[PR] ruInS",
-    "date": "2026-05-06T08:06:33Z",
+    "date": "2026-05-06T16:13:26Z",
     "summary": "## **User description**\nwaste of my time\n\n<!-- This is an auto-generated description by cubic. -->\n---\n## Summary by cubic\nFinalizes `[ROLE_SELECT]` first\u2011response routing with a `continue` flag, adds cross\u2011platform desktop automation and ripgrep\u2011powered code search, and hardens streaming/self\u2011heali",
     "url": "https://github.com/quazfenton/binG/pull/79",
     "source": "github_prs",
     "highlights": [
-      "comments: 17",
+      "comments: 18",
       "pull request",
       "repo: binG"
     ]
@@ -719,7 +719,7 @@
   },
   {
     "title": "[PR] Search Scopes & RAG+ \u2014 multi-phase ship (Phases 1, 2A\u20132D, 3, 4, 5, 6)",
-    "date": "2026-05-06T00:52:17Z",
+    "date": "2026-05-06T15:33:41Z",
     "summary": "## Summary\n\nMulti-phase delivery of the **Search Scopes & RAG+** initiative. Closes the work tracked in `RAG_plan.md` from Phase 1 baseline through Phase 6 cross-cutting cleanup. 95 commits, 204 files changed, +71,276 / \u2212641 lines.\n\nOriginally opened (April 2026) as the Phase 0 plan + v5.28.x schema",
     "url": "https://github.com/MemberJunction/MJ/pull/2374",
     "source": "github_prs",
@@ -839,12 +839,12 @@
   },
   {
     "title": "[PR] feat(chatbot): upgrade chatbot to Groq LLM (strict ServiceHub scope)",
-    "date": "2026-05-06T13:53:07Z",
+    "date": "2026-05-06T16:04:47Z",
     "summary": "## Summary\n\n- Replace the **frontend regex / static FAQ chatbot** with a real LLM (Groq cloud, Llama 3.3 70B; Ollama as local fallback). Free tier only \u2014 no paid APIs, no new npm dependencies.\n- **Strict ServiceHub-only scope**: three-layer guard refuses off-topic questions (weather, coding, recipes",
     "url": "https://github.com/ShriyaSharma1122334455/Service-Hub-A-Home-Service-Market-Place-/pull/109",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 3",
       "pull request",
       "repo: Service-Hub-A-Home-Service-Market-Place-"
     ]
@@ -935,7 +935,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-06T14:19:39Z",
+    "date": "2026-05-06T15:46:55Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -983,12 +983,12 @@
   },
   {
     "title": "[PR] feat(coren-ui): add B.2 auth pages and quadlets route, resolve base-branch conflicts",
-    "date": "2026-05-06T07:26:45Z",
+    "date": "2026-05-06T15:25:37Z",
     "summary": "Delivers Prompt 1 (B.2) from `.plans/cloud-task-prompt-bundle-2026-05-05.md` \u2014 login page, session management, and quadlets listing \u2014 implemented in `coren-ui/` (the correct location per the `copilot/update-build-strategy` base branch architecture). Also resolves all conflict-surface files between t",
     "url": "https://github.com/jasonkolodziej/n5-fcos/pull/7",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 14",
       "pull request",
       "repo: n5-fcos"
     ]
@@ -1199,8 +1199,8 @@
   },
   {
     "title": "[PR] chore(deps): update docker.n8n.io/n8nio/n8n docker tag to v2",
-    "date": "2026-05-06T14:14:56Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.38` \u2192 `2.20.1` |\n\n---\n\n### Relea",
+    "date": "2026-05-06T15:45:20Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.39` \u2192 `2.20.1` |\n\n---\n\n### Relea",
     "url": "https://github.com/oliverziegert/apps/pull/287",
     "source": "github_prs",
     "highlights": [
@@ -1339,6 +1339,138 @@
       "comments: 1",
       "pull request",
       "repo: k2"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/n8n-io/n8n ( 2.16.0 \u2794 2.20.1 )",
+    "date": "2026-05-06T16:43:23Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.16.0` \u2192 `2.20.1` |\n\n---\n\n> [!WARNING]\n> S",
+    "url": "https://github.com/Aviator-Coding/home-ops/pull/732",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): Field Force AI section (chat, photo review, inspection assist)",
+    "date": "2026-05-06T16:41:31Z",
+    "summary": "## Summary\n\nBuilds out the contractor app's AI section end to end with **Gemini 2.5 Flash** as the default provider and **Anthropic Claude** + **Ollama Cloud** as hot fallbacks. Three contractor-facing surfaces, one resilience layer, one new tiny additive table on Supabase.\n\nThis PR depends on #217 ",
+    "url": "https://github.com/Coding-Temple-Tech-Residency/TR42-Contractor/pull/221",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: TR42-Contractor"
+    ]
+  },
+  {
+    "title": "[PR] Add local employee-like AI agent (arachnida-agent)",
+    "date": "2026-05-06T16:17:58Z",
+    "summary": "Adds a local CLI AI agent under `agent/` that accepts natural-language file commands and runs 100% on-device \u2014 no server, no cloud required.\n\n## Architecture\n\n- **LLM dispatch chain**: Ollama (auto-detected on `localhost:11434`) \u2192 OpenAI (via `OPENAI_API_KEY`) \u2192 deterministic rule-based fallback. Al",
+    "url": "https://github.com/Mohahamdali/Cybersecurity-Arachnida/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Cybersecurity-Arachnida"
+    ]
+  },
+  {
+    "title": "[PR] Update docker.n8n.io/n8nio/n8n Docker tag to v2",
+    "date": "2026-05-06T16:18:42Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | final | major | `1.95.3` \u2192 `2.20.1` ",
+    "url": "https://github.com/alacava/n8n-docker-ffmpeg/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-docker-ffmpeg"
+    ]
+  },
+  {
+    "title": "[PR] feat: wire compliance brain to AMD MI300X \u2014 multi-voice debate cockpit on Qwen 2.5 72B",
+    "date": "2026-05-06T16:28:17Z",
+    "summary": "## TL;DR\n\n**XIO Compliance Brain \u2014 Triad Review Engine for audit-ready compliance work.**\n\nThree AI reviewer perspectives \u2014 **Regulatory Counsel \u00b7 Risk Officer \u00b7 Evidence Auditor** \u2014 critique the same matter in parallel on a single AMD Instinct MI300X running Qwen 2.5 72B via vLLM. Synthesis turns t",
+    "url": "https://github.com/XioAISolutions/compliance-AI/pull/56",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: compliance-AI"
+    ]
+  },
+  {
+    "title": "[PR] fix: support DGX Spark vLLM routing",
+    "date": "2026-05-06T16:14:55Z",
+    "summary": "## Summary\n\n- Keep local host aliases out of the sandbox proxy path so local vLLM/Ollama endpoints on host.openshell.internal remain reachable.\n- Use the local vLLM default model when building the OpenClaw primary model for vllm-local.\n- Document a DGX Spark vLLM setup using Gemma 4 NVFP4.\n\n## Why\n\n",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3051",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(migration): migrate lb4-llm-chat-extension from LangGraph to Mastra [WIP]",
+    "date": "2026-05-06T15:55:40Z",
+    "summary": "## Summary\n\nMigration of `loopback4-llm-chat-extension` from **LangGraph v2 (LangChain-based)** to **Mastra v3 (Vercel AI SDK-based)**.\n\nThis replaces the LangGraph execution engine and all LangChain provider adapters with Mastra workflows/steps and the Vercel AI SDK, while preserving the existing p",
+    "url": "https://github.com/sourcefuse/loopback4-llm-chat-extension/pull/20",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: loopback4-llm-chat-extension"
+    ]
+  },
+  {
+    "title": "[PR] Add production guardrails, Bedrock safety, and LangSmith observability notebooks",
+    "date": "2026-05-06T15:54:22Z",
+    "summary": "Demo Video Link:- https://devikickdrum.neetorecord.com/watch/c0be671b7840c8b8d5a5\r\n\r\n# Production Guardrails, Cloud Content Safety & Observability\r\n\r\n## Overview\r\n\r\nThis PR introduces a complete end-to-end implementation of a production-style AI safety architecture for LLM-based customer service sys",
+    "url": "https://github.com/devipreddy/KDU-2026-AI/pull/17",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: KDU-2026-AI"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency pydantic-ai to >=1.90.0",
+    "date": "2026-05-06T15:49:29Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pydantic-ai](https://redire",
+    "url": "https://github.com/StacklokLabs/mcp-optimizer/pull/534",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mcp-optimizer"
+    ]
+  },
+  {
+    "title": "[PR] fix: support local vLLM inference routing",
+    "date": "2026-05-06T15:07:59Z",
+    "summary": "Summary\n- add default no_proxy bypasses for host.openshell.internal and host.docker.internal so sandbox services can reach local inference runtimes directly\n- add NEMOCLAW_NO_PROXY_EXTRA for additional local inference bypass hosts without including inference.local\n- use the vllm-local default model ",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3013",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update go-minor to v0.42.0",
+    "date": "2026-05-06T15:03:54Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-lib-go-dbaas-postgres-client/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-lib-go-dbaas-postgres-client"
     ]
   }
 ]
