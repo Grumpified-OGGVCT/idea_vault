@@ -155,7 +155,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-07T14:32:53Z",
+    "date": "2026-05-07T17:13:58Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/RooCodeInc/Roo-Code).\n\n## Deprecations / Replace",
     "url": "https://github.com/RooCodeInc/Roo-Code/issues/10556",
     "source": "github_issues",
@@ -766,9 +766,9 @@
     ]
   },
   {
-    "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2.20.4",
-    "date": "2026-05-07T08:59:07Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.13.0` \u2192 `2.20.4` |\n\n---\n\n> [!WARNING]\n> Some depen",
+    "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2.20.5",
+    "date": "2026-05-07T18:00:57Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.13.0` \u2192 `2.20.5` |\n\n---\n\n### Release Notes\n\n<detai",
     "url": "https://github.com/jtcressy-home/infra/pull/661",
     "source": "github_prs",
     "highlights": [
@@ -839,12 +839,12 @@
   },
   {
     "title": "[PR] feat(providers): add bundled OCI Generative AI provider plugin",
-    "date": "2026-05-07T16:15:24Z",
+    "date": "2026-05-07T17:20:10Z",
     "summary": "## Summary\n\nBundle Oracle Cloud Infrastructure Generative AI as a first-class OpenClaw provider. Authenticates with the user's `~/.oci/config` API key (RSA-signed `Authorization` header per request) and supports both transport surfaces in a single plugin.\n\n### Two paths in one plugin\n\n- **V1 (OpenAI",
     "url": "https://github.com/openclaw/openclaw/pull/78667",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: openclaw"
     ]
@@ -1174,9 +1174,9 @@
     ]
   },
   {
-    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.123.38 \u2192 2.20.4 )",
-    "date": "2026-05-07T09:00:21Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.38` \u2192 `2.20.4` |\n\n---\n\n### Release No",
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.123.38 \u2192 2.20.5 )",
+    "date": "2026-05-07T17:06:52Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.38` \u2192 `2.20.5` |\n\n---\n\n### Release No",
     "url": "https://github.com/jfrazx/home-ops/pull/845",
     "source": "github_prs",
     "highlights": [
@@ -1487,7 +1487,7 @@
   },
   {
     "title": "[PR] fix(openai-shim): strip `store` for local providers (vLLM, custom)",
-    "date": "2026-05-07T13:33:39Z",
+    "date": "2026-05-07T18:21:58Z",
     "summary": "## Summary\n\nLocal OpenAI-compatible servers (vLLM, llama.cpp, custom self-hosted gateways) frequently validate request bodies against a strict JSON schema and reject unknown fields with 400. The shim sends `store: false` \u2014 an OpenAI-only flag for cloud conversation persistence \u2014 and already strips i",
     "url": "https://github.com/Gitlawb/openclaude/pull/1048",
     "source": "github_prs",
@@ -1595,7 +1595,7 @@
   },
   {
     "title": "[PR] fix(agent-workspace): auto-create kdn vault secret from provider credentials on workspace creation",
-    "date": "2026-05-07T16:49:47Z",
+    "date": "2026-05-07T17:12:05Z",
     "summary": "When creating a workspace with a cloud model selected, the provider connection's credentials are now used to automatically create a matching kdn vault secret so the CLI can inject API keys at runtime. This avoids requiring users to manually duplicate their API key in the secret vault after configuri",
     "url": "https://github.com/openkaiden/kaiden/pull/1762",
     "source": "github_prs",
@@ -1655,7 +1655,7 @@
   },
   {
     "title": "[PR] feat: Add SSRF protection with DNS rebinding prevention",
-    "date": "2026-05-07T16:32:56Z",
+    "date": "2026-05-07T18:25:42Z",
     "summary": "## Description\r\n- Implement DNS pinning to prevent DNS rebinding attacks\r\n- Enable SSRF protection by default (ssrf_protection_enabled = True)\r\n- Add validate_and_resolve_url() function for DNS pinning\r\n- Create SSRFProtectedTransport for custom HTTP transport\r\n- Add comprehensive test suite for DNS",
     "url": "https://github.com/langflow-ai/langflow/pull/13016",
     "source": "github_prs",
@@ -1747,6 +1747,174 @@
       "comments: 2",
       "pull request",
       "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-05-07T18:27:21Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] `Logos`: UI Enhancements and Fair lane Eviction Algo",
+    "date": "2026-05-07T18:25:51Z",
+    "summary": "# Logos UI Integration, ETTFT-Corrected Classification Scheduling, and Capacity Planner Hardening\r\n\r\n## Summary\r\n\r\nThis PR brings three major workstreams together:\r\n\r\n1. **Logos UI remaster** \u2014 a rebuilt `/statistics` page with per-worker GPU panels, live lane-health metrics, VRAM allocation pie, an",
+    "url": "https://github.com/ls1intum/edutelligence/pull/499",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] chore(review): round-26 FORWARD pins \u2014 lockstep notes for unbuilt features",
+    "date": "2026-05-07T18:24:07Z",
+    "summary": "## Summary\n\nCompanion to #51. Round-26's 20-agent review surfaced **14 FORWARD findings** \u2014 items that literally cannot be implemented today because they depend on unbuilt features (LIP-E001-F002 inference router, LIP-E002-F001 sibling adapter methods, the URL-fetching adapter path, etc.). ADR-011 f",
+    "url": "https://github.com/cosminneamtiu02/local-model-endpoint/pull/52",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: local-model-endpoint"
+    ]
+  },
+  {
+    "title": "[PR] [Docs] Add unified evaluation workflow strategy support documentation with Native vs Third-Party classification",
+    "date": "2026-05-07T18:23:16Z",
+    "summary": "## Description\n\nAnalyzed lmms-eval v0.5.0 against the unified evaluation workflow framework to document which of 28 evaluation strategies are supported, using a classification framework that distinguishes between native support and third-party integration.\n\n### Changes\n\n- **Added `/docs/evaluation_w",
+    "url": "https://github.com/zhimin-z/lmms-eval/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lmms-eval"
+    ]
+  },
+  {
+    "title": "[PR] ci: test Scalpel shadow \u2014 jackson2 2.21.3\u21922.21.2 [DO NOT MERGE]",
+    "date": "2026-05-07T18:22:41Z",
+    "summary": "## Test PR for Scalpel shadow comparison validation\n\n**DO NOT MERGE** \u2014 validates [PR #22524](https://github.com/apache/camel/pull/22524).\n\n### Scenario C: Widely-used managed dependency (jackson2-version)\n\nChanges `jackson2-version` from `2.21.3` to `2.21.2` in `parent/pom.xml`. No module directly ",
+    "url": "https://github.com/apache/camel/pull/23072",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] Continue MCP memory, rerank, maintenance, and self-improve chunks; fix Vercel iOS cloud-LLM prompt",
+    "date": "2026-05-07T18:22:06Z",
+    "summary": "The active milestone queue needed to continue through the next TerranSoul MCP/self-improve chunks while preserving new agent rules in MCP shared knowledge. This also addresses MCP cold-start timeout risk, DeepWiki-first reverse-engineering, and the new Markdown-not-memory boundary for TerranSoul MCP",
+    "url": "https://github.com/Terranes/TerranSoul/pull/125",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: TerranSoul"
+    ]
+  },
+  {
+    "title": "[PR] ci: test Scalpel shadow \u2014 kafka-version 4.2.0\u21924.1.2 [DO NOT MERGE]",
+    "date": "2026-05-07T18:22:05Z",
+    "summary": "## Test PR for Scalpel shadow comparison validation\n\n**DO NOT MERGE** \u2014 validates [PR #22524](https://github.com/apache/camel/pull/22524).\n\n### Scenario A: Narrow managed dependency (kafka-version)\n\nChanges `kafka-version` from `4.2.0` to `4.1.2` in `parent/pom.xml`. No module directly references `$",
+    "url": "https://github.com/apache/camel/pull/23070",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] ci: test Scalpel shadow \u2014 junit-jupiter 5.13.4\u21925.14.4 [DO NOT MERGE]",
+    "date": "2026-05-07T18:21:55Z",
+    "summary": "## Test PR for Scalpel shadow comparison validation\n\n**DO NOT MERGE** \u2014 validates [PR #22524](https://github.com/apache/camel/pull/22524).\n\n### Scenario B: Test-scoped managed dependency (junit-jupiter-version)\n\nChanges `junit-jupiter-version` from `5.13.4` to `5.14.4` in `parent/pom.xml`. No module",
+    "url": "https://github.com/apache/camel/pull/23071",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] home-assistant: add all requirements from entity platforms",
+    "date": "2026-05-07T18:20:54Z",
+    "summary": "On my mid sized HASS the only difference was the added rf-protocols.\r\n\r\nRan nixpkgs-review rev HEAD successful locally with no new failures.\r\n\r\n## Things done\r\n\r\n<!-- Please check what applies. Note that these are not hard requirements but merely serve as information for reviewers. -->\r\n\r\n- Built on",
+    "url": "https://github.com/NixOS/nixpkgs/pull/517711",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] feat: production-grade architectural overhaul with event-driven core, multimodal triggers, local TTS, system tray, and interactive dashboard",
+    "date": "2026-05-07T17:47:58Z",
+    "summary": "# Description\r\nThis Pull Request introduces a comprehensive, enterprise-grade architectural overhaul that transitions **WakeBot** from an early, script-based developer prototype into a highly stable, decoupled, and secure Windows background service (v2.1.0). \r\nIt introduces thread-isolated triggers,",
+    "url": "https://github.com/jhaabhijeet864/wake_bot/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: wake_bot"
+    ]
+  },
+  {
+    "title": "[PR] feat(codegen-lib): configurable SQL request timeout",
+    "date": "2026-05-07T17:46:04Z",
+    "summary": "## Summary\n- The mssql pool used by CodeGen hardcoded `requestTimeout` to 120000ms in [db-connection.ts](packages/CodeGenLib/src/Config/db-connection.ts), so long-running steps \u2014 notably `spUpdateExistingEntityFieldsFromSchema` on schemas with many entities (post-5.32 surfaces this more often becaus",
+    "url": "https://github.com/MemberJunction/MJ/pull/2558",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(test): repair createViewUserSearchSQL.test.ts so assertions actually run",
+    "date": "2026-05-07T17:19:20Z",
+    "summary": "## Summary\n- The test factory in [createViewUserSearchSQL.test.ts](packages/GenericDatabaseProvider/src/__tests__/createViewUserSearchSQL.test.ts) tried to set `EntityInfo.FirstPrimaryKey` and `EntityInfo.Fields` directly via `Object.assign`. Both are getter-only properties \u2014 `Fields` reads from pri",
+    "url": "https://github.com/MemberJunction/MJ/pull/2557",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Update docker.n8n.io/n8nio/n8n Docker tag to v2",
+    "date": "2026-05-07T17:06:05Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | final | major | `1.95.3` \u2192 `2.20.5` ",
+    "url": "https://github.com/alacava/n8n-docker-ffmpeg/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-docker-ffmpeg"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/n8n-io/n8n ( 2.18.0 \u2794 2.20.5 )",
+    "date": "2026-05-07T17:00:16Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.18.0` \u2192 `2.20.5` |\n\n---\n\n### Release Note",
+    "url": "https://github.com/fma965/f9-homelab/pull/1303",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: f9-homelab"
     ]
   }
 ]
