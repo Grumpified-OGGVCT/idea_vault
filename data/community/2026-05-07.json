@@ -359,12 +359,12 @@
   },
   {
     "title": "Meta: Request rate limiting",
-    "date": "2026-05-04T23:25:57Z",
+    "date": "2026-05-07T19:41:13Z",
     "summary": "This meta issue tracks scenarios where chat requests are blocked due to rate limiting.\n\n\ud83d\udc49 To get help with **premium request quota issues**, please comment in https://github.com/microsoft/vscode/issues/252230 .\n\nIn case you experience repeated rate-limiting in GitHub Copilot, please reach out to Git",
     "url": "https://github.com/microsoft/vscode/issues/253124",
     "source": "github_issues",
     "highlights": [
-      "comments: 456",
+      "comments: 459",
       "state: open",
       "repo: vscode"
     ]
@@ -803,7 +803,7 @@
   },
   {
     "title": "[PR] fix(deps): update python non-major dependencies",
-    "date": "2026-05-07T05:25:49Z",
+    "date": "2026-05-07T19:56:53Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [cachetools](https://redirec",
     "url": "https://github.com/ilanbenb/wa_llm/pull/141",
     "source": "github_prs",
@@ -815,12 +815,12 @@
   },
   {
     "title": "[PR] chore: bump openclaw v2026.4.1 \u2192 v2026.5.6",
-    "date": "2026-05-07T12:50:21Z",
-    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.5.6`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.5.6\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2549",
+    "date": "2026-05-07T18:43:58Z",
+    "summary": "## Summary\n\nAutomated version bump from upstream release.\n\n- **Origin**: `v2026.4.1`\n- **Latest**: `v2026.5.6`\n- **Release**: https://github.com/openclaw/openclaw/releases/tag/v2026.5.6\n\n> Created automatically by the [check-upstream](https://github.com/jedwards1230/openclaw-charts/actions/runs/2551",
     "url": "https://github.com/jedwards1230/openclaw-charts/pull/113",
     "source": "github_prs",
     "highlights": [
-      "comments: 1481",
+      "comments: 1506",
       "pull request",
       "repo: openclaw-charts"
     ]
@@ -1583,12 +1583,12 @@
   },
   {
     "title": "[PR] feat(backend/copilot): local-LLM AutoPilot for the no-API-key install",
-    "date": "2026-05-07T16:51:12Z",
+    "date": "2026-05-07T19:23:07Z",
     "summary": "## Why\n\n`backend/backend/copilot/config.py` (`ChatConfig`) hard-wires the AutoPilot chat path to OpenRouter / Anthropic via OpenRouter-format model slugs. Operators trying to run AutoPilot without a Claude / OpenAI / OpenRouter key today hit two failure modes:\n\n1. The baseline path 401s because `CHA",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/12993",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: AutoGPT"
     ]
@@ -1655,7 +1655,7 @@
   },
   {
     "title": "[PR] feat: Add SSRF protection with DNS rebinding prevention",
-    "date": "2026-05-07T18:25:42Z",
+    "date": "2026-05-07T20:16:27Z",
     "summary": "## Description\r\n- Implement DNS pinning to prevent DNS rebinding attacks\r\n- Enable SSRF protection by default (ssrf_protection_enabled = True)\r\n- Add validate_and_resolve_url() function for DNS pinning\r\n- Create SSRFProtectedTransport for custom HTTP transport\r\n- Add comprehensive test suite for DNS",
     "url": "https://github.com/langflow-ai/langflow/pull/13016",
     "source": "github_prs",
@@ -1751,7 +1751,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-05-07T18:27:21Z",
+    "date": "2026-05-07T19:28:07Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1915,6 +1915,90 @@
       "comments: 2",
       "pull request",
       "repo: f9-homelab"
+    ]
+  },
+  {
+    "title": "fix(jack-tar-ollama): single-flight protection \u2014 parallel image generations queue and timeout silently",
+    "date": "2026-05-07T18:52:17Z",
+    "summary": "**Surfaced during:** [2026-05-07 blog-post asset run dogfood](docs/superpowers/dogfooding/2026-05-07-blog-post-asset-run.md) \u2014 bug #4.\n\n## Symptom\n\nDispatching multiple Ollama image generations in parallel against a single Ollama instance results in all-but-one calls timing out at the skill-level 12",
+    "url": "https://github.com/SteveGJones/jack-tar-deckhand/issues/75",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: jack-tar-deckhand"
+    ]
+  },
+  {
+    "title": "[PR] feat: LLM infrastructure overhaul",
+    "date": "2026-05-07T20:14:19Z",
+    "summary": "## LLM Infrastructure Overhaul\n\n### Core Changes\n- **FlutterGemmaAdapter** (NEW): On-device LLM inference via flutter_gemma Modern API. Supports Gemma 3/4, Qwen3, DeepSeek R1, Phi-4 Mini, SmolLM. Replaces old AICore stub.\n- **OpenaiCompatibleAdapter** (NEW): Cloud LLM support via openai_dart. Suppor",
+    "url": "https://github.com/iberi22/OrionHealth/pull/151",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OrionHealth"
+    ]
+  },
+  {
+    "title": "[PR] feat(deps): update module github.com/testcontainers/testcontainers-go (v0.40.0 \u2192 v0.42.0)",
+    "date": "2026-05-07T20:12:47Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/denniseffing/containers/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: containers"
+    ]
+  },
+  {
+    "title": "[PR] feat(deps): update module github.com/testcontainers/testcontainers-go (v0.40.0 \u2192 v0.42.0)",
+    "date": "2026-05-07T20:12:44Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/rkoosaar/containers/pull/80",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: containers"
+    ]
+  },
+  {
+    "title": "[PR] Introduce Dev Tools SDK skeleton with orchestrator, services, CLI, config, and tests",
+    "date": "2026-05-07T19:48:37Z",
+    "summary": "### Motivation\n\n- Consolidate existing ad-hoc scripts and draft service implementations into a library-first DevTools SDK and single CLI entrypoint to simplify migration and reuse.\n- Provide a clear mapping (parity matrix) from current scripts/drafts to planned SDK services to guide incremental extr",
+    "url": "https://github.com/arii/tech-dancer/pull/927",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: tech-dancer"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps)!: Update dependency testcontainers to v11",
+    "date": "2026-05-07T19:37:42Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/marcolongol/nx-extensions/pull/178",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: nx-extensions"
+    ]
+  },
+  {
+    "title": "[PR] feat(deps): update module github.com/testcontainers/testcontainers-go (v0.40.0 \u2192 v0.42.0)",
+    "date": "2026-05-07T19:34:57Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/goochs/containers/pull/154",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: containers"
     ]
   }
 ]
