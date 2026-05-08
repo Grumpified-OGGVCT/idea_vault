@@ -587,7 +587,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-05-08T08:44:10Z",
+    "date": "2026-05-08T14:44:12Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -995,7 +995,7 @@
   },
   {
     "title": "[PR] perf(local): add OPENCLAUDE_LOCAL_FAST_PATH to skip cloud-only transforms",
-    "date": "2026-05-08T07:05:16Z",
+    "date": "2026-05-08T14:08:17Z",
     "summary": "## Summary\n\nAdds an opt-out \u2014 auto-detected for local hosts, overridable via `OPENCLAUDE_LOCAL_FAST_PATH` \u2014 that skips three pre-send transforms which target cloud behaviours that local OpenAI-compatible backends (llama.cpp, vLLM, Ollama, LM Studio, \u2026) do not implement:\n\n| Transform | Cloud purpose ",
     "url": "https://github.com/Gitlawb/openclaude/pull/1068",
     "source": "github_prs",
@@ -1151,7 +1151,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-08T13:37:39Z",
+    "date": "2026-05-08T14:58:57Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1175,12 +1175,12 @@
   },
   {
     "title": "[PR] fix(ollama): proxy endpoint on Windows for container accessibility",
-    "date": "2026-05-08T08:58:49Z",
+    "date": "2026-05-08T14:06:18Z",
     "summary": "## Summary\r\n- On Windows, Ollama binds to `127.0.0.1:11434` which is unreachable from containers running inside the Podman VM (WSL). Previously `localhost` was rewritten to `host.containers.internal` which routes to the WSL VM, not the Windows host where Ollama runs.\r\n- Adds a lightweight HTTP rever",
     "url": "https://github.com/openkaiden/kaiden/pull/1773",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 4",
       "pull request",
       "repo: kaiden"
     ]
@@ -1627,6 +1627,198 @@
       "comments: 2",
       "pull request",
       "repo: k8s-cluster"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add SSRF protection with DNS rebinding prevention",
+    "date": "2026-05-08T15:24:35Z",
+    "summary": "## Description\r\n- Implement DNS pinning to prevent DNS rebinding attacks\r\n- Enable SSRF protection by default (ssrf_protection_enabled = True)\r\n- Add validate_and_resolve_url() function for DNS pinning\r\n- Create SSRFProtectedTransport for custom HTTP transport\r\n- Add comprehensive test suite for DNS",
+    "url": "https://github.com/langflow-ai/langflow/pull/13016",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] Search Scopes & RAG+ \u2014 multi-phase ship (Phases 1, 2A\u20132D, 3, 4, 5, 6)",
+    "date": "2026-05-08T15:23:33Z",
+    "summary": "## Summary\n\nMulti-phase delivery of the **Search Scopes & RAG+** initiative. Closes the work tracked in `RAG_plan.md` from Phase 1 baseline through Phase 6 cross-cutting cleanup. 95 commits, 204 files changed, +71,276 / \u2212641 lines.\n\nOriginally opened (April 2026) as the Phase 0 plan + v5.28.x schema",
+    "url": "https://github.com/MemberJunction/MJ/pull/2374",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] \u2b06\ufe0f Update n8n-runners base image to 2.20.0",
+    "date": "2026-05-08T15:06:05Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | Pending |\n|---|---|---|---|---|\n| [n8nio/runners](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | final | minor | `2.13.4` \u2192 `2.20",
+    "url": "https://github.com/IA-Generative/n8n-image/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-image"
+    ]
+  },
+  {
+    "title": "[PR] \u2b06\ufe0f Update n8n base image to 2.20.0",
+    "date": "2026-05-08T15:05:54Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | Pending |\n|---|---|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | final | minor | `2.13.4` \u2192 `2.20.0` ",
+    "url": "https://github.com/IA-Generative/n8n-image/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-image"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2.20.6",
+    "date": "2026-05-08T14:55:12Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.18.1` \u2192 `2.20.6` |\n\n---\n\n### Release Notes\n\n<detai",
+    "url": "https://github.com/Yanis-Kouidri/k3s-personal-servers/pull/47",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k3s-personal-servers"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.n8n.io/n8nio/n8n docker tag to v2.20.6",
+    "date": "2026-05-08T14:53:40Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.2.1` \u2192 `2.20.6` |\n\n---\n\n### Release ",
+    "url": "https://github.com/baguwes/boilerplates/pull/28",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: boilerplates"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker.n8n.io/n8nio/n8n docker tag to v2.20.6",
+    "date": "2026-05-08T14:49:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.16.1` \u2192 `2.20.6` |\n\n---\n\n### Release",
+    "url": "https://github.com/manos-grigorakis/home-lab/pull/130",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-lab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2.20.6",
+    "date": "2026-05-08T14:49:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.4.5` \u2192 `2.20.6` |\n\n---\n\n### Release Notes\n\n<detail",
+    "url": "https://github.com/amaotone/home-kubernetes/pull/34",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-kubernetes"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/n8n-io/n8n ( 2.18.3 \u2794 2.20.6 )",
+    "date": "2026-05-08T14:47:24Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.18.3` \u2192 `2.20.6` |\n\n---\n\n### Release Note",
+    "url": "https://github.com/fiqrimasngot/kube/pull/110",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: kube"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.123.42 \u2192 2.20.6 )",
+    "date": "2026-05-08T14:39:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.42` \u2192 `2.20.6` |\n\n---\n\n> [!WARNING]\n>",
+    "url": "https://github.com/livhuip/home-ops/pull/1251",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/n8n-io/n8n ( 1.123.38 \u2192 2.20.6 )",
+    "date": "2026-05-08T14:29:31Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.123.38` \u2192 `2.20.6` |\n\n---\n\n### Release No",
+    "url": "https://github.com/jfrazx/home-ops/pull/845",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the e2e group across 1 directory with 15 updates",
+    "date": "2026-05-08T14:23:09Z",
+    "summary": "Bumps the e2e group with 11 updates in the /e2e directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [github.com/docker/go-connections](https://github.com/docker/go-connections) | `0.6.0` | `0.7.0` |\n| [github.com/fsouza/fake-gcs-server](https://github.com/fsouza/fake-gcs-server) | `1.52.3` | `",
+    "url": "https://github.com/open-policy-agent/eopa/pull/396",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: eopa"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image docker.n8n.io/n8nio/n8n ( 2.15.0 \u2794 2.20.6 )",
+    "date": "2026-05-08T14:17:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.15.0` \u2192 `2.20.6` |\n\n---\n\n> [!WARNING",
+    "url": "https://github.com/beacon1096/swarm-01/pull/67",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: swarm-01"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump the langchain4j group with 17 updates",
+    "date": "2026-05-08T14:23:52Z",
+    "summary": "Bumps the langchain4j group with 17 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [dev.langchain4j:langchain4j](https://github.com/langchain4j/langchain4j) | `1.11.0` | `1.12.2` |\n| [dev.langchain4j:langchain4j-open-ai](https://github.com/langchain4j/langchain4j) | `1.11.0` | `1.12.2` |\n| ",
+    "url": "https://github.com/yeikel/camel/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] chore(containers): Update n8nio/n8n Docker tag to v2 1.121.3 -> 2.20.6",
+    "date": "2026-05-08T13:59:32Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | major | `1.121.3` \u2192 `2.20.6` |\n\n---\n\n> [!WARNING]\n> Some depe",
+    "url": "https://github.com/mrkhachaturov/docker/pull/43",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: docker"
+    ]
+  },
+  {
+    "title": "[PR] Feat/ollama cloud integration",
+    "date": "2026-05-08T13:59:02Z",
+    "summary": "## Summary\r\n\r\n- Add Ollama Cloud as a new provider option via `ollama.com/v1` endpoint\r\n- Support `OLLAMA_API_KEY` authentication for cloud-hosted models\r\n- Implement provider detection, profile setup, and API integration across CLI, scripts, and service layers\r\n- Fix Ollama API compatibility: handl",
+    "url": "https://github.com/Gitlawb/openclaude/pull/890",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaude"
     ]
   }
 ]
