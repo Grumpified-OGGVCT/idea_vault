@@ -587,7 +587,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-05-08T02:44:10Z",
+    "date": "2026-05-08T08:44:10Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -755,7 +755,7 @@
   },
   {
     "title": "[PR] feat(backend/copilot): local-LLM AutoPilot for the no-API-key install",
-    "date": "2026-05-08T07:54:23Z",
+    "date": "2026-05-08T08:43:39Z",
     "summary": "## Why\n\n`backend/backend/copilot/config.py` (`ChatConfig`) hard-wires the AutoPilot chat path to OpenRouter / Anthropic via OpenRouter-format model slugs. Operators trying to run AutoPilot without a Claude / OpenAI / OpenRouter key today hit two failure modes:\n\n1. The baseline path 401s because `CHA",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/12993",
     "source": "github_prs",
@@ -1135,6 +1135,102 @@
       "comments: 0",
       "pull request",
       "repo: apps"
+    ]
+  },
+  {
+    "title": "[PR] feat: auth module with token generation and HTTP transport (#128)",
+    "date": "2026-05-08T09:23:44Z",
+    "summary": "## Summary\\n- Add `auth.rs` with `AuthToken` (redacted Debug), `TokenStore`, constant-time validation\\n- Add `mcp/http.rs` with HTTP JSON-RPC server and Bearer token auth middleware\\n- Token written to file with 0600 permissions; never appears in logs or errors\\n- Stdio transport remains unauthentic",
+    "url": "https://github.com/DominicBurkart/nanna-coder/pull/133",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 22",
+      "pull request",
+      "repo: nanna-coder"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-05-08T09:13:58Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the pip group across 3 directories with 3 updates",
+    "date": "2026-05-08T09:03:20Z",
+    "summary": "Bumps the pip group with 2 updates in the / directory: [pyasn1](https://github.com/pyasn1/pyasn1) and [google-cloud-aiplatform](https://github.com/googleapis/python-aiplatform).\nBumps the pip group with 1 update in the /cookbook/litellm-ollama-docker-image directory: [litellm](https://github.com/Ber",
+    "url": "https://github.com/realswerve/litellm/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: litellm"
+    ]
+  },
+  {
+    "title": "[PR] fix(ollama): proxy endpoint on Windows for container accessibility",
+    "date": "2026-05-08T08:58:49Z",
+    "summary": "## Summary\r\n- On Windows, Ollama binds to `127.0.0.1:11434` which is unreachable from containers running inside the Podman VM (WSL). Previously `localhost` was rewritten to `host.containers.internal` which routes to the WSL VM, not the Windows host where Ollama runs.\r\n- Adds a lightweight HTTP rever",
+    "url": "https://github.com/openkaiden/kaiden/pull/1773",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update helm release ollama to v1.56.0",
+    "date": "2026-05-08T08:45:53Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [ollama](https://ollama.ai/) ([source](https://redirect.github.com/otwld/ollama-helm)) | HelmChart | minor | `1.6.0` \u2192 `1.56.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the",
+    "url": "https://github.com/jsa4000/homelab-ops/pull/578",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-ops"
+    ]
+  },
+  {
+    "title": "[PR] Update all dependencies",
+    "date": "2026-05-08T08:34:45Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) |  | patch | `9.5.11` \u2192 `9.5.12` |\n| [docker.io/esphome/esphome](https://esphome.io/) ([source](https://redirect.github.com/esphome/esphome)) | ",
+    "url": "https://github.com/nolte/k8s-home-lab/pull/825",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k8s-home-lab"
+    ]
+  },
+  {
+    "title": "[PR] feat: multimodal embeddings",
+    "date": "2026-05-08T08:22:04Z",
+    "summary": "## Summary\n\nThis PR introduces comprehensive multimodal embedding support across the Bifrost platform, enabling text, image, audio, video, and file inputs for embedding generation. The implementation standardizes embedding input handling through a new `Contents` structure while maintaining backward ",
+    "url": "https://github.com/maximhq/bifrost/pull/2559",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] fix(agent/triage): tiered cloud \u2192 retry \u2192 local \u2192 defer fallback",
+    "date": "2026-05-08T08:18:03Z",
+    "summary": "## Summary\n\nFixes #1257.\n\nReplaces triage's single-attempt cloud-only routing with the tiered fallback chain the issue called for:\n\n```text\ncloud (initial)\n  \u251c\u2500\u2500 429 / transient (5xx / timeout / connection) \u2500\u2500\u25ba retry once\n  \u2502       \u2514\u2500\u2500 still failing \u2500\u2500\u25ba local fallback\n  \u2514\u2500\u2500 ok \u2500\u2500\u25ba resolution_path = ",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/1367",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openhuman"
     ]
   }
 ]
