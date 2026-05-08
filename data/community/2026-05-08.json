@@ -1355,12 +1355,12 @@
   },
   {
     "title": "[PR] feat(agent): add native OpenClaw support",
-    "date": "2026-05-08T10:29:31Z",
+    "date": "2026-05-08T15:53:36Z",
     "summary": "## Summary\r\n\r\n- Adds OpenClaw (\"claw\") as a new agent with full support for model configuration, MCP servers, skills, and onboarding skip\r\n- Adds `--telegram` flag to `kdn init` for headless Telegram mode \u2014 runs the OpenClaw gateway and auto-approves pairing requests instead of the interactive TUI\r\n",
     "url": "https://github.com/openkaiden/kdn/pull/403",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 12",
       "pull request",
       "repo: kdn"
     ]
@@ -1631,7 +1631,7 @@
   },
   {
     "title": "[PR] feat: Add SSRF protection with DNS rebinding prevention",
-    "date": "2026-05-08T15:24:35Z",
+    "date": "2026-05-08T16:50:35Z",
     "summary": "## Description\r\n- Implement DNS pinning to prevent DNS rebinding attacks\r\n- Enable SSRF protection by default (ssrf_protection_enabled = True)\r\n- Add validate_and_resolve_url() function for DNS pinning\r\n- Create SSRFProtectedTransport for custom HTTP transport\r\n- Add comprehensive test suite for DNS",
     "url": "https://github.com/langflow-ai/langflow/pull/13016",
     "source": "github_prs",
@@ -1643,7 +1643,7 @@
   },
   {
     "title": "[PR] Search Scopes & RAG+ \u2014 multi-phase ship (Phases 1, 2A\u20132D, 3, 4, 5, 6)",
-    "date": "2026-05-08T15:23:33Z",
+    "date": "2026-05-08T17:09:25Z",
     "summary": "## Summary\n\nMulti-phase delivery of the **Search Scopes & RAG+** initiative. Closes the work tracked in `RAG_plan.md` from Phase 1 baseline through Phase 6 cross-cutting cleanup. 95 commits, 204 files changed, +71,276 / \u2212641 lines.\n\nOriginally opened (April 2026) as the Phase 0 plan + v5.28.x schema",
     "url": "https://github.com/MemberJunction/MJ/pull/2374",
     "source": "github_prs",
@@ -1819,6 +1819,114 @@
       "comments: 3",
       "pull request",
       "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): env-driven AI provider switching with Ollama sidecar",
+    "date": "2026-05-08T17:18:37Z",
+    "summary": "## Summary\n- Add `songster-svelte/src/lib/ai.ts` with env-driven `AI_PROVIDER` switching (ollama/mini/openrouter/groq)\n- Update `docker-compose.yml` and `docker-compose.prod.yml` with Ollama sidecar\n- Update `.env.example` with AI_PROVIDER and model configuration vars\n- Update `Dockerfile`, `package",
+    "url": "https://github.com/Jonathangadeaharder/Songster/pull/138",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Songster"
+    ]
+  },
+  {
+    "title": "[PR] docs(paperclip): audit pass #4 \u2014 fleet-wide drift sweep on agent OS",
+    "date": "2026-05-08T17:15:32Z",
+    "summary": "## Summary\n\nAudit & optimization pass #4 on the Paperclip Company OS, executed under Josh's standing delegation: *\"I am stopping all manual edits. You now have full operational control to drive this platform's success \u2014 treat it as your own.\"*\n\nTargeted, surgical fixes to drift items that survived p",
+    "url": "https://github.com/Trollz1004/ANTIGRAVITY/pull/59",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ANTIGRAVITY"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): env-driven AI provider switching with Ollama sidecar",
+    "date": "2026-05-08T17:14:19Z",
+    "summary": "## Summary\n- Add `src/lib/ai.ts` with env-driven `AI_PROVIDER` switching (ollama/mini/openrouter/groq), including `analyzeHand()` for poker AI\n- Add `docker-compose.yml` with app + Ollama sidecar\n- Add `.env.example` with AI_PROVIDER and model configuration vars\n- Add `.github/workflows/pr-agent.yml",
+    "url": "https://github.com/Jonathangadeaharder/Tilt/pull/254",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Tilt"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): env-driven AI provider switching with Ollama sidecar",
+    "date": "2026-05-08T17:11:02Z",
+    "summary": "## Summary\n- Add `src/lib/ai.ts` with env-driven `AI_PROVIDER` switching (ollama/mini/openrouter/groq)\n- Add `docker-compose.yml` with app + Ollama sidecar for local and production use\n- Add `.env.example` with AI_PROVIDER and model configuration vars\n- Add `.github/workflows/pr-agent.yml` for self-",
+    "url": "https://github.com/Jonathangadeaharder/Pawnly/pull/115",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Pawnly"
+    ]
+  },
+  {
+    "title": "[PR] fix: top-7 memory/resource leaks from audit baseline",
+    "date": "2026-05-08T17:08:43Z",
+    "summary": "## Summary\n\nImplements all 7 critical findings from `plans/MEMORY_LEAK_AUDIT.md` (PR #2527 baseline). Foundational fixes (`IShutdownable` + `ShutdownRegistry`, `MJLruCache`) land first so individual leak fixes use shared helpers instead of one-off patterns.\n\n| # | Fix | Location |\n|---|---|---|\n| **",
+    "url": "https://github.com/MemberJunction/MJ/pull/2540",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: Finalize Role-Based Model Routing and RAG Configuration",
+    "date": "2026-05-08T17:03:51Z",
+    "summary": "## **User description**\nThis PR implements the role-based model routing system, cleans up unused code in `src/router.rs`, and ensures the `route` command correctly reflects the local RAG configuration using Ollama and Qdrant. Closes #2.\n\n\n___\n\n## **CodeAnt-AI Description**\nAdd route inspection and b",
+    "url": "https://github.com/rmems/agentos-core/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: agentos-core"
+    ]
+  },
+  {
+    "title": "[PR] fix: support local vLLM inference routing",
+    "date": "2026-05-08T16:58:06Z",
+    "summary": "Summary\n- keep this PR open because upstream `latest` still routes sandbox requests for `host.openshell.internal` through the policy proxy unless the host alias is in `NO_PROXY`\n- add default no_proxy bypasses for `host.openshell.internal` and `host.docker.internal`, plus `NEMOCLAW_NO_PROXY_EXTRA` f",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3013",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Add AGENTS.md for Cursor Cloud development environment",
+    "date": "2026-05-08T16:43:28Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\nAdds `AGENTS.md` with Cursor Cloud specific development instructions for the LLM Honeypot Intelligence platform.\n\n## What's included\n\n- Standard commands table (lint, test, run)\n- Environment variable overrides for local development without Docker\n- Non-obvious ca",
+    "url": "https://github.com/Leviticus-Triage/llm-honeypot-intelligence/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: llm-honeypot-intelligence"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/n8n-io/n8n ( 2.16.0 \u2794 2.20.6 )",
+    "date": "2026-05-08T16:41:24Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/n8n-io/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.16.0` \u2192 `2.20.6` |\n\n---\n\n> [!WARNING]\n> S",
+    "url": "https://github.com/Aviator-Coding/home-ops/pull/732",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
