@@ -1343,7 +1343,7 @@
   },
   {
     "title": "[PR] Harden core runtime paths: safe imports/config, validated Aria actions, resilient autonomous orchestration, and local CI/dev scaffolding",
-    "date": "2026-05-09T14:20:42Z",
+    "date": "2026-05-09T15:08:38Z",
     "summary": "This PR addresses robustness gaps across Aria\u2019s core runtime surfaces (Functions, Aria server, and autonomous orchestration) to improve autonomous operation, safer fallback behavior, and local/prod survivability under transient failures. The changes are additive and focused on runtime hardening, saf",
     "url": "https://github.com/Bryan-Roe/Aria/pull/237",
     "source": "github_prs",
@@ -1399,6 +1399,18 @@
       "comments: 0",
       "pull request",
       "repo: n8n-image"
+    ]
+  },
+  {
+    "title": "[PR] fix(ssl): honor DISABLE_SSL_VERIFY across LLM and embedding httpx clients",
+    "date": "2026-05-09T15:24:46Z",
+    "summary": "Closes #464.\n\n## Summary\n\n\\`DISABLE_SSL_VERIFY=true\\` is documented in the README as \\\"Disable outbound TLS verification (default false),\\\" but the flag is silently ignored on most outbound TLS paths. Audit of the nine httpx/aiohttp call sites:\n\n| Path | Before | After |\n| --- | --- | --- |\n| \\`serv",
+    "url": "https://github.com/HKUDS/DeepTutor/pull/465",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: DeepTutor"
     ]
   }
 ]
