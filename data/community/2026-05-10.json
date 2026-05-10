@@ -611,7 +611,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-10T04:35:33Z",
+    "date": "2026-05-10T09:50:24Z",
     "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) |  | patch | `9.5.11` \u2192 `9.5.13` |\n| [docker.io/esphome/esphome](https://esphome.io/) ([source](https://redirect.github.com/esphome/esphome)) | ",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -779,12 +779,12 @@
   },
   {
     "title": "[PR] feat(wake): expose typed sessionKey on wake protocol + system event CLI (refs #52305)",
-    "date": "2026-05-10T06:25:45Z",
+    "date": "2026-05-10T09:33:24Z",
     "summary": "## Summary\n\nRefs #52305. Companion to #50818 (cron-run remap at internal enqueue sites) and #71213 (prompt content layer, MERGED). Does not depend on #50818 \u2014 they touch disjoint surfaces.\n\nAdds an optional `sessionKey` to the wake protocol so callers can target a specific session for system events ",
     "url": "https://github.com/openclaw/openclaw/pull/78687",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: openclaw"
     ]
@@ -815,8 +815,8 @@
   },
   {
     "title": "[PR] ruInS",
-    "date": "2026-05-10T08:56:11Z",
-    "summary": "## **User description**\nwaste of my time\n\n<!-- This is an auto-generated description by cubic. -->\n---\n## Summary by cubic\nFinalizes `[ROLE_SELECT]` first-response routing with a `\"continue\"` flag, adds cross-platform desktop automation and ripgrep-powered code search, and hardens streaming/self-hea",
+    "date": "2026-05-10T10:05:52Z",
+    "summary": "## **User description**\nwaste of my time\n\n<!-- This is an auto-generated description by cubic. -->\n---\n## Summary by cubic\nFinalizes `[ROLE_SELECT]` first-response routing with a `\"continue\"` flag, adds cross\u2011platform desktop automation and ripgrep code search, and hardens streaming/self\u2011healing and",
     "url": "https://github.com/quazfenton/binG/pull/79",
     "source": "github_prs",
     "highlights": [
@@ -875,7 +875,7 @@
   },
   {
     "title": "[PR] feat: Apna AI Agent Platform \u2014 Backend Orchestrator, Browser Automation & Cloud Desktop",
-    "date": "2026-05-10T08:53:04Z",
+    "date": "2026-05-10T09:18:28Z",
     "summary": "## Summary\n\nInitial codebase for Apna AI Agent \u2014 an autonomous AI agent platform that executes real-world tasks in a browser and cloud desktop. Zero-cost, fully open-source stack.\n\n- Backend Orchestrator (FastAPI): Agent loop, task manager, REST + WebSocket APIs\n- Integrated Browser (Playwright): DO",
     "url": "https://github.com/ziaullahkhalid102/Apna-ai-agent/pull/1",
     "source": "github_prs",
@@ -979,6 +979,90 @@
       "comments: 0",
       "pull request",
       "repo: meyers-ai"
+    ]
+  },
+  {
+    "title": "[PR] Drop Anthropic primary, route AI through NVIDIA \u2192 Kimi \u2192 local LLM chain",
+    "date": "2026-05-10T10:19:43Z",
+    "summary": "## Summary\n\nRemoves Anthropic Claude as the main AI for DJ skills + taste analysis and replaces it with a fallback chain so the app keeps working when no cloud key is available.\n\n**New chain (`src/services/aiProviderChain.ts`):**\n\n1. **NVIDIA NIM** \u2014 primary, OpenAI-compatible Llama 3.1 70B by defau",
+    "url": "https://github.com/vladutzeloo/VirtualDJ.ai/pull/30",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: VirtualDJ.ai"
+    ]
+  },
+  {
+    "title": "[PR] fix(security): prevent SSRF in image URL fetching",
+    "date": "2026-05-10T10:17:06Z",
+    "summary": "## Summary\n\n- Add URL validation to `GetImageFromUrl()` to prevent Server-Side Request Forgery (SSRF) attacks\n- Add `IsPrivateIP()` helper to `common/network` package\n- Use `UserContentRequestHTTPClient` instead of bare `http.Get()`\n\n## Bug\n\n`GetImageFromUrl()` in `common/image/image.go` called `htt",
+    "url": "https://github.com/songquanpeng/one-api/pull/2390",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: one-api"
+    ]
+  },
+  {
+    "title": "[PR] resolve the base merge issues ",
+    "date": "2026-05-10T10:15:16Z",
+    "summary": "update the sync issues. ",
+    "url": "https://github.com/ALikesToCode/DeepTutor/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DeepTutor"
+    ]
+  },
+  {
+    "title": "[PR] test(validation): T4 verification \u2014 Qwen3 on master post-#64/#65/#66",
+    "date": "2026-05-10T10:10:33Z",
+    "summary": "## Summary\n\n- Verification sweep confirming PRs #64, #65, and #66 clear the friction surfaced by PR #63 (Qwen3-Coder-Next Proxmox T4 walkthrough)\n- Same methodology: custom Python+Ollama harness, SSH reverse-tunnel, 10-turn budget, Proxmox VM 9113 (cloned from template 9100, destroyed after)\n- Maste",
+    "url": "https://github.com/danigoland/btf2go/pull/67",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: btf2go"
+    ]
+  },
+  {
+    "title": "[PR] Sprint 4: refactor pages onto services layer",
+    "date": "2026-05-10T09:24:54Z",
+    "summary": "## Pages refactored\n\n- **5A_ARoll_Video_Production.py** \u2014 removed all inline HeyGen API calls, JSON status I/O, and retry loops; delegates to `heygen_service` + `edge_tts_service` (new Edge-TTS fallback when HeyGen is not configured); 16 `print()` calls replaced with structured logger\n- **5B_BRoll_V",
+    "url": "https://github.com/dawarazhar11/ReelForge/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ReelForge"
+    ]
+  },
+  {
+    "title": "[PR] auto: add learned test for 'disk_space'",
+    "date": "2026-05-10T09:18:14Z",
+    "summary": "## Auto-generated test\n\nSource incident: self-test: FAIL: TS21 disk / usage < 90% \u2014 disk 92% >= 90%\n\nTest file: `tests/learned/test_disk_space.sh`\n\n_Generated automatically by orchestrator issue\u2192test pipeline._",
+    "url": "https://github.com/iubayb/hive-ui/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: hive-ui"
+    ]
+  },
+  {
+    "title": "[PR] feat(agent): add native OpenClaw support",
+    "date": "2026-05-10T09:13:40Z",
+    "summary": "## Summary\r\n\r\n- Adds OpenClaw (\"claw\") as a new agent with full support for model configuration, MCP servers, skills, and onboarding skip\r\n- Adds `--telegram` flag to `kdn init` for headless Telegram mode \u2014 runs the OpenClaw gateway and auto-approves pairing requests instead of the interactive TUI\r\n",
+    "url": "https://github.com/openkaiden/kdn/pull/403",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: kdn"
     ]
   }
 ]
