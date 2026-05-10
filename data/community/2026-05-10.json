@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] First-class support for SQL computed columns (plan + implementation)",
-    "date": "2026-05-10T03:18:05Z",
+    "date": "2026-05-10T11:41:25Z",
     "summary": "## Summary\n\nAdds first-class support for SQL Server computed columns and PostgreSQL generated columns via a new additive `EntityField.IsComputed` flag. Both flavors continue to be flagged `IsVirtual = 1`, so every existing IsVirtual consumer (sproc generation, GraphQL input types, IS-A inheritance, ",
     "url": "https://github.com/MemberJunction/MJ/pull/2559",
     "source": "github_prs",
@@ -779,8 +779,8 @@
   },
   {
     "title": "[PR] feat(wake): expose typed sessionKey on wake protocol + system event CLI (refs #52305)",
-    "date": "2026-05-10T09:33:24Z",
-    "summary": "## Summary\n\nRefs #52305. Companion to #50818 (cron-run remap at internal enqueue sites) and #71213 (prompt content layer, MERGED). Does not depend on #50818 \u2014 they touch disjoint surfaces.\n\nAdds an optional `sessionKey` to the wake protocol so callers can target a specific session for system events ",
+    "date": "2026-05-10T10:40:58Z",
+    "summary": "## Summary\n\nRefs #52305. Companion to #80214 (cron-run remap at internal enqueue sites) and #71213 (prompt content layer, MERGED). Together with #80214, this PR is intended to close #52305: #78687 covers the external wake/system-event sessionKey surface, while #80214 covers internal cron-run exec/AC",
     "url": "https://github.com/openclaw/openclaw/pull/78687",
     "source": "github_prs",
     "highlights": [
@@ -815,7 +815,7 @@
   },
   {
     "title": "[PR] ruInS",
-    "date": "2026-05-10T10:05:52Z",
+    "date": "2026-05-10T10:53:30Z",
     "summary": "## **User description**\nwaste of my time\n\n<!-- This is an auto-generated description by cubic. -->\n---\n## Summary by cubic\nFinalizes `[ROLE_SELECT]` first-response routing with a `\"continue\"` flag, adds cross\u2011platform desktop automation and ripgrep code search, and hardens streaming/self\u2011healing and",
     "url": "https://github.com/quazfenton/binG/pull/79",
     "source": "github_prs",
@@ -1063,6 +1063,42 @@
       "comments: 12",
       "pull request",
       "repo: kdn"
+    ]
+  },
+  {
+    "title": "[PR] Update docker.n8n.io/n8nio/n8n Docker tag to v2",
+    "date": "2026-05-10T11:05:22Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [docker.n8n.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | final | major | `1.95.3` \u2192 `2.20.6` ",
+    "url": "https://github.com/alacava/n8n-docker-ffmpeg/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-docker-ffmpeg"
+    ]
+  },
+  {
+    "title": "[PR] feat: multimodal embeddings",
+    "date": "2026-05-10T10:58:09Z",
+    "summary": "## Summary\n\nThis PR introduces comprehensive multimodal embedding support across the Bifrost platform, enabling text, image, audio, video, and file inputs for embedding generation. The implementation standardizes embedding input handling through a new `Contents` structure while maintaining backward ",
+    "url": "https://github.com/maximhq/bifrost/pull/2559",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] Zero-Friction Cloud Stack: Telegram + Mail \u2192 AI \u2192 Notion + Google + Watchdog",
+    "date": "2026-05-10T10:52:46Z",
+    "summary": "## Was ist drin\n\n**Zero-Friction Cloud Stack** unter `setup/`:\n\n```\nTelegram   \u2500\u2510\n            \u2502\nGmail [ZF] \u2500\u2534\u2500> CF Worker \u2500> VPS bot \u2500> AI \u2500> Notion \u2500\u252c\u2500> Google Tasks\n                                                      \u2514\u2500> Google Calendar\n```\n\n### Phase 1 \u2014 Basis-Stack\n- Telegram-Bot (Node.js, Doc",
+    "url": "https://github.com/gsgjdhfafa/PowerShell/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: PowerShell"
     ]
   }
 ]
