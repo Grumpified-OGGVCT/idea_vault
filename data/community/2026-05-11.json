@@ -191,7 +191,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-11T07:46:59Z",
+    "date": "2026-05-11T11:19:28Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
     "url": "https://github.com/n8n-io/n8n/issues/18322",
     "source": "github_issues",
@@ -755,12 +755,12 @@
   },
   {
     "title": "[PR] feat(agent): add native OpenClaw support",
-    "date": "2026-05-11T07:41:50Z",
-    "summary": "## Summary\r\n\r\n- Adds OpenClaw (\"claw\") as a new agent with full support for model configuration, MCP servers, skills, and onboarding skip\r\n- Adds `--telegram` flag to `kdn init` for headless Telegram mode \u2014 runs the OpenClaw gateway and auto-approves pairing requests instead of the interactive TUI\r\n",
+    "date": "2026-05-11T10:32:19Z",
+    "summary": "## Summary\r\n\r\n- Adds OpenClaw as a new agent with full support for model configuration, MCP servers, skills, and onboarding skip\r\n- Includes default Podman runtime configuration (`openclaw.json`) with installer and environment variables\r\n- Sets `OPENCLAW_PROXY_ACTIVE=1` so OpenClaw routes LLM reques",
     "url": "https://github.com/openkaiden/kdn/pull/403",
     "source": "github_prs",
     "highlights": [
-      "comments: 14",
+      "comments: 20",
       "pull request",
       "repo: kdn"
     ]
@@ -803,7 +803,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-11T07:34:35Z",
+    "date": "2026-05-11T11:21:58Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -815,7 +815,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-11T07:27:52Z",
+    "date": "2026-05-11T11:14:44Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -863,7 +863,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-05-11T05:33:14Z",
+    "date": "2026-05-11T10:57:35Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -943,6 +943,198 @@
       "comments: 4",
       "pull request",
       "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-node monorepo to v11 (major)",
+    "date": "2026-05-11T11:26:47Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/redis](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.25.",
+    "url": "https://github.com/matrix-org/matrix-hookshot/pull/1129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: matrix-hookshot"
+    ]
+  },
+  {
+    "title": "[PR] feat: multi-key API management with rotation, validation & failover",
+    "date": "2026-05-11T11:21:57Z",
+    "summary": "- Add provider key pools (gemini/groq) to storage with ready/exhausted/invalid states\r\n- New src/utils/apiKeys.js: validation probes, error classification, withKeyRotation(), background revalidation\r\n- IPC handlers: api-keys:list, api-keys:add, api-keys:remove, api-keys:revalidate, api-keys:revalida",
+    "url": "https://github.com/sohzm/cheating-daddy/pull/330",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cheating-daddy"
+    ]
+  },
+  {
+    "title": "[PR] \u589e\u8865\u4eba\u5de5\u667a\u80fd",
+    "date": "2026-05-11T11:14:43Z",
+    "summary": "## Summary by Sourcery\n\n\u6dfb\u52a0\u4e00\u7ae0\u5168\u9762\u7684 AI \u5165\u95e8\u5185\u5bb9\uff0c\u5f15\u5165\u4e00\u7ae0\u901a\u7528 SQL/\u6570\u636e\u5e93\u6982\u5ff5\uff0c\u5e76\u5728\u591a\u7ae0\u8282\u4e2d\u5bf9\u63aa\u8f9e\u3001\u7ed3\u6784\u548c\u5bfc\u822a\u8fdb\u884c\u4f18\u5316\uff0c\u4ee5\u63d0\u5347\u6e05\u6670\u5ea6\u548c\u4e00\u81f4\u6027\u3002\n\nNew Features:\n- \u5f15\u5165\u4e00\u7ae0 AI \u6982\u89c8\uff0c\u6db5\u76d6\u672f\u8bed\u3001ML/DL/Transformer \u57fa\u7840\u3001\u6570\u5b66\u80cc\u666f\u3001\u54f2\u5b66\u4e0e\u4f26\u7406\uff0c\u4ee5\u53ca\u5b9e\u8df5\u7ec3\u4e60\u3002\n- \u65b0\u589e\u4e00\u7ae0\u672c\u5730\u5927\u8bed\u8a00\u6a21\u578b\u90e8\u7f72\u5185\u5bb9\uff0c\u4ecb\u7ecd\u5728 FreeBSD \u4e0a\u4f7f\u7528 `llama.cpp`\u3001Ollama\u3001Claude Code \u548c GitHub Copilot CLI\u3002\n- \u65b0\u589e\u4e00\u7ae0\u6570\u636e\u5e93\u5165\u95e8\uff0c\u5728\u5404\u4e2a\u9488\u5bf9\u5177\u4f53\u5f15\u64ce\u7684\u7ae0\u8282\u4e4b\u524d\uff0c\u7edf\u4e00\u8bb2\u89e3\u6838\u5fc3 SQL \u64cd\u4f5c\u3001\u6a21\u5f0f\u4e0e\u7ea6\u675f\u7ba1\u7406\u4ee5\u53ca\u8fde",
+    "url": "https://github.com/FreeBSD-Ask/FreeBSD-Ask/pull/2137",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: FreeBSD-Ask"
+    ]
+  },
+  {
+    "title": "[PR] feat: add nightly Responses API test workflows per provider",
+    "date": "2026-05-11T10:58:26Z",
+    "summary": "## What\r\n\r\nNightly scheduled workflows that run upstream responses + inference integration tests against the distro image, per provider and per model. Results rendered as GitHub Checks via [dorny/test-reporter](https://github.com/dorny/test-reporter).\r\n\r\nNo PR gate changes \u2014 these run on schedule on",
+    "url": "https://github.com/opendatahub-io/ogx-distribution/pull/249",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ogx-distribution"
+    ]
+  },
+  {
+    "title": "[PR] Bump Testcontainers.MsSql from 4.0.0 to 4.11.0",
+    "date": "2026-05-11T10:58:26Z",
+    "summary": "Updated [Testcontainers.MsSql](https://github.com/testcontainers/testcontainers-dotnet) from 4.0.0 to 4.11.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers.MsSql's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.11.0\n\n# What's Changed\n",
+    "url": "https://github.com/N3rdage/the-library/pull/227",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: the-library"
+    ]
+  },
+  {
+    "title": "[PR] \u2b06\ufe0f Update n8n-runners base image to 2.20.6",
+    "date": "2026-05-11T10:53:37Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [n8nio/runners](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | final | minor | `2.13.4` \u2192 `2.20.6` |\n\n---\n\n##",
+    "url": "https://github.com/IA-Generative/n8n-image/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-image"
+    ]
+  },
+  {
+    "title": "[PR] Bump Bogus and 6 others",
+    "date": "2026-05-11T11:06:38Z",
+    "summary": "Pinned [Bogus](https://github.com/bchavez/Bogus) at 35.6.5.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Bogus's releases](https://github.com/bchavez/Bogus/releases)._\n\n## 35.6.5\n\n[**CHANGE LOG**](https://github.com/bchavez/Bogus/blob/master/HISTORY.md)\n\n## 35.6.4\n\n[**CHANGE LOG**](ht",
+    "url": "https://github.com/tochi-mba/agentic/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agentic"
+    ]
+  },
+  {
+    "title": "[PR] \u2b06\ufe0f Update n8n base image to 2.20.6",
+    "date": "2026-05-11T10:53:25Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | final | minor | `2.13.4` \u2192 `2.20.6` |\n\n---\n\n### Re",
+    "url": "https://github.com/IA-Generative/n8n-image/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-image"
+    ]
+  },
+  {
+    "title": "[PR] chore(release): version packages",
+    "date": "2026-05-11T10:49:44Z",
+    "summary": "This PR was opened by the [Changesets release](https://github.com/changesets/action) GitHub action. When you're ready to do a release, you can merge this and the packages will be published to npm automatically. If you're not ready to do a release yet, that's fine, whenever you add more changesets to",
+    "url": "https://github.com/cogitave/namzu/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: namzu"
+    ]
+  },
+  {
+    "title": "[PR] deps: Bump Testcontainers.LocalStack and Testcontainers.MongoDb",
+    "date": "2026-05-11T10:47:51Z",
+    "summary": "Updated [Testcontainers.LocalStack](https://github.com/testcontainers/testcontainers-dotnet) from 3.10.0 to 4.11.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers.LocalStack's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.11.0\n\n# What",
+    "url": "https://github.com/DEFRA/ls-keeper-data-bridge-backend/pull/108",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ls-keeper-data-bridge-backend"
+    ]
+  },
+  {
+    "title": "[PR] skills: add LiveKit / ClickUp / Bundlesocial / Suno / Kaggle / Colab integration skills",
+    "date": "2026-05-11T10:42:20Z",
+    "summary": "## What\n\nAdd six bundled SKILL.md guides for agent integrations.\n\n- skills/communication/livekit/SKILL.md\n- skills/productivity/clickup/SKILL.md\n- skills/social-media/bundlesocial/SKILL.md\n- skills/creative/suno/SKILL.md\n- skills/data-science/kaggle/SKILL.md\n- skills/data-science/colab/SKILL.md\n\nEac",
+    "url": "https://github.com/roseonlineownz-lab/hermes-agent/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] Harden core runtime paths: safe imports/config, validated Aria actions, resilient autonomous orchestration, and local CI/dev scaffolding",
+    "date": "2026-05-11T10:41:34Z",
+    "summary": "This PR addresses robustness gaps across Aria\u2019s core runtime surfaces (Functions, Aria server, and autonomous orchestration) to improve autonomous operation, safer fallback behavior, and local/prod survivability under transient failures. The changes are additive and focused on runtime hardening, saf",
+    "url": "https://github.com/Bryan-Roe/Aria/pull/237",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Aria"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2.20.6",
+    "date": "2026-05-11T10:34:54Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.13.2` \u2192 `2.20.6` |\n\n---\n\n### Release Notes\n\n<detai",
+    "url": "https://github.com/shiron-dev/melisia/pull/441",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: melisia"
+    ]
+  },
+  {
+    "title": "[PR] fix: address all unresolved feedback from recent merged PRs",
+    "date": "2026-05-11T10:30:38Z",
+    "summary": "## Summary\n\nThis is the anchor recovery PR for the 2026-05-11 incident where recent PRs were merged despite red CI and unresolved feedback.\n\nIt intentionally tracks **all 77 unresolved review threads** from the closed/merged PRs in one place:\n\n- #1308\n- #1311\n- #1317\n- #1318\n- #1320\n- #1323\n\n## Curr",
+    "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/1332",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw-hybrid-memory"
+    ]
+  },
+  {
+    "title": "[PR] feat: Ollama local LLM integration",
+    "date": "2026-05-11T10:15:49Z",
+    "summary": "## Summary\n\nCloses #6\n\nImplements Phase 2 Ollama local LLM support. Conversations with local models stay entirely on-device \u2014 no cloud API key required.\n\n### Implementation notes\n\nOllama exposes an OpenAI-compatible `/v1/chat/completions` endpoint that speaks the same SSE streaming format as OpenAI.",
+    "url": "https://github.com/Aaronreitz/mAId/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mAId"
+    ]
+  },
+  {
+    "title": "[PR] Update ghcr.io/open-webui/open-webui Docker tag to v0.9.5",
+    "date": "2026-05-11T10:09:41Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | Kustomization | patch | `v0.9.2` \u2192 `v0.9.5` |\n",
+    "url": "https://github.com/wizardlyEinstein/open-webui/pull/40",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: open-webui"
     ]
   }
 ]
