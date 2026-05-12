@@ -515,7 +515,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-12T15:40:30Z",
+    "date": "2026-05-12T18:54:48Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -659,7 +659,7 @@
   },
   {
     "title": "[PR] SQL ",
-    "date": "2026-05-12T15:27:13Z",
+    "date": "2026-05-12T18:30:13Z",
     "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
     "url": "https://github.com/arthrod/open-webui/pull/65",
     "source": "github_prs",
@@ -743,7 +743,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-05-11T20:58:53Z",
+    "date": "2026-05-12T17:52:56Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1103,7 +1103,7 @@
   },
   {
     "title": "[PR] fix(memory): health-gate Ollama embeddings, fall back to cloud (OPENHUMAN-TAURI-B7)",
-    "date": "2026-05-12T12:59:00Z",
+    "date": "2026-05-12T18:37:15Z",
     "summary": "## Summary\n\n- When a user has opted into local Ollama embeddings (`local_ai.runtime_enabled` + `local_ai.usage.embeddings`) but the daemon isn't running at `localhost:11434`, the memory factory now probes the daemon once at construction time and falls back to the cloud embedder for that session.\n- R",
     "url": "https://github.com/tinyhumansai/openhuman/pull/1555",
     "source": "github_prs",
@@ -1247,7 +1247,7 @@
   },
   {
     "title": "[PR] feat(backends): backend lifecycle chip + provider config (Claude, Codex, OpenCode)",
-    "date": "2026-05-12T16:17:24Z",
+    "date": "2026-05-12T18:29:00Z",
     "summary": "## Capability\n\nThis PR ships **two related capabilities** for Settings \u2192 Backends:\n\n1. **Backend lifecycle chip** (original scope) \u2014 replaces the binary Found/Missing badge with a 5-state chip + popover that surfaces current/latest CLI version, an update flag, and per-backend operations (upgrade / r",
     "url": "https://github.com/cyhhao/vibe-remote/pull/282",
     "source": "github_prs",
@@ -1363,6 +1363,186 @@
       "comments: 87",
       "pull request",
       "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] chore: rename llama-stack to ogx and bump to v0.8.0+rhaiv.0",
+    "date": "2026-05-12T18:57:43Z",
+    "summary": "# What does this PR do?\r\n\r\nRename llama-stack to ogx and bump to midstream server tag `v0.8.0+rhaiv.0` with `ogx-client==0.8.0`. Updates package names, repo URLs, CLI commands, config paths (`.llama` \u2192 `.ogx`), postgres defaults, and auth audience across 20 files.\r\n\r\n`.tekton` files, Quay image name",
+    "url": "https://github.com/opendatahub-io/ogx-distribution/pull/358",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ogx-distribution"
+    ]
+  },
+  {
+    "title": "[PR] feat: pre-flight validation of all pipeline providers before run",
+    "date": "2026-05-12T18:59:44Z",
+    "summary": "Closes #120\n\n## Summary\n\nBefore starting any pipeline or audit run, Glossa now checks that every configured provider (cloud + Ollama) is reachable and correctly set up \u2014 instead of discovering a bad API key or offline model only when the first chunk fails.\n\n## Changes\n\n### Backend (Rust)\n- New `pref",
+    "url": "https://github.com/nikazzio/glossa/pull/133",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: glossa"
+    ]
+  },
+  {
+    "title": "[PR] RFC: standardize AI model/vendor fallback \u2014 audit + Phase 1 ModelResolver spec",
+    "date": "2026-05-12T18:55:30Z",
+    "summary": "## The guarantee this PR is the spec for\n\n> **For every AI capability MJ uses (LLM, Embeddings, Reranker, Image Generator, TTS, STT, Video), if a deployment has at least one configured vendor that supports that capability, the corresponding feature works.** No feature should require a *specific* ven",
+    "url": "https://github.com/MemberJunction/MJ/pull/2471",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(install): preflight zstd before Ollama Linux installer and explain sudo prompts",
+    "date": "2026-05-12T18:48:24Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\nOn Debian/Ubuntu hosts without zstd, the Ollama Linux installer aborts during archive extraction. Onboard's install-ollama path now preflights zstd via apt-get before piping the installer, and the install-ollama sudo steps print info lines up front ex",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3420",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(local_ai): Ollama precondition gate + install UX hardening (#1475)",
+    "date": "2026-05-12T18:45:39Z",
+    "summary": "## Summary\n\n- Gate the local-AI UI on whether an Ollama binary is on disk so a missing runtime stops cascading 30s connect timeouts through `has_model()` on every poll\n- Capture Ollama's stderr at server start; on health-probe timeout, classify Windows Controlled Folder Access blocks and surface an ",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/1569",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] feat(local-dev): holistic local development environment (k3d + Tilt + Pulumi)",
+    "date": "2026-05-12T18:31:07Z",
+    "summary": "### What are the relevant tickets?\nN/A \u2014 tracks RFC discussion at https://github.com/mitodl/hq/discussions/10833\n\n### Description (What does it do?)\nIntroduces a fully self-contained local development environment for the MIT Learn application stack, running inside a k3d Kubernetes cluster with Tilt ",
+    "url": "https://github.com/mitodl/ol-infrastructure/pull/4495",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: ol-infrastructure"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update spring dependencies",
+    "date": "2026-05-12T18:51:31Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.cloud:spring-cloud-dependencies](https://spring.io/projects/spring-cloud) ([so",
+    "url": "https://github.com/nilson-aguiar/nbot/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nbot"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard): offer running vLLM in provider menu",
+    "date": "2026-05-12T18:05:37Z",
+    "summary": "## Summary\nFixes the onboarding UX when vLLM is already running locally. The provider menu now offers detected local vLLM directly instead of telling users to restart onboarding with extra environment variables; managed vLLM install/start remains behind the experimental opt-in because it pulls image",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3417",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Update ollama/ollama Docker tag to v0.22.0",
+    "date": "2026-05-12T17:58:36Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| ollama/ollama | minor | `0.21.0` \u2192 `0.22.0` | `0.23.2` (+3) |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (in timezone America/New_York)\n\n- Branch creation\n  - \"after 2am and before 8am on monday\"\n- Aut",
+    "url": "https://github.com/claytono/infra/pull/2175",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: infra"
+    ]
+  },
+  {
+    "title": "[PR] Claude/improve token counter ngmdw",
+    "date": "2026-05-12T17:57:14Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * More accurate token estimation using real BPE counting and a guarded fallback.\n  * Enhanced image token estimation that uses image dimensions and provider-specific costs.\n\n* ",
+    "url": "https://github.com/darkspadez/plexus/pull/28",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: plexus"
+    ]
+  },
+  {
+    "title": "[PR] Investigate ambiguous `halo` issue scope (no code change)",
+    "date": "2026-05-12T17:48:34Z",
+    "summary": "## Summary\n\nDescribe the problem and fix in 2\u20135 bullets:\n\nIf this PR fixes a plugin beta-release blocker, title it `fix(<plugin-id>): beta blocker - <summary>` and link the matching `Beta blocker: <plugin-name> - <summary>` issue labeled `beta-blocker`. Contributors cannot label PRs, so the title is",
+    "url": "https://github.com/finnur-fk/openclaw/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 33",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] feat: add OpenAI-compatible LLM provider",
+    "date": "2026-05-12T17:46:23Z",
+    "summary": "## Summary\n\nAdds a new `openai` LLM provider that uses raw fetch to call any OpenAI-compatible `/v1/chat/completions` endpoint.\n\n## Changes\n\n- `src/types.ts`: Add `openai` to `ProviderType` union\n- `src/providers/openai.ts`: New `OpenAIProvider` class using raw fetch (no SDK dependency)\n  - Supports",
+    "url": "https://github.com/rohitg00/agentmemory/pull/307",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: agentmemory"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-node monorepo to v11",
+    "date": "2026-05-12T17:39:01Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/postgresql](https://redirect.github.com/testcontainers/testcontainers-node) | [`^1",
+    "url": "https://github.com/ansark88/TTM/pull/50",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: TTM"
+    ]
+  },
+  {
+    "title": "[PR] 90 feature add pengine cli",
+    "date": "2026-05-12T17:36:40Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Full Terminal CLI: REPL, one-shot commands, JSON output, progress spinner, syntax highlighting, banner, doctor, session persistence, mention/file inlining, plan mode, native ",
+    "url": "https://github.com/pengine-ai/pengine/pull/94",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: pengine"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the npm_and_yarn group across 10 directories with 14 updates",
+    "date": "2026-05-12T17:33:25Z",
+    "summary": "Bumps the npm_and_yarn group with 1 update in the /cloud/apps/api directory: [hono](https://github.com/honojs/hono).\nBumps the npm_and_yarn group with 1 update in the /cloud/services/_smoke-mcp directory: [hono](https://github.com/honojs/hono).\nBumps the npm_and_yarn group with 1 update in the /clou",
+    "url": "https://github.com/pysol-dev/lain/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: lain"
     ]
   }
 ]
