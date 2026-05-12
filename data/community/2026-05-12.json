@@ -515,7 +515,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-12T12:59:04Z",
+    "date": "2026-05-12T15:40:30Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -659,7 +659,7 @@
   },
   {
     "title": "[PR] SQL ",
-    "date": "2026-05-11T22:05:41Z",
+    "date": "2026-05-12T15:27:13Z",
     "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
     "url": "https://github.com/arthrod/open-webui/pull/65",
     "source": "github_prs",
@@ -683,7 +683,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-12T12:20:12Z",
+    "date": "2026-05-12T16:07:20Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -719,7 +719,7 @@
   },
   {
     "title": "[PR] feat(backend/copilot): local-LLM AutoPilot for the no-API-key install",
-    "date": "2026-05-12T13:02:29Z",
+    "date": "2026-05-12T15:08:08Z",
     "summary": "## Why\n\n`backend/backend/copilot/config.py` (`ChatConfig`) hard-wires the AutoPilot chat path to OpenRouter / Anthropic via OpenRouter-format model slugs. Operators trying to run AutoPilot without a Claude / OpenAI / OpenRouter key today hit two failure modes:\n\n1. The baseline path 401s because `CHA",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/12993",
     "source": "github_prs",
@@ -731,7 +731,7 @@
   },
   {
     "title": "[PR] \u26a0\ufe0f [EXPERIMENTAL] Local PC Executor \u2014 scaffold, spec, and vision docs",
-    "date": "2026-05-11T21:04:02Z",
+    "date": "2026-05-12T15:07:20Z",
     "summary": "## \u26a0\ufe0f EXPERIMENTAL / DANGEROUS / UNTESTED \u2014 DO NOT MERGE\n\n> This PR adds no production code. It is a spec, vision document, and skeleton for a future feature.\n> Nothing here executes. All stubs raise `NotImplementedError`.\n> **Do not run this on any machine you care about.**\n\n---\n\n## What Is This?\n\n",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13050",
     "source": "github_prs",
@@ -779,12 +779,12 @@
   },
   {
     "title": "[PR] improvement(helm): helm chart updates with security, ESO, and docs overhaul",
-    "date": "2026-05-12T06:56:29Z",
+    "date": "2026-05-12T16:22:39Z",
     "summary": "## Summary\n- Apply Pod Security Standards \"restricted\" defaults to every pod and container, set `automountServiceAccountToken: false`, block cloud metadata endpoints via NetworkPolicy egress\n- Auto-partition sensitive `app.env` / `realtime.env` keys into a chart-managed Secret via `envFrom` (no more",
     "url": "https://github.com/simstudioai/sim/pull/4565",
     "source": "github_prs",
     "highlights": [
-      "comments: 23",
+      "comments: 25",
       "pull request",
       "repo: sim"
     ]
@@ -827,12 +827,12 @@
   },
   {
     "title": "[PR] refactor(integrations): apply PostgreSQL pattern to every integration article",
-    "date": "2026-05-12T05:03:25Z",
-    "summary": "# Integration documentation refactor \u2014 apply PostgreSQL pattern repository-wide\r\n\r\nThis PR applies the structural refactor introduced in PRs #747 (PostgreSQL split into `-get-started` / `-host` / `-connect`) and #786 (follow-up polish) to **every** remaining integration article on aspire.dev.\r\n\r\n## ",
+    "date": "2026-05-12T15:13:38Z",
+    "summary": "# Integration documentation refactor \u2014 apply PostgreSQL pattern repository-wide\r\n\r\nPreview: https://aspiredev.netlify.app/\r\n\r\nThis PR applies the structural refactor introduced in PRs #747 (PostgreSQL split into `-get-started` / `-host` / `-connect`) and #786 (follow-up polish) to **every** remainin",
     "url": "https://github.com/microsoft/aspire.dev/pull/920",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 2",
       "pull request",
       "repo: aspire.dev"
     ]
@@ -1067,12 +1067,12 @@
   },
   {
     "title": "[PR] feat: add nightly Responses API test workflows per provider",
-    "date": "2026-05-12T13:06:36Z",
+    "date": "2026-05-12T16:15:48Z",
     "summary": "## What\n\nNightly scheduled workflows that run upstream Responses API integration tests against the distro image, per provider and per model. Results rendered as GitHub Checks via [dorny/test-reporter](https://github.com/dorny/test-reporter).\n\nNo PR gate changes \u2014 these run on schedule only.\n\n### Act",
     "url": "https://github.com/opendatahub-io/ogx-distribution/pull/249",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: ogx-distribution"
     ]
@@ -1091,12 +1091,12 @@
   },
   {
     "title": "[PR] feat(procedures): add safe skill promotion policy",
-    "date": "2026-05-12T13:03:44Z",
+    "date": "2026-05-12T16:13:21Z",
     "summary": "## Summary\n\nFixes #1328.\n\nImplements the procedure-to-skill promotion child adapter/policy on top of the merged #1334 pending-autopilot foundation:\n\n- adds `ProcedurePromotionAdapter` and policy service using shared `PendingItem`/`PendingDecision` contracts, input hashes, policy version, shared acti",
     "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/1339",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 9",
       "pull request",
       "repo: openclaw-hybrid-memory"
     ]
@@ -1187,12 +1187,12 @@
   },
   {
     "title": "[PR] feat(pocket-specialist): single-shot pocket creation + deepagents 0.5.8 + ripple validator",
-    "date": "2026-05-12T12:35:19Z",
+    "date": "2026-05-12T15:41:10Z",
     "summary": "## Summary\r\n\r\nSquashes the full `feat/pocket-specialist` line of work against `ee`. The early-history bullets (deepagents 0.5.8 bump, Responses-API regression fix, single-shot specialist) are still part of this PR \u2014 see the commit list for the originals. Recent work on top:\r\n\r\n### Specialist archite",
     "url": "https://github.com/pocketpaw/pocketpaw/pull/1085",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: pocketpaw"
     ]
@@ -1243,6 +1243,126 @@
       "comments: 2",
       "pull request",
       "repo: tenant-management"
+    ]
+  },
+  {
+    "title": "[PR] feat(backends): backend lifecycle chip + provider config (Claude, Codex, OpenCode)",
+    "date": "2026-05-12T16:17:24Z",
+    "summary": "## Capability\n\nThis PR ships **two related capabilities** for Settings \u2192 Backends:\n\n1. **Backend lifecycle chip** (original scope) \u2014 replaces the binary Found/Missing badge with a 5-state chip + popover that surfaces current/latest CLI version, an update flag, and per-backend operations (upgrade / r",
+    "url": "https://github.com/cyhhao/vibe-remote/pull/282",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: vibe-remote"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard): clean up stale openclaw-gateway dashboard listeners",
+    "date": "2026-05-12T16:14:58Z",
+    "summary": "## Summary\nWhen `openshell forward start` is killed unexpectedly (failed onboard, container crash mid-build, upgrade across versions), the host-side process that holds the NemoClaw dashboard port can survive. The next `nemoclaw onboard` detects the conflict, falls back to a different port, and bakes",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3405",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat: AI settings v3 \u2014 provider detail page + Fix-flow auto-focus",
+    "date": "2026-05-12T16:10:18Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Dedicated AI provider detail page; \u201cFix\u201d routes there and auto-focuses the API key\n  * Per-card overflow menus with Edit/Delete (menu hidden when no actions)\n\n* **UI/UX Impro",
+    "url": "https://github.com/matthiasn/lotti/pull/3147",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lotti"
+    ]
+  },
+  {
+    "title": "[PR] ci: test Scalpel shadow \u2014 jackson2 2.21.3\u21922.21.2 [DO NOT MERGE]",
+    "date": "2026-05-12T16:07:25Z",
+    "summary": "## Test PR for Scalpel shadow comparison validation\n\n**DO NOT MERGE** \u2014 validates [PR #22524](https://github.com/apache/camel/pull/22524).\n\n### Scenario C: Widely-used managed dependency (jackson2-version)\n\nChanges `jackson2-version` from `2.21.3` to `2.21.2` in `parent/pom.xml`. No module directly ",
+    "url": "https://github.com/apache/camel/pull/23072",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] ci: test Scalpel shadow \u2014 junit-jupiter 5.13.4\u21925.14.4 [DO NOT MERGE]",
+    "date": "2026-05-12T16:07:24Z",
+    "summary": "## Test PR for Scalpel shadow comparison validation\n\n**DO NOT MERGE** \u2014 validates [PR #22524](https://github.com/apache/camel/pull/22524).\n\n### Scenario B: Test-scoped managed dependency (junit-jupiter-version)\n\nChanges `junit-jupiter-version` from `5.13.4` to `5.14.4` in `parent/pom.xml`. No module",
+    "url": "https://github.com/apache/camel/pull/23071",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] ci: test Scalpel shadow \u2014 kafka-version 4.2.0\u21924.1.2 [DO NOT MERGE]",
+    "date": "2026-05-12T16:07:24Z",
+    "summary": "## Test PR for Scalpel shadow comparison validation\n\n**DO NOT MERGE** \u2014 validates [PR #22524](https://github.com/apache/camel/pull/22524).\n\n### Scenario A: Narrow managed dependency (kafka-version)\n\nChanges `kafka-version` from `4.2.0` to `4.1.2` in `parent/pom.xml`. No module directly references `$",
+    "url": "https://github.com/apache/camel/pull/23070",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] docs: add Ollama Cloud provider page and fix BYOK documentation gaps",
+    "date": "2026-05-12T15:57:01Z",
+    "summary": "## Summary\n\nThree BYOK documentation gaps identified in a prior audit, plus two additional improvements:\n\n**Point 1 \u2014 Ollama Cloud completely missing from docs:** The `ollama-cloud` provider is fully wired in the codebase (`OLLAMA_API_KEY`, `https://ollama.com/v1`, 35+ hosted models) but had no docu",
+    "url": "https://github.com/Kilo-Org/kilocode/pull/10183",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] feat(translation): add Windows Local AI (Phi Silica) provider",
+    "date": "2026-05-12T15:50:23Z",
+    "summary": "Adds a new translation service backed by the in-box\nMicrosoft.Windows.AI.Text.LanguageModel API (Phi Silica) shipped with\nWindowsAppSDK 2.0.1. Runs on-device on Copilot+ PCs, no API key, no\nnetwork. On non-Copilot+ hardware the Settings page surfaces a friendly\nunavailability message via AIFeatureRe",
+    "url": "https://github.com/xiaocang/easydict_win32/pull/146",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: easydict_win32"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go/modules/postgres to v0.42.0",
+    "date": "2026-05-12T15:34:57Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go/modules/postgres](https://redirect.github.com/testcont",
+    "url": "https://github.com/infratographer/metadata-api/pull/303",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: metadata-api"
+    ]
+  },
+  {
+    "title": "[PR] feat(platform): Add dynamic LLM model registry with admin UI",
+    "date": "2026-05-12T15:30:25Z",
+    "summary": "## Summary\r\n\r\nReplaces the hardcoded `LlmModel` enum with a fully database-driven LLM registry system. Admins can now add, edit, disable, and delete LLM models without code changes or redeployment.\r\n\r\n### Changes \ud83c\udfd7\ufe0f\r\n\r\n**Database Schema:**\r\n- Added 5 new tables: `LlmProvider`, `LlmModel`, `LlmModelC",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/11699",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 87",
+      "pull request",
+      "repo: AutoGPT"
     ]
   }
 ]
