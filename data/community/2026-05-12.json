@@ -515,7 +515,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-12T04:22:33Z",
+    "date": "2026-05-12T07:38:09Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -587,7 +587,7 @@
   },
   {
     "title": "[PR] feat(container): update image docker.io/openwebui/open-webui ( 0.8.12 \u2794 0.9.5 )",
-    "date": "2026-05-12T03:06:25Z",
+    "date": "2026-05-12T06:59:26Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/openwebui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `0.8.12` \u2192 `0.9.5` |\n\n---\n\n> [!WARNING]\n> Some d",
     "url": "https://github.com/gavinmcfall/home-ops/pull/1870",
     "source": "github_prs",
@@ -599,7 +599,7 @@
   },
   {
     "title": "[PR] feat(container): update image docker.io/n8nio/n8n ( 2.17.0 \u2794 2.20.6 )",
-    "date": "2026-05-12T03:05:38Z",
+    "date": "2026-05-12T06:58:33Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.17.0` \u2192 `2.20.6` |\n\n---\n\n> [!WARNING]\n> ",
     "url": "https://github.com/gavinmcfall/home-ops/pull/1837",
     "source": "github_prs",
@@ -611,7 +611,7 @@
   },
   {
     "title": "[PR] [DO NOT MERGE] Test: build with Java change in camel-api (1 marker)",
-    "date": "2026-05-11T23:00:11Z",
+    "date": "2026-05-12T06:11:15Z",
     "summary": "Test PR \u2014 Javadoc change in `core/camel-api`. A `.rewrite-enabled` marker should be created only for `core/camel-api`, and OpenRewrite should run only in that module.\n\nCompanion to the \"no Java change\" test PR. **DO NOT MERGE** \u2014 close after comparing build times.",
     "url": "https://github.com/apache/camel/pull/23123",
     "source": "github_prs",
@@ -683,7 +683,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-11T21:50:28Z",
+    "date": "2026-05-12T07:27:43Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -779,12 +779,12 @@
   },
   {
     "title": "[PR] improvement(helm): helm chart updates with security, ESO, and docs overhaul",
-    "date": "2026-05-12T04:37:12Z",
+    "date": "2026-05-12T06:56:29Z",
     "summary": "## Summary\n- Apply Pod Security Standards \"restricted\" defaults to every pod and container, set `automountServiceAccountToken: false`, block cloud metadata endpoints via NetworkPolicy egress\n- Auto-partition sensitive `app.env` / `realtime.env` keys into a chart-managed Secret via `envFrom` (no more",
     "url": "https://github.com/simstudioai/sim/pull/4565",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 23",
       "pull request",
       "repo: sim"
     ]
@@ -827,7 +827,7 @@
   },
   {
     "title": "[PR] refactor(integrations): apply PostgreSQL pattern to every integration article",
-    "date": "2026-05-12T04:23:01Z",
+    "date": "2026-05-12T05:03:25Z",
     "summary": "# Integration documentation refactor \u2014 apply PostgreSQL pattern repository-wide\r\n\r\nThis PR applies the structural refactor introduced in PRs #747 (PostgreSQL split into `-get-started` / `-host` / `-connect`) and #786 (follow-up polish) to **every** remaining integration article on aspire.dev.\r\n\r\n## ",
     "url": "https://github.com/microsoft/aspire.dev/pull/920",
     "source": "github_prs",
@@ -967,6 +967,102 @@
       "comments: 0",
       "pull request",
       "repo: ollyscale"
+    ]
+  },
+  {
+    "title": "[PR] Make tests better",
+    "date": "2026-05-12T07:43:50Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **New Features**\n  * Multi-configuration benchmark sweeps: Run benchmarks across multiple RAM/CPU combinations simultaneously\n  * Top Models leaderboard with composite performa",
+    "url": "https://github.com/Shevik11/diploma/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: diploma"
+    ]
+  },
+  {
+    "title": "[PR] [AIDEN] feat(cognee): Phase 0 wrapper + smoke runner + README",
+    "date": "2026-05-12T07:26:01Z",
+    "summary": "## Summary\n\nCognee Phase 0 architecture deliverables per Dave directive 2026-05-12 + Elliot dispatch ts 1778562982 (Gemini amendment ts 1778563xxx). DRAFT for early peer review \u2014 opening before Atlas's pip install + smoke test so Max + Elliot can review the wrapper API surface in parallel.\n\n**Scope ",
+    "url": "https://github.com/Keiracom/Agency_OS/pull/764",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: Agency_OS"
+    ]
+  },
+  {
+    "title": "[PR] docs: add sanctuary-runtime/docs/top-25-shortlist.md",
+    "date": "2026-05-12T07:19:06Z",
+    "summary": "Adds a concise operator-facing shortlist companion to the broader Linux AI agent catalog, scoped entirely to the Sanctuary 3-node cluster rather than the general ecosystem.\n\n## Contents\n\n- **Internal stack baseline** \u2014 13 first-class components (Agent Deck, Avatar agents, signal-lang, agentmemory, O",
+    "url": "https://github.com/Brucesquared2/agent-deck/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agent-deck"
+    ]
+  },
+  {
+    "title": "[PR] feat: multi-key API management with rotation, validation & failover",
+    "date": "2026-05-12T07:08:52Z",
+    "summary": "- Add provider key pools (gemini/groq) to storage with ready/exhausted/invalid states\r\n- New src/utils/apiKeys.js: validation probes, error classification, withKeyRotation(), background revalidation\r\n- IPC handlers: api-keys:list, api-keys:add, api-keys:remove, api-keys:revalidate, api-keys:revalida",
+    "url": "https://github.com/sohzm/cheating-daddy/pull/330",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cheating-daddy"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-05-12T07:02:11Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-java monorepo to v1.20.6 - abandoned",
+    "date": "2026-05-12T06:19:56Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | Age | Adoption | Passing | Confidence |\n|---|---|---|---|---|---|\n| [org.testcontainers:postgresql](https://java.testcontainers.org) ([source](https://redirect.github.com/testcontainers/testcontainers-java)) | `1.19.8` -> `1.20.6` | [![ag",
+    "url": "https://github.com/lf-energy-projects-renovation-state/open-smart-grid-platform/pull/79",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: open-smart-grid-platform"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go/modules/azure to v0.42.0",
+    "date": "2026-05-12T06:02:56Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go/modules/azure](https://redirect.github.com/testcontain",
+    "url": "https://github.com/emerconn/dlqt/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: dlqt"
+    ]
+  },
+  {
+    "title": "[PR] Add a dedicated OpenAI-compatible LLM adapter",
+    "date": "2026-05-12T05:16:29Z",
+    "summary": "## Summary\n\nThis PR adds a dedicated `OpenAI Compatible` LLM adapter for OpenAI-style chat completion endpoints that are not the official OpenAI service.\n\nThe implementation is intentionally small in scope:\n- adds a new `OpenAI Compatible` LLM adapter backed by LiteLLM's `custom_openai` path\n- keeps",
+    "url": "https://github.com/Zipstack/unstract/pull/1895",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: unstract"
     ]
   }
 ]
