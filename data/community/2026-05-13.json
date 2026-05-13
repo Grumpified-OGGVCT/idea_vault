@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-13T15:53:36Z",
+    "date": "2026-05-13T18:56:42Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -587,7 +587,7 @@
   },
   {
     "title": "[PR] 90 feature add pengine cli",
-    "date": "2026-05-13T15:45:19Z",
+    "date": "2026-05-13T17:45:10Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Full Terminal CLI: REPL, one-shot commands, JSON output, progress spinner, syntax highlighting, banner, doctor, session persistence, mention/file inlining, plan mode, native ",
     "url": "https://github.com/pengine-ai/pengine/pull/94",
     "source": "github_prs",
@@ -599,12 +599,12 @@
   },
   {
     "title": "[PR] fix(embeddings): allow OpenAI-compatible local endpoints (#3883)",
-    "date": "2026-05-12T22:45:15Z",
+    "date": "2026-05-13T18:02:01Z",
     "summary": "## Description\n\nFixes #3883\n\nA user configured LM Studio as the LLM via the OpenAI-Compatible Endpoint provider and chat worked, but the embeddings tab failed with *\"OpenAI API not reachable\"*. The embeddings stack had no path to the same kind of custom OpenAI-compatible endpoint:\n\n- `EmbeddingProvi",
     "url": "https://github.com/LearningCircuit/local-deep-research/pull/4026",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 4",
       "pull request",
       "repo: local-deep-research"
     ]
@@ -683,7 +683,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-13T14:22:09Z",
+    "date": "2026-05-13T17:10:48Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -707,7 +707,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-13T14:08:32Z",
+    "date": "2026-05-13T17:13:03Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) |  | patch | `9.5.11` \u2192 `9.5.14` |\n| [argo-workflows](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -791,36 +791,36 @@
   },
   {
     "title": "[PR] feat(backends): backend lifecycle chip + provider config (Claude, Codex, OpenCode)",
-    "date": "2026-05-13T16:19:34Z",
+    "date": "2026-05-13T18:56:22Z",
     "summary": "## Capability\n\nThis PR ships **two related capabilities** for Settings \u2192 Backends:\n\n1. **Backend lifecycle chip** (original scope) \u2014 replaces the binary Found/Missing badge with a 5-state chip + popover that surfaces current/latest CLI version, an update flag, and per-backend operations (upgrade / r",
     "url": "https://github.com/cyhhao/vibe-remote/pull/282",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 19",
       "pull request",
       "repo: vibe-remote"
     ]
   },
   {
-    "title": "[PR] fix: cross-server cache invalidation, app refresh resilience, query ParameterHints",
-    "date": "2026-05-13T15:07:19Z",
-    "summary": "## Summary\n- **Cross-server cache invalidation**: Add shared storage provider support for multi-server cache invalidation via `BaseEntityEvent` pub/sub, so entity changes on one server propagate to other servers' local caches\n- **\"No Applications Available\" fix**: Add `repairApplicationEntities` to ",
+    "title": "[PR] fix: cache architecture hardening, cross-server invalidation, app refresh resilience, query ParameterHints",
+    "date": "2026-05-13T18:28:35Z",
+    "summary": "## Summary\n\nThis PR addresses several caching architecture issues identified through a deep audit, adds cross-server cache invalidation support, resolves the \"No Applications Available\" browser refresh bug, and introduces query ParameterHints for the extraction pipeline.\n\n### Cache Architecture Fixe",
     "url": "https://github.com/MemberJunction/MJ/pull/2587",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: MJ"
     ]
   },
   {
     "title": "[PR] chore(deps): update go-minor",
-    "date": "2026-05-13T03:29:57Z",
+    "date": "2026-05-13T17:46:43Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/Netcracker/qubership-core-site-management/pull/175",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: qubership-core-site-management"
     ]
@@ -1055,7 +1055,7 @@
   },
   {
     "title": "[PR] Gcp cloudsql faq bootstrap",
-    "date": "2026-05-13T06:34:04Z",
+    "date": "2026-05-13T16:55:01Z",
     "summary": "# Add Cloud SQL FAQ bootstrap and Postgres-backed FAQ suggestions\r\n\r\n## Summary\r\n\r\nThis PR adds a Postgres-backed FAQ retrieval flow for \"Did you mean?\" suggestions and direct FAQ clickthrough, bootstraps FAQ data into Postgres during deploy, and updates both local and GCP deployment paths to run th",
     "url": "https://github.com/RishavT/iitmdocs/pull/114",
     "source": "github_prs",
@@ -1235,7 +1235,7 @@
   },
   {
     "title": "MLX - nvfp4 models on MacOs extremely slow",
-    "date": "2026-05-13T12:03:27Z",
+    "date": "2026-05-13T16:25:23Z",
     "summary": "### What is the issue?\n\nWhen running models (like qwen3.6:27b-nvfp4,  qwen3.5:27b-coding-nvfp4, qwen3.6:35b-a3b-nvfp4) until version 0.20.0 they worked fine. A simple prompt took around 2 minutes to produce a result (ollama run MODEL \"give me a definition for strategy and for tactics. Provide at lea",
     "url": "https://github.com/ollama/ollama/issues/16030",
     "source": "github_issues",
@@ -1379,7 +1379,7 @@
   },
   {
     "title": "[PR] refactor(provider-settings): migrate to v2 data layer and UI",
-    "date": "2026-05-13T15:57:35Z",
+    "date": "2026-05-13T17:00:01Z",
     "summary": "### What this PR does\n\nBefore this PR:\n\n- Provider settings still used the legacy `/settings/provider` implementation.\n- Provider-related v2 data capability was incomplete for the refactored provider settings page:\n  - provider ordering still depended on legacy sort semantics instead of a standard `",
     "url": "https://github.com/CherryHQ/cherry-studio/pull/14631",
     "source": "github_prs",
@@ -1403,7 +1403,7 @@
   },
   {
     "title": "[PR] Jsje",
-    "date": "2026-05-13T14:51:29Z",
+    "date": "2026-05-13T18:19:28Z",
     "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
     "url": "https://github.com/arthrod/generative-ai/pull/7",
     "source": "github_prs",
@@ -1471,6 +1471,114 @@
       "comments: 10",
       "pull request",
       "repo: rhdh-local"
+    ]
+  },
+  {
+    "title": "[PR] fix(models): prioritize Ollama Cloud models",
+    "date": "2026-05-13T18:43:13Z",
+    "summary": "## Summary\n- Prioritizes Ollama Cloud models in model listing/selection behavior.\n- Updates focused tests for Ollama Cloud provider ordering.\n\n## Files changed\n- `hermes_cli/models.py`\n- `tests/hermes_cli/test_ollama_cloud_provider.py`\n\n## Test commands/results\n```bash\npython3 -m py_compile hermes_c",
+    "url": "https://github.com/NousResearch/hermes-agent/pull/25174",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat(terraform): manage Tailscale ACL via tailscale provider",
+    "date": "2026-05-13T18:21:45Z",
+    "summary": "## Summary\n\nPulls the tailnet policy out of the admin console and into iac. The ACL is the one knob that controls openclaw's ability to reach the local Ollama (port 11434) and Exo (port 52415) endpoints on ubuntu-beast \u2014 having it manually editable in the cloud console means it can drift without any",
+    "url": "https://github.com/compscidr/iac/pull/423",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: iac"
+    ]
+  },
+  {
+    "title": "[PR] Canary Token Guardrail: a native LangChain4j guardrail feature to detect and remediate LLM07:2025 System Prompt Leakage",
+    "date": "2026-05-13T18:09:46Z",
+    "summary": "## Issue\r\nCloses #4587 \r\n\r\n## Change\r\nImplements canary token-based detection mechanism to identify and mitigate prompt injection attacks (OWASP LLM07). Injects unique tokens into prompts and monitors for their appearance in model outputs to detect potential injection attempts.\r\n\r\n## General checkli",
+    "url": "https://github.com/langchain4j/langchain4j/pull/4604",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 22",
+      "pull request",
+      "repo: langchain4j"
+    ]
+  },
+  {
+    "title": "[PR] feat: add dreamProvider/dreamModel settings to route memory consolidation to a custom model",
+    "date": "2026-05-13T17:37:44Z",
+    "summary": "## Summary\n\nAdds optional app settings (`dreamProvider`, `dreamModel`, `dreamCredentialId`, `dreamEndpoint`) that override the LLM used for memory consolidation and the daily-digest pass. When unset, behavior is unchanged \u2014 consolidation falls back to the target agent's configured generation model.\n",
+    "url": "https://github.com/swarmclawai/swarmclaw/pull/84",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: swarmclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update python non-major dependencies",
+    "date": "2026-05-13T17:35:12Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [cachetools](https://redirec",
+    "url": "https://github.com/ilanbenb/wa_llm/pull/141",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: wa_llm"
+    ]
+  },
+  {
+    "title": "[PR] feat(cli): aiia doctor \u2014 environment + service health diagnostics",
+    "date": "2026-05-13T17:32:47Z",
+    "summary": "## Summary\n\nNew CLI subcommand: `aiia doctor` runs ten checks against the local environment + services and reports each with a status badge + actionable hint. Designed to be the first thing someone runs when \"something's wrong\" instead of `pip install -e .` or grep through logs.\n\n### Sample output\n\n",
+    "url": "https://github.com/ericlovo/AIIA/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AIIA"
+    ]
+  },
+  {
+    "title": "[PR] feat(lint): expand slop detection, research freshness, portability",
+    "date": "2026-05-13T17:25:17Z",
+    "summary": "## Summary\n\nExpands AI slop detection from 17 to 25 patterns, adds monthly research freshness tracking, shell portability checks, and improves the summarize-headers workflow.\n\n## Changes\n\n### New: AI Slop Detection (ADR-119)\n- 8 new patterns backed by academic research (arxiv 2601.19264, 2604.16754)",
+    "url": "https://github.com/rkristelijn/llama-cli/pull/139",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: llama-cli"
+    ]
+  },
+  {
+    "title": "[PR] fix(agent-workspaces): inject Vertex AI config into workspace at creation time",
+    "date": "2026-05-13T17:23:02Z",
+    "summary": "When a Vertex AI model is selected, ensureModelSecret now populates\r\nthe workspace configuration with the required environment variables\r\n(CLAUDE_CODE_USE_VERTEX, CLOUD_ML_REGION, ANTHROPIC_VERTEX_PROJECT_ID)\r\nand mounts the ADC credentials file. Previously this was only done\r\nby the onboarding pane",
+    "url": "https://github.com/openkaiden/kaiden/pull/1877",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump the go_modules group across 1 directory with 11 updates",
+    "date": "2026-05-13T17:03:05Z",
+    "summary": "Bumps the go_modules group with 5 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [github.com/kedacore/keda/v2](https://github.com/kedacore/keda) | `2.16.0` | `2.17.3` |\n| [github.com/ollama/ollama](https://github.com/ollama/ollama) | `0.5.1` | `0.20.3` |\n| [helm.sh/helm/v",
+    "url": "https://github.com/pellera9/k8sgpt/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k8sgpt"
     ]
   }
 ]
