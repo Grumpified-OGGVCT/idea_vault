@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-14T04:43:36Z",
+    "date": "2026-05-14T07:15:01Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -682,8 +682,8 @@
     ]
   },
   {
-    "title": "[PR] chore(deps): update dependency pydantic-ai to >=1.95.1",
-    "date": "2026-05-13T20:45:31Z",
+    "title": "[PR] chore(deps): update dependency pydantic-ai to >=1.96.0",
+    "date": "2026-05-14T05:44:23Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pydantic-ai](https://redire",
     "url": "https://github.com/StacklokLabs/mcp-optimizer/pull/534",
     "source": "github_prs",
@@ -730,8 +730,8 @@
     ]
   },
   {
-    "title": "[PR] fix(deps): update dependency pydantic-ai to >=1.95.1",
-    "date": "2026-05-13T20:37:02Z",
+    "title": "[PR] fix(deps): update dependency pydantic-ai to >=1.96.0",
+    "date": "2026-05-14T05:06:45Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pydantic-ai](https://redire",
     "url": "https://github.com/StacklokLabs/mcp-tef/pull/123",
     "source": "github_prs",
@@ -791,19 +791,19 @@
   },
   {
     "title": "[PR] refactor(provider-settings): migrate to v2 data layer and UI",
-    "date": "2026-05-14T04:37:27Z",
+    "date": "2026-05-14T07:31:57Z",
     "summary": "### What this PR does\n\nBefore this PR:\n\n- Provider settings still used the legacy `/settings/provider` implementation.\n- Provider-related v2 data capability was incomplete for the refactored provider settings page:\n  - provider ordering still depended on legacy sort semantics instead of a standard `",
     "url": "https://github.com/CherryHQ/cherry-studio/pull/14631",
     "source": "github_prs",
     "highlights": [
-      "comments: 17",
+      "comments: 19",
       "pull request",
       "repo: cherry-studio"
     ]
   },
   {
     "title": "[PR] deps: Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6 (stable/8.9)",
-    "date": "2026-05-14T04:35:42Z",
+    "date": "2026-05-14T07:33:17Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
     "url": "https://github.com/camunda/camunda/pull/53042",
     "source": "github_prs",
@@ -851,7 +851,7 @@
   },
   {
     "title": "[PR] fix(media): allow private openai compatible audio transcription endpoints",
-    "date": "2026-05-14T03:24:23Z",
+    "date": "2026-05-14T05:04:51Z",
     "summary": "## Summary\r\n\r\n- Problem: Audio media-understanding transcription could target self-hosted OpenAI-compatible endpoints, but audio config did not expose the private-network request opt-in used by guarded provider HTTP.\r\n- Why it matters: Trusted local, RFC1918, or tailnet Whisper-style endpoints need ",
     "url": "https://github.com/openclaw/openclaw/pull/73817",
     "source": "github_prs",
@@ -875,7 +875,7 @@
   },
   {
     "title": "[PR] feat(backend/copilot): local-LLM AutoPilot for the no-API-key install",
-    "date": "2026-05-14T02:26:49Z",
+    "date": "2026-05-14T07:02:00Z",
     "summary": "## Why\n\n`backend/backend/copilot/config.py` (`ChatConfig`) hard-wires the AutoPilot chat path to OpenRouter / Anthropic via OpenRouter-format model slugs. Operators trying to run AutoPilot without a Claude / OpenAI / OpenRouter key today hit two failure modes:\n\n1. The baseline path 401s because `CHA",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/12993",
     "source": "github_prs",
@@ -919,6 +919,102 @@
       "comments: 0",
       "pull request",
       "repo: homeserver-deployment"
+    ]
+  },
+  {
+    "title": "[PR] Gcp cloudsql faq bootstrap",
+    "date": "2026-05-14T07:45:03Z",
+    "summary": "# Add Cloud SQL FAQ bootstrap and Postgres-backed FAQ suggestions\r\n\r\n## Summary\r\n\r\nThis PR adds a Postgres-backed FAQ retrieval flow for \"Did you mean?\" suggestions and direct FAQ clickthrough, bootstraps FAQ data into Postgres during deploy, and updates both local and GCP deployment paths to run th",
+    "url": "https://github.com/RishavT/iitmdocs/pull/114",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: iitmdocs"
+    ]
+  },
+  {
+    "title": "[PR] deps: Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6 (main)",
+    "date": "2026-05-14T07:29:12Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
+    "url": "https://github.com/camunda/camunda/pull/53096",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: camunda"
+    ]
+  },
+  {
+    "title": "[PR] Gemini authentication with browser-based OAuth login and model selection dropdowns",
+    "date": "2026-05-14T07:18:14Z",
+    "summary": "\n\n<!-- codesmith:footer -->\n---\n<a href=\"https://app.blacksmith.sh/claude-code-best/codesmith/claude-code/pr/449\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://pr-comments-assets.blacksmith.sh/codesmith/view-in-codesmith-dark.svg\"><source media=\"(prefers-color-scheme: light)\"",
+    "url": "https://github.com/claude-code-best/claude-code/pull/449",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: claude-code"
+    ]
+  },
+  {
+    "title": "[PR] DOC-3498: `tinymceai` on-prem documentation.",
+    "date": "2026-05-14T06:38:23Z",
+    "summary": "## Ticket\r\n\r\n[DOC-3498](https://ephocks.atlassian.net/browse/DOC-3498)\r\n\r\n## Summary\r\n\r\nComplete on-premises deployment documentation for the TinyMCE AI service. This introduces 10 new pages covering every aspect of self-hosted AI deployment, from initial setup through production hardening and advan",
+    "url": "https://github.com/tinymce/tinymce-docs/pull/4137",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: tinymce-docs"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-java monorepo to v1.20.6 - abandoned",
+    "date": "2026-05-14T06:29:54Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | Age | Adoption | Passing | Confidence |\n|---|---|---|---|---|---|\n| [org.testcontainers:postgresql](https://java.testcontainers.org) ([source](https://redirect.github.com/testcontainers/testcontainers-java)) | `1.19.8` -> `1.20.6` | [![ag",
+    "url": "https://github.com/lf-energy-projects-renovation-state/open-smart-grid-platform/pull/79",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: open-smart-grid-platform"
+    ]
+  },
+  {
+    "title": "[PR] security: audit and land PR #202 with corrective engineering",
+    "date": "2026-05-14T06:00:10Z",
+    "summary": "## Audit goal\n\nSalvage PR #202's strong architectural work in a **single** PR while addressing the issues that got it abandoned and the audit principles laid down in the directive:\n\n- clean signatures: no shims surviving past dead features\n- no silent failure: every refusal raises with operator-acti",
+    "url": "https://github.com/Steel-SecAdv-LLC/Mercury-Agent/pull/208",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Mercury-Agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency pydantic-ai-slim to v1.96.0",
+    "date": "2026-05-14T05:30:30Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pydantic-ai-slim](https://redirect.github.com/pydantic/pydantic-ai) ([source](https://redirect.git",
+    "url": "https://github.com/Automaat/ai-casino/pull/1109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ai-casino"
+    ]
+  },
+  {
+    "title": "[PR] Update Fleet-maintained apps",
+    "date": "2026-05-14T05:23:31Z",
+    "summary": "Automated ingestion of latest Fleet-maintained app data.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n## Release Notes\n\n* **Chores**\n  * Updated supported application versions: Camtasia (to 202026.1.0), CotEditor (to 7.0.3), Docker Desktop (t",
+    "url": "https://github.com/fleetdm/fleet/pull/45454",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: fleet"
     ]
   }
 ]
