@@ -551,7 +551,7 @@
   },
   {
     "title": "[PR] feat: engine load health in diagnostics, recovery telemetry, cache architecture fixes",
-    "date": "2026-05-13T23:39:34Z",
+    "date": "2026-05-14T17:10:07Z",
     "summary": "## Summary\n\nFollow-on to PR #2587 addressing review feedback from AN-BC.\n\n### Engine Load Health in System Diagnostics\n- Add public `DataMapEntries` accessor on `BaseEngine` to expose per-property load state (success/failure, error messages, row counts)\n- Integrate into existing **Admin \u2192 Monitoring",
     "url": "https://github.com/MemberJunction/MJ/pull/2591",
     "source": "github_prs",
@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-14T14:48:33Z",
+    "date": "2026-05-14T17:52:39Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -755,12 +755,12 @@
   },
   {
     "title": "Image Gen with Flux Not working with v0.23.1",
-    "date": "2026-05-14T02:21:12Z",
+    "date": "2026-05-14T16:00:08Z",
     "summary": "### What is the issue?\n\nI had image generation working in 22.1. Since updating to 23.x, this no longer works, and processes crash out almost immediately. The same happened with command line and API. Any prompt, the following was for \"A red apple\". Downgraded to 22.1 and everything works as expected.",
     "url": "https://github.com/ollama/ollama/issues/15999",
     "source": "github_issues",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "state: open",
       "repo: ollama"
     ]
@@ -815,7 +815,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-05-14T04:33:41Z",
+    "date": "2026-05-14T17:35:51Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -983,7 +983,7 @@
   },
   {
     "title": "[PR] security: audit and land PR #202 with corrective engineering",
-    "date": "2026-05-14T15:13:11Z",
+    "date": "2026-05-14T17:54:58Z",
     "summary": "## Audit goal\n\nSalvage PR #202's strong architectural work in a **single** PR while addressing the issues that got it abandoned and the audit principles laid down in the directive:\n\n- clean signatures: no shims surviving past dead features\n- no silent failure: every refusal raises with operator-acti",
     "url": "https://github.com/Steel-SecAdv-LLC/Mercury-Agent/pull/208",
     "source": "github_prs",
@@ -1043,12 +1043,12 @@
   },
   {
     "title": "[PR] feat: weekly Responses API tests with GitHub Pages report",
-    "date": "2026-05-14T15:23:01Z",
-    "summary": "## Summary\n\n- Add weekly orchestrator workflow (`responses-weekly.yml`) that runs upstream Responses API integration tests across all providers (OpenAI, Vertex AI, vLLM MaaS) every Sunday at 22:00 UTC\n- Deploy an interactive test report to [GitHub Pages](https://opendatahub-io.github.io/ogx-distribu",
+    "date": "2026-05-14T17:34:49Z",
+    "summary": "## Summary\r\n\r\n- Add weekly orchestrator workflow (`responses-weekly.yml`) that runs upstream Responses API integration tests across all providers (OpenAI, Vertex AI, vLLM MaaS) every Sunday at 22:00 UTC\r\n- Deploy an interactive test report to [GitHub Pages](https://opendatahub-io.github.io/ogx-distr",
     "url": "https://github.com/opendatahub-io/ogx-distribution/pull/249",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 3",
       "pull request",
       "repo: ogx-distribution"
     ]
@@ -1163,7 +1163,7 @@
   },
   {
     "title": "[PR] RHOAIENG-60183: LlamaStack Upgrade Path for 1.0.0",
-    "date": "2026-05-14T11:06:27Z",
+    "date": "2026-05-14T17:14:56Z",
     "summary": "Jira: https://redhat.atlassian.net/browse/RHOAIENG-60183\n\n## Description\n\nFull migration of the Gen AI BFF, frontend, and test infrastructure from **LlamaStack** to **OGX 1.0.0**, aligned with the upstream project rename and breaking API changes.\n\n### Commits\n\n| Commit | Summary |\n|--------|--------",
     "url": "https://github.com/opendatahub-io/odh-dashboard/pull/7403",
     "source": "github_prs",
@@ -1247,12 +1247,12 @@
   },
   {
     "title": "[PR] v2.5.8: MCP host + diagnostics + Bundle E port from Electron",
-    "date": "2026-05-14T15:21:05Z",
+    "date": "2026-05-14T17:45:37Z",
     "summary": "## Summary\n\nWraps two branches of work on top of v2.5.7 main, cuts v2.5.8.\n\n### Pre-E plumbing (MCP / diagnostics / portable update)\n- **MCP host page** with remote endpoint validator and runtime status surfacing for `mcp.json` servers.\n- **Diagnostics page** with report builder; startup logs route ",
     "url": "https://github.com/RedWoodOG/Hermes-Desktop/pull/68",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 8",
       "pull request",
       "repo: Hermes-Desktop"
     ]
@@ -1271,7 +1271,7 @@
   },
   {
     "title": "[PR] Release v3.8.0",
-    "date": "2026-05-14T14:53:30Z",
+    "date": "2026-05-14T17:18:19Z",
     "summary": "## [3.8.0] \u2014 2026-05-06\n\n### \u2728 New Features\n\n- **feat(providers):** add Command Code provider (#2199 \u2014 thanks @ddarkr)\n- **feat(providers):** add ModelScope provider-specific 429 handling and retry logic (#2202 \u2014 thanks @InkshadeWoods)\n- **feat(providers):** update Gemini CLI provider models catalog",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/2248",
     "source": "github_prs",
@@ -1295,7 +1295,7 @@
   },
   {
     "title": "[PR] fix(onboard): allow sudo prompts in express install",
-    "date": "2026-05-14T14:50:52Z",
+    "date": "2026-05-14T17:32:13Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\nAllows express install to keep non-interactive onboarding defaults while permitting sudo password prompts for required host setup. This fixes Ollama systemd override setup on hosts where the drop-in is readable normally, but `sudo -n` fails because su",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3492",
     "source": "github_prs",
@@ -1355,7 +1355,7 @@
   },
   {
     "title": "[PR] [RHIDP-11653] Include Lightspeed By Default",
-    "date": "2026-05-14T13:52:08Z",
+    "date": "2026-05-14T17:49:25Z",
     "summary": "<!-- \r\nThank you for opening a PR! Please take the time to fill in the details below.\r\n-->\r\n\r\n## Description\r\n<!--\r\nPlease explain the changes you made here.\r\n-->\r\n- Moves Lightspeed to the main default `compose.yaml`\r\n- Moves all Lightspeed configs/files to the root level `/configs`\r\n   - Subsequen",
     "url": "https://github.com/redhat-developer/rhdh-local/pull/202",
     "source": "github_prs",
@@ -1375,6 +1375,138 @@
       "comments: 9",
       "pull request",
       "repo: open-webui"
+    ]
+  },
+  {
+    "title": "Flow uploaded via API doesn't resolve global variables until opened in frontend",
+    "date": "2026-05-14T15:47:10Z",
+    "summary": "### Bug Description\n\nWhen uploading a flow via API and immediately running it (also via API), global variables configured with \"Apply to Fields\" are not resolved. The flow fails with:\n\nOpenAI API key is required when using OpenAI provider\n\nHowever, opening the same flow in the frontend Playground an",
+    "url": "https://github.com/langflow-ai/langflow/issues/11781",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 4",
+      "state: open",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Service Gateway \u2014 BYOS internal platform services dashboard",
+    "date": "2026-05-14T17:55:14Z",
+    "summary": "## Summary\n\nAdds a Service Gateway API and dashboard page for managing BYOS's own internal platform services. The gateway tracks only BYOS-internal subsystems \u2014 no external repos or products.\n\n**Internal services registered:**\n- **Ollama Local Inference** \u2014 primary AI provider (local LLM)\n- **Groq C",
+    "url": "https://github.com/reprewindai-dev/byosbackened/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: byosbackened"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard,uninstall): replace misleading recovery messages (#3456)",
+    "date": "2026-05-14T17:51:12Z",
+    "summary": "> **Draft for visibility.** Issue-autopilot Stages 4-5 of #3456. Will mark ready once batch self-review + CI complete.\n\n## Summary\n\nCloses the two remaining output threads in #3456 after the core dead-loop fix already landed on `main` (via #3459, #3434, #3483). Full sub-bug mapping in the [#3456 sta",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3520",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency dev.langchain4j:langchain4j-bom to v1.14.1",
+    "date": "2026-05-14T17:40:06Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j-bom](https://redirect.github.com/langchain4j/langchain4j/tree/main/langchain4j-bom) ([source](https://",
+    "url": "https://github.com/apache/solr/pull/3990",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: solr"
+    ]
+  },
+  {
+    "title": "[PR] Refactor launcher core, backend contracts, and chat runtime",
+    "date": "2026-05-14T17:39:55Z",
+    "summary": "## Summary\n\nThis PR is a broad launcher refactor that prepares Axelate for a more reliable `nightly` baseline. It touches the core boot flow, backend contracts, chat runtime, module/download lifecycle, integrations, docs, CI, and dependency/security hygiene. The goal is not a visual-only pass; it is",
+    "url": "https://github.com/F0RLE/Axelate/pull/79",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 57",
+      "pull request",
+      "repo: Axelate"
+    ]
+  },
+  {
+    "title": "[PR] \ud83d\udd12 Redact hardcoded secrets from version-controlled .env file",
+    "date": "2026-05-14T17:31:58Z",
+    "summary": "\ud83c\udfaf **What:** A large number of highly sensitive production API keys, tokens, and credentials (including `OLLAMA_CLOUD_API`, OpenAI, Anthropic, GitHub, Cloudflare, Supabase, Azure, etc.) were hardcoded into the version-controlled `.env` file. These have all been replaced with a `<SECRET>` placeholder.",
+    "url": "https://github.com/BrackenW3/AI_Agent_Skills/pull/26",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: AI_Agent_Skills"
+    ]
+  },
+  {
+    "title": "[PR] Add LM Studio as a local model provider",
+    "date": "2026-05-14T17:31:11Z",
+    "summary": "## Summary\n\n- Adds LM Studio as a first-class local AI provider alongside Ollama.\n- Wires LM Studio provider config through Rust config schemas, persistence, Tauri config mapping, routing, diagnostics, and local inference.\n- Implements LM Studio model discovery and chat completion calls against its ",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/1750",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] fix(install): auto-generate missing NVIDIA CDI device spec during installer preflight",
+    "date": "2026-05-14T17:30:54Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\nAuto-repair missing NVIDIA CDI device specs during the standard NemoClaw installer flow so fresh DGX Spark installs do not stop before onboarding. Direct `nemoclaw onboard` still reports the manual remediation if users bypass the installer.\r\n\r\n## Rela",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3428",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] [bench-S41] SEO refresh: broaden DeepSeek/EC2 post to \"Run any open-source LLM on AWS EC2 with Ollama\"",
+    "date": "2026-05-14T17:11:13Z",
+    "summary": "Fixture for benchmarking the docs-review pipeline; mirrors pulumi/docs#18743. Do not merge.",
+    "url": "https://github.com/CamSoper/pulumi.docs/pull/161",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 33",
+      "pull request",
+      "repo: pulumi.docs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.9.5",
+    "date": "2026-05-14T17:01:22Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.9.1` \u2192 `v0.9.5` |\n\n---\n\n> [!WARNING]\n> Some d",
+    "url": "https://github.com/auxves/infra/pull/561",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: infra"
+    ]
+  },
+  {
+    "title": "[PR] Update Fleet-maintained apps",
+    "date": "2026-05-14T16:46:54Z",
+    "summary": "Automated ingestion of latest Fleet-maintained app data.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **Chores**\n  * Updated version metadata for 13 maintained applications (Camtasia, CotEditor, Cursor, Docker, Granola, Miro, NordVPN, Ollam",
+    "url": "https://github.com/fleetdm/fleet/pull/45503",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: fleet"
     ]
   }
 ]
