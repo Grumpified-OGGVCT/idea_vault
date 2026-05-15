@@ -515,7 +515,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-15T22:32:50Z",
+    "date": "2026-05-15T23:32:12Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1127,7 +1127,7 @@
   },
   {
     "title": "[PR] STELLAR personal assistant",
-    "date": "2026-05-15T22:07:23Z",
+    "date": "2026-05-15T23:32:57Z",
     "summary": "> **Adding or modifying a card/dashboard?** Read the [Card Development Guide](.github/CARD_DEVELOPMENT_GUIDE.md) first \u2014 it covers required patterns, common pitfalls, and the full file checklist.\r\n\r\n> **New CNCF project card?** New cards go in [kubestellar/console-marketplace](https://github.com/kub",
     "url": "https://github.com/kubestellar/console/pull/12904",
     "source": "github_prs",
@@ -1499,7 +1499,7 @@
   },
   {
     "title": "[PR] fix(media): allow private openai compatible audio transcription endpoints",
-    "date": "2026-05-15T22:49:00Z",
+    "date": "2026-05-15T23:51:07Z",
     "summary": "## Summary\r\n\r\n- Problem: Audio media-understanding transcription could target self-hosted OpenAI-compatible endpoints, but audio config did not expose the private-network request opt-in used by guarded provider HTTP.\r\n- Why it matters: Trusted local, RFC1918, or tailnet Whisper-style endpoints need ",
     "url": "https://github.com/openclaw/openclaw/pull/73817",
     "source": "github_prs",
@@ -1583,7 +1583,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-15T22:58:38Z",
+    "date": "2026-05-15T23:13:03Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -1643,31 +1643,31 @@
   },
   {
     "title": "[PR] feat(test,nodes): integrated Cobalt pipeline evaluation (testing framework + dataset + evaluator)",
-    "date": "2026-05-15T22:58:44Z",
+    "date": "2026-05-15T23:55:54Z",
     "summary": "## Summary\n\nThis PR delivers the full Cobalt-based pipeline-evaluation capability as a single reviewable unit. It bundles three components that together let RocketRide pipelines be benchmarked end-to-end: (1) a dataset-loader node that feeds curated items into a pipeline as RocketRide `Question`s, (",
     "url": "https://github.com/rocketride-org/rocketride-server/pull/683",
     "source": "github_prs",
     "highlights": [
-      "comments: 17",
+      "comments: 18",
       "pull request",
       "repo: rocketride-server"
     ]
   },
   {
     "title": "[PR] test(e2e): regression test for #3909 hidden context_window blocking submit",
-    "date": "2026-05-15T22:45:27Z",
+    "date": "2026-05-15T23:14:35Z",
     "summary": "## Summary\nFollow-up to #4051 (which fixed [#3909](https://github.com/LearningCircuit/local-deep-research/issues/3909)). Adds a Puppeteer regression test that pins the fix so the constraint can't silently come back.\n\nRecap of the original bug: the `context_window` number input lives inside a `displa",
     "url": "https://github.com/LearningCircuit/local-deep-research/pull/4059",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: local-deep-research"
     ]
   },
   {
     "title": "[PR] fix(ollama): better default API Base URLs when running in docker",
-    "date": "2026-05-15T22:40:36Z",
+    "date": "2026-05-15T23:30:36Z",
     "summary": "## Description\r\n\r\nWhen the Onyx API server is running from inside a container, more times than not, these default API Base/Base URLs being `http://localhost` or `http://127.0.0.1` aren't really helpful since these resolve to the container's loopback address rather than the host where Ollama is presu",
     "url": "https://github.com/onyx-dot-app/onyx/pull/10045",
     "source": "github_prs",
@@ -1723,6 +1723,30 @@
       "comments: 2",
       "pull request",
       "repo: team-panic-at-the-console"
+    ]
+  },
+  {
+    "title": "[PR] Finalize 3.1.0",
+    "date": "2026-05-15T23:41:57Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * AI tutor can render math in chat messages; trusted reverse\u2011proxy IPs are configurable.\n\n* **Security / Bug Fixes**\n  * 72\u2011byte UTF\u20118 password limit, SSRF allow\u2011list for Ollam",
+    "url": "https://github.com/gregor-dietrich/aimathtutor/pull/102",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: aimathtutor"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the minor-and-patch group with 11 updates",
+    "date": "2026-05-15T23:04:28Z",
+    "summary": "Bumps the minor-and-patch group with 11 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [deepagents](https://github.com/langchain-ai/deepagents) | `0.5.7` | `0.6.1` |\n| [uvicorn](https://github.com/Kludex/uvicorn) | `0.46.0` | `0.47.0` |\n| [langgraph-sdk](https://github.com/langchain-ai/lang",
+    "url": "https://github.com/nludd25/open-swe/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: open-swe"
     ]
   }
 ]
