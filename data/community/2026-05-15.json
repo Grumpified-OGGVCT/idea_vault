@@ -515,7 +515,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-15T17:32:12Z",
+    "date": "2026-05-15T19:29:21Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -539,7 +539,7 @@
   },
   {
     "title": "[PR] feat(dashboard): Personal productivity dashboard",
-    "date": "2026-05-15T17:27:59Z",
+    "date": "2026-05-15T19:03:59Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Personal AI Assistant suite (decisions, blockers, escalations, handoffs, Kanban, critical-path visualizer).\n  * Dashboard app with trackers: Sleep, Nutrition, Mood/Energy, Sp",
     "url": "https://github.com/genesiscz/GenesisTools/pull/1",
     "source": "github_prs",
@@ -659,7 +659,7 @@
   },
   {
     "title": "[PR] feat(azure-foundry): Microsoft Entra ID auth via DefaultAzureCredential",
-    "date": "2026-05-14T23:22:09Z",
+    "date": "2026-05-15T17:55:54Z",
     "summary": "Add token-based authentication for Azure Foundry, supporting both OpenAI-style endpoints (chat_completions, codex_responses) and Anthropic-style endpoints (anthropic_messages) on the same provider.\r\n\r\nAuth path uses azure-identity's DefaultAzureCredential chain (managed identity, workload identity, ",
     "url": "https://github.com/glennc/hermes-agent/pull/1",
     "source": "github_prs",
@@ -1127,12 +1127,12 @@
   },
   {
     "title": "[PR] STELLAR personal assistant",
-    "date": "2026-05-15T15:17:15Z",
+    "date": "2026-05-15T19:29:11Z",
     "summary": "> **Adding or modifying a card/dashboard?** Read the [Card Development Guide](.github/CARD_DEVELOPMENT_GUIDE.md) first \u2014 it covers required patterns, common pitfalls, and the full file checklist.\r\n\r\n> **New CNCF project card?** New cards go in [kubestellar/console-marketplace](https://github.com/kub",
     "url": "https://github.com/kubestellar/console/pull/12904",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 9",
       "pull request",
       "repo: console"
     ]
@@ -1495,6 +1495,90 @@
       "comments: 0",
       "pull request",
       "repo: udash"
+    ]
+  },
+  {
+    "title": "[PR] fix(media): allow private openai compatible audio transcription endpoints",
+    "date": "2026-05-15T19:33:47Z",
+    "summary": "## Summary\r\n\r\n- Problem: Audio media-understanding transcription could target self-hosted OpenAI-compatible endpoints, but audio config did not expose the private-network request opt-in used by guarded provider HTTP.\r\n- Why it matters: Trusted local, RFC1918, or tailnet Whisper-style endpoints need ",
+    "url": "https://github.com/openclaw/openclaw/pull/73817",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Chinese (\u7b80\u4f53\u4e2d\u6587) i18n support",
+    "date": "2026-05-15T19:24:05Z",
+    "summary": "## Summary\r\n\r\nAdd simplified Chinese (\u7b80\u4f53\u4e2d\u6587) localization support to OpenHuman.\r\n\r\n- Lightweight i18n infrastructure using React Context + `useT()` hook \u2014 **zero new dependencies**\r\n- Redux `localeSlice` with browser language auto-detection and localStorage persistence\r\n- Language switcher dropdown i",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/1518",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] Update dev.langchain4j:langchain4j-* to v1 (branch_9x)",
+    "date": "2026-05-15T19:19:12Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | Pending |\n|---|---|---|---|---|\n| [dev.langchain4j:langchain4j-open-ai](https://redirect.github.com/langchain4j/langchain4j/tree/main/langchain4j-open-",
+    "url": "https://github.com/apache/solr/pull/3579",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: solr"
+    ]
+  },
+  {
+    "title": "[PR] Instalacion de llms local en debian - JDLM",
+    "date": "2026-05-15T18:36:52Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n## Documentation\n\n* Added comprehensive guide for implementing local language models on Linux systems\n* Includes installation and configuration instructions for secure local inference environments",
+    "url": "https://github.com/LIDR-academy/AI4Devs-privacy/pull/59",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AI4Devs-privacy"
+    ]
+  },
+  {
+    "title": "[PR] [RHIDP-11653] Include Lightspeed By Default",
+    "date": "2026-05-15T18:31:42Z",
+    "summary": "<!-- \r\nThank you for opening a PR! Please take the time to fill in the details below.\r\n-->\r\n\r\n## Description\r\n<!--\r\nPlease explain the changes you made here.\r\n-->\r\n- Moves Lightspeed to the main default `compose.yaml`\r\n- Moves all Lightspeed configs/files to the root level `/configs`\r\n   - Subsequen",
+    "url": "https://github.com/redhat-developer/rhdh-local/pull/202",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: rhdh-local"
+    ]
+  },
+  {
+    "title": "[PR] deps: Update all non-major dependencies (main)",
+    "date": "2026-05-15T19:25:05Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [cam",
+    "url": "https://github.com/camunda/connectors/pull/7110",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: connectors"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-go monorepo to v0.42.0",
+    "date": "2026-05-15T17:47:09Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/infratographer/load-balancer-api/pull/344",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: load-balancer-api"
     ]
   }
 ]
