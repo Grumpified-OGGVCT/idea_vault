@@ -191,12 +191,12 @@
   },
   {
     "title": "MLX - nvfp4 models on MacOs extremely slow",
-    "date": "2026-05-14T09:51:45Z",
+    "date": "2026-05-15T02:09:10Z",
     "summary": "### What is the issue?\n\nWhen running models (like qwen3.6:27b-nvfp4,  qwen3.5:27b-coding-nvfp4, qwen3.6:35b-a3b-nvfp4) until version 0.20.0 they worked fine. A simple prompt took around 2 minutes to produce a result (ollama run MODEL \"give me a definition for strategy and for tactics. Provide at lea",
     "url": "https://github.com/ollama/ollama/issues/16030",
     "source": "github_issues",
     "highlights": [
-      "comments: 18",
+      "comments: 19",
       "state: open",
       "repo: ollama"
     ]
@@ -407,12 +407,12 @@
   },
   {
     "title": "native ollama-go-engine: TurboQuant+RotorQuant implementation",
-    "date": "2026-05-04T05:30:46Z",
+    "date": "2026-05-15T04:37:23Z",
     "summary": "@rick-github @jessegross jfyi https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/ + https://arxiv.org/pdf/2504.19874\n\n",
     "url": "https://github.com/ollama/ollama/issues/15051",
     "source": "github_issues",
     "highlights": [
-      "comments: 57",
+      "comments: 58",
       "state: open",
       "repo: ollama"
     ]
@@ -515,7 +515,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-15T00:04:28Z",
+    "date": "2026-05-15T04:35:14Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -539,8 +539,8 @@
   },
   {
     "title": "[PR] feat(dashboard): Personal productivity dashboard",
-    "date": "2026-05-14T23:56:44Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added comprehensive AI Assistant system with deadline tracking, decision logging, blocker detection, and escalation alerts.\n  * Introduced dashboard application with speciali",
+    "date": "2026-05-15T04:32:19Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Personal AI Assistant suite (decisions, blockers, escalations, handoffs, Kanban, critical-path visualizer).\n  * Dashboard app with trackers: Sleep, Nutrition, Mood/Energy, Sp",
     "url": "https://github.com/genesiscz/GenesisTools/pull/1",
     "source": "github_prs",
     "highlights": [
@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] ruInS",
-    "date": "2026-05-14T23:42:53Z",
+    "date": "2026-05-15T02:41:29Z",
     "summary": "## **User description**\nwaste of my time\n\n<!-- This is an auto-generated description by cubic. -->\n---\n## Summary by cubic\nFinalizes `[ROLE_SELECT]` first-response routing with a \"continue\" flag, adds cross\u2011platform desktop automation and fast code search, and hardens builds/orchestration across web",
     "url": "https://github.com/quazfenton/binG/pull/79",
     "source": "github_prs",
@@ -611,7 +611,7 @@
   },
   {
     "title": "[PR] Release v3.8.0",
-    "date": "2026-05-14T23:29:59Z",
+    "date": "2026-05-15T03:35:49Z",
     "summary": "## [3.8.0] \u2014 2026-05-06\n\n### \u2728 New Features\n\n- **feat(providers):** add Command Code provider (#2199 \u2014 thanks @ddarkr)\n- **feat(providers):** add ModelScope provider-specific 429 handling and retry logic (#2202 \u2014 thanks @InkshadeWoods)\n- **feat(providers):** update Gemini CLI provider models catalog",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/2248",
     "source": "github_prs",
@@ -623,7 +623,7 @@
   },
   {
     "title": "[PR] fix(onboard): allow sudo prompts in express install",
-    "date": "2026-05-14T23:29:12Z",
+    "date": "2026-05-15T03:07:01Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\nAllows express install to keep non-interactive onboarding defaults while permitting sudo password prompts for required host setup. This fixes Ollama systemd override setup on hosts where the drop-in is readable normally, but `sudo -n` fails because su",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3492",
     "source": "github_prs",
@@ -707,7 +707,7 @@
   },
   {
     "title": "[PR] deps: Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6 (main)",
-    "date": "2026-05-14T22:21:10Z",
+    "date": "2026-05-15T04:41:11Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
     "url": "https://github.com/camunda/camunda/pull/53096",
     "source": "github_prs",
@@ -751,6 +751,186 @@
       "comments: 3",
       "pull request",
       "repo: shiksha-mfe"
+    ]
+  },
+  {
+    "title": "Fix File Editing Tool Reliability - replace_in_file, write_to_file, and Diff Failures",
+    "date": "2026-04-24T19:58:59Z",
+    "summary": "## Problem\n\nCline's file editing tools (replace_in_file and write_to_file) suffer from widespread reliability issues that significantly impact user productivity and increase API costs. These failures affect users across all models (Claude 3.7/4, Gemini, GPT, local models) and cause frustrating infin",
+    "url": "https://github.com/cline/cline/issues/4384",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 46",
+      "state: open",
+      "repo: cline"
+    ]
+  },
+  {
+    "title": "[PR] fix(ghcr.io/open-webui/open-webui): Update ghcr.io/open-webui/open-webui Docker tag to v0.9.5",
+    "date": "2026-05-15T04:46:54Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | final | patch | `v0.9.2` \u2192 `v0.9.5` |\n\n---\n\n##",
+    "url": "https://github.com/dedsxc/labs/pull/297",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: labs"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update spring dependencies",
+    "date": "2026-05-15T04:44:54Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.cloud:spring-cloud-dependencies](https://spring.io/projects/spring-cloud) ([so",
+    "url": "https://github.com/nilson-aguiar/nbot/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nbot"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker images (minor/patch/digest)",
+    "date": "2026-05-15T04:41:35Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [codeberg.org/forgejo/forgejo](https://forgejo.org) ([source](https://codeberg.org/forgejo/forgejo)) | patch | `15.0.1` \u2192 `15.0.2` |\n| [dockurr/windows](https://redirect.github.com/dockur/windows) | minor | `5.14`",
+    "url": "https://github.com/acepanel/templates/pull/115",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: templates"
+    ]
+  },
+  {
+    "title": "[PR] Version Packages",
+    "date": "2026-05-15T04:35:31Z",
+    "summary": "This PR was opened by the [Changesets release](https://github.com/changesets/action) GitHub action. When you're ready to do a release, you can merge this and the packages will be published to npm automatically. If you're not ready to do a release yet, that's fine, whenever you add more changesets to",
+    "url": "https://github.com/motebit/motebit/pull/103",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: motebit"
+    ]
+  },
+  {
+    "title": "[PR] Add LiteLLM provider abstraction across Python + Node services",
+    "date": "2026-05-15T04:29:59Z",
+    "summary": "## Run 2 of the 8-step PatentForge merge plan\n\nIntroduces a LiteLLM-based LLM provider abstraction so the merged product can route LOCAL (Ollama) and CLOUD (Anthropic) traffic through one client interface, across all four services. Load-bearing groundwork for Runs 3-8.\n\n## What changed\n\n- **3 Python",
+    "url": "https://github.com/scottconverse/patentforgelocal/pull/12",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: patentforgelocal"
+    ]
+  },
+  {
+    "title": "[PR] fix(agents): scope custom provider baseUrl SSRF trust by origin",
+    "date": "2026-05-15T03:11:03Z",
+    "summary": "Ready for maintainer / security-policy review. Refs #80732.\n\n## What this PR does\n\nOpenClaw's SSRF guard blocks outbound HTTP requests whose hostname resolves to a private, loopback, link-local, or CGNAT IP. That's the right default \u2014 it prevents a compromised model or a malicious prompt from probin",
+    "url": "https://github.com/openclaw/openclaw/pull/80751",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-05-15T02:44:10Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] Update ghcr.io/open-webui/open-webui Docker tag to v0.9.5",
+    "date": "2026-05-15T02:27:04Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.9.2` \u2192 `v0.9.5` |\n\n---\n\n### Release Notes\n\n<d",
+    "url": "https://github.com/FuzzyMistborn/infra/pull/2556",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: infra"
+    ]
+  },
+  {
+    "title": "[PR] Implemented: AI plugin \u2014 LangChain4j integration for AI/LLM capabilities in OFBiz services (OFBIZ-13408)",
+    "date": "2026-05-15T02:14:24Z",
+    "summary": "Adds a new optional plugin (plugins/ai) that integrates LangChain4j 1.8.0 to bring\r\nnative AI/LLM capabilities to OFBiz services, Groovy scripts, and screen actions.\r\n\r\nThe plugin follows established OFBiz patterns throughout:\r\n\r\n- AiContainer implements the Container interface for lifecycle managem",
+    "url": "https://github.com/apache/ofbiz-plugins/pull/244",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ofbiz-plugins"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m6",
+    "date": "2026-05-15T04:38:02Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/MartinWitt/BootFleet/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: BootFleet"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ai services",
+    "date": "2026-05-15T01:52:45Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.9.2` \u2192 `v0.9.5` |\n| [ghcr.io/openclaw/opencla",
+    "url": "https://github.com/floryn08/homeserver-deployment/pull/970",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homeserver-deployment"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency pydantic-ai to >=1.96.1",
+    "date": "2026-05-15T01:14:13Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pydantic-ai](https://redire",
+    "url": "https://github.com/StacklokLabs/mcp-tef/pull/123",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mcp-tef"
+    ]
+  },
+  {
+    "title": "[PR] Update",
+    "date": "2026-05-15T00:58:19Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Large batch of new and expanded blog posts, diagrams and docs on cloud-native, Kubernetes, DevOps and tooling.\n\n* **Chores**\n  * CI/CD revamped: release-triggered Docker imag",
+    "url": "https://github.com/humzamalak/dca-prep-kit/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dca-prep-kit"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): Update Go",
+    "date": "2026-05-15T00:54:53Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [git",
+    "url": "https://github.com/datosh/opkssh/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: opkssh"
     ]
   }
 ]
