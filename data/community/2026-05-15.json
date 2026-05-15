@@ -190,13 +190,13 @@
     ]
   },
   {
-    "title": "MLX - nvfp4 models on MacOs extremely slow",
-    "date": "2026-05-15T02:09:10Z",
+    "title": "MLX - nvfp4 models on MacOs extremely slow under memory pressure",
+    "date": "2026-05-15T16:39:56Z",
     "summary": "### What is the issue?\n\nWhen running models (like qwen3.6:27b-nvfp4,  qwen3.5:27b-coding-nvfp4, qwen3.6:35b-a3b-nvfp4) until version 0.20.0 they worked fine. A simple prompt took around 2 minutes to produce a result (ollama run MODEL \"give me a definition for strategy and for tactics. Provide at lea",
     "url": "https://github.com/ollama/ollama/issues/16030",
     "source": "github_issues",
     "highlights": [
-      "comments: 19",
+      "comments: 20",
       "state: open",
       "repo: ollama"
     ]
@@ -515,7 +515,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-15T14:31:42Z",
+    "date": "2026-05-15T17:32:12Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -539,7 +539,7 @@
   },
   {
     "title": "[PR] feat(dashboard): Personal productivity dashboard",
-    "date": "2026-05-15T15:20:47Z",
+    "date": "2026-05-15T17:27:59Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Personal AI Assistant suite (decisions, blockers, escalations, handoffs, Kanban, critical-path visualizer).\n  * Dashboard app with trackers: Sleep, Nutrition, Mood/Energy, Sp",
     "url": "https://github.com/genesiscz/GenesisTools/pull/1",
     "source": "github_prs",
@@ -611,12 +611,12 @@
   },
   {
     "title": "[PR] Release v3.8.0",
-    "date": "2026-05-15T13:56:09Z",
+    "date": "2026-05-15T17:00:15Z",
     "summary": "## [3.8.0] \u2014 2026-05-06\n\n### \u2728 New Features\n\n- **feat(providers):** add Command Code provider (#2199 \u2014 thanks @ddarkr)\n- **feat(providers):** add ModelScope provider-specific 429 handling and retry logic (#2202 \u2014 thanks @InkshadeWoods)\n- **feat(providers):** update Gemini CLI provider models catalog",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/2248",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: OmniRoute"
     ]
@@ -1079,7 +1079,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-15T13:04:14Z",
+    "date": "2026-05-15T16:35:09Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -1139,7 +1139,7 @@
   },
   {
     "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui ( v0.8.12 \u2794 v0.9.5 )",
-    "date": "2026-05-15T12:48:33Z",
+    "date": "2026-05-15T16:46:48Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `v0.8.12` \u2192 `v0.9.5` |\n\n---\n\n> [!WARNING]\n> Some ",
     "url": "https://github.com/Aviator-Coding/home-ops/pull/755",
     "source": "github_prs",
@@ -1151,12 +1151,12 @@
   },
   {
     "title": "[PR] feat(tools): add new_node.py CLI scaffolder for RocketRide nodes",
-    "date": "2026-05-15T12:56:12Z",
+    "date": "2026-05-15T17:37:33Z",
     "summary": "## Summary\r\n\r\n- Introduced a new CLI utility (`new_node.py`) to automate the scaffolding of RocketRide nodes, reducing setup time from minutes to seconds.\r\n- Standardizes the creation of `services.json`, `IGlobal.py`, and `IInstance.py` boilerplate based on the node class (LLM, Database, or Tool).\r\n",
     "url": "https://github.com/rocketride-org/rocketride-server/pull/885",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: rocketride-server"
     ]
@@ -1327,6 +1327,174 @@
       "comments: 1",
       "pull request",
       "repo: portainer-stacks"
+    ]
+  },
+  {
+    "title": "[PR] 220A-Fix: sp\u00f3jna logika lifecycle runtime + poprawna semantyka auto",
+    "date": "2026-05-15T17:40:55Z",
+    "summary": "## Zakres\nTen PR domyka poprawk\u0119 220A-Fix: porz\u0105dkuje akcje lifecycle runtime w UX, usuwa niejednoznaczno\u015b\u0107 `precision=auto` oraz dopina kontrakt statusu aktywnej/staged konfiguracji runtime.\n\n## Problem\nOperator widzia\u0142 niesp\u00f3jne zachowanie:\n- `auto` by\u0142o interpretowane niejednoznacznie (czasem jak",
+    "url": "https://github.com/mpieniak01/Venom/pull/491",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: Venom"
+    ]
+  },
+  {
+    "title": "[PR] feat(chatbot): implement chatbot feature, configure environment variables",
+    "date": "2026-05-15T17:36:25Z",
+    "summary": "- **feat(chatbot): add dependency injection**\n- **feat(chatbot): configure environment variables**\n- **feat(chatbot): implement bot generate campaign with statistics data**\n- **feat(chatbot): implement generate campaign return streaming data**\n- **feat(chatbot): configure schema for RAG bot**\n- **fe",
+    "url": "https://github.com/tqha1011/ShoeStore/pull/321",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ShoeStore"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-05-15T17:35:48Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] Marketing engine: direct TikTok API, 20s template, sharper prompts",
+    "date": "2026-05-15T17:30:30Z",
+    "summary": "## Summary\n\nEnd-to-end TikTok auto-post for FamPass tonight's session \u2014 built and proven:\n\n- **Direct TikTok Content Posting API integration** in `worker/src/lib/tiktok.ts` (FILE_UPLOAD, per-tenant OAuth tokens, refresh-on-expiry + refresh-on-401)\n- **Postiz removed from the runtime entirely** \u2014 no ",
+    "url": "https://github.com/justinlin15/ParentGuide/pull/19",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ParentGuide"
+    ]
+  },
+  {
+    "title": "[PR] feat: Lana KI Orchestrator API \u2014 full backend implementation",
+    "date": "2026-05-15T17:24:20Z",
+    "summary": "Builds the complete `backend/` for the Lana KI Orchestrator API (deployed at `192.168.178.101:8024`, public via `https://gateway.lana-ki.de`). Adds all routers, services, memory layer, agent logic, scheduler, and documentation from scratch \u2014 no existing files removed.\n\n## Docs & Config\n- **`AGENTS.m",
+    "url": "https://github.com/carpu86/Lana-ki/pull/13",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Lana-ki"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-05-15T16:51:52Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/arthrod/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): establish DMP 2026 AI platform foundation",
+    "date": "2026-05-15T16:47:39Z",
+    "summary": "## Summary\nThis draft PR replaces the current fragmented AI prototypes with a coherent, testable foundation for the DMP 2026 LMS AI platform.\n\n## What is included\n### Platform foundation\n- FastAPI AI gateway with typed Module A-D routes\n- Docker Compose stack for Redis, Ollama, Ollama model bootstra",
+    "url": "https://github.com/tekdi/shiksha-mfe/pull/47",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: shiksha-mfe"
+    ]
+  },
+  {
+    "title": "[PR] fix: The svg component contains a warning about isDark",
+    "date": "2026-05-15T16:42:47Z",
+    "summary": "fix this \r\nWarning: React does not recognize the `isDark` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `isdark` instead. If you accidentally passed it from a parent component, remove it from the DOM element. Error Component Sta",
+    "url": "https://github.com/langflow-ai/langflow/pull/9314",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add template for unit-tests",
+    "date": "2026-05-15T16:42:46Z",
+    "summary": "This pull request introduces significant improvements to the unit testing infrastructure, focusing on better mocking practices for database and language model components. The changes increase test maintainability and reliability by standardizing shared mock usage, simplifying test setup, and providi",
+    "url": "https://github.com/langflow-ai/langflow/pull/9503",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] feat(security): add configurable security levels for importing trusted builtins / modules",
+    "date": "2026-05-15T16:42:45Z",
+    "summary": "Allows users to specify configurable levels of security to block system-level access builtins and modules, such as `eval`, `subprocess`, etc. Works during validation and during execution.\r\n\r\nDoes not block builtins or modules in core (trusted) components. \r\n\r\nNote that this isn't a true isolated san",
+    "url": "https://github.com/langflow-ai/langflow/pull/10696",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] Canary Token Guardrail: a native LangChain4j guardrail feature to detect and remediate LLM07:2025 System Prompt Leakage",
+    "date": "2026-05-15T16:37:40Z",
+    "summary": "## Issue\r\nCloses #4587 \r\n\r\n## Change\r\nImplements canary token-based detection mechanism to identify and mitigate prompt injection attacks (OWASP LLM07). Injects unique tokens into prompts and monitors for their appearance in model outputs to detect potential injection attempts.\r\n\r\n## General checkli",
+    "url": "https://github.com/langchain4j/langchain4j/pull/4604",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 22",
+      "pull request",
+      "repo: langchain4j"
+    ]
+  },
+  {
+    "title": "[PR] feat: weekly Responses API tests with GitHub Pages report",
+    "date": "2026-05-15T16:15:27Z",
+    "summary": "## Summary\r\n\r\n- Add weekly orchestrator workflow (`responses-weekly.yml`) that runs upstream Responses API integration tests across all providers (OpenAI, Vertex AI, vLLM MaaS) every Sunday at 22:00 UTC\r\n- Deploy an interactive test report to [GitHub Pages](https://opendatahub-io.github.io/ogx-distr",
+    "url": "https://github.com/opendatahub-io/ogx-distribution/pull/249",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ogx-distribution"
+    ]
+  },
+  {
+    "title": "[PR] Stg",
+    "date": "2026-05-15T16:07:55Z",
+    "summary": "#244\r\n#243 \n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n# Release Notes\n\n* **New Features**\n  * Added blog article filtering by platform (Zenn, note, Qiita) with pagination\n  * Enhanced career analysis result dashboard with detailed evidence ",
+    "url": "https://github.com/yusuke0610/devforge/pull/245",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: devforge"
+    ]
+  },
+  {
+    "title": "[PR] deps(go): bump module github.com/testcontainers/testcontainers-go to v0.42.0",
+    "date": "2026-05-15T15:32:50Z",
+    "summary": "\n\n\n<Actions>\n    <action id=\"83ab38fcda5079af067caeafe5c61020d52689318e64fd4b6b691ab8cde2254c\">\n        <h3>deps(go): bump module github.com/testcontainers/testcontainers-go</h3>\n        <details id=\"118a1de593252b71f178cef60ae8b6af7c484a51bead92a6671a2630b548e68e\">\n            <summary>clean: go mo",
+    "url": "https://github.com/updatecli/udash/pull/399",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: udash"
     ]
   }
 ]
