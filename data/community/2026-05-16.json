@@ -155,7 +155,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-16T01:50:23Z",
+    "date": "2026-05-16T05:37:53Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -539,12 +539,12 @@
   },
   {
     "title": "[PR] STELLAR personal assistant",
-    "date": "2026-05-16T03:31:40Z",
+    "date": "2026-05-16T04:13:47Z",
     "summary": "> **Adding or modifying a card/dashboard?** Read the [Card Development Guide](.github/CARD_DEVELOPMENT_GUIDE.md) first \u2014 it covers required patterns, common pitfalls, and the full file checklist.\r\n\r\n> **New CNCF project card?** New cards go in [kubestellar/console-marketplace](https://github.com/kub",
     "url": "https://github.com/kubestellar/console/pull/12904",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 13",
       "pull request",
       "repo: console"
     ]
@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-16T02:59:33Z",
+    "date": "2026-05-16T05:35:33Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -707,7 +707,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-16T00:51:11Z",
+    "date": "2026-05-16T05:08:53Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -751,6 +751,138 @@
       "comments: 2",
       "pull request",
       "repo: local-deep-research"
+    ]
+  },
+  {
+    "title": "[PR] [WIP] Add complete open-source platform Train-LM",
+    "date": "2026-05-16T06:24:55Z",
+    "summary": "- [x] Assess repository baseline and investigate current workflow runs/log status via GitHub Actions MCP\n- [ ] Scaffold Train-LM repository structure with minimal production-ready starter modules (backend, frontend, trainer, inference, telegram, scripts, docker, docs, tests, storage dirs)\n- [ ] Impl",
+    "url": "https://github.com/Sharmapank-j/Train-lm/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Train-lm"
+    ]
+  },
+  {
+    "title": "[PR] home-assistant: 2026.5.1 -> 2026.5.2",
+    "date": "2026-05-16T06:18:44Z",
+    "summary": "Diff: https://github.com/home-assistant/core/compare/2026.5.1...2026.5.2\r\n\r\nChangelog: https://github.com/home-assistant/core/releases/tag/2026.5.2\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or des",
+    "url": "https://github.com/NixOS/nixpkgs/pull/520687",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Revise ADRs for OB1 fork architecture; add ADR-009, ADR-010, ADR-011, ST-021",
+    "date": "2026-05-16T06:13:29Z",
+    "summary": "$(cat <<'EOF'\n## Summary\n\nArchitecture review session established that the project pivots from local-first SQLite to a cloud-hosted OB1 fork. This PR captures all resulting ADR changes and the new spike story.\n\n**Key decisions made:**\n- Fork OB1 (TypeScript/Deno) as the cloud MCP server base\n- Postg",
+    "url": "https://github.com/CAPeddle/ai-memory/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ai-memory"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): add 12 new providers + new modalities (avatar/music/video) + image-gen",
+    "date": "2026-05-16T05:51:22Z",
+    "summary": "## Summary\n\nExpands NeuroLink from 13 chat / 5 TTS / 4 STT to **21+ chat providers** plus **four new modality categories**: image generation, video generation, avatar / lip-sync, and music generation. All wired through the existing Factory + Registry pattern.\n\n### New chat / LLM providers (12)\n- **x",
+    "url": "https://github.com/juspay/neurolink/pull/1019",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 32",
+      "pull request",
+      "repo: neurolink"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes): add anomaly detection node for pipeline output monitoring",
+    "date": "2026-05-16T05:36:17Z",
+    "summary": "## Summary\n- Add new `anomaly_detector` pipeline node that monitors numeric output values for statistical anomalies\n- Supports three detection methods: **Z-Score**, **IQR** (Interquartile Range), and **Rolling Average** deviation\n- Thread-safe sliding window implementation for streaming pipeline dat",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/569",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] [ImgBot] optimizes images",
+    "date": "2026-05-16T05:12:10Z",
+    "summary": "## Beep boop. Your images are optimized!\r\n\r\nYour image file size has been reduced \ud83c\udf89\r\n\r\n<details>\r\n<summary>\r\nDetails\r\n</summary>\r\n\r\n| File | Before | After | Percent reduction |\r\n|:--|:--|:--|:--|\r\n| /.claude/commands/blog-meta-image/assets/logos/microsoft.svg | 0.62kb | 0.35kb | 43.06% |\r\n| /static",
+    "url": "https://github.com/Mattlk13/docs-4/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: docs-4"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps):(deps): bump langchain from 1.2.18 to 1.3.1",
+    "date": "2026-05-16T05:03:08Z",
+    "summary": "Bumps [langchain](https://github.com/langchain-ai/langchain) from 1.2.18 to 1.3.1.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/langchain-ai/langchain/releases\">langchain's releases</a>.</em></p>\n<blockquote>\n<h2>langchain-core==1.3.1</h2>\n<p>Changes sin",
+    "url": "https://github.com/BrianLusina/image-research-assistant/pull/124",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: image-research-assistant"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m6",
+    "date": "2026-05-16T04:53:56Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/MartinWitt/BootFleet/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: BootFleet"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update n8nio/n8n docker tag to v2.21.3",
+    "date": "2026-05-16T04:34:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [n8nio/n8n](https://n8n.io) ([source](https://redirect.github.com/n8n-io/n8n)) | minor | `2.11.4` \u2192 `2.21.3` |\n\n---\n\n### Release Notes\n\n<detai",
+    "url": "https://github.com/mgh3326/auto_trader/pull/431",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: auto_trader"
+    ]
+  },
+  {
+    "title": "[PR] PAN-1053",
+    "date": "2026-05-16T04:08:14Z",
+    "summary": "Closes #1053\n\n## Acceptance Criteria\n\n- [x] Create packages/moonshine-linux-x64 npm package structure\n- [x] Write scripts/build-moonshine-sidecars.js and sidecar main.py\n- [x] Implement src/voice/transcription.ts \u2014 createMoonshineTranscription() + ITurnEmitter\n- [x] Implement src/voice/turn-queue.ts",
+    "url": "https://github.com/eltmon/panopticon-cli/pull/1119",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: panopticon-cli"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6",
+    "date": "2026-05-16T04:36:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/ThomasVitale/scaling-on-satisfaction/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: scaling-on-satisfaction"
     ]
   }
 ]
