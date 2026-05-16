@@ -251,12 +251,12 @@
   },
   {
     "title": "[URGENT][STRATEGIC] Roo Code shutdown 2026-05-15 (J-5) \u2014 \u00e9tude Cline / Zoo-Code / Kilo Code",
-    "date": "2026-05-14T01:46:19Z",
+    "date": "2026-05-16T17:12:25Z",
     "summary": "## \u26a0\ufe0f Urgence\n\n**Roo Code shutdown officiel 15 mai 2026 \u2014 J-5** depuis 2026-05-11.\n\nL'\u00e9quipe Roo Code (RooCodeInc/Roo-Code) archive le repo, met fin \u00e0 l'extension VS Code, au cloud, et au router. L'\u00e9quipe se concentre d\u00e9sormais enti\u00e8rement sur **Roomote** (projet s\u00e9par\u00e9). L'extension continuera \u00e0 fo",
     "url": "https://github.com/jsboige/roo-extensions/issues/2103",
     "source": "github_issues",
     "highlights": [
-      "comments: 16",
+      "comments: 17",
       "state: open",
       "repo: roo-extensions"
     ]
@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-16T15:45:59Z",
+    "date": "2026-05-16T17:45:48Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -707,7 +707,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-16T12:36:44Z",
+    "date": "2026-05-16T16:53:54Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -731,7 +731,7 @@
   },
   {
     "title": "[PR] feat(test,nodes): integrated Cobalt pipeline evaluation (testing framework + dataset + evaluator)",
-    "date": "2026-05-16T00:18:36Z",
+    "date": "2026-05-16T17:03:13Z",
     "summary": "## Summary\n\nThis PR delivers the full Cobalt-based pipeline-evaluation capability as a single reviewable unit. It bundles three components that together let RocketRide pipelines be benchmarked end-to-end: (1) a dataset-loader node that feeds curated items into a pipeline as RocketRide `Question`s, (",
     "url": "https://github.com/rocketride-org/rocketride-server/pull/683",
     "source": "github_prs",
@@ -791,12 +791,12 @@
   },
   {
     "title": "[PR] feat(providers): add 12 new providers + new modalities (avatar/music/video) + image-gen",
-    "date": "2026-05-16T07:39:21Z",
+    "date": "2026-05-16T16:51:17Z",
     "summary": "## Summary\n\nExpands NeuroLink from 13 chat / 5 TTS / 4 STT to **21+ chat providers** plus **four new modality categories**: image generation, video generation, avatar / lip-sync, and music generation. All wired through the existing Factory + Registry pattern.\n\n### New chat / LLM providers (12)\n- **x",
     "url": "https://github.com/juspay/neurolink/pull/1019",
     "source": "github_prs",
     "highlights": [
-      "comments: 33",
+      "comments: 34",
       "pull request",
       "repo: neurolink"
     ]
@@ -887,7 +887,7 @@
   },
   {
     "title": "[PR] feat(benchmarks): community-YAML export + CI workflow to PR ldr-benchmarks",
-    "date": "2026-05-16T16:02:17Z",
+    "date": "2026-05-16T17:44:12Z",
     "summary": "## Summary\n\n- Adds opt-in **community-format YAML emission** to CLI benchmark runs, matching the schema the UI's \"YAML\" download button produces today (`benchmark_results.html:583-705`)\n- Adds a new **`benchmark-submit` workflow** that runs a benchmark in CI and opens a PR to [`LearningCircuit/ldr-b",
     "url": "https://github.com/LearningCircuit/local-deep-research/pull/4064",
     "source": "github_prs",
@@ -1243,6 +1243,162 @@
       "comments: 0",
       "pull request",
       "repo: neokai"
+    ]
+  },
+  {
+    "title": "Replacing 4 AI subscriptions with one local setup \u2014 $960/year saved",
+    "date": "2026-05-16T17:49:19Z",
+    "summary": "## The Subscription Stack Problem\n\nMost AI power users are paying for multiple subscriptions simultaneously:\n\n| Service | Monthly | Annual |\n|---------|---------|--------|\n| ChatGPT Plus | $20 | $240 |\n| Claude Pro | $20 | $240 |\n| Perplexity Pro | $20 | $240 |\n| Gemini Advanced | $20 | $240 |\n| **T",
+    "url": "https://github.com/pachote/local-llm-windows-setup-guide/issues/1",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: local-llm-windows-setup-guide"
+    ]
+  },
+  {
+    "title": "[PR] Fix CancellationError in Parakeet transcription and Ollama enhancement",
+    "date": "2026-05-16T17:56:38Z",
+    "summary": "## Summary\n\n- **Parakeet transcription** and **Ollama AI enhancement** both fail with `Swift.CancellationError error 1` because the recording lifecycle `Task` in `VoiceInkEngine` gets implicitly cancelled when SwiftUI tears down the recorder view, and that cancellation propagates into FluidAudio's A",
+    "url": "https://github.com/Beingpax/VoiceInk/pull/578",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: VoiceInk"
+    ]
+  },
+  {
+    "title": "[PR] refactor(cli): delete unused code",
+    "date": "2026-05-16T17:48:23Z",
+    "summary": "## Summary\nDeletes unused legacy helpers, imports, exports, package dependencies, migration scaffolding, and stale compatibility leftovers across the CLI, onboarding flow, scripts, and tests. This reduces dead code and trims dependency metadata while preserving current behavior.\n\n## Changes\n<!-- Bul",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3632",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] AWS connectors",
+    "date": "2026-05-16T17:48:21Z",
+    "summary": "Hello,\r\n\r\nFirst of all, thank you for the fantastic work, truly well done and inspiring.\r\n\r\nI'm using the PiSugar hardware (whisplay hat + battery) with a Pi Zero 2W and I'm very happy with it. However, I don't use local services due to the limited computational power and the limited Italian languag",
+    "url": "https://github.com/PiSugar/whisplay-ai-chatbot/pull/72",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: whisplay-ai-chatbot"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update spring dependencies",
+    "date": "2026-05-16T17:43:48Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.cloud:spring-cloud-dependencies](https://spring.io/projects/spring-cloud) ([so",
+    "url": "https://github.com/nilson-aguiar/nbot/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nbot"
+    ]
+  },
+  {
+    "title": "[PR] feat(github-action)!: Update oxsecurity/megalinter action to v9.5.0",
+    "date": "2026-05-16T17:43:47Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [oxsecurity/megalinter](https://redirect.github.com/oxsecurity/megalinter) | action | major | `v7.13.0` \u2192 `v9.5.0` |\n\n---\n\n> [!WARN",
+    "url": "https://github.com/Rojikku/home-ops/pull/2266",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] Update oxsecurity/megalinter action to v9",
+    "date": "2026-05-16T17:43:05Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [oxsecurity/megalinter](https://redirect.github.com/oxsecurity/megalinter) | action | major | `v8.3.0` \u2192 `v9.5.0` |\n\n---\n\n### Relea",
+    "url": "https://github.com/kyhule/polyworld-workflows/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: polyworld-workflows"
+    ]
+  },
+  {
+    "title": "[PR] DMP 2026 Demo",
+    "date": "2026-05-16T17:42:58Z",
+    "summary": "### Summary\r\n\r\nThis PR introduces a full-stack **AI Content Generation Pipeline** into the Shiksha teacher micro-frontend (`scp-teacher-repo`) and a new **`ai-gateway`** FastAPI microservice. The feature is exposed under the **AI Studio** wizard \u2014 a 4-step flow (Upload \u2192 Generate \u2192 Review \u2192 Export) ",
+    "url": "https://github.com/tekdi/shiksha-mfe/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: shiksha-mfe"
+    ]
+  },
+  {
+    "title": "[PR] Add ESP32-S3 portable AI companion firmware with ethical network security scanning, BLE networking, full config portal, and persistent memory & RAG",
+    "date": "2026-05-16T17:20:21Z",
+    "summary": "Implements full firmware and companion server for Debbie \u2014 a voice-controlled portable AI assistant on Freenove Media Kit ESP32-S3 (FNK0102), interfacing with OpenAI Realtime API and a custom agent backend. Adds ethical network security scanning as a first-class voice-commanded feature, multi-networ",
+    "url": "https://github.com/magicalmutation-coder/DebbieDoesMobile/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: DebbieDoesMobile"
+    ]
+  },
+  {
+    "title": "[PR] ci(github-action)!: Update oxsecurity/megalinter action ( v8.8.0 \u2192 v9.5.0 )",
+    "date": "2026-05-16T17:17:04Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [oxsecurity/megalinter](https://redirect.github.com/oxsecurity/megalinter) | action | major | `v8.8.0` \u2192 `v9.5.0` |\n\n---\n\n> [!WARNI",
+    "url": "https://github.com/carpenike/k8s-gitops/pull/5571",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: k8s-gitops"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update oxsecurity/megalinter action to v9",
+    "date": "2026-05-16T16:46:57Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [oxsecurity/megalinter](https://redirect.github.com/oxsecurity/megalinter) | action | major | `v8.3.0` \u2192 `v9.5.0` |\n\n---\n\n### Relea",
+    "url": "https://github.com/supertemaki/distrobuilder-build/pull/57",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: distrobuilder-build"
+    ]
+  },
+  {
+    "title": "[PR] implement: artifact / attachment unification",
+    "date": "2026-05-16T16:42:02Z",
+    "summary": "## Summary\r\n\r\nImplements `plans/artifact-attachment-unification.md`. The PR (originally just the plan doc) now contains the full implementation across six logical commits.\r\n\r\n**Headline bug fixed:** uploading a >100KB JSON file to Sage no longer blows the LLM context window. The file is registered a",
+    "url": "https://github.com/MemberJunction/MJ/pull/2569",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(github-release)!: Update oxsecurity/megalinter action to v9.5.0",
+    "date": "2026-05-16T16:38:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [oxsecurity/megalinter](https://redirect.github.com/oxsecurity/megalinter) | action | major | `v7.13.0` \u2192 `v9.5.0` |\n\n---\n\n> [!WARN",
+    "url": "https://github.com/jr0dd/home-ops/pull/1941",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
