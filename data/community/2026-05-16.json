@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] Release v3.8.0",
-    "date": "2026-05-16T14:22:07Z",
+    "date": "2026-05-16T15:15:11Z",
     "summary": "## [3.8.0] \u2014 2026-05-06\n\n### \u2728 New Features\n\n- **feat(providers):** add Command Code provider (#2199 \u2014 thanks @ddarkr)\n- **feat(providers):** add ModelScope provider-specific 429 handling and retry logic (#2202 \u2014 thanks @InkshadeWoods)\n- **feat(providers):** update Gemini CLI provider models catalog",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/2248",
     "source": "github_prs",
@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-16T14:46:29Z",
+    "date": "2026-05-16T15:45:59Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -767,7 +767,7 @@
   },
   {
     "title": "[PR] home-assistant: 2026.5.1 -> 2026.5.2",
-    "date": "2026-05-16T14:41:37Z",
+    "date": "2026-05-16T15:09:00Z",
     "summary": "Diff: https://github.com/home-assistant/core/compare/2026.5.1...2026.5.2\r\n\r\nChangelog: https://github.com/home-assistant/core/releases/tag/2026.5.2\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or des",
     "url": "https://github.com/NixOS/nixpkgs/pull/520687",
     "source": "github_prs",
@@ -887,7 +887,7 @@
   },
   {
     "title": "[PR] feat(benchmarks): community-YAML export + CI workflow to PR ldr-benchmarks",
-    "date": "2026-05-16T14:05:31Z",
+    "date": "2026-05-16T16:02:17Z",
     "summary": "## Summary\n\n- Adds opt-in **community-format YAML emission** to CLI benchmark runs, matching the schema the UI's \"YAML\" download button produces today (`benchmark_results.html:583-705`)\n- Adds a new **`benchmark-submit` workflow** that runs a benchmark in CI and opens a PR to [`LearningCircuit/ldr-b",
     "url": "https://github.com/LearningCircuit/local-deep-research/pull/4064",
     "source": "github_prs",
@@ -1031,7 +1031,7 @@
   },
   {
     "title": "[PR] feat(services): fetch remote service models",
-    "date": "2026-05-16T14:57:30Z",
+    "date": "2026-05-16T15:20:51Z",
     "summary": "Fix https://github.com/tisfeng/Easydict/issues/1166#issuecomment-4397274965\r\n\r\n## Summary\r\n\r\nThis adds a model picker in stream service settings so users can fetch available model IDs instead of typing them manually.\r\n\r\nSupported sources:\r\n\r\n- OpenAI-compatible providers through `/models`\r\n- Claude ",
     "url": "https://github.com/tisfeng/Easydict/pull/1173",
     "source": "github_prs",
@@ -1163,7 +1163,7 @@
   },
   {
     "title": "[PR] Feat/730 llm streaming chunk",
-    "date": "2026-05-16T11:56:16Z",
+    "date": "2026-05-16T15:15:01Z",
     "summary": "## Summary\r\n\r\n<img width=\"716\" height=\"466\" alt=\"Captura de pantalla 2026-05-15 a las 18 19 03\" src=\"https://github.com/user-attachments/assets/f44e83dd-539f-414e-b9d0-942fc723502c\" />\r\n\r\nAdds a unified streaming path that delivers **both** the visible answer and the model's chain-of-thought to the ",
     "url": "https://github.com/rocketride-org/rocketride-server/pull/889",
     "source": "github_prs",
@@ -1231,6 +1231,18 @@
       "comments: 1",
       "pull request",
       "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] fix(providers): stop tagging foreign SDK model IDs as anthropic",
+    "date": "2026-05-16T15:56:34Z",
+    "summary": "## Root cause\n\n`AnthropicProvider.convertSdkModels` tagged **every** SDK-returned model with `provider: 'anthropic'`. When `ANTHROPIC_BASE_URL` is overridden \u2014 either by the user (routing the Anthropic SDK to GLM's Anthropic-compatible endpoint) or by a stale env-leak after a GLM session \u2014 the Claud",
+    "url": "https://github.com/lsm/neokai/pull/1925",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: neokai"
     ]
   }
 ]
