@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-16T17:45:48Z",
+    "date": "2026-05-16T19:06:20Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -767,7 +767,7 @@
   },
   {
     "title": "[PR] home-assistant: 2026.5.1 -> 2026.5.2",
-    "date": "2026-05-16T15:09:00Z",
+    "date": "2026-05-16T18:55:03Z",
     "summary": "Diff: https://github.com/home-assistant/core/compare/2026.5.1...2026.5.2\r\n\r\nChangelog: https://github.com/home-assistant/core/releases/tag/2026.5.2\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or des",
     "url": "https://github.com/NixOS/nixpkgs/pull/520687",
     "source": "github_prs",
@@ -1331,7 +1331,7 @@
   },
   {
     "title": "[PR] DMP 2026 Demo",
-    "date": "2026-05-16T17:42:58Z",
+    "date": "2026-05-16T19:11:59Z",
     "summary": "### Summary\r\n\r\nThis PR introduces a full-stack **AI Content Generation Pipeline** into the Shiksha teacher micro-frontend (`scp-teacher-repo`) and a new **`ai-gateway`** FastAPI microservice. The feature is exposed under the **AI Studio** wizard \u2014 a 4-step flow (Upload \u2192 Generate \u2192 Review \u2192 Export) ",
     "url": "https://github.com/tekdi/shiksha-mfe/pull/49",
     "source": "github_prs",
@@ -1399,6 +1399,54 @@
       "comments: 2",
       "pull request",
       "repo: home-ops"
+    ]
+  },
+  {
+    "title": "Custom OpenAI-compatible provider options not being passed to API calls",
+    "date": "2026-05-16T18:48:49Z",
+    "summary": "# Custom OpenAI-compatible provider options not being passed to API calls\n\n## Description\n\n### Summary\n\nWhen using a custom provider with `@ai-sdk/openai-compatible`, the `options` (including `baseURL` and `apiKey`) configured in `opencode.json` are not being passed to the actual API calls. This res",
+    "url": "https://github.com/anomalyco/opencode/issues/5674",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 22",
+      "state: open",
+      "repo: opencode"
+    ]
+  },
+  {
+    "title": "[PR] test: hermeticize inference and CLI env-sensitive tests",
+    "date": "2026-05-16T19:14:58Z",
+    "summary": "## Summary\n- make provider discovery count assertion resilient to new bundled profiles\n- isolate runtime-provider tests from live CUSTOM_BASE_URL/OPENROUTER_BASE_URL env leakage\n- harden gateway and web-server CLI tests against host-specific systemd/PATH state\n\n## Validation\n- pytest -q tests/provid",
+    "url": "https://github.com/DIZ-admin/hermes-agent/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-05-16T18:10:30Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] Version Packages",
+    "date": "2026-05-16T18:01:42Z",
+    "summary": "This PR was opened by the [Changesets release](https://github.com/changesets/action) GitHub action. When you're ready to do a release, you can merge this and the packages will be published to npm automatically. If you're not ready to do a release yet, that's fine, whenever you add more changesets to",
+    "url": "https://github.com/motebit/motebit/pull/103",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: motebit"
     ]
   }
 ]
