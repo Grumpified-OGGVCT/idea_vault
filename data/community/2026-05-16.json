@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-16T22:49:22Z",
+    "date": "2026-05-16T23:35:13Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1439,7 +1439,7 @@
   },
   {
     "title": "[PR] Version Packages",
-    "date": "2026-05-16T18:01:42Z",
+    "date": "2026-05-16T23:53:06Z",
     "summary": "This PR was opened by the [Changesets release](https://github.com/changesets/action) GitHub action. When you're ready to do a release, you can merge this and the packages will be published to npm automatically. If you're not ready to do a release yet, that's fine, whenever you add more changesets to",
     "url": "https://github.com/motebit/motebit/pull/103",
     "source": "github_prs",
@@ -1523,7 +1523,7 @@
   },
   {
     "title": "[PR] feat(dashboard): Personal productivity dashboard",
-    "date": "2026-05-16T22:43:12Z",
+    "date": "2026-05-16T23:11:19Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Personal AI Assistant suite (decisions, blockers, escalations, handoffs, Kanban, critical-path visualizer).\n  * Dashboard app with trackers: Sleep, Nutrition, Mood/Energy, Sp",
     "url": "https://github.com/genesiscz/GenesisTools/pull/1",
     "source": "github_prs",
@@ -1571,7 +1571,7 @@
   },
   {
     "title": "[PR] V1 readiness: app-owned setup and local tools",
-    "date": "2026-05-16T22:00:07Z",
+    "date": "2026-05-16T23:54:57Z",
     "summary": "## Summary\n\nThis V1 readiness PR consolidates the local-first setup/runtime foundation so operators can bootstrap, inspect, and run paper-first workflows from one branch before the V1 release path continues.\n\nKey changes:\n- Adds conservative `app:*` lifecycle lanes for doctor/setup/start/stop/update",
     "url": "https://github.com/ogiboy/agentic-trader/pull/41",
     "source": "github_prs",
@@ -1619,12 +1619,12 @@
   },
   {
     "title": "[PR] PAN-457",
-    "date": "2026-05-16T22:38:06Z",
+    "date": "2026-05-16T23:48:23Z",
     "summary": "Closes #457\n\n## Acceptance Criteria\n\n- [x] Add discovered_sessions, sessions_fts, session_embeddings tables + migration\n- [x] Async streaming JSONL parser for scanner use in dashboard server\n- [x] Claude project hash \u2192 workspace path resolver\n- [x] SystemCapabilities probe for adaptive scan parallel",
     "url": "https://github.com/eltmon/panopticon-cli/pull/717",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: panopticon-cli"
     ]
@@ -1643,7 +1643,7 @@
   },
   {
     "title": "[PR] feat: add provider model curation settings",
-    "date": "2026-05-16T22:03:29Z",
+    "date": "2026-05-16T23:42:45Z",
     "summary": "## Summary\nThis PR starts the provider-first model registry work for #171 on top of the engine refactor epic.\n\n## What changed\n- removes the old duplicated frontend model lists and uses the catalog as the single source of truth\n- adds reasoning and stage-fit metadata for product-known models\n- adds ",
     "url": "https://github.com/nikazzio/glossa/pull/172",
     "source": "github_prs",
@@ -1651,6 +1651,30 @@
       "comments: 0",
       "pull request",
       "repo: glossa"
+    ]
+  },
+  {
+    "title": "[PR] Bump langchain from 0.3.0 to 1.3.1 in /langchain",
+    "date": "2026-05-16T23:12:47Z",
+    "summary": "Bumps [langchain](https://github.com/langchain-ai/langchain) from 0.3.0 to 1.3.1.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/langchain-ai/langchain/releases\">langchain's releases</a>.</em></p>\n<blockquote>\n<h2>langchain-core==1.3.1</h2>\n<p>Changes sinc",
+    "url": "https://github.com/delega-dev/delega-examples/pull/39",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: delega-examples"
+    ]
+  },
+  {
+    "title": "[PR] feat: enrich model capabilities via models.dev and fix provider alias resolution",
+    "date": "2026-05-16T23:04:24Z",
+    "summary": "## Summary\n\n- Add env var fallback for API key in config hook (`OMNIROUTE_API_KEY`)\n- Generate `modelMetadata` from enriched models so OpenCode applies capabilities (temperature, reasoning, attachment, vision, tools)\n- Add top-level capability fields to provider model output matching old plugin shap",
+    "url": "https://github.com/Alph4d0g/opencode-omniroute-auth/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: opencode-omniroute-auth"
     ]
   }
 ]
