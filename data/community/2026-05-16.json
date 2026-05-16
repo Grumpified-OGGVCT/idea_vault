@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-16T05:35:33Z",
+    "date": "2026-05-16T08:14:38Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -575,7 +575,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-05-16T02:44:09Z",
+    "date": "2026-05-16T08:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -754,9 +754,9 @@
     ]
   },
   {
-    "title": "[PR] [WIP] Add complete open-source platform Train-LM",
-    "date": "2026-05-16T06:24:55Z",
-    "summary": "- [x] Assess repository baseline and investigate current workflow runs/log status via GitHub Actions MCP\n- [ ] Scaffold Train-LM repository structure with minimal production-ready starter modules (backend, frontend, trainer, inference, telegram, scripts, docker, docs, tests, storage dirs)\n- [ ] Impl",
+    "title": "[PR] Patch JWT dependency vulnerability by upgrading python-jose to 3.4.0",
+    "date": "2026-05-16T06:49:28Z",
+    "summary": "- [x] Explore current repo state and assess existing scaffold\n- [x] Check all new ML dependencies for vulnerabilities (patched versions selected)\n- [ ] Add ML dependencies: torch 2.6.0, transformers 4.48.0, tokenizers 0.21.0, accelerate 1.2.1, datasets 3.2.0, peft 0.14.0, bitsandbytes 0.45.0\n- [ ] t",
     "url": "https://github.com/Sharmapank-j/Train-lm/pull/1",
     "source": "github_prs",
     "highlights": [
@@ -767,7 +767,7 @@
   },
   {
     "title": "[PR] home-assistant: 2026.5.1 -> 2026.5.2",
-    "date": "2026-05-16T06:18:44Z",
+    "date": "2026-05-16T07:21:49Z",
     "summary": "Diff: https://github.com/home-assistant/core/compare/2026.5.1...2026.5.2\r\n\r\nChangelog: https://github.com/home-assistant/core/releases/tag/2026.5.2\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or des",
     "url": "https://github.com/NixOS/nixpkgs/pull/520687",
     "source": "github_prs",
@@ -791,12 +791,12 @@
   },
   {
     "title": "[PR] feat(providers): add 12 new providers + new modalities (avatar/music/video) + image-gen",
-    "date": "2026-05-16T05:51:22Z",
+    "date": "2026-05-16T07:39:21Z",
     "summary": "## Summary\n\nExpands NeuroLink from 13 chat / 5 TTS / 4 STT to **21+ chat providers** plus **four new modality categories**: image generation, video generation, avatar / lip-sync, and music generation. All wired through the existing Factory + Registry pattern.\n\n### New chat / LLM providers (12)\n- **x",
     "url": "https://github.com/juspay/neurolink/pull/1019",
     "source": "github_prs",
     "highlights": [
-      "comments: 32",
+      "comments: 33",
       "pull request",
       "repo: neurolink"
     ]
@@ -839,7 +839,7 @@
   },
   {
     "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m6",
-    "date": "2026-05-16T04:53:56Z",
+    "date": "2026-05-16T08:37:51Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
     "url": "https://github.com/MartinWitt/BootFleet/pull/49",
     "source": "github_prs",
@@ -883,6 +883,78 @@
       "comments: 1",
       "pull request",
       "repo: scaling-on-satisfaction"
+    ]
+  },
+  {
+    "title": "[PR] feat(benchmarks): community-YAML export + CI workflow to PR ldr-benchmarks",
+    "date": "2026-05-16T08:48:21Z",
+    "summary": "## Summary\n\n- Adds opt-in **community-format YAML emission** to CLI benchmark runs, matching the schema the UI's \"YAML\" download button produces today (`benchmark_results.html:583-705`)\n- Adds a new **`benchmark-submit` workflow** that runs a benchmark in CI and opens a PR to [`LearningCircuit/ldr-b",
+    "url": "https://github.com/LearningCircuit/local-deep-research/pull/4064",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: local-deep-research"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency llama-index to ~=0.14.22 [SECURITY]",
+    "date": "2026-05-16T08:11:45Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/TanNhatCMS/rag_dieu_le_doan/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: rag_dieu_le_doan"
+    ]
+  },
+  {
+    "title": "[PR] feat: add MiniMax as first-class LLM provider",
+    "date": "2026-05-16T07:49:12Z",
+    "summary": "## Summary\n\nAdds [MiniMax](https://www.minimax.io/) as a first-class LLM provider alongside OpenAI, Google, Anthropic, Ollama, Custom, and Codex.\n\nMiniMax provides OpenAI-compatible API endpoints at `https://api.minimax.io/v1`, so the implementation cleanly reuses the existing OpenAI SDK methods (`A",
+    "url": "https://github.com/presenton/presenton/pull/460",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: presenton"
+    ]
+  },
+  {
+    "title": "[PR] feat(chatbot): implement chatbot feature, configure environment variables",
+    "date": "2026-05-16T07:28:39Z",
+    "summary": "- **feat(chatbot): add dependency injection**\n- **feat(chatbot): configure environment variables**\n- **feat(chatbot): implement bot generate campaign with statistics data**\n- **feat(chatbot): implement generate campaign return streaming data**\n- **feat(chatbot): configure schema for RAG bot**\n- **fe",
+    "url": "https://github.com/tqha1011/ShoeStore/pull/321",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ShoeStore"
+    ]
+  },
+  {
+    "title": "[PR] CodeRabbit Full Codebase Review: LLM Gateway (All Changes)",
+    "date": "2026-05-16T06:45:03Z",
+    "summary": "## Purpose\nRequest CodeRabbit to perform a **comprehensive review of the entire llm-gateway codebase**.\n\nThis PR contains ALL commits from the initial architecture docs through the current state.\n\n## Codebase Overview\n- **15,000+ lines** of Python code\n- **880 unit tests** with 90% coverage\n- FastAP",
+    "url": "https://github.com/kevin-toles/llm-gateway/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: llm-gateway"
+    ]
+  },
+  {
+    "title": "[PR] Bump the langchain group with 6 updates",
+    "date": "2026-05-16T06:38:16Z",
+    "summary": "Bumps the langchain group with 6 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langchain](https://github.com/langchain-ai/langchain) | `0.3.27` | `1.3.1` |\n| [langchain-core](https://github.com/langchain-ai/langchain) | `0.3.78` | `1.4.0` |\n| [langchain-community](https://github.com/langc",
+    "url": "https://github.com/vamsimalineni96/chat_with_docs/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: chat_with_docs"
     ]
   }
 ]
