@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-16T19:06:20Z",
+    "date": "2026-05-16T20:49:01Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -575,7 +575,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-05-16T14:44:09Z",
+    "date": "2026-05-16T20:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -707,7 +707,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-16T16:53:54Z",
+    "date": "2026-05-16T20:44:50Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -791,12 +791,12 @@
   },
   {
     "title": "[PR] feat(providers): add 12 new providers + new modalities (avatar/music/video) + image-gen",
-    "date": "2026-05-16T16:51:17Z",
+    "date": "2026-05-16T19:34:25Z",
     "summary": "## Summary\n\nExpands NeuroLink from 13 chat / 5 TTS / 4 STT to **21+ chat providers** plus **four new modality categories**: image generation, video generation, avatar / lip-sync, and music generation. All wired through the existing Factory + Registry pattern.\n\n### New chat / LLM providers (12)\n- **x",
     "url": "https://github.com/juspay/neurolink/pull/1019",
     "source": "github_prs",
     "highlights": [
-      "comments: 34",
+      "comments: 35",
       "pull request",
       "repo: neurolink"
     ]
@@ -863,12 +863,12 @@
   },
   {
     "title": "[PR] PAN-1053",
-    "date": "2026-05-16T04:08:14Z",
+    "date": "2026-05-16T20:51:02Z",
     "summary": "Closes #1053\n\n## Acceptance Criteria\n\n- [x] Create packages/moonshine-linux-x64 npm package structure\n- [x] Write scripts/build-moonshine-sidecars.js and sidecar main.py\n- [x] Implement src/voice/transcription.ts \u2014 createMoonshineTranscription() + ITurnEmitter\n- [x] Implement src/voice/turn-queue.ts",
     "url": "https://github.com/eltmon/panopticon-cli/pull/1119",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 17",
       "pull request",
       "repo: panopticon-cli"
     ]
@@ -1331,7 +1331,7 @@
   },
   {
     "title": "[PR] DMP 2026 Demo",
-    "date": "2026-05-16T19:11:59Z",
+    "date": "2026-05-16T20:19:29Z",
     "summary": "### Summary\r\n\r\nThis PR introduces a full-stack **AI Content Generation Pipeline** into the Shiksha teacher micro-frontend (`scp-teacher-repo`) and a new **`ai-gateway`** FastAPI microservice. The feature is exposed under the **AI Studio** wizard \u2014 a 4-step flow (Upload \u2192 Generate \u2192 Review \u2192 Export) ",
     "url": "https://github.com/tekdi/shiksha-mfe/pull/49",
     "source": "github_prs",
@@ -1447,6 +1447,126 @@
       "comments: 1",
       "pull request",
       "repo: motebit"
+    ]
+  },
+  {
+    "title": "[PR] deps: Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6 (main)",
+    "date": "2026-05-16T20:51:44Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
+    "url": "https://github.com/camunda/camunda/pull/53096",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: camunda"
+    ]
+  },
+  {
+    "title": "[PR] feat: Ollama provider \u2014 local & cloud LLM runtime",
+    "date": "2026-05-16T20:51:12Z",
+    "summary": "Add a full Ollama provider driver integrated with the existing `ProviderDriver` pattern, enabling T3 Code to use local and cloud Ollama instances as a first-class provider alongside Codex, Claude, OpenCode, and Cursor.\n\n## Backend\n\n- **`ollamaRuntime.ts`** \u2014 HTTP helpers for Ollama REST API: `/api/c",
+    "url": "https://github.com/pingdotgg/t3code/pull/2735",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: t3code"
+    ]
+  },
+  {
+    "title": "[PR] deps: Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6 (stable/8.9)",
+    "date": "2026-05-16T20:46:57Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
+    "url": "https://github.com/camunda/camunda/pull/53042",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: camunda"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the npm-production group with 7 updates",
+    "date": "2026-05-16T20:43:22Z",
+    "summary": "Bumps the npm-production group with 7 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [chalk](https://github.com/chalk/chalk) | `5.6.0` | `5.6.2` |\n| [commander](https://github.com/tj/commander.js) | `11.1.0` | `14.0.3` |\n| [fs-extra](https://github.com/jprichardson/node-fs-extra) | `11.3.1`",
+    "url": "https://github.com/beingmartinbmc/roastme/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: roastme"
+    ]
+  },
+  {
+    "title": "[PR] deps(go): bump module github.com/testcontainers/testcontainers-go to v0.42.0",
+    "date": "2026-05-16T20:33:34Z",
+    "summary": "\n\n\n<Actions>\n    <action id=\"83ab38fcda5079af067caeafe5c61020d52689318e64fd4b6b691ab8cde2254c\">\n        <h3>deps(go): bump module github.com/testcontainers/testcontainers-go</h3>\n        <details id=\"118a1de593252b71f178cef60ae8b6af7c484a51bead92a6671a2630b548e68e\">\n            <summary>clean: go mo",
+    "url": "https://github.com/updatecli/udash/pull/399",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: udash"
+    ]
+  },
+  {
+    "title": "[PR] deps(go): bump module github.com/testcontainers/testcontainers-go/modules/postgres to v0.42.0",
+    "date": "2026-05-16T20:33:31Z",
+    "summary": "\n\n\n<Actions>\n    <action id=\"1d1b82444e188a1e22f075953a8b8fd810a324fe82dc87ebe9f2bd594f73847f\">\n        <h3>deps(go): bump module github.com/testcontainers/testcontainers-go/modules/postgres</h3>\n        <details id=\"118a1de593252b71f178cef60ae8b6af7c484a51bead92a6671a2630b548e68e\">\n            <sum",
+    "url": "https://github.com/updatecli/udash/pull/397",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: udash"
+    ]
+  },
+  {
+    "title": "[PR] feat(dashboard): Personal productivity dashboard",
+    "date": "2026-05-16T20:32:25Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Personal AI Assistant suite (decisions, blockers, escalations, handoffs, Kanban, critical-path visualizer).\n  * Dashboard app with trackers: Sleep, Nutrition, Mood/Energy, Sp",
+    "url": "https://github.com/genesiscz/GenesisTools/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: GenesisTools"
+    ]
+  },
+  {
+    "title": "[PR] Native Ollama LLM Integration + Example Project + Full Unit Tests",
+    "date": "2026-05-16T19:47:47Z",
+    "summary": "# \ud83d\ude80 PR: Native Ollama LLM Integration + Example Project + Full Unit Tests  \r\n**Includes: Critical Fix for Ollama Cloud Tool-Calling + Comparison Test with LiteLLM**\r\n\r\n## \ud83d\udd17 Link to Issue or Description of Change\r\nNo existing issue.  \r\nSubmitting this as a **major feature contribution** that fills a ",
+    "url": "https://github.com/google/adk-python/pull/3570",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: adk-python"
+    ]
+  },
+  {
+    "title": "[PR] Bump langchain from 1.2.18 to 1.3.1 in /src/core",
+    "date": "2026-05-16T19:39:42Z",
+    "summary": "Bumps [langchain](https://github.com/langchain-ai/langchain) from 1.2.18 to 1.3.1.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/langchain-ai/langchain/releases\">langchain's releases</a>.</em></p>\n<blockquote>\n<h2>langchain-core==1.3.1</h2>\n<p>Changes sin",
+    "url": "https://github.com/multiflexi/Taranis-NG/pull/594",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Taranis-NG"
+    ]
+  },
+  {
+    "title": "[PR] Make project fully local and free by removing external API dependencies",
+    "date": "2026-05-16T19:34:01Z",
+    "summary": "This PR transitions the project to a 100% local, free execution model by removing reliance on all external cloud APIs (Gemini, Qwen, NVIDIA, Pollinations).\n\nChanges:\n1. Removed all external API key references from `.env.example`.\n2. Uninstalled cloud AI SDKs (`@google/genai`, `@google/generative-ai`",
+    "url": "https://github.com/parya5103/AGENTIC-WEB-ENGINEv2.4.0/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: AGENTIC-WEB-ENGINEv2.4.0"
     ]
   }
 ]
