@@ -515,7 +515,7 @@
   },
   {
     "title": "[PR] Version Packages",
-    "date": "2026-05-17T17:32:34Z",
+    "date": "2026-05-17T18:38:05Z",
     "summary": "This PR was opened by the [Changesets release](https://github.com/changesets/action) GitHub action. When you're ready to do a release, you can merge this and the packages will be published to npm automatically. If you're not ready to do a release yet, that's fine, whenever you add more changesets to",
     "url": "https://github.com/motebit/motebit/pull/103",
     "source": "github_prs",
@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-17T17:46:01Z",
+    "date": "2026-05-17T18:46:21Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] feat(runtime): local-first phase 1, mission control, mac-vps align",
-    "date": "2026-05-17T17:54:15Z",
+    "date": "2026-05-17T18:03:22Z",
     "summary": "## Summary\n\n**Phase 1 LOCAL-FIRST runtime** \u2014 c\u00f3digo + documentaci\u00f3n en `feat/local-first-architecture-clean`. Incluye detector de entorno, wizard, health/SSE, Mission Control (nodos locales + chat), capabilities, popping subagents y scripts **Mac \u2194 VPS** (`opsly-repo-align`).\n\n**Estrategia:** BullM",
     "url": "https://github.com/cloudsysops/opsly/pull/357",
     "source": "github_prs",
@@ -659,12 +659,12 @@
   },
   {
     "title": "[PR] implement: artifact / attachment unification",
-    "date": "2026-05-17T16:30:06Z",
+    "date": "2026-05-17T18:39:52Z",
     "summary": "## Summary\r\n\r\nImplements `plans/artifact-attachment-unification.md`. The PR (originally just the plan doc) now contains the full implementation across six logical commits.\r\n\r\n**Headline bug fixed:** uploading a >100KB JSON file to Sage no longer blows the LLM context window. The file is registered a",
     "url": "https://github.com/MemberJunction/MJ/pull/2569",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 11",
       "pull request",
       "repo: MJ"
     ]
@@ -743,8 +743,8 @@
   },
   {
     "title": "[PR] feat(dashboard): Personal productivity dashboard",
-    "date": "2026-05-17T17:38:28Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added comprehensive dashboard application with timer, AI assistant, notes, bookmarks, and focus mode features\n  * Introduced real-time synchronization and offline-first suppo",
+    "date": "2026-05-17T18:41:27Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added a full Dashboard web app with Timer, AI Assistant, Notes, Bookmarks, Focus mode, and Settings\n  * Real-time sync and multi-tab updates via WebSockets/SSE; PWA manifest ",
     "url": "https://github.com/genesiscz/GenesisTools/pull/1",
     "source": "github_prs",
     "highlights": [
@@ -851,7 +851,7 @@
   },
   {
     "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m6",
-    "date": "2026-05-17T13:27:26Z",
+    "date": "2026-05-17T18:43:23Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
     "url": "https://github.com/MartinWitt/BootFleet/pull/49",
     "source": "github_prs",
@@ -1138,13 +1138,13 @@
     ]
   },
   {
-    "title": "[PR] \u2728 [desktop]: integrate core service as default AI provider",
-    "date": "2026-05-17T18:00:56Z",
-    "summary": "## Summary\n- Introduced 'Typo Cloud' as the default AI provider in the Desktop app.\n- Requests are now routed through the `@core` service completions API.\n- Added support for sending the user's `access_token` for unlimited access.\n- Implemented rate limit handling (429 errors) with a login prompt.\n-",
+    "title": "[PR] \u2728 [desktop]: integrate core service as default AI provider and refactor settings UI",
+    "date": "2026-05-17T19:10:46Z",
+    "summary": "## Summary\n- Introduce 'Typo Cloud' backed by core service completions API as the default AI provider.\n- Implement rate limit handling (429 errors) with a login prompt and token authentication.\n- Refactor desktop settings into modular views (`Settings`, `Prompts`, `Appearance`) with grouped navigati",
     "url": "https://github.com/yuler/typo/pull/60",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 5",
       "pull request",
       "repo: typo"
     ]
@@ -1235,8 +1235,8 @@
   },
   {
     "title": "[PR] feat: Groq cloud LLM, document persistence, field completeness badges, expanded form",
-    "date": "2026-05-17T17:25:43Z",
-    "summary": "- [x] Reproduce current project errors by running lint, tests, build, and dependency audit\n- [x] Apply minimal dependency updates needed to resolve reported errors/vulnerabilities\n- [x] Re-run lint, tests, build, and audit to verify all fixes\n- [x] Summarize what was fixed and any remaining blockers",
+    "date": "2026-05-17T19:22:50Z",
+    "summary": "- [x] Audit the current workspace, command flow, template registry, PDF pipeline, print preview, and chat architecture\n- [x] Install project dependencies and capture the current validation baseline\n- [x] Introduce a Redux-driven UI command layer and remove remaining `window` custom-event coupling\n- ",
     "url": "https://github.com/arslan9024/Henry/pull/11",
     "source": "github_prs",
     "highlights": [
@@ -1247,8 +1247,8 @@
   },
   {
     "title": "[PR] feat: automatically pick up inference on desktop",
-    "date": "2026-05-17T17:24:07Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n# Release Notes\n\n* **New Features**\n  * Audio synced to your desktop can now auto-transcribe locally if you pin an inference profile to that device.\n  * Pin inference profiles to specific devices ",
+    "date": "2026-05-17T19:23:48Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Auto-transcribe synced audio locally on a pinned desktop device; only the pinned host will auto-run local transcription.\n  * Pin inference profiles to a specific device via a",
     "url": "https://github.com/matthiasn/lotti/pull/3178",
     "source": "github_prs",
     "highlights": [
@@ -1267,6 +1267,66 @@
       "comments: 0",
       "pull request",
       "repo: ZynqOs"
+    ]
+  },
+  {
+    "title": "[PR] feat(hermes-air): scaffold always-on Hermes orchestration node",
+    "date": "2026-05-17T19:20:47Z",
+    "summary": "## Summary\n\nSets up the in-repo scaffolding for running Hermes as a dedicated always-on orchestration node on a 16 GB MacBook Air. The Air ingests brain dumps (Telegram + macOS Voice Memos via iCloud), persists everything to gbrain (Air-hosted, exposed to the Pro over Tailscale), and files Linear is",
+    "url": "https://github.com/JovieInc/Jovie/pull/9007",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: Jovie"
+    ]
+  },
+  {
+    "title": "[PR] fix: enforce session check before creating custom LLM providers",
+    "date": "2026-05-17T19:07:10Z",
+    "summary": "## Summary\n\nAn unregistered user can configure every workload (reasoning, coding, agentic, memory, heartbeat, etc.) to use a custom cloud provider (e.g. DeepSeek, OpenAI, Anthropic) and bypass the OpenHuman session requirement entirely. The core never creates an `OpenHumanBackendProvider`, so the JW",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/2014",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] fix(model-catalog): replace requests with urllib3 to avoid OTel recursion",
+    "date": "2026-05-17T18:49:08Z",
+    "summary": "## Summary\n\n- Modell-Discovery (`/api/llm/providers/<id>/models`) liefert mit aktiviertem OTel (`OTEL_ENABLED=true`) seit Slice 1b nur noch Fallback-Listen \u2014 Ursache: `OTel RequestsInstrumentor` + gunicorn-gevent triggern Endlos-Rekursion in `requests.adapters.HTTPAdapter.send`.\n- `model_catalog_ser",
+    "url": "https://github.com/arn0ld87/agora/pull/530",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agora"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update rust crate reqwest to 0.13",
+    "date": "2026-05-17T18:41:29Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [reqwest](https://redirect.github.com/seanmonstar/reqwest) | dependencies | minor | `0.11` \u2192 `0.13` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>seanmonstar/reqwest (reqwest)</summary>\n\n### [`v0.13.3`]",
+    "url": "https://github.com/nx-solutions-ug/chronova-cli/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: chronova-cli"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): Ollama support \u2014 local-model reviews, zero cost",
+    "date": "2026-05-17T18:27:02Z",
+    "summary": "## Summary\n\nAdds the Ollama provider so self-hosted Octopus can run reviews through any model the user has pulled locally. Strategy: reuse the OpenAI SDK with a custom \\`baseURL\\` since Ollama exposes an OpenAI-compatible \\`/v1/chat/completions\\` endpoint.\n\n**Stacked on [#56](https://github.com/cemo",
+    "url": "https://github.com/cemoso/octopus/pull/82",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: octopus"
     ]
   }
 ]
