@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-17T03:43:19Z",
+    "date": "2026-05-17T06:21:45Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -539,12 +539,12 @@
   },
   {
     "title": "[PR] PAN-457",
-    "date": "2026-05-17T03:38:03Z",
+    "date": "2026-05-17T05:10:47Z",
     "summary": "Closes #457\n\n## Acceptance Criteria\n\n- [x] Add discovered_sessions, sessions_fts, session_embeddings tables + migration\n- [x] Async streaming JSONL parser for scanner use in dashboard server\n- [x] Claude project hash \u2192 workspace path resolver\n- [x] SystemCapabilities probe for adaptive scan parallel",
     "url": "https://github.com/eltmon/panopticon-cli/pull/717",
     "source": "github_prs",
     "highlights": [
-      "comments: 18",
+      "comments: 20",
       "pull request",
       "repo: panopticon-cli"
     ]
@@ -635,7 +635,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-17T01:42:24Z",
+    "date": "2026-05-17T05:40:20Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -707,7 +707,7 @@
   },
   {
     "title": "[PR] fix(deps): update spring dependencies",
-    "date": "2026-05-17T00:34:16Z",
+    "date": "2026-05-17T05:04:25Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.cloud:spring-cloud-dependencies](https://spring.io/projects/spring-cloud) ([so",
     "url": "https://github.com/nilson-aguiar/nbot/pull/11",
     "source": "github_prs",
@@ -751,6 +751,114 @@
       "comments: 3",
       "pull request",
       "repo: GenesisTools"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): add 12 new providers + new modalities (avatar/music/video) + image-gen",
+    "date": "2026-05-17T06:29:23Z",
+    "summary": "## Summary\n\nExpands NeuroLink from 13 chat / 5 TTS / 4 STT to **21+ chat providers** plus **four new modality categories**: image generation, video generation, avatar / lip-sync, and music generation. All wired through the existing Factory + Registry pattern.\n\n### New chat / LLM providers (12)\n- **x",
+    "url": "https://github.com/juspay/neurolink/pull/1019",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 37",
+      "pull request",
+      "repo: neurolink"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-05-17T06:26:15Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] Added Ollama AI integration in ZyncOS",
+    "date": "2026-05-17T06:22:44Z",
+    "summary": "## Summary\r\n\r\n- What changed: Integrated Ollama-based AI chat response handling by replacing the temporary placeholder assistant response with real-time model interaction.\r\n- Changes Made \r\n  * Added loading/system message while AI response is being generated. \r\n  * Integrated fetch request to local",
+    "url": "https://github.com/Kanwaljeet1/Zynqos-new/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Zynqos-new"
+    ]
+  },
+  {
+    "title": "[PR] deps: Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6 (main)",
+    "date": "2026-05-17T06:10:31Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
+    "url": "https://github.com/camunda/camunda/pull/53096",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: camunda"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps):(deps): bump langchain from 1.2.18 to 1.3.1",
+    "date": "2026-05-17T06:06:13Z",
+    "summary": "Bumps [langchain](https://github.com/langchain-ai/langchain) from 1.2.18 to 1.3.1.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/langchain-ai/langchain/releases\">langchain's releases</a>.</em></p>\n<blockquote>\n<h2>langchain-core==1.3.1</h2>\n<p>Changes sin",
+    "url": "https://github.com/BrianLusina/research-assistant/pull/96",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: research-assistant"
+    ]
+  },
+  {
+    "title": "[PR] Refactor inference around external Ollama routing",
+    "date": "2026-05-17T05:34:30Z",
+    "summary": "## Summary\n\n- add a first-class `src/openhuman/inference` core module and register a dedicated `openhuman.inference_*` controller surface\n- keep the local-model UI talking only to core while shifting Ollama integration to direct external runtime routing via core/inference\n- remove legacy app-managed",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/1975",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui ( v0.8.12 \u2794 v0.9.5 )",
+    "date": "2026-05-17T05:27:09Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `v0.8.12` \u2192 `v0.9.5` |\n\n---\n\n> [!WARNING]\n> Some ",
+    "url": "https://github.com/Aviator-Coding/home-ops/pull/755",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] deps: Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6 (stable/8.9)",
+    "date": "2026-05-17T05:05:10Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
+    "url": "https://github.com/camunda/camunda/pull/53042",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: camunda"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m6",
+    "date": "2026-05-17T05:01:58Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/MartinWitt/BootFleet/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: BootFleet"
     ]
   }
 ]
