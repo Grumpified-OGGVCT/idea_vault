@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-17T14:49:33Z",
+    "date": "2026-05-17T15:46:21Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -659,12 +659,12 @@
   },
   {
     "title": "[PR] implement: artifact / attachment unification",
-    "date": "2026-05-17T01:32:22Z",
+    "date": "2026-05-17T15:30:26Z",
     "summary": "## Summary\r\n\r\nImplements `plans/artifact-attachment-unification.md`. The PR (originally just the plan doc) now contains the full implementation across six logical commits.\r\n\r\n**Headline bug fixed:** uploading a >100KB JSON file to Sage no longer blows the LLM context window. The file is registered a",
     "url": "https://github.com/MemberJunction/MJ/pull/2569",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 9",
       "pull request",
       "repo: MJ"
     ]
@@ -719,7 +719,7 @@
   },
   {
     "title": "[PR] feat: add provider model curation settings",
-    "date": "2026-05-17T14:16:32Z",
+    "date": "2026-05-17T15:28:51Z",
     "summary": "## Summary\nThis PR starts the provider-first model registry work for #171 on top of the engine refactor epic.\n\n## What changed\n- removes the old duplicated frontend model lists and uses the catalog as the single source of truth\n- adds reasoning and stage-fit metadata for product-known models\n- adds ",
     "url": "https://github.com/nikazzio/glossa/pull/172",
     "source": "github_prs",
@@ -1151,12 +1151,12 @@
   },
   {
     "title": "[PR] Gerar AGENTS.md",
-    "date": "2026-05-17T14:44:18Z",
+    "date": "2026-05-17T15:52:59Z",
     "summary": "Analise todo o codigo deste projeto e gere um arquivo AGENTS.md na raiz com instrucoes claras para agentes de IA: arquitetura do projeto, convencoes de codigo, comandos de build/test/lint, areas sensiveis e guias de contribuicao. O arquivo deve ser objetivo e util para que futuros agentes entendam r",
     "url": "https://github.com/juninmd/quiz-shorts-generator/pull/46",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: quiz-shorts-generator"
     ]
@@ -1183,6 +1183,42 @@
       "comments: 2",
       "pull request",
       "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Release v3.8.0 \u2014 next development cycle",
+    "date": "2026-05-17T16:05:48Z",
+    "summary": "## Summary\n\nRelease branch for v3.8.0. This PR serves as the integration point for all work done since the v3.7.9 release.\n\n## Current state\n\n- All features, fixes, and chores mapped to the v3.8.0 release cycle are integrated.\n- Pending final validation and version bump before the official release.\n",
+    "url": "https://github.com/diegosouzapw/OmniRoute/pull/2323",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "[PR] [223D/223E] Model Introspection: capabilities contract, probe reliability, UI verdict split, SLO gates",
+    "date": "2026-05-17T15:58:16Z",
+    "summary": "## Context\nThis PR publishes the full implementation scope completed on the current branch for 223D/223E (attention/saliency/introspection hardening), including backend contracts, frontend operator clarity, quality gates, and PL/EN docs sync.\n\n## Delivered Scope\n1. Backend introspection capabilities",
+    "url": "https://github.com/mpieniak01/Venom/pull/497",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Venom"
+    ]
+  },
+  {
+    "title": "[PR] Added Ollama AI integration in ZyncOS",
+    "date": "2026-05-17T15:49:35Z",
+    "summary": "## Summary\r\n\r\n- What changed: Integrated Ollama-based AI chat response handling by replacing the temporary placeholder assistant response with real-time model interaction.\r\n- Changes Made \r\n  * Added loading/system message while AI response is being generated. \r\n  * Integrated fetch request to local",
+    "url": "https://github.com/Kanwaljeet1/Zynqos-new/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Zynqos-new"
     ]
   }
 ]
