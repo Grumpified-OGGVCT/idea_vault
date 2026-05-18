@@ -539,7 +539,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-18T16:00:33Z",
+    "date": "2026-05-18T18:34:17Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] Release v3.8.0 \u2014 next development cycle",
-    "date": "2026-05-18T12:30:59Z",
+    "date": "2026-05-18T18:49:51Z",
     "summary": "## Summary\n\nRelease branch for v3.8.0. This PR serves as the integration point for all work done since the v3.7.9 release.\n\n## Current state\n\n- All features, fixes, and chores mapped to the v3.8.0 release cycle are integrated.\n- Pending final validation and version bump before the official release.\n",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/2323",
     "source": "github_prs",
@@ -671,7 +671,7 @@
   },
   {
     "title": "[PR] fix(ollama): restrict LAN IP rewrite to Windows only",
-    "date": "2026-05-18T02:12:02Z",
+    "date": "2026-05-18T18:15:25Z",
     "summary": "## Summary\r\n- On Windows/WSL2, `host.containers.internal` doesn't reach Windows loopback, so we resolve the first non-internal IPv4 address (the WSL2 gateway NIC) \u2014 requires `OLLAMA_HOST=0.0.0.0`\r\n- On macOS/Linux, Kaiden UI will output `localhost` \u2014 the kdn extension with Podman runtime will rewrit",
     "url": "https://github.com/openkaiden/kaiden/pull/1890",
     "source": "github_prs",
@@ -755,7 +755,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-18T15:17:25Z",
+    "date": "2026-05-18T17:55:05Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1031,12 +1031,12 @@
   },
   {
     "title": "[PR] feat(McpServer): add `allowPrivate` field for trusted internal MCP servers",
-    "date": "2026-05-18T12:09:37Z",
+    "date": "2026-05-18T17:36:27Z",
     "summary": "## Why\n\n`McpServer`'s HTTP transport currently constructs its `SafeHTTPClient` with `allowPrivate=false` unconditionally ([`runtime/mcp_session.go:479`](https://github.com/OrlojHQ/orloj/blob/main/runtime/mcp_session.go#L479)), which blocks any connection to an RFC 1918 / ULA / CGNAT destination \u2014 in",
     "url": "https://github.com/OrlojHQ/orloj/pull/74",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: orloj"
     ]
@@ -1175,12 +1175,12 @@
   },
   {
     "title": "[PR] fix(onboard): front Ollama with the auth proxy on WSL native Docker too",
-    "date": "2026-05-18T16:27:22Z",
+    "date": "2026-05-18T16:39:24Z",
     "summary": "## Summary\nCloses a long-standing assumption that WSL2 sandboxes always reach the host's loopback directly. That's only true under Docker Desktop; with native dockerd installed inside the WSL distro the sandbox container goes through the Docker bridge gateway (typically `172.17.0.1`), which can't se",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3732",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -1211,7 +1211,7 @@
   },
   {
     "title": "[PR] feat(explorer): unify page header chrome across ~50 dashboards",
-    "date": "2026-05-18T15:58:26Z",
+    "date": "2026-05-18T18:47:32Z",
     "summary": "## Summary\n\nOne step toward the Q2 OKR of standardizing MJ Explorer. This PR consolidates **information architecture** \u2014 specifically the **app/page header** and how users interact with search, filters, chips, reset buttons, and action buttons (create, add, etc.).\n\n- **~50 dashboards** across **14 s",
     "url": "https://github.com/MemberJunction/MJ/pull/2616",
     "source": "github_prs",
@@ -1295,7 +1295,7 @@
   },
   {
     "title": "[PR] ci/pr review",
-    "date": "2026-05-18T15:10:24Z",
+    "date": "2026-05-18T18:03:31Z",
     "summary": "- **ci: add pr review**\n- **fix: typo**\n- **ci: update**\n- **chore: update ui to trigger pr**\n- **chore: add ai review**\n- **fix: fix repo name**\n- **fix: llm base url**\n- **fix: gh token issue**\n",
     "url": "https://github.com/Phurba-Sherpa/ai-assistant/pull/3",
     "source": "github_prs",
@@ -1351,6 +1351,138 @@
       "comments: 0",
       "pull request",
       "repo: story-factory"
+    ]
+  },
+  {
+    "title": "[PR] fix(llm): provider-aware json_object mode + parallel-count bump",
+    "date": "2026-05-18T18:53:40Z",
+    "summary": "## Summary\n\n- `simulation_config_generator` und `oasis_profile_generator` honorieren `LLM_DISABLE_JSON_MODE=true` jetzt provider-aware: nur bei OpenAI (`api.openai.com`) wird `response_format=json_object` weggelassen, Ollama/Gemini behalten den JSON-Mode (kein Regressions-Risiko f\u00fcr andere Provider)",
+    "url": "https://github.com/arn0ld87/agora/pull/547",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agora"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/home-assistant/home-assistant to v2024.12.5",
+    "date": "2026-05-18T18:50:54Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/home-assistant/home-assistant](https://www.home-assistant.io/) ([source](https://redirect.github.com/home-assistant/core)) | minor | ",
+    "url": "https://github.com/Rojikku/home-ops/pull/2143",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] Update docker image updates",
+    "date": "2026-05-18T18:37:04Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [cloudflare/cloudflared](https://redirect.github.com/cloudflare/cloudflared) | minor | `2026.3.0` \u2192 `2026.5.0` |\n| [docker.io/valkey/valkey](h",
+    "url": "https://github.com/kilian-scheidecker/portainer-stacks/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: portainer-stacks"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update spring dependencies",
+    "date": "2026-05-18T18:11:16Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.cloud:spring-cloud-dependencies](https://spring.io/projects/spring-cloud) ([so",
+    "url": "https://github.com/nilson-aguiar/nbot/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nbot"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update image ghcr.io/open-webui/open-webui to v0.9.5",
+    "date": "2026-05-18T17:55:11Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.9.2` \u2192 `v0.9.5` |\n\n---\n\n> [!WARNING]\n> Some d",
+    "url": "https://github.com/lenaxia/talos-ops-prod/pull/1685",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: talos-ops-prod"
+    ]
+  },
+  {
+    "title": "[PR] feat: Integrate redteam providers with defaults system",
+    "date": "2026-05-18T17:25:30Z",
+    "summary": "## Summary\n\nIntegrates redteam providers with the promptfoo defaults system to enable automatic provider selection based on available API credentials. This eliminates the need for explicit provider configuration in most cases while maintaining full backward compatibility.\n\n### Key Features\n\n- **Auto",
+    "url": "https://github.com/promptfoo/promptfoo/pull/5493",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: promptfoo"
+    ]
+  },
+  {
+    "title": "[PR] Bump the langchain group with 2 updates",
+    "date": "2026-05-18T17:22:52Z",
+    "summary": "Bumps the langchain group with 2 updates: [langchain](https://github.com/langchain-ai/langchain) and [langchain-core](https://github.com/langchain-ai/langchain).\n\nUpdates `langchain` from 1.2.18 to 1.3.1\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/langc",
+    "url": "https://github.com/AlexRbkDaniel/yt-rag-ga/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: yt-rag-ga"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency ravendb.client to v7",
+    "date": "2026-05-18T17:15:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [RavenDB.Client](https://rav",
+    "url": "https://github.com/candoumbe/DataAccess/pull/260",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DataAccess"
+    ]
+  },
+  {
+    "title": "[PR] Build(deps): Bump the gradle group across 1 directory with 33 updates",
+    "date": "2026-05-18T17:03:14Z",
+    "summary": "Bumps the gradle group with 33 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [biz.aQute.bnd:biz.aQute.bnd.annotation](https://github.com/bndtools/bnd) | `7.2.1` | `7.2.3` |\n| [org.jsoup:jsoup](https://github.com/jhy/jsoup) | `1.22.1` | `1.22.2` |\n| commons-io:commons-io ",
+    "url": "https://github.com/NaveenParmar0/secureshield-extensions/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: secureshield-extensions"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps)(deps): bump the langchain group across 1 directory with 2 updates",
+    "date": "2026-05-18T17:00:34Z",
+    "summary": "Bumps the langchain group with 2 updates in the / directory: [langchain-core](https://github.com/langchain-ai/langchain) and [langchain](https://github.com/langchain-ai/langchain).\n\nUpdates `langchain-core` from 1.3.3 to 1.4.0\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"h",
+    "url": "https://github.com/OWASP/DockSec/pull/83",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: DockSec"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the npm_and_yarn group across 8 directories with 9 updates",
+    "date": "2026-05-18T16:44:48Z",
+    "summary": "Bumps the npm_and_yarn group with 1 update in the /cloud/apps/api directory: [hono](https://github.com/honojs/hono).\nBumps the npm_and_yarn group with 1 update in the /cloud/services/_smoke-mcp directory: [hono](https://github.com/honojs/hono).\nBumps the npm_and_yarn group with 1 update in the /clou",
+    "url": "https://github.com/pysol-dev/lain/pull/33",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: lain"
     ]
   }
 ]
