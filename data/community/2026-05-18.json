@@ -539,7 +539,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-18T18:34:17Z",
+    "date": "2026-05-18T20:04:19Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] Release v3.8.0 \u2014 next development cycle",
-    "date": "2026-05-18T18:49:51Z",
+    "date": "2026-05-18T18:58:17Z",
     "summary": "## Summary\n\nRelease branch for v3.8.0. This PR serves as the integration point for all work done since the v3.7.9 release.\n\n## Current state\n\n- All features, fixes, and chores mapped to the v3.8.0 release cycle are integrated.\n- Pending final validation and version bump before the official release.\n",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/2323",
     "source": "github_prs",
@@ -575,7 +575,7 @@
   },
   {
     "title": "[PR] feat(skip): client:capture-snapshot actionable command for live component snapshots",
-    "date": "2026-05-18T03:30:43Z",
+    "date": "2026-05-18T20:16:47Z",
     "summary": "## Summary\n\nAdds a typed actionable command `client:capture-snapshot` that an agent can emit when it needs the user's **current live view** of a Component artifact (filters, sort, drill, selection \u2014 all client-side state) before answering. Used by Skip-Brain's Analysis Agent: when a Component is on ",
     "url": "https://github.com/MemberJunction/MJ/pull/2614",
     "source": "github_prs",
@@ -1175,7 +1175,7 @@
   },
   {
     "title": "[PR] fix(onboard): front Ollama with the auth proxy on WSL native Docker too",
-    "date": "2026-05-18T16:39:24Z",
+    "date": "2026-05-18T19:40:55Z",
     "summary": "## Summary\nCloses a long-standing assumption that WSL2 sandboxes always reach the host's loopback directly. That's only true under Docker Desktop; with native dockerd installed inside the WSL distro the sandbox container goes through the Docker bridge gateway (typically `172.17.0.1`), which can't se",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3732",
     "source": "github_prs",
@@ -1211,12 +1211,12 @@
   },
   {
     "title": "[PR] feat(explorer): unify page header chrome across ~50 dashboards",
-    "date": "2026-05-18T18:47:32Z",
+    "date": "2026-05-18T20:00:53Z",
     "summary": "## Summary\n\nOne step toward the Q2 OKR of standardizing MJ Explorer. This PR consolidates **information architecture** \u2014 specifically the **app/page header** and how users interact with search, filters, chips, reset buttons, and action buttons (create, add, etc.).\n\n- **~50 dashboards** across **14 s",
     "url": "https://github.com/MemberJunction/MJ/pull/2616",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "pull request",
       "repo: MJ"
     ]
@@ -1483,6 +1483,78 @@
       "comments: 0",
       "pull request",
       "repo: lain"
+    ]
+  },
+  {
+    "title": "[PR] feat: soul chain backfill + ESO + LLM heartbeat + remote MCP endpoint",
+    "date": "2026-05-18T19:50:09Z",
+    "summary": "## Summary\n\nFive atomic commits covering one productive infra session on 2026-05-18.\nTop \u2192 bottom:\n\n1. **`feat(soul-service)`: linear prev_hash chain per SALUCA-013 \u00a77.3** \u2014 wires\n   per-session forensic chain in `write_memory()`; first row seeded by\n   genesis hash, every subsequent row links to pr",
+    "url": "https://github.com/saluca-labs/pantheon/pull/159",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: pantheon"
+    ]
+  },
+  {
+    "title": "[PR] [NEUTRAL] Update dependency @mariozechner/pi-ai to v0.70.6",
+    "date": "2026-05-18T19:39:34Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/snowdensb/openclaw_2/pull/59",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw_2"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface-hub to v0.36.2",
+    "date": "2026-05-18T19:03:30Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface-hub](https://re",
+    "url": "https://github.com/AReid987/stellarAgent/pull/89",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: stellarAgent"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency browser-use to v0.1.45 [SECURITY]",
+    "date": "2026-05-18T19:00:48Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [browser-use](https://redire",
+    "url": "https://github.com/AReid987/stellarAgent/pull/168",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: stellarAgent"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): add claude-code provider (#1193)",
+    "date": "2026-05-18T18:59:06Z",
+    "summary": "## Summary\n\nAdds a `claude-code` LLM provider in `mempalace/llm_client.py` that routes through the local `claude` CLI binary using the user's Claude Pro/Max subscription via `claude auth login`. Mirrors the existing `OllamaProvider` / `OpenAICompatProvider` / `AnthropicProvider` shape so `mempalace ",
+    "url": "https://github.com/MemPalace/mempalace/pull/1200",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: mempalace"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go/modules/postgres to v0.42.0",
+    "date": "2026-05-18T18:48:54Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go/modules/postgres](https://redirect.github.com/testcont",
+    "url": "https://github.com/infratographer/metadata-api/pull/303",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: metadata-api"
     ]
   }
 ]
