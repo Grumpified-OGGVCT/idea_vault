@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-19T11:44:47Z",
+    "date": "2026-05-19T16:21:55Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -587,7 +587,7 @@
   },
   {
     "title": "[PR] Update testcontainers-java monorepo to v1.21.4",
-    "date": "2026-05-18T23:53:03Z",
+    "date": "2026-05-19T16:15:06Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:mysql](h",
     "url": "https://github.com/mgh3326/que_bang/pull/114",
     "source": "github_prs",
@@ -647,7 +647,7 @@
   },
   {
     "title": "[PR] implement: artifact / attachment unification",
-    "date": "2026-05-19T12:08:13Z",
+    "date": "2026-05-19T15:32:45Z",
     "summary": "## Summary\r\n\r\nImplements `plans/artifact-attachment-unification.md`. The PR (originally just the plan doc) now contains the full implementation across six logical commits.\r\n\r\n**Headline bug fixed:** uploading a >100KB JSON file to Sage no longer blows the LLM context window. The file is registered a",
     "url": "https://github.com/MemberJunction/MJ/pull/2569",
     "source": "github_prs",
@@ -983,7 +983,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-19T11:52:37Z",
+    "date": "2026-05-19T15:11:39Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1031,7 +1031,7 @@
   },
   {
     "title": "[PR] build: apply minor/patch go package updates",
-    "date": "2026-05-19T09:00:48Z",
+    "date": "2026-05-19T15:50:49Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/go-surreal/sdbc/pull/145",
     "source": "github_prs",
@@ -1115,7 +1115,7 @@
   },
   {
     "title": "[PR] Add snap configuration keys and document all config options",
-    "date": "2026-05-19T08:13:11Z",
+    "date": "2026-05-19T15:21:19Z",
     "summary": "## Summary\n\n- Adds new snap configuration keys mapping to Ollama environment variables: `keep-alive`, `kv-cache-type`, `no-cloud`, `max-queue`, `max-loaded-models`, and `num-parallel`\n- All new keys default to empty, so Ollama's own defaults are respected unless explicitly overridden\n- Adds a Config",
     "url": "https://github.com/mz2/ollama-snap/pull/99",
     "source": "github_prs",
@@ -1163,12 +1163,12 @@
   },
   {
     "title": "[PR] feat(test,nodes): integrated Cobalt pipeline evaluation (testing framework + dataset + evaluator)",
-    "date": "2026-05-19T12:12:58Z",
+    "date": "2026-05-19T16:21:23Z",
     "summary": "## Summary\n\nThis PR delivers the full Cobalt-based pipeline-evaluation capability as a single reviewable unit. It bundles three components that together let RocketRide pipelines be benchmarked end-to-end: (1) a dataset-loader node that feeds curated items into a pipeline as RocketRide `Question`s, (",
     "url": "https://github.com/rocketride-org/rocketride-server/pull/683",
     "source": "github_prs",
     "highlights": [
-      "comments: 20",
+      "comments: 21",
       "pull request",
       "repo: rocketride-server"
     ]
@@ -1222,8 +1222,8 @@
     ]
   },
   {
-    "title": "[PR] chore(deps)!: Update dependency testcontainers to v11",
-    "date": "2026-05-19T11:14:42Z",
+    "title": "[PR] chore(deps)!: Update dependency testcontainers to v12",
+    "date": "2026-05-19T15:16:57Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/marcolongol/nx-extensions/pull/178",
     "source": "github_prs",
@@ -1279,6 +1279,150 @@
       "comments: 0",
       "pull request",
       "repo: nasiko"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard): route runCaptureEx env through buildRunnerEnv to inject NO_PROXY (#2616)",
+    "date": "2026-05-19T16:15:52Z",
+    "summary": "## Summary\n\nThe 2026-05-18 regression on #2616 reproduces because PR #2662's fix (`withLocalNoProxy` + `buildSubprocessEnv` wired into `inference/ollama/proxy.ts`) missed two paths that still hit `localhost:11434/11435`:\n\n1. **`runCaptureEx` in `src/lib/runner.ts:287`** was using raw `{ ...process.e",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3801",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump Testcontainers and Testcontainers.ActiveMq",
+    "date": "2026-05-19T16:15:07Z",
+    "summary": "[//]: # (dependabot-start)\n\u26a0\ufe0f  **Dependabot is rebasing this PR** \u26a0\ufe0f \n\nRebasing might not happen immediately, so don't worry if this takes some time.\n\nNote: if you make any changes to this PR yourself, they will take precedence over the rebase.\n\n---\n\n[//]: # (dependabot-end)\n\nUpdated [Testcontainers",
+    "url": "https://github.com/xregistry/codegen/pull/234",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: codegen"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump Testcontainers and Testcontainers.Azurite",
+    "date": "2026-05-19T16:15:06Z",
+    "summary": "[//]: # (dependabot-start)\n\u26a0\ufe0f  **Dependabot is rebasing this PR** \u26a0\ufe0f \n\nRebasing might not happen immediately, so don't worry if this takes some time.\n\nNote: if you make any changes to this PR yourself, they will take precedence over the rebase.\n\n---\n\n[//]: # (dependabot-end)\n\nUpdated [Testcontainers",
+    "url": "https://github.com/xregistry/codegen/pull/237",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: codegen"
+    ]
+  },
+  {
+    "title": "[PR] feat: Tranc3 full-stack \u2014 CF Workers + Fly.io + Forgejo CI/CD + comprehensive testing framework",
+    "date": "2026-05-19T16:00:12Z",
+    "summary": "## Summary\n\nZero-cost self-owned infrastructure for Tranc3. No GitHub Actions \u2014 all CI/CD through Forgejo (The Workshop). Full naming convention applied: MCP = \"The Spark\", workflow builder = \"The Digital Grid\".\n\n- **256 tests pass, 16 legitimately skipped** (bootstrap sandbox \u2014 no `transformers`/`t",
+    "url": "https://github.com/Trancendos/Tranc3/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 73",
+      "pull request",
+      "repo: Tranc3"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency testcontainers to v12",
+    "date": "2026-05-19T15:59:07Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [testcontainers](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.28.0` \u2192 `^",
+    "url": "https://github.com/bryopsida/nest-couchdb/pull/267",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nest-couchdb"
+    ]
+  },
+  {
+    "title": "[PR] home-assistant: 2026.5.2 -> 2026.5.3",
+    "date": "2026-05-19T15:57:26Z",
+    "summary": "https://github.com/mib1185/aioimmich/releases/tag/v0.14.1\r\nhttps://github.com/jnimmo/pyIntesisHome/releases/tag/1.8.8\r\nhttps://github.com/home-assistant/core/releases/tag/2026.5.3\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates p",
+    "url": "https://github.com/NixOS/nixpkgs/pull/521954",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-05-19T15:56:56Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/cicero-im/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] LLM",
+    "date": "2026-05-19T15:45:57Z",
+    "summary": "Yes, this one is a bit more complex... :-(   \r\n\r\nActivate in compose.yaml environment variables: \r\nLLM_ENABLED: true\r\n\r\nAdmin Settings for global settings:\r\n<img width=\"310\" height=\"239\" alt=\"Screenshot_2026-04-04_03-07-17\" src=\"https://github.com/user-attachments/assets/16ffcfbd-93d0-4b66-bac4-6f66",
+    "url": "https://github.com/yu-i-i/overleaf-cep/pull/171",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: overleaf-cep"
+    ]
+  },
+  {
+    "title": "[PR] fix(agent-factory-sdk): forward reasoning_effort to Azure/OpenAI providers",
+    "date": "2026-05-19T15:33:08Z",
+    "summary": "## Related Issue\n\nNone.\n\n## What\n\nReasoning-capable models from the OpenAI / Azure family (e.g. `gpt-5.2-codex`, `gpt-5.3-codex`) were being called without ever passing `reasoning_effort` to the provider. After switching the Azure default to `gpt-5.3-codex` in c9219c23, every slow-query-optimizer ru",
+    "url": "https://github.com/Guepard-Corp/qwery-core/pull/199",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: qwery-core"
+    ]
+  },
+  {
+    "title": "[PR] chore: update dependency testcontainers to v12",
+    "date": "2026-05-19T15:31:58Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/eycgrupo/eyc-loopback-components/pull/213",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: eyc-loopback-components"
+    ]
+  },
+  {
+    "title": "[PR] Feat(Platform): Add variables for 3rd party products",
+    "date": "2026-05-19T15:27:47Z",
+    "summary": "## Description\r\n\r\nFixes https://github.com/Kong/developer.konghq.com/issues/5094\r\n\r\n- Add variables for 3rd party products starting with AI providers.\r\n- Applied conservatively so that we don't break any code examples or liquid templates. ",
+    "url": "https://github.com/Kong/developer.konghq.com/pull/5128",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: developer.konghq.com"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency testcontainers to v12",
+    "date": "2026-05-19T15:08:51Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [testcontainers](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.0.0` \u2192 `^1",
+    "url": "https://github.com/bryopsida/patchwork/pull/524",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: patchwork"
     ]
   }
 ]
