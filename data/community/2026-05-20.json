@@ -155,7 +155,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-19T23:26:30Z",
+    "date": "2026-05-20T04:16:01Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-20T03:43:45Z",
+    "date": "2026-05-20T06:33:58Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -599,7 +599,7 @@
   },
   {
     "title": "[PR] deps: Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6 (main)",
-    "date": "2026-05-20T02:51:05Z",
+    "date": "2026-05-20T07:48:37Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
     "url": "https://github.com/camunda/camunda/pull/53096",
     "source": "github_prs",
@@ -635,7 +635,7 @@
   },
   {
     "title": "[PR] fix(deps): update spring dependencies",
-    "date": "2026-05-20T02:27:41Z",
+    "date": "2026-05-20T06:38:58Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.cloud:spring-cloud-dependencies](https://spring.io/projects/spring-cloud) ([so",
     "url": "https://github.com/nilson-aguiar/nbot/pull/11",
     "source": "github_prs",
@@ -731,12 +731,12 @@
   },
   {
     "title": "[PR] feat: Trancendos platform \u2014 24-router scaffold, enhanced MCP/workflow, DB provisioning, edge AI inference",
-    "date": "2026-05-20T01:09:14Z",
+    "date": "2026-05-20T07:48:13Z",
     "summary": "## Summary\n\nComplete Trancendos platform scaffold with full edge AI inference chain, live database provisioning, hardened secrets management, and comprehensive Forgejo (The Workshop) CI/CD automation. **No GitHub Actions** \u2014 all CI/CD through Forgejo only. Zero-cost model throughout.\n\n> **Security n",
     "url": "https://github.com/Trancendos/Tranc3/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 105",
+      "comments: 112",
       "pull request",
       "repo: Tranc3"
     ]
@@ -751,6 +751,198 @@
       "comments: 1",
       "pull request",
       "repo: dca-prep-kit"
+    ]
+  },
+  {
+    "title": "[PR] [P2] feat: sync general-purpose content from jleechanclaw",
+    "date": "2026-05-20T07:50:25Z",
+    "summary": "## Summary\nSyncs general-purpose, non-personal content from jleechanorg/jleechanclaw to this repo.\n\n## What was synced\n- **Docs**: HARNESS_ENGINEERING, ZERO_TOUCH\n- **Workflows**: skeptic-cron.yml, coderabbit-ping-on-push.yml\n- **Launchd plist templates**: lifecycle-manager, health-check, monitor-ag",
+    "url": "https://github.com/jleechanorg/smartclaw/pull/26",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 94",
+      "pull request",
+      "repo: smartclaw"
+    ]
+  },
+  {
+    "title": "[PR] Gcp cloudsql faq bootstrap",
+    "date": "2026-05-20T07:30:14Z",
+    "summary": "# Add Cloud SQL FAQ bootstrap and Postgres-backed FAQ suggestions\r\n\r\n## Summary\r\n\r\nThis PR adds a Postgres-backed FAQ retrieval flow for \"Did you mean?\" suggestions and direct FAQ clickthrough, bootstraps FAQ data into Postgres during deploy, and updates both local and GCP deployment paths to run th",
+    "url": "https://github.com/RishavT/iitmdocs/pull/114",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: iitmdocs"
+    ]
+  },
+  {
+    "title": "[PR] feat(memtree): v1.1 \u2014 passive capture, semantic search, provider adapters",
+    "date": "2026-05-20T07:24:22Z",
+    "summary": "## Summary\n\n- **Passive capture via PostToolUse hook** \u2014 `capture.sh` intercepts native Read/Grep/Bash outputs and pipes them via Unix socket (`~/.memtree/<hash>/ingest.sock`) into the store as `file_chunk`/`tool_output` nodes. Path denylist, bash command denylist, secret redaction, 60s dedup window",
+    "url": "https://github.com/joeblackwaslike/memtree/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: memtree"
+    ]
+  },
+  {
+    "title": "[PR] fix(ollama): restrict LAN IP rewrite to Windows only",
+    "date": "2026-05-20T07:16:33Z",
+    "summary": "## Summary\r\n- On Windows/WSL2, `host.containers.internal` doesn't reach Windows loopback, so we resolve the first non-internal IPv4 address (the WSL2 gateway NIC) \u2014 requires `OLLAMA_HOST=0.0.0.0`\r\n- On macOS/Linux, Kaiden UI will output `localhost` \u2014 the kdn extension with Podman runtime will rewrit",
+    "url": "https://github.com/openkaiden/kaiden/pull/1890",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard): reject host.docker.internal inference URLs",
+    "date": "2026-05-20T06:50:28Z",
+    "summary": "## Summary\n- Reject `host.docker.internal` during OpenAI-compatible inference endpoint validation for OpenShell sandboxes.\n- Keep `host.openshell.internal` as the supported sandbox-internal host and point local Ollama users at the auth proxy URL.\n- Document why direct host `:11434` routing is unreli",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3804",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-05-20T06:44:50Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m6",
+    "date": "2026-05-20T06:32:31Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/MartinWitt/BootFleet/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: BootFleet"
+    ]
+  },
+  {
+    "title": "[PR] [Docs] Add unified evaluation workflow strategy support documentation with Native vs Third-Party classification",
+    "date": "2026-05-20T06:23:18Z",
+    "summary": "## Description\n\nAnalyzed lmms-eval v0.5.0 against the unified evaluation workflow framework to document which of 28 evaluation strategies are supported, using a classification framework that distinguishes between native support and third-party integration.\n\n### Changes\n\n- **Added `/docs/evaluation_w",
+    "url": "https://github.com/zhimin-z/lmms-eval/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lmms-eval"
+    ]
+  },
+  {
+    "title": "[PR] fix(covabot): suppress truncated LLM responses; Gemini as default provider",
+    "date": "2026-05-20T06:17:23Z",
+    "summary": "## Summary\n- **Root cause fixed**: All four LLM providers (Anthropic, Gemini, OpenAI, Ollama) now surface `finishReason` in `LlmCompletionResult`. Previously `stop_reason`/`finish_reason` from the API was silently discarded, so a response cut off mid-sentence by the token limit was sent to Discord u",
+    "url": "https://github.com/andrewgari/starbunk-js/pull/717",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: starbunk-js"
+    ]
+  },
+  {
+    "title": "[PR] Update all dependencies",
+    "date": "2026-05-20T06:09:38Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
+    "url": "https://github.com/nolte/k8s-home-lab/pull/825",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k8s-home-lab"
+    ]
+  },
+  {
+    "title": "[PR] Add Java + C# snippets and new sections to llms.txt",
+    "date": "2026-05-20T06:09:21Z",
+    "summary": "## Summary\n\nUpdates `static/llms.txt` so every code snippet is covered by a runnable, CI-tested script in `weaviate/docs`. Adds Java and C# alongside Python and TypeScript, adds three new sections, and switches local-instance snippets to `text2vec-ollama` so they actually run on the local/CI Weaviat",
+    "url": "https://github.com/weaviate/weaviate-io/pull/3616",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: weaviate-io"
+    ]
+  },
+  {
+    "title": "[PR] Test llms.txt code snippets across Python, TypeScript, Java, C#",
+    "date": "2026-05-20T06:06:34Z",
+    "summary": "## Summary\n\nAdds an end-to-end testing layer for the code snippets in `weaviate-io/static/llms.txt` so they cannot drift from working code. Every snippet now exists in this repo as a runnable, CI-tested script, and a coverage test enforces that the live `llms.txt` matches verbatim.\n\nThis bundles the",
+    "url": "https://github.com/weaviate/docs/pull/418",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: docs"
+    ]
+  },
+  {
+    "title": "[PR] \ud83d\udc1b fix(security): prevent server API key leak when user sets custom baseURL",
+    "date": "2026-05-20T06:06:15Z",
+    "summary": "#### \ud83d\udcbb Change Type\n\n- [ ] \u2728 feat\n- [x] \ud83d\udc1b fix\n- [ ] \u267b\ufe0f refactor\n- [ ] \ud83d\udc84 style\n- [ ] \ud83d\udc77 build\n- [ ] \u26a1\ufe0f perf\n- [ ] \u2705 test\n- [ ] \ud83d\udcdd docs\n- [ ] \ud83d\udd28 chore\n\n#### \ud83d\udd17 Related Issue\n\n- Resubmission of #12322 \u2014 closed 2026-03-31 by @arvinxx with a note to *\"rebase onto the latest `canary` branch and reopen\"*. Rebas",
+    "url": "https://github.com/lobehub/lobehub/pull/13958",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: lobehub"
+    ]
+  },
+  {
+    "title": "[PR] \ud83d\udc1b fix(security): prevent server API key leak when user sets custom baseURL",
+    "date": "2026-05-20T06:06:15Z",
+    "summary": "#### \ud83d\udcbb Change Type\n\n- [ ] \u2728 feat\n- [x] \ud83d\udc1b fix\n- [ ] \u267b\ufe0f refactor\n- [ ] \ud83d\udc84 style\n- [ ] \ud83d\udc77 build\n- [ ] \u26a1\ufe0f perf\n- [ ] \u2705 test\n- [ ] \ud83d\udcdd docs\n- [ ] \ud83d\udd28 chore\n\n#### \ud83d\udd17 Related Issue\n\n- Resubmission of lobehub/lobehub#12322 \u2014 closed 2026-03-31 by @arvinxx with a note to *\"rebase onto the latest `canary` branch and ",
+    "url": "https://github.com/rjchien728/lobehub/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: lobehub"
+    ]
+  },
+  {
+    "title": "[PR] Model Engine with restore KV",
+    "date": "2026-05-20T06:04:46Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added OpenAI, Anthropic, and Ollama API compatibility layers for model inference.\n  * Added model capability discovery and reporting system.\n  * Added agent memory state per",
+    "url": "https://github.com/dAppCore/go-inference/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: go-inference"
+    ]
+  },
+  {
+    "title": "[PR] chore(types): tighten TypeScript safety \u2014 strict flags, typed linting, public-API type tests, double-cast ban (#564)",
+    "date": "2026-05-20T06:02:27Z",
+    "summary": "## \ud83c\udfaf Changes\n\nCloses #564. End-to-end tightening of the TypeScript surface across the monorepo. Each commit on the branch is a self-contained step; reviewing in commit order is easiest.\n\n### Commits\n\n1. **`test(types): add public-API type-test coverage for chat() and InferChatMessages`** (`a9c2c6f4`",
+    "url": "https://github.com/TanStack/ai/pull/579",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: ai"
     ]
   }
 ]
