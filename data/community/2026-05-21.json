@@ -515,7 +515,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-21T03:43:57Z",
+    "date": "2026-05-21T08:02:07Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -635,7 +635,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-21T01:47:11Z",
+    "date": "2026-05-21T06:12:26Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -647,7 +647,7 @@
   },
   {
     "title": "[PR] feat(memtree): v1.1 \u2014 passive capture, semantic search, provider adapters",
-    "date": "2026-05-21T01:39:10Z",
+    "date": "2026-05-21T06:21:43Z",
     "summary": "## Summary\n\n- **Passive capture via PostToolUse hook** \u2014 `capture.sh` intercepts native Read/Grep/Bash outputs and pipes them via Unix socket (`~/.memtree/<hash>/ingest.sock`) into the store as `file_chunk`/`tool_output` nodes. Path denylist, bash command denylist, secret redaction, 60s dedup window",
     "url": "https://github.com/joeblackwaslike/memtree/pull/2",
     "source": "github_prs",
@@ -731,7 +731,7 @@
   },
   {
     "title": "[PR] fix(onboard): reject host.docker.internal inference URLs",
-    "date": "2026-05-21T01:05:23Z",
+    "date": "2026-05-21T06:14:34Z",
     "summary": "## Summary\n- Reject `host.docker.internal` during OpenAI-compatible inference endpoint validation for OpenShell sandboxes.\n- Keep `host.openshell.internal` as the supported sandbox-internal host and point local Ollama users at the auth proxy URL.\n- Document why direct host `:11434` routing is unreli",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3804",
     "source": "github_prs",
@@ -751,6 +751,198 @@
       "comments: 1",
       "pull request",
       "repo: dca-prep-kit"
+    ]
+  },
+  {
+    "title": "[PR] was sending service token for byok",
+    "date": "2026-05-21T07:59:00Z",
+    "summary": "- Removes `INSPECTOR_SERVICE_TOKEN` from normal BYOK chat/eval traffic.\r\n- BYOK now works the same in hosted and local/npx: user auth goes to Convex, Convex checks project access, then runs or resolves the provider.\r\n- Keeps raw-key routes private: decrypted org model config still requires the servi",
+    "url": "https://github.com/MCPJam/inspector/pull/2218",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: inspector"
+    ]
+  },
+  {
+    "title": "[PR] fix(ollama): restrict LAN IP rewrite to Windows only",
+    "date": "2026-05-21T07:58:30Z",
+    "summary": "## Summary\r\n- On Windows/WSL2, `host.containers.internal` doesn't reach Windows loopback, so we resolve the first non-internal IPv4 address (the WSL2 gateway NIC) \u2014 requires `OLLAMA_HOST=0.0.0.0`\r\n- On macOS/Linux, Kaiden UI will output `localhost` \u2014 the kdn extension with Podman runtime will rewrit",
+    "url": "https://github.com/openkaiden/kaiden/pull/1890",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update testcontainers-node monorepo to v11",
+    "date": "2026-05-21T07:58:13Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/postgresql](https://redirect.github.com/testcontainers/testcontainers-node) | [`^1",
+    "url": "https://github.com/frederikb96/postimap/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: postimap"
+    ]
+  },
+  {
+    "title": "[PR] Docs/comprehensive documentation cleanup and v0.0.44 synchronization",
+    "date": "2026-05-21T07:53:21Z",
+    "summary": "## Summary\r\nThis PR performs a comprehensive cleanup of the documentation to resolve several accuracy bugs and style inconsistencies. It synchronizes the CLI reference and architecture guides with the v0.0.44 release, fixes broken recovery flows in the troubleshooting guide, and ensures all document",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3766",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] plans: add Claude Install Pack design plan",
+    "date": "2026-05-21T07:40:37Z",
+    "summary": "## Summary\n\nShips **MJ Claude Pack**: a curated bundle of `CLAUDE.md` guidance, slash commands, and skills bundled with every MemberJunction install for users of Claude Code. Delivered across milestones M1\u2013M10 plus 3 bug fixes that surfaced during end-to-end testing.\n\n### What's in the PR\n\n**Pack co",
+    "url": "https://github.com/MemberJunction/MJ/pull/2467",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-05-21T07:39:45Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] deps: Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6 (main)",
+    "date": "2026-05-21T07:39:19Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
+    "url": "https://github.com/camunda/camunda/pull/53096",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: camunda"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-05-21T07:38:58Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-05-21T07:35:06Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps)(deps): bump the langchain group across 1 directory with 2 updates",
+    "date": "2026-05-21T07:12:48Z",
+    "summary": "Bumps the langchain group with 2 updates in the / directory: [langchain-core](https://github.com/langchain-ai/langchain) and [langchain](https://github.com/langchain-ai/langchain).\n\nUpdates `langchain-core` from 1.3.3 to 1.4.0\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"h",
+    "url": "https://github.com/OWASP/DockSec/pull/83",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: DockSec"
+    ]
+  },
+  {
+    "title": "[PR] feat(test,nodes): integrated Cobalt pipeline evaluation (testing framework + dataset + evaluator)",
+    "date": "2026-05-21T06:57:42Z",
+    "summary": "## Summary\n\nThis PR delivers the full Cobalt-based pipeline-evaluation capability as a single reviewable unit. It bundles three components that together let RocketRide pipelines be benchmarked end-to-end: (1) a dataset-loader node that feeds curated items into a pipeline as RocketRide `Question`s, (",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/683",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 24",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] feat(integration-connectors): Aptify, Betty, Blackbaud, ConstantContact, GrowthZone, iMIS, MagnetMail, Mailchimp, MJToMJ, NetForum, NetSuite, NimbleAMS, PropFuel, Reach360, SharePoint, WildApricot",
+    "date": "2026-05-21T06:33:34Z",
+    "summary": "## Summary\n\n- Consolidates **16 in-flight connector implementations** onto `next` as a single working baseline, after a vendor-truth audit caught (and fixed) real bugs that would have broken connections to real customer tenants\n- The 9 prod connectors (HubSpot, QuickBooks, Salesforce, SageIntacct, Y",
+    "url": "https://github.com/MemberJunction/MJ/pull/2623",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] investment_team: raise test coverage from 80% to 91.97%",
+    "date": "2026-05-21T06:32:24Z",
+    "summary": "## Summary\n\nRaises `investment_team` line coverage from **80.0%** to **91.97%** by adding **22 new test files** under `backend/agents/investment_team/tests/`. The 95% target wasn't reached due to context budget; remaining gaps are concentrated in three deep modules (`coverage_probe/indicator_probe.p",
+    "url": "https://github.com/brandonkindred/Khala-Agentic-AI-Teams/pull/602",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Khala-Agentic-AI-Teams"
+    ]
+  },
+  {
+    "title": "[PR] test(e2e): migrate inference routing provider coverage",
+    "date": "2026-05-21T06:13:42Z",
+    "summary": "## Summary\nAdds inference-routing/provider E2E coverage primitives and domain suites for issue #3812, migrating legacy inference assertions into the scenario framework with parity metadata. The PR also records spec/test/validation artifacts and marks available validation results while leaving live P",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3903",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard): detect Windows-host Ollama via process probe",
+    "date": "2026-05-21T06:06:15Z",
+    "summary": "## Summary\n\nOn WSL2, `hasWindowsOllama` was determined solely by running `powershell.exe Get-Command ollama.exe`, which only returns a path when `ollama.exe` is on the calling user's PATH. Service-style installs (and any installer that does not update the user PATH) leave the binary undiscoverable b",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/3969",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(ng-conversations, MJExplorer): Agent Feedback app with 1-10 rating modal, consent flow, and owner-only enforcement",
+    "date": "2026-05-21T06:01:18Z",
+    "summary": "## Summary\r\n\r\nAdds an **Agent Feedback** application to MJ Explorer and reworks the\r\nin-conversation rating UI from thumbs up/down to a **1-10 modal with optional\r\nfree-form comments**. Persistence happens directly on\r\n`__mj.ConversationDetail.UserRating` / `UserFeedback`. Submitting a rating also\r\n",
+    "url": "https://github.com/MemberJunction/MJ/pull/2641",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
