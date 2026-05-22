@@ -575,7 +575,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-22T15:29:56Z",
+    "date": "2026-05-22T17:55:09Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -731,7 +731,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-05-21T22:06:45Z",
+    "date": "2026-05-22T17:42:29Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -767,7 +767,7 @@
   },
   {
     "title": "[PR] v0.6.57.0+ install + OAuth: grandma-grade install, bundled Google client, Gmail BYO wizard, tier-2 polish",
-    "date": "2026-05-22T08:51:22Z",
+    "date": "2026-05-22T17:19:43Z",
     "summary": "## Summary\n\nThis branch bundles the entire \"grandma can install and use SkyTwin\" arc, plus the follow-on OAuth verification + Gmail BYO + Tier-2 polish work. Originally scoped to install ergonomics, expanded as the install path surfaced real Google sign-in friction.\n\n### Install (v0.6.56.0)\n- **Drop",
     "url": "https://github.com/jayzalowitz/skytwin/pull/350",
     "source": "github_prs",
@@ -827,7 +827,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-22T04:40:50Z",
+    "date": "2026-05-22T15:58:47Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -971,7 +971,7 @@
   },
   {
     "title": "[PR] feat(mastra): migrate v2 LangGraph chat extension to Mastra v3",
-    "date": "2026-05-22T15:48:52Z",
+    "date": "2026-05-22T17:05:18Z",
     "summary": "## Summary\n\nMigrates `lb4-llm-chat-component` from LangGraph + LangChain to Mastra v3. 24 commits, +17k / \u221218k LOC, 146 files touched. LangGraph fully removed; ChatGraph + DbQueryGraph + VisualizationGraph and their 27 node classes deleted; Mastra `Agent` + `Memory` + `Workflow` primitives own the r",
     "url": "https://github.com/sourcefuse/loopback4-llm-chat-extension/pull/22",
     "source": "github_prs",
@@ -1115,7 +1115,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-05-22T12:04:47Z",
+    "date": "2026-05-22T17:24:12Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1163,12 +1163,12 @@
   },
   {
     "title": "[PR] fix: add FTS doctor consistency checks and verified reconcile delete confirmation",
-    "date": "2026-05-22T15:19:03Z",
+    "date": "2026-05-22T17:18:28Z",
     "summary": "## Summary\n- add first-class FTS doctor consistency checks (table/schema/triggers/population drift)\n- add optional deep FTS trigger probe (`doctor --deep`) using a savepointed insert/update/delete round-trip\n- add optional FTS drift repair path (`doctor --fix`) that rebuilds `facts_fts` and re-verif",
     "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/1601",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: openclaw-hybrid-memory"
     ]
@@ -1331,12 +1331,12 @@
   },
   {
     "title": "[PR] feat(chat-overlay): user-draggable bubble to uncover blocked app UI",
-    "date": "2026-05-22T15:21:24Z",
+    "date": "2026-05-22T17:45:18Z",
     "summary": "## Summary\n\n- The floating chat-agents overlay bubble is now vertically draggable (mouse, touch, or pen) so it can be moved out of the way of underlying app buttons it would otherwise occlude. Position persists per-user via `UserInfoEngine`.\n- Uses Pointer Events with `setPointerCapture` for unified",
     "url": "https://github.com/MemberJunction/MJ/pull/2654",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: MJ"
     ]
@@ -1435,6 +1435,150 @@
       "comments: 0",
       "pull request",
       "repo: camel"
+    ]
+  },
+  {
+    "title": "\ud83e\udd9e OpenClaw \u751f\u6001\u65e5\u62a5 2026-05-23",
+    "date": "2026-05-22T16:25:27Z",
+    "summary": "# OpenClaw \u751f\u6001\u65e5\u62a5 2026-05-23\n\n> Issues: 500 | PRs: 500 | \u8986\u76d6\u9879\u76ee: 13 \u4e2a | \u751f\u6210\u65f6\u95f4: 2026-05-22 16:02 UTC\n\n- [OpenClaw](https://github\u200b.com/openclaw/openclaw)\n- [NanoBot](https://github\u200b.com/HKUDS/nanobot)\n- [Hermes Agent](https://github\u200b.com/nousresearch/hermes-agent)\n- [PicoClaw](https://github\u200b.com/sipeed/p",
+    "url": "https://github.com/QYQAQ/agents-radar/issues/14",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: agents-radar"
+    ]
+  },
+  {
+    "title": "[PR] feat(local-dev): holistic local development environment (k3d + Tilt + Pulumi)",
+    "date": "2026-05-22T17:54:22Z",
+    "summary": "### What are the relevant tickets?\nN/A \u2014 tracks RFC discussion at https://github.com/mitodl/hq/discussions/10833\n\n### Description (What does it do?)\nIntroduces a fully self-contained local development environment for the MIT Learn application stack, running inside a k3d Kubernetes cluster with Tilt ",
+    "url": "https://github.com/mitodl/ol-infrastructure/pull/4495",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: ol-infrastructure"
+    ]
+  },
+  {
+    "title": "[PR] ci(github-action)!: Update action oxsecurity/megalinter (v8.8.0 \u2794 v9.5.0)",
+    "date": "2026-05-22T17:51:14Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [oxsecurity/megalinter](https://redirect.github.com/oxsecurity/megalinter) | action | major | `v8.8.0` \u2192 `v9.5.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency D",
+    "url": "https://github.com/neilmfrench/homelab-prod/pull/1121",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-prod"
+    ]
+  },
+  {
+    "title": "[PR] ci(.github/workflows): update oxsecurity/megalinter action to v9",
+    "date": "2026-05-22T17:50:49Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [oxsecurity/megalinter](https://redirect.github.com/oxsecurity/megalinter) | action | major | `v7` \u2192 `v9` |\n\n---\n\n### Release Notes",
+    "url": "https://github.com/dcardellino24/terraform-cloudamqp-instance/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: terraform-cloudamqp-instance"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m7",
+    "date": "2026-05-22T17:44:20Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/nicholasM95/meyers-ai/pull/45",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: meyers-ai"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency openclaw to v2026.5.20",
+    "date": "2026-05-22T17:38:48Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [openclaw](https://redirect.",
+    "url": "https://github.com/BaptTF/openclaw-lea-config/pull/48",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-lea-config"
+    ]
+  },
+  {
+    "title": "[PR] Add AGENTS.md with Cursor Cloud development instructions",
+    "date": "2026-05-22T17:32:51Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nAdds `AGENTS.md` with Cursor Cloud-specific development instructions for future agents working in this repository.\n\n## What's included\n\n- Service startup instructions for PostgreSQL (Docker) and the FastAPI API (native uvicorn with hot reload)\n- Key de",
+    "url": "https://github.com/aavramch/reparsed/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: reparsed"
+    ]
+  },
+  {
+    "title": "[PR] feat(interactive-forms): runtime form substrate (Plan + Phase A/B implementation)",
+    "date": "2026-05-22T17:29:37Z",
+    "summary": "## Summary\r\n\r\nMakes MJ entity forms **runtime artifacts** \u2014 created, modified, and swapped at runtime by users, in-app AI, or external agents like Skip \u2014 without an Angular build. Forms join the runtime-artifact club that reports, dashboards, queries, components, and agents already belong to.\r\n\r\nPha",
+    "url": "https://github.com/MemberJunction/MJ/pull/2609",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(ollama): bypass managed proxy for local embeddings",
+    "date": "2026-05-22T17:23:03Z",
+    "summary": "## Problem\n\nWhen `proxy.enabled=true`, OpenClaw routes strict HTTP fetches through the managed forward proxy. That is the right default for ordinary egress, but it breaks the bundled Ollama memory embedding provider when the configured Ollama `baseUrl` points at a host-local service such as `http://",
+    "url": "https://github.com/openclaw/openclaw/pull/85448",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] Update ollama/ollama Docker tag to v0.24.0",
+    "date": "2026-05-22T17:20:19Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| ollama/ollama | Kustomization | minor | `0.23.4` \u2192 `0.24.0` |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (in timezone America/Los_Angeles)\n\n- Branch creation\n  - At any time (no schedule defined)\n- Autome",
+    "url": "https://github.com/ansg191-lab/anshulg-cluster/pull/3216",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: anshulg-cluster"
+    ]
+  },
+  {
+    "title": "[PR] feat: add MiniMax LLM node",
+    "date": "2026-05-22T16:19:21Z",
+    "summary": "Closes #966\r\n\r\n## Summary\r\n\r\nAdds `llm_minimax`, an OpenAI-compatible MiniMax LLM node mirroring the `llm_deepseek` pattern. Profiles seed the live MiniMax catalogue as of 2026-05-21: `MiniMax-M2` (default), `MiniMax-M2.1` / `M2.5` / `M2.7` plus their `-highspeed` variants, and a `Custom` profile fo",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/967",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] Update docker image updates",
+    "date": "2026-05-22T16:14:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [cloudflare/cloudflared](https://redirect.github.com/cloudflare/cloudflared) | minor | `2026.3.0` \u2192 `2026.5.0` |\n| [docker.io/valkey/valkey](h",
+    "url": "https://github.com/kilian-scheidecker/portainer-stacks/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: portainer-stacks"
     ]
   }
 ]
