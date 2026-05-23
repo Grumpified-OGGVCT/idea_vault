@@ -191,7 +191,7 @@
   },
   {
     "title": "\ud83e\udd9e B\u1ea3n tin h\u00e0ng ng\u00e0y h\u1ec7 sinh th\u00e1i OpenClaw 2026-05-23",
-    "date": "2026-05-23T02:05:02Z",
+    "date": "2026-05-23T04:00:29Z",
     "summary": "# B\u1ea3n tin H\u1ec7 sinh th\u00e1i OpenClaw 2026-05-23\n\n> Issues: 275 | PRs: 500 | D\u1ef1 \u00e1n: 11 | Th\u1eddi gian t\u1ea1o: 2026-05-23 02:00 UTC\n\n- [OpenClaw](https://github.com/openclaw/openclaw)\n- [NanoBot](https://github.com/HKUDS/nanobot)\n- [Zeroclaw](https://github.com/zeroclaw-labs/zeroclaw)\n- [PicoClaw](https://github",
     "url": "https://github.com/thanhtantran/agents-radar/issues/88",
     "source": "github_issues",
@@ -587,7 +587,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-05-23T03:17:24Z",
+    "date": "2026-05-23T06:03:53Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -659,7 +659,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-23T02:15:56Z",
+    "date": "2026-05-23T06:04:03Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -695,7 +695,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-23T02:07:05Z",
+    "date": "2026-05-23T05:54:12Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -751,6 +751,102 @@
       "comments: 1",
       "pull request",
       "repo: openclaw-discord-ignore"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add local-only Ollama AI workflow, SQL beautify, secure connection import/export, and structured diagnostics",
+    "date": "2026-05-23T06:26:57Z",
+    "summary": "This PR implements the planned PrismSQL capability expansion with a strict local-AI boundary: AI features now run through local Ollama only, with no cloud provider path or telemetry. It also adds SQL beautification, connection import/export, and stronger logging/diagnostics surfaces for debugging an",
+    "url": "https://github.com/kobenguyent/PrismSQL/pull/22",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: PrismSQL"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): add claude-code provider (#1193)",
+    "date": "2026-05-23T06:21:44Z",
+    "summary": "## Summary\n\nAdds a `claude-code` LLM provider in `mempalace/llm_client.py` that routes through the local `claude` CLI binary using the user's Claude Pro/Max subscription via `claude auth login`. Mirrors the existing `OllamaProvider` / `OpenAICompatProvider` / `AnthropicProvider` shape so `mempalace ",
+    "url": "https://github.com/MemPalace/mempalace/pull/1200",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: mempalace"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M7",
+    "date": "2026-05-23T05:51:30Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/open4good/open4goods/pull/3135",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: open4goods"
+    ]
+  },
+  {
+    "title": "[PR] feat(claude-code): Claude Code CLI provider \u2014 Phases 1\u20135",
+    "date": "2026-05-23T05:22:43Z",
+    "summary": "## Summary\n\nAdds **Claude Code CLI** as a selectable inference provider on equal footing with `openhuman`, `ollama:*`, and `<slug>:*`. Routes any chat workload through Anthropic's `claude` CLI (`-p --output-format stream-json --verbose --include-partial-messages --resume <uuid>`) instead of calling ",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/2472",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] Update ollama/ollama Docker tag to v0.24.0",
+    "date": "2026-05-23T05:02:44Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| ollama/ollama | Kustomization | minor | `0.23.4` \u2192 `0.24.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency Dashboard](../issues/606) for more information.\n\n---\n\n#",
+    "url": "https://github.com/ansg191-lab/anshulg-cluster/pull/3216",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: anshulg-cluster"
+    ]
+  },
+  {
+    "title": "[PR] feat(v42.2): core system + mobile PWA + cloud 24/7 + sandbox pipeline",
+    "date": "2026-05-23T04:24:24Z",
+    "summary": "## Summary\n\nLands the full DIX VISION v42.2 build: core trading system, 14-language cockpit SPA, mobile PWA (iPhone + Android), cloud 24/7 deploy, enforced sandbox patch pipeline, and Windows portable installer scaffolding. This is the initial production drop \u2014 every subsequent code change is requir",
+    "url": "https://github.com/ronald1971-debug/dixvision-v42.2/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: dixvision-v42.2"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m7",
+    "date": "2026-05-23T04:00:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Kotlin/kotlin-jupyter-libraries/pull/733",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: kotlin-jupyter-libraries"
+    ]
+  },
+  {
+    "title": "[PR] feat(redteam): integrate providers with defaults system",
+    "date": "2026-05-23T03:36:41Z",
+    "summary": "## Summary\n\nIntegrates local redteam generation with the provider defaults system so credentials can select an appropriate attacker provider without an explicit `--provider`.\n\n- Adds vendor-specific redteam and JSON-capable redteam defaults for Anthropic, Azure OpenAI, Google AI Studio/Vertex, GitHu",
+    "url": "https://github.com/promptfoo/promptfoo/pull/5493",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: promptfoo"
     ]
   }
 ]
