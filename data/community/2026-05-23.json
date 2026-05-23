@@ -599,7 +599,7 @@
   },
   {
     "title": "[PR] Update ghcr.io/openclaw/openclaw Docker tag to v2026.5.20",
-    "date": "2026-05-23T15:40:00Z",
+    "date": "2026-05-23T17:51:35Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/openclaw/openclaw](https://openclaw.ai) ([source](https://redirect.github.com/openclaw/openclaw)) | patch | `2026.5.7` \u2192 `2026.5.20` ",
     "url": "https://github.com/claytono/infra/pull/2215",
     "source": "github_prs",
@@ -659,7 +659,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-23T16:46:28Z",
+    "date": "2026-05-23T18:15:45Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -695,7 +695,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-23T12:52:08Z",
+    "date": "2026-05-23T17:13:20Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -875,12 +875,12 @@
   },
   {
     "title": "[PR] feat(ollama): comprehensive model management and server integration",
-    "date": "2026-05-23T11:01:22Z",
+    "date": "2026-05-23T17:54:32Z",
     "summary": "## Summary\n\nComprehensive Ollama integration for K\u014dan \u2014 from REST client to Telegram-accessible model management.\n\n### What's included (7 commits)\n\n**Infrastructure**\n- Native Ollama REST API client (`ollama_client.py`) with health checks, model listing, version detection\n- Unified `_api_request()` ",
     "url": "https://github.com/Anantys-oss/koan/pull/345",
     "source": "github_prs",
     "highlights": [
-      "comments: 17",
+      "comments: 19",
       "pull request",
       "repo: koan"
     ]
@@ -1115,7 +1115,7 @@
   },
   {
     "title": "[PR] fix(ollama): bypass managed proxy for loopback embeddings",
-    "date": "2026-05-23T17:02:54Z",
+    "date": "2026-05-23T19:13:20Z",
     "summary": "## Replacement for closed #85448\n\nThis PR (#85707) is the ready replacement for #85448. That PR was closed as superseded by #80751, but GitHub reports the closed PR cannot be reopened by this contributor identity. The replacement branch points at the same final reviewed code head, `5093f4eddf37ea754",
     "url": "https://github.com/openclaw/openclaw/pull/85707",
     "source": "github_prs",
@@ -1139,7 +1139,7 @@
   },
   {
     "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m7",
-    "date": "2026-05-23T16:30:00Z",
+    "date": "2026-05-23T17:52:57Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
     "url": "https://github.com/MartinWitt/BootFleet/pull/49",
     "source": "github_prs",
@@ -1339,6 +1339,78 @@
       "comments: 2",
       "pull request",
       "repo: fincaguarumo"
+    ]
+  },
+  {
+    "title": "[PR] Update TypeScript AppHost GA docs",
+    "date": "2026-05-23T19:01:04Z",
+    "summary": "TypeScript AppHosts are GA in the current docs, so the public guidance needs to describe the supported setup path and generated SDK location consistently.\n\n## Summary\n\n- Documents TypeScript AppHost support boundaries for Node.js, package managers, and unsupported AppHost-root scenarios.\n- Expands `",
+    "url": "https://github.com/microsoft/aspire.dev/pull/1057",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: aspire.dev"
+    ]
+  },
+  {
+    "title": "[PR] refactor: replace any with SDK types in Gemini client response handling",
+    "date": "2026-05-23T18:58:21Z",
+    "summary": "## Summary\n\nArchitecture-audit nightly sweep flagged: **`any` overuse** in `src/api/providers/gemini/client.ts`.\n\nThe `@google/genai` SDK already exports `GenerateContentResponseUsageMetadata`, and the `groundingMetadata` field is properly typed on the SDK's `Candidate` interface. The Gemini client ",
+    "url": "https://github.com/allenhutchison/obsidian-gemini/pull/881",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: obsidian-gemini"
+    ]
+  },
+  {
+    "title": "[PR] feat(ng-conversations, MJExplorer): Agent Feedback app with 1-10 rating modal, consent flow, and owner-only enforcement",
+    "date": "2026-05-23T18:42:09Z",
+    "summary": "## Summary\r\n\r\nAdds an **Agent Feedback** application to MJ Explorer and reworks the\r\nin-conversation rating UI from thumbs up/down to a **1-10 modal with optional\r\nfree-form comments**. Persistence happens directly on\r\n`__mj.ConversationDetail.UserRating` / `UserFeedback`. Submitting a rating also\r\n",
+    "url": "https://github.com/MemberJunction/MJ/pull/2641",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(skip): client:capture-snapshot actionable command for live component snapshots",
+    "date": "2026-05-23T18:41:39Z",
+    "summary": "## Summary\n\nAdds a typed actionable command `client:capture-snapshot` that an agent can emit when it needs the user's **current live view** of a Component artifact (filters, sort, drill, selection \u2014 all client-side state) before answering. Used by Skip-Brain's Analysis Agent: when a Component is on ",
+    "url": "https://github.com/MemberJunction/MJ/pull/2614",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: add NEAR AI inference provider",
+    "date": "2026-05-23T18:09:36Z",
+    "summary": "# Relates to\n\nNo linked issue.\n\n# Risks\n\nLow. This adds a new OpenAI-compatible inference provider plugin and wires it into existing provider discovery/configuration surfaces.\n\n# Background\n\n## What does this PR do?\n\nAdds `@elizaos/plugin-nearai` as a first-party NEAR AI Cloud TEE inference provider",
+    "url": "https://github.com/elizaOS/eliza/pull/7883",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "[PR] fix(render-pipeline): rebuild row-cap path on AST, route AdhocQuery through pipeline",
+    "date": "2026-05-23T17:43:09Z",
+    "summary": "## Summary\n\nRebuilds the SQL render pipeline's row-cap path on the AST, replaces the regex-based comment stripper with a token-aware scanner, and routes `AdhocQueryResolver` through `RenderPipeline.Run` so ad-hoc queries get the same composition / Nunjucks / row-cap handling as saved queries.\n\n## Pr",
+    "url": "https://github.com/MemberJunction/MJ/pull/2675",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
