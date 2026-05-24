@@ -551,7 +551,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-24T17:06:09Z",
+    "date": "2026-05-24T19:07:46Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -635,7 +635,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-24T16:09:46Z",
+    "date": "2026-05-24T17:13:16Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -803,7 +803,7 @@
   },
   {
     "title": "[PR] Update ollama/ollama Docker tag to v0.24.0",
-    "date": "2026-05-24T09:26:59Z",
+    "date": "2026-05-24T18:53:19Z",
     "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| ollama/ollama | Kustomization | minor | `0.23.4` \u2192 `0.24.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency Dashboard](../issues/606) for more information.\n\n---\n\n#",
     "url": "https://github.com/ansg191-lab/anshulg-cluster/pull/3216",
     "source": "github_prs",
@@ -1007,7 +1007,7 @@
   },
   {
     "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m7",
-    "date": "2026-05-24T16:40:51Z",
+    "date": "2026-05-24T18:54:38Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
     "url": "https://github.com/MartinWitt/BootFleet/pull/49",
     "source": "github_prs",
@@ -1091,7 +1091,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-05-24T14:57:13Z",
+    "date": "2026-05-24T19:20:01Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1103,7 +1103,7 @@
   },
   {
     "title": "[PR] feat(llm): add claude-code provider (#1193)",
-    "date": "2026-05-24T13:25:25Z",
+    "date": "2026-05-24T17:09:11Z",
     "summary": "## Summary\n\nAdds a `claude-code` LLM provider in `mempalace/llm_client.py` that routes through the local `claude` CLI binary using the user's Claude Pro/Max subscription via `claude auth login`. Mirrors the existing `OllamaProvider` / `OpenAICompatProvider` / `AnthropicProvider` shape so `mempalace ",
     "url": "https://github.com/MemPalace/mempalace/pull/1200",
     "source": "github_prs",
@@ -1279,6 +1279,90 @@
       "comments: 0",
       "pull request",
       "repo: meyers-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(deploy): provision Azure VM with Terraform + bash bootstrap (deliverable 1.1)",
+    "date": "2026-05-24T19:20:12Z",
+    "summary": "## Summary\n\nFirst iteration of the **Azure deploy** track. Provisions a single Ubuntu VM via Terraform and ships the Compose stack to it via a throwaway bash script. Ansible replaces the bash in the next iteration.\n\n**Architecture choice \u2014 pull from GHCR, don't build on VM.** A `Standard_B2s`-class ",
+    "url": "https://github.com/AET-DevOps26/team-chaos-monkeys/pull/139",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: team-chaos-monkeys"
+    ]
+  },
+  {
+    "title": "[PR] Add local LLM support (Ollama / llama.cpp) and setup checker UI + route",
+    "date": "2026-05-24T19:16:14Z",
+    "summary": "### Motivation\n- Replace cloud-only Anthropic integration with local-first LLMs to support offline/self-hosted usage and provide a clear setup diagnostic for local model services.\n- Provide a simple health/setup UI and backend endpoint to help users verify Ollama/llama.cpp and required environment v",
+    "url": "https://github.com/smokemoney81/BaitBuddy-/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: BaitBuddy-"
+    ]
+  },
+  {
+    "title": "[PR] feat: 53 new skill playbooks + cross-OS hardening",
+    "date": "2026-05-24T18:06:35Z",
+    "summary": "## Why merge this\n\nThis PR makes every Decepticon agent measurably better at its job by adding **53 battle-tested skill playbooks** across 9 domains \u2014 the step-by-step operating procedures agents follow during engagements. Today, agents that encounter an ADCS misconfiguration, a JWT implementation f",
+    "url": "https://github.com/PurpleAILAB/Decepticon/pull/281",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Decepticon"
+    ]
+  },
+  {
+    "title": "[PR] feat: deterministic baseline migration builder + comparator (MJCLI)",
+    "date": "2026-05-24T17:32:15Z",
+    "summary": "## Summary\n\nEnd-to-end deterministic baseline migration toolchain in MJ CLI. Generates a single canonical SQL baseline from the END-STATE of a migrated database (introspect every object + dump every row of every table), applies it to a fresh DB, and proves byte-equivalence with object-by-object **an",
+    "url": "https://github.com/MemberJunction/MJ/pull/2519",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface_hub to v0.36.2",
+    "date": "2026-05-24T18:07:54Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface_hub](https://re",
+    "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/457",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface_hub to v0.36.2",
+    "date": "2026-05-24T18:07:16Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface_hub](https://re",
+    "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/402",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface_hub to v0.36.2",
+    "date": "2026-05-24T18:07:11Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface_hub](https://re",
+    "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/310",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openvino_model_server"
     ]
   }
 ]
