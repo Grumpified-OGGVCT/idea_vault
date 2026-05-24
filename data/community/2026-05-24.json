@@ -551,7 +551,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-24T19:07:46Z",
+    "date": "2026-05-24T20:32:42Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -575,7 +575,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-05-24T14:44:09Z",
+    "date": "2026-05-24T20:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -635,7 +635,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-05-24T17:13:16Z",
+    "date": "2026-05-24T20:34:47Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) |  | patch | `5.0.0` \u2192 `5.0.1` |\n| [argo-cd](https://redirect.gi",
     "url": "https://github.com/nolte/k8s-home-lab/pull/825",
     "source": "github_prs",
@@ -887,7 +887,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-05-24T10:05:39Z",
+    "date": "2026-05-24T20:17:07Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -995,7 +995,7 @@
   },
   {
     "title": "[PR] chore: re-enable the prefer-const ESLint rule",
-    "date": "2026-05-24T14:40:14Z",
+    "date": "2026-05-24T20:15:44Z",
     "summary": "## Summary\n\n`prefer-const` was disabled in `src/eslint.config.mjs` under a `// TODO: These should be fixed and the rules re-enabled` comment. This re-enables it.\n\n- The rule is enabled as `[\"error\", { destructuring: \"all\" }]`. With `destructuring: \"all\"` it only flags a destructuring declaration whe",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/pull/250",
     "source": "github_prs",
@@ -1007,7 +1007,7 @@
   },
   {
     "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m7",
-    "date": "2026-05-24T18:54:38Z",
+    "date": "2026-05-24T20:05:15Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
     "url": "https://github.com/MartinWitt/BootFleet/pull/49",
     "source": "github_prs",
@@ -1283,7 +1283,7 @@
   },
   {
     "title": "[PR] feat(deploy): provision Azure VM with Terraform + bash bootstrap (deliverable 1.1)",
-    "date": "2026-05-24T19:20:12Z",
+    "date": "2026-05-24T19:30:58Z",
     "summary": "## Summary\n\nFirst iteration of the **Azure deploy** track. Provisions a single Ubuntu VM via Terraform and ships the Compose stack to it via a throwaway bash script. Ansible replaces the bash in the next iteration.\n\n**Architecture choice \u2014 pull from GHCR, don't build on VM.** A `Standard_B2s`-class ",
     "url": "https://github.com/AET-DevOps26/team-chaos-monkeys/pull/139",
     "source": "github_prs",
@@ -1307,8 +1307,8 @@
   },
   {
     "title": "[PR] feat: 53 new skill playbooks + cross-OS hardening",
-    "date": "2026-05-24T18:06:35Z",
-    "summary": "## Why merge this\n\nThis PR makes every Decepticon agent measurably better at its job by adding **53 battle-tested skill playbooks** across 9 domains \u2014 the step-by-step operating procedures agents follow during engagements. Today, agents that encounter an ADCS misconfiguration, a JWT implementation f",
+    "date": "2026-05-24T19:50:06Z",
+    "summary": "## Why merge this\n\nThis PR makes every Decepticon agent measurably better at its job by adding **51 battle-tested skill playbooks** across 11 domains, **wired into the runtime skill loader path** (`packages/decepticon/decepticon/skills/standard/...`) so `DecepticonSkillsMiddleware` actually serves t",
     "url": "https://github.com/PurpleAILAB/Decepticon/pull/281",
     "source": "github_prs",
     "highlights": [
@@ -1318,9 +1318,9 @@
     ]
   },
   {
-    "title": "[PR] feat: deterministic baseline migration builder + comparator (MJCLI)",
-    "date": "2026-05-24T17:32:15Z",
-    "summary": "## Summary\n\nEnd-to-end deterministic baseline migration toolchain in MJ CLI. Generates a single canonical SQL baseline from the END-STATE of a migrated database (introspect every object + dump every row of every table), applies it to a fresh DB, and proves byte-equivalence with object-by-object **an",
+    "title": "[PR] feat(baseline): deterministic baseline migration builder with full schema + data byte-equivalence",
+    "date": "2026-05-24T20:39:49Z",
+    "summary": "## Summary\n\nEnd-to-end deterministic baseline migration toolchain for MJCLI: introspect a fully-migrated SQL Server database, emit a canonical SQL baseline that's both **byte-deterministic across re-runs** and **provably equivalent to the V-stack end state** via a structural + row-by-row comparator.",
     "url": "https://github.com/MemberJunction/MJ/pull/2519",
     "source": "github_prs",
     "highlights": [
@@ -1363,6 +1363,114 @@
       "comments: 3",
       "pull request",
       "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] fix(ai): route local inference through provider router + revamp settings UI",
+    "date": "2026-05-24T21:00:40Z",
+    "summary": "## Summary\n\n- Route local inference (Ollama/LM Studio) through the unified provider router instead of a parallel `local::service::public_infer` path.\n- Revamp the AI settings panel into three modes \u2014 **Managed**, **Use Your Own Models**, and **Advanced** \u2014 replacing the prior per-workload Managed/De",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/2580",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] chore: update model stack + unified repo registry",
+    "date": "2026-05-24T20:52:24Z",
+    "summary": "## Summary\n\n- **README.md** \u2014 removes all Gemma4 / Qwen3.5-8B references; reflects the current triple-model stack (Qwen2.5-VL-32B Reasoner \u00b7 Qwen3-8B-Kimi-K2 Support \u00b7 QwQ-32B Coder), updated architecture diagram, all API routes including `/cowork` endpoints, and a unified asset table linking every ",
+    "url": "https://github.com/MADdegen/Agent-Q3/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Agent-Q3"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/mealie-recipes/mealie to v3.19.0",
+    "date": "2026-05-24T20:49:33Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/mealie-recipes/mealie](https://redirect.github.com/mealie-recipes/mealie) | minor | `v3.18.0` \u2192 `v3.19.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>mealie-recipes/mealie (ghcr.io/mealie-recipes/mealie",
+    "url": "https://github.com/KnightDoom/taloscluster/pull/685",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: taloscluster"
+    ]
+  },
+  {
+    "title": "[PR] Add 'redundant-exception-message' check (W0720)",
+    "date": "2026-05-24T20:46:56Z",
+    "summary": "Add a new check that detects redundant exception messages when using 'raise ... from'. When exception chaining is used, including the original error message (via str(err), f-string interpolation, or concatenation) is redundant since Python preserves it via __cause__.\r\n\r\nExample of detected pattern:\r",
+    "url": "https://github.com/pylint-dev/pylint/pull/10793",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: pylint"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.zeroconf: 0.148.0 -> 0.149.15",
+    "date": "2026-05-24T20:20:58Z",
+    "summary": "Diff: https://github.com/jstasiak/python-zeroconf/compare/0.148.0...0.149.15\r\n\r\nChangelog: https://github.com/python-zeroconf/python-zeroconf/blob/0.149.15/CHANGELOG.md\r\n\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please lin",
+    "url": "https://github.com/NixOS/nixpkgs/pull/522667",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-05-24T20:14:13Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] feat(p5): NetworkPolicy baseline for llm-gateway + ADR-009 scope decision",
+    "date": "2026-05-24T20:10:38Z",
+    "summary": "## Summary\n\nFirst PR of the P5 work surface. Ships NetworkPolicy enforcement on the\n`llm-gateway` namespace (default-deny baseline + per-pod allows) and\nrecords the scope decision \u2014 including the explicit deferral reasoning\nfor the `monitoring` and `sealed-secrets` namespaces \u2014 in\n[`ADR-009`](docs/a",
+    "url": "https://github.com/CalmAfterReboot/BLS-platform/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: BLS-platform"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps) update Docker Images",
+    "date": "2026-05-24T20:03:46Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| busybox | minor | `1.37` \u2192 `1.38` |\n| [ghcr.io/fluxcd/helm-controller](https://redirect.github.com/fluxcd/helm-controller) | patch | `v1.5.4` \u2192 `v1.5.5` |\n| [ghcr.io/fluxcd/source-controller](https://redirect.gith",
+    "url": "https://github.com/heroaero-dev/k8s-clusters/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k8s-clusters"
+    ]
+  },
+  {
+    "title": "[PR] feat: multi-key API management with rotation, validation & failover",
+    "date": "2026-05-24T19:51:47Z",
+    "summary": "- Add provider key pools (gemini/groq) to storage with ready/exhausted/invalid states\r\n- New src/utils/apiKeys.js: validation probes, error classification, withKeyRotation(), background revalidation\r\n- IPC handlers: api-keys:list, api-keys:add, api-keys:remove, api-keys:revalidate, api-keys:revalida",
+    "url": "https://github.com/sohzm/cheating-daddy/pull/330",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cheating-daddy"
     ]
   }
 ]
