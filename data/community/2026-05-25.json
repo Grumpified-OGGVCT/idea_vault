@@ -155,7 +155,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-05-25T14:04:27Z",
+    "date": "2026-05-25T16:49:50Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -215,8 +215,8 @@
   },
   {
     "title": "15.0-20260523.1: Build check",
-    "date": "2026-05-25T05:20:17Z",
-    "summary": "#  Overview\n|  | package | i586 | x86_64 | notes | resolution |\n| --- | --- | --- | --- | --- | --- |\n| --- | development/meld | --- | --- | --- | Fixed |\n| --- | python/scikit-umfpack | --- | --- | --- | Fixed |\n| --- | --- | --- | --- | --- | --- |\n\n# Notes \n\n## Raw list x86_64\n\nhttps://github.com",
+    "date": "2026-05-25T15:56:24Z",
+    "summary": "#  Overview\n|  | package | i586 | x86_64 | notes | resolution |\n| --- | --- | --- | --- | --- | --- |\n| --- | development/meld | --- | --- | --- | Fixed |\n| --- | python/scikit-umfpack | --- | --- | --- | Fixed |\n| --- | network/ngrok | --- | --- | --- | Fixed |\n| --- | libraries/grpc | :x: | --- | ",
     "url": "https://github.com/SlackBuildsOrg/slackbuilds/issues/15833",
     "source": "github_issues",
     "highlights": [
@@ -539,7 +539,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-25T13:47:28Z",
+    "date": "2026-05-25T16:54:33Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -587,7 +587,7 @@
   },
   {
     "title": "[PR] feat(interactive-forms): runtime form authoring loop \u2014 substrate + versioning lifecycle + AI integration",
-    "date": "2026-05-24T23:19:27Z",
+    "date": "2026-05-25T17:08:47Z",
     "summary": "# Interactive Forms \u2014 runtime authoring loop\n\nCloses the runtime form-authoring loop end-to-end. AI-authored entity forms can now be **created, refined, previewed, applied, versioned, and reverted** entirely from inside MemberJunction \u2014 no Angular build, no CodeGen rerun, no developer intervention.\n",
     "url": "https://github.com/MemberJunction/MJ/pull/2609",
     "source": "github_prs",
@@ -635,7 +635,7 @@
   },
   {
     "title": "[PR] Update all non-major dependencies",
-    "date": "2026-05-24T21:54:21Z",
+    "date": "2026-05-25T16:50:58Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [advplyr/audiobookshelf](https://redirect.github.com/advplyr/audiobookshelf) |  | minor | `2.33.2` \u2192 `2.35.0` |\n| elasticsearch |  ",
     "url": "https://github.com/mchill/home/pull/160",
     "source": "github_prs",
@@ -779,7 +779,7 @@
   },
   {
     "title": "[PR] fix(agents): cap MiniMax /btw side-question tokens",
-    "date": "2026-05-25T04:18:45Z",
+    "date": "2026-05-25T15:18:29Z",
     "summary": "## Summary\n\nThis fixes #86116 by routing `/btw` side-question streams through the same embedded stream resolver used by normal chat.\n\n- Root cause: `/btw` asked `registerProviderStreamForModel` for a provider-owned stream and fell back directly to `streamSimple` when none was registered. MiniMax use",
     "url": "https://github.com/openclaw/openclaw/pull/86312",
     "source": "github_prs",
@@ -791,7 +791,7 @@
   },
   {
     "title": "[PR] feat(ai-service): \u521d\u59cb\u5316 AI \u5ba2\u670d\u670d\u52a1",
-    "date": "2026-05-25T13:46:14Z",
+    "date": "2026-05-25T16:59:14Z",
     "summary": "## \u53d8\u66f4\u6982\u8981\n\n\u672c PR \u521d\u59cb\u5316\u5e76\u5f15\u5165\u4e86\u5168\u65b0\u7684 AI \u5ba2\u670d\u670d\u52a1\uff08`src/ai-service`\uff09\uff0c\u57fa\u4e8e Python + RAG \u67b6\u6784\uff0c\u4e3a\u84dd\u7f51\u5e73\u53f0\u63d0\u4f9b\u667a\u80fd\u95ee\u7b54\u80fd\u529b\u3002\n\n## \u4e3b\u8981\u529f\u80fd\n\n- **RAG \u667a\u80fd\u4ee3\u7406**\uff08`agent/`\uff09\n  - \u652f\u6301\u6d41\u5f0f\u5bf9\u8bdd\u54cd\u5e94\n  - \u57fa\u4e8e\u4e0a\u4e0b\u6587\u7684\u95ee\u7b54\u6d41\u7a0b\u7ba1\u7406\n  - \u7edf\u4e00\u7684\u63d0\u793a\u8bcd\u6a21\u677f\n\n- **\u5411\u91cf\u68c0\u7d22**\uff08`retrieval/`\uff09\n  - \u652f\u6301 Milvus \u4e0e PgVector \u4e24\u79cd\u5411\u91cf\u5b58\u50a8\u540e\u7aef\n  - \u8bed\u4e49\u5206\u7247\uff08`chunking/`\uff09\u4e0e\u5411\u91cf\u5316\u5b58\u50a8\n  - \u6309\u6807\u7b7e\u8fc7\u6ee4\u7684 Chunk \u641c\u7d22\n\n- **\u5de5\u5177\u7cfb\u7edf**\uff08`tools/`\uff09\n  - \u53ef\u6269\u5c55",
     "url": "https://github.com/Blue-Net-Team/official-web2/pull/16",
     "source": "github_prs",
@@ -1031,12 +1031,12 @@
   },
   {
     "title": "[PR] feat(mastra): migrate v2 LangGraph chat extension to Mastra v3",
-    "date": "2026-05-25T09:32:20Z",
+    "date": "2026-05-25T16:11:26Z",
     "summary": "## Summary\n\nMigrates `lb4-llm-chat-component` from LangGraph + LangChain to Mastra v3. 24 commits, +17k / \u221218k LOC, 146 files touched. LangGraph fully removed; ChatGraph + DbQueryGraph + VisualizationGraph and their 27 node classes deleted; Mastra `Agent` + `Memory` + `Workflow` primitives own the r",
     "url": "https://github.com/sourcefuse/loopback4-llm-chat-extension/pull/22",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: loopback4-llm-chat-extension"
     ]
@@ -1091,7 +1091,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-25T08:54:22Z",
+    "date": "2026-05-25T15:41:11Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1175,12 +1175,12 @@
   },
   {
     "title": "[PR] fix(onboard): offer Ollama upgrade when host version too old",
-    "date": "2026-05-25T14:10:23Z",
-    "summary": "## Summary\nDGX Spark express setup exports `NEMOCLAW_PROVIDER=install-ollama` + `NEMOCLAW_MODEL=qwen3.6:35b`. When the host already has an Ollama binary (any version), the onboard menu drops the `install-ollama` entry and `resolveProviderKeyFallback` rewrites the request to plain `ollama`, so an out",
+    "date": "2026-05-25T16:53:47Z",
+    "summary": "## Summary\nDGX Spark express setup pins `NEMOCLAW_PROVIDER=install-ollama` + `NEMOCLAW_MODEL=qwen3.6:35b`. With Ollama already on the host, the onboard menu dropped the `install-ollama` entry, the provider-key fallback rewrote the request to plain `ollama`, and the stale 0.6.2 daemon was reused \u2014 cr",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/4186",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 16",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -1259,7 +1259,7 @@
   },
   {
     "title": "[PR] Add ResumeIQ full-stack application",
-    "date": "2026-05-25T13:36:13Z",
+    "date": "2026-05-25T15:51:47Z",
     "summary": "- FastAPI backend with AI-powered resume analysis, JWT auth, PDF export\r\n- SvelteKit frontend with login, signup, dashboard, and analysis pages\r\n- Docker Compose setup for orchestrating both services",
     "url": "https://github.com/Tilli-Academy/resume-iq/pull/2",
     "source": "github_prs",
@@ -1295,7 +1295,7 @@
   },
   {
     "title": "[PR] perf(startup): defer local AI provider and OCR service construction",
-    "date": "2026-05-25T13:10:20Z",
+    "date": "2026-05-25T15:51:15Z",
     "summary": "Wraps PhiSilica/FoundryLocal/OpenVINO providers in Lazy<> so they only\nmaterialize when the user actually translates via the local AI service.\nPhiSilicaBackendHealthMonitor, FoundryLocal CLI endpoint resolver and\nOpenVINO ModelDownloadService stay idle when a user picks a cloud\nprovider and never se",
     "url": "https://github.com/xiaocang/easydict_win32/pull/160",
     "source": "github_prs",
@@ -1315,6 +1315,126 @@
       "comments: 1",
       "pull request",
       "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] fix(server): redact GraphQL variables logging to prevent secret leaks (#2638)",
+    "date": "2026-05-25T16:53:21Z",
+    "summary": "## Summary\r\n\r\nCloses the GraphQL variables-logging leak documented in [#2638](https://github.com/MemberJunction/MJ/issues/2638). MJAPI's request logger was emitting plaintext mutation variables (HubSpot tokens, API keys, webhook secrets) to stdout for every non-introspection request, exposing them t",
+    "url": "https://github.com/MemberJunction/MJ/pull/2648",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(compliance): standards alignment 2026-05-24",
+    "date": "2026-05-25T16:51:41Z",
+    "summary": "## Compliance Remediations\n\nApplied by the `repo-compliance` system against standards manifest v1.0 (last_updated 2026-05-24). Audit covered 144 checks across 8 domains; this PR resolves 33 findings.\n\n> Note: this branch was cut from `feat/phase-0-tailwind` (local-only), so the diff against `main` a",
+    "url": "https://github.com/ByronWilliamsCPA/llc-manager/pull/47",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: llc-manager"
+    ]
+  },
+  {
+    "title": "[PR] fix(ollama): cap deepseek v4 pro cloud output tokens",
+    "date": "2026-05-25T16:34:25Z",
+    "summary": "## Summary\n- Ensure Ollama `deepseek-v4-pro:cloud` resolves to the DeepSeek V4 Pro runtime limits.\n- Cap max output tokens at 65,536 for the Ollama Cloud variant.\n- Prevent generic base-model OpenAI override prefixes from applying across colon-suffixed gateway variants.\n- Add regression coverage for",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1348",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(inference): patch fetch for DeepSeek runtime kwargs",
+    "date": "2026-05-25T16:14:45Z",
+    "summary": "## Summary\nPatch the NVIDIA endpoint inference preload so DeepSeek V4 Pro and Kimi K2.6 runtime kwargs are injected for fetch-based OpenAI-compatible requests as well as http/https request calls. This keeps Discord and WeChat channel traffic on the non-thinking chat-completions path when clients use",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/4188",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Stable",
+    "date": "2026-05-25T16:12:17Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n## Ghi ch\u00fa Ph\u00e1t h\u00e0nh\n\n* **New Features**\n  * T\u00f9y ch\u1ecdn x\u00e1c th\u1ef1c Google; ch\u1ebf \u0111\u1ed9 tri\u1ec3n khai private/public; c\u1ea5u h\u00ecnh ph\u00e2n t\u00edch b\u1eb1ng token c\u00f4ng khai/ri\u00eang t\u01b0.\n\n* **Documentation**\n  * H\u01b0\u1edbng d\u1eabn c\u1eadp nh\u1ead",
+    "url": "https://github.com/ntdatagit10/local-ai-packaged/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: local-ai-packaged"
+    ]
+  },
+  {
+    "title": "[PR] fix(inference): preserve connected-app tools when BYOK provider is configured",
+    "date": "2026-05-25T16:10:49Z",
+    "summary": "## Summary\n\n- When a user configures a BYOK (Bring Your Own Key) cloud provider for the `chat` workload, unset sibling workload routes (`coding`, `reasoning`) now inherit the BYOK provider instead of silently falling back to the managed backend.\n- The `agentic` workload is explicitly excluded from B",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/2632",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the ai-providers group with 4 updates",
+    "date": "2026-05-25T15:54:31Z",
+    "summary": "Bumps the ai-providers group with 4 updates: [langchain](https://github.com/langchain-ai/langchain), [langgraph](https://github.com/langchain-ai/langgraph), [langchain-core](https://github.com/langchain-ai/langchain) and [langchain-anthropic](https://github.com/langchain-ai/langchain).\n\nUpdates `lan",
+    "url": "https://github.com/PostHog/posthog-python/pull/624",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: posthog-python"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the production-deps group with 8 updates",
+    "date": "2026-05-25T15:47:58Z",
+    "summary": "Bumps the production-deps group with 8 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@langchain/core](https://github.com/langchain-ai/langchainjs) | `1.1.46` | `1.1.48` |\n| [posthog-node](https://github.com/PostHog/posthog-js/tree/HEAD/packages/node) | `5.34.2` | `5.35.1` |\n| [undici](htt",
+    "url": "https://github.com/Djtony707/TITAN/pull/89",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: TITAN"
+    ]
+  },
+  {
+    "title": "[PR] feat(plugins): Ollama support",
+    "date": "2026-05-25T15:31:37Z",
+    "summary": "## Summary\r\n\r\nAdds a new plugin that lets Code Puppy connect to local inference servers \u2014 Ollama, LM Studio, vLLM, llama.cpp, and any other OpenAI Chat Completions-compatible endpoint \u2014 without sending requests to remote model providers.\r\n\r\nThe plugin is auto-discovered by the existing plugin loader",
+    "url": "https://github.com/mpfaffenberger/code_puppy/pull/352",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: code_puppy"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai,core): implement deferred startup delay and pre-warm AIEngine",
+    "date": "2026-05-25T15:31:02Z",
+    "summary": "## Overview\nThis PR implements background pre-warming for the server-side `AIEngine` (metadata and local embeddings) to eliminate cold-start lookup latency for the first request. It also introduces a generic `deferredDelay` capability to `@RegisterForStartup` options, allowing background engine load",
+    "url": "https://github.com/MemberJunction/MJ/pull/2687",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
