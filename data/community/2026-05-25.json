@@ -539,7 +539,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-25T21:11:51Z",
+    "date": "2026-05-25T23:06:20Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -551,7 +551,7 @@
   },
   {
     "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m7",
-    "date": "2026-05-25T18:44:29Z",
+    "date": "2026-05-25T22:27:32Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
     "url": "https://github.com/MartinWitt/BootFleet/pull/49",
     "source": "github_prs",
@@ -587,7 +587,7 @@
   },
   {
     "title": "[PR] feat(interactive-forms): runtime form authoring loop \u2014 substrate + versioning lifecycle + AI integration",
-    "date": "2026-05-25T21:12:12Z",
+    "date": "2026-05-25T22:48:38Z",
     "summary": "# Interactive Forms \u2014 runtime authoring loop\n\nCloses the runtime form-authoring loop end-to-end. AI-authored entity forms can now be **created, refined, previewed, applied, versioned, and reverted** entirely from inside MemberJunction \u2014 no Angular build, no CodeGen rerun, no developer intervention.\n",
     "url": "https://github.com/MemberJunction/MJ/pull/2609",
     "source": "github_prs",
@@ -947,7 +947,7 @@
   },
   {
     "title": "[PR] feat(security): egress policy module + search/LLM/embeddings PEPs",
-    "date": "2026-05-25T12:56:47Z",
+    "date": "2026-05-25T22:12:49Z",
     "summary": "## Summary\n\nIntroduces a central PDP/PEP **egress policy** (`security/egress_policy.py`) that lets users constrain where a research run's traffic, LLM calls, and embeddings may go. Closes the original complaint that motivated the work: the LangGraph agent silently expanding the user's primary engine",
     "url": "https://github.com/LearningCircuit/local-deep-research/pull/4300",
     "source": "github_prs",
@@ -1115,7 +1115,7 @@
   },
   {
     "title": "[PR] deps: Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6 (main)",
-    "date": "2026-05-25T20:35:49Z",
+    "date": "2026-05-25T21:45:49Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
     "url": "https://github.com/camunda/camunda/pull/53096",
     "source": "github_prs",
@@ -1571,7 +1571,7 @@
   },
   {
     "title": "[PR] deps: Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M6 (stable/8.9)",
-    "date": "2026-05-25T20:35:00Z",
+    "date": "2026-05-25T21:44:26Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spring-ai-bom](https://redirect.github.com/spring-projects/spring-ai) | `2.",
     "url": "https://github.com/camunda/camunda/pull/53042",
     "source": "github_prs",
@@ -1615,6 +1615,54 @@
       "comments: 0",
       "pull request",
       "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] pi v0.75.5 migration: ADR-010 clean seam (Phase 0\u20132) + build:core shims (Phase 2b)",
+    "date": "2026-05-25T22:49:33Z",
+    "summary": "## Summary\n\nCompletes the pi **v0.75.5** migration under [ADR-010](docs/dev/ADR-010-pi-clean-seam-architecture.md) in **two commits**:\n\n1. **Phase 0\u20132** \u2014 extract GSD session/mode code into `@gsd/agent-core` / `@gsd/agent-modes`, vendor upstream pi into `@gsd/pi-*`, add pin metadata and vendor scrip",
+    "url": "https://github.com/open-gsd/gsd-pi/pull/133",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: gsd-pi"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add GitHub Copilot provider",
+    "date": "2026-05-25T22:32:39Z",
+    "summary": "## Description\n\nAdds GitHub Copilot as a first-class LLM provider in Bifrost. The Copilot provider uses a two-layer OAuth flow: device-code grant to obtain a GitHub token, then exchanges it for a Copilot API token. Supports Chat Completions, Responses API (with text format mapping), streaming, and d",
+    "url": "https://github.com/maximhq/bifrost/pull/2054",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update spring dependencies",
+    "date": "2026-05-25T21:31:57Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.cloud:spring-cloud-dependencies](https://spring.io/projects/spring-cloud) ([so",
+    "url": "https://github.com/nilson-aguiar/nbot/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nbot"
+    ]
+  },
+  {
+    "title": "[PR] docs hygiene Phase 3 \u2014 per-page principled review (43 pages)",
+    "date": "2026-05-25T21:23:41Z",
+    "summary": "## Summary\n\nImplements **Phase 3** of `PLAN-DOCS-HYGIENE` \u2014 every public doc page graded by Codex against all seven hygiene principles with active code verification for Principle 6 (docs match the code), then the accepted recommendations applied here.\n\n42 files changed, 247 lines removed, 197 added ",
+    "url": "https://github.com/decisionbox-io/decisionbox-platform/pull/242",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: decisionbox-platform"
     ]
   }
 ]
