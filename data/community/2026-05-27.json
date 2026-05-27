@@ -239,12 +239,12 @@
   },
   {
     "title": "[BOUNTY] Discovery Mode \u2014 Find Elyan Labs Software, Open PRs, Earn RTC",
-    "date": "2026-05-27T16:39:44Z",
+    "date": "2026-05-27T17:32:41Z",
     "summary": "## Discovery Mode Bounty \u2014 Explore Elyan Labs Software and Contribute\n\n**Difficulty:** Easy to Medium  \n**Starter Reward:** 2 RTC for a valid first discovery claim  \n**PR Reward:** 10 RTC for accepted improvement PRs (scope-dependent)  \n**Pool:** 250 RTC\n\n---\n\n### Goal\nHelp people discover and impro",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/100",
     "source": "github_issues",
     "highlights": [
-      "comments: 81",
+      "comments: 82",
       "state: open",
       "repo: rustchain-bounties"
     ]
@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-27T16:08:49Z",
+    "date": "2026-05-27T19:15:46Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -707,7 +707,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-27T15:16:27Z",
+    "date": "2026-05-27T18:40:35Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -911,7 +911,7 @@
   },
   {
     "title": "[PR] fix(inference): patch fetch for DeepSeek runtime kwargs",
-    "date": "2026-05-27T01:06:48Z",
+    "date": "2026-05-27T18:35:13Z",
     "summary": "## Summary\nPatch the NVIDIA endpoint inference preload so DeepSeek V4 Pro and Kimi K2.6 runtime kwargs are injected for fetch-based OpenAI-compatible requests as well as http/https request calls. This keeps Discord and WeChat channel traffic on the non-thinking chat-completions path when clients use",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/4188",
     "source": "github_prs",
@@ -1127,7 +1127,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v6",
-    "date": "2026-05-27T12:37:51Z",
+    "date": "2026-05-27T19:12:24Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/2980",
     "source": "github_prs",
@@ -1139,7 +1139,7 @@
   },
   {
     "title": "[PR] Add tests for conflict detection LLM response format and enhance slot\u2026",
-    "date": "2026-05-27T12:33:43Z",
+    "date": "2026-05-27T18:17:12Z",
     "summary": "\u2026 releaser functionality\r\n\r\n- Implement tests to verify warning behavior in _call_conflict_detection_llm when response_format conflicts with expected format.\r\n- Refactor TestSlotReleaser by removing redundant tests and adding a new test to ensure done() is idempotent when called multiple times.\r\n- U",
     "url": "https://github.com/monkscode/Natural-Language-to-Robot-Framework/pull/62",
     "source": "github_prs",
@@ -1283,7 +1283,7 @@
   },
   {
     "title": "[PR] feat(ci): add deploy workflow with release tracking and smoke tests",
-    "date": "2026-05-27T16:25:53Z",
+    "date": "2026-05-27T19:28:11Z",
     "summary": "## Summary\n\nImplements P3.1 of the production bug-management plan (issue #493): automated deploy pipeline, GlitchTip release tracking, Coolify webhook trigger, post-deploy smoke test, and Doctrine migrations on boot.\n\n- **`.github/workflows/deploy.yml`** \u2014 Triggered on push to `main` and `v*` tags. ",
     "url": "https://github.com/vincentchalamon/bike-trip-planner/pull/501",
     "source": "github_prs",
@@ -1423,6 +1423,174 @@
       "comments: 0",
       "pull request",
       "repo: splunk-otel-java"
+    ]
+  },
+  {
+    "title": "[PR] feat(feedback): email notifications for GitHub issue updates",
+    "date": "2026-05-27T19:23:00Z",
+    "summary": "## Summary\n- **New `UserFeedbackSubmission` table** (migration) that maps submitter email \u2192 GitHub issue so MJAPI can send notification emails when issue events arrive\n- **GitHub webhook router** (`/webhooks/github/feedback`) that receives `issues` and `issue_comment` events from GitHub, looks up th",
+    "url": "https://github.com/MemberJunction/MJ/pull/2699",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix: image artifacts now always persist and render in chat UI",
+    "date": "2026-05-27T19:19:02Z",
+    "summary": "## Summary\n\nFixes two issues that together caused AI-generated images (e.g. from Sage's Generate Image action) to sometimes not display in the chat UI.\n\n- **Image artifact viewer was missing.** The v5.36 artifact/attachment unification moved image storage onto the `MJ: Artifacts` path, but no `Image",
+    "url": "https://github.com/MemberJunction/MJ/pull/2700",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: OpenCode agent provider as alternative to Claude Agent SDK harness",
+    "date": "2026-05-27T19:16:32Z",
+    "summary": "## Summary\n\nAdds an experimental `OpenCodeAgentProvider` that conforms to the existing `AgentProvider` interface and slots alongside Claude + OpenClaw in the orchestrator. Off by default; users opt in via Settings \u2192 Extensions \u2192 OpenCode Agent.\n\nThe goal is feature parity with the existing `Claude A",
+    "url": "https://github.com/ankitvgupta/exo/pull/164",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: exo"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update testcontainers-go monorepo to v0.42.0",
+    "date": "2026-05-27T18:53:08Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/grafana/k6-testcontainers-demo/pull/19",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k6-testcontainers-demo"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): Update Go",
+    "date": "2026-05-27T18:47:32Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [git",
+    "url": "https://github.com/datosh/opkssh/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: opkssh"
+    ]
+  },
+  {
+    "title": "[PR] CCBill AI Addendum compliance: audit + visible labels + substantive moderation",
+    "date": "2026-05-27T18:42:20Z",
+    "summary": "## Summary\n\nFull compliance stack for the CCBill AI Content Merchant Addendum, in three phases across 12 commits:\n\n1. **Audit** (`AI_AUDIT.md`) - read-only review of every AI/ML surface in the codebase, mapped against the 13 prohibited categories CCBill enumerates.\n2. **P0 - visible compliance** - A",
+    "url": "https://github.com/CodeBambi/Conditioning-Control-Panel---CSharp-WPF/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Conditioning-Control-Panel---CSharp-WPF"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-node monorepo to v12",
+    "date": "2026-05-27T18:31:47Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/postgresql](https://redirect.github.com/testcontainers/testcontainers-node) | [`^1",
+    "url": "https://github.com/ansark88/TTM/pull/50",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: TTM"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m8",
+    "date": "2026-05-27T18:16:42Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/MartinWitt/BootFleet/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: BootFleet"
+    ]
+  },
+  {
+    "title": "[PR] admin dashboard ssc-dsai:dev",
+    "date": "2026-05-27T18:08:02Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/cicero-im/open-webui-2/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: open-webui-2"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.springframework.ai:spring-ai-bom to v2.0.0-M8",
+    "date": "2026-05-27T17:51:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/ThomasVitale/scaling-on-satisfaction/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: scaling-on-satisfaction"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m8",
+    "date": "2026-05-27T17:51:06Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Kotlin/kotlin-jupyter-libraries/pull/733",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: kotlin-jupyter-libraries"
+    ]
+  },
+  {
+    "title": "[PR] chore: update dependency testcontainers to v12",
+    "date": "2026-05-27T17:47:17Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/eycgrupo/eyc-loopback-components/pull/213",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: eyc-loopback-components"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency @testcontainers/postgresql to v12",
+    "date": "2026-05-27T17:37:52Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/postgresql](https://redirect.github.com/testcontainers/testcontainers-node) | [`^1",
+    "url": "https://github.com/kkulebaev/orbit-todo/pull/47",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: orbit-todo"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the production-dependencies group across 1 directory with 11 updates",
+    "date": "2026-05-27T17:26:28Z",
+    "summary": "Bumps the production-dependencies group with 11 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@uiw/react-md-editor](https://github.com/uiwjs/react-md-editor) | `4.1.0` | `4.1.1` |\n| [react-dom](https://github.com/facebook/react/tree/HEAD/packages/react-dom) | `19.2.5` |",
+    "url": "https://github.com/buggyblues/shadow/pull/327",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: shadow"
     ]
   }
 ]
