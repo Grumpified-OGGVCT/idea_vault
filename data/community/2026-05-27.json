@@ -239,12 +239,12 @@
   },
   {
     "title": "[BOUNTY] Discovery Mode \u2014 Find Elyan Labs Software, Open PRs, Earn RTC",
-    "date": "2026-05-24T11:29:43Z",
+    "date": "2026-05-27T16:39:44Z",
     "summary": "## Discovery Mode Bounty \u2014 Explore Elyan Labs Software and Contribute\n\n**Difficulty:** Easy to Medium  \n**Starter Reward:** 2 RTC for a valid first discovery claim  \n**PR Reward:** 10 RTC for accepted improvement PRs (scope-dependent)  \n**Pool:** 250 RTC\n\n---\n\n### Goal\nHelp people discover and impro",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/100",
     "source": "github_issues",
     "highlights": [
-      "comments: 80",
+      "comments: 81",
       "state: open",
       "repo: rustchain-bounties"
     ]
@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-27T12:03:09Z",
+    "date": "2026-05-27T16:08:49Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -539,7 +539,7 @@
   },
   {
     "title": "[PR] chore(deps) update Docker Images",
-    "date": "2026-05-27T12:11:09Z",
+    "date": "2026-05-27T16:05:37Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| busybox | minor | `1.37` \u2192 `1.38` |\n| [cloudflare/cloudflared](https://redirect.github.com/cloudflare/cloudflared) | patch | `2026.5.0` \u2192 `202",
     "url": "https://github.com/heroaero-dev/k8s-clusters/pull/16",
     "source": "github_prs",
@@ -707,7 +707,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-27T11:16:48Z",
+    "date": "2026-05-27T15:16:27Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1223,7 +1223,7 @@
   },
   {
     "title": "[PR] docs(runbooks): add on-call playbooks for production incidents",
-    "date": "2026-05-27T10:20:08Z",
+    "date": "2026-05-27T16:37:55Z",
     "summary": "## Summary\n\nIntroduces `docs/runbooks/` (P2.3 of the production-bug-management plan) with 12 operational playbooks for on-call response. Each runbook targets a \"fix in under 2 minutes\" path and follows a uniform structure: **Sympt\u00f4mes / Diagnostic / Proc\u00e9dure / Post-action**.\n\n## Runbooks added\n\n| F",
     "url": "https://github.com/vincentchalamon/bike-trip-planner/pull/496",
     "source": "github_prs",
@@ -1231,6 +1231,198 @@
       "comments: 0",
       "pull request",
       "repo: bike-trip-planner"
+    ]
+  },
+  {
+    "title": "[PR] feat: The LiteLLM migration is now complete. All `@xsai/*` and `@xsai-ext/*` imports have been removed from the codebase and all core packages pass TypeScript typecheck.",
+    "date": "2026-05-27T16:38:11Z",
+    "summary": "## Summary of Changes\n\n### Packages passing typecheck (zero errors):\n- `@proj-airi/stage-ui` \u2705\n- `@proj-airi/stage-shared` \u2705\n- `@proj-airi/stage-ui-spine` \u2705\n- `@proj-airi/plugin-protocol` \u2705\n- `@proj-airi/component-calling` \u2705\n- `@proj-airi/stage-tamagotchi` \u2705\n\n### Key fixes applied in this session:\n\n",
+    "url": "https://github.com/vi70x3/airi/pull/19",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: airi"
+    ]
+  },
+  {
+    "title": "[PR] feat: Implement PATCH-1, PATCH-2, PATCH-3, PATCH-4, PATCH-5, PATCH-6",
+    "date": "2026-05-27T16:29:37Z",
+    "summary": "## Implemented Tickets\n\n### PATCH-1: Implement Authentication with Auto-Registration\n**1. Overview**\nImplement a simple authentication system for Patch. Since this is a self-service tool for store associates, the system should automatically create an account if the user doesn't exist (Auto-registrat",
+    "url": "https://github.com/bhargav-guggilapu/PATCH/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: PATCH"
+    ]
+  },
+  {
+    "title": "[PR] fix: eliminate WebSocket token expiry log spam on Azure",
+    "date": "2026-05-27T16:28:15Z",
+    "summary": "## Summary\n\n- **RAII token validation**: Validate JWT once in `onConnect` and cache the `UserPayload` on the connection context, instead of re-validating on every subscription message (which produced thousands of error log lines per day on Azure)\n- **Proactive socket close at expiry**: Schedule a `s",
+    "url": "https://github.com/MemberJunction/MJ/pull/2698",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: agent latency optimizations and parallel sub-agent execution",
+    "date": "2026-05-27T16:25:56Z",
+    "summary": "# Latency-Reduction Optimizations and Parallel Sub-Agent Execution\n\nThis PR implements key performance optimizations to the MemberJunction AI agent architecture, significantly reducing execution latency. It also adds support for parallel sub-agent execution, allowing loop agents to delegate multiple",
+    "url": "https://github.com/MemberJunction/MJ/pull/2688",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(ci): add deploy workflow with release tracking and smoke tests",
+    "date": "2026-05-27T16:25:53Z",
+    "summary": "## Summary\n\nImplements P3.1 of the production bug-management plan (issue #493): automated deploy pipeline, GlitchTip release tracking, Coolify webhook trigger, post-deploy smoke test, and Doctrine migrations on boot.\n\n- **`.github/workflows/deploy.yml`** \u2014 Triggered on push to `main` and `v*` tags. ",
+    "url": "https://github.com/vincentchalamon/bike-trip-planner/pull/501",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: bike-trip-planner"
+    ]
+  },
+  {
+    "title": "[PR] Blackboxai/merge agency core v5 hardening to master",
+    "date": "2026-05-27T16:25:30Z",
+    "summary": "## Summary\r\n\r\n<!-- What does this PR do? Why? Be specific. -->\r\n\r\n## Changes\r\n\r\n<!-- List files changed and briefly why each one was touched. -->\r\n\r\n- `<file>` \u2014 <reason>\r\n\r\n## Testing\r\n\r\n<!-- How was this tested? -->\r\n\r\n- [ ] `pytest -x` passes locally\r\n- [ ] New test added / existing test updated ",
+    "url": "https://github.com/strikersam/local-llm-server/pull/271",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: local-llm-server"
+    ]
+  },
+  {
+    "title": "[PR] feat(tools): add new_node.py CLI scaffolder for RocketRide nodes",
+    "date": "2026-05-27T16:23:46Z",
+    "summary": "## Summary\r\n\r\n- Introduced a new CLI utility (`new_node.py`) to automate the scaffolding of RocketRide nodes, reducing setup time from minutes to seconds.\r\n- Standardizes the creation of `services.json`, `IGlobal.py`, and `IInstance.py` boilerplate based on the node class (LLM, Database, or Tool).\r\n",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/885",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] refactor(icons): move SVGs to node dirs, auto-tint monochromes",
+    "date": "2026-05-27T16:22:58Z",
+    "summary": "## Summary\r\n\r\n- **Co-located icons.** Each node now owns its SVG file next to its service JSON inside `nodes/src/nodes/<node>/`. Generic icons (`unknown.svg`) live in `nodes/src/nodes/core/`. The central `packages/shared-ui/src/assets/nodes/` directory is gone, and so are the ~300 lines of hand-main",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/926",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] feat: Implement PATCH-1, PATCH-2, PATCH-3, PATCH-4, PATCH-5, PATCH-6, PATCH-7",
+    "date": "2026-05-27T16:06:05Z",
+    "summary": "## Implemented Tickets\n\n### PATCH-1: Implement Auto-Signup Authentication System\n**1. Overview**\nImplement a self-service authentication system for Patch. The system should allow users to log in using email and password. To minimize friction, the system will automatically create an account for any u",
+    "url": "https://github.com/bhargav-guggilapu/PATCH/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: PATCH"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-node monorepo to v12",
+    "date": "2026-05-27T15:58:01Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/redis](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.25.",
+    "url": "https://github.com/matrix-org/matrix-hookshot/pull/1129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: matrix-hookshot"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency openclaw to v2026.5.26",
+    "date": "2026-05-27T15:54:54Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [openclaw](https://redirect.",
+    "url": "https://github.com/tardigrde/openclaw-deploy/pull/119",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaw-deploy"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency testcontainers to v12",
+    "date": "2026-05-27T15:48:52Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [testcontainers](https://redirect.github.com/testcontainers/testcontainers-node) | [`^10.7.1` \u2192 `^1",
+    "url": "https://github.com/andreacioni/nestjs-kafka-module/pull/139",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nestjs-kafka-module"
+    ]
+  },
+  {
+    "title": "[PR] fix: The svg component contains a warning about isDark",
+    "date": "2026-05-27T15:44:57Z",
+    "summary": "fix this \r\nWarning: React does not recognize the `isDark` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `isdark` instead. If you accidentally passed it from a parent component, remove it from the DOM element. Error Component Sta",
+    "url": "https://github.com/langflow-ai/langflow/pull/9314",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add template for unit-tests",
+    "date": "2026-05-27T15:44:56Z",
+    "summary": "This pull request introduces significant improvements to the unit testing infrastructure, focusing on better mocking practices for database and language model components. The changes increase test maintainability and reliability by standardizing shared mock usage, simplifying test setup, and providi",
+    "url": "https://github.com/langflow-ai/langflow/pull/9503",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] feat(security): add configurable security levels for importing trusted builtins / modules",
+    "date": "2026-05-27T15:44:51Z",
+    "summary": "Allows users to specify configurable levels of security to block system-level access builtins and modules, such as `eval`, `subprocess`, etc. Works during validation and during execution.\r\n\r\nDoes not block builtins or modules in core (trusted) components. \r\n\r\nNote that this isn't a true isolated san",
+    "url": "https://github.com/langflow-ai/langflow/pull/10696",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.mock-server:mockserver-client-java to v6.1.0",
+    "date": "2026-05-27T15:25:57Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-client-java](https://www.mock-server.com) ([source](https://redirect.gi",
+    "url": "https://github.com/signalfx/splunk-otel-java/pull/2843",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: splunk-otel-java"
     ]
   }
 ]
