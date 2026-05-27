@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-27T00:06:33Z",
+    "date": "2026-05-27T05:13:24Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -551,7 +551,7 @@
   },
   {
     "title": "[PR] fix(deps): update go-minor",
-    "date": "2026-05-26T23:36:51Z",
+    "date": "2026-05-27T02:00:29Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/Netcracker/qubership-core-lib-go-dbaas-opensearch-client/pull/65",
     "source": "github_prs",
@@ -563,12 +563,12 @@
   },
   {
     "title": "[PR] feat(baseline): mj baseline build/compare/roundtrip + byte-equivalent v5.34.x and v5.37.x baselines",
-    "date": "2026-05-26T23:31:29Z",
+    "date": "2026-05-27T01:39:27Z",
     "summary": "## Summary\n\nEnd-to-end deterministic baseline migration toolchain for MJCLI: introspect a fully-migrated SQL Server database, emit a canonical SQL baseline that's both **byte-deterministic across re-runs** and **provably equivalent to the V-stack end state** via a structural + row-by-row comparator.",
     "url": "https://github.com/MemberJunction/MJ/pull/2519",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "pull request",
       "repo: MJ"
     ]
@@ -731,7 +731,7 @@
   },
   {
     "title": "[PR] feat(interactive-forms): runtime form authoring loop \u2014 substrate + versioning lifecycle + AI integration",
-    "date": "2026-05-26T20:44:47Z",
+    "date": "2026-05-27T02:33:51Z",
     "summary": "# Interactive Forms \u2014 runtime authoring loop\n\nCloses the runtime form-authoring loop end-to-end. AI-authored entity forms can now be **created, refined, previewed, applied, versioned, and reverted** entirely from inside MemberJunction \u2014 no Angular build, no CodeGen rerun, no developer intervention.\n",
     "url": "https://github.com/MemberJunction/MJ/pull/2609",
     "source": "github_prs",
@@ -743,7 +743,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-05-26T20:44:11Z",
+    "date": "2026-05-27T02:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -751,6 +751,198 @@
       "comments: 3",
       "pull request",
       "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "\ud83e\udd9e OpenClaw Ecosystem Digest 2026-05-27",
+    "date": "2026-05-27T02:41:09Z",
+    "summary": "# OpenClaw Ecosystem Digest 2026-05-27\n\n> Issues: 382 | PRs: 500 | Projects covered: 13 | Generated: 2026-05-27 02:27 UTC\n\n- [OpenClaw](https://github\u200b.com/openclaw/openclaw)\n- [NanoBot](https://github\u200b.com/HKUDS/nanobot)\n- [Hermes Agent](https://github\u200b.com/nousresearch/hermes-agent)\n- [PicoClaw](h",
+    "url": "https://github.com/kakapez/agents-radar/issues/72",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: agents-radar"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/open-webui/open-webui ( v0.8.12 \u2794 v0.9.5 )",
+    "date": "2026-05-27T04:53:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | minor | `v0.8.12` \u2192 `v0.9.5` |\n\n---\n\n> [!WARNING]\n> Some ",
+    "url": "https://github.com/Aviator-Coding/home-ops/pull/755",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] perf(queries): eliminate provider.Refresh(), migrate to QueryEngine + MJQueryEntityExtended",
+    "date": "2026-05-27T04:42:10Z",
+    "summary": "## Summary\n- **Eliminate `provider.Refresh()` from query save/delete paths** \u2014 every query save was reloading the entire metadata graph (entities, fields, applications, roles \u2014 everything). On large-entity deployments (NSTA with thousands of entities), this was the core bottleneck causing Skip to fa",
+    "url": "https://github.com/MemberJunction/MJ/pull/2695",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Add one-line install scripts for Linux, macOS, and Windows",
+    "date": "2026-05-27T04:02:59Z",
+    "summary": "Closes #12.\r\n\r\n## Summary\r\n\r\n- Adds `scripts/install.sh` (bash) for Linux/macOS \u2014 works with `curl \u2026 | bash`\r\n- Adds `scripts/install.ps1` (PowerShell) for Windows \u2014 works with `irm \u2026 | iex`\r\n- Both scripts validate Node.js v20.18.1+, clone the repo, run `npm install`, and run `npm run setup:local` ",
+    "url": "https://github.com/bradwmorris/ra-h_os/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ra-h_os"
+    ]
+  },
+  {
+    "title": "[PR] DOC-3498: tinymceai on-premises documentation",
+    "date": "2026-05-27T03:25:54Z",
+    "summary": "## Ticket\r\n\r\n[DOC-3498](https://ephocks.atlassian.net/browse/DOC-3498)\r\n\r\n## Summary\r\n\r\nComplete on-premises deployment documentation for the TinyMCE AI service, cherry-picked from `feature/8.6.0/DOC-3401_DOC-3498` (#4137) and retargeted to `tinymce/8` for independent merge.\r\n\r\n### New pages (10)\r\n\r",
+    "url": "https://github.com/tinymce/tinymce-docs/pull/4142",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: tinymce-docs"
+    ]
+  },
+  {
+    "title": "[PR] Investigate ambiguous `halo` issue scope (no code change)",
+    "date": "2026-05-27T03:08:12Z",
+    "summary": "## Summary\n\nDescribe the problem and fix in 2\u20135 bullets:\n\nIf this PR fixes a plugin beta-release blocker, title it `fix(<plugin-id>): beta blocker - <summary>` and link the matching `Beta blocker: <plugin-name> - <summary>` issue labeled `beta-blocker`. Contributors cannot label PRs, so the title is",
+    "url": "https://github.com/finnur-fk/openclaw/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 36",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] Bump the minor-and-patch group across 1 directory with 13 updates",
+    "date": "2026-05-27T02:42:52Z",
+    "summary": "Bumps the minor-and-patch group with 10 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [fastmcp](https://github.com/PrefectHQ/fastmcp) | `3.2.4` | `3.3.1` |\n| [langchain-core](https://github.com/langchain-ai/langchain) | `1.2.26` | `1.4.0` |\n| [mcp](https://github.com/mod",
+    "url": "https://github.com/Azure-Samples/python-mcp-demos/pull/86",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: python-mcp-demos"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency org.springframework.ai:spring-ai-bom to v2.0.0-m7",
+    "date": "2026-05-27T05:12:55Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/nicholasM95/meyers-ai/pull/45",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: meyers-ai"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update go-minor to v0.42.0",
+    "date": "2026-05-27T02:04:38Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-lib-go-dbaas-postgres-client/pull/85",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-lib-go-dbaas-postgres-client"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go to v0.42.0",
+    "date": "2026-05-27T01:37:13Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-lib-go-bg-state-monitor/pull/82",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-lib-go-bg-state-monitor"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump org.springframework.ai:spring-ai-bom from 1.0.0-M6 to 2.0.0-M7 in /rag-service",
+    "date": "2026-05-27T01:23:44Z",
+    "summary": "Bumps [org.springframework.ai:spring-ai-bom](https://github.com/spring-projects/spring-ai) from 1.0.0-M6 to 2.0.0-M7.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/spring-projects/spring-ai/releases\">org.springframework.ai:spring-ai-bom's releases</a>.</e",
+    "url": "https://github.com/sergio-tr/rag-spring-ai-ollama/pull/63",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: rag-spring-ai-ollama"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependencies (non-major)",
+    "date": "2026-05-27T01:22:44Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| alpine/kubectl |  | patch | `1.36.0` \u2192 `1.36.1` |\n| docker.io/library/redis |  | minor | `8.6.2` \u2192 `8.8.0` |\n| factory.talos.dev/me",
+    "url": "https://github.com/edgard/home-ops/pull/200",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update go-minor",
+    "date": "2026-05-27T01:17:53Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-lib-go-bg-kafka/pull/72",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-lib-go-bg-kafka"
+    ]
+  },
+  {
+    "title": "[PR] fix(inference): patch fetch for DeepSeek runtime kwargs",
+    "date": "2026-05-27T01:06:48Z",
+    "summary": "## Summary\nPatch the NVIDIA endpoint inference preload so DeepSeek V4 Pro and Kimi K2.6 runtime kwargs are injected for fetch-based OpenAI-compatible requests as well as http/https request calls. This keeps Discord and WeChat channel traffic on the non-thinking chat-completions path when clients use",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/4188",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Update",
+    "date": "2026-05-27T01:04:46Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Large batch of new and expanded blog posts, diagrams and docs on cloud-native, Kubernetes, DevOps and tooling.\n\n* **Chores**\n  * CI/CD revamped: release-triggered Docker imag",
+    "url": "https://github.com/humzamalak/dca-prep-kit/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dca-prep-kit"
+    ]
+  },
+  {
+    "title": "[PR] Feat/FG-29 role based model provider system",
+    "date": "2026-05-27T00:59:23Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * AI chatbot (floating/sidebar/embedded) with availability, property info, booking flow, streaming responses, and background evaluation\n  * Semantic RAG with multilingual suppo",
+    "url": "https://github.com/afkatja/fincaguarumo/pull/64",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: fincaguarumo"
     ]
   }
 ]
