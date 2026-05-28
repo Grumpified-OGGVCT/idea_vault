@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-28T03:00:28Z",
+    "date": "2026-05-28T07:40:22Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -707,7 +707,7 @@
   },
   {
     "title": "[PR] fix(deps): Update Go",
-    "date": "2026-05-28T00:57:33Z",
+    "date": "2026-05-28T04:32:05Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [git",
     "url": "https://github.com/datosh/opkssh/pull/21",
     "source": "github_prs",
@@ -751,6 +751,222 @@
       "comments: 24",
       "pull request",
       "repo: binG"
+    ]
+  },
+  {
+    "title": "[PR] fix: harden extract-directives against untrusted metadata/chat fragments (#1640)",
+    "date": "2026-05-28T07:48:48Z",
+    "summary": "Issue: https://github.com/markus-lassfolk/openclaw-hybrid-memory/issues/1640\n\nStatus: draft implementation PR created by Issue Stewardship as Markus/current gh auth.\nProtection: keep as draft and `stage/implementing` until Issue Stewardship dispatches/receives implementation and explicitly hands off",
+    "url": "https://github.com/markus-lassfolk/openclaw-hybrid-memory/pull/1650",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: openclaw-hybrid-memory"
+    ]
+  },
+  {
+    "title": "[PR] fix(observability): demote unknown-provider list_models error (Sentry TAURI-RUST-X)",
+    "date": "2026-05-28T07:43:55Z",
+    "summary": "## Summary\n\n- Demote the user-config \"no cloud provider with id or slug '<id>' found\" error in `inference_list_models` from `error!` to `warn!`, so it stops escalating to Sentry as a code bug.\n- Embed `{err}` in the surviving `error!` format string so future genuine `list_models` failures land in Se",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/2783",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] feat(claude-code): Claude Code CLI provider \u2014 Phases 1\u20135",
+    "date": "2026-05-28T07:43:36Z",
+    "summary": "## Summary\n\nAdds **Claude Code CLI** as a selectable inference provider on equal footing with `openhuman`, `ollama:*`, and `<slug>:*`. Routes any chat workload through Anthropic's `claude` CLI (`-p --output-format stream-json --verbose --include-partial-messages --resume <uuid>`) instead of calling ",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/2472",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-05-28T07:39:41Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] feat(mastra): migrate v2 LangGraph chat extension to Mastra v3",
+    "date": "2026-05-28T07:38:53Z",
+    "summary": "## Summary\n\nMigrates `lb4-llm-chat-component` from LangGraph + LangChain to Mastra v3. 24 commits, +17k / \u221218k LOC, 146 files touched. LangGraph fully removed; ChatGraph + DbQueryGraph + VisualizationGraph and their 27 node classes deleted; Mastra `Agent` + `Memory` + `Workflow` primitives own the r",
+    "url": "https://github.com/sourcefuse/loopback4-llm-chat-extension/pull/22",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: loopback4-llm-chat-extension"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-05-28T07:38:16Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update go-minor",
+    "date": "2026-05-28T07:22:18Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/Netcracker/qubership-core-site-management/pull/175",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: qubership-core-site-management"
+    ]
+  },
+  {
+    "title": "[PR] Conditionally enable OpenRewrite per module via marker files",
+    "date": "2026-05-28T07:14:35Z",
+    "summary": "Follow-up to #23041 which disabled OpenRewrite entirely because it quadrupled CI build times.\n\nThis re-enables OpenRewrite using Maven's file-activated profiles, scoped to only the modules that have changed Java files. Most builds skip OpenRewrite entirely, and when it does run, it only processes th",
+    "url": "https://github.com/apache/camel/pull/23060",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] Add multi-agent orchestration, CI/CD, and reporting features",
+    "date": "2026-05-28T07:07:05Z",
+    "summary": "### **PR Type**\nEnhancement, Tests, Documentation, Bug fix\n\n\n___\n\n### **Description**\n**Core Features:**\n\n- Add comprehensive image generation skill for research reports with AI-powered contextual image creation using Google Gemini/Imagen\n\n- Implement AG2-based multi-agent orchestration system with ",
+    "url": "https://github.com/cicero-im/gpt-researcher/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 23",
+      "pull request",
+      "repo: gpt-researcher"
+    ]
+  },
+  {
+    "title": "[PR] Update oxsecurity/megalinter action to v9",
+    "date": "2026-05-28T06:52:17Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [oxsecurity/megalinter](https://redirect.github.com/oxsecurity/megalinter) | action | major | `v8` \u2192 `v9` |\n\n---\n\n### Release Notes",
+    "url": "https://github.com/manuelhummler/flux-multicluster/pull/123",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: flux-multicluster"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-netty-no-dependencies to v6.1.0",
+    "date": "2026-05-28T06:38:55Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-netty-no-dependencies](https://www.mock-server.com) ([source](https://r",
+    "url": "https://github.com/prometheus/client_java/pull/2145",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: client_java"
+    ]
+  },
+  {
+    "title": "[PR] [Docs] Add unified evaluation workflow strategy support documentation with Native vs Third-Party classification",
+    "date": "2026-05-28T06:23:13Z",
+    "summary": "## Description\n\nAnalyzed lmms-eval v0.5.0 against the unified evaluation workflow framework to document which of 28 evaluation strategies are supported, using a classification framework that distinguishes between native support and third-party integration.\n\n### Changes\n\n- **Added `/docs/evaluation_w",
+    "url": "https://github.com/zhimin-z/lmms-eval/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lmms-eval"
+    ]
+  },
+  {
+    "title": "[PR] RHIDP-13359: Lightspeed 1.10 changes",
+    "date": "2026-05-28T06:12:22Z",
+    "summary": "<!--- PR title format: [GH#<gh-issue-id>][BZ#<bz-issue-id>][RHIDP#<jira-issue-id>]: <short-description-of-the-pr> --->\r\n\r\n<!--- If your changes apply to the latest released and/or in-development version of RHDH, open your PR against the `main` branch and cherrypick your PR to any released branches t",
+    "url": "https://github.com/redhat-developer/red-hat-developers-documentation-rhdh/pull/2210",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: red-hat-developers-documentation-rhdh"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add GitHub Copilot provider",
+    "date": "2026-05-28T06:10:34Z",
+    "summary": "## Description\n\nAdds GitHub Copilot as a first-class LLM provider in Bifrost. The Copilot provider uses a two-layer OAuth flow: device-code grant to obtain a GitHub token, then exchanges it for a Copilot API token. Supports Chat Completions, Responses API (with text format mapping), streaming, and d",
+    "url": "https://github.com/maximhq/bifrost/pull/2054",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v6",
+    "date": "2026-05-28T05:47:57Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/2980",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: testcontainers-spring-boot"
+    ]
+  },
+  {
+    "title": "[PR] feat(agents): propagate inputArtifacts to sub-agents and expand DataSnapshot tool library",
+    "date": "2026-05-28T05:18:01Z",
+    "summary": "## Summary\n\nThree related fixes that together make a parent agent's data-snapshot delegation to a sub-agent actually succeed end-to-end:\n\n1. **Propagate `inputArtifacts` to sub-agents** so a delegate (e.g. Codesmith) inherits the parent's artifact manifest + per-type tools and can resolve \"Artifact ",
+    "url": "https://github.com/MemberJunction/MJ/pull/2696",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: agentic regression test platform + MJ Explorer 25-test suite",
+    "date": "2026-05-28T05:09:57Z",
+    "summary": "## Summary\n\nAdds a Docker-orchestrated, LLM-driven regression test platform for MJ Explorer \u2014 and, by the end of the branch, a generalized **agentic test runner** that can drive any web app the same way. Twenty-five P0\u2013P3 Computer Use tests (login, CRUD, search, navigation, admin, AI, dashboards, re",
+    "url": "https://github.com/MemberJunction/MJ/pull/2253",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Implemented: AI plugin \u2014 AI/LLM capabilities in OFBiz services (OFBIZ-13408)",
+    "date": "2026-05-28T04:15:25Z",
+    "summary": "Adds a new optional plugin (plugins/ai) that integrates LangChain4j 1.8.0 to bring\r\nnative AI/LLM capabilities to OFBiz services, Groovy scripts, and screen actions.\r\n\r\nThe plugin follows established OFBiz patterns throughout:\r\n\r\n- AiContainer implements the Container interface for lifecycle managem",
+    "url": "https://github.com/apache/ofbiz-plugins/pull/244",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ofbiz-plugins"
     ]
   }
 ]
