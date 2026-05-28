@@ -563,7 +563,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-28T21:35:54Z",
+    "date": "2026-05-28T22:55:54Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -899,12 +899,12 @@
   },
   {
     "title": "[PR] RHIDP-13359: Lightspeed 1.10 changes",
-    "date": "2026-05-28T06:12:22Z",
+    "date": "2026-05-28T22:54:34Z",
     "summary": "<!--- PR title format: [GH#<gh-issue-id>][BZ#<bz-issue-id>][RHIDP#<jira-issue-id>]: <short-description-of-the-pr> --->\r\n\r\n<!--- If your changes apply to the latest released and/or in-development version of RHDH, open your PR against the `main` branch and cherrypick your PR to any released branches t",
     "url": "https://github.com/redhat-developer/red-hat-developers-documentation-rhdh/pull/2210",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: red-hat-developers-documentation-rhdh"
     ]
@@ -1223,7 +1223,7 @@
   },
   {
     "title": "[PR] Canary Token Guardrail: a native LangChain4j guardrail feature to detect and remediate LLM07:2025 System Prompt Leakage",
-    "date": "2026-05-28T18:08:50Z",
+    "date": "2026-05-28T22:05:31Z",
     "summary": "## Issue\r\nCloses #4587 \r\n\r\n## Change\r\nImplements canary token-based detection mechanism to identify and mitigate prompt injection attacks (OWASP LLM07). Injects unique tokens into prompts and monitors for their appearance in model outputs to detect potential injection attempts.\r\n\r\n## General checkli",
     "url": "https://github.com/langchain4j/langchain4j/pull/4604",
     "source": "github_prs",
@@ -1451,12 +1451,12 @@
   },
   {
     "title": "[PR] refactor(icons): move SVGs to node dirs, auto-tint monochromes",
-    "date": "2026-05-28T21:38:11Z",
+    "date": "2026-05-28T23:01:47Z",
     "summary": "## Summary\r\n\r\n- **Co-located icons.** Each node now owns its SVG file next to its service JSON inside `nodes/src/nodes/<node>/`. Generic icons (`unknown.svg`) live in `nodes/src/nodes/core/`. The central `packages/shared-ui/src/assets/nodes/` directory is gone, and so are the ~300 lines of hand-main",
     "url": "https://github.com/rocketride-org/rocketride-server/pull/926",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: rocketride-server"
     ]
@@ -1475,7 +1475,7 @@
   },
   {
     "title": "[PR] fix: virtual field AllowUpdateAPI, portable organic key INSERTs, engine resilience, RLS centralization",
-    "date": "2026-05-28T21:34:35Z",
+    "date": "2026-05-28T23:09:12Z",
     "summary": "## Summary\n\n- **fix(codegen):** Clear `AllowUpdateAPI` when an `EntityField` transitions to virtual, with a migration to fix existing stale data\n- **fix(codegen):** Use subqueries for organic key INSERTs so logged SQL is portable across environments\n- **fix(core):** Prevent permanent `BaseEngine` fa",
     "url": "https://github.com/MemberJunction/MJ/pull/2706",
     "source": "github_prs",
@@ -1487,8 +1487,8 @@
   },
   {
     "title": "[PR] refactor(kiss): VRM / 3D / Three.js wipe",
-    "date": "2026-05-28T21:23:19Z",
-    "summary": "**Dependencies removed from package.json files (5 files):**\n- `@proj-airi/stage-ui-three` \u2014 removed from `stage-ui`, `stage-pages`, `stage-layouts`, `stage-tamagotchi`\n- `three` \u2014 removed from `stage-ui`, `stage-ui-live2d`, `stage-tamagotchi`\n- `@types/three` \u2014 removed from `stage-ui-live2d`, `stage",
+    "date": "2026-05-28T23:17:24Z",
+    "summary": "",
     "url": "https://github.com/vi70x3/airi/pull/28",
     "source": "github_prs",
     "highlights": [
@@ -1555,6 +1555,54 @@
       "comments: 0",
       "pull request",
       "repo: patchv6"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency danielmiessler/fabric to v1.4.453",
+    "date": "2026-05-28T23:14:02Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [danielmiessler/fabric](https://redirect.github.com/danielmiessler/fabric) | patch | `v1.4.388` \u2192 `v1.4.453` |\n\n---\n\n### Release Notes\n\n<detai",
+    "url": "https://github.com/fritzduchardt/k8s-workstation/pull/94",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k8s-workstation"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v6",
+    "date": "2026-05-28T22:38:55Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-client-java](https://www.mock-server.com) ([source](https://redirect.gi",
+    "url": "https://github.com/Cantara/realestate-metasys-cloudconnector-agent/pull/514",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: realestate-metasys-cloudconnector-agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go to v0.42.0",
+    "date": "2026-05-28T22:33:26Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/newrelic/nri-statsd/pull/115",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: nri-statsd"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the all-maven-dependencies group across 1 directory with 9 updates",
+    "date": "2026-05-28T22:31:22Z",
+    "summary": "Bumps the all-maven-dependencies group with 9 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [org.springframework.boot:spring-boot-dependencies](https://github.com/spring-projects/spring-boot) | `4.0.5` | `4.0.6` |\n| [org.springframework.boot:spring-boot-maven-plugin](htt",
+    "url": "https://github.com/dmgiangi/aegis/pull/88",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: aegis"
     ]
   }
 ]
