@@ -191,24 +191,24 @@
   },
   {
     "title": "Solver hangs with arguably not so complicated environment",
-    "date": "2026-05-28T11:12:54Z",
+    "date": "2026-05-29T07:13:27Z",
     "summary": "### Troubleshooting docs\n\n- [x] My problem is not solved in the Troubleshooting docs\n\n### Anaconda default channels\n\n- [x] I do NOT use the Anaconda default channels (pkgs/* etc.)\n\n### How did you install Mamba?\n\nMicromamba\n\n### Search tried in issue tracker\n\nhang\n\n### Latest version of Mamba\n\n- [x]",
     "url": "https://github.com/mamba-org/mamba/issues/4263",
     "source": "github_issues",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "state: open",
       "repo: mamba"
     ]
   },
   {
     "title": "[BOUNTY] Discovery Mode \u2014 Find Elyan Labs Software, Open PRs, Earn RTC",
-    "date": "2026-05-27T17:32:41Z",
+    "date": "2026-05-29T04:00:05Z",
     "summary": "## Discovery Mode Bounty \u2014 Explore Elyan Labs Software and Contribute\n\n**Difficulty:** Easy to Medium  \n**Starter Reward:** 2 RTC for a valid first discovery claim  \n**PR Reward:** 10 RTC for accepted improvement PRs (scope-dependent)  \n**Pool:** 250 RTC\n\n---\n\n### Goal\nHelp people discover and impro",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/100",
     "source": "github_issues",
     "highlights": [
-      "comments: 82",
+      "comments: 83",
       "state: open",
       "repo: rustchain-bounties"
     ]
@@ -527,7 +527,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-05-29T03:43:50Z",
+    "date": "2026-05-29T06:38:45Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -551,12 +551,12 @@
   },
   {
     "title": "[PR] feat(model-council): multi-model deliberation \u2014 parallel members + chair synthesis",
-    "date": "2026-05-29T03:22:42Z",
+    "date": "2026-05-29T07:12:07Z",
     "summary": "## Summary\n\nA **Model Council**: ask one question, get independent answers from **several models in parallel**, then a **chair** model synthesizes where they **agree**, where they **disagree**, and what unique insight each contributes. When models converge you can move forward with confidence; when ",
     "url": "https://github.com/tinyhumansai/openhuman/pull/2890",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 3",
       "pull request",
       "repo: openhuman"
     ]
@@ -659,7 +659,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-05-29T01:06:30Z",
+    "date": "2026-05-29T07:25:16Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -731,12 +731,12 @@
   },
   {
     "title": "[PR] feat(infra): implement RFC-089 DGX Spark integration baseline",
-    "date": "2026-05-29T00:30:07Z",
+    "date": "2026-05-29T06:34:00Z",
     "summary": "## Summary\n- implement RFC-089 foundation across P0-P4 in one branch: DGX tailnet ACL + resolver, DGX embedding shim path, DGX profiles, and tailnet_dgx Whisper provider fallback contract\n- add self-hosted runner allowlist policy enforcement and nightly DGX autoresearch workflow guardrails (ADR-097)",
     "url": "https://github.com/chipi/podcast_scraper/pull/835",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 11",
       "pull request",
       "repo: podcast_scraper"
     ]
@@ -751,6 +751,198 @@
       "comments: 24",
       "pull request",
       "repo: awesome-claude-skills"
+    ]
+  },
+  {
+    "title": "[PR] Add tutorial: Deploy a Persistent AI Agent on Hetzner Cloud (Ollama + Node.js + Telegram)",
+    "date": "2026-05-29T07:48:33Z",
+    "summary": "## Summary\n\nThis tutorial covers building a self-hosted AI agent that runs 24/7 on a Hetzner Cloud VPS.\n\n**What the reader will build:**\n- A Node.js application that talks to Ollama (local LLM) and responds via a Telegram bot\n- Conversation memory within sessions (sliding context window)\n- A systemd",
+    "url": "https://github.com/hetzneronline/community-content/pull/1463",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: community-content"
+    ]
+  },
+  {
+    "title": "[PR] fix(embeddings): add 429 backoff to stop 31K Sentry event flood (#2898)",
+    "date": "2026-05-29T07:26:32Z",
+    "summary": "## Summary\n\nFixes #2898 \u2014 the project's noisiest Sentry issue (TAURI-RUST-3, 31,328 events across 0.54.0 \u2192 0.56.0).\n\n- Wraps `OpenAiEmbedding::embed` and `CohereEmbedding::embed` in a retry loop that handles 429 and 503 with `Retry-After` header awareness and exponential fallback (1 s \u2192 2 s \u2192 4 s, c",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/2904",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] refactor(sql-parser): instance-based parser with dialect adapters, parse-preprocessing, count migration & a render-pipeline write guard",
+    "date": "2026-05-29T07:13:56Z",
+    "summary": "## Summary\n\nReworks `@memberjunction/sql-parser` from an all-static utility into an **instance-based parser** that centralizes every `node-sql-parser` AST-shape detail behind typed, dialect-neutral primitives, then threads that through the query render/paging pipeline. Net result: the row-cap **and*",
+    "url": "https://github.com/MemberJunction/MJ/pull/2692",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(groq): Add TTS adapter",
+    "date": "2026-05-29T07:01:01Z",
+    "summary": "Adds a tree-shakeable Text-to-Speech (TTS) adapter for the Groq API. This includes support for English and Arabic voices, various output formats (with WAV as default),\r\nand configuration options like speed and sample rate.\r\n\r\nIncludes new types, model metadata for TTS models, and comprehensive unit ",
+    "url": "https://github.com/TanStack/ai/pull/346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] vue-ai-devtools and ts-vue-start-chat",
+    "date": "2026-05-29T07:00:58Z",
+    "summary": "waiting for \r\n- https://github.com/TanStack/devtools/pull/324\r\n\r\nIntroducing the\r\n- vue-ai-devtools\r\n\r\nAnd an example with SSR, ported from react-start to vue-start:\r\n- ts-vue-start-chat\r\n\r\nUsing the new devtools in both\r\n- ts-vue-start-chat\r\n- ts-vue-chat (the using the non-tanstack vue-router)\r\n\r\n",
+    "url": "https://github.com/TanStack/ai/pull/143",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] CodeRabbit Full Codebase Review: LLM Gateway (All Changes)",
+    "date": "2026-05-29T06:52:05Z",
+    "summary": "## Purpose\nRequest CodeRabbit to perform a **comprehensive review of the entire llm-gateway codebase**.\n\nThis PR contains ALL commits from the initial architecture docs through the current state.\n\n## Codebase Overview\n- **15,000+ lines** of Python code\n- **880 unit tests** with 90% coverage\n- FastAP",
+    "url": "https://github.com/kevin-toles/llm-gateway/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: llm-gateway"
+    ]
+  },
+  {
+    "title": "[PR] 2 v2",
+    "date": "2026-05-29T06:40:40Z",
+    "summary": "\n\n<!-- This is an auto-generated description by cubic. -->\n## Summary by cubic\nStandalone Hono backend that auto\u2011mounts Next.js API routes, plus an OCI/Oracle deployment stack with Caddy and 9Router. Adds a cross\u2011platform platform layer for web/desktop and CI to deploy the frontend to Vercel, with s",
+    "url": "https://github.com/quazfenton/binG/pull/113",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: binG"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.dbus-fast: 4.0.4 -> 5.0.14, python3Packages.bleak: 2.1.1 -> 3.0.2, python3Packages.bleak-retry-connector: 4.6.0 -> 4.6.1, python3Packages.habluetooth: 6.1.0 -> 6.7.4, python3Packages.aioshelly: 13.25.0 -> 13.26.1",
+    "date": "2026-05-29T06:16:11Z",
+    "summary": "<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or describe changes, this helps your fellow maintainers discover breaking updates.\r\nFor new packages please briefly describe the package or provide a link to",
+    "url": "https://github.com/NixOS/nixpkgs/pull/524400",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.usb-devices: 0.4.5 -> 0.5.0",
+    "date": "2026-05-29T06:01:25Z",
+    "summary": "Diff: https://github.com/Bluetooth-Devices/usb-devices/compare/v0.4.5...v0.5.0\r\n\r\nChangelog: https://github.com/Bluetooth-Devices/usb-devices/blob/v0.5.0/CHANGELOG.md\r\n\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link ",
+    "url": "https://github.com/NixOS/nixpkgs/pull/524760",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] \ud83e\ude9b Chisel: Extract UI action handler payloads into Pydantic DTO models",
+    "date": "2026-05-29T05:52:13Z",
+    "summary": "\ud83e\ude9b Chisel: Extracted User validation methods & added DTO payloads\n\n**\ud83d\udca1 What:** Refactored GUI action handlers (in `anchor.py`, `capture.py`, `controls.py`, `mobile_overlay.py`, `ollama.py`, and `result_display.py`) to parse unstructured dictionary payloads using explicitly typed Pydantic models.\n**\ud83c\udfaf ",
+    "url": "https://github.com/Amoenus/Scanning-Tool/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Scanning-Tool"
+    ]
+  },
+  {
+    "title": "[PR] Bump the go-mod group across 1 directory with 5 updates",
+    "date": "2026-05-29T05:35:47Z",
+    "summary": "Bumps the go-mod group with 4 updates in the / directory: [github.com/ClickHouse/clickhouse-go/v2](https://github.com/ClickHouse/clickhouse-go), [github.com/docker/go-connections](https://github.com/docker/go-connections), [github.com/pressly/goose/v3](https://github.com/pressly/goose) and [github.c",
+    "url": "https://github.com/DIMO-Network/clickhouse-infra/pull/45",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: clickhouse-infra"
+    ]
+  },
+  {
+    "title": "[PR] feat(react-test-harness): attach to an existing Playwright browser instead of always launching",
+    "date": "2026-05-29T05:34:41Z",
+    "summary": "## Summary\n\nThe React test harness (`@memberjunction/react-test-harness`) previously **always launched its own throwaway Chromium** for every run. This PR lets it optionally **attach to an already-running browser** instead \u2014 useful for two scenarios:\n\n- **Debugging / visual inspection** \u2014 attach ove",
+    "url": "https://github.com/MemberJunction/MJ/pull/2710",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Merge `solveViaCloudBuild-my-prod-redeploy` into `my-prod-redeploy`",
+    "date": "2026-05-29T05:32:53Z",
+    "summary": "## Summary\r\n\r\nThis PR updates [cloudbuild.yaml](https://github.com/RishavT/iitmdocs/blob/solveViaCloudBuild-my-prod-redeploy/cloudbuild.yaml) to reset stale Weaviate data during embed deployments.\r\n\r\nThe main change is simple:\r\n\r\n- if the tag name contains `embed`, Cloud Build resets `weaviate_data`",
+    "url": "https://github.com/RishavT/iitmdocs/pull/125",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: iitmdocs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v6",
+    "date": "2026-05-29T05:30:21Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/2980",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: testcontainers-spring-boot"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump the minor-and-patch group in /a2a/file_organizer with 10 updates",
+    "date": "2026-05-29T05:32:04Z",
+    "summary": "Bumps the minor-and-patch group in /a2a/file_organizer with 10 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langgraph](https://github.com/langchain-ai/langgraph) | `1.0.2` | `1.2.2` |\n| [langchain-core](https://github.com/langchain-ai/langchain) | `1.3.3` | `1.4.0` |\n| [langchain-communi",
+    "url": "https://github.com/kagenti/agent-examples/pull/506",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agent-examples"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency pydantic-ai-slim to v1.104.0",
+    "date": "2026-05-29T05:10:12Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pydantic-ai-slim](https://r",
+    "url": "https://github.com/Automaat/ai-casino/pull/1109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ai-casino"
     ]
   }
 ]
