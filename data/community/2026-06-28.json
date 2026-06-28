@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] feat(installer): zero-prerequisite \"ultimate\" bootstrap (install.sh / install.ps1)",
-    "date": "2026-06-28T04:04:52Z",
+    "date": "2026-06-28T04:27:26Z",
     "summary": "## Why\n\nToday the entry-point installers (`setup-autogpt.{sh,bat}`) only **check** for git + Docker and exit if they're missing \u2014 and the hosted `setup.agpt.co/install.*` one-liners hard-fail on a machine that doesn't already have Docker, despite the docs promising \"no prerequisite setup needed.\" Th",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13261",
     "source": "github_prs",
@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] Centralize credential redaction in src/utils/redaction.ts + channel gate tests",
-    "date": "2026-06-28T04:03:36Z",
+    "date": "2026-06-28T07:45:13Z",
     "summary": "## Summary\r\n- Extract the inline `redactSensitiveInfo` from `Feedback.tsx` into a centralized `src/utils/redaction.ts` so every diagnostic path (transcript share, in-memory error log, debug log, API error analytics) uses the same regex set.\r\n- `redactSensitiveInfo` covers sk-ant-, sk-/sk-proj-/sk-or",
     "url": "https://github.com/Gitlawb/openclaude/pull/1711",
     "source": "github_prs",
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] pull request ",
-    "date": "2026-06-28T03:57:26Z",
+    "date": "2026-06-28T08:16:56Z",
     "summary": "## What does this PR do?\r\n\r\n<!-- Describe the change clearly. What problem does it solve? Why is this approach the right one? -->\r\n\r\n\r\n\r\n## Related Issue\r\n\r\n<!-- Link the issue this PR addresses. If no issue exists, consider creating one first. -->\r\n\r\nFixes #\r\n\r\n## Type of Change\r\n\r\n<!-- Check the o",
     "url": "https://github.com/executiveusa/pauli-hermes-agent/pull/50",
     "source": "github_prs",
@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-06-28T03:44:43Z",
+    "date": "2026-06-28T07:59:16Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-06-28T02:40:58Z",
+    "date": "2026-06-28T08:09:51Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] fix(media): allow private openai compatible audio transcription endpoints",
-    "date": "2026-06-28T02:21:28Z",
+    "date": "2026-06-28T06:50:15Z",
     "summary": "## Summary\r\n\r\n- Problem: Audio media-understanding transcription could target self-hosted OpenAI-compatible endpoints, but audio config did not expose the private-network request opt-in used by guarded provider HTTP.\r\n- Why it matters: Trusted local, RFC1918, or tailnet Whisper-style endpoints need ",
     "url": "https://github.com/openclaw/openclaw/pull/73817",
     "source": "github_prs",
@@ -696,12 +696,12 @@
   },
   {
     "title": "[PR] fix(hicap): add missing hicap-claude-opus-4.7 catalog entry",
-    "date": "2026-06-28T01:41:59Z",
-    "summary": "Follow-up to #1769 \u2014 adds the missing hicap-claude-opus-4.7 catalog entry that was accidentally omitted when the Hicap gateway rewrite in #1769 added hicap-claude-opus-4.8.",
+    "date": "2026-06-28T05:14:14Z",
+    "summary": "Follow-up to #1769 \u2014 adds the missing hicap-claude-opus-4.7 catalog entry that was accidentally omitted when the Hicap gateway rewrite in #1769 added hicap-claude-opus-4.8.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * A",
     "url": "https://github.com/Gitlawb/openclaude/pull/1797",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: openclaude"
     ]
@@ -740,6 +740,162 @@
       "comments: 14",
       "pull request",
       "repo: Project-Nyra"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): merge clean AI Assistant and Agent features from explore branch",
+    "date": "2026-06-28T08:09:37Z",
+    "summary": "This PR merges clean AI Assistant and Agent features from the stale explore branch without map dependencies, and fixes all compilation errors and tests.\n\n<!-- This is an auto-generated description by cubic. -->\n---\n## Summary by cubic\n\u5408\u5e76\u63a2\u7d22\u5206\u652f\u7684\u667a\u80fd\u52a9\u7406\u4e0e\u4ee3\u7406\u80fd\u529b\uff0c\u79fb\u9664\u5730\u56fe\u4f9d\u8d56\uff0c\u5168\u9762\u66ff\u6362\u65e7\u7684\u95ee\u7b14\u8bb0\u804a\u5929\u9875\uff0c\u5e26\u6765\u66f4\u7a33\u5b9a\u7684\u201c\u601d\u8003+\u56de\u590d\u201d\u6d41\u5f0f\u5bf9\u8bdd\uff1b\u540c\u65f6\u4fee\u590d\u6784\u5efa\u4e0e\u6d4b\u8bd5\u5e76",
+    "url": "https://github.com/Shangjin-Xiao/ThoughtEcho/pull/343",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ThoughtEcho"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Update spring (major)",
+    "date": "2026-06-28T08:02:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/q-asker/api/pull/294",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: api"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Update spring",
+    "date": "2026-06-28T07:59:29Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.springframework.ai:spri",
+    "url": "https://github.com/q-asker/api/pull/292",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: api"
+    ]
+  },
+  {
+    "title": "[PR] Create Resume and Cover Letter Engine v2",
+    "date": "2026-06-28T07:40:23Z",
+    "summary": "## Summary\n- add Resume Engine v2 parsing for master_resume.md and render final resumes from preserved structured fields\n- constrain AI resume tailoring to structured JSON rewrites for summary, skill ordering, and experience bullets with safe fallback on invalid JSON\n- add Cover Letter Engine v2 so ",
+    "url": "https://github.com/sridath-git/job-auto-agent/pull/17",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: job-auto-agent"
+    ]
+  },
+  {
+    "title": "[PR] fix: governance controls for memory and git attribution",
+    "date": "2026-06-28T07:22:04Z",
+    "summary": "## Summary\n\nFixes #1326.\n\nThis adds explicit governance controls for OpenClaude memory writes and generated git attribution, then wires those controls through the places that can write memory or create commit/PR attribution.\n\n## What changed\n\n- Added a shared governance policy helper for memory appr",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1806",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(ollama): preserve chat history with native context",
+    "date": "2026-06-28T06:56:52Z",
+    "summary": "Fixes #141\n\n## Summary\n\n- Route local Ollama requests through native `/api/chat` so Ollama receives the full chat history and native context options instead of relying on the OpenAI-compatible endpoint.\n- Add a default `num_ctx` of 32768 for Ollama, with `OPENCLAUDE_OLLAMA_NUM_CTX` / `OLLAMA_CONTEXT",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1805",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(report): generate deterministic session task reports",
+    "date": "2026-06-28T06:39:41Z",
+    "summary": "## Summary\n- Add `openclaude report --json` to generate deterministic JSON task reports from observed session transcripts and repository state.\n- This is the first PR in a planned report-generation set. Follow-up PRs are expected to render task reports as Markdown and add a PR-description report tem",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1802",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(inference): shim globalThis.fetch to proxy inference.local for cr\u2026",
+    "date": "2026-06-28T06:36:36Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\nThis PR fixes a bug where cron `agentTurn` jobs using a local inference provider (Ollama or vLLM, configured to map via the virtual host `https://inference.local/v1`) are skipped. \r\nAt execution time, the OpenClaw cron scheduler runs a \"provider prefl",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/4916",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(start): drop slow-mode polling on late allowlisted scope upgrades",
+    "date": "2026-06-28T06:36:32Z",
+    "summary": "## Summary\n\nFixes the multi-sandbox parallel routing race where two sandboxes onboarded back-to-back each hit `scope upgrade pending approval` + `pairing required` on the gateway and both fall back to embedded mode. The in-sandbox auto-pair watcher kept polling at 30s slow-mode cadence after browser",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/5387",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 24",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] deps(deps): bump @azure/storage-blob from 12.29.1 to 12.33.0",
+    "date": "2026-06-28T06:15:40Z",
+    "summary": "Bumps [@azure/storage-blob](https://github.com/Azure/azure-sdk-for-js/tree/HEAD/sdk/storage/storage-blob) from 12.29.1 to 12.33.0.\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/Azure/azure-sdk-for-js/blob/main/sdk/storage/storage-blob/CHANGELOG.md\">@\u200bazure/st",
+    "url": "https://github.com/EciWise/materials/pull/84",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: materials"
+    ]
+  },
+  {
+    "title": "[PR] fix(status-line): estimate usage for unsupported providers",
+    "date": "2026-06-28T05:52:12Z",
+    "summary": "## Summary\n\nFixes #448.\n\n- Treat all-zero assistant usage from providers that do not report token counts as unsupported usage instead of real 0% usage.\n- Estimate current input/output tokens from the local transcript for the status-line/analyze path and mark those values with `is_estimated`.\n- Use e",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1803",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Update bump-dependencies",
+    "date": "2026-06-28T05:50:30Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update | Pending |\n|---|---|---|---|---|---|---|\n| [@bufbuild/protobuf](https://protobufes.com/) ([source](https",
+    "url": "https://github.com/lehigh-university-libraries/scribe/pull/75",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: scribe"
+    ]
+  },
+  {
+    "title": "[PR] Update Renovatebot Gradle Updates (major)",
+    "date": "2026-06-28T04:55:52Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [com.nimbusds:nimbus-jose-jw",
+    "url": "https://github.com/Consensys/web3signer/pull/1194",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: web3signer"
     ]
   }
 ]
