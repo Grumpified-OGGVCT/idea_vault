@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] Centralize credential redaction in src/utils/redaction.ts + channel gate tests",
-    "date": "2026-06-28T14:56:17Z",
+    "date": "2026-06-28T17:09:49Z",
     "summary": "## Summary\r\n- Extract the inline `redactSensitiveInfo` from `Feedback.tsx` into a centralized `src/utils/redaction.ts` so every diagnostic path (transcript share, in-memory error log, debug log, API error analytics) uses the same regex set.\r\n- `redactSensitiveInfo` covers sk-ant-, sk-/sk-proj-/sk-or",
     "url": "https://github.com/Gitlawb/openclaude/pull/1711",
     "source": "github_prs",
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] pull request ",
-    "date": "2026-06-28T12:50:03Z",
+    "date": "2026-06-28T16:58:44Z",
     "summary": "## What does this PR do?\r\n\r\n<!-- Describe the change clearly. What problem does it solve? Why is this approach the right one? -->\r\n\r\n\r\n\r\n## Related Issue\r\n\r\n<!-- Link the issue this PR addresses. If no issue exists, consider creating one first. -->\r\n\r\nFixes #\r\n\r\n## Type of Change\r\n\r\n<!-- Check the o",
     "url": "https://github.com/executiveusa/pauli-hermes-agent/pull/50",
     "source": "github_prs",
@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-06-28T15:08:58Z",
+    "date": "2026-06-28T17:07:23Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] feat: Predictive Studio (AutoML + agentic experimentation) + app-aware, multi-agent Realtime co-agent",
-    "date": "2026-06-28T02:41:01Z",
+    "date": "2026-06-28T17:12:00Z",
     "summary": "## Summary\n\nThis is a large, multi-workstream PR that lands **two major capabilities** in MemberJunction core \u2014 built the MJ way: composed onto existing substrates (Record Set Processing, Remote Operations, Actions, Agents, Artifacts/Collections, the realtime session stack) rather than as new silos.",
     "url": "https://github.com/MemberJunction/MJ/pull/2940",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-06-28T13:44:58Z",
+    "date": "2026-06-28T17:10:47Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -816,7 +816,7 @@
   },
   {
     "title": "[PR] feat(report): generate deterministic session task reports",
-    "date": "2026-06-28T14:59:15Z",
+    "date": "2026-06-28T16:52:08Z",
     "summary": "## Summary\n- Add `openclaude report --json` to generate deterministic JSON task reports from observed session transcripts and repository state.\n- This is the first PR in a planned report-generation set. Follow-up PRs are expected to render task reports as Markdown and add a PR-description report tem",
     "url": "https://github.com/Gitlawb/openclaude/pull/1802",
     "source": "github_prs",
@@ -972,7 +972,7 @@
   },
   {
     "title": "[PR] fix(cli): skip default follow-up suggestions on local OpenAI backends",
-    "date": "2026-06-28T14:37:07Z",
+    "date": "2026-06-28T16:51:26Z",
     "summary": "## What this PR does\n\nThis PR changes the follow-up suggestion runtime gate so an unset `ui.enableFollowupSuggestions` defaults off for local OpenAI-compatible backends reached through loopback-style URLs (`localhost`, `127.0.0.0/8`, `0.0.0.0`, `::1`, and IPv4-mapped IPv6 loopback forms). Explicit `",
     "url": "https://github.com/QwenLM/qwen-code/pull/5821",
     "source": "github_prs",
@@ -1020,12 +1020,12 @@
   },
   {
     "title": "[PR] fix: resolve zai-compatible config for all GLM remote models",
-    "date": "2026-06-28T14:55:49Z",
+    "date": "2026-06-28T15:58:37Z",
     "summary": "## Summary\nResolve the zai-compatible (Z.AI) request shaping for GLM remote models so it's applied via an explicit catalog flag instead of fragile model-name inference, and keep it from overriding non-Z.AI catalog routes.\n\n- `src/integrations/transport/zaiGlmShim.ts` \u2014 extract the Z.AI GLM OpenAI-sh",
     "url": "https://github.com/Gitlawb/openclaude/pull/1752",
     "source": "github_prs",
     "highlights": [
-      "comments: 14",
+      "comments: 15",
       "pull request",
       "repo: openclaude"
     ]
@@ -1140,14 +1140,110 @@
   },
   {
     "title": "[PR] UI-002: Add framework-derived static Inbox preview",
-    "date": "2026-06-28T14:33:02Z",
-    "summary": "## Summary\n\n**PR status:** open \u00b7 **draft** \u00b7 **not merge-ready** \u00b7 merge conflicts may remain \u2014 do not merge as-is.\n\n**Branch HEAD:** `643aa83` \u2014 eight commits since `0ffa75e` governance baseline:\n\n| SHA | Slice |\n| --- | --- |\n| `ab7ff45` | LOCAL-WEB-RUNTIME-001H \u2014 prove read-only Gmail runtime |\n",
+    "date": "2026-06-28T17:06:36Z",
+    "summary": "## Summary\n\n**PR status:** open \u00b7 **draft** \u00b7 **not merge-ready** \u00b7 merge conflict with `main` in `README.md` \u2014 do not merge as-is.\n\n**Branch HEAD:** `fc69d13` (includes RC1 governance stack; product completion through `7001c3c`)\n\n**RC1 burn-down:** **ACTIVE** \u2014 see `docs/product/inbox-rc1-burndown-",
     "url": "https://github.com/Vado42-chris/xi-io-Inbox/pull/12",
     "source": "github_prs",
     "highlights": [
-      "comments: 50",
+      "comments: 52",
       "pull request",
       "repo: xi-io-Inbox"
+    ]
+  },
+  {
+    "title": "[PR] feat(provider-registry): generate catalog from src/labs + src/provider, add TokenHub",
+    "date": "2026-06-28T17:10:45Z",
+    "summary": "### What this PR does\n\nRebuilds the `@cherrystudio/provider-registry` catalog so the three `data/*.json` files are **pure generated artifacts** \u2014 never hand-edited \u2014 sourced from hand-maintained TypeScript.\n\nBefore this PR:\n- `data/models.json`, `data/providers.json`, `data/provider-models.json` wer",
+    "url": "https://github.com/CherryHQ/cherry-studio/pull/16401",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: cherry-studio"
+    ]
+  },
+  {
+    "title": "[PR] RAG health insights over a nutrition knowledge base (GenAI bonus)",
+    "date": "2026-06-28T17:09:09Z",
+    "summary": "Implements the rubric's named GenAI bonus \u2014 **full retrieval-augmented generation with a vector database (Weaviate)** \u2014 as a real, user-facing feature.\n\n## Feature\nA personalized **\"Health insight\"** card on the Insights page. Based on the variety/macro patterns in the user's recently logged meals, ",
+    "url": "https://github.com/AET-DevOps26/team-password123/pull/86",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: team-password123"
+    ]
+  },
+  {
+    "title": "[PR] Add Ollama (Local LLM) support for AI feedback",
+    "date": "2026-06-28T17:01:46Z",
+    "summary": "# Pull Request: Add Ollama (Local LLM) Support for AI Feedback\r\n\r\n## Overview\r\nThis PR adds support for **Ollama** as a local LLM provider for generating structured student feedback, alongside ChatGPT, Gemini, and Claude. This allows instructors to host their own open-source models (like `llama3`, `",
+    "url": "https://github.com/kiat/codeAssist/pull/322",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: codeAssist"
+    ]
+  },
+  {
+    "title": "[PR] feat(session): add branch command for conversation forks",
+    "date": "2026-06-28T17:00:33Z",
+    "summary": "## Summary\n\n- Add `/branch [name]` to fork the active conversation into a new session and switch the REPL to that branch.\n- Preserve copied transcript history, content-replacement records, branch metadata, and safe session context while leaving the original transcript and working tree intact.\n\n## Se",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1808",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] chore(master): release 0.2.2",
+    "date": "2026-06-28T16:37:38Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.2.2](https://github.com/ulrichando/jarvis/compare/v0.2.1...v0.2.2) (2026-06-28)\n\n\n### Features\n\n* **automod:** 6-provider council on the highest model of each ([cdcb6eb](https://github.com/ulrichando/jarvis/commit/cdcb6eb97ba948f6ca148de17a0",
+    "url": "https://github.com/ulrichando/jarvis/pull/45",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: jarvis"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump the go-backend group across 3 directories with 12 updates",
+    "date": "2026-06-28T16:26:59Z",
+    "summary": "Bumps the go-backend group with 2 updates in the /backend/cache directory: [github.com/alicebob/miniredis/v2](https://github.com/alicebob/miniredis) and [github.com/redis/go-redis/v9](https://github.com/redis/go-redis).\nBumps the go-backend group with 8 updates in the /backend/secret directory:\n\n| P",
+    "url": "https://github.com/EthanShen10086/voxera-kit/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: voxera-kit"
+    ]
+  },
+  {
+    "title": "[PR] Release/v3.8.39",
+    "date": "2026-06-28T15:23:52Z",
+    "summary": "## Summary\r\n\r\n- Describe the user-facing or operational change.\r\n\r\n## Related Issues\r\n\r\n- Closes #\r\n- Related to #\r\n\r\n## Validation\r\n\r\n- [ ] `npm run lint`\r\n- [ ] `npm run test:unit`\r\n- [ ] `npm run test:coverage`\r\n- [ ] Coverage is still `>= 60%` for statements, lines, functions, and branches\r\n- [ ",
+    "url": "https://github.com/LahbabiCode/OmniRoute2/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OmniRoute2"
+    ]
+  },
+  {
+    "title": "[PR] feat(picker): show configured providers by default",
+    "date": "2026-06-28T15:22:05Z",
+    "summary": "## What does this PR do?\n\nUpdates the default Hermes model picker surfaces so they show only providers configured for the active profile instead of every provider Hermes can discover from the environment.\n\nThis keeps broad provider-discovery rows (Anthropic, Copilot, Gemini, Ollama Cloud, Nvidia, et",
+    "url": "https://github.com/NousResearch/hermes-agent/pull/49296",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hermes-agent"
     ]
   }
 ]
