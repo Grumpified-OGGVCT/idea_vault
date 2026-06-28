@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] pull request ",
-    "date": "2026-06-28T16:58:44Z",
+    "date": "2026-06-28T17:37:03Z",
     "summary": "## What does this PR do?\r\n\r\n<!-- Describe the change clearly. What problem does it solve? Why is this approach the right one? -->\r\n\r\n\r\n\r\n## Related Issue\r\n\r\n<!-- Link the issue this PR addresses. If no issue exists, consider creating one first. -->\r\n\r\nFixes #\r\n\r\n## Type of Change\r\n\r\n<!-- Check the o",
     "url": "https://github.com/executiveusa/pauli-hermes-agent/pull/50",
     "source": "github_prs",
@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-06-28T17:07:23Z",
+    "date": "2026-06-28T19:08:20Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] feat: Predictive Studio (AutoML + agentic experimentation) + app-aware, multi-agent Realtime co-agent",
-    "date": "2026-06-28T17:12:00Z",
+    "date": "2026-06-28T18:46:13Z",
     "summary": "## Summary\n\nThis is a large, multi-workstream PR that lands **two major capabilities** in MemberJunction core \u2014 built the MJ way: composed onto existing substrates (Record Set Processing, Remote Operations, Actions, Agents, Artifacts/Collections, the realtime session stack) rather than as new silos.",
     "url": "https://github.com/MemberJunction/MJ/pull/2940",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-06-28T17:10:47Z",
+    "date": "2026-06-28T18:33:39Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -816,7 +816,7 @@
   },
   {
     "title": "[PR] feat(report): generate deterministic session task reports",
-    "date": "2026-06-28T16:52:08Z",
+    "date": "2026-06-28T17:44:18Z",
     "summary": "## Summary\n- Add `openclaude report --json` to generate deterministic JSON task reports from observed session transcripts and repository state.\n- This is the first PR in a planned report-generation set. Follow-up PRs are expected to render task reports as Markdown and add a PR-description report tem",
     "url": "https://github.com/Gitlawb/openclaude/pull/1802",
     "source": "github_prs",
@@ -1140,12 +1140,12 @@
   },
   {
     "title": "[PR] UI-002: Add framework-derived static Inbox preview",
-    "date": "2026-06-28T17:06:36Z",
+    "date": "2026-06-28T18:43:53Z",
     "summary": "## Summary\n\n**PR status:** open \u00b7 **draft** \u00b7 **not merge-ready** \u00b7 merge conflict with `main` in `README.md` \u2014 do not merge as-is.\n\n**Branch HEAD:** `fc69d13` (includes RC1 governance stack; product completion through `7001c3c`)\n\n**RC1 burn-down:** **ACTIVE** \u2014 see `docs/product/inbox-rc1-burndown-",
     "url": "https://github.com/Vado42-chris/xi-io-Inbox/pull/12",
     "source": "github_prs",
     "highlights": [
-      "comments: 52",
+      "comments: 53",
       "pull request",
       "repo: xi-io-Inbox"
     ]
@@ -1200,7 +1200,7 @@
   },
   {
     "title": "[PR] chore(master): release 0.2.2",
-    "date": "2026-06-28T16:37:38Z",
+    "date": "2026-06-28T17:56:36Z",
     "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.2.2](https://github.com/ulrichando/jarvis/compare/v0.2.1...v0.2.2) (2026-06-28)\n\n\n### Features\n\n* **automod:** 6-provider council on the highest model of each ([cdcb6eb](https://github.com/ulrichando/jarvis/commit/cdcb6eb97ba948f6ca148de17a0",
     "url": "https://github.com/ulrichando/jarvis/pull/45",
     "source": "github_prs",
@@ -1244,6 +1244,66 @@
       "comments: 1",
       "pull request",
       "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat: add /set-context-window and /clear-context-window commands",
+    "date": "2026-06-28T19:19:59Z",
+    "summary": "Closes #1779\n\n## Problem\n\nOpenClaude uses a hardcoded 128k fallback context window for OpenAI-compatible models that are not listed in the integration catalog. There is no way for a user to adjust this value at runtime without restarting the application and configuring environment variables.\n\nThis l",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1810",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Model Engine with restore KV",
+    "date": "2026-06-28T19:14:47Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
+    "url": "https://github.com/dAppCore/go-inference/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: go-inference"
+    ]
+  },
+  {
+    "title": "[PR] fix(security): PR1-PR2 auth hardening, probe egress, and portal HTML escape",
+    "date": "2026-06-28T18:51:21Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nCloses the critical/high cluster from `SECURITY.md` workstreams A1\u2013A3 (2026-06-28).\n\n- Align `auth_enforced()` with Perpetua-Tools secure-by-default posture; auto-generate and persist control-plane tokens.\n- Refuse LAN bind in `start.sh` / `platform/wi",
+    "url": "https://github.com/diazMelgarejo/orama-system/pull/127",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: orama-system"
+    ]
+  },
+  {
+    "title": "[PR] Add multi-agent orchestration, CI/CD, and reporting features",
+    "date": "2026-06-28T18:39:16Z",
+    "summary": "### **PR Type**\nEnhancement, Tests, Documentation, Bug fix\n\n\n___\n\n### **Description**\n**Core Features:**\n\n- Add comprehensive image generation skill for research reports with AI-powered contextual image creation using Google Gemini/Imagen\n\n- Implement AG2-based multi-agent orchestration system with ",
+    "url": "https://github.com/cicero-im/gpt-researcher/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 23",
+      "pull request",
+      "repo: gpt-researcher"
+    ]
+  },
+  {
+    "title": "[PR] fix(bash): treat linter/test-runner exit 1 as reported output, not an error",
+    "date": "2026-06-28T17:51:38Z",
+    "summary": "## What & why\n\nLinters and test-runners (ruff, eslint, tsc, pytest, jest, vitest, mypy, flake8, prettier) exit with code 1 to report violations/failures, but the Bash tool's default command semantics flag any non-zero exit as a tool error. The model then retries the identical command ~3\u00d7 and \"fails\"",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1700",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: openclaude"
     ]
   }
 ]
