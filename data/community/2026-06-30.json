@@ -252,12 +252,12 @@
   },
   {
     "title": "[BOUNTY] Discovery Mode \u2014 Find Elyan Labs Software, Open PRs, Earn RTC",
-    "date": "2026-06-28T11:42:04Z",
+    "date": "2026-06-30T20:45:43Z",
     "summary": "## Discovery Mode Bounty \u2014 Explore Elyan Labs Software and Contribute\n\n**Difficulty:** Easy to Medium  \n**Starter Reward:** 2 RTC for a valid first discovery claim  \n**PR Reward:** 10 RTC for accepted improvement PRs (scope-dependent)  \n**Pool:** 250 RTC\n\n---\n\n### Goal\nHelp people discover and impro",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/100",
     "source": "github_issues",
     "highlights": [
-      "comments: 116",
+      "comments: 118",
       "state: open",
       "repo: rustchain-bounties"
     ]
@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-06-30T17:22:37Z",
+    "date": "2026-06-30T22:14:14Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -540,7 +540,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-06-30T19:49:43Z",
+    "date": "2026-06-30T21:53:13Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -672,7 +672,7 @@
   },
   {
     "title": "[PR] Update Container images",
-    "date": "2026-06-30T03:46:02Z",
+    "date": "2026-06-30T21:06:19Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [dgraziotin/nginx-webdav-nononsense](https://redirect.github.com/dgraziotin/docker-nginx-webdav-nononsense) | patch | `1.31.1` \u2192 `1.31.2` |\n| ",
     "url": "https://github.com/bubacoder/infra/pull/356",
     "source": "github_prs",
@@ -780,7 +780,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-06-30T17:37:47Z",
+    "date": "2026-06-30T21:47:50Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] Rebuild JARVIS as agentic Claude Opus 4.8 assistant (source project)",
-    "date": "2026-06-30T17:11:46Z",
+    "date": "2026-06-30T22:16:52Z",
     "summary": "Replace the compiled-only APK with a full, editable React + Vite + Capacitor\nsource project that significantly upgrades the assistant:\n\n- Agentic brain on Claude Opus 4.8 (adaptive thinking, effort high) with a\n  client-side tool-use loop and server-side web search for real-time knowledge\n- Persiste",
     "url": "https://github.com/Talent620/Jarvis/pull/1",
     "source": "github_prs",
@@ -1284,19 +1284,19 @@
   },
   {
     "title": "[PR] Add multi-provider LLM fallback with usage-limit failover",
-    "date": "2026-06-30T15:00:43Z",
+    "date": "2026-06-30T21:17:12Z",
     "summary": "Closes #1055\n\n## What & why\n\nThe platform stored a **single** active LLM provider, so a 429 usage limit had nowhere to fall back to. This adds an **ordered list of provider entries** (most\u2192least preferred) configured in the LLM Provider settings UI. `get_client` uses the most-preferred provider that",
     "url": "https://github.com/brandonkindred/Khala-Agentic-AI-Teams/pull/1056",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 16",
       "pull request",
       "repo: Khala-Agentic-AI-Teams"
     ]
   },
   {
     "title": "[PR] feat: Add Production Azure Setup",
-    "date": "2026-06-30T19:52:20Z",
+    "date": "2026-06-30T21:25:35Z",
     "summary": "**Description**\r\n\r\nAutomates Azure VM provisioning and deployment with Terraform, Ansible, Docker Compose profiles, and GHCR images.\r\n\r\nAdds one-command lifecycle script for `deploy`, `verify`, `stop`, and `destroy`.\r\nPlus updated documentation for image-based VM deployment and teardown.\r\n\r\nImportan",
     "url": "https://github.com/AET-DevOps26/team-worksonourmachines/pull/70",
     "source": "github_prs",
@@ -1344,7 +1344,7 @@
   },
   {
     "title": "[PR] feat: shared documents ingestion mode for IBM COS connectors",
-    "date": "2026-06-30T17:36:47Z",
+    "date": "2026-06-30T20:53:45Z",
     "summary": "This pull request introduces a new \"shared\" ingestion mode for IBM COS connectors, allowing documents to be indexed without an owner so that all users in an OpenRAG instance can access them. The change is implemented across the frontend, backend, and SDKs, with UI updates to expose the option where ",
     "url": "https://github.com/langflow-ai/openrag/pull/1954",
     "source": "github_prs",
@@ -1512,12 +1512,12 @@
   },
   {
     "title": "[PR] fix(security): harden multi-tenant surfaces",
-    "date": "2026-06-30T20:06:41Z",
+    "date": "2026-06-30T22:15:15Z",
     "summary": "## Summary\n\nRebases the security-hardening sweep onto `release-1.11.0` while preserving the individual commit series.\n\n## Security fixes introduced beyond `release-1.11.0`\n\n- Hardens code-execution surfaces with authenticated-flow component blocking, expanded code-exec aliases, agentic assistant cod",
     "url": "https://github.com/langflow-ai/langflow/pull/13530",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 17",
       "pull request",
       "repo: langflow"
     ]
@@ -1556,6 +1556,138 @@
       "comments: 5",
       "pull request",
       "repo: swarms"
+    ]
+  },
+  {
+    "title": "[PR] RAG: migraci\u00f3n de ejes \u2192 secciones/lecciones/bloques (corpus + retrieval + gate de dominio + frontend)",
+    "date": "2026-06-30T22:13:31Z",
+    "summary": "## Resumen t\u00e9cnico\n\nMigra el tutor RAG de la taxonom\u00eda por **ejes** (0\u20137) a la estructura nativa de Moodle por **secciones / lecciones / bloques**. El conocimiento se ancla a la **secci\u00f3n Moodle** (`moodle_section_id`, `section_number` 1-based) y nunca al eje. Cubre las 3 capas: corpus, retrieval/sc",
+    "url": "https://github.com/nosoykenneth/KENTH/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: KENTH"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): OpenAI-compatible provider + unify cloud routing (closes #45, #48)",
+    "date": "2026-06-30T22:12:31Z",
+    "summary": "## What\nAdds a generic **OpenAI-compatible** provider and wires **all** cloud models through the unified `model_dispatcher` in the three user-facing surfaces. Closes #45 and #48.\n\n### openai_compat provider (foundation)\n- `CloudProviderType.OPENAI_COMPAT` \u2014 `base_url` required, `api_key` optional.\n-",
+    "url": "https://github.com/contextuai/contextuai-solo/pull/57",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: contextuai-solo"
+    ]
+  },
+  {
+    "title": "[PR] feat(parent): implement complete Parent Portal",
+    "date": "2026-06-30T22:00:36Z",
+    "summary": "## Summary\r\n\r\nThis PR implements the complete Parent Portal.\r\n\r\n### Features\r\n\r\n- Parent dashboard with real support data\r\n- Parent support creation workflow\r\n- Parent AI chat\r\n- Parent notifications\r\n- Parent evaluations\r\n- Parent sessions\r\n- Parent/student linking\r\n- Backend API endpoints\r\n- Front",
+    "url": "https://github.com/Open-TutorAi/open-tutor-ai-CE/pull/273",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: open-tutor-ai-CE"
+    ]
+  },
+  {
+    "title": "[PR] feat(core): permission-constrained BaseEngine loading with GetConfigData accessor",
+    "date": "2026-06-30T21:52:25Z",
+    "summary": "## Summary\n\n- **Permission-constrained engine loading**: BaseEngine now pre-checks entity read permissions during `Config()` before making RunView calls. When a user lacks read access on any entity config, all configs for that engine are skipped (all-or-nothing), the engine enters a permission-const",
+    "url": "https://github.com/MemberJunction/MJ/pull/2994",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] refactor: rename apps/tauri to apps/desktop and @ajh/tauri to @ajh/desktop",
+    "date": "2026-06-30T21:52:54Z",
+    "summary": "## What\n\nRenames the desktop app's **directory** `apps/tauri` \u2192 `apps/desktop` and its private **package identity** `@ajh/tauri` \u2192 `@ajh/desktop`.\n\nPure rename \u2014 no behavior change.\n\n## Changes\n\n- `git mv apps/tauri apps/desktop` \u2014 1001 tracked entries renamed, history preserved.\n- 129 files updated",
+    "url": "https://github.com/saeedkolivand/ai-job-hunter-app/pull/512",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ai-job-hunter-app"
+    ]
+  },
+  {
+    "title": "[PR] Predictive Studio - Phase 3",
+    "date": "2026-06-30T21:38:54Z",
+    "summary": "## Summary\n\nAdds a new Claude Code slash command, `/design-ux`, that drives a **design-first UX workflow** for building world-class MemberJunction interfaces. It encodes a six-phase, human-gated process so UI work starts from business goals and divergent visual exploration \u2014 not from a first-draft c",
+    "url": "https://github.com/MemberJunction/MJ/pull/2984",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): air-gapped AI mode \u2014 zero-egress guarantee for isolated deployments",
+    "date": "2026-06-30T21:20:59Z",
+    "summary": "## Summary\n\nThe one v1.9.0 \"Production-Grade Self-Hosting\" capability that #440 did **not** ship \u2014 and the gap-analysis report's single sharpest **durable** moat (\u00a78.2): private AI that runs entirely on your infrastructure with **zero data egress**, which no cloud-only competitor (Linear / Jira Rovo",
+    "url": "https://github.com/farzad-sedaghatbin/ShipFlow/pull/447",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ShipFlow"
+    ]
+  },
+  {
+    "title": "[PR] fix(config): recover corrupt config from backup",
+    "date": "2026-06-30T21:15:21Z",
+    "summary": "## Summary\n- restore a corrupt global config from the newest valid timestamped backup during startup validation\n- preserve the corrupt file under the existing `.corrupted.` backup naming before restoring\n- reuse the corrupted-config backup logic for the non-throwing config parse path\n\nFixes #1807\n\n#",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1829",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Feat/scoped prompt parts",
+    "date": "2026-06-30T21:02:06Z",
+    "summary": "\r\n## Summary\r\n\r\nAdds a first-class, **scope-aware** prompt-construction primitive to MJ core. A `ScopedPromptPart` is a small, named, role-tagged fragment of prompt text attached to an `AIPrompt` and optionally narrowed by the **same polymorphic scope the agent runtime already carries for memory** (",
+    "url": "https://github.com/MemberJunction/MJ/pull/2987",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(mjcli): defer DB-provider import in postrun hook \u2014 fixes CI spawn-timeout on all PRs",
+    "date": "2026-06-30T20:55:36Z",
+    "summary": "## Summary\n\nFixes the **`@memberjunction/cli` unit-test job timing out on every PR** (the CI gate that targets `next`). The failing test \u2014\n`claude-pack/claude-commands.test.ts \u203a install:claude via spawned bin/run.js \u2014 --json purity \u203a --json stdout is pure JSON` \u2014 spawns the real compiled CLI via `sp",
+    "url": "https://github.com/MemberJunction/MJ/pull/2993",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Update maven (major)",
+    "date": "2026-06-30T20:52:38Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Netcracker/qubership-core-java-libs/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-java-libs"
     ]
   }
 ]
