@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-06-30T14:49:04Z",
+    "date": "2026-06-30T17:22:37Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -780,7 +780,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-06-30T09:06:12Z",
+    "date": "2026-06-30T17:37:47Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -804,12 +804,12 @@
   },
   {
     "title": "[PR] Desktop: AI chat panel: Make model responses more likely to be valid",
-    "date": "2026-06-30T12:12:00Z",
+    "date": "2026-06-30T16:58:09Z",
     "summary": "# Problem\r\n\r\nJoplin's AI chat panel expects output to match a specific format. However, small, self-hosted models often don't produce output in this format.\r\n\r\n# Solution\r\n\r\nEnforce [structured JSON output](https://developers.openai.com/api/docs/guides/structured-outputs) for Joplin Cloud and OpenAI",
     "url": "https://github.com/laurent22/joplin/pull/15801",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: joplin"
     ]
@@ -876,12 +876,12 @@
   },
   {
     "title": "[PR] Codex/sdk eval parity guardrails",
-    "date": "2026-06-30T14:59:29Z",
-    "summary": "# Pull request checklist\n\nWrite for human maintainers first. Use n.a. with a concrete reason when a\nfield does not apply. Do not paste secrets, raw transcripts, bulky telemetry,\nor local absolute paths.\n\n## Motivation\n\n- Motivation: Close out the Skills SDK eval-parity lane by landing the compact im",
+    "date": "2026-06-30T17:48:25Z",
+    "summary": "# Pull request checklist\n\nWrite for human maintainers first. Use `n.a.` with a concrete reason when a\nfield does not apply. Do not paste secrets, raw transcripts, bulky telemetry,\nor local absolute paths.\n\n## Motivation\n\n- Motivation: Close out the Skills SDK eval-parity lane by landing the compact ",
     "url": "https://github.com/jscraik/Agent-Skills/pull/296",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: Agent-Skills"
     ]
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] Rebuild JARVIS as agentic Claude Opus 4.8 assistant (source project)",
-    "date": "2026-06-30T15:27:38Z",
+    "date": "2026-06-30T17:11:46Z",
     "summary": "Replace the compiled-only APK with a full, editable React + Vite + Capacitor\nsource project that significantly upgrades the assistant:\n\n- Agentic brain on Claude Opus 4.8 (adaptive thinking, effort high) with a\n  client-side tool-use loop and server-side web search for real-time knowledge\n- Persiste",
     "url": "https://github.com/Talent620/Jarvis/pull/1",
     "source": "github_prs",
@@ -1248,7 +1248,7 @@
   },
   {
     "title": "[PR] feat(resume): group branched sessions in picker",
-    "date": "2026-06-30T15:17:34Z",
+    "date": "2026-06-30T17:32:51Z",
     "summary": "## Summary\n\n- group branch sessions under a visible root or direct parent in the resume picker\n- surface branch names in resume display/search while leaving old sessions and detached branches discoverable\n- preserve branch metadata in lite session scans, resumed transcripts, and cross-worktree progr",
     "url": "https://github.com/Gitlawb/openclaude/pull/1824",
     "source": "github_prs",
@@ -1328,6 +1328,174 @@
       "comments: 11",
       "pull request",
       "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Turnstile Captcha and Rate Limiting to login",
+    "date": "2026-06-30T17:51:14Z",
+    "summary": "This PR implements Cloudflare Turnstile Captcha and Rate Limiting on the login page to enhance security and prevent spam/brute-force login attempts.\n\n### Key Changes:\n1. **Dependency Added**: `@marsidev/react-turnstile` to integrate Turnstile in a clean React component.\n2. **Login UI Updated**: Adde",
+    "url": "https://github.com/Purushotham-Prajapati-24/AgentDesk/pull/31",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: AgentDesk"
+    ]
+  },
+  {
+    "title": "[PR] feat: shared documents ingestion mode for IBM COS connectors",
+    "date": "2026-06-30T17:36:47Z",
+    "summary": "This pull request introduces a new \"shared\" ingestion mode for IBM COS connectors, allowing documents to be indexed without an owner so that all users in an OpenRAG instance can access them. The change is implemented across the frontend, backend, and SDKs, with UI updates to expose the option where ",
+    "url": "https://github.com/langflow-ai/openrag/pull/1954",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: openrag"
+    ]
+  },
+  {
+    "title": "[PR] fix(ai-gemini): EmbedTexts returns one vector per text (was collapsing the batch)",
+    "date": "2026-06-30T17:33:27Z",
+    "summary": "## Summary\r\n\r\n`GeminiEmbedding2.EmbedTexts` in `@memberjunction/ai-gemini` collapsed an entire batch of texts into a single vector \u2014 silent data corruption, no error thrown. This fixes it to return exactly one vector per input text, in order, with a hard guard so this bug class can't recur. Bug-fix ",
+    "url": "https://github.com/MemberJunction/MJ/pull/2986",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Set up local dev environment (backend + frontend + MS SQL Server)",
+    "date": "2026-06-30T17:31:05Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nSets up and verifies a runnable local development environment for the AI-Powered Call Analysis platform, covering the two web-app services (backend + frontend) against a local MS SQL Server. No application code was modified.\n\nThis adds only two files:\n",
+    "url": "https://github.com/SuvadipPanja/AI-Powered-Call-Analysis/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AI-Powered-Call-Analysis"
+    ]
+  },
+  {
+    "title": "[PR] dev: reh3376_dev01 -> main",
+    "date": "2026-06-30T17:28:15Z",
+    "summary": "## Summary\n\nDevelopment branch changes from `reh3376_dev01`.\n\n### Commits\n- fix(config-local-defaults-001): LLM defaults route to local, not OpenAI cloud\n- feat(retrieval-typed-edges-001): Epic 2 \u2014 wire typed-edge attention into the RRF graph column\n- feat(retrieval-typed-edges-001): Epic 1 \u2014 config",
+    "url": "https://github.com/reh3376/mdemg/pull/495",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mdemg"
+    ]
+  },
+  {
+    "title": "[PR] fix(config): recover from a healthy backup when the global config is corrupt",
+    "date": "2026-06-30T17:16:45Z",
+    "summary": "## Summary\n\nA present-but-corrupt `~/.openclaude.json` takes `getConfig` down the `ConfigParseError` path, which either resets to defaults (silently discarding the user's settings) or re-throws \u2014 even though healthy timestamped backups exist in `~/.claude/backups`. Previously `getConfig` only consul",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1819",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(format): show sub-second durations with one decimal instead of \"0s\"",
+    "date": "2026-06-30T17:16:22Z",
+    "summary": "## Summary\n\n`formatDuration`'s sub-second branch is guarded by `ms < 1` while the comment right above it documents the intent as \"For durations < 1s, show 1 decimal place (e.g., 0.5s)\". Since 1s = 1000ms, at `ms < 1` that branch can only ever fire for sub-millisecond values \u2014 where `(ms / 1000).toFi",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1820",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Bump the all group across 1 directory with 14 updates",
+    "date": "2026-06-30T17:16:20Z",
+    "summary": "Bumps the all group with 11 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [cloud.google.com/go/logging](https://github.com/googleapis/google-cloud-go) | `1.17.0` | `1.18.0` |\n| [connectrpc.com/connect](https://github.com/connectrpc/connect-go) | `1.19.2` | `1.20.0` |\n| [",
+    "url": "https://github.com/streamingfast/firehose-core/pull/168",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: firehose-core"
+    ]
+  },
+  {
+    "title": "[PR] fix(model): resolve [1m]-tagged aliases when 1M context is disabled",
+    "date": "2026-06-30T17:16:04Z",
+    "summary": "## Problem\n\n`CLAUDE_CODE_DISABLE_1M_CONTEXT` is the documented admin control to turn off the 1M context window (C4E / HIPAA compliance). When it's set, `has1mContext()` returns `false`.\n\n`parseUserSpecifiedModel` gated the stripping of the `[1m]` tag on `has1mContext`:\n\n```ts\nconst has1mTag = has1mC",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1822",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix: Local Ollama fallback path causes chat model repetition issues (fixes #1609)",
+    "date": "2026-06-30T17:15:43Z",
+    "summary": "Fixes #1609\n\n![screenshot](https://raw.githubusercontent.com/kriskin9-hash/lantern-os/issue-assets/issue-screenshots/2026-06-30T01-01-57-540Z-local-ollama-fallback-path-causes-chat-model-rep.png)\n\nUsers report \"chat crashes often\" which investigation reveals is actually the local Ollama fallback pat",
+    "url": "https://github.com/alex-place/lantern-os/pull/1707",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lantern-os"
+    ]
+  },
+  {
+    "title": "[PR] feat(report): render task reports as markdown",
+    "date": "2026-06-30T17:15:42Z",
+    "summary": "## Summary\n- Add Markdown output for deterministic task reports via `openclaude report --markdown`.\n- Keep JSON output available through `--json` and require one explicit report output format.\n\n## Implementation\n- Adds a task report Markdown renderer that formats the existing report model without re",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1826",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] test(angular): Phase 2 \u2014 DOM unit-test rollout across Angular/Generic + conversations",
+    "date": "2026-06-30T16:57:51Z",
+    "summary": "## What this is\n\n**Phase 2 of the Angular DOM unit-testing rollout** \u2014 builds on the Phase 1 harness (now in `next`) and rolls DOM-level specs across `packages/Angular/Generic/**`, extends the shared toolkit, ships the deferred LiveKit container refactor, and adds a conversations deep-dive. Plan + r",
+    "url": "https://github.com/MemberJunction/MJ/pull/2938",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Feature/local llm benchmarking",
+    "date": "2026-06-30T16:45:13Z",
+    "summary": "\r\n  Adds a standalone LLM performance benchmark framework for comparing model performance across\r\n  OpenAI-compatible endpoints (Azure AI Foundry, Ollama, vLLM, TGI on Nutanix/K8s).\r\n\r\n  - Benchmark runner with 20 scenarios across 5 categories: latency, generation speed, context\r\n  scaling, tool cal",
+    "url": "https://github.com/nuno-git/druppie-fork/pull/196",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: druppie-fork"
+    ]
+  },
+  {
+    "title": "[PR] chore: estrutura em pacote jarvis/ + remove c\u00f3digo morto",
+    "date": "2026-06-30T16:44:59Z",
+    "summary": "## Resumo\n\nRefactor estrutural: move c\u00f3digo dos arquivos soltos na raiz (`agent.py`, `routes.py`, `tools.py`, `templates/`, `conftest.py`) para o pacote `jarvis/`, e remove c\u00f3digo morto / depend\u00eancias \u00f3rf\u00e3s.\n\n**Saldo: -1843 linhas, +35 arquivos reorganizados.**\n\n## Mudan\u00e7as\n\n### \ud83d\uddc2\ufe0f Reorganiza\u00e7\u00e3o\n- C",
+    "url": "https://github.com/shadowruge/jarvis/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: jarvis"
     ]
   }
 ]
