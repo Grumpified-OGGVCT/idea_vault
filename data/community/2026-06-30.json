@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-06-30T03:44:30Z",
+    "date": "2026-06-30T09:20:03Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] pull request ",
-    "date": "2026-06-30T04:34:52Z",
+    "date": "2026-06-30T09:37:06Z",
     "summary": "## What does this PR do?\r\n\r\n<!-- Describe the change clearly. What problem does it solve? Why is this approach the right one? -->\r\n\r\n\r\n\r\n## Related Issue\r\n\r\n<!-- Link the issue this PR addresses. If no issue exists, consider creating one first. -->\r\n\r\nFixes #\r\n\r\n## Type of Change\r\n\r\n<!-- Check the o",
     "url": "https://github.com/executiveusa/pauli-hermes-agent/pull/50",
     "source": "github_prs",
@@ -780,7 +780,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-06-30T04:29:12Z",
+    "date": "2026-06-30T09:06:12Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -896,6 +896,210 @@
       "comments: 0",
       "pull request",
       "repo: NetMLOps-Platform"
+    ]
+  },
+  {
+    "title": "[PR] feat(#117): feat(llm): Local model support via Ollama for cost-tier tasks",
+    "date": "2026-06-30T09:40:47Z",
+    "summary": "## Summary\n\n- Add task-type routing to enable using local Ollama models for cost-sensitive tasks (triage, knowledge extraction, PR generation) while keeping cloud models for heavy work (develop, review)\n- Extend LLM provider infrastructure with `task_type` parameter, Ollama health checks in `sova do",
+    "url": "https://github.com/xsovad06/sova/pull/275",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: sova"
+    ]
+  },
+  {
+    "title": "[PR] docs: Use LLM Base apps",
+    "date": "2026-06-30T09:28:08Z",
+    "summary": "Title: \r\n\r\n* **Background**\r\n\r\n    Adds a new manual page documenting the **LLM Base apps** \u2014 the `llm-init`-powered local LLM hosting platform introduced in Olares v1.12.6 \u2014 in both English and Chinese, along with the navigation entries and screenshots.\r\n\r\n    - **Locate LLM Base apps** \u2014 find the ",
+    "url": "https://github.com/beclab/Olares/pull/3377",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Olares"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker images (minor/patch/digest)",
+    "date": "2026-06-30T09:15:49Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | minor | `v3.6.5` \u2192 `v3.7.0` |\n| clickhouse/clickhouse-server | minor | `26.5.3.52` \u2192 `26.6.1.1193` |\n| cloudreve/cloudreve | minor | `4.16.1` \u2192 `4.17.0` |\n| [getmeili/meilisearch](https://redirect.g",
+    "url": "https://github.com/acepanel/templates/pull/135",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: templates"
+    ]
+  },
+  {
+    "title": "[PR] fix(claude): make stream watchdog deterministic",
+    "date": "2026-06-30T09:11:06Z",
+    "summary": "## Summary\n\nThis PR makes the top-level Claude streaming idle watchdog deterministic.\n\nPreviously, the watchdog timer logged and released stream resources after `CLAUDE_STREAM_IDLE_TIMEOUT_MS`, but the surrounding `for await (const part of stream)` could remain blocked on a wedged `iterator.next()`.",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1823",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] \u2728 Multilingual internationalization (i18n) and localization (l10n) services",
+    "date": "2026-06-30T09:07:12Z",
+    "summary": "## What do these changes do?\r\n\r\nThis PR introduces **multilingual internationalization (i18n) and localization (l10n)**\r\nservices for oSPARC \u2014 the first step toward shipping a fully translated product.\r\n\r\n### Languages shipped\r\n\r\n| Code           | Language           | Role                          ",
+    "url": "https://github.com/ITISFoundation/osparc-simcore/pull/9311",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: osparc-simcore"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-06-30T09:03:32Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/MAlkabbani/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-06-30T09:03:30Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-06-30T09:03:18Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-06-30T09:03:18Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/facemendous/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-06-30T09:03:14Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/gmifsud/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-06-30T09:03:12Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-06-30T09:03:10Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/LunaticMuch/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-06-30T09:03:04Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/GlacierEQ/kilocode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-06-30T09:02:59Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-06-30T09:02:59Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/softctwo/ResoftCode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ResoftCode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-06-30T09:02:46Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jeevesh415/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-06-30T09:02:46Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
     ]
   }
 ]
