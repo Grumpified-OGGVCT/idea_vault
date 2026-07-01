@@ -144,7 +144,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-06-30T23:03:57Z",
+    "date": "2026-07-01T00:35:35Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-01T00:08:19Z",
+    "date": "2026-07-01T05:14:39Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] Rebuild JARVIS as agentic Claude Opus 4.8 assistant (source project)",
-    "date": "2026-07-01T00:05:03Z",
+    "date": "2026-07-01T03:33:11Z",
     "summary": "Replace the compiled-only APK with a full, editable React + Vite + Capacitor\nsource project that significantly upgrades the assistant:\n\n- Agentic brain on Claude Opus 4.8 (adaptive thinking, effort high) with a\n  client-side tool-use loop and server-side web search for real-time knowledge\n- Persiste",
     "url": "https://github.com/Talent620/Jarvis/pull/1",
     "source": "github_prs",
@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] Add multi-provider LLM fallback with usage-limit failover",
-    "date": "2026-06-30T23:56:49Z",
+    "date": "2026-07-01T01:54:02Z",
     "summary": "Closes #1055\n\n## What & why\n\nThe platform stored a **single** active LLM provider, so a 429 usage limit had nowhere to fall back to. This adds an **ordered list of provider entries** (most\u2192least preferred) configured in the LLM Provider settings UI. `get_client` uses the most-preferred provider that",
     "url": "https://github.com/brandonkindred/Khala-Agentic-AI-Teams/pull/1056",
     "source": "github_prs",
@@ -648,12 +648,12 @@
   },
   {
     "title": "[PR] fix(security): harden multi-tenant surfaces",
-    "date": "2026-06-30T23:19:05Z",
+    "date": "2026-07-01T03:09:09Z",
     "summary": "## Summary\n\nRebases the security-hardening sweep onto `release-1.11.0` while preserving the individual commit series.\n\n## Security fixes introduced beyond `release-1.11.0`\n\n- Hardens code-execution surfaces with authenticated-flow component blocking, expanded code-exec aliases, agentic assistant cod",
     "url": "https://github.com/langflow-ai/langflow/pull/13530",
     "source": "github_prs",
     "highlights": [
-      "comments: 19",
+      "comments: 25",
       "pull request",
       "repo: langflow"
     ]
@@ -720,8 +720,8 @@
   },
   {
     "title": "[PR] chore(deps): update docker images (minor/patch/digest)",
-    "date": "2026-06-30T22:53:17Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | minor | `v3.6.5` \u2192 `v3.7.0` |\n| clickhouse/clickhouse-server | minor | `26.5.3.52` \u2192 `26.6.1.1193` |\n| cloudreve/cloudreve | minor | `4.16.1` \u2192 `4.17.0` |\n| [getmeili/meilisearch](https://redirect.g",
+    "date": "2026-07-01T01:53:47Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | minor | `v3.6.5` \u2192 `v3.7.0` |\n| clickhouse/clickhouse-server | minor | `26.5.3.52` \u2192 `26.6.1.1193` |\n| cloudreve/cloudreve | minor | `4.16.1` \u2192 `4.17.0` |\n| elasticsearch | patch | `9.4.2` \u2192 `9.4.3`",
     "url": "https://github.com/acepanel/templates/pull/135",
     "source": "github_prs",
     "highlights": [
@@ -740,6 +740,198 @@
       "comments: 9",
       "pull request",
       "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "cleanup: remove string match/replace/value-check smells in prompting & message handling (i18n-hostile)",
+    "date": "2026-07-01T04:02:18Z",
+    "summary": "> **Note:** This issue is being filed now and will be updated shortly with a verified `file:line` inventory of the offending patterns and the existing shortcut allow-list (a codebase-wide research pass is in flight). The intent and scope below are authoritative.\n\n## Problem\n\nAcross the codebase \u2014 es",
+    "url": "https://github.com/elizaOS/eliza/issues/10471",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 28",
+      "state: open",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "[PR] feat(mcp): add OpenShell-managed MCP servers",
+    "date": "2026-07-01T05:23:42Z",
+    "summary": "## Summary\n\n- Adds authenticated Streamable HTTP MCP server management for OpenClaw, Hermes, and LangChain Deep Agents Code.\n- Uses OpenShell's native `protocol: mcp` enforcement and provider-backed credential replacement. NemoClaw adds no host-side MCP bridge, proxy, relay, listener, stdio adapter,",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/5876",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 176",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Add document intake & triage pathway with Business/Personal routing",
+    "date": "2026-07-01T05:13:30Z",
+    "summary": "## What this adds\n\nA local-first **document pathway** for the cockpit, matching the existing approval-gated, human-in-the-loop spine (Company mailroom filing + `AssistantDraft`):\n\n**Scan / upload / email \u2192 captured \u2192 read (local OCR + Ollama) \u2192 triaged (Business / Personal / Mixed) \u2192 human review at",
+    "url": "https://github.com/oldmateemu/DromaiosLabs/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: DromaiosLabs"
+    ]
+  },
+  {
+    "title": "[PR] dev: reh3376_dev01 -> main",
+    "date": "2026-07-01T05:07:10Z",
+    "summary": "## Summary\n\nDevelopment branch changes from `reh3376_dev01`.\n\n### Commits\n- fix(config-local-defaults-001): LLM defaults route to local, not OpenAI cloud\n- feat(retrieval-typed-edges-001): Epic 2 \u2014 wire typed-edge attention into the RRF graph column\n- feat(retrieval-typed-edges-001): Epic 1 \u2014 config",
+    "url": "https://github.com/reh3376/mdemg/pull/495",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mdemg"
+    ]
+  },
+  {
+    "title": "[PR] Add Sage Router",
+    "date": "2026-07-01T04:31:06Z",
+    "summary": "Adds Sage Router to the Umbrel App Store.\n\nChanges in this update:\n- Adds the Sage Router Umbrel app metadata and compose service.\n- Makes Sage Router depend on the Ollama Umbrel app.\n- Routes Sage Router's Ollama provider through Ollama's exported `APP_OLLAMA_URL` instead of `host.docker.internal:1",
+    "url": "https://github.com/getumbrel/umbrel-apps/pull/5720",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: umbrel-apps"
+    ]
+  },
+  {
+    "title": "[PR] chore: Bump Testcontainers from 3.10.0 to 4.12.0",
+    "date": "2026-07-01T04:25:42Z",
+    "summary": "Updated [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet) from 3.10.0 to 4.12.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.12.0\n\n# What's Changed\n\nThanks to ",
+    "url": "https://github.com/rapozoantonio/memorykit/pull/69",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: memorykit"
+    ]
+  },
+  {
+    "title": "[PR] Centralize credential redaction in src/utils/redaction.ts + channel gate tests",
+    "date": "2026-07-01T03:46:43Z",
+    "summary": "## Summary\r\n- Extract the inline `redactSensitiveInfo` from `Feedback.tsx` into a centralized `src/utils/redaction.ts` so every diagnostic path (transcript share, in-memory error log, debug log, API error analytics) uses the same regex set.\r\n- `redactSensitiveInfo` covers sk-ant-, sk-/sk-proj-/sk-or",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1711",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency pydantic-ai-slim to v1.102.0 [security]",
+    "date": "2026-07-01T03:12:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pydantic-ai-slim](https://r",
+    "url": "https://github.com/vossiman/clawdia/pull/42",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: clawdia"
+    ]
+  },
+  {
+    "title": "[PR] chore: bump openclaw/openclaw version from v2026.6.10 to v2026.6.11",
+    "date": "2026-07-01T02:45:15Z",
+    "summary": "Bumps [openclaw/openclaw](https://github.com/openclaw/openclaw) version from v2026.6.10 to v2026.6.11\n\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=https://github.com/openclaw/openclaw/releases/tag/v2026.6.11>openclaw/openclaw's release</a>.</em></p>\n\n<blockquote>\n\nWe heard",
+    "url": "https://github.com/Docker-Hub-sirmark/docker-openclaw/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: docker-openclaw"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-07-01T02:44:10Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the gha group across 1 directory with 9 updates",
+    "date": "2026-07-01T02:45:35Z",
+    "summary": "Bumps the gha group with 6 updates in the /packages/opentelemetry-instrumentation-ollama directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [opentelemetry-api](https://github.com/open-telemetry/opentelemetry-python) | `1.39.1` | `1.43.0` |\n| [ollama](https://github.com/ollama/ollama-python) |",
+    "url": "https://github.com/traceloop/openllmetry/pull/4279",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openllmetry"
+    ]
+  },
+  {
+    "title": "[PR] chore(openclaw): upgrade to 2026.6.9 and harden runtime integration",
+    "date": "2026-07-01T02:42:32Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nUpgrade NemoClaw to `openclaw@2026.6.9` and adapt packaging,\ncompiled-runtime compatibility patches, messaging plugins, rebuild recovery,\nand E2E coverage to the reviewed release. The change adds fail-closed package,\ncredential-recovery, state-restore,",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/5595",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 132",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): merge clean AI Assistant and Agent features from explore branch",
+    "date": "2026-07-01T02:14:56Z",
+    "summary": "This PR merges clean AI Assistant and Agent features from the stale explore branch without map dependencies, and fixes all compilation errors and tests.\n\n<!-- This is an auto-generated description by cubic. -->\n---\n## Summary by cubic\n\u5408\u5e76\u63a2\u7d22\u5206\u652f\u7684\u52a9\u624b/\u4ee3\u7406\u80fd\u529b\u5e76\u79fb\u9664\u5730\u56fe\u4f9d\u8d56\uff0c\u4ee5\u5168\u65b0 `AIAssistantPage` \u66ff\u6362\u65e7\u95ee\u7b14\u8bb0\u9875\uff0c\u63d0\u4f9b\u201c\u601d\u8003+\u56de\u590d\u201d\u6d41\u5f0f\u5bf9\u8bdd",
+    "url": "https://github.com/Shangjin-Xiao/ThoughtEcho/pull/343",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ThoughtEcho"
+    ]
+  },
+  {
+    "title": "[PR] Consolidate collapsible UI onto mj-accordion-panel + level up the accordion",
+    "date": "2026-07-01T02:08:45Z",
+    "summary": "## Summary\n\nConsolidates bespoke \"click-a-header-to-reveal-body\" disclosure UI across MJ Explorer onto the canonical **`<mj-accordion-panel>`**, and levels up the accordion component itself. The headline win is **accessibility**: every migrated surface replaces a non-focusable `<div (click)>` header",
+    "url": "https://github.com/MemberJunction/MJ/pull/2997",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Update bump-dependencies",
+    "date": "2026-07-01T01:21:29Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update | Pending |\n|---|---|---|---|---|---|---|\n| [@bufbuild/protobuf](https://protobufes.com/) ([source](https",
+    "url": "https://github.com/lehigh-university-libraries/scribe/pull/75",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: scribe"
+    ]
+  },
+  {
+    "title": "[PR] Update",
+    "date": "2026-07-01T01:08:16Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Large batch of new and expanded blog posts, diagrams and docs on cloud-native, Kubernetes, DevOps and tooling.\n\n* **Chores**\n  * CI/CD revamped: release-triggered Docker imag",
+    "url": "https://github.com/humzamalak/dca-prep-kit/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dca-prep-kit"
     ]
   }
 ]
