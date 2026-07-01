@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-01T05:14:39Z",
+    "date": "2026-07-01T09:44:44Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] Rebuild JARVIS as agentic Claude Opus 4.8 assistant (source project)",
-    "date": "2026-07-01T03:33:11Z",
+    "date": "2026-07-01T09:46:41Z",
     "summary": "Replace the compiled-only APK with a full, editable React + Vite + Capacitor\nsource project that significantly upgrades the assistant:\n\n- Agentic brain on Claude Opus 4.8 (adaptive thinking, effort high) with a\n  client-side tool-use loop and server-side web search for real-time knowledge\n- Persiste",
     "url": "https://github.com/Talent620/Jarvis/pull/1",
     "source": "github_prs",
@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] Add multi-provider LLM fallback with usage-limit failover",
-    "date": "2026-07-01T01:54:02Z",
+    "date": "2026-07-01T09:40:52Z",
     "summary": "Closes #1055\n\n## What & why\n\nThe platform stored a **single** active LLM provider, so a 429 usage limit had nowhere to fall back to. This adds an **ordered list of provider entries** (most\u2192least preferred) configured in the LLM Provider settings UI. `get_client` uses the most-preferred provider that",
     "url": "https://github.com/brandonkindred/Khala-Agentic-AI-Teams/pull/1056",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] fix(security): harden multi-tenant surfaces",
-    "date": "2026-07-01T03:09:09Z",
+    "date": "2026-07-01T09:33:41Z",
     "summary": "## Summary\n\nRebases the security-hardening sweep onto `release-1.11.0` while preserving the individual commit series.\n\n## Security fixes introduced beyond `release-1.11.0`\n\n- Hardens code-execution surfaces with authenticated-flow component blocking, expanded code-exec aliases, agentic assistant cod",
     "url": "https://github.com/langflow-ai/langflow/pull/13530",
     "source": "github_prs",
@@ -732,7 +732,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-06-30T22:51:07Z",
+    "date": "2026-07-01T08:35:05Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -756,19 +756,19 @@
   },
   {
     "title": "[PR] feat(mcp): add OpenShell-managed MCP servers",
-    "date": "2026-07-01T05:23:42Z",
+    "date": "2026-07-01T09:41:22Z",
     "summary": "## Summary\n\n- Adds authenticated Streamable HTTP MCP server management for OpenClaw, Hermes, and LangChain Deep Agents Code.\n- Uses OpenShell's native `protocol: mcp` enforcement and provider-backed credential replacement. NemoClaw adds no host-side MCP bridge, proxy, relay, listener, stdio adapter,",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/5876",
     "source": "github_prs",
     "highlights": [
-      "comments: 176",
+      "comments: 182",
       "pull request",
       "repo: NemoClaw"
     ]
   },
   {
     "title": "[PR] Add document intake & triage pathway with Business/Personal routing",
-    "date": "2026-07-01T05:13:30Z",
+    "date": "2026-07-01T09:49:13Z",
     "summary": "## What this adds\n\nA local-first **document pathway** for the cockpit, matching the existing approval-gated, human-in-the-loop spine (Company mailroom filing + `AssistantDraft`):\n\n**Scan / upload / email \u2192 captured \u2192 read (local OCR + Ollama) \u2192 triaged (Business / Personal / Mixed) \u2192 human review at",
     "url": "https://github.com/oldmateemu/DromaiosLabs/pull/5",
     "source": "github_prs",
@@ -852,7 +852,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-01T02:44:10Z",
+    "date": "2026-07-01T08:44:13Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -932,6 +932,174 @@
       "comments: 1",
       "pull request",
       "repo: dca-prep-kit"
+    ]
+  },
+  {
+    "title": "Test audit: systemic larp in scenarios + e2e (200 vacuous personality scenarios in PR gate, 236 echo-satisfiable assertions, mocked/skipped e2e)",
+    "date": "2026-07-01T09:23:28Z",
+    "summary": "## Summary\n\nA repo-wide audit of our **scenarios** (901 `*.scenario.ts`) and **e2e/integration tests** (315 `*.spec.ts`/`*.e2e.test.ts`, 97 `*.real.test.ts`) for **larp** \u2014 tests that look like they verify behavior but cannot actually fail for the real reason. The scenario-runner core is genuinely r",
+    "url": "https://github.com/elizaOS/eliza/issues/9310",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 106",
+      "state: open",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "Voice AEC: on-device echoReference wiring + delay calibration + AEC3-class double-talk (follow-up to #9455)",
+    "date": "2026-07-01T09:14:29Z",
+    "summary": "Follow-up to #9455 (the NLMS echo canceller core is delivered + merged in #9575). Remaining:\n- [ ] Wire the `echoReference` provider on the live device path \u2014 capture the agent's TTS playback PCM time-aligned to the mic window (the canceller seam in `audio-frame-consumer.ts` is ready; the caller mus",
+    "url": "https://github.com/elizaOS/eliza/issues/9583",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 92",
+      "state: open",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "[PR] update",
+    "date": "2026-07-01T09:51:26Z",
+    "summary": "#### \ud83d\udcbb \u53d8\u66f4\u7c7b\u578b | Change Type\r\n\r\n<!-- For change type, change [ ] to [x]. -->\r\n\r\n- [ ] \u2728 feat\r\n- [ ] \ud83d\udc1b fix\r\n- [ ] \u267b\ufe0f refactor\r\n- [ ] \ud83d\udc84 style\r\n- [ ] \ud83d\udd28 chore\r\n- [ ] \u26a1\ufe0f perf\r\n- [ ] \ud83d\udcdd docs\r\n\r\n#### \ud83d\udd00 \u53d8\u66f4\u8bf4\u660e | Description of Change\r\n\r\n<!-- Thank you for your Pull Request. Please provide a description above. -->",
+    "url": "https://github.com/gratitude5dee/WZRD.Chat/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: WZRD.Chat"
+    ]
+  },
+  {
+    "title": "[PR] [pull] main from lobehub:main",
+    "date": "2026-07-01T09:50:48Z",
+    "summary": "See [Commits](/rcy1314/lobe-chat/pull/66/commits) and [Changes](/rcy1314/lobe-chat/pull/66/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.1)\n\n_Can you help keep this open source ser",
+    "url": "https://github.com/rcy1314/lobe-chat/pull/66",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2500",
+      "pull request",
+      "repo: lobe-chat"
+    ]
+  },
+  {
+    "title": "[PR] feat: MBI-002 Bootstrap Wizard",
+    "date": "2026-07-01T09:47:39Z",
+    "summary": "## MBI-002: Bootstrap Wizard\n\nInteractive guided setup for first-time users without configuration.\n\n### Design Documents\n- [Bootstrap Wizard Design](analysis/bootstrap-wizard-design.md) \u2014 full end-to-end wizard flow\n- [Config Detection API](analysis/bootstrap-config-detection.md) \u2014 detection logic A",
+    "url": "https://github.com/christophevg/yoker/pull/34",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 20",
+      "pull request",
+      "repo: yoker"
+    ]
+  },
+  {
+    "title": "[PR] Feature/local ollama models",
+    "date": "2026-07-01T09:43:55Z",
+    "summary": "This PR adds support for managing local Ollama models in the settings view.\r\n\r\nChanges include:\r\n- Added Local Models settings subview\r\n- Added Ollama service for listing, downloading, and testing local models\r\n- Added configurable Ollama base URL\r\n- Added local model selection and persistence\r\n- Ad",
+    "url": "https://github.com/koesterlab/remail3/pull/64",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: remail3"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-07-01T09:44:00Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] Friend beta: onboarding, sign-in, capture-based tasks, Kanban board",
+    "date": "2026-07-01T09:34:13Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nImplements the friend-beta readiness plan across distribution, onboarding, AI setup, browser capture, and Phase 2 task detection.\n\n### Distribution & onboarding (Tier A)\n- **First-run wizard** in Orbit Access: Gatekeeper guidance \u2192 Accessibility check ",
+    "url": "https://github.com/westsoever/orbit/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: orbit"
+    ]
+  },
+  {
+    "title": "[PR] F21A: add cloud-neutral runtime driver capability seams",
+    "date": "2026-07-01T09:28:37Z",
+    "summary": "Automatically opened by AWF workspace `ws_12d6c2da01f74dde88aeb6d0` (agent: `opencode`, model: `ollama/glm-5.2:cloud`, effort: `xhigh`).\n\n\n### Task\nEnvironment notes:\n- You are working in /workspace on public AWF Core (agent-workspace-fabric), based on development.\n- This is public Core: keep change",
+    "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/721",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: agent-workspace-fabric"
+    ]
+  },
+  {
+    "title": "[PR] Update Fleet-maintained apps",
+    "date": "2026-07-01T09:19:46Z",
+    "summary": "Automated ingestion of latest Fleet-maintained app data.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **Bug Fixes**\n  * Updated app release metadata so the latest versions are correctly detected and installed across macOS and Windows.\n  * R",
+    "url": "https://github.com/fleetdm/fleet/pull/48540",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: fleet"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.mock-server:mockserver-netty to v7",
+    "date": "2026-07-01T09:14:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-",
+    "url": "https://github.com/ministryofjustice/hmpps-workload/pull/729",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: hmpps-workload"
+    ]
+  },
+  {
+    "title": "[PR] feat(secrets): tie openshell provider lifecycle to inference connections",
+    "date": "2026-07-01T08:55:49Z",
+    "summary": "## Summary\n\n- Move openshell provider create/delete from workspace creation into `SecretManager`, driven by inference connection register/unregister events\n- Workspace creation now looks up the existing provider by name (`providerId-connectionId`) instead of creating one on the fly, eliminating the ",
+    "url": "https://github.com/openkaiden/kaiden/pull/2308",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] Infrastructure update with database schema and API enhancements",
+    "date": "2026-07-01T08:41:08Z",
+    "summary": "### **User description**\n# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked ",
+    "url": "https://github.com/cicero-im/open-webui-2/pull/77",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: open-webui-2"
+    ]
+  },
+  {
+    "title": "[PR] Update All",
+    "date": "2026-07-01T08:40:57Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) to discuss your idea/fix with the community before creating a pull request, and describe your changes before submitting a pull request",
+    "url": "https://github.com/Transwarpcom/open-webui/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: open-webui"
     ]
   }
 ]
