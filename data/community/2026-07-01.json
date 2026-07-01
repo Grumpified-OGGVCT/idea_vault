@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-01T09:44:44Z",
+    "date": "2026-07-01T17:34:40Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,19 +648,19 @@
   },
   {
     "title": "[PR] fix(security): harden multi-tenant surfaces",
-    "date": "2026-07-01T09:33:41Z",
+    "date": "2026-07-01T17:17:14Z",
     "summary": "## Summary\n\nRebases the security-hardening sweep onto `release-1.11.0` while preserving the individual commit series.\n\n## Security fixes introduced beyond `release-1.11.0`\n\n- Hardens code-execution surfaces with authenticated-flow component blocking, expanded code-exec aliases, agentic assistant cod",
     "url": "https://github.com/langflow-ai/langflow/pull/13530",
     "source": "github_prs",
     "highlights": [
-      "comments: 25",
+      "comments: 27",
       "pull request",
       "repo: langflow"
     ]
   },
   {
     "title": "[PR] fix: dashboard panels stuck loading on back-navigation from a pinned dashboard",
-    "date": "2026-06-30T23:18:48Z",
+    "date": "2026-07-01T17:13:53Z",
     "summary": "## Summary\n\nFixes a deterministic **stuck-loading hang** on the dashboard: open a **pinned dashboard** from Home, drill into a record from inside it, then press browser **Back** \u2014 the dashboard panels stay on the **\"Loading\u2026\"** spinner forever.\n\n## The bug\n\n1. Home \u2192 click a pinned dashboard (opens ",
     "url": "https://github.com/MemberJunction/MJ/pull/2980",
     "source": "github_prs",
@@ -756,12 +756,12 @@
   },
   {
     "title": "[PR] feat(mcp): add OpenShell-managed MCP servers",
-    "date": "2026-07-01T15:44:08Z",
+    "date": "2026-07-01T18:00:08Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nAdds native OpenShell-managed authenticated HTTPS Streamable HTTP MCP server lifecycle for OpenClaw, Hermes, and LangChain Deep Agents Code.\nIt exposes `mcp add|list|status|restart|remove` and integrates crash-safe recovery with sandbox rebuild and des",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/5876",
     "source": "github_prs",
     "highlights": [
-      "comments: 196",
+      "comments: 204",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -816,7 +816,7 @@
   },
   {
     "title": "[PR] Centralize credential redaction in src/utils/redaction.ts + channel gate tests",
-    "date": "2026-07-01T03:46:43Z",
+    "date": "2026-07-01T17:34:59Z",
     "summary": "## Summary\r\n- Extract the inline `redactSensitiveInfo` from `Feedback.tsx` into a centralized `src/utils/redaction.ts` so every diagnostic path (transcript share, in-memory error log, debug log, API error analytics) uses the same regex set.\r\n- `redactSensitiveInfo` covers sk-ant-, sk-/sk-proj-/sk-or",
     "url": "https://github.com/Gitlawb/openclaude/pull/1711",
     "source": "github_prs",
@@ -936,12 +936,12 @@
   },
   {
     "title": "Test audit: systemic larp in scenarios + e2e (200 vacuous personality scenarios in PR gate, 236 echo-satisfiable assertions, mocked/skipped e2e)",
-    "date": "2026-07-01T09:23:28Z",
+    "date": "2026-07-01T17:40:59Z",
     "summary": "## Summary\n\nA repo-wide audit of our **scenarios** (901 `*.scenario.ts`) and **e2e/integration tests** (315 `*.spec.ts`/`*.e2e.test.ts`, 97 `*.real.test.ts`) for **larp** \u2014 tests that look like they verify behavior but cannot actually fail for the real reason. The scenario-runner core is genuinely r",
     "url": "https://github.com/elizaOS/eliza/issues/9310",
     "source": "github_issues",
     "highlights": [
-      "comments: 106",
+      "comments: 108",
       "state: open",
       "repo: eliza"
     ]
@@ -984,7 +984,7 @@
   },
   {
     "title": "[PR] feat: MBI-002 Bootstrap Wizard",
-    "date": "2026-07-01T15:43:50Z",
+    "date": "2026-07-01T17:59:35Z",
     "summary": "## MBI-002: Bootstrap Wizard\n\nInteractive guided setup for first-time users without configuration.\n\n### Design Documents\n- [Bootstrap Wizard Design](analysis/bootstrap-wizard-design.md) \u2014 full end-to-end wizard flow\n- [Config Detection API](analysis/bootstrap-config-detection.md) \u2014 detection logic A",
     "url": "https://github.com/christophevg/yoker/pull/34",
     "source": "github_prs",
@@ -1032,7 +1032,7 @@
   },
   {
     "title": "[PR] F21A: add cloud-neutral runtime driver capability seams",
-    "date": "2026-07-01T09:28:37Z",
+    "date": "2026-07-01T17:42:27Z",
     "summary": "Automatically opened by AWF workspace `ws_12d6c2da01f74dde88aeb6d0` (agent: `opencode`, model: `ollama/glm-5.2:cloud`, effort: `xhigh`).\n\n\n### Task\nEnvironment notes:\n- You are working in /workspace on public AWF Core (agent-workspace-fabric), based on development.\n- This is public Core: keep change",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/721",
     "source": "github_prs",
@@ -1152,7 +1152,7 @@
   },
   {
     "title": "[PR] Virgil Lemma foundations",
-    "date": "2026-07-01T12:18:53Z",
+    "date": "2026-07-01T17:31:26Z",
     "summary": "@coderabbitai summary\r\n\r\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\r\n## Summary by CodeRabbit\r\n\r\n* **New Features**\r\n  * Qwen 2/3 and Qwen 3.6 model support; new adapter with buffered and streaming generation.\r\n  * Block\u2011prefix cache service and memvid bundle index fo",
     "url": "https://github.com/dAppCore/go-mlx/pull/8",
     "source": "github_prs",
@@ -1332,19 +1332,19 @@
   },
   {
     "title": "[PR] feat: detect and reuse running external LLM services (Ollama/LM Studio)",
-    "date": "2026-07-01T15:34:59Z",
+    "date": "2026-07-01T17:48:33Z",
     "summary": "### Summary\r\nThis PR implements the orchestration of local LLM service reuse (Ollama and LM Studio) within the ODS installation pipeline (resolving issues #378 and #1649). Key changes include:\r\n- **Phase 02b Integration (`02b-external-services.sh` & `lib/external-services.sh`)**: Added automatic det",
     "url": "https://github.com/Light-Heart-Labs/ODS/pull/1653",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 4",
       "pull request",
       "repo: ODS"
     ]
   },
   {
     "title": "[PR] feat: merge knowledge graph + conversation arc into memdir",
-    "date": "2026-07-01T15:34:46Z",
+    "date": "2026-07-01T17:22:25Z",
     "summary": "## Summary\n\nMerge the standalone Knowledge Graph + Conversation Arc system into the existing auto-memory (memdir) directory. Previously, OpenClaude maintained **two parallel memory systems** \u2014 the file-based memdir (`memory/`) and a separate entity-relation-store backed by SQLite + JSON + Orama. The",
     "url": "https://github.com/Gitlawb/openclaude/pull/1811",
     "source": "github_prs",
@@ -1388,6 +1388,138 @@
       "comments: 3",
       "pull request",
       "repo: kilocode"
+    ]
+  },
+  {
+    "title": "Voice input: local Whisper transcription (mic \u2192 herdr \u2192 text)",
+    "date": "2026-06-27T20:34:35Z",
+    "summary": "> **Update 2026-06-14 (research):** The compose bar **and** a one-tap mic already shipped (#74 / #172 / #103) \u2014 but the mic uses the **browser/iOS Web Speech API** (`ComposeBar.svelte:148`), the very engine this issue wants to replace (and it is unavailable in an iOS standalone PWA). So this issue i",
+    "url": "https://github.com/erwins-enkel/shepherd/issues/76",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 2",
+      "state: open",
+      "repo: shepherd"
+    ]
+  },
+  {
+    "title": "[PR] Feature/easy setup",
+    "date": "2026-07-01T17:58:55Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Admin users can now browse available LLM models from supported providers, including using the selected provider or a user\u2019s default provider when available.\n  * Admin-side im",
+    "url": "https://github.com/lxp-ai-projects/lxp-llm-gateway/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: lxp-llm-gateway"
+    ]
+  },
+  {
+    "title": "[PR] test(angular): Phase 2 \u2014 DOM unit-test rollout across Angular/Generic + conversations",
+    "date": "2026-07-01T17:58:27Z",
+    "summary": "## What this is\n\n**Phase 2 of the Angular DOM unit-testing rollout** \u2014 builds on the Phase 1 harness (now in `next`) and rolls DOM-level specs across `packages/Angular/Generic/**`, extends the shared toolkit, ships the deferred LiveKit container refactor, and adds a conversations deep-dive. Plan + r",
+    "url": "https://github.com/MemberJunction/MJ/pull/2938",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Buildpacks: Graduation Due Diligence",
+    "date": "2026-07-01T17:52:27Z",
+    "summary": "Graduation due diligence for Cloud Native Buildpacks.\r\n\r\nApplication: https://github.com/cncf/toc/issues/1538\r\nGeneral Technical Review: https://github.com/cncf/toc/pull/2047 cc @kdubois\r\n\r\n### Next steps\r\n\r\n- Public comment period (minimum 2 weeks)\r\n- TOC vote\r\n\r\nSigned-off-by: Faseela K <faseela.k",
+    "url": "https://github.com/cncf/toc/pull/2212",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 28",
+      "pull request",
+      "repo: toc"
+    ]
+  },
+  {
+    "title": "[PR] [codex] Pass agent auth env through compose exec",
+    "date": "2026-07-01T17:47:55Z",
+    "summary": "## Summary\n- pass configured agent auth environment names through `docker compose exec` without exposing values in argv\n- validate and deduplicate env passthrough names\n- cover adapter and compose-exec behavior\n\n## Why\nAgent commands launched through local Docker Compose need provider auth variables",
+    "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/722",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: agent-workspace-fabric"
+    ]
+  },
+  {
+    "title": "[PR] fix(codegen): serialize IS-A Entity.ParentID into the migration",
+    "date": "2026-07-01T17:45:52Z",
+    "summary": "## Problem\n\n`ManageMetadataBase.processISARelationshipConfig` set the child entity's `Entity.ParentID` via a parameterized `runQueryWithParams`. That executes **live** against the CodeGen database but is **never written to the `CodeGen_Run` migration**.\n\nOn a clean **migrate-only** deploy (e.g. an O",
+    "url": "https://github.com/MemberJunction/MJ/pull/3004",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] 1570",
+    "date": "2026-07-01T17:44:19Z",
+    "summary": "",
+    "url": "https://github.com/bytechefhq/bytechef/pull/5315",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: bytechef"
+    ]
+  },
+  {
+    "title": "[PR] test(start): pin recovery + override regressions as mocked shell-units",
+    "date": "2026-07-01T17:35:58Z",
+    "summary": "## Summary\n\nTwo regressions from #5874 (fixed in #6065) only surfaced in **live E2E targets that do not run on PR CI** \u2014 `runtime-overrides` and `issue-2478-crash-loop-recovery`. Both behaviors are cheaply verifiable with mocked shell-units, so this PR pins them in the PR gate to close the coverage ",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/6086",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] In bus changes",
+    "date": "2026-07-01T17:24:32Z",
+    "summary": "## Summary\r\n<!-- What does this PR do and why? -->\r\n\r\n## Type of change\r\n- [ ] Bug fix\r\n- [ ] New feature\r\n- [ ] Refactor / cleanup\r\n- [ ] Infrastructure / CI\r\n\r\n## Test plan\r\n<!-- How did you verify this works? -->\r\n\r\n## Checklist\r\n- [ ] `ruff check` and `ruff format --check` pass\r\n- [ ] `pytest te",
+    "url": "https://github.com/ananthanarayanan431/cognee-project/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cognee-project"
+    ]
+  },
+  {
+    "title": "[PR] refactor(backend): decouple LangChain from the domain layer",
+    "date": "2026-07-01T17:24:03Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## \u80cc\u666f\n\n\u6b64\u524d LangChain \u5728 `backend/app/domain/` \u91cc\u662f**\u7ed3\u6784\u6027\u6df1\u8026\u5408**\u2014\u2014\u4e0d\u53ea\u662f\u5f53\u4f5c LLM \u5ba2\u6237\u7aef\uff0c\u800c\u662f\u6574\u4e2a agent \u5f15\u64ce\uff08\u6a21\u578b\u5b9e\u4f8b\u5316\u3001\u6d88\u606f\u7c7b\u578b\u3001\u5de5\u5177\u7cfb\u7edf\u3001parser chain\u3001memory \u6301\u4e45\u5316\uff09\u90fd\u5efa\u7acb\u5728 LangChain \u4e4b\u4e0a\uff0c\u8fdd\u80cc\u4e86 DDD\u300cdomain \u6846\u67b6\u65e0\u5173\u300d\u7684\u521d\u8877\uff0c\u4e14 `domain/external/llm.py` \u91cc\u7684 `LLM` Protocol \u662f\u7a7a\u58f3\u672a\u843d\u5730\u3002\n\n\u672c PR \u5b8c\u6574\u5b9e\u65bd\u4e09\u9636\u6bb5\u89e3\u8026\uff0c\u4f7f **domain \u5c42\u4e0d\u518d import langc",
+    "url": "https://github.com/Simpleyyt/ai-manus/pull/164",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ai-manus"
+    ]
+  },
+  {
+    "title": "[PR] Follow-up PR to #2986",
+    "date": "2026-07-01T17:16:15Z",
+    "summary": "## Summary\r\n\r\nFollow-up to #2986 (the `GeminiEmbedding2.EmbedTexts` batch-collapse fix), addressing the review feedback from Amith and Robert:\r\n1. Generalize that fix so **no embedding provider \u2014 current or future \u2014 can silently collapse a batch** (the `SupportsBatchEmbeddings` base-class approach A",
+    "url": "https://github.com/MemberJunction/MJ/pull/3003",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
