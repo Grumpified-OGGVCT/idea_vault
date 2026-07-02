@@ -540,19 +540,19 @@
   },
   {
     "title": "[PR] Buildpacks: Graduation Due Diligence",
-    "date": "2026-07-02T04:49:00Z",
+    "date": "2026-07-02T16:04:22Z",
     "summary": "Graduation due diligence for Cloud Native Buildpacks.\r\n\r\nApplication: https://github.com/cncf/toc/issues/1538\r\nGeneral Technical Review: https://github.com/cncf/toc/pull/2047 cc @kdubois\r\n\r\n### Next steps\r\n\r\n- Public comment period (minimum 2 weeks)\r\n- TOC vote\r\n\r\nSigned-off-by: Faseela K <faseela.k",
     "url": "https://github.com/cncf/toc/pull/2212",
     "source": "github_prs",
     "highlights": [
-      "comments: 35",
+      "comments: 43",
       "pull request",
       "repo: toc"
     ]
   },
   {
     "title": "[PR] feat(mcp): add OpenShell-managed MCP servers",
-    "date": "2026-07-02T04:36:57Z",
+    "date": "2026-07-02T16:52:05Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nAdds native OpenShell-managed authenticated HTTPS Streamable HTTP MCP server lifecycle for OpenClaw, Hermes, and LangChain Deep Agents Code.\nIt exposes `mcp add|list|status|restart|remove` and integrates crash-safe recovery with sandbox rebuild and des",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/5876",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-02T04:36:29Z",
+    "date": "2026-07-02T16:24:45Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-07-02T04:06:09Z",
+    "date": "2026-07-02T16:50:34Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -960,7 +960,7 @@
   },
   {
     "title": "[PR] feat(provider-registry): generate catalog from src/creators + src/providers, add TokenHub",
-    "date": "2026-07-02T11:27:42Z",
+    "date": "2026-07-02T16:34:37Z",
     "summary": "### What this PR does\n\nRebuilds the `@cherrystudio/provider-registry` catalog so the three `data/*.json` files are **pure generated artifacts** \u2014 never hand-edited \u2014 sourced from hand-maintained TypeScript.\n\nBefore this PR:\n- `data/models.json`, `data/providers.json`, `data/provider-models.json` wer",
     "url": "https://github.com/CherryHQ/cherry-studio/pull/16401",
     "source": "github_prs",
@@ -1224,7 +1224,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-07-02T13:56:37Z",
+    "date": "2026-07-02T15:36:31Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -1248,12 +1248,12 @@
   },
   {
     "title": "[PR] fix(security): harden multi-tenant surfaces",
-    "date": "2026-07-02T13:54:40Z",
+    "date": "2026-07-02T15:55:39Z",
     "summary": "## Summary\n\nRebases the security-hardening sweep onto `release-1.11.0` while preserving the individual commit series.\n\n## Security fixes introduced beyond `release-1.11.0`\n\n- Hardens code-execution surfaces with authenticated-flow component blocking, expanded code-exec aliases, agentic assistant cod",
     "url": "https://github.com/langflow-ai/langflow/pull/13530",
     "source": "github_prs",
     "highlights": [
-      "comments: 28",
+      "comments: 29",
       "pull request",
       "repo: langflow"
     ]
@@ -1268,6 +1268,162 @@
       "comments: 2",
       "pull request",
       "repo: community"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7",
+    "date": "2026-07-02T16:49:37Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3025",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: testcontainers-spring-boot"
+    ]
+  },
+  {
+    "title": "[PR] Virgil Lemma foundations",
+    "date": "2026-07-02T16:47:40Z",
+    "summary": "@coderabbitai summary\r\n\r\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\r\n## Summary by CodeRabbit\r\n\r\n* **New Features**\r\n  * Qwen 2/3 and Qwen 3.6 model support; new adapter with buffered and streaming generation.\r\n  * Block\u2011prefix cache service and memvid bundle index fo",
+    "url": "https://github.com/dAppCore/go-mlx/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: go-mlx"
+    ]
+  },
+  {
+    "title": "[PR] fix(codex): make Codex alias lookup prototype-safe",
+    "date": "2026-07-02T16:46:43Z",
+    "summary": "### Problem\n\n`CODEX_ALIAS_MODELS` is a plain object literal, and the three alias lookups key it directly with a config/CLI-controlled model string:\n\n- `isCodexAlias` \u2014 `base in CODEX_ALIAS_MODELS`\n- `parseModelDescriptor` (both the no-query and query paths) \u2014 `CODEX_ALIAS_MODELS[alias]`\n\nThe model s",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1833",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(provider): add Cloudflare Workers AI integration (#1100)",
+    "date": "2026-07-02T16:43:52Z",
+    "summary": "## Summary\n\nAdds Cloudflare Workers AI as a first-class OpenAI-compatible provider preset, mirroring the Venice (#1109) / Xiaomi MiMo (#1152) descriptor pattern.\n\n- New `src/integrations/vendors/cloudflare.ts` descriptor:\n  - `classification: 'openai-compatible'`\n  - Default base URL with literal `<",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1178",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Fix shell abort classification for Bash and PowerShell",
+    "date": "2026-07-02T16:43:09Z",
+    "summary": "## Summary\n- normalize shell abort reasons and attach safe abort metadata to shell command results\n- classify QueryGuard, user, interrupt, background, and parent-ended abort kills as cancellations instead of ordinary shell failures\n- keep command nonzero exits and shell tool timeouts as failures, pr",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1688",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(ui-components): canonical confirm dialog + full window.confirm() migration",
+    "date": "2026-07-02T16:41:17Z",
+    "summary": "## Summary\n\nAdds the canonical confirmation primitives to `@memberjunction/ng-ui-components` and migrates **every native `window.confirm()` in MJ Explorer** onto them \u2014 47 prompts across 23 files in 6 packages.\n\n### New in `ng-ui-components` (minor)\n- **`<mj-confirm-dialog>`** \u2014 canonical confirm (d",
+    "url": "https://github.com/MemberJunction/MJ/pull/3028",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Desktop: AI chat panel: Make model responses more likely to be valid",
+    "date": "2026-07-02T16:34:10Z",
+    "summary": "# Problem\r\n\r\nJoplin's AI chat panel expects output to match a specific format. However, small, self-hosted models often don't produce output in this format.\r\n\r\n# Solution\r\n\r\nEnforce [structured JSON output](https://developers.openai.com/api/docs/guides/structured-outputs) for Joplin Cloud and OpenAI",
+    "url": "https://github.com/laurent22/joplin/pull/15801",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: joplin"
+    ]
+  },
+  {
+    "title": "[PR] fix(postgresql-dataprovider): parse NUMERIC/BIGINT to JS numbers via pool-scoped type parsers",
+    "date": "2026-07-02T16:32:02Z",
+    "summary": "Fixes #3030\n\n## Problem\n\nOn PostgreSQL-backed installs, node-postgres returns `NUMERIC`/`DECIMAL` (OID 1700) and `BIGINT` (OID 20) values as **strings** by default, and the provider creates its `pg.Pool` with no type-parser configuration. Every decimal/bigint column therefore reaches consumers (RunV",
+    "url": "https://github.com/MemberJunction/MJ/pull/3031",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: one-command interactive init wizard \u2014 Docker Postgres auto-provision, optional embeddings, serve+register+MCP in one flow",
+    "date": "2026-07-02T16:26:43Z",
+    "summary": "## Summary\n\n`nano-brain init` (no args) is now a **one-command interactive setup**: a fresh machine goes from `npm install -g @nano-step/nano-brain` to working MCP tools in a single wizard run. This replaces the 10-step manual flow previously documented in `docs/SETUP_AGENT.md`.\n\n### What the wizard",
+    "url": "https://github.com/nano-step/nano-brain/pull/532",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nano-brain"
+    ]
+  },
+  {
+    "title": "[PR] sync fork",
+    "date": "2026-07-02T16:19:23Z",
+    "summary": "This pull request refactors and improves the CI workflow for building, testing, and releasing native addons, with a focus on modularity, efficiency, and maintainability. The main changes include extracting the native build logic into a reusable composite GitHub Action, splitting native build jobs by",
+    "url": "https://github.com/Raudbjorn/omp/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: omp"
+    ]
+  },
+  {
+    "title": "[PR] feat(minimax): extract M3 <think> to reasoning_content on OpenAI-format tiers",
+    "date": "2026-07-02T16:18:44Z",
+    "summary": "## Summary\n\n- MiniMax M3 is registered with `format: \"openai\"` on 8 provider tiers (trae, huggingchat, bazaarlink, ollama-cloud, opencode, cline, opencode-zen, codebuddy-cn), where its raw `<think>...</think>` tags leaked directly into `content` instead of surfacing as a separate `reasoning_content`",
+    "url": "https://github.com/diegosouzapw/OmniRoute/pull/5804",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "[PR] chore(wren-ai-service): bump the all group in /wren-ai-service with 44 updates",
+    "date": "2026-07-02T16:46:44Z",
+    "summary": "Bumps the all group in /wren-ai-service with 44 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [fastapi](https://github.com/fastapi/fastapi) | `0.121.1` | `0.139.0` |\n| [uvicorn](https://github.com/Kludex/uvicorn) | `0.29.0` | `0.49.0` |\n| [haystack-ai](https://github.com/deepset-ai/haystac",
+    "url": "https://github.com/samuel-viitra/dynamic-wrenui-dataset-id/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dynamic-wrenui-dataset-id"
+    ]
+  },
+  {
+    "title": "[PR] fix: skill-granted sub-agent execution + RunView cache invalidation + 5.45 migration rename (omnibus)",
+    "date": "2026-07-02T15:51:08Z",
+    "summary": "## Summary\n\nOmnibus branch cut from `next` after the 5.45 skills/governance merges (#3015/#3017), unified-verified on a clean database, plus the fixes found during that verification. Everything below has run together as one build.\n\n## 1. Skill-granted sub-agent execution fix (`@memberjunction/ai-age",
+    "url": "https://github.com/MemberJunction/MJ/pull/3029",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
