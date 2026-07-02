@@ -540,19 +540,19 @@
   },
   {
     "title": "[PR] Buildpacks: Graduation Due Diligence",
-    "date": "2026-07-02T16:04:22Z",
+    "date": "2026-07-02T17:42:17Z",
     "summary": "Graduation due diligence for Cloud Native Buildpacks.\r\n\r\nApplication: https://github.com/cncf/toc/issues/1538\r\nGeneral Technical Review: https://github.com/cncf/toc/pull/2047 cc @kdubois\r\n\r\n### Next steps\r\n\r\n- Public comment period (minimum 2 weeks)\r\n- TOC vote\r\n\r\nSigned-off-by: Faseela K <faseela.k",
     "url": "https://github.com/cncf/toc/pull/2212",
     "source": "github_prs",
     "highlights": [
-      "comments: 43",
+      "comments: 44",
       "pull request",
       "repo: toc"
     ]
   },
   {
     "title": "[PR] feat(mcp): add OpenShell-managed MCP servers",
-    "date": "2026-07-02T16:52:05Z",
+    "date": "2026-07-02T18:25:43Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nAdds native OpenShell-managed authenticated HTTPS Streamable HTTP MCP server lifecycle for OpenClaw, Hermes, and LangChain Deep Agents Code.\nIt exposes `mcp add|list|status|restart|remove` and integrates crash-safe recovery with sandbox rebuild and des",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/5876",
     "source": "github_prs",
@@ -563,9 +563,9 @@
     ]
   },
   {
-    "title": "[PR] chore(deps): update netbirdio/netbird docker tag to v0.74.0",
-    "date": "2026-07-01T23:57:59Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [netbirdio/netbird](https://redirect.github.com/netbirdio/netbird) | minor | `0.72.2-rootless` \u2192 `v0.74.0-rootless` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>netbirdio/netbird (netbirdio/netbird)</summary>\n\n##",
+    "title": "[PR] chore(deps): update netbirdio/netbird docker tag to v0.74.1",
+    "date": "2026-07-02T17:35:24Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [netbirdio/netbird](https://redirect.github.com/netbirdio/netbird) | minor | `0.72.2-rootless` \u2192 `v0.74.1-rootless` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>netbirdio/netbird (netbirdio/netbird)</summary>\n\n##",
     "url": "https://github.com/miscOS/gitops-docker-atlas/pull/52",
     "source": "github_prs",
     "highlights": [
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] chore(deps): update netbird",
-    "date": "2026-07-01T23:56:58Z",
+    "date": "2026-07-02T17:47:07Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/netbirdio/dashboard](https://redirect.github.com/netbirdio/dashboard) | minor | `v2.36.0` \u2192 `v2.90.3` |\n| [ghcr.io/netbirdio/manage",
     "url": "https://github.com/vehagn/homelab/pull/520",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-02T16:24:45Z",
+    "date": "2026-07-02T18:08:40Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-07-02T16:50:34Z",
+    "date": "2026-07-02T17:06:35Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -852,7 +852,7 @@
   },
   {
     "title": "[PR] Rebuild JARVIS as agentic Claude Opus 4.8 assistant (source project)",
-    "date": "2026-07-02T08:08:04Z",
+    "date": "2026-07-02T18:06:02Z",
     "summary": "Replace the compiled-only APK with a full, editable React + Vite + Capacitor\nsource project that significantly upgrades the assistant:\n\n- Agentic brain on Claude Opus 4.8 (adaptive thinking, effort high) with a\n  client-side tool-use loop and server-side web search for real-time knowledge\n- Persiste",
     "url": "https://github.com/Talent620/Jarvis/pull/1",
     "source": "github_prs",
@@ -948,7 +948,7 @@
   },
   {
     "title": "[PR] fix(config): recover from a healthy backup when the global config is corrupt",
-    "date": "2026-07-02T07:59:04Z",
+    "date": "2026-07-02T17:12:08Z",
     "summary": "## Summary\n\nA present-but-corrupt `~/.openclaude.json` takes `getConfig` down the `ConfigParseError` path, which either resets to defaults (silently discarding the user's settings) or re-throws \u2014 even though healthy timestamped backups exist in `~/.claude/backups`. Previously `getConfig` only consul",
     "url": "https://github.com/Gitlawb/openclaude/pull/1819",
     "source": "github_prs",
@@ -960,19 +960,19 @@
   },
   {
     "title": "[PR] feat(provider-registry): generate catalog from src/creators + src/providers, add TokenHub",
-    "date": "2026-07-02T16:34:37Z",
+    "date": "2026-07-02T17:00:05Z",
     "summary": "### What this PR does\n\nRebuilds the `@cherrystudio/provider-registry` catalog so the three `data/*.json` files are **pure generated artifacts** \u2014 never hand-edited \u2014 sourced from hand-maintained TypeScript.\n\nBefore this PR:\n- `data/models.json`, `data/providers.json`, `data/provider-models.json` wer",
     "url": "https://github.com/CherryHQ/cherry-studio/pull/16401",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: cherry-studio"
     ]
   },
   {
     "title": "[PR] fix(provider): add Use Anthropic option to switch back from third-party profiles",
-    "date": "2026-07-02T07:57:48Z",
+    "date": "2026-07-02T17:14:56Z",
     "summary": "Fixes #1426\n\n## Problem\n\nOnce any third-party provider profile is active, `/provider` offers no way back to built-in Anthropic. `getActiveProviderProfile` falls back to `profiles[0]` whenever `activeProviderProfileId` is unset, so clearing the active id still re-selects a saved profile. The only esc",
     "url": "https://github.com/Gitlawb/openclaude/pull/1429",
     "source": "github_prs",
@@ -1164,12 +1164,12 @@
   },
   {
     "title": "[PR] feat(provider): add AI/ML API provider",
-    "date": "2026-07-02T11:35:49Z",
-    "summary": "## Summary  This PR adds first-class AI/ML API support as an OpenAI-compatible provider across setup, runtime, model discovery, and provider-profile flows. Closes #835.  It also includes a few **general no-auth hybrid-discovery fixes** in `bootstrap.ts` / `discoveryService.ts` that are not AIMLAPI-s",
+    "date": "2026-07-02T17:54:59Z",
+    "summary": "## Summary\r\n\r\nThis PR adds first-class AI/ML API support as an OpenAI-compatible provider across setup, runtime, model discovery, and provider-profile flows.\r\n\r\nCloses #835.\r\n\r\nIt also includes a few **general no-auth hybrid-discovery fixes** in `bootstrap.ts` / `discoveryService.ts` that are not AI",
     "url": "https://github.com/Gitlawb/openclaude/pull/863",
     "source": "github_prs",
     "highlights": [
-      "comments: 46",
+      "comments: 47",
       "pull request",
       "repo: openclaude"
     ]
@@ -1224,7 +1224,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-07-02T15:36:31Z",
+    "date": "2026-07-02T17:23:51Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -1284,7 +1284,7 @@
   },
   {
     "title": "[PR] Virgil Lemma foundations",
-    "date": "2026-07-02T16:47:40Z",
+    "date": "2026-07-02T17:43:32Z",
     "summary": "@coderabbitai summary\r\n\r\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\r\n## Summary by CodeRabbit\r\n\r\n* **New Features**\r\n  * Qwen 2/3 and Qwen 3.6 model support; new adapter with buffered and streaming generation.\r\n  * Block\u2011prefix cache service and memvid bundle index fo",
     "url": "https://github.com/dAppCore/go-mlx/pull/8",
     "source": "github_prs",
@@ -1344,12 +1344,12 @@
   },
   {
     "title": "[PR] Desktop: AI chat panel: Make model responses more likely to be valid",
-    "date": "2026-07-02T16:34:10Z",
+    "date": "2026-07-02T17:49:10Z",
     "summary": "# Problem\r\n\r\nJoplin's AI chat panel expects output to match a specific format. However, small, self-hosted models often don't produce output in this format.\r\n\r\n# Solution\r\n\r\nEnforce [structured JSON output](https://developers.openai.com/api/docs/guides/structured-outputs) for Joplin Cloud and OpenAI",
     "url": "https://github.com/laurent22/joplin/pull/15801",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: joplin"
     ]
@@ -1424,6 +1424,78 @@
       "comments: 3",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(e2e): add WebdriverIO VS Code e2e harness + lint fixes",
+    "date": "2026-07-02T18:26:48Z",
+    "summary": "Summary\n\n- Adds initial WebdriverIO-based e2e harness for VS Code extension (feat/e2e/vscode-wdio).\n- Fixes lint issues blocking tests and CI: test files typed, Biome globals declared, wdio config Node import updated, SVG accessibility title added.\n\nWhat changed\n\n- test/extension/e2e.spec.ts \u2014 activ",
+    "url": "https://github.com/selfagency/opilot/pull/141",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: opilot"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency diegosouzapw/omniroute to v3.8.43",
+    "date": "2026-07-02T18:14:31Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [diegosouzapw/OmniRoute](https://redirect.github.com/diegosouzapw/OmniRoute) | patch | `3.8.42` \u2192 `3.8.43` |\n\n---\n\n### Release Notes\n\n<details",
+    "url": "https://github.com/JasonLandbridge/Arch-Linux-AUR-Packages-Updater/pull/83",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Arch-Linux-AUR-Packages-Updater"
+    ]
+  },
+  {
+    "title": "[PR] chore(master): release 0.2.2",
+    "date": "2026-07-02T17:42:46Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.2.2](https://github.com/ulrichando/jarvis/compare/v0.2.1...v0.2.2) (2026-07-02)\n\n\n### Features\n\n* **automod:** 6-provider council on the highest model of each ([cdcb6eb](https://github.com/ulrichando/jarvis/commit/cdcb6eb97ba948f6ca148de17a0",
+    "url": "https://github.com/ulrichando/jarvis/pull/45",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: jarvis"
+    ]
+  },
+  {
+    "title": "[PR] from the hell",
+    "date": "2026-07-02T17:40:43Z",
+    "summary": "",
+    "url": "https://github.com/santipongth/thai-citizen-guide/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: thai-citizen-guide"
+    ]
+  },
+  {
+    "title": "[PR] fix(bg): match background-session command args on token boundaries",
+    "date": "2026-07-02T17:15:15Z",
+    "summary": "## Summary\n\n- `commandLineContainsArgs` (`src/cli/bgRegistry.ts`) matched each stored launch arg as a raw substring via `indexOf`, so a selector like `1642` was satisfied by an unrelated live token `16420` in the same position. A reused PID whose command line merely contains the stored digits could ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1834",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(model): resolve [1m]-tagged aliases when 1M context is disabled",
+    "date": "2026-07-02T16:57:47Z",
+    "summary": "## Problem\n\n`CLAUDE_CODE_DISABLE_1M_CONTEXT` is the documented admin control to turn off the 1M context window (C4E / HIPAA compliance). When it's set, `has1mContext()` returns `false`.\n\n`parseUserSpecifiedModel` gated the stripping of the `[1m]` tag on `has1mContext`:\n\n```ts\nconst has1mTag = has1mC",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1822",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaude"
     ]
   }
 ]
