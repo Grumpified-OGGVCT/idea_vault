@@ -348,12 +348,12 @@
   },
   {
     "title": "\ud83d\ude4c OpenSuperWhisper, continued \u2014 thank you & call for collaborators",
-    "date": "2026-06-23T01:22:58Z",
+    "date": "2026-07-03T10:22:47Z",
     "summary": "Hi everyone \ud83d\udc4b\n\nOpenSuperWhisper has been quiet for a little while, so we (the **My-Monkey** collective) started a community fork to keep it moving \u2014 landing the pending contributions, fixing open issues, and adding features. This is meant as a friendly continuation, with full credit to the original ",
     "url": "https://github.com/my-monkeys/OpenSuperWhisper/issues/1",
     "source": "github_issues",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "state: open",
       "repo: OpenSuperWhisper"
     ]
@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-02T23:54:26Z",
+    "date": "2026-07-03T11:15:53Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] feat(kb): knowledge-base chatbot \u2014 SakaDesk integration (Plan B)",
-    "date": "2026-07-03T08:09:52Z",
+    "date": "2026-07-03T11:04:41Z",
     "summary": "## Knowledge-base chatbot \u2014 SakaDesk integration (Plan B)\n\nGrounded, cited member Q&A over the user's synced blogs + messages, with citation chips that **deep-link to the exact blog/message in-app**. Implements Plan B of the design spec; consumes the pure `pysaka.knowledge` engine (does not reimplem",
     "url": "https://github.com/xebjhm/SakaDesk/pull/12",
     "source": "github_prs",
@@ -744,12 +744,12 @@
   },
   {
     "title": "Faz 24 audio-gateway transcript delivery rollout",
-    "date": "2026-07-03T03:30:03Z",
+    "date": "2026-07-03T10:37:29Z",
     "summary": "<!-- agent-state:v1 -->\nstatus: needs-runtime-smoke\nclaim_session: Halil-MacBook-Pro-codex-faz24-product-surface-20260703\nclaim_worktree: /Users/halilkocoglu/Documents/.worktrees/platform-k8s-gitops-faz24-meeting-ai-runtime-20260702\nclaim_branch: codex/faz24-meeting-ai-runtime-20260702\nclaim_updated",
     "url": "https://github.com/Halildeu/platform-k8s-gitops/issues/2186",
     "source": "github_issues",
     "highlights": [
-      "comments: 71",
+      "comments: 75",
       "state: open",
       "repo: platform-k8s-gitops"
     ]
@@ -924,8 +924,8 @@
   },
   {
     "title": "[PR] 1570",
-    "date": "2026-07-03T08:07:48Z",
-    "summary": "- **1570 Unify copilot connection listing behind CopilotConnectionLister**\n- **1570 Allow property-options picker tools in embedded chat**\n- **1570 Config-aware output-reference validation**\n- **1570 Propagate caller identity to all Copilot agent tools to fix tool Access Denied**\n- **1570 Auto-resol",
+    "date": "2026-07-03T11:34:42Z",
+    "summary": "",
     "url": "https://github.com/bytechefhq/bytechef/pull/5325",
     "source": "github_prs",
     "highlights": [
@@ -1076,6 +1076,210 @@
       "comments: 2",
       "pull request",
       "repo: team-worksonourmachines"
+    ]
+  },
+  {
+    "title": "[PR] feat(forge)+fix(security): TQ-4 LLM call gate + Stage-0 security hardening (F-01..F-07)",
+    "date": "2026-07-03T11:33:28Z",
+    "summary": "## What this PR contains\n\nTwo chunks that complete the current AscendForge milestone gate:\n\n### 1. TQ-4 \u2014 LLM call gate for concurrency control (`c643195a`)\nGlobal counting semaphore (`backend/services/llm_call_gate.js`, max 1 concurrent by default, `FORGE_LLM_MAX_CONCURRENT` clamped to [1,4]) wrapp",
+    "url": "https://github.com/F-game25/AI-EMPLOYEE/pull/336",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: AI-EMPLOYEE"
+    ]
+  },
+  {
+    "title": "[PR] feat(provider): add AI/ML API provider",
+    "date": "2026-07-03T11:30:27Z",
+    "summary": "## Summary\r\n\r\nThis PR adds first-class AI/ML API support as an OpenAI-compatible provider across setup, runtime, model discovery, and provider-profile flows.\r\n\r\nCloses #835.\r\n\r\nIt also includes a few **general no-auth hybrid-discovery fixes** in `bootstrap.ts` / `discoveryService.ts` that are not AI",
+    "url": "https://github.com/Gitlawb/openclaude/pull/863",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 48",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(mcp,server): honor documented protocol semantics",
+    "date": "2026-07-03T11:28:46Z",
+    "summary": "Fixes eight confirmed findings from the 2026-07 inert-code audit (Wave 3: findings 20, 21, 22, 28, 29, 30, 31, 32) \u2014 MCP host + ManifoldServer surfaces that accepted documented protocol inputs and silently ignored them, or reported success where failure occurred.\n\n## ManifoldMCPHost\n\n- **(20) `isErr",
+    "url": "https://github.com/ManifoldKit/ManifoldKit/pull/2121",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ManifoldKit"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-03T11:24:07Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/softctwo/ResoftCode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ResoftCode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-03T11:23:13Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-03T11:23:06Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/facemendous/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-03T11:23:02Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/MAlkabbani/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-03T11:23:01Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-03T11:23:00Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/gmifsud/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-03T11:23:00Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/GlacierEQ/kilocode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-03T11:22:56Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/LunaticMuch/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-03T11:22:53Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-03T11:22:38Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jeevesh415/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-03T11:22:30Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] Buildpacks: Graduation Due Diligence",
+    "date": "2026-07-03T11:20:57Z",
+    "summary": "Graduation due diligence for Cloud Native Buildpacks.\r\n\r\nApplication: https://github.com/cncf/toc/issues/1538\r\nGeneral Technical Review: https://github.com/cncf/toc/pull/2047 cc @kdubois\r\n\r\n### Next steps\r\n\r\n- Public comment period (minimum 2 weeks)\r\n- TOC vote\r\n\r\nSigned-off-by: Faseela K <faseela.k",
+    "url": "https://github.com/cncf/toc/pull/2212",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 47",
+      "pull request",
+      "repo: toc"
+    ]
+  },
+  {
+    "title": "[PR] Update bump-dependencies",
+    "date": "2026-07-03T11:13:29Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@bufbuild/protobuf](https://protobufes.com/) ([source](https://redirect.gi",
+    "url": "https://github.com/lehigh-university-libraries/scribe/pull/75",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: scribe"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Google Vertex AI provider for AI-enhanced scanning",
+    "date": "2026-07-03T11:13:08Z",
+    "summary": "## Summary\n- `truScanner` only supported Ollama, OpenAI, and AWS Bedrock as AI providers \u2014 all requiring either a local Ollama install or cloud credentials tied to a specific vendor (OpenAI key, or AWS keys/profile for Bedrock).\n- This blocks AI-enhanced scanning anywhere the caller only has GCP cre",
+    "url": "https://github.com/truconsent/truscanner/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: truscanner"
     ]
   }
 ]
