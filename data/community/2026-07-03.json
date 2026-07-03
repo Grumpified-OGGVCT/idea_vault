@@ -144,7 +144,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-07-03T01:38:35Z",
+    "date": "2026-07-03T06:08:46Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -312,12 +312,12 @@
   },
   {
     "title": "Voice input: local Whisper transcription (mic \u2192 herdr \u2192 text)",
-    "date": "2026-06-27T20:34:35Z",
+    "date": "2026-07-03T08:10:34Z",
     "summary": "> **Update 2026-06-14 (research):** The compose bar **and** a one-tap mic already shipped (#74 / #172 / #103) \u2014 but the mic uses the **browser/iOS Web Speech API** (`ComposeBar.svelte:148`), the very engine this issue wants to replace (and it is unavailable in an iOS standalone PWA). So this issue i",
     "url": "https://github.com/erwins-enkel/shepherd/issues/76",
     "source": "github_issues",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "state: open",
       "repo: shepherd"
     ]
@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-07-03T04:08:52Z",
+    "date": "2026-07-03T07:58:32Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -552,12 +552,12 @@
   },
   {
     "title": "[PR] chore(openclaw): upgrade to 2026.6.9 and harden runtime integration",
-    "date": "2026-07-03T04:38:16Z",
+    "date": "2026-07-03T08:10:34Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nUpgrade NemoClaw to `openclaw@2026.6.9` and adapt packaging,\ncompiled-runtime compatibility patches, messaging plugins, rebuild recovery,\nand E2E coverage to the reviewed release. The change adds fail-closed package,\ncredential-recovery, state-restore,",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/5595",
     "source": "github_prs",
     "highlights": [
-      "comments: 144",
+      "comments: 147",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] feat(kb): knowledge-base chatbot \u2014 SakaDesk integration (Plan B)",
-    "date": "2026-07-03T03:45:59Z",
+    "date": "2026-07-03T08:09:52Z",
     "summary": "## Knowledge-base chatbot \u2014 SakaDesk integration (Plan B)\n\nGrounded, cited member Q&A over the user's synced blogs + messages, with citation chips that **deep-link to the exact blog/message in-app**. Implements Plan B of the design spec; consumes the pure `pysaka.knowledge` engine (does not reimplem",
     "url": "https://github.com/xebjhm/SakaDesk/pull/12",
     "source": "github_prs",
@@ -660,7 +660,7 @@
   },
   {
     "title": "[PR] Add boxy Phase-1 MVP: unified CLI for containerized GenAI on HPC",
-    "date": "2026-07-03T04:34:17Z",
+    "date": "2026-07-03T08:01:08Z",
     "summary": "## Summary\n\nThis PR introduces **boxy**, a unified command-line tool for deploying and serving containerized GenAI/LLM services across heterogeneous HPC sites. It formalizes the bash prototype in `hpc-workflow/` into a maintainable Python CLI that abstracts container runtimes (Podman, Apptainer, Doc",
     "url": "https://github.com/abeltre1/canopie25-paper-artifacts/pull/1",
     "source": "github_prs",
@@ -840,12 +840,12 @@
   },
   {
     "title": "[PR] feat(agents): Junie (JetBrains) as a first-class tracked agent \u2014 full parity",
-    "date": "2026-07-03T04:24:55Z",
+    "date": "2026-07-03T07:26:07Z",
     "summary": "# feat: Junie (JetBrains) as a first-class tracked agent \u2014 full parity with Droid/Codex/Claude/Hermes\n\nAdds JetBrains **Junie CLI** as a first-class agent provider across macOS, iOS, the daemon, and Android \u2014 detected, parsed, priced, displayed, tested, and documented at parity with the existing mar",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1136",
     "source": "github_prs",
     "highlights": [
-      "comments: 21",
+      "comments: 28",
       "pull request",
       "repo: BurnBar"
     ]
@@ -896,6 +896,186 @@
       "comments: 1",
       "pull request",
       "repo: extensions"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes): add auto-discovered Ollama inference",
+    "date": "2026-07-03T08:12:09Z",
+    "summary": "Closes #99228\n\nAI-assisted: Codex. I understand and reviewed the implementation and its node/plugin boundaries.\n\n## What Problem This Solves\n\nAgents connected to desktop or server nodes could not discover and use a fast local model on that node. Using Ollama as the Gateway provider requires direct G",
+    "url": "https://github.com/openclaw/openclaw/pull/99234",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] docs: Use Engine Base apps",
+    "date": "2026-07-03T08:10:58Z",
+    "summary": "Title: Deploy models using Engine Base apps\r\n\r\n* **Background**\r\n\r\n    Adds a new manual page documenting the **LLM Base apps** \u2014 the `llm-init`-powered local LLM hosting platform introduced in Olares v1.12.6 \u2014 in both English and Chinese, along with the navigation entries and screenshots.\r\n\r\n    - ",
+    "url": "https://github.com/beclab/Olares/pull/3377",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Olares"
+    ]
+  },
+  {
+    "title": "[PR] 1570",
+    "date": "2026-07-03T08:07:48Z",
+    "summary": "- **1570 Unify copilot connection listing behind CopilotConnectionLister**\n- **1570 Allow property-options picker tools in embedded chat**\n- **1570 Config-aware output-reference validation**\n- **1570 Propagate caller identity to all Copilot agent tools to fix tool Access Denied**\n- **1570 Auto-resol",
+    "url": "https://github.com/bytechefhq/bytechef/pull/5325",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: bytechef"
+    ]
+  },
+  {
+    "title": "[PR] Virgil Lemma foundations",
+    "date": "2026-07-03T08:07:43Z",
+    "summary": "@coderabbitai summary\r\n\r\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\r\n## Summary by CodeRabbit\r\n\r\n* **New Features**\r\n  * Qwen 2/3 and Qwen 3.6 model support; new adapter with buffered and streaming generation.\r\n  * Block\u2011prefix cache service and memvid bundle index fo",
+    "url": "https://github.com/dAppCore/go-mlx/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: go-mlx"
+    ]
+  },
+  {
+    "title": "[PR] fix(tunnel): release NemoClaw gateway port on stop (#5968)",
+    "date": "2026-07-03T08:07:41Z",
+    "summary": "## Summary\n\n`nemoclaw stop` did not release the NemoClaw-managed OpenShell gateway port (default 8080). On macOS the gateway runs as a host `openshell-gateway` process bound to that port, and nothing in the stop path stopped it \u2014 so the port stayed occupied after `nemoclaw stop` and a fresh onboard ",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/5988",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 19",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] \ud83d\udc51 GrandGitMaster v0.1 \u2014 collect repos from anywhere, rank them, crown the best",
+    "date": "2026-07-03T08:00:25Z",
+    "summary": "# \ud83d\udc51 GrandGitMaster v0.1\n\nThe full platform, zero dependencies (pure Python 3.9+ stdlib): a second brain that collects Git repos from anywhere, runs them through **the Ringer**, categorises them, and **crowns the best repo per category** \u2014 with the crowns updating automatically.\n\n## What's inside\n\n##",
+    "url": "https://github.com/Yoktavya1990/GrandGitMaster/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: GrandGitMaster"
+    ]
+  },
+  {
+    "title": "[PR] chore(master): release 0.2.2",
+    "date": "2026-07-03T07:48:59Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.2.2](https://github.com/ulrichando/jarvis/compare/v0.2.1...v0.2.2) (2026-07-03)\n\n\n### Features\n\n* **automod:** 6-provider council on the highest model of each ([cdcb6eb](https://github.com/ulrichando/jarvis/commit/cdcb6eb97ba948f6ca148de17a0",
+    "url": "https://github.com/ulrichando/jarvis/pull/45",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: jarvis"
+    ]
+  },
+  {
+    "title": "[PR] fix(permissions): make legacy tool-name alias lookup prototype-safe",
+    "date": "2026-07-03T07:48:34Z",
+    "summary": "## Summary\n\n`normalizeLegacyToolName` resolves legacy/renamed tool names to their canonical form by looking the name up in a plain object, `LEGACY_TOOL_NAME_ALIASES`, with a bare bracket access:\n\n```ts\nconst LEGACY_TOOL_NAME_ALIASES: Record<string, string> = {\n  Task: AGENT_TOOL_NAME,\n  KillShell: T",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1847",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(model-picker): surface inactive provider profiles in /model (#1119 piece 2)",
+    "date": "2026-07-03T07:44:17Z",
+    "summary": "## Summary\n\nFollow-up to #1146 (which lands the Codex/GPT suppression piece). This PR addresses the second piece @Vasanthdev2004 [split out](https://github.com/Gitlawb/openclaude/issues/1119#issuecomment-4430190083) \u2014 making `/model` a single switcher across configured `providerProfiles` instead of ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1164",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 16",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(command-semantics): treat linter exit 1 as violations, not an error",
+    "date": "2026-07-03T07:41:31Z",
+    "summary": "## Summary\n\n- Add lint-aware exit-code semantics for `ruff` and `eslint` in both the Bash and PowerShell `commandSemantics` tables: exit 1 = \"violations found\" (not an error), 2+ = a real error \u2014 mirroring the existing `grep` / `diff` pattern.\n- `uvx` / `npx` wrapper invocations inherit the wrapped ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1846",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] External Data Sources (runtime-proxied entities & queries)",
+    "date": "2026-07-03T07:38:35Z",
+    "summary": "## External Data Sources \u2014 runtime-proxied entities & queries\n\nLive, **read-only** access to external databases through MJ's standard data APIs. An Entity or Query that carries an `ExternalDataSourceID` is proxied live to a remote system via a pluggable driver and returned through the normal typed `",
+    "url": "https://github.com/MemberJunction/MJ/pull/2449",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(settings): per-model context_window and max_output_tokens overrides",
+    "date": "2026-07-03T07:34:07Z",
+    "summary": "## Summary\n\nAdds a `modelLimits` map to `settings.json` so users can declare the context window and max output tokens for OpenAI-compatible models that are not in the built-in catalog. The new path complements the existing `CLAUDE_CODE_OPENAI_CONTEXT_WINDOWS` / `CLAUDE_CODE_OPENAI_MAX_OUTPUT_TOKENS`",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1234",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(provider): add Cloudflare Workers AI integration (#1100)",
+    "date": "2026-07-03T07:34:06Z",
+    "summary": "## Summary\n\nAdds Cloudflare Workers AI as a first-class OpenAI-compatible provider preset, mirroring the Venice (#1109) / Xiaomi MiMo (#1152) descriptor pattern.\n\n- New `src/integrations/vendors/cloudflare.ts` descriptor:\n  - `classification: 'openai-compatible'`\n  - Default base URL with literal `<",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1178",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 16",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(codex): make Codex alias lookup prototype-safe",
+    "date": "2026-07-03T07:34:05Z",
+    "summary": "### Problem\n\n`CODEX_ALIAS_MODELS` is a plain object literal, and the three alias lookups key it directly with a config/CLI-controlled model string:\n\n- `isCodexAlias` \u2014 `base in CODEX_ALIAS_MODELS`\n- `parseModelDescriptor` (both the no-query and query paths) \u2014 `CODEX_ALIAS_MODELS[alias]`\n\nThe model s",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1833",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add Production Azure Setup",
+    "date": "2026-07-03T07:22:23Z",
+    "summary": "**Description**\r\n\r\nAutomates Azure VM provisioning and deployment with Terraform, Ansible, Docker Compose profiles, and GHCR images.\r\n\r\nAdds one-command lifecycle script for `deploy`, `verify`, `stop`, and `destroy`.\r\nPlus updated documentation for image-based VM deployment and teardown.\r\n\r\nImportan",
+    "url": "https://github.com/AET-DevOps26/team-worksonourmachines/pull/70",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: team-worksonourmachines"
     ]
   }
 ]
