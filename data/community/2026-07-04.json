@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-04T17:48:52Z",
+    "date": "2026-07-04T19:54:33Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -960,7 +960,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-07-04T17:11:30Z",
+    "date": "2026-07-04T18:22:05Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] Companion mode: full-screen Vyra + vyra-backend brain (Ollama/cloud) + realtime interruptible voice",
-    "date": "2026-07-04T10:58:51Z",
+    "date": "2026-07-04T20:01:52Z",
     "summary": "## What this is\n\nVyra becomes what she was always meant to be: **a companion, not an app with screens.** The phone sits on your desk, the app opens straight into her face, and she's simply *there* \u2014 listening, seeing, talking, interruptible.\n\nPairs with the new **[vyra-backend](https://github.com/ch",
     "url": "https://github.com/chiragdhunna/vyra/pull/17",
     "source": "github_prs",
@@ -1200,7 +1200,7 @@
   },
   {
     "title": "[PR] chore(deps): update docker images",
-    "date": "2026-07-04T12:53:36Z",
+    "date": "2026-07-04T18:32:37Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | minor | `v3.6.5` \u2192 `v3.7.1` |\n| docker.io/wger/server | digest | `2c4686f` \u2192 `1cdb4a2` |\n| [ghcr.io/coder/coder](https://redire",
     "url": "https://github.com/morten-olsen/homelab-apps/pull/298",
     "source": "github_prs",
@@ -1284,7 +1284,7 @@
   },
   {
     "title": "[PR] [codex] Add cloud-aware dictation cleanup",
-    "date": "2026-07-04T17:51:28Z",
+    "date": "2026-07-04T20:00:03Z",
     "summary": "## Summary\n- Adds a shared LLM backend layer for dictation cleanup, covering local Qwen plus ChatGPT, OpenAI, OpenRouter, Ollama, LM Studio, and Custom LLM.\n- Adds a shared ChatGPT WHAM responses client, with attribution to the useful direction from PR #230 while avoiding its conflicting/narrow impl",
     "url": "https://github.com/Muesli-HQ/muesli/pull/269",
     "source": "github_prs",
@@ -1296,12 +1296,12 @@
   },
   {
     "title": "[PR] perf(test): reduce onboarding subprocess isolation",
-    "date": "2026-07-04T17:50:29Z",
-    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\nReplace unit-shaped test subprocesses with direct typed seams while retaining meaningful real-process contracts. The final onboarding pilot is 22.1% faster, and the OpenClaw config target is 40.5% faster, without changing production defaults or CLI beha",
+    "date": "2026-07-04T19:46:47Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\nReplace unit-shaped test subprocesses with direct typed seams while retaining meaningful real-process contracts. The final onboarding pilot is 20.5% faster, and the OpenClaw config target is 40.5% faster, without changing production defaults or CLI beha",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/6276",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 9",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -1340,6 +1340,54 @@
       "comments: 0",
       "pull request",
       "repo: relaticle"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes,vscode): add Gmail tool node + Google user-OAuth broker (RR-1055, RR-1142)",
+    "date": "2026-07-04T19:55:29Z",
+    "summary": "## Summary\n\n- Add `tool_gmail` node exposing 61 Gmail v1 API operations as agent tools: read/search/organize mail, labels, drafts, filters, send (incl. HTML + attachments + in-thread replies), settings (IMAP/POP/vacation/forwarding/delegates/send-as/S-MIME), push notifications, and gated hard-delete",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/1334",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] \ud83d\udcdd Complete README preparation with comprehensive documentation and project structure",
+    "date": "2026-07-04T19:24:57Z",
+    "summary": "This PR addresses the \"prepare readme\" issue by creating comprehensive documentation for the ULTRON Atlas GUI project, establishing proper project structure, and providing clear guidance for users and developers.\n\n## \ud83d\ude80 What's New\n\n### Main README.md\nCreated a comprehensive main README that serves as",
+    "url": "https://github.com/dqikfox/atlas-gui/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: atlas-gui"
+    ]
+  },
+  {
+    "title": "[PR] Test/s12 ir explanation",
+    "date": "2026-07-04T18:42:21Z",
+    "summary": "## Branch Progress Summary\r\n\r\nThis branch delivers a substantial integration of chatbot capabilities along with multiple merge syncs from `development`.\r\n\r\n### 1. Chatbot feature delivery (M1 track)\r\n- Added backend chatbot endpoints:\r\n  - `GET /chatbot/health`\r\n  - `POST /chatbot/query`\r\n- Added fr",
+    "url": "https://github.com/Arid-Nova/mvp-pipeline-client/pull/57",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: mvp-pipeline-client"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): record AI resource consumption per backend call with Matrix sync",
+    "date": "2026-07-04T18:35:12Z",
+    "summary": "## What\n\nAdds a dedicated data layer that captures **one immutable row per AI backend call** \u2014 tokens, cost (credits), energy, CO\u2082, water, data center and renewable share \u2014 tagged with the owning task/category/entry and the causal parent call. This is the storage + capture + aggregation-query layer ",
+    "url": "https://github.com/matthiasn/lotti/pull/3403",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lotti"
     ]
   }
 ]
