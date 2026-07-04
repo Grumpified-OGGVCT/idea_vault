@@ -144,12 +144,12 @@
   },
   {
     "title": "Faz 24 audio-gateway transcript delivery rollout",
-    "date": "2026-07-04T07:35:37Z",
+    "date": "2026-07-04T10:10:16Z",
     "summary": "<!-- agent-state:v1 -->\nstatus: needs-runtime-smoke\nclaim_session: Halil-MacBook-Pro-codex-faz24-product-surface-20260704-cont\nclaim_worktree: /Users/halilkocoglu/Documents/.worktrees/platform-desktop-faz24-product-surface-20260629\nclaim_branch: codex/faz24-runtime-main-20260630\nclaim_updated_at: 20",
     "url": "https://github.com/Halildeu/platform-k8s-gitops/issues/2186",
     "source": "github_issues",
     "highlights": [
-      "comments: 123",
+      "comments: 136",
       "state: open",
       "repo: platform-k8s-gitops"
     ]
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-04T07:41:18Z",
+    "date": "2026-07-04T09:30:25Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -540,7 +540,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-07-04T07:14:45Z",
+    "date": "2026-07-04T09:03:12Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -564,12 +564,12 @@
   },
   {
     "title": "[PR] chore(openclaw): upgrade to 2026.6.10 and harden runtime integration",
-    "date": "2026-07-04T07:47:32Z",
+    "date": "2026-07-04T10:09:05Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nUpgrade NemoClaw to `openclaw@2026.6.10` and adapt packaging,\ncompiled-runtime compatibility patches, messaging plugins, rebuild recovery,\nand E2E coverage to the reviewed release. The change retains the existing\nfail-closed package, credential-recover",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/5595",
     "source": "github_prs",
     "highlights": [
-      "comments: 180",
+      "comments: 192",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] Virgil Lemma foundations",
-    "date": "2026-07-04T06:53:45Z",
+    "date": "2026-07-04T10:13:52Z",
     "summary": "@coderabbitai summary\r\n\r\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\r\n## Summary by CodeRabbit\r\n\r\n* **New Features**\r\n  * Qwen 2/3 and Qwen 3.6 model support; new adapter with buffered and streaming generation.\r\n  * Block\u2011prefix cache service and memvid bundle index fo",
     "url": "https://github.com/dAppCore/go-mlx/pull/8",
     "source": "github_prs",
@@ -756,7 +756,7 @@
   },
   {
     "title": "[PR] Rebuild JARVIS as agentic Claude Opus 4.8 assistant (source project)",
-    "date": "2026-07-04T04:45:14Z",
+    "date": "2026-07-04T09:27:08Z",
     "summary": "Replace the compiled-only APK with a full, editable React + Vite + Capacitor\nsource project that significantly upgrades the assistant:\n\n- Agentic brain on Claude Opus 4.8 (adaptive thinking, effort high) with a\n  client-side tool-use loop and server-side web search for real-time knowledge\n- Persiste",
     "url": "https://github.com/Talent620/Jarvis/pull/1",
     "source": "github_prs",
@@ -852,7 +852,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-04T02:44:10Z",
+    "date": "2026-07-04T08:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -864,7 +864,7 @@
   },
   {
     "title": "[PR] fix(rag/ocr/llm): \u00a710 re-eval \u2014 role-retrieval regression, gateway by\u2026",
-    "date": "2026-07-04T06:23:32Z",
+    "date": "2026-07-04T10:05:49Z",
     "summary": "\u2026pass, streaming budget, OCR robustness\r\n\r\nPost-reorg re-evaluation (docs/audit \u00a710). The ~1,700-file main-merge rebase broke nothing \u2014 every moved import resolves and all seven \u00a79 fixes survive \u2014 but a deeper multi-agent + adversarial-verification sweep surfaced a new cluster, including a regressio",
     "url": "https://github.com/picnickang/Arus/pull/444",
     "source": "github_prs",
@@ -912,7 +912,7 @@
   },
   {
     "title": "[PR] fix(query): configure hard max and abort reasons",
-    "date": "2026-07-04T07:49:05Z",
+    "date": "2026-07-04T07:54:48Z",
     "summary": "## Summary\n\n- Add `OPENCLAUDE_QUERY_HARD_MAX_MS` so long foreground query sessions can raise the QueryGuard hard maximum without editing source.\n- Classify aborts by explicit reason so query timeouts, hard maximums, backgrounding, and parent-task aborts are not surfaced as user interruptions.\n- Keep",
     "url": "https://github.com/Gitlawb/openclaude/pull/1850",
     "source": "github_prs",
@@ -936,7 +936,7 @@
   },
   {
     "title": "[PR] from the hell",
-    "date": "2026-07-04T07:17:43Z",
+    "date": "2026-07-04T08:36:12Z",
     "summary": "",
     "url": "https://github.com/santipongth/thai-citizen-guide/pull/1",
     "source": "github_prs",
@@ -960,7 +960,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-07-04T06:41:34Z",
+    "date": "2026-07-04T10:05:39Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -972,7 +972,7 @@
   },
   {
     "title": "[PR] chore(deps): update Non-critical containers",
-    "date": "2026-07-04T04:55:10Z",
+    "date": "2026-07-04T08:56:13Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/amir20/dozzle](https://redirect.github.com/amir20/dozzle) | minor | `v10.3.2` \u2192 `v10.6.7` |\n| [docker.io/getmeili/meilisearch](http",
     "url": "https://github.com/fbosch/nixos/pull/78",
     "source": "github_prs",
@@ -984,14 +984,110 @@
   },
   {
     "title": "[PR] chore(deps): update docker images",
-    "date": "2026-07-04T04:43:36Z",
-    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | minor | `v3.6.5` \u2192 `v3.7.0` |\n| docker.io/wger/server | digest | `2c4686f` \u2192 `1cdb4a2` |\n| [ghcr.io/coder/coder](https://redire",
+    "date": "2026-07-04T08:51:56Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | minor | `v3.6.5` \u2192 `v3.7.1` |\n| docker.io/wger/server | digest | `2c4686f` \u2192 `1cdb4a2` |\n| [ghcr.io/coder/coder](https://redire",
     "url": "https://github.com/morten-olsen/homelab-apps/pull/297",
     "source": "github_prs",
     "highlights": [
       "comments: 0",
       "pull request",
       "repo: homelab-apps"
+    ]
+  },
+  {
+    "title": "[PR] Release v3.8.44",
+    "date": "2026-07-04T10:10:38Z",
+    "summary": "## [3.8.44] \u2014 TBD\n\n### \u2728 New Features\n\n- **feat(resilience):** throttle upstream quota fetches on the per-request preflight path ([#6009](https://github.com/diegosouzapw/OmniRoute/issues/6009)) \u2014 a new global min-interval gate (`open-sse/services/quotaFetchThrottle.ts`) spaces the actual network cal",
+    "url": "https://github.com/diegosouzapw/OmniRoute/pull/5925",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update mockserver to v7",
+    "date": "2026-07-04T10:10:22Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-",
+    "url": "https://github.com/yschimke/homeassistant-remotecompose/pull/445",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homeassistant-remotecompose"
+    ]
+  },
+  {
+    "title": "[PR] Implement quota proxy SOTA plan",
+    "date": "2026-07-04T10:07:09Z",
+    "summary": "## Summary\n\nImplements the quota/proxy/failover/cloud-sync SOTA plan from `QUOTA_PROXY_SOTA_PLAN.md`.\n\n- Captures passive quota signals from Anthropic/OpenAI-style rate-limit headers in the daemon gateway and exposes recent/clear RPCs.\n- Enables hosted Claude quota refresh alongside Codex, with adap",
+    "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1247",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: BurnBar"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update localai/localai docker tag to v4.6.0-gpu-nvidia-cuda-12",
+    "date": "2026-07-04T10:01:28Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [localai/localai](https://redirect.github.com/mudler/LocalAI) | minor | `v4.5.6-gpu-nvidia-cuda-12` \u2192 `v4.6.0-gpu-nvidia-cuda-12` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Depende",
+    "url": "https://github.com/tom333/my-kluster/pull/1528",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: my-kluster"
+    ]
+  },
+  {
+    "title": "[PR] feat(parent): implement complete Parent Portal",
+    "date": "2026-07-04T09:38:30Z",
+    "summary": "## Summary\r\n\r\nThis PR implements the complete Parent Portal.\r\n\r\n### Features\r\n\r\n- Parent dashboard with real support data\r\n- Parent support creation workflow\r\n- Parent AI chat\r\n- Parent notifications\r\n- Parent evaluations\r\n- Parent sessions\r\n- Parent/student linking\r\n- Backend API endpoints\r\n- Front",
+    "url": "https://github.com/Open-TutorAi/open-tutor-ai-CE/pull/273",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: open-tutor-ai-CE"
+    ]
+  },
+  {
+    "title": "[PR] ioc-refresh: new entries from scheduled scrape",
+    "date": "2026-07-04T09:01:43Z",
+    "summary": "# IOC refresh report\n\n## packages.txt \u2014 +148 (out of 148 pin entries returned)\n_npm status legend: \u2713 npm-confirmed (security-holder) \u00b7 \u26a0 still-active \u00b7 \u00b7 unpublished (no holder) \u00b7 ? unknown_\n- \u26a0 `@modhamanish/rn-mm-template@1.1.3` ([GHSA-7v96-p295-826q](https://github.com/advisories/GHSA-7v96-p295-8",
+    "url": "https://github.com/noeljackson/supplychain/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: supplychain"
+    ]
+  },
+  {
+    "title": "[PR] Add AI commit message generation to the commit dialog",
+    "date": "2026-07-04T09:01:15Z",
+    "summary": "Fixes #12203\r\n\r\n## Proposed changes\r\n\r\n- Add an **opt-in, off-by-default** feature that drafts a commit message from the **staged diff** using any **OpenAI-compatible** endpoint \u2014 OpenAI, Azure OpenAI, OpenRouter, Groq, or a **local** model via Ollama.\r\n- Add a \"\u2728 Generate AI commit message\" button ",
+    "url": "https://github.com/gitextensions/gitextensions/pull/13149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: gitextensions"
+    ]
+  },
+  {
+    "title": "[PR] resolve the base merge issues ",
+    "date": "2026-07-04T08:40:52Z",
+    "summary": "update the sync issues. ",
+    "url": "https://github.com/ALikesToCode/DeepTutor/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DeepTutor"
     ]
   }
 ]
