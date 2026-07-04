@@ -180,7 +180,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-07-04T02:16:26Z",
+    "date": "2026-07-04T12:40:23Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -216,12 +216,12 @@
   },
   {
     "title": "\ud83d\udd25 HF-Git \u6bcf\u65e5\u91cd\u78c5\u53d1\u73b0",
-    "date": "2026-07-03T12:17:57Z",
+    "date": "2026-07-04T12:15:50Z",
     "summary": "\u6b64 Issue \u7528\u4e8e\u63a5\u6536\u6bcf\u65e5\u81ea\u52a8\u62a5\u544a\u3002\u6bcf\u5929\u7684\u53d1\u73b0\u4f1a\u4ee5\u8bc4\u8bba\u5f62\u5f0f\u8ffd\u52a0\u5230\u6b64 Issue\u3002",
     "url": "https://github.com/ErgoTechKG/hf-git/issues/1",
     "source": "github_issues",
     "highlights": [
-      "comments: 86",
+      "comments: 87",
       "state: open",
       "repo: hf-git"
     ]
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-04T11:45:36Z",
+    "date": "2026-07-04T14:29:42Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] chore(openclaw): upgrade to 2026.6.10 and harden runtime integration",
-    "date": "2026-07-04T11:20:03Z",
+    "date": "2026-07-04T13:13:49Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nUpgrade NemoClaw to `openclaw@2026.6.10` and adapt packaging,\ncompiled-runtime compatibility patches, messaging plugins, rebuild recovery,\nand E2E coverage to the reviewed release. The change retains the existing\nfail-closed package, credential-recover",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/5595",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] Virgil Lemma foundations",
-    "date": "2026-07-04T12:09:31Z",
+    "date": "2026-07-04T13:21:53Z",
     "summary": "@coderabbitai summary\r\n\r\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\r\n## Summary by CodeRabbit\r\n\r\n* **New Features**\r\n  * Qwen 2/3 and Qwen 3.6 model support; new adapter with buffered and streaming generation.\r\n  * Block\u2011prefix cache service and memvid bundle index fo",
     "url": "https://github.com/dAppCore/go-mlx/pull/8",
     "source": "github_prs",
@@ -708,7 +708,7 @@
   },
   {
     "title": "[PR] CAMEL-23879: Add SecureRandomHelper to camel-util, consolidate all SecureRandom usage",
-    "date": "2026-07-04T11:38:55Z",
+    "date": "2026-07-04T13:49:26Z",
     "summary": "## Summary\n\n_Claude Code on behalf of Guillaume Nodet_\n\nFixes https://issues.apache.org/jira/browse/CAMEL-23879\n\n`SecureRandom` is thread-safe but heavyweight to instantiate \u2014 each `new SecureRandom()` call gathers OS entropy. Multiple Camel modules were creating ad-hoc instances per call, paying th",
     "url": "https://github.com/apache/camel/pull/24374",
     "source": "github_prs",
@@ -960,7 +960,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-07-04T11:49:55Z",
+    "date": "2026-07-04T14:39:07Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -996,7 +996,7 @@
   },
   {
     "title": "[PR] Release v3.8.44",
-    "date": "2026-07-04T12:09:17Z",
+    "date": "2026-07-04T14:33:20Z",
     "summary": "## [3.8.44] \u2014 TBD\n\n### \u2728 New Features\n\n- **feat(resilience):** throttle upstream quota fetches on the per-request preflight path ([#6009](https://github.com/diegosouzapw/OmniRoute/issues/6009)) \u2014 a new global min-interval gate (`open-sse/services/quotaFetchThrottle.ts`) spaces the actual network cal",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/5925",
     "source": "github_prs",
@@ -1020,12 +1020,12 @@
   },
   {
     "title": "[PR] Implement quota proxy SOTA plan",
-    "date": "2026-07-04T11:49:02Z",
+    "date": "2026-07-04T13:25:17Z",
     "summary": "## Summary\n\nImplements the quota/proxy/failover/cloud-sync SOTA plan from `QUOTA_PROXY_SOTA_PLAN.md`.\n\n- Captures passive quota signals from Anthropic/OpenAI-style rate-limit headers in the daemon gateway and exposes recent/clear RPCs.\n- Enables hosted Claude quota refresh alongside Codex, with adap",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1247",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: BurnBar"
     ]
@@ -1148,6 +1148,102 @@
       "comments: 0",
       "pull request",
       "repo: PKGBUILD"
+    ]
+  },
+  {
+    "title": "20240408 Github \u524d\u7aef\u8d8b\u52bf\u699c",
+    "date": "2026-06-06T22:44:32Z",
+    "summary": "# 20240408 Github \u524d\u7aef\u8d8b\u52bf\u699c\nGithub \u524d\u7aef\u5f00\u53d1\u65e5\u62a5\u680f\u76ee\u6570\u636e\u6765\u81ea[Github\u70ed\u699c](https://github.qdkfweb.cn/)\uff08\u6211\u5f00\u53d1\u7684\u722c\u866b\uff09\uff0c\u6bcf\u65e5\u5206\u4eabHTML\u3001CSS\u3001JavaScript\u3001Vue\u7b49\u5f00\u6e90\u9879\u76ee\uff0c\u4e3a\u5f00\u53d1\u8005\u63d0\u4f9b\u52a8\u529b\uff0c\u70b9\u51fbStar\u6309\u94ae\u6765\u5173\u6ce8\u8fd9\u4e2a\u9879\u76ee\uff0c\u70b9\u51fbWatch\u6765\u6536\u542c\u6bcf\u65e5\u7684\u66f4\u65b0[Github\u4e3b\u9875](https://github.com/kujian/githubTrending)\n## JavaScript\n* [missuo/FreeGPT35](https://link.qdkfweb.cn/?target=https%3A%2F%2Fgit",
+    "url": "https://github.com/kujian/githubTrending/issues/2835",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 1",
+      "state: open",
+      "repo: githubTrending"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update container updates",
+    "date": "2026-07-04T14:35:27Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [docker.dragonflydb.io/dragonflydb/dragonfly](https://redirect.github.com/dragonflydb/dragonfly) |  | minor | `v1.38.1` \u2192 `v1.39.0`",
+    "url": "https://github.com/ArthurVardevanyan/HomeLab/pull/552",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: HomeLab"
+    ]
+  },
+  {
+    "title": "[PR] Feat/v2 upgrade",
+    "date": "2026-07-04T13:46:13Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Local MCP server tools (memory, research, advisor, graph, bundle search), RLM sidecar, TurboVec vector service, screenshot & crawl endpoints, and procedural-memory CRUD.\n\n* *",
+    "url": "https://github.com/LVT382009/noxem/pull/17",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 118",
+      "pull request",
+      "repo: noxem"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image quay.io/go-skynet/local-ai ( v4.5.6 \u2794 v4.6.0 )",
+    "date": "2026-07-04T13:14:05Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [quay.io/go-skynet/local-ai](https://redirect.github.com/mudler/LocalAI) | minor | `v4.5.6-gpu-intel` \u2192 `v4.6.0-gpu-intel` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dash",
+    "url": "https://github.com/dstewen/talos-homelab/pull/1150",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: talos-homelab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker images",
+    "date": "2026-07-04T12:53:36Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | minor | `v3.6.5` \u2192 `v3.7.1` |\n| docker.io/wger/server | digest | `2c4686f` \u2192 `1cdb4a2` |\n| [ghcr.io/coder/coder](https://redire",
+    "url": "https://github.com/morten-olsen/homelab-apps/pull/298",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-apps"
+    ]
+  },
+  {
+    "title": "[PR] Add MCP Scanner - security scanner for MCP servers",
+    "date": "2026-07-04T12:47:55Z",
+    "summary": "Added MCP Scanner (https://github.com/dockfixlabs/mcp-scanner) to the security section. Open-source MIT, available on PyPI (dfx-mcp-scanner v0.1.1). 7 security checks for MCP server configs.",
+    "url": "https://github.com/punkpeye/awesome-mcp-servers/pull/8890",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: awesome-mcp-servers"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go to v0.43.0",
+    "date": "2026-07-04T13:46:04Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/glevanov/weight-tracker-service/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: weight-tracker-service"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update netbird",
+    "date": "2026-07-04T12:54:37Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/netbirdio/dashboard](https://redirect.github.com/netbirdio/dashboard) | minor | `v2.36.0` \u2192 `v2.90.3` |\n| [ghcr.io/netbirdio/manage",
+    "url": "https://github.com/vehagn/homelab/pull/520",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
     ]
   }
 ]
