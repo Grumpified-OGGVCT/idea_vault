@@ -144,12 +144,12 @@
   },
   {
     "title": "Faz 24 audio-gateway transcript delivery rollout",
-    "date": "2026-07-04T10:10:16Z",
+    "date": "2026-07-04T10:31:13Z",
     "summary": "<!-- agent-state:v1 -->\nstatus: needs-runtime-smoke\nclaim_session: Halil-MacBook-Pro-codex-faz24-product-surface-20260704-cont\nclaim_worktree: /Users/halilkocoglu/Documents/.worktrees/platform-desktop-faz24-product-surface-20260629\nclaim_branch: codex/faz24-runtime-main-20260630\nclaim_updated_at: 20",
     "url": "https://github.com/Halildeu/platform-k8s-gitops/issues/2186",
     "source": "github_issues",
     "highlights": [
-      "comments: 136",
+      "comments: 137",
       "state: open",
       "repo: platform-k8s-gitops"
     ]
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-04T09:30:25Z",
+    "date": "2026-07-04T11:45:36Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -564,12 +564,12 @@
   },
   {
     "title": "[PR] chore(openclaw): upgrade to 2026.6.10 and harden runtime integration",
-    "date": "2026-07-04T10:09:05Z",
+    "date": "2026-07-04T11:20:03Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nUpgrade NemoClaw to `openclaw@2026.6.10` and adapt packaging,\ncompiled-runtime compatibility patches, messaging plugins, rebuild recovery,\nand E2E coverage to the reviewed release. The change retains the existing\nfail-closed package, credential-recover",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/5595",
     "source": "github_prs",
     "highlights": [
-      "comments: 192",
+      "comments: 201",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] Virgil Lemma foundations",
-    "date": "2026-07-04T10:13:52Z",
+    "date": "2026-07-04T12:09:31Z",
     "summary": "@coderabbitai summary\r\n\r\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\r\n## Summary by CodeRabbit\r\n\r\n* **New Features**\r\n  * Qwen 2/3 and Qwen 3.6 model support; new adapter with buffered and streaming generation.\r\n  * Block\u2011prefix cache service and memvid bundle index fo",
     "url": "https://github.com/dAppCore/go-mlx/pull/8",
     "source": "github_prs",
@@ -708,7 +708,7 @@
   },
   {
     "title": "[PR] CAMEL-23879: Add SecureRandomHelper to camel-util, consolidate all SecureRandom usage",
-    "date": "2026-07-03T21:06:52Z",
+    "date": "2026-07-04T11:38:55Z",
     "summary": "## Summary\n\n_Claude Code on behalf of Guillaume Nodet_\n\nFixes https://issues.apache.org/jira/browse/CAMEL-23879\n\n`SecureRandom` is thread-safe but heavyweight to instantiate \u2014 each `new SecureRandom()` call gathers OS entropy. Multiple Camel modules were creating ad-hoc instances per call, paying th",
     "url": "https://github.com/apache/camel/pull/24374",
     "source": "github_prs",
@@ -780,7 +780,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies (patch)",
-    "date": "2026-07-04T04:42:07Z",
+    "date": "2026-07-04T10:15:03Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@anthropic-ai/claude-code](",
     "url": "https://github.com/shunkakinoki/dotfiles/pull/1981",
     "source": "github_prs",
@@ -960,7 +960,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-07-04T10:05:39Z",
+    "date": "2026-07-04T11:49:55Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -996,7 +996,7 @@
   },
   {
     "title": "[PR] Release v3.8.44",
-    "date": "2026-07-04T10:10:38Z",
+    "date": "2026-07-04T12:09:17Z",
     "summary": "## [3.8.44] \u2014 TBD\n\n### \u2728 New Features\n\n- **feat(resilience):** throttle upstream quota fetches on the per-request preflight path ([#6009](https://github.com/diegosouzapw/OmniRoute/issues/6009)) \u2014 a new global min-interval gate (`open-sse/services/quotaFetchThrottle.ts`) spaces the actual network cal",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/5925",
     "source": "github_prs",
@@ -1020,12 +1020,12 @@
   },
   {
     "title": "[PR] Implement quota proxy SOTA plan",
-    "date": "2026-07-04T10:07:09Z",
+    "date": "2026-07-04T11:49:02Z",
     "summary": "## Summary\n\nImplements the quota/proxy/failover/cloud-sync SOTA plan from `QUOTA_PROXY_SOTA_PLAN.md`.\n\n- Captures passive quota signals from Anthropic/OpenAI-style rate-limit headers in the daemon gateway and exposes recent/clear RPCs.\n- Enables hosted Claude quota refresh alongside Codex, with adap",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1247",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 9",
       "pull request",
       "repo: BurnBar"
     ]
@@ -1088,6 +1088,66 @@
       "comments: 1",
       "pull request",
       "repo: DeepTutor"
+    ]
+  },
+  {
+    "title": "[PR] SATC tax line-sheet system + client data mart (Drake-adjacent)",
+    "date": "2026-07-04T12:08:49Z",
+    "summary": "## Update (this session) \u2014 privacy-first readers, one-step + zero-install, and the client-intake spine\n\nOn top of the original 8-stage system (below). **225 tests pass.**\n\n### 1. Privacy-first document readers \u2014 local by default\nReader ladder: **form fields \u2192 text layer \u2192 local OCR (Tesseract) \u2192 loc",
+    "url": "https://github.com/AJSethuraman/SATC/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: SATC"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update mockserver.version to v7",
+    "date": "2026-07-04T11:54:24Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-",
+    "url": "https://github.com/Cantara/ServerSentEvents-agent/pull/353",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ServerSentEvents-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat(documents): opt-in docling VLM pipeline (DOCLING_PIPELINE/DOCLING_VLM_PRESET)",
+    "date": "2026-07-04T11:20:58Z",
+    "summary": "## What & why\r\n\r\nThe merged docling integration (ADR-031, v0.128) only ever triggers docling-serve's\r\n**standard** (classic OCR: EasyOCR/RapidOCR/Tesseract) pipeline \u2014 `convert_file()`\r\nnever sends a `pipeline` field, so docling-serve defaults to `standard`. A docling-serve\r\ndeployment running **VLM",
+    "url": "https://github.com/cbcoutinho/nextcloud-mcp-server/pull/1024",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nextcloud-mcp-server"
+    ]
+  },
+  {
+    "title": "[PR] Companion mode: full-screen Vyra + vyra-backend brain (Ollama/cloud) + realtime interruptible voice",
+    "date": "2026-07-04T10:58:51Z",
+    "summary": "## What this is\n\nVyra becomes what she was always meant to be: **a companion, not an app with screens.** The phone sits on your desk, the app opens straight into her face, and she's simply *there* \u2014 listening, seeing, talking, interruptible.\n\nPairs with the new **[vyra-backend](https://github.com/ch",
+    "url": "https://github.com/chiragdhunna/vyra/pull/17",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: vyra"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency mudler/localai to v4.6.0",
+    "date": "2026-07-04T10:45:47Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [mudler/LocalAI](https://redirect.github.com/mudler/LocalAI) | minor | `4.5.6` \u2192 `4.6.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the warning logs for more information.\n\n---\n\n### Rele",
+    "url": "https://github.com/M0Rf30/PKGBUILD/pull/486",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: PKGBUILD"
     ]
   }
 ]
