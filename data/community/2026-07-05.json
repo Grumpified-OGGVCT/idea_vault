@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-05T13:11:12Z",
+    "date": "2026-07-05T15:01:46Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -744,19 +744,19 @@
   },
   {
     "title": "Launch QA tracker: Eliza app + Eliza Cloud all-surface QA/UX ([qa-agent] \u00d7 [cloud-agent])",
-    "date": "2026-07-05T11:15:50Z",
+    "date": "2026-07-05T14:55:07Z",
     "summary": "# Launch QA tracker \u2014 Eliza app + Eliza Cloud, all surfaces\n\n**This issue is the single onboarding link.** Agent or human, everything you need to join this push is on this page. Board: **https://github.com/orgs/elizaOS/projects/12** \u00b7 Charter: #11157 \u00b7 Workflow-plugin plan: #13469\n\n---\n\n## \ud83d\ude80 New age",
     "url": "https://github.com/elizaOS/eliza/issues/13406",
     "source": "github_issues",
     "highlights": [
-      "comments: 265",
+      "comments: 271",
       "state: open",
       "repo: eliza"
     ]
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-07-05T13:45:01Z",
+    "date": "2026-07-05T15:15:50Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -840,7 +840,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-05T08:44:09Z",
+    "date": "2026-07-05T14:44:10Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -984,7 +984,7 @@
   },
   {
     "title": "[PR] fix(lsp): suppress empty diagnostic deliveries",
-    "date": "2026-07-05T07:57:27Z",
+    "date": "2026-07-05T14:46:29Z",
     "summary": "## Summary\n\n- Suppress passive LSP diagnostic delivery when the final real diagnostic count is zero after filtering, deduplication, delivered-cache suppression, and volume limiting.\n- Preserve delivered-diagnostic tracking so capped or duplicate diagnostic bursts do not trickle unchanged diagnostics",
     "url": "https://github.com/Gitlawb/openclaude/pull/1859",
     "source": "github_prs",
@@ -1140,7 +1140,7 @@
   },
   {
     "title": "[PR] fix(lsp): coalesce diagnostic bursts",
-    "date": "2026-07-05T10:57:56Z",
+    "date": "2026-07-05T14:57:05Z",
     "summary": "## Summary\n\n- Coalesce rapid LSP diagnostic snapshots per server/file before passive attachment delivery.\n- Keep model-visible diagnostics high signal by delivering changed stable snapshots, honoring clear snapshots, and avoiding unchanged or empty repeats.\n- Add a bounded query-boundary retry so de",
     "url": "https://github.com/Gitlawb/openclaude/pull/1861",
     "source": "github_prs",
@@ -1284,7 +1284,7 @@
   },
   {
     "title": "[PR] feat(dream): NPC provider router + AnythingLLM support fallback",
-    "date": "2026-07-05T13:37:15Z",
+    "date": "2026-07-05T14:13:22Z",
     "summary": "## Summary\n\n- New service **`services/dream-npc-router`** \u2014 PROJECT DREAM's NPC provider router. Given an NPC/player request, picks a model backend by policy, enforces child-safety + content guardrails, and returns a strict typed response contract regardless of which provider produced the reply.\n- N",
     "url": "https://github.com/Trollz1004/ANTIGRAVITY/pull/193",
     "source": "github_prs",
@@ -1352,6 +1352,78 @@
       "comments: 0",
       "pull request",
       "repo: carbonj"
+    ]
+  },
+  {
+    "title": "[PR] fix: bound profiler performance entries",
+    "date": "2026-07-05T15:15:30Z",
+    "summary": "## Summary\n\n- Bound profiler-owned Node `perf_hooks` entries so query, startup, and headless profiling cannot retain marks indefinitely across long sessions.\n- Preserve profiling reports/metrics by clearing entries only after the relevant report or metrics extraction window.\n\n## Impact\n\n- user-facin",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1865",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(onboarding): first-run experience for third-party providers",
+    "date": "2026-07-05T15:10:29Z",
+    "summary": "## Summary\r\nThird-party users \u2014 the fork's core audience \u2014 previously skipped first-run\r\nonboarding entirely. Two gates in `showSetupScreens` were keyed on\r\n`usesAnthropicAccountFlow()`:\r\n\r\n- **Onboarding (theme + security notes) now runs for all providers.** The\r\n  Onboarding component already drop",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1864",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(backend): facelift the LLM module overview into a guided starting point",
+    "date": "2026-07-05T15:03:46Z",
+    "summary": "Redesigns the LLM module landing page so a fresh install answers *\"I installed it \u2014 now what?\"*, while a running instance sees usage at a glance. Design was iterated with the maintainer via mockups; this implements the agreed merged direction.\n\n## What it looks like\n\nThree parts, all TYPO3 v13/v14 b",
+    "url": "https://github.com/netresearch/t3x-nr-llm/pull/313",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: t3x-nr-llm"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the llm-group group across 1 directory with 5 updates",
+    "date": "2026-07-05T15:03:41Z",
+    "summary": "Bumps the llm-group group with 5 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [chromadb](https://github.com/chroma-core/chroma) | `1.5.5` | `1.5.9` |\n| [langchain](https://github.com/langchain-ai/langchain) | `1.0.0` | `1.3.11` |\n| [langchain-core](https://github.com/la",
+    "url": "https://github.com/Hangi-n42/Civil-Complaints-Systems-TEST/pull/29",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Civil-Complaints-Systems-TEST"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.cattrs: 25.3.0 -> 26.1.0",
+    "date": "2026-07-05T14:35:08Z",
+    "summary": "Changelog: https://github.com/python-attrs/cattrs/blob/v26.1.0/HISTORY.md\r\n\r\n## Things done\r\n\r\n<!-- Please check what applies. Note that these are not hard requirements but merely serve as information for reviewers. -->\r\n\r\n- Built on platform:\r\n  - [x] x86_64-linux\r\n  - [ ] aarch64-linux\r\n  - [x] aa",
+    "url": "https://github.com/NixOS/nixpkgs/pull/534685",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Add Unsloth Docker images (base + Studio) for any NVIDIA GPU host, Ampere through Blackwell",
+    "date": "2026-07-05T13:54:49Z",
+    "summary": "## Summary\n\nAdds a Docker setup for Unsloth that runs on any NVIDIA GPU host from Ampere through Blackwell (sm_80 through sm_120: A100, RTX 30/40, H100, B100/B200, RTX 50-series, RTX 6000 Pro Blackwell) and natively on aarch64 (GB10 / Grace, DGX Spark). Two images are published to `docker.io/unsloth",
+    "url": "https://github.com/unslothai/unsloth/pull/5748",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 52",
+      "pull request",
+      "repo: unsloth"
     ]
   }
 ]
