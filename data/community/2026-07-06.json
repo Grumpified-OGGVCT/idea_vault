@@ -540,7 +540,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-07-06T03:24:46Z",
+    "date": "2026-07-06T07:58:26Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-06T03:16:28Z",
+    "date": "2026-07-06T08:17:44Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-06T03:00:43Z",
+    "date": "2026-07-06T07:51:46Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -740,6 +740,222 @@
       "comments: 4",
       "pull request",
       "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "Standardize first-party model delivery across all backends (ModelDelivery)",
+    "date": "2026-07-06T06:08:22Z",
+    "summary": "## Why (from the #1339 incident + 2026-07-06 huddle)\n\nThe r/macapps launch incident proved the app's default model path depends on a third-party downloader (FluidAudio's) pointed at infrastructure we don't control (Hugging Face). We now own every ingredient of first-party delivery \u2014 pinned manifest,",
+    "url": "https://github.com/saurabhav88/EnviousWispr/issues/1348",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 12",
+      "state: open",
+      "repo: EnviousWispr"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-07-06T08:22:34Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/better-dx/pull/955",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: better-dx"
+    ]
+  },
+  {
+    "title": "[PR] Feat/v2 upgrade",
+    "date": "2026-07-06T08:17:20Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Local MCP server tools (memory, research, advisor, graph, bundle search), RLM sidecar, TurboVec vector service, screenshot & crawl endpoints, and procedural-memory CRUD.\n\n* *",
+    "url": "https://github.com/LVT382009/noxem/pull/17",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 118",
+      "pull request",
+      "repo: noxem"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): integrate @nexus-hems/ai-core into apps/web",
+    "date": "2026-07-06T08:14:06Z",
+    "summary": "## Summary\n\nCompletes Phase 2b by integrating `@nexus-hems/ai-core` into the `apps/web` AI client, encrypted key vault, settings UI, and local LLM worker.\n\n## Changes\n\n- **Refactored `apps/web/src/core/aiClient.ts`** to delegate to `UnifiedAIOrchestrator` + `AIProviderRegistry` instead of a hand-wri",
+    "url": "https://github.com/qnbs/Nexus-HEMS-Dash/pull/295",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 25",
+      "pull request",
+      "repo: Nexus-HEMS-Dash"
+    ]
+  },
+  {
+    "title": "[PR] Update maven (major)",
+    "date": "2026-07-06T08:10:44Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Netcracker/qubership-core-java-libs/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-java-libs"
+    ]
+  },
+  {
+    "title": "[PR] feat(openclaw): implement agent configuration for workspace preparation",
+    "date": "2026-07-06T08:10:21Z",
+    "summary": "## Summary\r\n- Replaces the `configurationFiles` and `preWorkspaceStart` stubs with a real implementation that writes the selected model into `openclaw.json` at `agents.defaults.model`, preserving existing configuration fields.\r\n\r\nFixes #2175\r\n\r\n## Testing\r\n\r\nupdated added a new baseimage override + ",
+    "url": "https://github.com/openkaiden/kaiden/pull/2193",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] Hub on Cloud Run: app, provisioning, landing page, deploy pipeline",
+    "date": "2026-07-06T08:04:55Z",
+    "summary": "## What's here\n\nFive commits taking Traego from local-only to a deployed cloud hub:\n\n1. **feat(ui)** \u2014 all design-review fixes: adopt flow UI (pairing code + roles), mobile drawer shell, focus-visible, self-hosted Inter, AA contrast, inline errors, AI nav always visible.\n2. **feat(backend)** \u2014 plain",
+    "url": "https://github.com/Traego/traego-os/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: traego-os"
+    ]
+  },
+  {
+    "title": "[PR] External Data Sources (runtime-proxied entities & queries)",
+    "date": "2026-07-06T07:58:12Z",
+    "summary": "## External Data Sources \u2014 runtime-proxied entities & queries\n\nLive, **read-only** access to external databases through MJ's standard data APIs. An Entity or Query that carries an `ExternalDataSourceID` is proxied live to a remote system via a pluggable driver and returned through the normal typed `",
+    "url": "https://github.com/MemberJunction/MJ/pull/2449",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(command-semantics): treat linter exit 1 as violations, not an error",
+    "date": "2026-07-06T07:58:08Z",
+    "summary": "## Summary\n\n- Add lint-aware exit-code semantics for `ruff` and `eslint` in both the Bash and PowerShell `commandSemantics` tables: exit 1 = \"violations found\" (not an error), 2+ = a real error \u2014 mirroring the existing `grep` / `diff` pattern.\n- `uvx` / `npx` wrapper invocations inherit the wrapped ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1846",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Opencode supports OpenAI SDK and Anthropic SDK API. Favorites ids are\u2026",
+    "date": "2026-07-06T07:56:57Z",
+    "summary": "## Summary\r\n\r\n1) Introduce distinction for Opencode Go models, as per documentation some of these shall be used via Anthropic-like connector (SDK) as per documentation https://opencode.ai/docs/go/#endpoints (Minimax and Qwen family)\r\nThese are still preserved over OpenAI-like connector (SDK) as thes",
+    "url": "https://github.com/Gitlawb/zero/pull/408",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: zero"
+    ]
+  },
+  {
+    "title": "[PR] fix(config): recover from a healthy backup when the global config is corrupt",
+    "date": "2026-07-06T07:56:17Z",
+    "summary": "## Summary\n\nA present-but-corrupt `~/.openclaude.json` takes `getConfig` down the `ConfigParseError` path, which either resets to defaults (silently discarding the user's settings) or re-throws \u2014 even though healthy timestamped backups exist in `~/.claude/backups`. Previously `getConfig` only consul",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1819",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(documents): opt-in docling VLM pipeline (DOCLING_PIPELINE/DOCLING_VLM_PRESET)",
+    "date": "2026-07-06T07:49:54Z",
+    "summary": "## What & why\r\n\r\nThe merged docling integration (ADR-031, v0.128) only ever triggers docling-serve's\r\n**standard** (classic OCR: EasyOCR/RapidOCR/Tesseract) pipeline \u2014 `convert_file()`\r\nnever sends a `pipeline` field, so docling-serve defaults to `standard`. A docling-serve\r\ndeployment running **VLM",
+    "url": "https://github.com/cbcoutinho/nextcloud-mcp-server/pull/1024",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: nextcloud-mcp-server"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes,vscode): add Gmail tool node + Google user-OAuth broker (RR-1055, RR-1142)",
+    "date": "2026-07-06T07:47:17Z",
+    "summary": "## Summary\n\n- Add `tool_gmail` node exposing 61 Gmail v1 API operations as agent tools: read/search/organize mail, labels, drafts, filters, send (incl. HTML + attachments + in-thread replies), settings (IMAP/POP/vacation/forwarding/delegates/send-as/S-MIME), push notifications, and gated hard-delete",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/1334",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] fix(provider): add Use Anthropic option to switch back from third-party profiles",
+    "date": "2026-07-06T07:44:34Z",
+    "summary": "Fixes #1426\n\n## Problem\n\nOnce any third-party provider profile is active, `/provider` offers no way back to built-in Anthropic. `getActiveProviderProfile` falls back to `profiles[0]` whenever `activeProviderProfileId` is unset, so clearing the active id still re-selects a saved profile. The only esc",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1429",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(diff): don't overcount new-file additions by the trailing newline",
+    "date": "2026-07-06T07:41:52Z",
+    "summary": "## Summary\n\n`countLinesChanged` has a dedicated branch for new files (used by `FileWriteTool` when writing a file that did not exist), which counts every content line as an addition:\n\n```ts\nif (patch.length === 0 && newFileContent) {\n  // For new files, count all lines as additions\n  numAdditions = ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1873",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(websearch): match allowed/blocked domains case-insensitively",
+    "date": "2026-07-06T07:39:26Z",
+    "summary": "## Summary\n\n`hostMatchesDomain` gates the client-side WebSearch domain filter (`applyDomainFilters`, used by the brave / duckduckgo / custom / firecrawl providers). It compared the request host against the caller's `allowed_domains` / `blocked_domains` entries with a raw `===` / `endsWith`:\n\n```ts\ne",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1872",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the go-dependencies group across 1 directory with 6 updates",
+    "date": "2026-07-06T07:35:49Z",
+    "summary": "Bumps the go-dependencies group with 6 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [github.com/ClickHouse/clickhouse-go/v2](https://github.com/ClickHouse/clickhouse-go) | `2.46.0` | `2.47.0` |\n| [github.com/databricks/databricks-sql-go](https://github.com/databricks/da",
+    "url": "https://github.com/cloud-shuttle/drover-sqlforge/pull/27",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: drover-sqlforge"
+    ]
+  },
+  {
+    "title": "[PR] linux: 100% UI-parity packet coverage + deferred-stub wiring + live gateway chat, packaged proof green",
+    "date": "2026-07-06T07:31:38Z",
+    "summary": "## What this is\n\nEight verified lanes closing the Linux desktop's remaining macOS-parity gaps, merged into one validated integration branch. Every lane was implemented in an isolated worktree (Codex gpt-5.5 under CMUX), independently verified by a separate review agent (all checks re-run, diffs adve",
+    "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1273",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: BurnBar"
     ]
   }
 ]
