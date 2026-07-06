@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-06T08:17:44Z",
+    "date": "2026-07-06T22:12:15Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-06T20:22:22Z",
+    "date": "2026-07-06T21:46:16Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-07-06T20:50:06Z",
+    "date": "2026-07-06T22:10:40Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] python3Packages.python-pkcs11: 0.9.3 -> 0.9.4",
-    "date": "2026-07-06T01:18:44Z",
+    "date": "2026-07-06T22:13:42Z",
     "summary": "Diff: https://github.com/danni/python-pkcs11/compare/v0.9.3...v0.9.4\r\n\r\nChangelog: https://github.com/pyauth/python-pkcs11/releases/tag/v0.9.4\r\n\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or descri",
     "url": "https://github.com/NixOS/nixpkgs/pull/509720",
     "source": "github_prs",
@@ -1284,7 +1284,7 @@
   },
   {
     "title": "[PR] feat: add more e2e tests to frontend",
-    "date": "2026-07-06T20:42:33Z",
+    "date": "2026-07-06T21:08:36Z",
     "summary": "This pull request introduces several updates to the project's Docker configuration and frontend dependencies. The main focus is on switching Docker services from using pre-built images to building them locally, and on adding new logging-related dependencies to the frontend.\r\n\r\n**Docker configuration",
     "url": "https://github.com/langflow-ai/openrag/pull/1458",
     "source": "github_prs",
@@ -1296,7 +1296,7 @@
   },
   {
     "title": "[PR] Updated to the latest version of the current project",
-    "date": "2026-07-06T18:45:05Z",
+    "date": "2026-07-06T21:36:42Z",
     "summary": "#### What roadmap does this PR target?\r\n\r\n- [ ] Frontend Roadmap\r\n- [ ] Backend Roadmap\r\n- [ ] DevOps Roadmap\r\n- [x] All Roadmaps\r\n\r\n#### Please acknowledge the items listed below\r\n\r\n- [ ] I have discussed this contribution and got a go-ahead in an issue before opening this pull request.\r\n- [ ] This",
     "url": "https://github.com/Diego-18/developer-roadmap/pull/1",
     "source": "github_prs",
@@ -1320,12 +1320,12 @@
   },
   {
     "title": "[PR] fix(inference): honor compatible-endpoint max_model_len for Hermes context (#6177)",
-    "date": "2026-07-06T18:21:51Z",
+    "date": "2026-07-06T22:12:48Z",
     "summary": "## Summary\n\nCompatible-endpoint / custom onboarding never probed the endpoint's runtime context window, and the Hermes image/config carried no context setting. A self-hosted vLLM endpoint serving a NemotronH model (`max_model_len=65536`) therefore fell back to a ~4K architecture default, and Hermes ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/6293",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 11",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -1368,7 +1368,7 @@
   },
   {
     "title": "[PR] fix(integration-engine): sample template-var child fields at discovery",
-    "date": "2026-07-06T20:36:53Z",
+    "date": "2026-07-06T22:02:06Z",
     "summary": "## Problem (verified empirically)\nA **template-var child** object \u2014 one whose API path nests under a parent, e.g. `/orgs/{OrgId}/events` \u2014 resolves its parent IDs through `LoadParentIDs`, which reads the **synced** DB (`RunView` on the parent's MJ entity). At **discovery** time nothing is synced yet",
     "url": "https://github.com/MemberJunction/MJ/pull/3049",
     "source": "github_prs",
@@ -1392,12 +1392,12 @@
   },
   {
     "title": "[PR] feat: cross-app shell parity \u2014 shared command palette, course switcher, AI-status chips (#764)",
-    "date": "2026-07-06T20:55:00Z",
+    "date": "2026-07-06T21:00:52Z",
     "summary": "## Summary\r\n\r\nImplements the full **cross-platform feature-parity backlog (#764)** \u2014 every gap where the redesigned QuestionMaker (and AI Tutor) had shell features that Core lacked \u2014 and goes further by extracting the three shared shell features into `@eduai/ui` so **Core, QuestionMaker, and AI Tuto",
     "url": "https://github.com/EduAI-Lab/EduAI/pull/901",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 1",
       "pull request",
       "repo: EduAI"
     ]
@@ -1472,6 +1472,126 @@
       "comments: 49",
       "pull request",
       "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Client-side document processing for local providers (v3.8.0)",
+    "date": "2026-07-06T22:15:50Z",
+    "summary": "Adds document/folder attachments for LM Studio and Ollama. Documents are extracted to text and searched in the browser with embeddings \u2014 nothing is uploaded to a cloud service, and only the passages relevant to each question are sent, so a whole folder no longer overflows local context. OpenAI (vect",
+    "url": "https://github.com/h1ddenpr0cess20/wordmark/pull/57",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: wordmark"
+    ]
+  },
+  {
+    "title": "[PR] port(omniroute): add local and router providers",
+    "date": "2026-07-06T22:14:32Z",
+    "summary": "## Summary\n- Port OmniRoute local/self-hosted/router provider IDs: `9router`, `auto`, `codex-cloud`, `docker-model-runner`, `lemonade`, `llama-cpp`, `llamafile`, `lm-studio`, `oobabooga`, `opencode-zen`, `triton`, `vllm`, `xinference`, and `zed`.\n- Add local default URL handling and no-auth optional",
+    "url": "https://github.com/bloodf/durindoor/pull/65",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: durindoor"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker images",
+    "date": "2026-07-06T22:04:01Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | minor | `v3.6.5` \u2192 `v3.7.1` |\n| docker.io/wger/server | digest | `2c4686f` \u2192 `1cdb4a2` |\n| [ghcr.io/coder/coder](https://redire",
+    "url": "https://github.com/morten-olsen/homelab-apps/pull/305",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-apps"
+    ]
+  },
+  {
+    "title": "[PR] fix(integration-engine): custom-column promotion lock (U3) + opt-in reclaim planner (U7)",
+    "date": "2026-07-06T22:00:45Z",
+    "summary": "The last upstream (engine) gap in the custom-column lifecycle. Two **pure decision functions** in `CustomColumnPromotion.ts` \u2014 the engine **plans**, the consumer (MJC) **executes**. No migration; no behavior change unless a caller passes the new options.\n\n## U3 \u2014 hold promotion until a full sync\n`pl",
+    "url": "https://github.com/MemberJunction/MJ/pull/3061",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix: auto-detect provider, validate key, and smoke-test first-run setup",
+    "date": "2026-07-06T21:55:04Z",
+    "summary": "Fixes #2679\n\n## Summary\n\nTurns the first-run onboarding wizard from a blind numeric menu into a verified, environment-aware flow \u2014 getting the user to a **working** agent in as few keystrokes as possible.\n\n- **Auto-detect**: leads with any provider whose `*_API_KEY` is already in the environment (\"D",
+    "url": "https://github.com/MervinPraison/PraisonAI/pull/2680",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: PraisonAI"
+    ]
+  },
+  {
+    "title": "[PR] Document fully local provider setup and first-memory placement",
+    "date": "2026-07-06T21:51:05Z",
+    "summary": "I went through the 60-second quickstart as a fresh user on a machine with no OpenAI key, which is the exact user the README's \"Self-hosted providers keep that traffic inside your boundary\" line speaks to. Steps 1 through 4 worked as documented. Getting from there to a promoted fact on a fully local ",
+    "url": "https://github.com/markhuangai/dense-mem/pull/67",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dense-mem"
+    ]
+  },
+  {
+    "title": "[PR] Test/s12 ir explanation",
+    "date": "2026-07-06T21:41:24Z",
+    "summary": "## Branch Progress Summary\r\n\r\nThis branch delivers a substantial integration of chatbot capabilities along with multiple merge syncs from `development`.\r\n\r\n### 1. Chatbot feature delivery (M1 track)\r\n- Added backend chatbot endpoints:\r\n  - `GET /chatbot/health`\r\n  - `POST /chatbot/query`\r\n- Added fr",
+    "url": "https://github.com/Arid-Nova/mvp-pipeline-client/pull/57",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: mvp-pipeline-client"
+    ]
+  },
+  {
+    "title": "[PR] CAMEL-23382: camel-ai-tool - create unified AI tool component",
+    "date": "2026-07-06T21:37:54Z",
+    "summary": "Step 1: Create the new camel-ai-tool module with AiToolSpec, AiToolRegistry, consumer endpoint, and full tests. No changes to existing modules.\r\n\r\n# Description\r\n\r\n## Summary\r\n\r\nCreate the new `camel-ai-tool` module with the unified AI tool abstraction layer:\r\n  - `AiToolSpec` \u2014 vendor-neutral tool ",
+    "url": "https://github.com/apache/camel/pull/24473",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency pydantic-ai to v1.102.0 [security]",
+    "date": "2026-07-06T21:32:11Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pydantic-ai](https://redire",
+    "url": "https://github.com/ilanbenb/wa_llm/pull/149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: wa_llm"
+    ]
+  },
+  {
+    "title": "[PR] feat: multimodal embeddings",
+    "date": "2026-07-06T21:13:56Z",
+    "summary": "## Summary\n\nThis PR introduces comprehensive multimodal embedding support across the Bifrost platform, enabling text, image, audio, video, and file inputs for embedding generation. The implementation standardizes embedding input handling through a new `Contents` structure while maintaining backward ",
+    "url": "https://github.com/maximhq/bifrost/pull/2559",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: bifrost"
     ]
   }
 ]
