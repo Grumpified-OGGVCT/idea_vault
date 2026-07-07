@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-07-07T20:56:49Z",
+    "date": "2026-07-07T22:14:36Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-07T21:29:02Z",
+    "date": "2026-07-07T22:50:53Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -672,12 +672,12 @@
   },
   {
     "title": "[PR] ILLEGAL FOLDERS and JUNK DRAWER cleanup via **logan/obsidian** branch ",
-    "date": "2026-07-06T22:51:05Z",
+    "date": "2026-07-07T22:43:31Z",
     "summary": "Logan moved files around - don't triage today.\n\n<!-- tenki:walkthrough:start -->\n## Tenki walkthrough\n\nThis PR adds a comprehensive suite of vault management, security automation, and credential hygiene scripts across Windows (PowerShell/Batch) and Unix (Python/Bash) platforms. It establishes 1Passw",
     "url": "https://github.com/LAF-US/IDAHO-VAULT/pull/563",
     "source": "github_prs",
     "highlights": [
-      "comments: 54",
+      "comments: 61",
       "pull request",
       "repo: IDAHO-VAULT"
     ]
@@ -732,12 +732,12 @@
   },
   {
     "title": "[PR] fix(inference): honor compatible-endpoint max_model_len for Hermes context (#6177)",
-    "date": "2026-07-07T21:37:41Z",
+    "date": "2026-07-07T22:58:17Z",
     "summary": "## Summary\n\nCompatible-endpoint / custom onboarding never probed the endpoint's runtime context window, and the Hermes image/config carried no context setting. A self-hosted vLLM endpoint serving a NemotronH model (`max_model_len=65536`) therefore fell back to a ~4K architecture default, and Hermes ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/6293",
     "source": "github_prs",
     "highlights": [
-      "comments: 19",
+      "comments: 28",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -840,12 +840,12 @@
   },
   {
     "title": "[PR] feat(providers): add OllamaCloudProvider with dynamic model discovery and context limits",
-    "date": "2026-07-07T03:38:47Z",
+    "date": "2026-07-07T22:49:37Z",
     "summary": "## Summary\r\n\r\nAdds a dedicated `OllamaCloudProvider` that wraps the existing `OpenAiProvider` for chat completions while querying Ollama-native endpoints for dynamic model discovery and context-limit lookup.\r\n\r\nOllama Cloud hosts a rotating catalog of models. Without a dedicated provider, goose quer",
     "url": "https://github.com/aaif-goose/goose/pull/10264",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 3",
       "pull request",
       "repo: goose"
     ]
@@ -1176,7 +1176,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-07T17:16:48Z",
+    "date": "2026-07-07T22:12:05Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1440,7 +1440,7 @@
   },
   {
     "title": "[PR] fix(command-semantics): cover remaining linter runner exits",
-    "date": "2026-07-07T20:53:52Z",
+    "date": "2026-07-07T22:21:30Z",
     "summary": "## What & why\n\nThis continues the `#1436` command-semantics work after `#1846` landed the core `ruff` / `eslint` + `uvx` / `npx` fix.\n\n`#1436` also calls out additional linters, test runners, compiler-style diagnostics, and runner forms that still fell back to default non-zero-exit handling. That ma",
     "url": "https://github.com/Gitlawb/openclaude/pull/1700",
     "source": "github_prs",
@@ -1608,7 +1608,7 @@
   },
   {
     "title": "[PR] feat(dcode): add backend-neutral OTLP observability",
-    "date": "2026-07-07T21:34:07Z",
+    "date": "2026-07-07T22:28:01Z",
     "summary": "## Summary\n\nAdd opt-in, backend-neutral observability for LangChain Deep Agents Code. Root-owned NeMo Relay instrumentation exports bounded model and tool content to a fixed host-local OTLP receiver, while an operator-owned collector holds backend credentials and forwards traces to LangSmith or anot",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/6340",
     "source": "github_prs",
@@ -1632,7 +1632,7 @@
   },
   {
     "title": "[PR] * Accept [Tool results received] as continuation marker",
-    "date": "2026-07-07T21:17:30Z",
+    "date": "2026-07-07T21:57:45Z",
     "summary": "## Summary\r\n\r\nWhen using OpenAI compatible LLM provider like llama-cpp running on non-local address (even with domain), there is a problem - pipeline may stop after tool call. [Tool results received] message appears in console.\r\n\r\nNow we accepts [Tool results received] as continuation marker to allo",
     "url": "https://github.com/Gitlawb/openclaude/pull/1891",
     "source": "github_prs",
@@ -1644,7 +1644,7 @@
   },
   {
     "title": "[PR] fix(open-app): robust Open-App metadata teardown on remove/reinstall",
-    "date": "2026-07-07T21:17:12Z",
+    "date": "2026-07-07T21:59:49Z",
     "summary": "## Problem\r\n\r\n`RemoveAppEntityMetadata` (in `@memberjunction/open-app-engine`) had two independent gaps that made Open-App **remove \u2192 reinstall** unreliable:\r\n\r\n1. **Under-deletes entity-dependent metadata.** It cleared a hardcoded ~6 of `Entity`'s dependents via the entity layer. On a real DB `__mj",
     "url": "https://github.com/MemberJunction/MJ/pull/3053",
     "source": "github_prs",
@@ -1680,12 +1680,12 @@
   },
   {
     "title": "[PR] feat: cross-app shell parity \u2014 shared command palette, course switcher, AI-status chips (#764)",
-    "date": "2026-07-07T20:58:23Z",
+    "date": "2026-07-07T22:55:24Z",
     "summary": "## Summary\r\n\r\nImplements the full **cross-platform feature-parity backlog (#764)** \u2014 every gap where the redesigned QuestionMaker (and AI Tutor) had shell features that Core lacked \u2014 and goes further by extracting the three shared shell features into `@eduai/ui` so **Core, QuestionMaker, and AI Tuto",
     "url": "https://github.com/EduAI-Lab/EduAI/pull/901",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: EduAI"
     ]
@@ -1712,6 +1712,114 @@
       "comments: 0",
       "pull request",
       "repo: AskRex-Assistant"
+    ]
+  },
+  {
+    "title": "[PR] fix(security): harden multi-tenant surfaces",
+    "date": "2026-07-07T23:05:16Z",
+    "summary": "## Summary\n\nRebases the security-hardening sweep onto `release-1.11.0` while preserving the individual commit series.\n\n## Security fixes introduced beyond `release-1.11.0`\n\n- Hardens code-execution surfaces with authenticated-flow component blocking, expanded code-exec aliases, agentic assistant cod",
+    "url": "https://github.com/langflow-ai/langflow/pull/13530",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 30",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] Support Azure OpenAI & refonte DI IA/RAG",
+    "date": "2026-07-07T23:02:15Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **Nouvelles fonctionnalit\u00e9s**\n  * Ajout d\u2019une assistance IA pour g\u00e9n\u00e9rer des notes et des r\u00e9sum\u00e9s, avec prise en charge de deux modes de d\u00e9ploiement : service cloud ou mod\u00e8le local.\n  * L\u2019applic",
+    "url": "https://github.com/benamarfaiez/AssetFlow_Core/pull/30",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AssetFlow_Core"
+    ]
+  },
+  {
+    "title": "[PR] Deploy soilKey Pro to Cloud Run (soilkeypro.com) + online Groq Assistant",
+    "date": "2026-07-07T22:46:54Z",
+    "summary": "## Summary\n\nAdds the deployment configuration for the **soilKey Pro Shiny app** and makes the deployed app use **online AI** for the Assistant chat and the Photo tab's Munsell/VLM extraction. The app is already live at **https://soilkeypro.com** (Google Cloud Run, `us-east1`).\n\n## What's in here\n\n**",
+    "url": "https://github.com/HugoMachadoRodrigues/soilKey/pull/142",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: soilKey"
+    ]
+  },
+  {
+    "title": "[PR] chore(mcp): sync MCP schema",
+    "date": "2026-07-07T22:40:33Z",
+    "summary": "Automated update of MCP schema from modelcontextprotocol/modelcontextprotocol.\n\n## What changed\n\nAdded `SubscriptionsListenResult` and `SubscriptionsListenResultMeta` types to the MCP schema. These represent the response to a `subscriptions/listen` request, signalling that a subscription stream has ",
+    "url": "https://github.com/inference-gateway/schemas/pull/105",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: schemas"
+    ]
+  },
+  {
+    "title": "[PR] feat: Unified Ctrl+K command palette (omnibar) on a pluggable OmnibarProvider registry",
+    "date": "2026-07-07T22:40:32Z",
+    "summary": "Implements **H1 of the composer adoption proposal** (`plans/composer-adoption/proposal.md`): one Ctrl+K command palette replaces Explorer's three overlapping quick-switchers \u2014 the header search composite, the Ctrl+/ app command palette, and the legacy per-entity search popup.\n\n## Feature flag \u2014 A/B-",
+    "url": "https://github.com/MemberJunction/MJ/pull/3042",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Opencode supports OpenAI SDK and Anthropic SDK API. Favorites ids are\u2026",
+    "date": "2026-07-07T22:38:51Z",
+    "summary": "## Summary\r\n\r\n1) Introduce distinction for Opencode Go models, as per documentation some of these shall be used via Anthropic-like connector (SDK) as per documentation https://opencode.ai/docs/go/#endpoints (Minimax and Qwen family)\r\nThese are still preserved over OpenAI-like connector (SDK) as thes",
+    "url": "https://github.com/Gitlawb/zero/pull/408",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: zero"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker images",
+    "date": "2026-07-07T22:33:47Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | minor | `v3.6.5` \u2192 `v3.7.1` |\n| docker.io/wger/server | digest | `2c4686f` \u2192 `1cdb4a2` |\n| [ghcr.io/coder/coder](https://redire",
+    "url": "https://github.com/morten-olsen/homelab-apps/pull/308",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-apps"
+    ]
+  },
+  {
+    "title": "[PR] Update langflowai/langflow Docker tag to v1.10.2",
+    "date": "2026-07-07T22:16:23Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [langflowai/langflow](https://redirect.github.com/langflow-ai/langflow) | minor | `1.7.3` \u2192 `1.10.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies ",
+    "url": "https://github.com/OwnYourIO/SpencersLab/pull/649",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: SpencersLab"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go/modules/postgres to v0.43.0",
+    "date": "2026-07-07T21:54:48Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go/modules/postgres](https://redirect.github.com/testcont",
+    "url": "https://github.com/infratographer/metadata-api/pull/303",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: metadata-api"
     ]
   }
 ]
