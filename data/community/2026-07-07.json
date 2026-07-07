@@ -144,12 +144,12 @@
   },
   {
     "title": "Standardize first-party model delivery across all backends (ModelDelivery)",
-    "date": "2026-07-06T18:21:07Z",
+    "date": "2026-07-07T05:38:00Z",
     "summary": "## Why (from the #1339 incident + 2026-07-06 huddle)\n\nThe r/macapps launch incident proved the app's default model path depends on a third-party downloader (FluidAudio's) pointed at infrastructure we don't control (Hugging Face). We now own every ingredient of first-party delivery \u2014 pinned manifest,",
     "url": "https://github.com/saurabhav88/EnviousWispr/issues/1348",
     "source": "github_issues",
     "highlights": [
-      "comments: 17",
+      "comments: 18",
       "state: open",
       "repo: EnviousWispr"
     ]
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-07-07T03:14:02Z",
+    "date": "2026-07-07T08:19:01Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-07T04:27:01Z",
+    "date": "2026-07-07T08:22:18Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -780,7 +780,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-07-07T04:44:18Z",
+    "date": "2026-07-07T08:23:21Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -956,6 +956,210 @@
       "comments: 0",
       "pull request",
       "repo: the-book-of-secret-knowledge"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency testcontainers to v12",
+    "date": "2026-07-07T08:25:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [testcontainers](https://red",
+    "url": "https://github.com/icereed/paperless-gpt/pull/432",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: paperless-gpt"
+    ]
+  },
+  {
+    "title": "[PR] fix(query-guard): exclude human-interaction wait from session timeout",
+    "date": "2026-07-07T08:25:48Z",
+    "summary": "Fixes #1878\n\n## What changed and why\n\nThe session query watchdog (`QueryGuard`) counts the time a query spends blocked on a user decision toward its idle timeout (5 min). While a query is legitimately waiting on a permission prompt, `AskUserQuestion`, or plan-mode selection, no lease is held, so aft",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1879",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] perf(boot): don't boot a throwaway runtime before onboarding",
+    "date": "2026-07-07T08:21:30Z",
+    "summary": "## Problem\n\nOn a genuinely-fresh install, the server-only boot (`startEliza`, `packages/app-core/src/runtime/eliza.ts`) bound the API and then **always booted a full default agent runtime** \u2014 PGlite open (~503ms), migrations, plugin-sql registration, default character build, services \u2014 even though t",
+    "url": "https://github.com/elizaOS/eliza/pull/15260",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "[PR] feat(rag): parse PDF links via web fetch and crawling (AYC-266)",
+    "date": "2026-07-07T08:08:31Z",
+    "summary": "## AYC-266 \u2014 Support PDF parsing via web fetch\n\nFetching a URL that points to a PDF previously failed: `CheerioUrlRetrieverHandler` rejected any non-HTML/text response with `UnsupportedContentTypeError`. As a result the `website_content` tool errored on PDF links and the knowledge-base crawler silen",
+    "url": "https://github.com/ayunis-core/ayunis-core/pull/880",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: ayunis-core"
+    ]
+  },
+  {
+    "title": "[PR] fix(command-semantics): treat linter exit 1 as violations, not an error",
+    "date": "2026-07-07T08:02:49Z",
+    "summary": "## Summary\n\n- Add lint-aware exit-code semantics for `ruff` and `eslint` in both the Bash and PowerShell `commandSemantics` tables: exit 1 = \"violations found\" (not an error), 2+ = a real error \u2014 mirroring the existing `grep` / `diff` pattern.\n- `uvx` / `npx` wrapper invocations inherit the wrapped ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1846",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-07T07:58:10Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/GlacierEQ/kilocode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] fix(config): recover from a healthy backup when the global config is corrupt",
+    "date": "2026-07-07T07:54:42Z",
+    "summary": "## Summary\n\nA present-but-corrupt `~/.openclaude.json` takes `getConfig` down the `ConfigParseError` path, which either resets to defaults (silently discarding the user's settings) or re-throws \u2014 even though healthy timestamped backups exist in `~/.claude/backups`. Previously `getConfig` only consul",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1819",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(provider): add Use Anthropic option to switch back from third-party profiles",
+    "date": "2026-07-07T07:53:09Z",
+    "summary": "Fixes #1426\n\n## Problem\n\nOnce any third-party provider profile is active, `/provider` offers no way back to built-in Anthropic. `getActiveProviderProfile` falls back to `profiles[0]` whenever `activeProviderProfileId` is unset, so clearing the active id still re-selects a saved profile. The only esc",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1429",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(provider): add Cloudflare Workers AI integration (#1100)",
+    "date": "2026-07-07T07:47:56Z",
+    "summary": "## Summary\n\nAdds Cloudflare Workers AI as a first-class OpenAI-compatible provider preset, mirroring the Venice (#1109) / Xiaomi MiMo (#1152) descriptor pattern.\n\n- New `src/integrations/vendors/cloudflare.ts` descriptor:\n  - `classification: 'openai-compatible'`\n  - Default base URL with literal `<",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1178",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 18",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Bound provider calls and reclaim expired leases in services gateway",
+    "date": "2026-07-07T07:38:49Z",
+    "summary": "Fixes #23\r\n\r\nA hung litellm HTTP call never returns, so its gateway lease was held until the owning process died. With the machine-wide LLM cap of 2, two hung calls froze every skill in every process for the full 3600s wait timeout. Observed after switching `LLM_MODEL` to a cloud provider: a stalled",
+    "url": "https://github.com/ducroo/SICTIC-AI/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: SICTIC-AI"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-07T07:37:24Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/adhitiad/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-07T07:33:13Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-07T07:33:09Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-07T07:33:02Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/gmifsud/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-07T07:32:59Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/facemendous/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-07T07:32:59Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/MAlkabbani/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-07T07:32:58Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
     ]
   }
 ]
