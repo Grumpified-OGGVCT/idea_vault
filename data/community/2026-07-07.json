@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-07-06T23:53:02Z",
+    "date": "2026-07-07T03:14:02Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-06T23:49:41Z",
+    "date": "2026-07-07T04:27:01Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] Support any OpenAI-compatible LLM endpoint for summarization",
-    "date": "2026-07-06T23:31:55Z",
+    "date": "2026-07-07T04:44:06Z",
     "summary": "## Summary\n\nRefactored the summarization system to work with any OpenAI-compatible chat-completions endpoint, eliminating provider-specific code paths. This enables support for cloud services (Groq, OpenAI, Gemini), local model servers (llama.cpp, Ollama, LM Studio, vLLM), and custom endpoints throu",
     "url": "https://github.com/jonocodes/savr/pull/59",
     "source": "github_prs",
@@ -740,6 +740,222 @@
       "comments: 14",
       "pull request",
       "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "MCP Agent",
+    "date": "2026-06-12T02:02:14Z",
+    "summary": "# 1. MCP \u534f\u8bae\u6982\u8ff0\n\n## 1.1 MCP \u7684\u5b9a\u4e49\u3001\u76ee\u6807\u548c\u8bbe\u8ba1\u7406\u5ff5\n\n### \u4ec0\u4e48\u662f MCP \u534f\u8bae\n\n**Model Context Protocol (MCP)** \u662f\u7531 Anthropic \u8bbe\u8ba1\u7684\u5f00\u653e\u534f\u8bae\uff0c\u4e13\u95e8\u7528\u4e8e\u8fde\u63a5 AI \u52a9\u624b\u4e0e\u5916\u90e8\u6570\u636e\u6e90\u548c\u5de5\u5177\u3002MCP \u7684\u6838\u5fc3\u76ee\u6807\u662f\u4e3a AI Agent \u63d0\u4f9b\u4e00\u4e2a\u6807\u51c6\u5316\u3001\u5b89\u5168\u4e14\u53ef\u6269\u5c55\u7684\u65b9\u5f0f\u6765\u8bbf\u95ee\u5916\u90e8\u8d44\u6e90\u3002\n\n### \u8bbe\u8ba1\u7406\u5ff5\n\nMCP \u534f\u8bae\u9075\u5faa\u4ee5\u4e0b\u6838\u5fc3\u8bbe\u8ba1\u7406\u5ff5\uff1a\n\n1. **\u6807\u51c6\u5316\u63a5\u53e3**\uff1a\u5b9a\u4e49\u7edf\u4e00\u7684\u6d88\u606f\u683c\u5f0f\u548c\u4ea4\u4e92\u6a21\u5f0f\n1. **\u5b89\u5168\u7b2c\u4e00**\uff1a\u5185\u7f6e\u6743\u9650\u63a7\u5236\u548c\u6570\u636e\u9694\u79bb\u673a\u5236\n1. **\u53ef\u6269\u5c55\u6027**\uff1a\u652f\u6301\u81ea\u5b9a\u4e49\u8d44\u6e90\u7c7b\u578b\u548c\u5de5\u5177\u6269\u5c55\n1. **\u7b80\u5355\u6613\u7528**",
+    "url": "https://github.com/hyz0906/paper/issues/16",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 20",
+      "state: open",
+      "repo: paper"
+    ]
+  },
+  {
+    "title": "[PR] feat(settings): add settings-based subscription override and agy terminal support",
+    "date": "2026-07-07T04:47:18Z",
+    "summary": "## Summary\n\nAdds first-class support for setting-based subscription overrides and improves detection of the Antigravity (`agy`) terminal.\n\n### Key Changes\n1. **Subscription Override Setting**: Added `subscriptionType` (`'free' | 'pro' | 'max' | 'team' | 'enterprise'`) to `SettingsSchema` in `src/uti",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1731",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): ship a zero-warning, minimal install",
+    "date": "2026-07-07T04:45:57Z",
+    "summary": "The published package declared 62 runtime `dependencies`, but `dist/cli.mjs` is a fully-bundled esbuild output that inlines almost all of them. End users therefore installed ~476 transitive packages \u2014 including three subtrees the bundle never needs at install time, each emitting an install warning:\r",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1784",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Model Engine with restore KV",
+    "date": "2026-07-07T04:44:18Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
+    "url": "https://github.com/dAppCore/go-inference/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: go-inference"
+    ]
+  },
+  {
+    "title": "[PR] fix(opencode-go): surface clear error on subscription quota exhaustion",
+    "date": "2026-07-07T04:38:10Z",
+    "summary": "## Summary\n\nThe opencode.ai/zen/go gateway returns `429` with `GoUsageLimitError` in the response body when a user's Go subscription quota runs out. Previously these fell through to the generic `Request rejected (429)` path, causing the CLI to \"mysteriously stop working\" with no actionable hint for ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1749",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(ingest): apply subtitle drop_phrases/scrub_phrases before embedding (#545)",
+    "date": "2026-07-07T03:58:47Z",
+    "summary": "## Problem\n\n`media.subtitles.drop_phrases` / `scrub_phrases` (via `subtitle.DropSet`) previously cleaned **only the exported SRT/VTT sidecar** \u2014 `subtitle.CleanCues` is called solely from `internal/cli/export.go`. The same whisper keyword-spam cues (e.g. `\"\u0414\u043e\u043d\u0431\u0430\u0441\u0441, \u041a\u0440\u044b\u043c, \u0423\u043a\u0440\u0430\u0438\u043d\u0430, \u041d\u0410\u0422\u041e\"`, ~35% of cue",
+    "url": "https://github.com/dirstral/dir2mcp/pull/548",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dir2mcp"
+    ]
+  },
+  {
+    "title": "[PR] \u56de\u5408\u6700\u65b0Harbor\u5230bitfun-harbor",
+    "date": "2026-07-07T03:43:01Z",
+    "summary": "",
+    "url": "https://github.com/JinnanDuan/bitfun-harbor/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: bitfun-harbor"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker images",
+    "date": "2026-07-07T03:40:11Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | minor | `v3.6.5` \u2192 `v3.7.1` |\n| docker.io/wger/server | digest | `2c4686f` \u2192 `1cdb4a2` |\n| [ghcr.io/coder/coder](https://redire",
+    "url": "https://github.com/morten-olsen/homelab-apps/pull/305",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-apps"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): add OllamaCloudProvider with dynamic model discovery and context limits",
+    "date": "2026-07-07T03:38:47Z",
+    "summary": "## Summary\r\n\r\nAdds a dedicated `OllamaCloudProvider` that wraps the existing `OpenAiProvider` for chat completions while querying Ollama-native endpoints for dynamic model discovery and context-limit lookup.\r\n\r\nOllama Cloud hosts a rotating catalog of models. Without a dedicated provider, goose quer",
+    "url": "https://github.com/aaif-goose/goose/pull/10264",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: goose"
+    ]
+  },
+  {
+    "title": "[PR] fix(scheduling): auto-restart polling when a job is activated after boot",
+    "date": "2026-07-07T02:57:14Z",
+    "summary": "## Summary\n- MJAPI suspends scheduled-job polling at boot when there are zero active jobs and never re-armed the timer when a job was later activated \u2014 so a job silently never ran until an MJAPI restart. This wakes the poller on activation.\n- Adds a `JobsChanged$` seam on `SchedulingEngineBase`, emi",
+    "url": "https://github.com/MemberJunction/MJ/pull/3062",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] \ud83d\udee1\ufe0f Sentinel: [HIGH] Prevent SSRF redirect bypass in Ollama URL fetch",
+    "date": "2026-07-07T02:52:48Z",
+    "summary": "\ud83d\udea8 Severity: HIGH\n\ud83d\udca1 Vulnerability: SSRF via HTTP Redirects. The `urllib.request.urlopen` function follows HTTP redirects by default. While the IP addresses are checked against link-local/metadata IP lists prior to fetching the URL, an attacker can host a server that initially resolves to a safe IP bu",
+    "url": "https://github.com/alexpp90/homebrew-photo-selector-toolbox/pull/333",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: homebrew-photo-selector-toolbox"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-07-07T02:44:10Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] \ud83d\udee1\ufe0f Sentinel: [CRITICAL] Fix Server-Side Request Forgery (SSRF) vulnerability in AI Orchestrator",
+    "date": "2026-07-07T02:26:59Z",
+    "summary": "\ud83d\udea8 Severity: CRITICAL\n\ud83d\udca1 Vulnerability: The orchestrator previously utilized the standard Node.js `fetch` without robust IP validation. The application accepts dynamic API models which could allow an attacker to use SSRF to reach internal networks, cloud metadata endpoints, or exploit TOCTOU DNS rebin",
+    "url": "https://github.com/pkrRepo00/Intelligent_Notes/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Intelligent_Notes"
+    ]
+  },
+  {
+    "title": "[PR] Document fully local provider setup and first-memory placement",
+    "date": "2026-07-07T02:21:32Z",
+    "summary": "I went through the 60-second quickstart as a fresh user on a machine with no OpenAI key, which is the exact user the README's \"Self-hosted providers keep that traffic inside your boundary\" line speaks to. Steps 1 through 4 worked as documented. Getting from there to a promoted fact on a fully local ",
+    "url": "https://github.com/markhuangai/dense-mem/pull/67",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dense-mem"
+    ]
+  },
+  {
+    "title": "[PR] feat(openclaw): implement agent configuration for workspace preparation",
+    "date": "2026-07-07T02:15:44Z",
+    "summary": "## Summary\r\n- Replaces the `configurationFiles` and `preWorkspaceStart` stubs with a real implementation that writes the selected model into `openclaw.json` at `agents.defaults.model`, preserving existing configuration fields.\r\n\r\nFixes #2175\r\n\r\n## Testing\r\n\r\nupdated added placeholder image that i pu",
+    "url": "https://github.com/openkaiden/kaiden/pull/2193",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] feat(goose): implement agent configuration for workspace preparation",
+    "date": "2026-07-07T02:15:01Z",
+    "summary": "## Summary\r\n- Replaces the `configurationFiles` and `preWorkspaceStart` stubs with a real implementation that writes `GOOSE_MODEL` into `.goose/config.yaml` from the workspace context, preserving existing configuration fields.\r\n\r\nFixes #2174\r\n\r\n## Test plan\r\n\r\nIts wired up end to end with my prebuil",
+    "url": "https://github.com/openkaiden/kaiden/pull/2192",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image quay.io/go-skynet/local-ai ( v4.5.6 \u2794 v4.6.2 )",
+    "date": "2026-07-07T02:04:13Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [quay.io/go-skynet/local-ai](https://redirect.github.com/mudler/LocalAI) | minor | `v4.5.6-gpu-intel` \u2192 `v4.6.2-gpu-intel` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dash",
+    "url": "https://github.com/dstewen/talos-homelab/pull/1150",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: talos-homelab"
+    ]
+  },
+  {
+    "title": "[PR] Build Family Tree planning and Phase 1 foundation",
+    "date": "2026-07-07T01:47:57Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n- Add Family Tree planning, execution team, Phase 1 self-hosting, app scaffolding, Immich sync/dedup, and media deduplication regression tests.\n- Add quality guardrails: Biome, CI, OpenAPI docs, Dependabot, tests, and local AI/Docker tooling.\n- Add Wind",
+    "url": "https://github.com/FatihMaytalman/the-book-of-secret-knowledge/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: the-book-of-secret-knowledge"
     ]
   }
 ]
