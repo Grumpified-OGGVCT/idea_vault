@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] fix(sandbox): make workspace template seeding shell-serializable",
-    "date": "2026-07-07T17:06:41Z",
+    "date": "2026-07-07T20:56:49Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\n\r\nFixes `seed_default_workspace_templates` startup failures caused by a heredoc inside an `if` block failing to survive the `declare -f` / `bash -c` round-trip. The skip-bootstrap check now uses `node -e`, keeping the serialized shell function flat an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/3787",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-07T17:14:36Z",
+    "date": "2026-07-07T21:29:02Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -732,12 +732,12 @@
   },
   {
     "title": "[PR] fix(inference): honor compatible-endpoint max_model_len for Hermes context (#6177)",
-    "date": "2026-07-07T19:52:18Z",
+    "date": "2026-07-07T21:37:41Z",
     "summary": "## Summary\n\nCompatible-endpoint / custom onboarding never probed the endpoint's runtime context window, and the Hermes image/config carried no context setting. A self-hosted vLLM endpoint serving a NemotronH model (`max_model_len=65536`) therefore fell back to a ~4K architecture default, and Hermes ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/6293",
     "source": "github_prs",
     "highlights": [
-      "comments: 17",
+      "comments: 19",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -780,7 +780,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-07-07T17:15:15Z",
+    "date": "2026-07-07T21:34:17Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -876,7 +876,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-07T02:44:10Z",
+    "date": "2026-07-07T20:44:11Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1356,7 +1356,7 @@
   },
   {
     "title": "[PR] Updated to the latest version of the current project",
-    "date": "2026-07-07T14:05:08Z",
+    "date": "2026-07-07T20:56:54Z",
     "summary": "#### What roadmap does this PR target?\r\n\r\n- [ ] Frontend Roadmap\r\n- [ ] Backend Roadmap\r\n- [ ] DevOps Roadmap\r\n- [x] All Roadmaps\r\n\r\n#### Please acknowledge the items listed below\r\n\r\n- [ ] I have discussed this contribution and got a go-ahead in an issue before opening this pull request.\r\n- [ ] This",
     "url": "https://github.com/Diego-18/developer-roadmap/pull/1",
     "source": "github_prs",
@@ -1392,8 +1392,8 @@
   },
   {
     "title": "[PR] Add deployable personal AI assistant system",
-    "date": "2026-07-07T17:15:48Z",
-    "summary": "## Summary\n\nA self-hosted personal AI assistant, hardened over three review passes and then extended through a five-phase feature roadmap. Everything is free/open-source, sized to a Pi 5 / Pi 4 / on-demand GPU topology, and degrades gracefully when the GPU box is off. **243 tests, CI green.**\n\nIntak",
+    "date": "2026-07-07T20:43:58Z",
+    "summary": "## Summary\n\nA self-hosted personal AI assistant, hardened over three review passes and then extended through a five-phase feature roadmap. Everything is free/open-source, sized to a Pi 5 / Pi 4 / on-demand GPU topology, and degrades gracefully when the GPU box is off. **245 tests, CI green.**\n\nIntak",
     "url": "https://github.com/ttohme/fun-projects/pull/2",
     "source": "github_prs",
     "highlights": [
@@ -1440,7 +1440,7 @@
   },
   {
     "title": "[PR] fix(command-semantics): cover remaining linter runner exits",
-    "date": "2026-07-07T17:08:40Z",
+    "date": "2026-07-07T20:53:52Z",
     "summary": "## What & why\n\nThis continues the `#1436` command-semantics work after `#1846` landed the core `ruff` / `eslint` + `uvx` / `npx` fix.\n\n`#1436` also calls out additional linters, test runners, compiler-style diagnostics, and runner forms that still fell back to default non-zero-exit handling. That ma",
     "url": "https://github.com/Gitlawb/openclaude/pull/1700",
     "source": "github_prs",
@@ -1463,8 +1463,8 @@
     ]
   },
   {
-    "title": "[PR] Add WebSearch backend runtime diagnostics",
-    "date": "2026-07-07T16:56:13Z",
+    "title": "[PR] feat(doctor): add WebSearch backend diagnostics",
+    "date": "2026-07-07T21:19:38Z",
     "summary": "## Summary\n- Add a `doctor:runtime` WebSearch backend diagnostic that reports the resolved provider mode and configured API-backed providers.\n- Surface DDG-only fallback guidance, explicit missing credential failures, Firecrawl cloud missing-key failures, and native provider support details.\n- Inclu",
     "url": "https://github.com/Gitlawb/openclaude/pull/1884",
     "source": "github_prs",
@@ -1548,7 +1548,7 @@
   },
   {
     "title": "[PR] Add AWS/Gemini deployment mode and mobile UI improvements",
-    "date": "2026-07-07T19:59:27Z",
+    "date": "2026-07-07T21:30:54Z",
     "summary": "## Summary\n\nThis PR adds support for deploying PROPESQI on AWS with Gemini as the LLM/embeddings provider (eliminating the need for local Ollama), improves mobile responsiveness of the UI, replaces local OCR with cloud-based LLMWhisperer, and refines the design system with a cohesive color palette.\n",
     "url": "https://github.com/CaioBurton/chatbot/pull/1",
     "source": "github_prs",
@@ -1596,26 +1596,122 @@
   },
   {
     "title": "[PR] feat(aimlapi): add guided top-up and key provisioning",
-    "date": "2026-07-07T19:53:58Z",
+    "date": "2026-07-07T21:15:24Z",
     "summary": "## Summary\n\nAdds a guided AI/ML API top-up path to provider setup and the CLI.\n\nRelated to #1885.\nFollow-up to #835 / #863.\n\nThis PR includes one prerequisite cleanup commit that updates the AI/ML API checkout/inference attribution partner id before adding the guided checkout flow.\n\n## What changed\n",
     "url": "https://github.com/Gitlawb/openclaude/pull/1886",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 7",
       "pull request",
       "repo: openclaude"
     ]
   },
   {
     "title": "[PR] feat(dcode): add backend-neutral OTLP observability",
-    "date": "2026-07-07T19:53:07Z",
+    "date": "2026-07-07T21:34:07Z",
     "summary": "## Summary\n\nAdd opt-in, backend-neutral observability for LangChain Deep Agents Code. Root-owned NeMo Relay instrumentation exports bounded model and tool content to a fixed host-local OTLP receiver, while an operator-owned collector holds backend credentials and forwards traces to LangSmith or anot",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/6340",
     "source": "github_prs",
     "highlights": [
-      "comments: 41",
+      "comments: 45",
       "pull request",
       "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat: web UI, production API, self-healing CI/CD, and test overhaul",
+    "date": "2026-07-07T21:30:36Z",
+    "summary": "## Summary\n\n- **Full-stack web UI** \u2014 React + Vite + Tailwind dashboard (run management, live SSE streaming, history, watchlists)\n- **Production API** \u2014 FastAPI backend with SSE streaming, run management, watchlist CRUD, legacy `/analyze` compat\n- **Self-healing CI/CD** \u2014 separated validation and bu",
+    "url": "https://github.com/tmurphy86/TradingAgents/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: TradingAgents"
+    ]
+  },
+  {
+    "title": "[PR] * Accept [Tool results received] as continuation marker",
+    "date": "2026-07-07T21:17:30Z",
+    "summary": "## Summary\r\n\r\nWhen using OpenAI compatible LLM provider like llama-cpp running on non-local address (even with domain), there is a problem - pipeline may stop after tool call. [Tool results received] message appears in console.\r\n\r\nNow we accepts [Tool results received] as continuation marker to allo",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1891",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(open-app): robust Open-App metadata teardown on remove/reinstall",
+    "date": "2026-07-07T21:17:12Z",
+    "summary": "## Problem\r\n\r\n`RemoveAppEntityMetadata` (in `@memberjunction/open-app-engine`) had two independent gaps that made Open-App **remove \u2192 reinstall** unreliable:\r\n\r\n1. **Under-deletes entity-dependent metadata.** It cleared a hardcoded ~6 of `Entity`'s dependents via the entity layer. On a real DB `__mj",
+    "url": "https://github.com/MemberJunction/MJ/pull/3053",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Local-or-cloud refinement and transcription providers",
+    "date": "2026-07-07T21:10:21Z",
+    "summary": "## What\n\nMakes Parrot behave like superwhisper: hold hotkey, speak, release, and the refined transcript is pasted at the cursor and left on the clipboard. Two independent layers, each local or cloud.\n\n### Refinement (new core feature)\nOne `RefinementClient` protocol, three clients picked by `Refinem",
+    "url": "https://github.com/schwarztim/Parrot/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Parrot"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image baserow/baserow ( 1.35.1 \u2794 2.3.0 )",
+    "date": "2026-07-07T21:04:36Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [baserow/baserow](https://redirect.github.com/baserow/baserow) | major | `1.35.1` \u2192 `2.3.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dashboard for more information.\n\n--",
+    "url": "https://github.com/returnfloat/homelab/pull/1487",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat: cross-app shell parity \u2014 shared command palette, course switcher, AI-status chips (#764)",
+    "date": "2026-07-07T20:58:23Z",
+    "summary": "## Summary\r\n\r\nImplements the full **cross-platform feature-parity backlog (#764)** \u2014 every gap where the redesigned QuestionMaker (and AI Tutor) had shell features that Core lacked \u2014 and goes further by extracting the three shared shell features into `@eduai/ui` so **Core, QuestionMaker, and AI Tuto",
+    "url": "https://github.com/EduAI-Lab/EduAI/pull/901",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: EduAI"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency dev.langchain4j:langchain4j-bom to v1.17.2",
+    "date": "2026-07-07T20:54:46Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [dev.langchain4j:langchain4j-bom](https://redirect.github.com/langchain4j/langchain4j/tree/main/lan",
+    "url": "https://github.com/micronaut-projects/micronaut-langchain4j/pull/358",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: micronaut-langchain4j"
+    ]
+  },
+  {
+    "title": "[PR] chore(master): release askrex-assistant 1.4.0",
+    "date": "2026-07-07T20:53:04Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.4.0](https://github.com/Blueibear/AskRex-Assistant/compare/askrex-assistant-v1.3.0...askrex-assistant-v1.4.0) (2026-07-07)\n\n\n### Features\n\n* **api:** add request body size limit to /speak endpoint ([5a90121](https://github.com/Blueibear/AskR",
+    "url": "https://github.com/Blueibear/AskRex-Assistant/pull/305",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AskRex-Assistant"
     ]
   }
 ]
