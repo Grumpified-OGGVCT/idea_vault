@@ -540,7 +540,7 @@
   },
   {
     "title": "[PR] Add boxy Phase-1 MVP: unified CLI for containerized GenAI on HPC",
-    "date": "2026-07-08T17:39:43Z",
+    "date": "2026-07-08T19:58:06Z",
     "summary": "## Summary\n\nThis PR introduces **boxy**, a unified command-line tool for deploying and serving containerized GenAI/LLM services across heterogeneous HPC sites. It formalizes the bash prototype in `hpc-workflow/` into a maintainable Python CLI that abstracts container runtimes (Podman, Apptainer, Doc",
     "url": "https://github.com/abeltre1/canopie25-paper-artifacts/pull/1",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-08T18:10:11Z",
+    "date": "2026-07-08T19:51:27Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -876,7 +876,7 @@
   },
   {
     "title": "[PR] refactor(messages): extract normalization helpers (3 of 8)",
-    "date": "2026-07-08T05:20:34Z",
+    "date": "2026-07-08T20:11:57Z",
     "summary": "## Summary\n\nPart 3 of 8 in the messages.ts de-monolith migration.\n\nThis standalone PR extracts normalizeMessages, normalizeMessagesCached, and UUID derivation into src/utils/messages/normalize.ts. The public messages.ts surface continues to re-export the moved APIs so existing imports remain valid w",
     "url": "https://github.com/Gitlawb/openclaude/pull/1900",
     "source": "github_prs",
@@ -900,12 +900,12 @@
   },
   {
     "title": "[PR] refactor(messages): extract tool pairing helpers (1 of 8)",
-    "date": "2026-07-08T05:14:28Z",
+    "date": "2026-07-08T19:58:20Z",
     "summary": "## Summary\n\nPart 1 of 8 in the messages.ts de-monolith migration.\n\nThis standalone PR extracts tool-pairing validation, diagnostics, and safe range selection from src/utils/messages.ts into src/utils/messages/toolPairing.ts. The public messages.ts surface continues to re-export the moved APIs so exi",
     "url": "https://github.com/Gitlawb/openclaude/pull/1898",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: openclaude"
     ]
@@ -984,7 +984,7 @@
   },
   {
     "title": "[PR] feat: merge knowledge graph + conversation arc into memdir",
-    "date": "2026-07-08T16:18:23Z",
+    "date": "2026-07-08T19:33:55Z",
     "summary": "## Summary\n\nMerge the standalone Knowledge Graph + Conversation Arc system into the existing auto-memory (memdir) directory. Previously, OpenClaude maintained **two parallel memory systems** \u2014 the file-based memdir (`memory/`) and a separate entity-relation-store backed by SQLite + JSON + Orama. The",
     "url": "https://github.com/Gitlawb/openclaude/pull/1811",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] Model Engine with restore KV",
-    "date": "2026-07-08T18:21:04Z",
+    "date": "2026-07-08T19:33:16Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
     "url": "https://github.com/dAppCore/go-inference/pull/6",
     "source": "github_prs",
@@ -1140,19 +1140,19 @@
   },
   {
     "title": "[PR] Implement quota proxy SOTA plan",
-    "date": "2026-07-08T11:08:18Z",
+    "date": "2026-07-08T20:07:49Z",
     "summary": "## Summary\n\nImplements the quota/proxy/failover/cloud-sync SOTA plan from `QUOTA_PROXY_SOTA_PLAN.md`.\n\n- Captures passive quota signals from Anthropic/OpenAI-style rate-limit headers in the daemon gateway and exposes recent/clear RPCs.\n- Enables hosted Claude quota refresh alongside Codex, with adap",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1247",
     "source": "github_prs",
     "highlights": [
-      "comments: 25",
+      "comments: 31",
       "pull request",
       "repo: BurnBar"
     ]
   },
   {
     "title": "[PR] F21V Core PR monitor runtime execution seam for GKE",
-    "date": "2026-07-08T18:13:22Z",
+    "date": "2026-07-08T19:46:37Z",
     "summary": "Automatically opened by AWF workspace `ws_396c6fa0e51e4295849d8879` (agent: `opencode`, model: `ollama/glm-5.2:cloud`, effort: `xhigh`).\n\n\n### Task\nImplement the Core-side prerequisite for Phase 1 GKE Autopilot AWF execution: PR monitor repair must not be hard-wired to Docker Compose execution. Do n",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/751",
     "source": "github_prs",
@@ -1164,12 +1164,12 @@
   },
   {
     "title": "[PR] feat(agents): Junie (JetBrains) as a first-class tracked agent \u2014 full parity",
-    "date": "2026-07-08T13:51:56Z",
+    "date": "2026-07-08T20:04:22Z",
     "summary": "# feat: Junie (JetBrains) as a first-class tracked agent \u2014 full parity with Droid/Codex/Claude/Hermes\n\nAdds JetBrains **Junie CLI** as a first-class agent provider across macOS, iOS, the daemon, and Android \u2014 detected, parsed, priced, displayed, tested, and documented at parity with the existing mar",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1136",
     "source": "github_prs",
     "highlights": [
-      "comments: 41",
+      "comments: 45",
       "pull request",
       "repo: BurnBar"
     ]
@@ -1200,12 +1200,12 @@
   },
   {
     "title": "[PR] AI core OpenHuman pilot stack",
-    "date": "2026-07-08T18:05:30Z",
+    "date": "2026-07-08T20:13:53Z",
     "summary": "## Summary\n- Makes the ai-core fork branch maintainable: headless core memory now honors configured native embeddings, including Voyage, instead of falling back to OpenHuman cloud embeddings.\n- Routes memory-tree embedding through the same native direct Voyage/Cohere adapter path used by memory impo",
     "url": "https://github.com/xenking/openhuman/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: openhuman"
     ]
@@ -1332,7 +1332,7 @@
   },
   {
     "title": "[PR] feat: add more e2e tests to frontend",
-    "date": "2026-07-08T18:20:54Z",
+    "date": "2026-07-08T20:21:28Z",
     "summary": "This pull request introduces several updates to the project's Docker configuration and frontend dependencies. The main focus is on switching Docker services from using pre-built images to building them locally, and on adding new logging-related dependencies to the frontend.\r\n\r\n**Docker configuration",
     "url": "https://github.com/langflow-ai/openrag/pull/1458",
     "source": "github_prs",
@@ -1496,6 +1496,114 @@
       "comments: 0",
       "pull request",
       "repo: Arcade2048"
+    ]
+  },
+  {
+    "title": "[PR] Feat/scoped prompt config",
+    "date": "2026-07-08T20:21:42Z",
+    "summary": "## Summary\r\n\r\nAdds **`ScopedPromptConfig`** \u2014 the run-settings sibling of `ScopedPromptPart`. Where `ScopedPromptPart` scope-overrides a prompt's **text**, `ScopedPromptConfig` scope-overrides a prompt's **run settings** (model/vendor, AI configuration, sampling knobs, response format, effort level)",
+    "url": "https://github.com/MemberJunction/MJ/pull/3077",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Update bump-dependencies",
+    "date": "2026-07-08T20:12:06Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update | Pending |\n|---|---|---|---|---|-",
+    "url": "https://github.com/lehigh-university-libraries/scribe/pull/75",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: scribe"
+    ]
+  },
+  {
+    "title": "[PR] Research: Comprehensive Ecosystem Analysis & Configuration Suite",
+    "date": "2026-07-08T20:01:41Z",
+    "summary": "## Summary\n\nThis PR delivers the complete **PMOVES.AI Ecosystem Analysis & Configuration Suite** \u2014 18 files totaling ~15,000+ lines of research, specifications, and production-ready configurations.\n\n## What's Added\n\n### Core Analysis Documents (5)\n| # | File | Lines | Description |\n|---|------|-----",
+    "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/2018",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: PMOVES.AI"
+    ]
+  },
+  {
+    "title": "[PR] fix(providers): register Atomic Chat as local OpenAI-compatible runtime",
+    "date": "2026-07-08T19:54:41Z",
+    "summary": "## Summary\n\n- Register **Atomic Chat** as a **local** provider (`Local: true`, no API key) instead of a remote OpenAI-compat endpoint at `api.atomic.chat`.\n- Default base URL: `http://127.0.0.1:1337/v1` (matches Atomic Chat's local OpenAI-compatible server).\n- Include Atomic Chat in `zero providers ",
+    "url": "https://github.com/Gitlawb/zero/pull/550",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: zero"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image amruthpillai/reactive-resume (v4.4.5 \u2794 v5.2.3)",
+    "date": "2026-07-08T19:52:04Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.4.5` \u2192 `v5.2.3` |\n\n---\n\n> [!WARNING]\n> ",
+    "url": "https://github.com/neilmfrench/homelab-prod/pull/1149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-prod"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update netbird",
+    "date": "2026-07-08T19:44:06Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/netbirdio/dashboard](https://redirect.github.com/netbirdio/dashboard) | minor | `v2.36.0` \u2192 `v2.90.3` |\n| [ghcr.io/netbirdio/manage",
+    "url": "https://github.com/vehagn/homelab/pull/520",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] Update marketplace documentation for Keycloak, Ollama, Portainer, Prometheus, Supabase, and Vaultwarden",
+    "date": "2026-07-08T19:38:01Z",
+    "summary": "## What changed\r\n\r\n- Keycloak: Added software version details, environment variables, and updated installation steps for production setup.\r\n- Ollama: Included software version, environment variables, and streamlined installation instructions with first-boot configuration.\r\n- Portainer: Updated softw",
+    "url": "https://github.com/zsoftly/zcp-docs/pull/47",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: zcp-docs"
+    ]
+  },
+  {
+    "title": "[PR] fix: auto-resolve Ring-MQTT and Reolink motion sensors to camera entities",
+    "date": "2026-07-08T19:27:51Z",
+    "summary": "## Summary\n\n- Extends `_resolve_camera_from_motion` to strip the `_motion` suffix and try `camera.X` then `camera.X_snapshot`, so Ring-MQTT and Reolink cameras trigger proactive snapshot analysis automatically\n- Introduces `VIDEO_ANALYZER_MOTION_SCAN_INTERVAL = 3s` for the motion snapshot loop, sepa",
+    "url": "https://github.com/goruck/home-generative-agent/pull/460",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: home-generative-agent"
+    ]
+  },
+  {
+    "title": "[PR] mj app idempotency (resumable install/upgrade/uninstall)",
+    "date": "2026-07-08T19:27:17Z",
+    "summary": "## Summary\n`mj app install`/`upgrade`/`remove` are resumable end-to-end, with mutex guards preventing conflicting operations while one is mid-flight. All of this has now been verified **live** \u2014 real GitHub Open Apps, real SQL Server + PostgreSQL databases, real process kills \u2014 not just mocked unit ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3073",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
