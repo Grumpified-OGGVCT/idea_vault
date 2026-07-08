@@ -540,7 +540,7 @@
   },
   {
     "title": "[PR] Add boxy Phase-1 MVP: unified CLI for containerized GenAI on HPC",
-    "date": "2026-07-08T19:58:06Z",
+    "date": "2026-07-08T21:31:00Z",
     "summary": "## Summary\n\nThis PR introduces **boxy**, a unified command-line tool for deploying and serving containerized GenAI/LLM services across heterogeneous HPC sites. It formalizes the bash prototype in `hpc-workflow/` into a maintainable Python CLI that abstracts container runtimes (Podman, Apptainer, Doc",
     "url": "https://github.com/abeltre1/canopie25-paper-artifacts/pull/1",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-08T19:51:27Z",
+    "date": "2026-07-08T21:50:13Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1140,19 +1140,19 @@
   },
   {
     "title": "[PR] Implement quota proxy SOTA plan",
-    "date": "2026-07-08T20:07:49Z",
+    "date": "2026-07-08T22:04:31Z",
     "summary": "## Summary\n\nImplements the quota/proxy/failover/cloud-sync SOTA plan from `QUOTA_PROXY_SOTA_PLAN.md`.\n\n- Captures passive quota signals from Anthropic/OpenAI-style rate-limit headers in the daemon gateway and exposes recent/clear RPCs.\n- Enables hosted Claude quota refresh alongside Codex, with adap",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1247",
     "source": "github_prs",
     "highlights": [
-      "comments: 31",
+      "comments: 35",
       "pull request",
       "repo: BurnBar"
     ]
   },
   {
     "title": "[PR] F21V Core PR monitor runtime execution seam for GKE",
-    "date": "2026-07-08T19:46:37Z",
+    "date": "2026-07-08T21:54:58Z",
     "summary": "Automatically opened by AWF workspace `ws_396c6fa0e51e4295849d8879` (agent: `opencode`, model: `ollama/glm-5.2:cloud`, effort: `xhigh`).\n\n\n### Task\nImplement the Core-side prerequisite for Phase 1 GKE Autopilot AWF execution: PR monitor repair must not be hard-wired to Docker Compose execution. Do n",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/751",
     "source": "github_prs",
@@ -1500,7 +1500,7 @@
   },
   {
     "title": "[PR] Feat/scoped prompt config",
-    "date": "2026-07-08T20:21:42Z",
+    "date": "2026-07-08T21:14:39Z",
     "summary": "## Summary\r\n\r\nAdds **`ScopedPromptConfig`** \u2014 the run-settings sibling of `ScopedPromptPart`. Where `ScopedPromptPart` scope-overrides a prompt's **text**, `ScopedPromptConfig` scope-overrides a prompt's **run settings** (model/vendor, AI configuration, sampling knobs, response format, effort level)",
     "url": "https://github.com/MemberJunction/MJ/pull/3077",
     "source": "github_prs",
@@ -1524,7 +1524,7 @@
   },
   {
     "title": "[PR] Research: Comprehensive Ecosystem Analysis & Configuration Suite",
-    "date": "2026-07-08T20:01:41Z",
+    "date": "2026-07-08T22:01:56Z",
     "summary": "## Summary\n\nThis PR delivers the complete **PMOVES.AI Ecosystem Analysis & Configuration Suite** \u2014 18 files totaling ~15,000+ lines of research, specifications, and production-ready configurations.\n\n## What's Added\n\n### Core Analysis Documents (5)\n| # | File | Lines | Description |\n|---|------|-----",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/2018",
     "source": "github_prs",
@@ -1596,7 +1596,7 @@
   },
   {
     "title": "[PR] mj app idempotency (resumable install/upgrade/uninstall)",
-    "date": "2026-07-08T19:27:17Z",
+    "date": "2026-07-08T21:17:40Z",
     "summary": "## Summary\n`mj app install`/`upgrade`/`remove` are resumable end-to-end, with mutex guards preventing conflicting operations while one is mid-flight. All of this has now been verified **live** \u2014 real GitHub Open Apps, real SQL Server + PostgreSQL databases, real process kills \u2014 not just mocked unit ",
     "url": "https://github.com/MemberJunction/MJ/pull/3073",
     "source": "github_prs",
@@ -1604,6 +1604,162 @@
       "comments: 8",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Feature/cloud provider abstraction",
+    "date": "2026-07-08T22:05:55Z",
+    "summary": "This PR implements provider-neutral kubernetes abstractions, also includes small fixes to support single manual runs.\r\n\r\nChanges\r\n\r\n1. Unified Cluster Abstraction (`tf/modules/cluster`)\r\n* Created a provider-neutral `cluster` router module that conditionally delegates to either `cluster/gke` or `clu",
+    "url": "https://github.com/gke-labs/devops-bench/pull/159",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: devops-bench"
+    ]
+  },
+  {
+    "title": "[PR] add local Ollama + Qdrant runtime without GCP",
+    "date": "2026-07-08T22:02:05Z",
+    "summary": "## Add local runtime (Ollama + Qdrant) for running the RAG demo without Google Cloud\r\n\r\n  ### Summary\r\n\r\n  Adds a fully local way to run the RAG demo without any Google Cloud dependency. It mirrors the cloud architecture one-to-one, swapping each managed service for a local equivalent,\r\n  so the sam",
+    "url": "https://github.com/jasiecky/bielik-workshop/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: bielik-workshop"
+    ]
+  },
+  {
+    "title": "[PR] Fix Bielik control tokens leaking into responses",
+    "date": "2026-07-08T21:57:40Z",
+    "summary": "## Fix: Bielik control tokens leaking into responses\r\n\r\n  ### Problem\r\n\r\n  Answers returned by the `/ask` and `/ask_direct` endpoints sometimes contained raw model artifacts instead of clean text. Two distinct symptoms were observed in the Web UI:\r\n\r\n  1. **Control tokens leaking into the output** \u2014",
+    "url": "https://github.com/jasiecky/bielik-workshop/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: bielik-workshop"
+    ]
+  },
+  {
+    "title": "[PR] Release v5.45.1 [version:5.45.1]",
+    "date": "2026-07-08T21:54:51Z",
+    "summary": "# Migration fixes, streaming, EDS connectors, and magic link patch\n\n## New Features\n- **Agent final-response streaming**: The conversation chat widget now renders agent reply text as it streams in, accumulating deltas service-side and reconciling with the saved final message on completion. Agents th",
+    "url": "https://github.com/MemberJunction/MJ/pull/3086",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Enterprise SAST Migration to LangGraph",
+    "date": "2026-07-08T21:47:05Z",
+    "summary": "Migrated the shadow-auditor CLI core logic from Vercel AI SDK to LangGraph.\n\n- Implemented \\`AgentState\\` with long-term memory using a JSON-backed \\`BaseStore\\`.\n- Replaced monolithic agent with a Multi-Agent Swarm (Supervisor, SastAnalyzer, GraphTracer, Verifier, and ToolExecutor).\n- Wrapped all c",
+    "url": "https://github.com/Yahya-hacker/shadow-auditor/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: shadow-auditor"
+    ]
+  },
+  {
+    "title": "[PR] perf(core): stop deep-cloning the metadata graph per request \u2014 share by reference with per-instance CurrentUser (#3083)",
+    "date": "2026-07-08T21:45:38Z",
+    "summary": "## Summary\n\nFixes #3083 \u2014 every GraphQL request paid a fixed, CPU-bound tax in `contextFunction` before the resolver ran: the two per-request providers each deep-cloned the entire typed metadata graph in `Config()`. On a ~600-entity install that's ~1s of synchronous constructor work per provider (~1",
+    "url": "https://github.com/MemberJunction/MJ/pull/3087",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Update ghcr.io/amruthpillai/reactive-resume Docker tag to v5.2.3",
+    "date": "2026-07-08T21:36:52Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | patch | `v5.2.2` \u2192 `v5.2.3` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>amruthpillai/reactive-resume (ghcr.io/am",
+    "url": "https://github.com/khzaw/rangoonpulse/pull/356",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: rangoonpulse"
+    ]
+  },
+  {
+    "title": "[PR] ajouter une fonction simulate pull request",
+    "date": "2026-07-08T21:33:29Z",
+    "summary": "/review ",
+    "url": "https://github.com/braiki89-aymen/Aymen-braiki-EventConnect-Lot1-Back/pull/13",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 271",
+      "pull request",
+      "repo: Aymen-braiki-EventConnect-Lot1-Back"
+    ]
+  },
+  {
+    "title": "[PR] feat(agents): P13 DirectMessageProcessor neutralization \u2014 sendMessage\u2192ModelOutput, delete synthetic fabricators (Addresses #2349)",
+    "date": "2026-07-08T21:19:36Z",
+    "summary": "## Summary\n\nFoundation + early migration slices for migrating packages/agents off @google/genai and all Google-shaped structural content to neutral domain-named types (issue #2349). This PR implements phases P01-P13 of PLAN-20260707-AGENTNEUTRAL.\n\nThis is a multi-phase migration plan (P01-P33). This",
+    "url": "https://github.com/vybestack/llxprt-code/pull/2440",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: llxprt-code"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface_hub to v0.36.2",
+    "date": "2026-07-08T21:10:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface_hub](https://re",
+    "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/480",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image amruthpillai/reactive-resume ( v4.4.6 \u2794 v5.2.3 )",
+    "date": "2026-07-08T20:57:32Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.4.6` \u2192 `v5.2.3` |\n\n---\n\n> [!WARNING]\n> ",
+    "url": "https://github.com/returnfloat/homelab/pull/1498",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Atomic Chat models.dev catalog support",
+    "date": "2026-07-08T20:50:42Z",
+    "summary": "### Related Issue\n\n**Issue:** #11453\n\n### Description\n\nAdds Atomic Chat to the existing models.dev-backed SDK catalog path instead of maintaining a separate Atomic-specific model polling RPC in the settings UI.\n\nThis keeps the provider integration from #11453, but changes the model selector to use t",
+    "url": "https://github.com/cline/cline/pull/12175",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cline"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/amruthpillai/reactive-resume ( v4.5.6 \u2192 v5.2.3 )",
+    "date": "2026-07-08T20:49:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.5.6` \u2192 `v5.2.3` |\n\n---\n\n> [!WAR",
+    "url": "https://github.com/FrederikS/homelab/pull/461",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
     ]
   }
 ]
