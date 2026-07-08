@@ -528,12 +528,12 @@
   },
   {
     "title": "[PR] **logan/obsidian**",
-    "date": "2026-07-08T05:38:37Z",
+    "date": "2026-07-08T08:26:05Z",
     "summary": "The world is quiet here\uff0e",
     "url": "https://github.com/LAF-US/IDAHO-VAULT/pull/563",
     "source": "github_prs",
     "highlights": [
-      "comments: 100",
+      "comments: 106",
       "pull request",
       "repo: IDAHO-VAULT"
     ]
@@ -600,8 +600,8 @@
   },
   {
     "title": "[PR] fix(query-guard): exclude human-interaction wait from session timeout",
-    "date": "2026-07-08T02:41:16Z",
-    "summary": "Fixes #1878\n\n## What changed and why\n\nThe session query watchdog (`QueryGuard`) counts the time a query spends blocked on a user decision toward its idle timeout (5 min). While a query is legitimately waiting on a permission prompt, `AskUserQuestion`, or plan-mode selection, no lease is held, so aft",
+    "date": "2026-07-08T08:26:14Z",
+    "summary": "Fixes #1878\r\n\r\n## What changed and why\r\n\r\nThe session query watchdog (`QueryGuard`) counts the time a query spends blocked on a user decision toward its idle timeout (5 min). While a query is legitimately waiting on a permission prompt, `AskUserQuestion`, or plan-mode selection, no lease is held, so",
     "url": "https://github.com/Gitlawb/openclaude/pull/1879",
     "source": "github_prs",
     "highlights": [
@@ -743,13 +743,13 @@
     ]
   },
   {
-    "title": "[PR] feat(server): run chatCompletion server in self-host + unify dispatch + rename to ChatCompletion",
-    "date": "2026-07-08T05:55:59Z",
-    "summary": "Base: `main`. Subsumes the now-closed #260 (public v2 completions + chatCompletion/ restructure) - those commits are included here, so this PR is self-contained.\n\n## Description\n\nSelf-host now runs the always-on **chatCompletion** server as its **own container**, and the frontend dispatches quests t",
+    "title": "[PR] feat(server): chatCompletion container in self-host and improve latency of public chat completion api. ",
+    "date": "2026-07-08T08:25:20Z",
+    "summary": "Base: `main`. Subsumes the now-closed #260 (public SSE completions + chatCompletion/ restructure) - those commits are included here, so this PR is self-contained.\r\n\r\n## Description\r\n\r\nConsolidates the public chat-completions endpoint onto the always-on **ChatCompletion** server, and gives self-host ",
     "url": "https://github.com/Bike4Mind/bike4mind/pull/297",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 3",
       "pull request",
       "repo: bike4mind"
     ]
@@ -864,12 +864,12 @@
   },
   {
     "title": "[PR] Add Unsloth Docker images (base + Studio) for any NVIDIA GPU host, Ampere through Blackwell",
-    "date": "2026-07-08T05:22:32Z",
+    "date": "2026-07-08T08:18:07Z",
     "summary": "## Summary\n\nAdds a Docker setup for Unsloth that runs on any NVIDIA GPU host from Ampere through Blackwell (sm_80 through sm_120: A100, RTX 30/40, H100, B100/B200, RTX 50-series, RTX 6000 Pro Blackwell) and natively on aarch64 (GB10 / Grace, DGX Spark). Two images are published to `docker.io/unsloth",
     "url": "https://github.com/unslothai/unsloth/pull/5748",
     "source": "github_prs",
     "highlights": [
-      "comments: 40",
+      "comments: 45",
       "pull request",
       "repo: unsloth"
     ]
@@ -956,6 +956,198 @@
       "comments: 6",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:33:24Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/GlacierEQ/kilocode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] Introduce new favorite record format. Favourite (config.json) cleanup CLI command. Discovered model persistent in config.json.",
+    "date": "2026-07-08T08:32:33Z",
+    "summary": "## Summary\r\n\r\n1) Introduce distinction for Opencode Go models, as per documentation some of these shall be used via Anthropic-like connector (SDK) as per documentation https://opencode.ai/docs/go/#endpoints (Minimax and Qwen family)\r\nThese are still preserved over OpenAI-like connector (SDK) as thes",
+    "url": "https://github.com/Gitlawb/zero/pull/408",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: zero"
+    ]
+  },
+  {
+    "title": "[PR] feat: merge knowledge graph + conversation arc into memdir",
+    "date": "2026-07-08T08:31:26Z",
+    "summary": "## Summary\n\nMerge the standalone Knowledge Graph + Conversation Arc system into the existing auto-memory (memdir) directory. Previously, OpenClaude maintained **two parallel memory systems** \u2014 the file-based memdir (`memory/`) and a separate entity-relation-store backed by SQLite + JSON + Orama. The",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1811",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:31:11Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:31:00Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:30:59Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/gmifsud/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:30:57Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/MAlkabbani/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:30:56Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/facemendous/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:30:53Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/softctwo/ResoftCode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ResoftCode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:30:53Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:30:51Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/LunaticMuch/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:30:37Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jeevesh415/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:30:27Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-08T08:30:17Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/adhitiad/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] Model Engine with restore KV",
+    "date": "2026-07-08T08:26:05Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * OpenAI, Anthropic and Ollama provider adapters; GGUF model discovery; capability reporting; VQ and JANG quantisation tooling; scheduler with queuing/cancellation; probe event",
+    "url": "https://github.com/dAppCore/go-inference/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: go-inference"
+    ]
+  },
+  {
+    "title": "[PR] Implement quota proxy SOTA plan",
+    "date": "2026-07-08T08:21:12Z",
+    "summary": "## Summary\n\nImplements the quota/proxy/failover/cloud-sync SOTA plan from `QUOTA_PROXY_SOTA_PLAN.md`.\n\n- Captures passive quota signals from Anthropic/OpenAI-style rate-limit headers in the daemon gateway and exposes recent/clear RPCs.\n- Enables hosted Claude quota refresh alongside Codex, with adap",
+    "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1247",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 16",
+      "pull request",
+      "repo: BurnBar"
     ]
   }
 ]
