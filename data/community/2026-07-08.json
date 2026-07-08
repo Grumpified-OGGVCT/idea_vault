@@ -527,13 +527,13 @@
     ]
   },
   {
-    "title": "[PR] ILLEGAL FOLDERS and JUNK DRAWER cleanup via **logan/obsidian** branch ",
-    "date": "2026-07-08T02:51:12Z",
-    "summary": "Logan moved files around - don't triage today.\n\n<!-- tenki:walkthrough:start -->\n## Tenki walkthrough\n\nThis PR adds a comprehensive suite of vault management, security automation, and credential hygiene scripts across Windows (PowerShell/Batch) and Unix (Python/Bash) platforms. It establishes 1Passw",
+    "title": "[PR] **logan/obsidian**",
+    "date": "2026-07-08T05:38:37Z",
+    "summary": "The world is quiet here\uff0e",
     "url": "https://github.com/LAF-US/IDAHO-VAULT/pull/563",
     "source": "github_prs",
     "highlights": [
-      "comments: 79",
+      "comments: 100",
       "pull request",
       "repo: IDAHO-VAULT"
     ]
@@ -564,12 +564,12 @@
   },
   {
     "title": "[PR] refactor(wave5): split UsageStore (1798) into 10 topic files, all \u2264411",
-    "date": "2026-07-08T02:46:00Z",
+    "date": "2026-07-08T05:34:35Z",
     "summary": "## What\n\nWave-5 god-file lane w5-gf1. Pure-move split of `AgentLens/Services/DataStore/UsageStore.swift` (1798 lines) into the primary class file (93 lines) + 9 topic extensions (largest 411): InsertHelpers, Refresh, DeleteSync, SessionLookup, Summaries, Upsert, FetchHelpers, OrgRollup, Accumulators",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1388",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 9",
       "pull request",
       "repo: BurnBar"
     ]
@@ -740,6 +740,222 @@
       "comments: 7",
       "pull request",
       "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(server): run chatCompletion server in self-host + unify dispatch + rename to ChatCompletion",
+    "date": "2026-07-08T05:55:59Z",
+    "summary": "Base: `main`. Subsumes the now-closed #260 (public v2 completions + chatCompletion/ restructure) - those commits are included here, so this PR is self-contained.\n\n## Description\n\nSelf-host now runs the always-on **chatCompletion** server as its **own container**, and the frontend dispatches quests t",
+    "url": "https://github.com/Bike4Mind/bike4mind/pull/297",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: bike4mind"
+    ]
+  },
+  {
+    "title": "[PR] feat(openclaw): implement agent configuration for workspace preparation",
+    "date": "2026-07-08T05:52:41Z",
+    "summary": "## Summary\r\n- Replaces the `configurationFiles` and `preWorkspaceStart` stubs with a real implementation that writes the selected model into `openclaw.json` at `agents.defaults.model`, preserving existing configuration fields.\r\n\r\nFixes #2175\r\n\r\n## Testing\r\n\r\nupdated added placeholder image that i pu",
+    "url": "https://github.com/openkaiden/kaiden/pull/2193",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] feat(goose): implement agent configuration for workspace preparation",
+    "date": "2026-07-08T05:50:26Z",
+    "summary": "## Summary\r\n- Replaces the `configurationFiles` and `preWorkspaceStart` stubs with a real implementation that writes `GOOSE_MODEL` into `.goose/config.yaml` from the workspace context, preserving existing configuration fields.\r\n\r\nFixes #2174\r\n\r\n## Test plan\r\n\r\n_Before testing youll need to  set the ",
+    "url": "https://github.com/openkaiden/kaiden/pull/2192",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] refactor(messages): extract API cleanup helpers (8 of 8)",
+    "date": "2026-07-08T05:36:37Z",
+    "summary": "## Summary\n\nPart 8 of 8 in the messages.ts de-monolith migration.\n\nThis standalone PR extracts API cleanup helpers from src/utils/messages.ts into src/utils/messages/apiTransform.ts, including snip metadata tagging, short snip ID derivation, tool-reference stripping, and caller-field stripping. The ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1906",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] refactor(messages): extract plan mode rendering (7 of 8)",
+    "date": "2026-07-08T05:32:25Z",
+    "summary": "## Summary\n\nPart 7 of 8 in the messages.ts de-monolith migration.\n\nThis standalone PR extracts plan-mode, auto-mode, and system-reminder rendering helpers from src/utils/messages.ts into src/utils/messages/planMode.ts. The public messages.ts surface continues to re-export the moved APIs so existing ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1905",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] refactor(messages): extract system factories (6 of 8)",
+    "date": "2026-07-08T05:30:50Z",
+    "summary": "## Summary\n\nPart 6 of 8 in the messages.ts de-monolith migration.\n\nThis standalone PR extracts system message factories and compact-boundary helpers from src/utils/messages.ts into src/utils/messages/systemFactories.ts. The public messages.ts surface continues to re-export the moved APIs so existing",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1903",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image quay.io/go-skynet/local-ai ( v4.5.6 \u2794 v4.6.2 )",
+    "date": "2026-07-08T05:30:22Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [quay.io/go-skynet/local-ai](https://redirect.github.com/mudler/LocalAI) | minor | `v4.5.6-gpu-intel` \u2192 `v4.6.2-gpu-intel` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the Dependency Dash",
+    "url": "https://github.com/dstewen/talos-homelab/pull/1150",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: talos-homelab"
+    ]
+  },
+  {
+    "title": "[PR] fix(env): align WebSearch and Ollama env docs",
+    "date": "2026-07-08T05:29:46Z",
+    "summary": "## Summary\n\n- Correct `.env.example`'s custom WebSearch timeout default from 15s to 120s.\n- Add the Ollama request context env var and built-in WebSearch timeout env var to the environment example.\n\n## Impact\n\n- user-facing impact: `.env.example` now matches the documented/runtime env settings for W",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1904",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] refactor(messages): extract basic factories (5 of 8)",
+    "date": "2026-07-08T05:29:09Z",
+    "summary": "## Summary\n\nPart 5 of 8 in the messages.ts de-monolith migration.\n\nThis standalone PR extracts basic message factories and adjacent synthetic-message helpers from src/utils/messages.ts into src/utils/messages/factories.ts. The public messages.ts surface continues to re-export the moved APIs so exist",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1902",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] refactor(messages): extract content helpers (4 of 8)",
+    "date": "2026-07-08T05:23:11Z",
+    "summary": "## Summary\n\nPart 4 of 8 in the messages.ts de-monolith migration.\n\nThis standalone PR extracts text/content helpers from src/utils/messages.ts into src/utils/messages/content.ts. The public messages.ts surface continues to re-export the moved APIs so existing imports remain valid while this migratio",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1901",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Add Unsloth Docker images (base + Studio) for any NVIDIA GPU host, Ampere through Blackwell",
+    "date": "2026-07-08T05:22:32Z",
+    "summary": "## Summary\n\nAdds a Docker setup for Unsloth that runs on any NVIDIA GPU host from Ampere through Blackwell (sm_80 through sm_120: A100, RTX 30/40, H100, B100/B200, RTX 50-series, RTX 6000 Pro Blackwell) and natively on aarch64 (GB10 / Grace, DGX Spark). Two images are published to `docker.io/unsloth",
+    "url": "https://github.com/unslothai/unsloth/pull/5748",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 40",
+      "pull request",
+      "repo: unsloth"
+    ]
+  },
+  {
+    "title": "[PR] refactor(messages): extract normalization helpers (3 of 8)",
+    "date": "2026-07-08T05:20:34Z",
+    "summary": "## Summary\n\nPart 3 of 8 in the messages.ts de-monolith migration.\n\nThis standalone PR extracts normalizeMessages, normalizeMessagesCached, and UUID derivation into src/utils/messages/normalize.ts. The public messages.ts surface continues to re-export the moved APIs so existing imports remain valid w",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1900",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] refactor(messages): extract streaming helpers (2 of 8)",
+    "date": "2026-07-08T05:16:57Z",
+    "summary": "## Summary\n\nPart 2 of 8 in the messages.ts de-monolith migration.\n\nThis standalone PR extracts stream event conversion from src/utils/messages.ts into src/utils/messages/streaming.ts. The public messages.ts surface continues to re-export the moved APIs so existing imports remain valid while the migr",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1899",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] refactor(messages): extract tool pairing helpers (1 of 8)",
+    "date": "2026-07-08T05:14:28Z",
+    "summary": "## Summary\n\nPart 1 of 8 in the messages.ts de-monolith migration.\n\nThis standalone PR extracts tool-pairing validation, diagnostics, and safe range selection from src/utils/messages.ts into src/utils/messages/toolPairing.ts. The public messages.ts surface continues to re-export the moved APIs so exi",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1898",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Document MockEndpoint timed assertions in AGENTS.md",
+    "date": "2026-07-08T05:13:52Z",
+    "summary": "## Summary\n\n_Claude Code on behalf of Guillaume Nodet_\n\n- Adds guidance to the \"Asynchronous Testing\" section of AGENTS.md to prefer `MockEndpoint`'s\n  built-in timed assertions (`assertIsSatisfied(context, timeout, unit)`) over wrapping with\n  Awaitility when the wait condition is \"mock expectation",
+    "url": "https://github.com/apache/camel/pull/24496",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] docs: update description for shared apps",
+    "date": "2026-07-08T05:05:49Z",
+    "summary": "Title: Update descriptions about Share Apps\r\n\r\n* **Background**\r\n    - [ ] pending inputs for per-app migration guide\r\n\r\n* **Target Version for Merge**\r\n1.12.6\r\n\r\n* **Related Issues**\r\nNone.\r\n\r\n* **PRs Involving Sub-Systems** \r\nNone.\r\n\r\n* **Other information**:\r\n\r\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!N",
+    "url": "https://github.com/beclab/Olares/pull/3485",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Olares"
+    ]
+  },
+  {
+    "title": "[PR] Add pi-ollama ACP agent type",
+    "date": "2026-07-08T05:04:07Z",
+    "summary": "## Summary\n- add pi-ollama agent_type startup commands for local settings, provisioner, and Kubernetes sessions\n- treat pi-ollama as an ACP-backed agent for messaging and initial prompts\n- install Pi, pi-acp, and pi-ollama-cloud in the runtime image and provisioner prefetch script\n\n## Tests\n- mise e",
+    "url": "https://github.com/takutakahashi/agentapi-proxy/pull/892",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agentapi-proxy"
+    ]
+  },
+  {
+    "title": "[PR] fix(open-app): robust Open-App metadata teardown on remove/reinstall",
+    "date": "2026-07-08T05:02:02Z",
+    "summary": "## Problem\r\n\r\n`RemoveAppEntityMetadata` (in `@memberjunction/open-app-engine`) had two independent gaps that made Open-App **remove \u2192 reinstall** unreliable:\r\n\r\n1. **Under-deletes entity-dependent metadata.** It cleared a hardcoded ~6 of `Entity`'s dependents via the entity layer. On a real DB `__mj",
+    "url": "https://github.com/MemberJunction/MJ/pull/3053",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
