@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-09T02:43:09Z",
+    "date": "2026-07-09T06:42:43Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-09T04:25:44Z",
+    "date": "2026-07-09T08:22:47Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -744,7 +744,7 @@
   },
   {
     "title": "Fix File Editing Tool Reliability - replace_in_file, write_to_file, and Diff Failures",
-    "date": "2026-07-09T04:48:17Z",
+    "date": "2026-07-09T05:50:31Z",
     "summary": "## Problem\n\nCline's file editing tools (replace_in_file and write_to_file) suffer from widespread reliability issues that significantly impact user productivity and increase API costs. These failures affect users across all models (Claude 3.7/4, Gemini, GPT, local models) and cause frustrating infin",
     "url": "https://github.com/cline/cline/issues/4384",
     "source": "github_issues",
@@ -792,7 +792,7 @@
   },
   {
     "title": "[PR] feat(inference): add OpenRouter onboarding support",
-    "date": "2026-07-09T04:00:04Z",
+    "date": "2026-07-09T07:59:23Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nAdds first-class OpenRouter onboarding support for OpenClaw, Hermes, and LangChain Deep Agents Code. OpenRouter is exposed as its own provider choice while configuring OpenShell through the OpenAI-compatible runtime path with the OpenRouter base URL an",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/6461",
     "source": "github_prs",
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] [RIP-1 + RIP-3] Control Plane 5.0 Unified Implementation: Core Architecture Refactor + LLM Native Integration (CLI / MCP / Embedded Chat)",
-    "date": "2026-07-09T03:59:49Z",
+    "date": "2026-07-09T08:13:04Z",
     "summary": "# PR Description\r\n## PR Title\r\n[ISSUE #10600][RIP-1 + RIP-3] Control Plane 5.0 Unified Implementation: Core Architecture Refactor + LLM Native Integration (CLI / MCP / Embedded Chat)\r\n\r\n---\r\n\r\n## Summary\r\nThis PR implements the core delivery of RocketMQ 5.0 Studio proposed in community recruitment i",
     "url": "https://github.com/apache/rocketmq-dashboard/pull/426",
     "source": "github_prs",
@@ -908,6 +908,198 @@
       "comments: 2",
       "pull request",
       "repo: scribe"
+    ]
+  },
+  {
+    "title": "[PR] feat(mastra): migrate v2 LangGraph chat extension to Mastra v3",
+    "date": "2026-07-09T08:34:12Z",
+    "summary": "## Migrate `lb4-llm-chat-component` from LangGraph + LangChain to Mastra v3\r\n\r\nReplaces the LangGraph/LangChain runtime with Mastra v3 (`Agent` + `Memory` + `Workflow` primitives). LangGraph **and** LangChain are fully removed; ChatGraph + DbQueryGraph + VisualizationGraph and their node classes are",
+    "url": "https://github.com/sourcefuse/loopback4-llm-chat-extension/pull/22",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: loopback4-llm-chat-extension"
+    ]
+  },
+  {
+    "title": "[PR] Add an AI assistant to the cron prompt editor",
+    "date": "2026-07-09T08:25:11Z",
+    "summary": "## Context\n\nCompletes the cron-editing work (#244): the job edit modal now has an AI assistant that writes and optimises the cron prompt with you, pair-programming style.\n\n## What changed\n\nInside the modal, below the prompt, an instruction box asks the **advisor model** (`advisor_model` from Setting",
+    "url": "https://github.com/ridingbytes/kaisho/pull/245",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: kaisho"
+    ]
+  },
+  {
+    "title": "[PR] sync fork",
+    "date": "2026-07-09T08:24:45Z",
+    "summary": "This pull request refactors and improves the CI workflow for building, testing, and releasing native addons, with a focus on modularity, efficiency, and maintainability. The main changes include extracting the native build logic into a reusable composite GitHub Action, splitting native build jobs by",
+    "url": "https://github.com/Raudbjorn/omp/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: omp"
+    ]
+  },
+  {
+    "title": "[PR] chore(master): release askrex-assistant 1.4.0",
+    "date": "2026-07-09T08:06:21Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [1.4.0](https://github.com/Blueibear/AskRex-Assistant/compare/askrex-assistant-v1.3.0...askrex-assistant-v1.4.0) (2026-07-09)\n\n\n### Features\n\n* **api:** add request body size limit to /speak endpoint ([5a90121](https://github.com/Blueibear/AskR",
+    "url": "https://github.com/Blueibear/AskRex-Assistant/pull/305",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AskRex-Assistant"
+    ]
+  },
+  {
+    "title": "[PR] fix: auto-resolve Ring-MQTT and Reolink motion sensors to camera entities",
+    "date": "2026-07-09T08:01:25Z",
+    "summary": "## Summary\n\n- Extends `_resolve_camera_from_motion` to strip the `_motion` suffix and try `camera.X` then `camera.X_snapshot`, so Ring-MQTT and Reolink cameras trigger proactive snapshot analysis automatically\n- Introduces `VIDEO_ANALYZER_MOTION_SCAN_INTERVAL = 3s` for the motion snapshot loop, sepa",
+    "url": "https://github.com/goruck/home-generative-agent/pull/460",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: home-generative-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat: add GitHub Copilot CLI as an LLM provider for init",
+    "date": "2026-07-09T07:57:20Z",
+    "summary": "## What does this PR do?\r\n\r\nAdds GitHub Copilot as an LLM provider for `mempalace init`:\r\n\r\n```bash\r\nmempalace init {dir} --llm-provider copilot\r\n```\r\n\r\nMemPalace drives your installed, signed-in [GitHub Copilot CLI](https://github.com/github/copilot-sdk) (through the `github-copilot-sdk` package) f",
+    "url": "https://github.com/MemPalace/mempalace/pull/1973",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mempalace"
+    ]
+  },
+  {
+    "title": "[PR] CAMEL-23382: camel-ai-tool - create unified AI tool component",
+    "date": "2026-07-09T07:51:10Z",
+    "summary": "Step 1: Create the new camel-ai-tool module with AiToolSpec, AiToolRegistry, consumer endpoint, and full tests. No changes to existing modules.\r\n\r\n# Description\r\n\r\n## Summary\r\n\r\nCreate the new `camel-ai-tool` module with the unified AI tool abstraction layer:\r\n  - `AiToolSpec` \u2014 vendor-neutral tool ",
+    "url": "https://github.com/apache/camel/pull/24473",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] docs: update description for shared apps",
+    "date": "2026-07-09T07:47:09Z",
+    "summary": "Title: Update descriptions about Share Apps\r\n\r\n* **Background**\r\n\r\n* **Target Version for Merge**\r\n1.12.6\r\n\r\n* **Related Issues**\r\nNone.\r\n\r\n* **PRs Involving Sub-Systems** \r\nNone.\r\n\r\n* **Other information**:\r\n\r\n\r\n\n<!-- CURSOR_SUMMARY -->\n---\n\n> [!NOTE]\n> **Low Risk**\n> Documentation and navigation o",
+    "url": "https://github.com/beclab/Olares/pull/3485",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Olares"
+    ]
+  },
+  {
+    "title": "[PR] fix(shim): don't infer Z.AI tool_stream for non-catalog GLM gateways",
+    "date": "2026-07-09T07:33:11Z",
+    "summary": "Closes #1896.\n\n## Problem\n\nServing a GLM model (`z-ai/glm-5.2`) through a third-party OpenAI-compatible gateway such as NVIDIA NIM (`https://integrate.api.nvidia.com/v1`) fails on the first turn:\n\n```\nAPI Error: 400 Validation: Unsupported parameter(s): `tool_stream`\n```\n\n`inferRemoteModelOpenAIShim",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1908",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Bound provider calls and reclaim expired leases in services gateway",
+    "date": "2026-07-09T07:31:04Z",
+    "summary": "Fixes #23\r\n\r\nA hung litellm HTTP call never returns, so its gateway lease was held until the owning process died. With the machine-wide LLM cap of 2, two hung calls froze every skill in every process for the full 3600s wait timeout. Observed after switching `LLM_MODEL` to a cloud provider: a stalled",
+    "url": "https://github.com/ducroo/SICTIC-AI/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: SICTIC-AI"
+    ]
+  },
+  {
+    "title": "[PR] Local-model extraction seam (EXP-05)",
+    "date": "2026-07-09T07:21:55Z",
+    "summary": "## What\n\nAdds `LocalSeam`, a third extraction-seam implementation alongside `NoOpSeam` and `BedrockSeam`, that routes low-confidence PDF pages to a model server running on the deployer's own machine (Ollama's HTTP API) instead of a cloud API. It never leaves loopback (`127.0.0.1`, `localhost`, `::1`",
+    "url": "https://github.com/ChelseaKR/constituent-reconciler/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: constituent-reconciler"
+    ]
+  },
+  {
+    "title": "[PR] fix(ng-dashboards): stop Data Explorer relative-time from throwing NG0100",
+    "date": "2026-07-09T07:20:28Z",
+    "summary": "## Summary\r\n  The Data Explorer home dashboard throws `NG0100: ExpressionChangedAfterItHasBeenCheckedError` (dev builds) from its \"Recent Records\" relative-time labels. This pre-computes the label into a stored field and binds that, so the template never computes time during change detection.\r\n\r\n  #",
+    "url": "https://github.com/MemberJunction/MJ/pull/3096",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): a failed TransactionGroup no longer crashes the host process",
+    "date": "2026-07-09T07:18:40Z",
+    "summary": "## Summary\r\nA failed `TransactionGroup.Submit()` currently **kills the entire Node process** \u2014 e.g. MJAPI exits on the first rolled-back transaction group. This makes `BaseEntity.Save()`'s transaction-group failure path record the failure on the entity's `ResultHistory` instead of throwing, mirrorin",
+    "url": "https://github.com/MemberJunction/MJ/pull/3097",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(runtime): route local Ollama through proxy",
+    "date": "2026-07-09T06:49:41Z",
+    "summary": "## Summary\n- Route shell/runtime `ollama-local` sandbox-facing URLs through the Ollama auth proxy on non-WSL-Docker-Desktop hosts.\n- Keep raw `:11434` routing only for WSL + Docker Desktop, where containers can reach host loopback directly.\n- Add runtime shell tests for native proxy routing, WSL Doc",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/6337",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/kedacore/keda/v2 to v2.20.0 [security]",
+    "date": "2026-07-09T06:36:54Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/kedacore/keda/v2](https://redirect.github.com/kedacore/keda) | `v2.17.3` \u2192 `v2.20.0` | ",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1690",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] refactor(messages): extract basic factories (5 of 8)",
+    "date": "2026-07-09T05:52:48Z",
+    "summary": "## Summary\n\nPart 5 of 8 in the messages.ts de-monolith migration.\n\nThis standalone PR extracts basic message factories and adjacent synthetic-message helpers from src/utils/messages.ts into src/utils/messages/factories.ts. The public messages.ts surface continues to re-export the moved APIs so exist",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1902",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
     ]
   }
 ]
