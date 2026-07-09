@@ -420,12 +420,12 @@
   },
   {
     "title": "Models don't load",
-    "date": "2026-06-29T19:11:29Z",
+    "date": "2026-07-09T10:05:44Z",
     "summary": "### macOS version\n\n14.8.3\n\n### GPU and VRAM\n\nRX580, 48 GB ram\n\n### Model and quantization\n\nany (Q4)\n\n### What happened?\n\nNo models placed in ~/models load. I get a 'Engine exited with code 4' error. These models work in llama.cpp for me. Does your app require AVX2, SSE4.2? My Xeon cpus do not suppor",
     "url": "https://github.com/engeldlgado/toshllm/issues/1",
     "source": "github_issues",
     "highlights": [
-      "comments: 44",
+      "comments: 45",
       "state: open",
       "repo: toshllm"
     ]
@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] F21V Core PR monitor runtime execution seam for GKE",
-    "date": "2026-07-09T00:10:12Z",
+    "date": "2026-07-09T12:04:20Z",
     "summary": "Automatically opened by AWF workspace `ws_396c6fa0e51e4295849d8879` (agent: `opencode`, model: `ollama/glm-5.2:cloud`, effort: `xhigh`).\n\n\n### Task\nImplement the Core-side prerequisite for Phase 1 GKE Autopilot AWF execution: PR monitor repair must not be hard-wired to Docker Compose execution. Do n",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/751",
     "source": "github_prs",
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] AI core OpenHuman pilot stack",
-    "date": "2026-07-09T03:41:31Z",
+    "date": "2026-07-09T12:07:54Z",
     "summary": "## Summary\n- Makes the ai-core fork branch maintainable: headless core memory now honors configured native embeddings, including Voyage, instead of falling back to OpenHuman cloud embeddings.\n- Routes memory-tree embedding through the same native direct Voyage/Cohere adapter path used by memory impo",
     "url": "https://github.com/xenking/openhuman/pull/1",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-09T08:22:47Z",
+    "date": "2026-07-09T11:52:54Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -768,7 +768,7 @@
   },
   {
     "title": "[PR] mj app idempotency (resumable install/upgrade/uninstall)",
-    "date": "2026-07-09T04:39:55Z",
+    "date": "2026-07-09T11:59:52Z",
     "summary": "## Summary\n`mj app install`/`upgrade`/`remove` are resumable end-to-end, with mutex guards preventing conflicting operations while one is mid-flight. All of this has now been verified **live** \u2014 real GitHub Open Apps, real SQL Server + PostgreSQL databases, real process kills \u2014 not just mocked unit ",
     "url": "https://github.com/MemberJunction/MJ/pull/3073",
     "source": "github_prs",
@@ -1100,6 +1100,210 @@
       "comments: 1",
       "pull request",
       "repo: openclaude"
+    ]
+  },
+  {
+    "title": "Deleting cells after errors does not clear \u26a0\ufe0f in navigation pane",
+    "date": "2026-07-09T09:56:20Z",
+    "summary": "<!-- Welcome! Thank you for contributing. These HTML comments will not render in the issue.\n\nBefore creating a new issue:\n* Search for relevant issues\n* Follow the issue reporting guidelines:\nhttps://jupyterlab.readthedocs.io/en/latest/getting_started/issue.html\n-->\n\n## Description\n\nWhen a cell exec",
+    "url": "https://github.com/jupyterlab/jupyterlab/issues/19141",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 2",
+      "state: open",
+      "repo: jupyterlab"
+    ]
+  },
+  {
+    "title": "[PR] Added LLM document clarification",
+    "date": "2026-07-09T12:06:02Z",
+    "summary": "Closes issue #157 \n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Expanded the LLM provider guidance with a clearer setup for using cloud or local endpoints.\n  * Added details on the configuration variables used to switc",
+    "url": "https://github.com/AET-DevOps26/team-lot-of-opps/pull/171",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: team-lot-of-opps"
+    ]
+  },
+  {
+    "title": "[PR] fix(whatsapp): revert post-pair gateway restart",
+    "date": "2026-07-09T12:05:55Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nThis PR reverts PR #6496 because manual validation shows the original WhatsApp issue still persists after the change. It also removes the DGX Spark and DGX Station regression that reports: `NemoClaw rejected a conflicting gateway trust anchor, and the ",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/6571",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T12:03:56Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/GlacierEQ/kilocode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T12:01:11Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/adhitiad/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T11:56:44Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T11:56:37Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/facemendous/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T11:56:36Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T11:56:32Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/MAlkabbani/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T11:56:28Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/gmifsud/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T11:56:25Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/LunaticMuch/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T11:56:24Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/softctwo/ResoftCode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ResoftCode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T11:56:24Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T11:56:09Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jeevesh415/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-09T11:56:00Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] Available App Updates",
+    "date": "2026-07-09T11:54:17Z",
+    "summary": "Supported TA version updates:\n| TA Name                               | Current Version | Updated Version | Release Published Time    |\n| ------------------------------------- | --------------- | --------------- | ------------------------- |\n| Cisco Security Cloud                  | 3.6.5           ",
+    "url": "https://github.com/pyth0n1c/security_content/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: security_content"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-07-09T11:45:44Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
     ]
   }
 ]
