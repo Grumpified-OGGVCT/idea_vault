@@ -336,12 +336,12 @@
   },
   {
     "title": "Want to suggest a wake word? Leave your thoughts here. (AIS-1441)",
-    "date": "2026-07-02T08:26:07Z",
+    "date": "2026-07-09T01:14:09Z",
     "summary": "Hi all,\n\nWe're excited to offer the community more free and high-quality wake word models. Everyone has their own unique wake word preferences. Now, we're ready to regularly release some of the most popular wake words. Please let us know the wake words you want! \n\n**Already supported languages: Chin",
     "url": "https://github.com/espressif/esp-sr/issues/88",
     "source": "github_issues",
     "highlights": [
-      "comments: 396",
+      "comments: 397",
       "state: open",
       "repo: esp-sr"
     ]
@@ -516,19 +516,19 @@
   },
   {
     "title": "[PR] feat(goose): implement agent configuration for workspace preparation",
-    "date": "2026-07-09T00:13:04Z",
+    "date": "2026-07-09T01:24:18Z",
     "summary": "## Summary\r\n- Replaces the `configurationFiles` and `preWorkspaceStart` stubs with a real implementation that writes `GOOSE_MODEL` into `.goose/config.yaml` from the workspace context, preserving existing configuration fields.\r\n\r\nFixes #2174\r\n\r\n## Test plan\r\n\r\n_Before testing youll need to  set the ",
     "url": "https://github.com/openkaiden/kaiden/pull/2192",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 10",
       "pull request",
       "repo: kaiden"
     ]
   },
   {
     "title": "[PR] Add AWS/Gemini deployment mode and mobile UI improvements",
-    "date": "2026-07-09T00:12:33Z",
+    "date": "2026-07-09T04:49:24Z",
     "summary": "## Summary\n\nThis PR adds support for deploying PROPESQI on AWS with Gemini as the LLM/embeddings provider (eliminating the need for local Ollama), improves mobile responsiveness of the UI, replaces local OCR with cloud-based LLMWhisperer, and refines the design system with a cohesive color palette.\n",
     "url": "https://github.com/CaioBurton/chatbot/pull/1",
     "source": "github_prs",
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] AI core OpenHuman pilot stack",
-    "date": "2026-07-09T00:06:46Z",
+    "date": "2026-07-09T03:41:31Z",
     "summary": "## Summary\n- Makes the ai-core fork branch maintainable: headless core memory now honors configured native embeddings, including Voyage, instead of falling back to OpenHuman cloud embeddings.\n- Routes memory-tree embedding through the same native direct Voyage/Cohere adapter path used by memory impo",
     "url": "https://github.com/xenking/openhuman/pull/1",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-09T00:00:33Z",
+    "date": "2026-07-09T02:43:09Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] fix(server): rehydrate CompositeKey inputs and correct log ID types in MergeRecords resolver",
-    "date": "2026-07-08T23:53:21Z",
+    "date": "2026-07-09T04:52:46Z",
     "summary": "## Summary\n\nFixes two bugs that make the `MergeRecords` GraphQL mutation unusable (observed on 5.44.0, present on `next`):\n\n1. **CompositeKey rehydration** (fixes #3091) \u2014 the mutation passed the raw type-graphql input straight into the provider. Its `SurvivingRecordCompositeKey` / `RecordsToMerge` ",
     "url": "https://github.com/MemberJunction/MJ/pull/3094",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-08T23:49:51Z",
+    "date": "2026-07-09T04:25:44Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -708,12 +708,12 @@
   },
   {
     "title": "[PR] **logan/obsidian**",
-    "date": "2026-07-08T23:31:48Z",
+    "date": "2026-07-09T04:37:34Z",
     "summary": "The world is quiet here\uff0e",
     "url": "https://github.com/LAF-US/IDAHO-VAULT/pull/563",
     "source": "github_prs",
     "highlights": [
-      "comments: 133",
+      "comments: 151",
       "pull request",
       "repo: IDAHO-VAULT"
     ]
@@ -740,6 +740,174 @@
       "comments: 2",
       "pull request",
       "repo: openclaude"
+    ]
+  },
+  {
+    "title": "Fix File Editing Tool Reliability - replace_in_file, write_to_file, and Diff Failures",
+    "date": "2026-07-09T04:48:17Z",
+    "summary": "## Problem\n\nCline's file editing tools (replace_in_file and write_to_file) suffer from widespread reliability issues that significantly impact user productivity and increase API costs. These failures affect users across all models (Claude 3.7/4, Gemini, GPT, local models) and cause frustrating infin",
+    "url": "https://github.com/cline/cline/issues/4384",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 45",
+      "state: open",
+      "repo: cline"
+    ]
+  },
+  {
+    "title": "[PR] Add boxy Phase-1 MVP: unified CLI for containerized GenAI on HPC",
+    "date": "2026-07-09T04:47:58Z",
+    "summary": "## Summary\n\nThis PR introduces **boxy**, a unified command-line tool for deploying and serving containerized GenAI/LLM services across heterogeneous HPC sites. It formalizes the bash prototype in `hpc-workflow/` into a maintainable Python CLI that abstracts container runtimes (Podman, Apptainer, Doc",
+    "url": "https://github.com/abeltre1/canopie25-paper-artifacts/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: canopie25-paper-artifacts"
+    ]
+  },
+  {
+    "title": "[PR] mj app idempotency (resumable install/upgrade/uninstall)",
+    "date": "2026-07-09T04:39:55Z",
+    "summary": "## Summary\n`mj app install`/`upgrade`/`remove` are resumable end-to-end, with mutex guards preventing conflicting operations while one is mid-flight. All of this has now been verified **live** \u2014 real GitHub Open Apps, real SQL Server + PostgreSQL databases, real process kills \u2014 not just mocked unit ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3073",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore: update dependencies",
+    "date": "2026-07-09T04:11:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nUpdate Request | Renovate Bot\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Pa",
+    "url": "https://github.com/siderolabs/extensions/pull/567",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: extensions"
+    ]
+  },
+  {
+    "title": "[PR] feat(inference): add OpenRouter onboarding support",
+    "date": "2026-07-09T04:00:04Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nAdds first-class OpenRouter onboarding support for OpenClaw, Hermes, and LangChain Deep Agents Code. OpenRouter is exposed as its own provider choice while configuring OpenShell through the OpenAI-compatible runtime path with the OpenRouter base URL an",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/6461",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] [RIP-1 + RIP-3] Control Plane 5.0 Unified Implementation: Core Architecture Refactor + LLM Native Integration (CLI / MCP / Embedded Chat)",
+    "date": "2026-07-09T03:59:49Z",
+    "summary": "# PR Description\r\n## PR Title\r\n[ISSUE #10600][RIP-1 + RIP-3] Control Plane 5.0 Unified Implementation: Core Architecture Refactor + LLM Native Integration (CLI / MCP / Embedded Chat)\r\n\r\n---\r\n\r\n## Summary\r\nThis PR implements the core delivery of RocketMQ 5.0 Studio proposed in community recruitment i",
+    "url": "https://github.com/apache/rocketmq-dashboard/pull/426",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: rocketmq-dashboard"
+    ]
+  },
+  {
+    "title": "[PR] fix(security): harden multi-tenant surfaces",
+    "date": "2026-07-09T03:20:42Z",
+    "summary": "## Summary\n\nRebases the security-hardening sweep onto `release-1.11.0` while preserving the individual commit series.\n\n## Security fixes introduced beyond `release-1.11.0`\n\n- Hardens code-execution surfaces with authenticated-flow component blocking, expanded code-exec aliases, agentic assistant cod",
+    "url": "https://github.com/langflow-ai/langflow/pull/13530",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 38",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] fix(container): update image amruthpillai/reactive-resume to v5.2.3",
+    "date": "2026-07-09T03:08:44Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | patch | `v5.2.2` \u2192 `v5.2.3` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency Dashboa",
+    "url": "https://github.com/Vikaspogu/home-ops/pull/1583",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go to v0.43.0",
+    "date": "2026-07-09T02:54:09Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | OpenSSF |\n|---|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontainers-go) | require",
+    "url": "https://github.com/lucasew/refactree/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: refactree"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-07-09T02:44:11Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update amruthpillai/reactive-resume docker tag to v5",
+    "date": "2026-07-09T04:46:18Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.5.6` \u2192 `v5.2.3` |\n\n---\n\n### Release Not",
+    "url": "https://github.com/DrPulse/Boilerplates/pull/1496",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Boilerplates"
+    ]
+  },
+  {
+    "title": "[PR] \ud83d\udee1\ufe0f Sentinel: [HIGH] Fix SSRF redirect bypass",
+    "date": "2026-07-09T02:22:29Z",
+    "summary": "\ud83d\udea8 **Severity:** HIGH\n\ud83d\udca1 **Vulnerability:** Server-Side Request Forgery (SSRF) bypass via HTTP redirects. The application validated the IP of the initial URL to block requests to cloud metadata services, but used `urllib.request.urlopen` which automatically follows redirects. An attacker could provide",
+    "url": "https://github.com/alexpp90/homebrew-photo-selector-toolbox/pull/348",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: homebrew-photo-selector-toolbox"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image amruthpillai/reactive-resume to v5.2.3",
+    "date": "2026-07-09T02:12:26Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | minor | `v5.1.9` \u2192 `v5.2.3` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency Dashboa",
+    "url": "https://github.com/albatrossflavour/home-ops/pull/1581",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] Update bump-dependencies",
+    "date": "2026-07-09T02:12:07Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update | Pending |\n|---|---|---|---|---|-",
+    "url": "https://github.com/lehigh-university-libraries/scribe/pull/75",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: scribe"
     ]
   }
 ]
