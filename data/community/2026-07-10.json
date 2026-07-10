@@ -144,12 +144,12 @@
   },
   {
     "title": "Models don't load",
-    "date": "2026-07-09T23:33:17Z",
+    "date": "2026-07-10T03:46:10Z",
     "summary": "### macOS version\n\n14.8.3\n\n### GPU and VRAM\n\nRX580, 48 GB ram\n\n### Model and quantization\n\nany (Q4)\n\n### What happened?\n\nNo models placed in ~/models load. I get a 'Engine exited with code 4' error. These models work in llama.cpp for me. Does your app require AVX2, SSE4.2? My Xeon cpus do not suppor",
     "url": "https://github.com/engeldlgado/toshllm/issues/1",
     "source": "github_issues",
     "highlights": [
-      "comments: 47",
+      "comments: 70",
       "state: open",
       "repo: toshllm"
     ]
@@ -204,12 +204,12 @@
   },
   {
     "title": "Want to suggest a wake word? Leave your thoughts here. (AIS-1441)",
-    "date": "2026-07-09T01:14:09Z",
+    "date": "2026-07-10T04:47:00Z",
     "summary": "Hi all,\n\nWe're excited to offer the community more free and high-quality wake word models. Everyone has their own unique wake word preferences. Now, we're ready to regularly release some of the most popular wake words. Please let us know the wake words you want! \n\n**Already supported languages: Chin",
     "url": "https://github.com/espressif/esp-sr/issues/88",
     "source": "github_issues",
     "highlights": [
-      "comments: 397",
+      "comments: 398",
       "state: open",
       "repo: esp-sr"
     ]
@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-10T00:06:52Z",
+    "date": "2026-07-10T04:05:27Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] feat: merge knowledge graph + conversation arc into memdir",
-    "date": "2026-07-09T23:25:13Z",
+    "date": "2026-07-10T03:43:46Z",
     "summary": "## Summary\n\nMerge the standalone Knowledge Graph + Conversation Arc system into the existing auto-memory (memdir) directory. Previously, OpenClaude maintained **two parallel memory systems** \u2014 the file-based memdir (`memory/`) and a separate entity-relation-store backed by SQLite + JSON + Orama. The",
     "url": "https://github.com/Gitlawb/openclaude/pull/1811",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] Desktop: Resolves #15862: AI chat panel: Change APIs used to expose note edit operations",
-    "date": "2026-07-09T23:24:36Z",
+    "date": "2026-07-10T03:04:10Z",
     "summary": "# Problem\r\n\r\nThe desktop app's chat panel currently accepts output in a custom schema. This schema includes the type of edit operations that should be applied to the note.\r\n\r\nJoplin supports various chat providers. These chat providers have dedicated APIs for exposing tools for models. Using these A",
     "url": "https://github.com/laurent22/joplin/pull/15881",
     "source": "github_prs",
@@ -660,7 +660,7 @@
   },
   {
     "title": "[PR] Add boxy Phase-1 MVP: unified CLI for containerized GenAI on HPC",
-    "date": "2026-07-09T22:56:37Z",
+    "date": "2026-07-10T04:53:01Z",
     "summary": "## Summary\n\nThis PR introduces **boxy**, a unified command-line tool for deploying and serving containerized GenAI/LLM services across heterogeneous HPC sites. It formalizes the bash prototype in `hpc-workflow/` into a maintainable Python CLI that abstracts container runtimes (Podman, Apptainer, Doc",
     "url": "https://github.com/abeltre1/canopie25-paper-artifacts/pull/1",
     "source": "github_prs",
@@ -740,6 +740,210 @@
       "comments: 3",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "Dependency Dashboard",
+    "date": "2026-06-15T16:52:20Z",
+    "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/n8n-io/n8n).\n\n## Repository Problems\n\nThese prob",
+    "url": "https://github.com/n8n-io/n8n/issues/18322",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 2",
+      "state: open",
+      "repo: n8n"
+    ]
+  },
+  {
+    "title": "[PR] fix(inference): inject OpenRouter runtime headers via adapter",
+    "date": "2026-07-10T04:55:16Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\nOpenRouter runtime traffic now goes through a host-local NemoClaw adapter so runtime requests include the OpenRouter attribution headers that OpenShell cannot inject per provider today. The adapter keeps `OPENROUTER_API_KEY` owned by OpenShell, binds ru",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/6584",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Build Gnomai GPU Router v0",
+    "date": "2026-07-10T04:52:11Z",
+    "summary": "## Summary\n\nBuilds the first complete **Gnomai GPU Router v0** implementation under `nomai-5-6-build-workspace/gnomai-gpu-router/`.\n\nLambda/LangGraph remains responsible for semantic model choice. This sidecar provides deterministic durable local execution pressure control for Ollama.\n\n## Included\n\n",
+    "url": "https://github.com/Amoebathegrey/lambda-sidecars/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: lambda-sidecars"
+    ]
+  },
+  {
+    "title": "[PR] fix(query): warn before repeated tool failures stop",
+    "date": "2026-07-10T04:51:19Z",
+    "summary": "## Summary\n\n- Warn the model once when a persistent tool-name/error-category failure signature reaches the penultimate configured threshold.\n- Deliver that warning as a meta user message on the next API turn, while preserving the existing hard stop at the threshold.\n- Do not emit a warning when no n",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1927",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(auth): OS-keyring API keys + mermaid login/logout",
+    "date": "2026-07-10T04:55:20Z",
+    "summary": "Roadmap item 9 (PR 7 of 10 in the medium tier). User-confirmed scope: full CredentialStore trait + `mermaid login` command; env vars keep absolute precedence.\n\n## Storage\nNew `CredentialStore` trait (`utils/credentials.rs`): `KeyringStore` under service `\"mermaid\"` (macOS Keychain / Windows Credenti",
+    "url": "https://github.com/noahsabaj/mermaid-cli/pull/232",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mermaid-cli"
+    ]
+  },
+  {
+    "title": "[PR] Use Probatio as the data validation engine",
+    "date": "2026-07-10T04:43:05Z",
+    "summary": "## Breaking change\r\n\r\nNone. Which is the nice thing about all of this \ud83d\ude04 \r\n\r\n## Proposed change\r\n\r\nThis pull request introduces [Probatio](https://probatio.frenck.dev) as Home Assistant's data validation engine, as a drop-in replacement for voluptuous.\r\n\r\nProbatio is a modern, actively maintained, cl",
+    "url": "https://github.com/home-assistant/core/pull/175128",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: core"
+    ]
+  },
+  {
+    "title": "[PR] Introduce the `ballerinax/ai.google.gemini` package, integrating Google",
+    "date": "2026-07-10T04:42:45Z",
+    "summary": "Gemini with the Ballerina `ai` module as both a model and embedding provider.\r\n\r\n- Model provider: chat/generate-content over Gemini's generateContent API, with tool/function calling and structured (schema-constrained) output\r\n- Embedding provider: text embeddings via the embedContent API\r\n- Multimo",
+    "url": "https://github.com/ballerina-platform/module-ballerinax-ai.google.gemini/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: module-ballerinax-ai.google.gemini"
+    ]
+  },
+  {
+    "title": "[PR] Skyvern-parity #1: vision lane \u2014 screenshot-grounded planner (fill-by-attribute-id preserved)",
+    "date": "2026-07-10T04:39:04Z",
+    "summary": "Closes Skyvern-parity gap #1 (from the #351 epic): the plan-as-data planner was text-DOM-only, blind on canvas/image-map/purely-visual forms. It can now ground its typed ops against a rendered screenshot in addition to the semantic DOM. Default OFF (`use_planner=False` + no screenshot \u21d2 byte-identic",
+    "url": "https://github.com/kevinhirsch/applicant/pull/818",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: applicant"
+    ]
+  },
+  {
+    "title": "[PR] Core: Plaud client, pipeline, providers, CLI/UI, deploy",
+    "date": "2026-07-10T04:34:53Z",
+    "summary": "The full localplaud stack, hardened and verified end-to-end. Relates to #2, #3, #4, #5; closes #7.\n\n## Features\n- **Plaud client + poller** (read-only): list, detail, **audio download via `GET /file/temp-url/{id}` \u2192 signed S3 MP3**, cloud\u2192SQLite sync with md5/version change detection + crash-recover",
+    "url": "https://github.com/skyhong2002/localplaud/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: localplaud"
+    ]
+  },
+  {
+    "title": "[PR] fix: keep effort indicator visible in prompt footer",
+    "date": "2026-07-10T04:32:39Z",
+    "summary": "## Summary\n\n- move the effort indicator out of the transient notification queue and render it as a stable prompt-footer fallback\n- keep transient notifications and active IDE selections ahead of the effort fallback\n- preserve brief-mode footer ownership and add focused coverage for effort fallback, ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1919",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): Update Go",
+    "date": "2026-07-10T04:28:27Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [git",
+    "url": "https://github.com/datosh/opkssh/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: opkssh"
+    ]
+  },
+  {
+    "title": "[PR] feat: cross-app shell parity \u2014 shared command palette, course switcher, AI-status chips (#764)",
+    "date": "2026-07-10T04:22:55Z",
+    "summary": "## Summary\r\n\r\nImplements the full **cross-platform feature-parity backlog (#764)** \u2014 every gap where the redesigned QuestionMaker (and AI Tutor) had shell features that Core lacked \u2014 and goes further by extracting the three shared shell features into `@eduai/ui` so **Core, QuestionMaker, and AI Tuto",
+    "url": "https://github.com/EduAI-Lab/EduAI/pull/901",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: EduAI"
+    ]
+  },
+  {
+    "title": "[PR] Bump the all group across 1 directory with 14 updates",
+    "date": "2026-07-10T04:18:59Z",
+    "summary": "Bumps the all group with 11 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [cloud.google.com/go/logging](https://github.com/googleapis/google-cloud-go) | `1.17.0` | `1.18.0` |\n| [connectrpc.com/connect](https://github.com/connectrpc/connect-go) | `1.19.2` | `1.20.0` |\n| [",
+    "url": "https://github.com/streamingfast/firehose-core/pull/168",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: firehose-core"
+    ]
+  },
+  {
+    "title": "[PR] feat(external-data-sources): Microsoft Fabric SQL endpoint support",
+    "date": "2026-07-10T04:06:54Z",
+    "summary": "## Summary\n\nAdds **Microsoft Fabric** as a supported External Data Source. MemberJunction can now back an **Entity** or **Query** with a live Microsoft Fabric **Warehouse** or **Lakehouse SQL analytics endpoint** \u2014 read at request time through the driver, **without replicating the data into the MJ d",
+    "url": "https://github.com/MemberJunction/MJ/pull/3110",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: initial EnterpriseAI Local Runtime and Gateway capability",
+    "date": "2026-07-10T03:48:50Z",
+    "summary": "Implements the full MECM/SCCM-compatible Windows deployment package for a workstation-local Ollama + LiteLLM AI runtime stack, offline-installable, with no committed secrets and loopback-only service bindings by default.\n\n## Core scripts\n- `scripts/Install-EnterpriseAI.ps1` \u2014 silent install: dirs, s",
+    "url": "https://github.com/markashook/enterpriseai/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: enterpriseai"
+    ]
+  },
+  {
+    "title": "[PR] research-scout: improvement proposal 2026-07-10",
+    "date": "2026-07-10T03:09:21Z",
+    "summary": "## Research Scout: improvements from [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)\n\nAnalyzed [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) and found **30** actionable improvement(s) for the orchestrator.\n\n### 1. Conditional ",
+    "url": "https://github.com/pjcau/agent-orchestrator/pull/263",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agent-orchestrator"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-07-10T02:44:16Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
     ]
   }
 ]
