@@ -504,19 +504,19 @@
   },
   {
     "title": "[PR] Release development to main",
-    "date": "2026-07-10T00:07:22Z",
+    "date": "2026-07-10T20:24:13Z",
     "summary": "## Summary\n\nPromote the current development branch to main.\n\nIncludes:\n- F21V Core PR monitor runtime execution seam for GKE (#751)\n\nThis release introduces a cloud-neutral hosted execution seam so PR monitor repair and other agent runs can execute through an injected runtime executor while local Co",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/754",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: agent-workspace-fabric"
     ]
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-10T18:13:08Z",
+    "date": "2026-07-10T20:02:16Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -684,7 +684,7 @@
   },
   {
     "title": "[PR] feat: add more e2e tests to frontend",
-    "date": "2026-07-10T14:25:58Z",
+    "date": "2026-07-10T20:03:33Z",
     "summary": "This pull request introduces several updates to the project's Docker configuration and frontend dependencies. The main focus is on switching Docker services from using pre-built images to building them locally, and on adding new logging-related dependencies to the frontend.\r\n\r\n**Docker configuration",
     "url": "https://github.com/langflow-ai/openrag/pull/1458",
     "source": "github_prs",
@@ -1044,7 +1044,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-10T16:51:12Z",
+    "date": "2026-07-10T19:01:55Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1140,7 +1140,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-10T16:51:14Z",
+    "date": "2026-07-10T19:02:44Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/GlacierEQ/kilocode/pull/2",
     "source": "github_prs",
@@ -1272,7 +1272,7 @@
   },
   {
     "title": "[PR] Adopt GCP managed services across the nano-LLM stack",
-    "date": "2026-07-10T16:45:55Z",
+    "date": "2026-07-10T20:17:18Z",
     "summary": "## Summary\n\nUpgrades the tiny-LLM-on-GKE example from a minimal cluster + port-forward setup to a production-shaped stack built on GCP managed services:\n\n- **Gateway API \u2192 global external Application Load Balancer** with a static IP (`k8s/gateway.yaml`, `terraform/edge.tf`)\n- **Certificate Manager**",
     "url": "https://github.com/abcde090/nano-llm-example/pull/1",
     "source": "github_prs",
@@ -1484,6 +1484,174 @@
       "comments: 2",
       "pull request",
       "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(repl): add correction context after interruption",
+    "date": "2026-07-10T20:26:18Z",
+    "summary": "## Summary\n\n- add a one-shot model-visible reminder after a user interrupts an active assistant turn\n- keep slash commands, local UI commands, remote events, timeouts, and programmatic aborts from consuming or arming the reminder\n\n## Impact\n\n- user-facing impact: the next normal correction prompt is",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1936",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(agent): support /plugin:skill syntax for referencing plugin skills",
+    "date": "2026-07-10T20:26:04Z",
+    "summary": "Resolves #848\n\n## Summary\n\nWhen a skill is loaded from a plugin (e.g. the ponytail plugin's `ponytail` skill), the system prompt now displays it as `plugin-name:skill-name` (e.g. `ponytail:ponytail`) so the LLM can reference it unambiguously. The `matchSkillTriggers` function supports both `/skill-n",
+    "url": "https://github.com/inference-gateway/cli/pull/849",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: cli"
+    ]
+  },
+  {
+    "title": "[PR] feat(harness): the Brain rides supervised \u2014 Arm B orchestrator child, isolated env, settle-or-reject teardown (#14967)",
+    "date": "2026-07-10T20:25:23Z",
+    "summary": "Resolves #14967\n\nRelated: #13033 (parent \u2014 slice 3 of its intake plan; the falsifier verdict is recorded on #14967 with @neo-opus-ada's countersign requested, and the ledger reconciliation onto #13033 follows merge) \u00b7 epic #13377 \u00b7 ADR 0034 \u00a72.1 (upstream contract) \u00b7 PR #14963 (the packaging root th",
+    "url": "https://github.com/neomjs/neo/pull/14976",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: neo"
+    ]
+  },
+  {
+    "title": "[PR] fix(pg-codegen): make PostgreSQL CodeGen differential (stop full-regen every run)",
+    "date": "2026-07-10T20:25:00Z",
+    "summary": "## Problem\nEvery `mj codegen` run against PostgreSQL re-emits **all ~380 entities** (~184,000 lines of byte-identical views/sprocs) instead of a differential \u2014 so a one-entity change produces a 184k-line `CodeGen_Run` migration, and codegen is never idempotent.\n\n## Root causes (both PG-specific)\n1. ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3117",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(pg): OpenApp LastCompletedStep CodeGen \u2014 fixes v5.46.0 Postgres Open App outage",
+    "date": "2026-07-10T20:18:11Z",
+    "summary": "## Problem\nOn **PostgreSQL 5.46.0**, every `mj app` operation (install / upgrade / enable / disable / remove) fails with `column \"LastCompletedStep\" does not exist`, blocking **all** Open Apps. SQL Server is unaffected.\n\n## Root cause\n`V202607090600__v5.46.x__OpenApp_LastCompletedStep.pg.sql` added ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3118",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] from the hell",
+    "date": "2026-07-10T20:17:42Z",
+    "summary": "",
+    "url": "https://github.com/santipongth/thai-citizen-guide/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: thai-citizen-guide"
+    ]
+  },
+  {
+    "title": "[PR] Feat/cicero enfermeiro phase1",
+    "date": "2026-07-10T20:16:06Z",
+    "summary": "## What\r\n\r\nBrief description of changes.\r\n\r\n## Type\r\n\r\n- [ ] Bug fix\r\n- [ ] Feature / Improvement\r\n- [ ] Refactor\r\n- [ ] Documentation\r\n- [ ] Website\r\n- [ ] Demo / Testing\r\n- [ ] Breaking change\r\n\r\n## Testing\r\n\r\n- [ ] Tested in modern browsers\r\n- [ ] No console errors\r\n- [ ] Types/doc added\r\n\r\nClose",
+    "url": "https://github.com/cicero-im/page-agent/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: page-agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(ng-dashboards): stop Data Explorer relative-time from throwing NG0100",
+    "date": "2026-07-10T19:57:17Z",
+    "summary": "## Summary\r\n  The Data Explorer home dashboard throws `NG0100: ExpressionChangedAfterItHasBeenCheckedError` (dev builds) from its \"Recent Records\" relative-time labels. This pre-computes the label into a stored field and binds that, so the template never computes time during change detection.\r\n\r\n  #",
+    "url": "https://github.com/MemberJunction/MJ/pull/3096",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(bg): revalidate process identity before signals",
+    "date": "2026-07-10T19:54:50Z",
+    "summary": "## Summary\n- Revalidate a background session PID immediately before SIGTERM and SIGKILL.\n- Refuse to signal or mark the session killed when the live process identity mismatches or cannot be read.\n\n## Implementation\n- Expose a four-state session identity result backed by strict command-token matching",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1937",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] ajouter une fonction simulate pull request",
+    "date": "2026-07-10T19:42:37Z",
+    "summary": "/review ",
+    "url": "https://github.com/braiki89-aymen/Aymen-braiki-EventConnect-Lot1-Back/pull/13",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 273",
+      "pull request",
+      "repo: Aymen-braiki-EventConnect-Lot1-Back"
+    ]
+  },
+  {
+    "title": "[PR] fix(destroy): release final gateway on macOS",
+    "date": "2026-07-10T19:39:25Z",
+    "summary": "## Summary\nOn macOS, unattended destruction of the final sandbox now tears down the shared NemoClaw gateway so the host listener on port 8080 is released. Linux keeps the existing gateway-preservation default for fast reuse, and explicit CLI or environment overrides still take precedence.\n\n## Relate",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/6597",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 30",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Phase 2, Block 2: Foundry Stub \u2014 AI model routing",
+    "date": "2026-07-10T19:21:40Z",
+    "summary": "This pull request was created by @kiro-agent on behalf of @RealMiLyfe :ghost:\n\nComment with **/kiro fix** to address specific feedback or **/kiro all** to address everything.\n<sub>[Learn about Kiro Web](https://kiro.dev/web/)</sub>\n\n---\n## Summary\n\nPhase 2, Block 2 \u2014 Complete Foundry Stub: AI model ",
+    "url": "https://github.com/RealMiLyfe/MiLyfe/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: MiLyfe"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/linkwarden/linkwarden docker tag to v2.15.0",
+    "date": "2026-07-10T19:17:20Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/linkwarden/linkwarden](https://redirect.github.com/linkwarden/linkwarden) | minor | `v2.7.1` \u2192 `v2.15.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency Dashboard](.",
+    "url": "https://github.com/tiborpilz/NixOS/pull/121",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: NixOS"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image amruthpillai/reactive-resume (v4.4.5 \u2794 v5.2.3)",
+    "date": "2026-07-10T19:12:10Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.4.5` \u2192 `v5.2.3` |\n\n---\n\n> [!WARNING]\n> ",
+    "url": "https://github.com/neilmfrench/homelab-prod/pull/1149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-prod"
     ]
   }
 ]
