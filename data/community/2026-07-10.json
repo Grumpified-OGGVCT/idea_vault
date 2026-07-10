@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-10T16:52:41Z",
+    "date": "2026-07-10T18:13:08Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -564,12 +564,12 @@
   },
   {
     "title": "[PR] **logan/obsidian**",
-    "date": "2026-07-09T23:47:12Z",
+    "date": "2026-07-10T17:28:44Z",
     "summary": "The world is quiet here\uff0e",
     "url": "https://github.com/LAF-US/IDAHO-VAULT/pull/563",
     "source": "github_prs",
     "highlights": [
-      "comments: 172",
+      "comments: 175",
       "pull request",
       "repo: IDAHO-VAULT"
     ]
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] feat: Unified Ctrl+K command palette (omnibar) on a pluggable OmnibarProvider registry",
-    "date": "2026-07-09T23:25:07Z",
+    "date": "2026-07-10T18:23:44Z",
     "summary": "Implements **H1 of the composer adoption proposal** (`plans/composer-adoption/proposal.md`): one Ctrl+K command palette replaces Explorer's three overlapping quick-switchers \u2014 the header search composite, the Ctrl+/ app command palette, and the legacy per-entity search popup.\n\n## Feature flag \u2014 A/B-",
     "url": "https://github.com/MemberJunction/MJ/pull/3042",
     "source": "github_prs",
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] Use Probatio as the data validation engine",
-    "date": "2026-07-10T16:55:54Z",
+    "date": "2026-07-10T17:33:50Z",
     "summary": "## Breaking change\n\nNone. Which is the nice thing about all of this \ud83d\ude04 \n\n## Proposed change\n\nThis pull request introduces [Probatio](https://probatio.frenck.dev) as Home Assistant's data validation engine, as a drop-in replacement for voluptuous.\n\nProbatio is a modern, actively maintained, clean-room",
     "url": "https://github.com/home-assistant/core/pull/175128",
     "source": "github_prs",
@@ -1376,6 +1376,114 @@
       "comments: 0",
       "pull request",
       "repo: quodeq"
+    ]
+  },
+  {
+    "title": "[PR] feat(resilience): weekly-429 cooldown for fetcher-less providers (#3709)",
+    "date": "2026-07-10T18:23:47Z",
+    "summary": "## Summary\n\nOllama Cloud free-tier accounts have a hard **weekly** request cap. On cap, the upstream returns `429` with a body like `you (<account>) have reached your weekly usage limit`. Because `ollama-cloud` is an **apikey-category** provider (not oauth), the existing `shouldUseQuotaSignal` gate ",
+    "url": "https://github.com/diegosouzapw/OmniRoute/pull/6817",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "[PR] fix(resilience): apikey-provider 429s honor explicit quota-exhausted text (#6638)",
+    "date": "2026-07-10T18:23:00Z",
+    "summary": "Closes #6638\n\n## Root cause\nOllama Cloud is registered as an `apikey`-category provider. `checkFallbackError()`'s `shouldPreserveQuotaSignalsFor429()` gate only preserved body-text quota classification (daily/monthly/weekly quota-exhausted detection) for `oauth`-category providers \u2014 every apikey-cat",
+    "url": "https://github.com/diegosouzapw/OmniRoute/pull/6731",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "[PR] Rework AI layer around Gemini: schema linking, self-repair pipeline, extensive docs",
+    "date": "2026-07-10T18:20:12Z",
+    "summary": "## What this PR does\n\nReworks the two weakest modules (`llm.py`, `schema_link.py` / `link_relevant_tables`), moves **all AI operations to the Google Gemini API** (no user-facing provider choice, but the abstraction to add vendors later is kept), wires the previously-unused repair loop into the live ",
+    "url": "https://github.com/HAAHIT/bolodb/pull/161",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: bolodb"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update toniblyx/prowler docker tag to v5.33.1",
+    "date": "2026-07-10T18:07:02Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [toniblyx/prowler](https://redirect.github.com/prowler-cloud/prowler) | minor | `5.2.0` \u2192 `5.33.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summa",
+    "url": "https://github.com/stekern/cdk-constructs/pull/76",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cdk-constructs"
+    ]
+  },
+  {
+    "title": "[PR] fix(inference): route local compatible endpoints through gateway",
+    "date": "2026-07-10T18:03:41Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\nReplaces PR #6331 with a clean, GitHub-verified branch for the local compatible-endpoint gateway fix.\nThe change keeps host-side validation on the user-entered loopback URL, registers eligible sandbox routes through `host.openshell.internal`, and docume",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/6649",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(pg): bake OpenApp LastCompletedStep CodeGen \u2014 fixes v5.46.0 Postgres Open App outage",
+    "date": "2026-07-10T17:38:00Z",
+    "summary": "## Problem\nOn **PostgreSQL 5.46.0**, every `mj app` operation (install / upgrade / enable / disable / remove) fails with:\n\n```\ncolumn \"LastCompletedStep\" does not exist\n```\n\nblocking **all** Open Apps (Skip, connectors, everything) on every PG instance. SQL Server is unaffected.\n\n## Root cause\n`V202",
+    "url": "https://github.com/MemberJunction/MJ/pull/3115",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix: upgrade credential encryption key derivation to PBKDF2",
+    "date": "2026-07-10T17:08:22Z",
+    "summary": "`OPEN_NOTEBOOK_ENCRYPTION_KEY` was derived to a Fernet key via a single unsalted SHA-256 round - fast to compute, which is exactly the wrong property for a key derivation function: it makes offline brute-forcing a weak/short passphrase cheap.\n\nDerive via PBKDF2-HMAC-SHA256 with a fixed domain-separa",
+    "url": "https://github.com/lfnovo/open-notebook/pull/1020",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: open-notebook"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update toniblyx/prowler docker tag to v5.33.1",
+    "date": "2026-07-10T17:00:14Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [toniblyx/prowler](https://redirect.github.com/prowler-cloud/prowler) | Kustomization | minor | `5.7.5` \u2192 `5.33.1` |\n\n---\n\n> [!WARN",
+    "url": "https://github.com/meysam81/kustomizations/pull/79",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: kustomizations"
+    ]
+  },
+  {
+    "title": "[PR] fix(agent): skip local server probes on known public endpoints",
+    "date": "2026-07-10T16:59:55Z",
+    "summary": "## Problem\n\n`detect_local_server_type()` probes for Ollama/LM Studio/vLLM/llama.cpp by sending GET requests to paths like `/api/tags`, `/v1/props`, `/version` on the configured base URL. When the base URL is `https://api.openai.com/v1`, these probes produce harmless but noisy 404s that pollute egres",
+    "url": "https://github.com/NousResearch/hermes-agent/pull/61692",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: hermes-agent"
     ]
   }
 ]
