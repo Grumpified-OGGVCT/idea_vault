@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-07-11T07:08:54Z",
+    "date": "2026-07-11T09:43:50Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) | patch | `10.1.2` \u2192 `10.1.3` |\n| [cert-manager](https://cert-manager.io) ([source](https://redirect.github.com/cert-manager/cert-manager)) | minor | `v1.2",
     "url": "https://github.com/nolte/k8s-home-lab/pull/830",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-11T08:10:04Z",
+    "date": "2026-07-11T10:03:05Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -744,7 +744,7 @@
   },
   {
     "title": "[PR] Release development to main",
-    "date": "2026-07-11T08:46:42Z",
+    "date": "2026-07-11T10:12:07Z",
     "summary": "## Summary\n\nPromote the current development branch to main.\n\nIncludes:\n- F21V Core PR monitor runtime execution seam for GKE (#751)\n\nThis release introduces a cloud-neutral hosted execution seam so PR monitor repair and other agent runs can execute through an injected runtime executor while local Co",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/754",
     "source": "github_prs",
@@ -1032,7 +1032,7 @@
   },
   {
     "title": "[PR] 3.2.2",
-    "date": "2026-07-11T08:50:22Z",
+    "date": "2026-07-11T09:50:49Z",
     "summary": "fixes and polish on top of 3.2.1, plus a major expansion of the plugin platform: plugins grow from a read-mostly companion into a real integration surface \u2014 while every new capability stays inside the existing security frame (isolated child, capability router, double-gating against the acting user's",
     "url": "https://github.com/mauriceboe/TREK/pull/1472",
     "source": "github_prs",
@@ -1104,12 +1104,12 @@
   },
   {
     "title": "[PR] Add Nika to Workflow Engine",
-    "date": "2026-07-11T07:42:16Z",
+    "date": "2026-07-11T09:45:53Z",
     "summary": "Adds **Nika** (alphabetical, house format).\n\nIntent-as-code workflow engine for AI in a single Rust binary (AGPL-3.0): repeated AI work becomes a reviewable `.nika.yaml` DAG \u2014 statically checked (schema, permits, honest cost floor) before any token is spent, executed budget-capped with tamper-eviden",
     "url": "https://github.com/stn1slv/awesome-integration/pull/112",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: awesome-integration"
     ]
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] chore(deps): update netbird",
-    "date": "2026-07-11T07:14:05Z",
+    "date": "2026-07-11T10:03:28Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/netbirdio/dashboard](https://redirect.github.com/netbirdio/dashboard) | minor | `v2.36.0` \u2192 `v2.90.3` |\n| [ghcr.io/netbirdio/manage",
     "url": "https://github.com/vehagn/homelab/pull/520",
     "source": "github_prs",
@@ -1160,6 +1160,54 @@
       "comments: 0",
       "pull request",
       "repo: Boilerplates"
+    ]
+  },
+  {
+    "title": "[PR] feat(documents): opt-in docling VLM pipeline (DOCLING_PIPELINE/DOCLING_VLM_PRESET)",
+    "date": "2026-07-11T10:17:49Z",
+    "summary": "## What & why\r\n\r\nThe merged docling integration (ADR-031, v0.128) only ever triggers docling-serve's\r\n**standard** (classic OCR: EasyOCR/RapidOCR/Tesseract) pipeline \u2014 `convert_file()`\r\nnever sends a `pipeline` field, so docling-serve defaults to `standard`. A docling-serve\r\ndeployment running **VLM",
+    "url": "https://github.com/cbcoutinho/nextcloud-mcp-server/pull/1024",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: nextcloud-mcp-server"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update netbirdio/netbird docker tag to v0.74.4",
+    "date": "2026-07-11T08:59:19Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [netbirdio/netbird](https://redirect.github.com/netbirdio/netbird) | minor | `0.72.2-rootless` \u2192 `v0.74.4-rootless` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>netbirdio/netbird (netbirdio/netbird)</summary>\n\n##",
+    "url": "https://github.com/miscOS/gitops-docker-atlas/pull/52",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: gitops-docker-atlas"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/amruthpillai/reactive-resume ( v4.5.6 \u2192 v5.2.3 )",
+    "date": "2026-07-11T09:29:18Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.5.6` \u2192 `v5.2.3` |\n\n---\n\n### Rel",
+    "url": "https://github.com/FrederikS/homelab/pull/461",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/amruthpillai/reactive-resume docker tag to v5.2.3",
+    "date": "2026-07-11T09:04:41Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | minor | `v5.1.0` \u2192 `v5.2.3` |\n\n---\n\n### Rel",
+    "url": "https://github.com/vnghia/homelab/pull/566",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
     ]
   }
 ]
