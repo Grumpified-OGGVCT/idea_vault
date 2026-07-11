@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-11T13:07:43Z",
+    "date": "2026-07-11T14:45:57Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-11T10:57:28Z",
+    "date": "2026-07-11T14:10:40Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@arethetypeswrong/cli](http",
     "url": "https://github.com/moeru-ai/velin/pull/28",
     "source": "github_prs",
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-11T08:44:14Z",
+    "date": "2026-07-11T14:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -972,7 +972,7 @@
   },
   {
     "title": "[PR] Release v3.8.47",
-    "date": "2026-07-11T11:03:14Z",
+    "date": "2026-07-11T14:22:25Z",
     "summary": "# Release v3.8.47\n\n> Living release PR \u2014 accumulates all changes on `release/v3.8.47` before the squash-merge to `main`. Body is a **condensed mirror** of the CHANGELOG `[3.8.47]` section plus the pending `changelog.d/` fragments \u2014 full bullet text lives in `CHANGELOG.md` / `changelog.d/` on the bra",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/6569",
     "source": "github_prs",
@@ -1224,7 +1224,7 @@
   },
   {
     "title": "[PR] Overhaul: harden acpx delegation, persist Discord memory, close FX-A..G validation gaps",
-    "date": "2026-07-11T13:25:51Z",
+    "date": "2026-07-11T14:42:26Z",
     "summary": "## Overview\n\nDraft PR tracking the Missy validation-harness overhaul driven by\n`~/missy-loops/prompt.md`. Source evidence: `~/fixes.md`\n(HARNESS_RUN_SUMMARY_TOOL_SPECIFIC.md, 90 result records \u2014 43/89 below\nthreshold or failing) and `~/Missy-security-review.md` (commit-pinned\nreview at `abb7015`).\n\n",
     "url": "https://github.com/MissyLabs/missy/pull/31",
     "source": "github_prs",
@@ -1248,7 +1248,7 @@
   },
   {
     "title": "[PR] fix(agent): skip local server probes on known public endpoints",
-    "date": "2026-07-11T12:55:58Z",
+    "date": "2026-07-11T14:50:22Z",
     "summary": "## Problem\n\n`detect_local_server_type()` probes for Ollama/LM Studio/vLLM/llama.cpp by sending GET requests to paths like `/api/tags`, `/v1/props`, `/version` on the configured base URL. When the base URL is `https://api.openai.com/v1`, these probes produce harmless but noisy 404s that pollute egres",
     "url": "https://github.com/NousResearch/hermes-agent/pull/61692",
     "source": "github_prs",
@@ -1292,6 +1292,54 @@
       "comments: 1",
       "pull request",
       "repo: rocketmq-dashboard"
+    ]
+  },
+  {
+    "title": "[PR] docs: add sp.specs suite for agent engine, tab grouping, endurance, provider router",
+    "date": "2026-07-11T14:53:49Z",
+    "summary": "## Summary\n- Adds `/sp.specs` architecture blueprint (4 spec docs) to upgrade this extension into a resilient, autonomous browser automation engine while keeping the multi-provider LLM routing advantage.\n- `01-agent-engine.spec.md` \u2014 CDP-driven perceive/plan/act/verify loop, the 7-tool space (`navig",
+    "url": "https://github.com/staimoorulhassan/Claude-Free-Extension/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Claude-Free-Extension"
+    ]
+  },
+  {
+    "title": "[PR] Update bump-dependencies",
+    "date": "2026-07-11T14:51:29Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update | Pending |\n|---|---|---|---|---|-",
+    "url": "https://github.com/lehigh-university-libraries/scribe/pull/75",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: scribe"
+    ]
+  },
+  {
+    "title": "[PR] feat(db): staging seed tooling for the Supabase pipeline (PR-3 of 3)",
+    "date": "2026-07-11T14:48:55Z",
+    "summary": "## Summary\n\nPR-3 (final) of the Supabase multi-environment pipeline (stacked on #201): staging seed tooling,\nper the design spec (`docs/superpowers/specs/2026-07-10-supabase-environments-pipeline-design.md`,\nDecision 4 and cutover step 5).\n\n### What changed\n\n- **`.env.staging.example`**: committed t",
+    "url": "https://github.com/ByronWilliamsCPA/cyo-adventure/pull/205",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: cyo-adventure"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-07-11T14:31:01Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
     ]
   }
 ]
