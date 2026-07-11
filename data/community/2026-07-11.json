@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-11T21:34:34Z",
+    "date": "2026-07-11T22:51:24Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] feat(grugthink): import the Discord personality engine (curated, public-safe)",
-    "date": "2026-07-11T20:19:10Z",
+    "date": "2026-07-11T22:11:07Z",
     "summary": "## Why / Summary\n\nBrings **GrugThink** - the Discord home of Grug (a caveman-personality Discord bot + web management dashboard) - into the monorepo under `grugthink/`, so the Discord Grug and the code-review Elder can eventually be connected (\"talk to Grug, he fixes code\").\n\ngrugthink was a **priva",
     "url": "https://github.com/githumps/grug/pull/591",
     "source": "github_prs",
@@ -1224,7 +1224,7 @@
   },
   {
     "title": "[PR] Overhaul: harden acpx delegation, persist Discord memory, close FX-A..G validation gaps",
-    "date": "2026-07-11T21:53:25Z",
+    "date": "2026-07-11T22:53:03Z",
     "summary": "## Overview\n\nDraft PR tracking the Missy validation-harness overhaul driven by\n`~/missy-loops/prompt.md`. Source evidence: `~/fixes.md`\n(HARNESS_RUN_SUMMARY_TOOL_SPECIFIC.md, 90 result records \u2014 43/89 below\nthreshold or failing) and `~/Missy-security-review.md` (commit-pinned\nreview at `abb7015`).\n\n",
     "url": "https://github.com/MissyLabs/missy/pull/31",
     "source": "github_prs",
@@ -1272,7 +1272,7 @@
   },
   {
     "title": "[PR] Update Container images",
-    "date": "2026-07-11T19:01:22Z",
+    "date": "2026-07-11T21:58:32Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [cloudflare/cloudflared](https://redirect.github.com/cloudflare/cloudflared) |  | minor | `2026.6.1` \u2192 `2026.7.1` |\n| [deluan/navid",
     "url": "https://github.com/bubacoder/infra/pull/364",
     "source": "github_prs",
@@ -1560,7 +1560,7 @@
   },
   {
     "title": "[PR] Solve chatbot AI audit exercise",
-    "date": "2026-07-11T20:51:11Z",
+    "date": "2026-07-11T22:33:10Z",
     "summary": "## Resumen\n\nAuditor\u00eda de privacidad, seguridad y cumplimiento de un chatbot de atenci\u00f3n al cliente basado en un LLM comercial en la nube, sector **Salud (Sanidad)**.\n\n- **Parte 1**: clasificaci\u00f3n EU AI Act (riesgo limitado, justificada por funci\u00f3n y no por sector) + obligaciones/sanciones + principi",
     "url": "https://github.com/LIDR-academy/ai4devs-s06-auditoria-chatbot-ia-202606-sn2/pull/1",
     "source": "github_prs",
@@ -1572,12 +1572,12 @@
   },
   {
     "title": "[PR] Transition to Conductor Project Suite",
-    "date": "2026-07-11T20:44:15Z",
+    "date": "2026-07-11T22:18:17Z",
     "summary": "## Summary\r\n\r\nThis PR transitions LoopGPT from a single root application into the **Conductor project suite**: three independently installable Python projects with explicit ownership boundaries, while retaining compatibility wrappers for existing root-level entry points and imports.\r\n\r\nThe split kee",
     "url": "https://github.com/laceyp99/LoopGPT/pull/46",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: LoopGPT"
     ]
@@ -1640,6 +1640,54 @@
       "comments: 1",
       "pull request",
       "repo: motorcycle-rag-system"
+    ]
+  },
+  {
+    "title": "[PR] Pin postMessage origins, schedule idle-reap, add local-GPU Hermes backends",
+    "date": "2026-07-11T22:22:51Z",
+    "summary": "## Summary\n\nThree fixes from a broader codebase audit, plus a small UX addition:\n\n- **Security**: `VaultBridge`/`CafresoHQChain` (the sandboxed HQ app's postMessage bridges to the SvelteKit shell) never validated the origin of incoming messages or pinned outgoing targets \u2014 any page could iframe `hq.",
+    "url": "https://github.com/CafresoDAO/CafresoHQ/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: CafresoHQ"
+    ]
+  },
+  {
+    "title": "[PR] feat(models): modernize model catalog",
+    "date": "2026-07-11T22:17:05Z",
+    "summary": "## Summary\n- define a fixed 16-model executable chat catalog enriched by models.dev metadata with live, stale, and bundled snapshot fallback\n- add GPT-5.6 Sol, Terra, and Luna plus GPT-5.5, with current pricing, reasoning, routing, and BYOK support\n- replace Gemini 2.5 with Gemini 3.1 Pro Preview, G",
+    "url": "https://github.com/finki-hub/chat-bot/pull/617",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: chat-bot"
+    ]
+  },
+  {
+    "title": "[PR] feat: Fractal Completion Loop \u2014 Module Enhancements + Frontend + Cross-Layer Wiring",
+    "date": "2026-07-11T22:11:41Z",
+    "summary": "This pull request was created by @kiro-agent on behalf of @RealMiLyfe :ghost:\n\nComment with **/kiro fix** to address specific feedback or **/kiro all** to address everything.\n<sub>[Learn about Kiro Web](https://kiro.dev/web/)</sub>\n\n---\n## Fractal Completion Loop \u2014 Existing Module Enhancements + Fro",
+    "url": "https://github.com/RealMiLyfe/MiLyfe/pull/44",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: MiLyfe"
+    ]
+  },
+  {
+    "title": "[PR] feat(ui): UI-C0 \u2014 Router Spine + Workspace Shell (8 workspaces)",
+    "date": "2026-07-11T21:56:52Z",
+    "summary": "## Summary\n\nImplements **UI-C0** from the approved `UI_OS_REFINEMENT_PLAN.md` (docs/ui-os-refinement-plan branch, registered as R-6 in `SYSTEM_COHERENCE_PLAN.md`) \u2014 the router spine every later workspace phase (UI-C4..C11) depends on.\n\nThe plan was written 2026-07-04 against a pre-consolidation fron",
+    "url": "https://github.com/F-game25/AI-EMPLOYEE/pull/344",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: AI-EMPLOYEE"
     ]
   }
 ]
