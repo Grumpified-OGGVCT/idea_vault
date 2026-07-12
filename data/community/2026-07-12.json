@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] Release v3.8.47",
-    "date": "2026-07-12T13:26:24Z",
+    "date": "2026-07-12T13:50:30Z",
     "summary": "# Release v3.8.47\n\n> Living release PR \u2014 accumulates all changes on `release/v3.8.47` before the squash-merge to `main`. Body is a **condensed mirror** of the CHANGELOG `[3.8.47]` section plus the pending `changelog.d/` fragments \u2014 full bullet text lives in `CHANGELOG.md` / `changelog.d/` on the bra",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/6569",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-12T13:07:56Z",
+    "date": "2026-07-12T14:49:05Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -960,7 +960,7 @@
   },
   {
     "title": "[PR] feat(hosted): delegate adopted PR repair from Core",
-    "date": "2026-07-12T13:05:07Z",
+    "date": "2026-07-12T14:59:07Z",
     "summary": "## Summary\n\n- Adds explicit local or hosted execution policy for adopted PR monitors across API, CLI, MCP, and persisted task policy.\n- Delegates hosted agent repair and validation through authenticated asynchronous HTTP operations, including bounded polling, cancellation, output limits, terminal he",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/764",
     "source": "github_prs",
@@ -1188,12 +1188,12 @@
   },
   {
     "title": "[PR] feat(kilocode): full PMOVES.AI integration \u2014 model routing, MCP, fleet citizenship",
-    "date": "2026-07-12T12:59:14Z",
+    "date": "2026-07-12T14:04:09Z",
     "summary": "## Summary\n\nComplete KiloCode GLM integration into PMOVES.AI \u2014 bringing the third 5090 agent (\u25b2) to parity with Claude (\u25c6) and Codex (\u25a0) across model routing, MCP servers, and fleet citizenship protocols.\n\n4 phases, 13 files, +878/-26 lines.\n\n## Phase 1 \u2014 Identity & Stale Config Fixes\n\n| File | Fix ",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/2101",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 3",
       "pull request",
       "repo: PMOVES.AI"
     ]
@@ -1284,7 +1284,7 @@
   },
   {
     "title": "[PR] Add boxy Phase-1 MVP: unified CLI for containerized GenAI on HPC",
-    "date": "2026-07-12T11:55:58Z",
+    "date": "2026-07-12T13:48:32Z",
     "summary": "## Summary\n\nThis PR introduces **boxy**, a unified command-line tool for deploying and serving containerized GenAI/LLM services across heterogeneous HPC sites. It formalizes the bash prototype in `hpc-workflow/` into a maintainable Python CLI that abstracts container runtimes (Podman, Apptainer, Doc",
     "url": "https://github.com/abeltre1/canopie25-paper-artifacts/pull/1",
     "source": "github_prs",
@@ -1316,6 +1316,78 @@
       "comments: 0",
       "pull request",
       "repo: team-special-ops"
+    ]
+  },
+  {
+    "title": "[PR] fix(agent): restrict think=False to Ollama/local endpoints only",
+    "date": "2026-07-12T14:58:14Z",
+    "summary": "## Summary\n\n- Fixes #11237\n- The `think=False` parameter in `extra_body` is Ollama-specific. The previous guard `if self.provider == \"custom\"` matched **all** custom providers (Mistral, Fireworks, Together.ai, vLLM remote, etc.), causing HTTP 422 errors from cloud APIs that do not recognise the `thi",
+    "url": "https://github.com/NousResearch/hermes-agent/pull/11362",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] perf: bound file IO concurrency",
+    "date": "2026-07-12T14:56:51Z",
+    "summary": "## Summary\r\n\r\n- Bound file IO fan-out in attachment and team-memory paths.\r\n- Add a small bounded concurrency/abort helper with tests.\r\n- Fixes #1947\r\n\r\n## Impact\r\n\r\n- user-facing impact: less IO pressure in large repos or large team-memory dirs; no intended behavior change.\r\n- developer/maintainer ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1948",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go to v0.43.0",
+    "date": "2026-07-12T14:56:42Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/newrelic/nri-statsd/pull/115",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: nri-statsd"
+    ]
+  },
+  {
+    "title": "[PR] Hub on Cloud Run: app, provisioning, landing page, deploy pipeline",
+    "date": "2026-07-12T14:08:41Z",
+    "summary": "## What's here\n\nFive commits taking Traego from local-only to a deployed cloud hub:\n\n1. **feat(ui)** \u2014 all design-review fixes: adopt flow UI (pairing code + roles), mobile drawer shell, focus-visible, self-hosted Inter, AA contrast, inline errors, AI nav always visible.\n2. **feat(backend)** \u2014 plain",
+    "url": "https://github.com/Traego/traego-os/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: traego-os"
+    ]
+  },
+  {
+    "title": "[PR] chore: update dependency testcontainers to v12",
+    "date": "2026-07-12T13:35:36Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/eycgrupo/eyc-loopback-components/pull/213",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: eyc-loopback-components"
+    ]
+  },
+  {
+    "title": "[PR] feat(coding-agent): credential broker with pooled selection and background refresh",
+    "date": "2026-07-12T13:27:57Z",
+    "summary": "## Summary\nLoopback credential broker that stores OAuth/API-key credentials in a SQLite vault and leases them to authorized gateway clients:\n\n- `auth-multi-account` / `credential-selection` / `in-memory-credential-vault`: multi-account credential contracts, pooled selection, in-memory vault.\n- `auth",
+    "url": "https://github.com/code-yeongyu/senpi/pull/194",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: senpi"
     ]
   }
 ]
