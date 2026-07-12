@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] Overhaul: harden acpx delegation, persist Discord memory, close FX-A..G validation gaps",
-    "date": "2026-07-12T20:42:50Z",
+    "date": "2026-07-12T21:14:32Z",
     "summary": "## Overview\n\nDraft PR tracking the Missy validation-harness overhaul driven by\n`~/missy-loops/prompt.md`. Source evidence: `~/fixes.md`\n(HARNESS_RUN_SUMMARY_TOOL_SPECIFIC.md, 90 result records \u2014 43/89 below\nthreshold or failing) and `~/Missy-security-review.md` (commit-pinned\nreview at `abb7015`).\n\n",
     "url": "https://github.com/MissyLabs/missy/pull/31",
     "source": "github_prs",
@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] Release v3.8.47",
-    "date": "2026-07-12T13:50:30Z",
+    "date": "2026-07-12T21:08:10Z",
     "summary": "# Release v3.8.47\n\n> Living release PR \u2014 accumulates all changes on `release/v3.8.47` before the squash-merge to `main`. Body is a **condensed mirror** of the CHANGELOG `[3.8.47]` section plus the pending `changelog.d/` fragments \u2014 full bullet text lives in `CHANGELOG.md` / `changelog.d/` on the bra",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/6569",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-12T20:48:28Z",
+    "date": "2026-07-12T21:34:17Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -960,7 +960,7 @@
   },
   {
     "title": "[PR] feat(hosted): delegate adopted PR repair from Core",
-    "date": "2026-07-12T20:51:34Z",
+    "date": "2026-07-12T21:53:28Z",
     "summary": "## Summary\n\n- Adds explicit local or hosted execution policy for adopted PR monitors across API, CLI, MCP, and persisted task policy.\n- Delegates hosted agent repair and validation through authenticated asynchronous HTTP operations, including bounded polling, cancellation, output limits, terminal he",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/764",
     "source": "github_prs",
@@ -1652,6 +1652,54 @@
       "comments: 0",
       "pull request",
       "repo: carbonj"
+    ]
+  },
+  {
+    "title": "[PR] feat(tensorzero): wire GLM-5.2 coding plan across all agent services",
+    "date": "2026-07-12T21:50:55Z",
+    "summary": "## Summary\n\nAdds GLM-5.2 via Z.AI coding endpoint as a first-class model across all PMOVES agent services. Previously GLM-5.2 was only available through Ollama Cloud passthrough \u2014 now it has a direct model definition at the Z.AI coding endpoint with dedicated variants in every agent function.\n\n**Dep",
+    "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/2087",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: PMOVES.AI"
+    ]
+  },
+  {
+    "title": "[PR] feat(crush): Kong seeder fix + Z.AI provider + SPARK awakening handoff",
+    "date": "2026-07-12T21:46:52Z",
+    "summary": "## Summary\n\nThree deliverables from the Crush GLM-5.2 session that make the ecosystem work correctly for every node, not just this one.\n\n### Lane A: Kong Route Seeder Schema Fix (`kong_route_seeder.py`)\n\nThe seeder's `_parse_model_suits()` only understood one schema pattern. All 17 model-suit YAMLs ",
+    "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/2105",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: PMOVES.AI"
+    ]
+  },
+  {
+    "title": "[PR] `Global search`: Document Weaviate setup and relocate Pyris guidance",
+    "date": "2026-07-12T21:39:13Z",
+    "summary": "## Motivation\n\nSetting up Artemis **global search** (Weaviate + a text-embedding model) was hard for a non-TUM university admin: the guidance was fragmented across the developer guide, the docker compose files, and TUM-specific values appeared as if they were generic defaults. The Pyris setup also l",
+    "url": "https://github.com/ls1intum/Artemis/pull/13006",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: Artemis"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-go monorepo to v0.43.0",
+    "date": "2026-07-12T18:51:41Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/infratographer/load-balancer-api/pull/344",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: load-balancer-api"
     ]
   }
 ]
