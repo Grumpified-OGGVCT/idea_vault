@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] Overhaul: harden acpx delegation, persist Discord memory, close FX-A..G validation gaps",
-    "date": "2026-07-12T21:14:32Z",
+    "date": "2026-07-12T22:48:34Z",
     "summary": "## Overview\n\nDraft PR tracking the Missy validation-harness overhaul driven by\n`~/missy-loops/prompt.md`. Source evidence: `~/fixes.md`\n(HARNESS_RUN_SUMMARY_TOOL_SPECIFIC.md, 90 result records \u2014 43/89 below\nthreshold or failing) and `~/Missy-security-review.md` (commit-pinned\nreview at `abb7015`).\n\n",
     "url": "https://github.com/MissyLabs/missy/pull/31",
     "source": "github_prs",
@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] WIP - fix(provider): support custom Anthropic bearer auth",
-    "date": "2026-07-12T17:43:28Z",
+    "date": "2026-07-12T22:15:55Z",
     "summary": "## Summary\n\n- Add a **Custom Anthropic-compatible** `/provider` preset with endpoint, model, Bearer token, and optional request-header configuration.\n- Support Anthropic-native custom endpoints configured with `ANTHROPIC_BASE_URL` and either `ANTHROPIC_AUTH_TOKEN` or `ANTHROPIC_API_KEY`.\n- Send the ",
     "url": "https://github.com/Gitlawb/openclaude/pull/1929",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-12T15:04:17Z",
+    "date": "2026-07-12T22:30:42Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-12T21:34:17Z",
+    "date": "2026-07-12T22:50:41Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -696,7 +696,7 @@
   },
   {
     "title": "[PR] feat: merge knowledge graph + conversation arc into memdir",
-    "date": "2026-07-12T19:17:44Z",
+    "date": "2026-07-12T22:29:01Z",
     "summary": "## Summary\n\nMerge the standalone Knowledge Graph + Conversation Arc system into the existing auto-memory (memdir) directory. Previously, OpenClaude maintained **two parallel memory systems** \u2014 the file-based memdir (`memory/`) and a separate entity-relation-store backed by SQLite + JSON + Orama. The",
     "url": "https://github.com/Gitlawb/openclaude/pull/1811",
     "source": "github_prs",
@@ -960,7 +960,7 @@
   },
   {
     "title": "[PR] feat(hosted): delegate adopted PR repair from Core",
-    "date": "2026-07-12T21:53:28Z",
+    "date": "2026-07-12T22:51:24Z",
     "summary": "## Summary\n\n- Adds explicit local or hosted execution policy for adopted PR monitors across API, CLI, MCP, and persisted task policy.\n- Delegates hosted agent repair and validation through authenticated asynchronous HTTP operations, including bounded polling, cancellation, output limits, terminal he",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/764",
     "source": "github_prs",
@@ -972,7 +972,7 @@
   },
   {
     "title": "[PR] fix(inference): shim globalThis.fetch to proxy inference.local for cr\u2026",
-    "date": "2026-07-12T07:42:49Z",
+    "date": "2026-07-12T22:46:27Z",
     "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\nThis PR fixes a bug where cron `agentTurn` jobs using a local inference provider (Ollama or vLLM, configured to map via the virtual host `https://inference.local/v1`) are skipped. \r\nAt execution time, the OpenClaw cron scheduler runs a \"provider prefl",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/4916",
     "source": "github_prs",
@@ -1188,12 +1188,12 @@
   },
   {
     "title": "[PR] feat(kilocode): full PMOVES.AI integration \u2014 model routing, MCP, fleet citizenship",
-    "date": "2026-07-12T14:04:09Z",
+    "date": "2026-07-12T22:40:09Z",
     "summary": "## Summary\n\nComplete KiloCode GLM integration into PMOVES.AI \u2014 bringing the third 5090 agent (\u25b2) to parity with Claude (\u25c6) and Codex (\u25a0) across model routing, MCP servers, and fleet citizenship protocols.\n\n4 phases, 13 files, +878/-26 lines.\n\n## Phase 1 \u2014 Identity & Stale Config Fixes\n\n| File | Fix ",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/2101",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: PMOVES.AI"
     ]
@@ -1272,8 +1272,8 @@
   },
   {
     "title": "[PR] chore(release): v2026.07.12",
-    "date": "2026-07-12T11:59:47Z",
-    "summary": "Merge to release **v2026.07.12**. Tagging + image publish run automatically on merge.\n\n> \u26a0\ufe0f Squash-merge this PR so the release commit subject is `chore(release): v\u2026`.\n\n## [v2026.07.12] - 2026-07-12\n\n### Added\n\n- VR teleop sessions record in simulation \u2014 sim frame recorder, episodes, live progress (",
+    "date": "2026-07-12T22:41:05Z",
+    "summary": "Merge to release **v2026.07.12**. Tagging + image publish run automatically on merge.\n\n> \u26a0\ufe0f Squash-merge this PR so the release commit subject is `chore(release): v\u2026`.\n\n## [v2026.07.12] - 2026-07-12\n\n### Added\n\n- whole-RMS real-data flow \u2014 all G1 EDU + Dex3 sensors end-to-end, telemetry persistence,",
     "url": "https://github.com/RaaSaaR-org/robot-management-system/pull/180",
     "source": "github_prs",
     "highlights": [
@@ -1332,7 +1332,7 @@
   },
   {
     "title": "[PR] perf: bound file IO concurrency",
-    "date": "2026-07-12T14:56:51Z",
+    "date": "2026-07-12T22:40:16Z",
     "summary": "## Summary\r\n\r\n- Bound file IO fan-out in attachment and team-memory paths.\r\n- Add a small bounded concurrency/abort helper with tests.\r\n- Fixes #1947\r\n\r\n## Impact\r\n\r\n- user-facing impact: less IO pressure in large repos or large team-memory dirs; no intended behavior change.\r\n- developer/maintainer ",
     "url": "https://github.com/Gitlawb/openclaude/pull/1948",
     "source": "github_prs",
@@ -1632,7 +1632,7 @@
   },
   {
     "title": "[PR] Observability: Prometheus/Grafana/Tempo/Loki stack (grafana/otel-lgtm)",
-    "date": "2026-07-12T20:14:19Z",
+    "date": "2026-07-12T22:01:49Z",
     "summary": "## Summary\n\nAdds the full observability stack (`grafana/otel-lgtm`: real Prometheus + Grafana + Tempo + Loki + Pyroscope, one image) across docker-compose, Helm, and raw Kubernetes manifests, plus a round of deployment-path fixes discovered while actually exercising both the Kubernetes and Azure VM ",
     "url": "https://github.com/AET-DevOps26/team-the-rolling-restarts/pull/89",
     "source": "github_prs",
@@ -1700,6 +1700,66 @@
       "comments: 3",
       "pull request",
       "repo: load-balancer-api"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency danielmiessler/fabric to v1.4.458",
+    "date": "2026-07-12T22:53:22Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [danielmiessler/fabric](https://redirect.github.com/danielmiessler/fabric) | patch | `v1.4.388` \u2192 `v1.4.458` |\n\n---\n\n### Release Notes\n\n<detai",
+    "url": "https://github.com/fritzduchardt/k8s-workstation/pull/94",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k8s-workstation"
+    ]
+  },
+  {
+    "title": "[PR] feat(agent): reusable worktree-isolated agent test environment (#483)",
+    "date": "2026-07-12T22:51:32Z",
+    "summary": "Model-Signature: ollama-cloud/kimi-k2.7-code\n\n## Summary\n\nReplace the all-in-one agent container with a reusable, Compose-native tools environment. Agents and reviewers can now run LearnLoop tests from any clean Git worktree without installing Python or Node dependencies on the host.\n\nKey changes:\n\n",
+    "url": "https://github.com/brianlan/LearnLoop/pull/484",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LearnLoop"
+    ]
+  },
+  {
+    "title": "[PR] feat(cli): add --yolo alias for --dangerously-skip-permissions",
+    "date": "2026-07-12T22:44:33Z",
+    "summary": "## Summary\nAdds `--yolo` as a short alias for `--dangerously-skip-permissions`, matching the convention popularized by other coding-agent CLIs.\n\n- `src/entrypoints/cli.tsx`: normalize `--yolo` to the canonical flag at the very top of `main()`, before any parsing \u2014 several code paths (status notices,",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1939",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Fix provider base URL defaults and local auth header support",
+    "date": "2026-07-12T22:42:54Z",
+    "summary": "## Summary\r\n\r\n- replace stale known provider base URLs when `--provider` explicitly selects Ollama, NVIDIA NIM, Bankr, xAI, Xiaomi MiMo, or Venice\r\n- preserve custom base URLs that do not resolve to a known provider route\r\n- allow Ollama and LM Studio profiles to retain, apply, and persist custom au",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1945",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update amruthpillai/reactive-resume docker tag to v5",
+    "date": "2026-07-12T22:16:58Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.5.6` \u2192 `v5.2.3` |\n\n---\n\n### Release Not",
+    "url": "https://github.com/DrPulse/Boilerplates/pull/1496",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Boilerplates"
     ]
   }
 ]
