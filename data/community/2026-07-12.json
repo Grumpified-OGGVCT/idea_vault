@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] Overhaul: harden acpx delegation, persist Discord memory, close FX-A..G validation gaps",
-    "date": "2026-07-12T03:40:01Z",
+    "date": "2026-07-12T06:09:54Z",
     "summary": "## Overview\n\nDraft PR tracking the Missy validation-harness overhaul driven by\n`~/missy-loops/prompt.md`. Source evidence: `~/fixes.md`\n(HARNESS_RUN_SUMMARY_TOOL_SPECIFIC.md, 90 result records \u2014 43/89 below\nthreshold or failing) and `~/Missy-security-review.md` (commit-pinned\nreview at `abb7015`).\n\n",
     "url": "https://github.com/MissyLabs/missy/pull/31",
     "source": "github_prs",
@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] security: privacy hardening, product focus, and enterprise quality baseline",
-    "date": "2026-07-12T03:37:26Z",
+    "date": "2026-07-12T06:27:43Z",
     "summary": "## Purpose\n\nThis draft converts KIAS from a broad experimental repository into a focused, self-hosted, policy-driven control plane for operating tool-using AI agents with **Control, Evidence, and Recovery** as its product contract.\n\nIt also remediates the identified credential, personal-data, organi",
     "url": "https://github.com/Andy-ckm/KIAS/pull/2",
     "source": "github_prs",
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] fix(agent): skip local server probes on known public endpoints",
-    "date": "2026-07-12T03:34:05Z",
+    "date": "2026-07-12T05:56:06Z",
     "summary": "## Problem\n\n`detect_local_server_type()` probes for Ollama/LM Studio/vLLM/llama.cpp by sending GET requests to paths like `/api/tags`, `/v1/props`, `/version` on the configured base URL. When the base URL is `https://api.openai.com/v1`, these probes produce harmless but noisy 404s that pollute egres",
     "url": "https://github.com/NousResearch/hermes-agent/pull/61692",
     "source": "github_prs",
@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] Release v3.8.47",
-    "date": "2026-07-12T03:24:41Z",
+    "date": "2026-07-12T06:30:54Z",
     "summary": "# Release v3.8.47\n\n> Living release PR \u2014 accumulates all changes on `release/v3.8.47` before the squash-merge to `main`. Body is a **condensed mirror** of the CHANGELOG `[3.8.47]` section plus the pending `changelog.d/` fragments \u2014 full bullet text lives in `CHANGELOG.md` / `changelog.d/` on the bra",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/6569",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-12T02:37:01Z",
+    "date": "2026-07-12T06:13:55Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -740,6 +740,186 @@
       "comments: 1",
       "pull request",
       "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(dream): TRO-48 live NPC webhook roundtrip + DREAM foundation",
+    "date": "2026-07-12T06:34:18Z",
+    "summary": "## Summary\n- Implements live NPC webhook trigger roundtrip (<2s, TRO-48/TRO-66)\n- NPC memory artifact schema v1 (TRO-286)\n- NPC persona bibles for 3 ambient + 2 named characters (TRO-63)\n- Zone spawn table for Whisper/Neon/Rust/Ember (TRO-284)\n- NEED economy sources/sinks with decay and anti-inflati",
+    "url": "https://github.com/Trollz1004/ANTIGRAVITY/pull/197",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ANTIGRAVITY"
+    ]
+  },
+  {
+    "title": "[PR] feat: ai spend visibility \u2014 real per-provider token + estimated cost tracking",
+    "date": "2026-07-12T06:32:42Z",
+    "summary": "## What\n\nP3 spend guardrail. Nothing tracked token/dollar spend before, so autopilot on a cloud model could burn money overnight invisibly. This captures **exact tokens** at every billable path and shows an **estimated** cost.\n\n- **Real per-provider token capture**: OpenAI (`stream_options.include_u",
+    "url": "https://github.com/saeedkolivand/ai-job-hunter-app/pull/624",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: ai-job-hunter-app"
+    ]
+  },
+  {
+    "title": "[PR] feat(voice): offline-capable local voice mode + fresh-box provisioning",
+    "date": "2026-07-12T06:31:45Z",
+    "summary": "## What\n\nMakes JARVIS hold a full voice conversation **with no internet**, and provisions\nthat path end-to-end on a fresh box. Two commits, 8 files, all in the\nvoice-agent / installer surface (no overlap with the Chrome-MCP base):\n\n**`d1d65072` \u2014 offline-capable local voice mode**\n- **LLM:** local O",
+    "url": "https://github.com/ulrichando/jarvis/pull/228",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: jarvis"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-07-12T06:28:09Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-12T06:06:01Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/GlacierEQ/kilocode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-12T05:55:32Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-12T05:55:25Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/facemendous/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-12T05:55:23Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/LunaticMuch/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-12T05:55:19Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-12T05:55:17Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/gmifsud/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-12T05:55:17Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-12T05:55:17Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/MAlkabbani/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-12T05:55:11Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/softctwo/ResoftCode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ResoftCode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-12T05:55:04Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jeevesh415/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-12T05:54:52Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
     ]
   }
 ]
