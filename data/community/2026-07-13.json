@@ -168,12 +168,12 @@
   },
   {
     "title": "\ud83d\udd25 HF-Git \u6bcf\u65e5\u91cd\u78c5\u53d1\u73b0",
-    "date": "2026-07-12T12:14:24Z",
+    "date": "2026-07-13T12:21:05Z",
     "summary": "\u6b64 Issue \u7528\u4e8e\u63a5\u6536\u6bcf\u65e5\u81ea\u52a8\u62a5\u544a\u3002\u6bcf\u5929\u7684\u53d1\u73b0\u4f1a\u4ee5\u8bc4\u8bba\u5f62\u5f0f\u8ffd\u52a0\u5230\u6b64 Issue\u3002",
     "url": "https://github.com/ErgoTechKG/hf-git/issues/1",
     "source": "github_issues",
     "highlights": [
-      "comments: 95",
+      "comments: 96",
       "state: open",
       "repo: hf-git"
     ]
@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] feat(hosted): delegate adopted PR repair from Core",
-    "date": "2026-07-13T10:28:19Z",
+    "date": "2026-07-13T13:18:58Z",
     "summary": "## Summary\n\n- Adds explicit local or hosted execution policy for adopted PR monitors across API, CLI, MCP, and persisted task policy.\n- Delegates hosted agent repair and validation through authenticated asynchronous HTTP operations, including bounded polling, cancellation, output limits, terminal he",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/764",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-13T10:14:10Z",
+    "date": "2026-07-13T13:15:28Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] WIP - fix(provider): support custom Anthropic bearer auth",
-    "date": "2026-07-13T02:26:38Z",
+    "date": "2026-07-13T13:22:28Z",
     "summary": "## Summary\n\n- Add a **Custom Anthropic-compatible** `/provider` preset with endpoint, model, Bearer token, and optional request-header configuration.\n- Support Anthropic-native custom endpoints configured with `ANTHROPIC_BASE_URL` and either `ANTHROPIC_AUTH_TOKEN` or `ANTHROPIC_API_KEY`.\n- Send the ",
     "url": "https://github.com/Gitlawb/openclaude/pull/1929",
     "source": "github_prs",
@@ -960,7 +960,7 @@
   },
   {
     "title": "[PR] improvments for normal use cases",
-    "date": "2026-07-13T10:19:44Z",
+    "date": "2026-07-13T13:12:23Z",
     "summary": "This pull request implements major improvements to the continuous batching system, focusing on unifying the scheduler, introducing a true multi-session owner for efficient batched execution, and enabling weight-read-once GEMM batching for further performance gains. It also documents the audit proces",
     "url": "https://github.com/dAppCore/go-inference/pull/10",
     "source": "github_prs",
@@ -1044,7 +1044,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-13T10:17:00Z",
+    "date": "2026-07-13T12:24:17Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/GlacierEQ/kilocode/pull/2",
     "source": "github_prs",
@@ -1136,6 +1136,186 @@
       "comments: 1",
       "pull request",
       "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] Harden autonomous recovery and provider safety",
+    "date": "2026-07-13T13:24:29Z",
+    "summary": "## Current maintenance scope\n\nThis draft PR contains cumulative autonomous-hardening checkpoints for durable recovery state, CLI contracts, credential redaction, artifact integrity, atomic writes, resume/UI containment, owner-safe locking, malformed-input boundaries, provider timeouts, repository pr",
+    "url": "https://github.com/ThineLord/auto-research-agent/pull/13",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: auto-research-agent"
+    ]
+  },
+  {
+    "title": "[PR] Add Pi coding agent profile",
+    "date": "2026-07-13T13:23:15Z",
+    "summary": "## Summary\n\nAdds Pi as a bundled agent profile alongside Claude, Gemini, and Bash. Pi is a popular open-source, provider-agnostic terminal coding agent that supports Claude, GPT, Gemini, Grok, and local models (Ollama).\n\n### Profile (`agent/profiles/pi.yaml`)\n- **npm**: `@earendil-works/pi-coding-ag",
+    "url": "https://github.com/dustinblack/agent-dashboard/pull/81",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: agent-dashboard"
+    ]
+  },
+  {
+    "title": "[PR] Add boxy Phase-1 MVP: unified CLI for containerized GenAI on HPC",
+    "date": "2026-07-13T13:21:07Z",
+    "summary": "## Summary\n\nThis PR introduces **boxy**, a unified command-line tool for deploying and serving containerized GenAI/LLM services across heterogeneous HPC sites. It formalizes the bash prototype in `hpc-workflow/` into a maintainable Python CLI that abstracts container runtimes (Podman, Apptainer, Doc",
+    "url": "https://github.com/abeltre1/canopie25-paper-artifacts/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: canopie25-paper-artifacts"
+    ]
+  },
+  {
+    "title": "[PR] refactor(parse-once): single-grammar reasoning + tool-call parsing, native-first for Gemma",
+    "date": "2026-07-13T13:20:44Z",
+    "summary": "## What this delivers\n\nStarted as the parse-once boundary refactor (single-grammar reasoning + tool-call parsing, native-first for Gemma) and grew into a broad device-hardening pass: every `Bxx`/`Qxx`/`Dxx`/`Mxx` finding from the on-device test log driven to a fix with an integration test, plus a fu",
+    "url": "https://github.com/off-grid-ai/off-grid-ai-mobile/pull/510",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: off-grid-ai-mobile"
+    ]
+  },
+  {
+    "title": "[PR] refactor(llm): add LiteLLM-backed provider abstraction",
+    "date": "2026-07-13T13:17:42Z",
+    "summary": "HUMAN:\r\nThis PR proposes to abstract a provider out of the mixed string \"provider/model\" that we were using.\r\n\r\n- [x] A human has tested these changes.\r\n\r\nAGENT:\r\n\r\n## Why\r\n\r\nA provider abstraction is useful for other things in the future, such as defining keys per provider, thus saving time and ann",
+    "url": "https://github.com/OpenHands/software-agent-sdk/pull/2363",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 31",
+      "pull request",
+      "repo: software-agent-sdk"
+    ]
+  },
+  {
+    "title": "[PR] Updated to the latest version of the current project",
+    "date": "2026-07-13T13:17:19Z",
+    "summary": "#### What roadmap does this PR target?\r\n\r\n- [ ] Frontend Roadmap\r\n- [ ] Backend Roadmap\r\n- [ ] DevOps Roadmap\r\n- [x] All Roadmaps\r\n\r\n#### Please acknowledge the items listed below\r\n\r\n- [ ] I have discussed this contribution and got a go-ahead in an issue before opening this pull request.\r\n- [ ] This",
+    "url": "https://github.com/Diego-18/developer-roadmap/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: developer-roadmap"
+    ]
+  },
+  {
+    "title": "[PR] fix(quota): Ollama Cloud credential validation and UI decoupling (#2187)",
+    "date": "2026-07-13T13:11:24Z",
+    "summary": "Closes #2187\n\n### Problem\n\nOllama Cloud usage tracking fails with \"Provider not configured\" even after setup. Three root-cause issues:\n\n1. **Credential validation always fails (web runtime)** \u2014 `fetchOllamaCloudUsage` uses `redirect: 'manual'` and treats all 3xx responses as auth failure. ollama.com",
+    "url": "https://github.com/openchamber/openchamber/pull/2196",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openchamber"
+    ]
+  },
+  {
+    "title": "[PR] deps(deps): bump the runtime-minor group across 1 directory with 7 updates",
+    "date": "2026-07-13T13:10:30Z",
+    "summary": "Bumps the runtime-minor group with 7 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langchain](https://github.com/langchain-ai/langchain) | `1.2.9` | `1.3.1` |\n| [langchain-core](https://github.com/langchain-ai/langchain) | `1.2.20` | `1.4.0` |\n| [langchain-community](ht",
+    "url": "https://github.com/iamkayleb/consumer-template/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: consumer-template"
+    ]
+  },
+  {
+    "title": "[PR] Observability: Prometheus/Grafana/Tempo/Loki stack (grafana/otel-lgtm)",
+    "date": "2026-07-13T12:57:13Z",
+    "summary": "## Summary\n\nAdds the full observability stack (`grafana/otel-lgtm`: real Prometheus + Grafana + Tempo + Loki + Pyroscope, one image) across docker-compose, Helm, and raw Kubernetes manifests, plus a round of deployment-path fixes discovered while actually exercising both the Kubernetes and Azure VM ",
+    "url": "https://github.com/AET-DevOps26/team-the-rolling-restarts/pull/89",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: team-the-rolling-restarts"
+    ]
+  },
+  {
+    "title": "[PR] fix(sse): register ollama-cloud in USAGE_FETCHER_PROVIDERS (#7026)",
+    "date": "2026-07-13T12:41:34Z",
+    "summary": "## Problem\n\n`ollama-cloud` is a usage-supported provider (it scrapes quota from the Ollama Cloud settings page when a cookie is provided), and `getUsageForProvider()` already handles `case \"ollama-cloud\"` in its switch. But the provider is **missing from the `USAGE_FETCHER_PROVIDERS` array** in `ope",
+    "url": "https://github.com/diegosouzapw/OmniRoute/pull/7041",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update baserow/baserow docker tag to v2",
+    "date": "2026-07-13T12:39:58Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [baserow/baserow](https://redirect.github.com/baserow/baserow) | major | `1.35.3` \u2192 `2.3.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>baserow/baserow (baserow/baserow)</summary>\n\n### [`v2.3.1`](https://redirec",
+    "url": "https://github.com/bigbeartechworld/big-bear-video-assets/pull/1705",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: big-bear-video-assets"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add Ollama Routing Integration v1",
+    "date": "2026-07-13T12:31:41Z",
+    "summary": "## Summary\n\nAdd advisory local model routing for AI-HQ to recommend Ollama for suitable low-risk workloads when cloud providers are degraded or unavailable.\n\n## What Changed\n\n### Added\n- **docs/OLLAMA_ROUTING_STRATEGY.md** - Overall architecture, decision matrix, and integration points\n- **docs/LOCA",
+    "url": "https://github.com/NousResearch/hermes-agent/pull/30894",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] Add AI commit message generation to the commit dialog",
+    "date": "2026-07-13T12:31:35Z",
+    "summary": "Fixes #12203\r\n\r\n## Proposed changes\r\n\r\n- Add an **opt-in, off-by-default** feature that drafts a commit message from the **staged diff** using any **OpenAI-compatible** endpoint \u2014 OpenAI, Azure OpenAI, OpenRouter, Groq, or a **local** model via Ollama.\r\n- Add a \"\u2728 Generate AI commit message\" button ",
+    "url": "https://github.com/gitextensions/gitextensions/pull/13149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 18",
+      "pull request",
+      "repo: gitextensions"
+    ]
+  },
+  {
+    "title": "[PR] LLM defaults: self-host zero-config agent tasks; agent container on by default (stacked on #2664)",
+    "date": "2026-07-13T12:30:09Z",
+    "summary": "**Stacked on #2664 \u2190 #2663 \u2190 #2662 \u2190 #2661 \u2190 #2660 \u2190 #2659 \u2190 #2656.** Final part of the zero-config series.\n\nAfter this PR, a self-hosted install is fully zero-config for AI fixes: set `GLOBAL_LLM_PROVIDER_*` env vars once (Ollama works keyless), install the GitHub App (repos auto-import, #2663), an",
+    "url": "https://github.com/OneUptime/oneuptime/pull/2665",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: oneuptime"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-07-13T12:22:23Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
     ]
   }
 ]
