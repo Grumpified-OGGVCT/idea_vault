@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] feat(hosted): delegate adopted PR repair from Core",
-    "date": "2026-07-13T18:15:46Z",
+    "date": "2026-07-13T20:05:23Z",
     "summary": "## Summary\n\n- Adds explicit local or hosted execution policy for adopted PR monitors across API, CLI, MCP, and persisted task policy.\n- Delegates hosted agent repair and validation through authenticated asynchronous HTTP operations, including bounded polling, cancellation, output limits, terminal he",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/764",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-13T18:19:53Z",
+    "date": "2026-07-13T20:08:12Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -684,12 +684,12 @@
   },
   {
     "title": "[PR] fix(permissions): enforce read-only plan mode",
-    "date": "2026-07-13T01:07:25Z",
+    "date": "2026-07-13T19:46:22Z",
     "summary": "## Summary\n- Prevent mutating or unclassified tool invocations while plan mode is active.\n- Preserve read-only inspection, user interaction, and exact active plan-file updates.\n\n## Implementation\n- Apply one plan-mode policy to ordinary permissions, hook-approved execution, rewritten inputs, and hea",
     "url": "https://github.com/Gitlawb/openclaude/pull/1938",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: openclaude"
     ]
@@ -708,12 +708,12 @@
   },
   {
     "title": "[PR] fix(repl): add correction context after interruption",
-    "date": "2026-07-13T00:48:26Z",
+    "date": "2026-07-13T20:15:42Z",
     "summary": "## Summary\n\n- add a one-shot model-visible reminder after a user interrupts an active assistant turn\n- keep slash commands, local UI commands, remote events, timeouts, and programmatic aborts from consuming or arming the reminder\n\n## Impact\n\n- user-facing impact: the next normal correction prompt is",
     "url": "https://github.com/Gitlawb/openclaude/pull/1936",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: openclaude"
     ]
@@ -876,7 +876,7 @@
   },
   {
     "title": "[PR] feat: merge knowledge graph + conversation arc into memdir",
-    "date": "2026-07-13T05:33:00Z",
+    "date": "2026-07-13T19:56:32Z",
     "summary": "## Summary\n\nMerge the standalone Knowledge Graph + Conversation Arc system into the existing auto-memory (memdir) directory. Previously, OpenClaude maintained **two parallel memory systems** \u2014 the file-based memdir (`memory/`) and a separate entity-relation-store backed by SQLite + JSON + Orama. The",
     "url": "https://github.com/Gitlawb/openclaude/pull/1811",
     "source": "github_prs",
@@ -960,7 +960,7 @@
   },
   {
     "title": "[PR] improvments for normal use cases",
-    "date": "2026-07-13T18:46:05Z",
+    "date": "2026-07-13T19:16:30Z",
     "summary": "This pull request implements major improvements to the continuous batching system, focusing on unifying the scheduler, introducing a true multi-session owner for efficient batched execution, and enabling weight-read-once GEMM batching for further performance gains. It also documents the audit proces",
     "url": "https://github.com/dAppCore/go-inference/pull/10",
     "source": "github_prs",
@@ -1344,7 +1344,7 @@
   },
   {
     "title": "[PR] feat: Unified Ctrl+K command palette (omnibar) on a pluggable OmnibarProvider registry",
-    "date": "2026-07-13T18:34:35Z",
+    "date": "2026-07-13T19:59:45Z",
     "summary": "Implements **H1 of the composer adoption proposal** (`plans/composer-adoption/proposal.md`): one Ctrl+K command palette replaces Explorer's three overlapping quick-switchers \u2014 the header search composite, the Ctrl+/ app command palette, and the legacy per-entity search popup.\n\n## Feature flag \u2014 A/B-",
     "url": "https://github.com/MemberJunction/MJ/pull/3042",
     "source": "github_prs",
@@ -1356,8 +1356,8 @@
   },
   {
     "title": "[PR] Add in-body blog CTA cards (#20147)",
-    "date": "2026-07-13T18:09:21Z",
-    "summary": "I gave them a quick pass but the generated CTAs could use a second human review. We can also cull the list if this is too many.\r\n\r\n---\r\n\r\nCloses #20147.\r\n\r\n## What this does\r\n\r\nAdds a reusable in-body **CTA card** to the blog. Three mechanisms, matching the issue:\r\n\r\n1. **Manual card** \u2014 `{{< blog/c",
+    "date": "2026-07-13T20:18:24Z",
+    "summary": "I gave them a quick pass but the generated CTAs could use a second human review. We can also cull the list if this is too many.\n\n---\n\nCloses #20147.\n\n## What this does\n\nAdds a reusable in-body **CTA card** to the blog through the `blog/cta-card` shortcode \u2014 optional `title`, `label`, `href`, and inn",
     "url": "https://github.com/pulumi/docs/pull/20224",
     "source": "github_prs",
     "highlights": [
@@ -1428,12 +1428,12 @@
   },
   {
     "title": "[PR] feat(state): segregate host state root per gateway port",
-    "date": "2026-07-13T18:20:58Z",
+    "date": "2026-07-13T20:15:18Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nA non-default `NEMOCLAW_GATEWAY_PORT` previously shared the single `~/.nemoclaw/` host state root, so its sandbox registry, legacy credential-migration files, snapshots, and onboarding state collided with the default gateway's. This routes the host sta",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/6711",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 14",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -1476,7 +1476,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-07-13T17:30:30Z",
+    "date": "2026-07-13T19:17:41Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1496,6 +1496,126 @@
       "comments: 0",
       "pull request",
       "repo: templates"
+    ]
+  },
+  {
+    "title": "[PR] Merge pull request #3 from JMAN730/JMAN730/fork-pr-to-main",
+    "date": "2026-07-13T20:16:22Z",
+    "summary": "Add generic NeedsInput retry loop and update Claude model IDs\r\n\r\n## Description\r\nPlease include a summary of the changes and the related issue/bug that is resolved.\r\n\r\nFixes # (issue)\r\n\r\n## Type of Change\r\n- [x] Bug fix (non-breaking change which fixes an issue)\r\n- [x] New feature (non-breaking chan",
+    "url": "https://github.com/JMAN730/opendroid/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: opendroid"
+    ]
+  },
+  {
+    "title": "[PR] feat(assistant): QA fixes + model portability, budget, and error visibility",
+    "date": "2026-07-13T20:15:10Z",
+    "summary": "## Summary\r\nFive independent fixes to the Langflow Assistant, all reported from QA or live usage:\r\ntwo QA bugs, and three improvements backported from #14007 so they can ship in this release without waiting for that (much larger) PR to land.\n\n<!-- This is an auto-generated comment: release notes by ",
+    "url": "https://github.com/langflow-ai/langflow/pull/14038",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] fix(api): enforce API_TIMEOUT_MS for OpenAI-compatible headers",
+    "date": "2026-07-13T20:14:04Z",
+    "summary": "## Summary\n- Bound OpenAI-compatible requests that stall before response headers arrive.\n- Keep long-running streaming bodies unaffected after headers are received.\n\n## Implementation\n- Parse `API_TIMEOUT_MS` once per request with a 600000 ms default and safe integer validation.\n- Arm a per-attempt ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1940",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(bg): revalidate process identity before signals",
+    "date": "2026-07-13T20:11:02Z",
+    "summary": "## Summary\n- Revalidate a background session PID immediately before SIGTERM and SIGKILL.\n- Refuse to signal or mark the session killed when the live process identity mismatches or cannot be read.\n\n## Implementation\n- Expose a four-state session identity result backed by strict command-token matching",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1937",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Bump Testcontainers.PostgreSql from 3.10.0 to 4.13.0",
+    "date": "2026-07-13T20:09:36Z",
+    "summary": "Updated [Testcontainers.PostgreSql](https://github.com/testcontainers/testcontainers-dotnet) from 3.10.0 to 4.13.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers.PostgreSql's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.13.0\n\n# What",
+    "url": "https://github.com/kimseler14/BingehOS/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: BingehOS"
+    ]
+  },
+  {
+    "title": "[PR] refactor(ai): make Pi AI the provider core",
+    "date": "2026-07-13T20:01:50Z",
+    "summary": "## Summary\n\n- pin `@earendil-works/pi-ai@0.80.6` and register OpenRouter, OpenCode Go, and custom Ollama models through one exhaustive code registry\n- make full Pi assistant/tool-result messages canonical while preserving BellaClaw loop limits, retries, allowlisting, sequential execution, and one-sh",
+    "url": "https://github.com/Grzanka99/BellaClaw/pull/22",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: BellaClaw"
+    ]
+  },
+  {
+    "title": "[PR] Bump the all group across 1 directory with 14 updates",
+    "date": "2026-07-13T19:59:24Z",
+    "summary": "Bumps the all group with 11 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [cloud.google.com/go/logging](https://github.com/googleapis/google-cloud-go) | `1.17.0` | `1.18.0` |\n| [connectrpc.com/connect](https://github.com/connectrpc/connect-go) | `1.19.2` | `1.20.0` |\n| [",
+    "url": "https://github.com/streamingfast/firehose-core/pull/168",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: firehose-core"
+    ]
+  },
+  {
+    "title": "[PR] feat: add external LLM backend connectivity check to ods doctor",
+    "date": "2026-07-13T19:45:18Z",
+    "summary": "## Summary\r\n\r\nPR #1653 introduced support for reusing existing Ollama and LM Studio instances by configuring `EXTERNAL_LLM_URL`, `EXTERNAL_LLM_PROVIDER`, and `EXTERNAL_LLM_MODEL` during installation. In this mode, the local `llama-server` container is intentionally disabled.\r\n\r\nPrior to this change,",
+    "url": "https://github.com/Osmantic/ODS/pull/1743",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: ODS"
+    ]
+  },
+  {
+    "title": "[PR] v3.4.0",
+    "date": "2026-07-13T19:17:03Z",
+    "summary": "Running branch for v3.4.0 \u2014 collects this release's features and bug fixes.\n\n## Features\n\n- **A plugin can register a notification channel** \u2014 the four built-in channels (in-app, email, webhook, ntfy) were a closed set, so a plugin could produce a notification but never deliver one. A plugin now dec",
+    "url": "https://github.com/mauriceboe/TREK/pull/1540",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: TREK"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-07-13T19:15:39Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
     ]
   }
 ]
