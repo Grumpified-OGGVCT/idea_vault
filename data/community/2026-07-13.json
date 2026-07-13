@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-13T20:08:12Z",
+    "date": "2026-07-13T23:04:38Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -660,7 +660,7 @@
   },
   {
     "title": "[PR] Phase 2: Foundation hardening and premium AI engine",
-    "date": "2026-07-13T01:18:33Z",
+    "date": "2026-07-13T22:58:09Z",
     "summary": "## Summary\n\nThis checkpoint completes Phase 2.1 foundation hardening and Phase 2.2 premium AI engine work.\n\n### Phase 2.1 foundation and safety\n\n- Extracted stable UI, feature, service, hook, and utility boundaries from the application shell.\n- Preserved workspace persistence, auth/session handling,",
     "url": "https://github.com/foundernexoralabs-debug/founderlab-ai0.1/pull/1",
     "source": "github_prs",
@@ -684,12 +684,12 @@
   },
   {
     "title": "[PR] fix(permissions): enforce read-only plan mode",
-    "date": "2026-07-13T19:46:22Z",
+    "date": "2026-07-13T22:25:39Z",
     "summary": "## Summary\n- Prevent mutating or unclassified tool invocations while plan mode is active.\n- Preserve read-only inspection, user interaction, and exact active plan-file updates.\n\n## Implementation\n- Apply one plan-mode policy to ordinary permissions, hook-approved execution, rewritten inputs, and hea",
     "url": "https://github.com/Gitlawb/openclaude/pull/1938",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: openclaude"
     ]
@@ -840,7 +840,7 @@
   },
   {
     "title": "[PR] Fix provider base URL defaults and local auth header support",
-    "date": "2026-07-13T16:29:41Z",
+    "date": "2026-07-13T22:34:32Z",
     "summary": "## Summary\n\n- replace stale known provider base URLs when `--provider` explicitly selects Ollama, NVIDIA NIM, Bankr, xAI, Xiaomi MiMo, Venice, Near AI, or Fireworks\n- preserve custom base URLs that do not resolve to a known provider route, including local-provider-like ports and hostnames such as `:",
     "url": "https://github.com/Gitlawb/openclaude/pull/1945",
     "source": "github_prs",
@@ -1235,9 +1235,9 @@
     ]
   },
   {
-    "title": "[PR] Observability: Prometheus/Grafana/Tempo/Loki stack (grafana/otel-lgtm)",
-    "date": "2026-07-13T12:57:13Z",
-    "summary": "## Summary\n\nAdds the full observability stack (`grafana/otel-lgtm`: real Prometheus + Grafana + Tempo + Loki + Pyroscope, one image) across docker-compose, Helm, and raw Kubernetes manifests, plus a round of deployment-path fixes discovered while actually exercising both the Kubernetes and Azure VM ",
+    "title": "[PR] Observability stack (Prometheus/Grafana/Tempo/Loki) with alerting delivery, secured access, and deployment hardening",
+    "date": "2026-07-13T22:35:40Z",
+    "summary": "## Summary\n\nAdds the full observability stack (`grafana/otel-lgtm`: real Prometheus + Grafana + Tempo + Loki + Pyroscope, one image) across docker-compose, Helm, and raw Kubernetes manifests \u2014 metrics, dashboards, **alerting with real notification delivery**, logs, and traces \u2014 plus secures Grafana ",
     "url": "https://github.com/AET-DevOps26/team-the-rolling-restarts/pull/89",
     "source": "github_prs",
     "highlights": [
@@ -1356,12 +1356,12 @@
   },
   {
     "title": "[PR] Add in-body blog CTA cards (#20147)",
-    "date": "2026-07-13T21:38:58Z",
+    "date": "2026-07-13T22:50:52Z",
     "summary": "I gave them a quick pass but the generated CTAs could use a second human review. We can also cull the list if this is too many.\n\n---\n\nCloses #20147.\n\n## What this does\n\nAdds a reusable in-body **CTA card** to the blog through the `blog/cta-card` shortcode \u2014 optional `title`, `label`, `href`, and inn",
     "url": "https://github.com/pulumi/docs/pull/20224",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: docs"
     ]
@@ -1428,12 +1428,12 @@
   },
   {
     "title": "[PR] feat(state): segregate host state root per gateway port",
-    "date": "2026-07-13T21:59:31Z",
+    "date": "2026-07-13T22:28:30Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nA non-default `NEMOCLAW_GATEWAY_PORT` previously shared the single `~/.nemoclaw/` host state root, so its sandbox registry, legacy credential-migration files, snapshots, and onboarding state collided with the default gateway's. This routes the host sta",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/6711",
     "source": "github_prs",
     "highlights": [
-      "comments: 19",
+      "comments: 20",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -1500,7 +1500,7 @@
   },
   {
     "title": "[PR] Merge pull request #3 from JMAN730/JMAN730/fork-pr-to-main",
-    "date": "2026-07-13T21:38:27Z",
+    "date": "2026-07-13T22:11:59Z",
     "summary": "Add generic NeedsInput retry loop and update Claude model IDs\r\n\r\n## Description\r\nPlease include a summary of the changes and the related issue/bug that is resolved.\r\n\r\nFixes # (issue)\r\n\r\n## Type of Change\r\n- [x] Bug fix (non-breaking change which fixes an issue)\r\n- [x] New feature (non-breaking chan",
     "url": "https://github.com/JMAN730/opendroid/pull/3",
     "source": "github_prs",
@@ -1608,7 +1608,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-13T19:15:39Z",
+    "date": "2026-07-13T22:28:59Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1652,6 +1652,54 @@
       "comments: 3",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(markdown-core): emit spec-compliant ESM with explicit .js extensions",
+    "date": "2026-07-13T23:04:10Z",
+    "summary": "## Summary\nFixes #3137. `@memberjunction/markdown-core` is published as a pure ESM package (`\"type\": \"module\"`) but its source used **extensionless relative import/export specifiers**. The base tsconfig's `moduleResolution: \"bundler\"` tolerated them, so `tsc` and bundler-based app builds stayed gree",
+    "url": "https://github.com/MemberJunction/MJ/pull/3138",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(sandbox): scrub sensitive credentials from sandbox environment",
+    "date": "2026-07-13T22:51:06Z",
+    "summary": "### Problem\nThe agent processes (which hold sensitive environment variables like OPENAI_API_KEY, ANTHROPIC_API_KEY, GEMINI_API_KEY, DEEPSEEK_API_KEY, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and GITHUB_TOKEN) passed their entire environment verbatim to sandboxed user command executions when no cust",
+    "url": "https://github.com/Gitlawb/zero/pull/660",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: zero"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update pathweb workloads (non-major)",
+    "date": "2026-07-13T22:34:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [ghcr.io/arabcoders/watchstate](https://redirect.github.com/arabcoders/watchstate) | Kustomization | patch | `v1.9.1` \u2192 `v1.9.2` |\n",
+    "url": "https://github.com/ruifung/rfhome-infrastructure/pull/3022",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: rfhome-infrastructure"
+    ]
+  },
+  {
+    "title": "[PR] Advance Windows F2 parity runtime surfaces",
+    "date": "2026-07-13T22:34:44Z",
+    "summary": "## Summary\n\nThis structured F2 parity branch advances the Windows product from scaffolded\nsurfaces to composed runtime behavior without claiming that external release\ncertification is complete.\n\n- compose the authenticated loopback gateway, companion CLI, durable headless\n  run/Mission journal, brow",
+    "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1654",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 48",
+      "pull request",
+      "repo: BurnBar"
     ]
   }
 ]
