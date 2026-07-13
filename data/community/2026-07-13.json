@@ -144,12 +144,12 @@
   },
   {
     "title": "[FIX] Vision pipeline has no working provider after config drift -- all vision_analyze calls fail",
-    "date": "2026-07-13T00:21:30Z",
+    "date": "2026-07-13T04:20:24Z",
     "summary": "## The Problem\n\nPost-config-drift (2026-07-12), the vision pipeline has no working provider:\n\n- ZAI GLM-5V-Turbo subscription lacks access\n- ollama-cloud hit weekly API cap\n- openrouter grok-4.5 region-blocked\n- Nous Research has no auth configured\n\nEvery vision_analyze call fails with provider erro",
     "url": "https://github.com/Lexus2016/hermes-agent-evolution/issues/940",
     "source": "github_issues",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "state: open",
       "repo: hermes-agent-evolution"
     ]
@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] feat(hosted): delegate adopted PR repair from Core",
-    "date": "2026-07-13T03:38:55Z",
+    "date": "2026-07-13T06:53:39Z",
     "summary": "## Summary\n\n- Adds explicit local or hosted execution policy for adopted PR monitors across API, CLI, MCP, and persisted task policy.\n- Delegates hosted agent repair and validation through authenticated asynchronous HTTP operations, including bounded polling, cancellation, output limits, terminal he",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/764",
     "source": "github_prs",
@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] feat(cli): add --yolo alias for --dangerously-skip-permissions",
-    "date": "2026-07-13T03:29:09Z",
+    "date": "2026-07-13T06:56:37Z",
     "summary": "## Summary\nAdds `--yolo` as a short alias for `--dangerously-skip-permissions`, matching the convention popularized by other coding-agent CLIs.\n\n- `src/entrypoints/cli.tsx`: normalize `--yolo` to the canonical flag at the very top of `main()`, before any parsing \u2014 several code paths (status notices,",
     "url": "https://github.com/Gitlawb/openclaude/pull/1939",
     "source": "github_prs",
@@ -552,12 +552,12 @@
   },
   {
     "title": "[PR] fix(main): complete fork-sync to restore green CI",
-    "date": "2026-07-13T03:14:19Z",
+    "date": "2026-07-13T05:45:16Z",
     "summary": "## What\n\nRepairs the pre-existing CI breakage on `main` left by an incomplete fork-sync with upstream. `main` currently fails its own CI (typecheck, native build, install-smoke, biome). This branch drives the workspace back to green with safe, mostly-additive changes:\n\n- **Typecheck: 147 \u2192 0 errors.",
     "url": "https://github.com/kingkillery/oh-my-pk/pull/5",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 10",
       "pull request",
       "repo: oh-my-pk"
     ]
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-13T02:37:02Z",
+    "date": "2026-07-13T06:33:31Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-13T02:16:59Z",
+    "date": "2026-07-13T05:59:48Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@arethetypeswrong/cli](http",
     "url": "https://github.com/moeru-ai/velin/pull/28",
     "source": "github_prs",
@@ -740,6 +740,186 @@
       "comments: 0",
       "pull request",
       "repo: k8s-home-lab"
+    ]
+  },
+  {
+    "title": "[PR] * Accept [Tool results received] as continuation marker",
+    "date": "2026-07-13T06:54:23Z",
+    "summary": "## Summary\r\n\r\nWhen using OpenAI compatible LLM provider like llama-cpp running on non-local address (even with domain), there is a problem - pipeline may stop after tool call. [Tool results received] message appears in console.\r\n\r\nNow we accepts [Tool results received] as continuation marker to allo",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1891",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] fix(server): allow user-owned AI/WebDAV/RPC configs to use private IPs (fixes #244)",
+    "date": "2026-07-13T06:54:03Z",
+    "summary": "## \u95ee\u9898\nv0.7.0 \u914d\u7f6e\u5c40\u57df\u7f51/\u672c\u673a AI\uff08\u5982 Ollama `http://10.10.16.13` \u6216 `192.168.x.x`\uff09\u65f6\u62a5\u9519\uff1a\n`Blocked proxy request: private IP '10.10.16.13' is not allowed`\u3002\n`AI API key transmitted over http ...` \u53ea\u662f\u65e0\u5bb3\u65e5\u5fd7\u8b66\u544a\uff0c**\u4e0d\u662f**\u5931\u8d25\u539f\u56e0\u2014\u2014\u5931\u8d25\u6765\u81ea `validateUrl` \u5bf9\u79c1\u6709 IP \u7684\u62e6\u622a\u3002\n\n## \u6839\u56e0\n`server/src/services/proxyService.ts` \u7684 `validateUrl` \u4e00\u5200\u5207\u62e6\u622a\u56de",
+    "url": "https://github.com/AmintaCCCP/GithubStarsManager/pull/246",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: GithubStarsManager"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency can1357/oh-my-pi to v16.4.8",
+    "date": "2026-07-13T06:45:07Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [can1357/oh-my-pi](https://redirect.github.com/can1357/oh-my-pi) | minor | `16.2.5` -> `16.4.8` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>can1357/oh-my-pi (can1357/oh-my-pi)</summary>\n\n### [`v16.4.8`](https://",
+    "url": "https://github.com/PietroPasotti/omp-workshop-sdk/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: omp-workshop-sdk"
+    ]
+  },
+  {
+    "title": "[PR] perf: bound file IO concurrency",
+    "date": "2026-07-13T06:44:58Z",
+    "summary": "## Summary\r\n\r\n- Bound file IO fan-out in attachment and team-memory paths.\r\n- Add a small bounded concurrency/abort helper with tests.\r\n- Fixes #1947\r\n\r\n## Impact\r\n\r\n- user-facing impact: less IO pressure in large repos or large team-memory dirs; no intended behavior change.\r\n- developer/maintainer ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1948",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Bump the test-libs group with 5 updates",
+    "date": "2026-07-13T06:43:31Z",
+    "summary": "Updated [coverlet.collector](https://github.com/coverlet-coverage/coverlet) from 6.0.4 to 10.0.1.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [coverlet.collector's releases](https://github.com/coverlet-coverage/coverlet/releases)._\n\n## 10.0.1\n\n### Improvements\n\n- Coverlet with MTP 2 d",
+    "url": "https://github.com/marcschier/opc-classic/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: opc-classic"
+    ]
+  },
+  {
+    "title": "[PR] Bump the test-stack group with 6 updates",
+    "date": "2026-07-13T06:36:22Z",
+    "summary": "Updated [coverlet.collector](https://github.com/coverlet-coverage/coverlet) from 6.0.2 to 10.0.1.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [coverlet.collector's releases](https://github.com/coverlet-coverage/coverlet/releases)._\n\n## 10.0.1\n\n### Improvements\n\n- Coverlet with MTP 2 d",
+    "url": "https://github.com/AndreaBozzo/IcebergSharp/pull/20",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: IcebergSharp"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the gomod-minor-and-patch group across 1 directory with 24 updates",
+    "date": "2026-07-13T06:20:48Z",
+    "summary": "Bumps the gomod-minor-and-patch group with 18 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [cloud.google.com/go/pubsub/v2](https://github.com/googleapis/google-cloud-go) | `2.6.0` | `2.6.1` |\n| [github.com/aws/aws-sdk-go-v2](https://github.com/aws/aws-sdk-go-v2) | `1.41",
+    "url": "https://github.com/ryan-evans-git/signalwatch/pull/57",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: signalwatch"
+    ]
+  },
+  {
+    "title": "[PR] feat(ingest): ingest unstructured files into BLOB+VECTOR Hudi tables via Hudi Streamer",
+    "date": "2026-07-13T06:15:20Z",
+    "summary": "### Describe the issue this Pull Request addresses\n\nLanding unstructured data (documents, images, videos) in a lakehouse today means gluing Spark's `binaryFile` reader to hand-rolled parsing UDFs, with no incremental ingestion, no upsert semantics, no blob management, and no embedding lifecycle. Wit",
+    "url": "https://github.com/apache/hudi/pull/19278",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hudi"
+    ]
+  },
+  {
+    "title": "[PR] Fix provider base URL defaults and local auth header support",
+    "date": "2026-07-13T06:10:08Z",
+    "summary": "## Summary\n\n- replace stale known provider base URLs when `--provider` explicitly selects Ollama, NVIDIA NIM, Bankr, xAI, Xiaomi MiMo, Venice, Near AI, or Fireworks\n- preserve custom base URLs that do not resolve to a known provider route, including local-provider-like ports and hostnames such as `:",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1945",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(mastra): migrate v2 LangGraph chat extension to Mastra v3",
+    "date": "2026-07-13T06:10:02Z",
+    "summary": "## Migrate `lb4-llm-chat-component` from LangGraph + LangChain to Mastra v3\r\n\r\nReplaces the LangGraph/LangChain runtime with Mastra v3 (`Agent` + `Memory` + `Workflow` primitives). LangGraph **and** LangChain are fully removed; ChatGraph + DbQueryGraph + VisualizationGraph and their node classes are",
+    "url": "https://github.com/sourcefuse/loopback4-llm-chat-extension/pull/22",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: loopback4-llm-chat-extension"
+    ]
+  },
+  {
+    "title": "[PR] fix(models): prioritize Ollama Cloud models",
+    "date": "2026-07-13T06:06:21Z",
+    "summary": "## Summary\n- Prioritizes Ollama Cloud models in model listing/selection behavior.\n- Updates focused tests for Ollama Cloud provider ordering.\n\n## Files changed\n- `hermes_cli/models.py`\n- `tests/hermes_cli/test_ollama_cloud_provider.py`\n\n## Test commands/results\n```bash\npython3 -m py_compile hermes_c",
+    "url": "https://github.com/NousResearch/hermes-agent/pull/25174",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat: merge knowledge graph + conversation arc into memdir",
+    "date": "2026-07-13T05:33:00Z",
+    "summary": "## Summary\n\nMerge the standalone Knowledge Graph + Conversation Arc system into the existing auto-memory (memdir) directory. Previously, OpenClaude maintained **two parallel memory systems** \u2014 the file-based memdir (`memory/`) and a separate entity-relation-store backed by SQLite + JSON + Orama. The",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1811",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] REVIVAL-01: Gate registration by deployment mode",
+    "date": "2026-07-13T05:16:18Z",
+    "summary": "## Do not merge tonight\n\nThis PR changes authentication policy conventions and adds a migration. Per the overnight authority, it requires maintainer review and is **not eligible for autonomous merge**.\n\n## Summary\n\n- Add `Auth:Registration:Mode` with `Open` (application default), `InviteOnly`, and `",
+    "url": "https://github.com/Chris0Jeky/Taskdeck/pull/1334",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: Taskdeck"
+    ]
+  },
+  {
+    "title": "[PR] Feat/v2 upgrade",
+    "date": "2026-07-13T04:53:35Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Local MCP server tools (memory, research, advisor, graph, bundle search), RLM sidecar, TurboVec vector service, screenshot & crawl endpoints, and procedural-memory CRUD.\n\n* *",
+    "url": "https://github.com/LVT382009/noxem/pull/17",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 118",
+      "pull request",
+      "repo: noxem"
+    ]
+  },
+  {
+    "title": "[PR] Harden AG-UI service + develop build/publish pipeline",
+    "date": "2026-07-13T04:43:22Z",
+    "summary": "## Summary\n- **AG-UI hardening** (`src/api/main.py`, `src/config/settings.py`):\n  - Bind a single bounded `ThreadPoolExecutor` (configurable `thread_pool_max_workers`, default 16) via a FastAPI lifespan, activated globally with `Agent.using_thread_executor` and shut down with `wait=True` on shutdown",
+    "url": "https://github.com/vinxenc/vnstock-agent/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: vnstock-agent"
     ]
   }
 ]
