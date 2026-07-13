@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] feat(hosted): delegate adopted PR repair from Core",
-    "date": "2026-07-13T16:13:30Z",
+    "date": "2026-07-13T18:15:46Z",
     "summary": "## Summary\n\n- Adds explicit local or hosted execution policy for adopted PR monitors across API, CLI, MCP, and persisted task policy.\n- Delegates hosted agent repair and validation through authenticated asynchronous HTTP operations, including bounded polling, cancellation, output limits, terminal he",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/764",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-13T13:15:28Z",
+    "date": "2026-07-13T18:19:53Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-13T05:59:48Z",
+    "date": "2026-07-13T18:16:59Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@arethetypeswrong/cli](http",
     "url": "https://github.com/moeru-ai/velin/pull/28",
     "source": "github_prs",
@@ -960,7 +960,7 @@
   },
   {
     "title": "[PR] improvments for normal use cases",
-    "date": "2026-07-13T16:27:52Z",
+    "date": "2026-07-13T18:46:05Z",
     "summary": "This pull request implements major improvements to the continuous batching system, focusing on unifying the scheduler, introducing a true multi-session owner for efficient batched execution, and enabling weight-read-once GEMM batching for further performance gains. It also documents the audit proces",
     "url": "https://github.com/dAppCore/go-inference/pull/10",
     "source": "github_prs",
@@ -1104,7 +1104,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-13T10:19:55Z",
+    "date": "2026-07-13T18:37:00Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1176,7 +1176,7 @@
   },
   {
     "title": "[PR] refactor(parse-once): single-grammar reasoning + tool-call parsing, native-first for Gemma",
-    "date": "2026-07-13T13:20:44Z",
+    "date": "2026-07-13T17:23:27Z",
     "summary": "## What this delivers\n\nStarted as the parse-once boundary refactor (single-grammar reasoning + tool-call parsing, native-first for Gemma) and grew into a broad device-hardening pass: every `Bxx`/`Qxx`/`Dxx`/`Mxx` finding from the on-device test log driven to a fix with an integration test, plus a fu",
     "url": "https://github.com/off-grid-ai/off-grid-ai-mobile/pull/510",
     "source": "github_prs",
@@ -1320,12 +1320,12 @@
   },
   {
     "title": "[PR] fix(security): harden multi-tenant surfaces",
-    "date": "2026-07-13T16:36:35Z",
+    "date": "2026-07-13T18:38:52Z",
     "summary": "## Summary\n\nRebases the security-hardening sweep onto `release-1.11.0` while preserving the individual commit series.\n\n## Security fixes introduced beyond `release-1.11.0`\n\n- Hardens code-execution surfaces with authenticated-flow component blocking, expanded code-exec aliases, agentic assistant cod",
     "url": "https://github.com/langflow-ai/langflow/pull/13530",
     "source": "github_prs",
     "highlights": [
-      "comments: 47",
+      "comments: 48",
       "pull request",
       "repo: langflow"
     ]
@@ -1344,7 +1344,7 @@
   },
   {
     "title": "[PR] feat: Unified Ctrl+K command palette (omnibar) on a pluggable OmnibarProvider registry",
-    "date": "2026-07-13T16:35:13Z",
+    "date": "2026-07-13T18:34:35Z",
     "summary": "Implements **H1 of the composer adoption proposal** (`plans/composer-adoption/proposal.md`): one Ctrl+K command palette replaces Explorer's three overlapping quick-switchers \u2014 the header search composite, the Ctrl+/ app command palette, and the legacy per-entity search popup.\n\n## Feature flag \u2014 A/B-",
     "url": "https://github.com/MemberJunction/MJ/pull/3042",
     "source": "github_prs",
@@ -1356,8 +1356,8 @@
   },
   {
     "title": "[PR] Add in-body blog CTA cards (#20147)",
-    "date": "2026-07-13T16:32:17Z",
-    "summary": "Closes #20147.\n\n## What this does\n\nAdds a reusable in-body **CTA card** to the blog. Three mechanisms, matching the issue:\n\n1. **Manual card** \u2014 `{{< blog/cta-card >}}` with optional `title`, `label`, `href`, and inner body. A bare shortcode renders the generic \"Program the Cloud\" card.\n2. **Auto-in",
+    "date": "2026-07-13T18:09:21Z",
+    "summary": "I gave them a quick pass but the generated CTAs could use a second human review. We can also cull the list if this is too many.\r\n\r\n---\r\n\r\nCloses #20147.\r\n\r\n## What this does\r\n\r\nAdds a reusable in-body **CTA card** to the blog. Three mechanisms, matching the issue:\r\n\r\n1. **Manual card** \u2014 `{{< blog/c",
     "url": "https://github.com/pulumi/docs/pull/20224",
     "source": "github_prs",
     "highlights": [
@@ -1368,7 +1368,7 @@
   },
   {
     "title": "[PR] Feature/cloud provider abstraction",
-    "date": "2026-07-13T16:28:59Z",
+    "date": "2026-07-13T18:24:59Z",
     "summary": "This PR implements provider-neutral kubernetes abstractions, also includes small fixes to support single manual runs.\r\n\r\nChanges\r\n\r\n1. Unified Cluster Abstraction (`tf/modules/cluster`)\r\n* Created a provider-neutral `cluster` router module that conditionally delegates to either `cluster/gke` or `clu",
     "url": "https://github.com/gke-labs/devops-bench/pull/159",
     "source": "github_prs",
@@ -1376,6 +1376,126 @@
       "comments: 1",
       "pull request",
       "repo: devops-bench"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Volcengine Ark China direct API",
+    "date": "2026-07-13T18:43:32Z",
+    "summary": "## Summary\n\n- Add Volcengine Ark direct API access for China under the stable persisted provider ID `volcengine-ark`.\n- Preserve the exact `doubao-seed-2-0-pro-260215` snapshot model through Desktop, CLI, storage, headless, runtime thinking controls, and a deterministic two-stage tool-call loop.\n- V",
+    "url": "https://github.com/maka-agent/maka-agent/pull/909",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: maka-agent"
+    ]
+  },
+  {
+    "title": "[PR] Available App Updates",
+    "date": "2026-07-13T18:26:14Z",
+    "summary": "Supported TA version updates:\n| TA Name                               | Current Version | Updated Version | Release Published Time    |\n| ------------------------------------- | --------------- | --------------- | ------------------------- |\n| Cisco Secure Access Add-on for Splunk | 1.0.50          ",
+    "url": "https://github.com/pyth0n1c/security_content/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: security_content"
+    ]
+  },
+  {
+    "title": "[PR] Add File Management And Packaging it with Tauri",
+    "date": "2026-07-13T18:24:44Z",
+    "summary": "\n\n<!-- codesmith:footer -->\n---\n<a href=\"https://app.blacksmith.sh/2389-research/codesmith/Noospheric-Orrery/pr/34\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://pr-comments-assets.blacksmith.sh/codesmith/view-with-codesmith-dark-v2.svg\"><source media=\"(prefers-color-scheme: ",
+    "url": "https://github.com/2389-research/Noospheric-Orrery/pull/34",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Noospheric-Orrery"
+    ]
+  },
+  {
+    "title": "[PR] Add persistent local Workbench conversations",
+    "date": "2026-07-13T18:24:37Z",
+    "summary": "## Purpose\n\nF3b-1 gives the Spectra Workbench durable, explicitly selected project conversations while preserving the existing one-shot local Console and F3a one-request evidence-clearing behaviour.\n\nThis is the first user-facing step toward the central Prism distinction from working directly in one",
+    "url": "https://github.com/devknowsdev/prism-spectra/pull/69",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: prism-spectra"
+    ]
+  },
+  {
+    "title": "[PR] feat(state): segregate host state root per gateway port",
+    "date": "2026-07-13T18:20:58Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nA non-default `NEMOCLAW_GATEWAY_PORT` previously shared the single `~/.nemoclaw/` host state root, so its sandbox registry, legacy credential-migration files, snapshots, and onboarding state collided with the default gateway's. This routes the host sta",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/6711",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the go-minor-patch group across 1 directory with 30 updates",
+    "date": "2026-07-13T18:13:22Z",
+    "summary": "Bumps the go-minor-patch group with 20 updates in the /go directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [github.com/anthropics/anthropic-sdk-go](https://github.com/anthropics/anthropic-sdk-go) | `1.37.0` | `1.51.1` |\n| [github.com/aws/aws-sdk-go-v2/config](https://github.com/aws/aws-sdk-",
+    "url": "https://github.com/tmohanvamsi/kagent/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kagent"
+    ]
+  },
+  {
+    "title": "[PR] fix(memdir): enforce entrypoint cap in bytes, not UTF-16 char length",
+    "date": "2026-07-13T17:35:00Z",
+    "summary": "### Problem\n`truncateEntrypointContent` (`src/memdir/memdir.ts`) caps `MEMORY.md`/`CLAUDE.md` entrypoint content with `MAX_ENTRYPOINT_BYTES = 25_000`. Everything about it is byte-oriented \u2014 the field is `byteCount`, the flag is `wasByteTruncated`, and the warning renders the size with `formatFileSiz",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1918",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Issue triage + first three fixes: leakage guard, dead Sass, prompt timeouts (and a Core streaming data-corruption bug)",
+    "date": "2026-07-13T17:34:44Z",
+    "summary": "## Summary\n\nStarted as a triage of every open issue. It stayed that for one commit, then turned into fixing the three cheapest actionable items \u2014 which surfaced two bugs materially worse than anything the triage had catalogued.\n\nThis PR is **triage + the first three Category C fixes**. The remaining",
+    "url": "https://github.com/MemberJunction/MJ/pull/3129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-07-13T17:30:30Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] llm template: Orin/Thor model picks, GPU base-image fix, postStart hook",
+    "date": "2026-07-13T17:18:38Z",
+    "summary": "## Summary\n\nBrings the `python/llm` template up to speed with new model targets and current Wendy functionality:\n\n- **Model picker** (`template.schema.json`): adds Orin Nano 8GB picks \u2014 `qwen2.5:3b` (~30 tok/s), `mistral:7b` (default tag is Q4_K_M, 4.4GB), `llama3.2:3b`, `gemma3:4b` \u2014 and Thor 128GB",
+    "url": "https://github.com/wendylabsinc/templates/pull/74",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: templates"
     ]
   }
 ]
