@@ -168,12 +168,12 @@
   },
   {
     "title": "Want to suggest a wake word? Leave your thoughts here. (AIS-1441)",
-    "date": "2026-07-12T19:42:55Z",
+    "date": "2026-07-14T03:04:16Z",
     "summary": "Hi all,\n\nWe're excited to offer the community more free and high-quality wake word models. Everyone has their own unique wake word preferences. Now, we're ready to regularly release some of the most popular wake words. Please let us know the wake words you want! \n\n**Already supported languages: Chin",
     "url": "https://github.com/espressif/esp-sr/issues/88",
     "source": "github_issues",
     "highlights": [
-      "comments: 400",
+      "comments: 401",
       "state: open",
       "repo: esp-sr"
     ]
@@ -504,12 +504,12 @@
   },
   {
     "title": "[PR] fix(model-switch): route list_authenticated_providers env probes through get_secret (multiplex)",
-    "date": "2026-07-14T02:41:18Z",
+    "date": "2026-07-14T05:31:04Z",
     "summary": "## What\n\nFollow-up to #97. Routes `list_authenticated_providers`' raw\n`os.environ.get(...)` provider-credential probes through\n`agent.secret_scope.get_secret`, closing the display-only multiplexing gap that\n#97's commit `dcb3aa917` explicitly flagged as a tracked follow-up.\n\n## Why\n\n`/model` (bare) ",
     "url": "https://github.com/exiao/hermes-agent/pull/100",
     "source": "github_prs",
     "highlights": [
-      "comments: 18",
+      "comments: 24",
       "pull request",
       "repo: hermes-agent"
     ]
@@ -540,12 +540,12 @@
   },
   {
     "title": "[PR] Advance Windows F2 parity runtime surfaces",
-    "date": "2026-07-14T02:38:30Z",
+    "date": "2026-07-14T05:09:58Z",
     "summary": "## Summary\n\nThis structured F2 parity branch advances the Windows product from scaffolded\nsurfaces to composed runtime behavior without claiming that external release\ncertification is complete.\n\n- compose the authenticated loopback gateway, companion CLI, durable headless\n  run/Mission journal, brow",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1654",
     "source": "github_prs",
     "highlights": [
-      "comments: 81",
+      "comments: 105",
       "pull request",
       "repo: BurnBar"
     ]
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] chore(deps): update all dependencies",
-    "date": "2026-07-14T01:38:03Z",
+    "date": "2026-07-14T05:14:11Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) | patch | `10.1.2` \u2192 `10.1.3` |\n| [cert-manager](https://cert-manager.io) ([source](https://redirect.github.com/cert-manager/cert-manager)) | minor | `v1.2",
     "url": "https://github.com/nolte/k8s-home-lab/pull/830",
     "source": "github_prs",
@@ -740,6 +740,210 @@
       "comments: 1",
       "pull request",
       "repo: founderlab-ai0.1"
+    ]
+  },
+  {
+    "title": "[PR] feat(state): segregate host state root per gateway port",
+    "date": "2026-07-14T05:33:31Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nA non-default `NEMOCLAW_GATEWAY_PORT` previously shared the single `~/.nemoclaw/` host state root, so its sandbox registry, legacy credential-migration files, snapshots, and onboarding state collided with the default gateway's. This routes the host sta",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/6711",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 30",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Lists performance overhaul + fixes: batched reads, paginated items, keyset ListSource, composite index",
+    "date": "2026-07-14T05:32:53Z",
+    "summary": "## Summary\n\nFull remediation of the Lists feature's performance problems and functional bugs, per the review in `plans/lists-functionality-and-performance-review.md` (included in this PR with a complete findings + implementation log).\n\n### Read-path performance (the \"Lists feels slow\" fixes)\n- **Cus",
+    "url": "https://github.com/MemberJunction/MJ/pull/3145",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: merge knowledge graph + conversation arc into memdir",
+    "date": "2026-07-14T05:30:48Z",
+    "summary": "## Summary\n\nMerge the standalone Knowledge Graph + Conversation Arc system into the existing auto-memory (memdir) directory. Previously, OpenClaude maintained **two parallel memory systems** \u2014 the file-based memdir (`memory/`) and a separate entity-relation-store backed by SQLite + JSON + Orama. The",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1811",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] [RIP-1 + RIP-3] Control Plane 5.0 Unified Implementation: Core Architecture Refactor + LLM Native Integration (CLI / MCP / Embedded Chat)",
+    "date": "2026-07-14T05:26:19Z",
+    "summary": "# PR Description\r\n## PR Title\r\n[ISSUE #10600][RIP-1 + RIP-3] Control Plane 5.0 Unified Implementation: Core Architecture Refactor + LLM Native Integration (CLI / MCP / Embedded Chat)\r\n\r\n---\r\n\r\n## Summary\r\nThis PR implements the core delivery of RocketMQ 5.0 Studio proposed in community recruitment i",
+    "url": "https://github.com/apache/rocketmq-dashboard/pull/426",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: rocketmq-dashboard"
+    ]
+  },
+  {
+    "title": "[PR] QA pass: negation scoring fix, forgot-password flow, lifetime XP",
+    "date": "2026-07-14T05:22:50Z",
+    "summary": "## What\nLive end-to-end QA of the whole app (signup, all 6 modules, progress, legal pages) surfaced three real defects, all fixed and re-verified in the running app:\n\n1. **Negation scoring bug (critical, all 3 engines)**: \"I would NOT enter my password\" matched the flat substring \"enter my password\"",
+    "url": "https://github.com/Raptaholic/Cyberus-Academy/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 22",
+      "pull request",
+      "repo: Cyberus-Academy"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-14T05:20:06Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-14T05:20:02Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/GlacierEQ/kilocode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-14T05:19:48Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-14T05:19:36Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/MAlkabbani/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-14T05:19:34Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/facemendous/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-14T05:19:32Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/gmifsud/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-14T05:19:30Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/LunaticMuch/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-14T05:19:29Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-14T05:19:26Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/softctwo/ResoftCode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ResoftCode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-14T05:19:23Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jeevesh415/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-14T05:19:06Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] improvments for normal use cases",
+    "date": "2026-07-14T05:09:30Z",
+    "summary": "This pull request implements major improvements to the continuous batching system, focusing on unifying the scheduler, introducing a true multi-session owner for efficient batched execution, and enabling weight-read-once GEMM batching for further performance gains. It also documents the audit proces",
+    "url": "https://github.com/dAppCore/go-inference/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: go-inference"
     ]
   }
 ]
