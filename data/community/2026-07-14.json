@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-14T21:34:02Z",
+    "date": "2026-07-14T23:04:43Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,12 +648,12 @@
   },
   {
     "title": "[PR] fix(permissions): enforce read-only plan mode",
-    "date": "2026-07-14T17:39:20Z",
+    "date": "2026-07-14T22:04:03Z",
     "summary": "## Summary\n- Prevent mutating or unclassified tool invocations while plan mode is active.\n- Preserve read-only inspection, user interaction, and exact active plan-file updates.\n\n## Implementation\n- Apply one plan-mode policy to ordinary permissions, hook-approved execution, rewritten inputs, and hea",
     "url": "https://github.com/Gitlawb/openclaude/pull/1938",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: openclaude"
     ]
@@ -1284,12 +1284,12 @@
   },
   {
     "title": "[PR] fix(text): strip MiniMax marker from channel replies",
-    "date": "2026-07-14T21:52:01Z",
+    "date": "2026-07-14T23:00:00Z",
     "summary": "Closes #105113\n\n## What Problem This Solves\n\nOfficial MiniMax Anthropic-compatible streams can append `[e~[` at the end of an assistant message. The earlier shared text sanitizer was too broad: it receives text without provider or transport identity, so it could remove ordinary prose from unrelated ",
     "url": "https://github.com/openclaw/openclaw/pull/105243",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: openclaw"
     ]
@@ -1404,7 +1404,7 @@
   },
   {
     "title": "[PR] * Accept [Tool results received] as continuation marker",
-    "date": "2026-07-14T21:20:11Z",
+    "date": "2026-07-14T22:33:24Z",
     "summary": "## Summary\r\n\r\nWhen using OpenAI compatible LLM provider like llama-cpp running on non-local address (even with domain), there is a problem - pipeline may stop after tool call. [Tool results received] message appears in console.\r\n\r\nNow we accepts [Tool results received] as continuation marker to allo",
     "url": "https://github.com/Gitlawb/openclaude/pull/1891",
     "source": "github_prs",
@@ -1548,12 +1548,12 @@
   },
   {
     "title": "[PR] fix(ollama): route through native API so context window, num_ctx, and timeout settings work",
-    "date": "2026-07-14T21:59:16Z",
+    "date": "2026-07-14T22:03:57Z",
     "summary": "Fixes CLINE-2603, CLINE-2566, CLINE-2572\n\n## Root cause\n\nThe 4.0.0 SDK migration deleted the dedicated Ollama handler and re-declared Ollama as a generic OpenAI-compatible provider against `/v1/chat/completions`. That endpoint cannot express Ollama's proprietary `options.num_ctx`, so every model loa",
     "url": "https://github.com/cline/cline/pull/12286",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: cline"
     ]
@@ -1640,6 +1640,90 @@
       "comments: 0",
       "pull request",
       "repo: ts-md"
+    ]
+  },
+  {
+    "title": "[PR] Feat: One-Screen Capability Setup and Offline Demo Fallback (C-318)",
+    "date": "2026-07-14T23:06:58Z",
+    "summary": "## What's in this PR\n\nImplement **C-318** \u2014 a one-screen capability setup that runs on first launch and offers three paths:\n\n- \ud83c\udfae **Play Offline Demo** \u2014 creates a demo campaign with no AI providers\n- \ud83d\udda5\ufe0f **Use Detected Local AI** \u2014 picks up auto-detected Ollama/ComfyUI\n- \u2601\ufe0f **Connect Cloud AI** \u2014 gui",
+    "url": "https://github.com/BearlySleeping/aikami/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: aikami"
+    ]
+  },
+  {
+    "title": "[PR] fix(opencode): stop lumping BYOK/OpenRouter/Ollama usage into the Go tier",
+    "date": "2026-07-14T23:06:21Z",
+    "summary": "## Summary\n\n- The OpenCode sidecar event extractor only ever handled two `providerID` values (`\"opencode\"` \u2192 free, everything else \u2192 Go), so bring-your-own-key (`open-design-byok`), OpenRouter, and Ollama Cloud traffic silently counted as Go subscription usage \u2014 and failed requests (bad auth, no sub",
+    "url": "https://github.com/s3ntin3l8/runway-ai-usage-tracker/pull/188",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: runway-ai-usage-tracker"
+    ]
+  },
+  {
+    "title": "[PR] Add `adding-a-provider-api-feature` and `add-new-model` contributor skills",
+    "date": "2026-07-14T23:04:47Z",
+    "summary": "## Summary\n\nAdds two agent skills that distill contributor guidance for common Pydantic AI change types into the public repo, and fixes a set of dangling skill-doc references.\n\n### `adding-a-provider-api-feature`\n\nCaptures the decision procedure for wiring a new provider API capability (prompt cachi",
+    "url": "https://github.com/pydantic/pydantic-ai/pull/6494",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: pydantic-ai"
+    ]
+  },
+  {
+    "title": "[PR] Finish self-host migration + kill GCP (Phases 0\u20131: stabilize + OpenAI gpt-4o)",
+    "date": "2026-07-14T22:57:16Z",
+    "summary": "## Finish the self-host migration + kill GCP \u2014 Phases 0 & 1\n\n`diagnosticpro.io` is supposed to be self-hosted on the Intent Solutions VPS with GCP dead, but the public site was still on **Firebase Hosting**, its GCP deploy had been failing since 2026\u201106\u201109 (billing disabled), and the ~80% migration ",
+    "url": "https://github.com/jeremylongshore/DiagnosticPro/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: DiagnosticPro"
+    ]
+  },
+  {
+    "title": "[PR] Add Ollama (Local LLM) support for AI feedback",
+    "date": "2026-07-14T22:55:01Z",
+    "summary": "# Pull Request: Add Ollama (Local LLM) Support for AI Feedback\r\n\r\n## Overview\r\nThis PR adds support for **Ollama** as a local LLM provider for generating structured student feedback, alongside ChatGPT, Gemini, and Claude. This allows instructors to host their own open-source models (like `llama3`, `",
+    "url": "https://github.com/kiat/codeAssist/pull/322",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: codeAssist"
+    ]
+  },
+  {
+    "title": "[PR] fix: recognize Ollama Cloud session usage-limit 429 as quota-exhausted (#7071)",
+    "date": "2026-07-14T22:43:13Z",
+    "summary": "Closes #7071\n\n## Root cause\n\nOllama Cloud's 5-hour \"session\" usage-limit 429 body (`you (NAME) have reached your session usage limit...`) was never recognized as quota-exhausted -- only the sibling \"weekly usage limit\" wording was fixed previously (#6638/#3709). Neither the generic `QUOTA_PATTERNS` ",
+    "url": "https://github.com/diegosouzapw/OmniRoute/pull/7181",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "[PR] **logan/obsidian**",
+    "date": "2026-07-14T22:38:57Z",
+    "summary": "The world is quiet here\uff0e",
+    "url": "https://github.com/LAF-US/IDAHO-VAULT/pull/563",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 192",
+      "pull request",
+      "repo: IDAHO-VAULT"
     ]
   }
 ]
