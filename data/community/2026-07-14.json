@@ -540,19 +540,19 @@
   },
   {
     "title": "[PR] Advance Windows F2 parity runtime surfaces",
-    "date": "2026-07-14T10:14:41Z",
+    "date": "2026-07-14T11:04:46Z",
     "summary": "## Summary\n\nThis structured F2 parity branch advances the Windows product from scaffolded\nsurfaces to composed runtime behavior without claiming that external release\ncertification is complete.\n\n- compose the authenticated loopback gateway, companion CLI, durable headless\n  run/Mission journal, brow",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1654",
     "source": "github_prs",
     "highlights": [
-      "comments: 113",
+      "comments: 116",
       "pull request",
       "repo: BurnBar"
     ]
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-14T10:20:11Z",
+    "date": "2026-07-14T12:12:21Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -744,7 +744,7 @@
   },
   {
     "title": "[PR] feat(state): segregate host state root per gateway port",
-    "date": "2026-07-14T10:48:37Z",
+    "date": "2026-07-14T11:50:28Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nA non-default `NEMOCLAW_GATEWAY_PORT` previously shared the single `~/.nemoclaw/` host state root, so its sandbox registry, legacy credential-migration files, snapshots, and onboarding state collided with the default gateway's. This routes the host sta",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/6711",
     "source": "github_prs",
@@ -792,7 +792,7 @@
   },
   {
     "title": "[PR] QA pass: negation scoring fix, forgot-password flow, lifetime XP",
-    "date": "2026-07-14T10:39:07Z",
+    "date": "2026-07-14T11:06:20Z",
     "summary": "## What\nLive end-to-end QA of the whole app (signup, all 6 modules, progress, legal pages) surfaced three real defects, all fixed and re-verified in the running app:\n\n1. **Negation scoring bug (critical, all 3 engines)**: \"I would NOT enter my password\" matched the flat substring \"enter my password\"",
     "url": "https://github.com/Raptaholic/Cyberus-Academy/pull/2",
     "source": "github_prs",
@@ -984,12 +984,12 @@
   },
   {
     "title": "[PR] feat(ai-core): verify plugin MCP mesh",
-    "date": "2026-07-14T10:50:26Z",
+    "date": "2026-07-14T11:58:47Z",
     "summary": "## Summary\n\nThis draft PR advances the SEIS public foundation across four connected layers:\n\n- SEIS-SSH keeps the existing `SEIS-SSH -> github.codespaces:22` target and adds sanitized endpoint continuity evidence.\n- The GitHub contributor path now has a static PR status workflow, read-only permissio",
     "url": "https://github.com/emirhankudun-ux/SEIS/pull/154",
     "source": "github_prs",
     "highlights": [
-      "comments: 178",
+      "comments: 202",
       "pull request",
       "repo: SEIS"
     ]
@@ -1008,7 +1008,7 @@
   },
   {
     "title": "[PR] CAMEL-23382: camel-ai-tool - create unified AI tool component",
-    "date": "2026-07-14T08:00:38Z",
+    "date": "2026-07-14T11:42:51Z",
     "summary": "Step 1: Create the new camel-ai-tool module with AiToolSpec, AiToolRegistry, consumer endpoint, and full tests. No changes to existing modules.\r\n\r\n# Description\r\n\r\n## Summary\r\n\r\nCreate the new `camel-ai-tool` module with the unified AI tool abstraction layer:\r\n  - `AiToolSpec` \u2014 vendor-neutral tool ",
     "url": "https://github.com/apache/camel/pull/24473",
     "source": "github_prs",
@@ -1020,12 +1020,12 @@
   },
   {
     "title": "[PR] chore: add .env.example and secret ignores for local dev integrations",
-    "date": "2026-07-14T07:54:02Z",
+    "date": "2026-07-14T12:17:43Z",
     "summary": "## \ud83d\udcdd Description\r\n\r\n<!-- What does this PR do? Provide context and link the issue/ticket. -->\r\n\r\nCloses #<!-- issue number -->\r\n\r\n---\r\n\r\n## \ud83d\udd27 Type of Change\r\n\r\n<!-- Check all that apply with an [x] -->\r\n\r\n- [ ] \ud83d\udc1b Bug fix (non-breaking change that fixes an issue)\r\n- [ ] \u2728 New feature (non-breaking ch",
     "url": "https://github.com/sarojswain680/Phoenix-orchestrator-svc/pull/2",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 10",
       "pull request",
       "repo: Phoenix-orchestrator-svc"
     ]
@@ -1088,6 +1088,162 @@
       "comments: 3",
       "pull request",
       "repo: stagewise"
+    ]
+  },
+  {
+    "title": "[PR] feat(telemetry): add OTLP trace export, W3C trace propagation, and library reuse support",
+    "date": "2026-07-14T12:17:23Z",
+    "summary": "Resolves #160\n\n## Summary\n\nAdds OTLP trace export, W3C trace-context propagation, and library-consumer telemetry reuse to the ADK server. The telemetry layer previously exported Prometheus metrics only; this change adds configurable OTLP trace export, extracts `traceparent`/`baggage` from incoming A",
+    "url": "https://github.com/inference-gateway/adk/pull/223",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: adk"
+    ]
+  },
+  {
+    "title": "[PR] feat!: complete DocMind v2 modernization",
+    "date": "2026-07-14T12:11:26Z",
+    "summary": "## Outcome\n\nCompletes the DocMind v2 hard cut as a local-first application and container. The change removes deprecated library and compatibility surfaces, centralizes runtime ownership, and makes snapshot, backup, restore, and GraphRAG activation fail closed.\n\n## What changed\n\n- Replaced duplicate ",
+    "url": "https://github.com/BjornMelin/docmind-ai-llm/pull/160",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: docmind-ai-llm"
+    ]
+  },
+  {
+    "title": "[PR] fix: upgrade credential encryption key derivation to PBKDF2",
+    "date": "2026-07-14T12:11:05Z",
+    "summary": "`OPEN_NOTEBOOK_ENCRYPTION_KEY` was derived to a Fernet key via a single unsalted SHA-256 round - fast to compute, which is exactly the wrong property for a key derivation function: it makes offline brute-forcing a weak/short passphrase cheap.\n\nDerive via PBKDF2-HMAC-SHA256 with a fixed domain-separa",
+    "url": "https://github.com/lfnovo/open-notebook/pull/1020",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: open-notebook"
+    ]
+  },
+  {
+    "title": "[PR] feat(ingest): ingest unstructured files into BLOB+VECTOR Hudi tables via Hudi Streamer",
+    "date": "2026-07-14T12:05:55Z",
+    "summary": "### Describe the issue this Pull Request addresses\n\nLanding unstructured data (documents, images, videos) in a lakehouse today means gluing Spark's `binaryFile` reader to hand-rolled parsing UDFs, with no incremental ingestion, no upsert semantics, no blob management, and no embedding lifecycle. Wit",
+    "url": "https://github.com/apache/hudi/pull/19278",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hudi"
+    ]
+  },
+  {
+    "title": "[PR] Updated to the latest version of the current project",
+    "date": "2026-07-14T12:02:23Z",
+    "summary": "#### What roadmap does this PR target?\r\n\r\n- [ ] Frontend Roadmap\r\n- [ ] Backend Roadmap\r\n- [ ] DevOps Roadmap\r\n- [x] All Roadmaps\r\n\r\n#### Please acknowledge the items listed below\r\n\r\n- [ ] I have discussed this contribution and got a go-ahead in an issue before opening this pull request.\r\n- [ ] This",
+    "url": "https://github.com/Diego-18/developer-roadmap/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: developer-roadmap"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-07-14T12:00:02Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [gcr.io/cloud-sql-connectors/cloud-sql-proxy](https://redirect.github.com/G",
+    "url": "https://github.com/TUM-Dev/Campus-Backend/pull/630",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Campus-Backend"
+    ]
+  },
+  {
+    "title": "[PR] feat(http-callout): add praxis-http-callout filter crate",
+    "date": "2026-07-14T11:59:25Z",
+    "summary": "This is the general purpose HTTP callout filter from praxis-proxy/praxis#644, built on top of the CalloutClient landed in praxis-proxy/praxis#663. It lets operators wire arbitrary HTTP guardrails services into a filter pipeline with just YAML config.\r\n\r\nThe filter makes an outbound HTTP request duri",
+    "url": "https://github.com/praxis-proxy/praxis/pull/730",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: praxis"
+    ]
+  },
+  {
+    "title": "[PR] Add Requesty as an OpenAI-compatible LLM provider",
+    "date": "2026-07-14T11:48:27Z",
+    "summary": "Adds Requesty as an OpenAI-compatible LLM provider, mirroring the existing OpenRouter provider. Requesty is an LLM gateway that uses the same `provider/model` naming convention as OpenRouter (e.g. `openai/gpt-4o-mini`, `anthropic/claude-sonnet-4-5`).\n\nChanges:\n- `src/local_deep_research/llm/provider",
+    "url": "https://github.com/LearningCircuit/local-deep-research/pull/5052",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: local-deep-research"
+    ]
+  },
+  {
+    "title": "[PR] feat: InsureAI \u2013 RAG-powered Insurance Policy Assistant (capstone)",
+    "date": "2026-07-14T11:43:31Z",
+    "summary": "Implements the complete InsureAI capstone project: a production-style RAG application for insurance policy Q&A using only open-source, locally-hosted models via Ollama.\n\n## RAG Pipeline (`rag/`)\n- `loader.py` \u2013 pdfplumber PDF ingestion with page-level metadata\n- `chunker.py` \u2013 `RecursiveCharacterTex",
+    "url": "https://github.com/Relevantz-Training/insure-ai-capstone-santhosh/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: insure-ai-capstone-santhosh"
+    ]
+  },
+  {
+    "title": "[PR] refactor(parse-once): single-grammar reasoning + tool-call parsing, native-first for Gemma",
+    "date": "2026-07-14T11:15:50Z",
+    "summary": "## What this delivers\n\nStarted as the parse-once boundary refactor (single-grammar reasoning + tool-call parsing, native-first for Gemma) and grew into a broad device-hardening pass: every `Bxx`/`Qxx`/`Dxx`/`Mxx` finding from the on-device test log driven to a fix with an integration test, plus a fu",
+    "url": "https://github.com/off-grid-ai/off-grid-ai-mobile/pull/510",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: off-grid-ai-mobile"
+    ]
+  },
+  {
+    "title": "[PR] profile: surface filed IP, financial/medical products, and long-tail repos",
+    "date": "2026-07-14T11:13:48Z",
+    "summary": "## \ud83c\udfaf What does this PR do?\n\nKeeps the org profile README current and gives it a sharper edge against other GitHub profiles by linking repos that were only mentioned in prose, calling out filed IP up front, and adding a curated table of shipped-but-unlinked projects.\n\n---\n\n## \ud83d\udd17 Related issue\n\nCloses ",
+    "url": "https://github.com/thebardchat/thebardchat/pull/38",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: thebardchat"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update pathweb workloads (non-major)",
+    "date": "2026-07-14T11:10:44Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [ghcr.io/arabcoders/watchstate](https://redirect.github.com/arabcoders/watchstate) | Kustomization | patch | `v1.9.1` \u2192 `v1.9.2` |\n",
+    "url": "https://github.com/ruifung/rfhome-infrastructure/pull/3023",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: rfhome-infrastructure"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-07-14T11:05:43Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
     ]
   }
 ]
