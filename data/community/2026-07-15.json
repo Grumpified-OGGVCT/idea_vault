@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-15T20:06:56Z",
+    "date": "2026-07-15T21:32:58Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-15T19:06:33Z",
+    "date": "2026-07-15T21:57:13Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -912,7 +912,7 @@
   },
   {
     "title": "[PR] fix(ollama): route through native API so context window, num_ctx, and timeout settings work",
-    "date": "2026-07-15T19:19:30Z",
+    "date": "2026-07-15T21:50:59Z",
     "summary": "Fixes CLINE-2603, CLINE-2566, CLINE-2572\n\n## Root cause\n\nThe 4.0.0 SDK migration deleted the dedicated Ollama handler and re-declared Ollama as a generic OpenAI-compatible provider against `/v1/chat/completions`. That endpoint cannot express Ollama's proprietary `options.num_ctx`, so every model loa",
     "url": "https://github.com/cline/cline/pull/12286",
     "source": "github_prs",
@@ -1331,9 +1331,9 @@
     ]
   },
   {
-    "title": "[PR] CAMEL-23703: camel-launcher - package distribution + package-native validation (JReleaser packagers, website installers, validators)",
-    "date": "2026-07-15T19:26:09Z",
-    "summary": "# Description\n\nThis is the package-distribution and package-native-validation layer of the unified Camel CLI\ndistribution work (CAMEL-23703), built on top of the shared Java 17+ runtime discovery (#24664)\nand the native `camel.exe` bootstrap (#24665), both already merged into `main`. It gives the\n`c",
+    "title": "[PR] CAMEL-23703: camel-launcher - secure website installers with immutable release manifests",
+    "date": "2026-07-15T21:35:44Z",
+    "summary": "_Claude Code on behalf of ammachado_\r\n\r\n# Description\r\n\r\nThis PR adds canonical per-user installers for the Camel CLI Launcher:\r\n\r\n- `src/install/install.sh`\r\n- `src/install/install.ps1`\r\n\r\nBoth installers can resolve the latest published release or install a requested `X.Y.Z` version. They download",
     "url": "https://github.com/apache/camel/pull/24682",
     "source": "github_prs",
     "highlights": [
@@ -1416,7 +1416,7 @@
   },
   {
     "title": "[PR] test(explorer): Phase 3 \u2014 Angular DOM unit specs (100% in-scope Explorer coverage)",
-    "date": "2026-07-15T20:12:06Z",
+    "date": "2026-07-15T21:54:09Z",
     "summary": "## Phase 3 of the Angular DOM unit-testing rollout \u2014 the Explorer tree\n\nAdds **129 `*.dom.test.ts` specs** across `packages/Angular/Explorer/**` that render components under the zoneless jsdom / Angular-AOT preset and assert **real DOM** \u2014 input-driven rendering, validation gating, and `@Output` con",
     "url": "https://github.com/MemberJunction/MJ/pull/3169",
     "source": "github_prs",
@@ -1464,12 +1464,12 @@
   },
   {
     "title": "[PR] feat(llm): add OpenAI-compatible endpoint support",
-    "date": "2026-07-15T15:26:58Z",
+    "date": "2026-07-15T21:11:27Z",
     "summary": "## Summary\n\nAdds a native OpenAI-compatible `/v1/chat/completions` path alongside the existing `claude` / `cursor-agent` CLI integration, so users can point Mila at any OpenAI-compatible provider \u2014 Ollama Cloud, OpenAI, Groq, OpenRouter, DeepSeek, a local Ollama, or a custom endpoint \u2014 instead of re",
     "url": "https://github.com/island-io/mila/pull/95",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "pull request",
       "repo: mila"
     ]
@@ -1596,7 +1596,7 @@
   },
   {
     "title": "[PR] feat: production-grade backend hardening \u2014 CDC, schema registry, durable jobs, and universal transfer resilience",
-    "date": "2026-07-15T20:10:00Z",
+    "date": "2026-07-15T22:02:10Z",
     "summary": "## Summary\n\nContinued hardening of the DataFlow backend toward a demo-ready universal transfer engine. Latest batch focuses on bit-exact value serialization, transient-error retry coverage for streaming source reads, configurable retry policy, object-store write safety, and business-rule guard tests",
     "url": "https://github.com/Venky-Chowdary/DataFlow/pull/6",
     "source": "github_prs",
@@ -1692,7 +1692,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-07-15T19:02:47Z",
+    "date": "2026-07-15T21:22:25Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update | Pending |\n|---|---|---|---|---|---|---|\n| [@bufbuild/protobuf](https://protobufes.com/) ([source](https",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/75",
     "source": "github_prs",
@@ -1700,6 +1700,150 @@
       "comments: 2",
       "pull request",
       "repo: scribe"
+    ]
+  },
+  {
+    "title": "[PR] refactor(ollama): migrate auth proxy to .mts",
+    "date": "2026-07-15T21:55:49Z",
+    "summary": "## Summary\n\nMigrate the host-side Ollama authentication proxy from CommonJS `scripts/ollama-auth-proxy.js` to the typed ESM `scripts/ollama-auth-proxy.mts` entrypoint while preserving the existing request-handling and lifecycle contract. This maintainer salvage preserves the verified commits from #6",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/6974",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Buildpacks: Graduation Due Diligence",
+    "date": "2026-07-15T21:52:44Z",
+    "summary": "Graduation due diligence for Cloud Native Buildpacks.\r\n\r\nApplication: https://github.com/cncf/toc/issues/1538\r\nGeneral Technical Review: https://github.com/cncf/toc/pull/2047 cc @kdubois\r\n\r\n### Next steps\r\n\r\n- Public comment period (minimum 2 weeks)\r\n- TOC vote\r\n\r\nSigned-off-by: Faseela K <faseela.k",
+    "url": "https://github.com/cncf/toc/pull/2212",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 59",
+      "pull request",
+      "repo: toc"
+    ]
+  },
+  {
+    "title": "[PR] Add UiPath XAML code reviewer with local Ollama integration",
+    "date": "2026-07-15T21:52:00Z",
+    "summary": "## Summary\n\nThis PR introduces a complete AI-powered code review application for UiPath XAML workflows that runs entirely offline using a local Ollama LLM. The application provides structured code reviews with severity-ranked findings, category scores, and actionable recommendations without requirin",
+    "url": "https://github.com/AbhiAshling125/AshlingCodeReview/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AshlingCodeReview"
+    ]
+  },
+  {
+    "title": "[PR] fix(agent): provider-aware super-context + delegation guardrails for local LLMs (#4361)",
+    "date": "2026-07-15T21:44:52Z",
+    "summary": "## Summary\n\n- Make the first-turn **super-context scout** and the orchestrator **delegation guide** provider-aware, so weak local models stop mis-routing trivial prompts (issue #4361, a v0.58 regression on llama.cpp / Ollama / LM Studio / MLX).\n- Super-context gate: extend the #4403 context-free ski",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/4935",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update testcontainers-go monorepo to v0.43.0",
+    "date": "2026-07-15T21:37:48Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/henok321/translation-service/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: translation-service"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-java monorepo to v1.21.4",
+    "date": "2026-07-15T21:35:51Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:spock](h",
+    "url": "https://github.com/rundeck-plugins/ansible-plugin/pull/447",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ansible-plugin"
+    ]
+  },
+  {
+    "title": "[PR] Checkfixes",
+    "date": "2026-07-15T21:32:59Z",
+    "summary": "Trying to reduce the amount of noisy checks.\r\n\r\nAdds several new auto-fix scripts (mostly written by claude). The fix scripts should be run with supervision and not incorporated into any sort of automated pipeline.\r\n---\r\n\r\n* Added `fix_absolute_site_link.py` to automatically rewrite absolute site UR",
+    "url": "https://github.com/nesi/support-docs/pull/1337",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: support-docs"
+    ]
+  },
+  {
+    "title": "[PR] Fork Divergence: Replace Zed Cloud-LLM Billing with Direct Providers",
+    "date": "2026-07-15T21:16:33Z",
+    "summary": "## Problem\n\nThe agent stack we're keeping from Zed defaults to routing every completion through Zed's hosted LLM service (`provider: \"zed.dev\"` in `assets/settings/default.json`). That path \u2014 `crates/cloud_api_client`, `crates/cloud_api_types`, `crates/cloud_llm_client`, `crates/language_models_clou",
+    "url": "https://github.com/bkshrader/notebook/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: notebook"
+    ]
+  },
+  {
+    "title": "[PR] Update miningtothelastblock.top pool to mine CS (Cloud Service)",
+    "date": "2026-07-15T21:15:34Z",
+    "summary": "## Summary\n- Adds a `CS` coin entry to `pool_templates/miningtothelastblock.json` (equihash 125/4 / ZelHash), pointing at `cs.miningtothelastblock.top:3332`, mined via the `cs-miner` Custom miner package.\n- Existing `DERO` entry is untouched.\n\n## \u26a0\ufe0f Reviewer note\nThe referenced `cs-miner` binary (ht",
+    "url": "https://github.com/minershive/hive-pooltemplates/pull/1844",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: hive-pooltemplates"
+    ]
+  },
+  {
+    "title": "[PR] Add cs-miner miner definition",
+    "date": "2026-07-15T21:15:34Z",
+    "summary": "## Summary\n- Adds `miners/cs-miner.json`: metadata for cs-miner (GPU AMD/Nvidia, OpenCL, ZelHash/`equihash 125/4`).\n- cs-miner ships as a HiveOS \"Custom miner\" package (`CUSTOM_NAME=cs-miner` in its `h-manifest.conf`), so it is actually launched via the `\"custom\"` miner key in pool templates (see th",
+    "url": "https://github.com/minershive/hive-pooltemplates/pull/1843",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: hive-pooltemplates"
+    ]
+  },
+  {
+    "title": "[PR] Add Phase 4 sign-off and Phase 5 roadmap docs",
+    "date": "2026-07-15T21:04:56Z",
+    "summary": "## Summary\nAdds the Phase 4 completion and IDE handoff documentation, updates the export parity specification, and publishes the Phase 5 implementation roadmap plus strategic next actions.\n\n## Why\nThe original working branch is blocked from a normal GitHub push because it contains oversized local mo",
+    "url": "https://github.com/ItsMehRAWRXD/RawrXD/pull/12",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: RawrXD"
+    ]
+  },
+  {
+    "title": "[PR] Finish self-host migration + kill GCP (Phases 0\u20131: stabilize + OpenAI gpt-4o)",
+    "date": "2026-07-15T20:54:04Z",
+    "summary": "## Finish the self-host migration + kill GCP \u2014 Phases 0 & 1\n\n`diagnosticpro.io` is supposed to be self-hosted on the Intent Solutions VPS with GCP dead, but the public site was still on **Firebase Hosting**, its GCP deploy had been failing since 2026\u201106\u201109 (billing disabled), and the ~80% migration ",
+    "url": "https://github.com/jeremylongshore/DiagnosticPro/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: DiagnosticPro"
     ]
   }
 ]
