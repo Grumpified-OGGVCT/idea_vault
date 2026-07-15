@@ -504,19 +504,19 @@
   },
   {
     "title": "[PR] Advance Windows F2 parity runtime surfaces",
-    "date": "2026-07-15T02:40:02Z",
+    "date": "2026-07-15T05:27:26Z",
     "summary": "## Summary\n\nThis structured F2 parity branch advances the Windows product from scaffolded\nsurfaces to composed runtime behavior while keeping source completion separate\nfrom signed-host and physical release certification.\n\n- compose the authenticated gateway, standalone companion CLI, durable agent\n",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1654",
     "source": "github_prs",
     "highlights": [
-      "comments: 181",
+      "comments: 195",
       "pull request",
       "repo: BurnBar"
     ]
   },
   {
     "title": "[PR] fix(text): strip MiniMax marker from channel replies",
-    "date": "2026-07-15T02:36:32Z",
+    "date": "2026-07-15T04:55:55Z",
     "summary": "Closes #105113\n\n## What Problem This Solves\n\nOfficial MiniMax Anthropic-compatible streams can append `[e~[` at the end of an assistant message. The earlier shared text sanitizer was too broad: it receives text without provider or transport identity, so it could remove ordinary prose from unrelated ",
     "url": "https://github.com/openclaw/openclaw/pull/105243",
     "source": "github_prs",
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-15T02:35:57Z",
+    "date": "2026-07-15T04:57:40Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -540,12 +540,12 @@
   },
   {
     "title": "[PR] chore(scaffold): Go project skeleton with lint, hooks, and CI",
-    "date": "2026-07-15T02:35:11Z",
+    "date": "2026-07-15T05:27:58Z",
     "summary": "## Summary\r\n\r\n- Scaffold a greenfield Go module (`github.com/String-sg/tw-context-intelligence`) with pinned toolchain, enforced git hooks, CI workflow, and conventional project layout\r\n- Pin AWS SDK for Go v2 dependencies (bedrockagent, bedrockagentruntime, bedrockruntime, s3) per ADR-0002, ready t",
     "url": "https://github.com/String-dxd/tw-context-intelligence/pull/79",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: tw-context-intelligence"
     ]
@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-07-15T02:34:14Z",
+    "date": "2026-07-15T05:35:23Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/better-dx/pull/955",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-15T02:12:59Z",
+    "date": "2026-07-15T04:46:05Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -684,7 +684,7 @@
   },
   {
     "title": "[PR] chore(deps): update all dependencies",
-    "date": "2026-07-15T02:01:25Z",
+    "date": "2026-07-15T04:58:22Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) | patch | `10.1.2` \u2192 `10.1.3` |\n| [cert-manager](https://cert-manager.io) ([source](",
     "url": "https://github.com/nolte/k8s-home-lab/pull/830",
     "source": "github_prs",
@@ -740,6 +740,186 @@
       "comments: 9",
       "pull request",
       "repo: claude-code-templates"
+    ]
+  },
+  {
+    "title": "\u7533\u8bf7\u52a0\u5165\u8bf7\u5728\u8fd9\u91cc\u8bc4\u8bba \uff08\u4e5f\u53ef\u4ee5\u76f4\u63a5\u53d1 Pull Request\uff09",
+    "date": "2026-07-15T05:33:03Z",
+    "summary": "### \u5165\u9009\u6807\u51c6\r\n* \u7f51\u7ad9 / App\r\n* \u5982\u679c\u662f Github \u5e93\uff0c README \u6216\u9876\u90e8\u63cf\u8ff0\u91cc\uff0c\u8981\u9644\u4e0a\u7f51\u7ad9\u6216 App Store \u5730\u5740\uff0c\u4e0d\u80fd\u662f\u7eaf\u7cb9\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u5982\u679c\u5305\u542b\u4e86\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u90a3\u5c31\u592a\u591a\u4e86\u3002\u6240\u4ee5\u53ea\u5141\u8bb8\u9488\u5bf9\u666e\u901a\u7528\u6237\u7684\u7f51\u7ad9/App \u5217\u5728\u8868\u91cc\r\n\r\n### \u4e0d\u6536\u5f55\u7684\u4e1c\u897f\r\n* \u5f00\u53d1\u8005\u5de5\u5177\uff08Github \u672c\u8d28\u4e0a\u5c31\u662f\u4e2a\u5f00\u53d1\u8005\u5de5\u5177\u5927\u96c6\u5408\uff0c\u6536\u5f55\u5f00\u53d1\u8005\u5de5\u5177\u8fd9\u4e2a\u8868\u4f1a\u7206\u70b8\u7684\uff09\r\n* \u793e\u533a\u7c7b\u7f51\u7ad9\uff08v2ex\uff0cruby-china\uff0c\u5404\u79cd php \u793e\u533a\uff0c\u592a\u591a\u592a\u591a\u592a\u591a\u4e86\u3002\u6ca1\u6cd5\u6536\u3002\u5e0c\u671b\u7406\u89e3\uff09\r\n\r\n### \u6d41\u7a0b\r\n\u770b\u4e86\u8bc4\u8bba\u540e\u4f1a\u505a\u51b3\u5b9a\uff0c\r\n\u5982\u679c\u5165\u4e86\uff0c\u4f1a\u52a0\u8fdb\u53bb\u3002\r\n\u5982\u679c\u6ca1\u5165\uff0c\u4f1a\u544a\u77e5\u4f60\u7406\u7531\uff08\u5e0c\u671b\u4f60\u4e0d\u8981\u4ecb\u610f :",
+    "url": "https://github.com/1c7/chinese-independent-developer/issues/160",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 1628",
+      "state: open",
+      "repo: chinese-independent-developer"
+    ]
+  },
+  {
+    "title": "[Feature] OCR Enhancement: Pluggable Engine Architecture with entry_points Discovery",
+    "date": "2026-07-15T04:55:09Z",
+    "summary": "## Title\n\n`[Feature] OCR Enhancement: Pluggable Engine Architecture with entry_points Discovery`\n\n---\n\n## Problem or Motivation\n\n### Background\n\nThe `strategy-dev-manager` skill (#455, merged via #457) introduced a pluggable OCR engine interface (`OcrEngine` Protocol) with two built-in engines: `Rap",
+    "url": "https://github.com/HKUDS/Vibe-Trading/issues/547",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: Vibe-Trading"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-07-15T05:33:40Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/ts-md/pull/99",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-md"
+    ]
+  },
+  {
+    "title": "[PR] fix(repl): add correction context after interruption",
+    "date": "2026-07-15T05:32:54Z",
+    "summary": "## Summary\n\n- add a one-shot model-visible reminder after a user interrupts an active assistant turn\n- keep slash commands, local UI commands, remote events, timeouts, and programmatic aborts from consuming or arming the reminder\n\n## Impact\n\n- user-facing impact: the next normal correction prompt is",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1936",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] feat(cutover): re-land R1 direct HTML engine (blocked on #27 content gate)",
+    "date": "2026-07-15T05:31:24Z",
+    "summary": "## Summary\nRe-lands the R1 HTML-export cutover chain that was force-removed from `main` after premature self-merges of #23 / #24 / #26.\n\nThis PR is the **cleanup / review surface** for that work. It is **not** approved for merge.\n\n## Source chain (preserved commits)\n- `feat/he-r1-cutover` \u2192 original",
+    "url": "https://github.com/project820/notepad-ai/pull/29",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: notepad-ai"
+    ]
+  },
+  {
+    "title": "[PR] main",
+    "date": "2026-07-15T05:29:45Z",
+    "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
+    "url": "https://github.com/makhweeb/LightRAG/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LightRAG"
+    ]
+  },
+  {
+    "title": "[PR] fix(api): enforce API_TIMEOUT_MS for OpenAI-compatible headers",
+    "date": "2026-07-15T05:25:56Z",
+    "summary": "## Summary\n- Bound OpenAI-compatible requests that stall before response headers arrive.\n- Keep long-running streaming bodies unaffected after headers are received.\n\n## Implementation\n- Parse `API_TIMEOUT_MS` once per request with a 600000 ms default and safe integer validation.\n- Arm a per-attempt ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1940",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-07-15T05:16:33Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/ts-syntax-highlighter/pull/468",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ts-syntax-highlighter"
+    ]
+  },
+  {
+    "title": "[PR] feat(goose): implement agent configuration for workspace preparation",
+    "date": "2026-07-15T05:15:17Z",
+    "summary": "## Summary\r\n- Replaces the `configurationFiles` and `preWorkspaceStart` stubs with a real implementation that writes `GOOSE_MODEL` into `.goose/config.yaml` from the workspace context, preserving existing configuration fields.\r\n\r\nFixes #2174\r\n\r\n## Test plan\r\n\r\n_Before testing youll need to  set the ",
+    "url": "https://github.com/openkaiden/kaiden/pull/2192",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] fix(main): complete fork-sync to restore green CI",
+    "date": "2026-07-15T05:08:36Z",
+    "summary": "## What\n\nRepairs the pre-existing CI breakage on `main` left by an incomplete fork-sync with upstream. `main` currently fails its own CI (typecheck, native build, install-smoke, biome). This branch drives the workspace back to green with safe, mostly-additive changes:\n\n- **Typecheck: 147 \u2192 0 errors.",
+    "url": "https://github.com/kingkillery/oh-my-pk/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: oh-my-pk"
+    ]
+  },
+  {
+    "title": "[PR] fix(codegen): auto-detect IS-A Entity.ParentID from shared PK/FK shape",
+    "date": "2026-07-15T05:01:23Z",
+    "summary": "## Summary\r\n  CodeGen set `Entity.ParentID` for IS-A (Table-Per-Type) children **only** when the parent/child pair was declared in `additionalSchemaInfo` config (`processISARelationshipConfig`). A child table whose single PK column is *also* an FK to another table's PK \u2014 the IS-A Disjoint shape (`Ev",
+    "url": "https://github.com/MemberJunction/MJ/pull/3161",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(state): segregate host state root per gateway port",
+    "date": "2026-07-15T04:51:22Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nA non-default `NEMOCLAW_GATEWAY_PORT` previously shared the single `~/.nemoclaw/` host state root, so its sandbox registry, legacy credential-migration files, snapshots, and onboarding state collided with the default gateway's. This routes the host sta",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/6711",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 30",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(testing): Integration Test TestType \u2014 headless integration suites, host-based CI gate + RunView cache fixes",
+    "date": "2026-07-15T04:36:27Z",
+    "summary": "## Summary\n\nIntroduces the **\"Integration Test\" `TestType`** \u2014 a headless, metadata-driven integration tier that exercises the **real** MJ provider stack (live SQL Server + GraphQL, real cache managers/engines, real entity saves \u2014 no browser, no mocks) and lives inside the Testing Framework. It sits",
+    "url": "https://github.com/MemberJunction/MJ/pull/3020",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Fork gemini-cli as multi-provider, local-first CLI (Ollama default, LM Studio, BYOK, models.toml registry)",
+    "date": "2026-07-15T04:11:31Z",
+    "summary": "## Summary\n\nReplaces the branch contents with a fork of [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) (Apache 2.0) rebuilt around local-first, multi-provider routing. Ollama at `localhost:11434` becomes the default provider (auto-detected via `/api/tags`, no API key), LM St",
+    "url": "https://github.com/haseeb-heaven/code-interpreter/pull/240",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: code-interpreter"
+    ]
+  },
+  {
+    "title": "[PR] fix(ollama): route through native API so context window, num_ctx, and timeout settings work",
+    "date": "2026-07-15T03:36:59Z",
+    "summary": "Fixes CLINE-2603, CLINE-2566, CLINE-2572\n\n## Root cause\n\nThe 4.0.0 SDK migration deleted the dedicated Ollama handler and re-declared Ollama as a generic OpenAI-compatible provider against `/v1/chat/completions`. That endpoint cannot express Ollama's proprietary `options.num_ctx`, so every model loa",
+    "url": "https://github.com/cline/cline/pull/12286",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: cline"
     ]
   }
 ]
