@@ -192,12 +192,12 @@
   },
   {
     "title": "Local-first Ollama tier + local_only mode for the academic_figure (paperbanana) pipeline",
-    "date": "2026-07-11T17:45:50Z",
+    "date": "2026-07-15T16:03:34Z",
     "summary": "## What\n\nExtend the paperbanana way of working (academic_figure strategy) to run on local models, with a mode that never spends money:\n\n- **Local-first ladder**: when Ollama carries an image-capable model, the FIRST render is a free local draft; paperbanana CLI / Nano Banana are paid escalation tier",
     "url": "https://github.com/SteveGJones/jack-tar-deckhand/issues/119",
     "source": "github_issues",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "state: open",
       "repo: jack-tar-deckhand"
     ]
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-15T14:52:37Z",
+    "date": "2026-07-15T16:03:02Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -576,8 +576,8 @@
   },
   {
     "title": "[PR] feat(cli): add --yolo alias for --dangerously-skip-permissions",
-    "date": "2026-07-15T14:53:40Z",
-    "summary": "<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added `--yolo` as an alias for `--dangerously-skip-permissions` across the main CLI, `claude ssh`, skills CLI, and safety banners.\n\n* **Documentation**\n  * Updated CLI help and",
+    "date": "2026-07-15T15:18:24Z",
+    "summary": "<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added `--yolo` as an alias for `--dangerously-skip-permissions` across the main CLI, `claude ssh`, skills CLI, and safety banners.\n* **Documentation**\n  * Updated help and warn",
     "url": "https://github.com/Gitlawb/openclaude/pull/1939",
     "source": "github_prs",
     "highlights": [
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] Add Ollama (Local LLM) support for AI feedback",
-    "date": "2026-07-15T02:26:31Z",
+    "date": "2026-07-15T15:29:47Z",
     "summary": "# Pull Request: Add Ollama (Local LLM) Support for AI Feedback\r\n\r\n## Overview\r\nThis PR adds support for **Ollama** as a local LLM provider for generating structured student feedback, alongside ChatGPT, Gemini, and Claude. This allows instructors to host their own open-source models (like `llama3`, `",
     "url": "https://github.com/kiat/codeAssist/pull/322",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-15T10:34:31Z",
+    "date": "2026-07-15T15:44:01Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -744,24 +744,24 @@
   },
   {
     "title": "\u7533\u8bf7\u52a0\u5165\u8bf7\u5728\u8fd9\u91cc\u8bc4\u8bba \uff08\u4e5f\u53ef\u4ee5\u76f4\u63a5\u53d1 Pull Request\uff09",
-    "date": "2026-07-15T13:30:19Z",
+    "date": "2026-07-15T16:17:15Z",
     "summary": "### \u5165\u9009\u6807\u51c6\r\n* \u7f51\u7ad9 / App\r\n* \u5982\u679c\u662f Github \u5e93\uff0c README \u6216\u9876\u90e8\u63cf\u8ff0\u91cc\uff0c\u8981\u9644\u4e0a\u7f51\u7ad9\u6216 App Store \u5730\u5740\uff0c\u4e0d\u80fd\u662f\u7eaf\u7cb9\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u5982\u679c\u5305\u542b\u4e86\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u90a3\u5c31\u592a\u591a\u4e86\u3002\u6240\u4ee5\u53ea\u5141\u8bb8\u9488\u5bf9\u666e\u901a\u7528\u6237\u7684\u7f51\u7ad9/App \u5217\u5728\u8868\u91cc\r\n\r\n### \u4e0d\u6536\u5f55\u7684\u4e1c\u897f\r\n* \u5f00\u53d1\u8005\u5de5\u5177\uff08Github \u672c\u8d28\u4e0a\u5c31\u662f\u4e2a\u5f00\u53d1\u8005\u5de5\u5177\u5927\u96c6\u5408\uff0c\u6536\u5f55\u5f00\u53d1\u8005\u5de5\u5177\u8fd9\u4e2a\u8868\u4f1a\u7206\u70b8\u7684\uff09\r\n* \u793e\u533a\u7c7b\u7f51\u7ad9\uff08v2ex\uff0cruby-china\uff0c\u5404\u79cd php \u793e\u533a\uff0c\u592a\u591a\u592a\u591a\u592a\u591a\u4e86\u3002\u6ca1\u6cd5\u6536\u3002\u5e0c\u671b\u7406\u89e3\uff09\r\n\r\n### \u6d41\u7a0b\r\n\u770b\u4e86\u8bc4\u8bba\u540e\u4f1a\u505a\u51b3\u5b9a\uff0c\r\n\u5982\u679c\u5165\u4e86\uff0c\u4f1a\u52a0\u8fdb\u53bb\u3002\r\n\u5982\u679c\u6ca1\u5165\uff0c\u4f1a\u544a\u77e5\u4f60\u7406\u7531\uff08\u5e0c\u671b\u4f60\u4e0d\u8981\u4ecb\u610f :",
     "url": "https://github.com/1c7/chinese-independent-developer/issues/160",
     "source": "github_issues",
     "highlights": [
-      "comments: 1666",
+      "comments: 1668",
       "state: open",
       "repo: chinese-independent-developer"
     ]
   },
   {
     "title": "[Feature] OCR Enhancement: Pluggable Engine Architecture with entry_points Discovery",
-    "date": "2026-07-15T12:04:21Z",
+    "date": "2026-07-15T16:13:52Z",
     "summary": "## Problem or Motivation\n\n### Background\n\nThe `strategy-dev-manager` skill (#455, merged via #457) introduced a pluggable OCR engine interface (`OcrEngine` Protocol) with two built-in engines: `RapidOcrEngine` (local, ONNX) and `QwenVisionOcrEngine` (cloud, DashScope). The maintainer review identifi",
     "url": "https://github.com/HKUDS/Vibe-Trading/issues/547",
     "source": "github_issues",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "state: open",
       "repo: Vibe-Trading"
     ]
@@ -780,12 +780,12 @@
   },
   {
     "title": "[PR] fix(repl): add correction context after interruption",
-    "date": "2026-07-15T06:33:40Z",
+    "date": "2026-07-15T16:22:38Z",
     "summary": "## Summary\n\n- add a one-shot model-visible reminder after a user interrupts an active assistant turn\n- keep slash commands, local UI commands, remote events, timeouts, and programmatic aborts from consuming or arming the reminder\n\n## Impact\n\n- user-facing impact: the next normal correction prompt is",
     "url": "https://github.com/Gitlawb/openclaude/pull/1936",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: openclaude"
     ]
@@ -816,12 +816,12 @@
   },
   {
     "title": "[PR] fix(api): enforce API_TIMEOUT_MS for OpenAI-compatible headers",
-    "date": "2026-07-15T14:27:17Z",
+    "date": "2026-07-15T15:38:12Z",
     "summary": "## Summary\n- Bound OpenAI-compatible requests that stall before response headers arrive.\n- Keep long-running streaming bodies unaffected after headers are received.\n\n## Implementation\n- Parse `API_TIMEOUT_MS` once per request with a 600000 ms default and safe integer validation.\n- Arm a per-attempt ",
     "url": "https://github.com/Gitlawb/openclaude/pull/1940",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: openclaude"
     ]
@@ -912,12 +912,12 @@
   },
   {
     "title": "[PR] fix(ollama): route through native API so context window, num_ctx, and timeout settings work",
-    "date": "2026-07-15T03:36:59Z",
+    "date": "2026-07-15T16:14:50Z",
     "summary": "Fixes CLINE-2603, CLINE-2566, CLINE-2572\n\n## Root cause\n\nThe 4.0.0 SDK migration deleted the dedicated Ollama handler and re-declared Ollama as a generic OpenAI-compatible provider against `/v1/chat/completions`. That endpoint cannot express Ollama's proprietary `options.num_ctx`, so every model loa",
     "url": "https://github.com/cline/cline/pull/12286",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: cline"
     ]
@@ -1032,8 +1032,8 @@
   },
   {
     "title": "[PR] Separate provider and model",
-    "date": "2026-07-15T14:52:12Z",
-    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **High Risk**\n> This rewrites core LLM routing, credential decryption, and instance migration paths that every agent request depends on; regressions could break model selection, BYOK, or reasoning signatures across providers.\n> \n> **Overview**\n> Introduces **provi",
+    "date": "2026-07-15T16:10:49Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **High Risk**\n> This rewrites how every LLM request is routed and how encrypted keys and legacy preferences map to instances; regressions would break chat, BYOK, coding plans, or reasoning signatures across vendors.\n> \n> **Overview**\n> **Model routing** moves from",
     "url": "https://github.com/stagewise-io/stagewise/pull/1442",
     "source": "github_prs",
     "highlights": [
@@ -1044,7 +1044,7 @@
   },
   {
     "title": "[PR] chore(deps): bump the go-minor-patch group across 1 directory with 7 updates",
-    "date": "2026-07-15T05:38:49Z",
+    "date": "2026-07-15T16:24:18Z",
     "summary": "Bumps the go-minor-patch group with 7 updates in the /go directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [github.com/anthropics/anthropic-sdk-go](https://github.com/anthropics/anthropic-sdk-go) | `1.56.0` | `1.57.0` |\n| [github.com/aws/aws-sdk-go-v2/config](https://github.com/aws/aws-sdk-g",
     "url": "https://github.com/kagent-dev/kagent/pull/2218",
     "source": "github_prs",
@@ -1272,7 +1272,7 @@
   },
   {
     "title": "[PR] chore(deps): update docker images (minor/patch/digest)",
-    "date": "2026-07-15T11:42:32Z",
+    "date": "2026-07-15T15:59:25Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [adguard/adguardhome](https://adguard.com/en/adguard-home/overview.html) ([source](https://redirect.github.com/AdguardTeam/AdGuardHome)) | pat",
     "url": "https://github.com/acepanel/templates/pull/142",
     "source": "github_prs",
@@ -1308,12 +1308,12 @@
   },
   {
     "title": "[PR] Bump Testcontainers.RabbitMq from 3.10.0 to 4.13.0",
-    "date": "2026-07-15T14:48:39Z",
+    "date": "2026-07-15T16:21:58Z",
     "summary": "Updated [Testcontainers.RabbitMq](https://github.com/testcontainers/testcontainers-dotnet) from 3.10.0 to 4.13.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers.RabbitMq's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.13.0\n\n# What's C",
     "url": "https://github.com/simplify9/SW-Bus/pull/54",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 4",
       "pull request",
       "repo: SW-Bus"
     ]
@@ -1412,6 +1412,114 @@
       "comments: 4",
       "pull request",
       "repo: api"
+    ]
+  },
+  {
+    "title": "[PR] test(explorer): Phase 3 \u2014 Angular DOM unit specs (100% in-scope Explorer coverage)",
+    "date": "2026-07-15T16:24:55Z",
+    "summary": "## Phase 3 of the Angular DOM unit-testing rollout \u2014 the Explorer tree\n\nAdds **128 `*.dom.test.ts` specs** (39 commits) that render Explorer components under the zoneless jsdom / Angular-AOT preset and assert **real DOM** \u2014 input-driven rendering, validation gating, and `@Output` contracts \u2014 via `@m",
+    "url": "https://github.com/MemberJunction/MJ/pull/3169",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image baserow/baserow ( 1.35.1 \u2794 2.3.2 )",
+    "date": "2026-07-15T16:09:24Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [baserow/baserow](https://redirect.github.com/baserow/baserow) | major | `1.35.1` \u2192 `2.3.2` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not",
+    "url": "https://github.com/returnfloat/homelab/pull/1487",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-07-15T16:08:18Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/cicero-im/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: add multimodal embed() activity and provider adapters",
+    "date": "2026-07-15T15:40:10Z",
+    "summary": "## Summary\n- Adds a typed multimodal `embed()` activity with per-model input modalities, Matryoshka `dimensions`, middleware/OTel/devtools integration, and `embeddings: [{ vector, index }]` results\n- Ships embedding adapters for OpenAI, Gemini, Mistral, Ollama, and Bedrock (including Titan multimoda",
+    "url": "https://github.com/TanStack/ai/pull/926",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): add OpenAI-compatible endpoint support",
+    "date": "2026-07-15T15:26:58Z",
+    "summary": "## Summary\n\nAdds a native OpenAI-compatible `/v1/chat/completions` path alongside the existing `claude` / `cursor-agent` CLI integration, so users can point Mila at any OpenAI-compatible provider \u2014 Ollama Cloud, OpenAI, Groq, OpenRouter, DeepSeek, a local Ollama, or a custom endpoint \u2014 instead of re",
+    "url": "https://github.com/island-io/mila/pull/95",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: mila"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency amruthpillai/reactive-resume to v5.2.3",
+    "date": "2026-07-15T15:22:35Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/Reactive-Resume](https://redirect.github.com/amruthpillai/Reactive-Resume) | patch | `5.2.1` \u2192 `5.2.3` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>amruthpillai/Reactive-Resume (amruthpillai/Reactiv",
+    "url": "https://github.com/nSimonFR/reactive-resume-nix/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: reactive-resume-nix"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency gramps-project/gramps-web-api to v3.17.0",
+    "date": "2026-07-15T15:21:49Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [gramps-project/gramps-web-api](https://redirect.github.com/gramps-project/gramps-web-api) | minor | `3.2.0` \u2192 `3.17.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>gramps-project/gramps-web-api (gramps-project/g",
+    "url": "https://github.com/nSimonFR/gramps-web-nix/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: gramps-web-nix"
+    ]
+  },
+  {
+    "title": "[PR] Add OpenAI and Groq provider support via optional dependencies",
+    "date": "2026-07-15T15:19:00Z",
+    "summary": "Resolves #3\r\n\r\nThis PR introduces a flexible, extensible architecture for LLM providers. It allows users to choose between Ollama (default), OpenAI, and Groq for docstring generation, without forcing cloud SDK dependencies on users who just want local execution.\r\n\r\n- **Architecture**: Created a new ",
+    "url": "https://github.com/LordZeusIsBack/pydocgen/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: pydocgen"
+    ]
+  },
+  {
+    "title": "[PR] Available App Updates",
+    "date": "2026-07-15T15:17:27Z",
+    "summary": "Supported TA version updates:\n| TA Name                               | Current Version | Updated Version | Release Published Time    |\n| ------------------------------------- | --------------- | --------------- | ------------------------- |\n| Cisco Secure Access Add-on for Splunk | 1.0.50          ",
+    "url": "https://github.com/pyth0n1c/security_content/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: security_content"
     ]
   }
 ]
