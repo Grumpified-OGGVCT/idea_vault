@@ -3433,25 +3433,6 @@
     "research_score": 0.53
   },
   {
-    "arxiv_id": "2607.13800v1",
-    "title": "Prospective clinical indication, post-hoc report leakage, and fusion design in multi-image chest radiograph classification: a patient-clustered evaluation",
-    "summary": "Chest radiograph datasets often combine multiple images with Clinical Indication, Findings, and Impression, although these inputs are produced at different stages of care. We evaluated 15,000 ReXGradient-160K studies with two readable images and five CheXbert-derived report observations. Frozen DenseNet-121 and Bio+ClinicalBERT encoders were used to compare image-only, Indication-only, fixed-order multimodal, random-swap, DeepSets, and SectionGuard-MI models. Findings and Impression were evaluated only as post-hoc leakage controls. Models were trained with five seeds, and public-test uncertainty was estimated with 2,000 patient-cluster bootstrap replicates. Under U-Ones, macro AUROC was 0.643 for the primary image, 0.694 for two images, 0.749 for Indication, and 0.780 for ordinary two-image-plus-Indication fusion. SectionGuard-MI achieved AUROC 0.783 and AUPRC 0.260. Relative to ordinary fusion, its paired AUROC difference was 0.0031 (95% CI, -0.0042 to 0.0104; adjusted p=0.374), while its AUPRC difference was 0.0289 (95% CI, 0.0095 to 0.0413; adjusted p=0.004). DeepSets had the highest prospective AUROC point estimate (0.787), and random-swap fusion had the highest prospective AUPRC point estimate (0.265) with better calibration than SectionGuard-MI. Full report text alone reached AUROC 0.979 and AUPRC 0.836; AUROC remained above 0.973 after exact or expanded masking. These results show that prospective Indication is strongly associated with report-derived targets, permutation-aware fusion is competitive, and post-hoc report text creates substantial report-label circularity.",
-    "authors": [
-      "Kamran Shahid",
-      "Muhammad Munwar Iqbal"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "published": "2026-07-15",
-    "url": "https://arxiv.org/abs/2607.13800v1",
-    "pdf_url": "https://arxiv.org/pdf/2607.13800v1.pdf",
-    "date": "2026-07-16",
-    "source": "arxiv",
-    "research_score": 0.53
-  },
-  {
     "arxiv_id": "2607.13749v1",
     "title": "Algebraic Representability as the Limiting Regime of Grokking: An Exactly Solvable Model with Holomorphic Activations",
     "summary": "Neural networks trained on modular arithmetic exhibit grokking, a delayed transition from memorisation to generalisation known to depend on model capacity: too little and the network memorises slowly or not at all, too much and it generalises almost immediately. What happens at the extreme of this spectrum, when the architecture's expressible function class collapses to a finite-dimensional algebraic variety? We study two-layer networks with a holomorphic monomial activation sigma(z)=z^k, trained on modular tasks encoded via roots of unity. Here the network output, regardless of hidden width, is confined to a (k+1)-dimensional subspace of characters of (Z_p)^2, an O(k/p^2) slice of the full function space. We give a complete algebraic characterisation of this subspace: a task is representable if and only if its discrete Fourier support lies on the diagonal u+v = k (mod p), which for linear-phase targets reduces to the arithmetic criterion m+n=k. This is not merely a constraint on eventual generalisation but on memorisation itself: because the outputs are algebraically confined, a non-representable target cannot be fit even on the training set, and we prove a positive lower bound on the training loss, independent of width. Across 585 runs the algebraic prediction matches the observed outcome with 99.8% accuracy, with no memorisation regime and no grokking; outcomes split cleanly into instant success and outright failure. This binary behaviour is the limiting case of the capacity-grokking relationship: when the expressible class shrinks to a fixed algebraic object, the question of when a network will grok dissolves into whether it can represent the target at all. A bottleneck ablation connects this extreme to standard networks, tracing a continuous path from representational failure, through memorisation without generalisation, to grokking with a shrinking gap as capacity grows.",
@@ -4331,6 +4312,25 @@
     "date": "2026-07-16",
     "source": "arxiv",
     "research_score": 0.44
+  },
+  {
+    "arxiv_id": "2607.13800v1",
+    "title": "Prospective clinical indication, post-hoc report leakage, and fusion design in multi-image chest radiograph classification: a patient-clustered evaluation",
+    "summary": "Chest radiograph datasets often combine multiple images with Clinical Indication, Findings, and Impression, although these inputs are produced at different stages of care. We evaluated 15,000 ReXGradient-160K studies with two readable images and five CheXbert-derived report observations. Frozen DenseNet-121 and Bio+ClinicalBERT encoders were used to compare image-only, Indication-only, fixed-order multimodal, random-swap, DeepSets, and SectionGuard-MI models. Findings and Impression were evaluated only as post-hoc leakage controls. Models were trained with five seeds, and public-test uncertainty was estimated with 2,000 patient-cluster bootstrap replicates. Under U-Ones, macro AUROC was 0.643 for the primary image, 0.694 for two images, 0.749 for Indication, and 0.780 for ordinary two-image-plus-Indication fusion. SectionGuard-MI achieved AUROC 0.783 and AUPRC 0.260. Relative to ordinary fusion, its paired AUROC difference was 0.0031 (95% CI, -0.0042 to 0.0104; adjusted p=0.374), while its AUPRC difference was 0.0289 (95% CI, 0.0095 to 0.0413; adjusted p=0.004). DeepSets had the highest prospective AUROC point estimate (0.787), and random-swap fusion had the highest prospective AUPRC point estimate (0.265) with better calibration than SectionGuard-MI. Full report text alone reached AUROC 0.979 and AUPRC 0.836; AUROC remained above 0.973 after exact or expanded masking. These results show that prospective Indication is strongly associated with report-derived targets, permutation-aware fusion is competitive, and post-hoc report text creates substantial report-label circularity.",
+    "authors": [
+      "Kamran Shahid",
+      "Muhammad Munwar Iqbal"
+    ],
+    "categories": [
+      "eess.IV",
+      "cs.CV"
+    ],
+    "published": "2026-07-15",
+    "url": "https://arxiv.org/abs/2607.13800v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.13800v1.pdf",
+    "date": "2026-07-16",
+    "source": "arxiv",
+    "research_score": 0.43
   },
   {
     "arxiv_id": "2607.13661v1",
