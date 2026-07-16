@@ -540,7 +540,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-16T20:31:18Z",
+    "date": "2026-07-16T22:05:32Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -828,7 +828,7 @@
   },
   {
     "title": "[PR] chore(deps): update all dependencies",
-    "date": "2026-07-16T19:03:35Z",
+    "date": "2026-07-16T21:40:42Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) |  | patch | `10.1.2` \u2192 `10.1.4` |\n| [argo-events](https://redirect.githu",
     "url": "https://github.com/nolte/k8s-home-lab/pull/830",
     "source": "github_prs",
@@ -1032,12 +1032,12 @@
   },
   {
     "title": "[PR] Checkfixes",
-    "date": "2026-07-16T04:34:34Z",
+    "date": "2026-07-16T21:16:40Z",
     "summary": "Trying to reduce the amount of noisy checks.\r\n\r\nAdds several new auto-fix scripts (mostly written by claude). The fix scripts should be run with supervision and not incorporated into any sort of automated pipeline.\r\n---\r\n\r\n* Added `fix_absolute_site_link.py` to automatically rewrite absolute site UR",
     "url": "https://github.com/nesi/support-docs/pull/1337",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: support-docs"
     ]
@@ -1628,6 +1628,102 @@
       "comments: 6",
       "pull request",
       "repo: langflow"
+    ]
+  },
+  {
+    "title": "[PR] test(angular): Phase 4 \u2014 gates, guardrails & spec hygiene (DOM testing)",
+    "date": "2026-07-16T22:59:45Z",
+    "summary": "## Phase 4 of the Angular DOM unit-testing rollout \u2014 gates, guardrails, hygiene & mutation pilot\n\nPhase 3 landed the specs (132/132 in-scope Explorer coverage); Phase 4 keeps them honest. Four CI gates, the batched hygiene cleanup, the stub consolidation, and a mutation-testing pilot \u2014 each a direct",
+    "url": "https://github.com/MemberJunction/MJ/pull/3174",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: seed dimensions metadata for well-known embedding models",
+    "date": "2026-07-16T22:25:54Z",
+    "summary": "## Problem\n\nADR-055 added the `tx_nrllm_model.dimensions` column (0 = unknown), but no preset or wizard seeds it \u2014 every record starts at 0, so embedding consumers (e.g. nr-ai-search's index-drift check) fall back to a paid live calibration probe.\n\n## Change\n\n- `EmbeddingModelDimensions` catalog: pu",
+    "url": "https://github.com/netresearch/t3x-nr-llm/pull/409",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: t3x-nr-llm"
+    ]
+  },
+  {
+    "title": "[PR] Add Ollama Cloud provider",
+    "date": "2026-07-16T22:25:51Z",
+    "summary": "## What changed\n\n- add Ollama Cloud as a first-class language-model provider\n- store `OLLAMA_API_KEY` through the existing encrypted main-process secret store\n- connect through Ollama's OpenAI-compatible chat endpoint at `https://ollama.com/v1`\n- offer current hosted models, including GLM 5.2 and Ki",
+    "url": "https://github.com/maxh213/opendex/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: opendex"
+    ]
+  },
+  {
+    "title": "[PR] feat(storage): extend storage backend to scheduled jobs, plans, and shell history",
+    "date": "2026-07-16T22:25:28Z",
+    "summary": "Resolves #485\n\n## Summary\n\nExtend the storage backend to cover scheduled jobs, plan-mode plans, and shell history - three artifact types that were previously hard-coded to the local filesystem regardless of the configured backend. Adds three new interfaces (ScheduledJobStorage, PlanStorage, ShellHis",
+    "url": "https://github.com/inference-gateway/cli/pull/925",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: cli"
+    ]
+  },
+  {
+    "title": "[PR] fix(skills): use latest check-run attempts",
+    "date": "2026-07-16T22:18:12Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nMake the maintainer merge gate evaluate only current, complete GitHub Actions evidence for the exact PR diff. Before this change, stale retry jobs and later all-skipped body-edit runs could block an otherwise-green PR; after it, the gate selects the la",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/7024",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-node monorepo to v12",
+    "date": "2026-07-16T21:52:58Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/postgresql]",
+    "url": "https://github.com/ansark88/TTM/pull/50",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: TTM"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies (minor)",
+    "date": "2026-07-16T21:22:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| docker.io/apache/tika | minor | `3.2.2.0` \u2192 `3.3.1.0` |\n| [docker.io/gotenberg/gotenberg](https://redirect.github.com/gotenberg/gotenberg) | m",
+    "url": "https://github.com/fzymgc-house/nas-container-apps/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nas-container-apps"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface-hub to v0.36.2",
+    "date": "2026-07-16T21:04:09Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface-hub](https://re",
+    "url": "https://github.com/AReid987/stellarAgent/pull/89",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: stellarAgent"
     ]
   }
 ]
