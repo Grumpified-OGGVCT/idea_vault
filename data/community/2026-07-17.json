@@ -156,7 +156,7 @@
   },
   {
     "title": "v0.9.3: Fleet model classes, loadout auto, and semantic route roles",
-    "date": "2026-07-16T19:45:36Z",
+    "date": "2026-07-17T20:34:34Z",
     "summary": "## Goal\n\nBuild the shared model/loadout selector used by TUI, CLI, exec, subagents, and Fleet workers.\n\nFleet needs one clear user-facing automatic mode: **Fleet loadout auto**. It should resolve the whole compute loadout for a role/slot, not just pick a model string and not just tweak thinking leve",
     "url": "https://github.com/Hmbown/CodeWhale/issues/3205",
     "source": "github_issues",
@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-17T18:46:12Z",
+    "date": "2026-07-17T20:44:49Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] test(angular): Phase 4 \u2014 gates, guardrails, hygiene, mutation pilot & coverage push",
-    "date": "2026-07-17T19:04:37Z",
+    "date": "2026-07-17T20:39:23Z",
     "summary": "## Phase 4 of the Angular DOM unit-testing rollout \u2014 gates, guardrails, hygiene & mutation pilot\n\nPhase 3 landed the specs (132/132 in-scope Explorer coverage); Phase 4 keeps them honest. Four CI gates, the batched hygiene cleanup, the stub consolidation, and a mutation-testing pilot \u2014 each a direct",
     "url": "https://github.com/MemberJunction/MJ/pull/3174",
     "source": "github_prs",
@@ -924,7 +924,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-17T14:44:11Z",
+    "date": "2026-07-17T20:44:10Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1020,7 +1020,7 @@
   },
   {
     "title": "[PR] Finish self-host migration + kill GCP (Phases 0\u20131: stabilize + OpenAI gpt-4o)",
-    "date": "2026-07-17T06:57:43Z",
+    "date": "2026-07-17T20:39:02Z",
     "summary": "## Finish the self-host migration + kill GCP \u2014 Phases 0 & 1\n\n`diagnosticpro.io` is supposed to be self-hosted on the Intent Solutions VPS with GCP dead, but the public site was still on **Firebase Hosting**, its GCP deploy had been failing since 2026\u201106\u201109 (billing disabled), and the ~80% migration ",
     "url": "https://github.com/jeremylongshore/DiagnosticPro/pull/15",
     "source": "github_prs",
@@ -1151,13 +1151,13 @@
     ]
   },
   {
-    "title": "[PR] Enforce typed Skills SDK evaluation profile evidence",
-    "date": "2026-07-17T15:13:21Z",
+    "title": "[PR] Enforce typed Skills SDK evaluation profile evidence (JSC-389)",
+    "date": "2026-07-17T20:56:19Z",
     "summary": "# Pull request checklist\n\nWrite for human maintainers first. Use `n.a.` with a concrete reason when a\nfield does not apply. Do not paste secrets, raw transcripts, bulky telemetry,\nor local absolute paths.\n\n## What Problem This Solves\n\n- Motivation: Skills SDK A/B and judge receipts must prove the ac",
     "url": "https://github.com/jscraik/Agent-Skills/pull/332",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: Agent-Skills"
     ]
@@ -1416,7 +1416,7 @@
   },
   {
     "title": "[PR] fix(repl): add correction context after interruption",
-    "date": "2026-07-17T19:06:48Z",
+    "date": "2026-07-17T20:25:59Z",
     "summary": "## Summary\n\n- add a one-shot model-visible reminder after a user interrupts an active assistant turn\n- keep slash commands, local UI commands, remote events, timeouts, and programmatic aborts from consuming or arming the reminder\n\n## Impact\n\n- user-facing impact: the next normal correction prompt is",
     "url": "https://github.com/Gitlawb/openclaude/pull/1936",
     "source": "github_prs",
@@ -1464,7 +1464,7 @@
   },
   {
     "title": "[PR] [WIP] Finish GraphEval local readiness and Apollo benchmark runner",
-    "date": "2026-07-17T18:30:10Z",
+    "date": "2026-07-17T19:47:53Z",
     "summary": "Thanks for asking me to work on this. I will get started on it and keep this PR's description up to date as I form a plan and make progress.\n\n> ----\n> \n> *This section details on the original issue you should resolve*\n> \n> <issue_title>Finish GraphEval local readiness and Apollo benchmark runner</is",
     "url": "https://github.com/SmurfSlinger/grapheval_prototype/pull/3",
     "source": "github_prs",
@@ -1476,7 +1476,7 @@
   },
   {
     "title": "[PR] feat(provider): route GPT-5.6 models to the OpenAI Responses API",
-    "date": "2026-07-17T19:03:04Z",
+    "date": "2026-07-17T19:30:24Z",
     "summary": "## Summary\n\nFixes #1957.\n\nOpenAI's GPT-5.6 family (`gpt-5.6-sol` / `gpt-5.6-terra` / `gpt-5.6-luna`) rejects `/v1/chat/completions` whenever function tools are combined with `reasoning_effort`:\n\n> Function tools with reasoning_effort are not supported for gpt-5.6-sol in /v1/chat/completions. Please ",
     "url": "https://github.com/Gitlawb/openclaude/pull/1961",
     "source": "github_prs",
@@ -1680,7 +1680,7 @@
   },
   {
     "title": "[PR] docs: security hardening for untrusted multitenancy deployments",
-    "date": "2026-07-17T18:34:24Z",
+    "date": "2026-07-17T20:37:14Z",
     "summary": "#13530 \r\n\r\n[Preview build\r\n](https://d5rxiv0do0q3v.cloudfront.net/langflow-drafts/docs-security-hardening-features/index.html)\r\nAlso:\r\n1. Define workflows schema change as a breaking change and demonstrate how to address it.\r\n2. Tighten up code font css.\r\n\r\n<!-- This is an auto-generated comment: re",
     "url": "https://github.com/langflow-ai/langflow/pull/14061",
     "source": "github_prs",
@@ -1691,8 +1691,8 @@
     ]
   },
   {
-    "title": "[PR] [DO NOT MERGE] Reference index: the amal66 fork, decomposed into 25 reviewable PRs",
-    "date": "2026-07-17T18:21:18Z",
+    "title": "[PR] Reference index: the amal66 fork, decomposed into 25 reviewable PRs",
+    "date": "2026-07-17T19:48:32Z",
     "summary": "> **This PR is a reference index \u2014 it is not meant to be merged.** It maps everything in the amal66 fork onto small, individually reviewable PRs, so you can point at any row and take exactly that piece (or port it yourself \u2014 CLA signed, credit is enough).\n\n## What this is\n\nThe amal66 fork has tracke",
     "url": "https://github.com/Open-Legal-Products/mike/pull/205",
     "source": "github_prs",
@@ -1748,6 +1748,138 @@
       "comments: 0",
       "pull request",
       "repo: mike"
+    ]
+  },
+  {
+    "title": "OpenAI/Compatible providers hardcode supports_vision() true regardless of model capability",
+    "date": "2026-07-17T19:34:29Z",
+    "summary": "## Description\n\nSame defect class as #6377 (fixed in #6410), flagged during that PR's review (impl-critic finding).\n\n`OpenAiProvider::supports_vision()` (`crates/zeph-llm/src/openai.rs:1010`) unconditionally returns `true`, and `CompatibleProvider` (`crates/zeph-llm/src/compatible.rs:333`) delegates",
+    "url": "https://github.com/bug-ops/zeph/issues/6411",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: zeph"
+    ]
+  },
+  {
+    "title": "[PR] research: benchmark and plan local runtime acceleration",
+    "date": "2026-07-17T20:58:05Z",
+    "summary": "## Base / head\n\n- **Base:** `feat/deep-local-fable` @ `8ab22318` (= PR #33 head, verified unmoved before push)\n- **Head:** `aa45ec19` (`feat/local-runtime-acceleration`)\n- **Stacked PR.** This branch is built on unmerged PR #33. It targets `feat/deep-local-fable` and must be retargeted/rebased when ",
+    "url": "https://github.com/parthganguly/odysseus-desktop/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: odysseus-desktop"
+    ]
+  },
+  {
+    "title": "[PR] Update repo table",
+    "date": "2026-07-17T20:56:52Z",
+    "summary": "## Summary\n\nThis PR updates the README repository table.\n\n**Repository Changes Summary:**\n\n- `starred.md`: 5 added, 61 updated\n\n**Description Changes:**\n\n- [tyxak/remotepower](https://github.com/tyxak/remotepower): Updated description:\n  > \\- Feature-rich all-in-one self-hosted server & fleet manage",
+    "url": "https://github.com/arran4/arran4/pull/241",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: arran4"
+    ]
+  },
+  {
+    "title": "[PR] feat(codegen): validate declared IS-A (Table-Per-Type) relationships",
+    "date": "2026-07-17T20:40:28Z",
+    "summary": "## What this PR does\r\n\r\nCodeGen now **validates** IS-A (Table-Per-Type) relationships that a schema author\r\n**explicitly declared** \u2014 and stops the build if the declaration can't actually work.\r\nIt does **not** auto-detect IS-A from schema shape.\r\n\r\nIS-A intent is declared one of two ways today: the",
+    "url": "https://github.com/MemberJunction/MJ/pull/3161",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] docker: skip starting the ollama container if a local Ollama already owns port 11434",
+    "date": "2026-07-17T20:37:08Z",
+    "summary": "## Summary\n- Adds a one-shot `ollama-port-check` service to `docker-compose.yml` that probes `localhost:11434` via `nc -z` (`network_mode: host`), gating the `ollama` service via `depends_on: condition: service_completed_successfully`\n- `docker compose up -d ollama` now no-ops when a local Ollama (n",
+    "url": "https://github.com/bedaHovorka/interlockSim/pull/771",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: interlockSim"
+    ]
+  },
+  {
+    "title": "[PR] fix(ci): simplify CI for fork \u2014 drop upstream-secret-dependent jobs",
+    "date": "2026-07-17T20:28:26Z",
+    "summary": "## Problem\nAll CI runs on the fork fail because upstream secrets (PyPI, container registry, cachix) are not configured on lucamoretti09/hermes-agent.\n\nThe failed jobs cascade:\n- \\ (affected-area classifier) fails\n- \\ (Google OSV reusable workflow) fails\n- \\ (gate) fails because upstream failed\n- \\ f",
+    "url": "https://github.com/lucamoretti09/hermes-agent/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] Add browser wasm host runtime",
+    "date": "2026-07-17T20:24:04Z",
+    "summary": "# External (non-OpenAI) Pull Request Requirements\r\n\r\nExternal code contributions are by invitation only. Please read the dedicated \"Contributing\" markdown file for details:\r\nhttps://github.com/openai/codex/blob/main/docs/contributing.md\r\n\r\nIf your PR conforms to our contribution guidelines, replace ",
+    "url": "https://github.com/BLamy/codex/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: codex"
+    ]
+  },
+  {
+    "title": "[PR] Interview Prep Application of Moss",
+    "date": "2026-07-17T20:16:34Z",
+    "summary": "## Pull Request Checklist\n\nPlease ensure that your PR meets the following requirements:\n\n- [x] I have read the [CONTRIBUTING](CONTRIBUTING.md) guide.\n- [x] I have updated the documentation (if applicable).\n- [x] My code follows the style guidelines of this project.\n- [x] I have performed a self-revi",
+    "url": "https://github.com/usemoss/moss/pull/391",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: moss"
+    ]
+  },
+  {
+    "title": "[PR] Add AgentServices \u2014 paid data APIs for AI agents with x402 dispute resolution",
+    "date": "2026-07-17T20:06:48Z",
+    "summary": "## AgentServices \u2014 Paid Data APIs for AI Agents\n\n**Website:** https://agentservices.to\n**API:** https://api.agentservices.to\n**MCP Registry:** `to.agentservices/agentservices` (v5.3.0, 3 versions on official MCP Registry)\n**Protocol:** TypeScript \u2601\ufe0f Cloud\n\n### What it does\n\n54 services / 97 endpoint",
+    "url": "https://github.com/punkpeye/awesome-mcp-servers/pull/9187",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: awesome-mcp-servers"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update testcontainers-node monorepo to v12",
+    "date": "2026-07-17T19:53:44Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/postgresql](https://redirect.github.com/testcontainers/testcontainers-node) | [`^1",
+    "url": "https://github.com/frederikb96/postimap/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: postimap"
+    ]
+  },
+  {
+    "title": "[PR] fix(api): enforce API_TIMEOUT_MS for OpenAI-compatible headers",
+    "date": "2026-07-17T19:52:01Z",
+    "summary": "## Summary\n- Bound OpenAI-compatible requests that stall before response headers arrive.\n- Keep long-running streaming bodies unaffected after headers are received.\n\n## Implementation\n- Parse `API_TIMEOUT_MS` once per request with a 600000 ms default and safe integer validation.\n- Arm a per-attempt ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1940",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: openclaude"
     ]
   }
 ]
