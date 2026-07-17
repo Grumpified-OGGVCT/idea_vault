@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-17T13:29:02Z",
+    "date": "2026-07-17T14:49:25Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -684,7 +684,7 @@
   },
   {
     "title": "[PR] CAMEL-23703: camel-launcher - cross-compile native camel.exe for x64 and arm64 via llvm-mingw",
-    "date": "2026-07-17T06:07:51Z",
+    "date": "2026-07-17T14:31:35Z",
     "summary": "_Claude Code on behalf of ammachado_\n\n# Description\n\nThis PR splits the native Windows executable cross-compile work out of the larger CAMEL-23703 package distribution branch.\n\nIt replaces the Windows/MSVC-only `camel.exe` build with a host-independent clang/llvm-mingw flow and publishes separate la",
     "url": "https://github.com/apache/camel/pull/24754",
     "source": "github_prs",
@@ -924,7 +924,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-17T02:44:10Z",
+    "date": "2026-07-17T14:44:11Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1152,7 +1152,7 @@
   },
   {
     "title": "[PR] Enforce typed Skills SDK evaluation profile evidence",
-    "date": "2026-07-17T05:11:49Z",
+    "date": "2026-07-17T15:13:21Z",
     "summary": "# Pull request checklist\n\nWrite for human maintainers first. Use `n.a.` with a concrete reason when a\nfield does not apply. Do not paste secrets, raw transcripts, bulky telemetry,\nor local absolute paths.\n\n## What Problem This Solves\n\n- Motivation: Skills SDK A/B and judge receipts must prove the ac",
     "url": "https://github.com/jscraik/Agent-Skills/pull/332",
     "source": "github_prs",
@@ -1332,12 +1332,12 @@
   },
   {
     "title": "[PR] fix(provider): stop Mistral tool boundary on self-hosted OpenAI backends",
-    "date": "2026-07-17T13:35:24Z",
+    "date": "2026-07-17T13:55:37Z",
     "summary": "## Summary\r\n\r\nSelf-hosted OpenAI-compatible backends (llama-server, vLLM, Ollama, custom hosts) were stalling after tool calls because the OpenAI shim always injected a synthetic assistant message `[Tool results received]` between `tool` and `user` roles. That boundary is only valid for Mistral/Devs",
     "url": "https://github.com/Gitlawb/openclaude/pull/1977",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: openclaude"
     ]
@@ -1412,6 +1412,138 @@
       "comments: 0",
       "pull request",
       "repo: airecorder"
+    ]
+  },
+  {
+    "title": "[PR] fix(repl): add correction context after interruption",
+    "date": "2026-07-17T15:15:35Z",
+    "summary": "## Summary\n\n- add a one-shot model-visible reminder after a user interrupts an active assistant turn\n- keep slash commands, local UI commands, remote events, timeouts, and programmatic aborts from consuming or arming the reminder\n\n## Impact\n\n- user-facing impact: the next normal correction prompt is",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1936",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] C-322: Wire the AI Provider Gateway into Capability Detection and Settings",
+    "date": "2026-07-17T15:13:39Z",
+    "summary": "\n## What was built\n\nReplaced `capability_service`'s redundant ~150-line detection stack (`_pingOllama`, `checkCloudTextConfig`, `fetchWithTimeout`, ComfyUI ping) with delegation to the C-320 AI Provider Gateway (`aiGatewayService.detect()` + `toDetectionStatus`). Extended the gateway's cloud-text co",
+    "url": "https://github.com/BearlySleeping/aikami/pull/22",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: aikami"
+    ]
+  },
+  {
+    "title": "[PR] chore(release): v2026.07.17",
+    "date": "2026-07-17T15:13:22Z",
+    "summary": "Merge to release **v2026.07.17**. Tagging + image publish run automatically on merge.\n\n> \u26a0\ufe0f Squash-merge this PR so the release commit subject is `chore(release): v\u2026`.\n\n## [v2026.07.17] - 2026-07-17\n\n### Added\n\n- robot-day tooling for TASK-181 + real-robot speaker validation (#197)\n- neural-trajecto",
+    "url": "https://github.com/RaaSaaR-org/robot-management-system/pull/180",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: robot-management-system"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Update container-images",
+    "date": "2026-07-17T15:06:35Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [alpine/git](https://redirect.github.com/alpine-docker/git) | minor | `2.45.2` -> `v2.54.0` |\n| busybox | minor | `1.36` -> `1.38` |\n| clickhouse/clickhouse-server | minor | `24.3` -> `24.12` |\n| [curlimages/curl]",
+    "url": "https://github.com/fwfurtado/the-lab-zone/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: the-lab-zone"
+    ]
+  },
+  {
+    "title": "[PR] [WIP] Finish GraphEval local readiness and Apollo benchmark runner",
+    "date": "2026-07-17T15:05:22Z",
+    "summary": "Thanks for asking me to work on this. I will get started on it and keep this PR's description up to date as I form a plan and make progress.\n\n> ----\n> \n> *This section details on the original issue you should resolve*\n> \n> <issue_title>Finish GraphEval local readiness and Apollo benchmark runner</is",
+    "url": "https://github.com/SmurfSlinger/grapheval_prototype/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: grapheval_prototype"
+    ]
+  },
+  {
+    "title": "[PR] feat(provider): route GPT-5.6 models to the OpenAI Responses API",
+    "date": "2026-07-17T14:53:44Z",
+    "summary": "## Summary\n\nFixes #1957.\n\nOpenAI's GPT-5.6 family (`gpt-5.6-sol` / `gpt-5.6-terra` / `gpt-5.6-luna`) rejects `/v1/chat/completions` whenever function tools are combined with `reasoning_effort`:\n\n> Function tools with reasoning_effort are not supported for gpt-5.6-sol in /v1/chat/completions. Please ",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1961",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.43.0",
+    "date": "2026-07-17T14:49:49Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/arisecode/katsini/pull/63",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: katsini"
+    ]
+  },
+  {
+    "title": "[PR] feat(core): Generate eval collection insights with an LLM (no-changelog)",
+    "date": "2026-07-17T14:40:42Z",
+    "summary": "## Summary\n\nWires the eval-collections **AI insights** to a real LLM, replacing the deterministic-only `invokeAgent()` stub in `EvalInsightsService`. The winner / regression / suggested-next cards now show model-generated narrative instead of arithmetic templates (the deterministic summary stays as ",
+    "url": "https://github.com/n8n-io/n8n/pull/34254",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: n8n"
+    ]
+  },
+  {
+    "title": "[PR] Feat/optional embedding dimensions + Pinecone namespace routing",
+    "date": "2026-07-17T14:40:17Z",
+    "summary": "## Summary\r\n\r\nSeveral changes needed to allow embeddings to be created, stored, and queried the way Betty relies on. Dimensions parameter existed but wasn't respected, Betty team has seen success in controlling vector size while using a larger, more advanced model by throwing text-embedding-3-large ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3175",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] [Router] llm router classifier + routing.router desugaring (#2405)",
+    "date": "2026-07-17T14:35:14Z",
+    "summary": "Closes #2405\r\n\r\n## Summary\r\n\r\nImplements the L0(a) \"LLM-as-router\" on-ramp: a new `llm` classifier type plus load-time desugaring of `routing.router` into the explicit core form, keeping the one-engine invariant \u2014 everything still compiles down to classifiers + rules + a Decision.\r\n\r\n## Changes\r\n\r\n*",
+    "url": "https://github.com/lemonade-sdk/lemonade/pull/2698",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: lemonade"
+    ]
+  },
+  {
+    "title": "[PR] Issue triage + first three fixes: leakage guard, dead Sass, prompt timeouts (and a Core streaming data-corruption bug)",
+    "date": "2026-07-17T13:55:06Z",
+    "summary": "## Summary\n\nStarted as a triage of every open issue. It stayed that for one commit, then turned into fixing the three cheapest actionable items \u2014 which surfaced two bugs materially worse than anything the triage had catalogued.\n\nThis PR is **triage + the first three Category C fixes**. The remaining",
+    "url": "https://github.com/MemberJunction/MJ/pull/3129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
