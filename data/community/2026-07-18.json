@@ -504,20 +504,20 @@
   },
   {
     "title": "[PR] feat(reborn-cli): onboarding journey \u2014 keychain master key, two-prompt setup, login link",
-    "date": "2026-07-18T02:41:28Z",
+    "date": "2026-07-18T04:35:35Z",
     "summary": "# Reborn onboarding: menu \u2192 key \u2192 model \u2192 background service \u2192 browser\n\nMakes `ironclaw-reborn` usable standalone from a source build. One command sets up everything; the browser is the only chat surface.\n\n## The journey\n\n```\ncargo build -p ironclaw_reborn_cli --features full\nironclaw-reborn onboard",
     "url": "https://github.com/nearai/ironclaw/pull/6174",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 7",
       "pull request",
       "repo: ironclaw"
     ]
   },
   {
     "title": "[PR] feat(codegen): validate declared IS-A (Table-Per-Type) relationships",
-    "date": "2026-07-18T02:40:19Z",
-    "summary": "## What this PR does\r\n\r\nCodeGen now **validates** IS-A (Table-Per-Type) relationships that a schema author\r\n**explicitly declared** \u2014 and stops the build if the declaration can't actually work.\r\nIt does **not** auto-detect IS-A from schema shape.\r\n\r\nIS-A intent is declared one of two ways today: the",
+    "date": "2026-07-18T02:44:46Z",
+    "summary": "## What this PR does\n\nCodeGen now **validates** IS-A (Table-Per-Type) relationships that a schema author\n**explicitly declared** \u2014 and fails the build if the declaration can't actually work.\n\nIS-A intent is declared one of two ways: the `additionalSchemaInfo` `ISARelationships`\nconfig, or an `@looku",
     "url": "https://github.com/MemberJunction/MJ/pull/3161",
     "source": "github_prs",
     "highlights": [
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-18T02:35:48Z",
+    "date": "2026-07-18T04:43:44Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -540,19 +540,19 @@
   },
   {
     "title": "[PR] feat(nodes): add cognee node",
-    "date": "2026-07-18T02:17:21Z",
+    "date": "2026-07-18T03:54:57Z",
     "summary": "## Summary\n\n- Add `tool_cognee`, an agent-invocable persistent semantic-memory node backed by a self-hosted Cognee server or Cognee Cloud.\n- Expose a focused shared-memory workflow: `cognee.remember`, `cognee.recall`, and `cognee.memory_status`.\n- Allow multiple RocketRide agents to connect to the s",
     "url": "https://github.com/rocketride-org/rocketride-server/pull/1501",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: rocketride-server"
     ]
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-18T01:59:56Z",
+    "date": "2026-07-18T05:06:41Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -672,7 +672,7 @@
   },
   {
     "title": "[PR] chore(deps): update all dependencies",
-    "date": "2026-07-18T00:59:21Z",
+    "date": "2026-07-18T04:30:20Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) |  | patch | `10.1.2` \u2192 `10.1.4` |\n| [argo-events](https://redirect.githu",
     "url": "https://github.com/nolte/k8s-home-lab/pull/830",
     "source": "github_prs",
@@ -731,15 +731,159 @@
     ]
   },
   {
-    "title": "[PR] Add AgentServices \u2014 paid data APIs for AI agents with x402 dispute resolution",
-    "date": "2026-07-18T00:07:28Z",
+    "title": "[PR] Add AgentServices \u2014 54 paid x402 APIs for AI agents (37 MCP tools, Base)",
+    "date": "2026-07-18T04:04:15Z",
     "summary": "## AgentServices \u2014 Paid Data APIs for AI Agents\n\n**Website:** https://agentservices.to\n**API:** https://api.agentservices.to\n**MCP Registry:** `to.agentservices/agentservices` (v5.3.0, 3 versions on official MCP Registry)\n**Protocol:** TypeScript \u2601\ufe0f Cloud\n\n### What it does\n\n54 services / 97 endpoint",
     "url": "https://github.com/punkpeye/awesome-mcp-servers/pull/9187",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "pull request",
       "repo: awesome-mcp-servers"
+    ]
+  },
+  {
+    "title": "[PR] Enhance Gemma 4 performance and features across multiple areas",
+    "date": "2026-07-18T05:28:01Z",
+    "summary": "",
+    "url": "https://github.com/dAppCore/go-inference/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: go-inference"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): every subprocess exposes /task/data via a shared web server",
+    "date": "2026-07-18T05:22:49Z",
+    "summary": "# Shared subprocess web server + data-plane lazy resolution\r\n\r\n## Summary\r\n\r\nHoists the subprocess HTTP/DAP server out of `webhook`/`telegram` source nodes and into `node.py`, so **every** subprocess exposes `/task/data` regardless of pipeline shape. Sourceless pipelines (agentic, RAG, batch) become",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/912",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] feat(relay): prove cold-agent recovery with bounded GPT-5.6",
+    "date": "2026-07-18T05:13:40Z",
+    "summary": "## Outcome\n\nAdds the isolated live mission runner and sealed judge replay for Remnic Relay.\n\nThe committed evidence tells one visible, falsifiable recovery story:\n\n- Scout grounds a stale checkout-token decision in synthetic source evidence.\n- Builder A is a distinct GPT-5.6 one-shot whose implement",
+    "url": "https://github.com/joshuaswarren/remnic/pull/1999",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: remnic"
+    ]
+  },
+  {
+    "title": "[PR] Add Prompt Router and prompt verifier",
+    "date": "2026-07-18T04:50:36Z",
+    "summary": "## Summary\n\nAdds a Prompt Router MVP plus a no-API Local Code Copilot Bridge path for Ezohata Debugger workflows:\n\n- `/prompt-router` mobile-friendly page with URL prefill, deterministic verifier, rewritten prompt, quality lamps, and Execution Result polling\n- `POST /api/prompt-router/verify` and `P",
+    "url": "https://github.com/andylitvinov-design/codex-links/pull/163",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: codex-links"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.43.0",
+    "date": "2026-07-18T04:35:31Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/antony-ramos/GuildOps/pull/132",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: GuildOps"
+    ]
+  },
+  {
+    "title": "[PR] feat: cloud provider catalog (Azure OpenAI, Bedrock, Vertex) + embeddings capability (\u00a73.4)",
+    "date": "2026-07-18T04:16:15Z",
+    "summary": "## Summary\n\nExtends ardur-agent's model/LLM provider breadth per a lane assignment to own this domain. `plans/3.0` already unifies the `Provider` trait and `plans/3.1-3.3`/`12.5` already implement Anthropic, OpenAI-compatible, Ollama, OpenRouter, and Claude Code CLI \u2014 all left untouched. No blueprin",
+    "url": "https://github.com/ArdurAI/ardur-agent/pull/335",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ardur-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat(platform-domains): add admin UI for managing platform domains",
+    "date": "2026-07-18T04:08:48Z",
+    "summary": "<!-- authored-by: bts-robot -->\n_\ud83d\udca1\ud83e\udd16 BTS Robot \ud83e\udd16\ud83d\udca1_\n\n## Summary\n\nAdds an in-app admin UI for managing `PlatformDomain` records (subdomain aliases and custom domains) on a platform \u2014 closing the \"no admin UI to create a platform with a chosen domain\" gap identified in the 0.11.0 multi-platform/federati",
+    "url": "https://github.com/better-together-org/community-engine-rails/pull/1677",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: community-engine-rails"
+    ]
+  },
+  {
+    "title": "[PR] Bump the production group across 7 directories with 25 updates",
+    "date": "2026-07-18T03:23:00Z",
+    "summary": "Bumps the production group with 2 updates in the /apps/admin-console directory: [express-rate-limit](https://github.com/express-rate-limit/express-rate-limit) and [lucide-react](https://github.com/lucide-icons/lucide/tree/HEAD/packages/lucide-react).\nBumps the production group with 7 updates in the ",
+    "url": "https://github.com/mufenxu/MY/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: MY"
+    ]
+  },
+  {
+    "title": "[PR] Bump Testcontainers.PostgreSql from 3.10.0 to 4.13.0",
+    "date": "2026-07-18T02:50:51Z",
+    "summary": "Updated [Testcontainers.PostgreSql](https://github.com/testcontainers/testcontainers-dotnet) from 3.10.0 to 4.13.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers.PostgreSql's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.13.0\n\n# What",
+    "url": "https://github.com/MALIEV-Co-Ltd/Maliev.PaymentService/pull/42",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Maliev.PaymentService"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-07-18T02:44:10Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency genkit to v1.40.0",
+    "date": "2026-07-18T05:08:00Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [genkit](https://genkit.dev)",
+    "url": "https://github.com/dmitriz/genkit-start/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: genkit-start"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/kedacore/keda/v2 to v2.20.0 [security]",
+    "date": "2026-07-18T05:02:59Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/kedacore/keda/v2](https://redirect.github.com/kedacore/keda) | `v2.17.3` \u2192 `v2.20.0` | ",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1690",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: k8sgpt"
     ]
   }
 ]
