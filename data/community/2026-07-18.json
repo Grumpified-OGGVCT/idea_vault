@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-18T19:05:57Z",
+    "date": "2026-07-18T20:48:27Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] fix(provider): stop Mistral tool boundary on self-hosted OpenAI backends",
-    "date": "2026-07-18T17:29:47Z",
+    "date": "2026-07-18T20:53:30Z",
     "summary": "## Summary\r\n\r\nSelf-hosted OpenAI-compatible backends (llama-server, vLLM, Ollama, custom hosts) were stalling after tool calls because the OpenAI shim always injected a synthetic assistant message `[Tool results received]` between `tool` and `user` roles. That boundary is only valid for Mistral/Devs",
     "url": "https://github.com/Gitlawb/openclaude/pull/1977",
     "source": "github_prs",
@@ -852,7 +852,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-18T14:44:10Z",
+    "date": "2026-07-18T20:44:09Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -984,12 +984,12 @@
   },
   {
     "title": "[PR] feat(coding-agent): credential broker with pooled selection and background refresh",
-    "date": "2026-07-18T16:53:36Z",
+    "date": "2026-07-18T20:44:54Z",
     "summary": "## Summary\nLoopback credential broker that stores OAuth/API-key credentials in a SQLite vault and leases them to authorized gateway clients:\n\n- `auth-multi-account` / `credential-selection` / `in-memory-credential-vault`: multi-account credential contracts, pooled selection, in-memory vault.\n- `auth",
     "url": "https://github.com/code-yeongyu/senpi/pull/194",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 4",
       "pull request",
       "repo: senpi"
     ]
@@ -1292,6 +1292,102 @@
       "comments: 1",
       "pull request",
       "repo: big-bear-video-assets"
+    ]
+  },
+  {
+    "title": "[PR] Town Sovereign MCP \u2014 Phase 1 (sovereign_search)",
+    "date": "2026-07-18T20:50:46Z",
+    "summary": "## What this is\n\nPhase 1 of the Ollama \u00d7 Town plan: a **local-model companion** that plugs into Town through its native **MCP** seam. Exposes one tool \u2014 `sovereign_search` \u2014 for private semantic search over your own corpus, backed by a **local Ollama** embedding model on Aetheris. Town stays the fro",
+    "url": "https://github.com/nrupala/aetheris/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: aetheris"
+    ]
+  },
+  {
+    "title": "[PR] Realtime QA hardening \u2014 second-pass re-audit fixes (C1 was dark + reconnect/lifecycle holes)",
+    "date": "2026-07-18T20:43:58Z",
+    "summary": "Follow-up to the merged QA-hardening PR (#3182). A three-reviewer **adversarial re-audit of the hardening work itself** found that one fix was inert and several others introduced untested edges. All fixed here with regression + interaction-seam tests. Full detail in [`plans/complete/realtime-qa-hard",
+    "url": "https://github.com/MemberJunction/MJ/pull/3184",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the npm-production group with 7 updates",
+    "date": "2026-07-18T20:43:08Z",
+    "summary": "Bumps the npm-production group with 7 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [chalk](https://github.com/chalk/chalk) | `5.6.0` | `5.6.2` |\n| [commander](https://github.com/tj/commander.js) | `11.1.0` | `15.0.0` |\n| [fs-extra](https://github.com/jprichardson/node-fs-extra) | `11.3.1`",
+    "url": "https://github.com/beingmartinbmc/roastme/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: roastme"
+    ]
+  },
+  {
+    "title": "[PR] feat: bench screened Docker images on validators",
+    "date": "2026-07-18T20:40:38Z",
+    "summary": "## Summary\n\n- consume the platform's attempt-bound screened-image metadata and enable only the verified image path\n- disable all validator-side submission source builds with `DITTOBENCH_REQUIRE_SCREENED_IMAGE=1`\n- attach miner runtimes to `ditto-sandbox`, whose forwarding policy permits only the loc",
+    "url": "https://github.com/ditto-assistant/ditto-subnet/pull/154",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: ditto-subnet"
+    ]
+  },
+  {
+    "title": "[PR] Refactor code structure for improved readability and maintainability",
+    "date": "2026-07-18T19:49:28Z",
+    "summary": "This is a substantial refactor (~725 lines across 18 files) focused on hardening the LLM synthesis layer and improving structured-output enforcement:\r\n\r\n- **New `report_schema.py`** \u2014 Introduced Pydantic v2 models (`IncidentReportSchema`, `TimelineEventSchema`, `MitreMappingSchema`, etc.) that mirro",
+    "url": "https://github.com/doubledare704/ovs-logs/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ovs-logs"
+    ]
+  },
+  {
+    "title": "[PR] Issue triage + first three fixes: leakage guard, dead Sass, prompt timeouts (and a Core streaming data-corruption bug)",
+    "date": "2026-07-18T19:45:10Z",
+    "summary": "## Summary\n\nStarted as a triage of every open issue. It stayed that for one commit, then turned into fixing the three cheapest actionable items \u2014 which surfaced two bugs materially worse than anything the triage had catalogued.\n\nThis PR is **triage + the first three Category C fixes**. The remaining",
+    "url": "https://github.com/MemberJunction/MJ/pull/3129",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-java monorepo to v1.21.4",
+    "date": "2026-07-18T20:28:38Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:kafka](https://java.testcontainers.org) ([source](https://redirect.github.com/t",
+    "url": "https://github.com/provenance-io/provenance-abci-listener/pull/75",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: provenance-abci-listener"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): the runtime grows a contract, one gate, honest tracing, and a certification lane",
+    "date": "2026-07-18T19:33:04Z",
+    "summary": "The AI runtime grows a contract, a single gate, honest tracing, and a certification lane \u2014 the four targets from the post-#104 review, in four stacked phases on one branch.\n\n## What this delivers\n\n**1. The task contract compiles (`backend/api/ai-tasks.yaml`)** \u2014 the task/tier vocabulary, ladders, an",
+    "url": "https://github.com/gradionhq/margince-poc-v1/pull/121",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: margince-poc-v1"
     ]
   }
 ]
