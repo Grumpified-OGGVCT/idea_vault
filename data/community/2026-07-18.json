@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-18T20:48:27Z",
+    "date": "2026-07-18T21:34:15Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -588,12 +588,12 @@
   },
   {
     "title": "[PR] fix(provider): stop Mistral tool boundary on self-hosted OpenAI backends",
-    "date": "2026-07-18T20:53:30Z",
+    "date": "2026-07-18T21:36:49Z",
     "summary": "## Summary\r\n\r\nSelf-hosted OpenAI-compatible backends (llama-server, vLLM, Ollama, custom hosts) were stalling after tool calls because the OpenAI shim always injected a synthetic assistant message `[Tool results received]` between `tool` and `user` roles. That boundary is only valid for Mistral/Devs",
     "url": "https://github.com/Gitlawb/openclaude/pull/1977",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: openclaude"
     ]
@@ -672,7 +672,7 @@
   },
   {
     "title": "[PR] chore(deps): update all dependencies",
-    "date": "2026-07-18T17:37:04Z",
+    "date": "2026-07-18T21:03:36Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [argo-cd](https://redirect.github.com/argoproj/argo-helm) |  | patch | `10.1.2` \u2192 `10.1.4` |\n| [argo-events](https://redirect.githu",
     "url": "https://github.com/nolte/k8s-home-lab/pull/830",
     "source": "github_prs",
@@ -960,12 +960,12 @@
   },
   {
     "title": "[PR] feat(selfhost): add offline RAG ingestion and a background worker",
-    "date": "2026-07-18T18:44:10Z",
+    "date": "2026-07-18T21:21:27Z",
     "summary": "## Description\n\nSelf-host could already chat with a local Ollama model, but two things were missing. There was no way to build or query a vector index without a cloud embedding key, and every event-driven background job was inert because the plain-Docker stack has no queue consumers or cron. So uplo",
     "url": "https://github.com/Bike4Mind/bike4mind/pull/698",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: bike4mind"
     ]
@@ -1176,12 +1176,12 @@
   },
   {
     "title": "[PR] feat(selfhost): local image generation via a self-hosted Stable Diffusion backend",
-    "date": "2026-07-18T18:41:53Z",
+    "date": "2026-07-18T21:19:07Z",
     "summary": "## Description\n\nImage generation on the self-host stack was cloud-provider only: without a BFL/OpenAI/Gemini/xAI key there was no way to generate an image, and the tool/model picker never offered a local option. This branch adds local image generation end to end via a self-hosted Stable Diffusion ba",
     "url": "https://github.com/Bike4Mind/bike4mind/pull/705",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: bike4mind"
     ]
@@ -1332,7 +1332,7 @@
   },
   {
     "title": "[PR] feat: bench screened Docker images on validators",
-    "date": "2026-07-18T20:40:38Z",
+    "date": "2026-07-18T21:25:13Z",
     "summary": "## Summary\n\n- consume the platform's attempt-bound screened-image metadata and enable only the verified image path\n- disable all validator-side submission source builds with `DITTOBENCH_REQUIRE_SCREENED_IMAGE=1`\n- attach miner runtimes to `ditto-sandbox`, whose forwarding policy permits only the loc",
     "url": "https://github.com/ditto-assistant/ditto-subnet/pull/154",
     "source": "github_prs",
@@ -1388,6 +1388,30 @@
       "comments: 4",
       "pull request",
       "repo: margince-poc-v1"
+    ]
+  },
+  {
+    "title": "[PR] feat(bean-sourcing): #573 phase 1 \u2014 draft a bean profile from a vendor URL (BE)",
+    "date": "2026-07-18T21:38:43Z",
+    "summary": "Phase 1 (backend slice) of #573 \u2014 add-bean-from-URL. Paste a green-coffee vendor product URL \u2192 the agent fetches it \u2192 LLM-extracts the bean identity \u2192 drafts a `BeanProfile` with de-risked targets + honest field imputation \u2192 returns a **draft** for the user to review/edit/save. Productises the `add-",
+    "url": "https://github.com/syamaner/roastpilot-agent/pull/587",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: roastpilot-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat(domain-core): complete shared Rust migration on current main",
+    "date": "2026-07-18T21:27:10Z",
+    "summary": "## Scope\n\nFinal current-`main` rebase of the Operation 9 shared Rust domain migration. This PR replaces #1804 and preserves its full migration while integrating the prerequisite security, release-evidence, dependency-governance, and deletion-guard changes that landed on `main` after the original bra",
+    "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1820",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 229",
+      "pull request",
+      "repo: BurnBar"
     ]
   }
 ]
