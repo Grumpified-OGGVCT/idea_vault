@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-18T14:37:37Z",
+    "date": "2026-07-18T15:32:22Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] fix(provider): stop Mistral tool boundary on self-hosted OpenAI backends",
-    "date": "2026-07-18T01:29:36Z",
+    "date": "2026-07-18T16:00:37Z",
     "summary": "## Summary\r\n\r\nSelf-hosted OpenAI-compatible backends (llama-server, vLLM, Ollama, custom hosts) were stalling after tool calls because the OpenAI shim always injected a synthetic assistant message `[Tool results received]` between `tool` and `user` roles. That boundary is only valid for Mistral/Devs",
     "url": "https://github.com/Gitlawb/openclaude/pull/1977",
     "source": "github_prs",
@@ -888,12 +888,12 @@
   },
   {
     "title": "Add academic lab aggregation",
-    "date": "2026-07-18T14:45:08Z",
+    "date": "2026-07-18T15:07:34Z",
     "summary": "Roll up at university, regional, or country level?",
     "url": "https://github.com/hammer/labs/issues/12",
     "source": "github_issues",
     "highlights": [
-      "comments: 19",
+      "comments: 20",
       "state: open",
       "repo: labs"
     ]
@@ -936,7 +936,7 @@
   },
   {
     "title": "[PR] fix(ci): simplify CI for fork \u2014 drop upstream-secret-dependent jobs",
-    "date": "2026-07-18T07:21:15Z",
+    "date": "2026-07-18T16:00:15Z",
     "summary": "## Problem\nAll CI runs on the fork fail because upstream secrets (PyPI, container registry, cachix) are not configured on lucamoretti09/hermes-agent.\n\nThe failed jobs cascade:\n- \\ (affected-area classifier) fails\n- \\ (Google OSV reusable workflow) fails\n- \\ (gate) fails because upstream failed\n- \\ f",
     "url": "https://github.com/lucamoretti09/hermes-agent/pull/2",
     "source": "github_prs",
@@ -948,7 +948,7 @@
   },
   {
     "title": "[PR] main",
-    "date": "2026-07-18T13:22:23Z",
+    "date": "2026-07-18T15:45:21Z",
     "summary": "<!--\r\nThanks for contributing to LightRAG!\r\n\r\nPlease ensure your pull request is ready for review before submitting.\r\n\r\nAbout this template\r\n\r\nThis template helps contributors provide a clear and concise description of their changes. Feel free to adjust it as needed.\r\n-->\r\n\r\n## Description\r\n\r\n[Brief",
     "url": "https://github.com/makhweeb/LightRAG/pull/1",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] v3.4.0",
-    "date": "2026-07-18T14:54:06Z",
+    "date": "2026-07-18T15:21:53Z",
     "summary": "Running branch for v3.4.0 \u2014 collects this release's features and bug fixes.\n\n## Features\n\n- **A plugin can register a notification channel** \u2014 the four built-in channels (in-app, email, webhook, ntfy) were a closed set, so a plugin could produce a notification but never deliver one. A plugin now dec",
     "url": "https://github.com/liketrek/TREK/pull/1540",
     "source": "github_prs",
@@ -1152,7 +1152,7 @@
   },
   {
     "title": "[PR] Feat/v2 upgrade",
-    "date": "2026-07-18T13:35:02Z",
+    "date": "2026-07-18T15:34:12Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Local MCP server tools (memory, research, advisor, graph, bundle search), RLM sidecar, TurboVec vector service, screenshot & crawl endpoints, and procedural-memory CRUD.\n\n* *",
     "url": "https://github.com/LVT382009/noxem/pull/17",
     "source": "github_prs",
@@ -1172,6 +1172,18 @@
       "comments: 0",
       "pull request",
       "repo: besu"
+    ]
+  },
+  {
+    "title": "[PR] feat(selfhost): local image generation via a self-hosted Stable Diffusion backend",
+    "date": "2026-07-18T14:58:21Z",
+    "summary": "## Description\n\nImage generation on the self-host stack was cloud-provider only: without a BFL/OpenAI/Gemini/xAI key there was no way to generate an image, and the tool/model picker never offered a local option. This branch adds local image generation end to end via a self-hosted Stable Diffusion ba",
+    "url": "https://github.com/Bike4Mind/bike4mind/pull/705",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: bike4mind"
     ]
   }
 ]
