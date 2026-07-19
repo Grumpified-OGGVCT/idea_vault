@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-19T21:34:52Z",
+    "date": "2026-07-19T22:31:40Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -720,7 +720,7 @@
   },
   {
     "title": "[PR] feat(integrations): align resolution/RSU/refresh lifecycle with the RSU spec (U1\u2013U5, U7, U9-evict, U10, U11)",
-    "date": "2026-07-19T21:41:34Z",
+    "date": "2026-07-19T22:33:00Z",
     "summary": "## Summary\n\nAligns MemberJunction's integrations framework with the RSU specification (`rsuplan.md`) as **one PR**: the object/column resolution overlay, the entity-map / field-map (EM/EFM) lifecycle on add/remove/re-add, sync locking during metadata refresh, watermark backfill after schema change, ",
     "url": "https://github.com/MemberJunction/MJ/pull/3186",
     "source": "github_prs",
@@ -792,7 +792,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-19T08:57:03Z",
+    "date": "2026-07-19T22:35:11Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1068,7 +1068,7 @@
   },
   {
     "title": "[PR] Enhance Gemma 4 performance and features across multiple areas",
-    "date": "2026-07-19T21:29:56Z",
+    "date": "2026-07-19T22:29:55Z",
     "summary": "",
     "url": "https://github.com/dAppCore/go-inference/pull/11",
     "source": "github_prs",
@@ -1164,7 +1164,7 @@
   },
   {
     "title": "[PR] Integration testing: client-first expansion + entity-instantiation fix (ongoing)",
-    "date": "2026-07-19T19:40:41Z",
+    "date": "2026-07-19T22:48:39Z",
     "summary": "**Ongoing branch \u2014 do not merge yet.** The working vehicle for growing MemberJunction's headless integration suite toward the 1000+-factor, all-green goal. It supersedes the stale #3181.\n\n## Fixes\n\n### Resilient entity instantiation (`@memberjunction/core`, patch)\n`RunView({ ResultType: 'entity_obje",
     "url": "https://github.com/MemberJunction/MJ/pull/3185",
     "source": "github_prs",
@@ -1496,6 +1496,30 @@
       "comments: 2",
       "pull request",
       "repo: core"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): MaxRows-limited RunView results must not be cached as complete sets (B30)",
+    "date": "2026-07-19T22:51:18Z",
+    "summary": "## The defect\n\n`MaxRows` was silently ignored on a client-cache hit, and the cached slot was not the set that was requested.\n\nA `MaxRows`-truncated RunView result was stored in the cache slot **as if it were the complete set**, then maintained in place by BaseEntity save events. The served result wa",
+    "url": "https://github.com/MemberJunction/MJ/pull/3199",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): enforce @RegisterClass classes are exported + manifest loadability gates",
+    "date": "2026-07-19T22:51:03Z",
+    "summary": "## The invariant\n\n**Every class decorated with `@RegisterClass` must be exported from its package's public API.**\n\n`@RegisterClass` plugs a class into a resolution chain the package author doesn't control (MJ's ClassFactory plugin architecture). A registered-but-unexported class is incoherent by con",
+    "url": "https://github.com/MemberJunction/MJ/pull/3203",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
