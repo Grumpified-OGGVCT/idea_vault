@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] Stargate Module - Addon : integrate Stargate pools, AdaPortal, Midnight City, a\u2026",
-    "date": "2026-07-19T19:04:04Z",
+    "date": "2026-07-19T20:00:24Z",
     "summary": "\r\nThis commit adds the complete Stargate-Module integration:\r\n\r\nCore Shell Wiring:\r\n- Sidebar.tsx: Stargate nav item with Rocket icon\r\n- ContentArea.tsx: Routes browser://adaportal/* to AdaPortalPanel\r\n- types.ts: INTERNAL_ADAPORTAL_* URL constants\r\n- ai.ts: Expanded AIProvider union (ollama-cloud, ",
     "url": "https://github.com/hypercycle-development/mosaic-companion/pull/95",
     "source": "github_prs",
@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-19T14:44:09Z",
+    "date": "2026-07-19T20:44:10Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-19T19:06:19Z",
+    "date": "2026-07-19T20:48:55Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] feat(integration): optional out-of-process integration sync worker",
-    "date": "2026-07-19T01:00:10Z",
+    "date": "2026-07-19T20:30:04Z",
     "summary": "## What\nAdds **`@memberjunction/integration-sync-worker`** \u2014 an **optional**, standalone host that runs scheduled integration syncs off the serving MJAPI process. It runs the *same* `SchedulingEngine` poll loop MJAPI runs in-process, but in a dedicated process with no GraphQL/Apollo, so long, memory",
     "url": "https://github.com/MemberJunction/MJ/pull/3193",
     "source": "github_prs",
@@ -660,7 +660,7 @@
   },
   {
     "title": "[PR] [Large Schema Series] SQL Server: materialize catalog views in spUpdateExistingEntityFieldsFromSchema (6/6)",
-    "date": "2026-07-19T00:50:20Z",
+    "date": "2026-07-19T20:23:25Z",
     "summary": "## What\nThe **SQL Server** counterpart to PR #3190 (the PostgreSQL set-based reconciliation fix). SS ships its reconciliation SPs via migration rather than regenerating them at runtime, so this is a forward `CREATE OR ALTER` migration.\n\n`spUpdateExistingEntityFieldsFromSchema` joined the catalog-int",
     "url": "https://github.com/MemberJunction/MJ/pull/3192",
     "source": "github_prs",
@@ -1068,7 +1068,7 @@
   },
   {
     "title": "[PR] Enhance Gemma 4 performance and features across multiple areas",
-    "date": "2026-07-19T19:17:23Z",
+    "date": "2026-07-19T20:51:25Z",
     "summary": "",
     "url": "https://github.com/dAppCore/go-inference/pull/11",
     "source": "github_prs",
@@ -1164,7 +1164,7 @@
   },
   {
     "title": "[PR] Integration testing: client-first expansion + entity-instantiation fix (ongoing)",
-    "date": "2026-07-19T19:00:53Z",
+    "date": "2026-07-19T19:40:41Z",
     "summary": "**Ongoing branch \u2014 do not merge yet.** The working vehicle for growing MemberJunction's headless integration suite toward the 1000+-factor, all-green goal. It supersedes the stale #3181.\n\n## Fixes\n\n### Resilient entity instantiation (`@memberjunction/core`, patch)\n`RunView({ ResultType: 'entity_obje",
     "url": "https://github.com/MemberJunction/MJ/pull/3185",
     "source": "github_prs",
@@ -1403,8 +1403,8 @@
     ]
   },
   {
-    "title": "[PR] feat(container): update image ghcr.io/amruthpillai/reactive-resume ( v5.0.11 \u2192 v5.2.3 )",
-    "date": "2026-07-19T18:59:43Z",
+    "title": "[PR] feat(container): update image ghcr.io/amruthpillai/reactive-resume (v5.0.11 \u2794 v5.2.3)",
+    "date": "2026-07-19T20:51:39Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | minor | `v5.0.11` \u2192 `v5.2.3` |\n\n---\n\n> [!WA",
     "url": "https://github.com/zebernst/homelab/pull/1175",
     "source": "github_prs",
@@ -1460,6 +1460,30 @@
       "comments: 1",
       "pull request",
       "repo: omp"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the hub-go group across 1 directory with 4 updates",
+    "date": "2026-07-19T20:53:14Z",
+    "summary": "Bumps the hub-go group with 3 updates in the /hub directory: [github.com/ClickHouse/clickhouse-go/v2](https://github.com/ClickHouse/clickhouse-go), [go.opentelemetry.io/collector/pdata](https://github.com/open-telemetry/opentelemetry-collector) and [go.opentelemetry.io/collector/pdata/pprofile](http",
+    "url": "https://github.com/avuruvision/avuru-obs/pull/38",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: avuru-obs"
+    ]
+  },
+  {
+    "title": "[PR] feat(landingpage): governance & security page, GEO/LLM & SEO enrichment, dev-example fixes",
+    "date": "2026-07-19T20:40:43Z",
+    "summary": "Improves the GitHub Pages microsite (`landingpage/`) for SEO, GEO/answer-engine readiness, coding-agent and LLM support, developer guidance, and human browsing \u2014 driven by a six-lens audit of the built site and the codebase.\n\n## New: Governance & Security page\nBilingual first-class page at `/en/secu",
+    "url": "https://github.com/netresearch/t3x-nr-llm/pull/470",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: t3x-nr-llm"
     ]
   }
 ]
