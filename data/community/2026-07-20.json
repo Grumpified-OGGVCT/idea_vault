@@ -324,12 +324,12 @@
   },
   {
     "title": "P0: unbounded request body after 0.212 migration \u2014 ollama.com gateway ~5MB opaque 400, fleet default lane down since 14:31",
-    "date": "2026-07-16T09:46:17Z",
+    "date": "2026-07-20T21:52:18Z",
     "summary": "## \uc99d\uc0c1 (P0 \u2014 fleet \uae30\ubcf8 \ub808\uc778 \uc804\uba78)\n\n2026-07-16 14:31:45(\uc7ac\uae30\ub3d9 105\ucd08 \ud6c4)\ubd80\ud130 `ollama_cloud.deepseek-v4-flash`\ub85c \ub77c\uc6b0\ud305\ub418\ub294 **\ubaa8\ub4e0 keeper \ud134\uc774 400\uc73c\ub85c \uc2e4\ud328** (`Invalid request (unknown): Bad Request (ref: <uuid>)`, 16:13\uae4c\uc9c0 944\uac74+, consecutive 6~7). \uac19\uc740 \uc2dc\uac01 executor\uc758 GLM-5-Turbo \ud134\uc740 `model_context_window_exceeded`(200k)\ub85c \uc2e4\ud328 \u2192 deepse",
     "url": "https://github.com/jeong-sik/masc/issues/24838",
     "source": "github_issues",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "state: open",
       "repo: masc"
     ]
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-20T20:06:10Z",
+    "date": "2026-07-20T21:38:10Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] Enhance Gemma 4 performance and features across multiple areas",
-    "date": "2026-07-20T20:16:52Z",
+    "date": "2026-07-20T20:30:13Z",
     "summary": "",
     "url": "https://github.com/dAppCore/go-inference/pull/11",
     "source": "github_prs",
@@ -672,7 +672,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-20T14:44:12Z",
+    "date": "2026-07-20T20:44:11Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1380,7 +1380,7 @@
   },
   {
     "title": "[PR] fix(provider): stop Mistral tool boundary on self-hosted OpenAI backends",
-    "date": "2026-07-20T14:18:50Z",
+    "date": "2026-07-20T21:21:05Z",
     "summary": "## Summary\r\n\r\nSelf-hosted OpenAI-compatible backends (llama-server, vLLM, Ollama, custom hosts) were stalling after tool calls because the OpenAI shim always injected a synthetic assistant message `[Tool results received]` between `tool` and `user` roles. That boundary is only valid for Mistral/Devs",
     "url": "https://github.com/Gitlawb/openclaude/pull/1977",
     "source": "github_prs",
@@ -1488,7 +1488,7 @@
   },
   {
     "title": "[PR] fix(combo): strip boolean reasoning field for opencode-go providers",
-    "date": "2026-07-20T20:21:47Z",
+    "date": "2026-07-20T21:31:35Z",
     "summary": "## Problem\n\nopencode-go backed providers (ollama-cloud, opencode-go, opencode, opencode-zen) use a Go `ChatCompletionRequest` struct where the `reasoning` field is typed as `openai.Reasoning` (a structured type, not a bool).\n\nWhen a client sends `reasoning: true` or `reasoning: false` \u2014 which is val",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/7891",
     "source": "github_prs",
@@ -1580,6 +1580,114 @@
       "comments: 0",
       "pull request",
       "repo: gutp-building-os-ri"
+    ]
+  },
+  {
+    "title": "N-of-M: thinking-budget \ud29c\ub2dd\uc774 \uad6c\uc870\ud654 subcall 4\uac1c \uc0ac\uc774\ud2b8 \uc911 2\uacf3\uc5d0\ub9cc \uc190\ubcf5\uc0ac \u2014 fusion judge(thinking 64k/text 0)\uc640 compaction summarizer \ub204\ub77d",
+    "date": "2026-07-20T20:48:59Z",
+    "summary": "## \uc694\uc57d\n\nreasoning-capable provider \uac00 \ucd9c\ub825 \uc608\uc0b0\uc744 \uc804\ubd80 thinking \uc5d0 \uc4f0\uace0 visible text \ub97c \ube44\uc6b0\ub294 \uc2e4\ud328\ub97c, `enable_thinking = Some false` \ud29c\ub2dd\uc73c\ub85c \ub9c9\uace0 \uc788\uc2b5\ub2c8\ub2e4. \uadf8\ub7f0\ub370 \uc774 \ud29c\ub2dd\uc774 **\uad6c\uc870\ud654 \ucd9c\ub825 subcall \uc0ac\uc774\ud2b8\ub9c8\ub2e4 \uc190\uc73c\ub85c \ubcf5\uc0ac**\ub418\uace0 \uc788\uace0, \ucd5c\uc18c 2\uacf3\uc774 \ub204\ub77d\ub3fc \uc788\uc2b5\ub2c8\ub2e4.\n\nRFC-0000 \u00a79 \uc758 \uc989\uc2dc reject \uc2dc\uadf8\ub2c8\ucc98 3\ubc88(N-of-M \ud328\uce58)\uc5d0 \ud574\ub2f9\ud569\ub2c8\ub2e4. \ucf54\ub4dc \uc8fc\uc11d\uc774 \uc2e0\ud638 \ubb38\uad6c\ub97c \uadf8\ub300\ub85c \uc4f0\uace0 \uc788\uc2b5\ub2c8\ub2e4 \u2014 *\"Mirror the librarian tun",
+    "url": "https://github.com/jeong-sik/masc/issues/25494",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: masc"
+    ]
+  },
+  {
+    "title": "[PR] Grammarly-style UI polish, fix sidebar overlay bug, close local-endpoint SSRF gap",
+    "date": "2026-07-20T21:59:11Z",
+    "summary": "## Summary\n- Rebuilt the post-analysis results sidebar: it was `position: fixed` with no toggle ever wired up in the JSX, so it silently overlapped the left edge of the page once an analysis completed. It's now an in-flow sticky column inside a new `.workspace` grid alongside the nav/content.\n- Cohe",
+    "url": "https://github.com/joshmode/ragdraft1/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ragdraft1"
+    ]
+  },
+  {
+    "title": "[PR] Desktop: Fixes #15874: AI chat panel: Fix changing the note body causes a cache miss",
+    "date": "2026-07-20T21:41:34Z",
+    "summary": "# Problem\r\n\r\nEvery change to the note body updated the system prompt. This caused a cache miss and caused the full chat history to be re-encoded.\r\n\r\n# Solution\r\n\r\n- Don't add the note body to the system prompt.\r\n- Add a `readNote` command that returns the note body.\r\n- Initialize the chat history wi",
+    "url": "https://github.com/laurent22/joplin/pull/15969",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: joplin"
+    ]
+  },
+  {
+    "title": "[PR] fix(templates): add autoescape control to RenderTemplateSimple",
+    "date": "2026-07-20T21:38:48Z",
+    "summary": "`TemplateEngineServer.RenderTemplateSimple(templateText, data)` rendered every ad-hoc string through the shared Nunjucks environment, which is built with `autoescape: true`. That is correct for HTML bodies but wrong for plain-text output: an email subject line rendered from `{{ company }}` with `com",
+    "url": "https://github.com/MemberJunction/MJ/pull/3225",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go/modules/postgres to v0.43.0",
+    "date": "2026-07-20T21:34:06Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go/modules/postgres](https://redirect.github.com/testcont",
+    "url": "https://github.com/infratographer/metadata-api/pull/303",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: metadata-api"
+    ]
+  },
+  {
+    "title": "[PR] LCORE-2874: Fix konflux_resolve.py to work with non-custom uv",
+    "date": "2026-07-20T21:17:34Z",
+    "summary": "## Description\r\n\r\nSync the RHOAI index URL in konflux_requirements.sh with the current requirements files (packages.redhat.com/rhoai/3.5 instead of console.redhat.com/rhoai/3.3).\r\n\r\nAlso add --universal flag to source requirements compilation to allow the script to run successfully on macOS in addit",
+    "url": "https://github.com/lightspeed-core/lightspeed-stack/pull/2185",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: lightspeed-stack"
+    ]
+  },
+  {
+    "title": "[PR] Lock Personal Local Stack v1 and bootstrap contract",
+    "date": "2026-07-20T21:00:52Z",
+    "summary": "## Summary\n\nClarifies and locks the Nexus OS **Personal** architecture per the approved product decision. Personal v1 is free, single-user and Hub-independent, and ships **exactly one** predefined, opinionated local stack (`personal-local-v1`). It never asks the owner to evaluate architecture, choos",
+    "url": "https://github.com/ironbat-digital/nexus-os/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nexus-os"
+    ]
+  },
+  {
+    "title": "[PR] feat(ingest): ingest unstructured files into BLOB+VECTOR Hudi tables via Hudi Streamer",
+    "date": "2026-07-20T20:50:42Z",
+    "summary": "### Describe the issue this Pull Request addresses\n\nLanding unstructured data (documents, images, videos) in a lakehouse today means gluing Spark's `binaryFile` reader to hand-rolled parsing UDFs, with no incremental ingestion, no upsert semantics, no blob management, and no embedding lifecycle. Wit",
+    "url": "https://github.com/apache/hudi/pull/19278",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hudi"
+    ]
+  },
+  {
+    "title": "[PR] perf(explorer): omnibar # debounce, batch list-detail view reads, EntityByName lookup",
+    "date": "2026-07-20T20:48:47Z",
+    "summary": "## Summary\nThree low-risk **MJExplorer performance quick wins**, surfaced during a regression investigation of the last ~6 weeks of Explorer/core changes (full report included under `plans/`). The investigation's headline finding \u2014 that the Explorer baseline is healthy and the one genuinely user-vis",
+    "url": "https://github.com/MemberJunction/MJ/pull/3224",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
