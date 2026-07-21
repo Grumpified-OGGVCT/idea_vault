@@ -528,12 +528,12 @@
   },
   {
     "title": "[PR] feat(backend): single-source LLM model catalog (cutover + Kimi K3)",
-    "date": "2026-07-21T17:04:39Z",
+    "date": "2026-07-21T22:40:06Z",
     "summary": "### Why \ud83e\udd14\n\nModel management was scattered across three hand-maintained dicts (`MODEL_METADATA`, `MODEL_COST`, `TOKEN_COST`), env vars, LD payloads, and handwritten retirement migrations. Adding one model meant editing four places; retiring one meant writing SQL. This PR makes one file \u2014 `backend/dat",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13627",
     "source": "github_prs",
     "highlights": [
-      "comments: 46",
+      "comments: 51",
       "pull request",
       "repo: AutoGPT"
     ]
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-21T20:49:26Z",
+    "date": "2026-07-21T22:45:31Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -912,8 +912,8 @@
   },
   {
     "title": "[PR] test(angular): Phase 4 \u2014 gates, guardrails, hygiene, mutation pilot & coverage push",
-    "date": "2026-07-21T21:07:46Z",
-    "summary": "## Phase 4 of the Angular DOM unit-testing rollout \u2014 gates, guardrails, hygiene & mutation pilot\n\nPhase 3 landed the specs (132/132 in-scope Explorer coverage); Phase 4 keeps them honest. Four CI gates, the batched hygiene cleanup, the stub consolidation, and a mutation-testing pilot \u2014 each a direct",
+    "date": "2026-07-21T22:14:55Z",
+    "summary": "## Phase 4 of the Angular DOM unit-testing rollout \u2014 gates, guardrails, hygiene, mutation pilot & coverage push\n\nPhase 3 landed the specs (132/132 in-scope Explorer coverage); Phase 4 keeps them honest **and** closes the coverage gaps. Four CI gates, the batched hygiene cleanup, the stub consolidati",
     "url": "https://github.com/MemberJunction/MJ/pull/3174",
     "source": "github_prs",
     "highlights": [
@@ -1416,12 +1416,12 @@
   },
   {
     "title": "[PR] feat(linux): close parity implementation and audit evidence",
-    "date": "2026-07-21T19:23:07Z",
+    "date": "2026-07-21T23:00:14Z",
     "summary": "## What changed\n\nThis closeout integrates the Linux parity audit evidence and the latest bounded product slices:\n\n- authoritative usage projection/recount and strict aggregate validation\n- Copilot session-state/log ingestion with durable delta checkpoints and daemon scheduling\n- active-membership St",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1930",
     "source": "github_prs",
     "highlights": [
-      "comments: 35",
+      "comments: 38",
       "pull request",
       "repo: BurnBar"
     ]
@@ -1476,12 +1476,12 @@
   },
   {
     "title": "[PR] dev: reh3376_dev01 -> main",
-    "date": "2026-07-21T20:57:10Z",
+    "date": "2026-07-21T21:21:56Z",
     "summary": "## Summary\n\nDevelopment branch changes from `reh3376_dev01`.\n\n### Commits\n- docs: fix stale /v1/prometheus references (PROMETHEUS-SCRAPE-INVESTIGATION-001 disclosed hygiene)\n- docs(bench-sidecar-apply-001): E4+E5 \u2014 live evidence + recipe + CHANGELOG + CLAUDE.md closure\n- feat(bench-sidecar-apply-001",
     "url": "https://github.com/reh3376/mdemg/pull/526",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: mdemg"
     ]
@@ -1572,7 +1572,7 @@
   },
   {
     "title": "[PR] \ud83d\udd12 Fix insecure HTTP usage for ollama_url",
-    "date": "2026-07-21T20:25:21Z",
+    "date": "2026-07-21T21:40:01Z",
     "summary": "\ud83c\udfaf **What:** Fixed an insecure HTTP usage vulnerability where the `ollama_url` configuration allowed external endpoints over HTTP.\n\u26a0\ufe0f **Risk:** Left unfixed, the application could make insecure API calls to external services, risking data interception and man-in-the-middle (MITM) attacks if configure",
     "url": "https://github.com/wwk5q8z6kk-bit/Helix/pull/94",
     "source": "github_prs",
@@ -1584,7 +1584,7 @@
   },
   {
     "title": "[PR] AO-011: Complete portable deployment and judge runbook",
-    "date": "2026-07-21T20:20:31Z",
+    "date": "2026-07-21T22:23:12Z",
     "summary": "Closes #11.\n\n## Summary\n\nAO-011 adds a Docker-first portable judge path that needs Docker Compose and a browser, but not host Node, npm, Ollama, qwen3:4b, an OpenAI key, an existing model artifact, or AO-007 receipt access. The first commit (46131cfd04aa40f60e480b7741eaf7be0a288ac6) contains the imp",
     "url": "https://github.com/PeterNguyen47/AI-Orchestra/pull/25",
     "source": "github_prs",
@@ -1592,6 +1592,90 @@
       "comments: 0",
       "pull request",
       "repo: AI-Orchestra"
+    ]
+  },
+  {
+    "title": "\ud83d\udcca AI CLI \u5de5\u5177\u793e\u533a\u52a8\u6001\u65e5\u62a5 2026-07-22",
+    "date": "2026-07-21T22:27:10Z",
+    "summary": "# AI CLI \u5de5\u5177\u793e\u533a\u52a8\u6001\u65e5\u62a5 2026-07-22\n\n> \u751f\u6210\u65f6\u95f4: 2026-07-21 22:16 UTC | \u8986\u76d6\u5de5\u5177: 12 \u4e2a\n\n- [Claude Code](https://github\u200b.com/anthropics/claude-code)\n- [OpenAI Codex](https://github\u200b.com/openai/codex)\n- [Gemini CLI](https://github\u200b.com/google-gemini/gemini-cli)\n- [GitHub Copilot CLI](https://github\u200b.com/github/copil",
+    "url": "https://github.com/stevenko2002/agents-radar/issues/251",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: agents-radar"
+    ]
+  },
+  {
+    "title": "[PR] fix(ci): skip private packages in the repository.url publish gate",
+    "date": "2026-07-21T22:56:42Z",
+    "summary": "Follow-up to #3236, which fixed the npm-existence gate (`validate-npm-packages.sh`) to skip `private: true` packages but left its sibling with the identical bug. `validate-package-repository.sh` runs three lines below it in `publish.yml` (and on every `build.yml` run), filters on nothing but the `@m",
+    "url": "https://github.com/MemberJunction/MJ/pull/3243",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] **logan/obsidian**",
+    "date": "2026-07-21T22:54:16Z",
+    "summary": "The world is quiet here\uff0e",
+    "url": "https://github.com/LAF-US/IDAHO-VAULT/pull/563",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 194",
+      "pull request",
+      "repo: IDAHO-VAULT"
+    ]
+  },
+  {
+    "title": "[PR] Migrate model defaults to Gemini 3.6 Flash / 3.5 Flash-Lite (value for price)",
+    "date": "2026-07-21T22:53:20Z",
+    "summary": "## Summary\n\nValue-for-price migration to the models Google GA'd today (Jul 21):\n\n- **Flagship tier \u2192 `gemini-3.6-flash`** (flow compile/edit/adapt, inline dashboard chat, Agents, voice `GEMINI_ROWBOAT_MODEL` default): beats 3.5 Flash on agentic/coding benchmarks (DeepSWE 49% vs 37%, GDPval-AA 1421 v",
+    "url": "https://github.com/brianlane/newCoworker/pull/809",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: newCoworker"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes): add cognee node",
+    "date": "2026-07-21T22:45:43Z",
+    "summary": "## Summary\n\n- Add `tool_cognee`, an agent-invocable persistent semantic-memory node backed by a self-hosted Cognee server or Cognee Cloud.\n- Expose a focused shared-memory workflow: `cognee.remember`, `cognee.recall`, and `cognee.memory_status`.\n- Allow multiple RocketRide agents to connect to the s",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/1501",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency RavenDB.Embedded to v7",
+    "date": "2026-07-21T21:45:16Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Particular/ServiceControl/pull/5079",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ServiceControl"
+    ]
+  },
+  {
+    "title": "[PR] Add offline evaluation harness for router node and retrieval subgraph",
+    "date": "2026-07-21T21:43:38Z",
+    "summary": "## What\n\nAdds `evals/` \u2014 a Typer-CLI package (mirroring `ingestion/`) that scores the agent's two decision-making components against the `evals/questions.yaml` golden set (20 cases; 11 retrieval-evaluated). All scoring is **deterministic** (no LLM-as-judge, no cloud service, per `CLAUDE.md`) and con",
+    "url": "https://github.com/mzubov/matrix-docs-agent/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: matrix-docs-agent"
     ]
   }
 ]
