@@ -504,12 +504,12 @@
   },
   {
     "title": "[PR] feat(backend): single-source LLM model catalog (cutover + Kimi K3)",
-    "date": "2026-07-22T19:19:52Z",
+    "date": "2026-07-22T21:11:36Z",
     "summary": "### Why \ud83e\udd14\n\nModel management was scattered across three hand-maintained dicts (`MODEL_METADATA`, `MODEL_COST`, `TOKEN_COST`), env vars, LD payloads, and handwritten retirement migrations. Adding one model meant editing four places; retiring one meant writing SQL. This PR makes one file \u2014 `backend/dat",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13627",
     "source": "github_prs",
     "highlights": [
-      "comments: 71",
+      "comments: 80",
       "pull request",
       "repo: AutoGPT"
     ]
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-22T19:07:03Z",
+    "date": "2026-07-22T21:11:30Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -564,12 +564,12 @@
   },
   {
     "title": "[PR] **logan/obsidian**",
-    "date": "2026-07-22T18:43:54Z",
+    "date": "2026-07-22T21:03:28Z",
     "summary": "The world is quiet here\uff0e",
     "url": "https://github.com/LAF-US/IDAHO-VAULT/pull/563",
     "source": "github_prs",
     "highlights": [
-      "comments: 195",
+      "comments: 197",
       "pull request",
       "repo: IDAHO-VAULT"
     ]
@@ -720,7 +720,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-07-22T02:44:10Z",
+    "date": "2026-07-22T20:44:11Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -876,7 +876,7 @@
   },
   {
     "title": "[PR] Add OpenClaw workflow tier routing metadata",
-    "date": "2026-07-22T19:17:27Z",
+    "date": "2026-07-22T21:10:38Z",
     "summary": "Adds advisory S/M/L/XL workflow tier metadata for OpenClaw Alp River-style orchestration.\\n\\n- Adds WorkflowTier classification\\n- Adds workflow mode and recommended specialist agents to lastRoute\\n- Emits X-Sage-Workflow-Tier and X-Sage-Workflow-Mode headers\\n- Keeps sage-router as advisor, not orc",
     "url": "https://github.com/earlvanze/sage-router/pull/2",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] Rust API sync: OpenAI protocol layer, custom models, images generation, Library, admin API",
-    "date": "2026-07-22T16:10:23Z",
+    "date": "2026-07-22T20:16:37Z",
     "summary": "## Summary\n\nCloses the high-priority README TODO *\"Rust API sync: add images generation support, Library, admin API. Migrate to OpenAI protocol for OpenAI, Yandex and Custom models\"* \u2014 `api-rust` catches up with the Node API on all four fronts, plus gets its first tests and a CI job.\n\n## Changes\n\n##",
     "url": "https://github.com/artiz/kate-chat/pull/150",
     "source": "github_prs",
@@ -1187,9 +1187,9 @@
     ]
   },
   {
-    "title": "[PR] feat: Vigil desktop app + first-run account bootstrap",
-    "date": "2026-07-22T14:56:33Z",
-    "summary": "Single branch for the desktop work and everything it depends on (previously split across #394/#395/#396, now consolidated here at the team's request). Nine commits, oldest first:\n\n1. **feat: seamless startup** \u2014 `ensure_docker` / `start_autostart_services` so the stack comes up cold; live DB switchi",
+    "title": "[PR] feat: Vigil desktop app + first-run bootstrap + provider-URL SSRF hardening",
+    "date": "2026-07-22T21:06:24Z",
+    "summary": "Single branch for the desktop work and everything it depends on (previously split across #394/#395/#396, now consolidated here at the team's request). Ten commits, oldest first:\n\n1. **feat: seamless startup** \u2014 `ensure_docker` / `start_autostart_services` so the stack comes up cold; live DB switchin",
     "url": "https://github.com/Vigil-SOC/vigil/pull/397",
     "source": "github_prs",
     "highlights": [
@@ -1200,7 +1200,7 @@
   },
   {
     "title": "[PR] Add custom OpenAI-compatible LLM endpoint for refinement and personality",
-    "date": "2026-07-22T19:23:37Z",
+    "date": "2026-07-22T19:37:02Z",
     "summary": "Closes #857 (partial \u2014 LLM cloud fallback path).\n\nAdds a settings-driven way to swap the built-in Qwen3 LLM for any endpoint that speaks OpenAI's `/v1/chat/completions` protocol: OpenAI itself, OpenRouter, Anthropic-via-proxy, llama.cpp server, vLLM, LM Studio, LocalAI, Ollama's OpenAI shim, or a se",
     "url": "https://github.com/jamiepine/voicebox/pull/947",
     "source": "github_prs",
@@ -1296,7 +1296,7 @@
   },
   {
     "title": "[PR] fix(providers): register Atomic Chat as local OpenAI-compatible runtime",
-    "date": "2026-07-22T16:17:02Z",
+    "date": "2026-07-22T20:41:21Z",
     "summary": "## Summary\n\n- Register **Atomic Chat** as a **local** provider (`Local: true`, no API key) instead of a remote OpenAI-compat endpoint at `api.atomic.chat`.\n- Default base URL: `http://127.0.0.1:1337/v1` (matches Atomic Chat's local OpenAI-compatible server).\n- Include Atomic Chat in `zero providers ",
     "url": "https://github.com/Gitlawb/zero/pull/550",
     "source": "github_prs",
@@ -1332,7 +1332,7 @@
   },
   {
     "title": "[PR] feat(communication): push-notification subscription abstraction + MS Graph implementation",
-    "date": "2026-07-22T16:01:55Z",
+    "date": "2026-07-22T21:07:30Z",
     "summary": "## Summary\n\nAdds a **provider-agnostic push-notification subscription abstraction** to the communication framework, plus the **first concrete implementation in the MS Graph provider**. Consumers that ingest inbound messages can now subscribe to \"new message\" push instead of polling `GetMessages` on ",
     "url": "https://github.com/MemberJunction/MJ/pull/3250",
     "source": "github_prs",
@@ -1356,7 +1356,7 @@
   },
   {
     "title": "[PR] e",
-    "date": "2026-07-22T15:53:29Z",
+    "date": "2026-07-22T20:27:18Z",
     "summary": "<!-- Clearly explain the need for these changes: -->\r\n\r\n### Changes \ud83c\udfd7\ufe0f\r\n\r\n<!-- Concisely describe all of the changes made in this pull request: -->\r\n\r\n### Checklist \ud83d\udccb\r\n\r\n#### For code changes:\r\n- [ ] I have clearly listed my changes in the PR description\r\n- [ ] I have made a test plan\r\n- [ ] I have ",
     "url": "https://github.com/drzarak/AutoGPT/pull/25",
     "source": "github_prs",
@@ -1404,12 +1404,12 @@
   },
   {
     "title": "[PR] Fix Boardroom cancellation and hide unwired providers",
-    "date": "2026-07-22T19:04:30Z",
+    "date": "2026-07-22T20:57:45Z",
     "summary": "## Summary\n- abort the active Boardroom Ollama generation when Stop is pressed and suppress its cancelled reply\n- hide ACC and Gemini from the selectable external-provider list while retaining fail-closed direct handling\n- record implemented and deferred Boardroom scope in the canonical readiness pl",
     "url": "https://github.com/obsidian-media/AlphonsoEcosystem/pull/102",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 13",
       "pull request",
       "repo: AlphonsoEcosystem"
     ]
@@ -1436,6 +1436,90 @@
       "comments: 2",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(#8136): expand pro-low fallback chain with gemini-pro-agent and pro-high",
+    "date": "2026-07-22T21:11:43Z",
+    "summary": "Closes #8136\n\n## Problem\n`gemini-3.1-pro-low` and `gemini-3-pro-low` both return HTTP 400 from the Antigravity upstream after a silent rename. The fallback chain for `gemini-3.1-pro-low` only had these two candidates, so the chain was exhausted immediately with no working alternative.\n\n## Fix\nExpand",
+    "url": "https://github.com/rafaumeu/OmniRoute/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "[PR] test(#8140): verify keepalive interval cleanup on disconnect, resolve, and reject",
+    "date": "2026-07-22T21:11:33Z",
+    "summary": "Closes #8140",
+    "url": "https://github.com/rafaumeu/OmniRoute/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update pip (major)",
+    "date": "2026-07-22T20:59:56Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [google-adk](https://redirec",
+    "url": "https://github.com/googleapis/mcp-toolbox/pull/3280",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: mcp-toolbox"
+    ]
+  },
+  {
+    "title": "[PR] feat(OGE-1578): live demo surface (Streamlit, Railway-hosted)",
+    "date": "2026-07-22T20:57:12Z",
+    "summary": "Closes [OGE-1578](https://linear.app/ogenticai/issue/OGE-1578/ogentic-router-stand-up-a-live-demo-surface-mirrors-ogentic-shields-hf). A live demo surface for the router \u2014 mirroring `ogentic-shield`'s in spirit, but **hosted on Railway, not an HF Space** (deliberate \u2014 see below).\n\n## What it is\n\nA s",
+    "url": "https://github.com/OgenticAI/ogentic-router/pull/42",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ogentic-router"
+    ]
+  },
+  {
+    "title": "[PR] Add Windows support for AutoDoc 1.1.0",
+    "date": "2026-07-22T20:33:00Z",
+    "summary": "## Summary\n\nShips first-class Windows support for AutoDoc 1.1.0: local transcription (Parakeet / faster-whisper with GPU and CPU profiles), a persistent transcription worker, Windows processing profiles and quality modes, microphone permission handling, and fixes for meetings stuck finalizing, video",
+    "url": "https://github.com/DuetDisplay/AutoDoc/pull/27",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: AutoDoc"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm-providers): add native Ollama provider with per-model params and context/output fixes",
+    "date": "2026-07-22T20:20:36Z",
+    "summary": "## What\n\n- New **Ollama (Native)** provider (`ollama-native`) that talks Ollama's native `/api/chat` (NDJSON), alongside the existing **Ollama (OpenAI-compatible)** provider (renamed, otherwise untouched). One \"Ollama\" entry in the provider picker with a **Native | OpenAI-compatible** transport cont",
+    "url": "https://github.com/archestra-ai/archestra/pull/6739",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: archestra"
+    ]
+  },
+  {
+    "title": "[PR] feat: remove Zep Cloud, add local SQLite graph store, English-first defaults & Ollama support",
+    "date": "2026-07-22T20:01:57Z",
+    "summary": "## Summary\n\nThis PR removes the Zep Cloud dependency entirely and replaces it with a local SQLite-based graph store with LLM-powered entity extraction. It also makes English the default language throughout the codebase and adds Ollama support.\n\n## Changes\n\n### Remove Zep Cloud\n- Deleted zep_entity_r",
+    "url": "https://github.com/666ghj/MiroFish/pull/741",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: MiroFish"
     ]
   }
 ]
