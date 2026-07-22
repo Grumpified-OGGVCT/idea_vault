@@ -516,19 +516,19 @@
   },
   {
     "title": "[PR] feat(linux): close parity implementation and audit evidence",
-    "date": "2026-07-22T14:55:18Z",
+    "date": "2026-07-22T17:21:21Z",
     "summary": "## What changed\n\nThis closeout integrates the Linux parity audit evidence and the latest bounded product slices:\n\n- authoritative usage projection/recount and strict aggregate validation\n- Copilot session-state/log ingestion with durable delta checkpoints and daemon scheduling\n- active-membership St",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1930",
     "source": "github_prs",
     "highlights": [
-      "comments: 46",
+      "comments: 56",
       "pull request",
       "repo: BurnBar"
     ]
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-22T14:56:02Z",
+    "date": "2026-07-22T17:13:07Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -672,7 +672,7 @@
   },
   {
     "title": "[PR] chore(deps): update all helm/docker dependencies (2026-07-13)",
-    "date": "2026-07-22T04:38:06Z",
+    "date": "2026-07-22T16:01:13Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [cluster](https://cloudnative-pg.io) ([source](https://redirect.github.com/cloudnative-pg/charts)) | patch | `0.8.0` \u2192 `0.8.1` |\n| g33kphr33k/musicgrabber | patch | `3.0.0` \u2192 `3.0.1` |\n| [kube-prometheus-stack](ht",
     "url": "https://github.com/datahub-local/datahub-local-core/pull/211",
     "source": "github_prs",
@@ -708,7 +708,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-07-22T07:04:26Z",
+    "date": "2026-07-22T17:16:58Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -876,7 +876,7 @@
   },
   {
     "title": "[PR] Add OpenClaw workflow tier routing metadata",
-    "date": "2026-07-22T15:06:46Z",
+    "date": "2026-07-22T17:17:29Z",
     "summary": "Adds advisory S/M/L/XL workflow tier metadata for OpenClaw Alp River-style orchestration.\\n\\n- Adds WorkflowTier classification\\n- Adds workflow mode and recommended specialist agents to lastRoute\\n- Emits X-Sage-Workflow-Tier and X-Sage-Workflow-Mode headers\\n- Keeps sage-router as advisor, not orc",
     "url": "https://github.com/earlvanze/sage-router/pull/2",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] Rust API sync: OpenAI protocol layer, custom models, images generation, Library, admin API",
-    "date": "2026-07-22T12:18:39Z",
+    "date": "2026-07-22T16:10:23Z",
     "summary": "## Summary\n\nCloses the high-priority README TODO *\"Rust API sync: add images generation support, Library, admin API. Migrate to OpenAI protocol for OpenAI, Yandex and Custom models\"* \u2014 `api-rust` catches up with the Node API on all four fronts, plus gets its first tests and a CI job.\n\n## Changes\n\n##",
     "url": "https://github.com/artiz/kate-chat/pull/150",
     "source": "github_prs",
@@ -1176,7 +1176,7 @@
   },
   {
     "title": "[PR] feat: unify conversational company onboarding",
-    "date": "2026-07-22T14:59:45Z",
+    "date": "2026-07-22T17:22:49Z",
     "summary": "Unifies website-assisted and manual company onboarding in one conversational Margince workspace. Streams grounded pages, facts, and legal entities into the live artifact; removes the separate review step; adds bounded typed company chat; and surfaces configured versus active models with cumulative t",
     "url": "https://github.com/gradionhq/margince-poc-v1/pull/186",
     "source": "github_prs",
@@ -1208,6 +1208,162 @@
       "comments: 1",
       "pull request",
       "repo: voicebox"
+    ]
+  },
+  {
+    "title": "[PR] Add Ollama support to the IPA demo extension",
+    "date": "2026-07-22T17:20:43Z",
+    "summary": "## Summary\n- Add local Ollama as a second provider in the demo extension (model discovery via `/api/tags`, chat via `/api/chat`), with provider + model selection in Options and approval UI\n- Strip `chrome-extension://` Origin/Referer on loopback Ollama requests via DNR so default Ollama installs wor",
+    "url": "https://github.com/SamSamskies/inference-provider-api/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: inference-provider-api"
+    ]
+  },
+  {
+    "title": "[PR] dev: reh3376_dev01 -> main",
+    "date": "2026-07-22T17:14:13Z",
+    "summary": "## Summary\n\nDevelopment branch changes from `reh3376_dev01`.\n\n### Commits\n- docs(guardrail-producer-001): E5 evidence + E6 \u2014 feature doc, CHANGELOG, CLAUDE.md FT-note, post\n- feat(guardrail-producer-001): E3+E4 \u2014 hook producer + env-robust UATS variant\n- fix(guardrail-producer-001): guardrail semant",
+    "url": "https://github.com/reh3376/mdemg/pull/529",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mdemg"
+    ]
+  },
+  {
+    "title": "[PR] test(onboard): make gateway TCP readiness refusal deterministic (#7250)",
+    "date": "2026-07-22T16:57:06Z",
+    "summary": "## Summary\n\nThe negative case in `gateway-tcp-readiness.test.ts` assumed a just-closed\nephemeral loopback port becomes synchronously unreachable, which is not\nportable: under WSL2 mirrored networking the mirrored loopback path keeps\naccepting connections for a few milliseconds after the Linux listen",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/7277",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): add native Hailo-Ollama support",
+    "date": "2026-07-22T16:38:46Z",
+    "summary": "## Current head\n\n`ba30e9448a845b0ec93df18989b0a1d5c0b56a72`\n\nRebased onto current upstream `master` at `f0b92f1516ec86aeb89ab2d8f25b837e14885aae`.\n\nHuman sponsor and review-response owner: @tmielika\n\n## Summary\n\n- Add a dedicated `HailoOllamaModelProvider` for Hailo-Ollama's native `/api/chat` and `",
+    "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(core): Generate eval collection insights with an LLM (no-changelog)",
+    "date": "2026-07-22T16:33:05Z",
+    "summary": "## Summary\n\nWires the eval-collections **AI insights** to a real LLM, replacing the deterministic-only `invokeAgent()` stub in `EvalInsightsService`. The winner / regression / suggested-next cards now show model-generated narrative instead of arithmetic templates (the deterministic summary stays as ",
+    "url": "https://github.com/n8n-io/n8n/pull/34254",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: n8n"
+    ]
+  },
+  {
+    "title": "[PR] fix(server): bind statusUpdates push delivery to authenticated connection identity (B49 session-hijack)",
+    "date": "2026-07-22T16:25:42Z",
+    "summary": "## The bug (B49, SEC-HIGH)\n\nThe `statusUpdates` GraphQL subscription (`PushStatusResolver`) filtered **only** on the client-supplied `sessionId`:\n```ts\nfilter: ({ payload, args }) => payload.sessionId === args.sessionId\n```\n`args.sessionId` is client-chosen and was never checked against the subscrib",
+    "url": "https://github.com/MemberJunction/MJ/pull/3244",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(goose): implement agent configuration for workspace preparation",
+    "date": "2026-07-22T16:20:08Z",
+    "summary": "## Summary\r\n- Replaces the `configurationFiles` and `preWorkspaceStart` stubs with a real implementation that writes `GOOSE_MODEL` into `.goose/config.yaml` from the workspace context, preserving existing configuration fields.\r\n\r\nFixes #2174\r\n\r\n## Test plan\r\n\r\n_Before testing youll need to  set the ",
+    "url": "https://github.com/openkaiden/kaiden/pull/2192",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] fix(providers): register Atomic Chat as local OpenAI-compatible runtime",
+    "date": "2026-07-22T16:17:02Z",
+    "summary": "## Summary\n\n- Register **Atomic Chat** as a **local** provider (`Local: true`, no API key) instead of a remote OpenAI-compat endpoint at `api.atomic.chat`.\n- Default base URL: `http://127.0.0.1:1337/v1` (matches Atomic Chat's local OpenAI-compatible server).\n- Include Atomic Chat in `zero providers ",
+    "url": "https://github.com/Gitlawb/zero/pull/550",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: zero"
+    ]
+  },
+  {
+    "title": "[PR] LLM",
+    "date": "2026-07-22T16:34:57Z",
+    "summary": "Yes, this one is a bit more complex... :-(   \r\n\r\nActivate in compose.yaml environment variables: \r\nLLM_ENABLED: true\r\n\r\nAdmin Settings for global settings:\r\n<img width=\"310\" height=\"239\" alt=\"Screenshot_2026-04-04_03-07-17\" src=\"https://github.com/user-attachments/assets/16ffcfbd-93d0-4b66-bac4-6f66",
+    "url": "https://github.com/yu-i-i/overleaf-cep/pull/171",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: overleaf-cep"
+    ]
+  },
+  {
+    "title": "[PR] Fix/milvus writer consumer activation",
+    "date": "2026-07-22T16:05:51Z",
+    "summary": "## Description\r\n\r\nThe Milvus Kafka writer consumer (`MilvusStoreWriterConsumer`) had an activation\r\ngate inverted relative to the working pgvector writer (`VectorStoreWriterConsumer`):\r\n\r\n| Writer | Gate | Default |\r\n| --- | --- | --- |\r\n| pgvector | `@ConditionalOnProperty(writer.enabled, matchIfMi",
+    "url": "https://github.com/opencrawling/opencrawling/pull/34",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: opencrawling"
+    ]
+  },
+  {
+    "title": "[PR] feat(communication): push-notification subscription abstraction + MS Graph implementation",
+    "date": "2026-07-22T16:01:55Z",
+    "summary": "## Summary\n\nAdds a **provider-agnostic push-notification subscription abstraction** to the communication framework, plus the **first concrete implementation in the MS Graph provider**. Consumers that ingest inbound messages can now subscribe to \"new message\" push instead of polling `GetMessages` on ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3250",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the minor-and-patch group across 1 directory with 4 updates",
+    "date": "2026-07-22T15:55:08Z",
+    "summary": "Bumps the minor-and-patch group with 4 updates in the / directory: [compromise](https://github.com/spencermountain/compromise), [openai](https://github.com/openai/openai-node), [openclaw](https://github.com/openclaw/openclaw) and [typebox](https://github.com/sinclairzx81/typebox).\n\nUpdates `compromi",
+    "url": "https://github.com/ofan/memex/pull/113",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: memex"
+    ]
+  },
+  {
+    "title": "[PR] e",
+    "date": "2026-07-22T15:53:29Z",
+    "summary": "<!-- Clearly explain the need for these changes: -->\r\n\r\n### Changes \ud83c\udfd7\ufe0f\r\n\r\n<!-- Concisely describe all of the changes made in this pull request: -->\r\n\r\n### Checklist \ud83d\udccb\r\n\r\n#### For code changes:\r\n- [ ] I have clearly listed my changes in the PR description\r\n- [ ] I have made a test plan\r\n- [ ] I have ",
+    "url": "https://github.com/drzarak/AutoGPT/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AutoGPT"
     ]
   }
 ]
