@@ -168,7 +168,7 @@
   },
   {
     "title": "\ud83e\udd9e OpenClaw \u751f\u6001\u65e5\u62a5 2026-07-23",
-    "date": "2026-07-23T02:12:22Z",
+    "date": "2026-07-23T04:34:23Z",
     "summary": "# OpenClaw \u751f\u6001\u65e5\u62a5 2026-07-23\n\n> Issues: 441 | PRs: 500 | \u8986\u76d6\u9879\u76ee: 13 \u4e2a | \u751f\u6210\u65f6\u95f4: 2026-07-23 02:04 UTC\n\n- [OpenClaw](https://github\u200b.com/openclaw/openclaw)\n- [NanoBot](https://github\u200b.com/HKUDS/nanobot)\n- [Hermes Agent](https://github\u200b.com/nousresearch/hermes-agent)\n- [PicoClaw](https://github\u200b.com/sipeed/p",
     "url": "https://github.com/zhouyuhechuan/agents-radar/issues/378",
     "source": "github_issues",
@@ -504,19 +504,19 @@
   },
   {
     "title": "[PR] feat(linux): close parity implementation and audit evidence",
-    "date": "2026-07-23T02:57:45Z",
+    "date": "2026-07-23T05:14:17Z",
     "summary": "## What changed\n\nThis closeout integrates the Linux parity audit evidence and the latest bounded product slices:\n\n- authoritative usage projection/recount and strict aggregate validation\n- Copilot session-state/log ingestion with durable delta checkpoints and daemon scheduling\n- active-membership St",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1930",
     "source": "github_prs",
     "highlights": [
-      "comments: 72",
+      "comments: 82",
       "pull request",
       "repo: BurnBar"
     ]
   },
   {
     "title": "[PR] Add OpenClaw workflow tier routing metadata",
-    "date": "2026-07-23T02:53:18Z",
+    "date": "2026-07-23T05:49:10Z",
     "summary": "Adds advisory S/M/L/XL workflow tier metadata for OpenClaw Alp River-style orchestration.\\n\\n- Adds WorkflowTier classification\\n- Adds workflow mode and recommended specialist agents to lastRoute\\n- Emits X-Sage-Workflow-Tier and X-Sage-Workflow-Mode headers\\n- Keeps sage-router as advisor, not orc",
     "url": "https://github.com/earlvanze/sage-router/pull/2",
     "source": "github_prs",
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] fix(testing): thread contextUser through live-agent invokers + fail-loud transport guard",
-    "date": "2026-07-23T02:49:42Z",
+    "date": "2026-07-23T05:28:38Z",
     "summary": "Closes #3251.\n\n## The finding\n\nThe live-agent integration bundles (`IT53`\u2013`IT57`) **never actually ran the agent** \u2014 every run entered `BaseAgent` with a null `contextUser` and died in `BaseEngine.Load` before doing any work, so `IT53` reported **0 of 7 oracles passing** with a wall of `For server-s",
     "url": "https://github.com/MemberJunction/MJ/pull/3260",
     "source": "github_prs",
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] fix(migrate-convert): stop silently dropping statements in convert (#3252)",
-    "date": "2026-07-23T02:43:35Z",
+    "date": "2026-07-23T03:28:11Z",
     "summary": "`mj migrate convert --split` could emit an empty or broken `.pg.sql` migration while printing `unhandled stmts: 0` and exiting 0 \u2014 an empty migration applies cleanly to a fresh PostgreSQL database, so it passed every gate and shipped. Three independent root causes, confirmed by deterministic repro a",
     "url": "https://github.com/MemberJunction/MJ/pull/3262",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] Containerize full stack, update repo references, and improve install scripts",
-    "date": "2026-07-23T02:39:51Z",
+    "date": "2026-07-23T03:58:17Z",
     "summary": "",
     "url": "https://github.com/Piya-Boy/PowerServer/pull/1",
     "source": "github_prs",
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-23T02:36:36Z",
+    "date": "2026-07-23T05:01:24Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -732,7 +732,7 @@
   },
   {
     "title": "[PR] feat(backend): single-source LLM model catalog (cutover + Kimi K3)",
-    "date": "2026-07-23T00:06:05Z",
+    "date": "2026-07-23T04:05:21Z",
     "summary": "### Why \ud83e\udd14\n\nModel management was scattered across three hand-maintained dicts (`MODEL_METADATA`, `MODEL_COST`, `TOKEN_COST`), env vars, LD payloads, and handwritten retirement migrations. Adding one model meant editing four places; retiring one meant writing SQL. This PR makes one file \u2014 `backend/dat",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13627",
     "source": "github_prs",
@@ -740,6 +740,126 @@
       "comments: 85",
       "pull request",
       "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[demo command][LP3] Five-phone Cloud + Cerebras golden path \u2014 2026-07-23",
+    "date": "2026-07-23T04:28:35Z",
+    "summary": "## Purpose\n\nSingle command center for the **2026-07-23 five-Light-Phone demo** (T\u22127h at creation).\n\nScope is intentionally narrow: physical LP3s, already-authenticated production Eliza Cloud sessions, Cerebras inference, fast live chat, Notes + Calendar CRUD and switching, reliable Home \u2194 Apps pagin",
+    "url": "https://github.com/elizaOS/eliza/issues/16895",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 36",
+      "state: open",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "\ud83e\udd9e OpenClaw \u751f\u6001\u65e5\u62a5 2026-07-23",
+    "date": "2026-07-23T02:59:08Z",
+    "summary": "# OpenClaw \u751f\u6001\u65e5\u62a5 2026-07-23\n\n> Issues: 458 | PRs: 500 | \u8986\u76d6\u9879\u76ee: 13 \u4e2a | \u751f\u6210\u65f6\u95f4: 2026-07-23 02:53 UTC\n\n- [OpenClaw](https://github\u200b.com/openclaw/openclaw)\n- [NanoBot](https://github\u200b.com/HKUDS/nanobot)\n- [Hermes Agent](https://github\u200b.com/nousresearch/hermes-agent)\n- [PicoClaw](https://github\u200b.com/sipeed/p",
+    "url": "https://github.com/xiehd77-del/agents-radar/issues/274",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: agents-radar"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Update terraform providers",
+    "date": "2026-07-23T05:57:50Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| amazon/aws-cli | kubernetes_cron_job_v1 | patch | `2.36.2` \u2192 `2.36.6` |\n| [ghcr.io/haveagitgat/tdarr](https://redirect.github.com/H",
+    "url": "https://github.com/STollenaar/infrastructure/pull/145",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: infrastructure"
+    ]
+  },
+  {
+    "title": "[PR] \ud83c\udf89 activedirectory-13.1.9, alicloud-13.2.2, ansible-13.2.10, arista-13.3.12, atlassian-13.4.3, aws-13.50.1, azure-13.33.1, bicep-13.4.6, claude-13.0.10, cloudflare-13.6.5, cloudformation-13.2.5, databricks-13.1.1, datadog-13.0.18, depsdev-13.1.5, digitalocean-13.14.2, equinix-13.0.24, gcp-13.33.1, github-13.7.3, gitlab-13.5.3, google-workspace-13.2.7, grafana-13.1.17, hcp-13.0.1, helm-13.3.8, hetzner-13.7.3, huggingface-13.1.10, ipinfo-13.0.24, ipmi-13.0.24, iru-13.0.2, jamf-13.1.11, k8s-13.8.3, kustomize-13.1.10, mikrotik-13.0.6, mistral-13.0.10, mondoo-13.1.13, mongodbatlas-13.1.1, ms365-13.9.1, nextdns-13.0.9, nmap-13.0.22, nutanix-13.2.5, oci-13.16.2, okta-13.4.1, ollama-13.0.10, opcua-13.0.21, openai-13.0.9, openstack-13.7.3, portainer-13.1.4, proxmox-0.3.3, redfish-13.0.2, shodan-13.2.8, slack-13.1.17, snowflake-13.4.2, stackit-13.4.2, tailscale-13.3.8, terraform-13.3.9, together-13.0.9, vcd-13.0.22, vercel-13.1.2, vllm-13.0.17, vsphere-13.7.3",
+    "date": "2026-07-23T05:57:47Z",
+    "summary": "This release was created by mql's provider versioning bot.\n\nYou can find me under: `providers-sdk/v1/util/version`.\n\n### activedirectory (13.1.9)\n- \ud83e\uddf9 Update deps for mql and providers 20260723 (#9388)\n\n### alicloud (13.2.2)\n- \ud83e\uddf9 Update deps for mql and providers 20260723 (#9388)\n- \u2b50 support Rootless ",
+    "url": "https://github.com/mondoohq/mql/pull/9389",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mql"
+    ]
+  },
+  {
+    "title": "[PR] Sync from upstream (conflicts to resolve)",
+    "date": "2026-07-23T05:15:19Z",
+    "summary": "Automated sync from `zed-industries/zed:main`.\n\n- New upstream commits: 149\n- Triggered by: `schedule`\n- Run: https://github.com/zixiao-labs/Kaltsit-Esperanta/actions/runs/29727406441\n\n> [!WARNING]\n> The merge produced conflicts. Check out `sync/upstream`, resolve the conflict markers, and push to t",
+    "url": "https://github.com/zixiao-labs/Kaltsit-Esperanta/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Kaltsit-Esperanta"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go/modules/azure to v0.43.0",
+    "date": "2026-07-23T04:28:52Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go/modules/azure](https://redirect.github.com/testcontain",
+    "url": "https://github.com/emerconn/dlqt/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: dlqt"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go/modules/postgres to v0.43.0",
+    "date": "2026-07-23T04:28:16Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/infratographer/load-balancer-api/pull/344",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: load-balancer-api"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the dependencies group across 1 directory with 50 updates",
+    "date": "2026-07-23T03:54:32Z",
+    "summary": "Bumps the dependencies group with 48 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@anthropic-ai/sdk](https://github.com/anthropics/anthropic-sdk-typescript) | `0.60.0` | `0.113.0` |\n| [@google/genai](https://github.com/googleapis/js-genai) | `2.8.0` | `2.13.0` |\n| [@op",
+    "url": "https://github.com/ppiiyo/AgentForge44/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AgentForge44"
+    ]
+  },
+  {
+    "title": "[PR] docs(deployment): gate PG migration content + fix the runbook gaps v5.49.0 exposed",
+    "date": "2026-07-23T03:52:16Z",
+    "summary": "**A PostgreSQL migration can be silently emptied by the converter and pass every check we have, including the one the runbook calls \"the real gate.\"** It has already shipped: `migrations-pg/v5/V202607071019__v5.45.x__Metadata_Sync.pg.sql` is **126 bytes** against a **12,041-line** T-SQL source. Post",
+    "url": "https://github.com/MemberJunction/MJ/pull/3258",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.43.0",
+    "date": "2026-07-23T05:48:25Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/i-love-flamingo/flamingo-commerce-contrib/pull/105",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: flamingo-commerce-contrib"
     ]
   }
 ]
