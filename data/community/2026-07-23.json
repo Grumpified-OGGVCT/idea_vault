@@ -504,19 +504,19 @@
   },
   {
     "title": "[PR] feat(linux): close parity implementation and audit evidence",
-    "date": "2026-07-23T17:44:11Z",
+    "date": "2026-07-23T19:12:06Z",
     "summary": "## What changed\n\nThis closeout integrates the Linux parity audit evidence and the latest bounded product slices:\n\n- authoritative usage projection/recount and strict aggregate validation\n- Copilot session-state/log ingestion with durable delta checkpoints and daemon scheduling\n- active-membership St",
     "url": "https://github.com/Imagine-That-Ai/BurnBar/pull/1930",
     "source": "github_prs",
     "highlights": [
-      "comments: 131",
+      "comments: 136",
       "pull request",
       "repo: BurnBar"
     ]
   },
   {
     "title": "[PR] Add OpenClaw workflow tier routing metadata",
-    "date": "2026-07-23T18:04:48Z",
+    "date": "2026-07-23T20:13:47Z",
     "summary": "Adds advisory S/M/L/XL workflow tier metadata for OpenClaw Alp River-style orchestration.\\n\\n- Adds WorkflowTier classification\\n- Adds workflow mode and recommended specialist agents to lastRoute\\n- Emits X-Sage-Workflow-Tier and X-Sage-Workflow-Mode headers\\n- Keeps sage-router as advisor, not orc",
     "url": "https://github.com/earlvanze/sage-router/pull/2",
     "source": "github_prs",
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-23T17:48:17Z",
+    "date": "2026-07-23T19:27:50Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -708,7 +708,7 @@
   },
   {
     "title": "[PR] from the hell",
-    "date": "2026-07-23T17:53:06Z",
+    "date": "2026-07-23T20:10:40Z",
     "summary": "",
     "url": "https://github.com/santipongth/thai-citizen-guide/pull/1",
     "source": "github_prs",
@@ -1308,7 +1308,7 @@
   },
   {
     "title": "[PR] Phase 7: Public demo and BYOK cloud AI (guest sessions, AES\u2011GCM vault, provider registry)",
-    "date": "2026-07-23T18:07:22Z",
+    "date": "2026-07-23T20:14:06Z",
     "summary": "### Motivation\n- Provide a no-account public demo and a secure BYOK (Bring Your Own Key) temporary connection so visitors can try AI workflows without persisting data or exposing sensitive keys. \n- Keep the existing local Ollama path unchanged and prevent any silent provider fallback while adding li",
     "url": "https://github.com/CenkCTI/CIP/pull/14",
     "source": "github_prs",
@@ -1332,7 +1332,7 @@
   },
   {
     "title": "[PR] feat(communication): push-notification subscription abstraction + MS Graph implementation",
-    "date": "2026-07-23T15:53:28Z",
+    "date": "2026-07-23T19:21:38Z",
     "summary": "## Summary\n\nAdds a **provider-agnostic push-notification subscription abstraction** to the communication framework, plus the **first concrete implementation in the MS Graph provider**. Consumers that ingest inbound messages can now subscribe to \"new message\" push instead of polling `GetMessages` on ",
     "url": "https://github.com/MemberJunction/MJ/pull/3250",
     "source": "github_prs",
@@ -1392,7 +1392,7 @@
   },
   {
     "title": "[PR] chore(core): slim the core \u2014 remove dead modules, move desktop features to Tauri, cut goals/todos to tinyagents",
-    "date": "2026-07-23T18:11:46Z",
+    "date": "2026-07-23T19:18:55Z",
     "summary": "## Summary\n\nSlims the Rust core and relocates desktop-coupled features to the Tauri shell (~34.6k net lines removed):\n\n- **Removed** dead/unused core modules: `codegraph`, `council_registry`, `model_council`, and the orphaned webview modules (`webview_apis`, `webview_accounts` cookie-login half, `we",
     "url": "https://github.com/tinyhumansai/openhuman/pull/5125",
     "source": "github_prs",
@@ -1404,12 +1404,12 @@
   },
   {
     "title": "[PR] **logan/obsidian**",
-    "date": "2026-07-23T18:06:31Z",
+    "date": "2026-07-23T20:11:03Z",
     "summary": "The world is quiet here\uff0e",
     "url": "https://github.com/LAF-US/IDAHO-VAULT/pull/563",
     "source": "github_prs",
     "highlights": [
-      "comments: 201",
+      "comments: 205",
       "pull request",
       "repo: IDAHO-VAULT"
     ]
@@ -1484,6 +1484,150 @@
       "comments: 1",
       "pull request",
       "repo: HaC"
+    ]
+  },
+  {
+    "title": "[PR] Phase 1 \u2014 Spine: durable case engine, provider routing, live feeds",
+    "date": "2026-07-23T20:12:05Z",
+    "summary": "## Phase 1 \u2014 Spine (PROJECT_PLAN \u00a713)\n\nDurable Temporal case engine + Postgres + live feed polling + AI SDK provider routing. One shortage case flows end-to-end with mocked judgment activities.\n\n**DRAFT** \u2014 iterating locally (console app + e2e polish) before flipping ready for CodeRabbit.\n\n### What'",
+    "url": "https://github.com/tomnguyen103/stopgap/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: stopgap"
+    ]
+  },
+  {
+    "title": "[PR] feat(goose): implement agent configuration for workspace preparation",
+    "date": "2026-07-23T19:58:55Z",
+    "summary": "## Summary\r\n- Replaces the `configurationFiles` and `preWorkspaceStart` stubs with a real implementation that writes `GOOSE_MODEL` into `.goose/config.yaml` from the workspace context, preserving existing configuration fields.\r\n\r\nFixes #2174\r\n\r\n## Test plan\r\n\r\n_Before testing youll need to  set the ",
+    "url": "https://github.com/openkaiden/kaiden/pull/2192",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] [codex] sync upstream model channel updates",
+    "date": "2026-07-23T19:58:29Z",
+    "summary": "# \u26a0\ufe0f \u63d0\u4ea4\u8bf4\u660e / PR Notice\n\n> [!IMPORTANT]\n>\n> \u672c PR \u662f\u7ecf\u8fc7\u9010\u9879\u4e0a\u6e38\u6838\u5bf9\u3001\u672c\u5730\u9002\u914d\u3001\u98ce\u9669\u7b5b\u9009\u548c\u9a8c\u8bc1\u540e\u6574\u7406\u7684\u540c\u6b65\u6279\u6b21\uff0c\u4e0d\u662f\u76f4\u63a5\u5408\u5e76\u4e0a\u6e38\u5206\u652f\u3002\n\n## \ud83d\udcdd \u53d8\u66f4\u63cf\u8ff0 / Description\n\n\u540c\u6b65 GPT-5.6\u3001Codex Responses\u3001Realtime\u3001Ollama\u3001Ali/Wan\u3001Seedance \u548c\u88ab\u52a8\u6e20\u9053\u76d1\u63a7\u76f8\u5173\u4e0a\u6e38\u80fd\u529b\uff1b\u6309\u672c\u9879\u76ee\u7684 JSON\u3001\u663e\u5f0f\u96f6\u503c\u3001\u8ba1\u8d39\u3001\u591a\u8282\u70b9\u548c\u9ed8\u8ba4\u63a7\u5236\u53f0\u7ea6\u675f\u5b8c\u6210\u9002\u914d\u3002\u9ad8\u98ce\u9669\u7684\u5f02\u6b65 quota exactly-once \u7ed3\u7b97\u548c\u8282\u70b9\u7ef4\u5ea6\u65e5\u5fd7\u4fdd\u6301\u6682\u7f13\u3002\n\n## \ud83d\ude80 \u53d8\u66f4\u7c7b\u578b / Type of change\n\n- [x]",
+    "url": "https://github.com/SolveaCX/new-api/pull/458",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: new-api"
+    ]
+  },
+  {
+    "title": "[PR] security(whatsapp): fix critical-review findings (ffmpeg RCE, resolve-ordering, auth tests)",
+    "date": "2026-07-23T19:55:24Z",
+    "summary": "## Summary\nFollow-up to #1, applying the actionable findings from a **4-reviewer critical review** (Codex + OpenRouter `qwen3-coder` + 2 internal security/code reviewers) run via `/ship` Step 2.\n\n## Applied (this PR)\n| # | Finding | Sev | Fix |\n|---|---------|-----|-----|\n| 1 | **ffmpeg command-inje",
+    "url": "https://github.com/francois352/hermes-agent/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] bot(deps): update docker.io/netbirdio/netbird docker tag to v0.75.0",
+    "date": "2026-07-23T19:30:55Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/netbirdio/netbird](https://redirect.github.com/netbirdio/netbird) | minor | `0.73.1` \u2192 `0.75.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency Dashboard](../issue",
+    "url": "https://github.com/kha7iq/homeops/pull/167",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homeops"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): bound ArtifactMetadataEngine boot load + guard oversized cache entries",
+    "date": "2026-07-23T19:30:20Z",
+    "summary": "## Summary\n\nFixes an unbounded application-boot payload (and a secondary full-cache wipe) caused by `ArtifactMetadataEngine` eager-loading every artifact **version \u2014 including the full `Content` column** \u2014 at startup. On deployments with real artifact volume this made every cold boot download the en",
+    "url": "https://github.com/MemberJunction/MJ/pull/3264",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] dev: reh3376_dev01 -> main",
+    "date": "2026-07-23T19:21:59Z",
+    "summary": "## Summary\n\nDevelopment branch changes from `reh3376_dev01`.\n\n### Commits\n- docs(ft-recursive-004): E7 \u2014 feature doc \u00a7Phase-9, CHANGELOG, CLAUDE.md (arc COMPLETE), post\n- feat(ft-recursive-004): E5 \u2014 ft-training dashboard reader-writer pairs restored\n- feat(ft-recursive-004): E4 \u2014 scheduled benchmar",
+    "url": "https://github.com/reh3376/mdemg/pull/539",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mdemg"
+    ]
+  },
+  {
+    "title": "[PR] feat: recover local Ollama enrichment",
+    "date": "2026-07-23T19:17:52Z",
+    "summary": "## Summary\n\n- route finding enrichment through the configured reporting provider, including local Ollama\n- preserve the full finding description, cached enrichment, and raw model output in the detail modal\n- on a transient local Bifrost connection failure, keep the request open, health-check/restart",
+    "url": "https://github.com/Vigil-SOC/vigil/pull/392",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: vigil"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update netbird",
+    "date": "2026-07-23T19:11:08Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/netbirdio/dashboard](https://redirect.github.com/netbirdio/dashboard) | minor | `v2.36.0` \u2192 `v2.90.5` |\n| [ghcr.io/netbirdio/manage",
+    "url": "https://github.com/vehagn/homelab/pull/520",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] resolve the base merge issues ",
+    "date": "2026-07-23T19:07:50Z",
+    "summary": "update the sync issues. ",
+    "url": "https://github.com/ALikesToCode/DeepTutor/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DeepTutor"
+    ]
+  },
+  {
+    "title": "[PR] fix(providers): carve cookie-auth providers out of terminal 401 'expired' classification so one 401 cooldowns instead of killing the connection",
+    "date": "2026-07-23T18:33:06Z",
+    "summary": "Refs #8200 (part A \u2014 one-401 terminal misclassification fixed; part B cookie rotation/keepalive tracked as follow-up, issue kept open)\n\n## Root cause\n\n`src/sse/services/auth.ts::resolveTerminalConnectionStatus()` mapped ANY HTTP 401\nthat wasn't classified `OAUTH_INVALID_TOKEN`/`PROJECT_ROUTE_ERROR` ",
+    "url": "https://github.com/diegosouzapw/OmniRoute/pull/8321",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update netbirdio/netbird docker tag to v0.75.0",
+    "date": "2026-07-23T18:32:56Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [netbirdio/netbird](https://redirect.github.com/netbirdio/netbird) | minor | `0.72.2-rootless` \u2192 `v0.75.0-rootless` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>netbirdio/netbird (netbirdio/netbird)</summary>\n\n##",
+    "url": "https://github.com/miscOS/gitops-docker-atlas/pull/52",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: gitops-docker-atlas"
     ]
   }
 ]
