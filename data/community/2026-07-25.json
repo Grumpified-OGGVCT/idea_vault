@@ -505,7 +505,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-25T09:50:48Z",
+    "date": "2026-07-25T10:56:06Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -877,12 +877,12 @@
   },
   {
     "title": "[PR] WP-B: FailoverExecutor \u2014 bounded runtime failover, ships dark (awaiting T review)",
-    "date": "2026-07-25T07:46:23Z",
+    "date": "2026-07-25T10:33:04Z",
     "summary": "## DRAFT \u2014 T review gate (do not merge)\n\nImplements the amended WP-B design ([Hub #81](https://github.com/creator35lwb-web/verifimind-genesis-mcp/issues/81)) per T S88 conditional approval, amended through **four review rounds**: S90 (B-90-1..9), S92 (B-92-1..4), S93 (B-93-1), S94 (B-94-1). Per the ",
     "url": "https://github.com/creator35lwb-web/VerifiMind-PEAS/pull/304",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: VerifiMind-PEAS"
     ]
@@ -925,12 +925,12 @@
   },
   {
     "title": "[PR] docs + full source: update identity to NeuralForge-Memory, fix Oracle/Hermes typos, complete #7 cleanup + #9 CI workflow under PR",
-    "date": "2026-07-25T07:48:21Z",
+    "date": "2026-07-25T11:08:30Z",
     "summary": "## User description (updated by Grok Build 0.1)\n\nFull completion of GitHub issue #7 under this PR: repo name change cleanup from previous `wilo-agent` / Wilo Agent + legacy `agentos-core` references after rename to `NeuralForge-Memory`.\n\n- All references updated in AGENTS.md, README.md, src/* (insta",
     "url": "https://github.com/rmems/NeuralForge-Memory/pull/8",
     "source": "github_prs",
     "highlights": [
-      "comments: 21",
+      "comments: 22",
       "pull request",
       "repo: NeuralForge-Memory"
     ]
@@ -961,12 +961,12 @@
   },
   {
     "title": "[PR] Draft: Gemini 3 Flash Preview F01 migration and Legora workbench UI",
-    "date": "2026-07-25T08:53:33Z",
+    "date": "2026-07-25T10:58:27Z",
     "summary": "## Goal\n\nMigrate F01 from the superseded Qwen broad-extraction path to a backend-only Gemini Cloud Assisted architecture pinned to `gemini-3-flash-preview`, while preserving local parsing, evidence binding, final verification, review persistence, Office.js safety, and the five-screen Legora-style wo",
     "url": "https://github.com/dc20758/Lendo_Lei/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 101",
+      "comments: 107",
       "pull request",
       "repo: Lendo_Lei"
     ]
@@ -985,7 +985,7 @@
   },
   {
     "title": "[PR] feat(cli): add --yolo alias for --dangerously-skip-permissions",
-    "date": "2026-07-25T09:46:42Z",
+    "date": "2026-07-25T10:06:31Z",
     "summary": "<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added `--yolo` as an alias for `--dangerously-skip-permissions` across CLI help/usage, `claude ssh`, direct connect (`open`), skills parsing, and the permissions/tools flag UI.",
     "url": "https://github.com/Gitlawb/openclaude/pull/1939",
     "source": "github_prs",
@@ -1045,7 +1045,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency testcontainers to v12",
-    "date": "2026-07-25T05:40:24Z",
+    "date": "2026-07-25T10:07:04Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [testcontainers](https://red",
     "url": "https://github.com/icereed/paperless-gpt/pull/432",
     "source": "github_prs",
@@ -1069,7 +1069,7 @@
   },
   {
     "title": "[PR] feat(connectors): free-tier cloud providers (NVIDIA NIM + Gemini) + model picker + onboarding",
-    "date": "2026-07-25T09:47:33Z",
+    "date": "2026-07-25T10:58:23Z",
     "summary": "## Summary\n- New zero-cost-by-default connectors: `nvidiaNimConnector.ts` (NVIDIA NIM, 70-80+ free-tier models) and `geminiConnector.ts` (Google AI Studio free tier) \u2014 mirror `deepseekConnector.ts`'s shape, typed `{ rateLimited: true }` on HTTP 429 instead of throwing, gated through `evaluatePolicyG",
     "url": "https://github.com/obsidian-media/AlphonsoEcosystem/pull/122",
     "source": "github_prs",
@@ -1173,6 +1173,30 @@
       "comments: 1",
       "pull request",
       "repo: opencodex"
+    ]
+  },
+  {
+    "title": "[PR] fix(providers): register Atomic Chat as local OpenAI-compatible runtime",
+    "date": "2026-07-25T10:48:33Z",
+    "summary": "## Summary\n\n- Register **Atomic Chat** as a **local** provider (`Local: true`, no API key) instead of a remote OpenAI-compat endpoint at `api.atomic.chat`.\n- Default base URL: `http://127.0.0.1:1337/v1` (matches Atomic Chat's local OpenAI-compatible server).\n- Include Atomic Chat in `zero providers ",
+    "url": "https://github.com/Gitlawb/zero/pull/550",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: zero"
+    ]
+  },
+  {
+    "title": "[PR] fix(runtime): render the handoff scenario answer and compile the Example UI tests per-PR",
+    "date": "2026-07-25T10:31:51Z",
+    "summary": "## Summary\n\nPairs #2378 (the defect) with #2377 (the gate that should have caught it)\nper AGENTS.md \"Guards ship with a demonstrated red\" \u2014 #2377 is the gate,\n#2378 is the demonstrated-red evidence it needs.\n\n## #2378 \u2014 root cause: the runtime, not the demo script\n\nReproduced first and confirmed liv",
+    "url": "https://github.com/ManifoldKit/ManifoldKit/pull/2390",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ManifoldKit"
     ]
   }
 ]
