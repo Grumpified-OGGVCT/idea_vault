@@ -409,12 +409,12 @@
   },
   {
     "title": "P0: unbounded request body after 0.212 migration \u2014 ollama.com gateway ~5MB opaque 400, fleet default lane down since 14:31",
-    "date": "2026-07-20T22:12:38Z",
+    "date": "2026-07-26T15:40:16Z",
     "summary": "## \uc99d\uc0c1 (P0 \u2014 fleet \uae30\ubcf8 \ub808\uc778 \uc804\uba78)\n\n2026-07-16 14:31:45(\uc7ac\uae30\ub3d9 105\ucd08 \ud6c4)\ubd80\ud130 `ollama_cloud.deepseek-v4-flash`\ub85c \ub77c\uc6b0\ud305\ub418\ub294 **\ubaa8\ub4e0 keeper \ud134\uc774 400\uc73c\ub85c \uc2e4\ud328** (`Invalid request (unknown): Bad Request (ref: <uuid>)`, 16:13\uae4c\uc9c0 944\uac74+, consecutive 6~7). \uac19\uc740 \uc2dc\uac01 executor\uc758 GLM-5-Turbo \ud134\uc740 `model_context_window_exceeded`(200k)\ub85c \uc2e4\ud328 \u2192 deepse",
     "url": "https://github.com/jeong-sik/masc/issues/24838",
     "source": "github_issues",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "state: open",
       "repo: masc"
     ]
@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-26T14:53:10Z",
+    "date": "2026-07-26T16:45:52Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -601,7 +601,7 @@
   },
   {
     "title": "[PR] feat(kai): user-readiness hardening \u2014 Lane A (money-mode, /readyz, refunds, password reset)",
-    "date": "2026-07-26T15:06:31Z",
+    "date": "2026-07-26T15:12:53Z",
     "summary": "Lands the four highest-value, self-contained fixes from the [user-readiness audit](../blob/feat/kai-user-readiness/docs/execution/USER_READINESS.md). **Stacked on the merged foundation** (`integration/verify-all`) \u2014 merge the 10-PR foundation first. Everything here is dark and reversible until the m",
     "url": "https://github.com/kevensjames/wheellsverse-bots/pull/58",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] WP-B: FailoverExecutor \u2014 bounded runtime failover, ships dark (awaiting T review)",
-    "date": "2026-07-26T14:37:06Z",
+    "date": "2026-07-26T15:39:43Z",
     "summary": "## DRAFT \u2014 T review gate (do not merge)\r\n\r\nImplements the amended WP-B design ([Hub #81](https://github.com/creator35lwb-web/verifimind-genesis-mcp/issues/81)) per T S88 conditional approval, amended through **fourteen review rounds**: S90 (9) \u00b7 S92 (4) \u00b7 S93 (1) \u00b7 S94 (1) \u00b7 S95 (3) \u00b7 S96 (2) \u00b7 S97 ",
     "url": "https://github.com/creator35lwb-web/VerifiMind-PEAS/pull/304",
     "source": "github_prs",
@@ -769,12 +769,12 @@
   },
   {
     "title": "[PR] Draft: Gemini 3 Flash Preview F01 migration and Legora workbench UI",
-    "date": "2026-07-26T14:54:49Z",
+    "date": "2026-07-26T17:04:30Z",
     "summary": "## Goal\n\nMigrate F01 from the superseded Qwen broad-extraction path to a backend-only Gemini Cloud Assisted architecture pinned to `gemini-3-flash-preview`, while preserving local parsing, evidence binding, final verification, review persistence, Office.js safety, and the five-screen Legora-style wo",
     "url": "https://github.com/dc20758/Lendo_Lei/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 227",
+      "comments: 234",
       "pull request",
       "repo: Lendo_Lei"
     ]
@@ -805,7 +805,7 @@
   },
   {
     "title": "[PR] chore(deps): update stack images",
-    "date": "2026-07-26T11:55:57Z",
+    "date": "2026-07-26T16:41:52Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| activepieces/activepieces | minor | `0.85.2` \u2192 `0.86.3` |\n| [apache/kafka](https://redirect.github.com/apache/kafka) | minor | `4.0.0` \u2192 `4.3.",
     "url": "https://github.com/deployable-sh/stacks/pull/16",
     "source": "github_prs",
@@ -1032,13 +1032,13 @@
     ]
   },
   {
-    "title": "[PR] feat: add Codex and Claude CLI providers",
-    "date": "2026-07-26T09:20:46Z",
-    "summary": "## Description\n\nAdds **Local CLI (on-device)** as an AI provider for Summarisation & Chat, with Codex CLI and Claude CLI options.\n\nThe feature routes summaries, titles, meeting chat, and global chat through each CLI's documented non-interactive mode while preserving Steno's existing prompt and conte",
+    "title": "[PR] feat: add configurable locally invoked CLI provider",
+    "date": "2026-07-26T16:16:48Z",
+    "summary": "## Description\n\nAdds **Locally invoked CLI** as an AI provider for Summarisation & Chat. Users configure a display name, executable with arguments, and timeout; Steno sends each complete prompt over standard input and reads the final answer from standard output.\n\nThe adapter supports standard summar",
     "url": "https://github.com/ruzin/stenoai/pull/420",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: stenoai"
     ]
@@ -1105,7 +1105,7 @@
   },
   {
     "title": "[PR] Add Unsloth Docker images (base + Studio) for any NVIDIA GPU host, Ampere through Blackwell",
-    "date": "2026-07-26T15:00:19Z",
+    "date": "2026-07-26T16:05:19Z",
     "summary": "## Summary\n\nAdds a Docker setup for Unsloth that runs on any NVIDIA GPU host from Ampere through Blackwell (sm_80 through sm_120: A100, RTX 30/40, H100, B100/B200, RTX 50-series, RTX 6000 Pro Blackwell) and natively on aarch64 (GB10 / Grace, DGX Spark). Two images are published to `docker.io/unsloth",
     "url": "https://github.com/unslothai/unsloth/pull/5748",
     "source": "github_prs",
@@ -1165,7 +1165,7 @@
   },
   {
     "title": "[PR] feat!: release Cortex v2 as an independent memory platform",
-    "date": "2026-07-26T13:49:33Z",
+    "date": "2026-07-26T15:12:35Z",
     "summary": "## Governance And Linked Issues\n\nPR #47 is the repository-owner-approved delivery tracker for Cortex v2. It expands the original baseline and coverage work into the independent-platform release and MUST NOT be merged until the v2 acceptance gates are complete or an explicit owner-approved exception ",
     "url": "https://github.com/lleontor705/cortex/pull/47",
     "source": "github_prs",
@@ -1185,6 +1185,90 @@
       "comments: 1",
       "pull request",
       "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] fix: support Ollama models for team members",
+    "date": "2026-07-26T17:04:49Z",
+    "summary": "## Summary\n\n- replace static local-model rejection with runtime evidence for tools, context, and coordination\n- preserve explicit Ollama and other custom local routes through project-scoped model selection\n- add a one-shot experimental override for advisory coordination failures without bypassing pr",
+    "url": "https://github.com/777genius/agent-teams-ai/pull/401",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: agent-teams-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: merge knowledge graph + conversation arc into memdir",
+    "date": "2026-07-26T16:56:11Z",
+    "summary": "## Summary\n\nMerge the standalone Knowledge Graph + Conversation Arc system into the existing auto-memory (memdir) directory. Previously, OpenClaude maintained **two parallel memory systems** \u2014 the file-based memdir (`memory/`) and a separate entity-relation-store backed by SQLite + JSON + Orama. The",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1811",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] from the hell",
+    "date": "2026-07-26T16:46:13Z",
+    "summary": "",
+    "url": "https://github.com/santipongth/thai-citizen-guide/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: thai-citizen-guide"
+    ]
+  },
+  {
+    "title": "[PR] fix(model): enable model discovery for custom OpenAI-compatible providers",
+    "date": "2026-07-26T16:33:01Z",
+    "summary": "Remove the early return in `loadDescriptorDiscoveryContext` that skipped model discovery for `routeId === 'custom'`.\n\nThis prevented the `/model` picker from showing dynamically discovered models and blocked `/model refresh` for users of custom OpenAI-compatible endpoints (e.g., custom gateways, sel",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1895",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] Containerize full stack, update repo references, and improve install scripts",
+    "date": "2026-07-26T15:55:41Z",
+    "summary": "",
+    "url": "https://github.com/Piya-Boy/PowerServer/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: PowerServer"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): Eliminate false-negative 500s in workflow builder tools",
+    "date": "2026-07-26T15:50:55Z",
+    "summary": "## Summary\r\n\r\nFixes intermittent false-negative 500 errors returned by the MCP workflow-builder tools `create_workflow_from_code` and `update_workflow`.\r\n\r\n**Root cause:** Post-save side effects (telemetry, credential auto-assign tracking, hook execution) could throw exceptions after the database wr",
+    "url": "https://github.com/n8n-io/n8n/pull/34975",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: n8n"
+    ]
+  },
+  {
+    "title": "[PR] resolve the base merge issues ",
+    "date": "2026-07-26T15:20:19Z",
+    "summary": "update the sync issues. ",
+    "url": "https://github.com/ALikesToCode/DeepTutor/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DeepTutor"
     ]
   }
 ]
