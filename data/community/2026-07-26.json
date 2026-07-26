@@ -157,7 +157,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-07-26T17:12:20Z",
+    "date": "2026-07-26T22:08:41Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-26T20:45:29Z",
+    "date": "2026-07-26T21:46:00Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -865,7 +865,7 @@
   },
   {
     "title": "[PR] Add OpenClaw workflow tier routing metadata",
-    "date": "2026-07-26T07:57:07Z",
+    "date": "2026-07-26T21:38:17Z",
     "summary": "Adds advisory S/M/L/XL workflow tier metadata for OpenClaw Alp River-style orchestration.\\n\\n- Adds WorkflowTier classification\\n- Adds workflow mode and recommended specialist agents to lastRoute\\n- Emits X-Sage-Workflow-Tier and X-Sage-Workflow-Mode headers\\n- Keeps sage-router as advisor, not orc",
     "url": "https://github.com/earlvanze/sage-router/pull/2",
     "source": "github_prs",
@@ -1165,7 +1165,7 @@
   },
   {
     "title": "[PR] feat!: release Cortex v2 as an independent memory platform",
-    "date": "2026-07-26T20:41:50Z",
+    "date": "2026-07-26T21:52:25Z",
     "summary": "## Governance And Linked Issues\n\nPR #47 is the repository-owner-approved delivery tracker for Cortex v2. It expands the original baseline and coverage work into the independent-platform release and MUST NOT be merged until the v2 acceptance gates are complete or an explicit owner-approved exception ",
     "url": "https://github.com/lleontor705/cortex/pull/47",
     "source": "github_prs",
@@ -1237,7 +1237,7 @@
   },
   {
     "title": "[PR] Containerize full stack, update repo references, and improve install scripts",
-    "date": "2026-07-26T15:55:41Z",
+    "date": "2026-07-26T21:18:44Z",
     "summary": "",
     "url": "https://github.com/Piya-Boy/PowerServer/pull/1",
     "source": "github_prs",
@@ -1393,7 +1393,7 @@
   },
   {
     "title": "[PR] ci(desktop): gate the server bundle on warnings and smoke the packaged runtime (DOR-536)",
-    "date": "2026-07-26T20:57:10Z",
+    "date": "2026-07-26T21:21:23Z",
     "summary": "The desktop app's most expensive failure class is a build that goes green and only dies once a user installs it. Nothing in the repo was watching for it: `build-server.ts` called esbuild and never read `result.warnings`, and no test has ever launched a packaged app. This adds four gates, cheapest fi",
     "url": "https://github.com/dork-labs/dorkos/pull/506",
     "source": "github_prs",
@@ -1417,7 +1417,7 @@
   },
   {
     "title": "[PR] feat(ai-segmentation): pluggable content segmentation, wired into ContentAutotagging",
-    "date": "2026-07-26T20:56:30Z",
+    "date": "2026-07-26T21:21:34Z",
     "summary": "## Segmentation decides *what* gets embedded. The embedding model only decides *how*.\n\nRetrieval quality is capped by segmentation quality, and no embedding-model upgrade recovers a bad split. Until now, chunking in MJ was a private helper inside whichever pipeline needed it \u2014 so every new strategy ",
     "url": "https://github.com/MemberJunction/MJ/pull/3286",
     "source": "github_prs",
@@ -1449,6 +1449,42 @@
       "comments: 1",
       "pull request",
       "repo: datasluice"
+    ]
+  },
+  {
+    "title": "[PR] security: gate account session egress features",
+    "date": "2026-07-26T22:04:05Z",
+    "summary": "## Summary\n- Adds a default-off security kill switch for account-session egress features.\n- Blocks OpenAI Live creation/sideband and Ollama Cloud usage session save/refresh/background refresh unless explicitly enabled.\n- Keeps ordinary gateway/model API traffic unchanged.\n\n## Verification\n- git diff",
+    "url": "https://github.com/tqytwe/sub2api/pull/185",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: sub2api"
+    ]
+  },
+  {
+    "title": "[PR] feat: add AgentCore skill snapshot",
+    "date": "2026-07-26T21:59:05Z",
+    "summary": "Automated PR created by AI agent.\n\n## Changes\n snapshots/20260726T214938Z-23319102/MANIFEST.json  |  4617 +++++\n snapshots/20260726T214938Z-23319102/RESTORE.md     |    39 +\n .../profiles/default/skills/apple/DESCRIPTION.md   |     3 +\n .../default/skills/apple/apple-notes/SKILL.md      |    90 +\n .",
+    "url": "https://github.com/miqui/hermes-skills-backup/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: hermes-skills-backup"
+    ]
+  },
+  {
+    "title": "[PR] Add Intel GPU support with LocalAI",
+    "date": "2026-07-26T21:14:22Z",
+    "summary": "## Summary\n\n- add an opt-in `gpu-intel` profile using LocalAI's official, versioned Intel GPU image\n- use one local OpenAI-compatible credential and Basic LLM Chain across Ollama and LocalAI profiles\n- add focused Intel setup, readiness, and GPU-device verification instructions\n\n## Why this supersed",
+    "url": "https://github.com/n8n-io/self-hosted-ai-starter-kit/pull/145",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: self-hosted-ai-starter-kit"
     ]
   }
 ]
