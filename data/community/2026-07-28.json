@@ -505,12 +505,12 @@
   },
   {
     "title": "[PR] Draft: Gemini 3 Flash Preview F01 migration and Legora workbench UI",
-    "date": "2026-07-28T14:12:54Z",
+    "date": "2026-07-28T16:15:01Z",
     "summary": "## Goal\n\nMigrate F01 from the superseded Qwen broad-extraction path to a backend-only Gemini Cloud Assisted architecture pinned to `gemini-3-flash-preview`, while preserving local parsing, evidence binding, final verification, review persistence, Office.js safety, and the five-screen Legora-style wo",
     "url": "https://github.com/dc20758/Lendo_Lei/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 303",
+      "comments: 308",
       "pull request",
       "repo: Lendo_Lei"
     ]
@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-28T13:52:37Z",
+    "date": "2026-07-28T16:21:02Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] v2 Beta",
-    "date": "2026-07-28T01:51:50Z",
+    "date": "2026-07-28T16:32:45Z",
     "summary": "",
     "url": "https://github.com/mcp-use/mcp-use/pull/1888",
     "source": "github_prs",
@@ -865,7 +865,7 @@
   },
   {
     "title": "[PR] Verify the configured Ollama models at startup instead of mid-run",
-    "date": "2026-07-28T13:35:04Z",
+    "date": "2026-07-28T15:48:07Z",
     "summary": "**L24**, approached as a durability problem rather than a lookup. Stacked on #61 \u2014 review that first.\n\n## Why not just change the tag\n\nI can't reach ollama.com from this sandbox to confirm whether `gemma4:12b` / `gemma4:26b` resolve, and swapping in a different guess would be the same kind of unveri",
     "url": "https://github.com/jkjamies/automation-agent/pull/62",
     "source": "github_prs",
@@ -1129,7 +1129,7 @@
   },
   {
     "title": "[PR] feat(persistence): client-side generation resume snapshot",
-    "date": "2026-07-28T11:21:50Z",
+    "date": "2026-07-28T16:42:13Z",
     "summary": "## \ud83c\udfaf Changes\n\n**Stack 1 of 2.** Split out of #987, rebuilt on the current `feat/persistence-core` (which dropped the packaged backends in `62c99754d`). Stacked follow-up: the durable media-byte half.\n\nClient-side generation persistence: a lightweight resume snapshot for media generation activities.\n",
     "url": "https://github.com/TanStack/ai/pull/997",
     "source": "github_prs",
@@ -1141,7 +1141,7 @@
   },
   {
     "title": "[PR] [FEATURE] Add Mistral Vibe support",
-    "date": "2026-07-28T14:06:26Z",
+    "date": "2026-07-28T16:30:28Z",
     "summary": "## What Changed\r\n\r\nAdds Mistral Vibe as a provider in T3 Code, addressing #1356.\r\n\r\nThe integration includes:\r\n\r\n- Mistral Vibe provider detection and authentication status\r\n- Provider configuration in Settings\r\n- Mistral Vibe models in the model picker\r\n- Configurable ACP binary path and environmen",
     "url": "https://github.com/pingdotgg/t3code/pull/4720",
     "source": "github_prs",
@@ -1297,12 +1297,12 @@
   },
   {
     "title": "[PR] docs: translate manual into English and Japanese",
-    "date": "2026-07-28T14:12:28Z",
+    "date": "2026-07-28T16:31:49Z",
     "summary": "## Summary\n- translate the updated Chinese manual into English and Japanese\n- add matching provider configuration guides for chat, speech, transcription, artistry, vision, and web search\n- include the refreshed desktop setup guide and locale screenshots\n\n## Validation\n- Markdown/frontmatter/fence/li",
     "url": "https://github.com/moeru-ai/airi/pull/2096",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 8",
       "pull request",
       "repo: airi"
     ]
@@ -1321,7 +1321,7 @@
   },
   {
     "title": "[PR] Security hardening: relay auth, input validation, supply-chain scanning",
-    "date": "2026-07-28T14:05:46Z",
+    "date": "2026-07-28T16:26:37Z",
     "summary": "## Summary\n\nThis PR addresses critical security gaps identified in the forensic audit (2026-07-26) by implementing authentication on the relay server, adding input validation across multiple subsystems, establishing supply-chain scanning workflows, and removing data fabrication from frontend widgets",
     "url": "https://github.com/AmirrezaFarnamTaheri/Noteece/pull/131",
     "source": "github_prs",
@@ -1345,7 +1345,7 @@
   },
   {
     "title": "[PR] Update reference implementation dependencies (non-major)",
-    "date": "2026-07-28T13:56:06Z",
+    "date": "2026-07-28T15:43:10Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [agent-framework-openai](htt",
     "url": "https://github.com/open-telemetry/semantic-conventions-genai/pull/407",
     "source": "github_prs",
@@ -1401,6 +1401,138 @@
       "comments: 0",
       "pull request",
       "repo: Amber"
+    ]
+  },
+  {
+    "title": "[PR] Add code_review_verify agent key for lighter verify/synthesis sub-passes",
+    "date": "2026-07-28T16:43:34Z",
+    "summary": "## Summary\n- Add a `code_review_verify` entry to `AGENT_DEFAULT_MODELS` (`backend/agents/llm_service/config.py`), same model family as `code_review` (`deepseek-v4-pro:cloud`)\n- Add a lighter `AGENT_DEFAULT_THINK` pin (`\"low\"`) for `code_review_verify`, one tier below `code_review`'s `\"high\"`, approp",
+    "url": "https://github.com/brandonkindred/Khala-Agentic-AI-Teams/pull/3671",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Khala-Agentic-AI-Teams"
+    ]
+  },
+  {
+    "title": "[PR] test(angular): Phase 4 \u2014 gates, guardrails, hygiene, mutation pilot & coverage push",
+    "date": "2026-07-28T16:43:19Z",
+    "summary": "## Phase 4 of the Angular DOM unit-testing rollout \u2014 gates, guardrails, hygiene, mutation pilot & coverage push\n\nPhase 3 landed the specs (132/132 in-scope Explorer coverage); Phase 4 keeps them honest **and** closes the coverage gaps. Four CI gates, the batched hygiene cleanup, the stub consolidati",
+    "url": "https://github.com/MemberJunction/MJ/pull/3174",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency danielmiessler/fabric to v1.4.462",
+    "date": "2026-07-28T16:33:22Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [danielmiessler/fabric](https://redirect.github.com/danielmiessler/fabric) | patch | `v1.4.388` \u2192 `v1.4.462` |\n\n---\n\n### Release Notes\n\n<detai",
+    "url": "https://github.com/fritzduchardt/k8s-workstation/pull/94",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k8s-workstation"
+    ]
+  },
+  {
+    "title": "[PR] Split reasoning-heavy JSON calls into a prose pass + a formatting pass",
+    "date": "2026-07-28T16:32:25Z",
+    "summary": "## Summary\n\nFollow-up to #2480, which set `think=False` on every LLM call requiring a JSON response. That was right for extraction/formatting-shaped calls, but it also flattened a handful of calls doing genuine multi-step reasoning (compliance evaluation, critique, strategy design, deep analysis) \u2014 ",
+    "url": "https://github.com/brandonkindred/Khala-Agentic-AI-Teams/pull/2481",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: Khala-Agentic-AI-Teams"
+    ]
+  },
+  {
+    "title": "[PR] Move AI provider keys server-side; support env-configured Google Client ID",
+    "date": "2026-07-28T16:23:57Z",
+    "summary": "## Summary\n\nMakes the Google Client ID and AI provider keys \"stay permanently\" instead of being re-entered per-browser \u2014 but the two need different treatment, because this app is a static Vite SPA on Vercel with no server of its own.\n\n**Google Client ID** \u2014 safe to bake into the build (it's a public",
+    "url": "https://github.com/am225723/compliance/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: compliance"
+    ]
+  },
+  {
+    "title": "[PR] fix(MCP Client Tool): Preserve user `tool` argument in Agent V3",
+    "date": "2026-07-28T16:18:49Z",
+    "summary": "## Summary\r\n\r\nThe MCP Client Tool node silently drops any user argument named `tool` when called through Agent V3. The agent engine uses `tool` as a routing key to figure out which sub-tool to invoke inside a multi-tool MCP node. That's fine until an actual MCP server exposes a parameter called `too",
+    "url": "https://github.com/n8n-io/n8n/pull/35067",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: n8n"
+    ]
+  },
+  {
+    "title": "[PR] fix(explorer): don't let one resource's load error hang the whole Explorer loading screen",
+    "date": "2026-07-28T16:16:43Z",
+    "summary": "# fix(explorer): don't let one resource's load error hang the whole Explorer loading screen\r\n\r\n## The bug\r\n\r\nThe Explorer shell's loading screen blocks on the first resource's `NotifyLoadComplete()`\r\nsignal. `BaseDashboard` called it **after** `await this.loadData()` with no `try/finally`:\r\n\r\n```typ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3336",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Ollama Cloud usage provider",
+    "date": "2026-07-28T16:13:45Z",
+    "summary": "## Summary\r\n\r\nAdds Ollama Cloud as a new rate-limit provider in the status bar, following the same architecture as the existing OpenCode Go provider. Users can paste their `__Secure-session` cookie from ollama.com in Settings \u2192 AI Provider Accounts, then toggle \"Ollama Cloud Usage\" in the status bar",
+    "url": "https://github.com/stablyai/orca/pull/11197",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: orca"
+    ]
+  },
+  {
+    "title": "[PR] feat(conversations): white-label theming tokens + chrome toggles for the conversation list",
+    "date": "2026-07-28T15:58:23Z",
+    "summary": "## Summary\r\n\r\nLets an embedding host restyle and pare down the conversation **list panel** through the component contract instead of `::ng-deep` on internal class names. Nine new design tokens plus four chrome toggles. Additive: with no tokens set and all toggles at their defaults, rendering is unch",
+    "url": "https://github.com/MemberJunction/MJ/pull/3305",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] v3 alpha: add policy-gated execution fabric and local-first AI",
+    "date": "2026-07-28T15:50:20Z",
+    "summary": "## Why\n\nBOFA needs one coherent operating model for local work, SotyHub-hosted workflows, ephemeral OCI/VM workers and AI assistance. This alpha makes authorization, limits and evidence travel with each run without giving an LLM operational authority.\n\nThis is a stacked PR. It targets `codex/v2.9.2-",
+    "url": "https://github.com/descambiado/BOFA/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: BOFA"
+    ]
+  },
+  {
+    "title": "[PR] Claude/improve token counter ngmdw",
+    "date": "2026-07-28T15:34:47Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * More accurate token estimation using real BPE counting and a guarded fallback.\n  * Enhanced image token estimation that uses image dimensions and provider-specific costs.\n\n* ",
+    "url": "https://github.com/darkspadez/plexus/pull/28",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: plexus"
     ]
   }
 ]
