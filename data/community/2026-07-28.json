@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-28T16:21:02Z",
+    "date": "2026-07-28T18:07:48Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] v2 Beta",
-    "date": "2026-07-28T16:32:45Z",
+    "date": "2026-07-28T18:15:14Z",
     "summary": "",
     "url": "https://github.com/mcp-use/mcp-use/pull/1888",
     "source": "github_prs",
@@ -1261,7 +1261,7 @@
   },
   {
     "title": "[PR] fix(status): Review-Findings aus #955 + host.docker.internal f\u00fcr lokales Ollama",
-    "date": "2026-07-28T11:04:11Z",
+    "date": "2026-07-28T17:54:22Z",
     "summary": "Folge-PR zu #955 (bereits gemergt). Arbeitet die vier Bot-Findings ab und behebt zus\u00e4tzlich einen Blocker im Provider-UI, der beim Live-Test auffiel.\n\n## host.docker.internal wurde als lokale Ollama-URL abgelehnt\n\n`ProviderConnectionUpsertRequest` akzeptierte nur `localhost` und Loopback-IPs. Im Con",
     "url": "https://github.com/arn0ld87/agora/pull/956",
     "source": "github_prs",
@@ -1369,7 +1369,7 @@
   },
   {
     "title": "[PR] Add Wazuh AI Assistant plugin",
-    "date": "2026-07-28T13:39:01Z",
+    "date": "2026-07-28T17:25:51Z",
     "summary": "## Description\r\n\r\nAdds the Wazuh AI Assistant plugin for Wazuh 5.0: an AI chat embedded in the dashboard that answers security questions by running read-only queries against the Wazuh Indexer and Server API and returning a short grounded answer together with the result table. It works with OpenAI-co",
     "url": "https://github.com/wazuh/wazuh-dashboard-plugins/pull/8790",
     "source": "github_prs",
@@ -1405,12 +1405,12 @@
   },
   {
     "title": "[PR] Add code_review_verify agent key for lighter verify/synthesis sub-passes",
-    "date": "2026-07-28T16:43:34Z",
-    "summary": "## Summary\n- Add a `code_review_verify` entry to `AGENT_DEFAULT_MODELS` (`backend/agents/llm_service/config.py`), same model family as `code_review` (`deepseek-v4-pro:cloud`)\n- Add a lighter `AGENT_DEFAULT_THINK` pin (`\"low\"`) for `code_review_verify`, one tier below `code_review`'s `\"high\"`, approp",
+    "date": "2026-07-28T18:14:12Z",
+    "summary": "## Summary\n- Add a `code_review_verify` entry to `AGENT_DEFAULT_MODELS` (`backend/agents/llm_service/config.py`), defaulting to `llama3.1` \u2014 this codebase's established lighter/faster model tier (already used for `soc2`/`accessibility_audit`) \u2014 rather than `code_review`'s `deepseek-v4-pro:cloud`. A ",
     "url": "https://github.com/brandonkindred/Khala-Agentic-AI-Teams/pull/3671",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: Khala-Agentic-AI-Teams"
     ]
@@ -1441,7 +1441,7 @@
   },
   {
     "title": "[PR] Split reasoning-heavy JSON calls into a prose pass + a formatting pass",
-    "date": "2026-07-28T16:32:25Z",
+    "date": "2026-07-28T17:41:18Z",
     "summary": "## Summary\n\nFollow-up to #2480, which set `think=False` on every LLM call requiring a JSON response. That was right for extraction/formatting-shaped calls, but it also flattened a handful of calls doing genuine multi-step reasoning (compliance evaluation, critique, strategy design, deep analysis) \u2014 ",
     "url": "https://github.com/brandonkindred/Khala-Agentic-AI-Teams/pull/2481",
     "source": "github_prs",
@@ -1533,6 +1533,174 @@
       "comments: 17",
       "pull request",
       "repo: plexus"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm_openai): make temperature configurable",
+    "date": "2026-07-28T18:16:05Z",
+    "summary": "## Summary\n\n`llm_openai` hardcoded `temperature=0` when constructing `ChatOpenAI` for\nnon-reasoning models, with no way to configure it via the node's config. This\nforced fully deterministic output regardless of use case \u2014 creative writing,\nbrainstorming, or varied-response pipelines had no way to i",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/1709",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] Add interactive LLM cost comparison script (local vs DeepSeek vs Claude)",
+    "date": "2026-07-28T18:13:48Z",
+    "summary": "## Summary\n- Adds `projects/05-llm-cost-comparison`: a stdlib-only Python CLI that estimates the cost of local LLM inference (owned hardware or a rented cloud GPU) and compares it against hosted API pricing (Claude, DeepSeek), driven by interactive question prompts.\n- Best-effort Windows/NVIDIA GPU ",
+    "url": "https://github.com/leonarduk/ai-systems-lab/pull/32",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: ai-systems-lab"
+    ]
+  },
+  {
+    "title": "[PR] resolve the base merge issues ",
+    "date": "2026-07-28T18:09:54Z",
+    "summary": "update the sync issues. ",
+    "url": "https://github.com/ALikesToCode/DeepTutor/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DeepTutor"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency io.quarkiverse.langchain4j:quarkus-langchain4j-openai to v1 (main)",
+    "date": "2026-07-28T18:06:48Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [io.quarkiverse.langchain4j:",
+    "url": "https://github.com/CoffeeSprout/todo-demo-app/pull/42",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: todo-demo-app"
+    ]
+  },
+  {
+    "title": "[PR] Fix workspace-scoped Codex skill discovery",
+    "date": "2026-07-28T18:05:57Z",
+    "summary": "## Summary\n\nFix Codex repo-local skill discovery by resolving skills for the active project or worktree cwd instead of relying on the provider-wide status snapshot.\n\nThe implementation adds a workspace-scoped provider-skills RPC and a shared web/mobile resolution policy so composer suggestions and r",
+    "url": "https://github.com/pingdotgg/t3code/pull/3059",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: t3code"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/linkwarden/linkwarden docker tag to v2.16.0",
+    "date": "2026-07-28T17:57:29Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/linkwarden/linkwarden](https://redirect.github.com/linkwarden/linkwarden) | minor | `v2.7.1` \u2192 `v2.16.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency Dashboard](.",
+    "url": "https://github.com/tiborpilz/NixOS/pull/121",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: NixOS"
+    ]
+  },
+  {
+    "title": "[PR] pos-mcp-server: fix RAG chunking/generation bug, add warranty corpus doc, enrich pricing/tax docs",
+    "date": "2026-07-28T17:51:58Z",
+    "summary": "## Capability & Traceability\n- Capability: N/A (RAG corpus quality follow-up, not a tracked capability)\n- Parent STORY (durion): N/A\n- Child issue: louisburroughs/durion-positivity-backend#1124, louisburroughs/durion-positivity-backend#1125\n- Domain: `domain:mcp`\n\n## Contract References\nN/A \u2014 no con",
+    "url": "https://github.com/louisburroughs/durion-positivity-backend/pull/1155",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: durion-positivity-backend"
+    ]
+  },
+  {
+    "title": "[PR] [feat] plugin: AI summary of search results via local Ollama server",
+    "date": "2026-07-28T17:49:33Z",
+    "summary": "## What this adds\n\nAn optional, **disabled-by-default** plugin that shows an AI-generated summary at the top of the results page, produced by a self-hosted [Ollama](https://ollama.com/) server. Focused on local/private LLMs \u2014 no cloud AI services involved, in keeping with SearXNG's privacy goals.\n\n!",
+    "url": "https://github.com/jasonwitty/searxng/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: searxng"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-07-28T17:35:14Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] snapshot: add Apollo Federation GraphOS skill",
+    "date": "2026-07-28T17:32:35Z",
+    "summary": "Automated PR created by AI agent.\n\n## Changes\n snapshots/20260728T163341Z-b56af76e/MANIFEST.json  |  4625 +++++\n snapshots/20260728T163341Z-b56af76e/RESTORE.md     |    39 +\n .../profiles/default/skills/apple/DESCRIPTION.md   |     3 +\n .../default/skills/apple/apple-notes/SKILL.md      |    90 +\n .",
+    "url": "https://github.com/miqui/hermes-skills-backup/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: hermes-skills-backup"
+    ]
+  },
+  {
+    "title": "[PR] feat(search): make Scoped Search dimensions enforceable \u2014 bounds, escaping, entitlement, explainability",
+    "date": "2026-07-28T17:31:45Z",
+    "summary": "## Summary\r\n\r\n`SearchScope.SearchContextConfig` has always documented `dimensions[]`, `inheritanceMode` and\r\n`strictValidation`. **No runtime code read any of it.** Dimensions arrived as a free-form bag that any\r\ncaller could author \u2014 and on an `AgentInvoked` tool call that caller is the LLM. So a d",
+    "url": "https://github.com/MemberJunction/MJ/pull/3339",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): Eliminate false-negative 500s in workflow builder tools",
+    "date": "2026-07-28T17:24:30Z",
+    "summary": "## Summary\r\n\r\nFixes intermittent false-negative 500 errors returned by the MCP workflow-builder tools `create_workflow_from_code` and `update_workflow`.\r\n\r\n**Root cause:** Post-save side effects (telemetry, credential auto-assign tracking, hook execution) could throw exceptions after the database wr",
+    "url": "https://github.com/n8n-io/n8n/pull/34975",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: n8n"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface_hub to v0.36.2",
+    "date": "2026-07-28T17:11:07Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface_hub](https://re",
+    "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/520",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] docs(examples): governed multimodal medallion (agentic-medallion) + minimal in-browser LoQE",
+    "date": "2026-07-28T17:10:05Z",
+    "summary": "## What\n\nTwo example additions, both showcasing governed data access via Lakekeeper's credential vending.\n\n### New: `examples/agentic-medallion` \u2014 governed multimodal medallion for AI agents\n\nA small lakehouse built from open-access Met Museum images (CC0), driven by three Jupyter notebooks, showing",
+    "url": "https://github.com/lakekeeper/lakekeeper/pull/1916",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lakekeeper"
     ]
   }
 ]
