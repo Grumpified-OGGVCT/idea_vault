@@ -505,19 +505,19 @@
   },
   {
     "title": "[PR] Studio: restore cached models hidden by a dangling HF ref, and stop auto-load downloading after a failed load (#7374)",
-    "date": "2026-07-29T06:32:29Z",
+    "date": "2026-07-29T11:57:07Z",
     "summary": "Fixes #7374.\n\n## What was actually wrong\n\nThe reporter's Gemma-4-26B-A4B GGUF is in the stock Hugging Face cache:\n\n```\n/home/john-doe/.cache/huggingface/hub/models--unsloth--gemma-4-26B-A4B-it-qat-GGUF\n```\n\nThat path has always been scanned, so the earlier theory behind this PR, that the sweep could",
     "url": "https://github.com/unslothai/unsloth/pull/7375",
     "source": "github_prs",
     "highlights": [
-      "comments: 22",
+      "comments: 24",
       "pull request",
       "repo: unsloth"
     ]
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-29T09:12:10Z",
+    "date": "2026-07-29T11:53:13Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -529,12 +529,12 @@
   },
   {
     "title": "[PR] Security hardening: relay auth, input validation, supply-chain scanning",
-    "date": "2026-07-29T09:29:34Z",
+    "date": "2026-07-29T11:45:24Z",
     "summary": "## Summary\n\nThis PR closes a broad set of security, correctness, reliability, CI, and documentation gaps identified during the 2026-07-26 forensic review. The largest implementation change is a hardened blind-relay protocol with proof-of-possession registration, rotating mailbox capabilities, authen",
     "url": "https://github.com/AmirrezaFarnamTaheri/Noteece/pull/131",
     "source": "github_prs",
     "highlights": [
-      "comments: 15",
+      "comments: 17",
       "pull request",
       "repo: Noteece"
     ]
@@ -985,12 +985,12 @@
   },
   {
     "title": "[PR] Improve first-run safety and product quality",
-    "date": "2026-07-29T06:29:45Z",
+    "date": "2026-07-29T11:59:20Z",
     "summary": "## What changed\n\n- Turns setup into a verified three-step Paperless, runtime, and owner flow with safe defaults and non-secret resume.\n- Adds source-backed document views, clearer empty and error states, and fixes manual Paperless metadata loading, Companion hydration, and mobile overflow.\n- Adds an",
     "url": "https://github.com/arturict/tagvico-ai/pull/53",
     "source": "github_prs",
     "highlights": [
-      "comments: 15",
+      "comments: 22",
       "pull request",
       "repo: tagvico-ai"
     ]
@@ -1129,7 +1129,7 @@
   },
   {
     "title": "[PR] feat(auth): unified OpenAI provider with ChatGPT sign-in in Settings and chat",
-    "date": "2026-07-29T09:38:45Z",
+    "date": "2026-07-29T11:56:48Z",
     "summary": "Closes #121\n\nFinishes the ChatGPT login work in the **opencode shape**: instead of a separate \"OpenAI Codex\" provider, OpenAI is **one provider entry with two login methods**, exactly like opencode's connect dialog.\n\n## Settings \u2192 Providers (unified)\n- **OpenAI** row's Connect now opens a **login-me",
     "url": "https://github.com/Theorvane/openvideo/pull/122",
     "source": "github_prs",
@@ -1153,19 +1153,19 @@
   },
   {
     "title": "[PR] UN-2646 [FEAT] OSS half of the VLM image-answer feature (path contract, loader, vision policy, bridge)",
-    "date": "2026-07-29T09:36:13Z",
+    "date": "2026-07-29T11:23:07Z",
     "summary": "## What\n\nThe complete **OSS half of the VLM image-answer feature** (the cloud-only consumer that answers prompts against LLMWhisperer image-output documents by sending the persisted page images to a vision LLM). Four commits, reviewable independently:\n\n1. **Shared page-path contract** \u2014 promotes `bu",
     "url": "https://github.com/Zipstack/unstract/pull/2218",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 4",
       "pull request",
       "repo: unstract"
     ]
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-29T09:27:26Z",
+    "date": "2026-07-29T11:29:59Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/facemendous/kilocode/pull/1",
     "source": "github_prs",
@@ -1177,7 +1177,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-29T09:27:25Z",
+    "date": "2026-07-29T11:30:03Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1189,7 +1189,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-29T09:27:24Z",
+    "date": "2026-07-29T11:30:01Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1201,7 +1201,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-29T09:27:23Z",
+    "date": "2026-07-29T11:29:55Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/gmifsud/kilocode/pull/1",
     "source": "github_prs",
@@ -1213,7 +1213,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-29T09:27:21Z",
+    "date": "2026-07-29T11:29:51Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/LunaticMuch/kilocode/pull/1",
     "source": "github_prs",
@@ -1225,7 +1225,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-29T09:27:21Z",
+    "date": "2026-07-29T11:29:59Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/MAlkabbani/kilocode/pull/1",
     "source": "github_prs",
@@ -1237,7 +1237,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-29T09:27:17Z",
+    "date": "2026-07-29T11:29:48Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
     "source": "github_prs",
@@ -1249,7 +1249,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-29T09:27:11Z",
+    "date": "2026-07-29T11:29:45Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/softctwo/ResoftCode/pull/2",
     "source": "github_prs",
@@ -1261,7 +1261,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-29T09:29:33Z",
+    "date": "2026-07-29T11:31:15Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/jeevesh415/kilocode/pull/1",
     "source": "github_prs",
@@ -1273,7 +1273,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-29T09:26:49Z",
+    "date": "2026-07-29T11:29:27Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1285,7 +1285,7 @@
   },
   {
     "title": "[PR] feat(integrations): add the local Open Design Cloud flow for Codex",
-    "date": "2026-07-29T09:21:59Z",
+    "date": "2026-07-29T11:42:52Z",
     "summary": "Fixes #6054\n\n## Why\n\n**Use case:** Product wants Codex Desktop and Codex CLI users to install Open\nDesign support, confirm a brief, and generate a real Open Design artifact using\nCloud/Vela, Local Codex, or Local BYOK.\n\n**Pain:** Open Design already has the product runtime, local MCP, projects,\nruns",
     "url": "https://github.com/nexu-io/open-design/pull/6055",
     "source": "github_prs",
@@ -1305,6 +1305,42 @@
       "comments: 0",
       "pull request",
       "repo: lora-dataset-studio"
+    ]
+  },
+  {
+    "title": "[PR] fix(inference): error on a misconfigured vision model instead of substituting (#5146 P1, P6)",
+    "date": "2026-07-29T12:03:22Z",
+    "summary": "Follow-up to #5253 / #5254, from the Ollama end-to-end test pass on #5146 Part 1.\n\n**Fixed here:** P1 (vision misconfiguration) and P6 (non-base64 image references), plus the P5 doc correction.\n**Already fixed on main:** P2 \u2014 see below, no change needed.\n**Deliberately not changed:** P4 \u2014 a product ",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/5262",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update helm release ollama to v1.70.0",
+    "date": "2026-07-29T12:02:59Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ollama](https://ollama.ai/) ([source](https://redirect.github.com/otwld/ollama-helm)) | minor | `1.25.0` \u2192 `1.70.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the warning logs for more",
+    "url": "https://github.com/seungbemi/gitops/pull/479",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: gitops"
+    ]
+  },
+  {
+    "title": "[PR] feat(settings): add Atlas Cloud provider preset",
+    "date": "2026-07-29T11:51:04Z",
+    "summary": "## Summary\n\n- add an Atlas Cloud preset for the existing OpenAI-compatible Settings API and runtime\n- configure default, Smart, NER, and Wonderwall text slots with Atlas Cloud models and endpoint\n- expose provider-neutral API-key metadata to the Settings UI and prevent stale custom form values from ",
+    "url": "https://github.com/MiroShark/MiroShark/pull/259",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MiroShark"
     ]
   }
 ]
