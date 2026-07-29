@@ -2266,6 +2266,27 @@
     "research_score": 0.57
   },
   {
+    "arxiv_id": "2607.26038v1",
+    "title": "Collaborative System Failure Prognostics via Federated Longitudinal-Survival Modeling",
+    "summary": "Time-to-event modeling provides a systematic framework for estimating time-dependent failure risk, reliability, and remaining useful life (RUL) from longitudinal condition monitoring data. However, applying these models to distributed prognostics remains challenging because sensor trajectories and failure-time records are often stored across organizations or operational sites and cannot be centrally pooled due to privacy or proprietary constraints. Moreover, the classical Cox proportional hazards model relies on a nonseparable partial likelihood involving global risk sets, making direct optimization difficult under standard federated learning protocols. This paper presents a federated longitudinal-survival modeling framework for collaborative system failure prognostics. The proposed framework combines longitudinal sensor representation learning with a client-separable discrete-time hazard objective, enabling multiple clients to collaboratively train a prognostic model without sharing raw sensor measurements or individual failure records. Time-dependent representations extracted from multivariate sensor histories are used to estimate interval-specific failure hazards, reliability curves, and system RUL. Experiments on the four C-MAPSS turbofan engine degradation subsets under simulated decentralized settings demonstrate that the proposed framework consistently improves prognostic performance over isolated local training while maintaining performance comparable to centralized training across heterogeneous operating conditions and failure modes. These results demonstrate the potential of federated longitudinal-survival modeling for collaborative, data-aware condition monitoring and system failure prognostics.",
+    "authors": [
+      "Fan Yang",
+      "Madelyn Weller",
+      "Dimuthu Fernando",
+      "Hila Livneh",
+      "Yuxin Wen"
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-07-28",
+    "url": "https://arxiv.org/abs/2607.26038v1",
+    "pdf_url": "https://arxiv.org/pdf/2607.26038v1.pdf",
+    "date": "2026-07-29",
+    "source": "arxiv",
+    "research_score": 0.57
+  },
+  {
     "arxiv_id": "2607.26037v1",
     "title": "Wonder: Video World Model Done Better",
     "summary": "We present Wonder, a general-purpose video world model for real-time, camera-controllable world exploration. Given an image or a conditional video, Wonder constructs a playable world where users can navigate interactively by moving the camera, discovering unseen regions, and revisiting previously observed areas in real time and over a long-term horizon. Achieving this capability requires a system-level co-design of control method, memory mechanism, and training strategy. We introduce a novel camera conditioning with a dense coordinate field whose renderings provide spatially aligned motion and orientation cues, allowing the model to interpret camera motion directly as visual evidence. To support fast and precise memory retrieval over a growing generation context, we propose an efficient sparse attention-based memory mechanism, enabling the model to selectively attend to a small set of relevant context tokens at inference time, regardless of actual context length. We further develop several techniques to rectify the self-forcing-style distillation pipeline, improving the student model's ability to respect control signals, as well as maintaining diverse generation modes and long-term memory from the teacher. Together, these components enable Wonder to synthesize diverse, minute-scale videos at 16 FPS while preserving coherent geometry, appearance, and dynamics across long rollouts. Beyond image-to-video generation, Wonder naturally supports video-conditioned generation, allowing existing dynamic scenes to be re-shot in real time.",
@@ -3096,25 +3117,6 @@
     "published": "2026-07-28",
     "url": "https://arxiv.org/abs/2607.25390v1",
     "pdf_url": "https://arxiv.org/pdf/2607.25390v1.pdf",
-    "date": "2026-07-29",
-    "source": "arxiv",
-    "research_score": 0.55
-  },
-  {
-    "arxiv_id": "2607.25377v1",
-    "title": "Gaussian Volumetric Representation for Efficient Shear-Warp Visualization",
-    "summary": "Medical image visualization requires volumetric rendering algorithms that preserve anatomical fidelity while maintaining high rendering speeds. To address the high computational cost of large volumetric datasets, we propose a Gaussian-based volumetric representation for efficient visualization of dense medical volumes without compromising structural and radiometric details. We optimize the proposed representation using Monte Carlo volumetric estimation, which enables training on a highly sparse subset of voxels while maintaining consistency with the dense volumetric objective. In addition, we introduce a curriculum learning strategy that progressively incorporates structured slice-based sampling during training. Sparse voxel samples provide an early global coverage of the volume, while slice samples capture spatially correlated regions that aid geometric structure and texture continuity. This combination enables the Gaussian representation to learn anatomical details of various structures and corresponding textures from sparse supervision while significantly reducing the computational cost associated with dense voxel processing. The learned representation supports slice-based rendering methods such as shear-warp volume rendering, enabling efficient visualization of multimodal medical datasets including MRI and Cryosection volumes while preserving anatomical structures. Using sparse supervision, our method achieves up to 43.86 FPS rendering with a compression ratio of 11.31:1.",
-    "authors": [
-      "Mayuri Mathur",
-      "Ojaswa Sharma"
-    ],
-    "categories": [
-      "cs.CV",
-      "cs.GR"
-    ],
-    "published": "2026-07-28",
-    "url": "https://arxiv.org/abs/2607.25377v1",
-    "pdf_url": "https://arxiv.org/pdf/2607.25377v1.pdf",
     "date": "2026-07-29",
     "source": "arxiv",
     "research_score": 0.55
