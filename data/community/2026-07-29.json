@@ -145,12 +145,12 @@
   },
   {
     "title": "Lora Deployments do not adhere to ComfyUI extra_model_paths.yml",
-    "date": "2026-07-28T22:51:52Z",
+    "date": "2026-07-29T06:30:10Z",
     "summary": "### What happened?\n\n1. Have ComfyUI configured locally with a LoRA folder configured in extra_model_paths.yml\n2. Open a Dataset and either a) Click the LoRA folder button, or b) Deploy a LoRA.\n3. You will find the LoRA folder / deployed LoRA within the default ComfyUI directory, not the folder confi",
     "url": "https://github.com/perfectgf/lora-dataset-studio/issues/25",
     "source": "github_issues",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "state: open",
       "repo: lora-dataset-studio"
     ]
@@ -181,7 +181,7 @@
   },
   {
     "title": "Want to suggest a wake word? Leave your thoughts here. (AIS-1441)",
-    "date": "2026-07-28T18:40:36Z",
+    "date": "2026-07-29T05:12:07Z",
     "summary": "Hi all,\n\nWe're excited to offer the community more free and high-quality wake word models. Everyone has their own unique wake word preferences. Now, we're ready to regularly release some of the most popular wake words. Please let us know the wake words you want! \n\n**Already supported languages: Chin",
     "url": "https://github.com/espressif/esp-sr/issues/88",
     "source": "github_issues",
@@ -505,7 +505,7 @@
   },
   {
     "title": "[PR] Studio: restore cached models hidden by a dangling HF ref, and stop auto-load downloading after a failed load (#7374)",
-    "date": "2026-07-29T03:16:15Z",
+    "date": "2026-07-29T06:32:29Z",
     "summary": "Fixes #7374.\n\n## What was actually wrong\n\nThe reporter's Gemma-4-26B-A4B GGUF is in the stock Hugging Face cache:\n\n```\n/home/john-doe/.cache/huggingface/hub/models--unsloth--gemma-4-26B-A4B-it-qat-GGUF\n```\n\nThat path has always been scanned, so the earlier theory behind this PR, that the sweep could",
     "url": "https://github.com/unslothai/unsloth/pull/7375",
     "source": "github_prs",
@@ -517,7 +517,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-29T02:36:21Z",
+    "date": "2026-07-29T06:09:52Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] Split reasoning-heavy JSON calls into a prose pass + a formatting pass",
-    "date": "2026-07-28T23:27:07Z",
+    "date": "2026-07-29T04:48:09Z",
     "summary": "## Summary\n\nFollow-up to #2480, which set `think=False` on every LLM call requiring a JSON response. That was right for extraction/formatting-shaped calls, but it also flattened a handful of calls doing genuine multi-step reasoning (compliance evaluation, critique, strategy design, deep analysis) \u2014 ",
     "url": "https://github.com/brandonkindred/Khala-Agentic-AI-Teams/pull/2481",
     "source": "github_prs",
@@ -625,12 +625,12 @@
   },
   {
     "title": "[PR] chore(deps): update github/gh-aw action to v0.83.4",
-    "date": "2026-07-29T02:36:18Z",
+    "date": "2026-07-29T04:49:00Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [github/gh-aw](https://redirect.github.com/github/gh-aw) | action | minor | `v0.67.1` \u2192 `v0.83.4` |\n\n---\n\n### Release Notes\n\n<detai",
     "url": "https://github.com/MH0386/MH0386.github.io/pull/369",
     "source": "github_prs",
     "highlights": [
-      "comments: 27",
+      "comments: 28",
       "pull request",
       "repo: MH0386.github.io"
     ]
@@ -685,7 +685,7 @@
   },
   {
     "title": "[PR] Fix workspace-scoped Codex skill discovery",
-    "date": "2026-07-28T22:08:42Z",
+    "date": "2026-07-29T05:24:20Z",
     "summary": "## Summary\n\nFix Codex repo-local skill discovery by resolving skills for the active project or worktree cwd instead of relying on the provider-wide status snapshot.\n\nThe implementation adds a workspace-scoped provider-skills RPC and a shared web/mobile resolution policy so composer suggestions and r",
     "url": "https://github.com/pingdotgg/t3code/pull/3059",
     "source": "github_prs",
@@ -745,12 +745,12 @@
   },
   {
     "title": "[PR] Pull",
-    "date": "2026-07-29T03:29:43Z",
+    "date": "2026-07-29T06:29:21Z",
     "summary": "Yez\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added Campaign Concept Studio with brief intake, a pinned concept/copy board, artwork prompt reuse, and a mock/demo mode.\n  * Expanded Jackie\u2019s PC desktop with Global Term",
     "url": "https://github.com/93jessycollin93-del/PC/pull/24",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 8",
       "pull request",
       "repo: PC"
     ]
@@ -945,6 +945,174 @@
       "comments: 1",
       "pull request",
       "repo: developers-nightmare"
+    ]
+  },
+  {
+    "title": "[PR] Add workflow improvements and test infrastructure",
+    "date": "2026-07-29T06:33:23Z",
+    "summary": "## Summary\n\nThis PR adds workflow improvements and test infrastructure for the document-mcp project:\n\n### Changes Made\n\n1. **New Frontend CI Workflow** (`.github/workflows/frontend.yml`)\n   - TypeScript type checking using `tsc --noEmit`\n   - Build verification for the React frontend\n   - Runs on pu",
+    "url": "https://github.com/ashcoft/document-mcp/pull/135",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: document-mcp"
+    ]
+  },
+  {
+    "title": "[PR] fix(openai-shim): stop tool-result filler stall on local OpenAI backends",
+    "date": "2026-07-29T06:31:20Z",
+    "summary": "## Summary\n\n- Gate the synthetic `[Tool results received]` assistant boundary so it is no longer inserted on every `tool` \u2192 `user` conversion. Local OpenAI-compatible hosts (loopback, RFC1918, CGNAT, Docker internal, reserved TLDs) and Ollama never get it; Mistral cloud / `CLAUDE_CODE_USE_MISTRAL` /",
+    "url": "https://github.com/Gitlawb/openclaude/pull/2062",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] ci: add CodeBoarding architecture reviews",
+    "date": "2026-07-29T06:30:20Z",
+    "summary": "## Summary\n\n- add a CodeBoarding PR review workflow that posts architecture diffs when a pull request becomes reviewable\n- support trusted on-demand refreshes through `/codeboarding` comments\n- add a separate main-branch sync workflow that maintains the versioned `.codeboarding/` baseline\n- use the ",
+    "url": "https://github.com/getlarge/themoltnet/pull/1736",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: themoltnet"
+    ]
+  },
+  {
+    "title": "[PR] Improve first-run safety and product quality",
+    "date": "2026-07-29T06:29:45Z",
+    "summary": "## What changed\n\n- Turns setup into a verified three-step Paperless, runtime, and owner flow with safe defaults and non-secret resume.\n- Adds source-backed document views, clearer empty and error states, and fixes manual Paperless metadata loading, Companion hydration, and mobile overflow.\n- Adds an",
+    "url": "https://github.com/arturict/tagvico-ai/pull/53",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: tagvico-ai"
+    ]
+  },
+  {
+    "title": "[PR] Draft: Gemini 3 Flash Preview F01 migration and Legora workbench UI",
+    "date": "2026-07-29T06:32:33Z",
+    "summary": "## Goal\n\nMigrate F01 from the superseded Qwen broad-extraction path to a backend-only Gemini Cloud Assisted architecture pinned to `gemini-3-flash-preview`, while preserving local parsing, evidence binding, final verification, review persistence, Office.js safety, and the five-screen Legora-style wo",
+    "url": "https://github.com/dc20758/Lendo_Lei/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 328",
+      "pull request",
+      "repo: Lendo_Lei"
+    ]
+  },
+  {
+    "title": "[PR] docs(en): refresh manual and provider guides",
+    "date": "2026-07-29T06:28:38Z",
+    "summary": "## Summary\n\n- publish a complete English configuration manual with separate chat, speech, transcription, and artistry provider guides\n- align provider fields, UI labels, model-selection steps, onboarding, web search, and desktop flows with the current AIRI 0.11.3 source\n- move English service guides",
+    "url": "https://github.com/moeru-ai/airi/pull/2153",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: airi"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-07-29T06:07:44Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] feat(cli): add --yolo alias for --dangerously-skip-permissions",
+    "date": "2026-07-29T06:07:05Z",
+    "summary": "<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added `--yolo` as an alias for `--dangerously-skip-permissions` across CLI help/usage, skills, SSH (`claude ssh`), direct connect (`open` / `claude connect`), and the permissio",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1939",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: openclaude"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update amruthpillai/reactive-resume docker tag to v5",
+    "date": "2026-07-29T06:05:53Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.5.6` \u2192 `v5.2.4` |\n\n---\n\n### Release Not",
+    "url": "https://github.com/DrPulse/Boilerplates/pull/1496",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Boilerplates"
+    ]
+  },
+  {
+    "title": "[PR] Add make targets for local development setup and documentation",
+    "date": "2026-07-29T06:01:31Z",
+    "summary": "* Add  DEVELOPMENT.md guide covering the complete local development\r\nworkflow including LocalStack setup, CRD installation, controller\r\nconfiguration, and e2e testing with required environment variables\r\n\r\n* Introduce make targets (local-dev-setup, local-dev-cleanup) with\r\ncorresponding shell script",
+    "url": "https://github.com/redhat-data-and-ai/unstructured-data-controller/pull/137",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: unstructured-data-controller"
+    ]
+  },
+  {
+    "title": "[PR] docs(examples): governed multimodal medallion (agentic-medallion) + minimal in-browser LoQE",
+    "date": "2026-07-29T05:47:35Z",
+    "summary": "## What\n\nTwo example additions, both showcasing governed data access via Lakekeeper's credential vending.\n\n### New: `examples/agentic-medallion` \u2014 governed multimodal medallion for AI agents\n\nA small lakehouse built from open-access Met Museum images (CC0), driven by three Jupyter notebooks, showing",
+    "url": "https://github.com/lakekeeper/lakekeeper/pull/1916",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: lakekeeper"
+    ]
+  },
+  {
+    "title": "[PR] feat!: release Cortex v2 as an independent memory platform",
+    "date": "2026-07-29T05:22:30Z",
+    "summary": "## Governance And Linked Issues\n\nPR #47 is the repository-owner-approved delivery tracker for Cortex v2. It expands the original baseline and coverage work into the independent-platform release and MUST NOT be merged until the v2 acceptance gates are complete or an explicit owner-approved exception ",
+    "url": "https://github.com/lleontor705/cortex/pull/47",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: cortex"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency takt to v0.54.1",
+    "date": "2026-07-29T04:57:36Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [takt](https://redirect.github.com/nrslib/takt) | [`0.48.0` \u2192 `0.54.1`](https://renovatebot.com/dif",
+    "url": "https://github.com/j5ik2o/takt-sdd/pull/112",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: takt-sdd"
+    ]
+  },
+  {
+    "title": "[PR] chore(wren-ai-service): bump the all group in /wren-ai-service with 45 updates",
+    "date": "2026-07-29T04:47:18Z",
+    "summary": "Bumps the all group in /wren-ai-service with 45 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [fastapi](https://github.com/fastapi/fastapi) | `0.121.1` | `0.140.13` |\n| [uvicorn](https://github.com/Kludex/uvicorn) | `0.29.0` | `0.51.0` |\n| [haystack-ai](https://github.com/deepset-ai/haysta",
+    "url": "https://github.com/kindra130801/wrenaixdataf-formulator/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: wrenaixdataf-formulator"
     ]
   }
 ]
