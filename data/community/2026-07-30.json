@@ -517,7 +517,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-30T07:36:00Z",
+    "date": "2026-07-30T17:28:45Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1057,7 +1057,7 @@
   },
   {
     "title": "[PR] fix(hermes): detect the renamed gateway entrypoint in status",
-    "date": "2026-07-30T07:05:56Z",
+    "date": "2026-07-30T17:00:45Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n`hermes status` reported the Gateway Service as stopped while the foreground gateway was\nrunning and serving. NemoClaw's wrapper rename puts `hermes.real` on every managed gateway\ncommand line, and Hermes only accepts `hermes`/`hermes.exe` as an entry t",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/7885",
     "source": "github_prs",
@@ -1165,12 +1165,12 @@
   },
   {
     "title": "[PR] Studio: restore cached models hidden by a dangling HF ref, and stop auto-load downloading after a failed load (#7374)",
-    "date": "2026-07-30T14:53:56Z",
+    "date": "2026-07-30T17:13:28Z",
     "summary": "Fixes #7374.\n\n## What was actually wrong\n\nThe reporter's Gemma-4-26B-A4B GGUF is in the stock Hugging Face cache:\n\n```\n/home/john-doe/.cache/huggingface/hub/models--unsloth--gemma-4-26B-A4B-it-qat-GGUF\n```\n\nThat path has always been scanned, so the earlier theory behind this PR, that the sweep could",
     "url": "https://github.com/unslothai/unsloth/pull/7375",
     "source": "github_prs",
     "highlights": [
-      "comments: 40",
+      "comments: 48",
       "pull request",
       "repo: unsloth"
     ]
@@ -1189,7 +1189,7 @@
   },
   {
     "title": "[PR] feat(config): support declarative env/file defaults in configuration properties",
-    "date": "2026-07-30T12:28:53Z",
+    "date": "2026-07-30T16:53:57Z",
     "summary": "## Summary\r\n\r\nCloses #2507\r\n\r\nIntroduces a declarative mechanism for extensions to resolve configuration defaults from environment variables and file paths at registration time, without requiring new extension API surface.\r\n\r\n- **`ConfigurationRegistry`**: Added `resolveEnvDefault`, `parseDefaultEnt",
     "url": "https://github.com/openkaiden/kaiden/pull/2627",
     "source": "github_prs",
@@ -1213,7 +1213,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-30T14:43:26Z",
+    "date": "2026-07-30T16:52:26Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1225,7 +1225,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-30T14:43:27Z",
+    "date": "2026-07-30T16:52:24Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/facemendous/kilocode/pull/1",
     "source": "github_prs",
@@ -1237,7 +1237,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-30T14:43:21Z",
+    "date": "2026-07-30T16:52:19Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/gmifsud/kilocode/pull/1",
     "source": "github_prs",
@@ -1249,7 +1249,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-30T14:43:22Z",
+    "date": "2026-07-30T16:52:20Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/MAlkabbani/kilocode/pull/1",
     "source": "github_prs",
@@ -1261,7 +1261,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-30T14:43:26Z",
+    "date": "2026-07-30T16:52:28Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1273,7 +1273,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-30T14:43:23Z",
+    "date": "2026-07-30T16:52:20Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/LunaticMuch/kilocode/pull/1",
     "source": "github_prs",
@@ -1285,7 +1285,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-30T14:43:16Z",
+    "date": "2026-07-30T16:52:20Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
     "source": "github_prs",
@@ -1297,7 +1297,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-30T14:43:11Z",
+    "date": "2026-07-30T16:52:11Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/softctwo/ResoftCode/pull/2",
     "source": "github_prs",
@@ -1309,7 +1309,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-30T14:45:02Z",
+    "date": "2026-07-30T16:53:13Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/jeevesh415/kilocode/pull/1",
     "source": "github_prs",
@@ -1321,7 +1321,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-07-30T14:42:49Z",
+    "date": "2026-07-30T16:51:51Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1345,7 +1345,7 @@
   },
   {
     "title": "[PR] LLM",
-    "date": "2026-07-30T15:03:41Z",
+    "date": "2026-07-30T17:17:05Z",
     "summary": "Yes, this one is a bit more complex... :-(   \r\n\r\nActivate in compose.yaml environment variables: \r\nLLM_ENABLED: true\r\n\r\nAdmin Settings for global settings:\r\n<img width=\"310\" height=\"239\" alt=\"Screenshot_2026-04-04_03-07-17\" src=\"https://github.com/user-attachments/assets/16ffcfbd-93d0-4b66-bac4-6f66",
     "url": "https://github.com/yu-i-i/overleaf-cep/pull/171",
     "source": "github_prs",
@@ -1389,6 +1389,66 @@
       "comments: 0",
       "pull request",
       "repo: Cascade-AI"
+    ]
+  },
+  {
+    "title": "[PR] fix: separate Closed AI runtime truth and restore usable local execution",
+    "date": "2026-07-30T17:35:30Z",
+    "summary": "## Summary\n\n- separates release, cloud-AI, persistence, and Closed-AI health surfaces so a reachable API is no longer reported as a usable private model\n- adds a single Closed AI runtime coordinator and one discovery/execution router for Browser AI, Local Ollama, and Private Hub\n- restores origin-bo",
+    "url": "https://github.com/bobobo-org/novel/pull/23",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: novel"
+    ]
+  },
+  {
+    "title": "[PR] feat(review): refactor multi-lens review into bounded topic graph",
+    "date": "2026-07-30T17:19:27Z",
+    "summary": "## Summary\n\n- replace the shared whole-diff specialist input with a versioned review manifest, immutable per-file artifacts, LLM-planned semantic topics, bounded topic artifacts, topic reducers, and global synthesis\n- add trusted ingestion limits, repository-agnostic classification, generated-output",
+    "url": "https://github.com/getlarge/themoltnet/pull/1777",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: themoltnet"
+    ]
+  },
+  {
+    "title": "[PR] Knowledge table optimization",
+    "date": "2026-07-30T17:14:03Z",
+    "summary": "**Frontend**\r\n_page.tsx_: \r\n- added currentPage / currentPageSize React States (as opposed to hardcoded values limiting to 100 files)\r\n- sortBy / sortOrder state fed to the server with an onSortChanged handler that reads AG Grid column state, maps it to backend field names, resets to page 1, and cle",
+    "url": "https://github.com/langflow-ai/openrag/pull/2165",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openrag"
+    ]
+  },
+  {
+    "title": "[PR] v2 Beta",
+    "date": "2026-07-30T17:13:53Z",
+    "summary": "",
+    "url": "https://github.com/mcp-use/mcp-use/pull/1888",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: mcp-use"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency browser-use to v0.1.45 [SECURITY]",
+    "date": "2026-07-30T17:02:30Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [browser-use](https://redire",
+    "url": "https://github.com/AReid987/stellarAgent/pull/168",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: stellarAgent"
     ]
   }
 ]
