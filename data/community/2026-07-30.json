@@ -193,7 +193,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-07-30T09:03:34Z",
+    "date": "2026-07-30T22:50:24Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -517,7 +517,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-30T20:48:50Z",
+    "date": "2026-07-30T22:48:34Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1129,8 +1129,8 @@
   },
   {
     "title": "[PR] feat(cli): add --yolo alias for --dangerously-skip-permissions",
-    "date": "2026-07-30T21:13:08Z",
-    "summary": "<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added `--yolo` as an alias for `--dangerously-skip-permissions`, with consistent behavior across skills and remote (SSH/direct-connect) flows.\n  * MiniMax-M2.7 is now explicitl",
+    "date": "2026-07-30T22:11:43Z",
+    "summary": "<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added `--yolo` as an alias for `--dangerously-skip-permissions`, supported across skills, direct-connect, and SSH flows.\n  * MiniMax-M2.7 is now explicitly text-only (vision di",
     "url": "https://github.com/Gitlawb/openclaude/pull/1939",
     "source": "github_prs",
     "highlights": [
@@ -1165,12 +1165,12 @@
   },
   {
     "title": "[PR] Studio: restore cached models hidden by a dangling HF ref, and stop auto-load downloading after a failed load (#7374)",
-    "date": "2026-07-30T21:11:12Z",
+    "date": "2026-07-30T23:04:33Z",
     "summary": "Fixes #7374.\n\n## What was actually wrong\n\nThe reporter's Gemma-4-26B-A4B GGUF is in the stock Hugging Face cache:\n\n```\n/home/john-doe/.cache/huggingface/hub/models--unsloth--gemma-4-26B-A4B-it-qat-GGUF\n```\n\nThat path has always been scanned, so the earlier theory behind this PR, that the sweep could",
     "url": "https://github.com/unslothai/unsloth/pull/7375",
     "source": "github_prs",
     "highlights": [
-      "comments: 55",
+      "comments: 58",
       "pull request",
       "repo: unsloth"
     ]
@@ -1501,12 +1501,12 @@
   },
   {
     "title": "[PR] fix(media): allow private openai compatible audio transcription endpoints",
-    "date": "2026-07-30T21:08:22Z",
+    "date": "2026-07-30T21:58:48Z",
     "summary": "## Summary\r\n\r\n- Problem: Audio media-understanding transcription could target self-hosted OpenAI-compatible endpoints, but audio config did not expose the private-network request opt-in used by guarded provider HTTP.\r\n- Why it matters: Trusted local, RFC1918, or tailnet Whisper-style endpoints need ",
     "url": "https://github.com/openclaw/openclaw/pull/73817",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 5",
       "pull request",
       "repo: openclaw"
     ]
@@ -1545,6 +1545,90 @@
       "comments: 29",
       "pull request",
       "repo: MH0386.github.io"
+    ]
+  },
+  {
+    "title": "Auto Get / Update Model library",
+    "date": "2026-07-30T21:54:40Z",
+    "summary": "Thanks for the project, it's great!\n\nAs I've seen mentioned in other GitHub issues, a multi-user system could be a valuable addition.\n\nI also think a feature to automatically retrieve the list of available models from configured providers would be useful. For example, Ollama now provides Minimax M3,",
+    "url": "https://github.com/tashfeenahmed/freellmapi/issues/292",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 8",
+      "state: open",
+      "repo: freellmapi"
+    ]
+  },
+  {
+    "title": "[PR] feat: notify for front-door alerts",
+    "date": "2026-07-30T23:11:10Z",
+    "summary": "\n\n---\n\n\n\n- 2deac689 | feat: notify for front-door alerts\n- 7381c009 | feat: unify notification for multiple cameras\n- d021779b | feat: reduce Frigate notification noise\n- 0d91c2ea | feat(notification): enhance image handling for persistent notifications\n- d4faa00b | feat(notification): support Friga",
+    "url": "https://github.com/worgarside/home-assistant/pull/2764",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: home-assistant"
+    ]
+  },
+  {
+    "title": "[PR] feat(deploy): add K8s autoscaling and NGINX load balancing for NemoClaw",
+    "date": "2026-07-30T22:48:29Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\r\n## Summary\r\nAdds a Helm chart (`deploy/helm/gpu_autoscaling_k8s`) that autoscales NemoClaw on Kubernetes using a GPU-utilization-based HPA, with NGINX ingress as load balancer in front of the agent pods. Includes install/test/reset scripts and a Grafana workflow ",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/7459",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] refactor(platform): decouple PrismPipe, repurpose for the Cyrex AGI plane",
+    "date": "2026-07-30T22:21:26Z",
+    "summary": "## Summary\n\nDecouples PrismPipe from the platform critical path and repurposes it as the execution engine\nfor the Cyrex AGI plane. Full rationale and phasing: `docs/PRISMPIPE_REPURPOSING_PLAN.md`.\n\n## Why\n\nPrismPipe was wired in as a session/auth accelerator. Measured on the live dev stack, with\ncom",
+    "url": "https://github.com/Team-Deepiri/deepiri-platform/pull/293",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 28",
+      "pull request",
+      "repo: deepiri-platform"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add GitHub Copilot provider",
+    "date": "2026-07-30T22:13:20Z",
+    "summary": "## Description\n\nAdds GitHub Copilot as a first-class LLM provider in Bifrost. The Copilot provider uses a two-layer OAuth flow: a device-code grant to obtain a GitHub OAuth token, which is then exchanged for a short-lived Copilot API token with automatic refresh.\n\nSupports Chat Completions and the R",
+    "url": "https://github.com/maximhq/bifrost/pull/2054",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 16",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] feat(skills): progressive discovery from centralized skills catalog",
+    "date": "2026-07-30T22:09:34Z",
+    "summary": "Resolves #972\n\n## Summary\n\nAdds progressive skill discovery from the centralized skills catalog (`inference-gateway/skills`). When `agent.skills.discovery.enabled` is true, the agent can discover and fetch skills at runtime from the registry when no local skill of that name exists. Local skills alwa",
+    "url": "https://github.com/inference-gateway/cli/pull/973",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: cli"
+    ]
+  },
+  {
+    "title": "[PR] Bump the pip group across 1 directory with 7 updates",
+    "date": "2026-07-30T21:15:10Z",
+    "summary": "Updates the requirements on [any-llm-sdk](https://github.com/mozilla-ai/any-llm), [boto3](https://github.com/boto/boto3), [botocore](https://github.com/boto/botocore), [certifi](https://github.com/certifi/python-certifi), [posthog](https://github.com/posthog/posthog-python), [sentry-sdk](https://git",
+    "url": "https://github.com/openstax/openstax-cms/pull/1762",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openstax-cms"
     ]
   }
 ]
