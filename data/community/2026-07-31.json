@@ -145,7 +145,7 @@
   },
   {
     "title": "\u7533\u8bf7\u52a0\u5165\u8bf7\u5728\u8fd9\u91cc\u8bc4\u8bba \uff08\u4e5f\u53ef\u4ee5\u76f4\u63a5\u53d1 Pull Request\uff09",
-    "date": "2026-07-31T00:53:19Z",
+    "date": "2026-07-31T07:16:29Z",
     "summary": "### \u5165\u9009\u6807\u51c6\r\n* \u7f51\u7ad9 / App\r\n* \u5982\u679c\u662f Github \u5e93\uff0c README \u6216\u9876\u90e8\u63cf\u8ff0\u91cc\uff0c\u8981\u9644\u4e0a\u7f51\u7ad9\u6216 App Store \u5730\u5740\uff0c\u4e0d\u80fd\u662f\u7eaf\u7cb9\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u5982\u679c\u5305\u542b\u4e86\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u90a3\u5c31\u592a\u591a\u4e86\u3002\u6240\u4ee5\u53ea\u5141\u8bb8\u9488\u5bf9\u666e\u901a\u7528\u6237\u7684\u7f51\u7ad9/App \u5217\u5728\u8868\u91cc\r\n\r\n### \u4e0d\u6536\u5f55\u7684\u4e1c\u897f\r\n* \u5f00\u53d1\u8005\u5de5\u5177\uff08Github \u672c\u8d28\u4e0a\u5c31\u662f\u4e2a\u5f00\u53d1\u8005\u5de5\u5177\u5927\u96c6\u5408\uff0c\u6536\u5f55\u5f00\u53d1\u8005\u5de5\u5177\u8fd9\u4e2a\u8868\u4f1a\u7206\u70b8\u7684\uff09\r\n* \u793e\u533a\u7c7b\u7f51\u7ad9\uff08v2ex\uff0cruby-china\uff0c\u5404\u79cd php \u793e\u533a\uff0c\u592a\u591a\u592a\u591a\u592a\u591a\u4e86\u3002\u6ca1\u6cd5\u6536\u3002\u5e0c\u671b\u7406\u89e3\uff09\r\n\r\n### \u6d41\u7a0b\r\n\u770b\u4e86\u8bc4\u8bba\u540e\u4f1a\u505a\u51b3\u5b9a\uff0c\r\n\u5982\u679c\u5165\u4e86\uff0c\u4f1a\u52a0\u8fdb\u53bb\u3002\r\n\u5982\u679c\u6ca1\u5165\uff0c\u4f1a\u544a\u77e5\u4f60\u7406\u7531\uff08\u5e0c\u671b\u4f60\u4e0d\u8981\u4ecb\u610f :",
     "url": "https://github.com/1c7/chinese-independent-developer/issues/160",
     "source": "github_issues",
@@ -505,12 +505,12 @@
   },
   {
     "title": "[PR] Studio: restore cached models hidden by a dangling HF ref, and stop auto-load downloading after a failed load (#7374)",
-    "date": "2026-07-31T06:42:04Z",
+    "date": "2026-07-31T09:48:03Z",
     "summary": "Fixes #7374.\n\n## What was actually wrong\n\nThe reporter's Gemma-4-26B-A4B GGUF is in the stock Hugging Face cache:\n\n```\n/home/john-doe/.cache/huggingface/hub/models--unsloth--gemma-4-26B-A4B-it-qat-GGUF\n```\n\nThat path has always been scanned, so the earlier theory behind this PR, that the sweep could",
     "url": "https://github.com/unslothai/unsloth/pull/7375",
     "source": "github_prs",
     "highlights": [
-      "comments: 72",
+      "comments: 78",
       "pull request",
       "repo: unsloth"
     ]
@@ -553,12 +553,12 @@
   },
   {
     "title": "[PR] Draft: Gemini 3 Flash Preview F01 migration and Legora workbench UI",
-    "date": "2026-07-31T03:57:21Z",
+    "date": "2026-07-31T09:44:18Z",
     "summary": "## Goal\n\nMigrate F01 from the superseded Qwen broad-extraction path to a backend-only Gemini Cloud Assisted architecture pinned to `gemini-3-flash-preview`, while preserving local parsing, evidence binding, final verification, review persistence, Office.js safety, and the five-screen Legora-style wo",
     "url": "https://github.com/dc20758/Lendo_Lei/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 440",
+      "comments: 442",
       "pull request",
       "repo: Lendo_Lei"
     ]
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-07-31T06:19:51Z",
+    "date": "2026-07-31T09:26:42Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -709,7 +709,7 @@
   },
   {
     "title": "[PR] Executive Observability Dashboard (SPEC-7.1-7.6)",
-    "date": "2026-07-31T04:10:30Z",
+    "date": "2026-07-31T09:17:53Z",
     "summary": "## Summary\n\nAdds the AfyaPlus Executive Observability Dashboard capstone on top of the existing RAG Agent System: clinical model comparison, statistical drift detection, token cost/efficiency analysis, an authenticated FastAPI dashboard with Prometheus/Grafana, and an evidence-backed executive brief",
     "url": "https://github.com/pmutua/AfyaPlus/pull/49",
     "source": "github_prs",
@@ -873,6 +873,222 @@
       "comments: 0",
       "pull request",
       "repo: homelab-prod"
+    ]
+  },
+  {
+    "title": "Memory OS librarian \ub77c\uc774\ube0c \uc804\uc2e4\ud328 \u2014 kidsnote \uc601\uc18d \uba54\ubaa8\ub9ac 0, per-slot \uc624\ub958\uac00 generic oas_execution_failed\ub85c \uc811\ud798",
+    "date": "2026-07-31T09:03:27Z",
+    "summary": "## \uc99d\uc0c1\n\nMemory OS librarian\uc774 2026-07-31 \ud604\uc7ac **\ub77c\uc774\ube0c\ub85c \uc804\uc2e4\ud328** \uc911. \uc624\ub298 \uc2dc\ub3c4 15\ud68c \uc804\ubd80 \uc2e4\ud328 (rondo 12, kidsnote 3), \uc131\uacf5 0\ud68c.\n\n```\nmemory os librarian failed lane=librarian_exact: librarian exact execution failed outward_effect=started cause=oas_execution_failed; cadence deferred=true\n```\n\n\uacb0\uacfc\ub85c keeper payload\uc5d0 \uba54\ubaa8\ub9ac\uac00 \uc2e4\ub9ac\uc9c0 \uc54a",
+    "url": "https://github.com/jeong-sik/masc/issues/26527",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 2",
+      "state: open",
+      "repo: masc"
+    ]
+  },
+  {
+    "title": "P0: ordered lane fallback\uc774 overflow \uc2e0\ud638\ub97c \ub9c8\uc2a4\ud0b9\ud574 \ucef4\ud329\uc158\uc774 \ubc1c\ub3d9 \ubd88\uac00 \u2014 fleet \uc804\uba78 \uc790\uae30 \uc720\uc9c0 \ub8e8\ud504",
+    "date": "2026-07-31T08:32:11Z",
+    "summary": "## \uc99d\uc0c1\n\n2026-07-31 17:25 KST(\uc11c\ubc84 \uc7ac\ube4c\ub4dc b0982e17bf \uc9c1\ud6c4)\ubd80\ud130 fleet 9 keeper \uc804\uc6d0\uc774 \ub9e4 \uc0ac\uc774\ud074 `keeper cycle FAILED ... error=Rate limited (ollama weekly limit)`\ub85c \uc2e4\ud328\ub97c \ubc18\ubcf5\ud55c\ub2e4. HITL chat(rondo)\ub3c4 \ub3d9\uc77c \uc5d0\ub7ec\ub85c `RUN_ERROR` \uc885\ub8cc. \uc7ac\uc2dc\uc791 \ud6c4 librarian \uc2dc\ub3c4 0\uac74(post-turn \ubbf8\ub3c4\ub2ec), \ucef4\ud329\uc158 \uc2dc\ub3c4 0\uac74.\n\n## \uc7ac\ud604/\uadfc\uac70 (system_log_2026-07-31.jsonl)\n\n- seq 53332 (0",
+    "url": "https://github.com/jeong-sik/masc/issues/26530",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: masc"
+    ]
+  },
+  {
+    "title": "[PR] chore(gateway): \uc774\uc804 \ud6c4\uc18d \uc815\ub9ac \u2014 scripts/vllm \uc2e4\uc6b4\uc601 \ub3d9\uae30\ud654 + NodeSelector \ub85c\uadf8 \ucea1",
+    "date": "2026-07-31T09:46:57Z",
+    "summary": "## \uc694\uc57d\n\nLiteLLM Mac \uac8c\uc774\ud2b8\uc6e8\uc774 \uc774\uc804(#413)\uc758 \ud6c4\uc18d \uc815\ub9ac PR.\n\n## \ubcc0\uacbd \ub0b4\uc6a9\n\n**scripts/vllm \uc2e4\uc6b4\uc601 \ub3d9\uae30\ud654** (2026-07-31 \ud1a0\ud3f4\ub85c\uc9c0 \uae30\uc900)\n- `litellm.config.yaml` \u2014 Mac \uac8c\uc774\ud2b8\uc6e8\uc774 \uae30\uc900 \uc7ac\uc791\uc131: \ub85c\uceec 4\uc885(Tailscale upstream, `*_API_BASE`/`VLLM_API_KEY` env \uc8fc\uc785) + \uc678\ubd80 wildcard(openrouter\u00b7ollama-cloud\u00b7nvidia) + `forward_llm_provider_auth_headers` \ud5e4\ub354 \uacc4\uc57d \uc8fc\uc11d",
+    "url": "https://github.com/openmake/openmake_llm/pull/414",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openmake_llm"
+    ]
+  },
+  {
+    "title": "[PR] fix(ai-persistence): stream artifacts to length-strict stores, serve byte ranges",
+    "date": "2026-07-31T09:46:04Z",
+    "summary": "## \ud83c\udfaf Changes\n\nFixes #1030. The cap-enforcing `TransformStream` wrapper stripped the declared length off every URL-fetched artifact body, so workerd's `R2Bucket.put` rejected all of them with `TypeError: Provided readable stream must have a known length`.\n\n**The wrapper is now applied only when it is",
+    "url": "https://github.com/TanStack/ai/pull/1033",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] Interview Prep Application of Moss",
+    "date": "2026-07-31T09:43:26Z",
+    "summary": "## Pull Request Checklist\n\nPlease ensure that your PR meets the following requirements:\n\n- [x] I have read the [CONTRIBUTING](CONTRIBUTING.md) guide.\n- [x] I have updated the documentation (if applicable).\n- [x] My code follows the style guidelines of this project.\n- [x] I have performed a self-revi",
+    "url": "https://github.com/usemoss/moss/pull/391",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: moss"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-31T09:39:17Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/gmifsud/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-31T09:39:13Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-31T09:39:08Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/LunaticMuch/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-31T09:39:07Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/facemendous/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-31T09:39:06Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/MAlkabbani/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-31T09:39:05Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-31T09:39:00Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-31T09:38:58Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/softctwo/ResoftCode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ResoftCode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-31T09:40:35Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jeevesh415/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-07-31T09:38:41Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] feat(worker): self-update install, restart, health-check, and rollback (#890 C3)",
+    "date": "2026-07-31T09:24:47Z",
+    "summary": "## Summary\n\nImplements the worker-side self-install, restart, re-register, and rollback flow for taOS Issue #890.\n\nBuilds on C2 (PR #1903, feat/worker-self-drain) drain protocol.\n\n## Changes\n\n### New module: `tinyagentos/worker/self_update.py` (502 lines)\n- **SelfUpdateManager** orchestrates the ful",
+    "url": "https://github.com/jaylfc/taOS/pull/1910",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: taOS"
+    ]
+  },
+  {
+    "title": "[PR] Add Simplified Chinese localization",
+    "date": "2026-07-31T09:00:43Z",
+    "summary": "## What changed\n\n- add complete Simplified Chinese (`zh-Hans`) localization for the TypeWhisper app\n- add Simplified Chinese localization for bundled plugins\n- localize remaining dynamic UI labels that previously bypassed the string catalog\n- polish machine-generated wording into natural Chinese and",
+    "url": "https://github.com/TypeWhisper/typewhisper-mac/pull/1041",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: typewhisper-mac"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the gomodupdates group across 1 directory with 2 updates",
+    "date": "2026-07-31T08:54:02Z",
+    "summary": "Bumps the gomodupdates group with 2 updates in the / directory: [go.mondoo.com/mql/v13](https://github.com/mondoohq/cnquery) and [github.com/prometheus/client_golang](https://github.com/prometheus/client_golang).\n\nUpdates `go.mondoo.com/mql/v13` from 13.30.0 to 13.31.0\n<details>\n<summary>Release not",
+    "url": "https://github.com/mondoohq/mondoo-operator/pull/1596",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mondoo-operator"
     ]
   }
 ]
