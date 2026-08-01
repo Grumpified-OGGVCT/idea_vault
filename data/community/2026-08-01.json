@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] test: add native compaction behavior regression suite",
-    "date": "2026-08-01T02:59:52Z",
+    "date": "2026-08-01T03:41:38Z",
     "summary": "Consolidated regression suite pinning the Kimi + Codex auto-compaction contract (Task #754), plus a fix for a dev-wide CI flake that was blocking every PR since 2026-07-26.\n\n**Compaction suite** \u2014 four contract groups mapping to the recurred defect classes (Forge episode \\`851158bf\\`): native settin",
     "url": "https://github.com/lsm/HyperNeo/pull/2260",
     "source": "github_prs",
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-01T02:38:32Z",
+    "date": "2026-08-01T06:11:08Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -729,6 +729,198 @@
       "comments: 229",
       "pull request",
       "repo: IDAHO-VAULT"
+    ]
+  },
+  {
+    "title": "[PR] feat(backend): single-source LLM model catalog (cutover + Kimi K3)",
+    "date": "2026-08-01T06:18:33Z",
+    "summary": "### Why \ud83e\udd14\n\nModel management was scattered across three hand-maintained dicts (`MODEL_METADATA`, `MODEL_COST`, `TOKEN_COST`), env vars, LD payloads, and handwritten retirement migrations. Adding one model meant editing four places; retiring one meant writing SQL. This PR makes one file \u2014 `backend/dat",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13627",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 96",
+      "pull request",
+      "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] fix: infer provider from model for long-horizon agent sessions",
+    "date": "2026-08-01T06:12:25Z",
+    "summary": "Switching the model on a long-horizon (LH) agent threw `Session has no provider configured` because the LH/regular session config builders set `model` but left `provider` undefined, while `model-switch-handler` hard-threw before checking the stored model.\n\nThis infers the provider from the model (mi",
+    "url": "https://github.com/lsm/HyperNeo/pull/2264",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: HyperNeo"
+    ]
+  },
+  {
+    "title": "[PR] Consolidate AI Assistant features and infrastructure updates",
+    "date": "2026-08-01T05:29:27Z",
+    "summary": "<h3>PR Summary by Qodo</h3>\n\nConsolidate AI Assistant, Cloudflare/MCP infra, and responsive shell\n\n<code>\u2728 Enhancement</code> <code>\ud83d\udc1e Bug fix</code> <code>\u2699\ufe0f Configuration changes</code> <code>\ud83d\udd50 40+ Minutes</code>\n\n<img src=\"https://www.qodo.ai/wp-content/uploads/2025/11/light-grey-line.svg\" height=",
+    "url": "https://github.com/tonythethompson/Olive-Studio/pull/65",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: Olive-Studio"
+    ]
+  },
+  {
+    "title": "[PR] feat(desktop): make Agent Host first class, drop MLX, integrate Local settings",
+    "date": "2026-08-01T05:17:10Z",
+    "summary": "## Summary\n\nMerges `main` (the Agent Host work, #248\u2013#256), drops the MLX experiment, fixes three rough edges in the local desktop experience, and makes **Agent Host a first-class desktop feature for local *and* cloud users** \u2014 so the CLI can become the headless path rather than the only path.\n\n## D",
+    "url": "https://github.com/lemma-work/lemma-platform/pull/247",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: lemma-platform"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ollama requirement from <1.0,>=0.3.0 to >=0.6.2,<1.0 in /services/rag-service",
+    "date": "2026-08-01T05:16:34Z",
+    "summary": "Updates the requirements on [ollama](https://github.com/ollama/ollama-python) to permit the latest version.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/ollama/ollama-python/releases\">ollama's releases</a>.</em></p>\n<blockquote>\n<h2>v0.6.2</h2>\n<h2>What'",
+    "url": "https://github.com/IKBO-S-A-S/AbacusPlus-api/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AbacusPlus-api"
+    ]
+  },
+  {
+    "title": "[PR] v1.1 branch checkpoint: safety fixes, ADR-022 advisor rework, web UI",
+    "date": "2026-08-01T05:06:59Z",
+    "summary": "## Summary\n\nCheckpoint PR for the `v1.1` branch (77 commits, 104 files, +6515/-1041) spanning **2026-06-03 to 2026-07-31**. Per this project's phase-gate rule, `main` stays frozen at the soak commit until the v1.0 tag \u2014 **this PR is for review visibility, not an immediate-merge request.** The actual",
+    "url": "https://github.com/CarlDog/wobblebot/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: wobblebot"
+    ]
+  },
+  {
+    "title": "[PR] feat(litellm): CT311 Bonsai-8B como prim\u00e1rio local AGL",
+    "date": "2026-08-01T04:50:50Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Description\n\nProvisiona **CT311 `agl-bonsai`** no AGLSRV3 com PrismML **Bonsai-8B** (Vulkan/RX580) e redirecciona o LiteLLM (`agl-primary`, `bonsai-8b`, fast/strong) para `http://100.123.5.81:8080/v1`.\n\nA RX580 deixa de ser passthrough VFIO na VM310 (stopped, `",
+    "url": "https://github.com/AGLz/agl-hostman/pull/57",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agl-hostman"
+    ]
+  },
+  {
+    "title": "[PR] perf(core): stop paying for a speculative COUNT(*) on reads nobody counts - 6.x",
+    "date": "2026-08-01T04:45:17Z",
+    "summary": "> **\ud83d\udea6 Confirmed not for 5.50.0 \u2014 targeting 6.x (opens Aug 3).** Split out of #3293 and now removed from\n> that branch, so #3293 can go into the LTS candidate without this semantic change.\n\nSplit out of #3293 so it can be reviewed on its own.\n\n## What it does\n\n`RunView` decided whether to run its `CO",
+    "url": "https://github.com/MemberJunction/MJ/pull/3298",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency mlflow to v3.11.1 [SECURITY]",
+    "date": "2026-08-01T04:30:52Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [mlflow](https://redirect.gi",
+    "url": "https://github.com/InseeFrLab/codif-ape-nace-revision/pull/55",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: codif-ape-nace-revision"
+    ]
+  },
+  {
+    "title": "[PR] chore: Bump Testcontainers from 3.10.0 to 4.13.0",
+    "date": "2026-08-01T04:21:41Z",
+    "summary": "Updated [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet) from 3.10.0 to 4.13.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.13.0\n\n# What's Changed\n\nThank you ",
+    "url": "https://github.com/rapozoantonio/memorykit/pull/78",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: memorykit"
+    ]
+  },
+  {
+    "title": "[PR] Sync repos",
+    "date": "2026-08-01T04:01:19Z",
+    "summary": "si\n\n## Summary by Sourcery\n\nConvert the project into a pnpm-based monorepo with separate web, server, and bot apps, adding shared packages, Docker/deployment assets, and server-side chat/OAuth infrastructure while modernizing the bot to ES modules and enhancing documentation.\n\nNew Features:\n- Introd",
+    "url": "https://github.com/jacxas/lobster_assistant_web/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: lobster_assistant_web"
+    ]
+  },
+  {
+    "title": "[PR] fix(providers): require api_base before local provider wins on keyword match",
+    "date": "2026-08-01T03:35:31Z",
+    "summary": "## Summary\n\nThe `_match_provider` keyword loop accepts any local provider on `spec.is_local` alone \u2014 with no `api_base` check. That asymmetry vs. the local-fallback loop directly below it causes silent hijacking of cloud-hosted models when a local provider claims the same model-family keyword.\n\nSpec",
+    "url": "https://github.com/HKUDS/nanobot/pull/3732",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nanobot"
+    ]
+  },
+  {
+    "title": "[PR] fix(server): correct cache-refresh interval unit \u2014 metadata cache refreshed every ~50h instead of 3 min",
+    "date": "2026-08-01T03:34:54Z",
+    "summary": "Apparent bug in the timing calculation behavior of the metadata cache refresh interval. Treats timing variable inconsistently across cases resulting in 50 hour wait in one case and 3 min wait in another.\r\n\r\n## Summary\r\n`databaseSettings.metadataCacheRefreshInterval` is denominated in **milliseconds*",
+    "url": "https://github.com/MemberJunction/MJ/pull/3157",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): compare UUID primary keys case-insensitively in BaseEngine cache maintenance",
+    "date": "2026-08-01T03:22:33Z",
+    "summary": "## The bug\n\n`BaseEngine.findEntityIndexByPrimaryKeys` locates a cached entity by matching its primary-key values, so an event-driven `update` can be applied in place. It compared PK values with a raw `===`, which is wrong for UUID columns: the **same** id arrives with different casing depending on i",
+    "url": "https://github.com/MemberJunction/MJ/pull/3389",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Digest 2026-07-09-1856",
+    "date": "2026-08-01T03:17:28Z",
+    "summary": "# Digest \u2014 2026-07-09 PM\n\n- Window: last 14h\n- Raw items considered: 61\n- Relevant: 22\n- Skippable: 39\n\n## Select items to publish\n\n> All items checked by default. **Uncheck** items you don't want, then merge.\n\n- [x] **[CRITICAL]** 12 Million Impacted by Data Breach at Japanese Telco KDDI \u2014 `2026-07",
+    "url": "https://github.com/spbavarva/0day.digest/pull/165",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: 0day.digest"
+    ]
+  },
+  {
+    "title": "[PR] Digest 2026-07-17-1808",
+    "date": "2026-08-01T03:17:06Z",
+    "summary": "# Digest \u2014 2026-07-17 PM\n\n- Window: last 14h\n- Raw items considered: 40\n- Relevant: 14\n- Skippable: 26\n\n## Select items to publish\n\n> All items checked by default. **Uncheck** items you don't want, then merge.\n\n- [x] **[HIGH]** HollowByte DDoS Flaw Bloats OpenSSL Server Memory With 11-Byte Payload \u2014",
+    "url": "https://github.com/spbavarva/0day.digest/pull/181",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: 0day.digest"
     ]
   }
 ]
