@@ -205,7 +205,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-01T18:05:13Z",
+    "date": "2026-08-01T22:12:31Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-01T21:31:28Z",
+    "date": "2026-08-01T23:03:22Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -961,12 +961,12 @@
   },
   {
     "title": "[PR] fix(agent): preserve direct provider ownership in cloud runtime",
-    "date": "2026-08-01T10:35:51Z",
+    "date": "2026-08-01T22:05:46Z",
     "summary": "# Relates to\n\nCloses #17516. Related: #17379 and #17380 cover provider-neutral exhausted-credit copy, not provider selection.\n\n- [x] This PR targets `develop` and is rebased onto the latest `origin/develop` with zero conflicts (`4deff40c3dba6465b571d6488ec2006812a9a25a`).\n- [ ] `bun install` and `bu",
     "url": "https://github.com/elizaOS/eliza/pull/17519",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: eliza"
     ]
@@ -1633,7 +1633,7 @@
   },
   {
     "title": "[PR] dev: reh3376_dev01 -> main",
-    "date": "2026-08-01T17:56:52Z",
+    "date": "2026-08-01T23:03:26Z",
     "summary": "## Summary\n\nDevelopment branch changes from `reh3376_dev01`.\n\n### Commits\n- fix(alert): FOLLOW-RATE-CALIBRATE-001 \u2014 recalibrate raw follow-rate alert to honest steady state\n- chore: sync reh3376_dev01 with main (post-merge base advance)\n- feat(hebb-eta-001): precision-weighted Hebbian \u03b7 primitives, ",
     "url": "https://github.com/reh3376/mdemg/pull/569",
     "source": "github_prs",
@@ -1669,12 +1669,12 @@
   },
   {
     "title": "[PR] feat: persistent Claude broker and managed service contract",
-    "date": "2026-08-01T22:00:06Z",
+    "date": "2026-08-01T22:13:37Z",
     "summary": "## Purpose\n\nTurn the proven managed dClaude local path into persistent infrastructure instead of another per-launch wrapper.\n\nThis PR does not change compression algorithms or native Claude subscription behavior. It adds the missing service/profile/session plane and the tests needed to prove that to",
     "url": "https://github.com/SteveSpivak/dcoder-phase3/pull/7",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: dcoder-phase3"
     ]
@@ -1761,6 +1761,42 @@
       "comments: 0",
       "pull request",
       "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] Entity Action as the workflow-hook substrate \u2014 scope binding, sequencing, and a safe execution log",
+    "date": "2026-08-01T23:02:34Z",
+    "summary": "Makes `EntityAction` the general workflow-hook substrate for MJ and every OpenApp built on it, instead of each app inventing its own \u2014 and fixes the execution log so the feature is safe and diagnosable once it's used at volume.\n\n**Ships schema + plan + metadata + changeset. Engine work is specified,",
+    "url": "https://github.com/MemberJunction/MJ/pull/3408",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-01T22:59:15Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/ts-md/pull/99",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-md"
+    ]
+  },
+  {
+    "title": "[PR] Prepare local routing core for OSS publication",
+    "date": "2026-08-01T22:18:16Z",
+    "summary": "## Summary\n\n- keep serving, discovery, request-ready local routing, and typed punts in the core package\n- move training, replay evaluation, promotion gates, and dashboards into the optional slancha-mesh-tune distribution\n- add passive runtime circuits, durable node/router services, and validated OSS",
+    "url": "https://github.com/SlanchaAI/slancha-mesh/pull/165",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: slancha-mesh"
     ]
   }
 ]
