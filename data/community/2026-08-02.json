@@ -133,12 +133,12 @@
   },
   {
     "title": "\u7533\u8bf7\u52a0\u5165\u8bf7\u5728\u8fd9\u91cc\u8bc4\u8bba \uff08\u4e5f\u53ef\u4ee5\u76f4\u63a5\u53d1 Pull Request\uff09",
-    "date": "2026-08-02T02:13:15Z",
+    "date": "2026-08-02T03:13:58Z",
     "summary": "### \u5165\u9009\u6807\u51c6\r\n* \u7f51\u7ad9 / App\r\n* \u5982\u679c\u662f Github \u5e93\uff0c README \u6216\u9876\u90e8\u63cf\u8ff0\u91cc\uff0c\u8981\u9644\u4e0a\u7f51\u7ad9\u6216 App Store \u5730\u5740\uff0c\u4e0d\u80fd\u662f\u7eaf\u7cb9\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u5982\u679c\u5305\u542b\u4e86\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u90a3\u5c31\u592a\u591a\u4e86\u3002\u6240\u4ee5\u53ea\u5141\u8bb8\u9488\u5bf9\u666e\u901a\u7528\u6237\u7684\u7f51\u7ad9/App \u5217\u5728\u8868\u91cc\r\n\r\n### \u4e0d\u6536\u5f55\u7684\u4e1c\u897f\r\n* \u5f00\u53d1\u8005\u5de5\u5177\uff08Github \u672c\u8d28\u4e0a\u5c31\u662f\u4e2a\u5f00\u53d1\u8005\u5de5\u5177\u5927\u96c6\u5408\uff0c\u6536\u5f55\u5f00\u53d1\u8005\u5de5\u5177\u8fd9\u4e2a\u8868\u4f1a\u7206\u70b8\u7684\uff09\r\n* \u793e\u533a\u7c7b\u7f51\u7ad9\uff08v2ex\uff0cruby-china\uff0c\u5404\u79cd php \u793e\u533a\uff0c\u592a\u591a\u592a\u591a\u592a\u591a\u4e86\u3002\u6ca1\u6cd5\u6536\u3002\u5e0c\u671b\u7406\u89e3\uff09\r\n\r\n### \u6d41\u7a0b\r\n\u770b\u4e86\u8bc4\u8bba\u540e\u4f1a\u505a\u51b3\u5b9a\uff0c\r\n\u5982\u679c\u5165\u4e86\uff0c\u4f1a\u52a0\u8fdb\u53bb\u3002\r\n\u5982\u679c\u6ca1\u5165\uff0c\u4f1a\u544a\u77e5\u4f60\u7406\u7531\uff08\u5e0c\u671b\u4f60\u4e0d\u8981\u4ecb\u610f :",
     "url": "https://github.com/1c7/chinese-independent-developer/issues/160",
     "source": "github_issues",
     "highlights": [
-      "comments: 1796",
+      "comments: 1797",
       "state: open",
       "repo: chinese-independent-developer"
     ]
@@ -529,7 +529,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-02T02:36:40Z",
+    "date": "2026-08-02T05:04:06Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -673,7 +673,7 @@
   },
   {
     "title": "[PR] Pin dependencies",
-    "date": "2026-08-01T23:36:06Z",
+    "date": "2026-08-02T03:30:40Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | Pending |\n|---|---|---|---|---|\n| [SonarSource/ci-github-actions](https://redirect.github.com/SonarSource/ci-github-actions) | action | pin | `v1` \u2192 `1",
     "url": "https://github.com/SonarSource/parent-oss/pull/290",
     "source": "github_prs",
@@ -709,7 +709,7 @@
   },
   {
     "title": "[PR] Update GitHub actions",
-    "date": "2026-08-01T23:09:27Z",
+    "date": "2026-08-02T03:11:24Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | Pending |\n|---|---|---|---|---|\n| [SonarSource/gh-action_pre-commit](https://redirect.github.com/SonarSource/gh-action_pre-commit) | action | patch | `",
     "url": "https://github.com/SonarSource/ci-github-actions/pull/324",
     "source": "github_prs",
@@ -729,6 +729,114 @@
       "comments: 9",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Draft: Gemini 3 Flash Preview F01 migration and Legora workbench UI",
+    "date": "2026-08-02T06:10:10Z",
+    "summary": "## Goal\n\nMigrate F01 from the superseded Qwen broad-extraction path to a backend-only Gemini Cloud Assisted architecture pinned to `gemini-3-flash-preview`, while preserving local parsing, evidence binding, final verification, review persistence, Office.js safety, and the five-screen Legora-style wo",
+    "url": "https://github.com/dc20758/Lendo_Lei/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 493",
+      "pull request",
+      "repo: Lendo_Lei"
+    ]
+  },
+  {
+    "title": "[PR] Add OpenClaw workflow tier routing metadata",
+    "date": "2026-08-02T06:03:19Z",
+    "summary": "Adds advisory S/M/L/XL workflow tier metadata for OpenClaw Alp River-style orchestration.\\n\\n- Adds WorkflowTier classification\\n- Adds workflow mode and recommended specialist agents to lastRoute\\n- Emits X-Sage-Workflow-Tier and X-Sage-Workflow-Mode headers\\n- Keeps sage-router as advisor, not orc",
+    "url": "https://github.com/earlvanze/sage-router/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: sage-router"
+    ]
+  },
+  {
+    "title": "[PR] CAMEL-23382: remove camel-spring-ai-tools, replaced by camel-ai-tool",
+    "date": "2026-08-02T06:01:07Z",
+    "summary": "## Why remove instead of deprecate?\r\n\r\n`camel-spring-ai-tools` was a consumer-only component. No producer. Its only job was registering Camel routes as Spring AI `ToolCallback` objects into `CamelToolExecutorCache`. Then `spring-ai-chat` would read from that cache.\r\n\r\nStep 3 already changed `spring-",
+    "url": "https://github.com/apache/camel/pull/25276",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] resolve the base merge issues ",
+    "date": "2026-08-02T05:45:29Z",
+    "summary": "update the sync issues. ",
+    "url": "https://github.com/ALikesToCode/DeepTutor/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DeepTutor"
+    ]
+  },
+  {
+    "title": "[PR] from the hell",
+    "date": "2026-08-02T05:25:52Z",
+    "summary": "",
+    "url": "https://github.com/santipongth/thai-citizen-guide/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: thai-citizen-guide"
+    ]
+  },
+  {
+    "title": "[PR] fix(modelis): declare reasoning_options per model from measurements",
+    "date": "2026-08-02T05:11:05Z",
+    "summary": "Follow-up to #3932, which merged before I could push this correction.\n\nThat PR landed with the identical six-value `effort` list on all nine models. The review\nbot flagged that as over-broad, and it was right \u2014 re-measuring showed it is also\n**incomplete**: two controls this gateway exposes were mis",
+    "url": "https://github.com/anomalyco/models.dev/pull/3951",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: models.dev"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/cbcoutinho/nextcloud-mcp-server docker tag to v0.159.1",
+    "date": "2026-08-02T04:06:12Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/cbcoutinho/nextcloud-mcp-server](https://redirect.github.com/cbcoutinho/nextcloud-mcp-server) | minor | `0.151.0` \u2192 `0.159.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>cbcoutinho/nextcloud-mcp-server ",
+    "url": "https://github.com/cbcoutinho/astrolabe/pull/288",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: astrolabe"
+    ]
+  },
+  {
+    "title": "[PR] fix(agent): preserve direct provider ownership in cloud runtime",
+    "date": "2026-08-02T03:55:24Z",
+    "summary": "<!-- current-publication-start -->\n# Current publication checkpoint\n\n- Exact head: `9ad3e339cdead22625100536cf8ab01982b43f91`\n- Exact tree: `d2ae46a46be97bbbac2fc660733336a0311e9399`\n- Stacked base: origin/develop@ba62c0234e7c761beff1217cb7dea7451f33e481\n- Focused gates: 90/90; affected typechecks, ",
+    "url": "https://github.com/elizaOS/eliza/pull/17519",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "[PR] Voice runtime and Cloud Voice testing handoff",
+    "date": "2026-08-02T03:13:19Z",
+    "summary": "Documents current local Voice, Ollama timeout, temporary Cloud Voice bypass, evidence, costs, rollback, and test steps.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added iOS magic-link authentication and custom callbac",
+    "url": "https://github.com/obsidian-media/AlphonsoEcosystem/pull/140",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AlphonsoEcosystem"
     ]
   }
 ]
