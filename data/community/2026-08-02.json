@@ -433,7 +433,7 @@
   },
   {
     "title": "Add LLM support to SSE-AT",
-    "date": "2026-08-02T20:57:58Z",
+    "date": "2026-08-02T21:55:04Z",
     "summary": "> LM Studio support would be very useful as an official translator backend in SSE Auto Translator 3.1.x.\\n\\nWhy this matters:\\n- 3.1.0 significantly improved translation detection, including scripts, voice files, and texture-related translation assets.\\n- However, the official release currently does",
     "url": "https://github.com/Cutleast/SSE-Auto-Translator/issues/106",
     "source": "github_issues",
@@ -529,7 +529,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-02T20:31:57Z",
+    "date": "2026-08-02T21:31:22Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -601,12 +601,12 @@
   },
   {
     "title": "[PR] Harden Agent skills and private WeChat reads",
-    "date": "2026-08-02T06:48:02Z",
+    "date": "2026-08-02T21:50:11Z",
     "summary": "## What changed\n\n- wire audited Yichen skills into bounded Agent manifests and readiness reporting\n- add a dedicated Grok MCP route that fails closed until local login is ready\n- add local-only `qwen3:14b` WeChat analysis with raw-text overlap redaction\n- add a 30-minute, 10-task private-read grant ",
     "url": "https://github.com/kileroppo/agent-agent/pull/3",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: agent-agent"
     ]
@@ -625,7 +625,7 @@
   },
   {
     "title": "[PR] Prepare local routing core for OSS publication",
-    "date": "2026-08-02T20:15:25Z",
+    "date": "2026-08-02T21:54:51Z",
     "summary": "## Summary\n\n- keep serving, discovery, request-ready local routing, and typed punts in the core package\n- move training, replay evaluation, promotion gates, and dashboards into optional `slancha-mesh-tune`\n- make pinned vLLM Semantic Router v0.3.0 the supported caller-facing front door\n- add passive",
     "url": "https://github.com/SlanchaAI/slancha-mesh/pull/165",
     "source": "github_prs",
@@ -817,12 +817,12 @@
   },
   {
     "title": "[PR] fix(agent): preserve direct provider ownership in cloud runtime",
-    "date": "2026-08-02T20:45:38Z",
+    "date": "2026-08-02T21:23:05Z",
     "summary": "<!-- current-publication-start -->\n# Current publication checkpoint\n\n- Exact head: `d1c97f216aeed44fda36274dacd4032764768022`\n- Exact tree: `dcabe489a3d5ace9ec17692753d7627b840b8531`\n- Stacked base: origin/develop@725b43ea42411f27ccafc98f4ed43bf181192ff6\n- Focused gates: 90/90; affected typechecks, ",
     "url": "https://github.com/elizaOS/eliza/pull/17519",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: eliza"
     ]
@@ -877,7 +877,7 @@
   },
   {
     "title": "[PR] fix(core): harden routing diagnostics and configuration warnings",
-    "date": "2026-08-02T08:45:14Z",
+    "date": "2026-08-02T21:43:27Z",
     "summary": "\ufeff## Summary\r\n\r\n- hide routed vLLM implementation labels for Auto and Auto (LLM) replies (#829)\r\n- warn admins when required Core or embedding environment keys are missing, exposing names only (#272)\r\n- block direct document navigation to React Router `.data` payloads while preserving internal loader",
     "url": "https://github.com/EduAI-Lab/EduAI/pull/1280",
     "source": "github_prs",
@@ -1501,12 +1501,12 @@
   },
   {
     "title": "[PR] feat: add Quest II Living Regions",
-    "date": "2026-08-02T17:03:36Z",
+    "date": "2026-08-02T21:58:18Z",
     "summary": "## Summary\n\n- adds the versioned Quest II content pack with five authored Living Region arcs and reviewed Warden cards\n- propagates Quest identity through progression, question service, offline receipt sequence, story log, and Quest Atlas\n- adds deterministic content-contract tests plus desktop/mobi",
     "url": "https://github.com/tomnguyen103/Maze-v2/pull/197",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 4",
       "pull request",
       "repo: Maze-v2"
     ]
@@ -1525,7 +1525,7 @@
   },
   {
     "title": "[PR] fix(quality): grant actions:write so the review-store cache can persist",
-    "date": "2026-08-02T20:58:20Z",
+    "date": "2026-08-02T21:59:31Z",
     "summary": "## Summary\n\nFirst production evidence from #2930 (105 reviewable files, four heads): the review ran complete on every head, but every save of the review store was silently refused \u2014 `actions/cache/save` fails soft, the step reports success, and the log carries the truth: `cache write denied: token h",
     "url": "https://github.com/oscharko-dev/Keiko/pull/2931",
     "source": "github_prs",
@@ -1561,19 +1561,19 @@
   },
   {
     "title": "[PR] feat(chat): fork openwork as the CommonPlace chat register (OW1, OW3-OW6)",
-    "date": "2026-08-02T20:52:52Z",
+    "date": "2026-08-02T22:02:23Z",
     "summary": "Hard fork of `different-ai/openwork` vendored as the CommonPlace chat register,\nper SPEC-COMMONPLACE-OPENWORK-FORK-1.0. OW1, OW3, OW4, OW5, and OW6 are\ncomplete. OW2 is partial and the gap is named below. OW7 is unblocked and not\nstarted.\n\n## Reading this diff\n\n1071 files, but 838 of them are `apps/",
     "url": "https://github.com/Travis-Gilbert/CommonPlace/pull/158",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 19",
       "pull request",
       "repo: CommonPlace"
     ]
   },
   {
     "title": "[PR] Sandbox-clean builds: split the right to spawn into its own feature (P36 Phase 1)",
-    "date": "2026-08-02T20:46:56Z",
+    "date": "2026-08-02T21:03:00Z",
     "summary": "PLAN P36 Phase 1 (P36.1\u2013P36.6). Makes the right to spawn a process a single\ncargo feature, so one codebase produces both macOS SKUs: the `.dmg`\n(Developer ID, spawns freely) and the Mac App Store build (sandboxed, does\nnot).\n\nThe premise, verified rather than assumed: mistral.rs, CrispEmbed and Cris",
     "url": "https://github.com/CrispStrobe/CrispSorter/pull/7",
     "source": "github_prs",
@@ -1621,12 +1621,12 @@
   },
   {
     "title": "[PR] Reports overhaul, full sync pipeline, facility isolation, app hardening",
-    "date": "2026-08-02T20:13:41Z",
+    "date": "2026-08-02T21:03:04Z",
     "summary": "Session work committed for review into main.\n\n## Reports\n- **Remittance Claim**: RA History cascade column + corrected title\n- **Claim Activity**: genuine activity-level report (row per activity, billed-vs-paid + status)\n- **Remittance Activity**: `RAPament For` round numbering computed over each cl",
     "url": "https://github.com/jawahirps/analytika-rcm/pull/54",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 14",
       "pull request",
       "repo: analytika-rcm"
     ]
@@ -1641,6 +1641,90 @@
       "comments: 0",
       "pull request",
       "repo: TTM"
+    ]
+  },
+  {
+    "title": "[PR] fix(deploy): hotfixes del despliegue VPS real + documentaci\u00f3n de evaluaci\u00f3n",
+    "date": "2026-08-02T22:01:02Z",
+    "summary": "## Hito de referencia\r\n\r\nHotfixes del despliegue real en Oracle Cloud VPS (VM.Standard.E5.Flex) y puesta a punto de la documentaci\u00f3n de cara a la correcci\u00f3n del TFM.\r\n\r\n## Descripci\u00f3n\r\n\r\nCorrige dos errores detectados en el primer arranque en producci\u00f3n y sincroniza la documentaci\u00f3n con el estado re",
+    "url": "https://github.com/agado/khora-nexus-insight/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: khora-nexus-insight"
+    ]
+  },
+  {
+    "title": "[PR] `Logos`: Preserve SSE streaming frames",
+    "date": "2026-08-02T21:59:25Z",
+    "summary": "## Motivation\n\nLogos reconstructed upstream streaming responses with `httpx.Response.aiter_lines()`, discarded empty lines, and emitted each remaining line with one trailing newline. This removed the blank-line delimiters between Server-Sent Events.\n\nOpenAI-compatible clients consequently received H",
+    "url": "https://github.com/ls1intum/edutelligence/pull/706",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 21",
+      "pull request",
+      "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] dev: reh3376_dev01 -> main",
+    "date": "2026-08-02T21:51:35Z",
+    "summary": "## Summary\n\nDevelopment branch changes from `reh3376_dev01`.\n\n### Commits\n- fix(jiminy): JIMINY-TRACKER-TTL-001 \u2014 warm store persisted across restarts\n- chore: sync reh3376_dev01 with main (post-merge base advance)\n- fix(jiminy): ESCALATION-ACCUMULATE-001 \u2014 first WARNED state ever produced\n- chore: ",
+    "url": "https://github.com/reh3376/mdemg/pull/571",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mdemg"
+    ]
+  },
+  {
+    "title": "[PR] test: isolate backend detection and stabilize P3 seed history",
+    "date": "2026-08-02T21:47:06Z",
+    "summary": "## Summary\n\nThis test-only delivery addresses:\n\n- JOS-BACKEND-DETECTION-TEST-ISOLATION\n- JOS-GIT-SEED-HISTORY-STABILITY\n\nBackend-selection tests now clear the live API-key selector set derived from BACKENDS, plus the Azure endpoint, AWS/Bedrock, and Ollama selectors read directly by detect_backend()",
+    "url": "https://github.com/Villeneuve-Ventures/graphify/pull/47",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: graphify"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): add claude-code provider (#1193)",
+    "date": "2026-08-02T21:41:17Z",
+    "summary": "## Summary\n\nAdds a `claude-code` LLM provider in `mempalace/llm_client.py` that routes through the local `claude` CLI binary using the user's Claude Pro/Max subscription via `claude auth login`. Mirrors the existing `OllamaProvider` / `OpenAICompatProvider` / `AnthropicProvider` shape so `mempalace ",
+    "url": "https://github.com/MemPalace/mempalace/pull/1200",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: mempalace"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump commons-codec:commons-codec from 1.22.0 to 1.22.1",
+    "date": "2026-08-02T21:24:28Z",
+    "summary": "Bumps [commons-codec:commons-codec](https://github.com/apache/commons-codec) from 1.22.0 to 1.22.1.\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/apache/commons-codec/blob/master/RELEASE-NOTES.txt\">commons-codec:commons-codec's changelog</a>.</em></p>\n<blockq",
+    "url": "https://github.com/apache/camel/pull/25258",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: camel"
+    ]
+  },
+  {
+    "title": "[PR] Make the loop-selection keys live, and enforce that a writable setting reaches something running",
+    "date": "2026-08-02T21:12:38Z",
+    "summary": "A registered setting is either fixed when a process starts or changeable while\nthe system runs. `check_setting_compose_backed.py` enforced only the first\nhalf, so a setting could be writable and reach nothing: the write is accepted,\nthe dashboard shows the new value, and behaviour does not change un",
+    "url": "https://github.com/Aureliolo/synthorg/pull/2706",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: synthorg"
     ]
   }
 ]
