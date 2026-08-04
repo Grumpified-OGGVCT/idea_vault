@@ -673,7 +673,7 @@
   },
   {
     "title": "[PR] Entity metadata: layered base views + direct-SQL declarations, plus the external agent harness design plan",
-    "date": "2026-08-04T20:12:18Z",
+    "date": "2026-08-04T22:13:06Z",
     "summary": "Two additive `Entity` metadata capabilities plus a design plan. Everything here is additive \u2014 every pre-existing row reproduces today's behaviour exactly, and no install changes unless it opts in.\n\n---\n\n## 1. Layered base views \u2014 `Entity.GeneratedBaseViewName`\n\n**The problem.** `BaseViewGenerated = ",
     "url": "https://github.com/MemberJunction/MJ/pull/3419",
     "source": "github_prs",
@@ -685,12 +685,12 @@
   },
   {
     "title": "[PR] Entity Action as the workflow-hook substrate \u2014 scope binding, sequencing, and a safe execution log",
-    "date": "2026-08-04T20:07:51Z",
+    "date": "2026-08-04T22:12:25Z",
     "summary": "Makes `EntityAction` the general workflow-hook substrate for MJ and every OpenApp built on it, instead of each app inventing its own \u2014 and fixes the execution log so the feature is safe and diagnosable once it's used at volume.\n\n**Ships schema + plan + metadata + changeset. Engine work is specified,",
     "url": "https://github.com/MemberJunction/MJ/pull/3408",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 15",
       "pull request",
       "repo: MJ"
     ]
@@ -913,7 +913,7 @@
   },
   {
     "title": "[PR] refactor: complete enterprise service architecture conformance",
-    "date": "2026-08-04T20:28:21Z",
+    "date": "2026-08-04T22:14:48Z",
     "summary": "## Summary\\n\\nAdds the implementation plan for bringing every emme-service backend module into conformance with the enterprise DDD + Hexagonal + Spring Modulith template.\\n\\n## Scope\\n\\n- module-by-module architecture and naming normalization\\n- one-use-case-per-application-service rule\\n- API, doma",
     "url": "https://github.com/migangdelzar/emme-service/pull/3",
     "source": "github_prs",
@@ -1249,12 +1249,12 @@
   },
   {
     "title": "[PR] fix(sqlconverter): correct nine T-SQL\u2192PostgreSQL conversion defects that break open-app installs",
-    "date": "2026-08-04T16:48:35Z",
+    "date": "2026-08-04T22:13:04Z",
     "summary": "## What this fixes\n\nConverting an open app's SQL Server migrations to PostgreSQL (`mj migrate convert`) produced files that either failed to apply or \u2014 worse \u2014 applied \"successfully\" while leaving the database in a wrong state.\n\nNine defects, all found while making a real open app install on Postgre",
     "url": "https://github.com/MemberJunction/MJ/pull/3351",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: MJ"
     ]
@@ -1285,24 +1285,24 @@
   },
   {
     "title": "[PR] perf(MJServer): fix O(N\u00b2) GraphQL schema-build scaling at boot (\u221266% cold boot) (6.x)",
-    "date": "2026-08-04T20:11:15Z",
+    "date": "2026-08-04T22:13:48Z",
     "summary": "## Summary\n\n`buildSchemaSync` \u2014 called once at MJAPI boot in `packages/MJServer/src/index.ts` \u2014 is **super-linear in entity count**, and is the dominant cost of MJAPI cold-boot at scale (it was the headline finding of the scale-runtime study). This PR root-causes that to **two O(N\u00b2) hotspots inside ",
     "url": "https://github.com/MemberJunction/MJ/pull/3259",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "pull request",
       "repo: MJ"
     ]
   },
   {
     "title": "[PR] fix(integration): record-map write amplification, pagination-violation visibility, non-blocking schema refresh",
-    "date": "2026-08-04T18:40:05Z",
+    "date": "2026-08-04T22:12:55Z",
     "summary": "Three independent, low-risk fixes on the connector apply path. Each stands alone \u2014 none depends on the others.\n\n### 1. `TrackRecordChanges = 0` for `MJ: Company Integration Record Maps` (migration)\n\n`CompanyIntegrationRecordMap` is the highest-volume table the sync path writes: one row per external ",
     "url": "https://github.com/MemberJunction/MJ/pull/3354",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: MJ"
     ]
@@ -1477,7 +1477,7 @@
   },
   {
     "title": "[PR] fix(cli): pin Open App bootstrap alias numbering to the array position",
-    "date": "2026-08-04T19:57:31Z",
+    "date": "2026-08-04T22:08:59Z",
     "summary": "Follow-up to #3282, addressing the review points raised on it.\n\n## 1. Alias numbering is now single-sourced (review: \"add a test for mixed enabled/disabled entries\")\n\nThe merged form emits indexed aliases (`__openAppClient0/1/\u2026`) where the bare-import form used none. The concern: if the index basis ",
     "url": "https://github.com/MemberJunction/MJ/pull/3337",
     "source": "github_prs",
@@ -1489,7 +1489,7 @@
   },
   {
     "title": "[PR] fix(integration-engine): make the FetchChanges timeout configurable",
-    "date": "2026-08-04T19:57:08Z",
+    "date": "2026-08-04T22:12:47Z",
     "summary": "## Problem\n\n`IntegrationEngine` wraps every `FetchChanges` call in `DEFAULT_OPERATION_TIMEOUTS.FetchChangesMs` (30s), with no way to change it \u2014 not per deployment, not per connector.\n\nThat penalises exactly the connectors that need a longer budget. A connector that fans out one request per parent r",
     "url": "https://github.com/MemberJunction/MJ/pull/3381",
     "source": "github_prs",
@@ -1501,7 +1501,7 @@
   },
   {
     "title": "[PR] feat(integration): durable sync runs \u2014 lease/fence ownership, DB-backed cancel + progress, opt-in worker mode",
-    "date": "2026-08-04T19:56:37Z",
+    "date": "2026-08-04T22:14:20Z",
     "summary": "Implements **tasks.md PR 1 \u2014 durable sync runs**. A `CompanyIntegrationRun` is now an owned, leased, fenced unit of work that survives a process death, can be cancelled and observed from any process, and can be executed by a worker rather than the request that asked for it.\n\nTwo commits: `9cdf67f` i",
     "url": "https://github.com/MemberJunction/MJ/pull/3291",
     "source": "github_prs",
@@ -1513,7 +1513,7 @@
   },
   {
     "title": "[PR] perf(core): stop paying for a speculative COUNT(*) on reads nobody counts - 6.x",
-    "date": "2026-08-04T19:56:29Z",
+    "date": "2026-08-04T22:13:10Z",
     "summary": "> **\ud83d\udea6 Confirmed not for 5.50.0 \u2014 targeting 6.x (opens Aug 3).** Split out of #3293 and now removed from\n> that branch, so #3293 can go into the LTS candidate without this semantic change.\n\nSplit out of #3293 so it can be reviewed on its own.\n\n## What it does\n\n`RunView` decided whether to run its `CO",
     "url": "https://github.com/MemberJunction/MJ/pull/3298",
     "source": "github_prs",
@@ -1525,7 +1525,7 @@
   },
   {
     "title": "[PR] fix(open-app): close four silent-failure gaps in config writes, class registration, and update checks",
-    "date": "2026-08-04T19:56:22Z",
+    "date": "2026-08-04T22:13:34Z",
     "summary": "All four defects here share a failure mode: **nothing goes red.** The app installs, `__mj.OpenApp` reports `Active`, the CLI prints a success line \u2014 and the config the runtime actually loads is wrong, or a registered class never runs, or an update check reports a version belonging to a different app",
     "url": "https://github.com/MemberJunction/MJ/pull/3352",
     "source": "github_prs",
@@ -1537,7 +1537,7 @@
   },
   {
     "title": "[PR] chore(integration): remove connector source duplicated by the Integrations repo \u2014 6.x",
-    "date": "2026-08-04T19:56:19Z",
+    "date": "2026-08-04T22:13:35Z",
     "summary": "> **\u26a0\ufe0f BREAKING \u2014 targeted at the 6.x line. Nothing is merged here; opening for review.**\n\n## Why\n\n`packages/Integration/connectors` held **36 vendor connectors that were pure duplicates**. The same classes ship from [MemberJunction/Integrations](https://github.com/MemberJunction/Integrations), wher",
     "url": "https://github.com/MemberJunction/MJ/pull/3385",
     "source": "github_prs",
@@ -1545,6 +1545,102 @@
       "comments: 3",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): stream validated OpenAI and Anthropic providers",
+    "date": "2026-08-04T22:15:02Z",
+    "summary": "## Summary\n\n- Add native incremental streaming for the provider paths validated with live credentials: OpenAI-compatible, Anthropic API key/OAuth, and OpenAI Codex. Preserve the existing NEAR AI streaming path.\n- Keep Gemini OAuth, GitHub Copilot, AWS Bedrock, Ollama, DeepSeek, OpenRouter, and nativ",
+    "url": "https://github.com/nearai/ironclaw/pull/7120",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ironclaw"
+    ]
+  },
+  {
+    "title": "[PR] docs: correct pipeline node counts to match the catalog",
+    "date": "2026-08-04T22:13:01Z",
+    "summary": "## Summary\n\nThe README contradicted itself on how many nodes RocketRide ships, and every stated count was below the real number.\n\n| Location | Before | After |\n| :--- | :--- | :--- |\n| `README.md:23` (intro) | 50+ pipeline nodes, 13 LLM providers | 100+ pipeline nodes, 15+ LLM providers |\n| `README.",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/1734",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] feat(rsu): publish Runtime Schema Update runs to the integration progress stream",
+    "date": "2026-08-04T22:12:38Z",
+    "summary": "## Problem\n\n`IntegrationRunKind` has always included `'RSU'`, and `RUN_KIND_TO_TOPIC` has always mapped both `'RSU'` and `'TableCreation'` to an `'RSU'` `IntegrationProgressTopic`. **Nothing in production ever published to it.** The channel carried no traffic and `IntegrationTailRunEvents` had no RS",
+    "url": "https://github.com/MemberJunction/MJ/pull/3355",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(open-app-engine): correct semver ordering, paginate GitHub listings, clean up temp dirs",
+    "date": "2026-08-04T22:12:28Z",
+    "summary": "Four defects in the Open App engine's GitHub/version layer and its temp-file handling. All are on `next` today; each fix has tests that were verified to fail against the pre-fix source.\n\n**1. `compareSemver` returned `NaN` for any prerelease, poisoning the sort.** It ran `Number()` across the dot-sp",
+    "url": "https://github.com/MemberJunction/MJ/pull/3353",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] dev: reh3376_dev01 -> main",
+    "date": "2026-08-04T22:11:15Z",
+    "summary": "## Summary\n\nDevelopment branch changes from `reh3376_dev01`.\n\n### Commits\n- feat(autograde-schedule): scheduled autograde loop closes HITL curation arc\n- chore: sync reh3376_dev01 with main (post-merge base advance)\n- feat(jiminy-contradicted-bridge-quality): content-quality gate on draft emission\n-",
+    "url": "https://github.com/reh3376/mdemg/pull/580",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mdemg"
+    ]
+  },
+  {
+    "title": "[PR] ci: key the migration gate's concurrency group by ref",
+    "date": "2026-08-04T22:07:38Z",
+    "summary": "`.github/workflows/changes.yml` declared:\n\n```yaml\nconcurrency:\n  group: \"changes\"\n  cancel-in-progress: true\n```\n\nThat group is a **constant**, so it is repo-wide rather than per-PR. With `cancel-in-progress`, any push to any open PR cancels the in-flight `Check migrations` run on **every other** o",
+    "url": "https://github.com/MemberJunction/MJ/pull/3439",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(components): theme-aware registry components \u2014 viz ramps, spec-level StyleOverrides, hardcoded-color migration",
+    "date": "2026-08-04T21:59:48Z",
+    "summary": "# Theme-aware registry components\n\nInteractive/registry components previously hardcoded color literals (`#fee2e2`, `#3b82f6`, \u2026), so they ignored the host's MJ theme entirely \u2014 wrong brand colors, broken dark mode, and no way to honor a user asking for \"blue charts\" without baking literals into gene",
+    "url": "https://github.com/MemberJunction/MJ/pull/3368",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Set up Cursor Cloud dev environment + AGENTS.md notes",
+    "date": "2026-08-04T21:59:40Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## What\n\nSets up the development environment for the **Mag Resource Harness** on the Cursor Cloud (Linux) VM and documents durable, non-obvious startup caveats for future agents.\n\nThe only code/repo change is an appended `## Cursor Cloud specific instructions` sec",
+    "url": "https://github.com/NachoBusiness17/Mag/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Mag"
     ]
   }
 ]
