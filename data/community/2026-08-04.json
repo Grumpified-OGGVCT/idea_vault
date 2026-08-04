@@ -133,7 +133,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-04T06:32:46Z",
+    "date": "2026-08-04T19:04:58Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -169,7 +169,7 @@
   },
   {
     "title": "\u7533\u8bf7\u52a0\u5165\u8bf7\u5728\u8fd9\u91cc\u8bc4\u8bba \uff08\u4e5f\u53ef\u4ee5\u76f4\u63a5\u53d1 Pull Request\uff09",
-    "date": "2026-08-04T18:40:27Z",
+    "date": "2026-08-04T18:41:50Z",
     "summary": "### \u5165\u9009\u6807\u51c6\r\n* \u7f51\u7ad9 / App\r\n* \u5982\u679c\u662f Github \u5e93\uff0c README \u6216\u9876\u90e8\u63cf\u8ff0\u91cc\uff0c\u8981\u9644\u4e0a\u7f51\u7ad9\u6216 App Store \u5730\u5740\uff0c\u4e0d\u80fd\u662f\u7eaf\u7cb9\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u5982\u679c\u5305\u542b\u4e86\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u90a3\u5c31\u592a\u591a\u4e86\u3002\u6240\u4ee5\u53ea\u5141\u8bb8\u9488\u5bf9\u666e\u901a\u7528\u6237\u7684\u7f51\u7ad9/App \u5217\u5728\u8868\u91cc\r\n\r\n### \u4e0d\u6536\u5f55\u7684\u4e1c\u897f\r\n* \u5f00\u53d1\u8005\u5de5\u5177\uff08Github \u672c\u8d28\u4e0a\u5c31\u662f\u4e2a\u5f00\u53d1\u8005\u5de5\u5177\u5927\u96c6\u5408\uff0c\u6536\u5f55\u5f00\u53d1\u8005\u5de5\u5177\u8fd9\u4e2a\u8868\u4f1a\u7206\u70b8\u7684\uff09\r\n* \u793e\u533a\u7c7b\u7f51\u7ad9\uff08v2ex\uff0cruby-china\uff0c\u5404\u79cd php \u793e\u533a\uff0c\u592a\u591a\u592a\u591a\u592a\u591a\u4e86\u3002\u6ca1\u6cd5\u6536\u3002\u5e0c\u671b\u7406\u89e3\uff09\r\n\r\n### \u6d41\u7a0b\r\n\u770b\u4e86\u8bc4\u8bba\u540e\u4f1a\u505a\u51b3\u5b9a\uff0c\r\n\u5982\u679c\u5165\u4e86\uff0c\u4f1a\u52a0\u8fdb\u53bb\u3002\r\n\u5982\u679c\u6ca1\u5165\uff0c\u4f1a\u544a\u77e5\u4f60\u7406\u7531\uff08\u5e0c\u671b\u4f60\u4e0d\u8981\u4ecb\u610f :",
     "url": "https://github.com/1c7/chinese-independent-developer/issues/160",
     "source": "github_issues",
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-04T16:42:45Z",
+    "date": "2026-08-04T20:06:28Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -672,25 +672,25 @@
     ]
   },
   {
-    "title": "[PR] CodeGen: layered base views \u2014 generate the inner view, let the app own the outer one",
-    "date": "2026-08-04T16:43:14Z",
-    "summary": "## The problem\n\n`BaseViewGenerated = 0` is all-or-nothing. To add **one** computed column, an application inherits the *entire* generated view \u2014 every related-entity display join, the geo join, the recursive root-ID `OUTER APPLY`, the soft-delete predicate \u2014 and hand-maintains it from then on.\n\nThat",
+    "title": "[PR] Entity metadata: layered base views + direct-SQL declarations, plus the external agent harness design plan",
+    "date": "2026-08-04T20:12:18Z",
+    "summary": "Two additive `Entity` metadata capabilities plus a design plan. Everything here is additive \u2014 every pre-existing row reproduces today's behaviour exactly, and no install changes unless it opts in.\n\n---\n\n## 1. Layered base views \u2014 `Entity.GeneratedBaseViewName`\n\n**The problem.** `BaseViewGenerated = ",
     "url": "https://github.com/MemberJunction/MJ/pull/3419",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: MJ"
     ]
   },
   {
     "title": "[PR] Entity Action as the workflow-hook substrate \u2014 scope binding, sequencing, and a safe execution log",
-    "date": "2026-08-04T01:13:56Z",
+    "date": "2026-08-04T20:07:51Z",
     "summary": "Makes `EntityAction` the general workflow-hook substrate for MJ and every OpenApp built on it, instead of each app inventing its own \u2014 and fixes the execution log so the feature is safe and diagnosable once it's used at volume.\n\n**Ships schema + plan + metadata + changeset. Engine work is specified,",
     "url": "https://github.com/MemberJunction/MJ/pull/3408",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 13",
       "pull request",
       "repo: MJ"
     ]
@@ -913,7 +913,7 @@
   },
   {
     "title": "[PR] refactor: complete enterprise service architecture conformance",
-    "date": "2026-08-04T18:20:02Z",
+    "date": "2026-08-04T20:28:21Z",
     "summary": "## Summary\\n\\nAdds the implementation plan for bringing every emme-service backend module into conformance with the enterprise DDD + Hexagonal + Spring Modulith template.\\n\\n## Scope\\n\\n- module-by-module architecture and naming normalization\\n- one-use-case-per-application-service rule\\n- API, doma",
     "url": "https://github.com/migangdelzar/emme-service/pull/3",
     "source": "github_prs",
@@ -1260,13 +1260,13 @@
     ]
   },
   {
-    "title": "[PR] API-key-scoped row filters: design + schema (implementation to follow)",
-    "date": "2026-08-04T16:47:15Z",
-    "summary": "## Summary\n\nAdds the **design document and schema** for API-key-scoped row filters. No behavior changes \u2014 the two new columns are nullable, `NULL` is the existing behavior, and enforcement lands with the follow-up implementation.\n\n**Proposed implementation owner: @jordanfanapour** (cc @MarceloT-BC).",
+    "title": "[PR] API-key-scoped row filters for 6.1 \u2014 full implementation (WS1\u2013WS3)",
+    "date": "2026-08-04T20:28:16Z",
+    "summary": "## Summary\n\nFull end-to-end implementation of API-key-scoped row filters for the **6.1 release**, per the reviewed design in `plans/api-key-row-filters.md` (v3.0). This PR evolved from docs-only to complete implementation at the owner's direction; every design decision from the three review rounds (",
     "url": "https://github.com/MemberJunction/MJ/pull/3409",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 16",
       "pull request",
       "repo: MJ"
     ]
@@ -1285,12 +1285,12 @@
   },
   {
     "title": "[PR] perf(MJServer): fix O(N\u00b2) GraphQL schema-build scaling at boot (\u221266% cold boot) (6.x)",
-    "date": "2026-08-04T16:43:01Z",
+    "date": "2026-08-04T20:11:15Z",
     "summary": "## Summary\n\n`buildSchemaSync` \u2014 called once at MJAPI boot in `packages/MJServer/src/index.ts` \u2014 is **super-linear in entity count**, and is the dominant cost of MJAPI cold-boot at scale (it was the headline finding of the scale-runtime study). This PR root-causes that to **two O(N\u00b2) hotspots inside ",
     "url": "https://github.com/MemberJunction/MJ/pull/3259",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 7",
       "pull request",
       "repo: MJ"
     ]
@@ -1375,6 +1375,174 @@
     "source": "github_prs",
     "highlights": [
       "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Connect disconnected systems, wire maintenance daemons, streamline setup",
+    "date": "2026-08-04T20:27:14Z",
+    "summary": "## Summary\n\nForesight had modules built but never wired into runtime, systems designed as hands-off but requiring manual invocation, and dead code adding weight. This PR connects everything, enables autonomous operation, and streamlines first-time install.\n\n## Connected (were disconnected)\n\n| Module",
+    "url": "https://github.com/daggerstuff/foresight/pull/32",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: foresight"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency llama-stack-api to v0.7.3",
+    "date": "2026-08-04T20:18:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-stack-api](https://re",
+    "url": "https://github.com/ansible/aap-rag-content/pull/387",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: aap-rag-content"
+    ]
+  },
+  {
+    "title": "[PR] feat: BAGO 4.8 vision, context tree, capability packages and session registry",
+    "date": "2026-08-04T20:15:59Z",
+    "summary": "Esta PR consolida el trabajo acumulado en la rama fix/chat-slash-commands.\n\n## Backend\n\n### API Handlers\n- Vision: POST /vision - analisis de imagenes via Ollama, modelo configurable\n- Workspace / Sources: gestion de fuentes (GET/POST /sources), persistencia en .bago/config.json\n- Chat / Stream: har",
+    "url": "https://github.com/MarcValls/BAGO/pull/101",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: BAGO"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency llama-stack to v0.7.3",
+    "date": "2026-08-04T20:18:26Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [llama-stack](https://redire",
+    "url": "https://github.com/ansible/aap-rag-content/pull/386",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: aap-rag-content"
+    ]
+  },
+  {
+    "title": "[PR] feat(search-engine): make the SearchScope permission resolver replaceable",
+    "date": "2026-08-04T20:08:57Z",
+    "summary": "## Summary\n\n`SearchEngine` authorizes every search through `SearchScopePermissionResolver`, which answers from `__mj.SearchScopePermission` rows keyed by `UserID` or by one of the user's MJ Roles. That covers MJ's own permission model completely \u2014 but it is not the only shape a permission model can ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3378",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(installer): zero-prerequisite \"ultimate\" bootstrap (install.sh / install.ps1)",
+    "date": "2026-08-04T20:05:19Z",
+    "summary": "## Why\n\nToday the entry-point installers (`setup-autogpt.{sh,bat}`) only **check** for git + Docker and exit if they're missing \u2014 and the hosted `setup.agpt.co/install.*` one-liners hard-fail on a machine that doesn't already have Docker, despite the docs promising \"no prerequisite setup needed.\" Th",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13261",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] feat: add hybrid model router",
+    "date": "2026-08-04T20:04:58Z",
+    "summary": "## Summary\n\nAdds the missing backend implementation for ProductOS model routing via the existing `autoRouter` provider type. ProductOS can now route between a local trained provider, currently Ollama by default, and a cloud/fallback provider using explicit privacy/performance policy.\n\n## Specificati",
+    "url": "https://github.com/AIResearchFactory/productOS/pull/194",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: productOS"
+    ]
+  },
+  {
+    "title": "[PR] test(angular): Phase 4 \u2014 gates, guardrails, hygiene, mutation pilot & coverage push",
+    "date": "2026-08-04T20:04:05Z",
+    "summary": "## Phase 4 of the Angular DOM unit-testing rollout \u2014 gates, guardrails, hygiene, mutation pilot & coverage push\n\nPhase 3 landed the specs (132/132 in-scope Explorer coverage); Phase 4 keeps them honest **and** closes the coverage gaps. Four CI gates, the batched hygiene cleanup, the stub consolidati",
+    "url": "https://github.com/MemberJunction/MJ/pull/3174",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(cli): pin Open App bootstrap alias numbering to the array position",
+    "date": "2026-08-04T19:57:31Z",
+    "summary": "Follow-up to #3282, addressing the review points raised on it.\n\n## 1. Alias numbering is now single-sourced (review: \"add a test for mixed enabled/disabled entries\")\n\nThe merged form emits indexed aliases (`__openAppClient0/1/\u2026`) where the bare-import form used none. The concern: if the index basis ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3337",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(integration-engine): make the FetchChanges timeout configurable",
+    "date": "2026-08-04T19:57:08Z",
+    "summary": "## Problem\n\n`IntegrationEngine` wraps every `FetchChanges` call in `DEFAULT_OPERATION_TIMEOUTS.FetchChangesMs` (30s), with no way to change it \u2014 not per deployment, not per connector.\n\nThat penalises exactly the connectors that need a longer budget. A connector that fans out one request per parent r",
+    "url": "https://github.com/MemberJunction/MJ/pull/3381",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(integration): durable sync runs \u2014 lease/fence ownership, DB-backed cancel + progress, opt-in worker mode",
+    "date": "2026-08-04T19:56:37Z",
+    "summary": "Implements **tasks.md PR 1 \u2014 durable sync runs**. A `CompanyIntegrationRun` is now an owned, leased, fenced unit of work that survives a process death, can be cancelled and observed from any process, and can be executed by a worker rather than the request that asked for it.\n\nTwo commits: `9cdf67f` i",
+    "url": "https://github.com/MemberJunction/MJ/pull/3291",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] perf(core): stop paying for a speculative COUNT(*) on reads nobody counts - 6.x",
+    "date": "2026-08-04T19:56:29Z",
+    "summary": "> **\ud83d\udea6 Confirmed not for 5.50.0 \u2014 targeting 6.x (opens Aug 3).** Split out of #3293 and now removed from\n> that branch, so #3293 can go into the LTS candidate without this semantic change.\n\nSplit out of #3293 so it can be reviewed on its own.\n\n## What it does\n\n`RunView` decided whether to run its `CO",
+    "url": "https://github.com/MemberJunction/MJ/pull/3298",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(open-app): close four silent-failure gaps in config writes, class registration, and update checks",
+    "date": "2026-08-04T19:56:22Z",
+    "summary": "All four defects here share a failure mode: **nothing goes red.** The app installs, `__mj.OpenApp` reports `Active`, the CLI prints a success line \u2014 and the config the runtime actually loads is wrong, or a registered class never runs, or an update check reports a version belonging to a different app",
+    "url": "https://github.com/MemberJunction/MJ/pull/3352",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(integration): remove connector source duplicated by the Integrations repo \u2014 6.x",
+    "date": "2026-08-04T19:56:19Z",
+    "summary": "> **\u26a0\ufe0f BREAKING \u2014 targeted at the 6.x line. Nothing is merged here; opening for review.**\n\n## Why\n\n`packages/Integration/connectors` held **36 vendor connectors that were pure duplicates**. The same classes ship from [MemberJunction/Integrations](https://github.com/MemberJunction/Integrations), wher",
+    "url": "https://github.com/MemberJunction/MJ/pull/3385",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
       "pull request",
       "repo: MJ"
     ]
