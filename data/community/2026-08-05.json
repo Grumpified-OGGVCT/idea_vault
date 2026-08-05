@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-05T07:21:26Z",
+    "date": "2026-08-05T10:02:54Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -781,12 +781,12 @@
   },
   {
     "title": "[PR] Draft: Gemini 3 Flash Preview F01 migration and Legora workbench UI",
-    "date": "2026-08-05T07:42:11Z",
+    "date": "2026-08-05T10:01:37Z",
     "summary": "## Goal\n\nMigrate F01 from the superseded Qwen broad-extraction path to a backend-only Gemini Cloud Assisted architecture pinned to `gemini-3-flash-preview`, while preserving local parsing, evidence binding, final verification, review persistence, Office.js safety, and the five-screen Legora-style wo",
     "url": "https://github.com/dc20758/Lendo_Lei/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 690",
+      "comments: 698",
       "pull request",
       "repo: Lendo_Lei"
     ]
@@ -1125,6 +1125,246 @@
       "comments: 8",
       "pull request",
       "repo: omi"
+    ]
+  },
+  {
+    "title": "[\u4e91\u7aef\u5ba1\u67e5] \u4ed3\u5e93\u5065\u5eb7\u95ee\u9898",
+    "date": "2026-08-05T10:07:07Z",
+    "summary": "<!-- cloud-audit-fingerprint: 2030264d0223 -->\n<!-- cycle: regression -->\n\n## Cycle 1: regression\n\n- Task: \u5148\u68c0\u67e5\u6700\u8fd1\u53d8\u66f4\u3001Python \u8bed\u6cd5\u548c\u6d4b\u8bd5\u56de\u5f52\u3002\n- Commit: `f420b8558a0c30f92447a98daad3ced35ee6593d`\n- Started: `2026-08-05T05:00:04.711301+00:00`\n- Completed: `2026-08-05T05:00:15.118205+00:00`\n- Finding fingerprint:",
+    "url": "https://github.com/v6582374-netizen/Vegapunk/issues/36",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 333",
+      "state: open",
+      "repo: Vegapunk"
+    ]
+  },
+  {
+    "title": "\ud83d\udcca AI CLI Tools Digest 2026-08-05",
+    "date": "2026-08-05T08:04:07Z",
+    "summary": "# AI CLI Tools Community Digest 2026-08-05\n\n> Generated: 2026-08-05 07:33 UTC | Tools covered: 9\n\n- [Claude Code](https://github\u200b.com/anthropics/claude-code)\n- [OpenAI Codex](https://github\u200b.com/openai/codex)\n- [Gemini CLI](https://github\u200b.com/google-gemini/gemini-cli)\n- [GitHub Copilot CLI](https:/",
+    "url": "https://github.com/Chestnuts-0/os-feed/issues/778",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: os-feed"
+    ]
+  },
+  {
+    "title": "[PR] feat: load cloud model lists from the provider instead of a curated array",
+    "date": "2026-08-05T10:38:23Z",
+    "summary": "The payoff of the programme #935 enabled. **Deletes the hand-maintained cloud model arrays and the hardcoded onboarding defaults.**\n\nFour stale-model defects shipped in a single session from those two places \u2014 including `gemini-2.0-flash` serving as the Gemini onboarding default after Google shut it",
+    "url": "https://github.com/saeedkolivand/ai-job-hunter-app/pull/936",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: ai-job-hunter-app"
+    ]
+  },
+  {
+    "title": "[PR] Updated to the latest version of the current project",
+    "date": "2026-08-05T10:37:28Z",
+    "summary": "#### What roadmap does this PR target?\r\n\r\n- [ ] Frontend Roadmap\r\n- [ ] Backend Roadmap\r\n- [ ] DevOps Roadmap\r\n- [x] All Roadmaps\r\n\r\n#### Please acknowledge the items listed below\r\n\r\n- [ ] I have discussed this contribution and got a go-ahead in an issue before opening this pull request.\r\n- [ ] This",
+    "url": "https://github.com/Diego-18/developer-roadmap/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: developer-roadmap"
+    ]
+  },
+  {
+    "title": "[PR] Update maven (major)",
+    "date": "2026-08-05T10:34:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Netcracker/qubership-core-java-libs/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-java-libs"
+    ]
+  },
+  {
+    "title": "[PR] Fix Ollama Cloud settings to behave as a cloud provider, not local Ollama",
+    "date": "2026-08-05T10:26:08Z",
+    "summary": "\r\nOllama Cloud shared local Ollama's UI treatment (keyless, always-editable URL, local pull-model controls, /api/tags-style model registration), even though it's a hosted service requiring an API key like any other cloud provider. Scope the local-only behavior to the \"ollama\" backend and let \"ollama",
+    "url": "https://github.com/m6r-ai/humbug/pull/467",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: humbug"
+    ]
+  },
+  {
+    "title": "[PR] Update Mend: high confidence minor and patch dependency updates",
+    "date": "2026-08-05T10:16:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Uncleken13/coherence/pull/148",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: coherence"
+    ]
+  },
+  {
+    "title": "[PR] feat: add AI script and schedule import",
+    "date": "2026-08-05T10:07:28Z",
+    "summary": "## Summary\n\nAdds the **AI-assisted script & schedule import** feature (ADR-013 / ADR-030) to the breakdown-rs backend: upload a shooting-script PDF or a schedule CSV, have it parsed into structured previews, and apply them idempotently to the event-sourced domain via existing commands.\n\n## Highlight",
+    "url": "https://github.com/tradem/breakdown-rs/pull/169",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: breakdown-rs"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-05T09:56:19Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jeevesh415/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-05T09:55:06Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-05T09:55:03Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/facemendous/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-05T09:55:00Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-05T09:54:57Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/gmifsud/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-05T09:54:57Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/MAlkabbani/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-05T09:54:56Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/Fenris159/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-05T09:54:53Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-05T09:54:47Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/softctwo/ResoftCode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ResoftCode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-05T09:54:25Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-05T09:54:15Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/christophschatz88-arch/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] feat(activity): local signal-constrained Mastra reflection",
+    "date": "2026-08-05T09:54:10Z",
+    "summary": "## \u6982\u8981\n\n- \u5c06\u6d3b\u52a8\u53cd\u601d\u91cd\u6784\u4e3a\u5ba2\u6237\u7aef\u672c\u5730\u4fe1\u53f7\u7d22\u5f15 + Mastra \u539f\u751f Skills \u7684\u786e\u5b9a\u6027\u52a0\u8f7d\u3002\n- \u8fdc\u7aef\u4ec5\u63a5\u6536\u4e00\u6761 OpenAI \u517c\u5bb9\u6a21\u578b\u8c03\u7528\u5e76\u8f6c\u53d1\u7ed9 CPU-only Qwen\uff1b\u4e0d\u805a\u5408\u6d3b\u52a8\u3001\u4e0d\u8bc4\u5206\u3001\u4e0d\u89e6\u53d1 Agent\u3001\u4e0d\u4fdd\u5b58\u539f\u59cb\u6d3b\u52a8\u6570\u636e\u3002\n- \u53cd\u601d\u8f93\u51fa\u53d7\u5f53\u524d\u7a97\u53e3\u7684\u65f6\u95f4\u7247\u3001\u5019\u9009\u6d3b\u52a8\u679a\u4e3e\u548c\u4e2d\u6587\u53ef\u6838\u5bf9\u7ea6\u675f\uff0c\u5ba2\u6237\u7aef\u5c06 signal segment \u6620\u5c04\u56de\u539f\u59cb\u65f6\u95f4\u3002\n- \u4fdd\u7559\u6a21\u578b\u8fd4\u56de score \u7684\u76f4\u63a5\u7d2f\u8ba1\u8bed\u4e49\uff1b\u5ba2\u6237\u7aef\u53ea\u505a\u8fb9\u754c\u548c\u5e42\u7b49\u6821\u9a8c\u3002\n\n## \u9690\u79c1\u4e0e\u8fb9\u754c\n\n- \u5b8c\u6574\u539f\u59cb\u6d3b\u52a8\u4e8b\u4ef6\u3001\u63d0\u793a\u8bcd\u3001Skills\u3001\u805a\u5408\u548c\u8bc4\u5206\u89c4\u5219\u5747\u5728\u684c\u9762\u7aef\u3002\n- \u53d1\u7ed9\u6a21\u578b\u7684\u5185\u5bb9\u4ecd\u662f\u5f53\u524d\u5df2\u5c01\u95ed\u7a97\u53e3\uff1b\u672c\u5730 signal ",
+    "url": "https://github.com/Sea-Go/Sea-WhaleHall/pull/17",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Sea-WhaleHall"
     ]
   }
 ]
