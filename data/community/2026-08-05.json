@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-05T19:08:48Z",
+    "date": "2026-08-05T20:37:56Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -961,7 +961,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-08-05T14:44:13Z",
+    "date": "2026-08-05T20:44:12Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1116,8 +1116,8 @@
     ]
   },
   {
-    "title": "[PR] Run Omi fully on-prem: storage behind a neutral, swappable port (Firestore | Mongo)",
-    "date": "2026-08-05T06:41:21Z",
+    "title": "[PR] Omi fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,oauth - llm: openai - notifications: FCM, unifiedpush)",
+    "date": "2026-08-05T20:53:59Z",
     "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
     "url": "https://github.com/BasedHardware/omi/pull/10887",
     "source": "github_prs",
@@ -1477,19 +1477,19 @@
   },
   {
     "title": "[PR] fix(ollama): split health cache, protocol done, context budgets (PR2)",
-    "date": "2026-08-05T19:37:41Z",
+    "date": "2026-08-05T20:25:17Z",
     "summary": "## **User description**\n<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nHardens Ollama runtime integration: split health caches, require `done` on generate streams, derive prompt budgets from `/api/show` context length, and fix double-reservation / minimum-clamp bugs that could exceed the model wind",
     "url": "https://github.com/qnbs/AI-Research-Orchestrator/pull/214",
     "source": "github_prs",
     "highlights": [
-      "comments: 30",
+      "comments: 33",
       "pull request",
       "repo: AI-Research-Orchestrator"
     ]
   },
   {
     "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7",
-    "date": "2026-08-05T11:05:42Z",
+    "date": "2026-08-05T20:35:49Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3025",
     "source": "github_prs",
@@ -1501,7 +1501,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-08-05T11:01:19Z",
+    "date": "2026-08-05T20:02:50Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1572,9 +1572,9 @@
     ]
   },
   {
-    "title": "[PR] chore(deps): update ollama/ollama docker tag to v0.32.5",
-    "date": "2026-08-05T14:42:34Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| ollama/ollama | patch | `0.32.4` \u2192 `0.32.5` |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (UTC)\n\n- Branch creation\n  - At any time (no schedule defined)\n- Automerge\n  - At any time (no schedule defined)\n\n\ud83d\udea6 **Automerg",
+    "title": "[PR] chore(deps): update ollama/ollama docker tag to v0.32.6",
+    "date": "2026-08-05T20:08:37Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| ollama/ollama | patch | `0.32.4` \u2192 `0.32.6` |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (UTC)\n\n- Branch creation\n  - At any time (no schedule defined)\n- Automerge\n  - At any time (no schedule defined)\n\n\ud83d\udea6 **Automerg",
     "url": "https://github.com/bancey/lab-ops/pull/1427",
     "source": "github_prs",
     "highlights": [
@@ -1621,12 +1621,12 @@
   },
   {
     "title": "[PR] fix(open-app): stop the installer silently disabling CodeGen entity registration",
-    "date": "2026-08-05T17:38:09Z",
+    "date": "2026-08-05T20:36:00Z",
     "summary": "An Open App could install cleanly, run `mj codegen` cleanly, and end up with its tables present and **zero entities** \u2014 with no error at any step. We hit it on a first-party BizApp: 23 tables, 0 entities. `mj sync push` then had nothing to attach the app's metadata to, and the app's published `-enti",
     "url": "https://github.com/MemberJunction/MJ/pull/3487",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 6",
       "pull request",
       "repo: MJ"
     ]
@@ -1740,15 +1740,111 @@
     ]
   },
   {
-    "title": "[PR] feat(auth): metadata-driven pluggable authentication providers \u2014 plan + migration + login mockup",
-    "date": "2026-08-05T19:01:53Z",
-    "summary": "## Summary\n\nFoundation for making MemberJunction's authentication providers **pluggable the MJ way** \u2014 discovered via `@RegisterClass` + a `DriverClass` **metadata** entity, instead of the current hard-wired imports + `mj.config.cjs` array + single-`AUTH_TYPE` client. Adding a provider becomes: ship",
+    "title": "[PR] feat(auth): metadata-driven pluggable authentication providers",
+    "date": "2026-08-05T20:51:55Z",
+    "summary": "## Summary\n\nMakes MemberJunction's authentication providers pluggable **the MJ way** \u2014 discovered via `@RegisterClass` and configured through metadata, environment variables, or the config file, all resolved through the same `ClassFactory`. Adding a provider is now a subclass plus a row. **Zero core",
     "url": "https://github.com/MemberJunction/MJ/pull/2985",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 13",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Feat/gemini3 tavily fallback chain",
+    "date": "2026-08-05T21:13:40Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added web-based evidence grounding with configurable search, filtering, and evidence limits.\n  * Added Google Search grounding when web evidence is unavailable.\n  * Expanded ",
+    "url": "https://github.com/ryanbuckleyca/wev/pull/179",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: wev"
+    ]
+  },
+  {
+    "title": "[PR] Update repo table",
+    "date": "2026-08-05T21:10:07Z",
+    "summary": "## Summary\n\nThis PR updates the README repository table.\n\n## Summary\n\n**2 repos starred:**\n[firecrawl/anydoc](https://github.com/firecrawl/anydoc), [vapier/pcalc](https://github.com/vapier/pcalc)\n\n**1 repos had updated tags:**\n- Added: 1 repos added 6 unique tags: [IO-ZetZor/Visor-BootManager](https",
+    "url": "https://github.com/arran4/arran4/pull/268",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: arran4"
+    ]
+  },
+  {
+    "title": "[PR] Update Fleet-maintained apps",
+    "date": "2026-08-05T21:07:53Z",
+    "summary": "Automated ingestion of latest Fleet-maintained app data.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n- **Updates**\n  - Refreshed the catalog versions, download links, checksums, and update detection for Archaeology, Bitwig Studio, Brave Brow",
+    "url": "https://github.com/fleetdm/fleet/pull/50636",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: fleet"
+    ]
+  },
+  {
+    "title": "[PR] [6.0] External agent harnesses as MJ agents \u2014 turn protocol on the Loop contract (Claude Code, Codex, OpenCode, Gemini CLI, Pi)",
+    "date": "2026-08-05T21:07:45Z",
+    "summary": "Runs an **external agent harness** \u2014 Claude Code, Codex CLI, OpenCode, Gemini CLI, Pi \u2014 as the reasoning substrate for an MJ agent, while MemberJunction keeps identity, permissions, governed data access, payload contracts, HITL, cost control and run-level audit.\n\n> This PR began as the design plan (",
+    "url": "https://github.com/MemberJunction/MJ/pull/3412",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(dx): make onboarding failures say what to fix",
+    "date": "2026-08-05T20:42:14Z",
+    "summary": "## Why\n\nA new machine hit failures whose messages named neither the cause nor the remedy. Every row below was reproduced before it was fixed, and re-probed against a running server afterwards.\n\n| Symptom on a fresh machine | What the developer saw | Root cause |\n| --- | --- | --- |\n| `pnpm install` ",
+    "url": "https://github.com/ASCS-eV/ontology-based-nl-search/pull/202",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ontology-based-nl-search"
+    ]
+  },
+  {
+    "title": "[PR] Update Docker non-major",
+    "date": "2026-08-05T20:38:45Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/ozark-connect/network-optimizer](https://redirect.github.com/Ozark-Connect/NetworkOptimizer) | patch | `2.5.2` \u2192 `2.5.3` |\n| [grafana/grafana](https://redirect.github.com/grafana/grafana) | patch | `13.1.",
+    "url": "https://github.com/benprisby/homelab/pull/182",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat(installer): zero-prerequisite \"ultimate\" bootstrap (install.sh / install.ps1)",
+    "date": "2026-08-05T20:33:39Z",
+    "summary": "## Why\n\nToday the entry-point installers (`setup-autogpt.{sh,bat}`) only **check** for git + Docker and exit if they're missing \u2014 and the hosted `setup.agpt.co/install.*` one-liners hard-fail on a machine that doesn't already have Docker, despite the docs promising \"no prerequisite setup needed.\" Th",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13261",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update obolup.sh dependency updates",
+    "date": "2026-08-05T20:30:43Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [databus23/helm-diff](https://redirect.github.com/databus23/helm-diff) | patch | `3.15.10` \u2192 `3.15.11` |\n| [helmfile/helmfile](https://redirect.github.com/helmfile/helmfile) | patch | `1.7.0` \u2192 `1.7.3` |\n| [kubern",
+    "url": "https://github.com/ObolNetwork/obol-stack/pull/797",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: obol-stack"
     ]
   }
 ]
