@@ -145,12 +145,12 @@
   },
   {
     "title": "\u7533\u8bf7\u52a0\u5165\u8bf7\u5728\u8fd9\u91cc\u8bc4\u8bba \uff08\u4e5f\u53ef\u4ee5\u76f4\u63a5\u53d1 Pull Request\uff09",
-    "date": "2026-08-05T00:48:59Z",
+    "date": "2026-08-05T07:06:25Z",
     "summary": "### \u5165\u9009\u6807\u51c6\r\n* \u7f51\u7ad9 / App\r\n* \u5982\u679c\u662f Github \u5e93\uff0c README \u6216\u9876\u90e8\u63cf\u8ff0\u91cc\uff0c\u8981\u9644\u4e0a\u7f51\u7ad9\u6216 App Store \u5730\u5740\uff0c\u4e0d\u80fd\u662f\u7eaf\u7cb9\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u5982\u679c\u5305\u542b\u4e86\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u90a3\u5c31\u592a\u591a\u4e86\u3002\u6240\u4ee5\u53ea\u5141\u8bb8\u9488\u5bf9\u666e\u901a\u7528\u6237\u7684\u7f51\u7ad9/App \u5217\u5728\u8868\u91cc\r\n\r\n### \u4e0d\u6536\u5f55\u7684\u4e1c\u897f\r\n* \u5f00\u53d1\u8005\u5de5\u5177\uff08Github \u672c\u8d28\u4e0a\u5c31\u662f\u4e2a\u5f00\u53d1\u8005\u5de5\u5177\u5927\u96c6\u5408\uff0c\u6536\u5f55\u5f00\u53d1\u8005\u5de5\u5177\u8fd9\u4e2a\u8868\u4f1a\u7206\u70b8\u7684\uff09\r\n* \u793e\u533a\u7c7b\u7f51\u7ad9\uff08v2ex\uff0cruby-china\uff0c\u5404\u79cd php \u793e\u533a\uff0c\u592a\u591a\u592a\u591a\u592a\u591a\u4e86\u3002\u6ca1\u6cd5\u6536\u3002\u5e0c\u671b\u7406\u89e3\uff09\r\n\r\n### \u6d41\u7a0b\r\n\u770b\u4e86\u8bc4\u8bba\u540e\u4f1a\u505a\u51b3\u5b9a\uff0c\r\n\u5982\u679c\u5165\u4e86\uff0c\u4f1a\u52a0\u8fdb\u53bb\u3002\r\n\u5982\u679c\u6ca1\u5165\uff0c\u4f1a\u544a\u77e5\u4f60\u7406\u7531\uff08\u5e0c\u671b\u4f60\u4e0d\u8981\u4ecb\u610f :",
     "url": "https://github.com/1c7/chinese-independent-developer/issues/160",
     "source": "github_issues",
     "highlights": [
-      "comments: 1814",
+      "comments: 1816",
       "state: open",
       "repo: chinese-independent-developer"
     ]
@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-04T23:51:27Z",
+    "date": "2026-08-05T07:21:26Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] feat(integration): durable sync runs \u2014 lease/fence ownership, DB-backed cancel + progress, opt-in worker mode",
-    "date": "2026-08-04T23:46:22Z",
+    "date": "2026-08-05T06:52:53Z",
     "summary": "Implements **tasks.md PR 1 \u2014 durable sync runs**. A `CompanyIntegrationRun` is now an owned, leased, fenced unit of work that survives a process death, can be cancelled and observed from any process, and can be executed by a worker rather than the request that asked for it.\n\nTwo commits: `9cdf67f` i",
     "url": "https://github.com/MemberJunction/MJ/pull/3291",
     "source": "github_prs",
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] fix(integration): record-map write amplification, pagination-violation visibility, non-blocking schema refresh",
-    "date": "2026-08-04T23:46:12Z",
+    "date": "2026-08-05T06:52:59Z",
     "summary": "Three independent, low-risk fixes on the connector apply path. Each stands alone \u2014 none depends on the others.\n\n### 1. `TrackRecordChanges = 0` for `MJ: Company Integration Record Maps` (migration)\n\n`CompanyIntegrationRecordMap` is the highest-volume table the sync path writes: one row per external ",
     "url": "https://github.com/MemberJunction/MJ/pull/3354",
     "source": "github_prs",
@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] perf(MJServer): fix O(N\u00b2) GraphQL schema-build scaling at boot (\u221266% cold boot) (6.x)",
-    "date": "2026-08-04T23:43:05Z",
+    "date": "2026-08-05T06:50:59Z",
     "summary": "## Summary\n\n`buildSchemaSync` \u2014 called once at MJAPI boot in `packages/MJServer/src/index.ts` \u2014 is **super-linear in entity count**, and is the dominant cost of MJAPI cold-boot at scale (it was the headline finding of the scale-runtime study). This PR root-causes that to **two O(N\u00b2) hotspots inside ",
     "url": "https://github.com/MemberJunction/MJ/pull/3259",
     "source": "github_prs",
@@ -661,7 +661,7 @@
   },
   {
     "title": "[PR] fix(open-app): close four silent-failure gaps in config writes, class registration, and update checks",
-    "date": "2026-08-04T23:42:45Z",
+    "date": "2026-08-05T06:25:50Z",
     "summary": "All four defects here share a failure mode: **nothing goes red.** The app installs, `__mj.OpenApp` reports `Active`, the CLI prints a success line \u2014 and the config the runtime actually loads is wrong, or a registered class never runs, or an update check reports a version belonging to a different app",
     "url": "https://github.com/MemberJunction/MJ/pull/3352",
     "source": "github_prs",
@@ -673,7 +673,7 @@
   },
   {
     "title": "[PR] perf(core): stop paying for a speculative COUNT(*) on reads nobody counts - 6.x",
-    "date": "2026-08-04T23:42:42Z",
+    "date": "2026-08-05T06:25:59Z",
     "summary": "> **\ud83d\udea6 Confirmed not for 5.50.0 \u2014 targeting 6.x (opens Aug 3).** Split out of #3293 and now removed from\n> that branch, so #3293 can go into the LTS candidate without this semantic change.\n\nSplit out of #3293 so it can be reviewed on its own.\n\n## What it does\n\n`RunView` decided whether to run its `CO",
     "url": "https://github.com/MemberJunction/MJ/pull/3298",
     "source": "github_prs",
@@ -685,7 +685,7 @@
   },
   {
     "title": "[PR] fix(sqlconverter): correct nine T-SQL\u2192PostgreSQL conversion defects that break open-app installs",
-    "date": "2026-08-04T23:42:39Z",
+    "date": "2026-08-05T06:26:12Z",
     "summary": "## What this fixes\n\nConverting an open app's SQL Server migrations to PostgreSQL (`mj migrate convert`) produced files that either failed to apply or \u2014 worse \u2014 applied \"successfully\" while leaving the database in a wrong state.\n\nNine defects, all found while making a real open app install on Postgre",
     "url": "https://github.com/MemberJunction/MJ/pull/3351",
     "source": "github_prs",
@@ -709,7 +709,7 @@
   },
   {
     "title": "[PR] fix(cli): pin Open App bootstrap alias numbering to the array position",
-    "date": "2026-08-04T23:42:02Z",
+    "date": "2026-08-05T06:26:18Z",
     "summary": "Follow-up to #3282, addressing the review points raised on it.\n\n## 1. Alias numbering is now single-sourced (review: \"add a test for mixed enabled/disabled entries\")\n\nThe merged form emits indexed aliases (`__openAppClient0/1/\u2026`) where the bare-import form used none. The concern: if the index basis ",
     "url": "https://github.com/MemberJunction/MJ/pull/3337",
     "source": "github_prs",
@@ -781,12 +781,12 @@
   },
   {
     "title": "[PR] Draft: Gemini 3 Flash Preview F01 migration and Legora workbench UI",
-    "date": "2026-08-05T04:05:24Z",
+    "date": "2026-08-05T07:42:11Z",
     "summary": "## Goal\n\nMigrate F01 from the superseded Qwen broad-extraction path to a backend-only Gemini Cloud Assisted architecture pinned to `gemini-3-flash-preview`, while preserving local parsing, evidence binding, final verification, review persistence, Office.js safety, and the five-screen Legora-style wo",
     "url": "https://github.com/dc20758/Lendo_Lei/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 688",
+      "comments: 690",
       "pull request",
       "repo: Lendo_Lei"
     ]
@@ -993,6 +993,138 @@
       "comments: 2",
       "pull request",
       "repo: emme-service"
+    ]
+  },
+  {
+    "title": "[PR] fix(search): validate the rewriter base URL at construction (#235)",
+    "date": "2026-08-05T07:41:30Z",
+    "summary": "Closes #235. Independent of #262 \u2014 branched from `main`.\n\n## The wart\n\nA malformed `ollama_host` / `rewriter_openai_base_url` /\n`rewriter_anthropic_base_url` surfaced **per request**:\n\n```\nrewrite_status:    failed\nrewrite_note_code: unreachable\nrewrite_note:      \"could not reach the rewriter servi",
+    "url": "https://github.com/hherb/localmail/pull/263",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: localmail"
+    ]
+  },
+  {
+    "title": "[PR] feat(vscode): discover local embedding models",
+    "date": "2026-08-05T07:23:08Z",
+    "summary": "## What changed\n\nAdd a guided local embedding setup to VS Code indexing settings. Users can discover installed Ollama models or loaded LM Studio and OpenAI-compatible models, validate the selected model with a real embedding request, and save the detected vector dimension automatically.\n\nLM Studio i",
+    "url": "https://github.com/Kilo-Org/kilocode/pull/12671",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] Replace Jina AI embeddings with local Ollama embeddings",
+    "date": "2026-08-05T07:20:42Z",
+    "summary": "Closes #10, #11, #12, #13, #14, #15, #16\n\n## Summary\n\nFully replaces the Jina AI cloud embeddings API with local, free, on-prem Ollama embeddings, addressing the epic in #10. Six sequential commits, one per sub-issue:\n\n- **#11** \u2014 Fixed pre-existing broken test fixtures in `tests/unit/services/agent",
+    "url": "https://github.com/pkuppens/production-agentic-rag-course/pull/17",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: production-agentic-rag-course"
+    ]
+  },
+  {
+    "title": "[PR] feat: multimodal embeddings",
+    "date": "2026-08-05T07:18:32Z",
+    "summary": "## Summary\n\nThis PR introduces comprehensive multimodal embedding support across the Bifrost platform, enabling text, image, audio, video, and file inputs for embedding generation. The implementation standardizes embedding input handling through a new `Contents` structure while maintaining backward ",
+    "url": "https://github.com/maximhq/bifrost/pull/2559",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] feat(runtime): add dormant Podman GPU and local inference",
+    "date": "2026-08-05T07:13:45Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nThis PR adds the dormant provider-owned Podman GPU and host-local inference layer for Ollama, NVIDIA NIM, and vLLM. OpenClaw, Hermes, and DCode consume the same provider-neutral routing contract; Podman remains absent from production registration and t",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/8061",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(quant_os): RYDC ATR alignment + dollar PnL honesty (price level)",
+    "date": "2026-08-05T07:03:23Z",
+    "summary": "## Summary\n\nRYDC ATR alignment + dollar PnL honesty \u2014 5 commits (plan: `docs/superpowers/plans/2026-08-05-rydc-atr-alignment-pnl-honesty.md`).\n\n### Changes\n1. **ATR window alignment** (`run_rydc_validation.py`): extracted `_atr_window(data, i, atr_period)` helper \u2014 window ends at current bar `i` inc",
+    "url": "https://github.com/bravforcode/graxia-os/pull/22",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: graxia-os"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update netbirdio/netbird docker tag to v0.76.1",
+    "date": "2026-08-05T06:56:44Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [netbirdio/netbird](https://redirect.github.com/netbirdio/netbird) | minor | `0.64.5` \u2192 `0.76.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary",
+    "url": "https://github.com/abajaber/homelab/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): add native Hailo-Ollama support",
+    "date": "2026-08-05T06:54:34Z",
+    "summary": "## Summary\n\n- **Base branch:** `master` at `4b6e9ea04fb161d519305dd598d135604d0cd630`\n- **Current head:** `a2ad6b230d4ba24e80b42ceb9dca3a00b8c8b141`\n- **What changed and why:**\n  - Add a dedicated `HailoOllamaModelProvider` for Hailo-Ollama's native `/api/chat` and `/api/tags` contract, keeping its ",
+    "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix: use native Ollama tags for local model discovery",
+    "date": "2026-08-05T06:54:26Z",
+    "summary": "## Follow-up update\n\nStarted from the exact GitHub head `7e154c8c98022892391f8c642a21994c9db31d96`, locally rebased onto current upstream `main` at `0a62610f10cc34d696b2239b2c69fa1ba0f1ca63`, resolved one conflict in `hermes_cli/models.py` while preserving current-main logging and cache-age behavior",
+    "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): per-provider request timeout and retry configuration",
+    "date": "2026-08-05T06:46:25Z",
+    "summary": "## Summary\n\n- Every provider request \u2014 Ollama, LM Studio, OpenAI, Anthropic, Groq, DeepSeek, custom OpenAI-compatible endpoints \u2014 now has an idle-request timeout instead of hanging indefinitely (`proxy.js`'s `streamHTTPS`/`streamAnthropic`/`streamCustom`/`streamProvider` previously had no `timeout` ",
+    "url": "https://github.com/AbanoubEMhanna/llm-hub/pull/98",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: llm-hub"
+    ]
+  },
+  {
+    "title": "[PR] Run Omi fully on-prem: storage behind a neutral, swappable port (Firestore | Mongo)",
+    "date": "2026-08-05T06:41:21Z",
+    "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
+    "url": "https://github.com/BasedHardware/omi/pull/10887",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: omi"
     ]
   }
 ]
