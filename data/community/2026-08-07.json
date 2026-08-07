@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-07T18:11:16Z",
+    "date": "2026-08-07T19:12:20Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -817,12 +817,12 @@
   },
   {
     "title": "[PR] fix(core,server): stop consumers corrupting the process-wide RunView cache (freeze-on-write)",
-    "date": "2026-08-07T04:57:07Z",
+    "date": "2026-08-07T19:50:24Z",
     "summary": "## What shipped\n\nA P1 fix, plus the structural change that makes its whole bug class unreachable.\n\n**The P1.** `ResolverBase` mapped GraphQL transport field names onto the data provider's own result rows, which the server cache holds **by reference**. Preparing one GraphQL response therefore rewrote",
     "url": "https://github.com/MemberJunction/MJ/pull/3425",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "pull request",
       "repo: MJ"
     ]
@@ -1453,12 +1453,12 @@
   },
   {
     "title": "\ud3f4\ubc31 advance \uac00 \uc2e4\ud328 \uc0ac\uc720\ub97c \ubc84\ub9b0\ub2e4 \u2014 11 \uac1c \uc6d0\uc778\uc774 kind=execution_failed \ud558\ub098\ub85c \ubb49\uac1c\uc9d0",
-    "date": "2026-08-07T18:56:50Z",
+    "date": "2026-08-07T19:26:40Z",
     "summary": "## \uc99d\uc0c1\n\n\ud3f4\ubc31 \uccb4\uc778\uc5d0\uc11c \uc2ac\ub86f\uc774 \uc2e4\ud328\ud558\uba74 \ub85c\uadf8\uc5d0 \uc774\ub807\uac8c \ub0a8\ub294\ub2e4:\n\n```\nadvance=glm-coding.glm-5-turbo->ollama_cloud.gemma4-31b-cloud kind=execution_failed\n```\n\n`kind=execution_failed` \uac00 \uc804\ubd80\ub2e4. **\uc65c \uc2e4\ud328\ud588\ub294\uc9c0\ub294 \uc5b4\ub514\uc5d0\ub3c4 \uc5c6\ub2e4.**\n\n`call_id` \ub85c \ucd94\uc801\ud574\ub3c4 \ub098\uc624\uc9c0 \uc54a\ub294\ub2e4 \u2014 \uadf8 id \ub294 \uc774 \ud55c \uc904\uc5d0\ub9cc \ub4f1\uc7a5\ud55c\ub2e4:\n\n```bash\n$ rg 848325a812900025559cbcb01119dd78 ~/me/.masc/logs/syst",
     "url": "https://github.com/jeong-sik/masc/issues/27431",
     "source": "github_issues",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "state: open",
       "repo: masc"
     ]
@@ -1525,7 +1525,7 @@
   },
   {
     "title": "[PR] fix(storage): Azure Blob DB credentials + File Browser upload/listing fixes",
-    "date": "2026-08-07T13:01:04Z",
+    "date": "2026-08-07T19:37:21Z",
     "summary": "## Summary\n- **AzureFileStorage** \u2014 make credentials optional at construction so DB-credential (enterprise) deployments work without `STORAGE_AZURE_*` env vars. Previously the constructor called `env.get(...).required()` and threw before `initialize()` could run, breaking any `FileStorageAccount`-ba",
     "url": "https://github.com/MemberJunction/MJ/pull/3568",
     "source": "github_prs",
@@ -1705,7 +1705,7 @@
   },
   {
     "title": "[PR] fix(codegen): IS-A inheritance silently does nothing on PostgreSQL (v5 LTS backport)",
-    "date": "2026-08-07T16:54:46Z",
+    "date": "2026-08-07T19:21:42Z",
     "summary": "v5 LTS backport of #3590 \u2014 clean cherry-pick, no conflicts, both defects are byte-identical on this line.\n\n**This is the branch where the problem was actually found and where it is actually blocking.** A v5.51.0 PostgreSQL deployment (AIDP) is trying to ship `crm.Contact` / `crm.Account` as IS-A chi",
     "url": "https://github.com/MemberJunction/MJ/pull/3592",
     "source": "github_prs",
@@ -1717,12 +1717,12 @@
   },
   {
     "title": "[PR] fix(codegen): IS-A inheritance silently does nothing on PostgreSQL",
-    "date": "2026-08-07T16:54:35Z",
+    "date": "2026-08-07T19:20:18Z",
     "summary": "## Summary\n\nIS-A (Table-Per-Type) inheritance **has never worked on the PostgreSQL provider**. Two defects on consecutive steps of the same path, both caught-and-logged, so **CodeGen exits 0** while the entire IS-A wiring is skipped.\n\nWhat you get instead of an error: an entity that registers and qu",
     "url": "https://github.com/MemberJunction/MJ/pull/3590",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: MJ"
     ]
@@ -1765,7 +1765,7 @@
   },
   {
     "title": "[PR] feat(core)!: entity companions, related-record collections, unified transaction scope",
-    "date": "2026-08-07T17:45:41Z",
+    "date": "2026-08-07T19:29:26Z",
     "summary": "## Why\n\nMJ treats a parent record and its child rows as unrelated `BaseEntity` objects. Three applications have each hand-rolled the same parent/children pattern \u2014 and each got a different subset of it right:\n\n| | `OrderEntityServer` | `PaymentHeaderEntityServer` | `JournalEntryEntityServer` |\n|---|",
     "url": "https://github.com/MemberJunction/MJ/pull/3585",
     "source": "github_prs",
@@ -1837,7 +1837,7 @@
   },
   {
     "title": "[PR] feat(ollama): an Anthropic endpoint in front of the local model",
-    "date": "2026-08-07T18:54:44Z",
+    "date": "2026-08-07T19:45:25Z",
     "summary": "## What\n\n`/providers` could register any Anthropic-compatible backend, and four were \u2014 all of them cloud. The one model running on this machine could not be selected at all: Claude Code speaks the Anthropic Messages API and Ollama has no `/v1/messages` route, so the `custom` slot had no correct URL ",
     "url": "https://github.com/MrCipherSmith/helyx/pull/99",
     "source": "github_prs",
@@ -1917,6 +1917,42 @@
       "comments: 0",
       "pull request",
       "repo: hopcli"
+    ]
+  },
+  {
+    "title": "[PR] Update stack images",
+    "date": "2026-08-07T19:52:53Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| activepieces/activepieces | minor | `0.85.2` \u2192 `0.87.0` |\n| [apache/kafka](https://redirect.github.com/apache/kafka) | minor | `4.0.0` \u2192 `4.3.",
+    "url": "https://github.com/deployable-sh/stacks/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: stacks"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go to v0.44.0",
+    "date": "2026-08-07T19:48:59Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/nicolastakashi/playground/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: playground"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-08-07T19:48:18Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@antfu/ni](https://redirect",
+    "url": "https://github.com/moeru-ai/hf-inspector/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hf-inspector"
     ]
   }
 ]
