@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-07T03:36:25Z",
+    "date": "2026-08-07T05:21:05Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] fix(onboard): permit Jetson GPU policy paths",
-    "date": "2026-08-07T03:51:17Z",
+    "date": "2026-08-07T05:37:54Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nTwo boundaries blocked Jetson CUDA. OpenShell's creation-time filesystem policy hid the injected Jetson libraries and Tegra device nodes. After that policy was corrected, OpenShell rebuilt the sandbox account's supplementary groups with `initgroups()`,",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8099",
     "source": "github_prs",
@@ -757,7 +757,7 @@
   },
   {
     "title": "[PR] feat(installer): zero-prerequisite \"ultimate\" bootstrap (install.sh / install.ps1)",
-    "date": "2026-08-07T03:43:38Z",
+    "date": "2026-08-07T04:22:21Z",
     "summary": "## Why\n\nToday the entry-point installers (`setup-autogpt.{sh,bat}`) only **check** for git + Docker and exit if they're missing \u2014 and the hosted `setup.agpt.co/install.*` one-liners hard-fail on a machine that doesn't already have Docker, despite the docs promising \"no prerequisite setup needed.\" Th",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13261",
     "source": "github_prs",
@@ -805,7 +805,7 @@
   },
   {
     "title": "[PR] Add atomic agent prompt submission",
-    "date": "2026-08-07T03:25:33Z",
+    "date": "2026-08-07T05:36:24Z",
     "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
     "url": "https://github.com/manaflow-ai/cmux/pull/9290",
     "source": "github_prs",
@@ -817,12 +817,12 @@
   },
   {
     "title": "[PR] fix(core,server): stop consumers corrupting the process-wide RunView cache (freeze-on-write)",
-    "date": "2026-08-07T03:17:31Z",
+    "date": "2026-08-07T04:57:07Z",
     "summary": "## What shipped\n\nA P1 fix, plus the structural change that makes its whole bug class unreachable.\n\n**The P1.** `ResolverBase` mapped GraphQL transport field names onto the data provider's own result rows, which the server cache holds **by reference**. Preparing one GraphQL response therefore rewrote",
     "url": "https://github.com/MemberJunction/MJ/pull/3425",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: MJ"
     ]
@@ -853,12 +853,12 @@
   },
   {
     "title": "[PR] fix(policy): allow read-only dpkg package inspection",
-    "date": "2026-08-07T03:03:36Z",
+    "date": "2026-08-07T05:31:27Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nManaged OpenClaw, Hermes, and Deep Agents Code sandboxes currently deny `dpkg-query` access to `/var/lib/dpkg` even though package metadata is world-readable.\nThis change grants read-only access to the package database across every shipping policy whil",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8471",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 11",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -913,7 +913,7 @@
   },
   {
     "title": "[PR] fix: use native Ollama tags for local model discovery",
-    "date": "2026-08-07T02:34:03Z",
+    "date": "2026-08-07T04:35:31Z",
     "summary": "## Current upstream state\n\n- Current published head: `0fdc254cb1cd50eeec62871267c3e6dae4ea2ad6`\n- Base `main`: `6564f319a647b47de391cab2f608660323804a2b`\n- Server-side `update-branch --rebase`: already up-to-date\n- Current GitHub state: `MERGEABLE / BLOCKED`; no checks reported and no review is atta",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
@@ -921,6 +921,138 @@
       "comments: 9",
       "pull request",
       "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "Real local LLM integration \u2014 model gateway Local adapter is not_configured",
+    "date": "2026-08-07T05:26:42Z",
+    "summary": "`LocalModelProviderAdapter` declares `health: not_configured` and **throws** on `generateActorResponse` (`packages/openclinxr/model-gateway/src/index.ts:396-417`). The only working path is `MockModelProviderAdapter`, which returns `\\`${displayName}: ${visibleFacts[0]}\\`` (`index.ts:315`).\n\nSo every ",
+    "url": "https://github.com/simnova/OpenClinXR/issues/26",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 5",
+      "state: open",
+      "repo: OpenClinXR"
+    ]
+  },
+  {
+    "title": "[PR] Update Docker Patch",
+    "date": "2026-08-07T05:40:58Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [esphome/esphome](https://esphome.io/) ([source](https://redirect.github.com/esphome/esphome)) | patch | `2026.7.3` \u2192 `2026.7.4` |\n| ghcr.io/e",
+    "url": "https://github.com/Tomasinjo/nixos-config/pull/148",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nixos-config"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-07T05:37:42Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/buddy-bot/pull/1352",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: buddy-bot"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): update dependency openai/codex to v0.147.0",
+    "date": "2026-08-07T05:34:54Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `0.146.1` \u2192 `0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>openai/",
+    "url": "https://github.com/kokatsu/dotfiles/pull/315",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] feat: \u63d2\u4ef6\u4e91\u540e\u7aef\u751f\u4ea7\u5316\u90e8\u7f72\uff08addin.aiworkdeck.com\uff09+ DB \u843d\u5e93\u4f1a\u8bdd",
+    "date": "2026-08-07T05:27:51Z",
+    "summary": "## \u6982\u8981\n\nPhase D \u4e91\u540e\u7aef\u751f\u4ea7\u5316\u843d\u5730\uff1a\u5b98\u65b9\u6258\u7ba1\u7684\u63d2\u4ef6\u4e91\u540e\u7aef\u5df2\u90e8\u7f72\u4e0a\u7ebf\uff08addin.aiworkdeck.com\uff0c\u5317\u4eac ECS \u4e0e\u5b98\u7f51\u5171\u673a\uff09\u3002\u4ee3\u7801\u4fa7\u4e09\u4ef6\u4e8b + \u670d\u52a1\u5668\u90e8\u7f72\u5b9e\u5f55\u3002\n\n## \u4ee3\u7801\u6539\u52a8\n\n1. **SESSION_STORE \u6539 DB \u843d\u5e93\u4f1a\u8bdd**\uff08\u7ef4\u62a4\u8005\u62cd\u677f\u300c\u5f7b\u5e95\u6539\u6210 DB \u843d\u5e93\u300d\uff09\n   - \u65b0\u589e `UserSession` \u5b9e\u4f53 + `UserSessionRepository` + `UserSessionService`\uff1aSHA-256 \u54c8\u5e0c\u843d\u5e93\u30017 \u5929\u6ed1\u52a8\u8fc7\u671f\u3001lastUsedAt \u5199\u56de\u8282\u6d41\uff081 \u5206\u949f\uff09\u3001\u6bcf\u65e5\u5b9a\u65f6\u6e05\u7406\n   - `AuthController` \u516d",
+    "url": "https://github.com/zeweihan/aiworkdeck/pull/296",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: aiworkdeck"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7",
+    "date": "2026-08-07T05:25:29Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3025",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: testcontainers-spring-boot"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency openai/codex to v0.147.0",
+    "date": "2026-08-07T05:12:41Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `0.146.1` \u2192 `0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>openai/",
+    "url": "https://github.com/icoretech/codex-pooler/pull/270",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: codex-pooler"
+    ]
+  },
+  {
+    "title": "[PR] Termux rust-v0.147.0",
+    "date": "2026-08-07T05:01:06Z",
+    "summary": "## Termux release train\n\n- Upstream release: https://github.com/openai/codex/releases/tag/rust-v0.147.0\n- Upstream tag: `rust-v0.147.0`\n- Termux release tag: `rust-v0.147.0-termux`\n- Release train branch: `release/0.147.0`\n- Patch source: `wallentx/termux-target`\n\nThis PR is intentionally created fr",
+    "url": "https://github.com/wallentx/codex-termux/pull/355",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: codex-termux"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update docker images (minor/patch/digest)",
+    "date": "2026-08-07T04:46:29Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| clickhouse/clickhouse-server | patch | `26.7.1.1315` \u2192 `26.7.3.19` |\n| [codeberg.org/forgejo/forgejo](https://forgejo.org) ([source](https://c",
+    "url": "https://github.com/acepanel/templates/pull/153",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: templates"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update kustomize image updates",
+    "date": "2026-08-07T05:28:03Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [aquasec/kube-bench](https://redirect.github.com/aquasecurity/kube-bench) | Kustomization | minor | `v0.15.6` \u2192 `v0.16.0` |\n| [arangodb](https://hub.docker.com/_/arangodb) ([source](https://redirect.git",
+    "url": "https://github.com/RobertDWhite/whitehouse-rke2/pull/624",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: whitehouse-rke2"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-07T04:27:32Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/better-dx/pull/955",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: better-dx"
     ]
   }
 ]
