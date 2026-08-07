@@ -157,7 +157,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-07T02:14:15Z",
+    "date": "2026-08-07T06:13:57Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-07T05:21:05Z",
+    "date": "2026-08-07T06:39:00Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -721,7 +721,7 @@
   },
   {
     "title": "[PR] feat(external-data-sources): Databricks SQL Warehouse driver (Medallion Workstream B)",
-    "date": "2026-08-06T22:19:46Z",
+    "date": "2026-08-07T07:11:13Z",
     "summary": "## Summary\n\nAdds **`@memberjunction/external-data-source-databricks`** \u2014 a read-only External Data Source driver (`DatabricksExternalDriver`) for **Databricks SQL Warehouses** over the official `@databricks/sql` SDK (always HTTPS).\n\nThis is **Workstream B** of the Medallion external-sources plan (#3",
     "url": "https://github.com/MemberJunction/MJ/pull/3373",
     "source": "github_prs",
@@ -913,7 +913,7 @@
   },
   {
     "title": "[PR] fix: use native Ollama tags for local model discovery",
-    "date": "2026-08-07T04:35:31Z",
+    "date": "2026-08-07T06:37:01Z",
     "summary": "## Current upstream state\n\n- Current published head: `0fdc254cb1cd50eeec62871267c3e6dae4ea2ad6`\n- Base `main`: `6564f319a647b47de391cab2f608660323804a2b`\n- Server-side `update-branch --rebase`: already up-to-date\n- Current GitHub state: `MERGEABLE / BLOCKED`; no checks reported and no review is atta",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
@@ -925,12 +925,12 @@
   },
   {
     "title": "Real local LLM integration \u2014 model gateway Local adapter is not_configured",
-    "date": "2026-08-07T05:26:42Z",
+    "date": "2026-08-07T06:11:38Z",
     "summary": "`LocalModelProviderAdapter` declares `health: not_configured` and **throws** on `generateActorResponse` (`packages/openclinxr/model-gateway/src/index.ts:396-417`). The only working path is `MockModelProviderAdapter`, which returns `\\`${displayName}: ${visibleFacts[0]}\\`` (`index.ts:315`).\n\nSo every ",
     "url": "https://github.com/simnova/OpenClinXR/issues/26",
     "source": "github_issues",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "state: open",
       "repo: OpenClinXR"
     ]
@@ -973,7 +973,7 @@
   },
   {
     "title": "[PR] feat: \u63d2\u4ef6\u4e91\u540e\u7aef\u751f\u4ea7\u5316\u90e8\u7f72\uff08addin.aiworkdeck.com\uff09+ DB \u843d\u5e93\u4f1a\u8bdd",
-    "date": "2026-08-07T05:27:51Z",
+    "date": "2026-08-07T06:42:08Z",
     "summary": "## \u6982\u8981\n\nPhase D \u4e91\u540e\u7aef\u751f\u4ea7\u5316\u843d\u5730\uff1a\u5b98\u65b9\u6258\u7ba1\u7684\u63d2\u4ef6\u4e91\u540e\u7aef\u5df2\u90e8\u7f72\u4e0a\u7ebf\uff08addin.aiworkdeck.com\uff0c\u5317\u4eac ECS \u4e0e\u5b98\u7f51\u5171\u673a\uff09\u3002\u4ee3\u7801\u4fa7\u4e09\u4ef6\u4e8b + \u670d\u52a1\u5668\u90e8\u7f72\u5b9e\u5f55\u3002\n\n## \u4ee3\u7801\u6539\u52a8\n\n1. **SESSION_STORE \u6539 DB \u843d\u5e93\u4f1a\u8bdd**\uff08\u7ef4\u62a4\u8005\u62cd\u677f\u300c\u5f7b\u5e95\u6539\u6210 DB \u843d\u5e93\u300d\uff09\n   - \u65b0\u589e `UserSession` \u5b9e\u4f53 + `UserSessionRepository` + `UserSessionService`\uff1aSHA-256 \u54c8\u5e0c\u843d\u5e93\u30017 \u5929\u6ed1\u52a8\u8fc7\u671f\u3001lastUsedAt \u5199\u56de\u8282\u6d41\uff081 \u5206\u949f\uff09\u3001\u6bcf\u65e5\u5b9a\u65f6\u6e05\u7406\n   - `AuthController` \u516d",
     "url": "https://github.com/zeweihan/aiworkdeck/pull/296",
     "source": "github_prs",
@@ -1053,6 +1053,198 @@
       "comments: 0",
       "pull request",
       "repo: better-dx"
+    ]
+  },
+  {
+    "title": "[PR] feat: r\u00e9sum\u00e9 trim panel, pdf link-anchor decode fix, and effort picker on every model surface",
+    "date": "2026-08-07T07:18:57Z",
+    "summary": "Three related changes to the r\u00e9sum\u00e9/model surfaces, folded into one PR.\n\n## 1 \u00b7 `fix:` pdf link anchors arrived as mojibake\n\n**Reported symptom:** generated r\u00e9sum\u00e9s showed a block of links like\n`[\ufffd\ufffdg\ufffdi\ufffdt\ufffdh\ufffdu\ufffdb\ufffd.\ufffdc\ufffdo\ufffdm/\u2026](https://github.com/\u2026)`, detached from their project\ntitles.\n\nA PDF *text string",
+    "url": "https://github.com/saeedkolivand/ai-job-hunter-app/pull/955",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: ai-job-hunter-app"
+    ]
+  },
+  {
+    "title": "[PR] Bootstrap Kubernetes-native AgenT4Ops with DB, Knowledge and Model layers",
+    "date": "2026-08-07T07:19:55Z",
+    "summary": "## Ziel\n\nInitialisiert **AgenT4Ops** als Kubernetes-/OpenShift-native Weiterentwicklung des AgenTM5N-Konzepts f\u00fcr Red Hat Linux. Der Fokus liegt auf sicherer AI-Unterst\u00fctzung f\u00fcr DevOps-, DBA- und Application-Operations-Teams \u2013 mit wiederverwendbaren Agents, Database Operations, Wissensmanagement un",
+    "url": "https://github.com/bigbadboy1010/AgenT4Ops/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AgenT4Ops"
+    ]
+  },
+  {
+    "title": "[PR] feat: zero-config beginner default with local auto-detect",
+    "date": "2026-08-07T07:17:34Z",
+    "summary": "## PR Type\n\n- [ ] fix\n- [x] feat\n- [ ] refactor\n- [ ] docs\n- [ ] chore\n- [ ] test\n- [ ] ci\n\n## Background And Problem\n\nIssue **#796** is the product spec for zero-config first success (beginner default, local auto-detect, demo analysis). New users still face cloud-key-centric first-run failure: empt",
+    "url": "https://github.com/SiinXu/stock-pulse-ai/pull/817",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: stock-pulse-ai"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-07T07:16:30Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/ts-md/pull/99",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-md"
+    ]
+  },
+  {
+    "title": "[PR] fix(ai): keep chat working when the first API key arrives after the first account",
+    "date": "2026-08-07T07:14:34Z",
+    "summary": "## Problem\n\nAn install whose first API key is added **after** the first account exists cannot chat at all.\n\nSending a message fails with `Message processing failed`, and the backend logs:\n\n```\nchat provider 'anthropic' not found or unavailable.\nAvailable: anthropic, google, groq, huggingface, mistra",
+    "url": "https://github.com/metadist/synaplan/pull/1463",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: synaplan"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-07T07:11:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot",
+    "url": "https://github.com/stacksjs/ts-auth/pull/120",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-auth"
+    ]
+  },
+  {
+    "title": "[PR] Upstream sync \u2014 2026-08-07",
+    "date": "2026-08-07T07:05:11Z",
+    "summary": "## Upstream Sync\n\n**New commits from [nyldn/claude-octopus](https://github.com/nyldn/claude-octopus)**\n\n```\nf69001c8 fix: drop the E2E job that called the removed test-e2e target (#778)\n6ae48f19 test: assert every provider's emitted dispatch command validates (closes #750) (#779)\n111824df chore: rel",
+    "url": "https://github.com/AlobarQuest/claude-octopus/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 37",
+      "pull request",
+      "repo: claude-octopus"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-07T06:50:15Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/ts-watches/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-watches"
+    ]
+  },
+  {
+    "title": "[PR] Migrate backend from Cloudflare Worker + FastAPI to Django/DRF (#146)",
+    "date": "2026-08-07T06:47:34Z",
+    "summary": "Replace worker.js (Cloudflare Worker) and pg/faq_api/main.py (FastAPI PG FAQ API) with a single Django + Django REST Framework backend under backend/, while preserving all client-visible behaviour byte-for-byte.\r\n\r\nPreserved (unchanged):\r\n- Frontend (static/), FAQ seed JSON, source docs (src/), and ",
+    "url": "https://github.com/iitmbsc-student-projects/iitmdocs/pull/148",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: iitmdocs"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update maven to v7",
+    "date": "2026-08-07T06:42:16Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Netcracker/qubership-core-config-server/pull/176",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: qubership-core-config-server"
+    ]
+  },
+  {
+    "title": "[PR] Update maven (major)",
+    "date": "2026-08-07T06:41:39Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Netcracker/qubership-core-java-libs/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: qubership-core-java-libs"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-07T06:31:17Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/facemendous/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-07T06:31:15Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-07T06:31:14Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/Fenris159/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-07T06:31:14Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/MAlkabbani/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] feat(deploy): add K8s autoscaling and NGINX load balancing for NemoClaw",
+    "date": "2026-08-07T06:31:13Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\nAdds a Helm chart (`deploy/helm/gpu_autoscaling_k8s`) that autoscales NemoClaw on Kubernetes using the per-pod `gpu_utilization_percent` HPA metric, with an NGINX Ingress in front of the agent pods.\nThe current revision also scopes recovery to chart-own",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/7459",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: NemoClaw"
     ]
   }
 ]
