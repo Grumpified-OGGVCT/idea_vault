@@ -157,7 +157,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-08T17:15:17Z",
+    "date": "2026-08-08T21:48:42Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -493,12 +493,12 @@
   },
   {
     "title": "[PR] fix(sdk): keep oss-cloud evals on Configs transport",
-    "date": "2026-08-08T21:31:44Z",
+    "date": "2026-08-08T22:07:51Z",
     "summary": "# Pull request checklist\n\nWrite for human maintainers first. Use `n.a.` with a concrete reason when a\nfield does not apply. Do not paste secrets, raw transcripts, bulky telemetry,\nor local absolute paths.\n\n## What Problem This Solves\n\n- Motivation: The internal Skills SDK evaluator accepted `oss-clo",
     "url": "https://github.com/jscraik/Agent-Skills/pull/385",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 7",
       "pull request",
       "repo: Agent-Skills"
     ]
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-08T21:03:44Z",
+    "date": "2026-08-08T22:01:19Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -625,7 +625,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-08T06:48:22Z",
+    "date": "2026-08-08T22:32:10Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/ts-watches/pull/8",
     "source": "github_prs",
@@ -661,7 +661,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-08T06:56:58Z",
+    "date": "2026-08-08T22:32:11Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/better-dx/pull/955",
     "source": "github_prs",
@@ -793,7 +793,7 @@
   },
   {
     "title": "[PR] AetheraClaw: multi-provider AI assistant for healthcare RCM & medical billing/coding",
-    "date": "2026-08-08T21:17:02Z",
+    "date": "2026-08-08T22:22:04Z",
     "summary": "## Summary\n\nA self-hosted AI assistant for **US healthcare Revenue Cycle Management and medical billing & coding**, inspired by [OpenClaw](https://github.com/openclaw/openclaw). A long-running **Gateway** (Fastify HTTP + WebSocket) owns sessions and routes between a CLI, a static web UI, and a **pro",
     "url": "https://github.com/kk078/AetheraClaw/pull/1",
     "source": "github_prs",
@@ -997,7 +997,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-08T21:19:11Z",
+    "date": "2026-08-08T22:26:49Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -1893,6 +1893,42 @@
       "comments: 0",
       "pull request",
       "repo: roastme"
+    ]
+  },
+  {
+    "title": "[PR] chore(release): sync dev to main",
+    "date": "2026-08-08T22:28:23Z",
+    "summary": "Promotes the current `dev` head to `main` so the deployed fleet carries it.\n\n`dev` is fully green at this head (all checks success). Verified before opening.\n\nDeploying this because the live services run exactly `main`, and today's fixes have all landed on `dev` \u2014 including the kubejob build-progres",
+    "url": "https://github.com/olafkfreund/TFactory/pull/1015",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: TFactory"
+    ]
+  },
+  {
+    "title": "[PR] docs: use %USERPROFILE% for machine-local paths instead of a hardcoded user",
+    "date": "2026-08-08T21:54:44Z",
+    "summary": "Replaces the hardcoded profile path (and the in-progress `{windows_user}` placeholder) with an environment variable, so the docs are correct on every machine with no substitution step at all.\n\n## Why not `{windows_user}`\n\nThe placeholder solved the wrong half of the problem \u2014 it still needs substitu",
+    "url": "https://github.com/p-potvin/vaultwares-docs/pull/27",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: vaultwares-docs"
+    ]
+  },
+  {
+    "title": "[PR] Implement ARMAN Autonomous AI Agent Ecosystem",
+    "date": "2026-08-08T21:41:58Z",
+    "summary": "This pull request introduces the complete system code for ARMAN, an autonomous, self-healing, self-coding, and self-remediating Python AI Agent built using FastAPI, Tailwind CSS, Ollama, and beautifulsoup4. ARMAN operates using OODA cycles, writes logs and reasoning strictly in Kazakh, maintains per",
+    "url": "https://github.com/baqkeldim-sketch/C-Users-Admin-CascadeProjects/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: C-Users-Admin-CascadeProjects"
     ]
   }
 ]
