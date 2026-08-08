@@ -157,7 +157,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-08T08:45:33Z",
+    "date": "2026-08-08T14:01:42Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -229,7 +229,7 @@
   },
   {
     "title": "[BUG] `hermes mnemosyne` does not exist when installing via wrapper in Docker",
-    "date": "2026-08-07T10:34:30Z",
+    "date": "2026-08-08T14:31:03Z",
     "summary": "## Description\n\nI installed mnemosyne inside the official Hermes Docker container using the wrapper method. `hermes memory` reports that mnemosyne is working and installed. The tools are also available and work.\n\nThe docs recommend running sleep cycles via `hermes mnemosyne sleep`, however, Hermes t",
     "url": "https://github.com/mnemosyne-oss/mnemosyne/issues/641",
     "source": "github_issues",
@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-08-08T09:00:41Z",
+    "date": "2026-08-08T14:07:20Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-08T13:23:54Z",
+    "date": "2026-08-08T14:03:01Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -817,7 +817,7 @@
   },
   {
     "title": "[PR] feat(onboard): add hosted inference to portable profile",
-    "date": "2026-08-08T08:36:28Z",
+    "date": "2026-08-08T14:20:21Z",
     "summary": "## Summary\nThe hidden portable profile now selects the existing OpenAI-compatible hosted inference path when a validated credential descriptor is available. It consumes an activated owner-only descriptor first, falls back to bounded object-storage retrieval, and stops before onboarding when neither ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8578",
     "source": "github_prs",
@@ -853,7 +853,7 @@
   },
   {
     "title": "[PR] Restructure the docs onto the stack-layer axis, and fix what the rewrite proved wrong",
-    "date": "2026-08-08T13:48:05Z",
+    "date": "2026-08-08T14:32:50Z",
     "summary": "The docs were organised by deployment mode (Overview / Self-Host / Cloud / CLI / API Reference), which told a reader nothing about which layer of the stack they were in. They are now organised by layer, which is what the product actually does.\n\n```\nIntroduction   4    Agents  19    SFU  4    SIP  3 ",
     "url": "https://github.com/mahimailabs/voicegateway/pull/218",
     "source": "github_prs",
@@ -1273,7 +1273,7 @@
   },
   {
     "title": "[PR] Update dependency openai/codex to v0.147.0",
-    "date": "2026-08-08T09:17:36Z",
+    "date": "2026-08-08T14:00:55Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `v0.146.0` \u2192 `v0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>opena",
     "url": "https://github.com/reiyw/dotfiles/pull/1026",
     "source": "github_prs",
@@ -1521,6 +1521,30 @@
       "comments: 0",
       "pull request",
       "repo: homeops"
+    ]
+  },
+  {
+    "title": "[PR] Serialize local-LLM work on a dedicated queue matching Ollama's capacity",
+    "date": "2026-08-08T14:20:33Z",
+    "summary": "## Problem (final finding of the Ollama audit)\n\nThe worker runs `--concurrency=4` and run-all dispatches parallel branches \u2014 a topology designed for cloud providers (`deepdive_claude`/`deepdive_gemini` are literally named for the era when the two branches ran on different clouds). For a private/loca",
+    "url": "https://github.com/Jarzembak/synapse/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: synapse"
+    ]
+  },
+  {
+    "title": "[PR] Ambient recorder, Observation/Swift 6 migration, and an insights dashboard",
+    "date": "2026-08-08T13:57:19Z",
+    "summary": "# Recorder redesign, Observation / Swift 6 migration, and an insights dashboard\n\nThis branch does three things that grew out of one another: it modernises the\ncodebase's concurrency and observation, rebuilds the recorder around a new\n\"ambient\" surface, and turns the dashboard from a set of counters ",
+    "url": "https://github.com/Beingpax/VoiceInk/pull/866",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: VoiceInk"
     ]
   }
 ]
