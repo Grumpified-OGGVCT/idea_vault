@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-08T22:01:19Z",
+    "date": "2026-08-08T23:03:52Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -709,7 +709,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-08T06:50:02Z",
+    "date": "2026-08-08T22:38:16Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/ts-md/pull/99",
     "source": "github_prs",
@@ -997,7 +997,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-08T22:26:49Z",
+    "date": "2026-08-08T23:08:36Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -1117,7 +1117,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-08T06:48:52Z",
+    "date": "2026-08-08T22:33:50Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot",
     "url": "https://github.com/stacksjs/ts-auth/pull/120",
     "source": "github_prs",
@@ -1909,7 +1909,7 @@
   },
   {
     "title": "[PR] docs: use %USERPROFILE% for machine-local paths instead of a hardcoded user",
-    "date": "2026-08-08T21:54:44Z",
+    "date": "2026-08-08T23:23:56Z",
     "summary": "Replaces the hardcoded profile path (and the in-progress `{windows_user}` placeholder) with an environment variable, so the docs are correct on every machine with no substitution step at all.\n\n## Why not `{windows_user}`\n\nThe placeholder solved the wrong half of the problem \u2014 it still needs substitu",
     "url": "https://github.com/p-potvin/vaultwares-docs/pull/27",
     "source": "github_prs",
@@ -1929,6 +1929,42 @@
       "comments: 3",
       "pull request",
       "repo: C-Users-Admin-CascadeProjects"
+    ]
+  },
+  {
+    "title": "[PR] Add atomic agent prompt submission",
+    "date": "2026-08-08T23:31:49Z",
+    "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
+    "url": "https://github.com/manaflow-ai/cmux/pull/9290",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 46",
+      "pull request",
+      "repo: cmux"
+    ]
+  },
+  {
+    "title": "[PR] HF Inference Providers gateway with monthly budget guard",
+    "date": "2026-08-08T23:30:22Z",
+    "summary": "Local OpenAI-compatible gateway that spends the HuggingFace inference allowance across HF-hosted models and fans results out to VaultWares projects.\n\n**This repo owns the HTTP inference servers.** `vaultwares-api` does not run AI \u2014 only telemetry ingest will go there.\n\n## Verified against the live r",
+    "url": "https://github.com/p-potvin/vault-inference/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: vault-inference"
+    ]
+  },
+  {
+    "title": "[PR] docs(config): update AI model suggestions and defaults to latest models",
+    "date": "2026-08-08T23:20:20Z",
+    "summary": "## Summary\r\n\r\n- Updated default local model in `providers.py` from `llama3.2` to `qwen2.5-coder`.\r\n- Updated configuration docs, `PYPI_README.md`, `claude-code-setup.md`, and `.env.example` with latest model references (`GPT-5.6` series, `gemini-3.6-flash`, `gemini-3.1-pro`, `claude-sonnet-5`, `llam",
+    "url": "https://github.com/vitali87/code-graph-rag/pull/1058",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: code-graph-rag"
     ]
   }
 ]
