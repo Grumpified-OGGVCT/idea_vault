@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-08T14:03:01Z",
+    "date": "2026-08-08T15:16:43Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -793,7 +793,7 @@
   },
   {
     "title": "[PR] AetheraClaw: multi-provider AI assistant for healthcare RCM & medical billing/coding",
-    "date": "2026-08-08T10:54:09Z",
+    "date": "2026-08-08T15:12:46Z",
     "summary": "## Summary\n\nA self-hosted AI assistant for **US healthcare Revenue Cycle Management and medical billing & coding**, inspired by [OpenClaw](https://github.com/openclaw/openclaw). A long-running **Gateway** (Fastify HTTP + WebSocket) owns sessions and routes between a CLI, a static web UI, and a **pro",
     "url": "https://github.com/kk078/AetheraClaw/pull/1",
     "source": "github_prs",
@@ -841,7 +841,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-08-08T08:44:11Z",
+    "date": "2026-08-08T14:44:10Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1545,6 +1545,114 @@
       "comments: 0",
       "pull request",
       "repo: VoiceInk"
+    ]
+  },
+  {
+    "title": "[PR] Prepare Shipfox workspaces with profile-aware setup",
+    "date": "2026-08-08T15:29:49Z",
+    "summary": "Adds the upstream workspace setup entrypoint for Conductor and other agent workspaces.\n\nThe profile-aware script prepares the pinned toolchain and frozen dependencies, then starts isolated worktree services and shared Ollama only where the resolved profile needs them. Cloud workflows remain service-",
+    "url": "https://github.com/ShipfoxHQ/shipfox/pull/1293",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: shipfox"
+    ]
+  },
+  {
+    "title": "[PR] v6.1.0-edge.1",
+    "date": "2026-08-08T15:29:26Z",
+    "summary": "# Task graphs, external harnesses, composite saves, and workflow convergence\n\n## New Features\n\n- **Unified workflow DAG engine (Phases 0\u20138):** Retired three dead/superseded subsystems, made the task substrate truthful, moved execution server-side, promoted durable task graphs to a first-class agent ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3635",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(vscode): discover local embedding models",
+    "date": "2026-08-08T15:28:47Z",
+    "summary": "## What changed\n\nAdd a guided local embedding setup to VS Code indexing settings. Users can discover installed Ollama models or loaded LM Studio and OpenAI-compatible models, validate the selected model with a real embedding request, and save the detected vector dimension automatically.\n\nLM Studio i",
+    "url": "https://github.com/Kilo-Org/kilocode/pull/12671",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] Draft: Gemini 3 Flash Preview F01 migration and Legora workbench UI",
+    "date": "2026-08-08T15:28:32Z",
+    "summary": "## Goal\n\nMigrate F01 from the superseded Qwen broad-extraction path to a backend-only Gemini Cloud Assisted architecture pinned to `gemini-3-flash-preview`, while preserving local parsing, evidence binding, final verification, review persistence, Office.js safety, and the five-screen Legora-style wo",
+    "url": "https://github.com/dc20758/Lendo_Lei/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 792",
+      "pull request",
+      "repo: Lendo_Lei"
+    ]
+  },
+  {
+    "title": "[PR] feat(moa): native mixture-of-agents presets",
+    "date": "2026-08-08T15:28:16Z",
+    "summary": "## What does this PR do?\n\nAdds native Mixture-of-Agents (MoA) presets to opencode: presets are configurable model ensembles (advisors + aggregator) selectable in the model picker like any other model. Per user turn, the session fans out to advisor models in parallel, then aggregates their analyses i",
+    "url": "https://github.com/patrickpassosb/opencode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: opencode"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go to v0.44.0",
+    "date": "2026-08-08T15:10:27Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/lucasreiners/docker-cd/pull/26",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: docker-cd"
+    ]
+  },
+  {
+    "title": "[PR] fix(research-agent): harden error handling, security, and observability",
+    "date": "2026-08-08T15:01:01Z",
+    "summary": "## Intent\n\nHarden research-agent (a multi-agent TypeScript research-report CLI: Plan -> Research -> Write -> Review over an OpenAI-compatible client, Tavily search/scrape) from hobby-quality to production-quality. Scope: fix bugs, improve security, reliability, and observability. Do NOT add a hosted",
+    "url": "https://github.com/tsvillain/research-agent/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: research-agent"
+    ]
+  },
+  {
+    "title": "[PR] chore(backend/deps): bump the production-dependencies group across 1 directory with 41 updates",
+    "date": "2026-08-08T15:00:31Z",
+    "summary": "Bumps the production-dependencies group with 41 updates in the /autogpt_platform/backend directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [aiohttp](https://github.com/aio-libs/aiohttp) | `3.13.3` | `3.14.3` |\n| [agentmail](https://github.com/agentmail-to/agentmail-python) | `0.4.7` | `0.5.9",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13769",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.mock-server:mockserver-client-java to v7",
+    "date": "2026-08-08T14:35:30Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-",
+    "url": "https://github.com/Cantara/realestate-cloudconnector-agent/pull/413",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: realestate-cloudconnector-agent"
     ]
   }
 ]
