@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-08T15:16:43Z",
+    "date": "2026-08-08T16:17:05Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -793,7 +793,7 @@
   },
   {
     "title": "[PR] AetheraClaw: multi-provider AI assistant for healthcare RCM & medical billing/coding",
-    "date": "2026-08-08T15:12:46Z",
+    "date": "2026-08-08T16:33:53Z",
     "summary": "## Summary\n\nA self-hosted AI assistant for **US healthcare Revenue Cycle Management and medical billing & coding**, inspired by [OpenClaw](https://github.com/openclaw/openclaw). A long-running **Gateway** (Fastify HTTP + WebSocket) owns sessions and routes between a CLI, a static web UI, and a **pro",
     "url": "https://github.com/kk078/AetheraClaw/pull/1",
     "source": "github_prs",
@@ -1213,7 +1213,7 @@
   },
   {
     "title": "[PR] fix(providers): validate custom provider base URL against SSRF",
-    "date": "2026-08-08T09:01:51Z",
+    "date": "2026-08-08T16:26:39Z",
     "summary": "## Summary\n\nCustom provider upstream base URLs were accepted without any validation. An admin (or a compromised admin session) could point the gateway at link-local cloud metadata endpoints (e.g. 169.254.169.254, Alibaba Cloud 100.100.100.200) or arbitrary internal services, turning provider request",
     "url": "https://github.com/astaxie/TokenHub/pull/162",
     "source": "github_prs",
@@ -1561,12 +1561,12 @@
   },
   {
     "title": "[PR] v6.1.0-edge.1",
-    "date": "2026-08-08T15:29:26Z",
+    "date": "2026-08-08T16:24:53Z",
     "summary": "# Task graphs, external harnesses, composite saves, and workflow convergence\n\n## New Features\n\n- **Unified workflow DAG engine (Phases 0\u20138):** Retired three dead/superseded subsystems, made the task substrate truthful, moved execution server-side, promoted durable task graphs to a first-class agent ",
     "url": "https://github.com/MemberJunction/MJ/pull/3635",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: MJ"
     ]
@@ -1653,6 +1653,66 @@
       "comments: 0",
       "pull request",
       "repo: realestate-cloudconnector-agent"
+    ]
+  },
+  {
+    "title": "[PR] [11/12] test: hardware-free regression suite \u2014 484 tests",
+    "date": "2026-08-08T16:35:00Z",
+    "summary": "> **Status: REVIEW ONLY \u2014 do not merge.** PR **11 of 12** in a stacked series; stacked on [#19](https://github.com/Muesli-HQ/muesli-windows/pull/19). This PR shows only its own chunk. Series intro, divergence notes and full map: [#10](https://github.com/Muesli-HQ/muesli-windows/pull/10). Next: [#21]",
+    "url": "https://github.com/Muesli-HQ/muesli-windows/pull/20",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: muesli-windows"
+    ]
+  },
+  {
+    "title": "[PR] Harden release gates and align Windows installer",
+    "date": "2026-08-08T16:32:42Z",
+    "summary": "## Objectif\n\nCorriger les findings bloquants de l'audit complet MINOS et aligner le Windows deployment wizard sur les patterns utiles qualifi\u00e9s dans `FTurleque/nexus-context-engine`, sans casser le contrat backend-agnostic `minos.exe mcp`.\n\n## Corrections r\u00e9alis\u00e9es\n\n### Supply chain / s\u00e9curit\u00e9\n\n- Ja",
+    "url": "https://github.com/FTurleque/minos-code-intelligence/pull/113",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: minos-code-intelligence"
+    ]
+  },
+  {
+    "title": "[PR] [Task#12]-Hi\u1ec3n th\u1ecb CTE status [KH\u00d4NG D\u00d9NG] nh\u01b0ng l\u1ea1i l\u00e0 [PH\u1ee4 THU\u1ed8C] c\u1ee7a CTE kh\u00e1c ",
+    "date": "2026-08-08T16:32:04Z",
+    "summary": "Hi\u1ec3n th\u1ecb CTE status [KH\u00d4NG D\u00d9NG] nh\u01b0ng l\u1ea1i l\u00e0 [PH\u1ee4 THU\u1ed8C] c\u1ee7a CTE kh\u00e1c \n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n- **New Features**\n  - Added AI configuration for Ollama, OpenAI, Anthropic, and Gemini, including model, credentials, temper",
+    "url": "https://github.com/oscar20041998/sql-visualizer/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: sql-visualizer"
+    ]
+  },
+  {
+    "title": "[PR] Pi Invest OS: bootable Raspberry Pi 5 image (v0.2)",
+    "date": "2026-08-08T16:27:20Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nTurns Pi Invest into a **non-cloud, on-device AI agent** that runs solely on the Raspberry Pi after first boot.\n\n### Local-only defaults\n- **LLM:** Ollama on `127.0.0.1:11434` (`llama3.2:3b`)\n- **Market:** on-device simulator (optional Yahoo via `PI_IN",
+    "url": "https://github.com/GutFarms/Japan-central/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Japan-central"
+    ]
+  },
+  {
+    "title": "[PR] docs: explain local-first PDF architecture",
+    "date": "2026-08-08T16:24:26Z",
+    "summary": "## Summary\n- document the local-first PDF processing architecture\n- explain its projection, privacy, vision-native, and bounded-execution principles\n\nRelated to #4.\n\n## Testing\n- `git diff --check`",
+    "url": "https://github.com/monocongo/docproc/pull/19",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: docproc"
     ]
   }
 ]
