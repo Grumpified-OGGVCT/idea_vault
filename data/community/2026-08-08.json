@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] fix(sdk): keep oss-cloud evals on Configs transport",
-    "date": "2026-08-08T03:16:31Z",
+    "date": "2026-08-08T03:41:49Z",
     "summary": "# Pull request checklist\n\nWrite for human maintainers first. Use `n.a.` with a concrete reason when a\nfield does not apply. Do not paste secrets, raw transcripts, bulky telemetry,\nor local absolute paths.\n\n## What Problem This Solves\n\n- Motivation: The internal Skills SDK evaluator accepted `oss-clo",
     "url": "https://github.com/jscraik/Agent-Skills/pull/385",
     "source": "github_prs",
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-08T02:33:15Z",
+    "date": "2026-08-08T04:44:58Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -733,7 +733,7 @@
   },
   {
     "title": "[PR] fix(status): wait for inference after gateway recovery",
-    "date": "2026-08-08T03:28:23Z",
+    "date": "2026-08-08T03:41:54Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nSandbox status now waits for the authoritative inference route to converge after it automatically recovers a stopped agent gateway. Ordinary status checks remain single-probe, and persistent recovery failures still fail closed.\n\n## Changes\n\n- Retain wh",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8572",
     "source": "github_prs",
@@ -745,7 +745,7 @@
   },
   {
     "title": "[PR] HYDRA_PROFESSOR_GREEN_FULL_GREEN_001: AcodeX + VNC + Ollama local agent",
-    "date": "2026-08-08T03:26:33Z",
+    "date": "2026-08-08T03:32:28Z",
     "summary": "Full Android localhost milestone for Project Hydra.\n\nWhat changed:\n- AcodeX/AXS integration probe on `127.0.0.1:8767`\n- TigerVNC probe on `127.0.0.1:5901` / display `:1`\n- Hydra service status endpoint at `/v1/system/status`\n- FAST / CHAT model mode: `qwen3:0.6b`\n- DEEP / BUILD model mode: `qwen2.5:",
     "url": "https://github.com/eggie-admin/hydra-shell-android/pull/3",
     "source": "github_prs",
@@ -769,7 +769,7 @@
   },
   {
     "title": "[PR] feat: zero-config beginner default with local auto-detect",
-    "date": "2026-08-08T03:19:36Z",
+    "date": "2026-08-08T04:59:42Z",
     "summary": "## PR Type\n\n- [ ] fix\n- [x] feat\n- [ ] refactor\n- [ ] docs\n- [ ] chore\n- [ ] test\n- [ ] ci\n\n## Background And Problem\n\nIssue **#796** is the product spec for zero-config first success (beginner default, local auto-detect, demo analysis). New users still face cloud-key-centric first-run failure: empt",
     "url": "https://github.com/SiinXu/stock-pulse-ai/pull/817",
     "source": "github_prs",
@@ -793,7 +793,7 @@
   },
   {
     "title": "[PR] AetheraClaw: multi-provider AI assistant for healthcare RCM & medical billing/coding",
-    "date": "2026-08-08T03:13:23Z",
+    "date": "2026-08-08T04:59:40Z",
     "summary": "## Summary\n\nA self-hosted AI assistant for **US healthcare Revenue Cycle Management and medical billing & coding**, inspired by [OpenClaw](https://github.com/openclaw/openclaw). A long-running **Gateway** (Fastify HTTP + WebSocket) owns sessions and routes between a CLI, a static web UI, and a **pro",
     "url": "https://github.com/kk078/AetheraClaw/pull/1",
     "source": "github_prs",
@@ -817,7 +817,7 @@
   },
   {
     "title": "[PR] feat(onboard): add hosted inference to portable profile",
-    "date": "2026-08-08T02:50:53Z",
+    "date": "2026-08-08T04:49:25Z",
     "summary": "## Summary\nThe hidden portable profile now selects the existing OpenAI-compatible hosted inference path when a validated credential descriptor is available. It consumes an activated owner-only descriptor first, falls back to bounded object-storage retrieval, and stops before onboarding when neither ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8578",
     "source": "github_prs",
@@ -853,12 +853,12 @@
   },
   {
     "title": "[PR] Restructure the docs onto the stack-layer axis, and fix what the rewrite proved wrong",
-    "date": "2026-08-08T02:36:50Z",
+    "date": "2026-08-08T04:16:39Z",
     "summary": "The docs were organised by deployment mode (Overview / Self-Host / Cloud / CLI / API Reference), which told a reader nothing about which layer of the stack they were in. They are now organised by layer, which is what the product actually does.\n\n```\nIntroduction   4    Agents  19    SFU  4    SIP  3 ",
     "url": "https://github.com/mahimailabs/voicegateway/pull/218",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: voicegateway"
     ]
@@ -933,6 +933,78 @@
       "comments: 0",
       "pull request",
       "repo: whitehouse-rke2"
+    ]
+  },
+  {
+    "title": "[PR] Updating the Windows Lockdown Configurations",
+    "date": "2026-08-08T04:59:10Z",
+    "summary": "## Summary\r\n\r\n- Locked down additional windows services\r\n- Configured scheduled tasks to ensure tasks don't restart by using:\r\n- New script to ensure items don't reconfigure themselves\r\n\r\n## Linked issue\r\n\r\nCloses #\r\n\r\n## Type\r\n\r\n- [X] feat \u2014 new capability\r\n- [ ] fix \u2014 bug fix\r\n- [ ] security \u2014 sec",
+    "url": "https://github.com/garochee33/DSH/pull/78",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DSH"
+    ]
+  },
+  {
+    "title": "[PR] feat(flux): complete cluster OCI migration",
+    "date": "2026-08-08T04:55:29Z",
+    "summary": "## Summary\n\n- migrate the remaining Flux Kustomizations and root cluster sources to `OCIRepository/flux-system`\n- switch FluxInstance sync from GitHub Git to `oci://ghcr.io/jfroy/flatops/cluster:latest`\n- preserve strict keyless Cosign identity verification on the FluxInstance-generated source\n- rem",
+    "url": "https://github.com/jfroy/flatops/pull/2161",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: flatops"
+    ]
+  },
+  {
+    "title": "[PR] [NEUTRAL] Update dependency redisvl to v0.25.1",
+    "date": "2026-08-08T04:43:50Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/snowdensb/litellm/pull/143",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: litellm"
+    ]
+  },
+  {
+    "title": "[PR] feat(mai-ui): GUI grounding service + fix registry mislabel",
+    "date": "2026-08-08T04:38:12Z",
+    "summary": "## Summary\n\n- **New service:** `pmoves/services/mai-ui-agent/` \u2014 FastAPI on port 8220 serving Tongyi-MAI/MAI-UI-2B (Qwen3-VL, 2.1B params) for GUI grounding + screenshot understanding\n- **Registry fix:** MAI-UI was mislabeled as `\"Main user interface\"` (primary_type: ui) \u2014 corrected to `primary_type",
+    "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/2468",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: PMOVES.AI"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-java monorepo to v1.20.6 - abandoned",
+    "date": "2026-08-08T04:18:35Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | Age | Adoption | Passing | Confidence |\n|---|---|---|---|---|---|\n| [org.testcontainers:postgresql](https://java.testcontainers.org) ([source](https://redirect.github.com/testcontainers/testcontainers-java)) | `1.19.8` -> `1.20.6` | [![ag",
+    "url": "https://github.com/lf-energy-projects-renovation-state/open-smart-grid-platform/pull/79",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: open-smart-grid-platform"
+    ]
+  },
+  {
+    "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
+    "date": "2026-08-08T03:52:55Z",
+    "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
+    "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: local-code-agent"
     ]
   }
 ]
