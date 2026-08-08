@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-08T10:18:39Z",
+    "date": "2026-08-08T11:20:30Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -793,7 +793,7 @@
   },
   {
     "title": "[PR] AetheraClaw: multi-provider AI assistant for healthcare RCM & medical billing/coding",
-    "date": "2026-08-08T09:17:57Z",
+    "date": "2026-08-08T10:54:09Z",
     "summary": "## Summary\n\nA self-hosted AI assistant for **US healthcare Revenue Cycle Management and medical billing & coding**, inspired by [OpenClaw](https://github.com/openclaw/openclaw). A long-running **Gateway** (Fastify HTTP + WebSocket) owns sessions and routes between a CLI, a static web UI, and a **pro",
     "url": "https://github.com/kk078/AetheraClaw/pull/1",
     "source": "github_prs",
@@ -1389,6 +1389,66 @@
       "comments: 0",
       "pull request",
       "repo: matt-riley-ci"
+    ]
+  },
+  {
+    "title": "[PR] home-assistant: 2026.8.0 -> 2026.8.1",
+    "date": "2026-08-08T11:30:23Z",
+    "summary": "Diff: https://github.com/home-assistant/core/compare/2026.8.0...2026.8.1\r\n\r\nChangelog: https://github.com/home-assistant/core/releases/tag/2026.8.1\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or des",
+    "url": "https://github.com/NixOS/nixpkgs/pull/550308",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] feat(nixos): Ollama\u3068Open WebUI\u3092\u30aa\u30f3\u30c7\u30de\u30f3\u30c9\u3067\u63d0\u4f9b\u3057\u307e\u3059",
+    "date": "2026-08-08T11:27:04Z",
+    "summary": "\u30ed\u30fc\u30ab\u30ebLLM\u306e\u63a8\u8ad6\u74b0\u5883\u3092\u5404\u30cd\u30a4\u30c6\u30a3\u30d6Linux\u30db\u30b9\u30c8\u3078\u5ba3\u8a00\u7684\u306b\u7528\u610f\u3057\u307e\u3059\u3002\n\nOllama\u306fNixOS Container\u3078\u9694\u96e2\u3057\u3001\n\u30db\u30b9\u30c8\u5074socket\u3078\u306e\u521d\u56de\u30a2\u30af\u30bb\u30b9\u3067\u8d77\u52d5\u3057\u307e\u3059\u3002\n\u5e38\u99d0\u3055\u305b\u306a\u3044\u3053\u3068\u3067\u3001\n\u4f7f\u3063\u3066\u3044\u306a\u3044\u9593\u306fGPU\u3082\u30e1\u30e2\u30ea\u3082\u6d88\u8cbb\u3057\u307e\u305b\u3093\u3002\nbullet\u3067\u306fCUDA\u3092\u4f7f\u3044\u3001\n\u305d\u306e\u4ed6\u306e\u30db\u30b9\u30c8\u3067\u306fCPU\u3092\u4f7f\u3044\u307e\u3059\u3002\n\n\u30c1\u30e3\u30c3\u30c8\u7528\u306eUI\u3068\u3057\u3066Open WebUI\u3092\u540c\u3058\u30b3\u30f3\u30c6\u30ca\u3078\u540c\u5c45\u3055\u305b\u307e\u3059\u3002\n\u8a8d\u8a3c\u306ftailnet\u3068ACL\u3092\u5883\u754c\u3068\u3059\u308bsingle-user mode\u306b\u3057\u3066\u3001\n\u63a5\u7d9a\u306f\u30db\u30b9\u30c8\u5074\u306eproxy\u3060\u3051\u306b\u9650\u5b9a\u3057\u307e\u3059\u3002\nOllama\u3068Open WebUI\u306f\u305d\u308c\u305e\u308c\u30db\u30b9\u30c8\u540d\u5165\u308a\u306eTail",
+    "url": "https://github.com/ncaq/dotfiles/pull/1473",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] White minimal Ollama-style UI: project-first sidebar, single chat, implicit MLX",
+    "date": "2026-08-08T11:16:13Z",
+    "summary": "## Summary\n\nRedesigns the GUI to match the official Ollama macOS app: white and minimal, with only the essential fields and buttons visible.\n\n- **Light theme by default** \u2014 root background goes white; dark mode remains available (Settings \u2192 Appearance, palette, Ctrl+Shift+D).\n- **Project-first sideb",
+    "url": "https://github.com/janipasanen/ollamaGUI/pull/549",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ollamaGUI"
+    ]
+  },
+  {
+    "title": "[PR] fix(providers): resolve the Ollama endpoint from the environment (#1099)",
+    "date": "2026-08-08T10:51:33Z",
+    "summary": "## The defect\n\nBoth Ollama providers hard-pinned `http://localhost:11434` and read **no**\nenvironment variable, and nothing in the production call path passed a\n`base_url`: `phase_config.get_provider_extra_kwargs` returns `{}` for every\nprovider except `openai-compatible`, and the phase call sites p",
+    "url": "https://github.com/olafkfreund/AIFactory/pull/1214",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AIFactory"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update mockserver.version to v7",
+    "date": "2026-08-08T10:44:34Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-",
+    "url": "https://github.com/Cantara/ServerSentEvents-agent/pull/353",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ServerSentEvents-agent"
     ]
   }
 ]
