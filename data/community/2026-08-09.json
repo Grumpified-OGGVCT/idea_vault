@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-09T16:18:29Z",
+    "date": "2026-08-09T17:01:41Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -841,7 +841,7 @@
   },
   {
     "title": "[PR] fix(providers): validate custom provider base URL against SSRF",
-    "date": "2026-08-09T15:24:54Z",
+    "date": "2026-08-09T17:04:19Z",
     "summary": "## Summary\n\nCustom provider upstream base URLs were accepted without any validation. An admin (or a compromised admin session) could point the gateway at link-local cloud metadata endpoints (e.g. 169.254.169.254, Alibaba Cloud 100.100.100.200) or arbitrary internal services, turning provider request",
     "url": "https://github.com/astaxie/TokenHub/pull/162",
     "source": "github_prs",
@@ -997,7 +997,7 @@
   },
   {
     "title": "[PR] fix: use native Ollama tags for local model discovery",
-    "date": "2026-08-09T13:12:25Z",
+    "date": "2026-08-09T17:14:42Z",
     "summary": "## Current upstream state\n\n- Current published head: `0fdc254cb1cd50eeec62871267c3e6dae4ea2ad6`\n- Base `main`: `6564f319a647b47de391cab2f608660323804a2b`\n- Server-side `update-branch --rebase`: already up-to-date\n- Current GitHub state: `MERGEABLE / BLOCKED`; no checks reported and no review is atta",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
@@ -1237,12 +1237,12 @@
   },
   {
     "title": "[PR] feat: durable HITL workspace with explicit model controls",
-    "date": "2026-08-09T12:33:33Z",
+    "date": "2026-08-09T17:01:33Z",
     "summary": "# feat: durable HITL workspace with explicit model controls\r\n\r\n## Phase 27 \u2014 Nanbeige retirement \u00b7 persistent global model \u00b7 option catalog\r\n\r\n### Model cutover\r\n\r\n- **Active model:** `llama3.2:3b` \u2014 saved in SQLite, confirmed `ready=true` by `/api/health`\r\n- **Nanbeige:** fully retired from M\u2295 rout",
     "url": "https://github.com/phoenixfire808/ai-workspace/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: ai-workspace"
     ]
@@ -1261,12 +1261,12 @@
   },
   {
     "title": "[PR] White minimal Ollama-style UI: project-first sidebar, single chat, implicit MLX",
-    "date": "2026-08-09T15:54:43Z",
+    "date": "2026-08-09T17:14:08Z",
     "summary": "## Summary\n\nRedesigns the GUI to match the official Ollama macOS app: white and minimal, with only the essential fields and buttons visible.\n\n- **Light theme by default** \u2014 root background goes white; dark mode remains available (Settings \u2192 Appearance, palette, Ctrl+Shift+D).\n- **Project-first sideb",
     "url": "https://github.com/janipasanen/ollamaGUI/pull/549",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: ollamaGUI"
     ]
@@ -1393,7 +1393,7 @@
   },
   {
     "title": "[PR] feat(routing): match the resolved model against the operation in criteria mode",
-    "date": "2026-08-09T16:32:02Z",
+    "date": "2026-08-09T17:00:56Z",
     "summary": "## Description\n\nCriteria mode matched capabilities only against **stored** criteria, never against the operation actually running. A configuration whose criteria do not mention tools could resolve a model that cannot do tools, and the failure surfaced as a provider error rather than a configuration ",
     "url": "https://github.com/netresearch/t3x-nr-llm/pull/653",
     "source": "github_prs",
@@ -1629,6 +1629,54 @@
       "comments: 2",
       "pull request",
       "repo: sql-visualizer"
+    ]
+  },
+  {
+    "title": "[PR] fix: needs-human PR notification names the blocking items; reasonless NEEDS_HUMAN verdicts get one re-ask then degrade loudly",
+    "date": "2026-08-09T17:31:05Z",
+    "summary": "Automatically opened by AWF workspace `ws_516cabd939054d7c80f63dc9` (agent: `codex`, model: `gpt-5.6-terra`, effort: `xhigh`).\n\n\n### Task\nFix two defects in the PR monitor's NotifyHuman path (live incident 2026-08-08, ws_40bf762a / aira-ai-team-member#46: comment said only \"review feedback needs hum",
+    "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/808",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: agent-workspace-fabric"
+    ]
+  },
+  {
+    "title": "[PR] fix(setup): create_sub_agent could never work, and a failed setup left orphans",
+    "date": "2026-08-09T17:23:36Z",
+    "summary": "`AgentSetupService` is what `create_sub_agent` calls, and it deploys to production from an LLM-controlled path. The caps bounding that path were reviewed recently; the thing they bound was not.\n\n## 1. `create_sub_agent` failed outright for every provider that needs an API key \u2014 including the default",
+    "url": "https://github.com/labsai/EDDI/pull/656",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: EDDI"
+    ]
+  },
+  {
+    "title": "[PR] Modernize desktop and AI services",
+    "date": "2026-08-09T17:19:48Z",
+    "summary": "## What changed\n\n- Modernized File Manager operations, search, sorting, selection, context menus, shortcuts, and same-window drag handling.\n- Added a per-user Recycle Bin with metadata, restore, size, empty, permanent deletion, and cross-filesystem move support.\n- Added native Settings, wallpaper pe",
+    "url": "https://github.com/Mohammed-razin-cr/RazionOS/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: RazionOS"
+    ]
+  },
+  {
+    "title": "[PR] resolve the base merge issues ",
+    "date": "2026-08-09T16:49:06Z",
+    "summary": "update the sync issues. ",
+    "url": "https://github.com/ALikesToCode/DeepTutor/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DeepTutor"
     ]
   }
 ]
