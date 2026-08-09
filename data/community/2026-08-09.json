@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-09T05:08:46Z",
+    "date": "2026-08-09T19:17:31Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-09T18:04:41Z",
+    "date": "2026-08-09T19:26:52Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -913,7 +913,7 @@
   },
   {
     "title": "[PR] AetheraClaw: multi-provider AI assistant for healthcare RCM & medical billing/coding",
-    "date": "2026-08-09T18:38:05Z",
+    "date": "2026-08-09T19:15:47Z",
     "summary": "## Summary\n\nA self-hosted AI assistant for **US healthcare Revenue Cycle Management and medical billing & coding**, inspired by [OpenClaw](https://github.com/openclaw/openclaw). A long-running **Gateway** (Fastify HTTP + WebSocket) owns sessions and routes between a CLI, a static web UI, and a **pro",
     "url": "https://github.com/kk078/AetheraClaw/pull/1",
     "source": "github_prs",
@@ -997,7 +997,7 @@
   },
   {
     "title": "[PR] fix: use native Ollama tags for local model discovery",
-    "date": "2026-08-09T17:14:42Z",
+    "date": "2026-08-09T19:15:47Z",
     "summary": "## Current upstream state\n\n- Current published head: `0fdc254cb1cd50eeec62871267c3e6dae4ea2ad6`\n- Base `main`: `6564f319a647b47de391cab2f608660323804a2b`\n- Server-side `update-branch --rebase`: already up-to-date\n- Current GitHub state: `MERGEABLE / BLOCKED`; no checks reported and no review is atta",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
@@ -1633,7 +1633,7 @@
   },
   {
     "title": "[PR] fix: needs-human PR notification names the blocking items; reasonless NEEDS_HUMAN verdicts get one re-ask then degrade loudly",
-    "date": "2026-08-09T18:43:19Z",
+    "date": "2026-08-09T19:12:51Z",
     "summary": "Automatically opened by AWF workspace `ws_516cabd939054d7c80f63dc9` (agent: `codex`, model: `gpt-5.6-terra`, effort: `xhigh`).\n\n\n### Task\nFix two defects in the PR monitor's NotifyHuman path (live incident 2026-08-08, ws_40bf762a / aira-ai-team-member#46: comment said only \"review feedback needs hum",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/808",
     "source": "github_prs",
@@ -1725,6 +1725,78 @@
       "comments: 0",
       "pull request",
       "repo: carbonj"
+    ]
+  },
+  {
+    "title": "[PR] fix(codegen): IS-A inheritance silently does nothing on PostgreSQL",
+    "date": "2026-08-09T19:35:00Z",
+    "summary": "## Summary\n\nIS-A (Table-Per-Type) inheritance **has never worked on the PostgreSQL provider**. Two defects on consecutive steps of the same path, both caught-and-logged, so **CodeGen exits 0** while the entire IS-A wiring is skipped.\n\nWhat you get instead of an error: an entity that registers and qu",
+    "url": "https://github.com/MemberJunction/MJ/pull/3590",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(gateway): pre-mortem theme extraction pass (V53, PR A of 2)",
+    "date": "2026-08-09T19:31:52Z",
+    "summary": "## Summary\n\nPR A of two for `nimbus pre-mortem` (Spine S1). This lands the **substrate only**: schema V53 plus a\ndebounced background pass that mines recurring \"blocker themes\" per service from closed Jira epics.\n\n**There is no user-facing command in this PR.** `nimbus pre-mortem`, the agent, the co",
+    "url": "https://github.com/nimbus-agent/Nimbus/pull/1134",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Nimbus"
+    ]
+  },
+  {
+    "title": "[PR] fix(testing-integration): Integration Tier fails repo-wide on a missing MJ_API_KEY that should skip",
+    "date": "2026-08-09T19:27:37Z",
+    "summary": "## Summary\n\nThe Integration Tier gate has been failing on **every PR, and on `next` itself** \u2014 8+ consecutive red runs. It reports `40/61 passed (65.6%)` and exits non-zero, with every client-transport bundle failing in 0.1s at bootstrap:\n\n```\nBootstrap failed: MJ_API_KEY is not set in the environme",
+    "url": "https://github.com/MemberJunction/MJ/pull/3688",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(orchestrator): resolve webhook target hosts and refuse redirects (SSRF)",
+    "date": "2026-08-09T19:10:41Z",
+    "summary": "## What\n\nThe orchestrator's outbound webhook path decided whether a subscription URL was safe to POST to by matching the **hostname string** against a set of regexes. It never resolved the name. A perfectly ordinary public hostname whose DNS record points at a private address therefore passed the gu",
+    "url": "https://github.com/Intense-Visions/harness-engineering/pull/1263",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: harness-engineering"
+    ]
+  },
+  {
+    "title": "[PR] fix(logging): sanitize GraphQL and OAuth2 error diagnostics before logging",
+    "date": "2026-08-09T19:06:30Z",
+    "summary": "## Summary\n\n`GraphQLDataProvider.ExecuteGQL()` catches request errors and logs the error object directly as `fullError`. That object, produced by the underlying `graphql-request` client, carries the originating request on `e.request` \u2014 including its `variables` verbatim.\n\nThe consequence is generic ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3642",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-09T19:06:06Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/ts-syntax-highlighter/pull/468",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ts-syntax-highlighter"
     ]
   }
 ]
