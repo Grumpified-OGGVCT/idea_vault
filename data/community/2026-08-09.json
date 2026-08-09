@@ -133,7 +133,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-09T14:04:49Z",
+    "date": "2026-08-09T20:34:15Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-09T19:17:31Z",
+    "date": "2026-08-09T19:40:47Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-09T19:26:52Z",
+    "date": "2026-08-09T20:17:13Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1033,12 +1033,12 @@
   },
   {
     "title": "[PR] Feature: feat: target-OS provisioning for Linux and macOS AWS instances (#3511)",
-    "date": "2026-08-09T05:34:21Z",
+    "date": "2026-08-09T19:43:22Z",
     "summary": "Closes #3511\n\n## Summary\n## Problem / Motivation\nCloud provisioning must configure the stack correctly on Linux AMIs and EC2 Mac.\n\n## Context\n- Issue: https://github.com/dkblinux98/nyxGPT/issues/3511\n- Milestone: Phase 6 \u2014 Enterprise Deployment Hardening (v3.0.0)\n- Label:\n- `Feature`\n- Base branch: ",
     "url": "https://github.com/dkblinux98/nyxGPT/pull/3684",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 8",
       "pull request",
       "repo: nyxGPT"
     ]
@@ -1261,12 +1261,12 @@
   },
   {
     "title": "[PR] White minimal Ollama-style UI: project-first sidebar, single chat, implicit MLX",
-    "date": "2026-08-09T17:14:08Z",
+    "date": "2026-08-09T20:31:02Z",
     "summary": "## Summary\n\nRedesigns the GUI to match the official Ollama macOS app: white and minimal, with only the essential fields and buttons visible.\n\n- **Light theme by default** \u2014 root background goes white; dark mode remains available (Settings \u2192 Appearance, palette, Ctrl+Shift+D).\n- **Project-first sideb",
     "url": "https://github.com/janipasanen/ollamaGUI/pull/549",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: ollamaGUI"
     ]
@@ -1417,12 +1417,12 @@
   },
   {
     "title": "[PR] fix(ollama): expose and send max thinking for supported cloud models",
-    "date": "2026-08-09T17:47:44Z",
+    "date": "2026-08-09T19:43:14Z",
     "summary": "Related: #77612\n\n## Summary\n\n### High Level TLDR\n\nOllama Cloud models with a verified full-effort contract, including GLM 5.2 and DeepSeek V4, can now select `off`, `low`, `medium`, `high`, and `max`. `max` is sent as native `think: \"max\"` instead of being silently reduced to `high`.\n\nThe change sta",
     "url": "https://github.com/openclaw/openclaw/pull/121074",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 3",
       "pull request",
       "repo: openclaw"
     ]
@@ -1633,7 +1633,7 @@
   },
   {
     "title": "[PR] fix: needs-human PR notification names the blocking items; reasonless NEEDS_HUMAN verdicts get one re-ask then degrade loudly",
-    "date": "2026-08-09T19:12:51Z",
+    "date": "2026-08-09T20:34:36Z",
     "summary": "Automatically opened by AWF workspace `ws_516cabd939054d7c80f63dc9` (agent: `codex`, model: `gpt-5.6-terra`, effort: `xhigh`).\n\n\n### Task\nFix two defects in the PR monitor's NotifyHuman path (live incident 2026-08-08, ws_40bf762a / aira-ai-team-member#46: comment said only \"review feedback needs hum",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/808",
     "source": "github_prs",
@@ -1729,7 +1729,7 @@
   },
   {
     "title": "[PR] fix(codegen): IS-A inheritance silently does nothing on PostgreSQL",
-    "date": "2026-08-09T19:35:00Z",
+    "date": "2026-08-09T20:02:24Z",
     "summary": "## Summary\n\nIS-A (Table-Per-Type) inheritance **has never worked on the PostgreSQL provider**. Two defects on consecutive steps of the same path, both caught-and-logged, so **CodeGen exits 0** while the entire IS-A wiring is skipped.\n\nWhat you get instead of an error: an entity that registers and qu",
     "url": "https://github.com/MemberJunction/MJ/pull/3590",
     "source": "github_prs",
@@ -1753,7 +1753,7 @@
   },
   {
     "title": "[PR] fix(testing-integration): Integration Tier fails repo-wide on a missing MJ_API_KEY that should skip",
-    "date": "2026-08-09T19:27:37Z",
+    "date": "2026-08-09T20:10:22Z",
     "summary": "## Summary\n\nThe Integration Tier gate has been failing on **every PR, and on `next` itself** \u2014 8+ consecutive red runs. It reports `40/61 passed (65.6%)` and exits non-zero, with every client-transport bundle failing in 0.1s at bootstrap:\n\n```\nBootstrap failed: MJ_API_KEY is not set in the environme",
     "url": "https://github.com/MemberJunction/MJ/pull/3688",
     "source": "github_prs",
@@ -1777,7 +1777,7 @@
   },
   {
     "title": "[PR] fix(logging): sanitize GraphQL and OAuth2 error diagnostics before logging",
-    "date": "2026-08-09T19:06:30Z",
+    "date": "2026-08-09T20:09:16Z",
     "summary": "## Summary\n\n`GraphQLDataProvider.ExecuteGQL()` catches request errors and logs the error object directly as `fullError`. That object, produced by the underlying `graphql-request` client, carries the originating request on `e.request` \u2014 including its `variables` verbatim.\n\nThe consequence is generic ",
     "url": "https://github.com/MemberJunction/MJ/pull/3642",
     "source": "github_prs",
@@ -1797,6 +1797,54 @@
       "comments: 1",
       "pull request",
       "repo: ts-syntax-highlighter"
+    ]
+  },
+  {
+    "title": "[PR] feat(cost): meter LLM spend \u2014 it was $0.00 for every call",
+    "date": "2026-08-09T20:34:56Z",
+    "summary": "Phase 0 of the Batch-API PRD. Nothing else in that plan can be justified or proved until this exists.\n\n## The finding\n\n**TestLookup could not measure LLM cost at all.** There is not one token-price constant in the backend, and every `cost_usd` traces back to a literal `0.0` \u2014 including the one carry",
+    "url": "https://github.com/anandtopu/testlookup/pull/522",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: testlookup"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency openai/codex to v0.147.0",
+    "date": "2026-08-09T20:31:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `0.146.0` \u2192 `0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>openai/",
+    "url": "https://github.com/attilaolah/os/pull/390",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: os"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): Groq Whisper speech-to-text, and the Speech to Text model type",
+    "date": "2026-08-09T20:01:23Z",
+    "summary": "`GroqAudioGenerator` is the **first `BaseAudioGenerator` subclass in MJ that actually implements `SpeechToText`** \u2014 the OpenAI and ElevenLabs audio generators both `throw` for it, so the abstract method existed with no working implementation behind it. Built on the `groq-sdk` already depended on; no",
+    "url": "https://github.com/MemberJunction/MJ/pull/3494",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: deterministic content validation and quality report for generated documents",
+    "date": "2026-08-09T19:57:00Z",
+    "summary": "## Summary\n\nPhase 1 of the multi-stage resume pipeline programme: every generated r\u00e9sum\u00e9 and cover letter is now **deterministically validated against the candidate's own source document**, with the result persisted, surfaced in the UI, and available to the agent. The core rule made mechanical: the ",
+    "url": "https://github.com/saeedkolivand/ai-job-hunter-app/pull/963",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: ai-job-hunter-app"
     ]
   }
 ]
