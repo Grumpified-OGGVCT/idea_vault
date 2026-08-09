@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] fix(sdk): close post-merge cloud contract findings",
-    "date": "2026-08-09T03:41:40Z",
+    "date": "2026-08-09T05:06:29Z",
     "summary": "# Pull request checklist\n\nWrite for human maintainers first. Use `n.a.` with a concrete reason when a\nfield does not apply. Do not paste secrets, raw transcripts, bulky telemetry,\nor local absolute paths.\n\n## What Problem This Solves\n\n- Motivation: PR #385 merged with 18 current, non-outdated CodeRa",
     "url": "https://github.com/jscraik/Agent-Skills/pull/386",
     "source": "github_prs",
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-09T03:45:29Z",
+    "date": "2026-08-09T05:08:46Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-09T02:25:51Z",
+    "date": "2026-08-09T04:54:00Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -733,7 +733,7 @@
   },
   {
     "title": "[PR] feat(nixos): Ollama\u3068Open WebUI\u3092\u30aa\u30f3\u30c7\u30de\u30f3\u30c9\u3067\u63d0\u4f9b\u3057\u307e\u3059",
-    "date": "2026-08-09T03:45:06Z",
+    "date": "2026-08-09T05:06:13Z",
     "summary": "\u30ed\u30fc\u30ab\u30ebLLM\u306e\u63a8\u8ad6\u74b0\u5883\u3092\u5404\u30cd\u30a4\u30c6\u30a3\u30d6Linux\u30db\u30b9\u30c8\u3078\u5ba3\u8a00\u7684\u306b\u7528\u610f\u3057\u307e\u3059\u3002\n\nOllama\u306fNixOS Container\u3078\u9694\u96e2\u3057\u3001\n\u30db\u30b9\u30c8\u5074socket\u3078\u306e\u521d\u56de\u30a2\u30af\u30bb\u30b9\u3067\u8d77\u52d5\u3057\u307e\u3059\u3002\n\u5e38\u99d0\u3055\u305b\u306a\u3044\u3053\u3068\u3067\u3001\n\u4f7f\u3063\u3066\u3044\u306a\u3044\u9593\u306fGPU\u3082\u30e1\u30e2\u30ea\u3082\u6d88\u8cbb\u3057\u307e\u305b\u3093\u3002\nbullet\u3067\u306fCUDA\u3092\u4f7f\u3044\u3001\n\u305d\u306e\u4ed6\u306e\u30db\u30b9\u30c8\u3067\u306fCPU\u3092\u4f7f\u3044\u307e\u3059\u3002\n\n\u30c1\u30e3\u30c3\u30c8\u7528\u306eUI\u3068\u3057\u3066Open WebUI\u3092\u540c\u3058\u30b3\u30f3\u30c6\u30ca\u3078\u540c\u5c45\u3055\u305b\u307e\u3059\u3002\n\u8a8d\u8a3c\u306ftailnet\u3068ACL\u3092\u5883\u754c\u3068\u3059\u308bsingle-user mode\u306b\u3057\u3066\u3001\n\u63a5\u7d9a\u306f\u30db\u30b9\u30c8\u5074\u306eproxy\u3060\u3051\u306b\u9650\u5b9a\u3057\u307e\u3059\u3002\nOllama\u3068Open WebUI\u306f\u305d\u308c\u305e\u308c\u30db\u30b9\u30c8\u540d\u5165\u308a\u306eTail",
     "url": "https://github.com/ncaq/dotfiles/pull/1473",
     "source": "github_prs",
@@ -817,8 +817,8 @@
   },
   {
     "title": "[PR] Enhance core app",
-    "date": "2026-08-09T02:32:01Z",
-    "summary": "# Enhance Core Application & Architectural Refactoring\n\nThis PR implements core application features across 4 phases, along with advanced schema refactoring, hybrid merge ordering, and environment-based shared-secret authentication.\n\n---\n\n## Architectural & Judgment Call Refactorings\n\n1. **Pydantic ",
+    "date": "2026-08-09T04:01:35Z",
+    "summary": "Four phases of work against `enhance-app-plan.md`. Four commits, reviewable in order.\r\n\r\nThe app markets itself as helping teams assemble releases by *\"seeing merge\r\nconflicts\"* \u2014 but **nothing in the codebase ever executed git.** Conflict data\r\ncame only from GitHub's per-PR `mergeable` flag plus a",
     "url": "https://github.com/insanityzr1/pr-intelligence-app/pull/3",
     "source": "github_prs",
     "highlights": [
@@ -861,6 +861,102 @@
       "comments: 1",
       "pull request",
       "repo: dca-prep-kit"
+    ]
+  },
+  {
+    "title": "[PR] Pull",
+    "date": "2026-08-09T05:07:34Z",
+    "summary": "Yez\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added Campaign Concept Studio with brief intake, a pinned concept/copy board, artwork prompt reuse, and a mock/demo mode.\n  * Expanded Jackie\u2019s PC desktop with Global Term",
+    "url": "https://github.com/93jessycollin93-del/PC/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: PC"
+    ]
+  },
+  {
+    "title": "[PR] feat(core): Streaming / progress UI while waiting on large models (#1171)",
+    "date": "2026-08-09T04:47:43Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nCourse chat no longer goes silent while waiting on slow local / large models (e.g. Qwen2.5 32B) or Assist oversight buffering. While a turn is in flight, the UI shows staged status, elapsed wait, and a **timed progress bar** that fills against an expec",
+    "url": "https://github.com/EduAI-Lab/EduAI/pull/1204",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: EduAI"
+    ]
+  },
+  {
+    "title": "[PR] Add Sentinel Agents system, sidebar redesign, memory leak fixes",
+    "date": "2026-08-09T04:39:38Z",
+    "summary": "- New Sentinel Agents backend (router, API client, UI panel)\r\n- Sidebar redesigned as persistent vertical icon bar (collapsed=60px)\r\n- Memory leak fixes: node-pty, globby, worker pool, router/SSE cleanup\r\n- New icons: ShieldScan, ShieldCheck, Database\r\n- Brand colors for supabase/sentinel tabs, dark",
+    "url": "https://github.com/friuns2/codex-mobile/pull/207",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: codex-mobile"
+    ]
+  },
+  {
+    "title": "[PR] feat: deliver zero-config first-run analysis path",
+    "date": "2026-08-09T04:25:08Z",
+    "summary": "## PR Type\n\n- [ ] fix\n- [x] feat\n- [ ] refactor\n- [ ] docs\n- [ ] chore\n- [ ] test\n- [ ] ci\n\n## Background And Problem\n\nIssue #796 asks for a **zero-config first success** path: install \u2192 optional local detect / demo \u2192 one report-shaped result without requiring cloud API keys.\n\nPR #817 already delive",
+    "url": "https://github.com/SiinXu/stock-pulse-ai/pull/959",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: stock-pulse-ai"
+    ]
+  },
+  {
+    "title": "[PR] AetheraClaw: multi-provider AI assistant for healthcare RCM & medical billing/coding",
+    "date": "2026-08-09T04:19:18Z",
+    "summary": "## Summary\n\nA self-hosted AI assistant for **US healthcare Revenue Cycle Management and medical billing & coding**, inspired by [OpenClaw](https://github.com/openclaw/openclaw). A long-running **Gateway** (Fastify HTTP + WebSocket) owns sessions and routes between a CLI, a static web UI, and a **pro",
+    "url": "https://github.com/kk078/AetheraClaw/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AetheraClaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/cbcoutinho/nextcloud-mcp-server docker tag to v0.166.1",
+    "date": "2026-08-09T04:06:10Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/cbcoutinho/nextcloud-mcp-server](https://redirect.github.com/cbcoutinho/nextcloud-mcp-server) | minor | `0.151.0` \u2192 `0.166.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>cbcoutinho/nextcloud-mcp-server ",
+    "url": "https://github.com/cbcoutinho/astrolabe/pull/288",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: astrolabe"
+    ]
+  },
+  {
+    "title": "[PR] Pin one MedGemma tag for local, dev and prod",
+    "date": "2026-08-09T03:55:59Z",
+    "summary": "> **Stacked on #78** \u2014 based on `worktree-medgemma-min-instances`, not `main`. GitHub retargets this to `main` automatically when #78 merges. Stacked deliberately: both PRs touch the same line of `docs/infrastructure.md`, and #78 has to merge first anyway so Terraform creates the Cloud Run service b",
+    "url": "https://github.com/Codesistance/product-carditrack/pull/79",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: product-carditrack"
+    ]
+  },
+  {
+    "title": "[PR] Stop MedGemma inheriting prod's warm-instance floor",
+    "date": "2026-08-09T03:51:26Z",
+    "summary": "## Why\n\nMedGemma took `min_instance_count` from `cloud_run_min_instances`, which prod sets to `1` to keep API, Web and Worker warm. On an 8 vCPU / 16 Gi service with `cpu_idle = false`, that floor makes MedGemma the largest single line item on the bill before it serves a request.\n\nIt is also not dep",
+    "url": "https://github.com/Codesistance/product-carditrack/pull/78",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: product-carditrack"
     ]
   }
 ]
