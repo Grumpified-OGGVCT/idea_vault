@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] fix(sdk): close post-merge cloud contract findings",
-    "date": "2026-08-09T01:50:10Z",
+    "date": "2026-08-09T03:41:40Z",
     "summary": "# Pull request checklist\n\nWrite for human maintainers first. Use `n.a.` with a concrete reason when a\nfield does not apply. Do not paste secrets, raw transcripts, bulky telemetry,\nor local absolute paths.\n\n## What Problem This Solves\n\n- Motivation: PR #385 merged with 18 current, non-outdated CodeRa",
     "url": "https://github.com/jscraik/Agent-Skills/pull/386",
     "source": "github_prs",
@@ -505,7 +505,7 @@
   },
   {
     "title": "[PR] Add safe Termux services and local Lum cockpit",
-    "date": "2026-08-09T01:46:40Z",
+    "date": "2026-08-09T02:05:35Z",
     "summary": "## What changed\n\nAdds a safe Termux:Widget supervisor plus a dependency-free, loopback-only Lum cockpit backed by the existing local Ollama service.\n\n### Services\n\n- AXS on `127.0.0.1:8767`\n- TigerVNC display `:1` on `127.0.0.1:5901`\n- WebSockify-rs on `127.0.0.1:6080`, upstream VNC `5901`\n- Hydra L",
     "url": "https://github.com/eggie-admin/hydra-shell-android/pull/4",
     "source": "github_prs",
@@ -529,7 +529,7 @@
   },
   {
     "title": "[PR] v0.7.64: snowflake, dynatrace, mintlify, files and security hardening, perf improvements",
-    "date": "2026-08-09T01:40:26Z",
+    "date": "2026-08-09T02:24:23Z",
     "summary": "- **fix(jsm): accept the numeric pagination the JSM tools actually send (#6386)**\r\n- **fix(providers): stop reporting an absent Ollama as an error (#6387)**\r\n- **improvement(mship): questions improvement (#6385)**\r\n- **improvement(admin): move user row actions into an overflow menu with confirm moda",
     "url": "https://github.com/simstudioai/sim/pull/6460",
     "source": "github_prs",
@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] fix(mcp): enforce the tls-downgrade policy in the crate that performs it",
-    "date": "2026-08-09T01:40:03Z",
+    "date": "2026-08-09T02:36:05Z",
     "summary": "ExecutionPlan **E-40**, first CodeQL batch.\n\n## `rust/disabled-certificate-check` \u00d72 \u2014 real, and worth fixing\n\nBoth alerts sit on `danger_accept_invalid_certs(true)` behind `McpTimeouts::verify_tls` (`transport/http.rs`, `transport/sse.rs`).\n\nThe finding is not that the flag exists \u2014 it's **where th",
     "url": "https://github.com/siddharthanagula3/agiworkforce/pull/405",
     "source": "github_prs",
@@ -553,7 +553,7 @@
   },
   {
     "title": "[PR] Add atomic agent prompt submission",
-    "date": "2026-08-09T01:39:26Z",
+    "date": "2026-08-09T03:05:40Z",
     "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
     "url": "https://github.com/manaflow-ai/cmux/pull/9290",
     "source": "github_prs",
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-09T01:38:28Z",
+    "date": "2026-08-09T03:45:29Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-09T00:01:13Z",
+    "date": "2026-08-09T02:25:51Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -673,7 +673,7 @@
   },
   {
     "title": "[PR] docs: use %USERPROFILE% for machine-local paths instead of a hardcoded user",
-    "date": "2026-08-08T23:23:56Z",
+    "date": "2026-08-09T03:05:24Z",
     "summary": "Replaces the hardcoded profile path (and the in-progress `{windows_user}` placeholder) with an environment variable, so the docs are correct on every machine with no substitution step at all.\n\n## Why not `{windows_user}`\n\nThe placeholder solved the wrong half of the problem \u2014 it still needs substitu",
     "url": "https://github.com/p-potvin/vaultwares-docs/pull/27",
     "source": "github_prs",
@@ -721,7 +721,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-08T22:32:11Z",
+    "date": "2026-08-09T02:34:48Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/better-dx/pull/955",
     "source": "github_prs",
@@ -729,6 +729,138 @@
       "comments: 0",
       "pull request",
       "repo: better-dx"
+    ]
+  },
+  {
+    "title": "[PR] feat(nixos): Ollama\u3068Open WebUI\u3092\u30aa\u30f3\u30c7\u30de\u30f3\u30c9\u3067\u63d0\u4f9b\u3057\u307e\u3059",
+    "date": "2026-08-09T03:45:06Z",
+    "summary": "\u30ed\u30fc\u30ab\u30ebLLM\u306e\u63a8\u8ad6\u74b0\u5883\u3092\u5404\u30cd\u30a4\u30c6\u30a3\u30d6Linux\u30db\u30b9\u30c8\u3078\u5ba3\u8a00\u7684\u306b\u7528\u610f\u3057\u307e\u3059\u3002\n\nOllama\u306fNixOS Container\u3078\u9694\u96e2\u3057\u3001\n\u30db\u30b9\u30c8\u5074socket\u3078\u306e\u521d\u56de\u30a2\u30af\u30bb\u30b9\u3067\u8d77\u52d5\u3057\u307e\u3059\u3002\n\u5e38\u99d0\u3055\u305b\u306a\u3044\u3053\u3068\u3067\u3001\n\u4f7f\u3063\u3066\u3044\u306a\u3044\u9593\u306fGPU\u3082\u30e1\u30e2\u30ea\u3082\u6d88\u8cbb\u3057\u307e\u305b\u3093\u3002\nbullet\u3067\u306fCUDA\u3092\u4f7f\u3044\u3001\n\u305d\u306e\u4ed6\u306e\u30db\u30b9\u30c8\u3067\u306fCPU\u3092\u4f7f\u3044\u307e\u3059\u3002\n\n\u30c1\u30e3\u30c3\u30c8\u7528\u306eUI\u3068\u3057\u3066Open WebUI\u3092\u540c\u3058\u30b3\u30f3\u30c6\u30ca\u3078\u540c\u5c45\u3055\u305b\u307e\u3059\u3002\n\u8a8d\u8a3c\u306ftailnet\u3068ACL\u3092\u5883\u754c\u3068\u3059\u308bsingle-user mode\u306b\u3057\u3066\u3001\n\u63a5\u7d9a\u306f\u30db\u30b9\u30c8\u5074\u306eproxy\u3060\u3051\u306b\u9650\u5b9a\u3057\u307e\u3059\u3002\nOllama\u3068Open WebUI\u306f\u305d\u308c\u305e\u308c\u30db\u30b9\u30c8\u540d\u5165\u308a\u306eTail",
+    "url": "https://github.com/ncaq/dotfiles/pull/1473",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] feat: serve Qwen3.6 via vLLM on orion-ai-01, run Hermes agents against it",
+    "date": "2026-08-09T03:33:00Z",
+    "summary": "## Summary\n\nTwo Qwen3.6 models served by vLLM on `orion-ai-01` (DGX Spark), plus two Hermes Agent instances running fully locally against them \u2014 no cloud API keys.\n\n- **`infrastructure/nvidia-device-plugin/`** \u2014 RuntimeClass + device plugin, time-sliced to 4 replicas so `vllm-main` and `vllm-aux` ca",
+    "url": "https://github.com/permalost/home-lab-ops/pull/108",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: home-lab-ops"
+    ]
+  },
+  {
+    "title": "[PR] feat(runtime): add dormant Podman GPU and local inference",
+    "date": "2026-08-09T03:24:35Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nAdds the dormant provider-owned Podman GPU and host-local inference layer for Ollama, NVIDIA NIM, and vLLM. OpenClaw, Hermes, and LangChain Deep Agents Code consume the same provider-neutral routing contract. Podman remains absent from production regis",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/8061",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Field-Level Security Implementation Plan",
+    "date": "2026-08-09T03:06:02Z",
+    "summary": "## Summary\n\n- Adds implementation plan for role-based field-level security in MemberJunction\n- Driven by a client request for column-level access control on sensitive fields (compensation, donor giving, personnel data)\n- Builds on existing entity permission infrastructure with matching Allow/Deny se",
+    "url": "https://github.com/MemberJunction/MJ/pull/3367",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency pydantic-ai to v1.102.0 [security]",
+    "date": "2026-08-09T02:59:54Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [pydantic-ai](https://redire",
+    "url": "https://github.com/ilanbenb/wa_llm/pull/149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: wa_llm"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-08-09T02:44:10Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-09T02:34:37Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/ts-watches/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-watches"
+    ]
+  },
+  {
+    "title": "[PR] Enhance core app",
+    "date": "2026-08-09T02:32:01Z",
+    "summary": "# Enhance Core Application & Architectural Refactoring\n\nThis PR implements core application features across 4 phases, along with advanced schema refactoring, hybrid merge ordering, and environment-based shared-secret authentication.\n\n---\n\n## Architectural & Judgment Call Refactorings\n\n1. **Pydantic ",
+    "url": "https://github.com/insanityzr1/pr-intelligence-app/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: pr-intelligence-app"
+    ]
+  },
+  {
+    "title": "[PR] v1.7.0: Skills, Konnektoren, Einrichtung ohne SSH und HTTPS",
+    "date": "2026-08-09T02:11:28Z",
+    "summary": "Drei Commits: der erste macht den Agenten besser, die beiden anderen machen ihn \u00fcberhaupt erst benutzbar f\u00fcr jemanden, der **nur ein Handy hat**.\n\n| Commit | Inhalt |\n|---|---|\n| `26470ea` | v1.7.0 \u2014 Skills und Konnektoren |\n| `e81d49a` | Einrichtung ohne SSH (cloud-init f\u00fcr Hetzner) |\n| `7570762` |",
+    "url": "https://github.com/michlhenne307-design/braunycode-cloud-Visibility/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: braunycode-cloud-Visibility"
+    ]
+  },
+  {
+    "title": "[PR] fix(providers): validate custom provider base URL against SSRF",
+    "date": "2026-08-09T02:05:35Z",
+    "summary": "## Summary\n\nCustom provider upstream base URLs were accepted without any validation. An admin (or a compromised admin session) could point the gateway at link-local cloud metadata endpoints (e.g. 169.254.169.254, Alibaba Cloud 100.100.100.200) or arbitrary internal services, turning provider request",
+    "url": "https://github.com/astaxie/TokenHub/pull/162",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: TokenHub"
+    ]
+  },
+  {
+    "title": "[PR] Update",
+    "date": "2026-08-09T01:58:44Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Large batch of new and expanded blog posts, diagrams and docs on cloud-native, Kubernetes, DevOps and tooling.\n\n* **Chores**\n  * CI/CD revamped: release-triggered Docker imag",
+    "url": "https://github.com/humzamalak/dca-prep-kit/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dca-prep-kit"
     ]
   }
 ]
