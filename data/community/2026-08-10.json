@@ -553,7 +553,7 @@
   },
   {
     "title": "[PR] fix: needs-human PR notification names the blocking items; reasonless NEEDS_HUMAN verdicts get one re-ask then degrade loudly",
-    "date": "2026-08-10T13:10:30Z",
+    "date": "2026-08-10T14:53:32Z",
     "summary": "Automatically opened by AWF workspace `ws_516cabd939054d7c80f63dc9` (agent: `codex`, model: `gpt-5.6-terra`, effort: `xhigh`).\n\n\n### Task\nFix two defects in the PR monitor's NotifyHuman path (live incident 2026-08-08, ws_40bf762a / aira-ai-team-member#46: comment said only \"review feedback needs hum",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/808",
     "source": "github_prs",
@@ -661,7 +661,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-10T11:19:02Z",
+    "date": "2026-08-10T14:41:26Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -733,12 +733,12 @@
   },
   {
     "title": "Allow importing multi-file GGUF models",
-    "date": "2026-08-10T02:02:34Z",
+    "date": "2026-08-10T14:00:50Z",
     "summary": "### What is the issue?\n\nCurrently Ollama can [import GGUF files](https://github.com/ollama/ollama/blob/main/docs/import.md). However, larger models are sometimes split into separate files. Ollama should support loading multiple GGUF files similar to loading safetensor files.\n\n\n### Workaround\n\nThe `o",
     "url": "https://github.com/ollama/ollama/issues/5245",
     "source": "github_issues",
     "highlights": [
-      "comments: 104",
+      "comments: 105",
       "state: open",
       "repo: ollama"
     ]
@@ -781,7 +781,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-08-10T02:44:11Z",
+    "date": "2026-08-10T14:44:13Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -793,7 +793,7 @@
   },
   {
     "title": "[PR] fix(providers): validate custom provider base URL against SSRF",
-    "date": "2026-08-10T02:43:45Z",
+    "date": "2026-08-10T14:50:23Z",
     "summary": "## Summary\n\nCustom provider upstream base URLs were accepted without any validation. An admin (or a compromised admin session) could point the gateway at link-local cloud metadata endpoints (e.g. 169.254.169.254, Alibaba Cloud 100.100.100.200) or arbitrary internal services, turning provider request",
     "url": "https://github.com/astaxie/TokenHub/pull/162",
     "source": "github_prs",
@@ -889,12 +889,12 @@
   },
   {
     "title": "[PR] feat(bedrock): support API key authentication and model discovery",
-    "date": "2026-08-10T11:21:14Z",
+    "date": "2026-08-10T14:50:00Z",
     "summary": "### Summary\r\n\r\nCloses #17848.\r\n\r\nThis PR adds API key authentication and dynamic model discovery to the existing Bedrock provider.\r\n\r\n**Public API impact**\r\n\r\n- Adds `POST /api/v1/providers/{provider}/models`, accepting `api_key`, `base_url`, `region`, and provider-specific `extensions` in the reque",
     "url": "https://github.com/infiniflow/ragflow/pull/17958",
     "source": "github_prs",
     "highlights": [
-      "comments: 41",
+      "comments: 48",
       "pull request",
       "repo: ragflow"
     ]
@@ -913,7 +913,7 @@
   },
   {
     "title": "[PR] python3Packages.mutagen: 1.47.0 -> 1.48.1",
-    "date": "2026-08-10T06:07:10Z",
+    "date": "2026-08-10T15:01:40Z",
     "summary": "Diff: https://github.com/quodlibet/mutagen/compare/release-1.47.0...release-1.48.1\r\n\r\nChangelog: https://mutagen.readthedocs.io/en/latest/changelog.html#release-1-48-1\r\n\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link",
     "url": "https://github.com/NixOS/nixpkgs/pull/550845",
     "source": "github_prs",
@@ -925,7 +925,7 @@
   },
   {
     "title": "[PR] feat(postgresql): run the integration tier on PG, and fix what it exposed",
-    "date": "2026-08-10T07:09:47Z",
+    "date": "2026-08-10T14:59:11Z",
     "summary": "Closes the long-open question in **#3257**: the deterministic integration tier now runs against PostgreSQL for the first time, and this PR fixes the defects that running it exposed.\n\n**Result: 49 of 61 deterministic bundles pass on PostgreSQL** (MJAPI live, 61/61 executed, zero skipped). It was 32/6",
     "url": "https://github.com/MemberJunction/MJ/pull/3703",
     "source": "github_prs",
@@ -937,7 +937,7 @@
   },
   {
     "title": "[PR] fix(codegen): IS-A inheritance silently does nothing on PostgreSQL",
-    "date": "2026-08-10T07:09:43Z",
+    "date": "2026-08-10T14:24:11Z",
     "summary": "## Summary\n\nIS-A (Table-Per-Type) inheritance **has never worked on the PostgreSQL provider**. Two defects on consecutive steps of the same path, both caught-and-logged, so **CodeGen exits 0** while the entire IS-A wiring is skipped.\n\nWhat you get instead of an error: an entity that registers and qu",
     "url": "https://github.com/MemberJunction/MJ/pull/3590",
     "source": "github_prs",
@@ -973,7 +973,7 @@
   },
   {
     "title": "[PR] fix(postgresql): match SQL keywords case-sensitively when auto-quoting identifiers",
-    "date": "2026-08-10T07:09:45Z",
+    "date": "2026-08-10T14:24:13Z",
     "summary": "## Summary\n\nPostgreSQL identifier auto-quoting used a keyword **denylist** matched case-INsensitively: a PascalCase word was quoted unless it appeared in a hardcoded keyword set. The set of SQL keywords and the set of MJ column names overlap, so every name in the intersection shipped unquoted, folde",
     "url": "https://github.com/MemberJunction/MJ/pull/3697",
     "source": "github_prs",
@@ -1033,12 +1033,12 @@
   },
   {
     "title": "[PR] chore(submodule): promote PMOVES-hermes-agent to hardened tip (49 upstream commits)",
-    "date": "2026-08-10T04:05:46Z",
+    "date": "2026-08-10T15:00:36Z",
     "summary": "## Summary\n\nPromotes the `PMOVES-hermes-agent` gitlink from `863e3131` \u2192 `40765f769c` on `PMOVES.AI-Edition-Hardened`.\n\nPure upstream sync \u2014 42 commits advance on the hardened branch. Zero PMOVES-authored commits in the delta. Upstream = `NousResearch/hermes-agent@main`, merged via fork-sync [PR #3]",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/2511",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: PMOVES.AI"
     ]
@@ -1069,7 +1069,7 @@
   },
   {
     "title": "[PR] feat: C/LVGL ESP32 satellites + tcp-lite transport, Wyoming/MQTT/kiosk services, unified voice shortcuts",
-    "date": "2026-08-10T08:17:11Z",
+    "date": "2026-08-10T14:54:45Z",
     "summary": "## Summary\n\n176 commits on top of `pre-release-2-1` (~+101k / \u22124.1k over 493 files). The\nbranch started as the C/LVGL GUI client, but it has grown into the 2.1 release\nbranch: three new services, a new transport, a satellite audio path, a web UI\nhome dashboard, a device-performance pass, and a large",
     "url": "https://github.com/ubopod/ubo_app/pull/365",
     "source": "github_prs",
@@ -1189,12 +1189,12 @@
   },
   {
     "title": "CODEX_QUEUE \u2014 SmartAiPro autonomous work queue",
-    "date": "2026-08-10T13:04:01Z",
+    "date": "2026-08-10T14:58:57Z",
     "summary": "# SmartAiPro Codex Work Queue\n\nThis issue is the orchestration queue for governed autonomous development. It is **not merge authority**.\n\n## Global guardrails\n- Base target: `smartcore-v0.1`; never write/merge `main` without explicit owner authorization.\n- `FREE_ONLY_FAIL_CLOSED`; no paid fallback, ",
     "url": "https://github.com/Devilazz/SmartAiPro/issues/73",
     "source": "github_issues",
     "highlights": [
-      "comments: 75",
+      "comments: 82",
       "state: open",
       "repo: SmartAiPro"
     ]
@@ -1213,7 +1213,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-10T12:53:44Z",
+    "date": "2026-08-10T14:23:38Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1237,7 +1237,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-10T12:53:03Z",
+    "date": "2026-08-10T14:23:45Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/facemendous/kilocode/pull/1",
     "source": "github_prs",
@@ -1249,7 +1249,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-10T12:53:01Z",
+    "date": "2026-08-10T14:23:39Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/Fenris159/kilocode/pull/1",
     "source": "github_prs",
@@ -1369,19 +1369,19 @@
   },
   {
     "title": "[PR] Improve agent harness execution reliability and Fast routing",
-    "date": "2026-08-10T13:13:31Z",
+    "date": "2026-08-10T15:00:47Z",
     "summary": "## What changed\n\n- make the agent loop outcome-driven with a uniform emergency fuse, bounded provider dispatches, progress-aware loop detection, and explicit partial terminal states\n- persist run traces and side-effect execution state so crash recovery does not blindly replay external writes\n- reduc",
     "url": "https://github.com/Kocoro-lab/Kocoro/pull/338",
     "source": "github_prs",
     "highlights": [
-      "comments: 21",
+      "comments: 31",
       "pull request",
       "repo: Kocoro"
     ]
   },
   {
     "title": "[PR] docs(core): say what RunView's 'simple' actually returns",
-    "date": "2026-08-10T13:10:55Z",
+    "date": "2026-08-10T14:57:38Z",
     "summary": "## The gap\n\nBoth halves of this contract are individually reasonable, which is how you end up trusting the\ncombination:\n\n- `RunViewParams.ResultType` says `'entity_object'` returns \"BaseEntity-derived objects instead of\n  simple objects\" \u2014 true, but silent on what that means for the **values**.\n- `R",
     "url": "https://github.com/MemberJunction/MJ/pull/3707",
     "source": "github_prs",
@@ -1429,7 +1429,7 @@
   },
   {
     "title": "[PR] Redesign manifold.no around the local-first claim",
-    "date": "2026-08-10T12:53:25Z",
+    "date": "2026-08-10T14:37:04Z",
     "summary": "Rebuilds the landing page as an **argument** rather than a feature list, leading\nwith the one claim a cloud-tier competitor cannot answer without abandoning its\nrevenue: your code never leaves your Mac.\n\n## Why this framing\n\nThe old page had three problems. The hero screenshot was the empty *New age",
     "url": "https://github.com/svenmalvik/manifold-landingpage/pull/36",
     "source": "github_prs",
@@ -1449,6 +1449,42 @@
       "comments: 0",
       "pull request",
       "repo: security_content"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.44.0",
+    "date": "2026-08-10T14:51:36Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/DoodleScheduling/saml-exporter/pull/334",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: saml-exporter"
+    ]
+  },
+  {
+    "title": "[PR] refactor: complete enterprise service architecture conformance",
+    "date": "2026-08-10T14:50:58Z",
+    "summary": "## Summary\\n\\nAdds the implementation plan for bringing every emme-service backend module into conformance with the enterprise DDD + Hexagonal + Spring Modulith template.\\n\\n## Scope\\n\\n- module-by-module architecture and naming normalization\\n- one-use-case-per-application-service rule\\n- API, doma",
+    "url": "https://github.com/migangdelzar/emme-service/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: emme-service"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-08-10T14:35:00Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
     ]
   }
 ]
