@@ -181,7 +181,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-10T04:44:26Z",
+    "date": "2026-08-10T08:01:51Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -553,7 +553,7 @@
   },
   {
     "title": "[PR] fix: needs-human PR notification names the blocking items; reasonless NEEDS_HUMAN verdicts get one re-ask then degrade loudly",
-    "date": "2026-08-10T06:04:40Z",
+    "date": "2026-08-10T08:23:58Z",
     "summary": "Automatically opened by AWF workspace `ws_516cabd939054d7c80f63dc9` (agent: `codex`, model: `gpt-5.6-terra`, effort: `xhigh`).\n\n\n### Task\nFix two defects in the PR monitor's NotifyHuman path (live incident 2026-08-08, ws_40bf762a / aira-ai-team-member#46: comment said only \"review feedback needs hum",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/808",
     "source": "github_prs",
@@ -577,12 +577,12 @@
   },
   {
     "title": "[PR] feat: deterministic content validation and quality report for generated documents",
-    "date": "2026-08-10T05:50:55Z",
+    "date": "2026-08-10T07:49:33Z",
     "summary": "## Summary\n\nPhase 1 of the multi-stage resume pipeline programme: every generated r\u00e9sum\u00e9 and cover letter is now **deterministically validated against the candidate's own source document**, with the result persisted, surfaced in the UI, and available to the agent. The core rule made mechanical: the ",
     "url": "https://github.com/saeedkolivand/ai-job-hunter-app/pull/963",
     "source": "github_prs",
     "highlights": [
-      "comments: 44",
+      "comments: 49",
       "pull request",
       "repo: ai-job-hunter-app"
     ]
@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] fix: use native Ollama tags for local model discovery",
-    "date": "2026-08-10T05:21:58Z",
+    "date": "2026-08-10T07:23:07Z",
     "summary": "## Current upstream state\n\n- Current published head: `0fdc254cb1cd50eeec62871267c3e6dae4ea2ad6`\n- Base `main`: `6564f319a647b47de391cab2f608660323804a2b`\n- Server-side `update-branch --rebase`: already up-to-date\n- Current GitHub state: `MERGEABLE / BLOCKED`; no checks reported and no review is atta",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
@@ -661,7 +661,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-10T05:52:52Z",
+    "date": "2026-08-10T07:03:27Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -769,7 +769,7 @@
   },
   {
     "title": "[PR] fix(agents): scope quota failures to auth profiles",
-    "date": "2026-08-10T02:52:25Z",
+    "date": "2026-08-10T08:27:53Z",
     "summary": "## Summary\n\n### High Level TLDR\n\nA quota failure on one auth profile could pause the shared command lane for 30 minutes, blocking unrelated sessions and providers before they reached a model. A user-selected auth profile also collapsed same-provider auth routing to one candidate, so a second configu",
     "url": "https://github.com/openclaw/openclaw/pull/121278",
     "source": "github_prs",
@@ -865,7 +865,7 @@
   },
   {
     "title": "\u2699\ufe0f AI Infrastructure Digest 2026-08-10",
-    "date": "2026-08-10T04:56:45Z",
+    "date": "2026-08-10T08:06:03Z",
     "summary": "# AI Infrastructure Digest 2026-08-10\n\n> Generated: 2026-08-10 04:40 UTC | Projects covered: 6\n\n- [vLLM](https://github\u200b.com/vllm-project/vllm)\n- [SGLang](https://github\u200b.com/sgl-project/sglang)\n- [llama.cpp](https://github\u200b.com/ggml-org/llama.cpp)\n- [Ollama](https://github\u200b.com/ollama/ollama)\n- [Li",
     "url": "https://github.com/Neare-Design/agents-radar/issues/32",
     "source": "github_issues",
@@ -889,12 +889,12 @@
   },
   {
     "title": "[PR] feat(bedrock): support API key authentication and model discovery",
-    "date": "2026-08-10T06:11:20Z",
+    "date": "2026-08-10T08:21:43Z",
     "summary": "### Summary\r\n\r\nCloses #17848.\r\n\r\nThis PR adds API key authentication and dynamic model discovery to the existing Bedrock provider.\r\n\r\n**Public API impact**\r\n\r\n- Adds `POST /api/v1/providers/{provider}/models`, accepting `api_key`, `base_url`, `region`, and provider-specific `extensions` in the reque",
     "url": "https://github.com/infiniflow/ragflow/pull/17958",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 23",
       "pull request",
       "repo: ragflow"
     ]
@@ -925,7 +925,7 @@
   },
   {
     "title": "[PR] feat(postgresql): run the integration tier on PG, and fix what it exposed",
-    "date": "2026-08-10T05:42:36Z",
+    "date": "2026-08-10T07:09:47Z",
     "summary": "Closes the long-open question in **#3257**: the deterministic integration tier now runs against PostgreSQL for the first time, and this PR fixes the defects that running it exposed.\n\n**Result: 49 of 61 deterministic bundles pass on PostgreSQL** (MJAPI live, 61/61 executed, zero skipped). It was 32/6",
     "url": "https://github.com/MemberJunction/MJ/pull/3703",
     "source": "github_prs",
@@ -937,7 +937,7 @@
   },
   {
     "title": "[PR] fix(codegen): IS-A inheritance silently does nothing on PostgreSQL",
-    "date": "2026-08-10T05:37:01Z",
+    "date": "2026-08-10T07:09:43Z",
     "summary": "## Summary\n\nIS-A (Table-Per-Type) inheritance **has never worked on the PostgreSQL provider**. Two defects on consecutive steps of the same path, both caught-and-logged, so **CodeGen exits 0** while the entire IS-A wiring is skipped.\n\nWhat you get instead of an error: an entity that registers and qu",
     "url": "https://github.com/MemberJunction/MJ/pull/3590",
     "source": "github_prs",
@@ -973,7 +973,7 @@
   },
   {
     "title": "[PR] fix(postgresql): match SQL keywords case-sensitively when auto-quoting identifiers",
-    "date": "2026-08-10T05:37:20Z",
+    "date": "2026-08-10T07:09:45Z",
     "summary": "## Summary\n\nPostgreSQL identifier auto-quoting used a keyword **denylist** matched case-INsensitively: a PascalCase word was quoted unless it appeared in a hardcoded keyword set. The set of SQL keywords and the set of MJ column names overlap, so every name in the intersection shipped unquoted, folde",
     "url": "https://github.com/MemberJunction/MJ/pull/3697",
     "source": "github_prs",
@@ -1041,6 +1041,150 @@
       "comments: 2",
       "pull request",
       "repo: PMOVES.AI"
+    ]
+  },
+  {
+    "title": "Replace Ollama with LiteLLM to allow for any LLM with OpenAI compatibility",
+    "date": "2026-08-10T07:39:47Z",
+    "summary": "I came across [this comment](https://github.com/jmorganca/ollama/issues/305#issuecomment-1751848077) that highlights [LiteLLM](https://github.com/BerriAI/litellm) as an excellent approach to using any LLM with OpenAI format. If you agree, I am happy to submit a PR for it. An example of how it looks ",
+    "url": "https://github.com/apeatling/simple-guide-to-mlx-finetuning/issues/2",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 2",
+      "state: open",
+      "repo: simple-guide-to-mlx-finetuning"
+    ]
+  },
+  {
+    "title": "[PR] fix(security): encrypt sensitive admin settings and provider keys at rest",
+    "date": "2026-08-10T08:19:26Z",
+    "summary": "## Description\n\nCloses #1592.\n\nPR [#1054](https://github.com/Bike4Mind/bike4mind/pull/1054) stopped sensitive admin settings from leaving the server, but the stored value was still plaintext in Mongo. Encryption-at-rest already existed in the repo (AES-256-GCM, keyed by `SECRET_ENCRYPTION_KEY`) and ",
+    "url": "https://github.com/Bike4Mind/bike4mind/pull/1600",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: bike4mind"
+    ]
+  },
+  {
+    "title": "[PR] feat: C/LVGL ESP32 satellites + tcp-lite transport, Wyoming/MQTT/kiosk services, unified voice shortcuts",
+    "date": "2026-08-10T08:17:11Z",
+    "summary": "## Summary\n\n176 commits on top of `pre-release-2-1` (~+101k / \u22124.1k over 493 files). The\nbranch started as the C/LVGL GUI client, but it has grown into the 2.1 release\nbranch: three new services, a new transport, a satellite audio path, a web UI\nhome dashboard, a device-performance pass, and a large",
+    "url": "https://github.com/ubopod/ubo_app/pull/365",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ubo_app"
+    ]
+  },
+  {
+    "title": "[PR] feat(ui): adopt Liquid Glass and system controls across the app",
+    "date": "2026-08-10T08:13:05Z",
+    "summary": "## What and why\n\nThe app already targeted macOS 26 but rendered only pre-26 idioms: every surface was a hand-painted opaque colour plus a rounded rectangle, a 0.5pt hairline and a manual shadow, and Settings had no `Form`, no `Section` and no scroll view. This adopts what the system draws, following",
+    "url": "https://github.com/ethantiv/glosso/pull/107",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: glosso"
+    ]
+  },
+  {
+    "title": "[PR] fix(messaging): let the operator choose the Hermes WhatsApp mode",
+    "date": "2026-08-10T07:52:37Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\nThe WhatsApp channel manifest rendered `WHATSAPP_MODE=bot` as a constant, so neither Hermes mode was reachable and a freshly onboarded sandbox could not deliver a message. `channels add whatsapp` now asks the operator which senders the sandbox answers, ",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/8423",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the go-dependencies group across 1 directory with 7 updates",
+    "date": "2026-08-10T07:36:48Z",
+    "summary": "Bumps the go-dependencies group with 7 updates in the / directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [github.com/ClickHouse/clickhouse-go/v2](https://github.com/ClickHouse/clickhouse-go) | `2.46.0` | `2.47.0` |\n| [github.com/databricks/databricks-sql-go](https://github.com/databricks/da",
+    "url": "https://github.com/cloud-shuttle/drover-sqlforge/pull/33",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: drover-sqlforge"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the go-minor-patch group in /go with 19 updates",
+    "date": "2026-08-10T07:29:00Z",
+    "summary": "Bumps the go-minor-patch group in /go with 19 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [github.com/a2aproject/a2a-go/v2](https://github.com/a2aproject/a2a-go) | `2.3.1` | `2.4.0` |\n| [github.com/anthropics/anthropic-sdk-go](https://github.com/anthropics/anthropic-sdk-go) | `1.61.0` | ",
+    "url": "https://github.com/kagent-dev/kagent/pull/2416",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kagent"
+    ]
+  },
+  {
+    "title": "[PR] Release v2.0.1",
+    "date": "2026-08-10T07:24:45Z",
+    "summary": "Patch release with expanded TTS options, improved turn-taking, Omni Assistant Subagents refinements, more languages support in Multilingual assistant, and broader eval coverage.\r\n\r\n### Added\r\n\r\n- **Model updates**: Chatterbox TTS Multilingual with 23 languages, Magpie TTS Multilingual with 12-langua",
+    "url": "https://github.com/NVIDIA-AI-Blueprints/nemotron-voice-agent/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nemotron-voice-agent"
+    ]
+  },
+  {
+    "title": "[PR] Upstream sync \u2014 2026-08-10",
+    "date": "2026-08-10T07:19:15Z",
+    "summary": "## Upstream Sync\n\n**New commits from [nyldn/claude-octopus](https://github.com/nyldn/claude-octopus)**\n\n```\n104400d6 fix: restore Codex marketplace update compatibility (#820)\n3c4830aa fix: make skill-template test hermetic, stop mutating the checkout (#824)\n3d3f972f fix: enforce Ollama, Copilot, an",
+    "url": "https://github.com/AlobarQuest/claude-octopus/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 37",
+      "pull request",
+      "repo: claude-octopus"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ghcr.io/amruthpillai/reactive-resume docker tag to v5.2.5",
+    "date": "2026-08-10T07:15:39Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | minor | `v5.1.0` \u2192 `v5.2.5` |\n\n---\n\n### Rel",
+    "url": "https://github.com/vnghia/homelab/pull/642",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] fix(quota): Ollama Cloud credential validation and UI decoupling (#2187)",
+    "date": "2026-08-10T07:14:09Z",
+    "summary": "Closes #2187\n\n### Problem\n\nOllama Cloud usage tracking fails with \"Provider not configured\" even after setup. Three root-cause issues:\n\n1. **Credential validation always fails (web runtime)** \u2014 `fetchOllamaCloudUsage` uses `redirect: 'manual'` and treats all 3xx responses as auth failure. ollama.com",
+    "url": "https://github.com/openchamber/openchamber/pull/2196",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openchamber"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the spring group across 1 directory with 3 updates",
+    "date": "2026-08-10T07:09:42Z",
+    "summary": "Bumps the spring group with 2 updates in the / directory: [org.springframework.boot](https://github.com/spring-projects/spring-boot) and [org.springframework.ai:spring-ai-pgvector-store](https://github.com/spring-projects/spring-ai).\n\nUpdates `org.springframework.boot` from 4.0.5 to 4.0.6\n<details>\n",
+    "url": "https://github.com/VladByPinsk/calorie-tracker/pull/78",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: calorie-tracker"
     ]
   }
 ]
