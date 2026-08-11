@@ -517,7 +517,7 @@
   },
   {
     "title": "[PR] fix(agents): scope quota failures to auth profiles",
-    "date": "2026-08-11T20:21:00Z",
+    "date": "2026-08-11T21:51:28Z",
     "summary": "## Summary\n\n### High Level TLDR\n\nA quota failure on one auth profile could pause the shared command lane for 30 minutes, blocking unrelated sessions and providers before they reached a model. A user-selected auth profile also collapsed same-provider auth routing to one candidate, so a second configu",
     "url": "https://github.com/openclaw/openclaw/pull/121278",
     "source": "github_prs",
@@ -529,7 +529,7 @@
   },
   {
     "title": "[PR] fix: needs-human PR notification names the blocking items; reasonless NEEDS_HUMAN verdicts get one re-ask then degrade loudly",
-    "date": "2026-08-11T20:44:50Z",
+    "date": "2026-08-11T21:49:03Z",
     "summary": "Automatically opened by AWF workspace `ws_516cabd939054d7c80f63dc9` (agent: `codex`, model: `gpt-5.6-terra`, effort: `xhigh`).\n\n\n### Task\nFix two defects in the PR monitor's NotifyHuman path (live incident 2026-08-08, ws_40bf762a / aira-ai-team-member#46: comment said only \"review feedback needs hum",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/808",
     "source": "github_prs",
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] fix: use native Ollama tags for local model discovery",
-    "date": "2026-08-11T15:42:18Z",
+    "date": "2026-08-11T21:46:59Z",
     "summary": "## Current upstream state\n\n- Current published head: `0fdc254cb1cd50eeec62871267c3e6dae4ea2ad6`\n- Base `main`: `6564f319a647b47de391cab2f608660323804a2b`\n- Server-side `update-branch --rebase`: already up-to-date\n- Current GitHub state: `MERGEABLE / BLOCKED`; no checks reported and no review is atta",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
@@ -613,12 +613,12 @@
   },
   {
     "title": "[PR] feat(examples): add Kubernetes GPU autoscaling recipe",
-    "date": "2026-08-11T07:04:46Z",
+    "date": "2026-08-11T21:36:06Z",
     "summary": "## Related Issue\n\nThis community recipe continues and re-homes the public work from [NVIDIA/NemoClaw#7459](https://github.com/NVIDIA/NemoClaw/pull/7459) into `examples/recipes/nvidia/kubernetes-gpu-autoscaling/`.\n\nArchitecture follow-ups in this PR (beyond the imported baseline):\n\n1. **OpenShell CPU",
     "url": "https://github.com/NVIDIA/nemoclaw-community/pull/111",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 6",
       "pull request",
       "repo: nemoclaw-community"
     ]
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-11T20:22:17Z",
+    "date": "2026-08-11T21:10:08Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] feat(doctor): report a session store this binary cannot open",
-    "date": "2026-08-11T18:37:23Z",
+    "date": "2026-08-11T21:25:06Z",
     "summary": "`forge doctor` had nothing to say about the failure that took this machine down twice in one day.\n\nA store migrated by a newer build crash-looped `forge-serve.service` through three restarts in the morning. In the evening the same mismatch killed the **Anywhere connector** while local Forge kept ans",
     "url": "https://github.com/adulari/forge/pull/964",
     "source": "github_prs",
@@ -1153,24 +1153,24 @@
   },
   {
     "title": "[PR] fix: harden desktop AI integrations",
-    "date": "2026-08-11T19:06:26Z",
+    "date": "2026-08-11T21:42:08Z",
     "summary": "## **User description**\n## Scope\n\nStacked on #335; focuses on user-reported desktop stability and provider/runtime reliability.\n\n- removes brittle Gemini `AIza`-prefix rejection in favor of minimal safe syntax checks plus provider validation\n- makes Local AI cancel/retry operate on the actual acquis",
     "url": "https://github.com/qnbs/WorldScript-Studio/pull/336",
     "source": "github_prs",
     "highlights": [
-      "comments: 32",
+      "comments: 33",
       "pull request",
       "repo: WorldScript-Studio"
     ]
   },
   {
     "title": "[PR] feat: add durable encryption migration journal",
-    "date": "2026-08-11T20:48:53Z",
+    "date": "2026-08-11T21:50:15Z",
     "summary": "## **User description**\n## Scope\n\nStacked on #336; establishes durable, versioned migration coordination plus safe Local AI provider diagnostics.\n\n- persists no-secret migration journal metadata with phases and per-store checkpoints\n- blocks protected access while a migration is active or requires r",
     "url": "https://github.com/qnbs/WorldScript-Studio/pull/337",
     "source": "github_prs",
     "highlights": [
-      "comments: 72",
+      "comments: 78",
       "pull request",
       "repo: WorldScript-Studio"
     ]
@@ -1621,7 +1621,7 @@
   },
   {
     "title": "[PR] Test coverage overhaul: real Skipped status, gated CI lanes armed, ~1,500 new unit tests, 3 new integration bundles",
-    "date": "2026-08-11T18:52:15Z",
+    "date": "2026-08-11T21:08:58Z",
     "summary": "Implements the full roadmap from the test-coverage evaluation: closes the silent non-execution holes in the integration tier, backfills the highest-risk unit coverage gaps, and hardens the release path. 8 commits, ~240 files, roughly 1,500 new unit tests across 100+ packages \u2014 every touched package'",
     "url": "https://github.com/MemberJunction/MJ/pull/3542",
     "source": "github_prs",
@@ -1765,7 +1765,7 @@
   },
   {
     "title": "[PR] feat(runtime): add dormant Podman GPU and local inference",
-    "date": "2026-08-11T20:45:57Z",
+    "date": "2026-08-11T21:37:18Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nReconstructs B4-D of #7744 on current `main` and consolidates the former 4.5A\u20134.5D review slices into one dormant provider-owned Podman GPU and host-local inference batch. Ollama, NVIDIA NIM, and vLLM now share exact operation authority, durable secret",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8061",
     "source": "github_prs",
@@ -1861,7 +1861,7 @@
   },
   {
     "title": "[PR] Migrate local serving lane to llama.cpp",
-    "date": "2026-08-11T20:47:12Z",
+    "date": "2026-08-11T20:58:03Z",
     "summary": "- **Pre-flight check for llamacpp-migration: verify claims, close doc gaps**\n- **Revise llamacpp-migration for round 2: preset-only fleet, reduction executed**\n- **Phase 0 skeleton for llamacpp-migration: 3-model preset, pinned launcher, froggeric copy; lock spec/plan**\n- **Phase 0 router smokes com",
     "url": "https://github.com/williamrobotma/ollama-modelfiles/pull/15",
     "source": "github_prs",
@@ -1965,6 +1965,114 @@
       "comments: 1",
       "pull request",
       "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] fix(integration-engine): make the FetchChanges timeout configurable",
+    "date": "2026-08-11T21:49:45Z",
+    "summary": "## Problem\n\n`IntegrationEngine` wraps every `FetchChanges` call in `DEFAULT_OPERATION_TIMEOUTS.FetchChangesMs` (30s), with no way to change it \u2014 not per deployment, not per connector.\n\nThat penalises exactly the connectors that need a longer budget. A connector that fans out one request per parent r",
+    "url": "https://github.com/MemberJunction/MJ/pull/3381",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(site): landing page overhaul, blog/FAQ, real docs site, docs deploys",
+    "date": "2026-08-11T21:49:22Z",
+    "summary": "Overhauls the landing page, ships the blog/FAQ that `content.config.ts` was defining but never rendering, turns the docs app into a real documentation site, and enables docs deployments.\n\n## Landing page (`apps/frontend/site`)\n\n**Removed dead code.** Seven section components were never imported by `",
+    "url": "https://github.com/BearlySleeping/aikami/pull/127",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: aikami"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image ghcr.io/home-assistant/home-assistant to v2024.12.5",
+    "date": "2026-08-11T21:47:42Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/home-assistant/home-assistant](https://www.home-assistant.io/) ([source](https://redirect.github.com/home-assistant/core)) | minor | ",
+    "url": "https://github.com/Rojikku/home-ops/pull/2143",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] Review fixes: access control, business rules, STT/PDF ingestion, exports, Docker+VPN, CI, admin analytics",
+    "date": "2026-08-11T21:45:28Z",
+    "summary": "## Summary\n\nImplements the punch list from the repo review: closes the open bot registration gap, rewrites the business rules engine to support real conditions, wires up voice (Faster-Whisper) and PDF/OCR (PyMuPDF + pdfplumber + OCRmyPDF) ingestion, makes calculator exports use structured data inste",
+    "url": "https://github.com/tapokpy/ppai/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ppai"
+    ]
+  },
+  {
+    "title": "[PR] feat(normalize): idle-time advisory judge over the review backlog",
+    "date": "2026-08-11T21:43:21Z",
+    "summary": "Drains the ~0.76\u20130.84 similarity review queue with an LLM, so pairs the embedding pass couldn't decide get a verdict instead of accumulating forever.\n\n## Advisory and human-gated\n\n`advise` by default \u2014 the judge writes verdict, confidence and rationale; a human still resolves. `apply` additionally a",
+    "url": "https://github.com/2389-research/Noospheric-Orrery/pull/66",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Noospheric-Orrery"
+    ]
+  },
+  {
+    "title": "[PR] [v0.1.0][Feature] Settings, Ollama configuration and privacy-safe diagnostics",
+    "date": "2026-08-11T21:41:06Z",
+    "summary": "## Purpose\nImplements #10 \u2014 Settings, Ollama configuration and privacy-safe diagnostics for the v0.1.0 Application Foundation.\n\n## Work completed\n- Added one canonical non-secret Settings schema/service over the existing #4 application-state repository.\n- Added Light / Dark / Follow System persisten",
+    "url": "https://github.com/cntintheslk-OneStepMoney/swayforge/pull/116",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: swayforge"
+    ]
+  },
+  {
+    "title": "[PR] Desktop: Chat panel: Fix OpenAI, Anthropic compatibility",
+    "date": "2026-08-11T21:36:18Z",
+    "summary": "# Problem\r\n\r\nSince #15999, the chat panel cannot be used with models hosted by OpenAI (see [forum post](https://discourse.joplinapp.org/t/400-error-with-ai-chat/50615/2)).\r\n\r\n#15999:\r\n- prefixed editor tools with `editor.`. `.`s are not allowed in tool names by OpenAI.\r\n- exposed existing MCP tools ",
+    "url": "https://github.com/laurent22/joplin/pull/16188",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: joplin"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/onedr0p/home-assistant to v2025",
+    "date": "2026-08-11T21:16:59Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/onedr0p/home-assistant](https://ghcr.io/onedr0p/home-assistant) ([source](https://togithub.com/home-assistant/core)) | major | `2023.6.3` -> `2025.1.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not b",
+    "url": "https://github.com/apheon-terra/01_k3s_ops/pull/13964",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: 01_k3s_ops"
+    ]
+  },
+  {
+    "title": "[PR] python3Packages.mutagen: 1.47.0 -> 1.48.1",
+    "date": "2026-08-11T21:11:48Z",
+    "summary": "Diff: https://github.com/quodlibet/mutagen/compare/release-1.47.0...release-1.48.1\r\n\r\nChangelog: https://mutagen.readthedocs.io/en/latest/changelog.html#release-1-48-1\r\n\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link",
+    "url": "https://github.com/NixOS/nixpkgs/pull/550845",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: nixpkgs"
     ]
   }
 ]
