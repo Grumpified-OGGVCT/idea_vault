@@ -493,8 +493,8 @@
   },
   {
     "title": "[PR] chore(deps): update ollama/ollama docker tag to v0.32.6",
-    "date": "2026-08-11T01:54:20Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| ollama/ollama | minor | `0.30.11` \u2192 `0.32.6` |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (in timezone America/New_York)\n\n- Branch creation\n  - \"on saturday\"\n- Automerge\n  - At any time (no schedule defined)\n\n\ud83d\udea6 **Au",
+    "date": "2026-08-11T22:59:19Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| ollama/ollama | minor | `0.30.11` \u2192 `0.32.6` | `0.32.9` |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (in timezone America/New_York)\n\n- Branch creation\n  - \"on saturday\"\n- Automerge\n  - At any time (no ",
     "url": "https://github.com/minchingtonak/HaC/pull/730",
     "source": "github_prs",
     "highlights": [
@@ -529,7 +529,7 @@
   },
   {
     "title": "[PR] fix: needs-human PR notification names the blocking items; reasonless NEEDS_HUMAN verdicts get one re-ask then degrade loudly",
-    "date": "2026-08-11T22:39:46Z",
+    "date": "2026-08-11T23:23:53Z",
     "summary": "Automatically opened by AWF workspace `ws_516cabd939054d7c80f63dc9` (agent: `codex`, model: `gpt-5.6-terra`, effort: `xhigh`).\n\n\n### Task\nFix two defects in the PR monitor's NotifyHuman path (live incident 2026-08-08, ws_40bf762a / aira-ai-team-member#46: comment said only \"review feedback needs hum",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/808",
     "source": "github_prs",
@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] feat(examples): add Kubernetes GPU autoscaling recipe",
-    "date": "2026-08-11T21:36:06Z",
+    "date": "2026-08-11T22:49:22Z",
     "summary": "## Related Issue\n\nThis community recipe continues and re-homes the public work from [NVIDIA/NemoClaw#7459](https://github.com/NVIDIA/NemoClaw/pull/7459) into `examples/recipes/nvidia/kubernetes-gpu-autoscaling/`.\n\nArchitecture follow-ups in this PR (beyond the imported baseline):\n\n1. **OpenShell CPU",
     "url": "https://github.com/NVIDIA/nemoclaw-community/pull/111",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-11T22:41:29Z",
+    "date": "2026-08-11T23:22:20Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1153,24 +1153,24 @@
   },
   {
     "title": "[PR] fix: harden desktop AI integrations",
-    "date": "2026-08-11T22:45:44Z",
+    "date": "2026-08-11T23:20:28Z",
     "summary": "## **User description**\n## Scope\n\nStacked on #335; focuses on user-reported desktop stability and provider/runtime reliability.\n\n- removes brittle Gemini `AIza`-prefix rejection in favor of minimal safe syntax checks plus provider validation\n- makes Local AI cancel/retry operate on the actual acquis",
     "url": "https://github.com/qnbs/WorldScript-Studio/pull/336",
     "source": "github_prs",
     "highlights": [
-      "comments: 34",
+      "comments: 35",
       "pull request",
       "repo: WorldScript-Studio"
     ]
   },
   {
     "title": "[PR] feat: add durable encryption migration journal",
-    "date": "2026-08-11T21:50:15Z",
+    "date": "2026-08-11T23:25:09Z",
     "summary": "## **User description**\n## Scope\n\nStacked on #336; establishes durable, versioned migration coordination plus safe Local AI provider diagnostics.\n\n- persists no-secret migration journal metadata with phases and per-store checkpoints\n- blocks protected access while a migration is active or requires r",
     "url": "https://github.com/qnbs/WorldScript-Studio/pull/337",
     "source": "github_prs",
     "highlights": [
-      "comments: 78",
+      "comments: 81",
       "pull request",
       "repo: WorldScript-Studio"
     ]
@@ -1765,7 +1765,7 @@
   },
   {
     "title": "[PR] feat(runtime): add dormant Podman GPU and local inference",
-    "date": "2026-08-11T22:39:09Z",
+    "date": "2026-08-11T23:25:53Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nReconstructs B4-D of #7744 on current `main` and consolidates the former 4.5A\u20134.5D review slices into one dormant provider-owned Podman GPU and host-local inference batch. Ollama, NVIDIA NIM, and vLLM now share exact operation authority, durable secret",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8061",
     "source": "github_prs",
@@ -1933,7 +1933,7 @@
   },
   {
     "title": "[PR] MERGE ",
-    "date": "2026-08-11T22:45:41Z",
+    "date": "2026-08-11T23:30:51Z",
     "summary": "",
     "url": "https://github.com/sjoerd2025/gh-aw/pull/1310",
     "source": "github_prs",
@@ -2053,12 +2053,12 @@
   },
   {
     "title": "[PR] feat(container)!: Update image ghcr.io/onedr0p/home-assistant to v2025",
-    "date": "2026-08-11T21:16:59Z",
+    "date": "2026-08-11T23:03:55Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/onedr0p/home-assistant](https://ghcr.io/onedr0p/home-assistant) ([source](https://togithub.com/home-assistant/core)) | major | `2023.6.3` -> `2025.1.0` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not b",
     "url": "https://github.com/apheon-terra/01_k3s_ops/pull/13964",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 11",
       "pull request",
       "repo: 01_k3s_ops"
     ]
@@ -2077,7 +2077,7 @@
   },
   {
     "title": "[PR] feat(cli): add read-only host mounts",
-    "date": "2026-08-11T22:26:43Z",
+    "date": "2026-08-11T23:23:09Z",
     "summary": "## Summary\n\nAdd repeatable, read-only host directory mounts to NemoClaw onboarding on Linux and WSL2. Before this change, users had to copy host project files into a sandbox; after it, they can explicitly expose selected existing directories below `/sandbox` while NemoClaw validates, records, report",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8280",
     "source": "github_prs",
@@ -2089,7 +2089,7 @@
   },
   {
     "title": "[PR] openai: support web search in Responses API",
-    "date": "2026-08-11T22:08:41Z",
+    "date": "2026-08-11T23:42:54Z",
     "summary": "## Summary\n\nAdds server-side web search support for Codex through Ollama\u2019s OpenAI Responses API compatibility layer.\n\nCodex can now use its native `web_search` tool with both local and cloud models. Ollama executes the search, feeds the results back to the model, and returns native Responses API `we",
     "url": "https://github.com/ollama/ollama/pull/17686",
     "source": "github_prs",
@@ -2097,6 +2097,78 @@
       "comments: 0",
       "pull request",
       "repo: ollama"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency browser-use to v0.1.45 [SECURITY]",
+    "date": "2026-08-11T23:43:00Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [browser-use](https://redire",
+    "url": "https://github.com/AReid987/stellarAgent/pull/168",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: stellarAgent"
+    ]
+  },
+  {
+    "title": "[PR] [PF-3020] Merge upstream mastra-ai/mastra through b8ce7ec9",
+    "date": "2026-08-11T23:41:45Z",
+    "summary": "## Summary\n\nPF-3020 performs one ancestry-preserving merge of official `mastra-ai/mastra` through `b8ce7ec96e39343c6c2f36d12d68a9ad816c09f7` into the PapersFlow fork while preserving fork-owned runtime, storage, identity, security, Harness, and release contracts.\n\nThis PR must be merged with a **mer",
+    "url": "https://github.com/mbenhamd/mastra/pull/344",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: mastra"
+    ]
+  },
+  {
+    "title": "[PR] feat(core): route support passport models through Remnic LLMs",
+    "date": "2026-08-11T23:43:31Z",
+    "summary": "## Summary\n\nAdd provider-neutral drafting and helper answers for the Support Passport.\n\nThe adapter reuses Remnic's existing `LocalLlmClient` and `FallbackLlmClient`. It adds no OpenAI client or fetch path.\n\nSupported routes include:\n\n- local OpenAI-compatible models;\n- OpenClaw gateway model chains",
+    "url": "https://github.com/joshuaswarren/remnic/pull/2362",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: remnic"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ollama/ollama docker tag to v0.32.9",
+    "date": "2026-08-11T23:14:29Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| ollama/ollama | patch | `0.32.4` \u2192 `0.32.9` |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (UTC)\n\n- Branch creation\n  - At any time (no schedule defined)\n- Automerge\n  - At any time (no schedule defined)\n\n\ud83d\udea6 **Automerg",
+    "url": "https://github.com/bancey/lab-ops/pull/1427",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: lab-ops"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency org.mock-server:mockserver-client-java to v7",
+    "date": "2026-08-11T22:50:11Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-",
+    "url": "https://github.com/BranislavBeno/Ronja-CRM-Server/pull/397",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Ronja-CRM-Server"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes): Microsoft 365 tool suite (Excel, Word, Outlook, OneDrive)",
+    "date": "2026-08-11T22:49:33Z",
+    "summary": "## Summary\n\nAdds a full **Microsoft 365 tool suite** (`tool_microsoft_365`) \u2014 the Microsoft counterpart to `tool_google_workspace` \u2014 with five tool services over Microsoft Graph:\n\n| Service | Protocol | Tools | Tiers |\n|---|---|---|---|\n| Excel | `tool_excel://` | 14 (worksheets, ranges, tables, cha",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/1918",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: rocketride-server"
     ]
   }
 ]
