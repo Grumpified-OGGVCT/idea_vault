@@ -169,12 +169,12 @@
   },
   {
     "title": "CODEX_QUEUE \u2014 SmartAiPro autonomous work queue",
-    "date": "2026-08-11T14:35:37Z",
+    "date": "2026-08-11T16:02:32Z",
     "summary": "# SmartAiPro Codex Work Queue\n\nThis issue is the orchestration queue for governed autonomous development. It is **not merge authority**.\n\n## Global guardrails\n- Base target: `smartcore-v0.1`; never write/merge `main` without explicit owner authorization.\n- `FREE_ONLY_FAIL_CLOSED`; no paid fallback, ",
     "url": "https://github.com/Devilazz/SmartAiPro/issues/73",
     "source": "github_issues",
     "highlights": [
-      "comments: 137",
+      "comments: 142",
       "state: open",
       "repo: SmartAiPro"
     ]
@@ -517,19 +517,19 @@
   },
   {
     "title": "[PR] fix(agents): scope quota failures to auth profiles",
-    "date": "2026-08-11T13:07:20Z",
+    "date": "2026-08-11T16:07:56Z",
     "summary": "## Summary\n\n### High Level TLDR\n\nA quota failure on one auth profile could pause the shared command lane for 30 minutes, blocking unrelated sessions and providers before they reached a model. A user-selected auth profile also collapsed same-provider auth routing to one candidate, so a second configu",
     "url": "https://github.com/openclaw/openclaw/pull/121278",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 9",
       "pull request",
       "repo: openclaw"
     ]
   },
   {
     "title": "[PR] fix: needs-human PR notification names the blocking items; reasonless NEEDS_HUMAN verdicts get one re-ask then degrade loudly",
-    "date": "2026-08-11T15:01:18Z",
+    "date": "2026-08-11T16:06:09Z",
     "summary": "Automatically opened by AWF workspace `ws_516cabd939054d7c80f63dc9` (agent: `codex`, model: `gpt-5.6-terra`, effort: `xhigh`).\n\n\n### Task\nFix two defects in the PR monitor's NotifyHuman path (live incident 2026-08-08, ws_40bf762a / aira-ai-team-member#46: comment said only \"review feedback needs hum",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/808",
     "source": "github_prs",
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] fix: use native Ollama tags for local model discovery",
-    "date": "2026-08-11T09:37:48Z",
+    "date": "2026-08-11T15:42:18Z",
     "summary": "## Current upstream state\n\n- Current published head: `0fdc254cb1cd50eeec62871267c3e6dae4ea2ad6`\n- Base `main`: `6564f319a647b47de391cab2f608660323804a2b`\n- Server-side `update-branch --rebase`: already up-to-date\n- Current GitHub state: `MERGEABLE / BLOCKED`; no checks reported and no review is atta",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-11T12:04:39Z",
+    "date": "2026-08-11T15:33:55Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] feat(doctor): report a session store this binary cannot open",
-    "date": "2026-08-11T13:08:44Z",
+    "date": "2026-08-11T15:53:54Z",
     "summary": "`forge doctor` had nothing to say about the failure that took this machine down twice in one day.\n\nA store migrated by a newer build crash-looped `forge-serve.service` through three restarts in the morning. In the evening the same mismatch killed the **Anywhere connector** while local Forge kept ans",
     "url": "https://github.com/adulari/forge/pull/964",
     "source": "github_prs",
@@ -673,7 +673,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-11T00:40:51Z",
+    "date": "2026-08-11T15:42:17Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -757,7 +757,7 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-11T12:13:17Z",
+    "date": "2026-08-11T15:42:27Z",
     "summary": "## Summary\n\n- **Base branch:** `master` at `c7f4435b95103b645a5e80585b3b2af412b0cd33`\n- **Current head:** `1b3b78a2c0175b90e6f13d9a5e33898ac1cc7202`\n- **What changed and why:**\n  - Add a dedicated `HailoOllamaModelProvider` for Hailo-Ollama's native `/api/chat` and `/api/tags` contract, keeping its ",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
@@ -769,12 +769,12 @@
   },
   {
     "title": "[PR] ci(e2e): establish trusted Jetson execution through Colossus-backed dispatch",
-    "date": "2026-08-11T10:06:54Z",
+    "date": "2026-08-11T15:17:44Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nReplace the unavailable self-hosted Jetson runner path with an opt-in GitHub-hosted controller that sends one exact-commit job to the Colossus dispatcher. Candidate code runs only in an isolated Jetson workspace. Existing NemoClaw onboarding installs i",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8734",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -925,7 +925,7 @@
   },
   {
     "title": "[PR] Workflow cost is the run tree; a graph runs in the order it was drawn; a workflow step reads like the agent step it is",
-    "date": "2026-08-11T14:54:06Z",
+    "date": "2026-08-11T15:58:06Z",
     "summary": "Follow-on to #3716. Everything here is one family: **work that produced a plausible number or a plausible-looking run, with nothing that said it was wrong.**\n\nFive commits \u2014 cost rollup + HITL \u00b7 Flow AND-join + timeline \u00b7 loop passes + silent mappings \u00b7 execution ordering + payload \u00b7 reviewer follow",
     "url": "https://github.com/MemberJunction/MJ/pull/3723",
     "source": "github_prs",
@@ -1093,7 +1093,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-08-11T06:07:58Z",
+    "date": "2026-08-11T16:07:29Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1309,7 +1309,7 @@
   },
   {
     "title": "[PR] fix(onboard): permit Jetson GPU policy paths",
-    "date": "2026-08-11T14:58:40Z",
+    "date": "2026-08-11T16:06:57Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nTwo boundaries blocked Jetson CUDA. OpenShell's creation-time filesystem policy hid the injected Jetson libraries and Tegra device nodes. After that policy was corrected, OpenShell rebuilt the sandbox account's supplementary groups with `initgroups()`,",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8099",
     "source": "github_prs",
@@ -1321,7 +1321,7 @@
   },
   {
     "title": "[PR] Available App Updates",
-    "date": "2026-08-11T09:48:56Z",
+    "date": "2026-08-11T15:47:51Z",
     "summary": "Supported TA version updates:\n| TA Name                                    | Current Version | Updated Version | Release Published Time    |\n| ------------------------------------------ | --------------- | --------------- | ------------------------- |\n| Cisco Secure Access Add-on for Splunk      | 1",
     "url": "https://github.com/pyth0n1c/security_content/pull/2",
     "source": "github_prs",
@@ -1513,7 +1513,7 @@
   },
   {
     "title": "[PR] Jsje",
-    "date": "2026-08-11T14:58:36Z",
+    "date": "2026-08-11T15:14:01Z",
     "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
     "url": "https://github.com/cicero-im/generative-ai/pull/7",
     "source": "github_prs",
@@ -1533,6 +1533,66 @@
       "comments: 0",
       "pull request",
       "repo: tt-players"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/kedacore/keda/v2 to v2.20.0 [security]",
+    "date": "2026-08-11T16:05:06Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/kedacore/keda/v2](https://redirect.github.com/kedacore/keda) | `v2.17.3` \u2192 `v2.20.0` | ",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1690",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] feat(ingest): summarize a git repo into a collection (POST /ingest/repo)",
+    "date": "2026-08-11T15:59:46Z",
+    "summary": "**This is the change that lets main *create* collections.** Until now it could only display them, so every collection in this repo arrived as copied data.\n\nIndependent of #62 (no shared files) \u2014 either can merge first.\n\n## Shape\n\nTwo phases. `POST /ingest/repo` returns **202** having done no model w",
+    "url": "https://github.com/2389-research/Noospheric-Orrery/pull/63",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Noospheric-Orrery"
+    ]
+  },
+  {
+    "title": "[PR] feat(word-addin): align chat UI with web app",
+    "date": "2026-08-11T15:56:47Z",
+    "summary": "## Summary\n\n- redesign the Word task pane with a floating liquid-glass header, Assistant/Quick Actions/Workflows navigation, chat history, new chat, and the animated personalized initial view\n- align the composer with the web app through model selection, workflow attachment, Desktop Files/Web files ",
+    "url": "https://github.com/Open-Legal-Products/mike/pull/299",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mike"
+    ]
+  },
+  {
+    "title": "[PR] Let the AI features go out through a corporate proxy",
+    "date": "2026-08-11T15:49:04Z",
+    "summary": "## Why\n\nIn a network where outbound traffic is only allowed through a proxy, the AI features cannot reach a cloud endpoint at all: the LLM `HttpClient` hard-codes `UseProxy = false`, and no configuration key exists to change that. Every call runs into its timeout and surfaces as *\"LLM endpoint did n",
+    "url": "https://github.com/Sev7eNup/NodePilot/pull/185",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: NodePilot"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency aqua:openai/codex to v0.147.0",
+    "date": "2026-08-11T15:08:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [aqua:openai/codex](https://redirect.github.com/openai/codex) | tools | minor | `0.146.0` \u2192 `0.147.0` |\n\n---\n\n### Release Notes\n\n<d",
+    "url": "https://github.com/ryo246912/dotfiles/pull/1287",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dotfiles"
     ]
   }
 ]
