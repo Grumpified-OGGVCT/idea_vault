@@ -169,12 +169,12 @@
   },
   {
     "title": "CODEX_QUEUE \u2014 SmartAiPro autonomous work queue",
-    "date": "2026-08-11T16:02:32Z",
+    "date": "2026-08-11T17:56:47Z",
     "summary": "# SmartAiPro Codex Work Queue\n\nThis issue is the orchestration queue for governed autonomous development. It is **not merge authority**.\n\n## Global guardrails\n- Base target: `smartcore-v0.1`; never write/merge `main` without explicit owner authorization.\n- `FREE_ONLY_FAIL_CLOSED`; no paid fallback, ",
     "url": "https://github.com/Devilazz/SmartAiPro/issues/73",
     "source": "github_issues",
     "highlights": [
-      "comments: 142",
+      "comments: 158",
       "state: open",
       "repo: SmartAiPro"
     ]
@@ -517,19 +517,19 @@
   },
   {
     "title": "[PR] fix(agents): scope quota failures to auth profiles",
-    "date": "2026-08-11T16:07:56Z",
+    "date": "2026-08-11T17:14:02Z",
     "summary": "## Summary\n\n### High Level TLDR\n\nA quota failure on one auth profile could pause the shared command lane for 30 minutes, blocking unrelated sessions and providers before they reached a model. A user-selected auth profile also collapsed same-provider auth routing to one candidate, so a second configu",
     "url": "https://github.com/openclaw/openclaw/pull/121278",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 8",
       "pull request",
       "repo: openclaw"
     ]
   },
   {
     "title": "[PR] fix: needs-human PR notification names the blocking items; reasonless NEEDS_HUMAN verdicts get one re-ask then degrade loudly",
-    "date": "2026-08-11T16:06:09Z",
+    "date": "2026-08-11T17:53:17Z",
     "summary": "Automatically opened by AWF workspace `ws_516cabd939054d7c80f63dc9` (agent: `codex`, model: `gpt-5.6-terra`, effort: `xhigh`).\n\n\n### Task\nFix two defects in the PR monitor's NotifyHuman path (live incident 2026-08-08, ws_40bf762a / aira-ai-team-member#46: comment said only \"review feedback needs hum",
     "url": "https://github.com/dimileeh/agent-workspace-fabric/pull/808",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-11T15:33:55Z",
+    "date": "2026-08-11T17:36:01Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -673,7 +673,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-11T15:42:17Z",
+    "date": "2026-08-11T17:29:49Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -769,7 +769,7 @@
   },
   {
     "title": "[PR] ci(e2e): establish trusted Jetson execution through Colossus-backed dispatch",
-    "date": "2026-08-11T15:17:44Z",
+    "date": "2026-08-11T17:59:50Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nReplace the unavailable self-hosted Jetson runner path with an opt-in GitHub-hosted controller that sends one exact-commit job to the Colossus dispatcher. Candidate code runs only in an isolated Jetson workspace. Existing NemoClaw onboarding installs i",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8734",
     "source": "github_prs",
@@ -1128,13 +1128,13 @@
     ]
   },
   {
-    "title": "[PR] Omi fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,keycloak - llm: openai - notifications: FCM, unifiedpush)",
-    "date": "2026-08-11T05:35:09Z",
+    "title": "[PR] Omi self-hostable fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,keycloak - llm: openai - notifications: FCM, unifiedpush)",
+    "date": "2026-08-11T17:49:40Z",
     "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
     "url": "https://github.com/BasedHardware/omi/pull/10887",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 13",
       "pull request",
       "repo: omi"
     ]
@@ -1465,12 +1465,12 @@
   },
   {
     "title": "[PR] feat(composer): add a Skills button beside Plan Mode",
-    "date": "2026-08-11T13:11:42Z",
+    "date": "2026-08-11T17:55:51Z",
     "summary": "## Summary\n\n`/` skill commands already worked, but were reachable only by knowing to type `/`. Nothing on screen said the feature existed, so a user who had never been told about it had no way to find it. This adds a Skills button to the composer strip, beside Plan Mode, as the visible door to the s",
     "url": "https://github.com/MemberJunction/MJ/pull/3731",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 9",
       "pull request",
       "repo: MJ"
     ]
@@ -1593,6 +1593,162 @@
       "comments: 0",
       "pull request",
       "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] feat(realtime): let a voice agent speak first",
+    "date": "2026-08-11T17:59:48Z",
+    "summary": "An ElevenLabs realtime agent could never open a conversation. The widget connects, and nothing happens until the human guesses they should talk \u2014 on a hiring screen, silence where a professional greeting belongs.\n\nCloses #3557.\n\n## Root cause\n\nElevenLabs **drops any `conversation_config_override` fi",
+    "url": "https://github.com/MemberJunction/MJ/pull/3736",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] perf(core): stop paying for a speculative COUNT(*) on reads nobody counts - 6.x",
+    "date": "2026-08-11T17:59:17Z",
+    "summary": "> **\ud83d\udea6 Confirmed not for 5.50.0 \u2014 targeting 6.x (opens Aug 3).** Split out of #3293 and now removed from\n> that branch, so #3293 can go into the LTS candidate without this semantic change.\n\nSplit out of #3293 so it can be reviewed on its own.\n\n## What it does\n\n`RunView` decided whether to run its `CO",
+    "url": "https://github.com/MemberJunction/MJ/pull/3298",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Test coverage overhaul: real Skipped status, gated CI lanes armed, ~1,500 new unit tests, 3 new integration bundles",
+    "date": "2026-08-11T17:55:24Z",
+    "summary": "Implements the full roadmap from the test-coverage evaluation: closes the silent non-execution holes in the integration tier, backfills the highest-risk unit coverage gaps, and hardens the release path. 8 commits, ~240 files, roughly 1,500 new unit tests across 100+ packages \u2014 every touched package'",
+    "url": "https://github.com/MemberJunction/MJ/pull/3542",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] M12: release readiness",
+    "date": "2026-08-11T17:49:40Z",
+    "summary": "Everything a stranger needs to set Caroline up, and one command to remove it again.\n\n**No tag.** M12's exit criteria mention a first tagged release, and this pull request deliberately\nstops short of it: the README, the setup guide, the content-policy documentation and the deletion\ncommand are here, ",
+    "url": "https://github.com/SociableSteve/caroline/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: caroline"
+    ]
+  },
+  {
+    "title": "[PR] fix(web): show the container host note on all self-hosted providers",
+    "date": "2026-08-11T17:48:41Z",
+    "summary": "## Problem\n\nThe API Base URL field of Ollama and LM Studio explains that `host.docker.internal` reaches the admin's machine when Onyx runs in a container. OpenAI-Compatible and Custom Models point at the same kind of local service but did not show the note.\n\nAn admin who runs a local OpenAI-compatib",
+    "url": "https://github.com/onyx-dot-app/onyx/pull/13858",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: onyx"
+    ]
+  },
+  {
+    "title": "[PR] fix(core,server): stop consumers corrupting the process-wide RunView cache (freeze-on-write)",
+    "date": "2026-08-11T17:44:09Z",
+    "summary": "## What shipped\n\nA P1 fix, plus the structural change that makes its whole bug class unreachable.\n\n**The P1.** `ResolverBase` mapped GraphQL transport field names onto the data provider's own result rows, which the server cache holds **by reference**. Preparing one GraphQL response therefore rewrote",
+    "url": "https://github.com/MemberJunction/MJ/pull/3425",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(open-app): close four silent-failure gaps in config writes, class registration, and update checks",
+    "date": "2026-08-11T17:38:09Z",
+    "summary": "All four defects here share a failure mode: **nothing goes red.** The app installs, `__mj.OpenApp` reports `Active`, the CLI prints a success line \u2014 and the config the runtime actually loads is wrong, or a registered class never runs, or an update check reports a version belonging to a different app",
+    "url": "https://github.com/MemberJunction/MJ/pull/3352",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(sqlconverter): correct nine T-SQL\u2192PostgreSQL conversion defects that break open-app installs",
+    "date": "2026-08-11T17:34:17Z",
+    "summary": "## What this fixes\n\nConverting an open app's SQL Server migrations to PostgreSQL (`mj migrate convert`) produced files that either failed to apply or \u2014 worse \u2014 applied \"successfully\" while leaving the database in a wrong state.\n\nNine defects, all found while making a real open app install on Postgre",
+    "url": "https://github.com/MemberJunction/MJ/pull/3351",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(cli): pin Open App bootstrap alias numbering to the array position",
+    "date": "2026-08-11T17:33:14Z",
+    "summary": "Follow-up to #3282, addressing the review points raised on it.\n\n## 1. Alias numbering is now single-sourced (review: \"add a test for mixed enabled/disabled entries\")\n\nThe merged form emits indexed aliases (`__openAppClient0/1/\u2026`) where the bare-import form used none. The concern: if the index basis ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3337",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Rework: Query & Entity Materialization (join-table redesign)",
+    "date": "2026-08-11T17:19:30Z",
+    "summary": "Closes #3626.\n\nClean re-implementation of Query & Entity Materialization (originally PRs #3311 / #3365), which was merged to `next` and then reverted (#3617 / #3623) over two architectural objections. This PR re-introduces the feature with both objections resolved.\n\n## What the feature does\n\nSnapsho",
+    "url": "https://github.com/MemberJunction/MJ/pull/3735",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(aio): add openai_compatible BYOK provider with per-key base URL",
+    "date": "2026-08-11T17:18:56Z",
+    "summary": "## Problem\n\nAI observability only supports a fixed list of LLM providers for BYOK keys, evaluations, and the playground. Teams that run their inference through an OpenAI-compatible endpoint that is not on that list (a self-hosted gateway like LiteLLM or vLLM behind a proxy, or regional providers lik",
+    "url": "https://github.com/PostHog/posthog/pull/76553",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: posthog"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the go-minor-patch group across 1 directory with 7 updates",
+    "date": "2026-08-11T17:05:44Z",
+    "summary": "Bumps the go-minor-patch group with 6 updates in the /server directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [github.com/firebase/genkit/go](https://github.com/firebase/genkit) | `1.8.0` | `1.11.0` |\n| [github.com/inngest/inngestgo](https://github.com/inngest/inngestgo) | `0.15.1` | `0.16.",
+    "url": "https://github.com/Andrewy-gh/fittrack/pull/260",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: fittrack"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/amruthpillai/reactive-resume ( v4.5.6 \u2192 v5.2.5 )",
+    "date": "2026-08-11T16:50:14Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.5.6` \u2192 `v5.2.5` |\n\n---\n\n### Rel",
+    "url": "https://github.com/FrederikS/homelab/pull/461",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab"
     ]
   }
 ]
