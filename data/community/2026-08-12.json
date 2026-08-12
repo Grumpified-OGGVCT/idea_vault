@@ -169,12 +169,12 @@
   },
   {
     "title": "\ud83d\udd25 HF-Git \u6bcf\u65e5\u91cd\u78c5\u53d1\u73b0",
-    "date": "2026-08-11T12:31:41Z",
+    "date": "2026-08-12T12:27:43Z",
     "summary": "\u6b64 Issue \u7528\u4e8e\u63a5\u6536\u6bcf\u65e5\u81ea\u52a8\u62a5\u544a\u3002\u6bcf\u5929\u7684\u53d1\u73b0\u4f1a\u4ee5\u8bc4\u8bba\u5f62\u5f0f\u8ffd\u52a0\u5230\u6b64 Issue\u3002",
     "url": "https://github.com/ErgoTechKG/hf-git/issues/1",
     "source": "github_issues",
     "highlights": [
-      "comments: 125",
+      "comments: 126",
       "state: open",
       "repo: hf-git"
     ]
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] feat(runtime): add dormant Podman GPU and local inference",
-    "date": "2026-08-12T11:44:17Z",
+    "date": "2026-08-12T12:54:46Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nReconstructs B4-D of #7744 on current `main` and consolidates the former 4.5A\u20134.5D review slices into one dormant provider-owned Podman GPU and host-local inference batch. Ollama, NVIDIA NIM, and vLLM now share exact operation authority, durable secret",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8061",
     "source": "github_prs",
@@ -601,12 +601,12 @@
   },
   {
     "title": "[PR] feat(core): route support passport models through Remnic LLMs",
-    "date": "2026-08-12T11:45:23Z",
+    "date": "2026-08-12T13:07:58Z",
     "summary": "## Summary\n\nAdd provider-neutral drafting and helper answers for the Support Passport.\n\nThe adapter reuses Remnic's existing `LocalLlmClient` and `FallbackLlmClient`. It adds no OpenAI client or fetch path.\n\nSupported routes include:\n\n- local OpenAI-compatible models;\n- OpenClaw gateway model chains",
     "url": "https://github.com/joshuaswarren/remnic/pull/2362",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 4",
       "pull request",
       "repo: remnic"
     ]
@@ -757,7 +757,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-08-12T04:45:20Z",
+    "date": "2026-08-12T12:41:20Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1501,8 +1501,8 @@
   },
   {
     "title": "[PR] fix(readme): repair nine dead links and check them in CI",
-    "date": "2026-08-12T11:32:37Z",
-    "summary": "## What\n\nNine links in the root README were 404ing. This fixes them and adds a check so the next one fails here rather than under a first-time reader.\n\n### The dead links\n\n| Link | Was | Now |\n|---|---|---|\n| OpenAI | `.../python/integrations/openai` | `.../python/integrations/open-ai` |\n| Azure | `",
+    "date": "2026-08-12T13:04:58Z",
+    "summary": "## What\n\nEleven links in the root README went somewhere wrong. This fixes them and adds a check so the next one fails here rather than under a first-time reader.\n\n### The dead links\n\nNine returned a hard 404 \u2014 seven docs pages renamed under `docs/integration/`, plus two that only ever had Go pages:\n",
     "url": "https://github.com/langwatch/langwatch/pull/6878",
     "source": "github_prs",
     "highlights": [
@@ -1525,14 +1525,194 @@
   },
   {
     "title": "[PR] feat(rag): derive knowledge base file picker filters from chunker cap\u2026",
-    "date": "2026-08-12T11:07:20Z",
+    "date": "2026-08-12T12:26:27Z",
     "summary": "\u2026abilities\r\n\r\nExpose supportedExtensions on ChunkProviderConnection so chunk providers advertise supported formats once, and build the knowledge base upload dialog from that metadata instead of a duplicated hardcoded list.",
     "url": "https://github.com/openkaiden/kaiden/pull/2675",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] Plan: Task Graph Engine Hardening \u2014 Round 2 (post-merge adversarial review)",
+    "date": "2026-08-12T13:12:28Z",
+    "summary": "## What this is\n\nDesign-only PR adding **`plans/task-graph-engine-hardening-round-2.md`** \u2014 the builder-ready plan produced by the four-track post-merge adversarial review of the engine as merged at #3745 (dispatcher core, graph algorithms, service/delivery layer, and the seams between the Round 1 f",
+    "url": "https://github.com/MemberJunction/MJ/pull/3749",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(pipeline): phase 4 \u2014 the max generation depth",
+    "date": "2026-08-12T13:11:26Z",
+    "summary": "Phase 4 of the staged r\u00e9sum\u00e9 pipeline: the **max** generation depth \u2014 per-section generation over the strategy roster, a code-owned assemble step, an LLM judge, per-entry regenerate, and the live section timeline. Follows #968 (run infra) and #969 (quality depth).\n\n## What max depth does\n\n- **Per-se",
+    "url": "https://github.com/saeedkolivand/ai-job-hunter-app/pull/970",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ai-job-hunter-app"
+    ]
+  },
+  {
+    "title": "[PR] Studio: validate external provider base URLs before proxying",
+    "date": "2026-08-12T13:11:12Z",
+    "summary": "### Problem\n\n`/v1/chat/completions` (external provider path) and the `/api/providers` test/models/create routes take the provider base URL from the request or the saved config and hand it to `ExternalProviderClient`, which only did `base_url.rstrip(\"/\")` before building `{base_url}/chat/completions`",
+    "url": "https://github.com/unslothai/unsloth/pull/8549",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: unsloth"
+    ]
+  },
+  {
+    "title": "[PR] \ud83c\udfa8 AI Presentation Generator - Create Beautiful Presentations with Local Models",
+    "date": "2026-08-12T13:10:55Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nA complete AI-powered presentation generation system that creates professional PowerPoint presentations from text input (like lesson plans) using your local Ollama models **OR** Claude Opus 5 API.\n\n## \ud83c\udfa8 NEW: Quality Demo & Theme Customization\n\n### See ",
+    "url": "https://github.com/aucint721/Wellbeing-Log/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Wellbeing-Log"
+    ]
+  },
+  {
+    "title": "[PR] `Logos`: Preserve SSE streaming frames",
+    "date": "2026-08-12T13:09:47Z",
+    "summary": "## Dependency\n\nThis PR depends on #704. Merge #704 first, then reconcile this branch once with `main` after GitHub creates the squash commit.\n\n## Motivation\n\nLogos reconstructed upstream streaming responses with `httpx.Response.aiter_lines()`, discarded empty lines, and emitted each remaining line w",
+    "url": "https://github.com/ls1intum/edutelligence/pull/706",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 35",
+      "pull request",
+      "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] feat(deus-connect): add native ollama connector",
+    "date": "2026-08-12T13:00:46Z",
+    "summary": "## Summary\n- Adds a second `deus connect` connector, `ollama`, routing sessions directly to a locally-pulled Ollama model via its native Anthropic Messages API mode (v0.14.0+) \u2014 no OAuth, no proxy, no launchd daemon, since Ollama runs its own persistent service.\n- Fixes a real shared-code bug in `la",
+    "url": "https://github.com/sliamh11/Deus/pull/1173",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Deus"
+    ]
+  },
+  {
+    "title": "[PR] Codebase audit: security, correctness, a11y, i18n & usability fixes + tests",
+    "date": "2026-08-12T12:59:52Z",
+    "summary": "Full-codebase audit with fixes applied and expanded test coverage. Three commits: backend/security, frontend UX/a11y/i18n, and deferred-item follow-up.\n\n## Verification\n- **Backend:** 743 tests pass (+21), typecheck + lint clean\n- **Frontend:** 51 tests pass (+31, from 20), typecheck + lint clean\n- ",
+    "url": "https://github.com/Maximilian-Maag/open-hybrid-cloud/pull/77",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: open-hybrid-cloud"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface-hub to v0.36.2",
+    "date": "2026-08-12T12:57:05Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface-hub](https://re",
+    "url": "https://github.com/AReid987/stellarAgent/pull/89",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: stellarAgent"
+    ]
+  },
+  {
+    "title": "[PR] Remove Assistente IA e infraestrutura multi-provider de IA",
+    "date": "2026-08-12T12:45:56Z",
+    "summary": "## Resumo\n\nRemove por completo a aba **Assistente IA** do dashboard web (chat, comple\u00e7\u00e3o inline, \"implementa\u00e7\u00e3o via prompt\", cat\u00e1logo de ferramentas, instala\u00e7\u00e3o de modelo) e, por decis\u00e3o expl\u00edcita do usu\u00e1rio \u2014 entre tr\u00eas op\u00e7\u00f5es apresentadas \u2014 toda a infraestrutura de sele\u00e7\u00e3o multi-provider e consent",
+    "url": "https://github.com/felipe-urgal/dev-dashboard/pull/315",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dev-dashboard"
+    ]
+  },
+  {
+    "title": "[PR] Omi self-hostable fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,keycloak - llm: openai - notifications: FCM, unifiedpush)",
+    "date": "2026-08-12T12:37:42Z",
+    "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
+    "url": "https://github.com/BasedHardware/omi/pull/10887",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: omi"
+    ]
+  },
+  {
+    "title": "[PR] chore(wren-ai-service): bump the all group across 1 directory with 46 updates",
+    "date": "2026-08-12T12:31:59Z",
+    "summary": "Bumps the all group with 45 updates in the /wren-ai-service directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [fastapi](https://github.com/fastapi/fastapi) | `0.121.1` | `0.141.1` |\n| [uvicorn](https://github.com/Kludex/uvicorn) | `0.29.0` | `0.52.1` |\n| [haystack-ai](https://github.com/deep",
+    "url": "https://github.com/YashChauhan858/WrenAI/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: WrenAI"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/kedacore/keda/v2 to v2.20.0 [security]",
+    "date": "2026-08-12T12:27:14Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/kedacore/keda/v2](https://redirect.github.com/kedacore/keda) | `v2.17.3` \u2192 `v2.20.0` | ",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1690",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] Solve chatbot AI audit exercise",
+    "date": "2026-08-12T12:18:22Z",
+    "summary": "Se completa la auditor\u00eda del chatbot de IA seg\u00fan las indicaciones del ejercicio.\r\n\r\nIncluye:\r\n- Revisi\u00f3n del comportamiento del chatbot.\r\n- Identificaci\u00f3n de hallazgos.\r\n- Propuesta de mejoras.\r\n- Cambios realizados en la rama solved-chatbot-audit.\n\n<!-- This is an auto-generated comment: release no",
+    "url": "https://github.com/LIDR-academy/ai4devs-s06-auditoria-chatbot-ia-202607-seniors/pull/12",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ai4devs-s06-auditoria-chatbot-ia-202607-seniors"
+    ]
+  },
+  {
+    "title": "[PR] Add AI chatbot privacy, security, and compliance audit",
+    "date": "2026-08-12T12:14:35Z",
+    "summary": "Provides a comprehensive audit for the Minarai Chatbot Manabi, detailing regulatory classification under the EU AI Act, applicable GDPR principles, critical OWASP LLM risks, PII inventory, and deployment strategy recommendations.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.a",
+    "url": "https://github.com/LIDR-academy/ai4devs-s06-auditoria-chatbot-ia-202607-seniors/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ai4devs-s06-auditoria-chatbot-ia-202607-seniors"
+    ]
+  },
+  {
+    "title": "[PR] Solve chatbot AI audit exercise \u2014 e-commerce",
+    "date": "2026-08-12T12:07:50Z",
+    "summary": "## Resumen\n\nAuditor\u00eda de privacidad, seguridad y cumplimiento para un chatbot de atenci\u00f3n al cliente de **e-commerce** con acceso a historial de pedidos, datos de contacto y conversaciones previas, y capacidad de ejecutar acciones transaccionales (cancelar pedidos, emitir reembolsos, cambiar direcci",
+    "url": "https://github.com/LIDR-academy/ai4devs-s06-auditoria-chatbot-ia-202607-seniors/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ai4devs-s06-auditoria-chatbot-ia-202607-seniors"
     ]
   }
 ]
