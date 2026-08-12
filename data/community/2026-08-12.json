@@ -601,7 +601,7 @@
   },
   {
     "title": "[PR] feat(core): route support passport models through Remnic LLMs",
-    "date": "2026-08-12T22:10:31Z",
+    "date": "2026-08-12T23:09:20Z",
     "summary": "## Summary\n\nAdd provider-neutral drafting and helper answers for the Support Passport.\n\nThe adapter reuses Remnic's existing `LocalLlmClient` and `FallbackLlmClient`. It adds no OpenAI client or fetch path.\n\nSupported routes include:\n\n- local OpenAI-compatible models;\n- OpenClaw gateway model chains",
     "url": "https://github.com/joshuaswarren/remnic/pull/2362",
     "source": "github_prs",
@@ -757,7 +757,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-08-12T12:41:20Z",
+    "date": "2026-08-12T22:57:18Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -793,7 +793,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-12T22:35:31Z",
+    "date": "2026-08-12T23:12:06Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -829,7 +829,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-12T22:37:01Z",
+    "date": "2026-08-12T23:21:09Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1669,7 +1669,7 @@
   },
   {
     "title": "[PR] fix(deps): update module github.com/kedacore/keda/v2 to v2.20.0 [security]",
-    "date": "2026-08-12T12:27:14Z",
+    "date": "2026-08-12T22:53:10Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/kedacore/keda/v2](https://redirect.github.com/kedacore/keda) | `v2.17.3` \u2192 `v2.20.0` | ",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1690",
     "source": "github_prs",
@@ -1981,7 +1981,7 @@
   },
   {
     "title": "[PR] refactor(core): run tiny domains as TinyBus modules",
-    "date": "2026-08-12T22:04:09Z",
+    "date": "2026-08-12T23:32:13Z",
     "summary": "## Summary\n\n- load TinyMemory, TinyDocs, and TinyWallet as checksum-pinned TinyBus modules\n- copy the shared memory/document/wallet contracts into OpenHuman\n- expose all 13 TinyMemory capability families and install host callbacks for embeddings, chat, NLP/runtime work, events, and observability\n- r",
     "url": "https://github.com/tinyhumansai/openhuman/pull/5525",
     "source": "github_prs",
@@ -2305,7 +2305,7 @@
   },
   {
     "title": "[PR] fix(postgresql): match SQL keywords case-sensitively when auto-quoting identifiers",
-    "date": "2026-08-12T22:04:46Z",
+    "date": "2026-08-12T23:36:08Z",
     "summary": "## Summary\n\nPostgreSQL identifier auto-quoting used a keyword **denylist** matched case-INsensitively: a PascalCase word was quoted unless it appeared in a hardcoded keyword set. The set of SQL keywords and the set of MJ column names overlap, so every name in the intersection shipped unquoted, folde",
     "url": "https://github.com/MemberJunction/MJ/pull/3697",
     "source": "github_prs",
@@ -2341,12 +2341,12 @@
   },
   {
     "title": "[PR] feat(examples): add Kubernetes GPU autoscaling recipe",
-    "date": "2026-08-12T22:39:11Z",
+    "date": "2026-08-12T23:04:55Z",
     "summary": "## Related Issue\n\nThis community recipe continues and re-homes the public work from [NVIDIA/NemoClaw#7459](https://github.com/NVIDIA/NemoClaw/pull/7459) into `examples/recipes/nvidia/kubernetes-gpu-autoscaling/`.\n\nArchitecture follow-ups in this PR (beyond the imported baseline):\n\n1. **OpenShell CPU",
     "url": "https://github.com/NVIDIA/nemoclaw-community/pull/111",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 11",
       "pull request",
       "repo: nemoclaw-community"
     ]
@@ -2377,12 +2377,12 @@
   },
   {
     "title": "[PR] Workflow Run Console \u2014 realtime runner + debugger for task graphs",
-    "date": "2026-08-12T22:31:40Z",
+    "date": "2026-08-12T22:54:08Z",
     "summary": "## What this is\n\nA **realtime runner/debugger at the task-graph level** \u2014 the \"press Run and watch it live\" experience the agent harness gives a Loop agent, but for the durable dispatcher that now executes every workflow. Since the Track C.1 cutover (#3692) a Flow agent *is* a task graph at runtime,",
     "url": "https://github.com/MemberJunction/MJ/pull/3770",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: MJ"
     ]
@@ -2433,6 +2433,30 @@
       "comments: 3",
       "pull request",
       "repo: test-helpers"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard): explain unavailable providers",
+    "date": "2026-08-12T23:34:08Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nUnavailable explicit providers now explain how to recover instead of ending at a generic dead end. For `NEMOCLAW_PROVIDER=vllm`, onboarding distinguishes attachment to an already-running server from managed installation and recommends `install-vllm` on",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/8901",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Rework: Query & Entity Materialization (join-table redesign)",
+    "date": "2026-08-12T23:11:12Z",
+    "summary": "Closes #3626.\n\nClean re-implementation of Query & Entity Materialization (originally PRs #3311 / #3365), which was merged to `next` and then reverted (#3617 / #3623) over two architectural objections. This PR re-introduces the feature with both objections resolved.\n\n## What the feature does\n\nSnapsho",
+    "url": "https://github.com/MemberJunction/MJ/pull/3735",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
