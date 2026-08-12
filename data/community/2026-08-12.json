@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] MERGE ",
-    "date": "2026-08-12T02:07:28Z",
+    "date": "2026-08-12T18:35:44Z",
     "summary": "",
     "url": "https://github.com/sjoerd2025/gh-aw/pull/1310",
     "source": "github_prs",
@@ -601,7 +601,7 @@
   },
   {
     "title": "[PR] feat(core): route support passport models through Remnic LLMs",
-    "date": "2026-08-12T14:59:04Z",
+    "date": "2026-08-12T18:50:00Z",
     "summary": "## Summary\n\nAdd provider-neutral drafting and helper answers for the Support Passport.\n\nThe adapter reuses Remnic's existing `LocalLlmClient` and `FallbackLlmClient`. It adds no OpenAI client or fetch path.\n\nSupported routes include:\n\n- local OpenAI-compatible models;\n- OpenClaw gateway model chains",
     "url": "https://github.com/joshuaswarren/remnic/pull/2362",
     "source": "github_prs",
@@ -793,7 +793,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-12T17:54:36Z",
+    "date": "2026-08-12T18:27:33Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -805,12 +805,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-12T17:57:39Z",
+    "date": "2026-08-12T18:48:54Z",
     "summary": "## Summary\n\n- **Base branch:** `master` at `749fa50dc649fef909dbf3f7cdf71753cefb9780`\n- **Current head:** `d496d9e8303857c0efc89a0352bd7592164c0354`\n- **What changed and why:**\n  - Add a dedicated `HailoOllamaModelProvider` for Hailo-Ollama's native `/api/chat` and `/api/tags` contract, keeping endp",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 22",
+      "comments: 23",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -829,7 +829,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-12T17:37:59Z",
+    "date": "2026-08-12T18:32:21Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -949,7 +949,7 @@
   },
   {
     "title": "[PR] Release v2.0.1",
-    "date": "2026-08-12T16:05:37Z",
+    "date": "2026-08-12T18:35:43Z",
     "summary": "Patch release with expanded TTS options, improved turn-taking, Omni Assistant Subagents refinements, more languages support in Multilingual assistant, and broader eval coverage.\r\n\r\n### Added\r\n\r\n- **Model updates**: Chatterbox TTS Multilingual with 23 languages, Magpie TTS Multilingual with 12-langua",
     "url": "https://github.com/NVIDIA-AI-Blueprints/nemotron-voice-agent/pull/54",
     "source": "github_prs",
@@ -1933,7 +1933,7 @@
   },
   {
     "title": "[PR] Desktop: Chat panel: Fix OpenAI, Anthropic compatibility",
-    "date": "2026-08-12T15:22:34Z",
+    "date": "2026-08-12T18:44:22Z",
     "summary": "# Problem\r\n\r\nSince #15999, the chat panel cannot be used with models hosted by OpenAI (see [forum post](https://discourse.joplinapp.org/t/400-error-with-ai-chat/50615/2)).\r\n\r\n#15999:\r\n- prefixed editor tools with `editor.`. `.`s are not allowed in tool names by OpenAI.\r\n- exposed existing MCP tools ",
     "url": "https://github.com/laurent22/joplin/pull/16188",
     "source": "github_prs",
@@ -1945,7 +1945,7 @@
   },
   {
     "title": "[PR] Implement production-readiness and feature backlog",
-    "date": "2026-08-12T17:57:22Z",
+    "date": "2026-08-12T18:48:26Z",
     "summary": "## Summary\n\n- adds first-class Prometheus/Thanos range queries and seven-day p95/p99 historical right-sizing with explicit metrics-server fallback\n- adds keyless local Ollama support, `/api/tags` model discovery, hosted/local UI metadata, and reduced-context diagnostic/read-only tool profiles\n- adds",
     "url": "https://github.com/indking/pymcpk8s/pull/21",
     "source": "github_prs",
@@ -1993,7 +1993,7 @@
   },
   {
     "title": "[PR] Revamp into a Strands-based evaluation harness",
-    "date": "2026-08-12T17:35:04Z",
+    "date": "2026-08-12T19:11:24Z",
     "summary": "## What this is\n\nA ground-up revamp of Promptatron 3000 into a manual evaluation harness for models and prompts, built on the Strands Agents SDK. The browser-held-AWS-credentials architecture is gone; the app is now a three-part monorepo:\n\n```\napp/     React 19 + TypeScript + Zustand \u2014 zero AWS SDK,",
     "url": "https://github.com/nullchecktv/promptatron-3000/pull/18",
     "source": "github_prs",
@@ -2029,7 +2029,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-12T17:06:36Z",
+    "date": "2026-08-12T18:12:18Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/trifitla/pull/1",
     "source": "github_prs",
@@ -2049,6 +2049,126 @@
       "comments: 0",
       "pull request",
       "repo: pi-config"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): Amazon Bedrock als OpenAI-kompatibler Provider (#1282)",
+    "date": "2026-08-12T19:13:13Z",
+    "summary": "## Summary\n- Amazon Bedrock als neuer LLM-Provider \u00fcber den OpenAI-kompatiblen mantle-Pfad (`https://bedrock-mantle.<region>.api.aws/v1`, Bearer-API-Key `AWS_BEARER_TOKEN_BEDROCK`). Kein boto3, kein SigV4.\n- `detect_provider` erkennt `bedrock-mantle.<region>.api.aws` / `bedrock-runtime.<region>.amaz",
+    "url": "https://github.com/arn0ld87/agora/pull/1286",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: agora"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): expose approved DeepSeek launcher profiles (NIM-252)",
+    "date": "2026-08-12T19:11:47Z",
+    "summary": "## User outcome\n\nNIM-252 exposes exactly the user-selected DeepSeek Pro and DeepSeek Flash pointers through Nimbalyst's workspace Unified Model Launcher adapter. The provider is selectable in desktop/mobile model surfaces and invokes only the allowlisted Ollama Cloud aliases.\n\n## Base and head\n\n- St",
+    "url": "https://github.com/nimbalyst/nimbalyst/pull/1234",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nimbalyst"
+    ]
+  },
+  {
+    "title": "[PR] Ejercicio de auditoria de chatbot",
+    "date": "2026-08-12T19:09:11Z",
+    "summary": "Sector: Retail\r\nContiene:\r\n- Clasificaci\u00f3n regulatoria\r\n- An\u00e1lisis de riesgos\r\n- Recomendaci\u00f3n final\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Expanded the privacy, security, and compliance audit for the e-commerce c",
+    "url": "https://github.com/LIDR-academy/ai4devs-s06-auditoria-chatbot-ia-202607-seniors/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ai4devs-s06-auditoria-chatbot-ia-202607-seniors"
+    ]
+  },
+  {
+    "title": "[PR] admin dashboard ssc-dsai:dev",
+    "date": "2026-08-12T19:05:44Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/cicero-im/open-webui-2/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: open-webui-2"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update agent tooling",
+    "date": "2026-08-12T19:02:57Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [aqua:anthropics/claude-code](https://redirect.github.com/anthropics/claude-code) | tools | patch | `2.1.221` \u2192 `2.1.228` |\n| [aqua",
+    "url": "https://github.com/shunk031/dotfiles/pull/595",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] feat(tracing): align spans with OpenTelemetry GenAI conventions",
+    "date": "2026-08-12T19:02:40Z",
+    "summary": "## Summary\n- Use current OpenTelemetry GenAI provider, agent, model, evaluation, and token-usage attribute names.\n- Preserve compatibility with historical trace attributes and carry resource metadata into locally stored spans.\n- Correct HTTP/Python execution spans and standardize OpenAI Chat Complet",
+    "url": "https://github.com/promptfoo/promptfoo/pull/10361",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: promptfoo"
+    ]
+  },
+  {
+    "title": "[PR] fix(cli): use provider-neutral onboarding copy",
+    "date": "2026-08-12T18:46:35Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nResumed Local Ollama onboarding now uses the provider-neutral step title `Configuring inference provider` instead of `Configuring inference (NIM)`. The workspace documentation also states that OpenClaw creates `MEMORY.md` and `memory/` on first use.\n\n#",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/8867",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-sandbox): add Blaxel provider",
+    "date": "2026-08-12T18:46:33Z",
+    "summary": "## \ud83c\udfaf Changes\n\n- Add `@tanstack/ai-sandbox-blaxel` as a managed cloud sandbox provider.\n- Implement filesystem access, native file watch, environment values, bounded process streaming, token-gated previews, and resume by id.\n- Reconcile ambiguous remote creates and process starts so cancellation cann",
+    "url": "https://github.com/TanStack/ai/pull/1065",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] Dev",
+    "date": "2026-08-12T18:27:54Z",
+    "summary": "",
+    "url": "https://github.com/Suzuha88/agentic-rag/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agentic-rag"
+    ]
+  },
+  {
+    "title": "[PR] docs(credentials): document OpenAI Base URL for compatible endpoints",
+    "date": "2026-08-12T18:15:59Z",
+    "summary": "## Summary\nThe OpenAI credential UI already has a **Base URL** field (default `https://api.openai.com/v1`), but the credentials docs only documented API Key + Organization ID.\n\nThis PR documents:\n- The optional Base URL field\n- How to point it at OpenAI-compatible local runtimes (Ollama / LocalAI) a",
+    "url": "https://github.com/n8n-io/n8n-docs/pull/5146",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: n8n-docs"
     ]
   }
 ]
