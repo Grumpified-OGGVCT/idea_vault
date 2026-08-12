@@ -601,7 +601,7 @@
   },
   {
     "title": "[PR] feat(core): route support passport models through Remnic LLMs",
-    "date": "2026-08-12T04:47:47Z",
+    "date": "2026-08-12T10:08:55Z",
     "summary": "## Summary\n\nAdd provider-neutral drafting and helper answers for the Support Passport.\n\nThe adapter reuses Remnic's existing `LocalLlmClient` and `FallbackLlmClient`. It adds no OpenAI client or fetch path.\n\nSupported routes include:\n\n- local OpenAI-compatible models;\n- OpenClaw gateway model chains",
     "url": "https://github.com/joshuaswarren/remnic/pull/2362",
     "source": "github_prs",
@@ -709,12 +709,12 @@
   },
   {
     "title": "[PR] feat: add durable encryption migration journal",
-    "date": "2026-08-12T08:20:34Z",
+    "date": "2026-08-12T09:56:12Z",
     "summary": "## **User description**\n## Scope\n\nStacked on #336; establishes durable, versioned migration coordination plus safe Local AI provider diagnostics.\n\n- persists no-secret migration journal metadata with phases and per-store checkpoints\n- blocks protected access while a migration is active or requires r",
     "url": "https://github.com/qnbs/WorldScript-Studio/pull/337",
     "source": "github_prs",
     "highlights": [
-      "comments: 102",
+      "comments: 108",
       "pull request",
       "repo: WorldScript-Studio"
     ]
@@ -829,7 +829,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-12T05:51:43Z",
+    "date": "2026-08-12T09:45:12Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -973,7 +973,7 @@
   },
   {
     "title": "[PR] fix: use native Ollama tags for local model discovery",
-    "date": "2026-08-12T07:51:30Z",
+    "date": "2026-08-12T09:52:52Z",
     "summary": "## Current upstream state\n\n- Current published head: `0fdc254cb1cd50eeec62871267c3e6dae4ea2ad6`\n- Base `main`: `6564f319a647b47de391cab2f608660323804a2b`\n- Server-side `update-branch --rebase`: already up-to-date\n- Current GitHub state: `MERGEABLE / BLOCKED`; no checks reported and no review is atta",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
@@ -1105,8 +1105,8 @@
   },
   {
     "title": "[PR] feat: \u0431\u0438\u0437\u043d\u0435\u0441-\u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430 \u2014 Studio IDE, MCP, Ollama, \u0440\u043e\u0430\u0434\u043c\u0430\u043f",
-    "date": "2026-08-12T08:00:39Z",
-    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u0440\u0430\u0431\u043e\u0442\u044b \u043d\u0430\u0434 \u0431\u0438\u0437\u043d\u0435\u0441-\u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u043e\u0439 NeoBrain/5MB2 \u2014 \u0438 \u0432 \u044d\u0442\u043e\u043c \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0438:\n\n## \u0422\u0440\u0451\u0445\u0443\u0440\u043e\u0432\u043d\u0435\u0432\u044b\u0439 \u043b\u0438\u043c\u0438\u0442 \u0418\u0418-\u0447\u0430\u0442\u0430 (`express-rate-limit`)\n\n\u0418\u043d\u0442\u0435\u0433\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u0430 \u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0430\u044f \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 `express-rate-limit` (\u043d\u0435 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u0430\u044f \u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f) \u043f\u043e\u0432\u0435\u0440\u0445 Redis-\u0445\u0440\u0430\u043d\u0438\u043b\u0438\u0449\u0430 `rate-limit-redis` \u2014 \u0441\u0447",
+    "date": "2026-08-12T08:31:11Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u0440\u0430\u0431\u043e\u0442\u044b \u043d\u0430\u0434 \u0431\u0438\u0437\u043d\u0435\u0441-\u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u043e\u0439 NeoBrain/5MB2 \u2014 \u0438 \u0432 \u044d\u0442\u043e\u043c \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0438:\n\n## \u0420\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u0438\u0435 \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440\u0430 \u043d\u043e\u0432\u043e\u0441\u0442\u0435\u0439 \u0432 CMS: Telegram-\u043f\u043e\u0441\u0442 + \u0441\u0446\u0435\u043d\u0430\u0440\u0438\u0439 \u0432\u0438\u0434\u0435\u043e\n\n\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0439 \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440 \u0430\u043d\u043e\u043d\u0441\u043e\u0432 (\u0442\u0435\u0437\u0438\u0441\u044b \u2192 \u0442\u0435\u043a\u0441\u0442 \u0434\u043b\u044f \u0441\u0430\u0439\u0442\u0430) \u0442\u0435\u043f\u0435\u0440\u044c \u043e\u0434\u043d\u0438\u043c \u0432\u044b\u0437\u043e\u0432\u043e\u043c LLM \u0432\u044b\u0434\u0430\u0451\u0442 \u0441\u0440\u0430\u0437\u0443 \u0442\u0440\u0438 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u0430:\n\n",
     "url": "https://github.com/attack444/AI-assistent/pull/28",
     "source": "github_prs",
     "highlights": [
@@ -1185,6 +1185,162 @@
       "comments: 1",
       "pull request",
       "repo: iitmdocs"
+    ]
+  },
+  {
+    "title": "[PR] feat(platform): add Linux and macOS appliance installer",
+    "date": "2026-08-12T10:07:03Z",
+    "summary": "### Why / What / How\n\nThe existing hosted installer still follows the legacy clone-and-Compose flow,\nwhile the upcoming release publishes AutoGPT Platform as a single-container\nappliance. The public installer needs to match that product: install a\npublished artifact safely, preserve user data, and f",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13261",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] Integrate LiteLLM for LLM provider configuration and summarization",
+    "date": "2026-08-12T10:07:00Z",
+    "summary": "## Summary\r\n\r\n- Added LiteLLM as the LLM integration layer in module-ttt.\r\n- Added provider-agnostic LLM configuration based on `LLM_PROVIDER`.\r\n- Added support for configuring OpenAI, Grok, and local Ollama providers through LiteLLM.\r\n- Updated the summarizer to use the configured LLM provider thro",
+    "url": "https://github.com/TalkingDB/module-ttt/pull/26",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: module-ttt"
+    ]
+  },
+  {
+    "title": "[PR] feat(word-addin): align chat UI with web app",
+    "date": "2026-08-12T10:03:15Z",
+    "summary": "## Summary\n\n- redesign the Word task pane with a floating liquid-glass header, Assistant/Quick Actions/Workflows navigation, chat history, new chat, and the animated personalized initial view\n- align the composer with the web app through model selection, workflow attachment, Desktop Files/Web files ",
+    "url": "https://github.com/Open-Legal-Products/mike/pull/299",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mike"
+    ]
+  },
+  {
+    "title": "[PR] fix(embeddings): scope the memory client's default embedder to config credentials",
+    "date": "2026-08-12T10:02:31Z",
+    "summary": "## Summary\n\n- Managed/cloud embeddings ran with a credential scope that diverged from \"Test connection\", so a **signed-in** user's ingested documents embedded with \"No backend session\" and persisted **vector-less** \u2014 silently unsearchable, no error surfaced.\n- Add `default_embedding_provider_with_co",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/5515",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] Comprehensive Security Audit and Implementation - Multi-Layer Protection Against Vulnerabilities - 100% Production Security Achieved",
+    "date": "2026-08-12T09:45:42Z",
+    "summary": "- [x] All prior code hardening (prototype pollution, null safety, req.files, req.body array, allowLocalhost/allowPrivateIP)\n- [x] GitHub Actions upgraded (v4/v3)\n- [x] Fix npm-audit workflow: removed `npm i --package-lock-only`\n- [x] Fix SECURITY.md sections 3 & 4: accurate descriptions of `InputSan",
+    "url": "https://github.com/CharlyOlson/-Solidarity-Clean/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 39",
+      "pull request",
+      "repo: -Solidarity-Clean"
+    ]
+  },
+  {
+    "title": "[PR] feat: OpenAI compatibility",
+    "date": "2026-08-12T09:45:40Z",
+    "summary": "Adds openai responses API to langflow.\r\n\r\n## To use:\r\n\r\n```\r\nfrom openai import OpenAI\r\n\r\nlangflow_client = OpenAI(\r\n    base_url=f\"{langflow_url}/api/v1\",\r\n    api_key=langflow_key\r\n)\r\nresponse = langflow_client.responses.create(\r\n            model=flow_id,\r\n            input=prompt\r\n)\r\n        \r\nr",
+    "url": "https://github.com/LLM-CR-EVAL/langflow-423-cr1/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: langflow-423-cr1"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-go monorepo to v0.43.0",
+    "date": "2026-08-12T09:45:27Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/infratographer/load-balancer-api/pull/344",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: load-balancer-api"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): add LiteLLM gateway, llmkube (CPU-only), searxng-mcp, memini",
+    "date": "2026-08-12T09:40:59Z",
+    "summary": "- litellm-operator + litellm: unified OpenAI-compatible gateway fronting\n  the existing Ollama host and DeepSeek's cloud API, cached via the\n  existing Dragonfly instance, exposed internally at litellm.${SECRET_DOMAIN}\n- llmkube: in-cluster Qwen3 embedding + reranker inference, CPU-only\n  (no GPU in",
+    "url": "https://github.com/jaimemachadoneto/home-ops/pull/186",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-ops"
+    ]
+  },
+  {
+    "title": "[PR] Update Mend: high confidence minor and patch dependency updates",
+    "date": "2026-08-12T09:38:27Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/Uncleken13/coherence/pull/148",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: coherence"
+    ]
+  },
+  {
+    "title": "[PR] resolve the base merge issues ",
+    "date": "2026-08-12T09:07:45Z",
+    "summary": "update the sync issues. ",
+    "url": "https://github.com/ALikesToCode/DeepTutor/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DeepTutor"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-08-12T08:44:13Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] feat: complete the fork roadmap (11 items) + sync with upstream bytedance/deer-flow@main",
+    "date": "2026-08-12T08:28:23Z",
+    "summary": "## Why\n\nThe fork's [roadmap](roadmap.md) listed eleven candidate improvements derived from a comparison against upstream. **This PR implements all eleven.** Items 1\u20133 were the original scope; items 4\u201311 followed in the same branch. Every item is now marked \u2705 in `roadmap.md` with a status paragraph p",
+    "url": "https://github.com/ivan-skvorc/AI-at-home/pull/62",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AI-at-home"
+    ]
+  },
+  {
+    "title": "[PR] feat: merge knowledge graph + conversation arc into memdir",
+    "date": "2026-08-12T08:24:47Z",
+    "summary": "## Summary\n\nMerge the standalone Knowledge Graph + Conversation Arc system into the existing auto-memory (memdir) directory. Previously, OpenClaude maintained **two parallel memory systems** \u2014 the file-based memdir (`memory/`) and a separate entity-relation-store backed by SQLite + JSON + Orama. The",
+    "url": "https://github.com/Gitlawb/openclaude/pull/1811",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaude"
     ]
   }
 ]
