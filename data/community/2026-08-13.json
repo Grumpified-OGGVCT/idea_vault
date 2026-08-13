@@ -517,12 +517,12 @@
   },
   {
     "title": "[PR] feat(ai): price models billed by duration or by image, not only by token",
-    "date": "2026-08-13T17:51:33Z",
+    "date": "2026-08-13T18:36:18Z",
     "summary": "## Why\n\nMJ's pricing **schema** was always general \u2014 a cost row names a price unit type, the unit type names a `DriverClass`, the ClassFactory resolves it. The **execution layer** was not. `BasePriceUnitType` took two token counts, only the three token drivers were ever registered, and `MJAIPromptRu",
     "url": "https://github.com/MemberJunction/MJ/pull/3704",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: MJ"
     ]
@@ -552,9 +552,9 @@
     ]
   },
   {
-    "title": "[PR] fix: use native Ollama tags for local model discovery",
-    "date": "2026-08-13T12:08:09Z",
-    "summary": "## Current upstream state\n\n- Current published head: `0fdc254cb1cd50eeec62871267c3e6dae4ea2ad6`\n- Base `main`: `6564f319a647b47de391cab2f608660323804a2b`\n- Server-side `update-branch --rebase`: already up-to-date\n- Current GitHub state: `MERGEABLE / BLOCKED`; no checks reported and no review is atta",
+    "title": "[PR] fix(models): use native Ollama tags without breaking generic discovery",
+    "date": "2026-08-13T18:46:09Z",
+    "summary": "## What does this PR do?\n\nUse Ollama's native installed-model catalog for verified local Ollama endpoints, while preserving generic OpenAI-compatible discovery everywhere else.\n\nLocal Ollama exposes its authoritative catalog at:\n\n```text\nGET /api/tags\n```\n\nHermes previously depended too heavily on `",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
     "highlights": [
@@ -565,12 +565,12 @@
   },
   {
     "title": "[PR] feat(core): route support passport models through Remnic LLMs",
-    "date": "2026-08-13T15:49:14Z",
+    "date": "2026-08-13T19:06:24Z",
     "summary": "## Summary\n\nAdd provider-neutral drafting and helper answers for the Support Passport.\n\nThe adapter reuses Remnic's existing `LocalLlmClient` and `FallbackLlmClient`. It adds no OpenAI client or fetch path.\n\nSupported routes include:\n\n- local OpenAI-compatible models;\n- OpenClaw gateway model chains",
     "url": "https://github.com/joshuaswarren/remnic/pull/2362",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: remnic"
     ]
@@ -661,7 +661,7 @@
   },
   {
     "title": "[PR] feat(postgresql): run the integration tier on PG, and fix what it exposed",
-    "date": "2026-08-13T17:56:26Z",
+    "date": "2026-08-13T18:40:10Z",
     "summary": "Closes the long-open question in **#3257**: the deterministic integration tier now runs against PostgreSQL for the first time, and this PR fixes the defects that running it exposed.\n\n**Result: 58 of 61 deterministic bundles pass on PostgreSQL** (MJAPI live, 61/61 executed, zero skipped, `RUN_MUTATIO",
     "url": "https://github.com/MemberJunction/MJ/pull/3703",
     "source": "github_prs",
@@ -709,7 +709,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-13T17:38:00Z",
+    "date": "2026-08-13T18:33:46Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -889,7 +889,7 @@
   },
   {
     "title": "[PR] MERGE ",
-    "date": "2026-08-13T17:51:37Z",
+    "date": "2026-08-13T19:14:55Z",
     "summary": "",
     "url": "https://github.com/sjoerd2025/gh-aw/pull/1310",
     "source": "github_prs",
@@ -1213,7 +1213,7 @@
   },
   {
     "title": "[PR] Updated to the latest version of the current project",
-    "date": "2026-08-13T09:39:33Z",
+    "date": "2026-08-13T18:36:15Z",
     "summary": "#### What roadmap does this PR target?\r\n\r\n- [ ] Frontend Roadmap\r\n- [ ] Backend Roadmap\r\n- [ ] DevOps Roadmap\r\n- [x] All Roadmaps\r\n\r\n#### Please acknowledge the items listed below\r\n\r\n- [ ] I have discussed this contribution and got a go-ahead in an issue before opening this pull request.\r\n- [ ] This",
     "url": "https://github.com/Diego-18/developer-roadmap/pull/1",
     "source": "github_prs",
@@ -1309,7 +1309,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T17:18:31Z",
+    "date": "2026-08-13T18:27:59Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
     "source": "github_prs",
@@ -1321,7 +1321,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T17:18:30Z",
+    "date": "2026-08-13T18:28:04Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/christophschatz88-arch/kilocode/pull/1",
     "source": "github_prs",
@@ -1333,7 +1333,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T17:18:36Z",
+    "date": "2026-08-13T18:28:11Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/gmifsud/kilocode/pull/1",
     "source": "github_prs",
@@ -1345,7 +1345,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T17:18:40Z",
+    "date": "2026-08-13T18:28:07Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1357,7 +1357,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T17:18:31Z",
+    "date": "2026-08-13T18:28:04Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/Fenris159/kilocode/pull/1",
     "source": "github_prs",
@@ -1381,7 +1381,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T17:18:34Z",
+    "date": "2026-08-13T18:28:01Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/MAlkabbani/kilocode/pull/1",
     "source": "github_prs",
@@ -1393,7 +1393,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T17:18:39Z",
+    "date": "2026-08-13T18:28:07Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1405,7 +1405,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T17:18:35Z",
+    "date": "2026-08-13T18:28:08Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/facemendous/kilocode/pull/1",
     "source": "github_prs",
@@ -1753,12 +1753,12 @@
   },
   {
     "title": "[PR] Test-coverage overhaul + SafeExpressionEvaluator RCE fix: real Skipped status, armed CI lanes, ~1,500 unit tests, new integration bundles",
-    "date": "2026-08-13T17:45:21Z",
+    "date": "2026-08-13T18:33:31Z",
     "summary": "Implements the full roadmap from the test-coverage evaluation, and \u2014 after an adversarial review of the PR itself \u2014 closes the highest-severity defect that review surfaced. Three parts: close the silent non-execution holes in the integration tier, backfill the highest-risk unit coverage, and harden ",
     "url": "https://github.com/MemberJunction/MJ/pull/3542",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: MJ"
     ]
@@ -1785,6 +1785,54 @@
       "comments: 0",
       "pull request",
       "repo: MoneyPrinterTurbo"
+    ]
+  },
+  {
+    "title": "[PR] feat(worker): self-update install, restart, health-check, and rollback (#890 C3)",
+    "date": "2026-08-13T19:12:07Z",
+    "summary": "## Summary\n\nImplements the worker-side self-install, restart, re-register, and rollback flow for taOS Issue #890.\n\nBuilds on C2 (PR #1903, feat/worker-self-drain) drain protocol.\n\n## Changes\n\n### New module: `tinyagentos/worker/self_update.py` (747 lines)\n- Orchestrates the full worker-initiated upd",
+    "url": "https://github.com/jaylfc/taOS/pull/1910",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: taOS"
+    ]
+  },
+  {
+    "title": "[PR] Add multi-provider models, media generation, and artifacts",
+    "date": "2026-08-13T18:57:29Z",
+    "summary": "## What changed\n\n- Add OpenRouter, Ollama Cloud, and configurable OpenAI-compatible endpoints for local or remote Ollama/vLLM servers.\n- Expand onboarding and settings so provider credentials can be entered during setup or later.\n- Add per-bot image and video specialists, with automatic routing from",
+    "url": "https://github.com/milind-soni/OpenMausBot/pull/74",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OpenMausBot"
+    ]
+  },
+  {
+    "title": "[PR] fix(cli): pin Open App bootstrap alias numbering to the array position",
+    "date": "2026-08-13T18:51:13Z",
+    "summary": "Follow-up to #3282, addressing the review points raised on it.\n\n## 1. Alias numbering is now single-sourced (review: \"add a test for mixed enabled/disabled entries\")\n\nThe merged form emits indexed aliases (`__openAppClient0/1/\u2026`) where the bare-import form used none. The concern: if the index basis ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3337",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(content-vectors): configuration-declared entity attribution for content vectors (rev 2, Stages A\u2013C)",
+    "date": "2026-08-13T18:31:56Z",
+    "summary": "\nThis implements Amith's rev 2 proposal \u2014 all three stages, in one PR, in the landing order the proposal\nspecifies. I put it together working with Claude.\n\nOne thing needs a decision from you before the write-side omission is switched on anywhere, and there are\nfour places where implementing rev 2 e",
+    "url": "https://github.com/MemberJunction/MJ/pull/3772",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
