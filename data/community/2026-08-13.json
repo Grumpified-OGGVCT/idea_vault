@@ -553,7 +553,7 @@
   },
   {
     "title": "[PR] fix: use native Ollama tags for local model discovery",
-    "date": "2026-08-13T10:07:12Z",
+    "date": "2026-08-13T12:08:09Z",
     "summary": "## Current upstream state\n\n- Current published head: `0fdc254cb1cd50eeec62871267c3e6dae4ea2ad6`\n- Base `main`: `6564f319a647b47de391cab2f608660323804a2b`\n- Server-side `update-branch --rebase`: already up-to-date\n- Current GitHub state: `MERGEABLE / BLOCKED`; no checks reported and no review is atta",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] feat(core): route support passport models through Remnic LLMs",
-    "date": "2026-08-13T11:40:56Z",
+    "date": "2026-08-13T12:41:11Z",
     "summary": "## Summary\n\nAdd provider-neutral drafting and helper answers for the Support Passport.\n\nThe adapter reuses Remnic's existing `LocalLlmClient` and `FallbackLlmClient`. It adds no OpenAI client or fetch path.\n\nSupported routes include:\n\n- local OpenAI-compatible models;\n- OpenClaw gateway model chains",
     "url": "https://github.com/joshuaswarren/remnic/pull/2362",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-13T09:29:22Z",
+    "date": "2026-08-13T12:21:19Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -709,7 +709,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-13T11:28:01Z",
+    "date": "2026-08-13T12:06:52Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -781,12 +781,12 @@
   },
   {
     "title": "[PR] feat(onboard): declare runtime host mount support",
-    "date": "2026-08-13T04:29:36Z",
+    "date": "2026-08-13T13:01:58Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nDeclare read-only host-mount support through the selected runtime-provider contract and reject unsupported providers or host platforms before onboarding mutates durable session state. Docker remains supported on Linux and WSL, while Kubernetes, Podman,",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8368",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -829,7 +829,7 @@
   },
   {
     "title": "[PR] feat(runtime): add dormant Podman GPU and local inference",
-    "date": "2026-08-13T11:50:14Z",
+    "date": "2026-08-13T12:41:31Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nReconstructs B4-D of #7744 on current `main` and consolidates the former 4.5A\u20134.5D review slices into one dormant provider-owned Podman GPU and host-local inference batch. Ollama, NVIDIA NIM, and vLLM now share exact operation authority, durable secret",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8061",
     "source": "github_prs",
@@ -841,7 +841,7 @@
   },
   {
     "title": "[PR] fix(core): stop cross-server cache events poisoning entity_object engine caches, guard seven date comparators",
-    "date": "2026-08-13T03:28:53Z",
+    "date": "2026-08-13T12:29:56Z",
     "summary": "## Summary\n\nAn agent could die mid-run during context assembly with `__mj_CreatedAt?.getTime is not a function` \u2014 an ~80ms failure, before any model call. Downstream, the pipeline carried on without the dead stage's output and shipped a component whose spec had no `libraries` array, which surfaced t",
     "url": "https://github.com/MemberJunction/MJ/pull/3777",
     "source": "github_prs",
@@ -1261,7 +1261,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-08-13T08:40:57Z",
+    "date": "2026-08-13T13:01:24Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1297,7 +1297,7 @@
   },
   {
     "title": "[PR] feat(rag): derive knowledge base file picker filters from chunker cap\u2026",
-    "date": "2026-08-13T11:31:43Z",
+    "date": "2026-08-13T12:55:30Z",
     "summary": "\u2026abilities\r\n\r\nExpose supportedExtensions on ChunkProviderConnection so chunk providers advertise supported formats once, and build the knowledge base upload dialog from that metadata instead of a duplicated hardcoded list.",
     "url": "https://github.com/openkaiden/kaiden/pull/2675",
     "source": "github_prs",
@@ -1345,7 +1345,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T11:08:49Z",
+    "date": "2026-08-13T12:00:18Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1381,7 +1381,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T11:07:15Z",
+    "date": "2026-08-13T12:00:12Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/MAlkabbani/kilocode/pull/1",
     "source": "github_prs",
@@ -1393,7 +1393,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T11:06:58Z",
+    "date": "2026-08-13T12:00:14Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1413,6 +1413,114 @@
       "comments: 3",
       "pull request",
       "repo: kilocode"
+    ]
+  },
+  {
+    "title": "\ud3f4\ubc31 advance \uac00 \uc2e4\ud328 \uc0ac\uc720\ub97c \ubc84\ub9b0\ub2e4 \u2014 11 \uac1c \uc6d0\uc778\uc774 kind=execution_failed \ud558\ub098\ub85c \ubb49\uac1c\uc9d0",
+    "date": "2026-08-07T19:26:40Z",
+    "summary": "## \uc99d\uc0c1\n\n\ud3f4\ubc31 \uccb4\uc778\uc5d0\uc11c \uc2ac\ub86f\uc774 \uc2e4\ud328\ud558\uba74 \ub85c\uadf8\uc5d0 \uc774\ub807\uac8c \ub0a8\ub294\ub2e4:\n\n```\nadvance=glm-coding.glm-5-turbo->ollama_cloud.gemma4-31b-cloud kind=execution_failed\n```\n\n`kind=execution_failed` \uac00 \uc804\ubd80\ub2e4. **\uc65c \uc2e4\ud328\ud588\ub294\uc9c0\ub294 \uc5b4\ub514\uc5d0\ub3c4 \uc5c6\ub2e4.**\n\n`call_id` \ub85c \ucd94\uc801\ud574\ub3c4 \ub098\uc624\uc9c0 \uc54a\ub294\ub2e4 \u2014 \uadf8 id \ub294 \uc774 \ud55c \uc904\uc5d0\ub9cc \ub4f1\uc7a5\ud55c\ub2e4:\n\n```bash\n$ rg 848325a812900025559cbcb01119dd78 ~/me/.masc/logs/syst",
+    "url": "https://github.com/jeong-sik/masc/issues/27431",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 2",
+      "state: open",
+      "repo: masc"
+    ]
+  },
+  {
+    "title": "[PR] feat(backend): LLM provider abstraction layer + Ollama adapter",
+    "date": "2026-08-13T13:15:01Z",
+    "summary": "Introduces a provider-agnostic async LLM service layer so Ollama (and future adapters) plug in behind one interface without leaking provider-specific concerns to callers. Part of the AI Connectivity epic (#348).\n\n## Description\n\nFoundation for outbound LLM integration. Adds `backend/app/services/llm",
+    "url": "https://github.com/ale-sanchez-g/open-prompt-manager/pull/436",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: open-prompt-manager"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard): verify the persisted dashboard port when resume skips sandbox creation",
+    "date": "2026-08-13T13:14:35Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\nRe-onboarding an existing Ready sandbox took the resume path, which skips sandbox creation \u2014 the step that publishes the sandbox's bumped dashboard port through `CHAT_UI_URL`. Finalization then requested the default port 18789, printed a spurious \"Port ",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/8983",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Generated remote-operation clients for the eight workflow debug verbs",
+    "date": "2026-08-13T13:14:15Z",
+    "summary": "## What this is\n\n#3770 shipped the Run Console and added its eight control verbs to `metadata/remote-operations`. The **generated client classes for those verbs did not exist yet** \u2014 CodeGen produces them by reading the *database*, so they only appear once someone pushes that metadata and regenerate",
+    "url": "https://github.com/MemberJunction/MJ/pull/3779",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Containerize full stack, update repo references, and improve install scripts",
+    "date": "2026-08-13T13:04:51Z",
+    "summary": "",
+    "url": "https://github.com/Piya-Boy/PowerServer/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: PowerServer"
+    ]
+  },
+  {
+    "title": "[PR] refactor: focus DataPilot-AI on production AI application engineering",
+    "date": "2026-08-13T12:59:50Z",
+    "summary": "## \u76ee\u6807\n\n\u8be5\u5206\u652f\u9762\u5411 **AI Application Engineer / AI Backend** \u6c42\u804c\u573a\u666f\uff0c\u628a DataPilot-AI \u4ece\u6280\u672f\u5806\u53e0\u578b Demo \u6536\u655b\u4e3a\u53ef\u590d\u73b0\u3001\u53ef\u6cbb\u7406\u3001\u53ef\u8bc4\u6d4b\u7684\u6570\u636e\u5206\u6790 Copilot\u3002\u4fdd\u6301 Draft\uff0c\u4e0d\u76f4\u63a5\u5408\u5e76 `master`\u3002\n\n## \u5f53\u524d\u4e3b\u94fe\u8def\n\n**\u4f01\u4e1a\u6307\u6807\u77e5\u8bc6 RAG \u2192 Datasource Schema \u81ea\u52a8\u53d1\u73b0 \u2192 Text2SQL \u2192 \u786e\u5b9a\u6027 SQL \u6821\u9a8c \u2192 SQL Review \u2192 \u663e\u5f0f\u53d7\u6cbb\u7406\u53ea\u8bfb\u6267\u884c \u2192 Golden Result Benchmark \u2192 FastAPI / Streamlit**\n\n## 1. \u5220\u9664\u65e0\u6536\u76ca\u590d",
+    "url": "https://github.com/plutoczm/DataCopilot/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: DataCopilot"
+    ]
+  },
+  {
+    "title": "[PR] feat(tui): first-class provider preset for local Ollama",
+    "date": "2026-08-13T12:45:08Z",
+    "summary": "## Why\n\nWe publicly claim Ollama compatibility, including an open PR to [ollama/ollama#17727](https://github.com/ollama/ollama/pull/17727) stating that Atomic Agent \"works with Ollama via its OpenAI-compatible endpoint\". That claim was architecturally true but unverified and undocumented.\n\nBefore th",
+    "url": "https://github.com/AtomicBot-ai/atomic-agent/pull/122",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: atomic-agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(ollama): make guided setup choose a working local model",
+    "date": "2026-08-13T12:43:28Z",
+    "summary": "## What Problem This Solves\n\nFixes an issue where users completing local Ollama setup in the Mac dashboard could receive a reasoning-heavy test candidate that timed out even though Ollama was healthy, while the Gateway activated a different default model. The same completed setup could then report z",
+    "url": "https://github.com/openclaw/openclaw/pull/123190",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] admin dashboard ssc-dsai:dev",
+    "date": "2026-08-13T12:14:17Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/cicero-im/open-webui-2/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: open-webui-2"
     ]
   }
 ]
