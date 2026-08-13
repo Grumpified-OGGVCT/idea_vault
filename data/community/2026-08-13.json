@@ -229,7 +229,7 @@
   },
   {
     "title": "Want to suggest a wake word? Leave your thoughts here. (AIS-1441)",
-    "date": "2026-08-12T10:25:14Z",
+    "date": "2026-08-13T10:42:17Z",
     "summary": "Hi all,\n\nWe're excited to offer the community more free and high-quality wake word models. Everyone has their own unique wake word preferences. Now, we're ready to regularly release some of the most popular wake words. Please let us know the wake words you want! \n\n**Already supported languages: Chin",
     "url": "https://github.com/espressif/esp-sr/issues/88",
     "source": "github_issues",
@@ -313,12 +313,12 @@
   },
   {
     "title": "Allow importing multi-file GGUF models",
-    "date": "2026-08-10T19:20:35Z",
+    "date": "2026-08-13T11:43:44Z",
     "summary": "### What is the issue?\n\nCurrently Ollama can [import GGUF files](https://github.com/ollama/ollama/blob/main/docs/import.md). However, larger models are sometimes split into separate files. Ollama should support loading multiple GGUF files similar to loading safetensor files.\n\n\n### Workaround\n\nThe `o",
     "url": "https://github.com/ollama/ollama/issues/5245",
     "source": "github_issues",
     "highlights": [
-      "comments: 106",
+      "comments: 107",
       "state: open",
       "repo: ollama"
     ]
@@ -361,7 +361,7 @@
   },
   {
     "title": "sdk/react: warn at selection time when a model cannot see images (registry capability data is now live)",
-    "date": "2026-08-10T11:37:45Z",
+    "date": "2026-08-13T11:44:28Z",
     "summary": "## Context\n\nstigmer/stigmer-cloud#281 populated `ModelCapabilities` for every dispatchable cursor-harness model in the model registry (native entries already carried them). The registry served by `/v1/proxy/model-registry` now exposes `capabilities.vision` on 39+ entries, and the runner's vision gat",
     "url": "https://github.com/stigmer/stigmer/issues/386",
     "source": "github_issues",
@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-13T07:20:37Z",
+    "date": "2026-08-13T11:41:03Z",
     "summary": "## Summary\n\n- **Base branch:** `master` at `290372c7be06982ca6711f876081656c88208876`\n- **Current head:** `f3bbd043e64df6055eb877aa56cf20bf4a14778b`\n- **What changed and why:**\n  - Add a dedicated `HailoOllamaModelProvider` for Hailo-Ollama's native `/api/chat` and `/api/tags` contract, keeping endp",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
@@ -565,7 +565,7 @@
   },
   {
     "title": "[PR] feat(core): route support passport models through Remnic LLMs",
-    "date": "2026-08-13T09:52:23Z",
+    "date": "2026-08-13T11:40:56Z",
     "summary": "## Summary\n\nAdd provider-neutral drafting and helper answers for the Support Passport.\n\nThe adapter reuses Remnic's existing `LocalLlmClient` and `FallbackLlmClient`. It adds no OpenAI client or fetch path.\n\nSupported routes include:\n\n- local OpenAI-compatible models;\n- OpenClaw gateway model chains",
     "url": "https://github.com/joshuaswarren/remnic/pull/2362",
     "source": "github_prs",
@@ -709,7 +709,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-13T09:45:40Z",
+    "date": "2026-08-13T11:28:01Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -757,8 +757,8 @@
   },
   {
     "title": "[PR] feat(graphs): migrate LLM orchestration from LangGraph/LangChain to Mastra + Vercel AI SDK",
-    "date": "2026-08-13T07:09:10Z",
-    "summary": "## Summary\r\n\r\nThis PR migrates the extension's LLM orchestration layer away from **LangChain/LangGraph** and onto **Mastra workflows** combined with the **Vercel AI SDK**. The goal is to standardize on a single, actively maintained SDK for model calls, tool invocation, and embeddings, while replacin",
+    "date": "2026-08-13T11:31:57Z",
+    "summary": "\n## Description\n\nThis PR migrates the extension's LLM orchestration layer off **LangChain/LangGraph** and onto **Mastra workflows** + the **Vercel AI SDK**. LangGraph's `StateGraph`/`Annotation` engine is rebuilt on Mastra's `createWorkflow`/`createStep` primitives, and LangChain's message/tool/embe",
     "url": "https://github.com/sourcefuse/loopback4-llm-chat-extension/pull/29",
     "source": "github_prs",
     "highlights": [
@@ -829,7 +829,7 @@
   },
   {
     "title": "[PR] feat(runtime): add dormant Podman GPU and local inference",
-    "date": "2026-08-13T03:49:13Z",
+    "date": "2026-08-13T11:50:14Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nReconstructs B4-D of #7744 on current `main` and consolidates the former 4.5A\u20134.5D review slices into one dormant provider-owned Podman GPU and host-local inference batch. Ollama, NVIDIA NIM, and vLLM now share exact operation authority, durable secret",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/8061",
     "source": "github_prs",
@@ -1105,7 +1105,7 @@
   },
   {
     "title": "[PR] RavenDB-26606",
-    "date": "2026-08-13T09:24:45Z",
+    "date": "2026-08-13T11:21:15Z",
     "summary": "### Issue link\r\n\r\nhttps://issues.hibernatingrhinos.com/issue/RavenDB-26606\r\n\r\n### Type of change\r\n\r\n- [ ] Bug fix\r\n- [ ] Regression bug fix\r\n- [ ] Optimization\r\n- [ ] New feature\r\n\r\n### How risky is the change?\r\n\r\n- [ ] Low \r\n- [ ] Moderate \r\n- [ ] High\r\n- [ ] Not relevant\r\n\r\n### Backward compatibil",
     "url": "https://github.com/ravendb/ravendb/pull/23170",
     "source": "github_prs",
@@ -1141,12 +1141,12 @@
   },
   {
     "title": "[PR] Cut MedGemma cold-start thrash and prune superseded secret versions",
-    "date": "2026-08-13T10:09:53Z",
+    "date": "2026-08-13T11:23:47Z",
     "summary": "## Why\n\nDev Cloud Run spend went from ~\u00a30 to **\u00a313/day** between Aug 8 and Aug 12 \u2014 a ~\u00a3390/month run-rate. The billing console's forecast (~\u00a32/day) predates the spike and understates it.\n\nThe driver is **cold-start frequency, not inference volume**.\n\nMedGemma runs at `cpu_idle = false`, so it bills",
     "url": "https://github.com/Codesistance/product-carditrack/pull/235",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 2",
       "pull request",
       "repo: product-carditrack"
     ]
@@ -1165,12 +1165,12 @@
   },
   {
     "title": "[PR] feat(RHAI-415): implement Data Registry API BFF proxy routes",
-    "date": "2026-08-13T09:57:39Z",
+    "date": "2026-08-13T11:33:17Z",
     "summary": "https://issues.redhat.com/browse/RHAI-415\n\n## Description\n\nAdds a catchall passthrough proxy in the `data-registry` package's Go BFF that forwards every request under `/api/v1/*` (minus the BFF's own `/api/v1/user` and `/api/v1/namespaces`) to the upstream Data Registry API (Iceberg REST Catalog-com",
     "url": "https://github.com/opendatahub-io/odh-dashboard/pull/9276",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 7",
       "pull request",
       "repo: odh-dashboard"
     ]
@@ -1269,6 +1269,150 @@
       "comments: 1",
       "pull request",
       "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] Omi self-hostable fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,keycloak - llm: openai - notifications: FCM, unifiedpush)",
+    "date": "2026-08-13T11:35:56Z",
+    "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
+    "url": "https://github.com/BasedHardware/omi/pull/10887",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: omi"
+    ]
+  },
+  {
+    "title": "[PR] resolve the base merge issues ",
+    "date": "2026-08-13T11:33:28Z",
+    "summary": "update the sync issues. ",
+    "url": "https://github.com/ALikesToCode/DeepTutor/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: DeepTutor"
+    ]
+  },
+  {
+    "title": "[PR] feat(rag): derive knowledge base file picker filters from chunker cap\u2026",
+    "date": "2026-08-13T11:31:43Z",
+    "summary": "\u2026abilities\r\n\r\nExpose supportedExtensions on ChunkProviderConnection so chunk providers advertise supported formats once, and build the knowledge base upload dialog from that metadata instead of a duplicated hardcoded list.",
+    "url": "https://github.com/openkaiden/kaiden/pull/2675",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-13T11:10:32Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-13T11:09:55Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/christophschatz88-arch/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-13T11:09:23Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/gmifsud/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-13T11:08:49Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-13T11:08:32Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/Fenris159/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-13T11:08:22Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/softctwo/ResoftCode/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ResoftCode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-13T11:07:15Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/MAlkabbani/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-13T11:06:58Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-13T11:06:47Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/facemendous/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kilocode"
     ]
   }
 ]
