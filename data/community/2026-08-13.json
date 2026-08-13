@@ -133,7 +133,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-13T09:08:16Z",
+    "date": "2026-08-13T17:17:24Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -517,12 +517,12 @@
   },
   {
     "title": "[PR] feat(ai): price models billed by duration or by image, not only by token",
-    "date": "2026-08-13T06:58:13Z",
+    "date": "2026-08-13T17:51:33Z",
     "summary": "## Why\n\nMJ's pricing **schema** was always general \u2014 a cost row names a price unit type, the unit type names a `DriverClass`, the ClassFactory resolves it. The **execution layer** was not. `BasePriceUnitType` took two token counts, only the three token drivers were ever registered, and `MJAIPromptRu",
     "url": "https://github.com/MemberJunction/MJ/pull/3704",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: MJ"
     ]
@@ -541,8 +541,8 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-13T11:41:03Z",
-    "summary": "## Summary\n\n- **Base branch:** `master` at `290372c7be06982ca6711f876081656c88208876`\n- **Current head:** `f3bbd043e64df6055eb877aa56cf20bf4a14778b`\n- **What changed and why:**\n  - Add a dedicated `HailoOllamaModelProvider` for Hailo-Ollama's native `/api/chat` and `/api/tags` contract, keeping endp",
+    "date": "2026-08-13T17:18:32Z",
+    "summary": "## Summary\n\n- **Base branch:** `master` at `49fdb0fe3c413fb7533a1ebd32897c2c15a5b807`\n- **Current head:** `1e16055ae2d7da08685e5ce296fe19f1234cf4e5`\n- **What changed and why:**\n  - Add a dedicated `HailoOllamaModelProvider` for Hailo-Ollama's native `/api/chat` and `/api/tags` contract, keeping endp",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
@@ -661,24 +661,24 @@
   },
   {
     "title": "[PR] feat(postgresql): run the integration tier on PG, and fix what it exposed",
-    "date": "2026-08-13T00:38:57Z",
-    "summary": "Closes the long-open question in **#3257**: the deterministic integration tier now runs against PostgreSQL for the first time, and this PR fixes the defects that running it exposed.\n\n**Result: 49 of 61 deterministic bundles pass on PostgreSQL** (MJAPI live, 61/61 executed, zero skipped). It was 32/6",
+    "date": "2026-08-13T17:56:26Z",
+    "summary": "Closes the long-open question in **#3257**: the deterministic integration tier now runs against PostgreSQL for the first time, and this PR fixes the defects that running it exposed.\n\n**Result: 58 of 61 deterministic bundles pass on PostgreSQL** (MJAPI live, 61/61 executed, zero skipped, `RUN_MUTATIO",
     "url": "https://github.com/MemberJunction/MJ/pull/3703",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: MJ"
     ]
   },
   {
     "title": "[PR] fix(postgresql): match SQL keywords case-sensitively when auto-quoting identifiers",
-    "date": "2026-08-13T03:08:27Z",
+    "date": "2026-08-13T17:56:37Z",
     "summary": "## Summary\n\nPostgreSQL identifier auto-quoting used a keyword **denylist** matched case-INsensitively: a PascalCase word was quoted unless it appeared in a hardcoded keyword set. The set of SQL keywords and the set of MJ column names overlap, so every name in the intersection shipped unquoted, folde",
     "url": "https://github.com/MemberJunction/MJ/pull/3697",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: MJ"
     ]
@@ -709,7 +709,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-13T15:36:21Z",
+    "date": "2026-08-13T17:38:00Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -889,7 +889,7 @@
   },
   {
     "title": "[PR] MERGE ",
-    "date": "2026-08-13T02:54:49Z",
+    "date": "2026-08-13T17:51:37Z",
     "summary": "",
     "url": "https://github.com/sjoerd2025/gh-aw/pull/1310",
     "source": "github_prs",
@@ -1309,7 +1309,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T14:44:27Z",
+    "date": "2026-08-13T17:18:31Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/jmiller18899-lab/kilocode/pull/1",
     "source": "github_prs",
@@ -1321,7 +1321,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T14:44:29Z",
+    "date": "2026-08-13T17:18:30Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/christophschatz88-arch/kilocode/pull/1",
     "source": "github_prs",
@@ -1333,7 +1333,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T14:44:23Z",
+    "date": "2026-08-13T17:18:36Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/gmifsud/kilocode/pull/1",
     "source": "github_prs",
@@ -1345,7 +1345,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T14:44:30Z",
+    "date": "2026-08-13T17:18:40Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1357,7 +1357,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T14:44:25Z",
+    "date": "2026-08-13T17:18:31Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/Fenris159/kilocode/pull/1",
     "source": "github_prs",
@@ -1381,7 +1381,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T14:44:27Z",
+    "date": "2026-08-13T17:18:34Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/MAlkabbani/kilocode/pull/1",
     "source": "github_prs",
@@ -1393,7 +1393,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T14:44:29Z",
+    "date": "2026-08-13T17:18:39Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1405,7 +1405,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T14:44:22Z",
+    "date": "2026-08-13T17:18:35Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/facemendous/kilocode/pull/1",
     "source": "github_prs",
@@ -1501,7 +1501,7 @@
   },
   {
     "title": "[PR] fix(ollama): make guided setup choose a working local model",
-    "date": "2026-08-13T12:43:28Z",
+    "date": "2026-08-13T17:50:54Z",
     "summary": "## What Problem This Solves\n\nFixes an issue where users completing local Ollama setup in the Mac dashboard could receive a reasoning-heavy test candidate that timed out even though Ollama was healthy, while the Gateway activated a different default model. The same completed setup could then report z",
     "url": "https://github.com/openclaw/openclaw/pull/123190",
     "source": "github_prs",
@@ -1609,7 +1609,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-13T14:46:01Z",
+    "date": "2026-08-13T17:19:33Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/jeevesh415/kilocode/pull/1",
     "source": "github_prs",
@@ -1737,6 +1737,54 @@
       "comments: 3",
       "pull request",
       "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] fix(config): validate strategy names at startup",
+    "date": "2026-08-13T17:58:05Z",
+    "summary": "## What changed\n\n- Validate `METADATA__EXTRACTION_MODE` against its documented accepted set.\n- Reject unknown `CHUNKING__STRATEGY_FALLBACK` values during startup.\n- Keep documented inline fallbacks and provider aliases outside registry lookup.\n- Archive the completed OpenSpec change and document the",
+    "url": "https://github.com/cmdaltctr/llamaindex-rag-mcp/pull/48",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: llamaindex-rag-mcp"
+    ]
+  },
+  {
+    "title": "[PR] Test-coverage overhaul + SafeExpressionEvaluator RCE fix: real Skipped status, armed CI lanes, ~1,500 unit tests, new integration bundles",
+    "date": "2026-08-13T17:45:21Z",
+    "summary": "Implements the full roadmap from the test-coverage evaluation, and \u2014 after an adversarial review of the PR itself \u2014 closes the highest-severity defect that review surfaced. Three parts: close the silent non-execution holes in the integration tier, backfill the highest-risk unit coverage, and harden ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3542",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(container): update image getmeili/meilisearch ( v1.20.0 \u2794 v1.53.1 )",
+    "date": "2026-08-13T17:31:40Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [getmeili/meilisearch](https://redirect.github.com/meilisearch/meilisearch) | minor | `v1.20.0` \u2192 `v1.53.1` |\n\n---\n\n> [!WARNING]\n> Some depend",
+    "url": "https://github.com/returnfloat/homelab/pull/1443",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] Add Jetson Orin deployment guide and service management docs",
+    "date": "2026-08-13T17:28:12Z",
+    "summary": "## Summary\nThis PR adds comprehensive documentation for deploying MoneyPrinterTurbo on NVIDIA Jetson Orin boards and includes a new section on starting/stopping services across different deployment methods.\n\n## Key Changes\n\n- **Jetson Orin Deployment Section**: Added a new dedicated section with:\n  ",
+    "url": "https://github.com/biali/MoneyPrinterTurbo/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: MoneyPrinterTurbo"
     ]
   }
 ]
