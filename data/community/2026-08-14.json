@@ -529,7 +529,7 @@
   },
   {
     "title": "[PR] fix(core): stop cross-server cache events poisoning entity_object engine caches, guard the framework's date reads",
-    "date": "2026-08-14T19:43:17Z",
+    "date": "2026-08-14T20:26:07Z",
     "summary": "## Summary\n\nAn agent could die mid-run during context assembly with `__mj_CreatedAt?.getTime is not a function` \u2014 an ~80ms failure, before any model call. Downstream, the pipeline carried on without the dead stage's output and shipped a component whose spec had no `libraries` array, which surfaced t",
     "url": "https://github.com/MemberJunction/MJ/pull/3777",
     "source": "github_prs",
@@ -601,12 +601,12 @@
   },
   {
     "title": "[PR] fix: stop String.replace expanding $-sequences in dynamic replacements",
-    "date": "2026-08-14T19:24:55Z",
+    "date": "2026-08-14T20:32:24Z",
     "summary": "A DB password containing `$&` was written to MJAPI's `.env` with the **stale password spliced into the middle of it**. Not a typo'd secret \u2014 a structurally corrupted file, written silently, surfacing later as \"MJAPI can't connect.\"\n\n`String.prototype.replace(search, replacement)` treats `$$`, `$&`, ",
     "url": "https://github.com/MemberJunction/MJ/pull/3769",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: MJ"
     ]
@@ -781,7 +781,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-14T19:10:34Z",
+    "date": "2026-08-14T20:19:31Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -853,7 +853,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-14T19:38:52Z",
+    "date": "2026-08-14T20:33:32Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@pl",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -1081,7 +1081,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-14T18:58:20Z",
+    "date": "2026-08-14T19:52:42Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1093,7 +1093,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-14T18:58:19Z",
+    "date": "2026-08-14T19:52:42Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1129,7 +1129,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-14T18:59:48Z",
+    "date": "2026-08-14T19:52:57Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/christophschatz88-arch/kilocode/pull/1",
     "source": "github_prs",
@@ -1189,7 +1189,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-14T18:58:03Z",
+    "date": "2026-08-14T19:52:31Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1393,7 +1393,7 @@
   },
   {
     "title": "[PR] fix(explorer): make the Chat cross-entity search panel reachable and usable",
-    "date": "2026-08-14T15:50:11Z",
+    "date": "2026-08-14T20:21:32Z",
     "summary": "## Problem\r\n\r\n`SearchPanelComponent` \u2014 cross-entity search over **conversations, messages, artifacts, collections and tasks** \u2014 was rendered only by `ConversationWorkspaceComponent`, which has **zero consumers anywhere in the repo**. Explorer composes the chat UI from resource wrappers instead, so t",
     "url": "https://github.com/MemberJunction/MJ/pull/3747",
     "source": "github_prs",
@@ -1597,7 +1597,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-14T18:59:47Z",
+    "date": "2026-08-14T19:52:57Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/ashbywinch/kilocode/pull/1",
     "source": "github_prs",
@@ -1693,7 +1693,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency openai/codex to v0.147.0",
-    "date": "2026-08-14T19:33:19Z",
+    "date": "2026-08-14T20:05:27Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `0.145.0` \u2192 `0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>openai/",
     "url": "https://github.com/bitwise-media-group/patchy/pull/200",
     "source": "github_prs",
@@ -1737,6 +1737,66 @@
       "comments: 5",
       "pull request",
       "repo: mausVoice"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-go monorepo to v0.44.0",
+    "date": "2026-08-14T20:32:56Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/infratographer/load-balancer-api/pull/344",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: load-balancer-api"
+    ]
+  },
+  {
+    "title": "[PR] hotfix: ollama api key for cloud models",
+    "date": "2026-08-14T20:05:11Z",
+    "summary": "## Summary\r\n\r\nAPI key support for the Ollama provider required for cloud models: https://docs.ollama.com/api/authentication\r\n\r\n## Changes\r\n\r\nExclude Ollama from the keyless providers. It won't hurt local setups.\r\n\r\n## Type of change\r\n\r\n- [x] Bug fix\r\n- [ ] Feature\r\n- [ ] Refactor\r\n- [ ] Documentatio",
+    "url": "https://github.com/maximhq/bifrost/pull/1452",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add GitHub Copilot provider",
+    "date": "2026-08-14T20:05:10Z",
+    "summary": "## Description\n\nAdds GitHub Copilot as a first-class LLM provider in Bifrost. The Copilot provider uses a two-layer OAuth flow: a device-code grant to obtain a GitHub OAuth token, which is then exchanged for a short-lived Copilot API token with automatic refresh.\n\nSupports Chat Completions and the R",
+    "url": "https://github.com/maximhq/bifrost/pull/2054",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 16",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] feat(runtime): complete host-local inference lifecycle",
+    "date": "2026-08-14T20:01:42Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nThis draft completes provider-neutral lifecycle handling for durable host-local inference receipts across OpenClaw, Hermes, and DCode with Ollama, NIM, and vLLM. Production activation remains dormant.\n\n## Changes\n\n- Persist and re-prove host-local infe",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/8076",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Update repo table",
+    "date": "2026-08-14T19:52:00Z",
+    "summary": "## Summary\n\nThis PR updates the README repository table.\n\n## Summary\n\n**1 repos added:**\n[arran4/kde-dev-rootfs](https://github.com/arran4/kde-dev-rootfs)\n\n**5 repos starred:**\n[espanso/espanso](https://github.com/espanso/espanso), [0xf0xx0/git-rivera](https://github.com/0xf0xx0/git-rivera), [deepse",
+    "url": "https://github.com/arran4/arran4/pull/282",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: arran4"
     ]
   }
 ]
