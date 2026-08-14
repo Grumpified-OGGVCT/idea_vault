@@ -133,7 +133,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-13T23:34:00Z",
+    "date": "2026-08-14T06:01:59Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -157,7 +157,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-13T21:57:20Z",
+    "date": "2026-08-14T06:11:46Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -505,7 +505,7 @@
   },
   {
     "title": "[PR] feat(backend): LLM provider abstraction, OpenAI-compatible adapter, provider config & prompt test-execution API",
-    "date": "2026-08-14T04:50:01Z",
+    "date": "2026-08-14T05:21:00Z",
     "summary": "Part of the AI Connectivity epic (#348). Fixes #349, #350, #351.\n\n## Description\n\nIntroduces a provider-agnostic async LLM service layer, then builds the admin-managed provider configuration and prompt test-execution features on top of it. This branch originally covered only the abstraction layer (#",
     "url": "https://github.com/ale-sanchez-g/open-prompt-manager/pull/436",
     "source": "github_prs",
@@ -517,7 +517,7 @@
   },
   {
     "title": "[PR] feat(core): route support passport models through Remnic LLMs",
-    "date": "2026-08-14T04:47:03Z",
+    "date": "2026-08-14T06:16:32Z",
     "summary": "## Summary\n\nAdd provider-neutral drafting and helper answers for the Support Passport.\n\nThe adapter reuses Remnic's existing `LocalLlmClient` and `FallbackLlmClient`. It adds no OpenAI client or fetch path.\n\nSupported routes include:\n\n- local OpenAI-compatible models;\n- OpenClaw gateway model chains",
     "url": "https://github.com/joshuaswarren/remnic/pull/2362",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] MERGE ",
-    "date": "2026-08-14T03:32:02Z",
+    "date": "2026-08-14T06:00:59Z",
     "summary": "",
     "url": "https://github.com/sjoerd2025/gh-aw/pull/1310",
     "source": "github_prs",
@@ -673,12 +673,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-14T04:38:35Z",
+    "date": "2026-08-14T05:16:00Z",
     "summary": "## Summary\n\n- **Base branch:** `master` at `49fdb0fe3c413fb7533a1ebd32897c2c15a5b807`\n- **What changed and why:**\n  - Add a dedicated `HailoOllamaModelProvider` for native Hailo-Ollama `/api/chat` and `/api/tags`, with Hailo-specific validation, request shaping, lifecycle, diagnostics, model discove",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 27",
+      "comments: 28",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -721,7 +721,7 @@
   },
   {
     "title": "[PR] fix(models): use native Ollama tags without breaking generic discovery",
-    "date": "2026-08-14T04:20:25Z",
+    "date": "2026-08-14T05:01:44Z",
     "summary": "## What does this PR do?\n\nUse Ollama's native installed-model catalog for verified local Ollama endpoints, while preserving generic OpenAI-compatible discovery everywhere else.\n\nLocal Ollama exposes its authoritative catalog at:\n\n```text\nGET /api/tags\n```\n\nHermes previously depended too heavily on `",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
@@ -769,7 +769,7 @@
   },
   {
     "title": "[PR] feat: integrate koog for LLM functionality in worker module",
-    "date": "2026-08-14T04:27:36Z",
+    "date": "2026-08-14T06:16:19Z",
     "summary": "## Summary\n\nThis PR integrates the koog framework (v1.1.1) into the worker module to implement LLM functionality for content moderation and other AI-powered features.\n\n## Changes\n\n### New Dependencies\n- Added koog v1.1.1 dependencies for OpenAI, Anthropic, and Ollama providers\n- Added Ktor dependenc",
     "url": "https://github.com/storytellerF/A/pull/36",
     "source": "github_prs",
@@ -781,7 +781,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-14T04:27:13Z",
+    "date": "2026-08-14T05:52:06Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -885,6 +885,138 @@
       "comments: 2",
       "pull request",
       "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] deps: Bump Azure.Core and 5 others",
+    "date": "2026-08-14T06:15:09Z",
+    "summary": "Pinned [Azure.Core](https://github.com/Azure/azure-sdk-for-net) at 1.61.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Azure.Core's releases](https://github.com/Azure/azure-sdk-for-net/releases)._\n\n## 1.61.0\n\n## 1.61.0 (2026-07-30)\n\n### Features Added\n\n- Added `AzureAuthorityHosts.Az",
+    "url": "https://github.com/PlagueHO/genai-database-explorer/pull/155",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: genai-database-explorer"
+    ]
+  },
+  {
+    "title": "[PR] feat(governance): comprehensively execute and harden ACC backlog tasks 3-20",
+    "date": "2026-08-14T06:14:16Z",
+    "summary": "Comprehensively executes, validates, and tests the architectural and security backlog tasks 3-20 on a separate branch. \n\n### Key Hardening Scope Included:\n- **Task 3 (Vault Encryption):** Hardened the local credential vault with AES-256-GCM. Generates a machine-specific local key-file in development",
+    "url": "https://github.com/Thatisshayan/ACC/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ACC"
+    ]
+  },
+  {
+    "title": "[PR] Omi self-hostable fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,keycloak - llm: openai - notifications: FCM, unifiedpush)",
+    "date": "2026-08-14T06:03:00Z",
+    "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
+    "url": "https://github.com/BasedHardware/omi/pull/10887",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: omi"
+    ]
+  },
+  {
+    "title": "[PR] fix: kernel exits cleanly in non-interactive one-shot mode",
+    "date": "2026-08-14T05:59:45Z",
+    "summary": "- Default non-interactive mode returns immediately after bootstrap\r\n  (plugins loaded, agents registered, kernel ready to dispatch)\r\n- Long-running service mode requires explicit AETHER_SERVICE=1 env var\r\n- Removes the blocking _stop.wait() from the default path so tests,\r\n  imports, and programmati",
+    "url": "https://github.com/monopolizedsociety/AetherionGenesis/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AetherionGenesis"
+    ]
+  },
+  {
+    "title": "[PR] Studio: apply the provider metadata block to DNS aliases as well",
+    "date": "2026-08-14T05:56:12Z",
+    "summary": "## Summary\n\n`validate_provider_base_url()` documents the cloud metadata refusal as always on, but `_metadata_host()` only inspects the hostname text: hardcoded names plus IP literals in every spelling. The only code path that resolves DNS, `_reject_non_public()`, runs solely when `UNSLOTH_STUDIO_BLO",
+    "url": "https://github.com/unslothai/unsloth/pull/8782",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: unsloth"
+    ]
+  },
+  {
+    "title": "[PR] update to the current upstream",
+    "date": "2026-08-14T05:51:33Z",
+    "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
+    "url": "https://github.com/EugOT/zeroclaw/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(docs): Update codeblocks with minimap and update guidelines",
+    "date": "2026-08-14T05:50:10Z",
+    "summary": "## Pull Request\r\n\r\n---\r\n\r\n### \ud83d\udcc4 Summary\r\nThis PR fixes minimap usage in code snippets, and updates doc contributing guidelines\r\n\r\n#### Screenshots / Screen Recordings (if applicable)\r\n> Include screenshots or screen recordings that clearly show the behavior before the change and the result after the",
+    "url": "https://github.com/SigNoz/signoz.io/pull/3975",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: signoz.io"
+    ]
+  },
+  {
+    "title": "[PR] Add isolated OpenRouter and OpenAI-compatible providers",
+    "date": "2026-08-14T05:37:26Z",
+    "summary": "## What changed\n\n- Added OpenRouter, Ollama Cloud, and configurable OpenAI-compatible text providers.\n- Added provider setup to onboarding and app settings so credentials can be entered during setup or later.\n- Kept each driver on a fixed, provider-specific credential environment.\n- Redacted sensiti",
+    "url": "https://github.com/milind-soni/OpenMausBot/pull/93",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OpenMausBot"
+    ]
+  },
+  {
+    "title": "[PR] feat(auth): metadata-driven pluggable authentication providers",
+    "date": "2026-08-14T05:35:57Z",
+    "summary": "## Summary\n\nMakes MemberJunction's authentication providers pluggable **the MJ way** \u2014 discovered via `@RegisterClass` and configured through metadata, environment variables, or the config file, all resolved through the same `ClassFactory`. Adding a provider is now a subclass plus a row. **Zero core",
+    "url": "https://github.com/MemberJunction/MJ/pull/2985",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 18",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: Wrap system in production DevSecOps deployment stack",
+    "date": "2026-08-14T05:18:45Z",
+    "summary": "This pull request transforms the RailMind backend into a production-grade containerized service.\nIt introduces a complete `docker-compose.yml` orchestration setup alongside a multi-stage `backend/Dockerfile` with security best practices. Robust configuration management is added via `pydantic-setting",
+    "url": "https://github.com/NITISH-R-G/RailMind/pull/118",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: RailMind"
+    ]
+  },
+  {
+    "title": "[PR] P22 Tier 4 contention: background work yields the local provider to the user",
+    "date": "2026-08-14T04:55:28Z",
+    "summary": "## What this lands\n\nThe ministral GUI-path leg's forensics (Tier 4 evidence): at mission start the daemon's **own scheduled heartbeat held the single GPU slot 157s**, an embedding rebind fired **201 `POST /api/embed` in one minute over `::1`** (chat uses `127.0.0.1`), Ollama thrashed models, the pla",
+    "url": "https://github.com/physics515/Nanna/pull/229",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Nanna"
     ]
   }
 ]
