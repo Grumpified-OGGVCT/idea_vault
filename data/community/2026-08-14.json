@@ -529,8 +529,8 @@
   },
   {
     "title": "[PR] fix(core): stop cross-server cache events poisoning entity_object engine caches, guard the framework's date reads",
-    "date": "2026-08-14T18:29:12Z",
-    "summary": "## Summary\r\n\r\nAn agent could die mid-run during context assembly with `__mj_CreatedAt?.getTime is not a function` \u2014 an ~80ms failure, before any model call. Downstream, the pipeline carried on without the dead stage's output and shipped a component whose spec had no `libraries` array, which surfaced",
+    "date": "2026-08-14T19:43:17Z",
+    "summary": "## Summary\n\nAn agent could die mid-run during context assembly with `__mj_CreatedAt?.getTime is not a function` \u2014 an ~80ms failure, before any model call. Downstream, the pipeline carried on without the dead stage's output and shipped a component whose spec had no `libraries` array, which surfaced t",
     "url": "https://github.com/MemberJunction/MJ/pull/3777",
     "source": "github_prs",
     "highlights": [
@@ -601,7 +601,7 @@
   },
   {
     "title": "[PR] fix: stop String.replace expanding $-sequences in dynamic replacements",
-    "date": "2026-08-14T16:38:30Z",
+    "date": "2026-08-14T19:24:55Z",
     "summary": "A DB password containing `$&` was written to MJAPI's `.env` with the **stale password spliced into the middle of it**. Not a typo'd secret \u2014 a structurally corrupted file, written silently, surfacing later as \"MJAPI can't connect.\"\n\n`String.prototype.replace(search, replacement)` treats `$$`, `$&`, ",
     "url": "https://github.com/MemberJunction/MJ/pull/3769",
     "source": "github_prs",
@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] [1/4] feat(git): add commit context collector",
-    "date": "2026-08-14T10:33:29Z",
+    "date": "2026-08-14T19:14:26Z",
     "summary": "### Related GitHub Issue\r\n\r\nCloses: #282\r\n\r\nPart of: #145 \u00b7 **Stack 1 of 4** \u00b7 Replaces the all-in-one #1218\r\n\r\n### Description\r\n\r\nAdds `getCommitContext()`, the Git-reading half of AI commit-message generation.\r\nNothing consumes it yet \u2014 that arrives in stack 2. This PR is self-contained and\r\nintro",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/pull/1227",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] MERGE ",
-    "date": "2026-08-14T16:56:50Z",
+    "date": "2026-08-14T19:14:18Z",
     "summary": "",
     "url": "https://github.com/sjoerd2025/gh-aw/pull/1310",
     "source": "github_prs",
@@ -781,7 +781,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-14T16:12:18Z",
+    "date": "2026-08-14T19:10:34Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -853,7 +853,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-14T03:16:37Z",
+    "date": "2026-08-14T19:38:52Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@pl",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -925,7 +925,7 @@
   },
   {
     "title": "[PR] fix: kernel exits cleanly in non-interactive one-shot mode",
-    "date": "2026-08-14T15:04:31Z",
+    "date": "2026-08-14T19:20:52Z",
     "summary": "- Default non-interactive mode returns immediately after bootstrap\r\n  (plugins loaded, agents registered, kernel ready to dispatch)\r\n- Long-running service mode requires explicit AETHER_SERVICE=1 env var\r\n- Removes the blocking _stop.wait() from the default path so tests,\r\n  imports, and programmati",
     "url": "https://github.com/monopolizedsociety/AetherionGenesis/pull/3",
     "source": "github_prs",
@@ -985,12 +985,12 @@
   },
   {
     "title": "[PR] feat(auth): metadata-driven pluggable authentication providers",
-    "date": "2026-08-14T18:53:15Z",
+    "date": "2026-08-14T19:49:42Z",
     "summary": "## Summary\n\nMakes MemberJunction's authentication providers pluggable **the MJ way** \u2014 discovered via `@RegisterClass` and configured through metadata, environment variables, or the config file, all resolved through the same `ClassFactory`. Adding a provider is now a subclass plus a row. **Zero core",
     "url": "https://github.com/MemberJunction/MJ/pull/2985",
     "source": "github_prs",
     "highlights": [
-      "comments: 18",
+      "comments: 19",
       "pull request",
       "repo: MJ"
     ]
@@ -1129,7 +1129,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-14T18:57:57Z",
+    "date": "2026-08-14T18:59:48Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/christophschatz88-arch/kilocode/pull/1",
     "source": "github_prs",
@@ -1548,9 +1548,9 @@
     ]
   },
   {
-    "title": "[PR] chore(deps): drop unused runtime dependencies and trim four extras",
-    "date": "2026-08-14T17:50:58Z",
-    "summary": "## Why are these changes needed?\n\n`pip install ag2` and several `ag2[...]` extras pull packages that no code in the `ag2` package imports. Required dependencies in particular are something a downstream user cannot opt out of, so unused ones are pure install-size and supply-chain surface. This audits",
+    "title": "[PR] chore: audit dependencies and remove artifacts orphaned by the 1.0 rewrite",
+    "date": "2026-08-14T19:36:54Z",
+    "summary": "## Why are these changes needed?\n\n`pip install ag2`, several `ag2[...]` extras, and the dev dependency groups all pull packages that no code in the repo imports. Required dependencies in particular are something a downstream user cannot opt out of, so unused ones are pure install-size and supply-cha",
     "url": "https://github.com/ag2ai/ag2/pull/3159",
     "source": "github_prs",
     "highlights": [
@@ -1597,7 +1597,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-14T18:57:53Z",
+    "date": "2026-08-14T18:59:47Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/ashbywinch/kilocode/pull/1",
     "source": "github_prs",
@@ -1621,7 +1621,7 @@
   },
   {
     "title": "[PR] fix(deps): update dependency org.mock-server:mockserver-client-java-no-dependencies to v7.5.0",
-    "date": "2026-08-14T18:45:19Z",
+    "date": "2026-08-14T19:48:30Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-",
     "url": "https://github.com/yschimke/okhttp-testbed/pull/49",
     "source": "github_prs",
@@ -1641,6 +1641,102 @@
       "comments: 26",
       "pull request",
       "repo: Khala-Agentic-AI-Teams"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update ollama/ollama docker tag to v0.32.6",
+    "date": "2026-08-14T19:43:24Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| ollama/ollama | minor | `0.30.11` \u2192 `0.32.6` | `0.32.13` (+4) |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency Dashboard](../issues/4) for more information.\n\n---",
+    "url": "https://github.com/minchingtonak/HaC/pull/730",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: HaC"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update testcontainers-go monorepo to v0.44.0",
+    "date": "2026-08-14T19:41:32Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/henok321/translation-service/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: translation-service"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the ai-sdk group across 1 directory with 9 updates",
+    "date": "2026-08-14T19:37:47Z",
+    "summary": "Bumps the ai-sdk group with 9 updates in the /backend directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@ai-sdk/amazon-bedrock](https://github.com/vercel/ai/tree/HEAD/packages/amazon-bedrock) | `4.0.121` | `5.0.52` |\n| [@ai-sdk/azure](https://github.com/vercel/ai/tree/HEAD/packages/azure) |",
+    "url": "https://github.com/codecentric/c4-genai-suite/pull/1981",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: c4-genai-suite"
+    ]
+  },
+  {
+    "title": "[PR] Add AI commit message generation to the commit dialog",
+    "date": "2026-08-14T19:35:46Z",
+    "summary": "Fixes #12203\r\n\r\n## Proposed changes\r\n\r\n- Add an **opt-in, off-by-default** feature that drafts a commit message from the **staged diff** using any **OpenAI-compatible** endpoint \u2014 OpenAI, Azure OpenAI, OpenRouter, Groq, or a **local** model via Ollama.\r\n- Add a \"\u2728 Generate AI commit message\" button ",
+    "url": "https://github.com/gitextensions/gitextensions/pull/13149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 21",
+      "pull request",
+      "repo: gitextensions"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency openai/codex to v0.147.0",
+    "date": "2026-08-14T19:33:19Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `0.145.0` \u2192 `0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>openai/",
+    "url": "https://github.com/bitwise-media-group/patchy/pull/200",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: patchy"
+    ]
+  },
+  {
+    "title": "[PR] feat(ng-base-forms): form contributions \u2014 claim related grids or replace a field panel",
+    "date": "2026-08-14T19:29:29Z",
+    "summary": "## Summary\n\nA form is a list of **contributions**. Installed OpenApps register `BaseFormPanel`s (`@RegisterClassEx` + metadata bag). ClassFactory discovery is \u201cwhat is installed.\u201d CodeGen output does **not** change \u2014 override is runtime.\n\n- **Add** a section in a slot (existing).\n- **Claim a related",
+    "url": "https://github.com/MemberJunction/MJ/pull/3811",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] AGE-3472: Add regression test for zero-model-activity zombie run classification",
+    "date": "2026-08-14T19:29:25Z",
+    "summary": "## Thinking Path\n\n> - Paperclip orchestrates AI agents for zero-human companies\n> - The heartbeat service classifies each agent run's terminal outcome (succeeded / failed / cancelled / timed_out)\n> - A zombie run \u2014 process exits 0, no model calls, no errors \u2014 was being recorded as `succeeded`, silen",
+    "url": "https://github.com/chrisabad/paperclip/pull/29",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: paperclip"
+    ]
+  },
+  {
+    "title": "[PR] fix: route AssemblyAI transcription, stop advertising Ollama as transcription-capable",
+    "date": "2026-08-14T19:26:02Z",
+    "summary": "## Summary\n\nFixes the provider capability/dispatch mismatch identified during a production audit, and hardens the new AssemblyAI batch transcription path.\n\n### Context\nThe model-capability class marked Ollama as supporting transcription, so it appeared in the **AI transcription** selector \u2014 but `get",
+    "url": "https://github.com/maus-inc/mausVoice/pull/43",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: mausVoice"
     ]
   }
 ]
