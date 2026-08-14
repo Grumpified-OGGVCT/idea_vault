@@ -601,7 +601,7 @@
   },
   {
     "title": "[PR] fix: stop String.replace expanding $-sequences in dynamic replacements",
-    "date": "2026-08-14T20:34:54Z",
+    "date": "2026-08-14T22:09:06Z",
     "summary": "A DB password containing `$&` was written to MJAPI's `.env` with the **stale password spliced into the middle of it**. Not a typo'd secret \u2014 a structurally corrupted file, written silently, surfacing later as \"MJAPI can't connect.\"\n\n`String.prototype.replace(search, replacement)` treats `$$`, `$&`, ",
     "url": "https://github.com/MemberJunction/MJ/pull/3769",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] Containerize full stack, update repo references, and improve install scripts",
-    "date": "2026-08-14T00:36:38Z",
+    "date": "2026-08-14T21:37:56Z",
     "summary": "",
     "url": "https://github.com/Piya-Boy/PowerServer/pull/1",
     "source": "github_prs",
@@ -781,7 +781,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-14T21:13:24Z",
+    "date": "2026-08-14T22:10:29Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -913,7 +913,7 @@
   },
   {
     "title": "[PR] Omi self-hostable fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,keycloak - llm: openai - notifications: FCM, unifiedpush)",
-    "date": "2026-08-14T21:17:29Z",
+    "date": "2026-08-14T22:17:15Z",
     "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
     "url": "https://github.com/BasedHardware/omi/pull/10887",
     "source": "github_prs",
@@ -949,7 +949,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-14T21:28:27Z",
+    "date": "2026-08-14T22:26:46Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -1261,12 +1261,12 @@
   },
   {
     "title": "[PR] Phase 4 \u2014 agents, controller, guardrails, observability (1a\u20131g; 1h outstanding, D20)",
-    "date": "2026-08-14T09:52:19Z",
+    "date": "2026-08-14T22:16:33Z",
     "summary": "Phase 4 opens for review with **1a\u20131g complete and 1h outstanding**. The reason\nis a missing credential, not a missing implementation \u2014 recorded as **D20** in\nthe register, with the probe output quoted.\n\nNothing was relaxed, stubbed or recorded to manufacture a passing number. There\nis no fixture st",
     "url": "https://github.com/t-gandhi-19/rfp-workflow/pull/4",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: rfp-workflow"
     ]
@@ -1693,7 +1693,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency openai/codex to v0.147.0",
-    "date": "2026-08-14T20:05:27Z",
+    "date": "2026-08-14T21:55:42Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `0.145.0` \u2192 `0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>openai/",
     "url": "https://github.com/bitwise-media-group/patchy/pull/200",
     "source": "github_prs",
@@ -1729,7 +1729,7 @@
   },
   {
     "title": "[PR] fix: route AssemblyAI transcription, stop advertising Ollama as transcription-capable",
-    "date": "2026-08-14T21:28:56Z",
+    "date": "2026-08-14T22:25:13Z",
     "summary": "## Summary\n\nFixes the provider capability/dispatch mismatch identified during a production audit, and hardens the new AssemblyAI batch transcription path.\n\n### Context\nThe model-capability class marked Ollama as supporting transcription, so it appeared in the **AI transcription** selector \u2014 but `get",
     "url": "https://github.com/maus-inc/mausVoice/pull/43",
     "source": "github_prs",
@@ -1801,7 +1801,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-14T21:19:16Z",
+    "date": "2026-08-14T22:21:15Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/reportshq/pull/24",
     "source": "github_prs",
@@ -1845,6 +1845,42 @@
       "comments: 0",
       "pull request",
       "repo: better-dx"
+    ]
+  },
+  {
+    "title": "[PR] security: harden SQL-filter validator, OAuth handler, API-key lookup, and new-user domain gate",
+    "date": "2026-08-14T21:46:55Z",
+    "summary": "Hardening from an adversarial security review of the server auth/data surface. Five isolated, low-blast-radius fixes.\n\n## 1. CRITICAL \u2014 RunView SQL-filter validator bypass\n`MJCore/src/generic/databaseProviderBase.ts` \u2014 `ValidateUserProvidedSQLClause`\n\nThe validator strips string literals **before** ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3633",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-14T21:38:10Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot",
+    "url": "https://github.com/stacksjs/ts-auth/pull/120",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-auth"
+    ]
+  },
+  {
+    "title": "[PR] feat(infra): add cheap one-box platform compose",
+    "date": "2026-08-14T21:30:38Z",
+    "summary": "## Description\n\nAdds a cheap one-box cloud/prod Docker Compose configuration for the non-AI Deepiri platform stack.\n\nInclude:\n- Related Issue number: TBD\n- Plaky feature name: Cheap one-box platform deployment\n- Component, feature, or system affected: Cloud/infra Docker Compose, nginx reverse proxy,",
+    "url": "https://github.com/Team-Deepiri/deepiri-platform/pull/304",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: deepiri-platform"
     ]
   }
 ]
