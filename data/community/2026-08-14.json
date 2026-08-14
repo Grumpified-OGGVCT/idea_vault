@@ -589,19 +589,19 @@
   },
   {
     "title": "[PR] Test-coverage overhaul + SafeExpressionEvaluator RCE fix: real Skipped status, armed CI lanes, ~1,500 unit tests, new integration bundles",
-    "date": "2026-08-14T15:52:35Z",
+    "date": "2026-08-14T16:56:12Z",
     "summary": "Implements the full roadmap from the test-coverage evaluation, and \u2014 after an adversarial review of the PR itself \u2014 closes the highest-severity defect that review surfaced. Three parts: close the silent non-execution holes in the integration tier, backfill the highest-risk unit coverage, and harden ",
     "url": "https://github.com/MemberJunction/MJ/pull/3542",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 8",
       "pull request",
       "repo: MJ"
     ]
   },
   {
     "title": "[PR] fix: stop String.replace expanding $-sequences in dynamic replacements",
-    "date": "2026-08-14T15:53:53Z",
+    "date": "2026-08-14T16:38:30Z",
     "summary": "A DB password containing `$&` was written to MJAPI's `.env` with the **stale password spliced into the middle of it**. Not a typo'd secret \u2014 a structurally corrupted file, written silently, surfacing later as \"MJAPI can't connect.\"\n\n`String.prototype.replace(search, replacement)` treats `$$`, `$&`, ",
     "url": "https://github.com/MemberJunction/MJ/pull/3769",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] MERGE ",
-    "date": "2026-08-14T10:59:37Z",
+    "date": "2026-08-14T16:56:50Z",
     "summary": "",
     "url": "https://github.com/sjoerd2025/gh-aw/pull/1310",
     "source": "github_prs",
@@ -673,12 +673,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-14T11:36:41Z",
+    "date": "2026-08-14T16:56:44Z",
     "summary": "## Summary\n\n- **Base branch:** `master` at `49fdb0fe3c413fb7533a1ebd32897c2c15a5b807`\n- **What changed and why:**\n  - Add a dedicated `HailoOllamaModelProvider` for native Hailo-Ollama `/api/chat` and `/api/tags`, with Hailo-specific validation, request shaping, lifecycle, diagnostics, model discove",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 29",
+      "comments: 30",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -721,7 +721,7 @@
   },
   {
     "title": "[PR] fix(models): use native Ollama tags without breaking generic discovery",
-    "date": "2026-08-14T05:01:44Z",
+    "date": "2026-08-14T16:51:49Z",
     "summary": "## What does this PR do?\n\nUse Ollama's native installed-model catalog for verified local Ollama endpoints, while preserving generic OpenAI-compatible discovery everywhere else.\n\nLocal Ollama exposes its authoritative catalog at:\n\n```text\nGET /api/tags\n```\n\nHermes previously depended too heavily on `",
     "url": "https://github.com/NousResearch/hermes-agent/pull/67934",
     "source": "github_prs",
@@ -781,7 +781,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-14T15:27:24Z",
+    "date": "2026-08-14T16:12:18Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -913,7 +913,7 @@
   },
   {
     "title": "[PR] Omi self-hostable fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,keycloak - llm: openai - notifications: FCM, unifiedpush)",
-    "date": "2026-08-14T10:28:40Z",
+    "date": "2026-08-14T16:27:12Z",
     "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
     "url": "https://github.com/BasedHardware/omi/pull/10887",
     "source": "github_prs",
@@ -949,7 +949,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-14T14:37:43Z",
+    "date": "2026-08-14T16:52:45Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -1045,7 +1045,7 @@
   },
   {
     "title": "[PR] feat(routing): Cloud Smart Router \u2014 batches 0-1",
-    "date": "2026-08-14T14:41:29Z",
+    "date": "2026-08-14T16:35:30Z",
     "summary": "**Draft.** Open for continuous CI verification while the Cloud Smart Router pack is delivered batch by batch. Not for merge yet.\n\nPack: `ClawAI_Cloud_Smart_Router_Prompt_Pack_v1.0.0` (33 documents + 20 templates), read end to end per the prompt-pack intake protocol (`rules/26`).\n\n## Landed so far\n\n#",
     "url": "https://github.com/ihabkhaled/ClawAI/pull/160",
     "source": "github_prs",
@@ -1201,7 +1201,7 @@
   },
   {
     "title": "[PR] feat(goose): implement agent configuration for workspace preparation",
-    "date": "2026-08-14T11:18:45Z",
+    "date": "2026-08-14T16:44:36Z",
     "summary": "## Summary\r\n- Replaces the `configurationFiles` and `preWorkspaceStart` stubs with a real implementation that writes `GOOSE_MODEL` into `.goose/config.yaml` from the workspace context, preserving existing configuration fields.\r\n\r\nFixes #2174\r\nFixes #1731\r\n\r\n## Test plan\r\n\r\n_Before testing youll need",
     "url": "https://github.com/openkaiden/kaiden/pull/2192",
     "source": "github_prs",
@@ -1333,12 +1333,12 @@
   },
   {
     "title": "[PR] Stop offering a credential Anthropic prohibits; stop leaking the one it allows (0.75.0)",
-    "date": "2026-08-14T15:52:29Z",
+    "date": "2026-08-14T16:45:25Z",
     "summary": "## What & why\n\nFollow-up to research into how other tools reuse existing CLI logins. The starting point: **Cascade already discovers them.** `cascade link` reads Claude Code, Codex CLI, Gemini CLI and Copilot credentials today, and correctly refuses three of the four \u2014 each targets its own vendor's ",
     "url": "https://github.com/Varun-SV/Cascade-AI/pull/205",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 2",
       "pull request",
       "repo: Cascade-AI"
     ]
@@ -1381,12 +1381,12 @@
   },
   {
     "title": "[PR] [P01-general-tech] \u8abf\u7814 MuseCode",
-    "date": "2026-08-14T14:39:06Z",
+    "date": "2026-08-14T16:28:07Z",
     "summary": "## Original Issue: #215\n\n\u5e6b\u6211\u8abf\u7814 MuseCode\n\n- https://developer.meta.com/ai/products/muse-code/\n\n- \u76f8\u95dc\u5206\u6790\u6587\u7ae0\n```\nCNET Japan\n[\u65b0\u7740\u8a18\u4e8b](https://japan.cnet.com/news/)\n[\u4eba\u6c17\u8a18\u4e8b](https://japan.cnet.com/popular/)\n\u30ab\u30c6\u30b4\u30ea\n\u6df1\u6398\u308a\n[\u97f3\u58f0\u30b3\u30f3\u30c6\u30f3\u30c4](https://japan.cnet.com/sp/cnet_podcast/)\n[bouncy](https://japan.cnet.com/category/bounc",
     "url": "https://github.com/FATESAIKOU/LearnGhAgent/pull/216",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 17",
       "pull request",
       "repo: LearnGhAgent"
     ]
@@ -1449,6 +1449,66 @@
       "comments: 0",
       "pull request",
       "repo: nix"
+    ]
+  },
+  {
+    "title": "[PR] Fix endpoint URL normalization and cap on-device Gemma context window",
+    "date": "2026-08-14T16:55:20Z",
+    "summary": "Investigated and repaired external/local model endpoint execution failures and applied bounded memory stabilization to on-device Gemma models:\n\n1. Endpoint Normalization (Part A):\n- Root Cause: Configured self-hosted / custom local OpenAI-compatible endpoints (e.g. http://host:8080) were successfull",
+    "url": "https://github.com/Xitius/ZeroAI/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ZeroAI"
+    ]
+  },
+  {
+    "title": "[PR] feat: TuringDesk v0.2 capabilities, voice and model onboarding",
+    "date": "2026-08-14T16:50:34Z",
+    "summary": "## What changed\n\nBuilds the next TuringDesk developer preview on top of v0.1:\n\n- stable loopback Windows Capability API on `127.0.0.1:4318`\n- typed `app.launch` and `window.list/find/focus/move/resize/tile` operations\n- TuringDesk Windows MCP server for DeepSeek Harness\n- MCP compatibility smoke tes",
+    "url": "https://github.com/GoodLoongStudio/TuringDesk/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: TuringDesk"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes): add NVIDIA Nemotron LLM node",
+    "date": "2026-08-14T16:46:42Z",
+    "summary": "Closes #1765\n\n## Summary\n\nAdds `llm_nemotron`, a dedicated LLM node for NVIDIA's **Nemotron** family \u2014 open-weight hybrid Mamba-Transformer reasoning models with up to 1M-token context \u2014 served through NVIDIA's OpenAI-compatible cloud API ([build.nvidia.com](https://build.nvidia.com), `nvapi-` keys)",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/1766",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] feat(inference): multi-provider LLM upstreams (Anthropic, Ollama) + pluggable guardrail pipeline (OpenAI Moderation)",
+    "date": "2026-08-14T16:03:13Z",
+    "summary": "## Summary\r\n\r\nThis is a first slice of the multi-cloud provider + guardrails roadmap theme. It lets an `InferencePolicy` pick the inference provider and declare a guardrail pipeline, and teaches the router to actually honor both:\r\n\r\n```yaml\r\nspec:\r\n  provider: anthropic          # or: ollama, azure-",
+    "url": "https://github.com/Azure/kars/pull/488",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kars"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-08-14T16:02:15Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/cicero-im/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 20",
+      "pull request",
+      "repo: generative-ai"
     ]
   }
 ]
