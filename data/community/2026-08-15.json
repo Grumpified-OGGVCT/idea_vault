@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-15T02:54:03Z",
+    "date": "2026-08-15T03:42:22Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-15T02:03:39Z",
+    "date": "2026-08-15T03:01:46Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -697,7 +697,7 @@
   },
   {
     "title": "[PR] fix(integration): record-map write amplification, pagination-violation visibility, non-blocking schema refresh",
-    "date": "2026-08-14T23:35:15Z",
+    "date": "2026-08-15T03:26:17Z",
     "summary": "Three independent, low-risk fixes on the connector apply path. Each stands alone \u2014 none depends on the others.\n\n### 1. `TrackRecordChanges = 0` for `MJ: Company Integration Record Maps` (migration)\n\n`CompanyIntegrationRecordMap` is the highest-volume table the sync path writes: one row per external ",
     "url": "https://github.com/MemberJunction/MJ/pull/3354",
     "source": "github_prs",
@@ -745,7 +745,7 @@
   },
   {
     "title": "[PR] home-assistant: 2026.8.1 -> 2026.8.2",
-    "date": "2026-08-15T02:50:10Z",
+    "date": "2026-08-15T03:14:41Z",
     "summary": "Diff: https://github.com/home-assistant/core/compare/2026.8.1...2026.8.2\r\n\r\nChangelog: https://github.com/home-assistant/core/releases/tag/2026.8.2\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or des",
     "url": "https://github.com/NixOS/nixpkgs/pull/552745",
     "source": "github_prs",
@@ -861,6 +861,54 @@
       "comments: 0",
       "pull request",
       "repo: ts-auth"
+    ]
+  },
+  {
+    "title": "[PR] Callable runtime",
+    "date": "2026-08-15T03:41:04Z",
+    "summary": "Use this as the master prompt for Codex, Claude Code, ChatGPT coding agents, or another capable autonomous software agent:\r\n\r\nFROST AUTOMATION OS \u03a9 \u2014 MASTER AUTONOMOUS BUILD MEGA-PROMPT\r\nVersion: 2026-08-14\r\nOwner: Robert Frost\r\nProject: Automation\r\nPrimary platform: Android / Termux\r\nCanonical repo",
+    "url": "https://github.com/12ephods-source/centinal26/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: centinal26"
+    ]
+  },
+  {
+    "title": "[PR] fix(media): allow private openai compatible audio transcription endpoints",
+    "date": "2026-08-15T03:32:28Z",
+    "summary": "## Summary\r\n\r\n- Problem: Audio media-understanding transcription could target self-hosted OpenAI-compatible endpoints, but audio config did not expose the private-network request opt-in used by guarded provider HTTP.\r\n- Why it matters: Trusted local, RFC1918, or tailnet Whisper-style endpoints need ",
+    "url": "https://github.com/openclaw/openclaw/pull/73817",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] Feat/offensive module expansion",
+    "date": "2026-08-15T03:30:58Z",
+    "summary": "This pull request introduces several important enhancements and changes to the Security-Agent project, focusing on new engagement templates, expanded local LLM integration (Ollama), and a shift to a new source-available license. It also includes documentation updates and configuration improvements.\r",
+    "url": "https://github.com/flipflowglobal/security-agent/pull/72",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: security-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): add Gemini free-tier online backup and provider switching",
+    "date": "2026-08-15T03:25:28Z",
+    "summary": "## Summary\n\nAdd a provider-neutral AI runtime so the application can run with local Ollama or explicitly selected online providers without changing Flow 1/Flow 2 workflow code.\n\nThis work is assigned to **Member 1** as a cross-cutting infrastructure/configuration/documentation task.\n\n## Cost / provi",
+    "url": "https://github.com/IKurokami/PRN222-RAG-Assistant/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: PRN222-RAG-Assistant"
     ]
   }
 ]
