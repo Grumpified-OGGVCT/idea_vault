@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-15T06:41:37Z",
+    "date": "2026-08-15T07:33:59Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-15T06:26:39Z",
+    "date": "2026-08-15T07:04:39Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] feat(routing): Cloud Smart Router \u2014 batches 0-1",
-    "date": "2026-08-15T06:40:27Z",
+    "date": "2026-08-15T06:47:00Z",
     "summary": "**Draft.** Open for continuous CI verification while the Cloud Smart Router pack is delivered batch by batch. Not for merge yet.\n\nPack: `ClawAI_Cloud_Smart_Router_Prompt_Pack_v1.0.0` (33 documents + 20 templates), read end to end per the prompt-pack intake protocol (`rules/26`).\n\n## Landed so far\n\n#",
     "url": "https://github.com/ihabkhaled/ClawAI/pull/160",
     "source": "github_prs",
@@ -793,7 +793,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency openai/codex to rust-v0.147.0",
-    "date": "2026-08-15T05:46:03Z",
+    "date": "2026-08-15T07:03:15Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `rust-v0.145.0` \u2192 `rust-v0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<sum",
     "url": "https://github.com/bitwise-media-group/patchy/pull/200",
     "source": "github_prs",
@@ -1021,12 +1021,12 @@
   },
   {
     "title": "[PR] Improvement: feat: dev install mode - run current checkout HEAD without the keg build (#3789)",
-    "date": "2026-08-15T06:38:39Z",
+    "date": "2026-08-15T07:29:53Z",
     "summary": "Closes #3789\n\n## Summary\n## Problem / Motivation\nOwner requirement (2026-08-15): the Repo-less Portability work retired the editable dev install without that ever being the intent \u2014 today every local install (`nyxgpt up` from a checkout) goes through the Homebrew keg/tarball build, which is slow for",
     "url": "https://github.com/dkblinux98/nyxGPT/pull/3791",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 16",
       "pull request",
       "repo: nyxGPT"
     ]
@@ -1069,7 +1069,7 @@
   },
   {
     "title": "[PR] Build SIW local evidence-governed OSINT runtime",
-    "date": "2026-08-15T05:51:29Z",
+    "date": "2026-08-15T07:06:06Z",
     "summary": "## Description\nTransforms OSINT Assistant into the first slice of **OrPaynter Sovereign Intelligence Workstation (SIW)**: a local-first, evidence-governed investigation runtime where local models analyze, controlled adapters collect authorized sources, policy gates authorize actions, and exports bec",
     "url": "https://github.com/orpaynter/OSINT-Assistant/pull/1",
     "source": "github_prs",
@@ -1089,6 +1089,42 @@
       "comments: 2",
       "pull request",
       "repo: x"
+    ]
+  },
+  {
+    "title": "[PR] fix(e2e): isolate Jetson onboarding from host Ollama",
+    "date": "2026-08-15T07:31:12Z",
+    "summary": "## Summary\n\nJetson CPU-only E2E onboarding now uses a fixture-owned compatible inference endpoint instead of depending on the persistent host Ollama installation. The target retains the real install, OpenShell onboarding, installed-binary ownership, `Sandbox GPU: disabled`, and `/dev/nvmap` exclusio",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/9204",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] test: drive the golden path through a real browser (TQ-4)",
+    "date": "2026-08-15T07:27:02Z",
+    "summary": "Closes TQ-4 in `docs/PRODUCTION_PLAN.md`, the second half of sprint PG-5.\n\n## What this adds\n\n`tests/e2e/test_golden_path.py` \u2014 sign in, upload a document, ask about it, and get back an answer that **cites the file just uploaded**. Plus a guard that an unauthenticated visit lands on `/login`, so the",
+    "url": "https://github.com/jwvanderstam/LocalChat/pull/264",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: LocalChat"
+    ]
+  },
+  {
+    "title": "[PR] Add durable AI homepage copy plan",
+    "date": "2026-08-15T07:12:50Z",
+    "summary": "## What changed\n\n- Add a durable homepage copy plan with the message hierarchy, section order, working copy, proof requirements, claim boundaries, and maintenance rules.\n- Center the proposed homepage on having no TanStack service in the request path, supported by exact-model types, native AG-UI, sh",
+    "url": "https://github.com/TanStack/ai/pull/1115",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: ai"
     ]
   }
 ]
