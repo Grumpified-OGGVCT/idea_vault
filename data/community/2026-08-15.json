@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-15T12:41:19Z",
+    "date": "2026-08-15T13:32:59Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-15T12:12:46Z",
+    "date": "2026-08-15T13:23:49Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1261,7 +1261,7 @@
   },
   {
     "title": "[PR] Flatten Ollama retry loop: extract HTTP-status routing and semantic-exhaustion handling",
-    "date": "2026-08-15T12:16:44Z",
+    "date": "2026-08-15T12:58:29Z",
     "summary": "## Summary\n\nThe `_ollama_post` retry loop in `backend/agents/llm_service/clients/ollama.py` handled several distinct failure modes inside one deeply nested `while True: try / with sem / with Client / with stream:` block \u2014 mixing HTTP-status routing (200/429/5xx/4xx/unexpected) with the semantic-exha",
     "url": "https://github.com/brandonkindred/Khala-Agentic-AI-Teams/pull/6388",
     "source": "github_prs",
@@ -1417,7 +1417,7 @@
   },
   {
     "title": "[PR] chore(skills): archive parity-blocked bundles",
-    "date": "2026-08-15T12:31:00Z",
+    "date": "2026-08-15T12:54:08Z",
     "summary": "## Summary\n\n- Move 17 parity-blocked runtime skill bundles out of the build-scanned `skills/` root into `docs/internal/archived-skills/`, preserving their contents and restoration criteria.\n- Keep 15 skills whose central workflows are supported by the default Reborn model surface, and refresh catalo",
     "url": "https://github.com/nearai/ironclaw/pull/7641",
     "source": "github_prs",
@@ -1429,7 +1429,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-15T12:21:52Z",
+    "date": "2026-08-15T12:48:10Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@pl",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -1473,6 +1473,30 @@
       "comments: 0",
       "pull request",
       "repo: besu"
+    ]
+  },
+  {
+    "title": "[PR] INC-004: the failover drill \u2014 the walk, the pins, and the price of falling forward (#162)",
+    "date": "2026-08-15T13:13:55Z",
+    "summary": "Closes the last unchecked item of the phase-10 exit gate (#162): the induced failover drill, with its pre-mortem, traffic script, incident note, committed evidence, and the ledger rows. Total spend ~$0.088 against a ~$0.15 registration.\n\n## What this PR contains\n\n`docs/drills/premortem-inc004-failov",
+    "url": "https://github.com/fespino/resgraph/pull/220",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: resgraph"
+    ]
+  },
+  {
+    "title": "[PR] Update updates-patch-minor",
+    "date": "2026-08-15T12:59:43Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| bbilly1/tubearchivist | patch | `v0.5.10` \u2192 `v0.5.11` |\n| [chaptarr/chaptarr](https://redirect.github.com/robertlordhood/Chaptarr) | patch | `",
+    "url": "https://github.com/truenas/apps/pull/5600",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: apps"
     ]
   }
 ]
