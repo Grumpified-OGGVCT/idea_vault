@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-15T16:27:10Z",
+    "date": "2026-08-15T17:23:19Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-15T16:09:54Z",
+    "date": "2026-08-15T17:12:53Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -625,12 +625,12 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-15T05:10:51Z",
+    "date": "2026-08-15T17:16:23Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/reportshq/pull/24",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: reportshq"
     ]
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] feat(routing): Cloud Smart Router \u2014 batches 0-1",
-    "date": "2026-08-15T16:15:57Z",
+    "date": "2026-08-15T17:15:07Z",
     "summary": "**Draft.** Open for continuous CI verification while the Cloud Smart Router pack is delivered batch by batch. Not for merge yet.\n\nPack: `ClawAI_Cloud_Smart_Router_Prompt_Pack_v1.0.0` (33 documents + 20 templates), read end to end per the prompt-pack intake protocol (`rules/26`).\n\n## Landed so far\n\n#",
     "url": "https://github.com/ihabkhaled/ClawAI/pull/160",
     "source": "github_prs",
@@ -973,7 +973,7 @@
   },
   {
     "title": "[PR] Fix endpoint URL normalization and cap on-device Gemma context window",
-    "date": "2026-08-15T05:05:03Z",
+    "date": "2026-08-15T16:42:44Z",
     "summary": "Investigated and repaired external/local model endpoint execution failures and applied bounded memory stabilization to on-device Gemma models:\n\n1. Endpoint Normalization (Part A):\n- Root Cause: Configured self-hosted / custom local OpenAI-compatible endpoints (e.g. http://host:8080) were successfull",
     "url": "https://github.com/Xitius/ZeroAI/pull/1",
     "source": "github_prs",
@@ -1057,7 +1057,7 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-15T09:08:48Z",
+    "date": "2026-08-15T17:19:21Z",
     "summary": "## Summary\n\n- **Base branch:** `master` at `2957ec3a9ea07128b8b64a765884989ca743ac13`\n- **What changed and why:**\n  - Add a dedicated `HailoOllamaModelProvider` for native Hailo-Ollama `/api/chat` and `/api/tags`, with Hailo-specific validation, request shaping, lifecycle, diagnostics, model discove",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
@@ -1249,7 +1249,7 @@
   },
   {
     "title": "[PR] release: 0.4.20 \u2014 surfaces that tell the truth, and the week that proved why they must",
-    "date": "2026-08-15T15:25:29Z",
+    "date": "2026-08-15T17:11:54Z",
     "summary": "The 0.4.20 line: **eight accepted decisions, four more written, and a correctness pass that came from one week of things being quietly broken.**\n\n> \u26a0\ufe0f **Merge with a merge commit, not squash.** Squashing a release branch is what created the fake \"651 ahead\" divergence last time.\n\n## The theme\n\nADR-0",
     "url": "https://github.com/kinqsradiollc/BrainRouter/pull/1302",
     "source": "github_prs",
@@ -1261,7 +1261,7 @@
   },
   {
     "title": "[PR] Flatten Ollama retry loop: extract HTTP-status routing and semantic-exhaustion handling",
-    "date": "2026-08-15T14:59:02Z",
+    "date": "2026-08-15T17:10:05Z",
     "summary": "## Summary\n\nThe `_ollama_post` retry loop in `backend/agents/llm_service/clients/ollama.py` handled several distinct failure modes inside one deeply nested `while True: try / with sem / with Client / with stream:` block \u2014 mixing HTTP-status routing (200/429/5xx/4xx/unexpected) with the semantic-exha",
     "url": "https://github.com/brandonkindred/Khala-Agentic-AI-Teams/pull/6388",
     "source": "github_prs",
@@ -1429,7 +1429,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-15T16:23:31Z",
+    "date": "2026-08-15T16:30:24Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@pl",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -1537,7 +1537,7 @@
   },
   {
     "title": "[PR] Fix top code-review findings: SSRF, autosave storm, password reset, config & data integrity",
-    "date": "2026-08-15T16:25:01Z",
+    "date": "2026-08-15T17:07:54Z",
     "summary": "Addresses the highest-priority findings from a full code review, in six focused commits. `tsc -b` and `vite build` pass; changes are compile-verified (no local DB/keys to exercise runtime paths \u2014 a manual smoke test against a real instance is recommended).\n\n## What's fixed\n\n**1. SSRF in the AI proxy",
     "url": "https://github.com/ibretsam/taskops/pull/3",
     "source": "github_prs",
@@ -1605,6 +1605,78 @@
       "comments: 0",
       "pull request",
       "repo: pix"
+    ]
+  },
+  {
+    "title": "Keeper turn budget (max_context) is resolved against the lane entry point, not the sticky-reordered candidate that actually dispatches",
+    "date": "2026-08-15T16:40:31Z",
+    "summary": "## \uc99d\uc0c1\n\nKeeper \uc0ac\uc774\ud074\uc758 \ud504\ub86c\ud504\ud2b8 \uc608\uc0b0(`max_context`, `context_budget`, `primary_budget`)\uc774 `deferred_runtime_lane`\uc774 \uac00\ub9ac\ud0a4\ub294 lane \uc9c4\uc785\uc810(entry point) \uae30\uc900\uc73c\ub85c \uacc4\uc0b0\ub418\ub294\ub370, `Runtime_lane_preference`\uc758 sticky ordering \ub54c\ubb38\uc5d0 **\uc2e4\uc81c\ub85c \ub514\uc2a4\ud328\uce58\ub418\ub294 candidate\ub294 \uadf8 lane \uc9c4\uc785\uc810\uacfc \ub2e4\ub978 runtime\uc77c \uc218 \uc788\ub2e4.** \uc774 \uacbd\uc6b0 \ud504\ub86c\ud504\ud2b8\ub294 \uc9c4\uc785\uc810 \ubaa8\ub378\uc758 context window\ub85c shaping\ub418\uc9c0\ub9cc, \uc2e4\uc81c\ub85c \uc694\uccad\uc744",
+    "url": "https://github.com/jeong-sik/masc/issues/28765",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: masc"
+    ]
+  },
+  {
+    "title": "Download links for: GeneralUserGS.sf2 download error message files instead of real SF2 file...",
+    "date": "2026-08-15T16:40:22Z",
+    "summary": "The AI wrote an windows 11 installer for this program.\n\nHowever there seems to be a problem the AI can't fix for now:\n\nEspecially this section:\n\n[2026-08-15 18:28:34] Downloading: https://github.com/musescore/MuseScore/blob/master/share/sound/GeneralUserGS.sf2?raw=true\n[2026-08-15 18:28:34] Destinat",
+    "url": "https://github.com/noah-chelednik/the-muser/issues/2",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 4",
+      "state: open",
+      "repo: the-muser"
+    ]
+  },
+  {
+    "title": "[PR] docs(ko): sync Korean docs with English manual restructure",
+    "date": "2026-08-15T17:22:10Z",
+    "summary": "## Summary\n\nRe-sync the Korean locale with the English docs refresh from #2153.\n\n- Translate 77 new pages: provider guides (65), integrations (6), configuration guides (5), and the desktop developer tools page.\n- Re-translate 10 pages whose English source changed.\n- Remove the 4 Korean `contributing",
+    "url": "https://github.com/moeru-ai/airi/pull/2296",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: airi"
+    ]
+  },
+  {
+    "title": "[PR] fix(web): refine Agent interaction and setup guidance",
+    "date": "2026-08-15T17:18:55Z",
+    "summary": "## PR Type\n\n- [x] fix\n- [ ] feat\n- [ ] refactor\n- [ ] docs\n- [ ] chore\n- [ ] test\n- [ ] ci\n\n## Background And Problem\n\nAgent Chat exposed backend execution events, but the live and persisted presentations did not clearly distinguish current, completed, skipped, failed, and timed-out work. Successful",
+    "url": "https://github.com/SiinXu/stock-pulse-ai/pull/1331",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: stock-pulse-ai"
+    ]
+  },
+  {
+    "title": "[PR] Real-world test surface: activate one real model path, honestly",
+    "date": "2026-08-15T17:09:30Z",
+    "summary": "## Why\n\n`MASTER_PLAN.md`'s \"Next 3 Moves\" item 4 has been *put Usable POC slice 1 into real-world use* since 2026-08-14. It could not be done: `/api/chat` ran on a stub that returned `\"Mock response for prompt: ...\"`. The runtime contract, governance, consent, memory capture and recall around it wer",
+    "url": "https://github.com/perolyat/Bartholomew-identity-system/pull/52",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Bartholomew-identity-system"
+    ]
+  },
+  {
+    "title": "[PR] chore(container): pin image itzg/mc-proxy to ddb1a11",
+    "date": "2026-08-15T16:57:59Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| itzg/mc-proxy | pinDigest |  \u2192 `ddb1a11` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not be looked up. Check the [Dependency Dashboard](../issues/2575) for more information.\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedul",
+    "url": "https://github.com/tyriis/home-ops/pull/9992",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: home-ops"
     ]
   }
 ]
