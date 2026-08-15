@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-15T07:33:59Z",
+    "date": "2026-08-15T08:31:58Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-15T07:04:39Z",
+    "date": "2026-08-15T08:17:54Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1069,7 +1069,7 @@
   },
   {
     "title": "[PR] Build SIW local evidence-governed OSINT runtime",
-    "date": "2026-08-15T07:06:06Z",
+    "date": "2026-08-15T07:50:10Z",
     "summary": "## Description\nTransforms OSINT Assistant into the first slice of **OrPaynter Sovereign Intelligence Workstation (SIW)**: a local-first, evidence-governed investigation runtime where local models analyze, controlled adapters collect authorized sources, policy gates authorize actions, and exports bec",
     "url": "https://github.com/orpaynter/OSINT-Assistant/pull/1",
     "source": "github_prs",
@@ -1093,19 +1093,19 @@
   },
   {
     "title": "[PR] fix(e2e): isolate Jetson onboarding from host Ollama",
-    "date": "2026-08-15T07:31:12Z",
+    "date": "2026-08-15T07:44:41Z",
     "summary": "## Summary\n\nJetson CPU-only E2E onboarding now uses a fixture-owned compatible inference endpoint instead of depending on the persistent host Ollama installation. The target retains the real install, OpenShell onboarding, installed-binary ownership, `Sandbox GPU: disabled`, and `/dev/nvmap` exclusio",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9204",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: NemoClaw"
     ]
   },
   {
     "title": "[PR] test: drive the golden path through a real browser (TQ-4)",
-    "date": "2026-08-15T07:27:02Z",
+    "date": "2026-08-15T07:37:12Z",
     "summary": "Closes TQ-4 in `docs/PRODUCTION_PLAN.md`, the second half of sprint PG-5.\n\n## What this adds\n\n`tests/e2e/test_golden_path.py` \u2014 sign in, upload a document, ask about it, and get back an answer that **cites the file just uploaded**. Plus a guard that an unauthenticated visit lands on `/login`, so the",
     "url": "https://github.com/jwvanderstam/LocalChat/pull/264",
     "source": "github_prs",
@@ -1125,6 +1125,54 @@
       "comments: 4",
       "pull request",
       "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] Nightly review rolling (through 2026-08-15)",
+    "date": "2026-08-15T08:24:16Z",
+    "summary": "## Summary\n\nAutomated nightly review (2026-07-03). Four review passes (bugs, security, UX, quality) across the `acp_adapter`, `agent`, and core modules. Seven fixes applied; several architectural findings deferred for human review.\n\n## Fixes applied\n\n| Severity | File:line | Description |\n|---|---|-",
+    "url": "https://github.com/iamhungree/hermes-agent/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 42",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] Add optional reasoning arm selection to the setup wizard",
+    "date": "2026-08-15T08:19:36Z",
+    "summary": "Adds the optional reasoning arm step to `recall setup`: yes or no, then provider, then model. Writes a new `RECALL_REASONING_*` family to `.env`.\n\nIntended for 0.9.5.\n\n## What this is, and what it is not\n\nThe wizard half only. **The code that consumes these variables does not exist yet**, and that i",
+    "url": "https://github.com/GiulioDER/RE-call/pull/335",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: RE-call"
+    ]
+  },
+  {
+    "title": "[PR] fix: reconcile governed Hermes post-driver lifecycle",
+    "date": "2026-08-15T08:09:55Z",
+    "summary": "## SP5 Ouroboros final correction\n\n- Prior reviewed SHA: `35724f227f2ec127bbcbb32c135b998773322ccf`\n- SP5 SHA: `0b05d8d0dc7d0fb3c58c2c8fa597a6d3275af86a`\n- Base: `feat/v07-discovery-governor` at `4d4f06dd520ad3a2a8ca02f71256fb7bfd0f6aaa`\n\n### RSP3 blockers corrected\n\n1. **B1 persisted non-completed ",
+    "url": "https://github.com/knowurknottty/CAPT_core/pull/46",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: CAPT_core"
+    ]
+  },
+  {
+    "title": "[PR] chore: audit dependencies and remove artifacts orphaned by the 1.0 rewrite",
+    "date": "2026-08-15T08:07:00Z",
+    "summary": "## Why are these changes needed?\n\n`pip install ag2`, several `ag2[...]` extras, and the dev dependency groups all pull packages that no code in the repo imports. Required dependencies in particular are something a downstream user cannot opt out of, so unused ones are pure install-size and supply-cha",
+    "url": "https://github.com/ag2ai/ag2/pull/3159",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ag2"
     ]
   }
 ]
