@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-15T04:34:12Z",
+    "date": "2026-08-15T05:27:21Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-15T04:17:52Z",
+    "date": "2026-08-15T05:13:56Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -625,7 +625,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-15T03:53:08Z",
+    "date": "2026-08-15T05:10:51Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/reportshq/pull/24",
     "source": "github_prs",
@@ -757,7 +757,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-08-15T02:49:06Z",
+    "date": "2026-08-15T05:09:21Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -793,12 +793,12 @@
   },
   {
     "title": "[PR] chore(deps): update dependency openai/codex to rust-v0.147.0",
-    "date": "2026-08-15T04:06:45Z",
+    "date": "2026-08-15T04:52:14Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `rust-v0.145.0` \u2192 `rust-v0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<sum",
     "url": "https://github.com/bitwise-media-group/patchy/pull/200",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: patchy"
     ]
@@ -829,12 +829,12 @@
   },
   {
     "title": "[PR] chore(deps): update dependency openai/codex to rust-v0.147.0",
-    "date": "2026-08-15T04:01:47Z",
+    "date": "2026-08-15T04:44:59Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `rust-v0.145.0` \u2192 `rust-v0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<sum",
     "url": "https://github.com/bitwise-media-group/evolve/pull/142",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: evolve"
     ]
@@ -913,7 +913,7 @@
   },
   {
     "title": "[PR] feat(platform): add list_user_credentials CoPilot tool for credential discovery",
-    "date": "2026-08-15T04:34:48Z",
+    "date": "2026-08-15T04:35:12Z",
     "summary": "### Why / What / How\n\n**Why:** CoPilot has no way to know which credentials/integrations the user has already connected before attempting a task (REQ-112). Its only discovery paths today are shelling out to `gh auth status` (GitHub-only, E2B-only) or attempting a `run_block`/`run_agent` and reading ",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13701",
     "source": "github_prs",
@@ -937,12 +937,12 @@
   },
   {
     "title": "[PR] Logic/",
-    "date": "2026-08-15T04:16:08Z",
+    "date": "2026-08-15T05:19:18Z",
     "summary": "- **backups: derive pipelines from service sources**\n- **backups: declare Servarr native archives**\n- **backups: capture Shelfmark state**\n- **backups: preserve live Transmission state**\n- **backups: remove aggregate Servarr state source**\n- **backups: make server role host-agnostic**\n- **inventory:",
     "url": "https://github.com/booxter/nix/pull/823",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 20",
       "pull request",
       "repo: nix"
     ]
@@ -969,6 +969,42 @@
       "comments: 2",
       "pull request",
       "repo: GuildOps"
+    ]
+  },
+  {
+    "title": "[PR] Fix endpoint URL normalization and cap on-device Gemma context window",
+    "date": "2026-08-15T05:05:03Z",
+    "summary": "Investigated and repaired external/local model endpoint execution failures and applied bounded memory stabilization to on-device Gemma models:\n\n1. Endpoint Normalization (Part A):\n- Root Cause: Configured self-hosted / custom local OpenAI-compatible endpoints (e.g. http://host:8080) were successfull",
+    "url": "https://github.com/Xitius/ZeroAI/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ZeroAI"
+    ]
+  },
+  {
+    "title": "[PR] Omi self-hostable fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,keycloak - llm: openai - notifications: FCM, unifiedpush)",
+    "date": "2026-08-15T04:42:19Z",
+    "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
+    "url": "https://github.com/BasedHardware/omi/pull/10887",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: omi"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/kedacore/keda/v2 to v2.20.0 [security]",
+    "date": "2026-08-15T05:05:37Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/kedacore/keda/v2](https://redirect.github.com/kedacore/keda) | `v2.17.3` \u2192 `v2.20.0` | ",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1690",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: k8sgpt"
     ]
   }
 ]
