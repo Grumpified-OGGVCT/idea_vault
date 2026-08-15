@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-15T03:42:22Z",
+    "date": "2026-08-15T04:34:12Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-15T03:01:46Z",
+    "date": "2026-08-15T04:17:52Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -625,7 +625,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-15T00:13:43Z",
+    "date": "2026-08-15T03:53:08Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/reportshq/pull/24",
     "source": "github_prs",
@@ -697,8 +697,8 @@
   },
   {
     "title": "[PR] fix(integration): record-map write amplification, pagination-violation visibility, non-blocking schema refresh",
-    "date": "2026-08-15T03:26:17Z",
-    "summary": "Three independent, low-risk fixes on the connector apply path. Each stands alone \u2014 none depends on the others.\n\n### 1. `TrackRecordChanges = 0` for `MJ: Company Integration Record Maps` (migration)\n\n`CompanyIntegrationRecordMap` is the highest-volume table the sync path writes: one row per external ",
+    "date": "2026-08-15T03:50:27Z",
+    "summary": "Three independent, low-risk fixes on the connector apply path. Each stands alone \u2014 none depends on the others.\n\n### 1. `TrackRecordChanges = 0` for `MJ: Company Integration Record Maps` (metadata)\n\n`CompanyIntegrationRecordMap` is the highest-volume table the sync path writes: one row per external r",
     "url": "https://github.com/MemberJunction/MJ/pull/3354",
     "source": "github_prs",
     "highlights": [
@@ -793,7 +793,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency openai/codex to rust-v0.147.0",
-    "date": "2026-08-15T02:30:43Z",
+    "date": "2026-08-15T04:06:45Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `rust-v0.145.0` \u2192 `rust-v0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<sum",
     "url": "https://github.com/bitwise-media-group/patchy/pull/200",
     "source": "github_prs",
@@ -829,7 +829,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency openai/codex to rust-v0.147.0",
-    "date": "2026-08-15T01:56:27Z",
+    "date": "2026-08-15T04:01:47Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `rust-v0.145.0` \u2192 `rust-v0.147.0` |\n\n---\n\n### Release Notes\n\n<details>\n<sum",
     "url": "https://github.com/bitwise-media-group/evolve/pull/142",
     "source": "github_prs",
@@ -889,7 +889,7 @@
   },
   {
     "title": "[PR] Feat/offensive module expansion",
-    "date": "2026-08-15T03:30:58Z",
+    "date": "2026-08-15T03:47:34Z",
     "summary": "This pull request introduces several important enhancements and changes to the Security-Agent project, focusing on new engagement templates, expanded local LLM integration (Ollama), and a shift to a new source-available license. It also includes documentation updates and configuration improvements.\r",
     "url": "https://github.com/flipflowglobal/security-agent/pull/72",
     "source": "github_prs",
@@ -909,6 +909,66 @@
       "comments: 0",
       "pull request",
       "repo: PRN222-RAG-Assistant"
+    ]
+  },
+  {
+    "title": "[PR] feat(platform): add list_user_credentials CoPilot tool for credential discovery",
+    "date": "2026-08-15T04:34:48Z",
+    "summary": "### Why / What / How\n\n**Why:** CoPilot has no way to know which credentials/integrations the user has already connected before attempting a task (REQ-112). Its only discovery paths today are shelling out to `gh auth status` (GitHub-only, E2B-only) or attempting a `run_block`/`run_agent` and reading ",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13701",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] feat(scheduling): \u65b0\u589e TTFT \u76f8\u5bf9\u9000\u5316\u8d28\u91cf\u4fe1\u53f7",
+    "date": "2026-08-15T04:32:14Z",
+    "summary": "## \u6982\u8ff0\n\n\u8fd9\u662f #147 \u7684\u53e0\u52a0 PR\uff0c\u8bf7\u5148\u5408\u5e76 #147\uff0c\u518d\u8bc4\u5ba1/\u5408\u5e76\u672c PR\u3002\n\n\u5728\u7edf\u4e00\u667a\u80fd\u8c03\u5ea6\u63a7\u5236\u53f0\u4e4b\u4e0a\u5b9e\u73b0 issue #135 \u7684 TTFT \u76f8\u5bf9\u9000\u5316\u8d28\u91cf\u4fe1\u53f7\uff0c\u7528\u4e8e\u53d1\u73b0\u201c\u8bf7\u6c42\u6210\u529f\u4f46\u9996 Token \u660e\u663e\u53d8\u6162\u201d\u7684\u8d26\u53f7\u3002\n\n## \u4e3b\u8981\u53d8\u66f4\n\n- \u6309\u300c\u8d26\u53f7 \u00d7 \u5206\u7ec4 \u00d7 \u5b9e\u9645\u4e0a\u6e38\u6a21\u578b\u300d\u805a\u5408\u6700\u8fd1 15 \u5206\u949f\u6d41\u5f0f\u8bf7\u6c42\u7684 TTFT P50/P95\n- \u5b9e\u9645\u6a21\u578b\u4f18\u5148\u4f7f\u7528 `upstream_model`\uff0c\u5386\u53f2\u6570\u636e\u56de\u9000 `model`\n- \u4ec5\u5728\u540c\u4e00\u5206\u7ec4\u3001\u540c\u4e00\u6a21\u578b\u7684\u540c\u884c\u8d26\u53f7\u5185\u8ba1\u7b97\u4e2d\u4f4d\u6570\u57fa\u7ebf\n- \u6700\u5c0f\u6837\u672c\u6570\u3001\u6700\u5c0f\u540c\u884c\u6570\u4e0d\u8db3\u6216\u67e5\u8be2\u8d85\u65f6\u65f6 fail-open\uff0c\u4e0d\u5f71\u54cd\u8bf7\u6c42\u94fe\u8def\n- Redis \u5b58\u50a8\u8d26\u53f7 TT",
+    "url": "https://github.com/Synflux-AI/sub2api/pull/148",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: sub2api"
+    ]
+  },
+  {
+    "title": "[PR] Logic/",
+    "date": "2026-08-15T04:16:08Z",
+    "summary": "- **backups: derive pipelines from service sources**\n- **backups: declare Servarr native archives**\n- **backups: capture Shelfmark state**\n- **backups: preserve live Transmission state**\n- **backups: remove aggregate Servarr state source**\n- **backups: make server role host-agnostic**\n- **inventory:",
+    "url": "https://github.com/booxter/nix/pull/823",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nix"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-08-15T03:53:36Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@antfu/ni](https://redirect",
+    "url": "https://github.com/moeru-ai/hf-inspector/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hf-inspector"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.44.0",
+    "date": "2026-08-15T04:30:20Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/antony-ramos/GuildOps/pull/132",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: GuildOps"
     ]
   }
 ]
