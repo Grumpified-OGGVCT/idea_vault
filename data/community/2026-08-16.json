@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-16T22:08:12Z",
+    "date": "2026-08-16T23:08:10Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -745,12 +745,12 @@
   },
   {
     "title": "[PR] test(e2e): execute native runtime qualification",
-    "date": "2026-08-16T22:23:36Z",
+    "date": "2026-08-16T22:37:08Z",
     "summary": "## Summary\n\nExecute the canonical 24-case native Podman qualification matrix on protected runners and preserve exact installer, runtime, lifecycle, recovery, GPU, and cleanup receipts for the existing B4-F consumer. Candidate execution stays credential-free and unprivileged with Docker unavailable; ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9232",
     "source": "github_prs",
     "highlights": [
-      "comments: 26",
+      "comments: 28",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -1164,9 +1164,9 @@
     ]
   },
   {
-    "title": "[PR] Plan Aidos SDK integration for the Android port",
-    "date": "2026-08-16T21:14:05Z",
-    "summary": "Plan only \u2014 no code. Adds `docs/AIDOS_SDK_INTEGRATION_PLAN.md`.\n\nCompanion PR on the Aidos side, which owns the SDK, the Engine and the RFC: [jsilvanus/aidos#37](https://github.com/jsilvanus/aidos/pull/37).\n\n## What this gets Dictator\n\n[Aidos Engine](https://github.com/jsilvanus/aidos) is a separate",
+    "title": "[PR] Aidos SDK integration plan, and D0: Kotlin 2.4.10 / JVM 21",
+    "date": "2026-08-16T22:51:27Z",
+    "summary": "Adds `docs/AIDOS_SDK_INTEGRATION_PLAN.md` and lands the first half of **D0**, the toolchain migration.\n\nCompanion work on the Aidos side: [aidos#37](https://github.com/jsilvanus/aidos/pull/37) (S0 \u2014 the SDK compiles) and [aidos#39](https://github.com/jsilvanus/aidos/pull/39) (S1 \u2014 trust model), both",
     "url": "https://github.com/jsilvanus/dictator/pull/11",
     "source": "github_prs",
     "highlights": [
@@ -1213,7 +1213,7 @@
   },
   {
     "title": "[PR] Fix endpoint URL normalization and cap on-device Gemma context window",
-    "date": "2026-08-16T21:03:49Z",
+    "date": "2026-08-16T22:32:26Z",
     "summary": "## Summary\n\nThis PR contains three bounded correction areas:\n\n1. **OpenAI-compatible endpoint normalization** for local/custom providers.\n2. **On-device Gemma LiteRT memory stabilization** by reducing the configured engine context to 4,096 tokens and providing an app-private GPU cache directory.\n3. ",
     "url": "https://github.com/Xitius/ZeroAI/pull/1",
     "source": "github_prs",
@@ -1417,7 +1417,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-16T22:09:42Z",
+    "date": "2026-08-16T22:39:23Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -1513,7 +1513,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-16T20:08:52Z",
+    "date": "2026-08-16T23:04:11Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/ts-md/pull/99",
     "source": "github_prs",
@@ -1621,12 +1621,12 @@
   },
   {
     "title": "[PR] Local-first metadata: chapters-first pipeline, per-task units, Headline adapters for description + tags",
-    "date": "2026-08-16T21:58:37Z",
+    "date": "2026-08-16T22:48:01Z",
     "summary": "## What this does\n\nMoves metadata generation to local-first. Chapters generate first on local Ollama (the sealed 14B method), their subject list conditions everything downstream, and description + tags now run on the fine-tuned Headline adapters by default. Claude keeps a single focused packaging ca",
     "url": "https://github.com/telltaleatheist/ContentStudio/pull/17",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: ContentStudio"
     ]
@@ -1653,6 +1653,42 @@
       "comments: 70",
       "pull request",
       "repo: unsloth"
+    ]
+  },
+  {
+    "title": "Inferencers: capability metadata, discovered by default (route/validate/surface by what a backend can actually do)",
+    "date": "2026-08-16T23:22:03Z",
+    "summary": "## Problem\n\nwoollama routes by `<provider>/<model>` and forwards chat, images and embeddings to the inferencer's OpenAI-compatible endpoints. It has **no notion of what a backend can actually do**, so:\n\n- an image request can be routed to a text-only backend, or to a multi-modal backend that current",
+    "url": "https://github.com/teaguesterling/woollama/issues/20",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: woollama"
+    ]
+  },
+  {
+    "title": "[PR] Hailo catalog take 5: fix hardware_tiers indentation + remove the two fabricated pins (supersedes PR #2451)",
+    "date": "2026-08-16T23:18:42Z",
+    "summary": "CARD TITLE (intent, not commit subject): Hailo catalog take 5: fix hardware_tiers indentation + remove the two fabricated pins (supersedes PR #2451)\n\nAutonomous build of board card tsk-23yvb3.\n\nREVISION: built on `exec/tsk-mik3ig` (cut at `653d20611557e152340d8650323e283fe03bc0e7`), not on `dev`. Th",
+    "url": "https://github.com/jaylfc/taOS/pull/2453",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: taOS"
+    ]
+  },
+  {
+    "title": "[PR] feat(core): Embedded Records \u2014 owner-held 1:1 BaseEntity companions",
+    "date": "2026-08-16T23:12:20Z",
+    "summary": "## Summary\n\nAdds **Embedded Records**, the third composition axis on `BaseEntity` \u2014 an opt-in 1:1 peer joined by an **owner-held** foreign key (`Deal.OrderID` \u2192 Order) that loads, validates, and persists as one unit from a single `entity.Save()`, on both tiers.\n\nThis is not IS-A (shared PK, table-pe",
+    "url": "https://github.com/MemberJunction/MJ/pull/3874",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
