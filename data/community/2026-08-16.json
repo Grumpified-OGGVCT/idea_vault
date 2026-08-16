@@ -553,12 +553,12 @@
   },
   {
     "title": "[PR] [Agent U] feat(core): adversarial-review task class \u2014 cross-provider reviewer, read-only + find-only mandate, review ledger + pair scores (HED-3)",
-    "date": "2026-08-16T00:56:25Z",
+    "date": "2026-08-16T17:11:48Z",
     "summary": "## **User description**\nFixes HED-3. Refs HED-56, HED-50.\n\n**Stacked on #12** (HED-78) \u2192 #9 \u2192 #7 \u2192 #5. **Waits for Maya** (Maya: \"super important\"). Retarget as the base PRs merge.\n\n## What\nPre-PR, before the human looks: a **different model family** reviews the author's worktree **read-only** with ",
     "url": "https://github.com/mmayasaurus/heddle/pull/15",
     "source": "github_prs",
     "highlights": [
-      "comments: 22",
+      "comments: 26",
       "pull request",
       "repo: heddle"
     ]
@@ -577,7 +577,7 @@
   },
   {
     "title": "[PR] feat(auth): metadata-driven pluggable authentication providers",
-    "date": "2026-08-16T00:31:47Z",
+    "date": "2026-08-16T16:29:48Z",
     "summary": "## Summary\n\nMakes MemberJunction's authentication providers pluggable **the MJ way** \u2014 discovered via `@RegisterClass` and configured through metadata, environment variables, or the config file, all resolved through the same `ClassFactory`. Adding a provider is now a subclass plus a row. **Zero core",
     "url": "https://github.com/MemberJunction/MJ/pull/2985",
     "source": "github_prs",
@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-16T16:10:00Z",
+    "date": "2026-08-16T17:13:10Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -745,12 +745,12 @@
   },
   {
     "title": "[PR] test(e2e): execute native runtime qualification",
-    "date": "2026-08-16T16:26:34Z",
+    "date": "2026-08-16T17:22:25Z",
     "summary": "## Summary\n\nExecute the canonical 24-case native Podman qualification matrix on protected runners and preserve exact installer, runtime, lifecycle, recovery, GPU, and cleanup receipts for the existing B4-F consumer. Candidate execution stays credential-free and unprivileged with Docker unavailable; ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9232",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 19",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -853,7 +853,7 @@
   },
   {
     "title": "[PR] feat(specialist): zeromaxing posture and orchestrate plan execution",
-    "date": "2026-08-16T15:20:16Z",
+    "date": "2026-08-16T17:22:10Z",
     "summary": "## How to review this PR\n\nIt is one PR by necessity \u2014 the areas share core files (`plan_tool.go`,\n`plan_exec.go`, `app.go` are each touched by many commits), so they cannot be\ncleanly split into separate PRs without breaking builds. But the changes are\n**independent by concern**. Review area by area",
     "url": "https://github.com/Gitlawb/zero/pull/829",
     "source": "github_prs",
@@ -1261,12 +1261,12 @@
   },
   {
     "title": "[PR] feat(#200): provider budget ledger and first-hit exhaustion baseline",
-    "date": "2026-08-16T15:49:51Z",
+    "date": "2026-08-16T17:22:18Z",
     "summary": "Part of #200\n\n## Scope\n\nBaseline implementation of provider budget tracking: Phase 0 (probe research), Phase 1 (domain model + ledger core), Phase 2 (first-hit wire-in). No Phase 3+ code.\n\n### Phase 0 \u2014 Probe & Research (`docs/budget-spike.md`)\n\nSanitized probe results for 3 provider adapter strateg",
     "url": "https://github.com/gtnotacoder/pi-dynamic-workflows/pull/202",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 16",
       "pull request",
       "repo: pi-dynamic-workflows"
     ]
@@ -1345,7 +1345,7 @@
   },
   {
     "title": "[PR] build: enforce strict Python quality gates",
-    "date": "2026-08-16T16:28:37Z",
+    "date": "2026-08-16T16:51:34Z",
     "summary": "## Summary\r\n- tighten Ruff, formatting, MyPy, Pydantic plugin, and pytest configuration for both Python services\r\n- add locked pre-commit hooks and repository-local reusable CI workflows with pinned actions\r\n- harden GPU embedding validation, typed LangGraph inputs, and lifespan cleanup with regress",
     "url": "https://github.com/finki-hub/chat-bot/pull/825",
     "source": "github_prs",
@@ -1413,6 +1413,18 @@
       "comments: 12",
       "pull request",
       "repo: FreeShow"
+    ]
+  },
+  {
+    "title": "[PR] update to the current upstream",
+    "date": "2026-08-16T17:04:24Z",
+    "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
+    "url": "https://github.com/EugOT/zeroclaw/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: zeroclaw"
     ]
   }
 ]
