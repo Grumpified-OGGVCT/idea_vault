@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] release: 0.4.20 \u2014 surfaces that tell the truth, and the week that proved why they must",
-    "date": "2026-08-16T07:27:15Z",
+    "date": "2026-08-16T07:56:58Z",
     "summary": "The 0.4.20 line: **eight accepted decisions, four more written, and a correctness pass that came from one week of things being quietly broken.**\n\n> \u26a0\ufe0f **Merge with a merge commit, not squash.** Squashing a release branch is what created the fake \"651 ahead\" divergence last time.\n\n## The theme\n\nADR-0",
     "url": "https://github.com/kinqsradiollc/BrainRouter/pull/1302",
     "source": "github_prs",
@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-16T07:06:03Z",
+    "date": "2026-08-16T08:23:28Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -625,7 +625,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-16T06:47:49Z",
+    "date": "2026-08-16T08:13:35Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@pl",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -745,7 +745,7 @@
   },
   {
     "title": "[PR] test(e2e): execute native runtime qualification",
-    "date": "2026-08-16T07:29:10Z",
+    "date": "2026-08-16T08:18:58Z",
     "summary": "## Summary\n\nExecute the canonical 24-case native Podman qualification matrix on protected runners and preserve exact installer, runtime, lifecycle, recovery, GPU, and cleanup receipts for the existing B4-F consumer. Candidate execution stays credential-free and unprivileged with Docker unavailable; ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9232",
     "source": "github_prs",
@@ -925,7 +925,7 @@
   },
   {
     "title": "[PR] Update Container images",
-    "date": "2026-08-16T05:16:10Z",
+    "date": "2026-08-16T08:16:03Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [cloudflare/cloudflared](https://redirect.github.com/cloudflare/cloudflared) | minor | `2026.7.3` \u2192 `2026.8.2` |\n| [docker.n8n.io/n8nio/n8n](h",
     "url": "https://github.com/bubacoder/infra/pull/386",
     "source": "github_prs",
@@ -1009,7 +1009,7 @@
   },
   {
     "title": "[PR] \ud83e\uddec Genesis: Added Resilience Primitives (Circuit Breaker & Retry) to External Services",
-    "date": "2026-08-16T07:14:18Z",
+    "date": "2026-08-16T08:16:26Z",
     "summary": "## \ud83e\uddec Self-Healing Architecture Added\n\n**What:** Centralized resilience module (`backend/core/resilience.py`) with thread-safe `CircuitBreaker`, `with_retry`, and `with_retry_sync` decorators.\n**Failure scenario protected:** Third-party integrations (`Groq`, `Honeypot.is`) and internal services (`Oll",
     "url": "https://github.com/Akullganesh19/CodeKrackers/pull/251",
     "source": "github_prs",
@@ -1045,7 +1045,7 @@
   },
   {
     "title": "[PR] Omi self-hostable fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,keycloak - llm: openai - notifications: FCM, unifiedpush)",
-    "date": "2026-08-16T06:57:40Z",
+    "date": "2026-08-16T08:29:03Z",
     "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
     "url": "https://github.com/BasedHardware/omi/pull/10887",
     "source": "github_prs",
@@ -1053,6 +1053,30 @@
       "comments: 17",
       "pull request",
       "repo: omi"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-08-16T08:30:55Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] Nightly review rolling (through 2026-08-16)",
+    "date": "2026-08-16T08:25:12Z",
+    "summary": "## Summary\n\nAutomated nightly review (2026-07-03). Four review passes (bugs, security, UX, quality) across the `acp_adapter`, `agent`, and core modules. Seven fixes applied; several architectural findings deferred for human review.\n\n## Fixes applied\n\n| Severity | File:line | Description |\n|---|---|-",
+    "url": "https://github.com/iamhungree/hermes-agent/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 43",
+      "pull request",
+      "repo: hermes-agent"
     ]
   }
 ]
