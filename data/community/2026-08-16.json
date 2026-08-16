@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] release: 0.4.20 \u2014 surfaces that tell the truth, and the week that proved why they must",
-    "date": "2026-08-16T06:32:05Z",
+    "date": "2026-08-16T07:27:15Z",
     "summary": "The 0.4.20 line: **eight accepted decisions, four more written, and a correctness pass that came from one week of things being quietly broken.**\n\n> \u26a0\ufe0f **Merge with a merge commit, not squash.** Squashing a release branch is what created the fake \"651 ahead\" divergence last time.\n\n## The theme\n\nADR-0",
     "url": "https://github.com/kinqsradiollc/BrainRouter/pull/1302",
     "source": "github_prs",
@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-16T06:18:31Z",
+    "date": "2026-08-16T07:06:03Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -625,7 +625,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-16T04:44:07Z",
+    "date": "2026-08-16T06:47:49Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@pl",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -745,7 +745,7 @@
   },
   {
     "title": "[PR] test(e2e): execute native runtime qualification",
-    "date": "2026-08-16T06:32:49Z",
+    "date": "2026-08-16T07:29:10Z",
     "summary": "## Summary\n\nExecute the canonical 24-case native Podman qualification matrix on protected runners and preserve exact installer, runtime, lifecycle, recovery, GPU, and cleanup receipts for the existing B4-F consumer. Candidate execution stays credential-free and unprivileged with Docker unavailable; ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9232",
     "source": "github_prs",
@@ -949,7 +949,7 @@
   },
   {
     "title": "[PR] Revive pipeline fixes and transcription stage",
-    "date": "2026-08-16T06:41:29Z",
+    "date": "2026-08-16T06:51:52Z",
     "summary": "## Summary\n- Fix broken mocks and stale assertions in the existing test suite\n- Repair the broken CrewAI pipeline wiring in main.py/api_server.py\n- Add a transcription stage ahead of the agent pipeline\n- Add GGZ/healthcare compliance considerations\n- Document speaker diarization as a next step, not ",
     "url": "https://github.com/pkuppens/healthcare-aigent/pull/5",
     "source": "github_prs",
@@ -1005,6 +1005,54 @@
       "comments: 1",
       "pull request",
       "repo: mneme"
+    ]
+  },
+  {
+    "title": "[PR] \ud83e\uddec Genesis: Added Resilience Primitives (Circuit Breaker & Retry) to External Services",
+    "date": "2026-08-16T07:14:18Z",
+    "summary": "## \ud83e\uddec Self-Healing Architecture Added\n\n**What:** Centralized resilience module (`backend/core/resilience.py`) with thread-safe `CircuitBreaker`, `with_retry`, and `with_retry_sync` decorators.\n**Failure scenario protected:** Third-party integrations (`Groq`, `Honeypot.is`) and internal services (`Oll",
+    "url": "https://github.com/Akullganesh19/CodeKrackers/pull/251",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: CodeKrackers"
+    ]
+  },
+  {
+    "title": "[PR] [pull] main from lobehub:main",
+    "date": "2026-08-16T07:02:46Z",
+    "summary": "See [Commits](/rcy1314/lobe-chat/pull/66/commits) and [Changes](/rcy1314/lobe-chat/pull/66/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.1)\n\n_Can you help keep this open source ser",
+    "url": "https://github.com/rcy1314/lobe-chat/pull/66",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2500",
+      "pull request",
+      "repo: lobe-chat"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update testcontainers-node monorepo to v12",
+    "date": "2026-08-16T06:59:57Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@testcontainers/postgresql]",
+    "url": "https://github.com/frederikb96/postimap/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: postimap"
+    ]
+  },
+  {
+    "title": "[PR] Omi self-hostable fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,keycloak - llm: openai - notifications: FCM, unifiedpush)",
+    "date": "2026-08-16T06:57:40Z",
+    "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
+    "url": "https://github.com/BasedHardware/omi/pull/10887",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: omi"
     ]
   }
 ]
