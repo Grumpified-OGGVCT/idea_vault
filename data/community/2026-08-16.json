@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-16T15:11:32Z",
+    "date": "2026-08-16T16:10:00Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -721,7 +721,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-16T03:09:19Z",
+    "date": "2026-08-16T15:48:43Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/reportshq/pull/24",
     "source": "github_prs",
@@ -745,12 +745,12 @@
   },
   {
     "title": "[PR] test(e2e): execute native runtime qualification",
-    "date": "2026-08-16T15:20:26Z",
+    "date": "2026-08-16T16:26:34Z",
     "summary": "## Summary\n\nExecute the canonical 24-case native Podman qualification matrix on protected runners and preserve exact installer, runtime, lifecycle, recovery, GPU, and cleanup receipts for the existing B4-F consumer. Candidate execution stays credential-free and unprivileged with Docker unavailable; ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9232",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 13",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -1261,12 +1261,12 @@
   },
   {
     "title": "[PR] feat(#200): provider budget ledger and first-hit exhaustion baseline",
-    "date": "2026-08-16T15:04:52Z",
+    "date": "2026-08-16T15:49:51Z",
     "summary": "Part of #200\n\n## Scope\n\nBaseline implementation of provider budget tracking: Phase 0 (probe research), Phase 1 (domain model + ledger core), Phase 2 (first-hit wire-in). No Phase 3+ code.\n\n### Phase 0 \u2014 Probe & Research (`docs/budget-spike.md`)\n\nSanitized probe results for 3 provider adapter strateg",
     "url": "https://github.com/gtnotacoder/pi-dynamic-workflows/pull/202",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 11",
       "pull request",
       "repo: pi-dynamic-workflows"
     ]
@@ -1345,7 +1345,7 @@
   },
   {
     "title": "[PR] build: enforce strict Python quality gates",
-    "date": "2026-08-16T14:44:47Z",
+    "date": "2026-08-16T16:28:37Z",
     "summary": "## Summary\r\n- tighten Ruff, formatting, MyPy, Pydantic plugin, and pytest configuration for both Python services\r\n- add locked pre-commit hooks and repository-local reusable CI workflows with pinned actions\r\n- harden GPU embedding validation, typed LangGraph inputs, and lifespan cleanup with regress",
     "url": "https://github.com/finki-hub/chat-bot/pull/825",
     "source": "github_prs",
@@ -1389,6 +1389,30 @@
       "comments: 2",
       "pull request",
       "repo: orca"
+    ]
+  },
+  {
+    "title": "[PR] libpisp: 1.2.1 -> 1.7.0",
+    "date": "2026-08-16T16:26:51Z",
+    "summary": "https://github.com/raspberrypi/libpisp/releases/tag/v1.6.0\r\n\r\nSupersedes #453086\r\n\r\n## Things done\r\n\r\n<!-- Please check what applies. Note that these are not hard requirements but merely serve as information for reviewers. -->\r\n\r\n- Built on platform:\r\n  - [x] x86_64-linux\r\n  - [ ] aarch64-linux\r\n  -",
+    "url": "https://github.com/NixOS/nixpkgs/pull/548298",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] AI auto scripture: local transcription + AI reference detection (opt-in)",
+    "date": "2026-08-16T15:40:33Z",
+    "summary": "> Builds on #3578 (its commit is included here) \u2014 happy to rebase once that lands, or fold both together if preferred.\n\n## What\n\n**AI auto scripture** (opt-in, off by default): FreeShow listens to the sermon, transcribes locally with whisper.cpp, detects scripture references \u2014 both spoken (\"John cha",
+    "url": "https://github.com/ChurchApps/FreeShow/pull/3579",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: FreeShow"
     ]
   }
 ]
