@@ -229,7 +229,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-15T18:08:15Z",
+    "date": "2026-08-16T01:27:07Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -493,12 +493,12 @@
   },
   {
     "title": "[PR] release: 0.4.20 \u2014 surfaces that tell the truth, and the week that proved why they must",
-    "date": "2026-08-16T01:24:40Z",
+    "date": "2026-08-16T02:57:44Z",
     "summary": "The 0.4.20 line: **eight accepted decisions, four more written, and a correctness pass that came from one week of things being quietly broken.**\n\n> \u26a0\ufe0f **Merge with a merge commit, not squash.** Squashing a release branch is what created the fake \"651 ahead\" divergence last time.\n\n## The theme\n\nADR-0",
     "url": "https://github.com/kinqsradiollc/BrainRouter/pull/1302",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: BrainRouter"
     ]
@@ -517,7 +517,7 @@
   },
   {
     "title": "[PR] Fix top code-review findings: SSRF, autosave storm, password reset, config & data integrity",
-    "date": "2026-08-16T01:17:27Z",
+    "date": "2026-08-16T02:55:01Z",
     "summary": "Addresses the highest-priority findings from a full code review, in six focused commits. `tsc -b` and `vite build` pass; changes are compile-verified (no local DB/keys to exercise runtime paths \u2014 a manual smoke test against a real instance is recommended).\n\n## What's fixed\n\n**1. SSRF in the AI proxy",
     "url": "https://github.com/ibretsam/taskops/pull/3",
     "source": "github_prs",
@@ -541,7 +541,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-16T00:56:45Z",
+    "date": "2026-08-16T02:07:52Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/trifitla/pull/1",
     "source": "github_prs",
@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-16T00:30:54Z",
+    "date": "2026-08-16T02:09:11Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -625,7 +625,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-16T00:12:02Z",
+    "date": "2026-08-16T01:49:03Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@pl",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -685,7 +685,7 @@
   },
   {
     "title": "[PR] Update JavaScript package dependencies",
-    "date": "2026-08-15T23:48:13Z",
+    "date": "2026-08-16T02:05:10Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@agentclientprotocol/sdk](h",
     "url": "https://github.com/edmundmiller/dotfiles/pull/214",
     "source": "github_prs",
@@ -729,6 +729,78 @@
       "comments: 0",
       "pull request",
       "repo: reportshq"
+    ]
+  },
+  {
+    "title": "[PR] [feat] plugin: AI summary of search results via local Ollama server",
+    "date": "2026-08-16T02:56:34Z",
+    "summary": "## What this adds\n\nAn optional, **disabled-by-default** plugin that shows an AI-generated summary at the top of the results page, produced by a self-hosted LLM server speaking the **OpenAI chat completions API** \u2014 Ollama (which serves it natively), vLLM, llama.cpp, LM Studio, Hugging Face TGI, etc..",
+    "url": "https://github.com/jasonwitty/searxng/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: searxng"
+    ]
+  },
+  {
+    "title": "[PR] test(e2e): execute native runtime qualification",
+    "date": "2026-08-16T02:56:29Z",
+    "summary": "## Summary\n\nExecute the canonical 24-case native Podman qualification matrix on protected runners and preserve exact installer, runtime, lifecycle, recovery, GPU, and cleanup receipts for the existing B4-F consumer. Candidate execution stays credential-free and unprivileged with Docker unavailable; ",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/9232",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-08-16T02:44:14Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] Harden direct-message recipient verification",
+    "date": "2026-08-16T02:36:28Z",
+    "summary": "## Summary\n\n- add structured planner messaging targets for named recipients and active conversations\n- pin active-conversation authorization to one verified visible identity before page tools run\n- fail closed when the target, composer, or recipient evidence is inconclusive or mismatched\n- block alt",
+    "url": "https://github.com/esokullu/webbrain/pull/276",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: webbrain"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-08-16T02:20:31Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] fix(hermes_cli): stop dashboard endpoint probes from SSRF-scanning cloud metadata",
+    "date": "2026-08-16T01:38:33Z",
+    "summary": "## What does this PR do?\r\n\r\nDashboard custom-endpoint and `OPENAI_BASE_URL` validation previously issued server-side HTTP GETs to any user-supplied URL with no scheme or cloud-metadata floor. Authenticated callers on a gated (non-loopback) dashboard bind could probe link-local metadata and similar a",
+    "url": "https://github.com/NousResearch/hermes-agent/pull/71735",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: hermes-agent"
     ]
   }
 ]
