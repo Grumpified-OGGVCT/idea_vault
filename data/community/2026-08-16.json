@@ -301,12 +301,12 @@
   },
   {
     "title": "Want to suggest a wake word? Leave your thoughts here. (AIS-1441)",
-    "date": "2026-08-14T23:47:38Z",
+    "date": "2026-08-16T04:17:06Z",
     "summary": "Hi all,\n\nWe're excited to offer the community more free and high-quality wake word models. Everyone has their own unique wake word preferences. Now, we're ready to regularly release some of the most popular wake words. Please let us know the wake words you want! \n\n**Already supported languages: Chin",
     "url": "https://github.com/espressif/esp-sr/issues/88",
     "source": "github_issues",
     "highlights": [
-      "comments: 438",
+      "comments: 439",
       "state: open",
       "repo: esp-sr"
     ]
@@ -493,7 +493,7 @@
   },
   {
     "title": "[PR] release: 0.4.20 \u2014 surfaces that tell the truth, and the week that proved why they must",
-    "date": "2026-08-16T02:57:44Z",
+    "date": "2026-08-16T04:28:16Z",
     "summary": "The 0.4.20 line: **eight accepted decisions, four more written, and a correctness pass that came from one week of things being quietly broken.**\n\n> \u26a0\ufe0f **Merge with a merge commit, not squash.** Squashing a release branch is what created the fake \"651 ahead\" divergence last time.\n\n## The theme\n\nADR-0",
     "url": "https://github.com/kinqsradiollc/BrainRouter/pull/1302",
     "source": "github_prs",
@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-16T02:09:11Z",
+    "date": "2026-08-16T04:25:03Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -625,7 +625,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-16T01:49:03Z",
+    "date": "2026-08-16T03:06:59Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@pl",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -721,7 +721,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-15T23:08:02Z",
+    "date": "2026-08-16T03:09:19Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/reportshq/pull/24",
     "source": "github_prs",
@@ -745,7 +745,7 @@
   },
   {
     "title": "[PR] test(e2e): execute native runtime qualification",
-    "date": "2026-08-16T02:56:29Z",
+    "date": "2026-08-16T04:38:15Z",
     "summary": "## Summary\n\nExecute the canonical 24-case native Podman qualification matrix on protected runners and preserve exact installer, runtime, lifecycle, recovery, GPU, and cleanup receipts for the existing B4-F consumer. Candidate execution stays credential-free and unprivileged with Docker unavailable; ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9232",
     "source": "github_prs",
@@ -781,7 +781,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-08-16T02:20:31Z",
+    "date": "2026-08-16T04:38:18Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -801,6 +801,90 @@
       "comments: 5",
       "pull request",
       "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(ai): a working OpenRouter deployment reported itself as broken",
+    "date": "2026-08-16T04:33:40Z",
+    "summary": "Three surfaces told the operator the AI stack was down while it was demonstrably serving traffic. The LLM-generated summaries were verified against OpenRouter's own billing counter (usage moved `0.000461749 \u2192 0.000504345`, with an ambient-traffic control showing zero drift) at the same moment the UI",
+    "url": "https://github.com/anandtopu/testlookup/pull/620",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: testlookup"
+    ]
+  },
+  {
+    "title": "[PR] Gate 1 + audio, offline AI-OFF, capability & packaging foundations",
+    "date": "2026-08-16T04:29:23Z",
+    "summary": "### Motivation\n\n- Advance the Gate 1 implementation to a deterministic, safety-first coproducer foundation with explicit AI-OFF and NetworkPolicy controls.  \n- Add deterministic offline audio analysis, DSP preview/rendering, and evidence-backed audio workflows without claiming realtime DAW capture o",
+    "url": "https://github.com/syrustkira/AbletonAI/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AbletonAI"
+    ]
+  },
+  {
+    "title": "[PR] feat(autocomplete): per-app scope and cloud-consent gates",
+    "date": "2026-08-16T04:21:41Z",
+    "summary": "## What\n\nAdds the policy layer that will decide **where** autocomplete may read text and **which provider** may receive it, ahead of running the feature system-wide across other macOS apps.\n\n**Dormant in this PR.** Nothing can emit `surface: \"system\"` yet, so behaviour of FixLang's own Ask AI window",
+    "url": "https://github.com/anhdd-kuro/fix-lang/pull/195",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: fix-lang"
+    ]
+  },
+  {
+    "title": "[PR] feat(stagewise): support fast-mode for supported endpoints",
+    "date": "2026-08-16T04:12:47Z",
+    "summary": "## Summary\nCloses #1404\n\nImplements fast-mode support across supported model endpoints, providers, presets, and settings:\n\n- **Anthropic API & Custom Anthropic**: Passes `providerOptions.anthropic.serviceTier = 'auto'` for Claude Opus/Sonnet/Fable/Mythos models.\n- **OpenAI API & Azure / Custom OpenA",
+    "url": "https://github.com/stagewise-io/stagewise/pull/1551",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: stagewise"
+    ]
+  },
+  {
+    "title": "[PR] feat(specialist): zeromaxing posture and orchestrate plan execution",
+    "date": "2026-08-16T03:55:28Z",
+    "summary": "## How to review this PR\n\nIt is one PR by necessity \u2014 the areas share core files (`plan_tool.go`,\n`plan_exec.go`, `app.go` are each touched by many commits), so they cannot be\ncleanly split into separate PRs without breaking builds. But the changes are\n**independent by concern**. Review area by area",
+    "url": "https://github.com/Gitlawb/zero/pull/829",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 29",
+      "pull request",
+      "repo: zero"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency n8n-workflow to v1.120.24",
+    "date": "2026-08-16T03:40:34Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [n8n-workflow](https://n8n.i",
+    "url": "https://github.com/klicktipp/n8n-community-node-klicktipp/pull/30",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-community-node-klicktipp"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-16T03:04:30Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot",
+    "url": "https://github.com/stacksjs/ts-auth/pull/120",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-auth"
     ]
   }
 ]
