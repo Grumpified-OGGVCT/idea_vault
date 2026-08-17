@@ -145,12 +145,12 @@
   },
   {
     "title": "Inferencers: capability metadata, discovered by default (route/validate/surface by what a backend can actually do)",
-    "date": "2026-08-16T23:22:03Z",
+    "date": "2026-08-17T05:09:06Z",
     "summary": "## Problem\n\nwoollama routes by `<provider>/<model>` and forwards chat, images and embeddings to the inferencer's OpenAI-compatible endpoints. It has **no notion of what a backend can actually do**, so:\n\n- an image request can be routed to a text-only backend, or to a multi-modal backend that current",
     "url": "https://github.com/teaguesterling/woollama/issues/20",
     "source": "github_issues",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "state: open",
       "repo: woollama"
     ]
@@ -229,7 +229,7 @@
   },
   {
     "title": "Provider catalog drift requires review",
-    "date": "2026-08-16T04:55:53Z",
+    "date": "2026-08-17T05:03:30Z",
     "summary": "# Provider catalog drift report (review_required)\n\n- Catalog: `package/contents/catalog/providers-v4.json`\n- Version: `2026.08.15` / schema `7`\n- Sequence: `1`\n- Last reviewed: `2026-08-14`\n- Hard expiry: `2026-09-13T00:00:00Z`\n\n## Stats\n\n- providers: 18\n- models: 52\n- staleSourceReviews: 50\n- unkno",
     "url": "https://github.com/loofiboss-bit/plasma-ai-usage-monitor/issues/48",
     "source": "github_issues",
@@ -289,12 +289,12 @@
   },
   {
     "title": "Research Studio podcast: AI-register scripts and an under-directed ElevenLabs call",
-    "date": "2026-08-15T22:56:53Z",
+    "date": "2026-08-17T05:34:52Z",
     "summary": "## Context\n\nA conversation about TTS scripting (\"Algorithmic Prosody and Spoken Cadence\") ended by comparing that framework against what Research Studio actually sends to ElevenLabs: https://grok.com/share/c2hhcmQtMw_beadd730-09a6-4528-88b6-cc509f7bc213\n\nThe claim it makes \u2014 that the podcast pipelin",
     "url": "https://github.com/OpenCoven/coven-cave/issues/4689",
     "source": "github_issues",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "state: open",
       "repo: coven-cave"
     ]
@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-17T04:36:26Z",
+    "date": "2026-08-17T05:19:38Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -889,12 +889,12 @@
   },
   {
     "title": "[PR] fix(deploy): curl-free healthchecks, /ready, non-root images, k8s probes, state dir under /data",
-    "date": "2026-08-17T03:52:25Z",
+    "date": "2026-08-17T05:31:58Z",
     "summary": "_Production-readiness audit, M8 + M9 + M12 + L2 + L3 + L4. Ledger: https://claude.ai/code/artifact/15fa4198-97b8-4da6-bea0-0c24d364a7f3_\n\n## Why\n\n- **M8** \u00e2\u20ac\u201d `.docker/Dockerfile.api|quickstart|fleet-host` declared a `curl` HEALTHCHECK on `mcr.microsoft.com/dotnet/aspnet:8.0`, which ships no curl, s",
     "url": "https://github.com/IanFrelinger/Nexo/pull/342",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: Nexo"
     ]
@@ -1033,7 +1033,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-08-17T03:09:57Z",
+    "date": "2026-08-17T04:59:12Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) | minor | `5.0.1` \u2192 `5.1.0` |\n| [argo-cd](https://redirect.github.com/argop",
     "url": "https://github.com/nolte/k8s-home-lab/pull/836",
     "source": "github_prs",
@@ -1041,6 +1041,54 @@
       "comments: 0",
       "pull request",
       "repo: k8s-home-lab"
+    ]
+  },
+  {
+    "title": "[PR] chore(docs): Update codeblocks with minimap and update guidelines",
+    "date": "2026-08-17T05:36:24Z",
+    "summary": "## Pull Request\r\n\r\n---\r\n\r\n### \ud83d\udcc4 Summary\r\nThis PR fixes minimap usage in code snippets, and updates doc contributing guidelines\r\n\r\n#### Screenshots / Screen Recordings (if applicable)\r\n> Include screenshots or screen recordings that clearly show the behavior before the change and the result after the",
+    "url": "https://github.com/SigNoz/signoz.io/pull/3975",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: signoz.io"
+    ]
+  },
+  {
+    "title": "[PR] feat: LLM JSON response recovery & provider-aware structured output",
+    "date": "2026-08-17T05:29:15Z",
+    "summary": "## Summary\n\nImplements the feature described in [`docs/specs/009-llm-json-recovery.md`](../blob/feature/009-llm-json-recovery/docs/specs/009-llm-json-recovery.md) for GitHub Issue #34.\n\n### Problem\nOllama does not properly enforce `json_schema` for cloud-backed models (e.g., `kimi-k2.6:cloud`). The ",
+    "url": "https://github.com/Redna/evol-hive/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: evol-hive"
+    ]
+  },
+  {
+    "title": "[PR] feat(generation): make every production skeleton fillable, and close two gate gaps that let unfillable books through",
+    "date": "2026-08-17T05:08:18Z",
+    "summary": "## Summary\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added three new branching stories for young readers.\n  * Added support for retired story metadata and age-band topology validation.\n  * Added chunked story filling ",
+    "url": "https://github.com/ByronWilliamsCPA/cyo-adventure/pull/727",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: cyo-adventure"
+    ]
+  },
+  {
+    "title": "[PR] Aidos SDK integration plan, and D0: Kotlin 2.4.10 / JVM 21, dictator-core green",
+    "date": "2026-08-17T05:28:50Z",
+    "summary": "Adds `docs/AIDOS_SDK_INTEGRATION_PLAN.md` and lands **D0**'s toolchain migration plus the `dictator-core` repair it uncovered.\n\nCompanion work on the Aidos side: [aidos#37](https://github.com/jsilvanus/aidos/pull/37) (S0 \u2014 the SDK compiles) and [aidos#39](https://github.com/jsilvanus/aidos/pull/39) ",
+    "url": "https://github.com/jsilvanus/dictator/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dictator"
     ]
   }
 ]
