@@ -145,12 +145,12 @@
   },
   {
     "title": "Inferencers: capability metadata, discovered by default (route/validate/surface by what a backend can actually do)",
-    "date": "2026-08-17T05:09:06Z",
+    "date": "2026-08-17T17:19:09Z",
     "summary": "## Problem\n\nwoollama routes by `<provider>/<model>` and forwards chat, images and embeddings to the inferencer's OpenAI-compatible endpoints. It has **no notion of what a backend can actually do**, so:\n\n- an image request can be routed to a text-only backend, or to a multi-modal backend that current",
     "url": "https://github.com/teaguesterling/woollama/issues/20",
     "source": "github_issues",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "state: open",
       "repo: woollama"
     ]
@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-17T16:15:59Z",
+    "date": "2026-08-17T17:04:31Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -673,7 +673,7 @@
   },
   {
     "title": "[PR] Onboarding release: three security fixes, a working join path, and a bundled CLI",
-    "date": "2026-08-17T16:25:26Z",
+    "date": "2026-08-17T17:24:57Z",
     "summary": "## What this is\n\nA full-repo audit against one goal: **a teammate signs up, joins, and recalls a colleague's memory.** The v0.3.0 tag was never distributed and the onboarding path it documented did not work end to end. This closes that.\n\nVerified by an automated end-to-end suite driving the real bui",
     "url": "https://github.com/ryantlee25-droid/tages/pull/75",
     "source": "github_prs",
@@ -1069,12 +1069,12 @@
   },
   {
     "title": "[PR] feat(generation): make every production skeleton fillable, and close two gate gaps that let unfillable books through",
-    "date": "2026-08-17T16:29:56Z",
+    "date": "2026-08-17T17:02:21Z",
     "summary": "## Summary\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added three branching stories for young readers.\n  * Added retired-story metadata, age-band topology validation, and chunked filling for large narratives.\n  * Added",
     "url": "https://github.com/ByronWilliamsCPA/cyo-adventure/pull/727",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: cyo-adventure"
     ]
@@ -1237,7 +1237,7 @@
   },
   {
     "title": "[PR] from the hell",
-    "date": "2026-08-17T15:43:59Z",
+    "date": "2026-08-17T17:23:21Z",
     "summary": "",
     "url": "https://github.com/santipongth/thai-citizen-guide/pull/1",
     "source": "github_prs",
@@ -1777,7 +1777,7 @@
   },
   {
     "title": "[PR] admin dashboard ssc-dsai:dev",
-    "date": "2026-08-17T13:15:46Z",
+    "date": "2026-08-17T16:33:09Z",
     "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
     "url": "https://github.com/cicero-im/open-webui-2/pull/36",
     "source": "github_prs",
@@ -1861,19 +1861,19 @@
   },
   {
     "title": "[PR] docs(skills,check,build): codify six cutover findings, and stop telling readers to edit generated files",
-    "date": "2026-08-17T15:52:23Z",
+    "date": "2026-08-17T17:28:13Z",
     "summary": "## Summary of changes\n\nRegenerated skill projections for three candy sources that changed in the superproject's\n`feat/distro-vocab-openrc` cutover, plus one consolidated CHANGELOG entry. Every file here is\ngenerated output of `charly marketplace generate` \u2014 nothing was hand-edited, and these files c",
     "url": "https://github.com/opencharly/plugins/pull/195",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 12",
       "pull request",
       "repo: plugins"
     ]
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-17T16:23:42Z",
+    "date": "2026-08-17T17:00:34Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -1933,7 +1933,7 @@
   },
   {
     "title": "[PR] Jsje",
-    "date": "2026-08-17T16:30:44Z",
+    "date": "2026-08-17T16:40:38Z",
     "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
     "url": "https://github.com/cicero-im/generative-ai/pull/7",
     "source": "github_prs",
@@ -1977,6 +1977,42 @@
       "comments: 0",
       "pull request",
       "repo: hive-pooltemplates"
+    ]
+  },
+  {
+    "title": "[PR] feat(matcher): analyze lost pet images",
+    "date": "2026-08-17T17:26:43Z",
+    "summary": "## Summary\n\n- consume lost-report events through a distinct authenticated matcher subscription\n- read purpose-bound finalized lost-pet images and persist bounded verified traits with model, analysis-version, event, object, and timestamp provenance\n- fence asynchronous analysis with durable delivery ",
+    "url": "https://github.com/scottdensmore/PetSpotR/pull/188",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: PetSpotR"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency aqua:openai/codex to v0.147.0",
+    "date": "2026-08-17T16:46:24Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [aqua:openai/codex](https://redirect.github.com/openai/codex) | tools | minor | `0.145.0` \u2192 `0.147.0` |\n\n---\n\n### Release Notes\n\n<d",
+    "url": "https://github.com/kqnade/dotfiles/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.testcontainers:testcontainers to v1.21.4",
+    "date": "2026-08-17T16:44:13Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:testcont",
+    "url": "https://github.com/pixee/java-security-toolkit/pull/56",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: java-security-toolkit"
     ]
   }
 ]
