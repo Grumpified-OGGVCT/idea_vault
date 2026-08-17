@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-17T20:13:04Z",
+    "date": "2026-08-17T21:26:13Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -685,12 +685,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-17T20:18:12Z",
+    "date": "2026-08-17T21:06:13Z",
     "summary": "## Summary\n\n- **Base branch:** `master`\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama's native `/api/tags` and `/api/chat` API.\n  - Uses a dedicated text-only request/lifecycle contract: bounded history, explicit completion v",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 34",
+      "comments: 35",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -745,7 +745,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-08-17T08:44:16Z",
+    "date": "2026-08-17T20:44:15Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1033,7 +1033,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-08-17T14:12:48Z",
+    "date": "2026-08-17T20:55:29Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) | minor | `5.0.1` \u2192 `5.1.0` |\n| [argo-cd](https://redirect.github.com/argop",
     "url": "https://github.com/nolte/k8s-home-lab/pull/836",
     "source": "github_prs",
@@ -2017,7 +2017,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-17T19:15:29Z",
+    "date": "2026-08-17T21:25:59Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -2269,12 +2269,12 @@
   },
   {
     "title": "[PR] fix: \u30bb\u30eb\u898b\u51fa\u3057\u3092 claude -p \u3067\u306f\u306a\u304f\u30c8\u30e9\u30f3\u30b9\u30af\u30ea\u30d7\u30c8\u304b\u3089\u8aad\u3080 (#1769)",
-    "date": "2026-08-17T20:21:07Z",
+    "date": "2026-08-17T21:27:45Z",
     "summary": "## Summary\n\n\u30bb\u30eb\u306e\u898b\u51fa\u3057\u3092\u4f5c\u308b\u305f\u3081\u3060\u3051\u306b\u8d77\u52d5\u3057\u3066\u3044\u305f `claude -p` \u306e\u30bb\u30c3\u30b7\u30e7\u30f3\u304c\u3001\u4f5c\u696d\u4e2d\u306e\u30ea\u30dd\u30b8\u30c8\u30ea\u3067\n`git restore` / `git push origin main` \u3092\u5b9f\u884c\u3057\u305f\u4ef6 (#1769) \u306e\u5bfe\u7b56\u3067\u3059\u3002**\u30bf\u30a4\u30c8\u30eb\u306f\u751f\u6210\u3092\u3084\u3081\u3066\u8aad\u3080**\u3001\n**\u8981\u7d04\u306b\u6b8b\u308b `-p` \u306f\u786c\u5316\u3059\u308b**\u3001\u306e 2 \u672c\u7acb\u3066\u3002\n\n### 1. \u30bf\u30a4\u30c8\u30eb: \u30d7\u30ed\u30bb\u30b9\u3092 1 \u3064\u3082\u8d77\u3053\u3055\u306a\u3044\uff08\u65e2\u5b9a\uff09\n\nClaude Code \u306f\u81ea\u5206\u3067 `{\"type\":\"ai-title\",\"aiTitle\":\"...\"}` \u3092\u30c8\u30e9\u30f3\u30b9\u30af\u30ea\u30d7\u30c8\u306b\u66f8\u3044\u3066\u304a\u308a\u3001\n\u3053\u306e\u30ea\u30dd\u30b8\u30c8\u30ea\u306b\u306f**\u305d\u308c\u3092\u8aad\u3080\u4ed5\u7d44\u307f\u304c",
     "url": "https://github.com/receptron/mulmoterminal/pull/1772",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 18",
       "pull request",
       "repo: mulmoterminal"
     ]
@@ -2293,7 +2293,7 @@
   },
   {
     "title": "[PR] AI auto scripture: local transcription + AI reference detection (opt-in)",
-    "date": "2026-08-17T20:06:06Z",
+    "date": "2026-08-17T20:56:51Z",
     "summary": "> Builds on #3578 (its commit is included here) \u2014 happy to rebase once that lands, or fold both together if preferred.\n\n## What\n\n**AI auto scripture** (opt-in, off by default): FreeShow listens to the sermon, transcribes locally with whisper.cpp, detects scripture references \u2014 both spoken (\"John cha",
     "url": "https://github.com/ChurchApps/FreeShow/pull/3579",
     "source": "github_prs",
@@ -2385,6 +2385,126 @@
       "comments: 5",
       "pull request",
       "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-17T21:09:42Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [aws-cdk](https://redirect.github.com/aws/aws-cdk) ([source](https://redirect.github.com/aws/aws-cd",
+    "url": "https://github.com/BranislavBeno/Metal-Prices-Notifier/pull/92",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Metal-Prices-Notifier"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-08-17T21:00:12Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [futures](https://rust-lang.github.io/futures-rs) ([source](https://redirect.github.com/rust-lang/futures-rs)) | dependencies | pat",
+    "url": "https://github.com/SkinsRestorer/steward/pull/176",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: steward"
+    ]
+  },
+  {
+    "title": "[PR] feat(openshell): bundle e2fsprogs on Linux",
+    "date": "2026-08-17T20:56:25Z",
+    "summary": "## Summary\r\n\r\n- bundle the Linux e2fsprogs tools required by the OpenShell VM driver\r\n- select x64/arm64 Homebrew bottles from OCI manifests and expose the tools through the gateway `PATH`\r\n\r\nFixes #2689\r\n\r\n## Testing\r\n\r\n- `pnpm exec vitest --run extensions/openshell/src`\r\n- `pnpm exec vitest --run ",
+    "url": "https://github.com/openkaiden/kaiden/pull/2692",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] Update Rust crate rig-core to 0.42.0",
+    "date": "2026-08-17T20:54:24Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [rig-core](https://redirect.github.com/0xPlaygrounds/rig) | dependencies | minor | `0.13.0` \u2192 `0.42.0` |\n\n---\n\n### Release Notes\n\n<",
+    "url": "https://github.com/kantord/lakonik/pull/31",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: lakonik"
+    ]
+  },
+  {
+    "title": "[PR] Update mockserver to v7.6.0",
+    "date": "2026-08-17T20:53:08Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|\n| mockserver/mockserver | minor | `7.5.0` \u2192 `7.6.0` | ![age](https://developer.mend.io/a",
+    "url": "https://github.com/dboeckli/workflow-cib7-hello-world/pull/175",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: workflow-cib7-hello-world"
+    ]
+  },
+  {
+    "title": "[PR] fix(remote-browser): name a browser within an agent session with instanceKey (#3531)",
+    "date": "2026-08-17T20:48:18Z",
+    "summary": "Fixes #3531.\n\n## The defect\n\n`RemoteBrowserEngine` keys its agent-session map on the agent session id **alone**:\n\n```ts\nthis.agentSessionToEngineSession.get(agentSessionID)\n```\n\nThat quietly makes *one remote browser per agent session* a framework invariant with no opt-out. A second surface's lazy s",
+    "url": "https://github.com/MemberJunction/MJ/pull/3915",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency org.mock-server:mockserver-client-java to v7.6.0",
+    "date": "2026-08-17T20:48:02Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-client-java](https://www.mock-server.com) ([source](https://redirect.gi",
+    "url": "https://github.com/BranislavBeno/Implementation-Progress-Page/pull/291",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Implementation-Progress-Page"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.mock-server:mockserver-client-java to v7.6.0",
+    "date": "2026-08-17T20:38:07Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-client-java](https://www.mock-server.com) ([source](https://redirect.gi",
+    "url": "https://github.com/signalfx/splunk-otel-java/pull/3016",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: splunk-otel-java"
+    ]
+  },
+  {
+    "title": "[PR] feat(RHAI-415): implement Data Registry API BFF proxy routes",
+    "date": "2026-08-17T20:34:59Z",
+    "summary": "https://issues.redhat.com/browse/RHAI-415\n\n## Description\n\nAdds a catchall passthrough proxy in the `data-registry` package's Go BFF that forwards every request under `/api/v1/*` (minus the BFF's own `/api/v1/user` and `/api/v1/namespaces`) to the upstream Data Registry API (Iceberg REST Catalog-com",
+    "url": "https://github.com/opendatahub-io/odh-dashboard/pull/9276",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: odh-dashboard"
+    ]
+  },
+  {
+    "title": "[PR] feat(conversations): window the chat transcript with bounded DOM",
+    "date": "2026-08-17T20:34:09Z",
+    "summary": "## What this does\n\nOpening a conversation used to load **every** `MJ: Conversation Details` row, hydrate all of them, and mount a component per timeline item. On a long transcript that is a large query, a large hydration, and an unbounded DOM \u2014 all to show the reader the last handful of messages.\n\nT",
+    "url": "https://github.com/MemberJunction/MJ/pull/3912",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
