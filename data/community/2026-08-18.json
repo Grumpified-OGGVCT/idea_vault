@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-18T21:15:12Z",
+    "date": "2026-08-18T22:09:40Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-18T21:26:39Z",
+    "date": "2026-08-18T22:24:39Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -901,7 +901,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-18T20:27:00Z",
+    "date": "2026-08-18T22:26:13Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/better-dx/pull/955",
     "source": "github_prs",
@@ -913,7 +913,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-18T03:36:40Z",
+    "date": "2026-08-18T22:15:39Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/ts-md/pull/99",
     "source": "github_prs",
@@ -1213,12 +1213,12 @@
   },
   {
     "title": "[PR] Stop offering a credential Anthropic prohibits; stop leaking the one it allows (0.75.0)",
-    "date": "2026-08-18T21:26:06Z",
+    "date": "2026-08-18T21:59:36Z",
     "summary": "## What & why\n\nFollow-up to research into how other tools reuse existing CLI logins. The starting point: **Cascade already discovers them.** `cascade link` reads Claude Code, Codex CLI, Gemini CLI and Copilot credentials today, and correctly refuses three of the four \u2014 each targets its own vendor's ",
     "url": "https://github.com/Varun-SV/Cascade-AI/pull/205",
     "source": "github_prs",
     "highlights": [
-      "comments: 15",
+      "comments: 17",
       "pull request",
       "repo: Cascade-AI"
     ]
@@ -2005,7 +2005,7 @@
   },
   {
     "title": "[PR] feat(core): add Entity.IsTotalSpecialization \u2014 EER completeness constraint",
-    "date": "2026-08-18T17:59:38Z",
+    "date": "2026-08-18T21:57:24Z",
     "summary": "## Add `Entity.IsTotalSpecialization` \u2014 the completeness constraint for ISA\r\n\r\n### Summary\r\nMemberJunction already models one of the two classical constraints on an ISA\r\n(specialization/generalization) hierarchy \u2014 **disjointness**, via\r\n`Entity.AllowMultipleSubtypes` (disjoint vs. overlapping subtyp",
     "url": "https://github.com/MemberJunction/MJ/pull/3938",
     "source": "github_prs",
@@ -2137,7 +2137,7 @@
   },
   {
     "title": "[PR] Make the audit log reliable and strict, add usage, and cut its per-request cost",
-    "date": "2026-08-18T21:24:10Z",
+    "date": "2026-08-18T22:23:15Z",
     "summary": "# Pull Request Checklist\n\n**Before submitting, make sure you've checked and filled out the following:**\n\n- [ ] **Linked Issue/Discussion:** This PR references an existing [Issue](https://github.com/open-webui/open-webui/issues) or active, substantive [Discussion](https://github.com/open-webui/open-w",
     "url": "https://github.com/gaby/1open-webui/pull/94",
     "source": "github_prs",
@@ -2269,12 +2269,12 @@
   },
   {
     "title": "[PR] fix(security): validate the Db2 certificate fetch and contain its local-path branch",
-    "date": "2026-08-18T21:27:21Z",
+    "date": "2026-08-18T22:03:59Z",
     "summary": "## Summary\n\nThe IBM Db2 Vector Store and watsonx.data Presto components accept a tenant-controlled\ncertificate location (`ssl_certificate_path` / `ssl_ca_file`). Both resolve it through\n`db2_security.validate_and_prepare_ssl_certificate`, which had two unguarded branches.\n\n**URL branch (SSRF).** The",
     "url": "https://github.com/langflow-ai/langflow/pull/14637",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 4",
       "pull request",
       "repo: langflow"
     ]
@@ -2337,6 +2337,54 @@
       "comments: 0",
       "pull request",
       "repo: opendigitalproductfactory"
+    ]
+  },
+  {
+    "title": "[PR] Console service pass: every sidebar service verified live, redesigned setup views",
+    "date": "2026-08-18T22:24:19Z",
+    "summary": "## What\n\nService-by-service pass over the whole console sidebar against the live swarm deployment (wfservices.io): functional verification of every section plus a design pass on each service's set-up view.\n\n## Functional fixes (all verified on the live cluster)\n\n- **Lambda invoke was dead on swarm**",
+    "url": "https://github.com/mbergo/sm4rt-cloud/pull/29",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: sm4rt-cloud"
+    ]
+  },
+  {
+    "title": "[PR] docs: align wiki sources and site with current architecture",
+    "date": "2026-08-18T22:23:46Z",
+    "summary": "## Summary\nFollow-up to #75 (closed). That PR targeted `main` and therefore included superfix commits. This PR is **only this session\u2019s docs commit** (`a3d6de5`) on top of `fix/superfix-review-findings` (#63).\n\n- Verified the generated wiki against the repo and corrected stale claims (Node 18 vs `.n",
+    "url": "https://github.com/maus-inc/mausVoice/pull/76",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: mausVoice"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency openai/codex to v0.148.0",
+    "date": "2026-08-18T22:05:51Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [openai/codex](https://redirect.github.com/openai/codex) | minor | `0.146.0` \u2192 `0.148.0` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>openai/",
+    "url": "https://github.com/nysasounds/codex/pull/47",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: codex"
+    ]
+  },
+  {
+    "title": "[PR] fix(sqlserver-dataprovider): keep the UserCache export alive for published consumers",
+    "date": "2026-08-18T22:00:57Z",
+    "summary": "## The bug\n\n`UserCache` moved to `@memberjunction/generic-database-provider` in `f8a8448e0e` so `Refresh` could\nbe dialect-neutral, and the export was removed from `@memberjunction/sqlserver-dataprovider`\noutright. Anything already importing it from the old home breaks.\n\nTwo published Open App serve",
+    "url": "https://github.com/MemberJunction/MJ/pull/3941",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
