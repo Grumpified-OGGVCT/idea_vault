@@ -517,7 +517,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-18T10:51:15Z",
+    "date": "2026-08-18T13:00:21Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@bu",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-18T12:32:07Z",
+    "date": "2026-08-18T13:26:55Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1033,7 +1033,7 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-18T05:26:17Z",
+    "date": "2026-08-18T13:21:19Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` integration for Hailo-Ollama's native `/api/tags` and `/api/chat` contract.\n  - Keeps Hailo-specific request shaping, text-only capability policy",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
@@ -1213,12 +1213,12 @@
   },
   {
     "title": "[PR] Stop offering a credential Anthropic prohibits; stop leaking the one it allows (0.75.0)",
-    "date": "2026-08-18T12:01:02Z",
+    "date": "2026-08-18T13:20:03Z",
     "summary": "## What & why\n\nFollow-up to research into how other tools reuse existing CLI logins. The starting point: **Cascade already discovers them.** `cascade link` reads Claude Code, Codex CLI, Gemini CLI and Copilot credentials today, and correctly refuses three of the four \u2014 each targets its own vendor's ",
     "url": "https://github.com/Varun-SV/Cascade-AI/pull/205",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 11",
       "pull request",
       "repo: Cascade-AI"
     ]
@@ -1405,7 +1405,7 @@
   },
   {
     "title": "[PR] feat(openshell): bundle e2fsprogs on Linux",
-    "date": "2026-08-18T12:51:04Z",
+    "date": "2026-08-18T13:29:13Z",
     "summary": "## Summary\r\n\r\n- bundle the Linux e2fsprogs tools required by the OpenShell VM driver\r\n- select x64/arm64 Homebrew bottles from OCI manifests and expose the tools through the gateway `PATH`\r\n\r\nFixes #2689\r\n\r\n## Testing\r\n\r\n- `pnpm exec vitest --run extensions/openshell/src`\r\n- `pnpm exec vitest --run ",
     "url": "https://github.com/openkaiden/kaiden/pull/2692",
     "source": "github_prs",
@@ -1489,7 +1489,7 @@
   },
   {
     "title": "[PR] Initial commit: JARVIS desktop AI assistant",
-    "date": "2026-08-18T12:24:03Z",
+    "date": "2026-08-18T13:25:11Z",
     "summary": "This is the initial commit of JARVIS, a personal desktop AI assistant that handles research, company database management, and outreach email campaigns\u2014with mandatory user approval before any emails are sent.\n\n## Overview\nJARVIS is a full-stack Electron + React application with a TypeScript core that",
     "url": "https://github.com/4wf86nbfzr-png/Claude/pull/2",
     "source": "github_prs",
@@ -1501,7 +1501,7 @@
   },
   {
     "title": "[PR] Use Probatio as the data validation engine",
-    "date": "2026-08-18T11:52:20Z",
+    "date": "2026-08-18T13:33:10Z",
     "summary": "## Breaking change\n\nNone. Which is the nice thing about all of this \ud83d\ude04 \n\n## Proposed change\n\nThis pull request introduces [Probatio](https://probatio.frenck.dev) as Home Assistant's data validation engine, as a drop-in replacement for voluptuous.\n\nProbatio is a modern, actively maintained, clean-room",
     "url": "https://github.com/home-assistant/core/pull/175128",
     "source": "github_prs",
@@ -1549,7 +1549,7 @@
   },
   {
     "title": "[PR] feat(PROJ-80): \u03b1 /frontend \u2014 Quintessenz-Fl\u00e4che + Routen (inkl. Autorisierungs-Fix im Schreibpfad)",
-    "date": "2026-08-18T10:41:06Z",
+    "date": "2026-08-18T13:36:03Z",
     "summary": "Schlie\u00dft den `/frontend`-Rest der **PROJ-80-\u03b1**-Slice (Quintessenz ohne Vektor). Backend \u03b1.1/\u03b1.2a/\u03b1.2b/\u03b1.2c sind seit 2026-08-14 in Prod; hier kommen die drei Routen und die Detailfl\u00e4che.\n\n**Kein neues Paket, keine Migration.** Lifecycle bleibt `In Progress`, Deployment Scope bleibt `\u2014` \u2014 `/qa` hat ",
     "url": "https://github.com/rechnungITC/projektplattform_v3/pull/399",
     "source": "github_prs",
@@ -1561,12 +1561,12 @@
   },
   {
     "title": "[PR] AI auto scripture: local transcription + AI reference detection (opt-in)",
-    "date": "2026-08-18T12:45:54Z",
+    "date": "2026-08-18T13:35:12Z",
     "summary": "> Builds on #3578 (its commit is included here) \u2014 happy to rebase once that lands, or fold both together if preferred.\n\n## What\n\n**AI auto scripture** (opt-in, off by default): FreeShow listens to the sermon, transcribes locally with whisper.cpp, detects scripture references \u2014 both spoken (\"John cha",
     "url": "https://github.com/ChurchApps/FreeShow/pull/3579",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 14",
       "pull request",
       "repo: FreeShow"
     ]
@@ -1609,12 +1609,12 @@
   },
   {
     "title": "[PR] fix(quota): Ollama Cloud credential validation and UI decoupling (#2187)",
-    "date": "2026-08-18T12:44:23Z",
-    "summary": "Closes #2187\n\n### Problem\n\nOllama Cloud usage tracking fails with \"Provider not configured\" even after setup. Three root-cause issues:\n\n1. **Credential validation always fails (web runtime)** \u2014 `fetchOllamaCloudUsage` uses `redirect: 'manual'` and treats all 3xx responses as auth failure. ollama.com",
+    "date": "2026-08-18T13:15:35Z",
+    "summary": "Closes #2187\n\n## Intent\n\nOllama Cloud usage tracking fails with \"Provider not configured\" even after setup. Three root-cause issues:\n\n1. **Credential validation always fails (web runtime)** \u2014 `fetchOllamaCloudUsage` uses `redirect: 'manual'` and treats all 3xx responses as auth failure. ollama.com r",
     "url": "https://github.com/openchamber/openchamber/pull/2196",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "pull request",
       "repo: openchamber"
     ]
@@ -1653,6 +1653,66 @@
       "comments: 1",
       "pull request",
       "repo: nats-manager-ui"
+    ]
+  },
+  {
+    "title": "[PR] feat(secrets): le .env porte l'adresse du secret, pas sa valeur",
+    "date": "2026-08-18T13:44:26Z",
+    "summary": "Le `.env` ne contient plus les cl\u00e9s d'API, mais leur **adresse** dans 1Password :\n\n```\nGEMINI_API_KEY=op://Personal/Avolo-Shorts/GEMINI_API_KEY\n```\n\n`src/server/secrets.ts` parcourt l'environnement au d\u00e9marrage, rep\u00e8re les valeurs\nqui commencent par `op://` et les remplace par ce que rend `op read`.",
+    "url": "https://github.com/JulienCr/avolo-shorts/pull/34",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: avolo-shorts"
+    ]
+  },
+  {
+    "title": "[PR] feat(runtime): retire the Claude subscription OAuth provider",
+    "date": "2026-08-18T13:33:33Z",
+    "summary": "## Summary\r\n\r\nMaka could sign in with a Claude Pro/Max subscription and send inference through it. Anthropic's Consumer Terms permit programmatic access to the consumer Claude services only through an API key or explicit permission, and this path had neither \u2014 it presented itself as Claude Code (bor",
+    "url": "https://github.com/maka-agent/maka-agent/pull/3183",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: maka-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat(angular): hierarchy tree + 15 core panels; fix IS-A parent hydrate",
+    "date": "2026-08-18T13:18:37Z",
+    "summary": "## Summary\n\nReusable D3 hierarchy tree for Explorer forms, wired to the 15 self-referencing / category entities in MJ Core, plus follow-up lookup and layout fixes. Also stops IS-A child loads from dumping the parent's missing-field warning at MJAPI boot.\n\n## What's in this PR\n\n### `@memberjunction/n",
+    "url": "https://github.com/MemberJunction/MJ/pull/3927",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(tray): support custom menu bar icons and icon-only mode (#307)",
+    "date": "2026-08-18T13:04:27Z",
+    "summary": "Resolves #307\n\n### Summary of Changes\n\nThis PR introduces configurable menu bar display modes and custom icon options for the macOS companion app (`ModelRouterTray`), addressing the requests in #307:\n\n1. **Menu Bar Display Modes**:\n   - **Standard Mode** (default): Keeps the menu bar icon alongside ",
+    "url": "https://github.com/duolahypercho/codex-router/pull/308",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: codex-router"
+    ]
+  },
+  {
+    "title": "[PR] fix(eval): refuse Docker DNS after pinning the egress proxy host",
+    "date": "2026-08-18T13:03:07Z",
+    "summary": "## Summary\n\nThe namespace-local exemption keeps loopback provider proxies reachable, and with them Docker's resolver at `127.0.0.11`. That resolver forwards unknown names to the host, so a TXT query can leave the cell and come back without touching mitmproxy.\n\n- The proxy publishes its IPv4 as `/opt",
+    "url": "https://github.com/maka-agent/maka-agent/pull/3009",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: maka-agent"
     ]
   }
 ]
