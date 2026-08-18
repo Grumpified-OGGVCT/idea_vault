@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-18T22:09:40Z",
+    "date": "2026-08-18T23:15:18Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-18T22:24:39Z",
+    "date": "2026-08-18T23:15:12Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -1033,12 +1033,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-18T13:21:19Z",
+    "date": "2026-08-18T22:55:35Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` integration for Hailo-Ollama's native `/api/tags` and `/api/chat` contract.\n  - Keeps Hailo-specific request shaping, text-only capability policy",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 36",
+      "comments: 37",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -2089,7 +2089,7 @@
   },
   {
     "title": "[PR] fix(agent-manager): hybrid agent search so new agents are findable, and load specs via a direct action",
-    "date": "2026-08-18T18:35:42Z",
+    "date": "2026-08-18T23:11:36Z",
     "summary": "## Summary\n\nTwo defects that both made the Agent Manager fail on agents it had *just* created or was asked to modify:\n\n1. **A newly created agent was undiscoverable for up to ~24h.** `Find Best Agent` / `Find Candidate Agents` ranked semantic-only over the `AI Agents Search` vectors, which are popul",
     "url": "https://github.com/MemberJunction/MJ/pull/3913",
     "source": "github_prs",
@@ -2137,7 +2137,7 @@
   },
   {
     "title": "[PR] Make the audit log reliable and strict, add usage, and cut its per-request cost",
-    "date": "2026-08-18T22:23:15Z",
+    "date": "2026-08-18T23:17:10Z",
     "summary": "# Pull Request Checklist\n\n**Before submitting, make sure you've checked and filled out the following:**\n\n- [ ] **Linked Issue/Discussion:** This PR references an existing [Issue](https://github.com/open-webui/open-webui/issues) or active, substantive [Discussion](https://github.com/open-webui/open-w",
     "url": "https://github.com/gaby/1open-webui/pull/94",
     "source": "github_prs",
@@ -2161,7 +2161,7 @@
   },
   {
     "title": "[PR] feat(autonomy): operationalize the Always-On runtime + verify LLM pricing table",
-    "date": "2026-08-18T20:24:47Z",
+    "date": "2026-08-18T22:54:24Z",
     "summary": "## Outcome\n\nThe Always-On autonomy runtime (coordinator + heartbeat + H6.6 night-shift) is now one supervised, crash-recoverable loop with a structured run-log \u2014 `make runtime-up`, `kill -9` on the coordinator, auto-recovery in ~3.5s with the cycle counter intact (not reset). In parallel, all 55 clo",
     "url": "https://github.com/andrei649/jarvis-hub/pull/930",
     "source": "github_prs",
@@ -2173,12 +2173,12 @@
   },
   {
     "title": "[PR] fix(onboard): reject malformed Ollama model entries",
-    "date": "2026-08-18T21:07:17Z",
+    "date": "2026-08-18T23:21:26Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nThe Windows-host Ollama probe introduced in #9482 accepted a `models` array even when its entries were `null`, primitive values, or nested arrays. The shared response validator now requires every model entry to be a non-null, non-array object while pre",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9518",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -2245,7 +2245,7 @@
   },
   {
     "title": "[PR] ci: cut PR unit-test wall time \u2014 remote cache, job split, global-hash\u2026",
-    "date": "2026-08-18T20:00:11Z",
+    "date": "2026-08-18T23:23:03Z",
     "summary": "\u2026 fix\r\n\r\n1. Root package.json no longer declares workspace devDependencies.\r\n\r\n   Turborepo hashes every non-gitignored file of the root package's workspace closure into the GLOBAL hash, and every task consumes that hash. The three root devDeps \u2014 @memberjunction/cli, integration-test-suite, and serv",
     "url": "https://github.com/MemberJunction/MJ/pull/3940",
     "source": "github_prs",
@@ -2281,7 +2281,7 @@
   },
   {
     "title": "[PR] python3Packages.shtab: 1.9.2 -> 1.11.0",
-    "date": "2026-08-18T21:16:08Z",
+    "date": "2026-08-18T23:14:37Z",
     "summary": "- **python3Packages.shtab: 1.9.2 -> 1.11.0**\r\n  Diff: https://github.com/tqdm/shtab/compare/v1.9.2...v1.11.0\r\n  Release note for v1.9.3: https://github.com/tqdm/shtab/releases/tag/v1.9.3\r\n  Release note for v1.10.0: https://github.com/tqdm/shtab/releases/tag/v1.10.0\r\n  Release note for v1.11.0: http",
     "url": "https://github.com/NixOS/nixpkgs/pull/553026",
     "source": "github_prs",
@@ -2341,7 +2341,7 @@
   },
   {
     "title": "[PR] Console service pass: every sidebar service verified live, redesigned setup views",
-    "date": "2026-08-18T22:24:19Z",
+    "date": "2026-08-18T22:51:10Z",
     "summary": "## What\n\nService-by-service pass over the whole console sidebar against the live swarm deployment (wfservices.io): functional verification of every section plus a design pass on each service's set-up view.\n\n## Functional fixes (all verified on the live cluster)\n\n- **Lambda invoke was dead on swarm**",
     "url": "https://github.com/mbergo/sm4rt-cloud/pull/29",
     "source": "github_prs",
@@ -2385,6 +2385,30 @@
       "comments: 1",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(services): arr\u00eater une analyse, r\u00e9gler le rep\u00e9rage, borner le staging",
+    "date": "2026-08-18T23:21:14Z",
+    "summary": "Quatre services sans \u00e9cran. La PR B \u2014 l'interface \u2014 \u00e9crit les \u00e9crans qui les consomment, en parall\u00e8le.\n\n## 1. Arr\u00eater une analyse pour de vrai\n\n`POST /api/projects/:id/stop`, **idempotente** : `{ stopped: false }` dit que rien ne tournait, et ce n'est pas un \u00e9chec.\n\nLe travail en cours cesse **dans ",
+    "url": "https://github.com/JulienCr/avolo-shorts/pull/71",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: avolo-shorts"
+    ]
+  },
+  {
+    "title": "[PR] Integrate #55/#57/#58/#60 and #59 (fail-closed updater policy)",
+    "date": "2026-08-18T23:13:38Z",
+    "summary": "## Purpose\n\nSuperfix branch to land **after** the five open arena PRs (#55, #57, #58, #59, #60) merge. It integrates all five (merged in conflict-safe order `#55 \u2192 #57 \u2192 #60 \u2192 #58 \u2192 #59`) and remediates every finding (Critical \u2192 Nitpick) from the consolidated assertive CodeRabbit-style review, so it",
+    "url": "https://github.com/maus-inc/mausVoice/pull/63",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 20",
+      "pull request",
+      "repo: mausVoice"
     ]
   }
 ]
