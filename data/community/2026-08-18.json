@@ -385,12 +385,12 @@
   },
   {
     "title": "Keeper turn budget (max_context) is resolved against the lane entry point, not the sticky-reordered candidate that actually dispatches",
-    "date": "2026-08-15T16:40:31Z",
+    "date": "2026-08-18T15:42:28Z",
     "summary": "## \uc99d\uc0c1\n\nKeeper \uc0ac\uc774\ud074\uc758 \ud504\ub86c\ud504\ud2b8 \uc608\uc0b0(`max_context`, `context_budget`, `primary_budget`)\uc774 `deferred_runtime_lane`\uc774 \uac00\ub9ac\ud0a4\ub294 lane \uc9c4\uc785\uc810(entry point) \uae30\uc900\uc73c\ub85c \uacc4\uc0b0\ub418\ub294\ub370, `Runtime_lane_preference`\uc758 sticky ordering \ub54c\ubb38\uc5d0 **\uc2e4\uc81c\ub85c \ub514\uc2a4\ud328\uce58\ub418\ub294 candidate\ub294 \uadf8 lane \uc9c4\uc785\uc810\uacfc \ub2e4\ub978 runtime\uc77c \uc218 \uc788\ub2e4.** \uc774 \uacbd\uc6b0 \ud504\ub86c\ud504\ud2b8\ub294 \uc9c4\uc785\uc810 \ubaa8\ub378\uc758 context window\ub85c shaping\ub418\uc9c0\ub9cc, \uc2e4\uc81c\ub85c \uc694\uccad\uc744",
     "url": "https://github.com/jeong-sik/masc/issues/28765",
     "source": "github_issues",
     "highlights": [
-      "comments: 0",
+      "comments: 2",
       "state: open",
       "repo: masc"
     ]
@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-18T15:18:57Z",
+    "date": "2026-08-18T16:16:54Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-18T08:18:25Z",
+    "date": "2026-08-18T16:34:54Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -841,7 +841,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7.6.0",
-    "date": "2026-08-18T04:36:22Z",
+    "date": "2026-08-18T15:57:56Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3231",
     "source": "github_prs",
@@ -853,7 +853,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-08-18T05:14:25Z",
+    "date": "2026-08-18T16:09:15Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) | minor | `5.0.1` \u2192 `5.1.0` |\n| [argo-cd](https://redirect.github.com/argop",
     "url": "https://github.com/nolte/k8s-home-lab/pull/836",
     "source": "github_prs",
@@ -1009,7 +1009,7 @@
   },
   {
     "title": "[PR] fix(storage): an unresolvable driver key fails at resolution, not three subsystems later",
-    "date": "2026-08-18T04:36:46Z",
+    "date": "2026-08-18T15:53:01Z",
     "summary": "## The failure this came from\n\nA media file that exists, with bytes on disk and a valid `MJ: Files` row, would not serve. The only clue was:\n\n```\n[MediaStream] Failed to serve file 2DE8239D-\u2026: source.driver.GetObject is not a function\n```\n\nThe real cause was a storage provider whose `ServerDriverKey",
     "url": "https://github.com/MemberJunction/MJ/pull/3930",
     "source": "github_prs",
@@ -1357,7 +1357,7 @@
   },
   {
     "title": "[PR] fix(remote-browser): recover a dead browser handle instead of poisoning the session (#3598)",
-    "date": "2026-08-18T08:08:34Z",
+    "date": "2026-08-18T15:52:41Z",
     "summary": "Fixes #3598. **Stacked on #3915** (`instanceKey`) \u2014 base it there because recovery must heal *one* surface, and naming a surface is what #3915 adds. Retarget to `next` once #3915 merges.\n\n## The defect\n\nA surface's browser can go away without the engine being told: the external Chrome behind `Self-H",
     "url": "https://github.com/MemberJunction/MJ/pull/3916",
     "source": "github_prs",
@@ -1369,7 +1369,7 @@
   },
   {
     "title": "[PR] fix(remote-browser): name a browser within an agent session with instanceKey (#3531)",
-    "date": "2026-08-18T08:08:33Z",
+    "date": "2026-08-18T15:52:38Z",
     "summary": "Fixes #3531.\n\n## The defect\n\n`RemoteBrowserEngine` keys its agent-session map on the agent session id **alone**:\n\n```ts\nthis.agentSessionToEngineSession.get(agentSessionID)\n```\n\nThat quietly makes *one remote browser per agent session* a framework invariant with no opt-out. A second surface's lazy s",
     "url": "https://github.com/MemberJunction/MJ/pull/3915",
     "source": "github_prs",
@@ -1489,7 +1489,7 @@
   },
   {
     "title": "[PR] Initial commit: JARVIS desktop AI assistant",
-    "date": "2026-08-18T15:35:00Z",
+    "date": "2026-08-18T16:14:11Z",
     "summary": "This is the initial commit of JARVIS, a personal desktop AI assistant that handles research, company database management, and outreach email campaigns\u2014with mandatory user approval before any emails are sent.\n\n## Overview\nJARVIS is a full-stack Electron + React application with a TypeScript core that",
     "url": "https://github.com/4wf86nbfzr-png/Claude/pull/2",
     "source": "github_prs",
@@ -1585,7 +1585,7 @@
   },
   {
     "title": "[PR] fix(mcp): own discovery by connection generation",
-    "date": "2026-08-18T12:45:36Z",
+    "date": "2026-08-18T16:31:49Z",
     "summary": "## Summary\n\nComplete the generation-owned MCP Tool discovery transaction left as a follow-up to #1661.\n\n- install the generation-fenced `tools/list_changed` handler before initial discovery\n- route initial discovery, explicit refreshes, and notifications through one per-generation change epoch and s",
     "url": "https://github.com/maka-agent/maka-agent/pull/2663",
     "source": "github_prs",
@@ -1717,12 +1717,12 @@
   },
   {
     "title": "[PR] Feature: feat: first chat works on every run mode without a manual model pull (#3824)",
-    "date": "2026-08-18T15:07:26Z",
+    "date": "2026-08-18T16:06:40Z",
     "summary": "Closes #3824\n\n## Summary\n## Goal\n\n## Context\n- Issue: https://github.com/dkblinux98/nyxGPT/issues/3824\n- Milestone: Phase 6 \u2014 Enterprise Deployment Hardening (v3.0.0)\n- Label:\n- `Feature`\n- Base branch: `v3.0.0`\n- Head branch: `claude/issue-3824-20260818-1255`\n\n## Checklist\n- [ ] On a clean machine,",
     "url": "https://github.com/dkblinux98/nyxGPT/pull/3889",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 13",
       "pull request",
       "repo: nyxGPT"
     ]
@@ -1777,12 +1777,12 @@
   },
   {
     "title": "[PR] build(deps): update rust crate rig to 0.42.0",
-    "date": "2026-08-18T14:18:23Z",
+    "date": "2026-08-18T16:21:20Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [rig](https://redirect.github.com/0xPlaygrounds/rig) | dependencies | minor | `0.40.0` \u2192 `0.42.0` |\n\n---\n\n### Release Notes\n\n<detai",
     "url": "https://github.com/spikonado/sprocket/pull/165",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 3",
       "pull request",
       "repo: sprocket"
     ]
@@ -1881,6 +1881,90 @@
       "comments: 3",
       "pull request",
       "repo: opencompany"
+    ]
+  },
+  {
+    "title": "[PR] fix(vector): dead-letter documents after repeated index failures",
+    "date": "2026-08-18T16:34:53Z",
+    "summary": "Fixes the retry loop reported in #1345. First of two PRs; the sibling fixes the failure that was being retried.\n\n## Problem\n\nA document whose **indexing** fails \u2014 as opposed to its **parsing** \u2014 is re-queued by the scanner forever.\n\n`process_document` exhausts its in-process retries, re-raises, and ",
+    "url": "https://github.com/cbcoutinho/nextcloud-mcp-server/pull/1346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: nextcloud-mcp-server"
+    ]
+  },
+  {
+    "title": "[PR] fix(providers): bound Ollama embed requests by characters, not item count",
+    "date": "2026-08-18T16:34:20Z",
+    "summary": "Fixes the failure that #1345's retry loop was retrying. Second of two PRs; #1346 bounds the loop itself.\n\n## Problem\n\n`OllamaProvider.embed_batch_with_usage` sent a fixed **32 texts** per `/api/embed` call regardless of how large those texts were, against a hardcoded 120s read timeout.\n\nOllama embed",
+    "url": "https://github.com/cbcoutinho/nextcloud-mcp-server/pull/1347",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: nextcloud-mcp-server"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency can1357/oh-my-pi to v17.3.7",
+    "date": "2026-08-18T16:26:42Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [can1357/oh-my-pi](https://redirect.github.com/can1357/oh-my-pi) | minor | `17.0.7` -> `17.3.7` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>can1357/oh-my-pi (can1357/oh-my-pi)</summary>\n\n### [`v17.3.7`](https://",
+    "url": "https://github.com/PietroPasotti/omp-workshop-sdk/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: omp-workshop-sdk"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-08-18T16:10:13Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/kedacore/keda/v2 to v2.20.0 [security]",
+    "date": "2026-08-18T15:55:45Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/kedacore/keda/v2](https://redirect.github.com/kedacore/keda) | `v2.17.3` \u2192 `v2.20.0` | ",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1690",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] Multi-agent rooms: gating that holds, and seats that can be quiet, silenced, human-held, and in character",
+    "date": "2026-08-18T15:52:35Z",
+    "summary": "The room layer already puts N agents in one LiveKit room and arbitrates a floor between them. Five gaps kept that from being usable by a consumer whose agents are configured **characters** rather than one generic assistant. All five were found building a panel interview on it, and each is small on i",
+    "url": "https://github.com/MemberJunction/MJ/pull/3909",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-08-18T15:41:57Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/cicero-im/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 20",
+      "pull request",
+      "repo: generative-ai"
     ]
   }
 ]
