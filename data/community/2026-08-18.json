@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-18T07:11:28Z",
+    "date": "2026-08-18T08:20:19Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-18T03:08:01Z",
+    "date": "2026-08-18T08:18:25Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -1213,12 +1213,12 @@
   },
   {
     "title": "[PR] Stop offering a credential Anthropic prohibits; stop leaking the one it allows (0.75.0)",
-    "date": "2026-08-18T06:28:17Z",
+    "date": "2026-08-18T08:15:34Z",
     "summary": "## What & why\n\nFollow-up to research into how other tools reuse existing CLI logins. The starting point: **Cascade already discovers them.** `cascade link` reads Claude Code, Codex CLI, Gemini CLI and Copilot credentials today, and correctly refuses three of the four \u2014 each targets its own vendor's ",
     "url": "https://github.com/Varun-SV/Cascade-AI/pull/205",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: Cascade-AI"
     ]
@@ -1281,6 +1281,150 @@
       "comments: 3",
       "pull request",
       "repo: llm-gateway"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-18T08:32:08Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-18T08:32:06Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-18T08:31:48Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] Additional Test Fixtures for page understanding",
+    "date": "2026-08-18T08:29:35Z",
+    "summary": " \r\n\r\n# Pull Request: #218 Augmentor page fixtures and local provider fixes\r\n\r\n## Scope\r\n\r\nThis primarily addresses #218. In addition, it fixes local/keyless provider templates that were broken by default: Ollama endpoints lacked the `/v1` path, `local-runtime` providers were still required to have a",
+    "url": "https://github.com/ResonantOS/2.0.0-alpha/pull/280",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: 2.0.0-alpha"
+    ]
+  },
+  {
+    "title": "[PR] fix: content indexing that is switched off must answer, not throw",
+    "date": "2026-08-18T08:29:34Z",
+    "summary": "## What was broken\n\n`search_chunks` on memex answered **\"An error occurred invoking 'search_chunks'\"** \u2014 against the tool's own documented contract:\n\n> *\"When content indexing isn't enabled in this host, returns a `{count:0, message:\u2026}` envelope rather than erroring.\"*\n\nA switched-off capability and",
+    "url": "https://github.com/Systemorph/MeshWeaver/pull/1821",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: MeshWeaver"
+    ]
+  },
+  {
+    "title": "[PR] Nightly review rolling (through 2026-08-18)",
+    "date": "2026-08-18T08:26:44Z",
+    "summary": "## Summary\n\nAutomated nightly review (2026-07-03). Four review passes (bugs, security, UX, quality) across the `acp_adapter`, `agent`, and core modules. Seven fixes applied; several architectural findings deferred for human review.\n\n## Fixes applied\n\n| Severity | File:line | Description |\n|---|---|-",
+    "url": "https://github.com/iamhungree/hermes-agent/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 45",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(remote-browser): recover a dead browser handle instead of poisoning the session (#3598)",
+    "date": "2026-08-18T08:08:34Z",
+    "summary": "Fixes #3598. **Stacked on #3915** (`instanceKey`) \u2014 base it there because recovery must heal *one* surface, and naming a surface is what #3915 adds. Retarget to `next` once #3915 merges.\n\n## The defect\n\nA surface's browser can go away without the engine being told: the external Chrome behind `Self-H",
+    "url": "https://github.com/MemberJunction/MJ/pull/3916",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(remote-browser): name a browser within an agent session with instanceKey (#3531)",
+    "date": "2026-08-18T08:08:33Z",
+    "summary": "Fixes #3531.\n\n## The defect\n\n`RemoteBrowserEngine` keys its agent-session map on the agent session id **alone**:\n\n```ts\nthis.agentSessionToEngineSession.get(agentSessionID)\n```\n\nThat quietly makes *one remote browser per agent session* a framework invariant with no opt-out. A second surface's lazy s",
+    "url": "https://github.com/MemberJunction/MJ/pull/3915",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Bump Microsoft.AspNetCore.Identity.EntityFrameworkCore and 7 others",
+    "date": "2026-08-18T08:02:23Z",
+    "summary": "Updated [Microsoft.AspNetCore.Identity.EntityFrameworkCore](https://github.com/dotnet/dotnet) from 10.0.10 to 10.0.11.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Microsoft.AspNetCore.Identity.EntityFrameworkCore's releases](https://github.com/dotnet/dotnet/releases)._\n\nNo release no",
+    "url": "https://github.com/rombolshak/ahlcg/pull/537",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ahlcg"
+    ]
+  },
+  {
+    "title": "[PR] RavenDB-26606",
+    "date": "2026-08-18T07:53:57Z",
+    "summary": "### Issue link\r\n\r\nhttps://issues.hibernatingrhinos.com/issue/RavenDB-26606\r\n\r\n### Type of change\r\n\r\n- [ ] Bug fix\r\n- [ ] Regression bug fix\r\n- [ ] Optimization\r\n- [ ] New feature\r\n\r\n### How risky is the change?\r\n\r\n- [ ] Low \r\n- [ ] Moderate \r\n- [ ] High\r\n- [ ] Not relevant\r\n\r\n### Backward compatibil",
+    "url": "https://github.com/ravendb/ravendb/pull/23170",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ravendb"
+    ]
+  },
+  {
+    "title": "[PR] feat(openshell): bundle e2fsprogs on Linux",
+    "date": "2026-08-18T07:50:11Z",
+    "summary": "## Summary\r\n\r\n- bundle the Linux e2fsprogs tools required by the OpenShell VM driver\r\n- select x64/arm64 Homebrew bottles from OCI manifests and expose the tools through the gateway `PATH`\r\n\r\nFixes #2689\r\n\r\n## Testing\r\n\r\n- `pnpm exec vitest --run extensions/openshell/src`\r\n- `pnpm exec vitest --run ",
+    "url": "https://github.com/openkaiden/kaiden/pull/2692",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] Updated to the latest version of the current project",
+    "date": "2026-08-18T07:42:27Z",
+    "summary": "#### What roadmap does this PR target?\r\n\r\n- [ ] Frontend Roadmap\r\n- [ ] Backend Roadmap\r\n- [ ] DevOps Roadmap\r\n- [x] All Roadmaps\r\n\r\n#### Please acknowledge the items listed below\r\n\r\n- [ ] I have discussed this contribution and got a go-ahead in an issue before opening this pull request.\r\n- [ ] This",
+    "url": "https://github.com/Diego-18/developer-roadmap/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: developer-roadmap"
     ]
   }
 ]
