@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-18T17:16:08Z",
+    "date": "2026-08-18T18:18:26Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-18T17:11:46Z",
+    "date": "2026-08-18T18:27:51Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -1105,7 +1105,7 @@
   },
   {
     "title": "[PR] docs(pi): document local models via models.json",
-    "date": "2026-08-18T05:21:56Z",
+    "date": "2026-08-18T18:40:18Z",
     "summary": "Covers Ollama, LM Studio, Lemonade, and llama.cpp setup for the pi agent through the persisted config mount, plus the Linux bridge-gateway binding caveat. Cross-links native local-model mechanisms from the LLM guide. Closes #139.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.a",
     "url": "https://github.com/VibePod/vibepod-cli/pull/141",
     "source": "github_prs",
@@ -1441,7 +1441,7 @@
   },
   {
     "title": "[PR] feat(inference): support self-hosted Gemma 4 via vLLM on GKE in install/teardown pipeline",
-    "date": "2026-08-18T09:19:47Z",
+    "date": "2026-08-18T18:07:19Z",
     "summary": "Resolves #618\n\n# Pull Request\n\n## Why This Change\n\nOrganizations operating under air-gapped, strict data sovereignty, or high-security regulatory boundaries (e.g. FedRAMP, HIPAA, PCI-DSS) require the ability to run autonomous Kubernetes management agents without sending prompts, manifests, or cluste",
     "url": "https://github.com/gke-labs/kube-agents/pull/608",
     "source": "github_prs",
@@ -1561,12 +1561,12 @@
   },
   {
     "title": "[PR] AI auto scripture: local transcription + AI reference detection (opt-in)",
-    "date": "2026-08-18T14:59:28Z",
+    "date": "2026-08-18T17:37:50Z",
     "summary": "> Builds on #3578 (its commit is included here) \u2014 happy to rebase once that lands, or fold both together if preferred.\n\n## What\n\n**AI auto scripture** (opt-in, off by default): FreeShow listens to the sermon, transcribes locally with whisper.cpp, detects scripture references \u2014 both spoken (\"John cha",
     "url": "https://github.com/ChurchApps/FreeShow/pull/3579",
     "source": "github_prs",
     "highlights": [
-      "comments: 14",
+      "comments: 15",
       "pull request",
       "repo: FreeShow"
     ]
@@ -1717,12 +1717,12 @@
   },
   {
     "title": "[PR] Feature: feat: first chat works on every run mode without a manual model pull (#3824)",
-    "date": "2026-08-18T17:01:11Z",
+    "date": "2026-08-18T17:34:13Z",
     "summary": "Closes #3824\n\n## Summary\n## Goal\n\n## Context\n- Issue: https://github.com/dkblinux98/nyxGPT/issues/3824\n- Milestone: Phase 6 \u2014 Enterprise Deployment Hardening (v3.0.0)\n- Label:\n- `Feature`\n- Base branch: `v3.0.0`\n- Head branch: `claude/issue-3824-20260818-1255`\n\n## Checklist\n- [ ] On a clean machine,",
     "url": "https://github.com/dkblinux98/nyxGPT/pull/3889",
     "source": "github_prs",
     "highlights": [
-      "comments: 15",
+      "comments: 17",
       "pull request",
       "repo: nyxGPT"
     ]
@@ -1945,7 +1945,7 @@
   },
   {
     "title": "[PR] Multi-agent rooms: gating that holds, and seats that can be quiet, silenced, human-held, and in character",
-    "date": "2026-08-18T15:52:35Z",
+    "date": "2026-08-18T17:52:54Z",
     "summary": "The room layer already puts N agents in one LiveKit room and arbitrates a floor between them. Five gaps kept that from being usable by a consumer whose agents are configured **characters** rather than one generic assistant. All five were found building a panel interview on it, and each is small on i",
     "url": "https://github.com/MemberJunction/MJ/pull/3909",
     "source": "github_prs",
@@ -2005,12 +2005,12 @@
   },
   {
     "title": "[PR] feat(core): add Entity.IsTotalSpecialization \u2014 EER completeness constraint",
-    "date": "2026-08-18T17:21:30Z",
+    "date": "2026-08-18T17:59:38Z",
     "summary": "## Add `Entity.IsTotalSpecialization` \u2014 the completeness constraint for ISA\r\n\r\n### Summary\r\nMemberJunction already models one of the two classical constraints on an ISA\r\n(specialization/generalization) hierarchy \u2014 **disjointness**, via\r\n`Entity.AllowMultipleSubtypes` (disjoint vs. overlapping subtyp",
     "url": "https://github.com/MemberJunction/MJ/pull/3938",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "pull request",
       "repo: MJ"
     ]
@@ -2029,7 +2029,7 @@
   },
   {
     "title": "[PR] fix(onboard): validate Windows-host Ollama probe body",
-    "date": "2026-08-18T17:01:39Z",
+    "date": "2026-08-18T18:19:27Z",
     "summary": "The Windows-host Ollama reachability probe trusted any non-empty Docker capture as proof the daemon is live. A captive proxy, a stale listener, or a stub on host.docker.internal can answer with an arbitrary 2xx body that then fed isWindowsHostOllama and the install menu. Validate the /api/tags body ",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9482",
     "source": "github_prs",
@@ -2053,14 +2053,86 @@
   },
   {
     "title": "[PR] feat(mai-ui): GUI grounding service + fix registry mislabel",
-    "date": "2026-08-18T16:48:09Z",
+    "date": "2026-08-18T18:40:01Z",
     "summary": "## Summary\n\n- **New service:** `pmoves/services/mai-ui-agent/` \u2014 FastAPI on port 8220 serving Tongyi-MAI/MAI-UI-2B (Qwen3-VL, 2.1B params) for GUI grounding + screenshot understanding\n- **Registry fix:** MAI-UI was mislabeled as `\"Main user interface\"` (primary_type: ui) \u2014 corrected to `primary_type",
     "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/2468",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 15",
       "pull request",
       "repo: PMOVES.AI"
+    ]
+  },
+  {
+    "title": "[PR] fix(openai): fall back to json_object mode when a provider ignores strict schema output",
+    "date": "2026-08-18T18:37:46Z",
+    "summary": "## What this PR does / why we need it:\r\n\r\nSome OpenAI-compatible providers accept Mealie's `response_format=json_schema` (strict structured outputs) request without error, but don't actually enforce it \u2014 they just reply in prose.\r\nConfirmed this against Ollama Cloud across every model tested (`gpt-o",
+    "url": "https://github.com/mealie-recipes/mealie/pull/8133",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: mealie"
+    ]
+  },
+  {
+    "title": "[PR] [Mac app] Self-contained local mode \u2014 the whole stack runs inside Mike.app (stacked on #302)",
+    "date": "2026-08-18T18:37:28Z",
+    "summary": "# Self-contained Mike.app \u2014 the whole stack runs inside the desktop app\n\nStacked on #302 (desktop shell; hosted default). This PR adds the third and\nfinal mode from `desktop/docs/self-contained-plan.md`: **Run locally on this\nMac**. The app supervises the entire Mike stack \u2014 Postgres 17, GoTrue,\nPos",
+    "url": "https://github.com/Open-Legal-Products/mike/pull/351",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mike"
+    ]
+  },
+  {
+    "title": "[PR] fix(agent-manager): hybrid agent search so new agents are findable, and load specs via a direct action",
+    "date": "2026-08-18T18:35:42Z",
+    "summary": "## Summary\n\nTwo defects that both made the Agent Manager fail on agents it had *just* created or was asked to modify:\n\n1. **A newly created agent was undiscoverable for up to ~24h.** `Find Best Agent` / `Find Candidate Agents` ranked semantic-only over the `AI Agents Search` vectors, which are popul",
+    "url": "https://github.com/MemberJunction/MJ/pull/3913",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(linux): bug-report captures plugin-managed containers",
+    "date": "2026-08-18T18:30:11Z",
+    "summary": "`signalk bug-report` filtered every container query with `--filter name=signalk-`, which only ever matches the four engine containers the installer deploys. Everything the signalk-container **plugin** manages is namespaced `sk-*` \u2014 QuestDB, Grafana, Ollama, Whisper, Piper, openwakeword, wyoming-sate",
+    "url": "https://github.com/dirkwa/signalk-universal-installer/pull/268",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: signalk-universal-installer"
+    ]
+  },
+  {
+    "title": "[PR] Bump the nuget-minor-patch group with 34 updates",
+    "date": "2026-08-18T17:47:27Z",
+    "summary": "Updated [AWSSDK.SQS](https://github.com/aws/aws-sdk-net/) from 4.0.100.2 to 4.0.100.8.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [AWSSDK.SQS's releases](https://github.com/aws/aws-sdk-net//releases)._\n\nNo release notes found for this version range.\n\nCommits viewable in [compare view",
+    "url": "https://github.com/xray79/ticket-triage/pull/45",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ticket-triage"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-go monorepo to v0.44.0",
+    "date": "2026-08-18T17:40:51Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/infratographer/load-balancer-api/pull/344",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: load-balancer-api"
     ]
   }
 ]
