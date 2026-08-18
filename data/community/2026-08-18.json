@@ -517,7 +517,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-18T01:08:53Z",
+    "date": "2026-08-18T04:47:17Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@bu",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-18T04:22:53Z",
+    "date": "2026-08-18T05:23:32Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -853,7 +853,7 @@
   },
   {
     "title": "[PR] Update all dependencies",
-    "date": "2026-08-18T01:51:46Z",
+    "date": "2026-08-18T05:14:25Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [app-template](https://redirect.github.com/bjw-s-labs/helm-charts) | minor | `5.0.1` \u2192 `5.1.0` |\n| [argo-cd](https://redirect.github.com/argop",
     "url": "https://github.com/nolte/k8s-home-lab/pull/836",
     "source": "github_prs",
@@ -925,7 +925,7 @@
   },
   {
     "title": "[PR] feat(conversations): window the chat transcript with bounded DOM",
-    "date": "2026-08-18T03:16:06Z",
+    "date": "2026-08-18T05:28:03Z",
     "summary": "## What this does\n\nOpening a conversation used to load **every** `MJ: Conversation Details` row, hydrate all of them, and mount a component per timeline item. On a long transcript that is a large query, a large hydration, and an unbounded DOM \u2014 all to show the reader the last handful of messages.\n\nT",
     "url": "https://github.com/MemberJunction/MJ/pull/3912",
     "source": "github_prs",
@@ -1021,7 +1021,7 @@
   },
   {
     "title": "[PR] Member4 rag v2",
-    "date": "2026-08-18T04:29:19Z",
+    "date": "2026-08-18T05:26:23Z",
     "summary": "",
     "url": "https://github.com/IKurokami/PRN222-RAG-Assistant/pull/29",
     "source": "github_prs",
@@ -1033,14 +1033,110 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-18T04:24:08Z",
+    "date": "2026-08-18T05:26:17Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` integration for Hailo-Ollama's native `/api/tags` and `/api/chat` contract.\n  - Keeps Hailo-specific request shaping, text-only capability policy",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 35",
+      "comments: 36",
       "pull request",
       "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "[BUG] `hermes mnemosyne` does not exist when installing via wrapper in Docker",
+    "date": "2026-08-13T09:23:57Z",
+    "summary": "## Description\n\nI installed mnemosyne inside the official Hermes Docker container using the wrapper method. `hermes memory` reports that mnemosyne is working and installed. The tools are also available and work.\n\nThe docs recommend running sleep cycles via `hermes mnemosyne sleep`, however, Hermes t",
+    "url": "https://github.com/mnemosyne-oss/mnemosyne/issues/641",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 7",
+      "state: open",
+      "repo: mnemosyne"
+    ]
+  },
+  {
+    "title": "[PR] fix: remediate review findings missed before merging Wave 0 PRs",
+    "date": "2026-08-18T05:32:05Z",
+    "summary": "## **User description**\n## Summary\n\nCorrection-loop remediation for 18 review-thread findings on #365/#366/#352 that were never checked before merge \u2014 `gh pr checks` showing bot status checks as \"pass\" was wrongly treated as \"no outstanding review feedback.\" Named checks and inline review-comment th",
+    "url": "https://github.com/qnbs/WorldScript-Studio/pull/383",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: WorldScript-Studio"
+    ]
+  },
+  {
+    "title": "[PR] docs: upstream reconciliation triage (fork is 278 behind / 139 ahead of beam-cloud/beta9)",
+    "date": "2026-08-18T05:28:42Z",
+    "summary": "Analysis only \u2014 **no code changes, nothing merged or rebased**. This is the\ninput to a merge @Wingie will perform.\n\nAdds `docs/upstream-reconciliation-2026-08.md`.\n\n## Headline\n\n**Upstream independently built the external-agent system this fork exists to provide.**\n\nThe fork was created because, del",
+    "url": "https://github.com/Wingie/beta9/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: beta9"
+    ]
+  },
+  {
+    "title": "[PR] feat(telemetry): record what a call cost and what it looked like before routing",
+    "date": "2026-08-18T05:28:09Z",
+    "summary": "## Description\n\nEverything adaptive rests on two measurements the extension did not have. **Neither needed production data to build** \u2014 they need it to *evaluate*, and conflating those two is why this looked blocked when it was not.\n\n## #770 \u2014 per-call cost and real tokens\n\n`tx_nrllm_telemetry` carr",
+    "url": "https://github.com/netresearch/t3x-nr-llm/pull/802",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: t3x-nr-llm"
+    ]
+  },
+  {
+    "title": "[PR] Fix premature call teardown and TTS chunk misalignment",
+    "date": "2026-08-18T05:26:11Z",
+    "summary": "## Summary\n- `TestAgentPanel.tsx`: `end_call` now waits for the scheduled farewell audio to actually finish playing (via the Web Audio playhead) before tearing down the mic/WebSocket, instead of cutting it off mid-sentence the instant the message arrives. Guarded against a stale teardown timer firin",
+    "url": "https://github.com/yuviz-ai/yuviz/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: yuviz"
+    ]
+  },
+  {
+    "title": "[PR] docs(pi): document local models via models.json",
+    "date": "2026-08-18T05:21:56Z",
+    "summary": "Covers Ollama, LM Studio, Lemonade, and llama.cpp setup for the pi agent through the persisted config mount, plus the Linux bridge-gateway binding caveat. Cross-links native local-model mechanisms from the LLM guide. Closes #139.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.a",
+    "url": "https://github.com/VibePod/vibepod-cli/pull/141",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: vibepod-cli"
+    ]
+  },
+  {
+    "title": "[PR] chore: audit dependencies and remove artifacts orphaned by the 1.0 rewrite",
+    "date": "2026-08-18T05:01:42Z",
+    "summary": "## Why are these changes needed?\n\n`pip install ag2`, several `ag2[...]` extras, and the dev dependency groups all pull packages that no code in the repo imports. Required dependencies in particular are something a downstream user cannot opt out of, so unused ones are pure install-size and supply-cha",
+    "url": "https://github.com/ag2ai/ag2/pull/3159",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ag2"
+    ]
+  },
+  {
+    "title": "[PR] Omi self-hostable fully on-premise: services behind a neutral, swappable port (database:firestore,mongo - storage:gcs,s3 - vector: pinecone,qdrant - auth: firebase,keycloak - llm: openai - notifications: FCM, unifiedpush)",
+    "date": "2026-08-18T04:53:14Z",
+    "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
+    "url": "https://github.com/BasedHardware/omi/pull/10887",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: omi"
     ]
   }
 ]
