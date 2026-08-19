@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-19T06:21:34Z",
+    "date": "2026-08-19T07:12:03Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -685,7 +685,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-19T06:04:56Z",
+    "date": "2026-08-19T06:55:28Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -841,12 +841,12 @@
   },
   {
     "title": "[PR] feat(runtime): retire the Claude subscription OAuth provider",
-    "date": "2026-08-19T06:39:58Z",
+    "date": "2026-08-19T07:31:33Z",
     "summary": "## Summary\n\nMaka could sign in with a Claude Pro/Max subscription and send inference through it. Anthropic's Consumer Terms permit programmatic access to the consumer Claude services only through an API key or explicit permission, and this path had neither \u2014 it presented itself as Claude Code (borro",
     "url": "https://github.com/maka-agent/maka-agent/pull/3183",
     "source": "github_prs",
     "highlights": [
-      "comments: 14",
+      "comments: 16",
       "pull request",
       "repo: maka-agent"
     ]
@@ -949,7 +949,7 @@
   },
   {
     "title": "[PR] fix(inference): make managed vLLM routing declarative",
-    "date": "2026-08-19T06:48:47Z",
+    "date": "2026-08-19T07:38:36Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nMake managed-inference model and hardware routing declarative, unblock compatible Linux NVIDIA hosts when no appliance-specific preset exists, and make local vLLM and llama.cpp ports configurable end to end.\n\nThe root cause was a split source of truth:",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9537",
     "source": "github_prs",
@@ -973,7 +973,7 @@
   },
   {
     "title": "[PR] Use Probatio as the data validation engine",
-    "date": "2026-08-19T05:03:04Z",
+    "date": "2026-08-19T07:18:24Z",
     "summary": "## Breaking change\n\nNone. Which is the nice thing about all of this \ud83d\ude04 \n\n## Proposed change\n\nThis pull request introduces [Probatio](https://probatio.frenck.dev) as Home Assistant's data validation engine, as a drop-in replacement for voluptuous.\n\nProbatio is a modern, actively maintained, clean-room",
     "url": "https://github.com/home-assistant/core/pull/175128",
     "source": "github_prs",
@@ -985,12 +985,12 @@
   },
   {
     "title": "[PR] Stop offering a credential Anthropic prohibits; stop leaking the one it allows (0.75.0)",
-    "date": "2026-08-19T06:49:10Z",
+    "date": "2026-08-19T07:20:46Z",
     "summary": "## What & why\n\nFollow-up to research into how other tools reuse existing CLI logins. The starting point: **Cascade already discovers them.** `cascade link` reads Claude Code, Codex CLI, Gemini CLI and Copilot credentials today, and correctly refuses three of the four \u2014 each targets its own vendor's ",
     "url": "https://github.com/Varun-SV/Cascade-AI/pull/205",
     "source": "github_prs",
     "highlights": [
-      "comments: 19",
+      "comments: 20",
       "pull request",
       "repo: Cascade-AI"
     ]
@@ -1045,7 +1045,7 @@
   },
   {
     "title": "[PR] Pre-release 2.1: assistant, speech, networking, Docker & MCP",
-    "date": "2026-08-19T05:24:32Z",
+    "date": "2026-08-19T07:32:57Z",
     "summary": "## Overview\n\n`pre-release-2-1` collects the 2.1 pre-release feature work on top of `development`: a large set of assistant/voice-pipeline improvements, an expanded speech-recognition + wake-word system, a screen reader, networking (Wi-Fi/hotspot + Tailscale) upgrades, a Docker/Home-Assistant add-on ",
     "url": "https://github.com/ubopod/ubo_app/pull/364",
     "source": "github_prs",
@@ -1093,7 +1093,7 @@
   },
   {
     "title": "[PR] chore(deps): claude code compatibility update (v2.1.224 \u2192 v2.1.235)",
-    "date": "2026-08-19T06:49:15Z",
+    "date": "2026-08-19T06:50:16Z",
     "summary": "## Claude Code Compatibility Update\n\n### Versions analyzed\n\n- **v2.1.225** \u2014 gateway spend-limit usage warning, workspace trust prompt for `claude agents`, OAuth/keychain and headless-session fixes, auto-mode safety-filter counting fix, Remote Control and VSCode fixes\n- **v2.1.226** \u2014 bug fixes and ",
     "url": "https://github.com/itsoltech/canopy-desktop/pull/350",
     "source": "github_prs",
@@ -1104,20 +1104,20 @@
     ]
   },
   {
-    "title": "[PR] feat: Supabase-first emergency bridge and canonical credential routing",
-    "date": "2026-08-19T06:49:31Z",
-    "summary": "## Goal\n\nPrebuild a fail-closed emergency control plane for Raspberry Pi/OpenClaw with Supabase as the primary bridge, without copying provider secrets to the Pi or introducing a second Telegram poller.\n\n## Applied in Supabase project `dpllasnpfskyyyzebyal`\n\n- credential reference/status registry wi",
+    "title": "[PR] feat: Supabase-first emergency bridge, command center, and canonical credentials",
+    "date": "2026-08-19T07:15:30Z",
+    "summary": "## Result\n\nCloud-side omission review is complete. This PR must remain Draft until physical Raspberry Pi, phone OAuth, and existing Telegram round-trip evidence exists.\n\n## Applied to Supabase project `dpllasnpfskyyyzebyal`\n\n- fail-closed emergency control plane and work-queue visibility\n- command-c",
     "url": "https://github.com/mnwersdfppa/no-cost-ai/pull/5",
     "source": "github_prs",
     "highlights": [
-      "comments: 178",
+      "comments: 189",
       "pull request",
       "repo: no-cost-ai"
     ]
   },
   {
     "title": "[PR] fix(agent-manager): hybrid agent search so new agents are findable, and load specs via a direct action",
-    "date": "2026-08-19T06:45:05Z",
+    "date": "2026-08-19T07:14:18Z",
     "summary": "## Summary\n\nTwo defects that both made the Agent Manager fail on agents it had *just* created or was asked to modify:\n\n1. **A newly created agent was undiscoverable for up to ~24h.** `Find Best Agent` / `Find Candidate Agents` ranked semantic-only over the `AI Agents Search` vectors, which are popul",
     "url": "https://github.com/MemberJunction/MJ/pull/3913",
     "source": "github_prs",
@@ -1189,7 +1189,7 @@
   },
   {
     "title": "[PR] Migrate backend from Cloudflare Worker + FastAPI to Django/DRF (#146)",
-    "date": "2026-08-19T06:01:16Z",
+    "date": "2026-08-19T06:58:04Z",
     "summary": "Replace worker.js (Cloudflare Worker) and pg/faq_api/main.py (FastAPI PG FAQ API) with a single Django + Django REST Framework backend under backend/, while preserving all client-visible behaviour byte-for-byte.\r\n\r\nPreserved (unchanged):\r\n- Frontend (static/), FAQ seed JSON, source docs (src/), and ",
     "url": "https://github.com/iitmbsc-student-projects/iitmdocs/pull/148",
     "source": "github_prs",
@@ -1221,6 +1221,78 @@
       "comments: 1",
       "pull request",
       "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] hotfix: ollama api key for cloud models",
+    "date": "2026-08-19T07:09:26Z",
+    "summary": "## Summary\r\n\r\nAPI key support for the Ollama provider required for cloud models: https://docs.ollama.com/api/authentication\r\n\r\n## Changes\r\n\r\nExclude Ollama from the keyless providers. It won't hurt local setups.\r\n\r\n## Type of change\r\n\r\n- [x] Bug fix\r\n- [ ] Feature\r\n- [ ] Refactor\r\n- [ ] Documentatio",
+    "url": "https://github.com/maximhq/bifrost/pull/1452",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add GitHub Copilot provider",
+    "date": "2026-08-19T07:09:23Z",
+    "summary": "## Description\n\nAdds GitHub Copilot as a first-class LLM provider in Bifrost. The Copilot provider uses a two-layer OAuth flow: a device-code grant to obtain a GitHub OAuth token, which is then exchanged for a short-lived Copilot API token with automatic refresh.\n\nSupports Chat Completions and the R",
+    "url": "https://github.com/maximhq/bifrost/pull/2054",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 16",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] Add make targets for local development setup and documentation",
+    "date": "2026-08-19T07:07:18Z",
+    "summary": "* Add  DEVELOPMENT.md guide covering the complete local development\r\nworkflow including LocalStack setup, CRD installation, controller\r\nconfiguration, and e2e testing with required environment variables\r\n\r\n* Introduce make targets (local-dev-setup, local-dev-cleanup) with\r\ncorresponding shell script",
+    "url": "https://github.com/redhat-data-and-ai/unstructured-data-controller/pull/137",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: unstructured-data-controller"
+    ]
+  },
+  {
+    "title": "[PR] feat(conversations): window the chat transcript with bounded DOM",
+    "date": "2026-08-19T07:03:21Z",
+    "summary": "## What this does\n\nOpening a conversation used to load **every** `MJ: Conversation Details` row, hydrate all of them, and mount a component per timeline item. On a long transcript that is a large query, a large hydration, and an unbounded DOM \u2014 all to show the reader the last handful of messages.\n\nT",
+    "url": "https://github.com/MemberJunction/MJ/pull/3912",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] RavenDB-26606",
+    "date": "2026-08-19T06:59:08Z",
+    "summary": "### Issue link\r\n\r\nhttps://issues.hibernatingrhinos.com/issue/RavenDB-26606\r\n\r\n### Type of change\r\n\r\n- [ ] Bug fix\r\n- [ ] Regression bug fix\r\n- [ ] Optimization\r\n- [ ] New feature\r\n\r\n### How risky is the change?\r\n\r\n- [ ] Low \r\n- [ ] Moderate \r\n- [ ] High\r\n- [ ] Not relevant\r\n\r\n### Backward compatibil",
+    "url": "https://github.com/ravendb/ravendb/pull/23170",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ravendb"
+    ]
+  },
+  {
+    "title": "[PR] [Quality] Repo-wide audit fixes: error containment, drifted forks, silent failures (stacked on #294\u2192#295)",
+    "date": "2026-08-19T06:50:04Z",
+    "summary": "# Code quality follow-up: repo-wide audit fixes (stacked on #294 \u2192 #295)\n\nA seven-area audit of the codebase (backend modules, backend lib/workers, remaining route files, frontend data layer, frontend components, Word add-in + shared UI, cross-cutting infra) surfaced ~100 findings. This PR lands the",
+    "url": "https://github.com/Open-Legal-Products/mike/pull/356",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mike"
     ]
   }
 ]
