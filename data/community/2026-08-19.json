@@ -589,7 +589,7 @@
   },
   {
     "title": "[PR] [FEAT] policy-explorer-service \ucd94\uac00 \ubc0f Gateway \ub77c\uc6b0\ud305 \uc5f0\uacb0",
-    "date": "2026-08-19T01:00:30Z",
+    "date": "2026-08-19T05:31:31Z",
     "summary": "## \uac1c\uc694\n\n\uc0ac\ub0b4 \uc778\uc0ac(HR) \uaddc\uc815 \uac1c\uc815\uc548\uc774 \uae30\uc874 \ubb38\uc11c\uc640 \ucda9\ub3cc\ud558\ub294\uc9c0 \ub85c\uceec LLM\uc73c\ub85c \uac80\ucd9c\ud558\ub294 **`policy-explorer-service`(FastAPI)** \ub97c \ubaa8\ub178\ub808\ud3ec\uc5d0 \ucd94\uac00\ud558\uace0, gateway \ub77c\uc6b0\ud305\uae4c\uc9c0 \uc5f0\uacb0\ud588\uc2b5\ub2c8\ub2e4.\n\n## \uc5f0\uad00 \uc774\uc288\n\n<!-- ex) close #123 -->\n\n## PR \uc720\ud615\n\n- [x] \uae30\ub2a5 \ucd94\uac00\n- [ ] \ubc84\uadf8 \uc218\uc815\n- [ ] \ub9ac\ud329\ud1a0\ub9c1\n- [x] \uc124\uc815 \ubcc0\uacbd (config, docker, infra)\n- [x] \ubb38\uc11c \uc218\uc815\n- [x] \ud14c\uc2a4\ud2b8 \ucd94\uac00/\uc218\uc815\n\n## \ubcc0\uacbd \ub0b4\uc6a9\n\n### \uc5b4\ub5a4 \uc11c\ube44\uc2a4\uc778\uac00\n\n\uc778\uc0ac\ub2f4",
     "url": "https://github.com/llllxxxxpppp/lxp-msa-infrastructure-starter/pull/71",
     "source": "github_prs",
@@ -625,7 +625,7 @@
   },
   {
     "title": "[PR] fix(onboard): reject malformed Ollama model entries",
-    "date": "2026-08-19T04:37:24Z",
+    "date": "2026-08-19T05:07:40Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nThe Windows-host Ollama probe introduced in #9482 accepted a `models` array even when its entries were `null`, primitive values, or nested arrays. The shared response validator now requires every model entry to be a non-null, non-array object while pre",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9518",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-19T04:20:30Z",
+    "date": "2026-08-19T05:23:46Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -697,7 +697,7 @@
   },
   {
     "title": "[PR] Bump coverlet.collector and 4 others",
-    "date": "2026-08-19T00:11:42Z",
+    "date": "2026-08-19T05:02:58Z",
     "summary": "Updated [coverlet.collector](https://github.com/coverlet-coverage/coverlet) from 6.0.2 to 6.0.4.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [coverlet.collector's releases](https://github.com/coverlet-coverage/coverlet/releases)._\n\n## 6.0.4\n\n### Fixed\n- Fix empty coverage report when ",
     "url": "https://github.com/Arthure-code/factorytrack/pull/7",
     "source": "github_prs",
@@ -709,7 +709,7 @@
   },
   {
     "title": "[PR] fix(ci): gate on non-concrete dep ranges; delete dead tabstrip generator",
-    "date": "2026-08-19T03:00:40Z",
+    "date": "2026-08-19T05:09:56Z",
     "summary": "Follow-up to #3467. Both items came out of @MarceloT-BC's review there, adjudicated by an independent audit.\n\n## 1. The deps guard could write `latest`, and could never take it back\n\n`.github/scripts/check-explorer-external-deps.mjs` had a one-way ratchet:\n\n- `pickRange()` returns `latest` when *eve",
     "url": "https://github.com/MemberJunction/MJ/pull/3552",
     "source": "github_prs",
@@ -733,12 +733,12 @@
   },
   {
     "title": "[PR] Build local-first QCTP Platform Rev2 MVP",
-    "date": "2026-08-19T04:01:11Z",
+    "date": "2026-08-19T04:58:24Z",
     "summary": "## Result\n\nBuilds the maintainable QCTP Platform Rev2 MVP on the controlled branch. This is a **draft**, non-production candidate. It does not merge or deploy anything, and release authority remains `ZERO_RELEASE`.\n\n## Delivered\n\n- Free Local Mode as the default: normal recurring API cost $0, no API",
     "url": "https://github.com/rfrye08-pixel/QCTP/pull/2",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 6",
       "pull request",
       "repo: QCTP"
     ]
@@ -973,7 +973,7 @@
   },
   {
     "title": "[PR] Use Probatio as the data validation engine",
-    "date": "2026-08-19T04:39:30Z",
+    "date": "2026-08-19T05:03:04Z",
     "summary": "## Breaking change\n\nNone. Which is the nice thing about all of this \ud83d\ude04 \n\n## Proposed change\n\nThis pull request introduces [Probatio](https://probatio.frenck.dev) as Home Assistant's data validation engine, as a drop-in replacement for voluptuous.\n\nProbatio is a modern, actively maintained, clean-room",
     "url": "https://github.com/home-assistant/core/pull/175128",
     "source": "github_prs",
@@ -985,12 +985,12 @@
   },
   {
     "title": "[PR] Stop offering a credential Anthropic prohibits; stop leaking the one it allows (0.75.0)",
-    "date": "2026-08-19T04:36:05Z",
+    "date": "2026-08-19T05:19:46Z",
     "summary": "## What & why\n\nFollow-up to research into how other tools reuse existing CLI logins. The starting point: **Cascade already discovers them.** `cascade link` reads Claude Code, Codex CLI, Gemini CLI and Copilot credentials today, and correctly refuses three of the four \u2014 each targets its own vendor's ",
     "url": "https://github.com/Varun-SV/Cascade-AI/pull/205",
     "source": "github_prs",
     "highlights": [
-      "comments: 18",
+      "comments: 19",
       "pull request",
       "repo: Cascade-AI"
     ]
@@ -1017,6 +1017,78 @@
       "comments: 3",
       "pull request",
       "repo: astrolabe"
+    ]
+  },
+  {
+    "title": "[PR] fix(actions): revive Perplexity Search as a web-search fallback for agents",
+    "date": "2026-08-19T05:33:50Z",
+    "summary": "## Summary\n\nGoogle's [Custom Search JSON API](https://developers.google.com/custom-search/v1/overview) is **closed to new customers** and is discontinued on **2027-01-01**. Every MJ agent that searches the web was bound to that one action, so new deployments currently have no working web search at a",
+    "url": "https://github.com/MemberJunction/MJ/pull/3957",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update testcontainers-go monorepo to v0.44.0",
+    "date": "2026-08-19T05:31:00Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/mdelapenya/testcontainers-go-compose/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: testcontainers-go-compose"
+    ]
+  },
+  {
+    "title": "[PR] Pre-release 2.1: assistant, speech, networking, Docker & MCP",
+    "date": "2026-08-19T05:24:32Z",
+    "summary": "## Overview\n\n`pre-release-2-1` collects the 2.1 pre-release feature work on top of `development`: a large set of assistant/voice-pipeline improvements, an expanded speech-recognition + wake-word system, a screen reader, networking (Wi-Fi/hotspot + Tailscale) upgrades, a Docker/Home-Assistant add-on ",
+    "url": "https://github.com/ubopod/ubo_app/pull/364",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ubo_app"
+    ]
+  },
+  {
+    "title": "[PR] feat: retire Perplexity Sonar defaults \u2014 quick/deep_research now Gemini Flash grounded search on Vertex AI",
+    "date": "2026-08-19T05:09:39Z",
+    "summary": "## Summary\n\nRetires the Perplexity Sonar backends for the two inline research tools, per the cross-project directive that no Perplexity-billed surface may be selected implicitly.\n\n**Risk tier: T1** \u2014 ordinary tool behavior. No auth, gate, or secret-handling changes beyond dead-code deletion; credent",
+    "url": "https://github.com/jasonvassallo/ai-tools-mcp/pull/67",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: ai-tools-mcp"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go to v0.43.0",
+    "date": "2026-08-19T05:05:33Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/glevanov/weight-tracker-service/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: weight-tracker-service"
+    ]
+  },
+  {
+    "title": "[PR] Update Docker images",
+    "date": "2026-08-19T04:59:14Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | patch | `v3.8.0` \u2192 `v3.8.1` |\n| codeberg.org/readeck/readeck | digest | `6738c7f` \u2192 `d1dde9c` |\n| docker.io/wger/server | digest | `d5a8527` \u2192 `e8c8964` |\n| freikin/dawarich | digest | `41372c4` \u2192 `",
+    "url": "https://github.com/morten-olsen/homelab-apps/pull/379",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-apps"
     ]
   }
 ]
