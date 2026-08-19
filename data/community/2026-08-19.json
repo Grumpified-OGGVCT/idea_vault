@@ -229,7 +229,7 @@
   },
   {
     "title": "\u2699\ufe0f AI Infrastructure Digest 2026-08-18",
-    "date": "2026-08-17T23:18:43Z",
+    "date": "2026-08-19T03:08:40Z",
     "summary": "# AI Infrastructure Digest 2026-08-18\n\n> Generated: 2026-08-17 23:00 UTC | Projects covered: 6\n\n- [vLLM](https://github\u200b.com/vllm-project/vllm)\n- [SGLang](https://github\u200b.com/sgl-project/sglang)\n- [llama.cpp](https://github\u200b.com/ggml-org/llama.cpp)\n- [Ollama](https://github\u200b.com/ollama/ollama)\n- [Li",
     "url": "https://github.com/FrontierMindLab/agents-radar/issues/86",
     "source": "github_issues",
@@ -625,19 +625,19 @@
   },
   {
     "title": "[PR] fix(onboard): reject malformed Ollama model entries",
-    "date": "2026-08-19T00:42:48Z",
+    "date": "2026-08-19T03:49:22Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nThe Windows-host Ollama probe introduced in #9482 accepted a `models` array even when its entries were `null`, primitive values, or nested arrays. The shared response validator now requires every model entry to be a non-null, non-array object while pre",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9518",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "pull request",
       "repo: NemoClaw"
     ]
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-19T02:53:47Z",
+    "date": "2026-08-19T03:35:55Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -685,7 +685,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-19T00:15:04Z",
+    "date": "2026-08-19T03:27:27Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -709,7 +709,7 @@
   },
   {
     "title": "[PR] fix(ci): gate on non-concrete dep ranges; delete dead tabstrip generator",
-    "date": "2026-08-19T02:57:12Z",
+    "date": "2026-08-19T03:00:40Z",
     "summary": "Follow-up to #3467. Both items came out of @MarceloT-BC's review there, adjudicated by an independent audit.\n\n## 1. The deps guard could write `latest`, and could never take it back\n\n`.github/scripts/check-explorer-external-deps.mjs` had a one-way ratchet:\n\n- `pickRange()` returns `latest` when *eve",
     "url": "https://github.com/MemberJunction/MJ/pull/3552",
     "source": "github_prs",
@@ -733,7 +733,7 @@
   },
   {
     "title": "[PR] Build local-first QCTP Platform Rev2 MVP",
-    "date": "2026-08-19T02:59:13Z",
+    "date": "2026-08-19T03:25:38Z",
     "summary": "## Result\n\nBuilds the maintainable QCTP Platform Rev2 MVP on the controlled branch. This is a **draft**, non-production candidate. It does not merge or deploy anything, and release authority remains `ZERO_RELEASE`.\n\n## Delivered\n\n- Free Local Mode as the default: normal recurring API cost $0, no API",
     "url": "https://github.com/rfrye08-pixel/QCTP/pull/2",
     "source": "github_prs",
@@ -745,12 +745,12 @@
   },
   {
     "title": "[PR] feat(cadrage): le cadre suit le tronc, d\u00e9duit de points de pose",
-    "date": "2026-08-19T02:57:15Z",
+    "date": "2026-08-19T03:11:50Z",
     "summary": "Deux \u00e9tapes, faites l'une apr\u00e8s l'autre, la seconde parce que la premi\u00e8re a but\u00e9.\n\n## 1. Le cadre n'a plus \u00e0 contenir les gens en entier\n\nLe choix du ratio exigeait que l'**union des bo\u00eetes enti\u00e8res** tienne dans le cadre \u2014 bras tendu et \u00e9paule ext\u00e9rieure compris. Une bo\u00eete abandonne d\u00e9sormais, de c",
     "url": "https://github.com/JulienCr/avolo-shorts/pull/83",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: avolo-shorts"
     ]
@@ -769,7 +769,7 @@
   },
   {
     "title": "[PR] feat(openshell): bundle mkfs.ext4 and debugfs on Linux",
-    "date": "2026-08-19T02:54:36Z",
+    "date": "2026-08-19T03:04:49Z",
     "summary": "## Summary\n\n- bundle the e2fsprogs 1.47.4 `mke2fs` payload as `mkfs.ext4`, plus `debugfs`, for the OpenShell VM driver on Linux x64 and arm64\n- select the pinned Homebrew bottle from its GHCR OCI manifest, verify its digest, and stage only the required binaries, configuration, and e2fsprogs librarie",
     "url": "https://github.com/openkaiden/kaiden/pull/2692",
     "source": "github_prs",
@@ -921,6 +921,54 @@
       "comments: 2",
       "pull request",
       "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): unbreak next \u2014 accept a parsed Configuration on RelatedFormRoleCandidate",
+    "date": "2026-08-19T03:54:03Z",
+    "summary": "## Summary\n\n`next` is currently red. `@memberjunction/ng-base-forms` fails to compile, which fails the whole workspace build:\n\n```\nsrc/lib/chrome/resolve-form-chrome.ts:706:9 - error TS2322:\n  Type 'IEntityRelationshipConfiguration | null' is not assignable to type 'string | null | undefined'.\n\n  70",
+    "url": "https://github.com/MemberJunction/MJ/pull/3954",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: per-agent Hermes provider \u2014 PR 1a (bare connector)",
+    "date": "2026-08-19T03:49:29Z",
+    "summary": "## Summary\n\nAdds Hermes Agent (Nous Research, MIT) as a 4th per-agent LLM provider alongside Ollama/NVIDIA/Gemini. **Ollama stays the unconditional default for every agent** \u2014 this is purely additive and opt-in, per agent. Design doc (gitignored, machine-local): `docs/HERMES_AGENT_DELEGATION_PLAN.md",
+    "url": "https://github.com/obsidian-media/AlphonsoEcosystem/pull/165",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: AlphonsoEcosystem"
+    ]
+  },
+  {
+    "title": "[PR] fix(inference): add Linux vLLM profiles and configurable ports",
+    "date": "2026-08-19T03:07:45Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nAdd explicit experimental Linux x86_64 managed-vLLM profiles for Muse Glimmer 30B and NVIDIA Nemotron 3.5 Lightning 30B so explicit model selection is not blocked when the host is not a DGX Spark. Keep the optimized Spark recipes as the more specific p",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/9537",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-19T03:01:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot",
+    "url": "https://github.com/stacksjs/ts-auth/pull/120",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-auth"
     ]
   }
 ]
