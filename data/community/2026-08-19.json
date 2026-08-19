@@ -529,7 +529,7 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-19T18:15:27Z",
+    "date": "2026-08-19T19:19:26Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` integration for Hailo-Ollama's native `/api/tags` and `/api/chat` contract.\n  - Keeps Hailo-specific request shaping, text-only capability policy",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-19T18:20:56Z",
+    "date": "2026-08-19T19:21:48Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -877,7 +877,7 @@
   },
   {
     "title": "[PR] Integrate #55/#57/#58/#60 and #59 (fail-closed updater policy)",
-    "date": "2026-08-19T18:14:51Z",
+    "date": "2026-08-19T18:50:13Z",
     "summary": "## Purpose\n\nSuperfix branch to land **after** the five open arena PRs (#55, #57, #58, #59, #60) merge. It integrates all five (merged in conflict-safe order `#55 \u2192 #57 \u2192 #60 \u2192 #58 \u2192 #59`) and remediates every finding (Critical \u2192 Nitpick) from the consolidated assertive CodeRabbit-style review, so it",
     "url": "https://github.com/maus-inc/mausVoice/pull/63",
     "source": "github_prs",
@@ -889,7 +889,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-19T16:01:12Z",
+    "date": "2026-08-19T19:02:07Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@bu",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -961,7 +961,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-19T15:23:28Z",
+    "date": "2026-08-19T19:07:55Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot",
     "url": "https://github.com/stacksjs/ts-auth/pull/120",
     "source": "github_prs",
@@ -1309,7 +1309,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-19T17:10:30Z",
+    "date": "2026-08-19T19:28:34Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1549,7 +1549,7 @@
   },
   {
     "title": "[PR] Omi fully on-premise via Docker Compose or Helm/k8s: every managed service behind a swappable port (db Firestore|Mongo \u00b7 storage GCS|S3 \u00b7 vector Pinecone|Qdrant \u00b7 auth Firebase|Keycloak \u00b7 push FCM|UnifiedPush \u00b7 LLM any OpenAI-compatible endpoint)",
-    "date": "2026-08-19T17:02:06Z",
+    "date": "2026-08-19T18:39:29Z",
     "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
     "url": "https://github.com/BasedHardware/omi/pull/10887",
     "source": "github_prs",
@@ -1825,7 +1825,7 @@
   },
   {
     "title": "[PR] feat(gantt,shared): add ResizeObserver to gantt and OpenNewEntityRecord to SharedService",
-    "date": "2026-08-19T18:02:42Z",
+    "date": "2026-08-19T19:21:15Z",
     "summary": "## Summary\n- Added ResizeObserver lifecycle in MjGanttChartComponent to properly handle initial container sizing\n- Added OpenNewEntityRecord support in SharedService and RecordNavigationAdapter\n- Added live DB and configuration metadata integration tests",
     "url": "https://github.com/MemberJunction/MJ/pull/3949",
     "source": "github_prs",
@@ -1885,7 +1885,7 @@
   },
   {
     "title": "[PR] Stage AI work by pipeline stage instead of doing it all at Evaluate",
-    "date": "2026-08-19T18:29:02Z",
+    "date": "2026-08-19T18:47:49Z",
     "summary": "## Summary\n\nImplements PRD v0.2.1 \u2014 AI work now runs when its stage does, instead of all of it on Evaluate.\n\n**Fast Evaluation** replaces the seven-block (A\u2013G) evaluator with one structured call answering \"should I pursue this?\". The model returns component scores and observations; JST derives the f",
     "url": "https://github.com/uxdesignlab/job-search-terminal/pull/39",
     "source": "github_prs",
@@ -1981,8 +1981,8 @@
   },
   {
     "title": "[PR] Adds case study RAG+AI and minor fixes",
-    "date": "2026-08-19T18:38:11Z",
-    "summary": "## Summary by Sourcery\n\nIntroduce a grounded policy RAG assistant with Ollama support, enforceable policy decisions, interactive web experiences, and supporting development infrastructure.\n\nNew Features:\n- Add a policy assistant that ingests seeded Markdown policies, retrieves relevant chunks, gener",
+    "date": "2026-08-19T19:05:54Z",
+    "summary": "## Summary by Sourcery\n\nIntroduce a policy-focused RAG assistant with Ollama and stub AI support, guarded answers, operational status tooling, and a redesigned web experience.\n\nNew Features:\n- Add a policy assistant that ingests seeded Markdown policies, retrieves relevant chunks, generates grounded",
     "url": "https://github.com/moserkristian/Moser.Enterprise.Blueprint/pull/1",
     "source": "github_prs",
     "highlights": [
@@ -2005,24 +2005,24 @@
   },
   {
     "title": "[PR] feat(models): add per-provider model manifests as a single metadata source",
-    "date": "2026-08-19T18:33:19Z",
+    "date": "2026-08-19T19:06:08Z",
     "summary": "Model metadata currently lives in five tables that each know part of the story \u2014 context windows in one file, prices in another, vision support in a third, max output tokens in a fourth, and a model registry carrying its own second copy of pricing. Adding a model means editing several and hoping non",
     "url": "https://github.com/juspay/neurolink/pull/1351",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 12",
       "pull request",
       "repo: neurolink"
     ]
   },
   {
     "title": "[PR] Acceptance Failure: bug: cloud deploy has no --kubernetes -- #3506's k3s decision was never implemented (#3956)",
-    "date": "2026-08-19T18:28:25Z",
+    "date": "2026-08-19T19:23:22Z",
     "summary": "Closes #3956\n\n## Summary\n## Problem / Motivation\n\n## Context\n- Issue: https://github.com/dkblinux98/nyxGPT/issues/3956\n- Blocks acceptance of: #3513, #3950 (promoted by the acceptance sweep, not closed by this PR)\n- Milestone: Phase 6 \u2014 Enterprise Deployment Hardening (v3.0.0)\n- Label:\n- `Acceptance",
     "url": "https://github.com/dkblinux98/nyxGPT/pull/3965",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 13",
       "pull request",
       "repo: nyxGPT"
     ]
@@ -2061,6 +2061,54 @@
       "comments: 0",
       "pull request",
       "repo: Arcade2048"
+    ]
+  },
+  {
+    "title": "[PR] feat(agentic): qwen-anthropic gateway seat (henry) + provider-endpoint/app receipts",
+    "date": "2026-08-19T19:28:29Z",
+    "summary": "## What\n\nThe **agentic-vs-diff A/B**, same model both ways: `gray` already reviews every PR diff-based (PR-Agent, `openrouter/qwen3.8-max`); this adds **henry**, a non-gating trial seat reviewing the same PRs agentically \u2014 headless Claude Code on QwenCloud's Anthropic-compatible Token Plan gateway, ",
+    "url": "https://github.com/lemehmet/fuko-pr/pull/130",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: fuko-pr"
+    ]
+  },
+  {
+    "title": "[PR] Default the episodic long-term memory backend to event memory",
+    "date": "2026-08-19T19:08:43Z",
+    "summary": "### Purpose of the change\n\nThe configuration wizard has defaulted to `backend: event` for a while (`configuration_wizard.py`), but the *static* shipped configs still wired the declarative VectorGraphStore backend. So every install that does not go through the wizard -- `memmachine-compose.sh`, the H",
+    "url": "https://github.com/MemMachine/MemMachine/pull/1518",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: MemMachine"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the go-minor-patch group across 1 directory with 27 updates",
+    "date": "2026-08-19T19:00:11Z",
+    "summary": "Bumps the go-minor-patch group with 18 updates in the /go directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [github.com/a2aproject/a2a-go/v2](https://github.com/a2aproject/a2a-go) | `2.3.1` | `2.4.0` |\n| [github.com/anthropics/anthropic-sdk-go](https://github.com/anthropics/anthropic-sdk-go)",
+    "url": "https://github.com/kagent-dev/kagent/pull/2501",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: kagent"
+    ]
+  },
+  {
+    "title": "[PR] feat(acp): add same-harness model fallback",
+    "date": "2026-08-19T18:46:34Z",
+    "summary": "## Summary\n\n- add an optional `BUZZ_ACP_FALLBACK_MODEL` for same-harness failover\n- activate the fallback after non-auth provider errors, fatal timeouts, or ACP transport failures\n- preserve the fallback across slot respawns until the `buzz-acp` service restarts\n- allow a silent hard-timeout batch o",
+    "url": "https://github.com/block/buzz/pull/4767",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: buzz"
     ]
   }
 ]
