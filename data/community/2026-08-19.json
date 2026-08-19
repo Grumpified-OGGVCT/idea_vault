@@ -529,12 +529,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-19T01:19:44Z",
+    "date": "2026-08-19T16:49:58Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` integration for Hailo-Ollama's native `/api/tags` and `/api/chat` contract.\n  - Keeps Hailo-specific request shaping, text-only capability policy",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 37",
+      "comments: 38",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-19T16:16:34Z",
+    "date": "2026-08-19T17:15:26Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -721,7 +721,7 @@
   },
   {
     "title": "[PR] ci: cut PR unit-test wall time \u2014 remote cache, job split, global-hash\u2026",
-    "date": "2026-08-19T02:35:50Z",
+    "date": "2026-08-19T17:24:40Z",
     "summary": "\u2026 fix\r\n\r\n1. Root package.json no longer declares workspace devDependencies.\r\n\r\n   Turborepo hashes every non-gitignored file of the root package's workspace closure into the GLOBAL hash, and every task consumes that hash. The three root devDeps \u2014 @memberjunction/cli, integration-test-suite, and serv",
     "url": "https://github.com/MemberJunction/MJ/pull/3940",
     "source": "github_prs",
@@ -1045,7 +1045,7 @@
   },
   {
     "title": "[PR] Pre-release 2.1: assistant, speech, networking, Docker & MCP",
-    "date": "2026-08-19T16:31:15Z",
+    "date": "2026-08-19T17:03:34Z",
     "summary": "## Overview\n\n`pre-release-2-1` collects the 2.1 pre-release feature work on top of `development`: a large set of assistant/voice-pipeline improvements, an expanded speech-recognition + wake-word system, a screen reader, networking (Wi-Fi/hotspot + Tailscale) upgrades, a Docker/Home-Assistant add-on ",
     "url": "https://github.com/ubopod/ubo_app/pull/364",
     "source": "github_prs",
@@ -1201,7 +1201,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7.6.0",
-    "date": "2026-08-19T05:54:47Z",
+    "date": "2026-08-19T17:04:14Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3231",
     "source": "github_prs",
@@ -1260,9 +1260,9 @@
     ]
   },
   {
-    "title": "[PR] feat(conversations): window the chat transcript with bounded DOM",
-    "date": "2026-08-19T14:36:25Z",
-    "summary": "## What this does\n\nOpening a conversation used to load **every** `MJ: Conversation Details` row, hydrate all of them, and mount a component per timeline item. On a long transcript that is a large query, a large hydration, and an unbounded DOM \u2014 all to show the reader the last handful of messages.\n\nT",
+    "title": "[PR] feat(conversations): window the chat transcript \u2014 paged history, bounded DOM",
+    "date": "2026-08-19T17:18:46Z",
+    "summary": "Opening a conversation loaded **every** `MJ: Conversation Details` row, hydrated each into an entity, and mounted a component per timeline item. Fine for a 12-message chat; a hot-path tax on a 400- or 4,000-message thread.\n\nThis windows the transcript: the newest page on open, older pages prepended ",
     "url": "https://github.com/MemberJunction/MJ/pull/3912",
     "source": "github_prs",
     "highlights": [
@@ -1309,7 +1309,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-19T16:08:51Z",
+    "date": "2026-08-19T17:10:30Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1321,7 +1321,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-19T16:08:58Z",
+    "date": "2026-08-19T17:10:30Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1333,7 +1333,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-19T16:08:35Z",
+    "date": "2026-08-19T17:10:19Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1357,7 +1357,7 @@
   },
   {
     "title": "[PR] test(v2): automate real OpenClaw release acceptance",
-    "date": "2026-08-19T15:06:59Z",
+    "date": "2026-08-19T17:20:21Z",
     "summary": "## Scope\n\nStacked release-acceptance work on top of V2 PR #20. The goal is to satisfy the remaining real OpenClaw/deployed-endpoint production gate with a reproducible ephemeral environment rather than a permanent staging host.\n\n### Selected design\n\n- real production Finance Core/PostgreSQL/ezBookke",
     "url": "https://github.com/shawnwu2022/family-finance-os/pull/24",
     "source": "github_prs",
@@ -1549,7 +1549,7 @@
   },
   {
     "title": "[PR] Omi fully on-premise via Docker Compose or Helm/k8s: every managed service behind a swappable port (db Firestore|Mongo \u00b7 storage GCS|S3 \u00b7 vector Pinecone|Qdrant \u00b7 auth Firebase|Keycloak \u00b7 push FCM|UnifiedPush \u00b7 LLM any OpenAI-compatible endpoint)",
-    "date": "2026-08-19T12:39:27Z",
+    "date": "2026-08-19T17:02:06Z",
     "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
     "url": "https://github.com/BasedHardware/omi/pull/10887",
     "source": "github_prs",
@@ -1573,7 +1573,7 @@
   },
   {
     "title": "[PR] fix(ocap-kernel): request only the URL the fetch caveat approved",
-    "date": "2026-08-19T16:04:27Z",
+    "date": "2026-08-19T17:20:16Z",
     "summary": "Fixes MetaMask/MetaMask-planning#7557.\n\n## Problem\n\nA vat granted `fetch` could reach any host regardless of its `network.allowedHosts`. Three routes, one shape: **the URL the caveat approves is not the URL that gets requested.**\n\n1. **TOCTOU (CWE-367 \u2014 the reported PoC).** Both enforcement points r",
     "url": "https://github.com/MetaMask/ocap-kernel/pull/1026",
     "source": "github_prs",
@@ -1693,12 +1693,12 @@
   },
   {
     "title": "[PR] UN-4020 [FIX] Route AWS Bedrock Mantle models (GPT-5.6 Terra) via bedrock_mantle",
-    "date": "2026-08-19T12:55:23Z",
+    "date": "2026-08-19T17:26:39Z",
     "summary": "## What\n\nAWS serves the OpenAI GPT-5.x, Google Gemma 4 and xAI Grok families from **Bedrock Mantle** (`bedrock-mantle.<region>.api.aws`) \u2014 an OpenAI-compatible endpoint separate from the classic `bedrock-runtime` Converse/Invoke surface. Our adapter prefixed every model with `bedrock/`, so those mod",
     "url": "https://github.com/Zipstack/unstract/pull/2248",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: unstract"
     ]
@@ -1741,7 +1741,7 @@
   },
   {
     "title": "[PR] AI auto scripture: local transcription + AI reference detection (opt-in)",
-    "date": "2026-08-19T16:28:52Z",
+    "date": "2026-08-19T17:21:45Z",
     "summary": "> Builds on #3578 (its commit is included here) \u2014 happy to rebase once that lands, or fold both together if preferred.\n\n## What\n\n**AI auto scripture** (opt-in, off by default): FreeShow listens to the sermon, transcribes locally with whisper.cpp, detects scripture references \u2014 both spoken (\"John cha",
     "url": "https://github.com/ChurchApps/FreeShow/pull/3579",
     "source": "github_prs",
@@ -1765,12 +1765,12 @@
   },
   {
     "title": "[PR] feat: add Vertex AI support for Gemini and Claude",
-    "date": "2026-08-19T15:49:09Z",
+    "date": "2026-08-19T16:49:58Z",
     "summary": "## Summary\n\nOfficial Vertex AI support for TanStack AI (discussion #136).\n\n- `@tanstack/ai-vertex` is the public Gemini-on-Vertex API: `vertexText`, `vertexSummarize`, `vertexImage`, `vertexEmbedding`, `vertexSpeech`, `vertexAudio`, `vertexVideo`.\n- Auth is project/location plus any `@google/genai` ",
     "url": "https://github.com/TanStack/ai/pull/989",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 9",
       "pull request",
       "repo: ai"
     ]
@@ -1825,7 +1825,7 @@
   },
   {
     "title": "[PR] feat(gantt,shared): add ResizeObserver to gantt and OpenNewEntityRecord to SharedService",
-    "date": "2026-08-19T16:29:00Z",
+    "date": "2026-08-19T17:16:26Z",
     "summary": "## Summary\n- Added ResizeObserver lifecycle in MjGanttChartComponent to properly handle initial container sizing\n- Added OpenNewEntityRecord support in SharedService and RecordNavigationAdapter\n- Added live DB and configuration metadata integration tests",
     "url": "https://github.com/MemberJunction/MJ/pull/3949",
     "source": "github_prs",
@@ -1929,6 +1929,54 @@
       "comments: 1",
       "pull request",
       "repo: loopback4-llm-chat-extension"
+    ]
+  },
+  {
+    "title": "[PR] Package Dependencies: Bump Testcontainers from 3.6.0 to 4.14.0",
+    "date": "2026-08-19T17:29:31Z",
+    "summary": "Updated [Testcontainers](https://github.com/testcontainers/testcontainers-dotnet) from 3.6.0 to 4.14.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.14.0\n\n# What's Changed\n\nI published",
+    "url": "https://github.com/Mouen0807/Arcade2048/pull/53",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Arcade2048"
+    ]
+  },
+  {
+    "title": "[PR] Migrate research-agents application stack from Python to .NET 10",
+    "date": "2026-08-19T17:27:51Z",
+    "summary": "## Summary\n\nMigrates the application/API/orchestration boundary toward ASP.NET Core 10 and removes the Python application stack only when an equivalent C# implementation or an explicit engine boundary exists.\n\nRepository ownership is now explicit:\n\n```text\n/\n\u251c\u2500 frontend/              # frontend sour",
+    "url": "https://github.com/simon-ai-labs/proof-bert/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: proof-bert"
+    ]
+  },
+  {
+    "title": "[PR] Configuring a voice provider is not the same as having one",
+    "date": "2026-08-19T17:25:43Z",
+    "summary": "Follow-up to #398, found by running that PR's Step 5 hardware proof on a real Orin Nano (192.168.50.102) after it merged.\n\n## What was broken\n\n#398 configures `messages.tts.provider = tts-local-cli`. On the box, that was necessary and not sufficient \u2014 every spoken reply failed:\n\n```\nTTS conversion f",
+    "url": "https://github.com/ID-Robots/clawbox/pull/399",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: clawbox"
+    ]
+  },
+  {
+    "title": "[PR] docs(onboarding): CLAUDE.md + Doku-Drift-Fixes (Port, LLM-Command, ADR-Index)",
+    "date": "2026-08-19T16:49:23Z",
+    "summary": "## Summary\n\n- Neu: `CLAUDE.md` (fehlte komplett) \u2014 Pointer-Stil auf `CORE_CONTEXT.md` (SSoT), `AGENT_HANDOVER.md` (oberster Stand-Block, nicht alle 1600+ Zeilen) + `NEXT.md` (lokal, gitignored, mit Caveat), PUBLIC-Warnung, `make test`-Realitaet, LLM-Architektur-Zeiger, Prod-Domain.\n- Fix: `README.md",
+    "url": "https://github.com/achimdehnert/writing-hub/pull/638",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: writing-hub"
     ]
   }
 ]
