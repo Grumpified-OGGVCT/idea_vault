@@ -613,12 +613,12 @@
   },
   {
     "title": "[PR] fix(runtime): distinguish usage limits from auth errors",
-    "date": "2026-08-19T10:20:28Z",
+    "date": "2026-08-19T11:10:37Z",
     "summary": "## Summary\n\nAfter #2675, Maka already has one safe path for provider diagnostics: ModelAdapter keeps an allowlisted, redacted, bounded summary; the terminal RuntimeEvent remains canonical; Runtime Host projects the message through failed Turn snapshots and recovery; and Desktop can include the exact",
     "url": "https://github.com/maka-agent/maka-agent/pull/2521",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "pull request",
       "repo: maka-agent"
     ]
@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-19T10:16:01Z",
+    "date": "2026-08-19T11:13:46Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -733,12 +733,12 @@
   },
   {
     "title": "[PR] Build local-first QCTP Platform Rev2 MVP",
-    "date": "2026-08-19T04:58:24Z",
+    "date": "2026-08-19T10:49:07Z",
     "summary": "## Result\n\nBuilds the maintainable QCTP Platform Rev2 MVP on the controlled branch. This is a **draft**, non-production candidate. It does not merge or deploy anything, and release authority remains `ZERO_RELEASE`.\n\n## Delivered\n\n- Free Local Mode as the default: normal recurring API cost $0, no API",
     "url": "https://github.com/rfrye08-pixel/QCTP/pull/2",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: QCTP"
     ]
@@ -985,12 +985,12 @@
   },
   {
     "title": "[PR] Stop offering a credential Anthropic prohibits; stop leaking the one it allows (0.75.0)",
-    "date": "2026-08-19T10:30:07Z",
+    "date": "2026-08-19T10:47:20Z",
     "summary": "## What & why\n\nFollow-up to research into how other tools reuse existing CLI logins. The starting point: **Cascade already discovers them.** `cascade link` reads Claude Code, Codex CLI, Gemini CLI and Copilot credentials today, and correctly refuses three of the four \u2014 each targets its own vendor's ",
     "url": "https://github.com/Varun-SV/Cascade-AI/pull/205",
     "source": "github_prs",
     "highlights": [
-      "comments: 22",
+      "comments: 23",
       "pull request",
       "repo: Cascade-AI"
     ]
@@ -1309,7 +1309,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-19T10:15:37Z",
+    "date": "2026-08-19T11:20:55Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1321,7 +1321,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-19T10:15:35Z",
+    "date": "2026-08-19T11:21:06Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1333,7 +1333,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-19T10:15:15Z",
+    "date": "2026-08-19T11:20:41Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1405,7 +1405,7 @@
   },
   {
     "title": "[PR] Initial commit: JARVIS desktop AI assistant",
-    "date": "2026-08-19T08:50:45Z",
+    "date": "2026-08-19T10:50:00Z",
     "summary": "This is the initial commit of JARVIS, a personal desktop AI assistant that handles research, company database management, and outreach email campaigns\u2014with mandatory user approval before any emails are sent.\n\n## Overview\nJARVIS is a full-stack Electron + React application with a TypeScript core that",
     "url": "https://github.com/4wf86nbfzr-png/Claude/pull/2",
     "source": "github_prs",
@@ -1509,6 +1509,30 @@
       "comments: 2",
       "pull request",
       "repo: unsloth"
+    ]
+  },
+  {
+    "title": "Docs audit \u2014 2026-08-19 (PR #2733)",
+    "date": "2026-08-19T11:27:38Z",
+    "summary": "Audited: mnfst/manifest PR #2733 (1 merged PR), against the docs at `3755cef08974357ab0e8a128e7e067501cc688ed`.\n\nPR #2733 wired Ollama Cloud into the public model catalog Manifest reads capability data from. The PR itself makes no docs sentence false: no page mentions Ollama Cloud capabilities, moda",
+    "url": "https://github.com/mnfst/docs/issues/81",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: docs"
+    ]
+  },
+  {
+    "title": "[PR] fix: stop local models burning their whole budget on discarded thinking",
+    "date": "2026-08-19T11:20:43Z",
+    "summary": "## Why\n\nTwo separate bugs make locally hosted models (llama.cpp, Ollama, vLLM, LM Studio) burn their entire completion budget on thinking and return nothing usable.\n\n**1. \"Reasoning Effort \u2192 Off\" does not reach local endpoints.**\n\nThe control exists in Connection Settings and Chat Settings, and `con",
+    "url": "https://github.com/Pasta-Devs/Marinara-Engine/pull/5247",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Marinara-Engine"
     ]
   }
 ]
