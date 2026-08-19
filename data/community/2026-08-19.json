@@ -637,7 +637,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-19T13:28:45Z",
+    "date": "2026-08-19T14:05:33Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -685,7 +685,7 @@
   },
   {
     "title": "[PR] update to the current upstream",
-    "date": "2026-08-19T06:55:28Z",
+    "date": "2026-08-19T14:36:59Z",
     "summary": "## Summary\r\n\r\n- **Base branch:** `master` (all contributions)\r\n- **What changed and why:** (2\u20135 bullets \u2014 the diff shows *what*, you explain *why*)\r\n- **Scope boundary:** (what this PR explicitly does NOT change)\r\n- **Blast radius:** (what other subsystems or consumers could be affected)\r\n- **Linked",
     "url": "https://github.com/EugOT/zeroclaw/pull/5",
     "source": "github_prs",
@@ -769,12 +769,12 @@
   },
   {
     "title": "[PR] feat(openshell): bundle mkfs.ext4 and debugfs on Linux",
-    "date": "2026-08-19T11:32:56Z",
+    "date": "2026-08-19T14:23:34Z",
     "summary": "## Summary\n\n- bundle the e2fsprogs 1.47.4 `mke2fs` payload as `mkfs.ext4`, plus `debugfs`, for the OpenShell VM driver on Linux x64 and arm64\n- select the pinned Homebrew bottle from its GHCR OCI manifest, verify its digest, and stage only the required binaries, configuration, and e2fsprogs librarie",
     "url": "https://github.com/openkaiden/kaiden/pull/2692",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: kaiden"
     ]
@@ -1261,7 +1261,7 @@
   },
   {
     "title": "[PR] feat(conversations): window the chat transcript with bounded DOM",
-    "date": "2026-08-19T07:03:21Z",
+    "date": "2026-08-19T14:36:25Z",
     "summary": "## What this does\n\nOpening a conversation used to load **every** `MJ: Conversation Details` row, hydrate all of them, and mount a component per timeline item. On a long transcript that is a large query, a large hydration, and an unbounded DOM \u2014 all to show the reader the last handful of messages.\n\nT",
     "url": "https://github.com/MemberJunction/MJ/pull/3912",
     "source": "github_prs",
@@ -1573,12 +1573,12 @@
   },
   {
     "title": "[PR] fix(ocap-kernel): request only the URL the fetch caveat approved",
-    "date": "2026-08-19T13:36:23Z",
+    "date": "2026-08-19T14:02:18Z",
     "summary": "Fixes MetaMask/MetaMask-planning#7557.\n\n## Problem\n\nA vat granted `fetch` could reach any host regardless of its `network.allowedHosts`. Three routes, one shape: **the URL the caveat approves is not the URL that gets requested.**\n\n1. **TOCTOU (CWE-367 \u2014 the reported PoC).** Both enforcement points r",
     "url": "https://github.com/MetaMask/ocap-kernel/pull/1026",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: ocap-kernel"
     ]
@@ -1621,7 +1621,7 @@
   },
   {
     "title": "[PR] httpoison to req",
-    "date": "2026-08-19T13:46:33Z",
+    "date": "2026-08-19T14:36:22Z",
     "summary": "use req instead of httpoison\r\n\r\n## Test Plan\r\n<!--- Please describe the tests you have added and your testing environment (if applicable). -->\r\nTest environment: https://console.your-env.onplural.sh/\r\n\r\n## Checklist\r\n<!--- Go over all the following points to make sure you've checked all that apply b",
     "url": "https://github.com/pluralsh/console/pull/3928",
     "source": "github_prs",
@@ -1645,7 +1645,7 @@
   },
   {
     "title": "[PR] fix(services): Qwen3 thinking directive corrupts multi-turn chatml, degenerate output",
-    "date": "2026-08-19T13:35:47Z",
+    "date": "2026-08-19T14:08:04Z",
     "summary": "## Summary\n- The daemon's `apply_thinking_directive` (services/.../chat_gguf_prompt_instructions.py) injected `/no_think` into the **last** user turn on every call. In a multi-turn conversation this puts the directive on a mid-conversation message while earlier turns don't have it, which confuses Qw",
     "url": "https://github.com/Capsize-Games/airunner/pull/2076",
     "source": "github_prs",
@@ -1657,12 +1657,12 @@
   },
   {
     "title": "[PR] fix(runtime): distinguish usage limits from auth errors",
-    "date": "2026-08-19T13:24:03Z",
+    "date": "2026-08-19T14:10:17Z",
     "summary": "## Summary\n\nAfter #2675, Maka already has one safe path for provider diagnostics: ModelAdapter keeps an allowlisted, redacted, bounded summary; the terminal RuntimeEvent remains canonical; Runtime Host projects the message through failed Turn snapshots and recovery; and Desktop can include the exact",
     "url": "https://github.com/apache/maka/pull/2521",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 12",
       "pull request",
       "repo: maka"
     ]
@@ -1713,6 +1713,54 @@
       "comments: 8",
       "pull request",
       "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] feat: agents and marketplace",
+    "date": "2026-08-19T14:28:03Z",
+    "summary": "## Summary\r\n\r\nAdds agent marketplace and service agents system with native implementation support. User can:\r\n1. Use custom agents via natural language \u2014 the LLM routes tasks to the right agent automatically\r\n2. Install agents from a configurable marketplace (`/agents` TUI \u2192 Marketplace tab)\r\n3. Man",
+    "url": "https://github.com/prapaa-ai/agav/pull/58",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: agav"
+    ]
+  },
+  {
+    "title": "[PR] Protect the DeviceRegistry._devices container",
+    "date": "2026-08-19T14:22:47Z",
+    "summary": "<!--\r\n  You are amazing! Thanks for contributing to our project!\r\n  Please, DO NOT DELETE ANY TEXT from this template! (unless instructed).\r\n-->\r\n## Proposed change\r\n<!--\r\n  Describe the big picture of your changes here to communicate to the\r\n  maintainers why we should accept this pull request. If ",
+    "url": "https://github.com/home-assistant/core/pull/179578",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: core"
+    ]
+  },
+  {
+    "title": "[PR] AI auto scripture: local transcription + AI reference detection (opt-in)",
+    "date": "2026-08-19T14:12:41Z",
+    "summary": "> Builds on #3578 (its commit is included here) \u2014 happy to rebase once that lands, or fold both together if preferred.\n\n## What\n\n**AI auto scripture** (opt-in, off by default): FreeShow listens to the sermon, transcribes locally with whisper.cpp, detects scripture references \u2014 both spoken (\"John cha",
+    "url": "https://github.com/ChurchApps/FreeShow/pull/3579",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: FreeShow"
+    ]
+  },
+  {
+    "title": "[PR] feat: run any OpenRouter model \u2014 dynamic admission at preflight",
+    "date": "2026-08-19T12:49:30Z",
+    "summary": "Run **any** model from OpenRouter's public catalog with nothing but an OpenRouter key \u2014 no env edits, no url4.toml entry, no restarts. When a run asks for an OpenRouter model the Engine doesn't know, the Engine asks the AI Gateway \"does this model actually exist on OpenRouter?\". The gateway checks O",
+    "url": "https://github.com/ScreamingFace/screamingface/pull/633",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: screamingface"
     ]
   }
 ]
