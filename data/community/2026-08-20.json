@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-20T15:01:27Z",
+    "date": "2026-08-20T16:19:30Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -685,7 +685,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7.6.0",
-    "date": "2026-08-20T12:36:30Z",
+    "date": "2026-08-20T15:57:42Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3231",
     "source": "github_prs",
@@ -841,7 +841,7 @@
   },
   {
     "title": "[PR] superfixer pre 1.6 realease",
-    "date": "2026-08-20T15:34:25Z",
+    "date": "2026-08-20T15:39:20Z",
     "summary": "## Purpose\n\nSuperfix branch to land **after** the five open arena PRs (#55, #57, #58, #59, #60) merge. It integrates all five (merged in conflict-safe order `#55 \u2192 #57 \u2192 #60 \u2192 #58 \u2192 #59`) and remediates every finding (Critical \u2192 Nitpick) from the consolidated assertive CodeRabbit-style review, so it",
     "url": "https://github.com/maus-inc/mausVoice/pull/63",
     "source": "github_prs",
@@ -1033,7 +1033,7 @@
   },
   {
     "title": "[PR] fix(core): validate value-list fields in EntityField.Validate() so an IN(...) CHECK has a runtime guard",
-    "date": "2026-08-20T15:36:04Z",
+    "date": "2026-08-20T16:16:41Z",
     "summary": "Fixes #3969.\n\n> \u26a0\ufe0f **Authored by Claude Code.** This is not a rubber-stamp PR \u2014 it changes a rung of the validation ladder that every `Save()` in every app passes through, and the merge risk lives entirely in the comparison semantics (see the open question at the bottom). Please have someone who und",
     "url": "https://github.com/MemberJunction/MJ/pull/3972",
     "source": "github_prs",
@@ -1129,19 +1129,19 @@
   },
   {
     "title": "[PR] fix(MJCore): CompleteMessage rendered every validation error as a JSON blob",
-    "date": "2026-08-20T15:22:19Z",
+    "date": "2026-08-20T16:21:02Z",
     "summary": "## The defect\n\n`BaseEntityResult.CompleteMessage` rendered each entry of its `Errors` array as `err.message || JSON.stringify(err)` \u2014 **lowercase** `message`. MJ's own `ValidationErrorInfo` carries **`Message`** (`MJGlobal/src/ValidationTypes.ts:27`), so every one of them fell through to the JSON fa",
     "url": "https://github.com/MemberJunction/MJ/pull/3973",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: MJ"
     ]
   },
   {
     "title": "[PR] feat(core): add a delete-validation seam to BaseEntity (ValidateDelete/ValidateDeleteAsync)",
-    "date": "2026-08-20T15:23:41Z",
+    "date": "2026-08-20T16:22:39Z",
     "summary": "Addresses #3971 \u2014 implements the issue's **primary** proposal (the seam). Deliberately *not* closing it: the issue's third proposal (metadata-driven referential messages) is a separate PR, and auto-closing here would lose it. See \"Not included, on purpose\".\n\n## The gap\n\n`Save()` has a validation sea",
     "url": "https://github.com/MemberJunction/MJ/pull/3974",
     "source": "github_prs",
@@ -1465,7 +1465,7 @@
   },
   {
     "title": "[PR] Stand up Spark serving end to end: model materialization, unit observation, and the credential-bound privilege bootstrap",
-    "date": "2026-08-20T14:42:16Z",
+    "date": "2026-08-20T16:25:09Z",
     "summary": "Draft. Both Sparks now serve the exactly-resolved model; reboot durability is the only open vertical.\n\n```\n2/2 serving\n0/2 reboot-durability proven\n```\n\n## Measured, wet\n\n```\nhost=srv5 typed_rows=0 verdict=wet-noop-converged serving-converged version=0.32.9 model=gpt-oss:20b\nhost=srv6 typed_rows=0 v",
     "url": "https://github.com/gunb-ai/gunbc/pull/8377",
     "source": "github_prs",
@@ -1585,7 +1585,7 @@
   },
   {
     "title": "[PR] AI auto scripture: local transcription + AI reference detection (opt-in)",
-    "date": "2026-08-20T12:51:56Z",
+    "date": "2026-08-20T16:05:31Z",
     "summary": "> Builds on #3578 (its commit is included here) \u2014 happy to rebase once that lands, or fold both together if preferred.\n\n## What\n\n**AI auto scripture** (opt-in, off by default): FreeShow listens to the sermon, transcribes locally with whisper.cpp, detects scripture references \u2014 both spoken (\"John cha",
     "url": "https://github.com/ChurchApps/FreeShow/pull/3579",
     "source": "github_prs",
@@ -1782,18 +1782,18 @@
     "url": "https://github.com/AsharFatmi/ollama-usage-widget",
     "source": "hackernews",
     "highlights": [
-      "points: 1",
+      "points: 2",
       "comments: 0"
     ]
   },
   {
     "title": "[PR] Stage AI work by pipeline stage, and stop silently untailoring the resume",
-    "date": "2026-08-20T15:34:23Z",
+    "date": "2026-08-20T16:36:42Z",
     "summary": "## Summary\n\nImplements PRD v0.2.1 \u2014 AI work now runs when its stage does, instead of all of it on Evaluate.\n\n**Fast Evaluation** replaces the seven-block (A\u2013G) evaluator with one structured call answering \"should I pursue this?\". The model returns component scores and observations; JST derives the f",
     "url": "https://github.com/uxdesignlab/job-search-terminal/pull/39",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 9",
       "pull request",
       "repo: job-search-terminal"
     ]
@@ -1844,6 +1844,30 @@
       "comments: 2",
       "pull request",
       "repo: openrag"
+    ]
+  },
+  {
+    "title": "[PR] fix(agents): recover from a max-tokens finish with compaction and one retry",
+    "date": "2026-08-20T16:04:10Z",
+    "summary": "[ENG-2457](https://linear.app/cline-bot/issue/ENG-2457/next-max-tokens-finish-on-a-text-only-turn-is-a-terminal-task-failure) \u00b7 reported in https://github.com/cline/cline/issues/13333#issuecomment-5324078237\n\n## Problem\n\nA provider stream finishing with `finishReason: \"max-tokens\"` on a turn with **",
+    "url": "https://github.com/cline/cline/pull/13340",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cline"
+    ]
+  },
+  {
+    "title": "[PR] fix: address release v2 stack review findings",
+    "date": "2026-08-20T15:43:59Z",
+    "summary": "## Summary\n\nFixes all 26 findings from the eight-PR `release/v2` review plus follow-up reviewer findings.\n\n### Fixes\n\n- **Custom Widgets:** bounded Redis cache/invalidation, parallel requests, trusted anonymous identity/public refresh, smaller payloads, JSX reuse, and safe module boundaries.\n- **Boa",
+    "url": "https://github.com/homarr-labs/homarr/pull/6637",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: homarr"
     ]
   }
 ]
