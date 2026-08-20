@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-20T09:02:02Z",
+    "date": "2026-08-20T10:17:20Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] test(v2): automate real OpenClaw release acceptance",
-    "date": "2026-08-20T09:08:28Z",
+    "date": "2026-08-20T09:43:15Z",
     "summary": "## Scope\n\nStacked release-acceptance work on top of V2 PR #20. The goal is to satisfy the remaining real OpenClaw/deployed-endpoint production gate with a reproducible ephemeral environment rather than a permanent staging host.\n\n### Selected design\n\n- real production Finance Core/PostgreSQL/ezBookke",
     "url": "https://github.com/shawnwu2022/family-finance-os/pull/24",
     "source": "github_prs",
@@ -685,7 +685,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7.6.0",
-    "date": "2026-08-20T04:38:27Z",
+    "date": "2026-08-20T09:50:32Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3231",
     "source": "github_prs",
@@ -1297,7 +1297,7 @@
   },
   {
     "title": "[PR] fix(onboard): prove Ollama service execution before restart",
-    "date": "2026-08-20T09:20:36Z",
+    "date": "2026-08-20T09:53:14Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nNemoClaw now stops before restarting Ollama unless the configured systemd user can execute the exact `ExecStart` binary and its ELF interpreter. When the official installer leaves `/usr/local/bin/ollama` without execute bits, NemoClaw applies one bound",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9735",
     "source": "github_prs",
@@ -1333,7 +1333,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-20T09:03:48Z",
+    "date": "2026-08-20T10:22:26Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1345,7 +1345,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-20T09:03:43Z",
+    "date": "2026-08-20T10:22:26Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1357,7 +1357,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-20T09:03:28Z",
+    "date": "2026-08-20T10:22:15Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1437,6 +1437,126 @@
       "comments: 0",
       "pull request",
       "repo: otclient"
+    ]
+  },
+  {
+    "title": "[PR] providers: stop overriding the user's own config",
+    "date": "2026-08-20T10:33:39Z",
+    "summary": "\n\n<!-- ade:link v=1 type=pr repo=arul28/ADE branch=ade%2Fclaude-settings-passthrough num=1136 -->\n<p>\n  <img src=\"https://ade-app.dev/logo.png\" height=\"18\" align=\"left\" alt=\"ADE\">\n  &nbsp;&nbsp;<strong>Open in ADE</strong>\n  &nbsp;\u00b7&nbsp; <a href=\"https://ade-app.dev/open?type=branch&amp;repo=arul28",
+    "url": "https://github.com/arul28/ADE/pull/1136",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ADE"
+    ]
+  },
+  {
+    "title": "[PR] ADR: service process directive for long-running auxiliary tasks",
+    "date": "2026-08-20T10:29:37Z",
+    "summary": "## Summary\n\nThis ADR documents the design and rationale for introducing a `service` process directive to Nextflow, enabling long-running auxiliary tasks (such as inference servers, embedded databases, or local HTTP fixtures) to expose resources to downstream consumer processes while still running.\n\n",
+    "url": "https://github.com/nextflow-io/nextflow/pull/7147",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: nextflow"
+    ]
+  },
+  {
+    "title": "[PR] Stand up Spark serving end to end: model materialization, unit observation, and the credential-bound privilege bootstrap",
+    "date": "2026-08-20T10:28:43Z",
+    "summary": "Draft. Both Sparks now serve the exactly-resolved model; reboot durability is the only open vertical.\n\n```\n2/2 serving\n0/2 reboot-durability proven\n```\n\n## Measured, wet\n\n```\nhost=srv5 typed_rows=0 verdict=wet-noop-converged serving-converged version=0.32.9 model=gpt-oss:20b\nhost=srv6 typed_rows=0 v",
+    "url": "https://github.com/gunb-ai/gunbc/pull/8377",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: gunbc"
+    ]
+  },
+  {
+    "title": "[PR] feat(go/plugins/compat_oai): add Ollama Cloud support",
+    "date": "2026-08-20T10:21:57Z",
+    "summary": "## Summary\n\nThis PR adds a Go `compat_oai/ollamacloud` plugin that uses Ollama Cloud's OpenAI-compatible API from Genkit.\n\n## Updates\n\n- Registers the current Ollama Cloud direct API model IDs returned by `https://ollama.com/v1/models`, including text, tool-capable, and vision-capable models.\n- Cate",
+    "url": "https://github.com/genkit-ai/genkit/pull/3813",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: genkit"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-sandbox): add Blaxel provider",
+    "date": "2026-08-20T10:16:55Z",
+    "summary": "Rebased onto current `main` on 2026-08-17. Ready for review.\n\n## \ud83c\udfaf Changes\n\n- Add `@tanstack/ai-sandbox-blaxel` as a managed cloud sandbox provider.\n- Implement filesystem access, native file watch, environment values, bounded process streaming, token-gated previews, and resume by id.\n- Reconcile am",
+    "url": "https://github.com/TanStack/ai/pull/1065",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Vertex AI support for Gemini and Claude",
+    "date": "2026-08-20T10:16:20Z",
+    "summary": "## Summary\n\nOfficial Vertex AI support for TanStack AI (discussion #136).\n\n- `@tanstack/ai-vertex` is the public Gemini-on-Vertex API: `vertexText`, `vertexSummarize`, `vertexImage`, `vertexEmbedding`, `vertexSpeech`, `vertexAudio`, `vertexVideo`.\n- Auth is project/location plus any `@google/genai` ",
+    "url": "https://github.com/TanStack/ai/pull/989",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] Enhance Zed installer for Linux and Windows with local LLM and privacy features",
+    "date": "2026-08-20T10:15:59Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Cross-platform secure installer with Linux and Windows presets, local-LLM and no-AI install flows, network sandboxing, optional strict machine-wide firewall, endpoint blockli",
+    "url": "https://github.com/gooddaytoday/aidevstack/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: aidevstack"
+    ]
+  },
+  {
+    "title": "[PR] feat(windows): add native packaging, credentials, local-agent support, and CI",
+    "date": "2026-08-20T10:10:19Z",
+    "summary": "## Summary\r\n\r\nThis PR adds the Windows desktop implementation and regression coverage needed to package and run oh-my-warp without relying on Warp cloud services.\r\n\r\n## What changed\r\n\r\n- Add a self-contained Windows ZIP containing the desktop executable, Node.js runtime, local agent, keychain helper",
+    "url": "https://github.com/AndrewWayne/oh-my-warp/pull/132",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: oh-my-warp"
+    ]
+  },
+  {
+    "title": "[PR] feat(tray): support custom menu bar icons and icon-only mode (#307)",
+    "date": "2026-08-20T10:01:14Z",
+    "summary": "Resolves #307\n\nConfigurable menu bar layout and icons in `ModelRouterTray`.\n\n- **Display mode:** standard (icon + name + usage) or icon-only\n- **Show model name:** toggle in standard mode\n- **Icon style:** activity dot by default (including existing installs); optional provider mark, preset SF Symbo",
+    "url": "https://github.com/duolahypercho/codex-router/pull/308",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: codex-router"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update testcontainers-go monorepo to v0.44.0",
+    "date": "2026-08-20T09:55:58Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/henok321/translation-service/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: translation-service"
     ]
   }
 ]
