@@ -505,7 +505,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-20T01:18:34Z",
+    "date": "2026-08-20T14:43:26Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update | Pending |\n|---|---|---|---|---|-",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-20T14:19:11Z",
+    "date": "2026-08-20T15:01:27Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -817,7 +817,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-08-20T08:44:17Z",
+    "date": "2026-08-20T14:44:15Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -841,7 +841,7 @@
   },
   {
     "title": "[PR] superfixer pre 1.6 realease",
-    "date": "2026-08-20T04:40:11Z",
+    "date": "2026-08-20T15:34:25Z",
     "summary": "## Purpose\n\nSuperfix branch to land **after** the five open arena PRs (#55, #57, #58, #59, #60) merge. It integrates all five (merged in conflict-safe order `#55 \u2192 #57 \u2192 #60 \u2192 #58 \u2192 #59`) and remediates every finding (Critical \u2192 Nitpick) from the consolidated assertive CodeRabbit-style review, so it",
     "url": "https://github.com/maus-inc/mausVoice/pull/63",
     "source": "github_prs",
@@ -1033,12 +1033,12 @@
   },
   {
     "title": "[PR] fix(core): validate value-list fields in EntityField.Validate() so an IN(...) CHECK has a runtime guard",
-    "date": "2026-08-20T12:03:02Z",
+    "date": "2026-08-20T15:36:04Z",
     "summary": "Fixes #3969.\n\n> \u26a0\ufe0f **Authored by Claude Code.** This is not a rubber-stamp PR \u2014 it changes a rung of the validation ladder that every `Save()` in every app passes through, and the merge risk lives entirely in the comparison semantics (see the open question at the bottom). Please have someone who und",
     "url": "https://github.com/MemberJunction/MJ/pull/3972",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: MJ"
     ]
@@ -1129,24 +1129,24 @@
   },
   {
     "title": "[PR] fix(MJCore): CompleteMessage rendered every validation error as a JSON blob",
-    "date": "2026-08-20T06:20:04Z",
+    "date": "2026-08-20T15:22:19Z",
     "summary": "## The defect\n\n`BaseEntityResult.CompleteMessage` rendered each entry of its `Errors` array as `err.message || JSON.stringify(err)` \u2014 **lowercase** `message`. MJ's own `ValidationErrorInfo` carries **`Message`** (`MJGlobal/src/ValidationTypes.ts:27`), so every one of them fell through to the JSON fa",
     "url": "https://github.com/MemberJunction/MJ/pull/3973",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: MJ"
     ]
   },
   {
     "title": "[PR] feat(core): add a delete-validation seam to BaseEntity (ValidateDelete/ValidateDeleteAsync)",
-    "date": "2026-08-20T06:19:56Z",
+    "date": "2026-08-20T15:23:41Z",
     "summary": "Addresses #3971 \u2014 implements the issue's **primary** proposal (the seam). Deliberately *not* closing it: the issue's third proposal (metadata-driven referential messages) is a separate PR, and auto-closing here would lose it. See \"Not included, on purpose\".\n\n## The gap\n\n`Save()` has a validation sea",
     "url": "https://github.com/MemberJunction/MJ/pull/3974",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: MJ"
     ]
@@ -1297,7 +1297,7 @@
   },
   {
     "title": "[PR] fix(onboard): prove Ollama service execution before restart",
-    "date": "2026-08-20T14:30:19Z",
+    "date": "2026-08-20T15:08:19Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nNemoClaw now stops before restarting Ollama unless the configured systemd user can execute the exact `ExecStart` binary and its ELF interpreter. When the official installer leaves `/usr/local/bin/ollama` without execute bits, NemoClaw applies one bound",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9735",
     "source": "github_prs",
@@ -1333,7 +1333,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-20T12:26:51Z",
+    "date": "2026-08-20T14:55:10Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1345,7 +1345,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-20T12:26:49Z",
+    "date": "2026-08-20T14:55:05Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1357,7 +1357,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-20T12:26:38Z",
+    "date": "2026-08-20T14:54:57Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1465,7 +1465,7 @@
   },
   {
     "title": "[PR] Stand up Spark serving end to end: model materialization, unit observation, and the credential-bound privilege bootstrap",
-    "date": "2026-08-20T13:59:24Z",
+    "date": "2026-08-20T14:42:16Z",
     "summary": "Draft. Both Sparks now serve the exactly-resolved model; reboot durability is the only open vertical.\n\n```\n2/2 serving\n0/2 reboot-durability proven\n```\n\n## Measured, wet\n\n```\nhost=srv5 typed_rows=0 verdict=wet-noop-converged serving-converged version=0.32.9 model=gpt-oss:20b\nhost=srv6 typed_rows=0 v",
     "url": "https://github.com/gunb-ai/gunbc/pull/8377",
     "source": "github_prs",
@@ -1657,12 +1657,12 @@
   },
   {
     "title": "[PR] feat(inference): support self-hosted Gemma 4 via vLLM on GKE in install/teardown pipeline",
-    "date": "2026-08-20T13:24:33Z",
+    "date": "2026-08-20T14:58:22Z",
     "summary": "Resolves #618\n\n# Pull Request\n\n## Why This Change\n\nOrganizations operating under air-gapped, strict data sovereignty, or high-security regulatory boundaries (e.g. FedRAMP, HIPAA, PCI-DSS) require the ability to run autonomous Kubernetes management agents without sending prompts, manifests, or cluste",
     "url": "https://github.com/gke-labs/kube-agents/pull/608",
     "source": "github_prs",
     "highlights": [
-      "comments: 19",
+      "comments: 20",
       "pull request",
       "repo: kube-agents"
     ]
@@ -1773,6 +1773,77 @@
       "comments: 0",
       "pull request",
       "repo: okhttp"
+    ]
+  },
+  {
+    "title": "Menu bar widget for Ollama Cloud usage (macOS, open source)",
+    "date": "2026-08-20T15:34:37Z",
+    "summary": "",
+    "url": "https://github.com/AsharFatmi/ollama-usage-widget",
+    "source": "hackernews",
+    "highlights": [
+      "points: 1",
+      "comments: 0"
+    ]
+  },
+  {
+    "title": "[PR] Stage AI work by pipeline stage, and stop silently untailoring the resume",
+    "date": "2026-08-20T15:34:23Z",
+    "summary": "## Summary\n\nImplements PRD v0.2.1 \u2014 AI work now runs when its stage does, instead of all of it on Evaluate.\n\n**Fast Evaluation** replaces the seven-block (A\u2013G) evaluator with one structured call answering \"should I pursue this?\". The model returns component scores and observations; JST derives the f",
+    "url": "https://github.com/uxdesignlab/job-search-terminal/pull/39",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: job-search-terminal"
+    ]
+  },
+  {
+    "title": "[PR] Update Docker images",
+    "date": "2026-08-20T15:34:06Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | patch | `v3.8.0` \u2192 `v3.8.1` |\n| code.olsen.cloud/incubator/grundlag | digest | `ed56d61` \u2192 `3632043` |\n| [codeberg.org/forgejo/",
+    "url": "https://github.com/morten-olsen/homelab-apps/pull/387",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-apps"
+    ]
+  },
+  {
+    "title": "[PR] fix: Spin Filter no longer presents phrase overlap as proof of coordination",
+    "date": "2026-08-20T15:27:14Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## What Changed\n\nSpin Filter (Coverage Compare + NCI) treated non-wire shared phrasing as a **coordination finding**. That contradicts the product rule: narrative similarity is a signal to inspect, not proof of collusion.\n\n- Added `phraseKindLabel()` / `phraseKind",
+    "url": "https://github.com/Alfredapp-hash/brians-world-monitor/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: brians-world-monitor"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-08-20T15:22:41Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/cicero-im/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 20",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: Litellm OpenAI compatible router",
+    "date": "2026-08-20T15:08:07Z",
+    "summary": "## Summary\r\n\r\n- OpenRAG now proxies chat and embeddings through OpenAI-compatible `/v1` (`/models`, `/model-catalog`, `/chat/completions`, `/embeddings`). LiteLLM stays on the backend; Langflow and other clients never hold upstream keys. Auth is a short-lived Langflow hop token (`OPENRAG_LLM_TOKEN`)",
+    "url": "https://github.com/langflow-ai/openrag/pull/2263",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openrag"
     ]
   }
 ]
