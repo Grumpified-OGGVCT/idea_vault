@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-20T16:19:30Z",
+    "date": "2026-08-20T17:20:35Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1033,12 +1033,12 @@
   },
   {
     "title": "[PR] fix(core): validate value-list fields in EntityField.Validate() so an IN(...) CHECK has a runtime guard",
-    "date": "2026-08-20T16:16:41Z",
+    "date": "2026-08-20T17:00:02Z",
     "summary": "Fixes #3969.\n\n> \u26a0\ufe0f **Authored by Claude Code.** This is not a rubber-stamp PR \u2014 it changes a rung of the validation ladder that every `Save()` in every app passes through, and the merge risk lives entirely in the comparison semantics (see the open question at the bottom). Please have someone who und",
     "url": "https://github.com/MemberJunction/MJ/pull/3972",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: MJ"
     ]
@@ -1093,12 +1093,12 @@
   },
   {
     "title": "[PR] Protect the DeviceRegistry.devices container",
-    "date": "2026-08-20T12:54:16Z",
+    "date": "2026-08-20T16:53:05Z",
     "summary": "<!--\r\n  You are amazing! Thanks for contributing to our project!\r\n  Please, DO NOT DELETE ANY TEXT from this template! (unless instructed).\r\n-->\r\n## Proposed change\r\n<!--\r\n  Describe the big picture of your changes here to communicate to the\r\n  maintainers why we should accept this pull request. If ",
     "url": "https://github.com/home-assistant/core/pull/179578",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: core"
     ]
@@ -1297,7 +1297,7 @@
   },
   {
     "title": "[PR] fix(onboard): prove Ollama service execution before restart",
-    "date": "2026-08-20T15:08:19Z",
+    "date": "2026-08-20T17:12:51Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nNemoClaw now stops before restarting Ollama unless the configured systemd user can execute the exact `ExecStart` binary and its ELF interpreter. When the official installer leaves `/usr/local/bin/ollama` without execute bits, NemoClaw applies one bound",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9735",
     "source": "github_prs",
@@ -1333,7 +1333,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-20T14:55:10Z",
+    "date": "2026-08-20T17:08:20Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1345,7 +1345,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-20T14:55:05Z",
+    "date": "2026-08-20T17:08:26Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1357,7 +1357,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-20T14:54:57Z",
+    "date": "2026-08-20T17:08:06Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1417,12 +1417,12 @@
   },
   {
     "title": "[PR] fix(runtime): distinguish usage limits from auth errors",
-    "date": "2026-08-20T12:57:24Z",
+    "date": "2026-08-20T16:43:35Z",
     "summary": "## Summary\n\nAfter #2675, Maka already has one safe path for provider diagnostics: ModelAdapter keeps an allowlisted, redacted, bounded summary; the terminal RuntimeEvent remains canonical; Runtime Host projects the message through failed Turn snapshots and recovery; and Desktop can include the exact",
     "url": "https://github.com/apache/maka/pull/2521",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 14",
       "pull request",
       "repo: maka"
     ]
@@ -1465,7 +1465,7 @@
   },
   {
     "title": "[PR] Stand up Spark serving end to end: model materialization, unit observation, and the credential-bound privilege bootstrap",
-    "date": "2026-08-20T16:25:09Z",
+    "date": "2026-08-20T17:29:28Z",
     "summary": "Draft. Both Sparks now serve the exactly-resolved model; reboot durability is the only open vertical.\n\n```\n2/2 serving\n0/2 reboot-durability proven\n```\n\n## Measured, wet\n\n```\nhost=srv5 typed_rows=0 verdict=wet-noop-converged serving-converged version=0.32.9 model=gpt-oss:20b\nhost=srv6 typed_rows=0 v",
     "url": "https://github.com/gunb-ai/gunbc/pull/8377",
     "source": "github_prs",
@@ -1717,12 +1717,12 @@
   },
   {
     "title": "[PR] feat: add Sarvam AI provider support",
-    "date": "2026-08-20T13:08:04Z",
+    "date": "2026-08-20T17:32:06Z",
     "summary": "## Summary\n\nAdds first-class [Sarvam AI](https://www.sarvam.ai) provider support, routed through the existing OpenAI-compatible `OpenAiProvider` \u2014 the same pattern as every other compat provider.\n\n## Changes\n\n| File | Change |\n|---|---|\n| `src/config/llm-config.ts` | Add `sarvam` to `PROVIDER_KINDS`",
     "url": "https://github.com/AtomicBot-ai/atomic-agent/pull/129",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 3",
       "pull request",
       "repo: atomic-agent"
     ]
@@ -1788,12 +1788,12 @@
   },
   {
     "title": "[PR] Stage AI work by pipeline stage, and stop silently untailoring the resume",
-    "date": "2026-08-20T16:36:42Z",
+    "date": "2026-08-20T17:25:23Z",
     "summary": "## Summary\n\nImplements PRD v0.2.1 \u2014 AI work now runs when its stage does, instead of all of it on Evaluate.\n\n**Fast Evaluation** replaces the seven-block (A\u2013G) evaluator with one structured call answering \"should I pursue this?\". The model returns component scores and observations; JST derives the f",
     "url": "https://github.com/uxdesignlab/job-search-terminal/pull/39",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 11",
       "pull request",
       "repo: job-search-terminal"
     ]
@@ -1868,6 +1868,42 @@
       "comments: 7",
       "pull request",
       "repo: homarr"
+    ]
+  },
+  {
+    "title": "[PR] Wave 1D design: probability cleanup, freshness, and strict calibration filtering",
+    "date": "2026-08-20T17:29:00Z",
+    "summary": "## Scope\n\nDocumentation-only design PR for Final Design v6.1 workstreams P1-D / P1-E / P1-F, stacked directly on the certified Wave 1C development head.\n\nDesign:\n`docs/superpowers/specs/2026-08-20-wave1d-probability-freshness-strict-filtering-design.md`\n\n## Selected sequencing\n\nImplementation is int",
+    "url": "https://github.com/cavack/wfh/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: wfh"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): launch a TUI provider straight into a Shell session",
+    "date": "2026-08-20T17:27:06Z",
+    "summary": "## Summary\n\nEvery TUI provider card on **Settings \u2192 AI Providers** now carries a **Launch in Shell** button. It opens the Shell page on a fresh PTY session with that provider's own invocation already typed and submitted.\n\nBefore this, driving a TUI provider by hand meant reading its command off the ",
+    "url": "https://github.com/atomantic/PortOS/pull/4675",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: PortOS"
+    ]
+  },
+  {
+    "title": "[PR] AI chat middleware: per-message slice selection, reader's window, optional cloud backend",
+    "date": "2026-08-20T17:24:20Z",
+    "summary": "## Summary\r\n\r\nServer-side half of the AI chat work. The panel changes live in a companion MR on `odelia-viewer` (same branch name); this side makes the middleware honour what a message actually asks for, rather than applying a global recipe to whatever it happens to fetch.\r\n\r\n**A message now carries",
+    "url": "https://github.com/StratifAI-Research/odelia-viewer-platform/pull/53",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: odelia-viewer-platform"
     ]
   }
 ]
