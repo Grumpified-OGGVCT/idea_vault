@@ -229,7 +229,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-18T20:53:09Z",
+    "date": "2026-08-20T08:28:54Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-20T07:13:52Z",
+    "date": "2026-08-20T08:22:03Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -649,7 +649,7 @@
   },
   {
     "title": "[PR] test(v2): automate real OpenClaw release acceptance",
-    "date": "2026-08-20T07:43:26Z",
+    "date": "2026-08-20T08:37:35Z",
     "summary": "## Scope\n\nStacked release-acceptance work on top of V2 PR #20. The goal is to satisfy the remaining real OpenClaw/deployed-endpoint production gate with a reproducible ephemeral environment rather than a permanent staging host.\n\n### Selected design\n\n- real production Finance Core/PostgreSQL/ezBookke",
     "url": "https://github.com/shawnwu2022/family-finance-os/pull/24",
     "source": "github_prs",
@@ -1153,7 +1153,7 @@
   },
   {
     "title": "[PR] feat: agents and marketplace",
-    "date": "2026-08-20T06:18:17Z",
+    "date": "2026-08-20T08:03:11Z",
     "summary": "## Summary\r\n\r\nAdds agent marketplace and service agents system with native implementation support. User can:\r\n1. Use custom agents via natural language \u2014 the LLM routes tasks to the right agent automatically\r\n2. Install agents from a configurable marketplace (`/agents` TUI \u2192 Marketplace tab)\r\n3. Man",
     "url": "https://github.com/prapaa-ai/agav/pull/58",
     "source": "github_prs",
@@ -1225,7 +1225,7 @@
   },
   {
     "title": "[PR] \ud83e\uddec Genesis: Add resilience primitives and self-healing HTTP clients",
-    "date": "2026-08-20T07:28:15Z",
+    "date": "2026-08-20T07:45:41Z",
     "summary": "## \ud83e\uddec Self-Healing Architecture Added\n\n**What:** Implemented core resilience primitives (Retry with exponential backoff and a thread-safe Circuit Breaker) and applied them to all outbound HTTP calls for AI scanning and forensic gateways.\n\n**Failure scenario protected:** Momentary network blips, slow ",
     "url": "https://github.com/Akullganesh19/CodeKrackers/pull/254",
     "source": "github_prs",
@@ -1249,7 +1249,7 @@
   },
   {
     "title": "[PR] RavenDB-26606",
-    "date": "2026-08-20T07:23:36Z",
+    "date": "2026-08-20T08:15:04Z",
     "summary": "### Issue link\r\n\r\nhttps://issues.hibernatingrhinos.com/issue/RavenDB-26606\r\n\r\n### Type of change\r\n\r\n- [ ] Bug fix\r\n- [ ] Regression bug fix\r\n- [ ] Optimization\r\n- [ ] New feature\r\n\r\n### How risky is the change?\r\n\r\n- [ ] Low \r\n- [ ] Moderate \r\n- [ ] High\r\n- [ ] Not relevant\r\n\r\n### Backward compatibil",
     "url": "https://github.com/ravendb/ravendb/pull/23170",
     "source": "github_prs",
@@ -1293,6 +1293,102 @@
       "comments: 0",
       "pull request",
       "repo: whatsapp-accounting-assistant"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard): prove Ollama service execution before restart",
+    "date": "2026-08-20T08:39:09Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nNemoClaw now stops before restarting Ollama unless the configured systemd user can execute the exact `ExecStart` binary and its ELF interpreter. When the official installer leaves `/usr/local/bin/ollama` without execute bits, NemoClaw applies one bound",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/9735",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Nightly review rolling (through 2026-08-20)",
+    "date": "2026-08-20T08:27:23Z",
+    "summary": "## Summary\n\nAutomated nightly review (2026-07-03). Four review passes (bugs, security, UX, quality) across the `acp_adapter`, `agent`, and core modules. Seven fixes applied; several architectural findings deferred for human review.\n\n## Fixes applied\n\n| Severity | File:line | Description |\n|---|---|-",
+    "url": "https://github.com/iamhungree/hermes-agent/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 47",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(models): retire Gemma 4, move cheap tier to GLM 4.7 Flash + Qwen 3.5",
+    "date": "2026-08-20T08:22:01Z",
+    "summary": "Retires Gemma 4 from every routing default and fixes the Telegram freeze it was causing.\n\n**HEAD:** `fa423499587a165ceb654c18c197dc45bd66c074` \u00b7 **base:** `144c2253b8e3188fda380323aa20e3e71f950038` \u00b7 32 files\n\n## Why\n\nGemma 4 was the slowest cheap-tier option measured, at identical accuracy. A 6-cas",
+    "url": "https://github.com/CleanExpo/Pi-Dev-Ops/pull/649",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: Pi-Dev-Ops"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-20T08:12:25Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-20T08:12:08Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-20T08:11:58Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] DAG-Pipelines: Archon pipeline builder, Agent Console, Raindrop tracing (cloud dev branch)",
+    "date": "2026-08-20T08:04:58Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## What this is\n\nBrings the local **`DAG-Pipelines`** work into the cloud as a feature branch off `main` so development can continue here. The branch was created from `origin/DAG-Pipelines` unchanged; the only added commit is an `AGENTS.md` with Cursor Cloud setup",
+    "url": "https://github.com/ahuserious/k-dense-byok/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: k-dense-byok"
+    ]
+  },
+  {
+    "title": "[PR] chore(sync): replay EugOT fork delta onto upstream master (replaces #5)",
+    "date": "2026-08-20T07:46:57Z",
+    "summary": "Replaces #5.\n\n## Why not #5\n\n#5 merged `zeroclaw-labs:master` **into** our `master`: 1,434 files, +444602/\u2212297603, 100 commits, state `CONFLICTING`. That diff is too large to resolve safely by review, and it fails in the one direction that matters: our fork's entire 23-commit delta is a single coher",
+    "url": "https://github.com/EugOT/zeroclaw/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: zeroclaw"
     ]
   }
 ]
