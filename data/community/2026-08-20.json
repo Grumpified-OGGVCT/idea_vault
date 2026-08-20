@@ -493,12 +493,12 @@
   },
   {
     "title": "[PR] Build local-first QCTP Platform Rev2 MVP",
-    "date": "2026-08-20T22:12:18Z",
+    "date": "2026-08-20T22:45:37Z",
     "summary": "## Result\n\nBuilds the maintainable QCTP Platform Rev2 MVP on the controlled branch. This is a **draft**, non-production candidate. It does not merge or deploy anything, and release authority remains `ZERO_RELEASE`.\n\n## Delivered\n\n- Free Local Mode as the default: normal recurring API cost $0, no API",
     "url": "https://github.com/rfrye08-pixel/QCTP/pull/2",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 14",
       "pull request",
       "repo: QCTP"
     ]
@@ -613,7 +613,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-20T22:13:57Z",
+    "date": "2026-08-20T23:02:27Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1045,12 +1045,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-20T20:38:48Z",
+    "date": "2026-08-20T23:19:26Z",
     "summary": "## Summary\n\n- **Base branch:** `master`\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability policy, structured-p",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 42",
+      "comments: 43",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -1297,7 +1297,7 @@
   },
   {
     "title": "[PR] fix(onboard): prove Ollama service execution before restart",
-    "date": "2026-08-20T22:17:35Z",
+    "date": "2026-08-20T22:58:34Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nNemoClaw now stops before restarting Ollama unless the configured systemd user can execute the exact `ExecStart` binary and its ELF interpreter. When the official installer leaves `/usr/local/bin/ollama` without execute bits, NemoClaw applies one bound",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9735",
     "source": "github_prs",
@@ -1465,7 +1465,7 @@
   },
   {
     "title": "[PR] Stand up Spark serving end to end: model materialization, unit observation, and the credential-bound privilege bootstrap",
-    "date": "2026-08-20T21:21:15Z",
+    "date": "2026-08-20T23:24:11Z",
     "summary": "Draft. Both Sparks now serve the exactly-resolved model; reboot durability is the only open vertical.\n\n```\n2/2 serving\n0/2 reboot-durability proven\n```\n\n## Measured, wet\n\n```\nhost=srv5 typed_rows=0 verdict=wet-noop-converged serving-converged version=0.32.9 model=gpt-oss:20b\nhost=srv6 typed_rows=0 v",
     "url": "https://github.com/gunb-ai/gunbc/pull/8377",
     "source": "github_prs",
@@ -1848,7 +1848,7 @@
   },
   {
     "title": "[PR] fix(agents): recover from a max-tokens finish with compaction and one retry",
-    "date": "2026-08-20T22:14:26Z",
+    "date": "2026-08-20T22:43:54Z",
     "summary": "[ENG-2457](https://linear.app/cline-bot/issue/ENG-2457/next-max-tokens-finish-on-a-text-only-turn-is-a-terminal-task-failure) \u00b7 reported in https://github.com/cline/cline/issues/13333#issuecomment-5324078237\n\n## Problem\n\nA provider stream finishing with `finishReason: \"max-tokens\"` on a turn with **",
     "url": "https://github.com/cline/cline/pull/13340",
     "source": "github_prs",
@@ -2228,6 +2228,18 @@
       "comments: 0",
       "pull request",
       "repo: dsh-usage-stats"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-netty to v7",
+    "date": "2026-08-20T22:54:22Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-",
+    "url": "https://github.com/OpenAEV-Platform/openaev/pull/6152",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openaev"
     ]
   }
 ]
