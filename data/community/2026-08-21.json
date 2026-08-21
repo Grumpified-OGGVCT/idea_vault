@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] Stand up Spark serving end to end: model materialization, unit observation, and the credential-bound privilege bootstrap",
-    "date": "2026-08-21T06:50:52Z",
+    "date": "2026-08-21T09:10:08Z",
     "summary": "Draft. Both Sparks serve the exactly-resolved model, and both have now proven it survives a power cycle.\n\n```\n2/2 serving\n2/2 reboot-durability proven\n```\n\nReboot durability, measured wet on this branch \u2014 the receipt is a **changed `boot_id`**, then a zero-action read-only replan, then a passing gen",
     "url": "https://github.com/gunb-ai/gunbc/pull/8377",
     "source": "github_prs",
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-21T07:14:03Z",
+    "date": "2026-08-21T09:04:43Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -732,7 +732,7 @@
   },
   {
     "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.44.0",
-    "date": "2026-08-21T04:54:35Z",
+    "date": "2026-08-21T09:13:21Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/DoodleScheduling/saml-exporter/pull/334",
     "source": "github_prs",
@@ -768,7 +768,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-08-21T02:44:14Z",
+    "date": "2026-08-21T08:44:15Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -912,12 +912,12 @@
   },
   {
     "title": "[PR] feat(ai-sandbox): add Blaxel provider",
-    "date": "2026-08-21T03:58:02Z",
+    "date": "2026-08-21T09:21:28Z",
     "summary": "Rebased onto current `main` on 2026-08-17. Ready for review.\n\n## \ud83c\udfaf Changes\n\n- Add `@tanstack/ai-sandbox-blaxel` as a managed cloud sandbox provider.\n- Implement filesystem access, native file watch, environment values, bounded process streaming, token-gated previews, and resume by id.\n- Reconcile am",
     "url": "https://github.com/TanStack/ai/pull/1065",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 10",
       "pull request",
       "repo: ai"
     ]
@@ -1164,7 +1164,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-21T07:43:24Z",
+    "date": "2026-08-21T09:11:58Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1176,7 +1176,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-21T07:43:21Z",
+    "date": "2026-08-21T09:11:54Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1188,7 +1188,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-21T07:43:12Z",
+    "date": "2026-08-21T09:11:46Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1244,6 +1244,78 @@
       "comments: 0",
       "pull request",
       "repo: PortOS"
+    ]
+  },
+  {
+    "title": "[PR] Publish generated gRPC stubs as a standalone module",
+    "date": "2026-08-21T09:11:10Z",
+    "summary": "As is, Weaviate cannot depend on any external package that generates its stubs from the same protobuf files, because the entities use the same IDs internally and run into namespace collisions. This is well-documented deficiency of the Golang's `protobuf` package: https://github.com/golang/protobuf/i",
+    "url": "https://github.com/weaviate/weaviate/pull/12747",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: weaviate"
+    ]
+  },
+  {
+    "title": "[PR] Capture meeting/system audio so remote participants are recorded",
+    "date": "2026-08-21T08:45:20Z",
+    "summary": "## Problem\n\nThe web recorder only captured the microphone via `getUserMedia`, so remote participants in online meetings were missing from recordings:\n\n- With headphones, their voices never physically reach the microphone.\n- Without headphones, `echoCancellation: true` strips speaker output (i.e. the",
+    "url": "https://github.com/manor-os/minutes/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: minutes"
+    ]
+  },
+  {
+    "title": "[PR] Update Docker images",
+    "date": "2026-08-21T08:34:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | patch | `v3.8.0` \u2192 `v3.8.1` |\n| code.olsen.cloud/incubator/grundlag | digest | `ed56d61` \u2192 `3632043` |\n| [codeberg.org/forgejo/",
+    "url": "https://github.com/morten-olsen/homelab-apps/pull/389",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-apps"
+    ]
+  },
+  {
+    "title": "[PR] Nightly review rolling (through 2026-08-20)",
+    "date": "2026-08-21T08:25:13Z",
+    "summary": "## Summary\n\nAutomated nightly review (2026-07-03). Four review passes (bugs, security, UX, quality) across the `acp_adapter`, `agent`, and core modules. Seven fixes applied; several architectural findings deferred for human review.\n\n## Fixes applied\n\n| Severity | File:line | Description |\n|---|---|-",
+    "url": "https://github.com/iamhungree/hermes-agent/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 47",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump org.json:json from 20260719 to 20260814",
+    "date": "2026-08-21T08:19:37Z",
+    "summary": "Bumps [org.json:json](https://github.com/douglascrockford/JSON-java) from 20260719 to 20260814.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/douglascrockford/JSON-java/releases\">org.json:json's releases</a>.</em></p>\n<blockquote>\n<h2>20260814</h2>\n<table",
+    "url": "https://github.com/tnb-software/TNB/pull/2025",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: TNB"
+    ]
+  },
+  {
+    "title": "[PR] feat(aio): add openai_compatible BYOK provider with per-key base URL",
+    "date": "2026-08-21T07:50:22Z",
+    "summary": "## Problem\n\nAI observability only supports a fixed list of LLM providers for BYOK keys, evaluations, and the playground. Teams that run their inference through an OpenAI-compatible endpoint that is not on that list (a self-hosted gateway like LiteLLM or vLLM behind a proxy, or regional providers lik",
+    "url": "https://github.com/PostHog/posthog/pull/76553",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: posthog"
     ]
   }
 ]
