@@ -204,12 +204,12 @@
   },
   {
     "title": "\u7533\u8bf7\u52a0\u5165\u8bf7\u5728\u8fd9\u91cc\u8bc4\u8bba \uff08\u4e5f\u53ef\u4ee5\u76f4\u63a5\u53d1 Pull Request\uff09",
-    "date": "2026-08-20T14:31:31Z",
+    "date": "2026-08-21T04:32:18Z",
     "summary": "### \u5165\u9009\u6807\u51c6\r\n* \u7f51\u7ad9 / App\r\n* \u5982\u679c\u662f Github \u5e93\uff0c README \u6216\u9876\u90e8\u63cf\u8ff0\u91cc\uff0c\u8981\u9644\u4e0a\u7f51\u7ad9\u6216 App Store \u5730\u5740\uff0c\u4e0d\u80fd\u662f\u7eaf\u7cb9\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u5982\u679c\u5305\u542b\u4e86\u9488\u5bf9\u5f00\u53d1\u8005\u7684\u5de5\u5177\uff0c\u90a3\u5c31\u592a\u591a\u4e86\u3002\u6240\u4ee5\u53ea\u5141\u8bb8\u9488\u5bf9\u666e\u901a\u7528\u6237\u7684\u7f51\u7ad9/App \u5217\u5728\u8868\u91cc\r\n\r\n### \u4e0d\u6536\u5f55\u7684\u4e1c\u897f\r\n* \u5f00\u53d1\u8005\u5de5\u5177\uff08Github \u672c\u8d28\u4e0a\u5c31\u662f\u4e2a\u5f00\u53d1\u8005\u5de5\u5177\u5927\u96c6\u5408\uff0c\u6536\u5f55\u5f00\u53d1\u8005\u5de5\u5177\u8fd9\u4e2a\u8868\u4f1a\u7206\u70b8\u7684\uff09\r\n* \u793e\u533a\u7c7b\u7f51\u7ad9\uff08v2ex\uff0cruby-china\uff0c\u5404\u79cd php \u793e\u533a\uff0c\u592a\u591a\u592a\u591a\u592a\u591a\u4e86\u3002\u6ca1\u6cd5\u6536\u3002\u5e0c\u671b\u7406\u89e3\uff09\r\n\r\n### \u6d41\u7a0b\r\n\u770b\u4e86\u8bc4\u8bba\u540e\u4f1a\u505a\u51b3\u5b9a\uff0c\r\n\u5982\u679c\u5165\u4e86\uff0c\u4f1a\u52a0\u8fdb\u53bb\u3002\r\n\u5982\u679c\u6ca1\u5165\uff0c\u4f1a\u544a\u77e5\u4f60\u7406\u7531\uff08\u5e0c\u671b\u4f60\u4e0d\u8981\u4ecb\u610f :",
     "url": "https://github.com/1c7/chinese-independent-developer/issues/160",
     "source": "github_issues",
     "highlights": [
-      "comments: 1870",
+      "comments: 1871",
       "state: open",
       "repo: chinese-independent-developer"
     ]
@@ -588,8 +588,8 @@
   },
   {
     "title": "[PR] Stand up Spark serving end to end: model materialization, unit observation, and the credential-bound privilege bootstrap",
-    "date": "2026-08-21T02:29:53Z",
-    "summary": "Draft. Both Sparks now serve the exactly-resolved model; reboot durability is the only open vertical.\n\n```\n2/2 serving\n0/2 reboot-durability proven\n```\n\n## Measured, wet\n\n```\nhost=srv5 typed_rows=0 verdict=wet-noop-converged serving-converged version=0.32.9 model=gpt-oss:20b\nhost=srv6 typed_rows=0 v",
+    "date": "2026-08-21T04:09:49Z",
+    "summary": "Draft. Both Sparks serve the exactly-resolved model, and both have now proven it survives a power cycle.\n\n```\n2/2 serving\n2/2 reboot-durability proven\n```\n\nReboot durability, measured wet on this branch \u2014 the receipt is a **changed `boot_id`**, then a zero-action read-only replan, then a passing gen",
     "url": "https://github.com/gunb-ai/gunbc/pull/8377",
     "source": "github_prs",
     "highlights": [
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-21T02:15:25Z",
+    "date": "2026-08-21T04:07:03Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -744,12 +744,12 @@
   },
   {
     "title": "[PR] feat(runtime): retire the Claude subscription OAuth provider",
-    "date": "2026-08-21T03:05:28Z",
+    "date": "2026-08-21T03:29:22Z",
     "summary": "## Summary\n\nMaka could sign in with a Claude Pro/Max subscription and send inference through it. Anthropic's Consumer Terms permit programmatic access to the consumer Claude services only through an API key or explicit permission, and this path had neither \u2014 it presented itself as Claude Code (borro",
     "url": "https://github.com/apache/maka/pull/3183",
     "source": "github_prs",
     "highlights": [
-      "comments: 16",
+      "comments: 17",
       "pull request",
       "repo: maka"
     ]
@@ -780,12 +780,12 @@
   },
   {
     "title": "[PR] Add the review skills, their repo map, and the permission profiles",
-    "date": "2026-08-21T02:40:33Z",
+    "date": "2026-08-21T03:32:25Z",
     "summary": "Migrates the review-skills unit: `task-review`, `devops-bench-review`, and `.agents/references/permission-configs/`.\n\n> [!IMPORTANT]\n> **Held.** Six links resolve only once #51, #52 and #63 merge. Details at the bottom. I will `/hold cancel` when they land.\n\n## Why architecture.md and glossary.md ar",
     "url": "https://github.com/kubernetes-sigs/devops-bench/pull/65",
     "source": "github_prs",
     "highlights": [
-      "comments: 19",
+      "comments: 21",
       "pull request",
       "repo: devops-bench"
     ]
@@ -876,14 +876,146 @@
   },
   {
     "title": "[PR] Add Ollama Cloud usage adapter (subscription windows)",
-    "date": "2026-08-21T02:12:45Z",
+    "date": "2026-08-21T03:52:04Z",
     "summary": "# Add Ollama Cloud usage adapter to dsh-usage-stats\n\n## Summary\nAdds a subscription-mode adapter for **Ollama Cloud** (credential ref `OLLAMA_API_KEY`),\nmirroring the existing OpenCode Go adapter. Ollama's /api/usage endpoint reports\nconsumed usage ratios for two limit windows - a **5-hour session**",
     "url": "https://github.com/Ychris12138/dsh-usage-stats/pull/55",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: dsh-usage-stats"
+    ]
+  },
+  {
+    "title": "[PR] Dev environment setup + single OpenAI-compatible LLM provider",
+    "date": "2026-08-21T04:40:51Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\n1. Sets up SlideGuide to run in a Cloud Agent dev environment (local Supabase via Docker, backend, frontend) and fixes blockers in the documented setup.\n2. Replaces the multi-provider abstraction (OpenRouter / LM Studio / OpenAI) with a **single OpenAI",
+    "url": "https://github.com/SpectrumTantrum/Slideguide/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Slideguide"
+    ]
+  },
+  {
+    "title": "[PR] feat: Make the audit log reliable and strict, add usage, and cut its per-request cost",
+    "date": "2026-08-21T04:15:01Z",
+    "summary": "# Pull Request Checklist\n\n**Before submitting, make sure you've checked and filled out the following:**\n\n- [ ] **Linked Issue/Discussion:** This PR references an existing [Issue](https://github.com/open-webui/open-webui/issues) or active, substantive [Discussion](https://github.com/open-webui/open-w",
+    "url": "https://github.com/gaby/1open-webui/pull/94",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: 1open-webui"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-sandbox): add Blaxel provider",
+    "date": "2026-08-21T03:58:02Z",
+    "summary": "Rebased onto current `main` on 2026-08-17. Ready for review.\n\n## \ud83c\udfaf Changes\n\n- Add `@tanstack/ai-sandbox-blaxel` as a managed cloud sandbox provider.\n- Implement filesystem access, native file watch, environment values, bounded process streaming, token-gated previews, and resume by id.\n- Reconcile am",
+    "url": "https://github.com/TanStack/ai/pull/1065",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Vertex AI support for Gemini and Claude",
+    "date": "2026-08-21T03:55:09Z",
+    "summary": "## Summary\n\nOfficial Vertex AI support for TanStack AI (discussion #136).\n\n- `@tanstack/ai-vertex` is the public Gemini-on-Vertex API: `vertexText`, `vertexSummarize`, `vertexImage`, `vertexEmbedding`, `vertexSpeech`, `vertexAudio`, `vertexVideo`.\n- Auth is project/location plus any `@google/genai` ",
+    "url": "https://github.com/TanStack/ai/pull/989",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency llama-index-core to ~=0.13.0 [SECURITY]",
+    "date": "2026-08-21T03:53:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/TanNhatCMS/rag_dieu_le_doan/pull/13",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: rag_dieu_le_doan"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency llama-index to ~=0.13.0 [SECURITY]",
+    "date": "2026-08-21T03:53:33Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/TanNhatCMS/rag_dieu_le_doan/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: rag_dieu_le_doan"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency n8n-workflow to v1.120.27",
+    "date": "2026-08-21T03:53:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [n8n-workflow](https://n8n.i",
+    "url": "https://github.com/klicktipp/n8n-community-node-klicktipp/pull/30",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: n8n-community-node-klicktipp"
+    ]
+  },
+  {
+    "title": "[PR] fix: recover text from completed Responses events",
+    "date": "2026-08-21T03:52:10Z",
+    "summary": "## Summary\n\n- recover successful OpenAI Responses text when it is only present on `response.completed`\n- ignore empty `response.content_part.added` placeholders so they do not suppress the completion fallback\n- cover the behavior at both the adapter and raw-wire E2E boundaries\n\n## Root cause\n\nThe Re",
+    "url": "https://github.com/TanStack/ai/pull/937",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(local-runtime): managed llama.cpp runtime \u2014 local models with one click",
+    "date": "2026-08-21T03:50:30Z",
+    "summary": "Hermes can now run models entirely on the user's machine with zero configuration: it installs and supervises a llama.cpp server, picks the right build of each model for the hardware, and manages GPU memory end-to-end. The user picks a model; there are deliberately **no context, VRAM, or quantization",
+    "url": "https://github.com/NousResearch/hermes-agent/pull/85852",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat(immich): add Immich chart",
+    "date": "2026-08-21T03:42:26Z",
+    "summary": "## Description\n\nAdds a new `charts/immich/` chart deploying [Immich](https://github.com/immich-app/immich), a self-hosted photo/video backup solution (drop-in Google Photos/iCloud alternative, with a matching mobile app).\n\nDeploys all four components from Immich's own reference architecture:\n\n```\nIm",
+    "url": "https://github.com/zopdev/helm-charts/pull/313",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: helm-charts"
+    ]
+  },
+  {
+    "title": "[PR] Refactor test bundle and enhance Ollama model provider support",
+    "date": "2026-08-21T03:38:37Z",
+    "summary": "<!-- CURSOR_SUMMARY -->\n> [!NOTE]\n> **High Risk**\n> Touches BYOK/model selection, language-server protocol, and removes workspace indexing plus panic telemetry. Also upgrades the Copilot language server (1.509.5 \u2192 1.527.0).\n> \n> **Overview**\n> **0.21.0** adds Ollama as a BYOK provider (endpoint URL,",
+    "url": "https://github.com/framedparadox/copilot-for-eclipse-anypoint/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: copilot-for-eclipse-anypoint"
     ]
   }
 ]
