@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-21T10:17:16Z",
+    "date": "2026-08-21T11:15:07Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1140,7 +1140,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7.6.0",
-    "date": "2026-08-21T05:43:20Z",
+    "date": "2026-08-21T10:41:21Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3231",
     "source": "github_prs",
@@ -1364,6 +1364,78 @@
       "comments: 1",
       "pull request",
       "repo: POC-on-AI-Service-Now-Integration"
+    ]
+  },
+  {
+    "title": "[PR] fix(policy): respect external policy authority",
+    "date": "2026-08-21T11:28:26Z",
+    "summary": "## Summary\n\nNemoClaw now reads and persists OpenShell policy authority before policy-dependent effects. Externally managed sandboxes use verification-only policy flows, while NemoClaw-managed sandboxes keep existing mutation behavior.\n\n## Related Issue\n\nCloses #9833\n\n## Changes\n\n- Add a strict OpenS",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/9899",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] Feat/idea plugin",
+    "date": "2026-08-21T11:27:09Z",
+    "summary": "## Description\r\n\r\nAdd IntelliJ IDEA (JetBrains) plugin extension for Open Code Review.\r\n\r\nThis is a new extension under `extensions/idea/` that brings the same\r\ncode review workflow available in the VSCode extension to IntelliJ-based\r\nIDEs (IDEA Community/Ultimate, WebStorm, PyCharm, etc.).\r\n\r\nThe i",
+    "url": "https://github.com/alibaba/open-code-review/pull/1031",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: open-code-review"
+    ]
+  },
+  {
+    "title": "[PR] AI auto scripture: local transcription + AI reference detection (opt-in)",
+    "date": "2026-08-21T11:18:49Z",
+    "summary": "> Builds on #3578 (its commit is included here) \u2014 happy to rebase once that lands, or fold both together if preferred.\n\n## What\n\n**AI auto scripture** (opt-in, off by default): FreeShow listens to the sermon, transcribes locally with whisper.cpp, detects scripture references \u2014 both spoken (\"John cha",
+    "url": "https://github.com/ChurchApps/FreeShow/pull/3579",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 16",
+      "pull request",
+      "repo: FreeShow"
+    ]
+  },
+  {
+    "title": "[PR] Queue driver: Gmail <-> _queue transport for envelope execution",
+    "date": "2026-08-21T11:15:35Z",
+    "summary": "Builds `scripts/queue_driver.py` to the consolidated requirement set carried in PROMPT 129, which supersedes the 20 Aug spec Section 6 by amendment B7. Executed under the PROMPT 129R ruling, from the T2 lane worktree, after the A1 location assertion passed.\n\n## What lands\n\n| path | what |\n|---|---|\n",
+    "url": "https://github.com/kennelm2025/arcaai/pull/155",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: arcaai"
+    ]
+  },
+  {
+    "title": "[PR] chore(sync): replay EugOT fork delta onto upstream master (replaces #5)",
+    "date": "2026-08-21T11:01:12Z",
+    "summary": "Replaces #5.\n\n## Why not #5\n\n#5 merged `zeroclaw-labs:master` **into** our `master`: 1,434 files, +444602/\u2212297603, 100 commits, state `CONFLICTING`. That diff is too large to resolve safely by review, and it fails in the one direction that matters: our fork's entire 23-commit delta is a single coher",
+    "url": "https://github.com/EugOT/zeroclaw/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "[PR] httpoison to req",
+    "date": "2026-08-21T10:38:56Z",
+    "summary": "use req instead of httpoison\r\n\r\n## Test Plan\r\n<!--- Please describe the tests you have added and your testing environment (if applicable). -->\r\nTest environment: https://console.your-env.onplural.sh/\r\n\r\n## Checklist\r\n<!--- Go over all the following points to make sure you've checked all that apply b",
+    "url": "https://github.com/pluralsh/console/pull/3928",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: console"
     ]
   }
 ]
