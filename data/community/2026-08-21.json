@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-21T17:21:20Z",
+    "date": "2026-08-21T18:18:59Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -720,12 +720,12 @@
   },
   {
     "title": "[PR] superfixer pre 1.6 realease",
-    "date": "2026-08-21T12:32:29Z",
+    "date": "2026-08-21T18:37:14Z",
     "summary": "## Purpose\n\nSuperfix branch to land **after** the five open arena PRs (#55, #57, #58, #59, #60) merge. It integrates all five (merged in conflict-safe order `#55 \u2192 #57 \u2192 #60 \u2192 #58 \u2192 #59`) and remediates every finding (Critical \u2192 Nitpick) from the consolidated assertive CodeRabbit-style review, so it",
     "url": "https://github.com/maus-inc/mausVoice/pull/63",
     "source": "github_prs",
     "highlights": [
-      "comments: 24",
+      "comments: 33",
       "pull request",
       "repo: mausVoice"
     ]
@@ -780,7 +780,7 @@
   },
   {
     "title": "[PR] Add the review skills, their repo map, and the permission profiles",
-    "date": "2026-08-21T03:32:25Z",
+    "date": "2026-08-21T18:16:25Z",
     "summary": "Migrates the review-skills unit: `task-review`, `devops-bench-review`, and `.agents/references/permission-configs/`.\n\n> [!IMPORTANT]\n> **Held.** Six links resolve only once #51, #52 and #63 merge. Details at the bottom. I will `/hold cancel` when they land.\n\n## Why architecture.md and glossary.md ar",
     "url": "https://github.com/kubernetes-sigs/devops-bench/pull/65",
     "source": "github_prs",
@@ -1164,7 +1164,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-21T15:51:20Z",
+    "date": "2026-08-21T18:30:16Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1176,7 +1176,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-21T15:51:19Z",
+    "date": "2026-08-21T18:30:18Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1188,7 +1188,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-21T15:51:05Z",
+    "date": "2026-08-21T18:30:02Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1656,12 +1656,12 @@
   },
   {
     "title": "[PR] fix(uninstall): retire Hermes Portable schema-5 authority",
-    "date": "2026-08-21T16:59:38Z",
+    "date": "2026-08-21T18:29:32Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nHermes Portable uninstall now treats schema-5 receipts and registry rows as live lifecycle authority instead of deleting matched names opportunistically. It serializes mutation under the Portable host fence, exact sandbox lifecycle locks, and the proce",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9903",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -1728,7 +1728,7 @@
   },
   {
     "title": "[PR] \u267b\ufe0f refactor(makefiles): split shared logic into reusable libraries ",
-    "date": "2026-08-21T17:10:57Z",
+    "date": "2026-08-21T17:38:37Z",
     "summary": "<!-- Title Annotations:\r\n\r\n  WIP: work in progress\r\n  \ud83d\udc1b    Fix a bug.\r\n  \u2728    Introduce new features.\r\n  \ud83c\udfa8    Enhance existing feature.\r\n  \u267b\ufe0f    Refactor code.\r\n  \ud83d\ude91\ufe0f    Critical hotfix.\r\n  \u2697\ufe0f    Perform experiments.\r\n  \u2b06\ufe0f    Upgrade dependencies.\r\n  \ud83d\udcdd    Add or update documentation.\r\n  \ud83d\udd28    Add or u",
     "url": "https://github.com/ITISFoundation/osparc-simcore/pull/9564",
     "source": "github_prs",
@@ -1832,6 +1832,78 @@
       "comments: 0",
       "pull request",
       "repo: devcontainers"
+    ]
+  },
+  {
+    "title": "[PR] Reconcile PR38 with the salvage line: merged history, AGPL executed, sweettest unblock",
+    "date": "2026-08-21T18:40:27Z",
+    "summary": "Rejoins six weeks of parallel work and lands the corrections found along the way.\r\n`origin/main` is fully contained in this branch (0 ahead, 175 behind), so there is\r\nno content to reconcile here \u2014 only review.\r\n\r\n## Merge\r\n`pr/38` (65 commits) merged into the `wip/salvage-20260804` line (93 commits",
+    "url": "https://github.com/G-0-B/FLOSS/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: FLOSS"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes): Microsoft 365 tool suite (Excel, Word, Outlook Mail/Calendar, OneDrive)",
+    "date": "2026-08-21T18:36:47Z",
+    "summary": "## What\n\nMicrosoft 365 tool suite at full Google Workspace parity: five services under `nodes/src/nodes/tool_microsoft_365/`, 65 tools total.\n\n| Service | Tools | Access tiers |\n|---|---|---|\n| Excel | 14 | readonly / write |\n| OneDrive | 17 | readonly / write |\n| Outlook Mail | 16 | readonly / send",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/2057",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] [Quality] Repo-wide audit fixes: error containment, drifted forks, silent failures (stacked on #294\u2192#295)",
+    "date": "2026-08-21T18:29:48Z",
+    "summary": "# Code quality follow-up: repo-wide audit fixes (stacked on #294 \u2192 #295)\n\nA seven-area audit of the codebase (backend modules, backend lib/workers, remaining route files, frontend data layer, frontend components, Word add-in + shared UI, cross-cutting infra) surfaced ~100 findings. This PR lands the",
+    "url": "https://github.com/Open-Legal-Products/mike/pull/356",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mike"
+    ]
+  },
+  {
+    "title": "[PR] Fix chat 500, harden RAG pipeline, Postgres persistence, runnable graph ingest",
+    "date": "2026-08-21T18:05:59Z",
+    "summary": "## What was broken\n\n`POST /api/v1/chat/ask` returned **500 on every request** in production. Reproduced locally:\n\n```\nqdrant_client.http.exceptions.ResponseHandlingException: [Errno 11001] getaddrinfo failed\n```\n\n`search_vector_db` had no error handling, so an unreachable Qdrant cluster took the who",
+    "url": "https://github.com/Prateeks16/kisangptV2/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: kisangptV2"
+    ]
+  },
+  {
+    "title": "[PR] feat(residency): reconcile fork with Lemonade v11.7.0",
+    "date": "2026-08-21T17:49:07Z",
+    "summary": "<details>\n<summary><picture><img alt=\"DIFF\" src=\"https://img.shields.io/badge/DIFF-57606A?style=for-the-badge\" height=\"16\"></picture>&nbsp;<picture><img alt=\"IMPL: 8549 additions, 1786 deletions\" src=\"https://img.shields.io/badge/IMPL-%2B8549%20%E2%88%921786-0969DA?style=flat\" height=\"16\"></picture>",
+    "url": "https://github.com/nisavid/lemonade/pull/101",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: lemonade"
+    ]
+  },
+  {
+    "title": "[PR] feat(deps): update module github.com/testcontainers/testcontainers-go (v0.40.0 \u2192 v0.44.0)",
+    "date": "2026-08-21T18:32:34Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/rkoosaar/containers/pull/80",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: containers"
     ]
   }
 ]
