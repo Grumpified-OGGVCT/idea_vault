@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-21T16:17:30Z",
+    "date": "2026-08-21T17:21:20Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] fix: address release v2 stack review findings",
-    "date": "2026-08-21T00:21:04Z",
+    "date": "2026-08-21T17:14:32Z",
     "summary": "## Summary\n\nFixes all 26 findings from the eight-PR `release/v2` review plus follow-up reviewer findings.\n\n### Fixes\n\n- **Custom Widgets:** bounded Redis cache/invalidation, parallel requests, trusted anonymous identity/public refresh, smaller payloads, JSX reuse, and safe module boundaries.\n- **Boa",
     "url": "https://github.com/homarr-labs/homarr/pull/6637",
     "source": "github_prs",
@@ -1368,7 +1368,7 @@
   },
   {
     "title": "[PR] fix(policy): respect external policy authority",
-    "date": "2026-08-21T16:10:21Z",
+    "date": "2026-08-21T16:44:03Z",
     "summary": "## Summary\n\nNemoClaw now reads and persists OpenShell policy authority before policy-dependent effects. Externally managed sandboxes use verification-only policy flows, while NemoClaw-managed sandboxes keep existing mutation behavior.\n\n## Related Issue\n\nCloses #9833\n\n## Changes\n\n- Add a strict OpenS",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9899",
     "source": "github_prs",
@@ -1656,7 +1656,7 @@
   },
   {
     "title": "[PR] fix(uninstall): retire Hermes Portable schema-5 authority",
-    "date": "2026-08-21T16:33:52Z",
+    "date": "2026-08-21T16:59:38Z",
     "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n\nHermes Portable uninstall now treats schema-5 receipts and registry rows as live lifecycle authority instead of deleting matched names opportunistically. It serializes mutation under the Portable host fence, exact sandbox lifecycle locks, and the proce",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9903",
     "source": "github_prs",
@@ -1704,7 +1704,7 @@
   },
   {
     "title": "[PR] feat: Add GitHub Copilot provider",
-    "date": "2026-08-21T16:38:06Z",
+    "date": "2026-08-21T16:47:11Z",
     "summary": "## Description\n\nAdds GitHub Copilot as a first-class LLM provider in Bifrost. The Copilot provider uses a two-layer OAuth flow: a device-code grant to obtain a GitHub OAuth token, which is then exchanged for a short-lived Copilot API token with automatic refresh.\n\nSupports Chat Completions and the R",
     "url": "https://github.com/maximhq/bifrost/pull/2054",
     "source": "github_prs",
@@ -1728,7 +1728,7 @@
   },
   {
     "title": "[PR] \u267b\ufe0f refactor(makefiles): split shared logic into reusable libraries ",
-    "date": "2026-08-21T16:17:46Z",
+    "date": "2026-08-21T17:10:57Z",
     "summary": "<!-- Title Annotations:\r\n\r\n  WIP: work in progress\r\n  \ud83d\udc1b    Fix a bug.\r\n  \u2728    Introduce new features.\r\n  \ud83c\udfa8    Enhance existing feature.\r\n  \u267b\ufe0f    Refactor code.\r\n  \ud83d\ude91\ufe0f    Critical hotfix.\r\n  \u2697\ufe0f    Perform experiments.\r\n  \u2b06\ufe0f    Upgrade dependencies.\r\n  \ud83d\udcdd    Add or update documentation.\r\n  \ud83d\udd28    Add or u",
     "url": "https://github.com/ITISFoundation/osparc-simcore/pull/9564",
     "source": "github_prs",
@@ -1760,6 +1760,78 @@
       "comments: 5",
       "pull request",
       "repo: opik"
+    ]
+  },
+  {
+    "title": "[PR] chore: audit dependencies and remove artifacts orphaned by the 1.0 rewrite",
+    "date": "2026-08-21T17:29:37Z",
+    "summary": "## Why are these changes needed?\n\n`pip install ag2`, several `ag2[...]` extras, and the dev dependency groups all pull packages that no code in the repo imports. Required dependencies in particular are something a downstream user cannot opt out of, so unused ones are pure install-size and supply-cha",
+    "url": "https://github.com/ag2ai/ag2/pull/3159",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ag2"
+    ]
+  },
+  {
+    "title": "[PR] [Mac app] Self-contained local mode \u2014 the whole stack runs inside Mike.app (stacked on #302)",
+    "date": "2026-08-21T17:26:33Z",
+    "summary": "# Self-contained Mike.app \u2014 the whole stack runs inside the desktop app\n\nStacked on #302 (desktop shell; hosted default). This PR adds the third and\nfinal mode from `desktop/docs/self-contained-plan.md`: **Run locally on this\nMac**. The app supervises the entire Mike stack \u2014 Postgres 17, GoTrue,\nPos",
+    "url": "https://github.com/Open-Legal-Products/mike/pull/351",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: mike"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update all non-major dependencies",
+    "date": "2026-08-21T17:14:39Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: k8sgpt"
+    ]
+  },
+  {
+    "title": "[PR] docs: a local-LLM audit of the shipped 2.10.0 binary \u2014 31 findings, four of which would change a release decision",
+    "date": "2026-08-21T17:00:40Z",
+    "summary": "A black-box audit of the shipped `nimbus` **2.10.0** binary driven against a local\nOllama `llama3.2`, filed as `docs/superpowers/specs/2026-08-21-local-llm-audit-findings.md`.\nDocs only \u2014 no runtime change. Also adds `scripts/diagnostics/test-google-oauth-refresh.ps1`,\nthe probe used to establish F1",
+    "url": "https://github.com/nimbus-agent/Nimbus/pull/1296",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Nimbus"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go to v0.44.0",
+    "date": "2026-08-21T16:44:05Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/glevanov/weight-tracker-service/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: weight-tracker-service"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency can1357/oh-my-pi to v17.4.1",
+    "date": "2026-08-21T16:40:28Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [can1357/oh-my-pi](https://redirect.github.com/can1357/oh-my-pi) | minor | `17.3.7` \u2192 `17.4.1` |\n\n---\n\n### Release Notes\n\n<details>\n<summary>c",
+    "url": "https://github.com/TomGrozev/devcontainers/pull/29",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: devcontainers"
     ]
   }
 ]
