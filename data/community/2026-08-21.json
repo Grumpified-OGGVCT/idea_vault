@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] Update bump-dependencies",
-    "date": "2026-08-21T19:48:55Z",
+    "date": "2026-08-21T22:51:17Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update | Pending |\n|---|---|---|---|---|-",
     "url": "https://github.com/lehigh-university-libraries/scribe/pull/92",
     "source": "github_prs",
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-21T22:20:51Z",
+    "date": "2026-08-21T23:11:54Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1788,7 +1788,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-08-21T17:14:39Z",
+    "date": "2026-08-21T22:50:18Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -1836,7 +1836,7 @@
   },
   {
     "title": "[PR] Reconcile PR38 with the salvage line: merged history, AGPL executed, sweettest unblock",
-    "date": "2026-08-21T22:25:26Z",
+    "date": "2026-08-21T23:06:55Z",
     "summary": "Rejoins six weeks of parallel work and lands the corrections found along the way.\r\n`origin/main` is fully contained in this branch (0 ahead, 175 behind), so there is\r\nno content to reconcile here \u2014 only review.\r\n\r\n## Merge\r\n`pr/38` (65 commits) merged into the `wip/salvage-20260804` line (93 commits",
     "url": "https://github.com/G-0-B/FLOSS/pull/41",
     "source": "github_prs",
@@ -1908,8 +1908,8 @@
   },
   {
     "title": "[PR] Implement window management, shortcuts, and rebrand to Devil AI",
-    "date": "2026-08-21T22:14:50Z",
-    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n- **New Features**\n  - Rebranded the app as Devil AI, including updated product details and support links.\n  - Added continuous chat history, long analysis with multi-screen capture, and keyboard s",
+    "date": "2026-08-21T22:53:51Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Rebranded the app as Devil AI with updated website and support links.\n  * Added Gemini project management, credential testing, failover, and status monitoring.\n  * Added Olla",
     "url": "https://github.com/sohzm/cheating-daddy/pull/480",
     "source": "github_prs",
     "highlights": [
@@ -2024,6 +2024,30 @@
       "comments: 0",
       "pull request",
       "repo: hypercrawler-frontier-service"
+    ]
+  },
+  {
+    "title": "[PR] fix(migrations): FileEntityRecordLink unique key omits RecordID (#3943)",
+    "date": "2026-08-21T22:49:47Z",
+    "summary": "Fixes #3943.\n\n## The defect\n\n`__mj.FileEntityRecordLink` is the generic soft-key many-to-many between any file and any record of any entity. Its unique key omitted `RecordID`:\n\n```sql\nCONSTRAINT [UQ_FileEntityRecordLink_EntityID_FileID] UNIQUE NONCLUSTERED ([EntityID], [FileID])\n```\n\nso a given `Fil",
+    "url": "https://github.com/MemberJunction/MJ/pull/4006",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(codegen): teach the class-registration manifest scanner to see @RegisterClassEx",
+    "date": "2026-08-21T22:46:00Z",
+    "summary": "# Forward:\r\nI do not know this domain. The code looks ok to me, but I don\u2019t knwo the pitfalls of this area.\r\n\r\nFixes #3944.\r\n\r\n`mj codegen manifest` matched the decorator identifier literally, so it only ever saw `RegisterClass` \u2014 never `RegisterClassEx`, the options-bag form `MJGlobal/src/RegisterC",
+    "url": "https://github.com/MemberJunction/MJ/pull/4005",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
