@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-21T06:23:00Z",
+    "date": "2026-08-21T07:14:03Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -672,7 +672,7 @@
   },
   {
     "title": "[PR] Protect the DeviceRegistry.devices container",
-    "date": "2026-08-21T06:38:51Z",
+    "date": "2026-08-21T07:13:28Z",
     "summary": "<!--\r\n  You are amazing! Thanks for contributing to our project!\r\n  Please, DO NOT DELETE ANY TEXT from this template! (unless instructed).\r\n-->\r\n## Proposed change\r\n<!--\r\n  Describe the big picture of your changes here to communicate to the\r\n  maintainers why we should accept this pull request. If ",
     "url": "https://github.com/home-assistant/core/pull/179578",
     "source": "github_prs",
@@ -1148,6 +1148,102 @@
       "comments: 0",
       "pull request",
       "repo: testcontainers-spring-boot"
+    ]
+  },
+  {
+    "title": "[PR] bugfix: update Frigate GenAI model",
+    "date": "2026-08-21T07:44:20Z",
+    "summary": "## Description\n\nUpdates Frigate GenAI from the retired `gemma3:12b-cloud` model to `gemma4:31b-cloud`, which is already listed in the repo-managed Ollama cloud model configuration.\n\nValidation performed:\n- `kubectl kustomize --enable-helm kubernetes/cluster/smart-home/frigate`\n\nOperational impact:\n-",
+    "url": "https://github.com/maxim-mityutko/home-infra/pull/2071",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: home-infra"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-21T07:43:24Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-21T07:43:21Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-21T07:43:12Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] feat(graphs): migrate LLM orchestration from LangGraph/LangChain to Mastra + Vercel AI SDK",
+    "date": "2026-08-21T07:23:35Z",
+    "summary": "\r\n## Description\r\n\r\nThis PR migrates the extension's LLM orchestration layer off **LangChain/LangGraph** and onto **Mastra workflows** + the **Vercel AI SDK**. LangGraph's `StateGraph`/`Annotation` engine is rebuilt on Mastra's `createWorkflow`/`createStep` primitives, and LangChain's message/tool/e",
+    "url": "https://github.com/sourcefuse/loopback4-llm-chat-extension/pull/29",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: loopback4-llm-chat-extension"
+    ]
+  },
+  {
+    "title": "[PR] Bump Testcontainers.PostgreSql from 3.10.0 to 4.14.0",
+    "date": "2026-08-21T07:10:54Z",
+    "summary": "Updated [Testcontainers.PostgreSql](https://github.com/testcontainers/testcontainers-dotnet) from 3.10.0 to 4.14.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers.PostgreSql's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.14.0\n\n# What",
+    "url": "https://github.com/Gabcar98-sys/pos-ledger-api/pull/23",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: pos-ledger-api"
+    ]
+  },
+  {
+    "title": "[PR] AI chat middleware: per-message slice selection, reader's window, optional cloud backend",
+    "date": "2026-08-21T07:09:08Z",
+    "summary": "## Summary\r\n\r\nServer-side half of the AI chat work. The panel changes live in a companion MR on `odelia-viewer` (same branch name); this side makes the middleware honour what a message actually asks for, rather than applying a global recipe to whatever it happens to fetch.\r\n\r\n**A message now carries",
+    "url": "https://github.com/StratifAI-Research/odelia-viewer-platform/pull/53",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: odelia-viewer-platform"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): generation defaults for every local provider + drafter-free llama.cpp spec types",
+    "date": "2026-08-21T07:05:05Z",
+    "summary": "## Summary\n\nTwo related gaps in how PortOS configures its local LLM stack.\n\n### 1. Generation defaults reach every local provider\n\nThe provider editor's **Generation** tab gated temperature/thinking on *\"API provider or Ollama-backed\"*, and `buildOpencodeConfig` only emitted an `agent.build` block f",
+    "url": "https://github.com/atomantic/PortOS/pull/4726",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: PortOS"
     ]
   }
 ]
