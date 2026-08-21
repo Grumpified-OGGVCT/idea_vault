@@ -588,12 +588,12 @@
   },
   {
     "title": "[PR] Stand up Spark serving end to end: model materialization, unit observation, and the credential-bound privilege bootstrap",
-    "date": "2026-08-21T12:28:19Z",
+    "date": "2026-08-21T14:35:53Z",
     "summary": "Draft. Both Sparks serve the exactly-resolved model, and both have now proven it survives a power cycle.\n\n```\n2/2 serving\n2/2 reboot-durability proven\n```\n\nReboot durability, measured wet on this branch \u2014 the receipt is a **changed `boot_id`**, then a zero-action read-only replan, then a passing gen",
     "url": "https://github.com/gunb-ai/gunbc/pull/8377",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: gunbc"
     ]
@@ -1164,7 +1164,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-21T12:46:00Z",
+    "date": "2026-08-21T13:52:07Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1176,7 +1176,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-21T12:46:00Z",
+    "date": "2026-08-21T13:52:06Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1188,7 +1188,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-21T12:45:49Z",
+    "date": "2026-08-21T13:51:57Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1392,7 +1392,7 @@
   },
   {
     "title": "[PR] AI auto scripture: local transcription + AI reference detection (opt-in)",
-    "date": "2026-08-21T11:18:49Z",
+    "date": "2026-08-21T14:29:18Z",
     "summary": "> Builds on #3578 (its commit is included here) \u2014 happy to rebase once that lands, or fold both together if preferred.\n\n## What\n\n**AI auto scripture** (opt-in, off by default): FreeShow listens to the sermon, transcribes locally with whisper.cpp, detects scripture references \u2014 both spoken (\"John cha",
     "url": "https://github.com/ChurchApps/FreeShow/pull/3579",
     "source": "github_prs",
@@ -1544,6 +1544,102 @@
       "comments: 0",
       "pull request",
       "repo: rag-vizualisation"
+    ]
+  },
+  {
+    "title": "[PR] Updated to the latest version of the current project",
+    "date": "2026-08-21T14:36:27Z",
+    "summary": "#### What roadmap does this PR target?\r\n\r\n- [ ] Frontend Roadmap\r\n- [ ] Backend Roadmap\r\n- [ ] DevOps Roadmap\r\n- [x] All Roadmaps\r\n\r\n#### Please acknowledge the items listed below\r\n\r\n- [ ] I have discussed this contribution and got a go-ahead in an issue before opening this pull request.\r\n- [ ] This",
+    "url": "https://github.com/Diego-18/developer-roadmap/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: developer-roadmap"
+    ]
+  },
+  {
+    "title": "[PR] feat(windows): add native packaging, credentials, local-agent support, and CI",
+    "date": "2026-08-21T14:35:05Z",
+    "summary": "## Summary\r\n\r\nThis PR adds the Windows desktop implementation and regression coverage needed to package and run oh-my-warp without relying on Warp cloud services.\r\n\r\n## What changed\r\n\r\n- Add a self-contained Windows ZIP containing the desktop executable, Node.js runtime, local agent, keychain helper",
+    "url": "https://github.com/AndrewWayne/oh-my-warp/pull/132",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: oh-my-warp"
+    ]
+  },
+  {
+    "title": "[PR] feat(openshell): bundle mkfs.ext4 and debugfs on Linux",
+    "date": "2026-08-21T14:27:23Z",
+    "summary": "## Summary\n\n- bundle the e2fsprogs 1.47.4 `mke2fs` payload as `mkfs.ext4`, plus `debugfs`, for the OpenShell VM driver on Linux x64 and arm64\n- select the pinned Homebrew bottle from its GHCR OCI manifest, verify its digest, and stage only the required binaries, configuration, and e2fsprogs librarie",
+    "url": "https://github.com/openkaiden/kaiden/pull/2692",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] feat(infra): add cheap one-box platform compose",
+    "date": "2026-08-21T14:26:40Z",
+    "summary": "## Description\n\nAdds a cheap one-box cloud/prod Docker Compose configuration for the non-AI Deepiri platform stack.\n\nInclude:\n- Related Issue number: TBD\n- Plaky feature name: Cheap one-box platform deployment\n- Component, feature, or system affected: Cloud/infra Docker Compose, nginx reverse proxy,",
+    "url": "https://github.com/Team-Deepiri/deepiri-platform/pull/304",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: deepiri-platform"
+    ]
+  },
+  {
+    "title": "[PR] Add owner-controlled maintenance and five-model free local AI",
+    "date": "2026-08-21T14:25:16Z",
+    "summary": "## Summary\n\n- add the key-free local Ollama `balanced5` preset: `qwen3.5:4b`, `deepseek-r1:8b`, `llama3.1:8b`, `gemma3:4b`, and `phi4-mini:3.8b` (approximately 19.3 GB total downloads)\n- add a machine-readable free-model catalog and `aura-free-ai catalog/probe` CLI with exact missing-model install c",
+    "url": "https://github.com/svk1dec2018-ai/AURA-AI-OS-ya-ai-trading-system/pull/47",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AURA-AI-OS-ya-ai-trading-system"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-08-21T14:18:05Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/cicero-im/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 20",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] Use real Gemma 4 31B Ollama baseline in publication pipeline",
+    "date": "2026-08-21T14:05:45Z",
+    "summary": "## Summary\n\nThis change makes the publication pipeline use a real Ollama model evaluation path by default and removes the deterministic `llm-proxy` from the synthetic GovernBench headline baselines.\n\n### What changed\n\n- default publication LLM changed to `gemma4:31b-cloud`\n- Docker continues to reac",
+    "url": "https://github.com/vtavakkoli/veriweave-govern/pull/15",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: veriweave-govern"
+    ]
+  },
+  {
+    "title": "[PR] fix(onboard): sync Homebrew formula pin",
+    "date": "2026-08-21T14:04:35Z",
+    "summary": "<!-- markdownlint-disable MD041 -->\n## Summary\n<!-- 1-3 plain sentences: what changes and why. Describe before-and-after behavior when it applies. Follow the NemoClaw Writing Guide: https://github.com/NVIDIA/NemoClaw/blob/main/WRITING.md. Do not add unrelated prose cleanup. -->\n\nNemoClaw previously ",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/9882",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: NemoClaw"
     ]
   }
 ]
