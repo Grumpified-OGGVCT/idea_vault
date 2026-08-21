@@ -156,7 +156,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-20T22:06:32Z",
+    "date": "2026-08-21T06:35:08Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] Stand up Spark serving end to end: model materialization, unit observation, and the credential-bound privilege bootstrap",
-    "date": "2026-08-21T04:57:05Z",
+    "date": "2026-08-21T06:50:52Z",
     "summary": "Draft. Both Sparks serve the exactly-resolved model, and both have now proven it survives a power cycle.\n\n```\n2/2 serving\n2/2 reboot-durability proven\n```\n\nReboot durability, measured wet on this branch \u2014 the receipt is a **changed `boot_id`**, then a zero-action read-only replan, then a passing gen",
     "url": "https://github.com/gunb-ai/gunbc/pull/8377",
     "source": "github_prs",
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-21T05:21:11Z",
+    "date": "2026-08-21T06:23:00Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -672,7 +672,7 @@
   },
   {
     "title": "[PR] Protect the DeviceRegistry.devices container",
-    "date": "2026-08-20T23:49:29Z",
+    "date": "2026-08-21T06:38:51Z",
     "summary": "<!--\r\n  You are amazing! Thanks for contributing to our project!\r\n  Please, DO NOT DELETE ANY TEXT from this template! (unless instructed).\r\n-->\r\n## Proposed change\r\n<!--\r\n  Describe the big picture of your changes here to communicate to the\r\n  maintainers why we should accept this pull request. If ",
     "url": "https://github.com/home-assistant/core/pull/179578",
     "source": "github_prs",
@@ -684,7 +684,7 @@
   },
   {
     "title": "[PR] Update Docker images",
-    "date": "2026-08-21T01:26:03Z",
+    "date": "2026-08-21T06:28:08Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| b3log/siyuan | patch | `v3.8.0` \u2192 `v3.8.1` |\n| code.olsen.cloud/incubator/grundlag | digest | `ed56d61` \u2192 `3632043` |\n| [codeberg.org/forgejo/",
     "url": "https://github.com/morten-olsen/homelab-apps/pull/388",
     "source": "github_prs",
@@ -744,12 +744,12 @@
   },
   {
     "title": "[PR] feat(runtime): retire the Claude subscription OAuth provider",
-    "date": "2026-08-21T05:24:32Z",
+    "date": "2026-08-21T06:41:43Z",
     "summary": "## Summary\n\nMaka could sign in with a Claude Pro/Max subscription and send inference through it. Anthropic's Consumer Terms permit programmatic access to the consumer Claude services only through an API key or explicit permission, and this path had neither \u2014 it presented itself as Claude Code (borro",
     "url": "https://github.com/apache/maka/pull/3183",
     "source": "github_prs",
     "highlights": [
-      "comments: 19",
+      "comments: 20",
       "pull request",
       "repo: maka"
     ]
@@ -1076,6 +1076,78 @@
       "comments: 1",
       "pull request",
       "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] Upstream sync \u2014 2026-08-21",
+    "date": "2026-08-21T06:35:15Z",
+    "summary": "## Upstream Sync\n\n**New commits from [nyldn/claude-octopus](https://github.com/nyldn/claude-octopus)**\n\n```\n242e51d3 test: assert no-progress skip contract (#939)\n5179f0ae refactor: make design review provider-neutral (#936)\n5486c035 fix: harden provider-neutral council policy (#937)\n35f1a47c fix: r",
+    "url": "https://github.com/AlobarQuest/claude-octopus/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 37",
+      "pull request",
+      "repo: claude-octopus"
+    ]
+  },
+  {
+    "title": "[PR] deps: Bump Azure.Core and 20 others",
+    "date": "2026-08-21T06:28:50Z",
+    "summary": "Pinned [Azure.Core](https://github.com/Azure/azure-sdk-for-net) at 1.62.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Azure.Core's releases](https://github.com/Azure/azure-sdk-for-net/releases)._\n\n## 1.62.0\n\n## 1.62.0 (2026-08-20)\n\n### Features Added\n\n- Added experimental (`SCME0002",
+    "url": "https://github.com/PlagueHO/genai-database-explorer/pull/160",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: genai-database-explorer"
+    ]
+  },
+  {
+    "title": "[PR] Omi fully on-premise via Docker Compose or Helm/k8s: every managed service behind a swappable port (db Firestore|Mongo \u00b7 storage GCS|S3 \u00b7 vector Pinecone|Qdrant \u00b7 auth Firebase|Keycloak \u00b7 push FCM|UnifiedPush \u00b7 LLM any OpenAI-compatible endpoint)",
+    "date": "2026-08-21T06:22:31Z",
+    "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
+    "url": "https://github.com/BasedHardware/omi/pull/10887",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 19",
+      "pull request",
+      "repo: omi"
+    ]
+  },
+  {
+    "title": "[PR] feat(config): support declarative env/file defaults in configuration properties",
+    "date": "2026-08-21T05:58:41Z",
+    "summary": "## Summary\r\n\r\nCloses #2507\r\n\r\nIntroduces a declarative mechanism for extensions to resolve configuration defaults from environment variables and file paths at registration time, without requiring new extension API surface.\r\n\r\n- **`ConfigurationRegistry`**: Added `resolveEnvDefault`, `parseDefaultEnt",
+    "url": "https://github.com/openkaiden/kaiden/pull/2627",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] fix(docs): generate valid API examples",
+    "date": "2026-08-21T05:43:37Z",
+    "summary": "<!-- Please open this PR as a DRAFT until the checklist below is complete. -->\r\n<!-- Automated review (Greptile + gate) starts when you mark it ready. -->\r\n\r\nProblem Solved #299\r\n\r\n## Description\r\n\r\n## Summary\r\n\r\nFix generated plugin overview API examples that previously used empty\r\n`({})` arguments",
+    "url": "https://github.com/corsairdev/corsair/pull/660",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: corsair"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7.6.0",
+    "date": "2026-08-21T05:43:20Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3231",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: testcontainers-spring-boot"
     ]
   }
 ]
