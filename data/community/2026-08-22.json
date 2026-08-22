@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-22T06:17:55Z",
+    "date": "2026-08-22T07:06:21Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -992,6 +992,66 @@
       "comments: 0",
       "pull request",
       "repo: OmniRoute"
+    ]
+  },
+  {
+    "title": "[PR] chore: merge upstream release v17.4.2",
+    "date": "2026-08-22T07:34:08Z",
+    "summary": "The automated merge of upstream release v17.4.2 into main found conflicts.\n\nThis pull request is stacked on `upstream-release/v17.4.1-9350b7990d26`, which carries the previous unpublished upstream release. Merge that pull request first.\n\nThis branch points at upstream release commit 7ab849ade53d905c",
+    "url": "https://github.com/OnkayC/oh-my-pi/pull/376",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: oh-my-pi"
+    ]
+  },
+  {
+    "title": "[PR] feat(metadata): chapters are always on, and the text fields move to local qwen models",
+    "date": "2026-08-22T07:33:55Z",
+    "summary": "Two changes that turned out to be one: a routing table that offered options nobody should pick.\n\n## Part A \u2014 chapters are always on\n\n`chapters` is **gone from the routing table**. There is one chaptering architecture \u2014 the embedding pipeline \u2014 and every item that reaches generation with a timestampe",
+    "url": "https://github.com/telltaleatheist/ContentStudio/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ContentStudio"
+    ]
+  },
+  {
+    "title": "[PR] Add Windows 11 HAI installer",
+    "date": "2026-08-22T07:33:43Z",
+    "summary": "## Summary\n- add a reproducible Inno Setup Windows 11 installer for the source-built, loopback-only local Compose stack\n- generate first-run secrets under %LOCALAPPDATA%\\\\HAI and provide Start, Stop, Status, Open Dashboard, and opt-in local-model actions\n- add recovery contracts, installer payload s",
+    "url": "https://github.com/Robert-Velhorst/018-HAI/pull/34",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: 018-HAI"
+    ]
+  },
+  {
+    "title": "[PR] ci: add path-triggered OCR and desktop blocking gates",
+    "date": "2026-08-22T07:28:08Z",
+    "summary": "## PR Type\n\n- [ ] fix\n- [ ] feat\n- [ ] refactor\n- [ ] docs\n- [ ] chore\n- [ ] test\n- [x] ci\n\n## Background And Problem\n\nBlocking CI on `main` did not run two already-green suites:\n\n1. OCR / image stock-extractor tests skip unless `requirements-ocr.txt` and system Tesseract are installed (`test_real_t",
+    "url": "https://github.com/SiinXu/stock-pulse-ai/pull/1465",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: stock-pulse-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(opencode): \u652f\u6301 OpenCode Go \u5b98\u65b9\u7528\u91cf\u7a97\u53e3\u67e5\u8be2\u4e0e\u81ea\u52a8\u5237\u65b0",
+    "date": "2026-08-22T06:44:01Z",
+    "summary": "## \u80cc\u666f\n\nOpenCode Go \u662f OpenCode \u5b98\u65b9\u7684\u8ba2\u9605\u805a\u5408\u5e73\u53f0\uff08$10/\u6708\uff0c5h/$12\u3001\u5468/$30\u3001\u6708/$60 \u4e09\u4e2a\u7528\u91cf\u7a97\u53e3\uff09\uff0c\u63d0\u4f9b OpenAI \u517c\u5bb9\u7aef\u70b9 `https://opencode.ai/zen/go/v1`\u3002\u4e0a\u6e38\u4e8e 2026-08-11 \u4e0a\u7ebf\u5b98\u65b9\u7528\u91cf\u7aef\u70b9 `GET /zen/go/v1/usage`\uff08Bearer \u76f4\u63a5\u590d\u7528\u6d88\u8d39\u7aef key\uff0c\u5c1a\u672a\u5199\u5165\u5b98\u65b9\u6587\u6863\uff09\uff0c\u8fd4\u56de rolling/weekly/monthly \u4e09\u7a97\u53e3\u7684 `percent` \u4e0e `resetsAt`\u3002\n\n\u672c PR \u4e3a openai apikey \u8d26\u53f7\uff08base_url = `https://open",
+    "url": "https://github.com/Wei-Shaw/sub2api/pull/5616",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: sub2api"
     ]
   }
 ]
