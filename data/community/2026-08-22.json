@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7.6.0",
-    "date": "2026-08-22T10:00:27Z",
+    "date": "2026-08-22T13:49:25Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3231",
     "source": "github_prs",
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-22T13:29:55Z",
+    "date": "2026-08-22T14:09:53Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] fix(policy): respect external policy authority",
-    "date": "2026-08-22T06:34:37Z",
+    "date": "2026-08-22T14:01:03Z",
     "summary": "## Summary\n\nNemoClaw now reads and persists OpenShell policy authority before policy-dependent effects. Externally managed sandboxes use verification-only policy flows, while NemoClaw-managed sandboxes keep existing mutation behavior.\n\n## Related Issue\n\nCloses #9833\n\n## Changes\n\n- Add a strict OpenS",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9899",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] [PF-3375] Upstream sync 2026-08-21: absorb mastra-ai/mastra through 372b1a71",
-    "date": "2026-08-22T12:26:13Z",
+    "date": "2026-08-22T14:19:17Z",
     "summary": "## Objective\n\nAncestry-preserving sync of `mbenhamd/mastra:main` from official `mastra-ai/mastra:main`, taking\nmaximum safe upstream value while preserving fork-owned Harness, durable-runtime, memory-governance,\nstorage, identity, and release contracts.\n\nLinear: **PF-3375**\n\n## Blocked on #358\n\nThe ",
     "url": "https://github.com/mbenhamd/mastra/pull/357",
     "source": "github_prs",
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] Add authenticated CollectFolio card lookup service",
-    "date": "2026-08-22T03:46:18Z",
+    "date": "2026-08-22T14:09:17Z",
     "summary": "## Summary\n\n- add a stateless, authenticated `POST /v1/card-lookups` endpoint for CollectFolio\n- verify bounded JPEG, PNG, and WebP crops, reject GPS metadata, and return a non-retention digest assertion\n- support structured OpenAI Responses, native Ollama vision/JSON Schema (local or authenticated ",
     "url": "https://github.com/kaywhy331/CollectCapture/pull/10",
     "source": "github_prs",
@@ -936,7 +936,7 @@
   },
   {
     "title": "[PR] Update Docker non-major",
-    "date": "2026-08-22T10:57:56Z",
+    "date": "2026-08-22T13:36:11Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [adguard/adguardhome](https://adguard.com/en/adguard-home/overview.html) ([source](https://redirect.github.com/AdguardTeam/AdGuardHome)) | pat",
     "url": "https://github.com/benprisby/homelab/pull/182",
     "source": "github_prs",
@@ -984,7 +984,7 @@
   },
   {
     "title": "[PR] fix(sse): classify RFC1918 and .local hosts as local providers",
-    "date": "2026-08-22T05:31:16Z",
+    "date": "2026-08-22T13:41:37Z",
     "summary": "Fixes #11091\n\n## Problem\n\n`isLocalProvider()` (`open-sse/config/providerRegistry.ts`) matched only\n`localhost`, `127.0.0.1` and `172.16.0.0/12` \u2014 missing most of the address space a\nself-hosted LLM box actually lives on.\n\nIts **sole caller** is the 404 model-lockout branch at `src/sse/services/auth.",
     "url": "https://github.com/diegosouzapw/OmniRoute/pull/11093",
     "source": "github_prs",
@@ -1020,7 +1020,7 @@
   },
   {
     "title": "[PR] Add Windows 11 HAI installer",
-    "date": "2026-08-22T13:32:04Z",
+    "date": "2026-08-22T14:20:52Z",
     "summary": "## Summary\n- add a reproducible Inno Setup Windows 11 installer for the source-built, loopback-only local Compose stack\n- generate first-run secrets under %LOCALAPPDATA%\\\\HAI and provide Start, Stop, Status, Open Dashboard, and opt-in local-model actions\n- add recovery contracts, installer payload s",
     "url": "https://github.com/Robert-Velhorst/018-HAI/pull/34",
     "source": "github_prs",
@@ -1092,7 +1092,7 @@
   },
   {
     "title": "[PR] fix(cli): skip default follow-up suggestions on local OpenAI backends",
-    "date": "2026-08-22T13:22:41Z",
+    "date": "2026-08-22T13:38:31Z",
     "summary": "## What this PR does\n\nThis PR changes the follow-up suggestion runtime gate so an unset `ui.enableFollowupSuggestions` defaults off for local OpenAI-compatible backends reached through loopback-style URLs (`localhost`, `127.0.0.0/8`, `0.0.0.0`, `::1`, and IPv4-mapped IPv6 loopback forms). Explicit `",
     "url": "https://github.com/QwenLM/qwen-code/pull/5821",
     "source": "github_prs",
@@ -1340,6 +1340,54 @@
       "comments: 2",
       "pull request",
       "repo: webhook-bridge"
+    ]
+  },
+  {
+    "title": "[PR] Feat/typesetting layout controls",
+    "date": "2026-08-22T14:18:26Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added per-region text styling controls, including font, size, alignment, padding, and auto-fit.\n  * Added live typesetting previews with status indicators for fitting, overf",
+    "url": "https://github.com/heartnet123/Jisa/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Jisa"
+    ]
+  },
+  {
+    "title": "[PR] feat(open-model): OMI-V1 provider-neutral local/open-weight model integration foundation",
+    "date": "2026-08-22T14:16:55Z",
+    "summary": "**DRAFT \u2014 for Jack's independent OMI-V1 audit. Do not ready, approve, merge, retarget or close.**\n\n> **Round 2 \u2014 audit corrections applied.** Independent audit returned HOLD on six findings. All six acted on; five corrected, one did not reproduce and is recorded with evidence (see \u00a7Corrections). Pre",
+    "url": "https://github.com/Goldislops/UtilityFog-Fractal-TreeOpen/pull/474",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: UtilityFog-Fractal-TreeOpen"
+    ]
+  },
+  {
+    "title": "[PR] ci(e2e): shard Vitest suites across isolated runners",
+    "date": "2026-08-22T14:04:42Z",
+    "summary": "## Outcome\n\nRun REST API and Agent Daemon E2E as two native Vitest shards. Every shard\nreceives its own GitHub-hosted runner and isolated Compose stack; files remain\nsequential inside each shard.\n\nHosted CI passed all four lanes and cleared every keep/revert gate:\n\n| Lane | Job wall time | Vitest ta",
+    "url": "https://github.com/getlarge/themoltnet/pull/1963",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: themoltnet"
+    ]
+  },
+  {
+    "title": "[PR] fix(runtime): distinguish usage limits from auth errors",
+    "date": "2026-08-22T13:47:31Z",
+    "summary": "## Summary\n\nAfter #2675, Maka already has one safe path for provider diagnostics: ModelAdapter keeps an allowlisted, redacted, bounded summary; the terminal RuntimeEvent remains canonical; Runtime Host projects the message through failed Turn snapshots and recovery; and Desktop can include the exact",
+    "url": "https://github.com/apache/maka/pull/2521",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: maka"
     ]
   }
 ]
