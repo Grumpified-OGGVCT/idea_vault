@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-22T02:04:06Z",
+    "date": "2026-08-22T03:05:16Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -636,12 +636,12 @@
   },
   {
     "title": "[PR] fix(codegen): teach the class-registration manifest scanner to see @RegisterClassEx",
-    "date": "2026-08-21T22:46:00Z",
+    "date": "2026-08-22T03:03:31Z",
     "summary": "# Forward:\r\nI do not know this domain. The code looks ok to me, but I don\u2019t knwo the pitfalls of this area.\r\n\r\nFixes #3944.\r\n\r\n`mj codegen manifest` matched the decorator identifier literally, so it only ever saw `RegisterClass` \u2014 never `RegisterClassEx`, the options-bag form `MJGlobal/src/RegisterC",
     "url": "https://github.com/MemberJunction/MJ/pull/4005",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: MJ"
     ]
@@ -756,8 +756,8 @@
   },
   {
     "title": "[PR] fix(ollama): \u5bf9\u9f50 Cloud Chat Completions \u601d\u7ef4\u5b57\u6bb5\u4e3a reasoning_content",
-    "date": "2026-08-22T02:55:54Z",
-    "summary": "## \u80cc\u666f\n\nOllama Cloud \u7684 OpenAI \u517c\u5bb9 `/v1/chat/completions` \u628a\u601d\u7ef4\u653e\u5728 `reasoning`\uff08\u539f\u751f `/api/chat` \u5219\u4e3a `thinking`\uff09\uff0c\u800c DeepSeek/OpenAI \u5ba2\u6237\u7aef\u53ea\u8ba4 `reasoning_content`\u3002\u8d70 `force_chat_completions` \u7684 raw CC \u76f4\u8f6c\u539f\u5148\u539f\u6837\u900f\u4f20\uff0c\u5ba2\u6237\u7aef\u770b\u4e0d\u5230\u601d\u7ef4\uff1a\u6d41\u5f0f 0 \u6761 `reasoning-delta`\uff0cusage \u53ea\u6709 `outputTokens`\uff0c\u6700\u540e\u7ecf\u5e38 `finish_reason=length`\u3002\n\n## \u6539\u52a8\n\n\u4ec5\u5bf9 **OpenAI A",
+    "date": "2026-08-22T03:02:41Z",
+    "summary": "## \u80cc\u666f\n\nOllama Cloud \u7684 OpenAI \u517c\u5bb9 `/v1/chat/completions` \u628a\u601d\u7ef4\u653e\u5728 `reasoning`\uff08\u539f\u751f `/api/chat` \u5219\u4e3a `thinking`\uff09\uff0c\u800c DeepSeek/OpenAI \u5ba2\u6237\u7aef\u53ea\u8ba4 `reasoning_content`\u3002\u8d70 `force_chat_completions` \u7684 raw CC \u76f4\u8f6c\u539f\u5148\u539f\u6837\u900f\u4f20\uff0c\u5ba2\u6237\u7aef\u770b\u4e0d\u5230\u601d\u7ef4\uff1a\u6d41\u5f0f 0 \u6761 `reasoning-delta`\uff0cusage \u53ea\u6709 `outputTokens`\uff0c\u6700\u540e\u7ecf\u5e38 `finish_reason=length`\u3002\u5e26 tools \u7684\u591a\u8f6e\u4e5f\u65e0\u6cd5\u628a\u4e0a\u4e00\u8f6e\u601d\u7ef4\u6309\u4e0a",
     "url": "https://github.com/Wei-Shaw/sub2api/pull/6067",
     "source": "github_prs",
     "highlights": [
@@ -776,6 +776,42 @@
       "comments: 363",
       "pull request",
       "repo: CascadeProjects"
+    ]
+  },
+  {
+    "title": "[PR] v7.2.0 \u2014 audit: silently-broken features, scanner false positives, and a pre-auth DoS",
+    "date": "2026-08-22T03:42:43Z",
+    "summary": "## Summary\n\nA full-codebase audit. Almost everything here is a feature that was written, tested, merged \u2014 and then did nothing in production, or a scanner that reported things that were not true. The theme is that **every one of these had passing tests**: the tests asserted the function was correct,",
+    "url": "https://github.com/Shweta-Mishra-ai/github-autopilot/pull/84",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: github-autopilot"
+    ]
+  },
+  {
+    "title": "[PR] docs(nodes): migrate the LLM family with progressive model tables",
+    "date": "2026-08-22T03:41:49Z",
+    "summary": "Final node README migration batch: the 19 LLM-family nodes, plus the profile-table contract that makes large model catalogs usable without hiding any supported profile.\n\n## Default + newest, without losing the full catalog\n\nLarge text-LLM nodes now lead with the declared default and models from the ",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/2022",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] Add authenticated CollectFolio card lookup service",
+    "date": "2026-08-22T03:18:28Z",
+    "summary": "## Summary\n\n- add a stateless, authenticated `POST /v1/card-lookups` endpoint for CollectFolio\n- verify bounded JPEG, PNG, and WebP crops, reject GPS metadata, and return a non-retention digest assertion\n- support structured OpenAI Responses, native Ollama vision/JSON Schema (local or authenticated ",
+    "url": "https://github.com/kaywhy331/CollectCapture/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: CollectCapture"
     ]
   }
 ]
