@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-22T08:25:39Z",
+    "date": "2026-08-22T09:15:58Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] [PF-3375] Upstream sync 2026-08-21: absorb mastra-ai/mastra through 372b1a71",
-    "date": "2026-08-21T22:06:03Z",
+    "date": "2026-08-22T09:26:59Z",
     "summary": "## Objective\n\nAncestry-preserving sync of `mbenhamd/mastra:main` from official `mastra-ai/mastra:main`, taking\nmaximum safe upstream value while preserving fork-owned Harness, durable-runtime, memory-governance,\nstorage, identity, and release contracts.\n\nLinear: **PF-3375**\n\n## Blocked on #358\n\nThe ",
     "url": "https://github.com/mbenhamd/mastra/pull/357",
     "source": "github_prs",
@@ -696,7 +696,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-08-22T02:44:14Z",
+    "date": "2026-08-22T08:44:14Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -972,7 +972,7 @@
   },
   {
     "title": "[PR] Modernize desktop and AI services",
-    "date": "2026-08-22T05:41:05Z",
+    "date": "2026-08-22T08:54:00Z",
     "summary": "## What changed\n\n- Modernized File Manager operations, search, sorting, selection, context menus, shortcuts, and same-window drag handling.\n- Added a per-user Recycle Bin with metadata, restore, size, empty, permanent deletion, and cross-filesystem move support.\n- Added native Settings, wallpaper pe",
     "url": "https://github.com/Mohammed-razin-cr/RazionOS/pull/1",
     "source": "github_prs",
@@ -1020,7 +1020,7 @@
   },
   {
     "title": "[PR] Add Windows 11 HAI installer",
-    "date": "2026-08-22T08:31:14Z",
+    "date": "2026-08-22T09:27:28Z",
     "summary": "## Summary\n- add a reproducible Inno Setup Windows 11 installer for the source-built, loopback-only local Compose stack\n- generate first-run secrets under %LOCALAPPDATA%\\\\HAI and provide Start, Stop, Status, Open Dashboard, and opt-in local-model actions\n- add recovery contracts, installer payload s",
     "url": "https://github.com/Robert-Velhorst/018-HAI/pull/34",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] fix: decide judge independence by model family, not by connection",
-    "date": "2026-08-22T08:10:25Z",
+    "date": "2026-08-22T08:53:26Z",
     "summary": "## What\n\nJudge independence is decided by the model's **family**, not by the connection that\nserves it, and the recursion-depth sweep can now produce a measurement rather than\na matrix of unavailable cells.\n\nPart of #2801. The acceptance criterion recorded there (a committed\n`depth_curve.json` plus ",
     "url": "https://github.com/Aureliolo/synthorg/pull/2806",
     "source": "github_prs",
@@ -1136,6 +1136,30 @@
       "comments: 5",
       "pull request",
       "repo: synthorg"
+    ]
+  },
+  {
+    "title": "[PR] feat(demo): the seed data ships with the extension, and screenshots need no ddev",
+    "date": "2026-08-22T09:29:38Z",
+    "summary": "Three asks, and they turned out to be one problem: the demo data was tied to ddev, so nothing else could reach it \u2014 including the thing that takes screenshots.\n\n## The seed ships with the extension\n\n`nrllm:demo:seed` writes the record graph through the **ConnectionPool**, so it runs on whatever DBMS",
+    "url": "https://github.com/netresearch/t3x-nr-llm/pull/879",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: t3x-nr-llm"
+    ]
+  },
+  {
+    "title": "[PR] Update Mend: high confidence minor and patch dependency updates",
+    "date": "2026-08-22T09:25:41Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/jgeraigery/venice/pull/81",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: venice"
     ]
   }
 ]
