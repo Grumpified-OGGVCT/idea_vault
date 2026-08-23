@@ -156,7 +156,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-23T18:48:27Z",
+    "date": "2026-08-23T22:44:50Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-23T22:09:17Z",
+    "date": "2026-08-23T23:09:02Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -756,12 +756,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-23T22:23:26Z",
+    "date": "2026-08-23T23:12:07Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 49",
+      "comments: 50",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -804,12 +804,12 @@
   },
   {
     "title": "[PR] v2.3: native macOS app, Swift 6, iCloud sync arbitration, and reasoning output budgets",
-    "date": "2026-08-23T17:46:30Z",
+    "date": "2026-08-23T22:47:29Z",
     "summary": "Merges the `v2.3` release branch into `main`. This is a release PR, not a single-topic one \u2014 64 commits, 273 files, spanning several months of work. The most recent commit is described first; the rest is grouped by theme below.\n\n## Reasoning output budgets (73289ef4)\n\nEvery provider's output cap cov",
     "url": "https://github.com/bisonbet/BisonNotes-AI/pull/118",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: BisonNotes-AI"
     ]
@@ -1068,7 +1068,7 @@
   },
   {
     "title": "[PR] PAS-271: Coding Agent Library image and Agent create defaults",
-    "date": "2026-08-23T21:42:45Z",
+    "date": "2026-08-23T23:11:09Z",
     "summary": "**PAS-271.** One Linux Coding Agent image in the Library (arm64 + x86_64), not a second disk.\n\nCreate defaults to Agent-class cage. `OPENAI_BASE_URL` is Device Ollama (`http://10.0.2.2:11434/v1`) or a typed BYO URL.\n\n- Catalog slugs `coding-agent-arm64` / `coding-agent-x86_64`, display name Coding A",
     "url": "https://github.com/pmdroid/barkvisor/pull/193",
     "source": "github_prs",
@@ -1272,7 +1272,7 @@
   },
   {
     "title": "[PR] Release 2.12.0",
-    "date": "2026-08-23T22:24:06Z",
+    "date": "2026-08-23T22:47:15Z",
     "summary": "Release branch for **2.12.0**. 80 commits, 34 audit tickets, 542 files.\n\nEvery version source already agrees on `2.12.0` (13 of them); `make check-version`, `check-changelog`, `check-repo-links` and `check-action-pins` pass. The CHANGELOG's `[Unreleased]` still holds this release \u2014 **move it under a",
     "url": "https://github.com/tradik/mddb/pull/193",
     "source": "github_prs",
@@ -1344,12 +1344,12 @@
   },
   {
     "title": "[PR] PAS-272: Coding agent in the VM via chat or terminal",
-    "date": "2026-08-23T20:10:31Z",
+    "date": "2026-08-23T23:24:11Z",
     "summary": "**PAS-272.** Coding Agent Workloads talk through Chat or Terminal in the web UI and the native iOS/Mac console.\n\nStacked on PAS-270 (native chat) with PAS-271 (Coding Agent image) cherry-picked. PAS-268 Agent cage is already on main.\n\n- Agent-class cage, Coding Agent Library image, `OPENAI_BASE_URL`",
     "url": "https://github.com/pmdroid/barkvisor/pull/200",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 7",
       "pull request",
       "repo: barkvisor"
     ]
@@ -1728,12 +1728,12 @@
   },
   {
     "title": "[PR] docs: reconcile v0.23.1 project state and privacy boundaries",
-    "date": "2026-08-23T22:24:39Z",
+    "date": "2026-08-23T22:42:37Z",
     "summary": "## Summary\n\nReconcile canonical project/operator/configuration/architecture documentation with exact stable `v0.23.1@81d8d41197dddc4c09b57097f4955ebae32366a9` and the current development baseline used for this change, `main@3d4fbb4c979dc09aef0b831bb50d928e0e18d68f`.\n\nSupports accepted retrieval-prov",
     "url": "https://github.com/electricsheephq/lcm-x/pull/343",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "pull request",
       "repo: lcm-x"
     ]
@@ -1800,14 +1800,98 @@
   },
   {
     "title": "[PR] PAS-275: List GPUs and attach via vfio-pci",
-    "date": "2026-08-23T21:51:17Z",
+    "date": "2026-08-23T22:33:20Z",
     "summary": "**PAS-275.** Linux Devices list PCI GPUs with their IOMMU group and attach/detach them like USB (`GET /api/system/gpu-devices`, `POST/DELETE /api/vms/{id}/gpu`). Fail closed if IOMMU/vfio/KVM is not ready. Occupancy is the host GPU driver, not an Ollama TCP probe.\n\n- Detach, stop, and delete unbind ",
     "url": "https://github.com/pmdroid/barkvisor/pull/208",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 7",
       "pull request",
       "repo: barkvisor"
+    ]
+  },
+  {
+    "title": "[PR] chore(compose): \u30ed\u30fc\u30ab\u30eb LLM \u3092\u30db\u30b9\u30c8\u306e Ollama \u524d\u63d0\u306b\u56fa\u3081\u308b",
+    "date": "2026-08-23T23:24:06Z",
+    "summary": "## \u6982\u8981\n\n\u30ed\u30fc\u30ab\u30eb\u52d5\u4f5c\u78ba\u8a8d\u7528\u306e LLM \u3092\u3001docker \u30b3\u30f3\u30c6\u30ca\uff08`ollama/ollama`\uff09\u3067\u306f\u306a\u304f**\u30db\u30b9\u30c8\u306b\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3057\u305f Ollama** \u3067\u52d5\u304b\u3059\u524d\u63d0\u3092\u30ea\u30dd\u30b8\u30c8\u30ea\u65e2\u5b9a\u3068\u3057\u3066\u56fa\u3081\u307e\u3059\u3002DB / backend / redis / frontend \u306f\u5f93\u6765\u3069\u304a\u308a compose \u306e\u307e\u307e\u3067\u3059\u3002\n\n\u3082\u3068\u3082\u3068 ADR-0010 \u306e\u8a2d\u8a08\u306f\u30db\u30b9\u30c8\u5074 Ollama \u3067\u3057\u305f\u304c\u3001compose \u306e env \u304c bare \u306e `${VAR}` \u3060\u3063\u305f\u305f\u3081\u3001\u5b9f\u969b\u306b\u52d5\u304f\u304b\u3069\u3046\u304b\u304c\u5404\u81ea\u306e `.env` \u306e\u8a18\u8ff0\u306b\u4f9d\u5b58\u3057\u3066\u3044\u307e\u3057\u305f\u3002\n\n## \u5909\u66f4\u5185\u5bb9\n\n- **`docker-compose.yml`*",
+    "url": "https://github.com/yusuke0610/devforge/pull/604",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: devforge"
+    ]
+  },
+  {
+    "title": "[PR] feat: self-host experience \u2014 1-command setup, local auth, runtime providers, wizard UI",
+    "date": "2026-08-23T23:23:08Z",
+    "summary": "## Summary\n\nMakes GAIA genuinely self-hostable: **`gaia up` \u2192 open browser \u2192 sign up \u2192 paste one API key \u2192 chat.** No WorkOS account, no Infisical, no Dodo, no hand-edited env files.\n\n### What changed\n\n**1. Local auth (`AUTH_MODE=local`)**\n- Email+password signup/login with HS256 session cookies; fi",
+    "url": "https://github.com/theexperiencecompany/gaia/pull/1091",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: gaia"
+    ]
+  },
+  {
+    "title": "[PR] feat(status-card): simple layout, brand icons, per-thread + preset (#96)",
+    "date": "2026-08-23T23:14:09Z",
+    "summary": "Closes #96.\n\n## What\n\nCompact **simple** status-card variant, selectable per-thread and in named presets, plus agent **brand icons** on both simple and full cards.\n\n## Config\n\n- `statusCardStyle: \"full\" | \"simple\"` (default `full`) on `SessionConfigState` (JSON blob, no session-table migration)\n- Sa",
+    "url": "https://github.com/jbulpitt/seam-acp/pull/97",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: seam-acp"
+    ]
+  },
+  {
+    "title": "[PR] fix(ollama): defer local service lookup until stream creation",
+    "date": "2026-08-23T23:11:14Z",
+    "summary": "## What Problem This Solves\n\nThe Ollama local-service change in #128034 made provider registration eagerly read `api.runtime.llm.acquireLocalService`. Registration-only callers intentionally provide an inactive runtime, so current `main` crashes while capturing the bundled Ollama plugin and its requ",
+    "url": "https://github.com/openclaw/openclaw/pull/128399",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(api): agent Playground \u2014 drive a session from API/CLI/MCP and read its telemetry",
+    "date": "2026-08-23T22:47:48Z",
+    "summary": "## What\n\nMachine surfaces could already **launch** work that produces sessions (eval runs, journey runs) and read the result afterwards. None of them could do what a human does in the Playground: send one message, see which tools the model picked and what the servers actually returned, and choose th",
+    "url": "https://github.com/MCPJam/inspector/pull/4309",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: inspector"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update rust crate rig-core to 0.42",
+    "date": "2026-08-23T22:46:13Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change |\n|---|---|---|---|\n| [rig-core](https://redirect.github.com/0xPlaygrounds/rig) | workspace.dependencies | minor | `0.41` \u2192 `0.42` |\n\n---\n\n### Release No",
+    "url": "https://github.com/Ven0m0/OpenJarvis/pull/72",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: OpenJarvis"
+    ]
+  },
+  {
+    "title": "[PR] refactor(client): dedupe and slim GameScene (PR 1 of slim-down)",
+    "date": "2026-08-23T22:31:11Z",
+    "summary": "## Summary\n\nFirst of four PRs slimming `GameScene.ts` (1,865 \u2192 target ~550 lines). This PR is the in-file pure-shrink pass: **+306 / \u2212443 (net \u2212137 lines)**, single file, behavior-preserving.\n\n- **Delete dead code**: unused private `getPlayerName`, empty `else {}`, unused `declare module \"phaser\"` s",
+    "url": "https://github.com/jeffgabriel/eurorails_ai/pull/283",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: eurorails_ai"
     ]
   }
 ]
