@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-23T08:10:53Z",
+    "date": "2026-08-23T08:58:08Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-23T08:15:09Z",
+    "date": "2026-08-23T09:15:30Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -636,12 +636,12 @@
   },
   {
     "title": "[PR] Acceptance Failure: bug: ops status probes the native machine in Kubernetes mode (#3987)",
-    "date": "2026-08-23T08:18:46Z",
+    "date": "2026-08-23T08:42:29Z",
     "summary": "Closes #3987\n\n## Summary\n`ops status` and `ops doctor` report on the deployment that is actually running,\nnot on the native host. One shared `K8sDeploymentProbe` read of the `nyxgpt`\nnamespace feeds three blocks that could otherwise disagree: the \"Deployment mode\"\nsummary (which now closes with a `k",
     "url": "https://github.com/dkblinux98/nyxGPT/pull/4000",
     "source": "github_prs",
     "highlights": [
-      "comments: 23",
+      "comments: 24",
       "pull request",
       "repo: nyxGPT"
     ]
@@ -780,7 +780,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-08-23T02:44:13Z",
+    "date": "2026-08-23T08:44:13Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1092,12 +1092,12 @@
   },
   {
     "title": "[PR] fix(desktop): read Usage from Runtime Host",
-    "date": "2026-08-23T07:07:26Z",
+    "date": "2026-08-23T08:49:34Z",
     "summary": "## Summary\n\n- move Settings \u2192 Usage off the legacy session scanner and onto the reconnectable Runtime Host client\n- preserve missing token and pricing basis through the Host protocol, then show clean known totals with one coverage notice and precise request-row labels\n- keep aborted tool calls separ",
     "url": "https://github.com/apache/maka/pull/2641",
     "source": "github_prs",
     "highlights": [
-      "comments: 10",
+      "comments: 11",
       "pull request",
       "repo: maka"
     ]
@@ -1140,12 +1140,12 @@
   },
   {
     "title": "[PR] feat(open-webui): web ui\u3067\u8a2d\u5b9a\u3059\u308b\u9805\u76ee\u3092\u74b0\u5883\u5909\u6570\u3078\u5bc4\u305b\u307e\u3059",
-    "date": "2026-08-23T08:31:26Z",
+    "date": "2026-08-23T09:22:12Z",
     "summary": "Open WebUI\u306e\u8a2d\u5b9a\u306e\u3046\u3061\u3001\n\u672c\u6765\u306fUI\u306e\u7ba1\u7406\u753b\u9762\u3084\u8a2d\u5b9a\u753b\u9762\u304b\u3089\u89e6\u308b\u9805\u76ee\u3092Nix\u306e\u5074\u3067\u5ba3\u8a00\u3067\u304d\u308b\u3088\u3046\u306b\u3057\u307e\u3059\u3002\n\n\u3053\u306e\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\u306f`ENABLE_PERSISTENT_CONFIG`\u3092\u7121\u52b9\u306b\u3057\u3066\u3042\u308b\u305f\u3081\u3001\n\u8a2d\u5b9a\u306e\u8aad\u307f\u53d6\u308a\u304c\u5e38\u306b\u74b0\u5883\u5909\u6570\u304b\u3089\u7d44\u307f\u7acb\u3066\u305f\u65e2\u5b9a\u5024\u3092\u5411\u304d\u307e\u3059\u3002\nUI\u304b\u3089\u5909\u66f4\u3057\u3066\u3082\u30d7\u30ed\u30bb\u30b9\u306e\u4e2d\u306b\u3057\u304b\u6b8b\u3089\u305a\u518d\u8d77\u52d5\u3067\u623b\u308b\u4ee5\u4e0a\u3001\n\u5ba3\u8a00\u7684\u306b\u6301\u3066\u308b\u3082\u306e\u306f\u6301\u3063\u3066\u304a\u304f\u65b9\u304c\u5b9f\u614b\u3068\u5408\u3044\u307e\u3059\u3002\n\n`local.openWebui.environment`\u3068\u3044\u3046\u30aa\u30d7\u30b7\u30e7\u30f3\u3092\u8db3\u3057\u3066\u3001\n\u7528\u9014\u3054\u3068\u306e\u30e2\u30b8\u30e5\u30fc\u30eb\u304c\u305d\u3053\u3078\u66f8\u304d\u3001\n`container.nix`\u304c\u53d7\u3051\u53d6\u308b\u5f62\u306b\u3057\u307e\u3057\u305f\u3002\n\u30b3\u30f3\u30c6\u30ca\u306e\u69cb\u9020\u3092\u6c7a\u3081\u308b\u5909\u6570\u3060\u3051",
     "url": "https://github.com/ncaq/dotfiles/pull/1529",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: dotfiles"
     ]
@@ -1188,7 +1188,7 @@
   },
   {
     "title": "[PR] \ud83e\uddec Genesis: Self-healing LLM and Agent Integrations",
-    "date": "2026-08-23T08:10:12Z",
+    "date": "2026-08-23T08:40:10Z",
     "summary": "Added CircuitBreaker and retry decorators to AI services to protect against transient local or cloud API failures, logging them properly to backend/core/resilience.py, backend/services/ai_deep_scan.py, backend/services/ollama_scan.py, and backend/services/openclaw_agent.py.\n\n---\n*PR created automati",
     "url": "https://github.com/Akullganesh19/CodeKrackers/pull/258",
     "source": "github_prs",
@@ -1208,6 +1208,30 @@
       "comments: 0",
       "pull request",
       "repo: project-nomad"
+    ]
+  },
+  {
+    "title": "[PR] deps: Bump Azure.Core and 3 others",
+    "date": "2026-08-23T09:30:44Z",
+    "summary": "Pinned [Azure.Core](https://github.com/Azure/azure-sdk-for-net) at 1.62.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Azure.Core's releases](https://github.com/Azure/azure-sdk-for-net/releases)._\n\n## 1.62.0\n\n## 1.62.0 (2026-08-20)\n\n### Features Added\n\n- Added experimental (`SCME0002",
+    "url": "https://github.com/PlagueHO/genai-database-explorer/pull/161",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: genai-database-explorer"
+    ]
+  },
+  {
+    "title": "[PR] deps: Bump Azure.Core and 20 others",
+    "date": "2026-08-23T09:23:27Z",
+    "summary": "[//]: # (dependabot-start)\n\u26a0\ufe0f  **Dependabot is rebasing this PR** \u26a0\ufe0f \n\nRebasing might not happen immediately, so don't worry if this takes some time.\n\nNote: if you make any changes to this PR yourself, they will take precedence over the rebase.\n\n---\n\n[//]: # (dependabot-end)\n\nPinned [Azure.Core](htt",
+    "url": "https://github.com/PlagueHO/genai-database-explorer/pull/160",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: genai-database-explorer"
     ]
   }
 ]
