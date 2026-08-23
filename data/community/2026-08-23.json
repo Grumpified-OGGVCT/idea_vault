@@ -564,12 +564,12 @@
   },
   {
     "title": "[PR] fix(ollama): start local services for native chat",
-    "date": "2026-08-23T03:51:32Z",
+    "date": "2026-08-23T14:16:57Z",
     "summary": "## What Problem This Solves\n\nFixes an issue where native Ollama chat requests failed when a configured\n`models.providers.<id>.localService` was responsible for starting the Ollama\nserver. Embedding requests already acquired that service, but native `/api/chat`\nrequests bypassed it and fetched the st",
     "url": "https://github.com/openclaw/openclaw/pull/128034",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 8",
       "pull request",
       "repo: openclaw"
     ]
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-08-23T09:57:32Z",
+    "date": "2026-08-23T13:46:53Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-23T13:00:58Z",
+    "date": "2026-08-23T14:18:02Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1092,7 +1092,7 @@
   },
   {
     "title": "[PR] fix(desktop): read Usage from Runtime Host",
-    "date": "2026-08-23T13:10:01Z",
+    "date": "2026-08-23T13:51:59Z",
     "summary": "## Summary\n\n- move Settings \u2192 Usage off the legacy session scanner and onto the reconnectable Runtime Host client\n- preserve missing token and pricing basis through the Host protocol, then show clean known totals with one coverage notice and precise request-row labels\n- keep aborted tool calls separ",
     "url": "https://github.com/apache/maka/pull/2641",
     "source": "github_prs",
@@ -1340,6 +1340,30 @@
       "comments: 0",
       "pull request",
       "repo: homelab-prod"
+    ]
+  },
+  {
+    "title": "[PR] PAS-272: Coding agent in the VM via chat or terminal",
+    "date": "2026-08-23T14:22:29Z",
+    "summary": "**PAS-272.** Coding Agent Workloads talk through Chat or Terminal in the web UI and the native iOS/Mac console.\n\nStacked on PAS-270 (native chat) with PAS-271 (Coding Agent image) cherry-picked. PAS-268 Agent cage is already on main.\n\n- Agent-class cage, Coding Agent Library image, `OPENAI_BASE_URL`",
+    "url": "https://github.com/pmdroid/barkvisor/pull/200",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: barkvisor"
+    ]
+  },
+  {
+    "title": "[PR] Document package architecture, dependency graph, and contribution workflow (#50) (#56) (#192) (#566) (#569)",
+    "date": "2026-08-23T13:56:41Z",
+    "summary": "## Summary\n\n\u267e\ufe0f\ud83d\udd74\ufe0f RABBITSYNC / REALITY OS UPGRADE BLUEPRINT \u2014 v\u221e ARCHITECTURE \ud83d\udc30\ud83c\udf0e\n\nYour architecture is moving toward a self-improving intelligence platform. The next upgrade is to turn the diagram into a real engineering system with:\n\n* canonical schemas \ud83d\udcd0\n* event pipelines \ud83d\udd04\n* agent contracts \ud83e\udd16\n* au",
+    "url": "https://github.com/5hy7xz92nd-oss/ai/pull/584",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ai"
     ]
   }
 ]
