@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] one door out: pin novahos's litellm calls at the gateway, or refuse",
-    "date": "2026-08-23T01:11:53Z",
+    "date": "2026-08-23T08:26:38Z",
     "summary": "## What this is\n\nnovahos calls a model in exactly one place, `novahos/llm.py`. After this change every one of those calls is pinned to novahub's LLM gateway or it does not happen. THE_DOOR.md law 9, in the one repo where it is easiest to get wrong \u2014 because novahos is not a service. It is a library ",
     "url": "https://github.com/NOVAHGREYWOLF/novahos/pull/9",
     "source": "github_prs",
@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-23T07:09:26Z",
+    "date": "2026-08-23T08:10:53Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -576,8 +576,8 @@
   },
   {
     "title": "[PR] v0.2: Safe Voice Command Center & Windows Action Runtime",
-    "date": "2026-08-23T07:14:19Z",
-    "summary": "## RC4 status \u2014 premium voice, clap activation, and four security findings\n\nHead: `4c0f67cf32ce5d5fe53b383feb33b83208ac55af`. Base: `main`. Branch: `claude/jarvis-safe-command-center-v2`.\n\n**Still gated on a real Windows test.** Everything an automated run can prove has been proven. The rest needs a",
+    "date": "2026-08-23T07:49:34Z",
+    "summary": "## RC5 status \u2014 privacy mode now releases the microphone\n\nHead: `a11a8d43985d6a9ce505a7fb55457c69c560ae47`. Base: `main` at `20fbe1ae55066594f1c0e5b0217dd38526aef486`, unchanged. Branch: `claude/jarvis-safe-command-center-v2`.\n\n**Still gated on a real Windows test.** [`docs/physical-pc-checklist.md`",
     "url": "https://github.com/Dado211207/jarvis-windows-ai-assistant/pull/15",
     "source": "github_prs",
     "highlights": [
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-23T07:19:33Z",
+    "date": "2026-08-23T08:15:09Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] Acceptance Failure: bug: ops status probes the native machine in Kubernetes mode (#3987)",
-    "date": "2026-08-23T03:15:27Z",
+    "date": "2026-08-23T08:18:46Z",
     "summary": "Closes #3987\n\n## Summary\n`ops status` and `ops doctor` report on the deployment that is actually running,\nnot on the native host. One shared `K8sDeploymentProbe` read of the `nyxgpt`\nnamespace feeds three blocks that could otherwise disagree: the \"Deployment mode\"\nsummary (which now closes with a `k",
     "url": "https://github.com/dkblinux98/nyxGPT/pull/4000",
     "source": "github_prs",
@@ -840,7 +840,7 @@
   },
   {
     "title": "[PR] fix(policy): respect external policy authority",
-    "date": "2026-08-23T06:56:46Z",
+    "date": "2026-08-23T08:33:34Z",
     "summary": "## Summary\n\nNemoClaw now reads and persists OpenShell policy authority before policy-dependent effects. Externally managed sandboxes use verification-only policy flows, while NemoClaw-managed sandboxes keep existing mutation behavior.\n\n## Related Issue\n\nCloses #9833\n\n## Changes\n\n- Add a strict OpenS",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9899",
     "source": "github_prs",
@@ -996,8 +996,8 @@
   },
   {
     "title": "[PR] merge(upstream): merge upstream/main (85 commits) into main 2026-08-21",
-    "date": "2026-08-23T06:23:24Z",
-    "summary": "## \u6458\u8981\n\n- \u5408\u5e76 `upstream/main`\uff08~106 commits\uff09\u540e\uff0c\u7cfb\u7edf\u6027\u63a5\u56de TokenKey \u5728 gateway/oauth/grok/scheduling/billing \u8def\u5f84\u4e0a\u88ab\u4e0a\u6e38\u6539\u5199\u6216\u9759\u9ed8\u5220\u6389\u7684\u8c03\u7528\u70b9\u3002\n- \u8865\u56de\u4e0a\u6e38\u65b0\u589e\u80fd\u529b\uff1a`codex-auto-review` guardian parent affinity\u3001Ollama Cloud raw CC `reasoning_content` \u53cc\u5411\u8865\u9f50 + `max_tokens` clamp\u3001\u5206\u7ec4 `require_privacy_set` \u8c03\u5ea6\u95e8\uff08\u4e0d\u6c61\u67d3\u5171\u4eab\u8d26\u53f7\uff09\u3002\n- \u66f4\u65b0 `gateway-tk.json`",
+    "date": "2026-08-23T08:25:10Z",
+    "summary": "## \u6458\u8981\n\n- \u5408\u5e76 `upstream/main`\uff08~85 commits\uff09\u540e\uff0c\u7cfb\u7edf\u6027\u63a5\u56de TokenKey \u5728 gateway/oauth/grok/scheduling/billing \u8def\u5f84\u4e0a\u88ab\u4e0a\u6e38\u6539\u5199\u6216\u9759\u9ed8\u5220\u6389\u7684\u8c03\u7528\u70b9\u3002\n- \u8865\u56de\u4e0a\u6e38\u65b0\u589e\u80fd\u529b\uff1a`codex-auto-review` guardian parent affinity\u3001Ollama Cloud raw CC `reasoning_content` \u53cc\u5411\u8865\u9f50 + `max_tokens` clamp\u3001\u5206\u7ec4 `require_privacy_set` \u8c03\u5ea6\u95e8\uff08\u4e0d\u6c61\u67d3\u5171\u4eab\u8d26\u53f7\uff09\u3002\n- **companion \u5316\uff08\u672c\u6279\u65b0\u589e\uff09**",
     "url": "https://github.com/youxuanxue/sub2api/pull/1775",
     "source": "github_prs",
     "highlights": [
@@ -1056,7 +1056,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency @oh-my-pi/hashline ( 17.3.4 \u279c 17.4.2 )",
-    "date": "2026-08-23T07:34:56Z",
+    "date": "2026-08-23T07:41:43Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@oh-my-pi/hashline](https:/",
     "url": "https://github.com/antoine-bouteiller/pi-extensions/pull/60",
     "source": "github_prs",
@@ -1136,6 +1136,78 @@
       "comments: 1",
       "pull request",
       "repo: holmesgpt"
+    ]
+  },
+  {
+    "title": "[PR] feat(open-webui): web ui\u3067\u8a2d\u5b9a\u3059\u308b\u9805\u76ee\u3092\u74b0\u5883\u5909\u6570\u3078\u5bc4\u305b\u307e\u3059",
+    "date": "2026-08-23T08:31:26Z",
+    "summary": "Open WebUI\u306e\u8a2d\u5b9a\u306e\u3046\u3061\u3001\n\u672c\u6765\u306fUI\u306e\u7ba1\u7406\u753b\u9762\u3084\u8a2d\u5b9a\u753b\u9762\u304b\u3089\u89e6\u308b\u9805\u76ee\u3092Nix\u306e\u5074\u3067\u5ba3\u8a00\u3067\u304d\u308b\u3088\u3046\u306b\u3057\u307e\u3059\u3002\n\n\u3053\u306e\u30a4\u30f3\u30b9\u30bf\u30f3\u30b9\u306f`ENABLE_PERSISTENT_CONFIG`\u3092\u7121\u52b9\u306b\u3057\u3066\u3042\u308b\u305f\u3081\u3001\n\u8a2d\u5b9a\u306e\u8aad\u307f\u53d6\u308a\u304c\u5e38\u306b\u74b0\u5883\u5909\u6570\u304b\u3089\u7d44\u307f\u7acb\u3066\u305f\u65e2\u5b9a\u5024\u3092\u5411\u304d\u307e\u3059\u3002\nUI\u304b\u3089\u5909\u66f4\u3057\u3066\u3082\u30d7\u30ed\u30bb\u30b9\u306e\u4e2d\u306b\u3057\u304b\u6b8b\u3089\u305a\u518d\u8d77\u52d5\u3067\u623b\u308b\u4ee5\u4e0a\u3001\n\u5ba3\u8a00\u7684\u306b\u6301\u3066\u308b\u3082\u306e\u306f\u6301\u3063\u3066\u304a\u304f\u65b9\u304c\u5b9f\u614b\u3068\u5408\u3044\u307e\u3059\u3002\n\n`local.openWebui.environment`\u3068\u3044\u3046\u30aa\u30d7\u30b7\u30e7\u30f3\u3092\u8db3\u3057\u3066\u3001\n\u7528\u9014\u3054\u3068\u306e\u30e2\u30b8\u30e5\u30fc\u30eb\u304c\u305d\u3053\u3078\u66f8\u304d\u3001\n`container.nix`\u304c\u53d7\u3051\u53d6\u308b\u5f62\u306b\u3057\u307e\u3057\u305f\u3002\n\u30b3\u30f3\u30c6\u30ca\u306e\u69cb\u9020\u3092\u6c7a\u3081\u308b\u5909\u6570\u3060\u3051",
+    "url": "https://github.com/ncaq/dotfiles/pull/1529",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] Harden security, fix PostgreSQL startup, and bound analytics memory",
+    "date": "2026-08-23T08:24:30Z",
+    "summary": "## Description\n\nFixes a set of security, correctness and performance defects found while auditing the platform, and adds the test coverage that was missing to catch them.\n\nFixes # N/A (found during an audit of `main`, no tracking issue)\n\nTwo commits:\n\n1. **`d35bfa5`** \u2014 security gaps and correctness",
+    "url": "https://github.com/OriAlpha/InfraSight/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: InfraSight"
+    ]
+  },
+  {
+    "title": "[PR] Nightly review rolling (through 2026-08-23)",
+    "date": "2026-08-23T08:17:34Z",
+    "summary": "## Summary\n\nAutomated nightly review (2026-07-03). Four review passes (bugs, security, UX, quality) across the `acp_adapter`, `agent`, and core modules. Seven fixes applied; several architectural findings deferred for human review.\n\n## Fixes applied\n\n| Severity | File:line | Description |\n|---|---|-",
+    "url": "https://github.com/iamhungree/hermes-agent/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 49",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] Use OpenAI File Search for the cloud/local benchmark",
+    "date": "2026-08-23T08:14:36Z",
+    "summary": "Replaces Gemini with OpenAI as the cloud comparison provider while preserving the existing Ollama/Qwen local RAG option and all three answer modes. Adds page-aware OpenAI indexing, visible retrieved passages, non-empty benchmark source logging, token/timing capture, privacy exclusions, and updated l",
+    "url": "https://github.com/Cpsaltis-max/cyprus-solution-landscape-ai/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: cyprus-solution-landscape-ai"
+    ]
+  },
+  {
+    "title": "[PR] \ud83e\uddec Genesis: Self-healing LLM and Agent Integrations",
+    "date": "2026-08-23T08:10:12Z",
+    "summary": "Added CircuitBreaker and retry decorators to AI services to protect against transient local or cloud API failures, logging them properly to backend/core/resilience.py, backend/services/ai_deep_scan.py, backend/services/ollama_scan.py, and backend/services/openclaw_agent.py.\n\n---\n*PR created automati",
+    "url": "https://github.com/Akullganesh19/CodeKrackers/pull/258",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: CodeKrackers"
+    ]
+  },
+  {
+    "title": "[PR] feat(AI): support API key for remote OpenAI-compatible endpoints",
+    "date": "2026-08-23T07:39:18Z",
+    "summary": "## What & why\n\nProject NOMAD's AI Assistant already supports pointing at any OpenAI-compatible API server \u2014 the README mentions Ollama, LM Studio, and llama.cpp. All of those are *local* backends that ignore the API key, so the client currently sends a hardcoded `nomad` placeholder.\n\nCloud AI gatewa",
+    "url": "https://github.com/Crosstalk-Solutions/project-nomad/pull/1265",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: project-nomad"
     ]
   }
 ]
