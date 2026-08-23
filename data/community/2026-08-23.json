@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-23T16:58:39Z",
+    "date": "2026-08-23T18:27:52Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-23T17:15:18Z",
+    "date": "2026-08-23T18:11:27Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -804,12 +804,12 @@
   },
   {
     "title": "[PR] v2.3: native macOS app, Swift 6, iCloud sync arbitration, and reasoning output budgets",
-    "date": "2026-08-23T16:05:59Z",
+    "date": "2026-08-23T17:46:30Z",
     "summary": "Merges the `v2.3` release branch into `main`. This is a release PR, not a single-topic one \u2014 64 commits, 273 files, spanning several months of work. The most recent commit is described first; the rest is grouped by theme below.\n\n## Reasoning output budgets (73289ef4)\n\nEvery provider's output cap cov",
     "url": "https://github.com/bisonbet/BisonNotes-AI/pull/118",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 2",
       "pull request",
       "repo: BisonNotes-AI"
     ]
@@ -1068,12 +1068,12 @@
   },
   {
     "title": "[PR] PAS-271: Coding Agent Library image and Agent create defaults",
-    "date": "2026-08-23T07:29:36Z",
+    "date": "2026-08-23T18:07:02Z",
     "summary": "**PAS-271.** One Linux Coding Agent image in the Library (arm64 + x86_64), not a second disk.\n\nCreate defaults to Agent-class cage. `OPENAI_BASE_URL` is Device Ollama (`http://10.0.2.2:11434/v1`) or a typed BYO URL.\n\n- Catalog slugs `coding-agent-arm64` / `coding-agent-x86_64`, display name Coding A",
     "url": "https://github.com/pmdroid/barkvisor/pull/193",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: barkvisor"
     ]
@@ -1344,7 +1344,7 @@
   },
   {
     "title": "[PR] PAS-272: Coding agent in the VM via chat or terminal",
-    "date": "2026-08-23T17:04:39Z",
+    "date": "2026-08-23T18:17:28Z",
     "summary": "**PAS-272.** Coding Agent Workloads talk through Chat or Terminal in the web UI and the native iOS/Mac console.\n\nStacked on PAS-270 (native chat) with PAS-271 (Coding Agent image) cherry-picked. PAS-268 Agent cage is already on main.\n\n- Agent-class cage, Coding Agent Library image, `OPENAI_BASE_URL`",
     "url": "https://github.com/pmdroid/barkvisor/pull/200",
     "source": "github_prs",
@@ -1356,7 +1356,7 @@
   },
   {
     "title": "[PR] Document package architecture, dependency graph, and contribution workflow (#50) (#56) (#192) (#566) (#569)",
-    "date": "2026-08-23T17:15:58Z",
+    "date": "2026-08-23T18:07:09Z",
     "summary": "## Summary\n\n\u267e\ufe0f\ud83d\udd74\ufe0f RABBITSYNC / REALITY OS UPGRADE BLUEPRINT \u2014 v\u221e ARCHITECTURE \ud83d\udc30\ud83c\udf0e\n\nYour architecture is moving toward a self-improving intelligence platform. The next upgrade is to turn the diagram into a real engineering system with:\n\n* canonical schemas \ud83d\udcd0\n* event pipelines \ud83d\udd04\n* agent contracts \ud83e\udd16\n* au",
     "url": "https://github.com/5hy7xz92nd-oss/ai/pull/584",
     "source": "github_prs",
@@ -1368,7 +1368,7 @@
   },
   {
     "title": "[PR] feat(helmsman): canonical model registry, cross-backend failover, streaming from every source (+ ADR-0121..0124)",
-    "date": "2026-08-23T17:01:04Z",
+    "date": "2026-08-23T18:15:42Z",
     "summary": "## Summary\n\nThis PR started as a planning slice (the four Helmsman ADRs) and, on the operator's directive of 2026-08-22 \u2014 *\"9417 shills to Claude code backend needlessly\u2026 it should have a model selector and work equally well with agy and codex and a few Cloudflare AI models. If it fails with one it ",
     "url": "https://github.com/curiositech/port-daddy/pull/9417",
     "source": "github_prs",
@@ -1440,7 +1440,7 @@
   },
   {
     "title": "[PR] Use Probatio as the data validation engine",
-    "date": "2026-08-23T16:16:03Z",
+    "date": "2026-08-23T17:24:45Z",
     "summary": "## Breaking change\n\nNone. Which is the nice thing about all of this \ud83d\ude04 \n\n## Proposed change\n\nThis pull request introduces [Probatio](https://probatio.frenck.dev) as Home Assistant's data validation engine, as a drop-in replacement for voluptuous.\n\nProbatio is a modern, actively maintained, clean-room",
     "url": "https://github.com/home-assistant/core/pull/175128",
     "source": "github_prs",
@@ -1464,7 +1464,7 @@
   },
   {
     "title": "[PR] feat(ai-providers): add xAI, DeepSeek, Z.ai, Qwen, MiniMax and Moonshot",
-    "date": "2026-08-23T17:22:42Z",
+    "date": "2026-08-23T18:05:39Z",
     "summary": "> \ud83d\udeab **Do not merge until the multi-key stack lands** \u2014 #14738 \u2192 #14825 \u2192 #14942.\n> This branch is based on `main` and is additive to that stack, but whichever merges second absorbs the conflicts, and #14738 is already conflicting. Reviews welcome now.\n\n## Description\n\nAdds six AI providers: **xAI, D",
     "url": "https://github.com/activepieces/activepieces/pull/14987",
     "source": "github_prs",
@@ -1488,12 +1488,12 @@
   },
   {
     "title": "[PR] P0: Genealogy evidence and research-agent foundation",
-    "date": "2026-08-23T17:11:36Z",
+    "date": "2026-08-23T18:26:44Z",
     "summary": "Begins implementation of the Genealogy Research OS on an isolated branch. Initial commit defines the evidence/provenance implementation contract before touching the packaged application schema. Next steps are to reconstruct the existing schema safely, add additive migrations, then implement source i",
     "url": "https://github.com/Loper1976/LoperFamilyTreeBuilder/pull/7",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 8",
       "pull request",
       "repo: LoperFamilyTreeBuilder"
     ]
@@ -1508,6 +1508,90 @@
       "comments: 3",
       "pull request",
       "repo: openvino_model_server"
+    ]
+  },
+  {
+    "title": "[PR] feat(identity): add identity claims infrastructure, engine, and generated forms",
+    "date": "2026-08-23T18:32:47Z",
+    "summary": "## Summary\n- Introduces `IdentityClaim` and `IdentityClaimType` core infrastructure and DDL\n- Implements `IdentityClaimEngine` in `@memberjunction/core-entities` for issuing, validating, and consuming cross-cutting identity claims\n- Generated entity forms and class registrations",
+    "url": "https://github.com/MemberJunction/MJ/pull/4012",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 20",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] [codex] Add private Tailscale computer coach",
+    "date": "2026-08-23T18:31:16Z",
+    "summary": "## What changed\n\n- adds an in-app **Computer Coach** card with Tailscale HTTPS validation, Quick Connect, and a `lessofaloser://connect` URL scheme\n- tries the configured personal-computer model first, then preserves the existing on-device and deterministic fallback chain\n- adds a localhost-only Pyt",
+    "url": "https://github.com/santitower/LessOfALoser/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: LessOfALoser"
+    ]
+  },
+  {
+    "title": "[PR] Add multi-agent orchestration, CI/CD, and reporting features",
+    "date": "2026-08-23T18:20:43Z",
+    "summary": "### **PR Type**\nEnhancement, Tests, Documentation, Bug fix\n\n\n___\n\n### **Description**\n**Core Features:**\n\n- Add comprehensive image generation skill for research reports with AI-powered contextual image creation using Google Gemini/Imagen\n\n- Implement AG2-based multi-agent orchestration system with ",
+    "url": "https://github.com/cicero-im/gpt-researcher/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 23",
+      "pull request",
+      "repo: gpt-researcher"
+    ]
+  },
+  {
+    "title": "[PR] chore: audit dependencies and remove artifacts orphaned by the 1.0 rewrite",
+    "date": "2026-08-23T18:18:10Z",
+    "summary": "## Why are these changes needed?\n\n`pip install ag2`, several `ag2[...]` extras, and the dev dependency groups all pull packages that no code in the repo imports. Required dependencies in particular are something a downstream user cannot opt out of, so unused ones are pure install-size and supply-cha",
+    "url": "https://github.com/ag2ai/ag2/pull/3159",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ag2"
+    ]
+  },
+  {
+    "title": "[PR] feat(a11y): Accessibility-by-Default \u2014 Phases 1\u20132 (WCAG form components, accessibility oracle, check:a11y gate)",
+    "date": "2026-08-23T18:03:56Z",
+    "summary": "## Summary\n\nImplements the **Accessibility-by-Default Framework Layer** selected from the 2026-08-07 weekly creative exploration (#3605): end-to-end Phases 1\u20132, with Phase 3 fully designed in the checked-in plan. Full plan: [`plans/accessibility-by-default/README.md`](https://github.com/MemberJuncti",
+    "url": "https://github.com/MemberJunction/MJ/pull/3609",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] security: add SSRF protection to server-side web/HTTP actions",
+    "date": "2026-08-23T17:53:45Z",
+    "summary": "## The vulnerability\n\nSeveral server-side Actions in `@memberjunction/core-actions` fetched a **fully caller-controlled URL** and returned the response body, guarded by **only a scheme check** (`http:`/`https:`) \u2014 with no filtering of private/internal addresses and with redirects followed automatica",
+    "url": "https://github.com/MemberJunction/MJ/pull/4011",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Add OpenH3-IR to custom-node-list.json",
+    "date": "2026-08-23T17:26:22Z",
+    "summary": "Adds the ComfyUI node pack for OpenH3-IR.\n\nMiniMax published the format for H3's Context-IR document, the long structured prompt the model\nactually wants, along with finished examples of it. What they kept on their own servers is the part\nthat writes it. OpenH3-IR is an open take on that part. It is",
+    "url": "https://github.com/Comfy-Org/ComfyUI-Manager/pull/3175",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ComfyUI-Manager"
     ]
   }
 ]
