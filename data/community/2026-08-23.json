@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] fix(ollama): start local services for native chat",
-    "date": "2026-08-23T00:53:28Z",
+    "date": "2026-08-23T02:20:08Z",
     "summary": "## What Problem This Solves\n\nFixes an issue where native Ollama chat requests failed when a configured\n`models.providers.<id>.localService` was responsible for starting the Ollama\nserver. Embedding requests already acquired that service, but native `/api/chat`\nrequests bypassed it and fetched the st",
     "url": "https://github.com/openclaw/openclaw/pull/128034",
     "source": "github_prs",
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] v0.2: Safe Voice Command Center & Windows Action Runtime",
-    "date": "2026-08-23T00:51:28Z",
+    "date": "2026-08-23T01:36:44Z",
     "summary": "## RC4 status \u2014 premium voice, clap activation, and four security findings\n\nHead: `4c0f67cf32ce5d5fe53b383feb33b83208ac55af`. Base: `main`. Branch: `claude/jarvis-safe-command-center-v2`.\n\n**Still gated on a real Windows test.** Everything an automated run can prove has been proven. The rest needs a",
     "url": "https://github.com/Dado211207/jarvis-windows-ai-assistant/pull/15",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-23T00:31:44Z",
+    "date": "2026-08-23T02:12:37Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -636,12 +636,12 @@
   },
   {
     "title": "[PR] Acceptance Failure: bug: ops status probes the native machine in Kubernetes mode (#3987)",
-    "date": "2026-08-23T00:31:34Z",
+    "date": "2026-08-23T02:00:54Z",
     "summary": "Closes #3987\n\n## Summary\n`ops status` and `ops doctor` report on the deployment that is actually running,\nnot on the native host. One shared `K8sDeploymentProbe` read of the `nyxgpt`\nnamespace feeds three blocks that could otherwise disagree: the \"Deployment mode\"\nsummary (which now closes with a `k",
     "url": "https://github.com/dkblinux98/nyxGPT/pull/4000",
     "source": "github_prs",
     "highlights": [
-      "comments: 21",
+      "comments: 22",
       "pull request",
       "repo: nyxGPT"
     ]
@@ -732,7 +732,7 @@
   },
   {
     "title": "[PR] marine_web_view: public web view of live vessel state",
-    "date": "2026-08-22T23:58:18Z",
+    "date": "2026-08-23T02:40:17Z",
     "summary": "Part of #341 and #333. **Does not complete #341** -- the CloudFront distribution, Origin Access Control and bucket policy are still outstanding, so this delivers the package but not a public URL.\n\nNew `marine_web_view` package: the node that renders vessel state to static GeoJSON, the page that disp",
     "url": "https://github.com/rolker/unh_marine_autonomy/pull/346",
     "source": "github_prs",
@@ -740,6 +740,78 @@
       "comments: 1",
       "pull request",
       "repo: unh_marine_autonomy"
+    ]
+  },
+  {
+    "title": "[PR] [WIP] Create MVP functional architecture for agent-based platform",
+    "date": "2026-08-23T03:02:31Z",
+    "summary": "- [x] Inspect existing repository contents and current branch state\n- [x] Check GitHub Actions workflow status/log access for current branch\n- [ ] Scaffold the MVP platform structure for Milestone 1 and Milestone 2 with minimal viable files\n- [ ] Implement FastAPI + LangGraph + inference abstraction",
+    "url": "https://github.com/scurubira/agentic-ai-platform/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agentic-ai-platform"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): add native Hailo-Ollama support",
+    "date": "2026-08-23T02:57:06Z",
+    "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
+    "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 45",
+      "pull request",
+      "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(runtime): distinguish usage limits from auth errors",
+    "date": "2026-08-23T02:55:01Z",
+    "summary": "## Summary\n\nAfter #2675, Maka already has one safe path for provider diagnostics: ModelAdapter keeps an allowlisted, redacted, bounded summary; the terminal RuntimeEvent remains canonical; Runtime Host projects the message through failed Turn snapshots and recovery; and Desktop can include the exact",
+    "url": "https://github.com/apache/maka/pull/2521",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-08-23T02:44:13Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-sandbox): add Blaxel provider",
+    "date": "2026-08-23T02:01:43Z",
+    "summary": "Rebased onto current `main` on 2026-08-17. Ready for review.\n\n## \ud83c\udfaf Changes\n\n- Add `@tanstack/ai-sandbox-blaxel` as a managed cloud sandbox provider.\n- Implement filesystem access, native file watch, environment values, bounded process streaming, token-gated previews, and resume by id.\n- Reconcile am",
+    "url": "https://github.com/TanStack/ai/pull/1065",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] v2.3: native macOS app, Swift 6, iCloud sync arbitration, and reasoning output budgets",
+    "date": "2026-08-23T01:51:15Z",
+    "summary": "Merges the `v2.3` release branch into `main`. This is a release PR, not a single-topic one \u2014 64 commits, 273 files, spanning several months of work. The most recent commit is described first; the rest is grouped by theme below.\n\n## Reasoning output budgets (73289ef4)\n\nEvery provider's output cap cov",
+    "url": "https://github.com/bisonbet/BisonNotes-AI/pull/118",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: BisonNotes-AI"
     ]
   }
 ]
