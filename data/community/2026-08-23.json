@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-23T06:29:21Z",
+    "date": "2026-08-23T07:09:26Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] v0.2: Safe Voice Command Center & Windows Action Runtime",
-    "date": "2026-08-23T01:36:44Z",
+    "date": "2026-08-23T07:14:19Z",
     "summary": "## RC4 status \u2014 premium voice, clap activation, and four security findings\n\nHead: `4c0f67cf32ce5d5fe53b383feb33b83208ac55af`. Base: `main`. Branch: `claude/jarvis-safe-command-center-v2`.\n\n**Still gated on a real Windows test.** Everything an automated run can prove has been proven. The rest needs a",
     "url": "https://github.com/Dado211207/jarvis-windows-ai-assistant/pull/15",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-23T06:39:18Z",
+    "date": "2026-08-23T07:19:33Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -840,7 +840,7 @@
   },
   {
     "title": "[PR] fix(policy): respect external policy authority",
-    "date": "2026-08-23T06:40:36Z",
+    "date": "2026-08-23T06:56:46Z",
     "summary": "## Summary\n\nNemoClaw now reads and persists OpenShell policy authority before policy-dependent effects. Externally managed sandboxes use verification-only policy flows, while NemoClaw-managed sandboxes keep existing mutation behavior.\n\n## Related Issue\n\nCloses #9833\n\n## Changes\n\n- Add a strict OpenS",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/9899",
     "source": "github_prs",
@@ -888,12 +888,12 @@
   },
   {
     "title": "[PR] Add official Signal K plugin CI and drive the GPU on NVIDIA Jetson",
-    "date": "2026-08-23T03:49:27Z",
+    "date": "2026-08-23T07:29:09Z",
     "summary": "## Summary\n\nThree related pieces of work:\n\n1. **Official Signal K plugin CI** \u2014 the canonical reusable workflow from `SignalK/signalk-server`.\n2. **Plugin registry score** \u2014 the metadata the registry and App Store read, so the plugin can score 100/100.\n3. **NVIDIA CUDA / TensorRT review** \u2014 the plug",
     "url": "https://github.com/KEGustafsson/signalk-ai-bridge/pull/3",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "pull request",
       "repo: signalk-ai-bridge"
     ]
@@ -936,24 +936,24 @@
   },
   {
     "title": "[PR] fix(runtime): make Telegram bot connections operational",
-    "date": "2026-08-23T04:49:28Z",
+    "date": "2026-08-23T07:07:42Z",
     "summary": "## Summary\r\n\r\n- Honor the per-channel proxy URL for Telegram API requests, including polling, message delivery, typing indicators, deletion, connection tests, and streaming drafts.\r\n- Treat Telegram proxy changes as a connection restart boundary.\r\n- Make manual bot restarts recreate stopped listener",
     "url": "https://github.com/apache/maka/pull/3105",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: maka"
     ]
   },
   {
     "title": "[PR] feat(desktop): add a default working directory",
-    "date": "2026-08-23T04:45:23Z",
+    "date": "2026-08-23T07:07:40Z",
     "summary": "## Summary\n\n- Add a persisted default working directory under Settings > General, with a native folder picker and clear action.\n- Use it for local sessions and Bot conversations without a Project, while preserving explicit workspace choices and remote Runtime Host boundaries.\n\nFixes #2322\n\n## Verifi",
     "url": "https://github.com/apache/maka/pull/2998",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: maka"
     ]
@@ -1052,6 +1052,90 @@
       "comments: 0",
       "pull request",
       "repo: reverso-llm"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency @oh-my-pi/hashline ( 17.3.4 \u279c 17.4.2 )",
+    "date": "2026-08-23T07:34:56Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [@oh-my-pi/hashline](https:/",
+    "url": "https://github.com/antoine-bouteiller/pi-extensions/pull/60",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: pi-extensions"
+    ]
+  },
+  {
+    "title": "[PR] PAS-271: Coding Agent Library image and Agent create defaults",
+    "date": "2026-08-23T07:29:36Z",
+    "summary": "**PAS-271.** One Linux Coding Agent image in the Library (arm64 + x86_64), not a second disk.\n\nCreate defaults to Agent-class cage. `OPENAI_BASE_URL` is Device Ollama (`http://10.0.2.2:11434/v1`) or a typed BYO URL.\n\n- Catalog slugs `coding-agent-arm64` / `coding-agent-x86_64`, display name Coding A",
+    "url": "https://github.com/pmdroid/barkvisor/pull/193",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: barkvisor"
+    ]
+  },
+  {
+    "title": "[PR] Copilot/we are one holographic blueprint",
+    "date": "2026-08-23T07:10:03Z",
+    "summary": "",
+    "url": "https://github.com/PreternaturalAI/AI/pull/83",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AI"
+    ]
+  },
+  {
+    "title": "[PR] fix(desktop): read Usage from Runtime Host",
+    "date": "2026-08-23T07:07:26Z",
+    "summary": "## Summary\n\n- move Settings \u2192 Usage off the legacy session scanner and onto the reconnectable Runtime Host client\n- preserve missing token and pricing basis through the Host protocol, then show clean known totals with one coverage notice and precise request-row labels\n- keep aborted tool calls separ",
+    "url": "https://github.com/apache/maka/pull/2641",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] feat(runtime-host): own bot conversation continuity",
+    "date": "2026-08-23T07:07:17Z",
+    "summary": "## Summary\n\n- move opaque external-conversation binding ownership into Runtime Host operational SQLite, including Session creation, crash recovery, retirement cleanup, and backup/restore\n- reduce Desktop to the channel boundary: normalize conversation, source-event, and reply-target identities, then",
+    "url": "https://github.com/apache/maka/pull/2550",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] Migrate backend from Cloudflare Worker + FastAPI to Django/DRF (#146)",
+    "date": "2026-08-23T06:56:33Z",
+    "summary": "Replace worker.js (Cloudflare Worker) and pg/faq_api/main.py (FastAPI PG FAQ API) with a single Django + Django REST Framework backend under backend/, while preserving all client-visible behaviour byte-for-byte.\r\n\r\nPreserved (unchanged):\r\n- Frontend (static/), FAQ seed JSON, source docs (src/), and ",
+    "url": "https://github.com/iitmbsc-student-projects/iitmdocs/pull/148",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: iitmdocs"
+    ]
+  },
+  {
+    "title": "[PR] from-builder",
+    "date": "2026-08-23T06:56:19Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
+    "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: holmesgpt"
     ]
   }
 ]
