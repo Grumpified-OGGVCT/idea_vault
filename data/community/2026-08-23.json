@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-23T12:14:05Z",
+    "date": "2026-08-23T13:00:58Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -636,12 +636,12 @@
   },
   {
     "title": "[PR] Acceptance Failure: bug: ops status probes the native machine in Kubernetes mode (#3987)",
-    "date": "2026-08-23T12:21:17Z",
+    "date": "2026-08-23T13:11:41Z",
     "summary": "Closes #3987\n\n## Summary\n`ops status` and `ops doctor` report on the deployment that is actually running,\nnot on the native host. One shared `K8sDeploymentProbe` read of the `nyxgpt`\nnamespace feeds three blocks that could otherwise disagree: the \"Deployment mode\"\nsummary (which now closes with a `k",
     "url": "https://github.com/dkblinux98/nyxGPT/pull/4000",
     "source": "github_prs",
     "highlights": [
-      "comments: 24",
+      "comments: 26",
       "pull request",
       "repo: nyxGPT"
     ]
@@ -768,12 +768,12 @@
   },
   {
     "title": "[PR] fix(runtime): distinguish usage limits from auth errors",
-    "date": "2026-08-23T02:55:01Z",
+    "date": "2026-08-23T13:26:06Z",
     "summary": "## Summary\n\nAfter #2675, Maka already has one safe path for provider diagnostics: ModelAdapter keeps an allowlisted, redacted, bounded summary; the terminal RuntimeEvent remains canonical; Runtime Host projects the message through failed Turn snapshots and recovery; and Desktop can include the exact",
     "url": "https://github.com/apache/maka/pull/2521",
     "source": "github_prs",
     "highlights": [
-      "comments: 15",
+      "comments: 17",
       "pull request",
       "repo: maka"
     ]
@@ -1092,7 +1092,7 @@
   },
   {
     "title": "[PR] fix(desktop): read Usage from Runtime Host",
-    "date": "2026-08-23T08:49:34Z",
+    "date": "2026-08-23T13:10:01Z",
     "summary": "## Summary\n\n- move Settings \u2192 Usage off the legacy session scanner and onto the reconnectable Runtime Host client\n- preserve missing token and pricing basis through the Host protocol, then show clean known totals with one coverage notice and precise request-row labels\n- keep aborted tool calls separ",
     "url": "https://github.com/apache/maka/pull/2641",
     "source": "github_prs",
@@ -1104,7 +1104,7 @@
   },
   {
     "title": "[PR] feat(runtime-host): own bot conversation continuity",
-    "date": "2026-08-23T11:18:45Z",
+    "date": "2026-08-23T12:54:03Z",
     "summary": "## Summary\n\n- move opaque external-conversation binding ownership into Runtime Host operational SQLite, including Session creation, crash recovery, retirement cleanup, and backup/restore\n- reduce Desktop to the channel boundary: normalize conversation, source-event, and reply-target identities, then",
     "url": "https://github.com/apache/maka/pull/2550",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] from-builder",
-    "date": "2026-08-23T11:37:17Z",
+    "date": "2026-08-23T13:22:48Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **Documentation**\n  * Massive docs overhaul: new site structure, full installation guides (CLI/UI/K8s), provider guides, extensive built\u2011in & custom toolset docs, runbook/catalog examples, HTTP A",
     "url": "https://github.com/julianobarbosa/holmesgpt/pull/7",
     "source": "github_prs",
@@ -1272,7 +1272,7 @@
   },
   {
     "title": "[PR] Release 2.12.0",
-    "date": "2026-08-23T12:43:10Z",
+    "date": "2026-08-23T13:00:03Z",
     "summary": "Release branch for **2.12.0**. 80 commits, 34 audit tickets, 542 files.\n\nEvery version source already agrees on `2.12.0` (13 of them); `make check-version`, `check-changelog`, `check-repo-links` and `check-action-pins` pass. The CHANGELOG's `[Unreleased]` still holds this release \u2014 **move it under a",
     "url": "https://github.com/tradik/mddb/pull/193",
     "source": "github_prs",
@@ -1284,7 +1284,7 @@
   },
   {
     "title": "[PR] \ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udec5\ud83d\udc41\ufe0f",
-    "date": "2026-08-23T12:36:24Z",
+    "date": "2026-08-23T12:44:51Z",
     "summary": "@manus @grok @openai @\ud83d\udd74\ufe0f@chatgbt @5hy7xz92nd-oss @claude !\ud83c\udf00\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udd73\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ud83c\udfff\ud83d\udd74\ud83c\udfff\ud83d\udd03\ud83d\udc41\ufe0f\ud83d\udec4\ud83d\udedc\ud83d\udc30\ud83d\udd1b\ud83d\udd04\ud83d\udeba\ud83c\udfa3\ud83d\udc07\ud83d\udd25\u24c2\ufe0f\u2663\ufe0f\u2660\ufe0f\ud83c\udfe7\ud83d\udca4\u2139\ufe0f\ud83c\udfb4\ud83c\udccf\ud83c\udc04\ufe0f\ud83d\udd00\ud83d\udd74\ufe0f \ud83c\udf00\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udd73\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ud83c\udfff\ud83d\udd74\ud83c\udfff\ud83d\udd03\ud83d\udc41\ufe0f\ud83d\udec4\ud83d\udedc\ud83d\udc30\ud83d\udd1b\ud83d\udd04\ud83d\udeba\ud83c\udfa3\ud83d\udc07\ud83d\udd25\u24c2\ufe0f\u2663\ufe0f\u2660\ufe0f\ud83c\udfe7\ud83d\udca4\u2139\ufe0f\ud83c\udfb4\ud83c\udccf\ud83c\udc04\ufe0f\ud83d\udd00\ud83d\udd74\ufe0f![image](https://github.com/user-![image](https://github.com/user-attachments/assets/9d556e63-6fca-4b94-9f0f-9dd4729d4491)attachments/![image](https://",
     "url": "https://github.com/PreternaturalAI/AI/pull/79",
     "source": "github_prs",
@@ -1328,6 +1328,18 @@
       "comments: 0",
       "pull request",
       "repo: freellmapi"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image amruthpillai/reactive-resume (v4.4.5 \u2794 v5.2.7)",
+    "date": "2026-08-23T13:12:08Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.4.5` \u2192 `v5.2.7` |\n\n---\n\n> [!WARNING]\n> ",
+    "url": "https://github.com/neilmfrench/homelab-prod/pull/1149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-prod"
     ]
   }
 ]
