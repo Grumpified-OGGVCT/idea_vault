@@ -564,12 +564,12 @@
   },
   {
     "title": "[PR] fix(ollama): start local services for native chat",
-    "date": "2026-08-23T14:16:57Z",
+    "date": "2026-08-23T16:29:49Z",
     "summary": "## What Problem This Solves\n\nFixes an issue where native Ollama chat requests failed when a configured\n`models.providers.<id>.localService` was responsible for starting the Ollama\nserver. Embedding requests already acquired that service, but native `/api/chat`\nrequests bypassed it and fetched the st",
     "url": "https://github.com/openclaw/openclaw/pull/128034",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 14",
       "pull request",
       "repo: openclaw"
     ]
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-23T15:10:06Z",
+    "date": "2026-08-23T16:10:16Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -756,12 +756,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-23T15:13:55Z",
+    "date": "2026-08-23T16:10:20Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 47",
+      "comments: 49",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] v2.3: native macOS app, Swift 6, iCloud sync arbitration, and reasoning output budgets",
-    "date": "2026-08-23T15:16:46Z",
+    "date": "2026-08-23T16:05:59Z",
     "summary": "Merges the `v2.3` release branch into `main`. This is a release PR, not a single-topic one \u2014 64 commits, 273 files, spanning several months of work. The most recent commit is described first; the rest is grouped by theme below.\n\n## Reasoning output budgets (73289ef4)\n\nEvery provider's output cap cov",
     "url": "https://github.com/bisonbet/BisonNotes-AI/pull/118",
     "source": "github_prs",
@@ -1368,7 +1368,7 @@
   },
   {
     "title": "[PR] feat(helmsman): canonical model registry, cross-backend failover, streaming from every source (+ ADR-0121..0124)",
-    "date": "2026-08-23T15:25:57Z",
+    "date": "2026-08-23T16:24:39Z",
     "summary": "## Summary\n\nThis PR started as a planning slice (the four Helmsman ADRs) and, on the operator's directive of 2026-08-22 \u2014 *\"9417 shills to Claude code backend needlessly\u2026 it should have a model selector and work equally well with agy and codex and a few Cloudflare AI models. If it fails with one it ",
     "url": "https://github.com/curiositech/port-daddy/pull/9417",
     "source": "github_prs",
@@ -1400,6 +1400,90 @@
       "comments: 1",
       "pull request",
       "repo: Civil-Complaints-Systems-TEST"
+    ]
+  },
+  {
+    "title": "[PR] feat(publication): wire the Upload Post connector",
+    "date": "2026-08-23T16:26:31Z",
+    "summary": "**Fleet** \u00b7 owner: `integrator` \u00b7 internal-review: `pass@a8092e9cd77e` \u00b7 returns: 0 \u00b7 check-reviews@`na`\n\n## Contexte\n\nBranche le premier connecteur de publication r\u00e9el pour `avolo-shorts`, via\nUpload Post plut\u00f4t qu'un acc\u00e8s direct par plateforme\n(`docs/superpowers/specs/2026-08-18-publication-resea",
+    "url": "https://github.com/JulienCr/avolo-shorts/pull/144",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: avolo-shorts"
+    ]
+  },
+  {
+    "title": "[PR] test(core): cover first-run-options",
+    "date": "2026-08-23T16:25:40Z",
+    "summary": "\n## Summary\n\nAdds a colocated unit suite for `packages/core/src/contracts/first-run-options.ts`, which had no same-named test file anywhere in the repository. The diff is a single new test file (+778/-0); no production code changes.\n\n## What the suite covers\n\nAll behavior is exercised through the re",
+    "url": "https://github.com/elizaOS/eliza/pull/26338",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "[PR] feat(website): add a speech-to-text landing page in the market's vocabulary",
+    "date": "2026-08-23T16:18:50Z",
+    "summary": "## Why\n\nThe site says \"dictation\" everywhere. The market searches \"speech to text\" and \"voice to text\". We had no page leading with those words.\n\nMeasured 2026-08-23 across 14 descriptive query families. **We appear in none of them:**\n\n`local speech to text mac` \u00b7 `open source dictation mac` \u00b7 `priv",
+    "url": "https://github.com/saurabhav88/EnviousWispr/pull/2348",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: EnviousWispr"
+    ]
+  },
+  {
+    "title": "[PR] Use Probatio as the data validation engine",
+    "date": "2026-08-23T16:16:03Z",
+    "summary": "## Breaking change\n\nNone. Which is the nice thing about all of this \ud83d\ude04 \n\n## Proposed change\n\nThis pull request introduces [Probatio](https://probatio.frenck.dev) as Home Assistant's data validation engine, as a drop-in replacement for voluptuous.\n\nProbatio is a modern, actively maintained, clean-room",
+    "url": "https://github.com/home-assistant/core/pull/175128",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: core"
+    ]
+  },
+  {
+    "title": "[PR] Refactor: Reorganize files, migrate to TypeScript and lint",
+    "date": "2026-08-23T16:14:23Z",
+    "summary": "## Summary\r\n\r\n1. Production desktop builds:  electron-builder targets for Windows and macOS. The installer ships no AI components: the llama.cpp native backend and GGUF models are downloaded in-app (model storage path selectable), and the GPT-SoVITS TTS / Faster-Whisper STT python environments are s",
+    "url": "https://github.com/b1ink0/vassist/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: vassist"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-providers): add xAI, DeepSeek, Z.ai, Qwen, MiniMax and Moonshot",
+    "date": "2026-08-23T15:59:20Z",
+    "summary": "> \ud83d\udeab **Do not merge until the multi-key stack lands** \u2014 #14738 \u2192 #14825 \u2192 #14942.\n> This branch is based on `main` and is additive to that stack, but whichever merges second absorbs the conflicts, and #14738 is already conflicting. Reviews welcome now.\n\n## Description\n\nAdds six AI providers: **xAI, D",
+    "url": "https://github.com/activepieces/activepieces/pull/14987",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: activepieces"
+    ]
+  },
+  {
+    "title": "[PR] [java][python] IBM watsonx.ai chat model integration",
+    "date": "2026-08-23T15:50:13Z",
+    "summary": "\r\nLinked issue: #902 \r\n\r\n### Purpose of change\r\n\r\nChat model integration for watsonx.ai models provided by IBM Cloud.\r\n\r\n- Adds a new watsonx integration module for Java chat models.\r\n-  Adds a new watsonx integration module for Python chat models.\r\n- Adds watsonx resource names and YAML alias mappi",
+    "url": "https://github.com/apache/flink-agents/pull/922",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: flink-agents"
     ]
   }
 ]
