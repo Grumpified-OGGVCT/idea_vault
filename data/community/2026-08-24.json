@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] fix(shadercache): reject stale writes post-Clear()",
-    "date": "2026-08-24T01:11:21Z",
+    "date": "2026-08-24T04:30:36Z",
     "summary": "## Summary\n\nFixes #512. A detached compile-worker already mid-`Perform()` when `ShaderCache::Clear()` runs can still finish afterward and insert a stale-generation shader into the just-emptied `vertexShaders`/`pixelShaders`/`computeShaders` maps. `CompilationSet::Complete()`'s existing generation ch",
     "url": "https://github.com/alandtse/open-shaders/pull/522",
     "source": "github_prs",
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-24T00:30:48Z",
+    "date": "2026-08-24T04:04:29Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] Canonical-first Cognigrex local sync and materialisation controls",
-    "date": "2026-08-24T02:58:54Z",
+    "date": "2026-08-24T04:01:39Z",
     "summary": "## Purpose\nCanonical-first, review-gated synchronization and consolidation lane for the current LightSpeed/Cognigrex installed-shell transition. This PR must not claim local Desktop execution, Drive promotion, deletion, deployment, merge, or value activation without the corresponding durable receipt",
     "url": "https://github.com/achillesromer-coder/LightSpeed/pull/37",
     "source": "github_prs",
@@ -636,12 +636,12 @@
   },
   {
     "title": "[PR] test(core): cover first-run-options",
-    "date": "2026-08-24T02:44:44Z",
+    "date": "2026-08-24T04:37:37Z",
     "summary": "\n## Summary\n\nAdds a colocated unit suite for `packages/core/src/contracts/first-run-options.ts`, which had no same-named test file anywhere in the repository. The diff is a single new test file (+778/-0); no production code changes.\n\n## What the suite covers\n\nAll behavior is exercised through the re",
     "url": "https://github.com/elizaOS/eliza/pull/26338",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 3",
       "pull request",
       "repo: eliza"
     ]
@@ -744,12 +744,12 @@
   },
   {
     "title": "PLAUD raw audio \u2192 local AI processing: verified facts and sources",
-    "date": "2026-08-24T02:59:30Z",
+    "date": "2026-08-24T03:26:39Z",
     "summary": "## PLAUD\u516c\u5f0f\n\n- Plaud App\u306f\u9332\u97f3\u97f3\u58f0\u3092 **MP3 / WAV** \u3067export\u3067\u304d\u308b\u3002Plaud Web\u306eaudio export\u306f **MP3**\u3002\n  - https://support.plaud.ai/hc/en-us/articles/50835453223705-Export-files\n- Plaud\u516c\u5f0f\u306fWAV\u3092\u300cuncompressed\u300d\u300chighest quality\u300d\u300cpreserving the original recording\u300d\u3068\u8aac\u660e\u3057\u3066\u3044\u308b\u3002\n  - https://support.plaud.ai/hc/en-us/articles/5",
     "url": "https://github.com/KAFKA2306/vlog/issues/122",
     "source": "github_issues",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "state: open",
       "repo: vlog"
     ]
@@ -768,7 +768,7 @@
   },
   {
     "title": "[PR] feat(opencode): \u652f\u6301 OpenCode Go \u5b98\u65b9\u7528\u91cf\u7a97\u53e3\u67e5\u8be2\u4e0e\u81ea\u52a8\u5237\u65b0",
-    "date": "2026-08-24T03:02:29Z",
+    "date": "2026-08-24T03:53:37Z",
     "summary": "## \u80cc\u666f\n\nOpenCode Go \u662f OpenCode \u5b98\u65b9\u7684\u8ba2\u9605\u805a\u5408\u5e73\u53f0\uff08$10/\u6708\uff0c5h/$12\u3001\u5468/$30\u3001\u6708/$60 \u4e09\u4e2a\u7528\u91cf\u7a97\u53e3\uff09\uff0c\u63d0\u4f9b OpenAI \u517c\u5bb9\u7aef\u70b9 `https://opencode.ai/zen/go/v1`\u3002\u4e0a\u6e38\u4e8e 2026-08-11 \u4e0a\u7ebf\u5b98\u65b9\u7528\u91cf\u7aef\u70b9 `GET /zen/go/v1/usage`\uff08Bearer \u76f4\u63a5\u590d\u7528\u6d88\u8d39\u7aef key\uff0c\u5c1a\u672a\u5199\u5165\u5b98\u65b9\u6587\u6863\uff09\uff0c\u8fd4\u56de rolling/weekly/monthly \u4e09\u7a97\u53e3\u7684 `percent` \u4e0e `resetsAt`\u3002\n\n\u672c PR \u4e3a openai apikey \u8d26\u53f7\uff08base_url = `https://open",
     "url": "https://github.com/Wei-Shaw/sub2api/pull/5616",
     "source": "github_prs",
@@ -840,7 +840,7 @@
   },
   {
     "title": "[PR] Feat/idea plugin",
-    "date": "2026-08-24T02:43:32Z",
+    "date": "2026-08-24T03:46:22Z",
     "summary": "## Description\r\n\r\nAdd IntelliJ IDEA (JetBrains) plugin extension for Open Code Review.\r\n\r\nThis is a new extension under `extensions/idea/` that brings the same\r\ncode review workflow available in the VSCode extension to IntelliJ-based\r\nIDEs (IDEA Community/Ultimate, WebStorm, PyCharm, etc.).\r\n\r\nThe i",
     "url": "https://github.com/alibaba/open-code-review/pull/1031",
     "source": "github_prs",
@@ -908,6 +908,198 @@
       "comments: 1",
       "pull request",
       "repo: adk-samples2"
+    ]
+  },
+  {
+    "title": "Real local LLM integration \u2014 model gateway Local adapter is not_configured",
+    "date": "2026-08-24T04:31:57Z",
+    "summary": "`LocalModelProviderAdapter` declares `health: not_configured` and **throws** on `generateActorResponse` (`packages/openclinxr/model-gateway/src/index.ts:396-417`). The only working path is `MockModelProviderAdapter`, which returns `\\`${displayName}: ${visibleFacts[0]}\\`` (`index.ts:315`).\n\nSo every ",
+    "url": "https://github.com/simnova/OpenClinXR/issues/26",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 7",
+      "state: open",
+      "repo: OpenClinXR"
+    ]
+  },
+  {
+    "title": "GLM-5-Turbo \uac00 tool_use \uc774\ub984\uc5d0 \uc778\uc790\ub97c \uc11e\uc5b4 \ubcf4\ub0b4\uace0, \ud55c \ud134\uc774 \uadf8 \uc0c1\ud0dc\uc5d0 \ub4e4\uc5b4\uac00\uba74 88\ubc88\uae4c\uc9c0 \ud68c\ubcf5 \uc5c6\uc774 \ubc18\ubcf5\ud55c\ub2e4 \u2014 \ubc29\uc544\uc1e0 \ubbf8\ud655\uc778",
+    "date": "2026-08-24T03:43:40Z",
+    "summary": "## \ud604\uc0c1\n\n\ud0a4\ud37c \ud134\uc5d0\uc11c `Tool not found: Execute<\uc4f0\ub808\uae30>` \uac00 \ubc18\ubcf5\ub41c\ub2e4. 2026-08-18 ~ 08-21 \ub098\ud758\uac04 **585\uac74**, \uc11c\ub85c \ub2e4\ub978 \uc774\ub984 **112\uac00\uc9c0**\ub2e4. \uc804\ubd80 `Execute` \ub85c \uc2dc\uc791\ud558\uace0 \ub4a4\uc5d0 \ubb34\uc5b8\uac00 \ubd99\ub294\ub2e4.\n\n```\nExecute[\"argv\"]                                        307\uac74\nExecute1569E4791                                        21\uac74\nExecute1563548067130664024E-11      ",
+    "url": "https://github.com/jeong-sik/masc/issues/29337",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 5",
+      "state: open",
+      "repo: masc"
+    ]
+  },
+  {
+    "title": "[PR] feat(batch): run the repair loop in batch, so one config works in either mode",
+    "date": "2026-08-24T04:46:13Z",
+    "summary": "## Summary\n\n`expect: { repair: auto }` was refused at preflight under `run_mode: batch`. That broke the promise the framework is built on \u2014 the same config runs online and in batch \u2014 so the fix is to make batch regenerate, not to document the hole.\n\nBatch already knew how. Reprompt drives a graduate",
+    "url": "https://github.com/Muizzkolapo/agent-actions/pull/922",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: agent-actions"
+    ]
+  },
+  {
+    "title": "[PR] perf(global): build the ClassFactory resolution diagnostic only when it is read",
+    "date": "2026-08-24T04:45:38Z",
+    "summary": "## What\n\n`ClassFactory.resolveAndInstantiate` builds its resolution-failure diagnostic **unconditionally**, before any gate:\n\n```ts\nconst requiresSubclass = ClassRequiresSubclass(baseClass);\nconst reason = this.describeResolutionFailure(baseClass, key, requiresSubclass);  // always runs\n...\nif ((key",
+    "url": "https://github.com/MemberJunction/MJ/pull/3892",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(query): update dependencies",
+    "date": "2026-08-24T04:41:57Z",
+    "summary": "## What\n- Update Captain and Clicky UI dependencies for the query command and web application.\n\n## Why\n- Consume the latest released backend and shared UI packages.",
+    "url": "https://github.com/flanksource/commons-db/pull/54",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: commons-db"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the ai-sdks group across 1 directory with 4 updates",
+    "date": "2026-08-24T04:42:36Z",
+    "summary": "Bumps the ai-sdks group with 4 updates in the / directory: [claude-agent-sdk](https://github.com/anthropics/claude-agent-sdk-python), [google-genai](https://github.com/googleapis/python-genai), [xai-sdk](https://github.com/xai-org/xai-sdk-python) and [instructor](https://github.com/instructor-ai/ins",
+    "url": "https://github.com/huiyang0325/C301/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: C301"
+    ]
+  },
+  {
+    "title": "[PR] Add in-place AI text transforms",
+    "date": "2026-08-24T04:38:28Z",
+    "summary": "## Related issue\r\n\r\nRelates to #226\r\n\r\n---\r\n\r\n## What changed\r\n\r\nI remember your comment on #226 about why you didn't want AI in Tinycast, and I agree with your reasoning: throwing an AI chat interface into a launcher turns it into a bloated, unmaintainable mess. We have all watched desktop tools go",
+    "url": "https://github.com/abue-ammar/tinycast/pull/314",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: tinycast"
+    ]
+  },
+  {
+    "title": "[PR] Ollama: search models and Start/Stop with Device pick",
+    "date": "2026-08-24T04:38:26Z",
+    "summary": "## Summary\n\nClient-side model name filter on web and Console. Start uses the same reachable-Device picker as Pull and sends optional `hostId` on the existing `{ name, hostId? }` body. Stop still targets the running location and asks first. Console promotes Running/Pulled to a badge and adds swipe/co",
+    "url": "https://github.com/pmdroid/barkvisor/pull/216",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: barkvisor"
+    ]
+  },
+  {
+    "title": "[PR] Console + web Device detail: CPU and memory graphs",
+    "date": "2026-08-24T04:37:37Z",
+    "summary": "## Summary\n\nDevice detail on web and BarkVisorConsole now shows platform, reachability, Workload line, CPU/memory resources, and 30-minute CPU/memory history.\n\n- Console: tapping a Device opens `DeviceDetailView` (Swift Charts). History is `APIClient.scoped` `GET /system/stats/history?minutes=30` (H",
+    "url": "https://github.com/pmdroid/barkvisor/pull/217",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: barkvisor"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-24T04:34:57Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/ts-auth/pull/120",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-auth"
+    ]
+  },
+  {
+    "title": "[PR] fix(console): compile BarkVisorConsole so GPU tests can run",
+    "date": "2026-08-24T04:33:55Z",
+    "summary": "Follow-up after #208. GPU list/attach is already on main. This does not close #208.\n\nBarkVisorConsole did not compile under Xcode (`DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer`). `CreateWorkload.body` used an if-expression with `let` bindings and `try`, which Swift rejects (`non-express",
+    "url": "https://github.com/pmdroid/barkvisor/pull/218",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: barkvisor"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-24T04:34:06Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/trifitla/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: trifitla"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-24T04:29:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/ts-md/pull/99",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-md"
+    ]
+  },
+  {
+    "title": "[PR] Reconcile PR38 with the salvage line: merged history, AGPL executed, sweettest unblock",
+    "date": "2026-08-24T04:08:41Z",
+    "summary": "Rejoins six weeks of parallel work and lands the corrections found along the way.\n`origin/main` is fully contained in this branch (0 ahead, 124 behind as of\n2026-08-24), so there is no content to reconcile here \u2014 only review.\n\n**PR #38 has since merged to main on its own** (merge commit `873cc0c`,\n2",
+    "url": "https://github.com/G-0-B/FLOSS/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: FLOSS"
+    ]
+  },
+  {
+    "title": "[PR] fix(migrations): FileEntityRecordLink unique key omits RecordID (#3943)",
+    "date": "2026-08-24T04:08:26Z",
+    "summary": "Fixes #3943.\n\n## The defect\n\n`__mj.FileEntityRecordLink` is the generic soft-key many-to-many between any file and any record of any entity. Its unique key omitted `RecordID`:\n\n```sql\nCONSTRAINT [UQ_FileEntityRecordLink_EntityID_FileID] UNIQUE NONCLUSTERED ([EntityID], [FileID])\n```\n\nso a given `Fil",
+    "url": "https://github.com/MemberJunction/MJ/pull/4006",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(codegen): a new schema could never get an Application on PostgreSQL",
+    "date": "2026-08-24T03:57:57Z",
+    "summary": "## The defect\n\n`createNewApplication` names the `Application` columns unquoted:\n\n```\nINSERT INTO \"__mj\".\"Application\" (ID, Name, Description, SchemaAutoAddNewEntities, Path, AutoUpdatePath, DefaultForNewUser)\n```\n\nNormally that is fine \u2014 every statement passes through the PostgreSQL identifier auto-",
+    "url": "https://github.com/MemberJunction/MJ/pull/3932",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
