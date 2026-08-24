@@ -216,7 +216,7 @@
   },
   {
     "title": "Optimize Brief vs Caveman, Hush vs rtk, and Loom vs Headroom",
-    "date": "2026-08-23T10:37:56Z",
+    "date": "2026-08-24T02:52:29Z",
     "summary": "## Outcome\n\nImprove **Brief, Hush, and Loom** together so live product projections beat the right baseline for each lane on a maintained fixture corpus, without losing Falryn\u2019s exact-capture, expansion-handle, and evidence-fidelity contracts.\n\n| Falryn lane | Baseline to beat | Why that baseline |\n|",
     "url": "https://github.com/tyldra-org/falryn/issues/736",
     "source": "github_issues",
@@ -252,12 +252,12 @@
   },
   {
     "title": "Want to suggest a wake word? Leave your thoughts here. (AIS-1441)",
-    "date": "2026-08-22T18:48:25Z",
+    "date": "2026-08-24T02:38:51Z",
     "summary": "Hi all,\n\nWe're excited to offer the community more free and high-quality wake word models. Everyone has their own unique wake word preferences. Now, we're ready to regularly release some of the most popular wake words. Please let us know the wake words you want! \n\n**Already supported languages: Chin",
     "url": "https://github.com/espressif/esp-sr/issues/88",
     "source": "github_issues",
     "highlights": [
-      "comments: 446",
+      "comments: 447",
       "state: open",
       "repo: esp-sr"
     ]
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] PAS-275: List GPUs and attach via vfio-pci",
-    "date": "2026-08-24T01:06:16Z",
+    "date": "2026-08-24T03:04:44Z",
     "summary": "**PAS-275.** Linux Devices list PCI GPUs with their IOMMU group and attach/detach them like USB (`GET /api/system/gpu-devices`, `POST/DELETE /api/vms/{id}/gpu`). Fail closed if IOMMU/vfio/KVM is not ready. Occupancy is the host GPU driver, not an Ollama TCP probe.\n\n- Detach, stop, and delete unbind ",
     "url": "https://github.com/pmdroid/barkvisor/pull/208",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] Canonical-first Cognigrex local sync and materialisation controls",
-    "date": "2026-08-24T00:26:54Z",
+    "date": "2026-08-24T02:58:54Z",
     "summary": "## Purpose\nCanonical-first, review-gated synchronization and consolidation lane for the current LightSpeed/Cognigrex installed-shell transition. This PR must not claim local Desktop execution, Drive promotion, deletion, deployment, merge, or value activation without the corresponding durable receipt",
     "url": "https://github.com/achillesromer-coder/LightSpeed/pull/37",
     "source": "github_prs",
@@ -636,12 +636,12 @@
   },
   {
     "title": "[PR] test(core): cover first-run-options",
-    "date": "2026-08-24T00:24:00Z",
+    "date": "2026-08-24T02:44:44Z",
     "summary": "\n## Summary\n\nAdds a colocated unit suite for `packages/core/src/contracts/first-run-options.ts`, which had no same-named test file anywhere in the repository. The diff is a single new test file (+778/-0); no production code changes.\n\n## What the suite covers\n\nAll behavior is exercised through the re",
     "url": "https://github.com/elizaOS/eliza/pull/26338",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: eliza"
     ]
@@ -672,7 +672,7 @@
   },
   {
     "title": "[PR] feat: recursive directory traversal (--recursive flag)",
-    "date": "2026-08-24T00:12:28Z",
+    "date": "2026-08-24T02:20:37Z",
     "summary": "Adds `--recursive` flag to traverse directories deeply, preserving the relative path structures in reports and the rejects filter directory. Resolves #9.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added recursive image",
     "url": "https://github.com/MinionTech/image-cull/pull/57",
     "source": "github_prs",
@@ -684,12 +684,12 @@
   },
   {
     "title": "[PR] chore(compose): \u30ed\u30fc\u30ab\u30eb LLM \u3092\u30db\u30b9\u30c8\u306e Ollama \u524d\u63d0\u306b\u56fa\u3081\u308b",
-    "date": "2026-08-24T00:03:21Z",
+    "date": "2026-08-24T02:25:56Z",
     "summary": "## \u6982\u8981\n\n\u30ed\u30fc\u30ab\u30eb\u52d5\u4f5c\u78ba\u8a8d\u7528\u306e LLM \u3092\u3001docker \u30b3\u30f3\u30c6\u30ca\uff08`ollama/ollama`\uff09\u3067\u306f\u306a\u304f**\u30db\u30b9\u30c8\u306b\u30a4\u30f3\u30b9\u30c8\u30fc\u30eb\u3057\u305f Ollama** \u3067\u52d5\u304b\u3059\u524d\u63d0\u3092\u30ea\u30dd\u30b8\u30c8\u30ea\u65e2\u5b9a\u3068\u3057\u3066\u56fa\u3081\u307e\u3059\u3002DB / backend / redis / frontend \u306f\u5f93\u6765\u3069\u304a\u308a compose \u306e\u307e\u307e\u3067\u3059\u3002\n\n\u3082\u3068\u3082\u3068 ADR-0010 \u306e\u8a2d\u8a08\u306f\u30db\u30b9\u30c8\u5074 Ollama \u3067\u3057\u305f\u304c\u3001compose \u306e env \u304c bare \u306e `${VAR}` \u3060\u3063\u305f\u305f\u3081\u3001\u5b9f\u969b\u306b\u52d5\u304f\u304b\u3069\u3046\u304b\u304c\u5404\u81ea\u306e `.env` \u306e\u8a18\u8ff0\u306b\u4f9d\u5b58\u3057\u3066\u3044\u307e\u3057\u305f\u3002\n\n## \u5909\u66f4\u5185\u5bb9\n\n- **`docker-compose.yml`*",
     "url": "https://github.com/yusuke0610/devforge/pull/604",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 6",
       "pull request",
       "repo: devforge"
     ]
@@ -708,7 +708,7 @@
   },
   {
     "title": "[PR] feat: self-host experience \u2014 1-command setup, local auth, runtime providers, wizard UI",
-    "date": "2026-08-23T23:34:57Z",
+    "date": "2026-08-24T03:06:08Z",
     "summary": "## Summary\n\nMakes GAIA genuinely self-hostable: **`gaia up` \u2192 open browser \u2192 sign up \u2192 paste one API key \u2192 chat.** No WorkOS account, no Infisical, no Dodo, no hand-edited env files.\n\n### What changed\n\n**1. Local auth (`AUTH_MODE=local`)**\n- Email+password signup/login with HS256 session cookies; fi",
     "url": "https://github.com/theexperiencecompany/gaia/pull/1091",
     "source": "github_prs",
@@ -732,14 +732,182 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-23T23:12:07Z",
+    "date": "2026-08-24T02:56:50Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 50",
+      "comments: 51",
       "pull request",
       "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "PLAUD raw audio \u2192 local AI processing: verified facts and sources",
+    "date": "2026-08-24T02:59:30Z",
+    "summary": "## PLAUD\u516c\u5f0f\n\n- Plaud App\u306f\u9332\u97f3\u97f3\u58f0\u3092 **MP3 / WAV** \u3067export\u3067\u304d\u308b\u3002Plaud Web\u306eaudio export\u306f **MP3**\u3002\n  - https://support.plaud.ai/hc/en-us/articles/50835453223705-Export-files\n- Plaud\u516c\u5f0f\u306fWAV\u3092\u300cuncompressed\u300d\u300chighest quality\u300d\u300cpreserving the original recording\u300d\u3068\u8aac\u660e\u3057\u3066\u3044\u308b\u3002\n  - https://support.plaud.ai/hc/en-us/articles/5",
+    "url": "https://github.com/KAFKA2306/vlog/issues/122",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: vlog"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency org.mock-server:mockserver-netty-no-dependencies to v7.6.0 (master)",
+    "date": "2026-08-24T03:06:16Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-netty-no-dependencies](https://www.mock-server.com) ([source](https://r",
+    "url": "https://github.com/axonivy/webservice-codegen/pull/64",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: webservice-codegen"
+    ]
+  },
+  {
+    "title": "[PR] feat(opencode): \u652f\u6301 OpenCode Go \u5b98\u65b9\u7528\u91cf\u7a97\u53e3\u67e5\u8be2\u4e0e\u81ea\u52a8\u5237\u65b0",
+    "date": "2026-08-24T03:02:29Z",
+    "summary": "## \u80cc\u666f\n\nOpenCode Go \u662f OpenCode \u5b98\u65b9\u7684\u8ba2\u9605\u805a\u5408\u5e73\u53f0\uff08$10/\u6708\uff0c5h/$12\u3001\u5468/$30\u3001\u6708/$60 \u4e09\u4e2a\u7528\u91cf\u7a97\u53e3\uff09\uff0c\u63d0\u4f9b OpenAI \u517c\u5bb9\u7aef\u70b9 `https://opencode.ai/zen/go/v1`\u3002\u4e0a\u6e38\u4e8e 2026-08-11 \u4e0a\u7ebf\u5b98\u65b9\u7528\u91cf\u7aef\u70b9 `GET /zen/go/v1/usage`\uff08Bearer \u76f4\u63a5\u590d\u7528\u6d88\u8d39\u7aef key\uff0c\u5c1a\u672a\u5199\u5165\u5b98\u65b9\u6587\u6863\uff09\uff0c\u8fd4\u56de rolling/weekly/monthly \u4e09\u7a97\u53e3\u7684 `percent` \u4e0e `resetsAt`\u3002\n\n\u672c PR \u4e3a openai apikey \u8d26\u53f7\uff08base_url = `https://open",
+    "url": "https://github.com/Wei-Shaw/sub2api/pull/5616",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: sub2api"
+    ]
+  },
+  {
+    "title": "[PR] [java][python] IBM watsonx.ai chat model integration",
+    "date": "2026-08-24T03:00:18Z",
+    "summary": "\r\nLinked issue: #902 \r\n\r\n### Purpose of change\r\n\r\nChat model integration for watsonx.ai models provided by IBM Cloud.\r\n\r\n- Adds a new watsonx integration module for Java chat models.\r\n-  Adds a new watsonx integration module for Python chat models.\r\n- Adds watsonx resource names and YAML alias mappi",
+    "url": "https://github.com/apache/flink-agents/pull/922",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: flink-agents"
+    ]
+  },
+  {
+    "title": "[PR] Release Management: There is no nyxgpt ops command that brings down the ollama logs watcher (#4033)",
+    "date": "2026-08-24T02:51:46Z",
+    "summary": "Closes #4033\n\n## Summary\nThere is no nyxgpt ops command for this. nyxgpt ops stop accepts cassandra-logs but not ollama-logs\n  (src/nyxgpt/cli.py:2133), and all doesn't cover it either. The helper exists and is wired to the right label \u2014\n  _stop_native_log_follower(\"ollama-logs\") at src/nyxgpt/ops.p",
+    "url": "https://github.com/dkblinux98/nyxGPT/pull/4036",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: nyxGPT"
+    ]
+  },
+  {
+    "title": "[PR] fix(wizard): 3 wizard bugs + 15 code-review findings from #535 Pass 1",
+    "date": "2026-08-24T02:47:32Z",
+    "summary": "Follow-up to #962/#963. Fixes three bugs found by running the actual wizard, plus every finding from a whole-branch code review of Pass 1.\n\n## Three wizard bugs\n\n**1. Base port didn't default to `auto`.** The step defaulted to a concrete number. It now defaults to `auto` \u2014 but **only** when `BASE_PO",
+    "url": "https://github.com/thekaveh/atlas/pull/964",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: atlas"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-08-24T02:44:14Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] streamaid: LAN/cloud screen streaming with adaptive quality monitor",
+    "date": "2026-08-24T02:43:34Z",
+    "summary": "# streamaid: LAN/cloud screen streaming with adaptive quality monitor\n\nScreen streaming service with a single-page browser UI: captures the host display at 1080p/30 fps and serves it to any browser (LAN or via any tunnel), with live-reconfigurable encoder/capture/LLM settings.\n\n## Highlights\n\n- **Ca",
+    "url": "https://github.com/saksham-45/streammm/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: streammm"
+    ]
+  },
+  {
+    "title": "[PR] Feat/idea plugin",
+    "date": "2026-08-24T02:43:32Z",
+    "summary": "## Description\r\n\r\nAdd IntelliJ IDEA (JetBrains) plugin extension for Open Code Review.\r\n\r\nThis is a new extension under `extensions/idea/` that brings the same\r\ncode review workflow available in the VSCode extension to IntelliJ-based\r\nIDEs (IDEA Community/Ultimate, WebStorm, PyCharm, etc.).\r\n\r\nThe i",
+    "url": "https://github.com/alibaba/open-code-review/pull/1031",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: open-code-review"
+    ]
+  },
+  {
+    "title": "[PR] fix(runtime): distinguish usage limits from auth errors",
+    "date": "2026-08-24T02:39:41Z",
+    "summary": "## Summary\n\nAfter #2675, Maka already has one safe path for provider diagnostics: ModelAdapter keeps an allowlisted, redacted, bounded summary; the terminal RuntimeEvent remains canonical; Runtime Host projects the message through failed Turn snapshots and recovery; and Desktop can include the exact",
+    "url": "https://github.com/apache/maka/pull/2521",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] feat(runtime-host): own bot conversation continuity",
+    "date": "2026-08-24T02:22:28Z",
+    "summary": "## Summary\n\n- move opaque external-conversation binding ownership into Runtime Host operational SQLite, including Session creation, crash recovery, retirement cleanup, and backup/restore\n- reduce Desktop to the channel boundary: normalize conversation, source-event, and reply-target identities, then",
+    "url": "https://github.com/apache/maka/pull/2550",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update dependency org.mock-server:mockserver-client-java-no-dependencies to v7.6.0",
+    "date": "2026-08-24T02:14:23Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.mock-server:mockserver-client-java-no-dependencies](https://www.mock-server.com) ([source](htt",
+    "url": "https://github.com/yschimke/okhttp-testbed/pull/89",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: okhttp-testbed"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group in /python/agents/travel-concierge with 17 updates",
+    "date": "2026-08-24T02:13:36Z",
+    "summary": "Bumps the all-dependencies group in /python/agents/travel-concierge with 17 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [pydantic](https://github.com/pydantic/pydantic) | `2.12.5` | `2.13.4` |\n| [python-dotenv](https://github.com/theskumar/python-dotenv) | `1.2.2` | `1.2.3` |\n| [google-g",
+    "url": "https://github.com/sanjaymk908/truclaw-adk-samples/pull/30",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: truclaw-adk-samples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 17 updates",
+    "date": "2026-08-24T02:13:17Z",
+    "summary": "Bumps the all-dependencies group with 16 updates in the /python/agents/travel-concierge directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [pydantic](https://github.com/pydantic/pydantic) | `2.12.5` | `2.13.4` |\n| [python-dotenv](https://github.com/theskumar/python-dotenv) | `1.2.2` | `1.2.3`",
+    "url": "https://github.com/nadeem7sg/adk-samples2/pull/27",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: adk-samples2"
     ]
   }
 ]
