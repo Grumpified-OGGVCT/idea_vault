@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-24T17:02:06Z",
+    "date": "2026-08-24T18:03:31Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -708,7 +708,7 @@
   },
   {
     "title": "[PR] feat: self-host experience \u2014 1-command setup, local auth, runtime providers, wizard UI",
-    "date": "2026-08-24T16:11:58Z",
+    "date": "2026-08-24T18:41:18Z",
     "summary": "## Summary\n\nMakes GAIA genuinely self-hostable: **`gaia up` \u2192 open browser \u2192 sign up \u2192 paste one API key \u2192 chat.** No WorkOS account, no Infisical, no Dodo, no hand-edited env files.\n\n### What changed\n\n**1. Local auth (`AUTH_MODE=local`)**\n- Email+password signup/login with HS256 session cookies; fi",
     "url": "https://github.com/theexperiencecompany/gaia/pull/1091",
     "source": "github_prs",
@@ -732,12 +732,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-24T16:40:53Z",
+    "date": "2026-08-24T17:38:39Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 53",
+      "comments: 54",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -936,7 +936,7 @@
   },
   {
     "title": "[PR] feat(batch): run the repair loop in batch, so one config works in either mode",
-    "date": "2026-08-24T17:29:22Z",
+    "date": "2026-08-24T18:20:37Z",
     "summary": "## Summary\n\n`expect: { repair: auto }` was refused at preflight under `run_mode: batch`. That broke the promise the framework is built on \u2014 the same config runs online and in batch \u2014 so the fix is to make batch regenerate, not to document the hole.\n\nBatch already knew how. Reprompt drives a graduate",
     "url": "https://github.com/Muizzkolapo/agent-actions/pull/922",
     "source": "github_prs",
@@ -1068,7 +1068,7 @@
   },
   {
     "title": "[PR] Reconcile PR38 with the salvage line: merged history, AGPL executed, sweettest unblock",
-    "date": "2026-08-24T17:14:18Z",
+    "date": "2026-08-24T18:14:53Z",
     "summary": "Rejoins six weeks of parallel work and lands the corrections found along the way.\n`origin/main` is fully contained in this branch (0 ahead, 124 behind as of\n2026-08-24), so there is no content to reconcile here \u2014 only review.\n\n**PR #38 has since merged to main on its own** (merge commit `873cc0c`,\n2",
     "url": "https://github.com/G-0-B/FLOSS/pull/41",
     "source": "github_prs",
@@ -1080,19 +1080,19 @@
   },
   {
     "title": "[PR] fix(migrations): FileEntityRecordLink unique key omits RecordID (#3943)",
-    "date": "2026-08-24T16:10:17Z",
+    "date": "2026-08-24T17:41:32Z",
     "summary": "Fixes #3943.\n\n## The defect\n\n`__mj.FileEntityRecordLink` is the generic soft-key many-to-many between any file and any record of any entity. Its unique key omitted `RecordID`:\n\n```sql\nCONSTRAINT [UQ_FileEntityRecordLink_EntityID_FileID] UNIQUE NONCLUSTERED ([EntityID], [FileID])\n```\n\nso a given `Fil",
     "url": "https://github.com/MemberJunction/MJ/pull/4006",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: MJ"
     ]
   },
   {
     "title": "[PR] fix(codegen): a new schema could never get an Application on PostgreSQL",
-    "date": "2026-08-24T09:29:41Z",
+    "date": "2026-08-24T18:22:52Z",
     "summary": "## The defect\n\n`createNewApplication` names the `Application` columns unquoted:\n\n```\nINSERT INTO \"__mj\".\"Application\" (ID, Name, Description, SchemaAutoAddNewEntities, Path, AutoUpdatePath, DefaultForNewUser)\n```\n\nNormally that is fine \u2014 every statement passes through the PostgreSQL identifier auto-",
     "url": "https://github.com/MemberJunction/MJ/pull/3932",
     "source": "github_prs",
@@ -1560,12 +1560,12 @@
   },
   {
     "title": "[PR] feat(inference): multi-provider LLM upstreams (Anthropic, Ollama) + pluggable guardrail pipeline (OpenAI Moderation)",
-    "date": "2026-08-24T14:53:55Z",
+    "date": "2026-08-24T18:38:32Z",
     "summary": "## Summary\r\n\r\nThis is a first slice of the multi-cloud provider + guardrails roadmap theme. It lets an `InferencePolicy` pick the inference provider and declare a guardrail pipeline, and teaches the router to actually honor both:\r\n\r\n```yaml\r\nspec:\r\n  provider: anthropic          # or: ollama, azure-",
     "url": "https://github.com/Azure/kars/pull/488",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: kars"
     ]
@@ -1992,7 +1992,7 @@
   },
   {
     "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
-    "date": "2026-08-24T17:33:54Z",
+    "date": "2026-08-24T18:09:56Z",
     "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
     "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
     "source": "github_prs",
@@ -2004,7 +2004,7 @@
   },
   {
     "title": "[PR] feat(global): add EscapeSQLString utility and document safe SQL escaping rule",
-    "date": "2026-08-24T17:31:27Z",
+    "date": "2026-08-24T17:35:35Z",
     "summary": "## Summary\n\n1. **New `EscapeSQLString` Utility**:\n   - Adds `EscapeSQLString` (and aliases `EscapeSqlString`, `EscapeSQL`) to `@memberjunction/global`.\n   - Standardizes quote doubling (`''`) per ANSI SQL standard, strips null bytes (`\\0`), and safely handles `null`/`undefined` inputs.\n2. **Unit Tes",
     "url": "https://github.com/MemberJunction/MJ/pull/4033",
     "source": "github_prs",
@@ -2016,7 +2016,7 @@
   },
   {
     "title": "[PR] Thread the skill principal through Scoped Search, and judge it",
-    "date": "2026-08-24T17:30:50Z",
+    "date": "2026-08-24T17:56:02Z",
     "summary": "`fix/scoped-search-threads-skill-principal` \u2192 `next` \u00b7 1 commit \u00b7 5 files\n\n## Summary\n\n`ScopeDimensionResolver` binds `Principals.SkillID` into a dimension's expansion query, and\n`principalsFrom()` sources it from `SearchParams.AISkillID`. `SearchParams` declares that field\n(`search.types.ts:120`) a",
     "url": "https://github.com/MemberJunction/MJ/pull/4032",
     "source": "github_prs",
@@ -2076,7 +2076,7 @@
   },
   {
     "title": "[PR] Omi fully on-premise via Docker Compose or Helm/k8s: every managed service behind a swappable port (db Firestore|Mongo \u00b7 storage GCS|S3 \u00b7 vector Pinecone|Qdrant \u00b7 auth Firebase|Keycloak \u00b7 push FCM|UnifiedPush \u00b7 LLM any OpenAI-compatible endpoint)",
-    "date": "2026-08-24T17:00:14Z",
+    "date": "2026-08-24T18:40:21Z",
     "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
     "url": "https://github.com/BasedHardware/omi/pull/10887",
     "source": "github_prs",
@@ -2120,6 +2120,114 @@
       "comments: 0",
       "pull request",
       "repo: obsidian-firstrecall-plugin"
+    ]
+  },
+  {
+    "title": "[Issue]: ROCm unable to generate any image with any model: CUDA error: invalid argument",
+    "date": "2026-08-24T18:09:01Z",
+    "summary": "### Issue Description\n\nAttempting to generate an image with any model fails with:\n\nPrompt parser encode: CUDA error: invalid argument\n\nI tried generating with an Illustrious-based model and with Anima models (aesthetic, turbo and base).\n\n### Version Platform Description\n\n```log\n05:07:24-005129 INFO ",
+    "url": "https://github.com/vladmandic/sdnext/issues/5055",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 20",
+      "state: open",
+      "repo: sdnext"
+    ]
+  },
+  {
+    "title": "[PR] [OPIK-7940] [QA] Proposed e2e specs for custom-provider dynamic token auth (from #7910 exploration)",
+    "date": "2026-08-24T18:41:38Z",
+    "summary": "## What this is\n\nTwo proposed e2e specs for the dynamic token auth (OAuth2 client credentials) work in **#7910** (OPIK-7940), written by the release QA side flow from an exploratory pass over that PR's own build.\n\n**This targets `miguelg/OPIK-7940-dynamic-token-auth`, not `main`.** The behaviour ass",
+    "url": "https://github.com/comet-ml/opik/pull/7979",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: opik"
+    ]
+  },
+  {
+    "title": "[PR] JARVIS Mission Control dashboard, crew, voice/video extension & bridge",
+    "date": "2026-08-24T18:33:36Z",
+    "summary": "## Overview\nA JARVIS-themed **Hermes Mission Control** for JABB Networks \u2014 a fully functional, self-contained dashboard with a configurable AI crew, remote Power Platform job scouting, RTR\u2192calendar scheduling, a crew document library, standing orders, and a companion Chrome extension for hands-free ",
+    "url": "https://github.com/powerjt1/jabbnetworks/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: jabbnetworks"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-08-24T18:10:58Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/cicero-im/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 20",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] Send AI requests only to the provider selected in Settings",
+    "date": "2026-08-24T17:59:51Z",
+    "summary": "## What was broken\n\n### Silent fallback sends diffs to a provider the user did not select\n\n`AiService::find_available_provider` (`src-tauri/src/services/ai/mod.rs`) tried `config.active_provider` and, when that provider's `is_available()` was false, fell through to local inference and then to a scan",
+    "url": "https://github.com/hegsie/Leviathan/pull/441",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Leviathan"
+    ]
+  },
+  {
+    "title": "[PR] Local AI lifecycle: ollama start/enable, config.yaml merge-write, error unwrapping, heartbeat auth (TASK-446)",
+    "date": "2026-08-24T17:56:45Z",
+    "summary": "## Task\n\n**TASK-446 round 2** \u2014 the four Local-AI lifecycle defects still live on the box after PR #436, from the post-rebuild revalidation (`revalidate-round1.md` \u00a74 from line 518, \"New findings\" from line 619, live observation \u00a717).\n\n## Ruling (Krasi)\n\n> (1) toggling Local AI OFF then ON leaves `o",
+    "url": "https://github.com/ID-Robots/clawbox/pull/472",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: clawbox"
+    ]
+  },
+  {
+    "title": "[PR] Report a downloaded local model as available before it is loaded",
+    "date": "2026-08-24T17:49:28Z",
+    "summary": "## What was broken\n\n### A downloaded local model counted as \"no AI configured\" after every restart\n\nFor a user whose only AI provider is a downloaded local GGUF model, `is_ai_available` returned `false` on every launch \u2014 even though generating a commit message would have worked.\n\nThe chain:\n\n- `is_a",
+    "url": "https://github.com/hegsie/Leviathan/pull/440",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Leviathan"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add GitHub Copilot provider",
+    "date": "2026-08-24T17:47:43Z",
+    "summary": "## Description\n\nAdds GitHub Copilot as a first-class LLM provider in Bifrost. The Copilot provider uses a two-layer OAuth flow: a device-code grant to obtain a GitHub OAuth token, which is then exchanged for a short-lived Copilot API token with automatic refresh.\n\nSupports Chat Completions and the R",
+    "url": "https://github.com/maximhq/bifrost/pull/2054",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] feat: MVP use liteLLM for providers",
+    "date": "2026-08-24T17:39:49Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added a unified model catalog with provider, capability, pricing, and context-limit details.\n  * Added support for custom model providers and configurable provider credentia",
+    "url": "https://github.com/langflow-ai/openrag/pull/2271",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openrag"
     ]
   }
 ]
