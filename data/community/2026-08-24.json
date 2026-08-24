@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-24T18:03:31Z",
+    "date": "2026-08-24T19:21:31Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -636,12 +636,12 @@
   },
   {
     "title": "[PR] test(core): cover first-run-options",
-    "date": "2026-08-24T04:56:42Z",
+    "date": "2026-08-24T19:14:38Z",
     "summary": "\n## Summary\n\nAdds a colocated unit suite for `packages/core/src/contracts/first-run-options.ts`, which had no same-named test file anywhere in the repository. The diff is a single new test file (+778/-0); no production code changes.\n\n## What the suite covers\n\nAll behavior is exercised through the re",
     "url": "https://github.com/elizaOS/eliza/pull/26338",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: eliza"
     ]
@@ -708,7 +708,7 @@
   },
   {
     "title": "[PR] feat: self-host experience \u2014 1-command setup, local auth, runtime providers, wizard UI",
-    "date": "2026-08-24T18:41:18Z",
+    "date": "2026-08-24T18:54:46Z",
     "summary": "## Summary\n\nMakes GAIA genuinely self-hostable: **`gaia up` \u2192 open browser \u2192 sign up \u2192 paste one API key \u2192 chat.** No WorkOS account, no Infisical, no Dodo, no hand-edited env files.\n\n### What changed\n\n**1. Local auth (`AUTH_MODE=local`)**\n- Email+password signup/login with HS256 session cookies; fi",
     "url": "https://github.com/theexperiencecompany/gaia/pull/1091",
     "source": "github_prs",
@@ -1092,12 +1092,12 @@
   },
   {
     "title": "[PR] fix(codegen): a new schema could never get an Application on PostgreSQL",
-    "date": "2026-08-24T18:22:52Z",
+    "date": "2026-08-24T19:31:09Z",
     "summary": "## The defect\n\n`createNewApplication` names the `Application` columns unquoted:\n\n```\nINSERT INTO \"__mj\".\"Application\" (ID, Name, Description, SchemaAutoAddNewEntities, Path, AutoUpdatePath, DefaultForNewUser)\n```\n\nNormally that is fine \u2014 every statement passes through the PostgreSQL identifier auto-",
     "url": "https://github.com/MemberJunction/MJ/pull/3932",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "pull request",
       "repo: MJ"
     ]
@@ -1476,7 +1476,7 @@
   },
   {
     "title": "[PR] Add zNet upgrade candidate evaluation",
-    "date": "2026-08-24T11:25:09Z",
+    "date": "2026-08-24T18:56:24Z",
     "summary": "Adds `docs/znet-upgrade-candidates.md`, an evaluation of the submitted tools and articles as zNet upgrades.\n\n**Nothing was installed.** This is a shortlist for review only.\n\n## Scope\n\nEvery direct link, plus all 21 bookmarks in the \"AI Capability Inspirationz\" Raindrop collection. 6 overlapped, so 2",
     "url": "https://github.com/zain1zain/Z/pull/3",
     "source": "github_prs",
@@ -1620,7 +1620,7 @@
   },
   {
     "title": "[PR] Update Mend: high confidence minor and patch dependency updates",
-    "date": "2026-08-24T11:00:43Z",
+    "date": "2026-08-24T19:06:49Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/jgeraigery/venice/pull/81",
     "source": "github_prs",
@@ -1764,12 +1764,12 @@
   },
   {
     "title": "[PR] [OPIK-7940] [BE] [FE] feat: dynamic token auth (OAuth2 client credentials) for custom AI providers",
-    "date": "2026-08-24T17:12:15Z",
+    "date": "2026-08-24T19:30:16Z",
     "summary": "## Details\n\nEnterprise AI gateways commonly forbid static API keys and instead require short-lived bearer tokens minted via the OAuth2 client credentials grant. This PR adds a dynamic token auth mode to Custom AI providers (and Bedrock/Ollama-style custom endpoints): Opik fetches the token from the ",
     "url": "https://github.com/comet-ml/opik/pull/7910",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: opik"
     ]
@@ -1956,7 +1956,7 @@
   },
   {
     "title": "[PR] fix(codegen): teach the class-registration manifest scanner to see @RegisterClassEx",
-    "date": "2026-08-24T16:12:36Z",
+    "date": "2026-08-24T19:16:50Z",
     "summary": "# Forward:\nI do not know this domain. The code looks ok to me, but I don\u2019t knwo the pitfalls of this area.\n\nFixes #3944.\n\n`mj codegen manifest` matched the decorator identifier literally, so it only ever saw `RegisterClass` \u2014 never `RegisterClassEx`, the options-bag form `MJGlobal/src/RegisterClass.",
     "url": "https://github.com/MemberJunction/MJ/pull/4005",
     "source": "github_prs",
@@ -2004,7 +2004,7 @@
   },
   {
     "title": "[PR] feat(global): add EscapeSQLString utility and document safe SQL escaping rule",
-    "date": "2026-08-24T17:35:35Z",
+    "date": "2026-08-24T18:52:54Z",
     "summary": "## Summary\n\n1. **New `EscapeSQLString` Utility**:\n   - Adds `EscapeSQLString` (and aliases `EscapeSqlString`, `EscapeSQL`) to `@memberjunction/global`.\n   - Standardizes quote doubling (`''`) per ANSI SQL standard, strips null bytes (`\\0`), and safely handles `null`/`undefined` inputs.\n2. **Unit Tes",
     "url": "https://github.com/MemberJunction/MJ/pull/4033",
     "source": "github_prs",
@@ -2016,7 +2016,7 @@
   },
   {
     "title": "[PR] Thread the skill principal through Scoped Search, and judge it",
-    "date": "2026-08-24T17:56:02Z",
+    "date": "2026-08-24T19:19:03Z",
     "summary": "`fix/scoped-search-threads-skill-principal` \u2192 `next` \u00b7 1 commit \u00b7 5 files\n\n## Summary\n\n`ScopeDimensionResolver` binds `Principals.SkillID` into a dimension's expansion query, and\n`principalsFrom()` sources it from `SearchParams.AISkillID`. `SearchParams` declares that field\n(`search.types.ts:120`) a",
     "url": "https://github.com/MemberJunction/MJ/pull/4032",
     "source": "github_prs",
@@ -2124,19 +2124,19 @@
   },
   {
     "title": "[Issue]: ROCm unable to generate any image with any model: CUDA error: invalid argument",
-    "date": "2026-08-24T18:09:01Z",
+    "date": "2026-08-24T19:22:07Z",
     "summary": "### Issue Description\n\nAttempting to generate an image with any model fails with:\n\nPrompt parser encode: CUDA error: invalid argument\n\nI tried generating with an Illustrious-based model and with Anima models (aesthetic, turbo and base).\n\n### Version Platform Description\n\n```log\n05:07:24-005129 INFO ",
     "url": "https://github.com/vladmandic/sdnext/issues/5055",
     "source": "github_issues",
     "highlights": [
-      "comments: 20",
+      "comments: 21",
       "state: open",
       "repo: sdnext"
     ]
   },
   {
     "title": "[PR] [OPIK-7940] [QA] Proposed e2e specs for custom-provider dynamic token auth (from #7910 exploration)",
-    "date": "2026-08-24T18:41:38Z",
+    "date": "2026-08-24T18:58:28Z",
     "summary": "## What this is\n\nTwo proposed e2e specs for the dynamic token auth (OAuth2 client credentials) work in **#7910** (OPIK-7940), written by the release QA side flow from an exploratory pass over that PR's own build.\n\n**This targets `miguelg/OPIK-7940-dynamic-token-auth`, not `main`.** The behaviour ass",
     "url": "https://github.com/comet-ml/opik/pull/7979",
     "source": "github_prs",
@@ -2148,7 +2148,7 @@
   },
   {
     "title": "[PR] JARVIS Mission Control dashboard, crew, voice/video extension & bridge",
-    "date": "2026-08-24T18:33:36Z",
+    "date": "2026-08-24T18:50:23Z",
     "summary": "## Overview\nA JARVIS-themed **Hermes Mission Control** for JABB Networks \u2014 a fully functional, self-contained dashboard with a configurable AI crew, remote Power Platform job scouting, RTR\u2192calendar scheduling, a crew document library, standing orders, and a companion Chrome extension for hands-free ",
     "url": "https://github.com/powerjt1/jabbnetworks/pull/1",
     "source": "github_prs",
@@ -2228,6 +2228,102 @@
       "comments: 2",
       "pull request",
       "repo: openrag"
+    ]
+  },
+  {
+    "title": "[PR] Add Luna, a personal knowledge-graph AI assistant (web demo + native Android app)",
+    "date": "2026-08-24T19:20:23Z",
+    "summary": "## What this is now\n\nThis started as a simple chat+voice assistant, then got redirected (based on reference\nscreenshots) toward something bigger: **Luna, a live personal knowledge-graph assistant** \u2014\ncapture a note/contact/document, Luna extracts the people, places, and ideas in it onto an\nanimated,",
+    "url": "https://github.com/deezi74/Portfolio/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Portfolio"
+    ]
+  },
+  {
+    "title": "[PR] feat: photon imessage integration",
+    "date": "2026-08-24T19:20:19Z",
+    "summary": "### Summary\r\n\r\nAdds an **iMessage (Photon)** integration: 20 operations and 4 triggers for sending and receiving iMessage through [Photon](https://photon.codes), which hosts the iMessage line so no Mac has to stay online.\r\n\r\nSim can already reach Telegram, WhatsApp, Twilio, and Linq (iMessage/SMS/RC",
+    "url": "https://github.com/photon-hq/sim/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: sim"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-24T19:12:45Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/buddy/pull/1352",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: buddy"
+    ]
+  },
+  {
+    "title": "[PR] Load the local GGUF only when it will actually serve the request",
+    "date": "2026-08-24T19:09:52Z",
+    "summary": "## What was broken\n\n### Unconditional lazy model load fires even when another provider will serve, and silently reverts an explicit Unload\n\n`AiService::generate_commit_message` and `AiService::generate_text` (`src-tauri/src/services/ai/mod.rs`) both called `ensure_local_model_loaded()` **before** se",
+    "url": "https://github.com/hegsie/Leviathan/pull/445",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Leviathan"
+    ]
+  },
+  {
+    "title": "[PR] Add OCI Generative AI as an embedding provider (Cohere Embed Multilingual via OCI GenAI)",
+    "date": "2026-08-24T19:09:10Z",
+    "summary": "Fixes #2062\n\n## Summary\n\nAdds Oracle Cloud Infrastructure (OCI) Generative AI as a first-class, embedding-only provider, targeting\nCohere Embed Multilingual (`oci/cohere.embed-multilingual-v3.0`) served through OCI's GenAI service.\n`litellm==1.84.0` (already an OpenRAG dependency) has dedicated OCI ",
+    "url": "https://github.com/langflow-ai/openrag/pull/2065",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openrag"
+    ]
+  },
+  {
+    "title": "[PR] Bump the python-production group across 1 directory with 4 updates",
+    "date": "2026-08-24T19:07:18Z",
+    "summary": "Bumps the python-production group with 4 updates in the / directory: [pydantic-ai-skills](https://github.com/dougtrajano/pydantic-ai-skills), [presidio-analyzer](https://github.com/data-privacy-stack/presidio), [presidio-anonymizer](https://github.com/data-privacy-stack/presidio) and [spacy](https:/",
+    "url": "https://github.com/vaquarkhan/compliance-agent-skills/pull/20",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: compliance-agent-skills"
+    ]
+  },
+  {
+    "title": "[PR] [Mac app] Self-contained local mode \u2014 the whole stack runs inside Mike.app (stacked on #302)",
+    "date": "2026-08-24T18:54:23Z",
+    "summary": "# Self-contained Mike.app \u2014 the whole stack runs inside the desktop app\n\nStacked on #302 (desktop shell; hosted default). This PR adds the third and\nfinal mode from `desktop/docs/self-contained-plan.md`: **Run locally on this\nMac**. The app supervises the entire Mike stack \u2014 Postgres 17, GoTrue,\nPos",
+    "url": "https://github.com/open-legal-products/mike/pull/351",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: mike"
+    ]
+  },
+  {
+    "title": "[PR] [Quality] Repo-wide audit fixes: error containment, drifted forks, silent failures (stacked on #294\u2192#295)",
+    "date": "2026-08-24T18:54:12Z",
+    "summary": "# Code quality follow-up: repo-wide audit fixes (stacked on #294 \u2192 #295)\n\nA seven-area audit of the codebase (backend modules, backend lib/workers, remaining route files, frontend data layer, frontend components, Word add-in + shared UI, cross-cutting infra) surfaced ~100 findings. This PR lands the",
+    "url": "https://github.com/open-legal-products/mike/pull/356",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mike"
     ]
   }
 ]
