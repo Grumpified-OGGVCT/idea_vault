@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-24T09:01:31Z",
+    "date": "2026-08-24T10:36:22Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -840,7 +840,7 @@
   },
   {
     "title": "[PR] Feat/idea plugin",
-    "date": "2026-08-24T09:47:38Z",
+    "date": "2026-08-24T09:53:51Z",
     "summary": "## Description\r\n\r\nAdd IntelliJ IDEA (JetBrains) plugin extension for Open Code Review.\r\n\r\nThis is a new extension under `extensions/idea/` that brings the same\r\ncode review workflow available in the VSCode extension to IntelliJ-based\r\nIDEs (IDEA Community/Ultimate, WebStorm, PyCharm, etc.).\r\n\r\nThe i",
     "url": "https://github.com/alibaba/open-code-review/pull/1031",
     "source": "github_prs",
@@ -1164,7 +1164,7 @@
   },
   {
     "title": "[PR] docs: organize the rulebook and docs/ \u2014 AGENTS.md binds, docs/ explains",
-    "date": "2026-08-24T09:49:09Z",
+    "date": "2026-08-24T10:13:36Z",
     "summary": "## Purpose\n\nOrganize the two things every contributor and every agent reads first \u2014 the\n**agent rulebook** and **`docs/`** \u2014 so each has one job, one home, and one\ndirection between them.\n\n- **`AGENTS.md` binds.** It is the only rulebook, and the only copy of it. Every\n  harness reaches it: `AGENTS.",
     "url": "https://github.com/margince/margince/pull/2482",
     "source": "github_prs",
@@ -1176,7 +1176,7 @@
   },
   {
     "title": "[PR] fix(calendar): expose proposal context to screen readers",
-    "date": "2026-08-24T08:39:28Z",
+    "date": "2026-08-24T10:18:44Z",
     "summary": "## Problem\n\nCalendar coordination proposal buttons visually showed a rank, date/time, availability, and action, but assistive technology could announce only the generic action text. Hard-coded dates also allowed the visible weekday, accessible name, and parent calendar month to drift apart.\n\n## Fix\n",
     "url": "https://github.com/ContextualWisdomLab/naruon/pull/1320",
     "source": "github_prs",
@@ -1332,12 +1332,12 @@
   },
   {
     "title": "[PR] upstream: rebuild Responses streaming terminal output + strip empty CC tool_call ids",
-    "date": "2026-08-24T09:43:50Z",
+    "date": "2026-08-24T10:15:56Z",
     "summary": "## \u5206\u8bca\u8868\n\n```json\n{\"sha\":\"9f74eb57f45c\",\"upstream_pr\":5919,\"title\":\"\u8bb0\u5f55\u56fd\u4ea7\u5382\u5546\u539f\u751f Anthropic \u76f4\u901a\u8def\u5f84\u7684 reasoning_effort\",\"verdict\":\"defer\",\"reason\":\"\u4fee\u590d\u7684\u6574\u6761\u4ee3\u7801\u8def\u5f84(openai_gateway_messages_anthropic_native.go)\u5c5e\u4e8e\u4e0a\u6e38\u66f4\u65e9\u7684\u56fd\u4ea7\u4f9b\u5e94\u5546\u4e00\u7b49\u652f\u6301\u5927feature\uff0cfork\u4ece\u672a\u91c7\u7eb3\uff0c\u8be5\u6587\u4ef6\u5728fork\u4e2d\u5b8c\u5168\u4e0d\u5b58\u5728\",\"fork_files\":[],\"test_plan\":\"n/a\"}\n{\"sha\":\"73f6a590bfe7\",\"u",
     "url": "https://github.com/APIs-Gateway/sub2api/pull/807",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: sub2api"
     ]
@@ -1416,7 +1416,7 @@
   },
   {
     "title": "[PR] Use Probatio as the data validation engine",
-    "date": "2026-08-24T08:34:00Z",
+    "date": "2026-08-24T10:26:14Z",
     "summary": "## Breaking change\r\n\r\nNone. Which is the nice thing about all of this \ud83d\ude04 \r\n\r\n## Proposed change\r\n\r\nThis pull request introduces [Probatio](https://probatio.frenck.dev) as Home Assistant's data validation engine, as a drop-in replacement for voluptuous.\r\n\r\nProbatio is a modern, actively maintained, cl",
     "url": "https://github.com/home-assistant/core/pull/175128",
     "source": "github_prs",
@@ -1448,6 +1448,138 @@
       "comments: 5",
       "pull request",
       "repo: n8n-docs"
+    ]
+  },
+  {
+    "title": "[PR] RavenDB-26606",
+    "date": "2026-08-24T10:35:13Z",
+    "summary": "### Issue link\r\n\r\nhttps://issues.hibernatingrhinos.com/issue/RavenDB-26606\r\n\r\n### Type of change\r\n\r\n- [ ] Bug fix\r\n- [ ] Regression bug fix\r\n- [ ] Optimization\r\n- [ ] New feature\r\n\r\n### How risky is the change?\r\n\r\n- [ ] Low \r\n- [ ] Moderate \r\n- [ ] High\r\n- [ ] Not relevant\r\n\r\n### Backward compatibil",
+    "url": "https://github.com/ravendb/ravendb/pull/23170",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ravendb"
+    ]
+  },
+  {
+    "title": "[PR] Add Apfel and Codex lifecycle controls",
+    "date": "2026-08-24T10:33:15Z",
+    "summary": "## Summary\n\n- Add real Start Apfel / Stop Apfel controls for Docker deployments through an authenticated macOS loopback controller.\n- Add Start Codex / Stop Codex as on-demand provider resume/pause, with active and queued work aborted on stop.\n- Show common prerequisite and installation guidance whi",
+    "url": "https://github.com/maneesh888/open-keyboard-llm-gateway/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: open-keyboard-llm-gateway"
+    ]
+  },
+  {
+    "title": "[PR] Add zNet upgrade candidate evaluation",
+    "date": "2026-08-24T10:31:48Z",
+    "summary": "Adds `docs/znet-upgrade-candidates.md` \u2014 an evaluation of the submitted tools and articles as zNet upgrades.\n\n**Nothing was installed.** This is a shortlist for review only.\n\n## Scope\n\nEvery direct link, plus all 21 bookmarks in the \"AI Capability Inspirationz\" Raindrop collection (6 overlapped with",
+    "url": "https://github.com/zain1zain/Z/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Z"
+    ]
+  },
+  {
+    "title": "[PR] Expand query profiles and providers",
+    "date": "2026-08-24T10:28:11Z",
+    "summary": "## What\n- Expand query profiles with structured OpenSearch authoring, typed filters, JSONPath fields, paging, streaming, processors, diagnostics, exports, and reconciliation/replay workflows.\n- Add cloud/Kubernetes log providers, workload browsing, connection health/observability, and safer secret/i",
+    "url": "https://github.com/flanksource/commons-db/pull/56",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: commons-db"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-providers): add xAI, DeepSeek, Z.ai, Qwen, MiniMax and Moonshot",
+    "date": "2026-08-24T10:24:16Z",
+    "summary": "> \ud83d\udeab **Do not merge until the multi-key stack lands** \u2014 #14738 \u2192 #14825 \u2192 #14942.\n> This branch is based on `main` and is additive to that stack, but whichever merges second absorbs the conflicts, and #14738 is already conflicting. Reviews welcome now.\n\n## Description\n\nAdds six AI providers: **xAI, D",
+    "url": "https://github.com/activepieces/activepieces/pull/14987",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: activepieces"
+    ]
+  },
+  {
+    "title": "[PR] Evolve KnowledgeLens into a source-backed evidence graph product",
+    "date": "2026-08-24T10:22:56Z",
+    "summary": "## Summary\n\nThis is a coordinated product pass across the KnowledgeLens application, repository engineering, and public landing experience.\n\n### Evidence graph core\n- move graph claims from a collapsed `DiGraph` edge model to a provenance-preserving `MultiDiGraph`;\n- keep source, page/chunk, evidenc",
+    "url": "https://github.com/Varun-SV/KnowledgeLens-AI/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: KnowledgeLens-AI"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-24T10:08:28Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-24T10:08:22Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-08-24T10:08:20Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] feat(inference): multi-provider LLM upstreams (Anthropic, Ollama) + pluggable guardrail pipeline (OpenAI Moderation)",
+    "date": "2026-08-24T10:07:10Z",
+    "summary": "## Summary\r\n\r\nThis is a first slice of the multi-cloud provider + guardrails roadmap theme. It lets an `InferencePolicy` pick the inference provider and declare a guardrail pipeline, and teaches the router to actually honor both:\r\n\r\n```yaml\r\nspec:\r\n  provider: anthropic          # or: ollama, azure-",
+    "url": "https://github.com/Azure/kars/pull/488",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: kars"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): route OpenAI-compatible agent calls through the Responses API",
+    "date": "2026-08-24T09:57:20Z",
+    "summary": "## Summary\n\nAll agentic pipelines (chat loop, labeled steps, research, question, explore) stream through a raw `AsyncOpenAI` client built by `core/agentic/client.py`, which always targets `{base}/chat/completions`. The existing Responses API support in `services/llm/provider_core` never applies on t",
+    "url": "https://github.com/HKUDS/DeepTutor/pull/978",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: DeepTutor"
     ]
   }
 ]
