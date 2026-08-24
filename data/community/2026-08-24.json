@@ -192,12 +192,12 @@
   },
   {
     "title": "code-reviewer \uac00 \uc120\uc5b8\ub41c \ucee8\ud14d\uc2a4\ud2b8\uc758 132% \ub85c \ud56d\uc18d \u2014 \ud134 \ub808\ucf54\ub4dc context_window \uac00 \uc5b4\ub290 \uc120\uc5b8\uacfc\ub3c4 \uc548 \ub9de\ub294\ub2e4",
-    "date": "2026-08-23T20:28:26Z",
+    "date": "2026-08-24T15:31:02Z",
     "summary": "## \uce21\uc815 (2026-08-06 05:40, \ucd5c\uadfc 2\uc2dc\uac04)\n\n```\nkeeper          runtime_profile                        input \uc911\uc559   \ub808\ucf54\ub4dc context_window\ncode-reviewer   glm-coding.glm-5-turbo                   267,829            200,000\nrondo           glm-coding.glm-5-turbo                   116,544            200,000\ntaskmaste",
     "url": "https://github.com/jeong-sik/masc/issues/27118",
     "source": "github_issues",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "state: open",
       "repo: masc"
     ]
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-24T14:23:15Z",
+    "date": "2026-08-24T15:06:40Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -708,7 +708,7 @@
   },
   {
     "title": "[PR] feat: self-host experience \u2014 1-command setup, local auth, runtime providers, wizard UI",
-    "date": "2026-08-24T14:03:40Z",
+    "date": "2026-08-24T15:26:52Z",
     "summary": "## Summary\n\nMakes GAIA genuinely self-hostable: **`gaia up` \u2192 open browser \u2192 sign up \u2192 paste one API key \u2192 chat.** No WorkOS account, no Infisical, no Dodo, no hand-edited env files.\n\n### What changed\n\n**1. Local auth (`AUTH_MODE=local`)**\n- Email+password signup/login with HS256 session cookies; fi",
     "url": "https://github.com/theexperiencecompany/gaia/pull/1091",
     "source": "github_prs",
@@ -732,7 +732,7 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-24T02:56:50Z",
+    "date": "2026-08-24T15:37:28Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
@@ -768,7 +768,7 @@
   },
   {
     "title": "[PR] feat(opencode): \u652f\u6301 OpenCode Go \u5b98\u65b9\u7528\u91cf\u7a97\u53e3\u67e5\u8be2\u4e0e\u81ea\u52a8\u5237\u65b0",
-    "date": "2026-08-24T08:53:54Z",
+    "date": "2026-08-24T15:16:32Z",
     "summary": "## \u80cc\u666f\n\nOpenCode Go \u662f OpenCode \u5b98\u65b9\u7684\u8ba2\u9605\u805a\u5408\u5e73\u53f0\uff08$10/\u6708\uff0c5h/$12\u3001\u5468/$30\u3001\u6708/$60 \u4e09\u4e2a\u7528\u91cf\u7a97\u53e3\uff09\uff0c\u63d0\u4f9b OpenAI \u517c\u5bb9\u7aef\u70b9 `https://opencode.ai/zen/go/v1`\u3002\u4e0a\u6e38\u4e8e 2026-08-11 \u4e0a\u7ebf\u5b98\u65b9\u7528\u91cf\u7aef\u70b9 `GET /zen/go/v1/usage`\uff08Bearer \u76f4\u63a5\u590d\u7528\u6d88\u8d39\u7aef key\uff0c\u5c1a\u672a\u5199\u5165\u5b98\u65b9\u6587\u6863\uff09\uff0c\u8fd4\u56de rolling/weekly/monthly \u4e09\u7a97\u53e3\u7684 `percent` \u4e0e `resetsAt`\u3002\n\n\u672c PR \u4e3a openai apikey \u8d26\u53f7\uff08base_url = `https://open",
     "url": "https://github.com/Wei-Shaw/sub2api/pull/5616",
     "source": "github_prs",
@@ -1176,7 +1176,7 @@
   },
   {
     "title": "[PR] fix(calendar): expose proposal context to screen readers",
-    "date": "2026-08-24T14:30:46Z",
+    "date": "2026-08-24T15:28:23Z",
     "summary": "## Problem\n\nCalendar coordination proposal buttons visually showed a rank, date/time, availability, and action, but assistive technology could announce only the generic action text. Hard-coded dates also allowed the visible weekday, accessible name, and parent calendar month to drift apart.\n\n## Fix\n",
     "url": "https://github.com/ContextualWisdomLab/naruon/pull/1320",
     "source": "github_prs",
@@ -1512,7 +1512,7 @@
   },
   {
     "title": "[PR] Evolve KnowledgeLens into a source-backed evidence graph product",
-    "date": "2026-08-24T14:05:44Z",
+    "date": "2026-08-24T15:37:17Z",
     "summary": "## Summary\n\nThis is a coordinated product pass across the KnowledgeLens application, repository engineering, and public landing experience.\n\n### Evidence graph core\n- move graph claims from a collapsed `DiGraph` edge model to a provenance-preserving `MultiDiGraph`;\n- keep source, page/chunk, evidenc",
     "url": "https://github.com/Varun-SV/KnowledgeLens-AI/pull/1",
     "source": "github_prs",
@@ -1560,12 +1560,12 @@
   },
   {
     "title": "[PR] feat(inference): multi-provider LLM upstreams (Anthropic, Ollama) + pluggable guardrail pipeline (OpenAI Moderation)",
-    "date": "2026-08-24T10:07:10Z",
+    "date": "2026-08-24T14:53:55Z",
     "summary": "## Summary\r\n\r\nThis is a first slice of the multi-cloud provider + guardrails roadmap theme. It lets an `InferencePolicy` pick the inference provider and declare a guardrail pipeline, and teaches the router to actually honor both:\r\n\r\n```yaml\r\nspec:\r\n  provider: anthropic          # or: ollama, azure-",
     "url": "https://github.com/Azure/kars/pull/488",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: kars"
     ]
@@ -1832,6 +1832,114 @@
       "comments: 7",
       "pull request",
       "repo: posthog"
+    ]
+  },
+  {
+    "title": "turn record \uc758 runtime_profile \uacfc context_window \uac00 55\uac74 \uc5b4\uae0b\ub09c\ub2e4 \u2014 deepseek \ud504\ub85c\ud544\uc5d0 GLM \ucc3d",
+    "date": "2026-08-24T15:35:10Z",
+    "summary": "## \uc99d\uc0c1\n\n`turn record` \uc758 `runtime_profile` \uacfc `context_window` \uac00 \uc9dd\uc774 \uc548 \ub9de\ub294 \ud589\uc774 \uc788\uc2b5\ub2c8\ub2e4. deepseek \ud504\ub85c\ud544\uc778\ub370 GLM \uc758 \ucc3d(200,000)\uc774 \uae30\ub85d\ub429\ub2c8\ub2e4.\n\nsangsu \uc758 08-20~24 \uae30\ub85d\uc5d0\uc11c:\n\n```\n1,048,576  runtime_profile=ollama_cloud.ollama-cloud-deepseek\u2026   402\uac74\n  200,000  runtime_profile=glm-coding.glm-5-turbo                342\uac74\n  272,000  ",
+    "url": "https://github.com/jeong-sik/masc/issues/30190",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 1",
+      "state: open",
+      "repo: masc"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): ProviderBase re-wires when the event bus is replaced",
+    "date": "2026-08-24T15:40:28Z",
+    "summary": "## Summary\n\nFollow-up hardening to #3831, which fixed a Critical per-request `ProviderBase` event-bus subscription leak by moving the wiring guard from instance scope to a process-wide static boolean. That was the right fix for the leak, but the boolean records *that* we subscribed, not *what to* \u2014 ",
+    "url": "https://github.com/MemberJunction/MJ/pull/4028",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] [AI-INFRA-001]: feat/SKY-57 AI-agent service foundation (scaffold, Ollama routing, shared AI tables, permission keys, audit)",
+    "date": "2026-08-24T15:39:35Z",
+    "summary": "## Summary\n\nImplements [AI-INFRA-001] / SKY-57: the provider-agnostic **ai-agent microservice** (`services/ai-agent`, port 8002) \u2014 FastAPI scaffold, LLM routing with typed local-first fallback, its own Alembic chain owning the shared AI tables (`ai_query_log`, `ai_suggestions`, `ai_anomalies`, `ai_a",
+    "url": "https://github.com/nkswalih/skyrict/pull/76",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: skyrict"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): credential-mutation clearing (scheduler refresh + setCredentials caches)",
+    "date": "2026-08-24T15:38:47Z",
+    "summary": "Treats credential changes as cache-clearing events so dormancy has an exit and replaced credentials validate. A successful scheduled OAuth refresh now clears a recorded definitive failure and refreshes the provider's cache slice before publishing `providers.changed` (new `recoverDormantProvider` in ",
+    "url": "https://github.com/lsm/HyperNeo/pull/2884",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: HyperNeo"
+    ]
+  },
+  {
+    "title": "[PR] feat(worker): self-update install, restart, health-check, and rollback (#890 C3)",
+    "date": "2026-08-24T15:36:18Z",
+    "summary": "## Summary\n\nImplements the worker-side self-install, restart, re-register, and rollback flow for taOS Issue #890.\n\nBuilds on C2 (PR #1903, feat/worker-self-drain) drain protocol.\n\n## Changes\n\n### New module: `tinyagentos/worker/self_update.py` (747 lines)\n- Orchestrates the full worker-initiated upd",
+    "url": "https://github.com/jaylfc/taOS/pull/1910",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: taOS"
+    ]
+  },
+  {
+    "title": "[PR] fix(core): Eliminate false-negative 500s in workflow builder tools",
+    "date": "2026-08-24T15:32:02Z",
+    "summary": "## Summary\r\n\r\nFixes intermittent false-negative 500 errors returned by the MCP workflow-builder tools `create_workflow_from_code` and `update_workflow`.\r\n\r\n**Root cause:** Post-save side effects (telemetry, credential auto-assign tracking, hook execution) could throw exceptions after the database wr",
+    "url": "https://github.com/n8n-io/n8n/pull/34975",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: n8n"
+    ]
+  },
+  {
+    "title": "[PR] [OPIK-8061] [SDK] feat: report anonymous usage analytics from the Python SDK",
+    "date": "2026-08-24T15:27:58Z",
+    "summary": "## Details\n\nAdds `opik.analytics` \u2014 usage analytics telling us which SDK features people actually reach for. The backend already sees traces and spans; what it cannot see is whether they came from `track_openai` or `track_anthropic`, or whether anyone runs `evaluate()`.\n\nOne line, anywhere:\n\n```pyth",
+    "url": "https://github.com/comet-ml/opik/pull/7959",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: opik"
+    ]
+  },
+  {
+    "title": "[PR] admin dashboard ssc-dsai:dev",
+    "date": "2026-08-24T15:21:20Z",
+    "summary": "# Pull Request Checklist\r\n\r\n### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) and describe your changes before submitting a pull request.\r\n\r\n**Before submitting, make sure you've checked the following:**\r\n\r\n- [ ]",
+    "url": "https://github.com/cicero-im/open-webui-2/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: open-webui-2"
+    ]
+  },
+  {
+    "title": "[PR] Connect any OpenAI-compatible local model server",
+    "date": "2026-08-24T15:17:25Z",
+    "summary": "## Summary\n- Add a single **OpenAI-compatible** provider in Connect a model / Settings (web + mobile): base URL, exact model id, optional API key.\n- Persist the endpoint in the encrypted credential (`openai_compatible` secret). Runs use that `baseUrl` instead of falling back to OpenRouter.\n- List mo",
+    "url": "https://github.com/elie222/rakazo/pull/149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: rakazo"
     ]
   }
 ]
