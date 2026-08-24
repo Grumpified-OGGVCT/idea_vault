@@ -168,7 +168,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-24T05:48:04Z",
+    "date": "2026-08-24T22:31:05Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-24T22:12:54Z",
+    "date": "2026-08-24T23:21:06Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1392,12 +1392,12 @@
   },
   {
     "title": "[PR] feat(lint-assets): interactive --fix mode for mojibake and path auto-repair",
-    "date": "2026-08-24T08:41:22Z",
+    "date": "2026-08-24T23:21:57Z",
     "summary": "## Summary\n\n- Adds interactive `--fix` mode to `.simplebeacon/qa/lint-assets.cjs` for auto-resolving mojibake and forbidden path patterns before commit\n- Mojibake fixer replaces double-encoded UTF-8 byte sequences (em-dash, right-quote) with correct UTF-8 bytes\n- Path integrity fixer rewrites forbid",
     "url": "https://github.com/tjp420/CascadeProjects/pull/569",
     "source": "github_prs",
     "highlights": [
-      "comments: 409",
+      "comments: 411",
       "pull request",
       "repo: CascadeProjects"
     ]
@@ -2112,8 +2112,8 @@
   },
   {
     "title": "[PR] feat(settings): guide provider setup paths and API keys",
-    "date": "2026-08-24T22:14:54Z",
-    "summary": "## Summary\n\nAI provider setup now starts with three prerequisite-based connection paths instead of 15 equivalent provider cards, while **Browse all providers** keeps every provider reachable. Cloud credential fields also link to provider-specific API-key instructions, so new users can move from choo",
+    "date": "2026-08-24T23:16:12Z",
+    "summary": "## Summary\n\nAI provider setup now starts with three prerequisite-based connection paths instead of 15 equivalent provider cards. The paths collectively keep every provider reachable without reintroducing an overwhelming all-provider view. Cloud credential fields also link to provider-specific API-ke",
     "url": "https://github.com/swartzrock/obsidian-firstrecall-plugin/pull/270",
     "source": "github_prs",
     "highlights": [
@@ -2124,12 +2124,12 @@
   },
   {
     "title": "[Issue]: ROCm unable to generate any image with any model: CUDA error: invalid argument",
-    "date": "2026-08-24T20:07:26Z",
+    "date": "2026-08-24T22:45:17Z",
     "summary": "### Issue Description\n\nAttempting to generate an image with any model fails with:\n\nPrompt parser encode: CUDA error: invalid argument\n\nI tried generating with an Illustrious-based model and with Anima models (aesthetic, turbo and base).\n\n### Version Platform Description\n\n```log\n05:07:24-005129 INFO ",
     "url": "https://github.com/vladmandic/sdnext/issues/5055",
     "source": "github_issues",
     "highlights": [
-      "comments: 22",
+      "comments: 23",
       "state: open",
       "repo: sdnext"
     ]
@@ -2436,8 +2436,8 @@
   },
   {
     "title": "[PR] Add OpenCode + NVIDIA Nemotron custom app",
-    "date": "2026-08-24T22:25:11Z",
-    "summary": "BENCH-9850\n\nAdds `src/opencode-nemotron`: code-server with the [opencode](https://opencode.ai) agent driving a local NVIDIA Nemotron model on Ollama. Nothing leaves the VM. For the NVIDIA dev day demo. Derived from `feature/applegath/ollama_gemma-4-26B-A4B`.\n\nThis PR:\n* Serves code-server on 8443 an",
+    "date": "2026-08-24T22:46:32Z",
+    "summary": "Adds `src/opencode-nemotron`: code-server with the [opencode](https://opencode.ai) agent driving a local NVIDIA Nemotron model on Ollama. Nothing leaves the VM. For the NVIDIA dev day demo. Derived from `feature/applegath/ollama_gemma-4-26B-A4B`.\r\n\r\nThis PR:\r\n* Serves code-server on 8443 and Ollama ",
     "url": "https://github.com/verily-src/workbench-app-devcontainers/pull/473",
     "source": "github_prs",
     "highlights": [
@@ -2468,6 +2468,54 @@
       "comments: 1",
       "pull request",
       "repo: cline"
+    ]
+  },
+  {
+    "title": "[PR] refactor(client): extract state-sync from GameScene into services (PR 2 of slim-down)",
+    "date": "2026-08-24T23:25:11Z",
+    "summary": "## Summary\n\nSecond of four PRs slimming `GameScene.ts`. This one extracts the client's server-state synchronization out of the Phaser scene and fixes a live correctness hazard: the two copies of the server\u2192local player merge (socket patch handler vs HTTP refresh) had silently diverged.\n\n- **New `mer",
+    "url": "https://github.com/jeffgabriel/eurorails_ai/pull/284",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: eurorails_ai"
+    ]
+  },
+  {
+    "title": "[PR] feat: add GitHub Copilot CLI as an LLM provider for init",
+    "date": "2026-08-24T23:11:40Z",
+    "summary": "## What does this PR do?\r\n\r\nAdds GitHub Copilot as an LLM provider for `mempalace init`:\r\n\r\n```bash\r\nmempalace init {dir} --llm-provider copilot\r\n```\r\n\r\nMemPalace drives your installed, signed-in [GitHub Copilot CLI](https://github.com/github/copilot-sdk) (through the `github-copilot-sdk` package) f",
+    "url": "https://github.com/MemPalace/mempalace/pull/1973",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mempalace"
+    ]
+  },
+  {
+    "title": "[PR] Weekly upstream sync 2026-08-24",
+    "date": "2026-08-24T23:08:42Z",
+    "summary": "## Weekly upstream sync \u2014 2026-08-24\n\nThis PR brings **2,368 upstream commits** from `qwibitai/nanoclaw` (base: `298c3ea`) into `main`. It was created automatically because **breaking changes were detected** that require human review before merging.\n\n---\n\n## \u26a0\ufe0f Breaking Changes in v2.3.0\n\nThe follow",
+    "url": "https://github.com/vweaver/nanoclaw/pull/16",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nanoclaw"
+    ]
+  },
+  {
+    "title": "[PR] Add atomic agent prompt submission",
+    "date": "2026-08-24T22:38:29Z",
+    "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
+    "url": "https://github.com/manaflow-ai/cmux/pull/9290",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 46",
+      "pull request",
+      "repo: cmux"
     ]
   }
 ]
