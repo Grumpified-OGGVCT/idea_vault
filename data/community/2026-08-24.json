@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-24T16:21:34Z",
+    "date": "2026-08-24T17:02:06Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] Canonical-first Cognigrex local sync and materialisation controls",
-    "date": "2026-08-24T09:24:18Z",
+    "date": "2026-08-24T17:05:54Z",
     "summary": "## Purpose\nCanonical-first, review-gated synchronization and consolidation lane for the current LightSpeed/Cognigrex installed-shell transition. This PR must not claim local Desktop execution, Drive promotion, deletion, deployment, merge, or value activation without the corresponding durable receipt",
     "url": "https://github.com/achillesromer-coder/LightSpeed/pull/37",
     "source": "github_prs",
@@ -936,12 +936,12 @@
   },
   {
     "title": "[PR] feat(batch): run the repair loop in batch, so one config works in either mode",
-    "date": "2026-08-24T07:01:17Z",
+    "date": "2026-08-24T17:29:22Z",
     "summary": "## Summary\n\n`expect: { repair: auto }` was refused at preflight under `run_mode: batch`. That broke the promise the framework is built on \u2014 the same config runs online and in batch \u2014 so the fix is to make batch regenerate, not to document the hole.\n\nBatch already knew how. Reprompt drives a graduate",
     "url": "https://github.com/Muizzkolapo/agent-actions/pull/922",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "pull request",
       "repo: agent-actions"
     ]
@@ -1068,7 +1068,7 @@
   },
   {
     "title": "[PR] Reconcile PR38 with the salvage line: merged history, AGPL executed, sweettest unblock",
-    "date": "2026-08-24T04:55:32Z",
+    "date": "2026-08-24T17:14:18Z",
     "summary": "Rejoins six weeks of parallel work and lands the corrections found along the way.\n`origin/main` is fully contained in this branch (0 ahead, 124 behind as of\n2026-08-24), so there is no content to reconcile here \u2014 only review.\n\n**PR #38 has since merged to main on its own** (merge commit `873cc0c`,\n2",
     "url": "https://github.com/G-0-B/FLOSS/pull/41",
     "source": "github_prs",
@@ -1500,7 +1500,7 @@
   },
   {
     "title": "[PR] feat(ai-providers): add xAI, DeepSeek, Z.ai, Qwen, MiniMax and Moonshot",
-    "date": "2026-08-24T11:00:29Z",
+    "date": "2026-08-24T17:20:08Z",
     "summary": "> \ud83d\udeab **Do not merge until the multi-key stack lands** \u2014 #14738 \u2192 #14825 \u2192 #14942.\n> This branch is based on `main` and is additive to that stack, but whichever merges second absorbs the conflicts, and #14738 is already conflicting. Reviews welcome now.\n\n## Description\n\nAdds six AI providers: **xAI, D",
     "url": "https://github.com/activepieces/activepieces/pull/14987",
     "source": "github_prs",
@@ -1764,7 +1764,7 @@
   },
   {
     "title": "[PR] [OPIK-7940] [BE] [FE] feat: dynamic token auth (OAuth2 client credentials) for custom AI providers",
-    "date": "2026-08-24T16:38:43Z",
+    "date": "2026-08-24T17:12:15Z",
     "summary": "## Details\n\nEnterprise AI gateways commonly forbid static API keys and instead require short-lived bearer tokens minted via the OAuth2 client credentials grant. This PR adds a dynamic token auth mode to Custom AI providers (and Bedrock/Ollama-style custom endpoints): Opik fetches the token from the ",
     "url": "https://github.com/comet-ml/opik/pull/7910",
     "source": "github_prs",
@@ -1812,7 +1812,7 @@
   },
   {
     "title": "[PR] Update ollama/ollama Docker tag to v0.32.6",
-    "date": "2026-08-24T14:25:28Z",
+    "date": "2026-08-24T17:01:35Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| ollama/ollama | patch | `0.32.5` \u2192 `0.32.6` | `0.32.15` (+6) |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (in timezone America/New_York)\n\n- Branch creation\n  - \"after 12am and before 2am on monday\"\n- A",
     "url": "https://github.com/claytono/infra/pull/2838",
     "source": "github_prs",
@@ -1872,12 +1872,12 @@
   },
   {
     "title": "[PR] feat(providers): credential-mutation clearing (scheduler refresh + setCredentials caches)",
-    "date": "2026-08-24T16:36:29Z",
+    "date": "2026-08-24T17:30:11Z",
     "summary": "Treats credential changes as cache-clearing events so dormancy has an exit and replaced credentials validate. A successful scheduled OAuth refresh now clears a recorded definitive failure and refreshes the provider's cache slice before publishing `providers.changed` (new `recoverDormantProvider` in ",
     "url": "https://github.com/lsm/HyperNeo/pull/2884",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 9",
       "pull request",
       "repo: HyperNeo"
     ]
@@ -1988,6 +1988,138 @@
       "comments: 2",
       "pull request",
       "repo: loopback4-llm-chat-extension"
+    ]
+  },
+  {
+    "title": "[PR] Fix the reported failure, then everything found by using and breaking the product",
+    "date": "2026-08-24T17:33:54Z",
+    "summary": "One real user report: the chat app was asked to code, wrote a tutorial it could not finish, and the conclusion was that the product cannot code.\n\nFixing that took four commits. Everything after came from **using the product as a new owner**, then **breaking it on purpose**, and finally **sweeping fo",
+    "url": "https://github.com/mpjmsenc-dev/local-code-agent/pull/28",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: local-code-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat(global): add EscapeSQLString utility and document safe SQL escaping rule",
+    "date": "2026-08-24T17:31:27Z",
+    "summary": "## Summary\n\n1. **New `EscapeSQLString` Utility**:\n   - Adds `EscapeSQLString` (and aliases `EscapeSqlString`, `EscapeSQL`) to `@memberjunction/global`.\n   - Standardizes quote doubling (`''`) per ANSI SQL standard, strips null bytes (`\\0`), and safely handles `null`/`undefined` inputs.\n2. **Unit Tes",
+    "url": "https://github.com/MemberJunction/MJ/pull/4033",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Thread the skill principal through Scoped Search, and judge it",
+    "date": "2026-08-24T17:30:50Z",
+    "summary": "`fix/scoped-search-threads-skill-principal` \u2192 `next` \u00b7 1 commit \u00b7 5 files\n\n## Summary\n\n`ScopeDimensionResolver` binds `Principals.SkillID` into a dimension's expansion query, and\n`principalsFrom()` sources it from `SearchParams.AISkillID`. `SearchParams` declares that field\n(`search.types.ts:120`) a",
+    "url": "https://github.com/MemberJunction/MJ/pull/4032",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(vllm): support LM Studio endpoints",
+    "date": "2026-08-24T17:28:38Z",
+    "summary": "## Summary\n- pass local provider environment variables into the Ollama Compose app service\n- accept both server-root and versioned OpenAI-compatible URLs for vLLM and LM Studio\n- use the shared Chat Completions token-limit parameter and document the supported setup\n\n## Type of Change\n- [x] Bug fix\n\n",
+    "url": "https://github.com/simstudioai/sim/pull/7036",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: sim"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): bump the ai-sdks group across 1 directory with 4 updates",
+    "date": "2026-08-24T17:25:52Z",
+    "summary": "Bumps the ai-sdks group with 4 updates in the / directory: [claude-agent-sdk](https://github.com/anthropics/claude-agent-sdk-python), [google-genai](https://github.com/googleapis/python-genai), [xai-sdk](https://github.com/xai-org/xai-sdk-python) and [instructor](https://github.com/instructor-ai/ins",
+    "url": "https://github.com/javpower/-ArcReel/pull/37",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: -ArcReel"
+    ]
+  },
+  {
+    "title": "[PR] perf(codegen): a soft primary key gets no index from anything \u2014 emit one",
+    "date": "2026-08-24T17:20:52Z",
+    "summary": "## The gap\n\nA **soft** primary key exists only in metadata \u2014 `IsPrimaryKey` and `IsSoftPrimaryKey` both set, with **no `PRIMARY KEY` constraint and no unique index** on the table.\n\nIntegration tables are built that way deliberately, and the reasoning is sound: their keys are *inferred* from naming a",
+    "url": "https://github.com/MemberJunction/MJ/pull/3905",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(infra): add cheap one-box platform compose",
+    "date": "2026-08-24T17:05:37Z",
+    "summary": "## Description\n\nAdds a cheap one-box cloud/prod Docker Compose configuration for the non-AI Deepiri platform stack.\n\nInclude:\n- Related Issue number: TBD\n- Plaky feature name: Cheap one-box platform deployment\n- Component, feature, or system affected: Cloud/infra Docker Compose, nginx reverse proxy,",
+    "url": "https://github.com/Team-Deepiri/deepiri-platform/pull/304",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: deepiri-platform"
+    ]
+  },
+  {
+    "title": "[PR] Omi fully on-premise via Docker Compose or Helm/k8s: every managed service behind a swappable port (db Firestore|Mongo \u00b7 storage GCS|S3 \u00b7 vector Pinecone|Qdrant \u00b7 auth Firebase|Keycloak \u00b7 push FCM|UnifiedPush \u00b7 LLM any OpenAI-compatible endpoint)",
+    "date": "2026-08-24T17:00:14Z",
+    "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
+    "url": "https://github.com/BasedHardware/omi/pull/10887",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 19",
+      "pull request",
+      "repo: omi"
+    ]
+  },
+  {
+    "title": "[PR] feat(agent-archetypes): local model provider tier for GX10-hosted dispatch",
+    "date": "2026-08-24T16:54:56Z",
+    "summary": "## Summary\n\nImplements OpenSpec change **`add-local-model-provider-tier`**: a sixth first-class dispatch provider, `local`, backed by a GX10-hosted OpenAI-compatible endpoint, with the two durable rules from the proposal encoded as enforced config rather than prose:\n\n- **MoE-first hardware matching ",
+    "url": "https://github.com/jankneumann/agentic-coding-tools/pull/374",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agentic-coding-tools"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-24T16:55:10Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/buddy-bot/pull/1352",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: buddy-bot"
+    ]
+  },
+  {
+    "title": "[PR] feat(settings): add cloud API key setup guidance",
+    "date": "2026-08-24T16:47:40Z",
+    "summary": "## Summary\n\nCloud-provider credentials now include direct setup help, so users can move from the selected API-key field to the exact instructions for that provider. The guide covers all 11 API-key providers, explains separate API billing, and includes key-safety guidance.\n\n## Validation\n\n- Exercised",
+    "url": "https://github.com/swartzrock/obsidian-firstrecall-plugin/pull/270",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: obsidian-firstrecall-plugin"
     ]
   }
 ]
