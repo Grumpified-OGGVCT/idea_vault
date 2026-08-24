@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-24T20:15:34Z",
+    "date": "2026-08-24T21:17:08Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] test(core): cover first-run-options",
-    "date": "2026-08-24T19:14:38Z",
+    "date": "2026-08-24T21:15:53Z",
     "summary": "\n## Summary\n\nAdds a colocated unit suite for `packages/core/src/contracts/first-run-options.ts`, which had no same-named test file anywhere in the repository. The diff is a single new test file (+778/-0); no production code changes.\n\n## What the suite covers\n\nAll behavior is exercised through the re",
     "url": "https://github.com/elizaOS/eliza/pull/26338",
     "source": "github_prs",
@@ -816,7 +816,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-08-24T14:44:16Z",
+    "date": "2026-08-24T20:44:16Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1080,12 +1080,12 @@
   },
   {
     "title": "[PR] fix(migrations): FileEntityRecordLink unique key omits RecordID (#3943)",
-    "date": "2026-08-24T20:13:05Z",
+    "date": "2026-08-24T21:17:11Z",
     "summary": "Fixes #3943.\n\n> **Scope note \u2014 this PR also contains a one-line CI change.** The title says \"fix a unique key\";\n> the diff also narrows a migration guard's file scope, which is a separate review. Added at review\n> request. `Check migration content` in `.github/workflows/changes.yml` selects every ch",
     "url": "https://github.com/MemberJunction/MJ/pull/4006",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 4",
       "pull request",
       "repo: MJ"
     ]
@@ -1356,12 +1356,12 @@
   },
   {
     "title": "[PR] Add Quill voice-guided text rewriting",
-    "date": "2026-08-24T13:47:48Z",
+    "date": "2026-08-24T21:26:58Z",
     "summary": "## Summary\n\n- Add Quill mode: highlight text, activate its shortcut, speak an editing instruction, and replace the selection with one paste-ready rewrite.\n- Support local Qwen models, Gemma 4 E2B/E4B through LiteRT-LM, and configured hosted cleanup backends. Quill uses a dedicated rewrite contract r",
     "url": "https://github.com/Muesli-HQ/muesli/pull/464",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "pull request",
       "repo: muesli"
     ]
@@ -1872,12 +1872,12 @@
   },
   {
     "title": "[PR] feat(providers): credential-mutation clearing (scheduler refresh + setCredentials caches)",
-    "date": "2026-08-24T20:33:29Z",
+    "date": "2026-08-24T21:28:07Z",
     "summary": "Gives credential dormancy an exit and keeps replaced credentials validating. A successful scheduled OAuth refresh now clears the recorded definitive failure and refreshes the provider's cache slice before publishing `providers.changed` (`recoverDormantProvider` in model-service, wired through the sc",
     "url": "https://github.com/lsm/HyperNeo/pull/2884",
     "source": "github_prs",
     "highlights": [
-      "comments: 12",
+      "comments: 15",
       "pull request",
       "repo: HyperNeo"
     ]
@@ -1956,7 +1956,7 @@
   },
   {
     "title": "[PR] fix(codegen): teach the class-registration manifest scanner to see @RegisterClassEx",
-    "date": "2026-08-24T19:16:50Z",
+    "date": "2026-08-24T21:19:07Z",
     "summary": "# Forward:\nI do not know this domain. The code looks ok to me, but I don\u2019t knwo the pitfalls of this area.\n\nFixes #3944.\n\n`mj codegen manifest` matched the decorator identifier literally, so it only ever saw `RegisterClass` \u2014 never `RegisterClassEx`, the options-bag form `MJGlobal/src/RegisterClass.",
     "url": "https://github.com/MemberJunction/MJ/pull/4005",
     "source": "github_prs",
@@ -2076,7 +2076,7 @@
   },
   {
     "title": "[PR] Omi fully on-premise via Docker Compose or Helm/k8s: every managed service behind a swappable port (db Firestore|Mongo \u00b7 storage GCS|S3 \u00b7 vector Pinecone|Qdrant \u00b7 auth Firebase|Keycloak \u00b7 push FCM|UnifiedPush \u00b7 LLM any OpenAI-compatible endpoint)",
-    "date": "2026-08-24T18:40:21Z",
+    "date": "2026-08-24T20:51:30Z",
     "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
     "url": "https://github.com/BasedHardware/omi/pull/10887",
     "source": "github_prs",
@@ -2231,9 +2231,9 @@
     ]
   },
   {
-    "title": "[PR] Add Luna, a personal knowledge-graph AI assistant (web demo + native Android app)",
-    "date": "2026-08-24T20:21:52Z",
-    "summary": "## What this is now\n\nThis started as a simple chat+voice assistant, then got redirected (based on reference\nscreenshots) toward something bigger: **Luna, a live personal knowledge-graph assistant** \u2014\ncapture a note/contact/document, Luna extracts the people, places, and ideas in it onto an\nanimated,",
+    "title": "[PR] Luna: personal knowledge-graph assistant (web + Android), with calls/texts/reminders/bubble",
+    "date": "2026-08-24T20:56:44Z",
+    "summary": "## What this is now\n\n**Luna, a live personal knowledge-graph assistant.** Capture a note/contact/document (or a\nphoto of one) and Luna extracts the people, places, and ideas in it onto an animated,\nphysics-driven graph you can pan/zoom/filter/explore, and ask questions grounded in that graph\nby voic",
     "url": "https://github.com/deezi74/Portfolio/pull/2",
     "source": "github_prs",
     "highlights": [
@@ -2244,7 +2244,7 @@
   },
   {
     "title": "[PR] feat: photon imessage integration",
-    "date": "2026-08-24T19:20:19Z",
+    "date": "2026-08-24T21:22:28Z",
     "summary": "### Summary\r\n\r\nAdds an **iMessage (Photon)** integration: 20 operations and 4 triggers for sending and receiving iMessage through [Photon](https://photon.codes), which hosts the iMessage line so no Mac has to stay online.\r\n\r\nSim can already reach Telegram, WhatsApp, Twilio, and Linq (iMessage/SMS/RC",
     "url": "https://github.com/photon-hq/sim/pull/1",
     "source": "github_prs",
@@ -2316,7 +2316,7 @@
   },
   {
     "title": "[PR] [Quality] Repo-wide audit fixes: error containment, drifted forks, silent failures (stacked on #294\u2192#295)",
-    "date": "2026-08-24T18:54:12Z",
+    "date": "2026-08-24T20:36:24Z",
     "summary": "# Code quality follow-up: repo-wide audit fixes (stacked on #294 \u2192 #295)\n\nA seven-area audit of the codebase (backend modules, backend lib/workers, remaining route files, frontend data layer, frontend components, Word add-in + shared UI, cross-cutting infra) surfaced ~100 findings. This PR lands the",
     "url": "https://github.com/open-legal-products/mike/pull/356",
     "source": "github_prs",
@@ -2360,6 +2360,66 @@
       "comments: 1",
       "pull request",
       "repo: c4-genai-suite"
+    ]
+  },
+  {
+    "title": "[PR] Document package architecture, dependency graph, and contribution workflow (#50) (#56) (#192) (#566) (#569)",
+    "date": "2026-08-24T21:32:19Z",
+    "summary": "## Summary\n\n\u267e\ufe0f\ud83d\udd74\ufe0f RABBITSYNC / REALITY OS UPGRADE BLUEPRINT \u2014 v\u221e ARCHITECTURE \ud83d\udc30\ud83c\udf0e\n\nYour architecture is moving toward a self-improving intelligence platform. The next upgrade is to turn the diagram into a real engineering system with:\n\n* canonical schemas \ud83d\udcd0\n* event pipelines \ud83d\udd04\n* agent contracts \ud83e\udd16\n* au",
+    "url": "https://github.com/5hy7xz92nd-oss/ai/pull/584",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-sandbox): add Blaxel provider",
+    "date": "2026-08-24T21:27:25Z",
+    "summary": "Rebased onto current `main` on 2026-08-17. Ready for review.\n\n## \ud83c\udfaf Changes\n\n- Add `@tanstack/ai-sandbox-blaxel` as a managed cloud sandbox provider.\n- Implement filesystem access, native file watch, environment values, bounded process streaming, token-gated previews, and resume by id.\n- Reconcile am",
+    "url": "https://github.com/TanStack/ai/pull/1065",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] Library: one-click Onyx Lite wired to Home Ollama",
+    "date": "2026-08-24T21:23:03Z",
+    "summary": "## Summary\n- Library **Onyx** image (`onyx-arm64` / `onyx-x86_64`): create a Workload, Agent cage, Home Ollama at `http://10.0.2.2:11434` (native, not Device `:7777`). First boot runs Onyx Lite (`docker compose` overlay, pinned `v4.6.2`). Guest UI is loopback hostfwd on `:80`.\n- In-app Chat tab is h",
+    "url": "https://github.com/pmdroid/barkvisor/pull/244",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: barkvisor"
+    ]
+  },
+  {
+    "title": "[PR] fix(ai-sandbox-cloudflare): stop exposePreview from returning stale tunnel URLs",
+    "date": "2026-08-24T21:22:17Z",
+    "summary": "`exposePreview` returned `sandbox.tunnels.get(port).url` without any check. The SDK serves that record straight from Durable Object storage on a cache hit, so once the tunnel behind it died, the tool kept re-sharing a dead URL that answers 502 at the trycloudflare edge, with no error signal for the ",
+    "url": "https://github.com/TanStack/ai/pull/1200",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] superfixer pre 1.6 realease",
+    "date": "2026-08-24T20:57:05Z",
+    "summary": "## Purpose\n\nSuperfix branch to land **after** the five open arena PRs (#55, #57, #58, #59, #60) merge. It integrates all five (merged in conflict-safe order `#55 \u2192 #57 \u2192 #60 \u2192 #58 \u2192 #59`) and remediates every finding (Critical \u2192 Nitpick) from the consolidated assertive CodeRabbit-style review, so it",
+    "url": "https://github.com/maus-inc/mausVoice/pull/63",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 35",
+      "pull request",
+      "repo: mausVoice"
     ]
   }
 ]
