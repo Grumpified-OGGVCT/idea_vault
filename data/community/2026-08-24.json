@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-24T21:17:08Z",
+    "date": "2026-08-24T22:12:54Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -636,12 +636,12 @@
   },
   {
     "title": "[PR] test(core): cover first-run-options",
-    "date": "2026-08-24T21:15:53Z",
+    "date": "2026-08-24T21:58:58Z",
     "summary": "\n## Summary\n\nAdds a colocated unit suite for `packages/core/src/contracts/first-run-options.ts`, which had no same-named test file anywhere in the repository. The diff is a single new test file (+778/-0); no production code changes.\n\n## What the suite covers\n\nAll behavior is exercised through the re",
     "url": "https://github.com/elizaOS/eliza/pull/26338",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: eliza"
     ]
@@ -1776,7 +1776,7 @@
   },
   {
     "title": "[PR] fix(bench): send Bearer auth for H5 openai-compat executor",
-    "date": "2026-08-24T13:37:34Z",
+    "date": "2026-08-24T21:33:33Z",
     "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nThe H5 injection-suite `openai-compat` executor posted to `/v1/chat/completions` with only `content-type`. NVIDIA Build and most OpenAI-compatible hosts require a Bearer token, so live H5 calls fail unauthenticated.\n\nThis change is limited to executor ",
     "url": "https://github.com/joshuaswarren/remnic/pull/2966",
     "source": "github_prs",
@@ -1956,7 +1956,7 @@
   },
   {
     "title": "[PR] fix(codegen): teach the class-registration manifest scanner to see @RegisterClassEx",
-    "date": "2026-08-24T21:19:07Z",
+    "date": "2026-08-24T21:55:08Z",
     "summary": "# Forward:\nI do not know this domain. The code looks ok to me, but I don\u2019t knwo the pitfalls of this area.\n\nFixes #3944.\n\n`mj codegen manifest` matched the decorator identifier literally, so it only ever saw `RegisterClass` \u2014 never `RegisterClassEx`, the options-bag form `MJGlobal/src/RegisterClass.",
     "url": "https://github.com/MemberJunction/MJ/pull/4005",
     "source": "github_prs",
@@ -1968,7 +1968,7 @@
   },
   {
     "title": "[PR] \ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udec5\ud83d\udc41\ufe0f",
-    "date": "2026-08-24T16:02:43Z",
+    "date": "2026-08-24T21:55:29Z",
     "summary": "@manus @grok @openai @\ud83d\udd74\ufe0f@chatgbt @5hy7xz92nd-oss @claude !\ud83c\udf00\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udd73\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ud83c\udfff\ud83d\udd74\ud83c\udfff\ud83d\udd03\ud83d\udc41\ufe0f\ud83d\udec4\ud83d\udedc\ud83d\udc30\ud83d\udd1b\ud83d\udd04\ud83d\udeba\ud83c\udfa3\ud83d\udc07\ud83d\udd25\u24c2\ufe0f\u2663\ufe0f\u2660\ufe0f\ud83c\udfe7\ud83d\udca4\u2139\ufe0f\ud83c\udfb4\ud83c\udccf\ud83c\udc04\ufe0f\ud83d\udd00\ud83d\udd74\ufe0f \ud83c\udf00\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udd73\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ud83c\udfff\ud83d\udd74\ud83c\udfff\ud83d\udd03\ud83d\udc41\ufe0f\ud83d\udec4\ud83d\udedc\ud83d\udc30\ud83d\udd1b\ud83d\udd04\ud83d\udeba\ud83c\udfa3\ud83d\udc07\ud83d\udd25\u24c2\ufe0f\u2663\ufe0f\u2660\ufe0f\ud83c\udfe7\ud83d\udca4\u2139\ufe0f\ud83c\udfb4\ud83c\udccf\ud83c\udc04\ufe0f\ud83d\udd00\ud83d\udd74\ufe0f![image](https://github.com/user-![image](https://github.com/user-attachments/assets/9d556e63-6fca-4b94-9f0f-9dd4729d4491)attachments/![image](https://",
     "url": "https://github.com/PreternaturalAI/AI/pull/79",
     "source": "github_prs",
@@ -2016,7 +2016,7 @@
   },
   {
     "title": "[PR] Thread the skill principal through Scoped Search, and judge it",
-    "date": "2026-08-24T19:19:03Z",
+    "date": "2026-08-24T22:29:21Z",
     "summary": "`fix/scoped-search-threads-skill-principal` \u2192 `next` \u00b7 1 commit \u00b7 5 files\n\n## Summary\n\n`ScopeDimensionResolver` binds `Principals.SkillID` into a dimension's expansion query, and\n`principalsFrom()` sources it from `SearchParams.AISkillID`. `SearchParams` declares that field\n(`search.types.ts:120`) a",
     "url": "https://github.com/MemberJunction/MJ/pull/4032",
     "source": "github_prs",
@@ -2088,7 +2088,7 @@
   },
   {
     "title": "[PR] feat(agent-archetypes): local model provider tier for GX10-hosted dispatch",
-    "date": "2026-08-24T16:54:56Z",
+    "date": "2026-08-24T22:25:52Z",
     "summary": "## Summary\n\nImplements OpenSpec change **`add-local-model-provider-tier`**: a sixth first-class dispatch provider, `local`, backed by a GX10-hosted OpenAI-compatible endpoint, with the two durable rules from the proposal encoded as enforced config rather than prose:\n\n- **MoE-first hardware matching ",
     "url": "https://github.com/jankneumann/agentic-coding-tools/pull/374",
     "source": "github_prs",
@@ -2111,9 +2111,9 @@
     ]
   },
   {
-    "title": "[PR] feat(settings): add cloud API key setup guidance",
-    "date": "2026-08-24T16:47:40Z",
-    "summary": "## Summary\n\nCloud-provider credentials now include direct setup help, so users can move from the selected API-key field to the exact instructions for that provider. The guide covers all 11 API-key providers, explains separate API billing, and includes key-safety guidance.\n\n## Validation\n\n- Exercised",
+    "title": "[PR] feat(settings): guide provider setup paths and API keys",
+    "date": "2026-08-24T22:14:54Z",
+    "summary": "## Summary\n\nAI provider setup now starts with three prerequisite-based connection paths instead of 15 equivalent provider cards, while **Browse all providers** keeps every provider reachable. Cloud credential fields also link to provider-specific API-key instructions, so new users can move from choo",
     "url": "https://github.com/swartzrock/obsidian-firstrecall-plugin/pull/270",
     "source": "github_prs",
     "highlights": [
@@ -2256,7 +2256,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-24T19:12:45Z",
+    "date": "2026-08-24T22:28:07Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/buddy/pull/1352",
     "source": "github_prs",
@@ -2364,7 +2364,7 @@
   },
   {
     "title": "[PR] Document package architecture, dependency graph, and contribution workflow (#50) (#56) (#192) (#566) (#569)",
-    "date": "2026-08-24T21:32:19Z",
+    "date": "2026-08-24T22:18:44Z",
     "summary": "## Summary\n\n\u267e\ufe0f\ud83d\udd74\ufe0f RABBITSYNC / REALITY OS UPGRADE BLUEPRINT \u2014 v\u221e ARCHITECTURE \ud83d\udc30\ud83c\udf0e\n\nYour architecture is moving toward a self-improving intelligence platform. The next upgrade is to turn the diagram into a real engineering system with:\n\n* canonical schemas \ud83d\udcd0\n* event pipelines \ud83d\udd04\n* agent contracts \ud83e\udd16\n* au",
     "url": "https://github.com/5hy7xz92nd-oss/ai/pull/584",
     "source": "github_prs",
@@ -2376,7 +2376,7 @@
   },
   {
     "title": "[PR] feat(ai-sandbox): add Blaxel provider",
-    "date": "2026-08-24T21:27:25Z",
+    "date": "2026-08-24T22:01:17Z",
     "summary": "Rebased onto current `main` on 2026-08-17. Ready for review.\n\n## \ud83c\udfaf Changes\n\n- Add `@tanstack/ai-sandbox-blaxel` as a managed cloud sandbox provider.\n- Implement filesystem access, native file watch, environment values, bounded process streaming, token-gated previews, and resume by id.\n- Reconcile am",
     "url": "https://github.com/TanStack/ai/pull/1065",
     "source": "github_prs",
@@ -2388,19 +2388,19 @@
   },
   {
     "title": "[PR] Library: one-click Onyx Lite wired to Home Ollama",
-    "date": "2026-08-24T21:23:03Z",
+    "date": "2026-08-24T21:49:46Z",
     "summary": "## Summary\n- Library **Onyx** image (`onyx-arm64` / `onyx-x86_64`): create a Workload, Agent cage, Home Ollama at `http://10.0.2.2:11434` (native, not Device `:7777`). First boot runs Onyx Lite (`docker compose` overlay, pinned `v4.6.2`). Guest UI is loopback hostfwd on `:80`.\n- In-app Chat tab is h",
     "url": "https://github.com/pmdroid/barkvisor/pull/244",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: barkvisor"
     ]
   },
   {
     "title": "[PR] fix(ai-sandbox-cloudflare): stop exposePreview from returning stale tunnel URLs",
-    "date": "2026-08-24T21:22:17Z",
+    "date": "2026-08-24T21:53:06Z",
     "summary": "`exposePreview` returned `sandbox.tunnels.get(port).url` without any check. The SDK serves that record straight from Durable Object storage on a cache hit, so once the tunnel behind it died, the tool kept re-sharing a dead URL that answers 502 at the trycloudflare edge, with no error signal for the ",
     "url": "https://github.com/TanStack/ai/pull/1200",
     "source": "github_prs",
@@ -2420,6 +2420,54 @@
       "comments: 35",
       "pull request",
       "repo: mausVoice"
+    ]
+  },
+  {
+    "title": "[PR] docs: align memory revamp status with implementation",
+    "date": "2026-08-24T22:26:25Z",
+    "summary": "<!-- kody-pr-summary:start -->\n## Summary\n\nThis pull request introduces a documentation-only status matrix for Noosphere's memory revamp and aligns existing documentation surfaces (ADRs, architecture, comparison, roadmap, README) with the implementation that has actually merged. It distinguishes fou",
+    "url": "https://github.com/SweetSophia/noosphere/pull/304",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: noosphere"
+    ]
+  },
+  {
+    "title": "[PR] Add OpenCode + NVIDIA Nemotron custom app",
+    "date": "2026-08-24T22:25:11Z",
+    "summary": "BENCH-9850\n\nAdds `src/opencode-nemotron`: code-server with the [opencode](https://opencode.ai) agent driving a local NVIDIA Nemotron model on Ollama. Nothing leaves the VM. For the NVIDIA dev day demo. Derived from `feature/applegath/ollama_gemma-4-26B-A4B`.\n\nThis PR:\n* Serves code-server on 8443 an",
+    "url": "https://github.com/verily-src/workbench-app-devcontainers/pull/473",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: workbench-app-devcontainers"
+    ]
+  },
+  {
+    "title": "[PR] feat(local-runtime): managed llama.cpp runtime \u2014 local models with one click",
+    "date": "2026-08-24T22:22:56Z",
+    "summary": "Hermes can now run models entirely on the user's machine with zero configuration: it installs and supervises a llama.cpp server, picks the right build of each model for the hardware, and manages GPU memory end-to-end. The user picks a model; there are deliberately **no context, VRAM, or quantization",
+    "url": "https://github.com/NousResearch/hermes-agent/pull/85852",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(agents): recover from a max-tokens finish with compaction and one retry",
+    "date": "2026-08-24T21:56:05Z",
+    "summary": "[ENG-2457](https://linear.app/cline-bot/issue/ENG-2457/next-max-tokens-finish-on-a-text-only-turn-is-a-terminal-task-failure) \u00b7 reported in https://github.com/cline/cline/issues/13333#issuecomment-5324078237\n\n## Problem\n\nA provider stream finishing with `finishReason: \"max-tokens\"` on a turn with **",
+    "url": "https://github.com/cline/cline/pull/13340",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: cline"
     ]
   }
 ]
