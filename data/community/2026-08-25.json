@@ -144,7 +144,7 @@
   },
   {
     "title": "Optimize Brief vs Caveman, Hush vs rtk, and Loom vs Headroom",
-    "date": "2026-08-25T04:13:45Z",
+    "date": "2026-08-25T23:10:09Z",
     "summary": "## Outcome\n\nImprove **Brief, Hush, and Loom** together so live product projections beat the right baseline for each lane on a maintained fixture corpus, without losing Falryn\u2019s exact-capture, expansion-handle, and evidence-fidelity contracts.\n\n| Falryn lane | Baseline to beat | Why that baseline |\n|",
     "url": "https://github.com/tyldra-org/falryn/issues/736",
     "source": "github_issues",
@@ -312,8 +312,8 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-25T12:43:42Z",
-    "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
+    "date": "2026-08-25T22:46:31Z",
+    "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Repository Problems\n",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
     "highlights": [
@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] Add atomic agent prompt submission",
-    "date": "2026-08-25T22:20:45Z",
+    "date": "2026-08-25T23:23:29Z",
     "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
     "url": "https://github.com/manaflow-ai/cmux/pull/9290",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-25T22:20:17Z",
+    "date": "2026-08-25T23:14:49Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,12 +648,12 @@
   },
   {
     "title": "[PR] feat(lint-assets): interactive --fix mode for mojibake and path auto-repair",
-    "date": "2026-08-25T21:11:41Z",
+    "date": "2026-08-25T23:09:35Z",
     "summary": "## Summary\n\n- Adds interactive `--fix` mode to `.simplebeacon/qa/lint-assets.cjs` for auto-resolving mojibake and forbidden path patterns before commit\n- Mojibake fixer replaces double-encoded UTF-8 byte sequences (em-dash, right-quote) with correct UTF-8 bytes\n- Path integrity fixer rewrites forbid",
     "url": "https://github.com/tjp420/CascadeProjects/pull/569",
     "source": "github_prs",
     "highlights": [
-      "comments: 459",
+      "comments: 460",
       "pull request",
       "repo: CascadeProjects"
     ]
@@ -1944,12 +1944,12 @@
   },
   {
     "title": "[PR] docs(plans): direct-superpipe migration plans from inventory #1414",
-    "date": "2026-08-25T22:16:47Z",
+    "date": "2026-08-25T22:55:46Z",
     "summary": "## What\n\nSix per-area deep-dive migration plans converting the hand-rolled imperative sites from the #1414 direct-superpipe inventory into direct superpipe compositions (ADR 0004). Docs only \u2014 no source changes.\n\n| Doc | Area | Sites |\n| --- | --- | --- |\n| `external-events.md` | GitHub normalizers,",
     "url": "https://github.com/lsm/HyperNeo/pull/2957",
     "source": "github_prs",
     "highlights": [
-      "comments: 20",
+      "comments: 21",
       "pull request",
       "repo: HyperNeo"
     ]
@@ -1968,8 +1968,8 @@
   },
   {
     "title": "[PR] Stop retrying a provider whose quota is gone",
-    "date": "2026-08-25T20:19:32Z",
-    "summary": "## What & why\n\nAsked whether Cascade copes when a user's API budget runs out. Its **own** budget cap does, well \u2014 preflight reservations, `budget:warning`/`budget:exceeded`, a checkpoint on stop, `/continue` resuming with a raised ceiling. The **provider's** quota running out does not.\n\nA spent bill",
+    "date": "2026-08-25T22:54:44Z",
+    "summary": "## What & why\n\nAsked whether Cascade copes when a provider's API budget runs out. Its **own** budget cap does, well \u2014 preflight reservations, `budget:warning`/`budget:exceeded`, a checkpoint on stop, `/continue` resuming with a raised ceiling. The **provider's** quota running out did not.\n\nA spent b",
     "url": "https://github.com/Varun-SV/Cascade-AI/pull/217",
     "source": "github_prs",
     "highlights": [
@@ -2076,7 +2076,7 @@
   },
   {
     "title": "[PR] docs(platform): sync GitBook documentation into dev",
-    "date": "2026-08-25T22:23:52Z",
+    "date": "2026-08-25T23:27:22Z",
     "summary": "### Why / What / How\n\nGitBook contains the published single-container operations guide, while `dev` contains the canonical generator and newer generated integration documentation. The branches need a deliberate content reconciliation without regressing either side.\n\nThis PR brings the GitBook-author",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/14170",
     "source": "github_prs",
@@ -2220,12 +2220,12 @@
   },
   {
     "title": "[PR] feat(conductor): setup SDD infrastructure and pre-push-review skill",
-    "date": "2026-08-25T22:30:14Z",
+    "date": "2026-08-25T23:26:44Z",
     "summary": "## Summary\n\nThis PR initializes the Conductor Spec-Driven Development (SDD) scaffolding for `ai-config` and standardizes the `pre-push-review` skill across harnesses:\n\n1. **Conductor Scaffolding**:\n   - Product Definition: `conductor/product.md`\n   - Product Guidelines: `conductor/product-guidelines",
     "url": "https://github.com/Morrison-Lab/ai-config/pull/2251",
     "source": "github_prs",
     "highlights": [
-      "comments: 24",
+      "comments: 38",
       "pull request",
       "repo: ai-config"
     ]
@@ -2264,6 +2264,18 @@
       "comments: 0",
       "pull request",
       "repo: KostromaAi44"
+    ]
+  },
+  {
+    "title": "[PR] Default the episodic long-term memory backend to event memory",
+    "date": "2026-08-25T23:13:55Z",
+    "summary": "### Purpose of the change\n\nThe configuration wizard has defaulted to `backend: event` for a while (`configuration_wizard.py`), but the *static* shipped configs still wired the declarative VectorGraphStore backend. So every install that does not go through the wizard -- `memmachine-compose.sh`, the H",
+    "url": "https://github.com/MemMachine/MemMachine/pull/1518",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: MemMachine"
     ]
   }
 ]
