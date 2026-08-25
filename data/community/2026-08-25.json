@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] feat: self-host experience \u2014 1-command setup, local auth, runtime providers, wizard UI",
-    "date": "2026-08-25T04:17:55Z",
+    "date": "2026-08-25T19:27:53Z",
     "summary": "## Summary\n\nMakes GAIA genuinely self-hostable: **`gaia up` \u2192 open browser \u2192 sign up \u2192 paste one API key \u2192 chat.** No WorkOS account, no Infisical, no Dodo, no hand-edited env files.\n\n### What changed\n\n**1. Local auth (`AUTH_MODE=local`)**\n- Email+password signup/login with HS256 session cookies; fi",
     "url": "https://github.com/theexperiencecompany/gaia/pull/1091",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-25T18:02:41Z",
+    "date": "2026-08-25T19:21:19Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,12 +648,12 @@
   },
   {
     "title": "[PR] feat(lint-assets): interactive --fix mode for mojibake and path auto-repair",
-    "date": "2026-08-25T18:31:29Z",
+    "date": "2026-08-25T19:31:37Z",
     "summary": "## Summary\n\n- Adds interactive `--fix` mode to `.simplebeacon/qa/lint-assets.cjs` for auto-resolving mojibake and forbidden path patterns before commit\n- Mojibake fixer replaces double-encoded UTF-8 byte sequences (em-dash, right-quote) with correct UTF-8 bytes\n- Path integrity fixer rewrites forbid",
     "url": "https://github.com/tjp420/CascadeProjects/pull/569",
     "source": "github_prs",
     "highlights": [
-      "comments: 449",
+      "comments: 455",
       "pull request",
       "repo: CascadeProjects"
     ]
@@ -1200,7 +1200,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-25T16:31:20Z",
+    "date": "2026-08-25T19:10:02Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1212,7 +1212,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-25T16:31:24Z",
+    "date": "2026-08-25T19:10:02Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1224,7 +1224,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-25T16:31:14Z",
+    "date": "2026-08-25T19:09:50Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1680,7 +1680,7 @@
   },
   {
     "title": "[PR] Add Vertex AI backend for orgs that disallow raw API keys",
-    "date": "2026-08-25T18:22:46Z",
+    "date": "2026-08-25T18:43:32Z",
     "summary": "## Summary\n- The existing `gemini` backend only talks to the API-key-only Generative Language API. Some GCP orgs disallow raw API keys entirely via policy (confirmed live against a real org policy), leaving no way to use Gemini through graphify at all.\n- Adds a `vertex` backend using `google-genai`'",
     "url": "https://github.com/Graphify-Labs/graphify/pull/3083",
     "source": "github_prs",
@@ -1824,12 +1824,12 @@
   },
   {
     "title": "[PR] feat(runtime): OTLP tracing, multi-arch Docker image, env placeholder expansion for MCP/LiteLLM",
-    "date": "2026-08-25T16:02:49Z",
+    "date": "2026-08-25T19:31:41Z",
     "summary": "## Description\n\nAdds OTLP tracing, multi-arch runtime packaging, and safe environment placeholder support for Loom runtime deployments. It also hardens LiteLLM/OpenAI, MCP streamable HTTP sessions, SSE compatibility, tool alias governance, and ephemeral-agent opt-in behavior.\n\nCloses [TER-583](https",
     "url": "https://github.com/teradata-labs/loom/pull/284",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "pull request",
       "repo: loom"
     ]
@@ -1944,19 +1944,19 @@
   },
   {
     "title": "[PR] docs(plans): direct-superpipe migration plans from inventory #1414",
-    "date": "2026-08-25T18:41:44Z",
+    "date": "2026-08-25T19:28:23Z",
     "summary": "## What\n\nSix per-area deep-dive migration plans converting the hand-rolled imperative sites from the #1414 direct-superpipe inventory into direct superpipe compositions (ADR 0004). Docs only \u2014 no source changes.\n\n| Doc | Area | Sites |\n| --- | --- | --- |\n| `external-events.md` | GitHub normalizers,",
     "url": "https://github.com/lsm/HyperNeo/pull/2957",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 12",
       "pull request",
       "repo: HyperNeo"
     ]
   },
   {
     "title": "[PR] Update module github.com/testcontainers/testcontainers-go to v0.44.0",
-    "date": "2026-08-25T18:40:13Z",
+    "date": "2026-08-25T18:53:13Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
     "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50518",
     "source": "github_prs",
@@ -1968,12 +1968,12 @@
   },
   {
     "title": "[PR] Stop retrying a provider whose quota is gone",
-    "date": "2026-08-25T18:37:57Z",
+    "date": "2026-08-25T19:18:57Z",
     "summary": "## What & why\n\nAsked whether Cascade copes when a user's API budget runs out. Its **own** budget cap does, well \u2014 preflight reservations, `budget:warning`/`budget:exceeded`, a checkpoint on stop, `/continue` resuming with a raised ceiling. The **provider's** quota running out does not.\n\nA spent bill",
     "url": "https://github.com/Varun-SV/Cascade-AI/pull/217",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 5",
       "pull request",
       "repo: Cascade-AI"
     ]
@@ -1992,7 +1992,7 @@
   },
   {
     "title": "[PR] feat(framing): drop the profile person from a two-person shot's span",
-    "date": "2026-08-25T18:26:34Z",
+    "date": "2026-08-25T18:47:51Z",
     "summary": "Le \u00ab cas 2 \u00bb du spike #124, branch\u00e9 en mode normal : dans un plan \u00e0 deux\npersonnes dont l'une est nettement plus de face, l'autre sort du calcul d'empan\net la variante 9:16 se resserre sur celle qui regarde la cam\u00e9ra.\n\nC'est le stage 2 du chantier de cadrage avanc\u00e9. Le stage 1 \u00e9tait #124.\n\n## Le fic",
     "url": "https://github.com/JulienCr/avolo-shorts/pull/176",
     "source": "github_prs",
@@ -2022,6 +2022,42 @@
     "source": "github_prs",
     "highlights": [
       "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(migrate): heal Open App metadata after migrate/install",
+    "date": "2026-08-25T19:33:55Z",
+    "summary": "## Summary\n- After each Open App `mj migrate --schema` and `mj app install` (`RunAppMigrations`), run the core metadata-heal steps that `__mj`'s `R__RefreshMetadata` already runs for MJ itself. Open App Flyway histories never ran that repeatable, so layered `BaseView` column order and `EntityField.S",
+    "url": "https://github.com/MemberJunction/MJ/pull/4048",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] docs: add colab-mcp setup and where it fits the model pipeline",
+    "date": "2026-08-25T19:25:40Z",
+    "summary": "Adds client config and a doc for [`googlecolab/colab-mcp`](https://github.com/googlecolab/colab-mcp), Google's MCP server that hands an agent a Colab notebook as a remote GPU runtime.\n\n## Changes\n\n- **`.mcp.json`** \u2014 declares the `colab-mcp` stdio server (`uvx git+\u2026`) so it is picked up when Claude ",
+    "url": "https://github.com/WhiteDevil-93/pocketforge/pull/49",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: pocketforge"
+    ]
+  },
+  {
+    "title": "[PR] fix(ng-ui-components): stop all five form controls latching their disabled state",
+    "date": "2026-08-25T19:02:13Z",
+    "summary": "## What\n\n`mj-dropdown`, `mj-combobox`, `mj-datepicker`, `mj-switch` and `mj-numeric-input` each computed their internal `IsDisabled` gate only inside `setDisabledState()` \u2014 the ControlValueAccessor hook Angular Forms calls exactly once, at registration. `Disabled` was a plain `@Input` with no setter",
+    "url": "https://github.com/MemberJunction/MJ/pull/3830",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
       "pull request",
       "repo: MJ"
     ]
