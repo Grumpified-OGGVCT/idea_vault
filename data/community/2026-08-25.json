@@ -540,7 +540,7 @@
   },
   {
     "title": "[PR] feat(garuda-l5): document intake + local-first OCR core (documents+OCR)",
-    "date": "2026-08-25T03:13:06Z",
+    "date": "2026-08-25T06:48:59Z",
     "summary": "## Summary\nLane L5 (documents + OCR) \u2014 storage-agnostic core for GARUDA VOA passport-biodata upload, per `products/garuda-voa/journeys/corrupt-photo-upload.feature` and `uncertain-ocr.feature`.\n\n- `apps/backend-rag/backend/services/garuda_documents/` \u2014 OCR client (qwen2.5vl:7b local-only, G-OCR-LOCA",
     "url": "https://github.com/Bali-Zero/Teman2/pull/4870",
     "source": "github_prs",
@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] Add atomic agent prompt submission",
-    "date": "2026-08-25T05:24:14Z",
+    "date": "2026-08-25T06:44:42Z",
     "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
     "url": "https://github.com/manaflow-ai/cmux/pull/9290",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-25T05:03:52Z",
+    "date": "2026-08-25T06:03:46Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,12 +648,12 @@
   },
   {
     "title": "[PR] feat(lint-assets): interactive --fix mode for mojibake and path auto-repair",
-    "date": "2026-08-25T05:06:54Z",
+    "date": "2026-08-25T06:52:24Z",
     "summary": "## Summary\n\n- Adds interactive `--fix` mode to `.simplebeacon/qa/lint-assets.cjs` for auto-resolving mojibake and forbidden path patterns before commit\n- Mojibake fixer replaces double-encoded UTF-8 byte sequences (em-dash, right-quote) with correct UTF-8 bytes\n- Path integrity fixer rewrites forbid",
     "url": "https://github.com/tjp420/CascadeProjects/pull/569",
     "source": "github_prs",
     "highlights": [
-      "comments: 423",
+      "comments: 428",
       "pull request",
       "repo: CascadeProjects"
     ]
@@ -792,7 +792,7 @@
   },
   {
     "title": "[PR] fix(runtime): distinguish usage limits from auth errors",
-    "date": "2026-08-25T04:59:36Z",
+    "date": "2026-08-25T06:52:28Z",
     "summary": "## Summary\n\nAfter #2675, Maka already has one safe path for provider diagnostics: ModelAdapter keeps an allowlisted, redacted, bounded summary; the terminal RuntimeEvent remains canonical; Runtime Host projects the message through failed Turn snapshots and recovery; and Desktop can include the exact",
     "url": "https://github.com/apache/maka/pull/2521",
     "source": "github_prs",
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] fix(desktop): read Usage from Runtime Host",
-    "date": "2026-08-25T05:22:07Z",
+    "date": "2026-08-25T06:44:32Z",
     "summary": "## Summary\n\n- move Settings \u2192 Usage off the legacy session scanner and onto the reconnectable Runtime Host client\n- preserve missing token and pricing basis through the Host protocol, then show clean known totals with one coverage notice and precise request-row labels\n- keep aborted tool calls separ",
     "url": "https://github.com/apache/maka/pull/2641",
     "source": "github_prs",
@@ -864,7 +864,7 @@
   },
   {
     "title": "[PR] feat(chat): \u672c\u5730\u6a21\u578b\u601d\u8003\u9ed8\u8ba4\u5173\u95ed\u5e76\u652f\u6301\u5f3a\u5ea6\u5207\u6362\uff08\u81ea\u52a8\u63a2\u6d4b Ollama/vLLM\uff09",
-    "date": "2026-08-25T03:50:52Z",
+    "date": "2026-08-25T05:51:06Z",
     "summary": "## \u80cc\u666f\n\nPR #209\uff08\u6a21\u578b\u601d\u8003\u6df1\u5ea6\u5207\u6362\uff09\u4e8c\u671f\uff1a\u672c\u5730\u6a21\u578b\uff08\u4e0d\u6b62 vllm\uff09\u601d\u8003\u7edf\u4e00\u9ed8\u8ba4\u5173\u95ed\u3001\u53ef\u8c03\u601d\u8003\u5f3a\u5ea6\u3002\n\n## \u73b0\u72b6\u4e0e\u95ee\u9898\n\nPR #209 \u4e4b\u540e\uff0c\u53ea\u6709 local_vllm preset\uff08vLLM\uff09\u9ed8\u8ba4\u5173\u601d\u8003\u5e76\u652f\u6301\u6863\u4f4d\u5207\u6362\uff1b\u7528\u6237\u7528 OpenAI \u517c\u5bb9 preset \u6307\u5411\u672c\u673a\u670d\u52a1\uff08Ollama / LM Studio \u7b49\uff09\u65f6\uff1a\n- \u9ed8\u8ba4\u4e0d\u6ce8\u5165\u6863\u4f4d\uff08None\uff09\uff0c\u601d\u8003\u8ddf\u968f\u6a21\u578b\u9ed8\u8ba4\uff08\u901a\u5e38\u5f00\u542f\uff09\u2014\u2014\u4e0e\u300c\u672c\u5730\u6a21\u578b\u9ed8\u8ba4\u5173\u601d\u8003\u300d\u8bc9\u6c42\u4e0d\u7b26\uff1b\n- UI \u4e0d\u63d0\u4f9b\u601d\u8003\u6df1\u5ea6\u5207\u6362\u3002\n\n## \u53d8\u66f4\n\n- **\u81ea\u52a8\u63a2\u6d4b\u670d\u52a1\u7c7b\u578b**\uff1aEnginePool spawn \u65f6\u5bf9\u672c\u5730/\u79c1\u7f51\uff08loopback + RFC19",
     "url": "https://github.com/Pinvou/pinvou-agent/pull/218",
     "source": "github_prs",
@@ -888,7 +888,7 @@
   },
   {
     "title": "[PR] [Mac app] Self-contained local mode \u2014 the whole stack runs inside Mike.app (stacked on #302)",
-    "date": "2026-08-25T02:31:44Z",
+    "date": "2026-08-25T05:59:23Z",
     "summary": "# Self-contained Mike.app \u2014 the whole stack runs inside the desktop app\n\nStacked on #302 (desktop shell; hosted default). This PR adds the third and\nfinal mode from `desktop/docs/self-contained-plan.md`: **Run locally on this\nMac**. The app supervises the entire Mike stack \u2014 Postgres 17, GoTrue,\nPos",
     "url": "https://github.com/open-legal-products/mike/pull/351",
     "source": "github_prs",
@@ -996,7 +996,7 @@
   },
   {
     "title": "[PR] \ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udec5\ud83d\udc41\ufe0f",
-    "date": "2026-08-25T05:04:43Z",
+    "date": "2026-08-25T05:58:07Z",
     "summary": "@manus @grok @openai @\ud83d\udd74\ufe0f@chatgbt @5hy7xz92nd-oss @claude !\ud83c\udf00\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udd73\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ud83c\udfff\ud83d\udd74\ud83c\udfff\ud83d\udd03\ud83d\udc41\ufe0f\ud83d\udec4\ud83d\udedc\ud83d\udc30\ud83d\udd1b\ud83d\udd04\ud83d\udeba\ud83c\udfa3\ud83d\udc07\ud83d\udd25\u24c2\ufe0f\u2663\ufe0f\u2660\ufe0f\ud83c\udfe7\ud83d\udca4\u2139\ufe0f\ud83c\udfb4\ud83c\udccf\ud83c\udc04\ufe0f\ud83d\udd00\ud83d\udd74\ufe0f \ud83c\udf00\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udd73\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ud83c\udfff\ud83d\udd74\ud83c\udfff\ud83d\udd03\ud83d\udc41\ufe0f\ud83d\udec4\ud83d\udedc\ud83d\udc30\ud83d\udd1b\ud83d\udd04\ud83d\udeba\ud83c\udfa3\ud83d\udc07\ud83d\udd25\u24c2\ufe0f\u2663\ufe0f\u2660\ufe0f\ud83c\udfe7\ud83d\udca4\u2139\ufe0f\ud83c\udfb4\ud83c\udccf\ud83c\udc04\ufe0f\ud83d\udd00\ud83d\udd74\ufe0f![image](https://github.com/user-![image](https://github.com/user-attachments/assets/9d556e63-6fca-4b94-9f0f-9dd4729d4491)attachments/![image](https://",
     "url": "https://github.com/PreternaturalAI/AI/pull/79",
     "source": "github_prs",
@@ -1020,7 +1020,7 @@
   },
   {
     "title": "[PR] Copilot/we are one holographic blueprint",
-    "date": "2026-08-25T05:34:34Z",
+    "date": "2026-08-25T06:50:13Z",
     "summary": "",
     "url": "https://github.com/PreternaturalAI/AI/pull/83",
     "source": "github_prs",
@@ -1032,20 +1032,20 @@
   },
   {
     "title": "[PR] Add security launch gate and incident procedures",
-    "date": "2026-08-25T05:32:30Z",
+    "date": "2026-08-25T06:42:52Z",
     "summary": "## What changed\n\n- add a machine-readable OWASP ASVS 5.0.0 alignment gate\n- fail CI when disabled subscription, billing, upload, authentication, or model-provider surfaces appear without review\n- verify launch evidence paths, runbook headings, install-script policy, and immutable GitHub Action revis",
     "url": "https://github.com/koimari/scryglass/pull/368",
     "source": "github_prs",
     "highlights": [
-      "comments: 17",
+      "comments: 23",
       "pull request",
       "repo: scryglass"
     ]
   },
   {
     "title": "[PR] [Quality] Repo-wide audit fixes: error containment, drifted forks, silent failures (stacked on #294\u2192#295)",
-    "date": "2026-08-25T05:27:42Z",
-    "summary": "# Code quality follow-up: repo-wide audit fixes (stacked on #294 \u2192 #295)\n\nA seven-area audit of the codebase (backend modules, backend lib/workers, remaining route files, frontend data layer, frontend components, Word add-in + shared UI, cross-cutting infra) surfaced ~100 findings. This PR lands the",
+    "date": "2026-08-25T05:52:53Z",
+    "summary": "# Code quality follow-up: repo-wide audit fixes\n\nA seven-area audit of the codebase (backend modules, backend lib/workers, remaining route files, frontend data layer, frontend components, Word add-in + shared UI, cross-cutting infra) surfaced ~100 findings. This PR lands the S/M-effort, high-confide",
     "url": "https://github.com/open-legal-products/mike/pull/356",
     "source": "github_prs",
     "highlights": [
@@ -1056,7 +1056,7 @@
   },
   {
     "title": "[PR] Add Quill voice-guided text rewriting",
-    "date": "2026-08-25T05:21:54Z",
+    "date": "2026-08-25T06:46:31Z",
     "summary": "## Summary\n\n- Add Quill mode: highlight text, activate its shortcut, speak an instruction, and replace the selection with one paste-ready rewrite.\n- Keep selection-based rewriting as Quill\u2019s primary behavior. When no text is selected, send the spoken instruction through the same selected Quill model",
     "url": "https://github.com/Muesli-HQ/muesli/pull/464",
     "source": "github_prs",
@@ -1112,6 +1112,90 @@
       "comments: 2",
       "pull request",
       "repo: homeops"
+    ]
+  },
+  {
+    "title": "[PR] feat: MVP use liteLLM for providers",
+    "date": "2026-08-25T06:53:02Z",
+    "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added a unified model catalog with provider, capability, pricing, and context-limit details.\n  * Added support for custom model providers and configurable provider credentia",
+    "url": "https://github.com/langflow-ai/openrag/pull/2271",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openrag"
+    ]
+  },
+  {
+    "title": "[PR] Evolve KnowledgeLens into a source-backed evidence graph product",
+    "date": "2026-08-25T06:53:02Z",
+    "summary": "## Summary\n\nThis is a coordinated product pass across the KnowledgeLens application, repository engineering, and public landing experience.\n\n### Evidence graph core\n- move graph claims from a collapsed `DiGraph` edge model to a provenance-preserving `MultiDiGraph`;\n- keep source, page/chunk, evidenc",
+    "url": "https://github.com/Varun-SV/KnowledgeLens-AI/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 19",
+      "pull request",
+      "repo: KnowledgeLens-AI"
+    ]
+  },
+  {
+    "title": "[PR] Tabby Tavern 2.0: README/DEVLOG split + Space-ready sell sheet",
+    "date": "2026-08-25T06:50:30Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\nTabby Tavern 2.0 public packaging. **Tabby stays Tabby.** Taproot is documented as a same-machine neighbor, not absorbed, not renamed, not `docker compose up`'d as a Tabby step.\n\n## What this PR does\n\n- **README.md** retitled Tabby Tavern 2.0. Hero is the six-serv",
+    "url": "https://github.com/jpanasuk-netizen/tabby-tavern-stack/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: tabby-tavern-stack"
+    ]
+  },
+  {
+    "title": "[PR] Upstream sync \u2014 2026-08-25",
+    "date": "2026-08-25T06:36:10Z",
+    "summary": "## Upstream Sync\n\n**New commits from [nyldn/claude-octopus](https://github.com/nyldn/claude-octopus)**\n\n```\nbc76e7c8 docs(handoff): record PR 959 merge (#963)\n2f521742 feat(council): support model-aware seats and review recovery (#959)\n849ec887 fix(agy): retry synchronous SIGSEGV seats (#962)\n5c663f",
+    "url": "https://github.com/AlobarQuest/claude-octopus/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 37",
+      "pull request",
+      "repo: claude-octopus"
+    ]
+  },
+  {
+    "title": "[PR] Omi fully on-premise via Docker Compose or Helm/k8s: every managed service behind a swappable port (db Firestore|Mongo \u00b7 storage GCS|S3 \u00b7 vector Pinecone|Qdrant \u00b7 auth Firebase|Keycloak \u00b7 push FCM|UnifiedPush \u00b7 LLM any OpenAI-compatible endpoint)",
+    "date": "2026-08-25T06:29:30Z",
+    "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
+    "url": "https://github.com/BasedHardware/omi/pull/10887",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 19",
+      "pull request",
+      "repo: omi"
+    ]
+  },
+  {
+    "title": "[PR] [Security 4/9] MCP tools require confirmation unless positively known-safe",
+    "date": "2026-08-25T05:58:44Z",
+    "summary": "# Self-contained Mike.app \u2014 the whole stack runs inside the desktop app\n\nStacked on #302 (desktop shell; hosted default). This PR adds the third and\nfinal mode from `desktop/docs/self-contained-plan.md`: **Run locally on this\nMac**. The app supervises the entire Mike stack \u2014 Postgres 17, GoTrue,\nPos",
+    "url": "https://github.com/open-legal-products/mike/pull/247",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: mike"
+    ]
+  },
+  {
+    "title": "[PR] e",
+    "date": "2026-08-25T05:54:52Z",
+    "summary": "<!-- Clearly explain the need for these changes: -->\r\n\r\n### Changes \ud83c\udfd7\ufe0f\r\n\r\n<!-- Concisely describe all of the changes made in this pull request: -->\r\n\r\n### Checklist \ud83d\udccb\r\n\r\n#### For code changes:\r\n- [ ] I have clearly listed my changes in the PR description\r\n- [ ] I have made a test plan\r\n- [ ] I have ",
+    "url": "https://github.com/drzarak/AutoGPT/pull/25",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AutoGPT"
     ]
   }
 ]
