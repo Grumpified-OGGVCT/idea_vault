@@ -564,12 +564,12 @@
   },
   {
     "title": "[PR] Add atomic agent prompt submission",
-    "date": "2026-08-25T21:25:50Z",
+    "date": "2026-08-25T22:20:45Z",
     "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
     "url": "https://github.com/manaflow-ai/cmux/pull/9290",
     "source": "github_prs",
     "highlights": [
-      "comments: 56",
+      "comments: 57",
       "pull request",
       "repo: cmux"
     ]
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-25T21:03:24Z",
+    "date": "2026-08-25T22:20:17Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -720,7 +720,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-25T17:26:07Z",
+    "date": "2026-08-25T22:28:24Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/buddy/pull/1352",
     "source": "github_prs",
@@ -1536,12 +1536,12 @@
   },
   {
     "title": "[PR] Reconcile PR38 with the salvage line: merged history, AGPL executed, sweettest unblock",
-    "date": "2026-08-25T21:31:38Z",
+    "date": "2026-08-25T22:17:26Z",
     "summary": "Rejoins six weeks of parallel work and lands the corrections found along the way.\n`origin/main` is fully contained in this branch (0 ahead, 124 behind as of\n2026-08-24), so there is no content to reconcile here \u2014 only review.\n\n**PR #38 has since merged to main on its own** (merge commit `873cc0c`,\n2",
     "url": "https://github.com/G-0-B/FLOSS/pull/41",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "pull request",
       "repo: FLOSS"
     ]
@@ -1824,7 +1824,7 @@
   },
   {
     "title": "[PR] feat(runtime): OTLP tracing, multi-arch Docker image, env placeholder expansion for MCP/LiteLLM",
-    "date": "2026-08-25T21:24:40Z",
+    "date": "2026-08-25T21:57:47Z",
     "summary": "## Description\n\nAdds OTLP tracing, multi-arch runtime packaging, and safe environment placeholder support for Loom runtime deployments. It also hardens LiteLLM/OpenAI, MCP streamable HTTP sessions, SSE compatibility, tool alias governance, and ephemeral-agent opt-in behavior.\n\nCloses [TER-583](https",
     "url": "https://github.com/teradata-labs/loom/pull/284",
     "source": "github_prs",
@@ -1920,7 +1920,7 @@
   },
   {
     "title": "[PR] feat(local-runtime): managed llama.cpp runtime \u2014 local models with one click",
-    "date": "2026-08-25T18:22:17Z",
+    "date": "2026-08-25T21:41:33Z",
     "summary": "Hermes can now run models entirely on the user's machine with zero configuration: it installs and supervises a llama.cpp server, picks the right build of each model for the hardware, and manages GPU memory end-to-end. The user picks a model; there are deliberately **no context, VRAM, or quantization",
     "url": "https://github.com/NousResearch/hermes-agent/pull/85852",
     "source": "github_prs",
@@ -1944,12 +1944,12 @@
   },
   {
     "title": "[PR] docs(plans): direct-superpipe migration plans from inventory #1414",
-    "date": "2026-08-25T21:21:30Z",
+    "date": "2026-08-25T22:16:47Z",
     "summary": "## What\n\nSix per-area deep-dive migration plans converting the hand-rolled imperative sites from the #1414 direct-superpipe inventory into direct superpipe compositions (ADR 0004). Docs only \u2014 no source changes.\n\n| Doc | Area | Sites |\n| --- | --- | --- |\n| `external-events.md` | GitHub normalizers,",
     "url": "https://github.com/lsm/HyperNeo/pull/2957",
     "source": "github_prs",
     "highlights": [
-      "comments: 18",
+      "comments: 20",
       "pull request",
       "repo: HyperNeo"
     ]
@@ -2076,12 +2076,12 @@
   },
   {
     "title": "[PR] docs(platform): sync GitBook documentation into dev",
-    "date": "2026-08-25T21:26:40Z",
+    "date": "2026-08-25T22:23:52Z",
     "summary": "### Why / What / How\n\nGitBook contains the published single-container operations guide, while `dev` contains the canonical generator and newer generated integration documentation. The branches need a deliberate content reconciliation without regressing either side.\n\nThis PR brings the GitBook-author",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/14170",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 15",
       "pull request",
       "repo: AutoGPT"
     ]
@@ -2148,19 +2148,19 @@
   },
   {
     "title": "[PR] docs(platform): sync dev documentation into GitBook",
-    "date": "2026-08-25T21:28:52Z",
+    "date": "2026-08-25T22:26:58Z",
     "summary": "### Why / What / How\n\nThe GitBook branch is missing current `dev` generator output and generated integration documentation for All Quiet, DataForB2B, Stripe subscription triggers, Stripe Link, and newer LLM/AutoPilot schemas. It must be updated after the GitBook-authored guide is reconciled into `de",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/14171",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 15",
       "pull request",
       "repo: AutoGPT"
     ]
   },
   {
     "title": "[PR] fix(ai-sandbox-cloudflare): stop exposePreview from returning stale tunnel URLs",
-    "date": "2026-08-25T21:27:00Z",
+    "date": "2026-08-25T21:50:44Z",
     "summary": "`exposePreview` returned `sandbox.tunnels.get(port).url` without any check. The SDK serves that record straight from Durable Object storage on a cache hit, so once the tunnel behind it died, the tool kept re-sharing a dead URL that answers 502 at the trycloudflare edge, with no error signal for the ",
     "url": "https://github.com/TanStack/ai/pull/1200",
     "source": "github_prs",
@@ -2172,7 +2172,7 @@
   },
   {
     "title": "[PR] feat(ai-sandbox): add Blaxel provider",
-    "date": "2026-08-25T21:26:12Z",
+    "date": "2026-08-25T21:57:44Z",
     "summary": "Rebased onto current `main` on 2026-08-17. Ready for review.\n\n## \ud83c\udfaf Changes\n\n- Add `@tanstack/ai-sandbox-blaxel` as a managed cloud sandbox provider.\n- Implement filesystem access, native file watch, environment values, bounded process streaming, token-gated previews, and resume by id.\n- Reconcile am",
     "url": "https://github.com/TanStack/ai/pull/1065",
     "source": "github_prs",
@@ -2216,6 +2216,54 @@
       "comments: 0",
       "pull request",
       "repo: origo-bc-cloudevents-llm"
+    ]
+  },
+  {
+    "title": "[PR] feat(conductor): setup SDD infrastructure and pre-push-review skill",
+    "date": "2026-08-25T22:30:14Z",
+    "summary": "## Summary\n\nThis PR initializes the Conductor Spec-Driven Development (SDD) scaffolding for `ai-config` and standardizes the `pre-push-review` skill across harnesses:\n\n1. **Conductor Scaffolding**:\n   - Product Definition: `conductor/product.md`\n   - Product Guidelines: `conductor/product-guidelines",
+    "url": "https://github.com/Morrison-Lab/ai-config/pull/2251",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 24",
+      "pull request",
+      "repo: ai-config"
+    ]
+  },
+  {
+    "title": "[PR] Release v0.2.0: first real-work OpenBot",
+    "date": "2026-08-25T22:28:28Z",
+    "summary": "## Summary\n\n- Adds durable task/event execution with action-bound approvals and recoverable lifecycle.\n- Adds bounded file, shell, and browser workers with workspace/SSRF boundaries and Linux bubblewrap fail-closed mode.\n- Adds task API, SSE streams, redacted audit export, CLI parity, responsive ope",
+    "url": "https://github.com/pmwasim/OpenBot/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: OpenBot"
+    ]
+  },
+  {
+    "title": "[PR] Update Docker images",
+    "date": "2026-08-25T22:18:53Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| bbilly1/tubearchivist | digest | `f7bfd5c` \u2192 `ba1c846` |\n| code.olsen.cloud/incubator/editions | digest | `e5d5f94` \u2192 `9a618e4` |\n| docker.io/",
+    "url": "https://github.com/morten-olsen/homelab-apps/pull/394",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-apps"
+    ]
+  },
+  {
+    "title": "[PR] Bump the dependencies group with 58 updates",
+    "date": "2026-08-25T22:03:44Z",
+    "summary": "Bumps the dependencies group with 58 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@anthropic-ai/sdk](https://github.com/anthropics/anthropic-sdk-typescript) | `0.60.0` | `0.120.0` |\n| [@google/genai](https://github.com/googleapis/js-genai) | `2.8.0` | `2.18.0` |\n| [@openfeature/core](htt",
+    "url": "https://github.com/ppiiyo/KostromaAi44/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: KostromaAi44"
     ]
   }
 ]
