@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-25T10:19:22Z",
+    "date": "2026-08-25T11:16:53Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1032,12 +1032,12 @@
   },
   {
     "title": "[PR] Add security launch gate and incident procedures",
-    "date": "2026-08-25T10:27:43Z",
+    "date": "2026-08-25T11:26:32Z",
     "summary": "## What changed\n\n- add a machine-readable OWASP ASVS 5.0.0 alignment gate\n- fail CI when disabled subscription, billing, upload, authentication, or model-provider surfaces appear without review\n- verify launch evidence paths, runbook headings, install-script policy, and immutable GitHub Action revis",
     "url": "https://github.com/koimari/scryglass/pull/368",
     "source": "github_prs",
     "highlights": [
-      "comments: 41",
+      "comments: 46",
       "pull request",
       "repo: scryglass"
     ]
@@ -1092,7 +1092,7 @@
   },
   {
     "title": "[PR] Expand query profiles and providers",
-    "date": "2026-08-25T10:29:44Z",
+    "date": "2026-08-25T10:36:57Z",
     "summary": "## What\n- Expand query profiles with structured OpenSearch authoring, typed filters, JSONPath fields, paging, streaming, processors, diagnostics, exports, and reconciliation/replay workflows.\n- Add cloud/Kubernetes log providers, workload browsing, connection health/observability, and safer secret/i",
     "url": "https://github.com/flanksource/commons-db/pull/56",
     "source": "github_prs",
@@ -1128,12 +1128,12 @@
   },
   {
     "title": "[PR] Evolve KnowledgeLens into a source-backed evidence graph product",
-    "date": "2026-08-25T09:43:41Z",
+    "date": "2026-08-25T11:29:43Z",
     "summary": "## Summary\n\nThis is a coordinated product pass across the KnowledgeLens application, repository engineering, and public landing experience.\n\n### Evidence graph core\n- move graph claims from a collapsed `DiGraph` edge model to a provenance-preserving `MultiDiGraph`;\n- keep source, page/chunk, evidenc",
     "url": "https://github.com/Varun-SV/KnowledgeLens-AI/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 76",
+      "comments: 94",
       "pull request",
       "repo: KnowledgeLens-AI"
     ]
@@ -1248,7 +1248,7 @@
   },
   {
     "title": "[PR] RavenDB-26606",
-    "date": "2026-08-25T10:29:53Z",
+    "date": "2026-08-25T11:05:21Z",
     "summary": "### Issue link\r\n\r\nhttps://issues.hibernatingrhinos.com/issue/RavenDB-26606\r\n\r\n### Type of change\r\n\r\n- [ ] Bug fix\r\n- [ ] Regression bug fix\r\n- [ ] Optimization\r\n- [ ] New feature\r\n\r\n### How risky is the change?\r\n\r\n- [ ] Low \r\n- [ ] Moderate \r\n- [ ] High\r\n- [ ] Not relevant\r\n\r\n### Backward compatibil",
     "url": "https://github.com/ravendb/ravendb/pull/23170",
     "source": "github_prs",
@@ -1404,7 +1404,7 @@
   },
   {
     "title": "[PR] \u267b\ufe0f refactor(makefiles): split shared logic into reusable libraries ",
-    "date": "2026-08-25T10:27:07Z",
+    "date": "2026-08-25T11:24:46Z",
     "summary": "<!-- Title Annotations:\r\n\r\n  WIP: work in progress\r\n  \ud83d\udc1b    Fix a bug.\r\n  \u2728    Introduce new features.\r\n  \ud83c\udfa8    Enhance existing feature.\r\n  \u267b\ufe0f    Refactor code.\r\n  \ud83d\ude91\ufe0f    Critical hotfix.\r\n  \u2697\ufe0f    Perform experiments.\r\n  \u2b06\ufe0f    Upgrade dependencies.\r\n  \ud83d\udcdd    Add or update documentation.\r\n  \ud83d\udd28    Add or u",
     "url": "https://github.com/ITISFoundation/osparc-simcore/pull/9564",
     "source": "github_prs",
@@ -1416,7 +1416,7 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-25T10:33:14Z",
+    "date": "2026-08-25T10:52:34Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
@@ -1476,7 +1476,7 @@
   },
   {
     "title": "[PR] `Logos`: Guide the AI-tools setup step by step and size context windows dynamically",
-    "date": "2026-08-25T09:49:17Z",
+    "date": "2026-08-25T11:25:12Z",
     "summary": "## Summary\n\nTwo problems, one page.\n\n**The setup asked for everything at once**, and configured Claude Code by writing an `env` block into `~/.claude/settings.json`. That file is global: it redirects *every* Claude Code session on the machine to Logos, so anyone with an Anthropic subscription had to",
     "url": "https://github.com/ls1intum/edutelligence/pull/775",
     "source": "github_prs",
@@ -1484,6 +1484,18 @@
       "comments: 1",
       "pull request",
       "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] feat(graphs): migrate LLM orchestration from LangGraph/LangChain to Mastra + Vercel AI SDK",
+    "date": "2026-08-25T11:19:25Z",
+    "summary": "\r\n## Description\r\n\r\nThis PR migrates the extension's LLM orchestration layer off **LangChain/LangGraph** and onto **Mastra workflows** + the **Vercel AI SDK**. LangGraph's `StateGraph`/`Annotation` engine is rebuilt on Mastra's `createWorkflow`/`createStep` primitives, and LangChain's message/tool/e",
+    "url": "https://github.com/sourcefuse/loopback4-llm-chat-extension/pull/29",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: loopback4-llm-chat-extension"
     ]
   }
 ]
