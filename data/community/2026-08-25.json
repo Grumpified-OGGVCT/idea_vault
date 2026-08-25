@@ -504,12 +504,12 @@
   },
   {
     "title": "[PR] feat: agent-level trust boundary for web_search via a sandboxed research sub-agent",
-    "date": "2026-08-25T08:41:28Z",
+    "date": "2026-08-25T09:29:58Z",
     "summary": "## Summary\n\nImplements #1128 in the direction its design comment recommends: an agent-level trust boundary for web_search built from a restricted research sub-agent, not taint tracking through the LLM loop (which has no sound enforcement point, since web content shapes the model's reasoning, not jus",
     "url": "https://github.com/vitali87/code-graph-rag/pull/1425",
     "source": "github_prs",
     "highlights": [
-      "comments: 20",
+      "comments: 26",
       "pull request",
       "repo: code-graph-rag"
     ]
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-25T08:26:51Z",
+    "date": "2026-08-25T09:05:50Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,12 +648,12 @@
   },
   {
     "title": "[PR] feat(lint-assets): interactive --fix mode for mojibake and path auto-repair",
-    "date": "2026-08-25T07:40:20Z",
+    "date": "2026-08-25T09:31:12Z",
     "summary": "## Summary\n\n- Adds interactive `--fix` mode to `.simplebeacon/qa/lint-assets.cjs` for auto-resolving mojibake and forbidden path patterns before commit\n- Mojibake fixer replaces double-encoded UTF-8 byte sequences (em-dash, right-quote) with correct UTF-8 bytes\n- Path integrity fixer rewrites forbid",
     "url": "https://github.com/tjp420/CascadeProjects/pull/569",
     "source": "github_prs",
     "highlights": [
-      "comments: 433",
+      "comments: 437",
       "pull request",
       "repo: CascadeProjects"
     ]
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] fix(desktop): read Usage from Runtime Host",
-    "date": "2026-08-25T06:44:32Z",
+    "date": "2026-08-25T09:24:39Z",
     "summary": "## Summary\n\n- move Settings \u2192 Usage off the legacy session scanner and onto the reconnectable Runtime Host client\n- preserve missing token and pricing basis through the Host protocol, then show clean known totals with one coverage notice and precise request-row labels\n- keep aborted tool calls separ",
     "url": "https://github.com/apache/maka/pull/2641",
     "source": "github_prs",
@@ -828,7 +828,7 @@
   },
   {
     "title": "[PR] Feat/idea plugin",
-    "date": "2026-08-25T08:40:48Z",
+    "date": "2026-08-25T08:55:54Z",
     "summary": "## Description\r\n\r\nAdd IntelliJ IDEA (JetBrains) plugin extension for Open Code Review.\r\n\r\nThis is a new extension under `extensions/idea/` that brings the same\r\ncode review workflow available in the VSCode extension to IntelliJ-based\r\nIDEs (IDEA Community/Ultimate, WebStorm, PyCharm, etc.).\r\n\r\nThe i",
     "url": "https://github.com/alibaba/open-code-review/pull/1031",
     "source": "github_prs",
@@ -876,7 +876,7 @@
   },
   {
     "title": "[PR] feat(runtime-host): own bot conversation continuity",
-    "date": "2026-08-25T08:39:13Z",
+    "date": "2026-08-25T09:35:17Z",
     "summary": "## Summary\n\n- move opaque external-conversation binding ownership into Runtime Host operational SQLite, including Session creation, crash recovery, retirement cleanup, and backup/restore\n- reduce Desktop to the channel boundary: normalize conversation, source-event, and reply-target identities, then",
     "url": "https://github.com/apache/maka/pull/2550",
     "source": "github_prs",
@@ -1032,12 +1032,12 @@
   },
   {
     "title": "[PR] Add security launch gate and incident procedures",
-    "date": "2026-08-25T08:41:16Z",
+    "date": "2026-08-25T09:27:16Z",
     "summary": "## What changed\n\n- add a machine-readable OWASP ASVS 5.0.0 alignment gate\n- fail CI when disabled subscription, billing, upload, authentication, or model-provider surfaces appear without review\n- verify launch evidence paths, runbook headings, install-script policy, and immutable GitHub Action revis",
     "url": "https://github.com/koimari/scryglass/pull/368",
     "source": "github_prs",
     "highlights": [
-      "comments: 34",
+      "comments: 37",
       "pull request",
       "repo: scryglass"
     ]
@@ -1128,12 +1128,12 @@
   },
   {
     "title": "[PR] Evolve KnowledgeLens into a source-backed evidence graph product",
-    "date": "2026-08-25T08:44:51Z",
+    "date": "2026-08-25T09:37:29Z",
     "summary": "## Summary\n\nThis is a coordinated product pass across the KnowledgeLens application, repository engineering, and public landing experience.\n\n### Evidence graph core\n- move graph claims from a collapsed `DiGraph` edge model to a provenance-preserving `MultiDiGraph`;\n- keep source, page/chunk, evidenc",
     "url": "https://github.com/Varun-SV/KnowledgeLens-AI/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 52",
+      "comments: 68",
       "pull request",
       "repo: KnowledgeLens-AI"
     ]
@@ -1200,7 +1200,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-25T07:33:56Z",
+    "date": "2026-08-25T09:29:56Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1212,7 +1212,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-25T07:33:55Z",
+    "date": "2026-08-25T09:29:55Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1224,7 +1224,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-25T07:33:47Z",
+    "date": "2026-08-25T09:29:45Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1236,8 +1236,8 @@
   },
   {
     "title": "[PR] Vesti: a fully local, agentic AI assistant",
-    "date": "2026-08-25T08:44:50Z",
-    "summary": "A Grok-style assistant that runs entirely on your own hardware. No API keys, no cloud, no telemetry.\n\nThe repository was empty, so this is the whole project. Three commits: the base assistant, the agentic layer, then robustness and autonomy.\n\n## Interfaces\n\n**Installable app for your iPhone.** A PWA",
+    "date": "2026-08-25T09:37:00Z",
+    "summary": "A Grok-style assistant that runs entirely on your own hardware. No API keys, no cloud, no telemetry.\n\nThe repository was empty, so this is the whole project.\n\n**CI is green** \u2014 392 tests across Python 3.10\u20133.13, ruff, and the web client. Zero skipped: the sandbox tests exercise real isolation on the",
     "url": "https://github.com/Discopancakes/Vesti/pull/1",
     "source": "github_prs",
     "highlights": [
@@ -1248,7 +1248,7 @@
   },
   {
     "title": "[PR] RavenDB-26606",
-    "date": "2026-08-25T08:43:23Z",
+    "date": "2026-08-25T09:35:16Z",
     "summary": "### Issue link\r\n\r\nhttps://issues.hibernatingrhinos.com/issue/RavenDB-26606\r\n\r\n### Type of change\r\n\r\n- [ ] Bug fix\r\n- [ ] Regression bug fix\r\n- [ ] Optimization\r\n- [ ] New feature\r\n\r\n### How risky is the change?\r\n\r\n- [ ] Low \r\n- [ ] Moderate \r\n- [ ] High\r\n- [ ] Not relevant\r\n\r\n### Backward compatibil",
     "url": "https://github.com/ravendb/ravendb/pull/23170",
     "source": "github_prs",
@@ -1260,19 +1260,19 @@
   },
   {
     "title": "[PR] feat(inference): multi-provider LLM upstreams (Anthropic, Ollama) + pluggable guardrail pipeline (OpenAI Moderation)",
-    "date": "2026-08-25T08:41:47Z",
+    "date": "2026-08-25T09:02:24Z",
     "summary": "## Summary\r\n\r\nThis is a first slice of the multi-cloud provider + guardrails roadmap theme. It lets an `InferencePolicy` pick the inference provider and declare a guardrail pipeline, and teaches the router to actually honor both:\r\n\r\n```yaml\r\nspec:\r\n  provider: anthropic          # or: ollama, azure-",
     "url": "https://github.com/Azure/kars/pull/488",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 9",
       "pull request",
       "repo: kars"
     ]
   },
   {
     "title": "[PR] dim_slam: cuVSLAM+fusion ",
-    "date": "2026-08-25T08:40:30Z",
+    "date": "2026-08-25T09:13:54Z",
     "summary": "Odom fusion with cuVSLAM\r\n\r\nnext PR lets us run it on alfred",
     "url": "https://github.com/dimensionalOS/dimos/pull/3632",
     "source": "github_prs",
@@ -1284,7 +1284,7 @@
   },
   {
     "title": "[PR] fix(sql-converter): resolve ${mjSchema}, not just ${flyway:defaultSchema}",
-    "date": "2026-08-25T08:39:37Z",
+    "date": "2026-08-25T08:56:44Z",
     "summary": "Closes #3838\n\n## The problem\n\nAn Open App migration names its **own** schema with `${flyway:defaultSchema}` and **MJ core** with `${mjSchema}`. Only the first was substituted.\n\nBecause `--bake-codegen` executes each converted migration against the working database as it advances, the unresolved macr",
     "url": "https://github.com/MemberJunction/MJ/pull/3864",
     "source": "github_prs",
@@ -1376,6 +1376,54 @@
       "comments: 9",
       "pull request",
       "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] feat: standalone Ollama/vLLM inference demo on Cloud Run + GCS model registry",
+    "date": "2026-08-25T09:11:30Z",
+    "summary": "## Summary\n- Standalone demo/spike: two Cloud Run services (Ollama, best-effort CPU-only vLLM) backed by a versioned GCS model-weights registry, mounted read-only via gcsfuse.\n- A manifest-driven GitHub Action (`publish-models.yml`) downloads models (Ollama pulls / HuggingFace repos) and publishes t",
+    "url": "https://github.com/niravshah2705/symphony/pull/163",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: symphony"
+    ]
+  },
+  {
+    "title": "[PR] Report a downloaded local model as available before it is loaded",
+    "date": "2026-08-25T09:04:41Z",
+    "summary": "## What was broken\n\n### A downloaded local model counted as \"no AI configured\" after every restart\n\nFor a user whose only AI provider is a downloaded local GGUF model, `is_ai_available` returned `false` on every launch \u2014 even though generating a commit message would have worked.\n\nThe chain:\n\n- `is_a",
+    "url": "https://github.com/hegsie/Leviathan/pull/440",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Leviathan"
+    ]
+  },
+  {
+    "title": "[PR] \u267b\ufe0f refactor(makefiles): split shared logic into reusable libraries ",
+    "date": "2026-08-25T08:55:52Z",
+    "summary": "<!-- Title Annotations:\r\n\r\n  WIP: work in progress\r\n  \ud83d\udc1b    Fix a bug.\r\n  \u2728    Introduce new features.\r\n  \ud83c\udfa8    Enhance existing feature.\r\n  \u267b\ufe0f    Refactor code.\r\n  \ud83d\ude91\ufe0f    Critical hotfix.\r\n  \u2697\ufe0f    Perform experiments.\r\n  \u2b06\ufe0f    Upgrade dependencies.\r\n  \ud83d\udcdd    Add or update documentation.\r\n  \ud83d\udd28    Add or u",
+    "url": "https://github.com/ITISFoundation/osparc-simcore/pull/9564",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: osparc-simcore"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): add native Hailo-Ollama support",
+    "date": "2026-08-25T08:52:45Z",
+    "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
+    "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 54",
+      "pull request",
+      "repo: zeroclaw"
     ]
   }
 ]
