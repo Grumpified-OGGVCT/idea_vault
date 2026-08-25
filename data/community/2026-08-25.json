@@ -300,12 +300,12 @@
   },
   {
     "title": "traces \uc138\uc158 \ub514\ub809\ud130\ub9ac\uc5d0 \ubcf4\uc874 \uc815\ucc45\uc774 \uc5c6\ub2e4 \u2014 39,333\uac1c / 3.4GB \ub204\uc801",
-    "date": "2026-08-24T09:27:41Z",
+    "date": "2026-08-25T02:43:32Z",
     "summary": "```masc-triage\nkind: gap\narea: persistence\nimpact: internal\nroot: ssot\nmust-do: false\n```\n\n## \ud604\uc0c1\n\n`.masc/traces/` \uc5d0 \uc138\uc158 \ub514\ub809\ud130\ub9ac\uac00 \uacc4\uc18d \uc313\uc785\ub2c8\ub2e4. \uc9c0\uc6b0\ub294 \ucf54\ub4dc\uac00 \uc5c6\uc2b5\ub2c8\ub2e4.\n\n2026-08-23 \uc2e4\uce21:\n\n```\n\ub514\ub809\ud130\ub9ac          39,333\uac1c\n.checkpoint.lock  39,202\uac1c (\uc804\ubd80 0\ubc14\uc774\ud2b8)\n\ub514\ub809\ud130\ub9ac \ud56d\ubaa9 \ud569\uacc4 78,535\uac1c\n\uc6a9\ub7c9              3.42 GB\n```\n\n## \ub0a0\uc9dc\ubcc4\n\n```\n08-18      43",
     "url": "https://github.com/jeong-sik/masc/issues/29586",
     "source": "github_issues",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "state: open",
       "repo: masc"
     ]
@@ -504,12 +504,12 @@
   },
   {
     "title": "[PR] feat: agent-level trust boundary for web_search via a sandboxed research sub-agent",
-    "date": "2026-08-25T01:22:43Z",
+    "date": "2026-08-25T02:40:28Z",
     "summary": "## Summary\n\nImplements #1128 in the direction its design comment recommends: an agent-level trust boundary for web_search built from a restricted research sub-agent, not taint tracking through the LLM loop (which has no sound enforcement point, since web content shapes the model's reasoning, not jus",
     "url": "https://github.com/vitali87/code-graph-rag/pull/1425",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 14",
       "pull request",
       "repo: code-graph-rag"
     ]
@@ -540,7 +540,7 @@
   },
   {
     "title": "[PR] feat(garuda-l5): document intake + local-first OCR core (documents+OCR)",
-    "date": "2026-08-25T01:19:54Z",
+    "date": "2026-08-25T02:04:28Z",
     "summary": "## Summary\nLane L5 (documents + OCR) \u2014 storage-agnostic core for GARUDA VOA passport-biodata upload, per `products/garuda-voa/journeys/corrupt-photo-upload.feature` and `uncertain-ocr.feature`.\n\n- `apps/backend-rag/backend/services/garuda_documents/` \u2014 OCR client (qwen2.5vl:7b local-only, G-OCR-LOCA",
     "url": "https://github.com/Bali-Zero/Teman2/pull/4870",
     "source": "github_prs",
@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] Add atomic agent prompt submission",
-    "date": "2026-08-25T01:05:28Z",
+    "date": "2026-08-25T02:53:33Z",
     "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
     "url": "https://github.com/manaflow-ai/cmux/pull/9290",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-25T00:40:38Z",
+    "date": "2026-08-25T02:07:06Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -720,7 +720,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-24T22:28:07Z",
+    "date": "2026-08-25T03:00:45Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/buddy/pull/1352",
     "source": "github_prs",
@@ -740,6 +740,198 @@
       "comments: 0",
       "pull request",
       "repo: agentic-coding-tools"
+    ]
+  },
+  {
+    "title": "\ud83d\udcca AI CLI Tools Digest 2026-08-25",
+    "date": "2026-08-25T01:26:12Z",
+    "summary": "# AI CLI Tools Community Digest 2026-08-25\n\n> Generated: 2026-08-25 01:20 UTC | Tools covered: 9\n\n- [Claude Code](https://github\u200b.com/anthropics/claude-code)\n- [OpenAI Codex](https://github\u200b.com/openai/codex)\n- [Gemini CLI](https://github\u200b.com/google-gemini/gemini-cli)\n- [GitHub Copilot CLI](https:/",
+    "url": "https://github.com/xiehd77-del/agents-radar/issues/726",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: agents-radar"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-25T03:01:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/ts-auth/pull/120",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-auth"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-25T03:00:49Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/better-dx/pull/955",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: better-dx"
+    ]
+  },
+  {
+    "title": "[PR] feat: Phase 4 & Phase 5 \u2014 API Endpoints, SSE Streaming, Resilience & Automated Test Suite",
+    "date": "2026-08-25T02:58:47Z",
+    "summary": "## \ud83c\udfaf Overview & Objectives\n\nThis PR delivers **Phase 4: API Endpoints & Server-Sent Events (SSE)** and **Phase 5: Resilience, Structured Logging & Automated Tests** for *The Lenny Growth Assistant*.\n\nIt provides production-ready RESTful contracts, real-time streaming tokens via Server-Sent Events (S",
+    "url": "https://github.com/Bhaveshupadhyay/yt-assistant/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: yt-assistant"
+    ]
+  },
+  {
+    "title": "[PR] fix(runtime): distinguish usage limits from auth errors",
+    "date": "2026-08-25T02:53:24Z",
+    "summary": "## Summary\n\nAfter #2675, Maka already has one safe path for provider diagnostics: ModelAdapter keeps an allowlisted, redacted, bounded summary; the terminal RuntimeEvent remains canonical; Runtime Host projects the message through failed Turn snapshots and recovery; and Desktop can include the exact",
+    "url": "https://github.com/apache/maka/pull/2521",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] fix(desktop): read Usage from Runtime Host",
+    "date": "2026-08-25T02:52:38Z",
+    "summary": "## Summary\n\n- move Settings \u2192 Usage off the legacy session scanner and onto the reconnectable Runtime Host client\n- preserve missing token and pricing basis through the Host protocol, then show clean known totals with one coverage notice and precise request-row labels\n- keep aborted tool calls separ",
+    "url": "https://github.com/apache/maka/pull/2641",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 11",
+      "pull request",
+      "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-08-25T02:48:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/ts-md/pull/99",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: ts-md"
+    ]
+  },
+  {
+    "title": "[PR] Feat/idea plugin",
+    "date": "2026-08-25T02:47:10Z",
+    "summary": "## Description\r\n\r\nAdd IntelliJ IDEA (JetBrains) plugin extension for Open Code Review.\r\n\r\nThis is a new extension under `extensions/idea/` that brings the same\r\ncode review workflow available in the VSCode extension to IntelliJ-based\r\nIDEs (IDEA Community/Ultimate, WebStorm, PyCharm, etc.).\r\n\r\nThe i",
+    "url": "https://github.com/alibaba/open-code-review/pull/1031",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: open-code-review"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-08-25T02:44:14Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] Document package architecture, dependency graph, and contribution workflow (#50) (#56) (#192) (#566) (#569)",
+    "date": "2026-08-25T02:43:08Z",
+    "summary": "## Summary\n\n\u267e\ufe0f\ud83d\udd74\ufe0f RABBITSYNC / REALITY OS UPGRADE BLUEPRINT \u2014 v\u221e ARCHITECTURE \ud83d\udc30\ud83c\udf0e\n\nYour architecture is moving toward a self-improving intelligence platform. The next upgrade is to turn the diagram into a real engineering system with:\n\n* canonical schemas \ud83d\udcd0\n* event pipelines \ud83d\udd04\n* agent contracts \ud83e\udd16\n* au",
+    "url": "https://github.com/5hy7xz92nd-oss/ai/pull/584",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(chat): \u672c\u5730\u6a21\u578b\u601d\u8003\u9ed8\u8ba4\u5173\u95ed\u5e76\u652f\u6301\u5f3a\u5ea6\u5207\u6362\uff08\u81ea\u52a8\u63a2\u6d4b Ollama/vLLM\uff09",
+    "date": "2026-08-25T02:40:17Z",
+    "summary": "## \u80cc\u666f\n\nPR #209\uff08\u6a21\u578b\u601d\u8003\u6df1\u5ea6\u5207\u6362\uff09\u4e8c\u671f\uff1a\u672c\u5730\u6a21\u578b\uff08\u4e0d\u6b62 vllm\uff09\u601d\u8003\u7edf\u4e00\u9ed8\u8ba4\u5173\u95ed\u3001\u53ef\u8c03\u601d\u8003\u5f3a\u5ea6\u3002\n\n## \u73b0\u72b6\u4e0e\u95ee\u9898\n\nPR #209 \u4e4b\u540e\uff0c\u53ea\u6709 local_vllm preset\uff08vLLM\uff09\u9ed8\u8ba4\u5173\u601d\u8003\u5e76\u652f\u6301\u6863\u4f4d\u5207\u6362\uff1b\u7528\u6237\u7528 OpenAI \u517c\u5bb9 preset \u6307\u5411\u672c\u673a\u670d\u52a1\uff08Ollama / LM Studio \u7b49\uff09\u65f6\uff1a\n- \u9ed8\u8ba4\u4e0d\u6ce8\u5165\u6863\u4f4d\uff08None\uff09\uff0c\u601d\u8003\u8ddf\u968f\u6a21\u578b\u9ed8\u8ba4\uff08\u901a\u5e38\u5f00\u542f\uff09\u2014\u2014\u4e0e\u300c\u672c\u5730\u6a21\u578b\u9ed8\u8ba4\u5173\u601d\u8003\u300d\u8bc9\u6c42\u4e0d\u7b26\uff1b\n- UI \u4e0d\u63d0\u4f9b\u601d\u8003\u6df1\u5ea6\u5207\u6362\u3002\n\n## \u53d8\u66f4\n\n- **\u81ea\u52a8\u63a2\u6d4b\u670d\u52a1\u7c7b\u578b**\uff1aEnginePool spawn \u65f6\u5bf9\u672c\u5730/\u79c1\u7f51\uff08loopback + RFC19",
+    "url": "https://github.com/Pinvou/pinvou-agent/pull/218",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: pinvou-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat(runtime-host): own bot conversation continuity",
+    "date": "2026-08-25T02:35:10Z",
+    "summary": "## Summary\n\n- move opaque external-conversation binding ownership into Runtime Host operational SQLite, including Session creation, crash recovery, retirement cleanup, and backup/restore\n- reduce Desktop to the channel boundary: normalize conversation, source-event, and reply-target identities, then",
+    "url": "https://github.com/apache/maka/pull/2550",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] [Mac app] Self-contained local mode \u2014 the whole stack runs inside Mike.app (stacked on #302)",
+    "date": "2026-08-25T02:31:44Z",
+    "summary": "# Self-contained Mike.app \u2014 the whole stack runs inside the desktop app\n\nStacked on #302 (desktop shell; hosted default). This PR adds the third and\nfinal mode from `desktop/docs/self-contained-plan.md`: **Run locally on this\nMac**. The app supervises the entire Mike stack \u2014 Postgres 17, GoTrue,\nPos",
+    "url": "https://github.com/open-legal-products/mike/pull/351",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: mike"
+    ]
+  },
+  {
+    "title": "[PR] feat(codegen): schema-scale emit and BigSchemaDemo test bed",
+    "date": "2026-08-25T02:27:59Z",
+    "summary": "## Why\n\nMemberJunction CodeGen used to emit **one file per output kind** \u2014 a single `entity_subclasses.ts`, a single GraphQL `generated.ts`. That is simple and correct while the catalog is small. As soon as the database is **MJ Core plus application schemas** (or an existing multi-schema database), ",
+    "url": "https://github.com/MemberJunction/MJ/pull/3804",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(infra): add cheap one-box platform compose",
+    "date": "2026-08-25T02:12:43Z",
+    "summary": "## Description\n\nAdds a cheap one-box cloud/prod Docker Compose configuration for the non-AI Deepiri platform stack.\n\nInclude:\n- Related Issue number: TBD\n- Plaky feature name: Cheap one-box platform deployment\n- Component, feature, or system affected: Cloud/infra Docker Compose, nginx reverse proxy,",
+    "url": "https://github.com/Team-Deepiri/deepiri-platform/pull/304",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: deepiri-platform"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump Microsoft.Extensions.Diagnostics.Testing from 10.8.0 to 10.9.0",
+    "date": "2026-08-25T01:52:02Z",
+    "summary": "Updated [Microsoft.Extensions.Diagnostics.Testing](https://github.com/dotnet/extensions) from 10.8.0 to 10.9.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Microsoft.Extensions.Diagnostics.Testing's releases](https://github.com/dotnet/extensions/releases)._\n\n## 10.9.0\n\nVersion 10.9.0",
+    "url": "https://github.com/skwasjer/Hangfire.Correlate/pull/160",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Hangfire.Correlate"
     ]
   }
 ]
