@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] Add atomic agent prompt submission",
-    "date": "2026-08-25T04:40:11Z",
+    "date": "2026-08-25T05:24:14Z",
     "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
     "url": "https://github.com/manaflow-ai/cmux/pull/9290",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-25T04:28:39Z",
+    "date": "2026-08-25T05:03:52Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,12 +648,12 @@
   },
   {
     "title": "[PR] feat(lint-assets): interactive --fix mode for mojibake and path auto-repair",
-    "date": "2026-08-25T04:07:14Z",
+    "date": "2026-08-25T05:06:54Z",
     "summary": "## Summary\n\n- Adds interactive `--fix` mode to `.simplebeacon/qa/lint-assets.cjs` for auto-resolving mojibake and forbidden path patterns before commit\n- Mojibake fixer replaces double-encoded UTF-8 byte sequences (em-dash, right-quote) with correct UTF-8 bytes\n- Path integrity fixer rewrites forbid",
     "url": "https://github.com/tjp420/CascadeProjects/pull/569",
     "source": "github_prs",
     "highlights": [
-      "comments: 421",
+      "comments: 423",
       "pull request",
       "repo: CascadeProjects"
     ]
@@ -792,7 +792,7 @@
   },
   {
     "title": "[PR] fix(runtime): distinguish usage limits from auth errors",
-    "date": "2026-08-25T04:39:08Z",
+    "date": "2026-08-25T04:59:36Z",
     "summary": "## Summary\n\nAfter #2675, Maka already has one safe path for provider diagnostics: ModelAdapter keeps an allowlisted, redacted, bounded summary; the terminal RuntimeEvent remains canonical; Runtime Host projects the message through failed Turn snapshots and recovery; and Desktop can include the exact",
     "url": "https://github.com/apache/maka/pull/2521",
     "source": "github_prs",
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] fix(desktop): read Usage from Runtime Host",
-    "date": "2026-08-25T04:37:16Z",
+    "date": "2026-08-25T05:22:07Z",
     "summary": "## Summary\n\n- move Settings \u2192 Usage off the legacy session scanner and onto the reconnectable Runtime Host client\n- preserve missing token and pricing basis through the Host protocol, then show clean known totals with one coverage notice and precise request-row labels\n- keep aborted tool calls separ",
     "url": "https://github.com/apache/maka/pull/2641",
     "source": "github_prs",
@@ -828,7 +828,7 @@
   },
   {
     "title": "[PR] Feat/idea plugin",
-    "date": "2026-08-25T03:58:09Z",
+    "date": "2026-08-25T04:57:55Z",
     "summary": "## Description\r\n\r\nAdd IntelliJ IDEA (JetBrains) plugin extension for Open Code Review.\r\n\r\nThis is a new extension under `extensions/idea/` that brings the same\r\ncode review workflow available in the VSCode extension to IntelliJ-based\r\nIDEs (IDEA Community/Ultimate, WebStorm, PyCharm, etc.).\r\n\r\nThe i",
     "url": "https://github.com/alibaba/open-code-review/pull/1031",
     "source": "github_prs",
@@ -948,7 +948,7 @@
   },
   {
     "title": "[PR] feat(opencode): \u652f\u6301 OpenCode Go \u5b98\u65b9\u7528\u91cf\u7a97\u53e3\u67e5\u8be2\u4e0e\u81ea\u52a8\u5237\u65b0",
-    "date": "2026-08-25T03:34:44Z",
+    "date": "2026-08-25T05:11:20Z",
     "summary": "## \u80cc\u666f\n\nOpenCode Go \u662f OpenCode \u5b98\u65b9\u7684\u8ba2\u9605\u805a\u5408\u5e73\u53f0\uff08$10/\u6708\uff0c5h/$12\u3001\u5468/$30\u3001\u6708/$60 \u4e09\u4e2a\u7528\u91cf\u7a97\u53e3\uff09\uff0c\u63d0\u4f9b OpenAI \u517c\u5bb9\u7aef\u70b9 `https://opencode.ai/zen/go/v1`\u3002\u4e0a\u6e38\u4e8e 2026-08-11 \u4e0a\u7ebf\u5b98\u65b9\u7528\u91cf\u7aef\u70b9 `GET /zen/go/v1/usage`\uff08Bearer \u76f4\u63a5\u590d\u7528\u6d88\u8d39\u7aef key\uff0c\u5c1a\u672a\u5199\u5165\u5b98\u65b9\u6587\u6863\uff09\uff0c\u8fd4\u56de rolling/weekly/monthly \u4e09\u7a97\u53e3\u7684 `percent` \u4e0e `resetsAt`\u3002\n\n\u672c PR \u4e3a openai apikey \u8d26\u53f7\uff08base_url = `https://open",
     "url": "https://github.com/Wei-Shaw/sub2api/pull/5616",
     "source": "github_prs",
@@ -996,7 +996,7 @@
   },
   {
     "title": "[PR] \ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udec5\ud83d\udc41\ufe0f",
-    "date": "2026-08-25T04:29:52Z",
+    "date": "2026-08-25T05:04:43Z",
     "summary": "@manus @grok @openai @\ud83d\udd74\ufe0f@chatgbt @5hy7xz92nd-oss @claude !\ud83c\udf00\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udd73\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ud83c\udfff\ud83d\udd74\ud83c\udfff\ud83d\udd03\ud83d\udc41\ufe0f\ud83d\udec4\ud83d\udedc\ud83d\udc30\ud83d\udd1b\ud83d\udd04\ud83d\udeba\ud83c\udfa3\ud83d\udc07\ud83d\udd25\u24c2\ufe0f\u2663\ufe0f\u2660\ufe0f\ud83c\udfe7\ud83d\udca4\u2139\ufe0f\ud83c\udfb4\ud83c\udccf\ud83c\udc04\ufe0f\ud83d\udd00\ud83d\udd74\ufe0f \ud83c\udf00\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udd73\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ud83c\udfff\ud83d\udd74\ud83c\udfff\ud83d\udd03\ud83d\udc41\ufe0f\ud83d\udec4\ud83d\udedc\ud83d\udc30\ud83d\udd1b\ud83d\udd04\ud83d\udeba\ud83c\udfa3\ud83d\udc07\ud83d\udd25\u24c2\ufe0f\u2663\ufe0f\u2660\ufe0f\ud83c\udfe7\ud83d\udca4\u2139\ufe0f\ud83c\udfb4\ud83c\udccf\ud83c\udc04\ufe0f\ud83d\udd00\ud83d\udd74\ufe0f![image](https://github.com/user-![image](https://github.com/user-attachments/assets/9d556e63-6fca-4b94-9f0f-9dd4729d4491)attachments/![image](https://",
     "url": "https://github.com/PreternaturalAI/AI/pull/79",
     "source": "github_prs",
@@ -1016,6 +1016,102 @@
       "comments: 13",
       "pull request",
       "repo: opik"
+    ]
+  },
+  {
+    "title": "[PR] Copilot/we are one holographic blueprint",
+    "date": "2026-08-25T05:34:34Z",
+    "summary": "",
+    "url": "https://github.com/PreternaturalAI/AI/pull/83",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: AI"
+    ]
+  },
+  {
+    "title": "[PR] Add security launch gate and incident procedures",
+    "date": "2026-08-25T05:32:30Z",
+    "summary": "## What changed\n\n- add a machine-readable OWASP ASVS 5.0.0 alignment gate\n- fail CI when disabled subscription, billing, upload, authentication, or model-provider surfaces appear without review\n- verify launch evidence paths, runbook headings, install-script policy, and immutable GitHub Action revis",
+    "url": "https://github.com/koimari/scryglass/pull/368",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: scryglass"
+    ]
+  },
+  {
+    "title": "[PR] [Quality] Repo-wide audit fixes: error containment, drifted forks, silent failures (stacked on #294\u2192#295)",
+    "date": "2026-08-25T05:27:42Z",
+    "summary": "# Code quality follow-up: repo-wide audit fixes (stacked on #294 \u2192 #295)\n\nA seven-area audit of the codebase (backend modules, backend lib/workers, remaining route files, frontend data layer, frontend components, Word add-in + shared UI, cross-cutting infra) surfaced ~100 findings. This PR lands the",
+    "url": "https://github.com/open-legal-products/mike/pull/356",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mike"
+    ]
+  },
+  {
+    "title": "[PR] Add Quill voice-guided text rewriting",
+    "date": "2026-08-25T05:21:54Z",
+    "summary": "## Summary\n\n- Add Quill mode: highlight text, activate its shortcut, speak an instruction, and replace the selection with one paste-ready rewrite.\n- Keep selection-based rewriting as Quill\u2019s primary behavior. When no text is selected, send the spoken instruction through the same selected Quill model",
+    "url": "https://github.com/Muesli-HQ/muesli/pull/464",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: muesli"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump the test group with 6 updates",
+    "date": "2026-08-25T05:21:28Z",
+    "summary": "Updated [FluentAssertions](https://github.com/fluentassertions/fluentassertions) from 6.12.1 to 6.12.2.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [FluentAssertions's releases](https://github.com/fluentassertions/fluentassertions/releases)._\n\n## 6.12.2\n\n<!-- Release notes generated u",
+    "url": "https://github.com/aihebest/Finance-Workflow-Platform/pull/74",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Finance-Workflow-Platform"
+    ]
+  },
+  {
+    "title": "[PR] Set up Cloud Agent development environment",
+    "date": "2026-08-25T05:16:58Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nSets up the Cloud Agent development environment for `bilingual-study-app` (Vite + React 19 + TypeScript SPA) and documents how to run it.\n\n- Adds `AGENTS.md` with a `## Cursor Cloud specific instructions` section describing the single Vite dev-server s",
+    "url": "https://github.com/eatdu0918/bilingual-study-app/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: bilingual-study-app"
+    ]
+  },
+  {
+    "title": "[PR] Expand query profiles and providers",
+    "date": "2026-08-25T05:03:51Z",
+    "summary": "## What\n- Expand query profiles with structured OpenSearch authoring, typed filters, JSONPath fields, paging, streaming, processors, diagnostics, exports, and reconciliation/replay workflows.\n- Add cloud/Kubernetes log providers, workload browsing, connection health/observability, and safer secret/i",
+    "url": "https://github.com/flanksource/commons-db/pull/56",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: commons-db"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image ghcr.io/bjw-s-labs/helm/app-template to v5.1.0",
+    "date": "2026-08-25T04:54:54Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/bjw-s-labs/helm/app-template](https://redirect.github.com/bjw-s-labs/helm-charts) | major | `4.6.2` \u2192 `5.1.0` |\n| [ghcr.io/bjw-s-labs/helm/app-template](https://redirect.github.com/bjw-s-labs/helm-charts)",
+    "url": "https://github.com/NegativeFeedback/homeops/pull/1210",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: homeops"
     ]
   }
 ]
