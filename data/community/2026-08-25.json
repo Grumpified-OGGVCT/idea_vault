@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-25T17:02:09Z",
+    "date": "2026-08-25T18:02:41Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,12 +648,12 @@
   },
   {
     "title": "[PR] feat(lint-assets): interactive --fix mode for mojibake and path auto-repair",
-    "date": "2026-08-25T16:56:12Z",
+    "date": "2026-08-25T18:31:29Z",
     "summary": "## Summary\n\n- Adds interactive `--fix` mode to `.simplebeacon/qa/lint-assets.cjs` for auto-resolving mojibake and forbidden path patterns before commit\n- Mojibake fixer replaces double-encoded UTF-8 byte sequences (em-dash, right-quote) with correct UTF-8 bytes\n- Path integrity fixer rewrites forbid",
     "url": "https://github.com/tjp420/CascadeProjects/pull/569",
     "source": "github_prs",
     "highlights": [
-      "comments: 439",
+      "comments: 449",
       "pull request",
       "repo: CascadeProjects"
     ]
@@ -900,7 +900,7 @@
   },
   {
     "title": "[PR] feat(codegen): schema-scale emit and BigSchemaDemo test bed",
-    "date": "2026-08-25T02:27:59Z",
+    "date": "2026-08-25T18:37:47Z",
     "summary": "## Why\n\nMemberJunction CodeGen used to emit **one file per output kind** \u2014 a single `entity_subclasses.ts`, a single GraphQL `generated.ts`. That is simple and correct while the catalog is small. As soon as the database is **MJ Core plus application schemas** (or an existing multi-schema database), ",
     "url": "https://github.com/MemberJunction/MJ/pull/3804",
     "source": "github_prs",
@@ -1116,7 +1116,7 @@
   },
   {
     "title": "[PR] feat: MVP use liteLLM for providers",
-    "date": "2026-08-25T15:05:25Z",
+    "date": "2026-08-25T18:14:46Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added a unified model catalog with provider-aware selection, capabilities, pricing, context limits, and credential requirements.\n  * Added custom provider support and flexibl",
     "url": "https://github.com/langflow-ai/openrag/pull/2271",
     "source": "github_prs",
@@ -1164,7 +1164,7 @@
   },
   {
     "title": "[PR] Omi fully on-premise via Docker Compose or Helm/k8s: every managed service behind a swappable port (db Firestore|Mongo \u00b7 storage GCS|S3 \u00b7 vector Pinecone|Qdrant \u00b7 auth Firebase|Keycloak \u00b7 push FCM|UnifiedPush \u00b7 LLM any OpenAI-compatible endpoint)",
-    "date": "2026-08-25T16:42:03Z",
+    "date": "2026-08-25T18:07:12Z",
     "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
     "url": "https://github.com/BasedHardware/omi/pull/10887",
     "source": "github_prs",
@@ -1416,12 +1416,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-08-25T14:31:01Z",
+    "date": "2026-08-25T17:42:55Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 57",
+      "comments: 58",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -1548,12 +1548,12 @@
   },
   {
     "title": "[PR] feat(cli): make the mj CLI agent-first",
-    "date": "2026-08-25T13:51:49Z",
+    "date": "2026-08-25T17:50:29Z",
     "summary": "Makes the `mj` CLI usable by a program without changing anything for a person typing at a terminal.\n\nMJ already had an unusually good agent-facing *architecture* in `CLICore` \u2014 a result envelope, two-tier progressive disclosure, runtime hints, stderr/stdout discipline. The problem was reach: 3 of 87",
     "url": "https://github.com/MemberJunction/MJ/pull/4039",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: MJ"
     ]
@@ -1596,7 +1596,7 @@
   },
   {
     "title": "[PR] \u8106\u5f31\u6027\u306e\u6a2a\u65ad\u76e3\u67fb \u2014 \u4e3b\u30d7\u30ed\u30bb\u30b9\u3092\u843d\u3068\u305b\u308b 2 \u7d4c\u8def\u3092\u542b\u3080\u5b9f\u30d0\u30b0 39 \u4ef6\u3068\u3001\u898b\u5f35\u308a\u5074\u306e\u6b7b\u89d2\u3092\u585e\u3044\u3060",
-    "date": "2026-08-25T17:16:01Z",
+    "date": "2026-08-25T18:34:25Z",
     "summary": "> \u5f53\u521d\u306f main \u30d7\u30ed\u30bb\u30b9\u306e\u5909\u7570\u691c\u67fb\u3092\u57cb\u3081\u308b\u4f5c\u696d\u3060\u3063\u305f\u304c\u3001\u305d\u3053\u3067\u898b\u3064\u3051\u305f\n> \u300c\u898b\u5f35\u308a\u304c\u898b\u3066\u3044\u306a\u3044\u5834\u6240\u300d\u3092\u8fbf\u3063\u3066\u6a2a\u65ad\u76e3\u67fb\u306b\u306a\u3063\u305f\u3002112 \u30b3\u30df\u30c3\u30c8\u3002\n\n# \u524d\u534a (1\u301c77 \u30b3\u30df\u30c3\u30c8\u76ee) \u2014\u2014 \u5b9f\u88c5\u3069\u3046\u3057\u306e\u98df\u3044\u9055\u3044\n\n## 0. \u3044\u3061\u3070\u3093\u91cd\u3044\u3082\u306e \u2014 \u507d\u30b3\u30fc\u30eb\u30d0\u30c3\u30af 1 \u672c\u3067 Electron \u306e\u4e3b\u30d7\u30ed\u30bb\u30b9\u304c\u843d\u3061\u305f\n\nOAuth \u306e\u30eb\u30fc\u30d7\u30d0\u30c3\u30af\u5f85\u53d7 (`listenForCallback`) \u306f\u3001**2 \u901a\u308a\u306e\u5165\u529b\u3067\u540c\u671f throw** \u3057\u3001\n`http.createServer` \u306e listener \u5185\u306e throw \u306f `uncaughtException` \u306b\u306a\u308b\u3002\n`main.t",
     "url": "https://github.com/hiroto1977/-/pull/787",
     "source": "github_prs",
@@ -1680,7 +1680,7 @@
   },
   {
     "title": "[PR] Add Vertex AI backend for orgs that disallow raw API keys",
-    "date": "2026-08-25T15:11:03Z",
+    "date": "2026-08-25T18:22:46Z",
     "summary": "## Summary\n- The existing `gemini` backend only talks to the API-key-only Generative Language API. Some GCP orgs disallow raw API keys entirely via policy (confirmed live against a real org policy), leaving no way to use Gemini through graphify at all.\n- Adds a `vertex` backend using `google-genai`'",
     "url": "https://github.com/Graphify-Labs/graphify/pull/3083",
     "source": "github_prs",
@@ -1800,8 +1800,8 @@
   },
   {
     "title": "[PR] feat: rebuild D-Migration as modular storage manager",
-    "date": "2026-08-25T16:57:26Z",
-    "summary": "## Summary\n\nRebuilds D-Migration from machine-specific migration scripts into a Windows-first .NET 10 modular monolith and adds provider-backed executable migrations.\n\n### Included\n\n- Domain model for inventory, risk, migration strategies, plans and step states.\n- Application services for scanning, ",
+    "date": "2026-08-25T18:40:40Z",
+    "summary": "## Summary\n\nRebuilds D-Migration from machine-specific migration scripts into a Windows-first .NET 10 modular monolith with provider-backed, staged migrations.\n\n### Included\n\n- Domain model for inventory, risk, migration strategies, plans and step states.\n- Application services for scanning, plannin",
     "url": "https://github.com/MonkDabaLegaro/D-Migration/pull/1",
     "source": "github_prs",
     "highlights": [
@@ -1848,7 +1848,7 @@
   },
   {
     "title": "[PR] fix(agents): recover from a max-tokens finish with compaction and one retry",
-    "date": "2026-08-25T17:32:59Z",
+    "date": "2026-08-25T17:38:16Z",
     "summary": "[ENG-2457](https://linear.app/cline-bot/issue/ENG-2457/next-max-tokens-finish-on-a-text-only-turn-is-a-terminal-task-failure) \u00b7 reported in https://github.com/cline/cline/issues/13333#issuecomment-5324078237\n\n## Problem\n\nA provider stream finishing with `finishReason: \"max-tokens\"` on a turn with **",
     "url": "https://github.com/cline/cline/pull/13340",
     "source": "github_prs",
@@ -1920,7 +1920,7 @@
   },
   {
     "title": "[PR] feat(local-runtime): managed llama.cpp runtime \u2014 local models with one click",
-    "date": "2026-08-25T16:50:49Z",
+    "date": "2026-08-25T18:22:17Z",
     "summary": "Hermes can now run models entirely on the user's machine with zero configuration: it installs and supervises a llama.cpp server, picks the right build of each model for the hardware, and manages GPU memory end-to-end. The user picks a model; there are deliberately **no context, VRAM, or quantization",
     "url": "https://github.com/NousResearch/hermes-agent/pull/85852",
     "source": "github_prs",
@@ -1928,6 +1928,102 @@
       "comments: 1",
       "pull request",
       "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] fix(integration): bound discovery samples at the deadline and name what is in flight",
+    "date": "2026-08-25T18:42:22Z",
+    "summary": "## The problem\n\nFrom outside the process, a hung discovery sample and a busy one are **identical**. Nothing is logged between a sample's start and its end, so a long-but-healthy walk of a slow source and a walk that can never terminate produce the same evidence \u2014 none. The failure mode is silence, a",
+    "url": "https://github.com/MemberJunction/MJ/pull/4022",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] docs(plans): direct-superpipe migration plans from inventory #1414",
+    "date": "2026-08-25T18:41:44Z",
+    "summary": "## What\n\nSix per-area deep-dive migration plans converting the hand-rolled imperative sites from the #1414 direct-superpipe inventory into direct superpipe compositions (ADR 0004). Docs only \u2014 no source changes.\n\n| Doc | Area | Sites |\n| --- | --- | --- |\n| `external-events.md` | GitHub normalizers,",
+    "url": "https://github.com/lsm/HyperNeo/pull/2957",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: HyperNeo"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go to v0.44.0",
+    "date": "2026-08-25T18:40:13Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go](https://redirect.github.com/testcontainers/testcontai",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50518",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: opentelemetry-collector-contrib"
+    ]
+  },
+  {
+    "title": "[PR] Stop retrying a provider whose quota is gone",
+    "date": "2026-08-25T18:37:57Z",
+    "summary": "## What & why\n\nAsked whether Cascade copes when a user's API budget runs out. Its **own** budget cap does, well \u2014 preflight reservations, `budget:warning`/`budget:exceeded`, a checkpoint on stop, `/continue` resuming with a raised ceiling. The **provider's** quota running out does not.\n\nA spent bill",
+    "url": "https://github.com/Varun-SV/Cascade-AI/pull/217",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Cascade-AI"
+    ]
+  },
+  {
+    "title": "[PR] fix(signals): name the failing probe/job inline in baseline_note so reflections stop guessing",
+    "date": "2026-08-25T18:30:02Z",
+    "summary": "## Problem\n\n`critical_failure` and `JobHealthCollector` emitted a **generic** `baseline_note` on a\ngenuine failure, so a reflection LLM was told a service was DOWN but never **which** one.\nA recent Light reflection hedged *\"(DB, Qdrant, or Ollama)\"* \u2014 its stored input\n(`reflection_corpus.prompt_text",
+    "url": "https://github.com/WingedGuardian/GENesis-AGI/pull/1470",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: GENesis-AGI"
+    ]
+  },
+  {
+    "title": "[PR] feat(framing): drop the profile person from a two-person shot's span",
+    "date": "2026-08-25T18:26:34Z",
+    "summary": "Le \u00ab cas 2 \u00bb du spike #124, branch\u00e9 en mode normal : dans un plan \u00e0 deux\npersonnes dont l'une est nettement plus de face, l'autre sort du calcul d'empan\net la variante 9:16 se resserre sur celle qui regarde la cam\u00e9ra.\n\nC'est le stage 2 du chantier de cadrage avanc\u00e9. Le stage 1 \u00e9tait #124.\n\n## Le fic",
+    "url": "https://github.com/JulienCr/avolo-shorts/pull/176",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: avolo-shorts"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm_openai): make temperature configurable",
+    "date": "2026-08-25T17:57:38Z",
+    "summary": "## Summary\n\n`llm_openai` hardcoded `temperature=0` when constructing `ChatOpenAI` for\nnon-reasoning models, with no way to configure it via the node's config. This\nforced fully deterministic output regardless of use case \u2014 creative writing,\nbrainstorming, or varied-response pipelines had no way to i",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/1709",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] fix(integration): discovery could not recognise a throttle from any connector",
+    "date": "2026-08-25T17:43:12Z",
+    "summary": "## The bug\n\n`IntrospectSchema` fans describes out to 8 concurrent and feeds every outcome to an AIMD controller that cuts the in-flight cap when an item reports `throttled`. That's the mechanism that lets a discovery survive a vendor's rate limit instead of driving straight into it.\n\nIt decided `thr",
+    "url": "https://github.com/MemberJunction/MJ/pull/3906",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
