@@ -144,7 +144,7 @@
   },
   {
     "title": "Optimize Brief vs Caveman, Hush vs rtk, and Loom vs Headroom",
-    "date": "2026-08-25T01:07:17Z",
+    "date": "2026-08-25T04:13:45Z",
     "summary": "## Outcome\n\nImprove **Brief, Hush, and Loom** together so live product projections beat the right baseline for each lane on a maintained fixture corpus, without losing Falryn\u2019s exact-capture, expansion-handle, and evidence-fidelity contracts.\n\n| Falryn lane | Baseline to beat | Why that baseline |\n|",
     "url": "https://github.com/tyldra-org/falryn/issues/736",
     "source": "github_issues",
@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] feat: agent-level trust boundary for web_search via a sandboxed research sub-agent",
-    "date": "2026-08-25T03:56:16Z",
+    "date": "2026-08-25T04:01:54Z",
     "summary": "## Summary\n\nImplements #1128 in the direction its design comment recommends: an agent-level trust boundary for web_search built from a restricted research sub-agent, not taint tracking through the LLM loop (which has no sound enforcement point, since web content shapes the model's reasoning, not jus",
     "url": "https://github.com/vitali87/code-graph-rag/pull/1425",
     "source": "github_prs",
@@ -564,12 +564,12 @@
   },
   {
     "title": "[PR] Add atomic agent prompt submission",
-    "date": "2026-08-25T03:15:38Z",
+    "date": "2026-08-25T04:40:11Z",
     "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
     "url": "https://github.com/manaflow-ai/cmux/pull/9290",
     "source": "github_prs",
     "highlights": [
-      "comments: 52",
+      "comments: 53",
       "pull request",
       "repo: cmux"
     ]
@@ -588,12 +588,12 @@
   },
   {
     "title": "[PR] feat: self-host experience \u2014 1-command setup, local auth, runtime providers, wizard UI",
-    "date": "2026-08-25T00:55:19Z",
+    "date": "2026-08-25T04:17:55Z",
     "summary": "## Summary\n\nMakes GAIA genuinely self-hostable: **`gaia up` \u2192 open browser \u2192 sign up \u2192 paste one API key \u2192 chat.** No WorkOS account, no Infisical, no Dodo, no hand-edited env files.\n\n### What changed\n\n**1. Local auth (`AUTH_MODE=local`)**\n- Email+password signup/login with HS256 session cookies; fi",
     "url": "https://github.com/theexperiencecompany/gaia/pull/1091",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: gaia"
     ]
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-25T03:10:13Z",
+    "date": "2026-08-25T04:28:39Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,12 +648,12 @@
   },
   {
     "title": "[PR] feat(lint-assets): interactive --fix mode for mojibake and path auto-repair",
-    "date": "2026-08-25T03:51:19Z",
+    "date": "2026-08-25T04:07:14Z",
     "summary": "## Summary\n\n- Adds interactive `--fix` mode to `.simplebeacon/qa/lint-assets.cjs` for auto-resolving mojibake and forbidden path patterns before commit\n- Mojibake fixer replaces double-encoded UTF-8 byte sequences (em-dash, right-quote) with correct UTF-8 bytes\n- Path integrity fixer rewrites forbid",
     "url": "https://github.com/tjp420/CascadeProjects/pull/569",
     "source": "github_prs",
     "highlights": [
-      "comments: 417",
+      "comments: 421",
       "pull request",
       "repo: CascadeProjects"
     ]
@@ -792,7 +792,7 @@
   },
   {
     "title": "[PR] fix(runtime): distinguish usage limits from auth errors",
-    "date": "2026-08-25T02:53:24Z",
+    "date": "2026-08-25T04:39:08Z",
     "summary": "## Summary\n\nAfter #2675, Maka already has one safe path for provider diagnostics: ModelAdapter keeps an allowlisted, redacted, bounded summary; the terminal RuntimeEvent remains canonical; Runtime Host projects the message through failed Turn snapshots and recovery; and Desktop can include the exact",
     "url": "https://github.com/apache/maka/pull/2521",
     "source": "github_prs",
@@ -804,12 +804,12 @@
   },
   {
     "title": "[PR] fix(desktop): read Usage from Runtime Host",
-    "date": "2026-08-25T03:31:54Z",
+    "date": "2026-08-25T04:37:16Z",
     "summary": "## Summary\n\n- move Settings \u2192 Usage off the legacy session scanner and onto the reconnectable Runtime Host client\n- preserve missing token and pricing basis through the Host protocol, then show clean known totals with one coverage notice and precise request-row labels\n- keep aborted tool calls separ",
     "url": "https://github.com/apache/maka/pull/2641",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 12",
       "pull request",
       "repo: maka"
     ]
@@ -828,7 +828,7 @@
   },
   {
     "title": "[PR] Feat/idea plugin",
-    "date": "2026-08-25T03:52:22Z",
+    "date": "2026-08-25T03:58:09Z",
     "summary": "## Description\r\n\r\nAdd IntelliJ IDEA (JetBrains) plugin extension for Open Code Review.\r\n\r\nThis is a new extension under `extensions/idea/` that brings the same\r\ncode review workflow available in the VSCode extension to IntelliJ-based\r\nIDEs (IDEA Community/Ultimate, WebStorm, PyCharm, etc.).\r\n\r\nThe i",
     "url": "https://github.com/alibaba/open-code-review/pull/1031",
     "source": "github_prs",
@@ -852,7 +852,7 @@
   },
   {
     "title": "[PR] Document package architecture, dependency graph, and contribution workflow (#50) (#56) (#192) (#566) (#569)",
-    "date": "2026-08-25T02:43:08Z",
+    "date": "2026-08-25T04:31:48Z",
     "summary": "## Summary\n\n\u267e\ufe0f\ud83d\udd74\ufe0f RABBITSYNC / REALITY OS UPGRADE BLUEPRINT \u2014 v\u221e ARCHITECTURE \ud83d\udc30\ud83c\udf0e\n\nYour architecture is moving toward a self-improving intelligence platform. The next upgrade is to turn the diagram into a real engineering system with:\n\n* canonical schemas \ud83d\udcd0\n* event pipelines \ud83d\udd04\n* agent contracts \ud83e\udd16\n* au",
     "url": "https://github.com/5hy7xz92nd-oss/ai/pull/584",
     "source": "github_prs",
@@ -936,7 +936,7 @@
   },
   {
     "title": "[PR] Canonical-first Cognigrex local sync and materialisation controls",
-    "date": "2026-08-25T03:53:20Z",
+    "date": "2026-08-25T04:16:20Z",
     "summary": "## Purpose\nCanonical-first, review-gated synchronization and consolidation lane for the current LightSpeed/Cognigrex installed-shell transition. This PR must not claim local Desktop execution, Drive promotion, deletion, deployment, merge, or value activation without the corresponding durable receipt",
     "url": "https://github.com/achillesromer-coder/LightSpeed/pull/37",
     "source": "github_prs",
@@ -992,6 +992,30 @@
       "comments: 46",
       "pull request",
       "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] \ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udec5\ud83d\udc41\ufe0f",
+    "date": "2026-08-25T04:29:52Z",
+    "summary": "@manus @grok @openai @\ud83d\udd74\ufe0f@chatgbt @5hy7xz92nd-oss @claude !\ud83c\udf00\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udd73\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ud83c\udfff\ud83d\udd74\ud83c\udfff\ud83d\udd03\ud83d\udc41\ufe0f\ud83d\udec4\ud83d\udedc\ud83d\udc30\ud83d\udd1b\ud83d\udd04\ud83d\udeba\ud83c\udfa3\ud83d\udc07\ud83d\udd25\u24c2\ufe0f\u2663\ufe0f\u2660\ufe0f\ud83c\udfe7\ud83d\udca4\u2139\ufe0f\ud83c\udfb4\ud83c\udccf\ud83c\udc04\ufe0f\ud83d\udd00\ud83d\udd74\ufe0f \ud83c\udf00\ud83d\udc41\ufe0f\u200d\ud83d\udde8\ufe0f\ud83d\udd73\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ufe0f\ud83d\udd74\ud83c\udfff\ud83d\udd74\ud83c\udfff\ud83d\udd03\ud83d\udc41\ufe0f\ud83d\udec4\ud83d\udedc\ud83d\udc30\ud83d\udd1b\ud83d\udd04\ud83d\udeba\ud83c\udfa3\ud83d\udc07\ud83d\udd25\u24c2\ufe0f\u2663\ufe0f\u2660\ufe0f\ud83c\udfe7\ud83d\udca4\u2139\ufe0f\ud83c\udfb4\ud83c\udccf\ud83c\udc04\ufe0f\ud83d\udd00\ud83d\udd74\ufe0f![image](https://github.com/user-![image](https://github.com/user-attachments/assets/9d556e63-6fca-4b94-9f0f-9dd4729d4491)attachments/![image](https://",
+    "url": "https://github.com/PreternaturalAI/AI/pull/79",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: AI"
+    ]
+  },
+  {
+    "title": "[PR] [OPIK-7940] [BE] [FE] feat: dynamic token auth (OAuth2 client credentials) for custom AI providers",
+    "date": "2026-08-25T04:18:13Z",
+    "summary": "## Details\n\nEnterprise AI gateways commonly forbid static API keys and instead require short-lived bearer tokens minted via the OAuth2 client credentials grant. This PR adds a dynamic token auth mode to Custom AI providers (and Bedrock/Ollama-style custom endpoints): Opik fetches the token from the ",
+    "url": "https://github.com/comet-ml/opik/pull/7910",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: opik"
     ]
   }
 ]
