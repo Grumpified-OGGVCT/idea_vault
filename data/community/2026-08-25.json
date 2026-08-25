@@ -504,12 +504,12 @@
   },
   {
     "title": "[PR] feat: agent-level trust boundary for web_search via a sandboxed research sub-agent",
-    "date": "2026-08-25T02:40:28Z",
+    "date": "2026-08-25T03:56:16Z",
     "summary": "## Summary\n\nImplements #1128 in the direction its design comment recommends: an agent-level trust boundary for web_search built from a restricted research sub-agent, not taint tracking through the LLM loop (which has no sound enforcement point, since web content shapes the model's reasoning, not jus",
     "url": "https://github.com/vitali87/code-graph-rag/pull/1425",
     "source": "github_prs",
     "highlights": [
-      "comments: 14",
+      "comments: 17",
       "pull request",
       "repo: code-graph-rag"
     ]
@@ -540,7 +540,7 @@
   },
   {
     "title": "[PR] feat(garuda-l5): document intake + local-first OCR core (documents+OCR)",
-    "date": "2026-08-25T02:04:28Z",
+    "date": "2026-08-25T03:13:06Z",
     "summary": "## Summary\nLane L5 (documents + OCR) \u2014 storage-agnostic core for GARUDA VOA passport-biodata upload, per `products/garuda-voa/journeys/corrupt-photo-upload.feature` and `uncertain-ocr.feature`.\n\n- `apps/backend-rag/backend/services/garuda_documents/` \u2014 OCR client (qwen2.5vl:7b local-only, G-OCR-LOCA",
     "url": "https://github.com/Bali-Zero/Teman2/pull/4870",
     "source": "github_prs",
@@ -564,12 +564,12 @@
   },
   {
     "title": "[PR] Add atomic agent prompt submission",
-    "date": "2026-08-25T02:53:33Z",
+    "date": "2026-08-25T03:15:38Z",
     "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
     "url": "https://github.com/manaflow-ai/cmux/pull/9290",
     "source": "github_prs",
     "highlights": [
-      "comments: 50",
+      "comments: 52",
       "pull request",
       "repo: cmux"
     ]
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-25T02:07:06Z",
+    "date": "2026-08-25T03:10:13Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,12 +648,12 @@
   },
   {
     "title": "[PR] feat(lint-assets): interactive --fix mode for mojibake and path auto-repair",
-    "date": "2026-08-25T00:11:16Z",
+    "date": "2026-08-25T03:51:19Z",
     "summary": "## Summary\n\n- Adds interactive `--fix` mode to `.simplebeacon/qa/lint-assets.cjs` for auto-resolving mojibake and forbidden path patterns before commit\n- Mojibake fixer replaces double-encoded UTF-8 byte sequences (em-dash, right-quote) with correct UTF-8 bytes\n- Path integrity fixer rewrites forbid",
     "url": "https://github.com/tjp420/CascadeProjects/pull/569",
     "source": "github_prs",
     "highlights": [
-      "comments: 413",
+      "comments: 417",
       "pull request",
       "repo: CascadeProjects"
     ]
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] fix(desktop): read Usage from Runtime Host",
-    "date": "2026-08-25T02:52:38Z",
+    "date": "2026-08-25T03:31:54Z",
     "summary": "## Summary\n\n- move Settings \u2192 Usage off the legacy session scanner and onto the reconnectable Runtime Host client\n- preserve missing token and pricing basis through the Host protocol, then show clean known totals with one coverage notice and precise request-row labels\n- keep aborted tool calls separ",
     "url": "https://github.com/apache/maka/pull/2641",
     "source": "github_prs",
@@ -828,7 +828,7 @@
   },
   {
     "title": "[PR] Feat/idea plugin",
-    "date": "2026-08-25T02:47:10Z",
+    "date": "2026-08-25T03:52:22Z",
     "summary": "## Description\r\n\r\nAdd IntelliJ IDEA (JetBrains) plugin extension for Open Code Review.\r\n\r\nThis is a new extension under `extensions/idea/` that brings the same\r\ncode review workflow available in the VSCode extension to IntelliJ-based\r\nIDEs (IDEA Community/Ultimate, WebStorm, PyCharm, etc.).\r\n\r\nThe i",
     "url": "https://github.com/alibaba/open-code-review/pull/1031",
     "source": "github_prs",
@@ -864,12 +864,12 @@
   },
   {
     "title": "[PR] feat(chat): \u672c\u5730\u6a21\u578b\u601d\u8003\u9ed8\u8ba4\u5173\u95ed\u5e76\u652f\u6301\u5f3a\u5ea6\u5207\u6362\uff08\u81ea\u52a8\u63a2\u6d4b Ollama/vLLM\uff09",
-    "date": "2026-08-25T02:40:17Z",
+    "date": "2026-08-25T03:50:52Z",
     "summary": "## \u80cc\u666f\n\nPR #209\uff08\u6a21\u578b\u601d\u8003\u6df1\u5ea6\u5207\u6362\uff09\u4e8c\u671f\uff1a\u672c\u5730\u6a21\u578b\uff08\u4e0d\u6b62 vllm\uff09\u601d\u8003\u7edf\u4e00\u9ed8\u8ba4\u5173\u95ed\u3001\u53ef\u8c03\u601d\u8003\u5f3a\u5ea6\u3002\n\n## \u73b0\u72b6\u4e0e\u95ee\u9898\n\nPR #209 \u4e4b\u540e\uff0c\u53ea\u6709 local_vllm preset\uff08vLLM\uff09\u9ed8\u8ba4\u5173\u601d\u8003\u5e76\u652f\u6301\u6863\u4f4d\u5207\u6362\uff1b\u7528\u6237\u7528 OpenAI \u517c\u5bb9 preset \u6307\u5411\u672c\u673a\u670d\u52a1\uff08Ollama / LM Studio \u7b49\uff09\u65f6\uff1a\n- \u9ed8\u8ba4\u4e0d\u6ce8\u5165\u6863\u4f4d\uff08None\uff09\uff0c\u601d\u8003\u8ddf\u968f\u6a21\u578b\u9ed8\u8ba4\uff08\u901a\u5e38\u5f00\u542f\uff09\u2014\u2014\u4e0e\u300c\u672c\u5730\u6a21\u578b\u9ed8\u8ba4\u5173\u601d\u8003\u300d\u8bc9\u6c42\u4e0d\u7b26\uff1b\n- UI \u4e0d\u63d0\u4f9b\u601d\u8003\u6df1\u5ea6\u5207\u6362\u3002\n\n## \u53d8\u66f4\n\n- **\u81ea\u52a8\u63a2\u6d4b\u670d\u52a1\u7c7b\u578b**\uff1aEnginePool spawn \u65f6\u5bf9\u672c\u5730/\u79c1\u7f51\uff08loopback + RFC19",
     "url": "https://github.com/Pinvou/pinvou-agent/pull/218",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 11",
       "pull request",
       "repo: pinvou-agent"
     ]
@@ -932,6 +932,66 @@
       "comments: 1",
       "pull request",
       "repo: Hangfire.Correlate"
+    ]
+  },
+  {
+    "title": "[PR] Canonical-first Cognigrex local sync and materialisation controls",
+    "date": "2026-08-25T03:53:20Z",
+    "summary": "## Purpose\nCanonical-first, review-gated synchronization and consolidation lane for the current LightSpeed/Cognigrex installed-shell transition. This PR must not claim local Desktop execution, Drive promotion, deletion, deployment, merge, or value activation without the corresponding durable receipt",
+    "url": "https://github.com/achillesromer-coder/LightSpeed/pull/37",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: LightSpeed"
+    ]
+  },
+  {
+    "title": "[PR] feat(opencode): \u652f\u6301 OpenCode Go \u5b98\u65b9\u7528\u91cf\u7a97\u53e3\u67e5\u8be2\u4e0e\u81ea\u52a8\u5237\u65b0",
+    "date": "2026-08-25T03:34:44Z",
+    "summary": "## \u80cc\u666f\n\nOpenCode Go \u662f OpenCode \u5b98\u65b9\u7684\u8ba2\u9605\u805a\u5408\u5e73\u53f0\uff08$10/\u6708\uff0c5h/$12\u3001\u5468/$30\u3001\u6708/$60 \u4e09\u4e2a\u7528\u91cf\u7a97\u53e3\uff09\uff0c\u63d0\u4f9b OpenAI \u517c\u5bb9\u7aef\u70b9 `https://opencode.ai/zen/go/v1`\u3002\u4e0a\u6e38\u4e8e 2026-08-11 \u4e0a\u7ebf\u5b98\u65b9\u7528\u91cf\u7aef\u70b9 `GET /zen/go/v1/usage`\uff08Bearer \u76f4\u63a5\u590d\u7528\u6d88\u8d39\u7aef key\uff0c\u5c1a\u672a\u5199\u5165\u5b98\u65b9\u6587\u6863\uff09\uff0c\u8fd4\u56de rolling/weekly/monthly \u4e09\u7a97\u53e3\u7684 `percent` \u4e0e `resetsAt`\u3002\n\n\u672c PR \u4e3a openai apikey \u8d26\u53f7\uff08base_url = `https://open",
+    "url": "https://github.com/Wei-Shaw/sub2api/pull/5616",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: sub2api"
+    ]
+  },
+  {
+    "title": "[PR] feat: Add MultiProviderClient for multi-LLM routing",
+    "date": "2026-08-25T03:33:31Z",
+    "summary": "## Pull Request: Multi-Provider Async Client via LiteLLM\r\n\r\n### \ud83d\udca1 Description\r\nThis PR introduces a streamlined `MultiProviderClient` powered by **LiteLLM**. It enables seamless switching between 100+ LLM providers within a single application flow using the standard `provider/model` format.\r\n\r\nThe p",
+    "url": "https://github.com/microsoft/agent-lightning/pull/472",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: agent-lightning"
+    ]
+  },
+  {
+    "title": "[PR] feat: Litellm OpenAI compatible router",
+    "date": "2026-08-25T03:30:11Z",
+    "summary": "## Summary\r\n\r\n- OpenRAG now proxies chat and embeddings through OpenAI-compatible `/v1` (`/models`, `/model-catalog`, `/chat/completions`, `/embeddings`). LiteLLM stays on the backend; Langflow and other clients never hold upstream keys. Auth is a short-lived Langflow hop token (`OPENRAG_LLM_TOKEN`)",
+    "url": "https://github.com/langflow-ai/openrag/pull/2263",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openrag"
+    ]
+  },
+  {
+    "title": "[PR] [codex] Repair Browser Session Credential Steward MVP",
+    "date": "2026-08-25T03:15:35Z",
+    "summary": "## What Problem This Solves\n\nThe Browser / Session / Credential Steward MVP needed reliable boundary enforcement across browser-node routing, session abort targeting, approval provenance, and credential redaction. This PR prevents malformed or cross-agent session operations, prevents approved node r",
+    "url": "https://github.com/openclaw/openclaw/pull/128289",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 46",
+      "pull request",
+      "repo: openclaw"
     ]
   }
 ]
