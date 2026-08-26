@@ -588,12 +588,12 @@
   },
   {
     "title": "[PR] feat(embedding): add in-process ONNX embedding provider",
-    "date": "2026-08-26T07:00:16Z",
+    "date": "2026-08-26T14:44:10Z",
     "summary": "## Summary\n- Add in-process ONNX Runtime embedding provider (`OnnxEmbeddingProvider`) for DataHub semantic search, eliminating the need for an external embedding server like Ollama\n- Support 3 models out of the box: Snowflake Arctic-embed-s (384d, default), Arctic-embed-l (1024d), BGE-base-en-v1.5 (",
     "url": "https://github.com/datahub-project/datahub/pull/17334",
     "source": "github_prs",
     "highlights": [
-      "comments: 6",
+      "comments: 7",
       "pull request",
       "repo: datahub"
     ]
@@ -660,7 +660,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-26T13:30:36Z",
+    "date": "2026-08-26T14:11:40Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -672,7 +672,7 @@
   },
   {
     "title": "[PR] feat: MVP use liteLLM for providers",
-    "date": "2026-08-26T12:43:46Z",
+    "date": "2026-08-26T14:26:39Z",
     "summary": "\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added a unified model catalog with provider-aware selection, capabilities, pricing, context limits, and credential requirements.\n  * Added custom provider support and flexibl",
     "url": "https://github.com/langflow-ai/openrag/pull/2271",
     "source": "github_prs",
@@ -768,19 +768,19 @@
   },
   {
     "title": "[PR] fix(signals): name the failing probe/job inline in baseline_note so reflections stop guessing",
-    "date": "2026-08-26T02:51:16Z",
+    "date": "2026-08-26T14:25:44Z",
     "summary": "## Problem\n\n`critical_failure` and `JobHealthCollector` emitted a **generic** `baseline_note` on a\ngenuine failure, so a reflection LLM was told a service was DOWN but never **which** one.\nA recent Light reflection hedged *\"(DB, Qdrant, or Ollama)\"* \u2014 its stored input\n(`reflection_corpus.prompt_text",
     "url": "https://github.com/WingedGuardian/GENesis-AGI/pull/1470",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "pull request",
       "repo: GENesis-AGI"
     ]
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-08-26T08:44:15Z",
+    "date": "2026-08-26T14:44:17Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -792,7 +792,7 @@
   },
   {
     "title": "[PR] Update Docker images",
-    "date": "2026-08-26T06:28:47Z",
+    "date": "2026-08-26T14:38:53Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| bbilly1/tubearchivist | digest | `f7bfd5c` \u2192 `ba1c846` |\n| code.olsen.cloud/incubator/editions | digest | `e5d5f94` \u2192 `9a618e4` |\n| docker.io/",
     "url": "https://github.com/morten-olsen/homelab-apps/pull/394",
     "source": "github_prs",
@@ -864,7 +864,7 @@
   },
   {
     "title": "[PR] Update ollama/ollama Docker tag to v0.32.9",
-    "date": "2026-08-26T05:03:13Z",
+    "date": "2026-08-26T14:20:45Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| ollama/ollama | patch | `0.32.5` \u2192 `0.32.9` | `0.33.0` (+6) |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (in timezone America/New_York)\n\n- Branch creation\n  - Between 12:00 AM and 03:59 AM, on day 1 th",
     "url": "https://github.com/claytono/infra/pull/2838",
     "source": "github_prs",
@@ -948,7 +948,7 @@
   },
   {
     "title": "[PR] Sync connection UI metadata in provider.yaml with hook definitions",
-    "date": "2026-08-26T07:47:43Z",
+    "date": "2026-08-26T14:24:05Z",
     "summary": " <!-- SPDX-License-Identifier: Apache-2.0\r\n      https://www.apache.org/licenses/LICENSE-2.0 -->\r\n\r\n<!--\r\nThank you for contributing!\r\n\r\nPlease provide above a brief description of the changes made in this pull request.\r\nWrite a good git commit message following this guide: https://chris.beams.io/po",
     "url": "https://github.com/apache/airflow/pull/72087",
     "source": "github_prs",
@@ -1116,7 +1116,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-26T13:49:25Z",
+    "date": "2026-08-26T14:21:53Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-26T13:49:27Z",
+    "date": "2026-08-26T14:21:56Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1140,7 +1140,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-26T13:49:19Z",
+    "date": "2026-08-26T14:21:46Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1188,7 +1188,7 @@
   },
   {
     "title": "[PR] RavenDB-26606",
-    "date": "2026-08-26T13:19:03Z",
+    "date": "2026-08-26T14:35:22Z",
     "summary": "### Issue link\r\n\r\nhttps://issues.hibernatingrhinos.com/issue/RavenDB-26606\r\n\r\n### Type of change\r\n\r\n- [ ] Bug fix\r\n- [ ] Regression bug fix\r\n- [ ] Optimization\r\n- [ ] New feature\r\n\r\n### How risky is the change?\r\n\r\n- [ ] Low \r\n- [ ] Moderate \r\n- [ ] High\r\n- [ ] Not relevant\r\n\r\n### Backward compatibil",
     "url": "https://github.com/ravendb/ravendb/pull/23170",
     "source": "github_prs",
@@ -1488,7 +1488,7 @@
   },
   {
     "title": "[PR] fix(fetcher): stop the article structurer summarising long inputs",
-    "date": "2026-08-26T13:47:09Z",
+    "date": "2026-08-26T14:37:06Z",
     "summary": "## What\n\n`POST /v1/structure` cleans a user-pasted article body through a cloud LLM before it enters the pipeline. Its prompt said *\"Do not summarise\"* \u2014 and then instructed the model to **delete** whole categories of text (nav menus, footers, subscribe prompts). Deleting is part of the job, so the ",
     "url": "https://github.com/davilayang/knowledge-pipeline/pull/244",
     "source": "github_prs",
@@ -1560,7 +1560,7 @@
   },
   {
     "title": "[PR] feat(config): support declarative env/file defaults in configuration properties",
-    "date": "2026-08-26T11:59:07Z",
+    "date": "2026-08-26T14:31:07Z",
     "summary": "## Summary\r\n\r\nCloses #2507\r\n\r\nIntroduces a declarative mechanism for extensions to resolve configuration defaults from environment variables and file paths at registration time, without requiring new extension API surface.\r\n\r\n- **`ConfigurationRegistry`**: Added `resolveEnvDefault`, `parseDefaultEnt",
     "url": "https://github.com/openkaiden/kaiden/pull/2627",
     "source": "github_prs",
@@ -1628,6 +1628,66 @@
       "comments: 0",
       "pull request",
       "repo: ai-car-driver"
+    ]
+  },
+  {
+    "title": "[PR] feat: HTTP MCP, one-shot mock opt-out, and local Ollama path",
+    "date": "2026-08-26T14:50:15Z",
+    "summary": "\ufeff## Summary\n- Add Streamable HTTP MCP (`npm run mcp:undox-tools:http`) so TrueForge can connect via URL (`undox-tool`)\n- Collapse the free-tier demo into one approval-gated tool `run_spokeo_opt_out` (find+prepare+mock submit) to avoid Groq/Gemini TPM 429s\n- Fix session-store status overwrite bug; do",
+    "url": "https://github.com/manasdutta04/undox/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: undox"
+    ]
+  },
+  {
+    "title": "[PR] feat(models): hide unavailable models from pickers, grey them for admins",
+    "date": "2026-08-26T14:44:43Z",
+    "summary": "Part of #1586 (PR B of the plan).\n\n## Summary\n- `GET /api/v1/config/models` only returns models whose provider is available on this installation (API key / URL configured; Ollama models must be pulled). Regular users never see the rest.\n- Admins can pass `includeUnavailable=1` to receive the full ca",
+    "url": "https://github.com/metadist/synaplan/pull/1588",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: synaplan"
+    ]
+  },
+  {
+    "title": "[PR] feat(publication): schedule column, cross-project queries and planning routes",
+    "date": "2026-08-26T14:44:40Z",
+    "summary": "**Fleet** \u00b7 owner: `integrator` \u00b7 internal-review: `pass@8fa1d22` \u00b7 returns: 0 \u00b7 check-reviews@`38ea52b`\n\n## Ce que \u00e7a change\n\nPose la donn\u00e9e et le fil du planning de diffusion (issue #195), sans \u00e9cran ni ordonnanceur \u2014 ceux-ci sont deux PR s\u00e9par\u00e9es, qui importeront les d\u00e9clarations d'ici.\n\n- Un cin",
+    "url": "https://github.com/JulienCr/avolo-shorts/pull/201",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: avolo-shorts"
+    ]
+  },
+  {
+    "title": "[PR] Load the local GGUF only when it will actually serve the request",
+    "date": "2026-08-26T14:13:03Z",
+    "summary": "## What was broken\n\n### Unconditional lazy model load fires even when another provider will serve, and silently reverts an explicit Unload\n\n`AiService::generate_commit_message` and `AiService::generate_text` (`src-tauri/src/services/ai/mod.rs`) both called `ensure_local_model_loaded()` **before** se",
+    "url": "https://github.com/hegsie/Leviathan/pull/445",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Leviathan"
+    ]
+  },
+  {
+    "title": "[PR] Send AI requests only to the provider selected in Settings",
+    "date": "2026-08-26T14:00:50Z",
+    "summary": "## What was broken\n\n### Silent fallback sends diffs to a provider the user did not select\n\n`AiService::find_available_provider` (`src-tauri/src/services/ai/mod.rs`) tried `config.active_provider` and, when that provider's `is_available()` was false, fell through to local inference and then to a scan",
+    "url": "https://github.com/hegsie/Leviathan/pull/441",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Leviathan"
     ]
   }
 ]
