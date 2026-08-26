@@ -192,12 +192,12 @@
   },
   {
     "title": "Local SOTA LLM for AI verse parsing \u2014 research + eval harness (replace Claude Opus for simple text ops)",
-    "date": "2026-08-25T13:08:19Z",
+    "date": "2026-08-26T05:03:55Z",
     "summary": "Scope-gate: user-request\n\n## Motivation (user directive, 2026-08-06)\n\nThe AI assistant's real workload (parsing and structuring song verses / Bible text, simple structured text operations in Slovak) is a relatively simple prompt + text-processing task. Running it through Claude Opus via CLIProxyAPI ",
     "url": "https://github.com/zbynekdrlik/presenter/issues/662",
     "source": "github_issues",
     "highlights": [
-      "comments: 29",
+      "comments: 30",
       "state: open",
       "repo: presenter"
     ]
@@ -312,12 +312,12 @@
   },
   {
     "title": "[BUG] `hermes mnemosyne` does not exist when installing via wrapper in Docker",
-    "date": "2026-08-24T13:45:39Z",
+    "date": "2026-08-26T05:05:40Z",
     "summary": "## Description\n\nI installed mnemosyne inside the official Hermes Docker container using the wrapper method. `hermes memory` reports that mnemosyne is working and installed. The tools are also available and work.\n\nThe docs recommend running sleep cycles via `hermes mnemosyne sleep`, however, Hermes t",
     "url": "https://github.com/mnemosyne-oss/mnemosyne/issues/641",
     "source": "github_issues",
     "highlights": [
-      "comments: 8",
+      "comments: 9",
       "state: open",
       "repo: mnemosyne"
     ]
@@ -528,8 +528,8 @@
   },
   {
     "title": "[PR] docs(platform): sync dev documentation into GitBook",
-    "date": "2026-08-26T03:42:03Z",
-    "summary": "### Why / What / How\n\nThe GitBook branch is missing current `dev` generator output and generated integration documentation for All Quiet, DataForB2B, Stripe subscription triggers, Stripe Link, and newer LLM/AutoPilot schemas. It must be updated after the GitBook-authored guide is reconciled into `de",
+    "date": "2026-08-26T05:14:40Z",
+    "summary": "### Why / What / How\n\nThe GitBook branch is missing current `dev` generator output and generated integration documentation for All Quiet, DataForB2B, Stripe subscription triggers, Stripe Link, and newer LLM/AutoPilot schemas. The paired GitBook-authored guide reconciliation into `dev` is now complet",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/14171",
     "source": "github_prs",
     "highlights": [
@@ -660,7 +660,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-26T04:08:21Z",
+    "date": "2026-08-26T05:21:50Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -864,8 +864,8 @@
   },
   {
     "title": "[PR] Update ollama/ollama Docker tag to v0.32.9",
-    "date": "2026-08-26T03:46:06Z",
-    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| ollama/ollama | patch | `0.32.5` \u2192 `0.32.9` | `0.33.0` (+6) |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (in timezone America/New_York)\n\n- Branch creation\n  - \"after 12am and before 2am on monday\"\n- Au",
+    "date": "2026-08-26T05:03:13Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| ollama/ollama | patch | `0.32.5` \u2192 `0.32.9` | `0.33.0` (+6) |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (in timezone America/New_York)\n\n- Branch creation\n  - Between 12:00 AM and 03:59 AM, on day 1 th",
     "url": "https://github.com/claytono/infra/pull/2838",
     "source": "github_prs",
     "highlights": [
@@ -900,7 +900,7 @@
   },
   {
     "title": "[PR] \u8106\u5f31\u6027\u306e\u6a2a\u65ad\u76e3\u67fb \u2014 \u4e3b\u30d7\u30ed\u30bb\u30b9\u3092\u843d\u3068\u305b\u308b 2 \u7d4c\u8def\u3092\u542b\u3080\u5b9f\u30d0\u30b0 39 \u4ef6\u3068\u3001\u898b\u5f35\u308a\u5074\u306e\u6b7b\u89d2\u3092\u585e\u3044\u3060",
-    "date": "2026-08-26T04:41:17Z",
+    "date": "2026-08-26T05:20:10Z",
     "summary": "> \u5f53\u521d\u306f main \u30d7\u30ed\u30bb\u30b9\u306e\u5909\u7570\u691c\u67fb\u3092\u57cb\u3081\u308b\u4f5c\u696d\u3060\u3063\u305f\u304c\u3001\u305d\u3053\u3067\u898b\u3064\u3051\u305f\n> \u300c\u898b\u5f35\u308a\u304c\u898b\u3066\u3044\u306a\u3044\u5834\u6240\u300d\u3092\u8fbf\u3063\u3066\u6a2a\u65ad\u76e3\u67fb\u306b\u306a\u3063\u305f\u3002112 \u30b3\u30df\u30c3\u30c8\u3002\n\n# \u524d\u534a (1\u301c77 \u30b3\u30df\u30c3\u30c8\u76ee) \u2014\u2014 \u5b9f\u88c5\u3069\u3046\u3057\u306e\u98df\u3044\u9055\u3044\n\n## 0. \u3044\u3061\u3070\u3093\u91cd\u3044\u3082\u306e \u2014 \u507d\u30b3\u30fc\u30eb\u30d0\u30c3\u30af 1 \u672c\u3067 Electron \u306e\u4e3b\u30d7\u30ed\u30bb\u30b9\u304c\u843d\u3061\u305f\n\nOAuth \u306e\u30eb\u30fc\u30d7\u30d0\u30c3\u30af\u5f85\u53d7 (`listenForCallback`) \u306f\u3001**2 \u901a\u308a\u306e\u5165\u529b\u3067\u540c\u671f throw** \u3057\u3001\n`http.createServer` \u306e listener \u5185\u306e throw \u306f `uncaughtException` \u306b\u306a\u308b\u3002\n`main.t",
     "url": "https://github.com/hiroto1977/-/pull/787",
     "source": "github_prs",
@@ -924,7 +924,7 @@
   },
   {
     "title": "[PR] refactor(platform): remove the Fast/Thinking mode, control and plumbing",
-    "date": "2026-08-26T04:38:14Z",
+    "date": "2026-08-26T05:30:03Z",
     "summary": "### Why / What / How\n\n**Why.** Fast and Extended Thinking were a product control over **which execution engine ran a turn**. That is not a product decision \u2014 the engine is chosen by what a deployment can actually run (Ollama can't speak Anthropic's wire protocol; a Claude Code subscription forces th",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/14083",
     "source": "github_prs",
@@ -936,7 +936,7 @@
   },
   {
     "title": "[PR] upstream: repository batch repo-02 (16 items)",
-    "date": "2026-08-26T04:37:01Z",
+    "date": "2026-08-26T05:01:03Z",
     "summary": "## \u5206\u8bca\u8868\n\n```json\n{\"sha\":\"dbef64bb45bc\",\"upstream_pr\":4427,\"title\":\"channel-monitor-one-click-copy\",\"verdict\":\"skip\",\"reason\":\"fork\u5728channel_monitor_repo.go/channel_monitor_template_repo.go\u5df2\u6709\u7b49\u4ef7(\u751a\u81f3\u66f4\u4f18,\u65e0\u9700SQL jsonb-merge)\u7684\u91cd\u590d\u64cd\u4f5cID\u5e42\u7b49\u5b9e\u73b0,\u901a\u8fc7fork commit 399fc85f4(#440,feat: make channel monitor duplication safer)",
     "url": "https://github.com/APIs-Gateway/sub2api/pull/826",
     "source": "github_prs",
@@ -996,7 +996,7 @@
   },
   {
     "title": "[PR] Feat/idea plugin",
-    "date": "2026-08-26T03:18:38Z",
+    "date": "2026-08-26T04:44:21Z",
     "summary": "## Description\r\n\r\nAdd IntelliJ IDEA (JetBrains) plugin extension for Open Code Review.\r\n\r\nThis is a new extension under `extensions/idea/` that brings the same\r\ncode review workflow available in the VSCode extension to IntelliJ-based\r\nIDEs (IDEA Community/Ultimate, WebStorm, PyCharm, etc.).\r\n\r\nThe i",
     "url": "https://github.com/alibaba/open-code-review/pull/1031",
     "source": "github_prs",
@@ -1004,6 +1004,54 @@
       "comments: 1",
       "pull request",
       "repo: open-code-review"
+    ]
+  },
+  {
+    "title": "[PR] fix(integration): a restart turned concurrent syncs into a queue",
+    "date": "2026-08-26T05:37:10Z",
+    "summary": "## Two code paths with opposite semantics\n\nSyncs are **started** concurrently.\n\n`MJServer/src/index.ts`, `processRSUPendingWork`:\n\n```ts\nIntegrationEngine.Instance.RunSync(item.CompanyIntegrationID, systemUser, 'Manual', ...);\n```\n\nNot awaited \u2014 every connector launches at once.\n\nSyncs were **resume",
+    "url": "https://github.com/MemberJunction/MJ/pull/3908",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Academy production integration: activation, continuity, tutor safety, BYOA, refinement",
+    "date": "2026-08-26T05:32:54Z",
+    "summary": "Six phases, six commits. Each is self-contained and reviewable on its own.\n\n## What lands\n\n**A \u2014 [`2a922c4`](https://github.com/heznpc/skillBridge/commit/2a922c4) Activation.** The Academy adapter and the assessment lifecycle landed inert: the manifest matched no Academy host, and `academy-localizat",
+    "url": "https://github.com/heznpc/skillBridge/pull/335",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: skillBridge"
+    ]
+  },
+  {
+    "title": "[PR] docs(credentials): document OpenAI Base URL for compatible endpoints",
+    "date": "2026-08-26T05:25:52Z",
+    "summary": "## Summary\nThe OpenAI credential UI already has a **Base URL** field (default `https://api.openai.com/v1`), but the credentials docs only documented API Key + Organization ID.\n\nThis PR documents:\n- The optional Base URL field\n- How to point it at OpenAI-compatible local runtimes (Ollama / LocalAI) a",
+    "url": "https://github.com/n8n-io/n8n-docs/pull/5146",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: n8n-docs"
+    ]
+  },
+  {
+    "title": "[PR] feat(platform): add Linux and macOS appliance installer",
+    "date": "2026-08-26T05:11:29Z",
+    "summary": "### Why / What / How\n\nThe existing hosted installer still follows the legacy clone-and-Compose flow,\nwhile the upcoming release publishes AutoGPT Platform as a single-container\nappliance. The public installer needs to match that product: install a\npublished artifact safely, preserve user data, and f",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13261",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 16",
+      "pull request",
+      "repo: AutoGPT"
     ]
   }
 ]
