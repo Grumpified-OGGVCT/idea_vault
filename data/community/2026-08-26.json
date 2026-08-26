@@ -552,7 +552,7 @@
   },
   {
     "title": "[PR] chore(deps): update all non-major dependencies",
-    "date": "2026-08-26T03:07:57Z",
+    "date": "2026-08-26T18:17:59Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
     "url": "https://github.com/stacksjs/buddy/pull/1352",
     "source": "github_prs",
@@ -600,12 +600,12 @@
   },
   {
     "title": "[PR] feat: parity across chat, notes, folders, and a local MCP server",
-    "date": "2026-08-26T01:52:14Z",
+    "date": "2026-08-26T18:16:23Z",
     "summary": "Feature parity work across chat, notes, folders and integrations, with the live \"ask the meeting\" path as the centrepiece.\n\n> **Stacked PR.** This branch sits on top of two open PRs and will show their commits until they land:\n> - #493 (`feat: ask the live meeting transcript`) \u2014 merged into this bra",
     "url": "https://github.com/stenolabs/stenoai/pull/496",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 1",
       "pull request",
       "repo: stenoai"
     ]
@@ -660,7 +660,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-26T16:16:26Z",
+    "date": "2026-08-26T18:09:45Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -864,7 +864,7 @@
   },
   {
     "title": "[PR] Update ollama/ollama Docker tag to v0.32.9",
-    "date": "2026-08-26T14:20:45Z",
+    "date": "2026-08-26T18:21:35Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change | Pending |\n|---|---|---|---|\n| ollama/ollama | patch | `0.32.5` \u2192 `0.32.9` | `0.33.0` (+6) |\n\n---\n\n### Configuration\n\n\ud83d\udcc5 **Schedule**: (in timezone America/New_York)\n\n- Branch creation\n  - Between 12:00 AM and 03:59 AM, on day 1 th",
     "url": "https://github.com/claytono/infra/pull/2838",
     "source": "github_prs",
@@ -1116,7 +1116,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-26T14:21:53Z",
+    "date": "2026-08-26T18:58:50Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-26T14:21:56Z",
+    "date": "2026-08-26T18:58:56Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1140,7 +1140,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-26T14:21:46Z",
+    "date": "2026-08-26T18:58:42Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1284,7 +1284,7 @@
   },
   {
     "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.11.1",
-    "date": "2026-08-26T09:57:57Z",
+    "date": "2026-08-26T19:01:53Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.11.0` \u2192 `v0.11.1` |\n\n---\n\n> [!WARNING]\n> Some",
     "url": "https://github.com/Smana/cloud-native-ref/pull/1838",
     "source": "github_prs",
@@ -1668,24 +1668,24 @@
   },
   {
     "title": "[PR] Load the local GGUF only when it will actually serve the request",
-    "date": "2026-08-26T14:13:03Z",
+    "date": "2026-08-26T18:37:13Z",
     "summary": "## What was broken\n\n### Unconditional lazy model load fires even when another provider will serve, and silently reverts an explicit Unload\n\n`AiService::generate_commit_message` and `AiService::generate_text` (`src-tauri/src/services/ai/mod.rs`) both called `ensure_local_model_loaded()` **before** se",
     "url": "https://github.com/hegsie/Leviathan/pull/445",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: Leviathan"
     ]
   },
   {
     "title": "[PR] Send AI requests only to the provider selected in Settings",
-    "date": "2026-08-26T14:00:50Z",
+    "date": "2026-08-26T18:37:11Z",
     "summary": "## What was broken\n\n### Silent fallback sends diffs to a provider the user did not select\n\n`AiService::find_available_provider` (`src-tauri/src/services/ai/mod.rs`) tried `config.active_provider` and, when that provider's `is_available()` was false, fell through to local inference and then to a scan",
     "url": "https://github.com/hegsie/Leviathan/pull/441",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 2",
       "pull request",
       "repo: Leviathan"
     ]
@@ -1820,6 +1820,138 @@
       "comments: 2",
       "pull request",
       "repo: mAI"
+    ]
+  },
+  {
+    "title": "Unable to Load Models MacPro 6,1 64GB RAM, Dual Radeon HD - Firepro D700 (6GB Each)",
+    "date": "2026-08-26T17:52:49Z",
+    "summary": "### macOS version\n\n15.7.4 Sequoia (OpenCore Patched)\n\n### GPU and VRAM\n\n Dual Radeon HD - Firepro D700 (6GB Each)\n\n### Model and quantization\n\nmoondream2-text-model-f16_ct-vicuna.gguf\n\n### What happened?\n\nNo Models will Load.\n\n**Error Message:**\nEl motor termin\u00f3 con c\u00f3digo 4 - revisa el registro en ",
+    "url": "https://github.com/engeldlgado/toshllm/issues/12",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 17",
+      "state: open",
+      "repo: toshllm"
+    ]
+  },
+  {
+    "title": "[PR] feat: add Ollama-mirroring env vars to llmman serve",
+    "date": "2026-08-26T19:03:52Z",
+    "summary": "Ports the `OLLAMA_*` env vars `ollama serve -h` documents that llmman was missing, as their `LLMMAN_*` equivalents.\n\n## New\n- `LLMMAN_DEBUG` \u2014 verbose diagnostic logging.\n- `LLMMAN_NUM_PARALLEL` \u2014 `--parallel` for GGUF/llama-server loads, scaling `--ctx-size` by the same factor first (llama-server s",
+    "url": "https://github.com/llmmanorg/llmman/pull/301",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: llmman"
+    ]
+  },
+  {
+    "title": "[PR] Thread the skill principal through Scoped Search, and judge it",
+    "date": "2026-08-26T19:03:12Z",
+    "summary": "`fix/scoped-search-threads-skill-principal` \u2192 `next` \u00b7 12 files\n\n## Summary\n\n`ScopeDimensionResolver` binds `Principals.SkillID` into a dimension's expansion query, and\n`principalsFrom()` sources it from `SearchParams.AISkillID`. `SearchParams` declares that field\n(`search.types.ts:120`) and the cac",
+    "url": "https://github.com/MemberJunction/MJ/pull/4032",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Jsje",
+    "date": "2026-08-26T19:02:16Z",
+    "summary": "### **User description**\n# Description\r\n\r\nThank you for opening a Pull Request!\r\nBefore submitting your PR, there are a few things you can do to make sure it goes smoothly:\r\n\r\n- [ ] Follow the [`CONTRIBUTING` Guide](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/CONTRIBUTING.md).\r\n- ",
+    "url": "https://github.com/cicero-im/generative-ai/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 20",
+      "pull request",
+      "repo: generative-ai"
+    ]
+  },
+  {
+    "title": "[PR] feat(infra): add cheap one-box platform compose",
+    "date": "2026-08-26T18:59:47Z",
+    "summary": "## Description\n\nAdds a cheap one-box cloud/prod Docker Compose configuration for the non-AI Deepiri platform stack.\n\nInclude:\n- Related Issue number: TBD\n- Plaky feature name: Cheap one-box platform deployment\n- Component, feature, or system affected: Cloud/infra Docker Compose, nginx reverse proxy,",
+    "url": "https://github.com/Team-Deepiri/deepiri-platform/pull/304",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 19",
+      "pull request",
+      "repo: deepiri-platform"
+    ]
+  },
+  {
+    "title": "[PR] feat(ui): add ClinePass to QUOTA_PROVIDERS frontend whitelist",
+    "date": "2026-08-26T18:51:55Z",
+    "summary": "## Problem\n\nThe ClinePass server-side quota provider module exists in the backend registry but is invisible in the Usage panel because the frontend `QUOTA_PROVIDERS` array and `QuotaProviderId` type don't include it. The UI never queries `/api/quota/providers` for discovery \u2014 it uses a hardcoded com",
+    "url": "https://github.com/openchamber/openchamber/pull/3155",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openchamber"
+    ]
+  },
+  {
+    "title": "[PR] deps: Bump FluentAssertions and 2 others",
+    "date": "2026-08-26T18:50:14Z",
+    "summary": "Updated [FluentAssertions](https://github.com/fluentassertions/fluentassertions) from 7.0.0 to 7.2.2.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [FluentAssertions's releases](https://github.com/fluentassertions/fluentassertions/releases)._\n\n## 7.2.2\n\n<!-- Release notes generated usin",
+    "url": "https://github.com/djuk1ca/UsluzionicaServer/pull/14",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: UsluzionicaServer"
+    ]
+  },
+  {
+    "title": "[PR] Build Lectern: local AI lecture note-taking TUI for macOS",
+    "date": "2026-08-26T18:39:36Z",
+    "summary": "Lectern records a lecture, transcribes it locally with whisper.cpp, and generates structured notes locally with Ollama **while the lecture is still running**. No cloud APIs, no telemetry, no network needed at runtime.\n\n```\nLive audio \u2192 whisper.cpp \u2192 live transcript \u2192 Ollama \u2192 continuously updating n",
+    "url": "https://github.com/rcarvierling-ship-it/Atlas.org-alternative/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: Atlas.org-alternative"
+    ]
+  },
+  {
+    "title": "[PR] feat: self-host experience \u2014 1-command setup, local auth, runtime providers, wizard UI",
+    "date": "2026-08-26T18:31:30Z",
+    "summary": "## Summary\n\nMakes GAIA genuinely self-hostable: **`gaia up` \u2192 open browser \u2192 sign up \u2192 paste one API key \u2192 chat.** No WorkOS account, no Infisical, no Dodo, no hand-edited env files.\n\n### What changed\n\n**1. Local auth (`AUTH_MODE=local`)**\n- Email+password signup/login with HS256 session cookies; fi",
+    "url": "https://github.com/theexperiencecompany/gaia/pull/1091",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: gaia"
+    ]
+  },
+  {
+    "title": "[PR] v3.16: Audit delivery \u2014 two silent security holes + infrastructure",
+    "date": "2026-08-26T18:22:13Z",
+    "summary": "This is an **audit delivery**, not a feature release. The work involved searching for places where the project violated its own documented rules (in `CLAUDE.md`, `README.md`, and `.context`), rather than adding new functionality.\n\n## Summary\n\nTwo critical security vulnerabilities were discovered and",
+    "url": "https://github.com/UmutErayAltay/artemis-ai-assistant/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: artemis-ai-assistant"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency huggingface_hub to v0.36.2",
+    "date": "2026-08-26T18:15:29Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [huggingface_hub](https://re",
+    "url": "https://github.com/red-hat-data-services/openvino_model_server/pull/480",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openvino_model_server"
     ]
   }
 ]
