@@ -576,12 +576,12 @@
   },
   {
     "title": "[PR] Add atomic agent prompt submission",
-    "date": "2026-08-26T09:08:28Z",
+    "date": "2026-08-26T10:06:31Z",
     "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
     "url": "https://github.com/manaflow-ai/cmux/pull/9290",
     "source": "github_prs",
     "highlights": [
-      "comments: 57",
+      "comments: 58",
       "pull request",
       "repo: cmux"
     ]
@@ -660,7 +660,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-26T09:23:38Z",
+    "date": "2026-08-26T10:03:28Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] Omi fully on-premise via Docker Compose or Helm/k8s: every managed service behind a swappable port (db Firestore|Mongo \u00b7 storage GCS|S3 \u00b7 vector Pinecone|Qdrant \u00b7 auth Firebase|Keycloak \u00b7 push FCM|UnifiedPush \u00b7 LLM any OpenAI-compatible endpoint)",
-    "date": "2026-08-26T08:23:26Z",
+    "date": "2026-08-26T10:33:54Z",
     "summary": "> *\"The next AI moat isn't intelligence. It's personal context.\"*\r\n> *\"By collecting ALL data about the user\u2026 we commit to privacy and open-source.\"*\r\n> *\"We use open source as a trust wedge.\"* \u2014 the manifesto\r\n\r\nFirst, thank you for building Omi in the open \u2014 betting on personal context as the moat",
     "url": "https://github.com/BasedHardware/omi/pull/10887",
     "source": "github_prs",
@@ -840,7 +840,7 @@
   },
   {
     "title": "[PR] Reconcile PR38 with the salvage line: merged history, AGPL executed, sweettest unblock",
-    "date": "2026-08-26T09:14:26Z",
+    "date": "2026-08-26T09:58:04Z",
     "summary": "Rejoins six weeks of parallel work and lands the corrections found along the way.\n`origin/main` is fully contained in this branch (0 ahead, 124 behind as of\n2026-08-24), so there is no content to reconcile here \u2014 only review.\n\n**PR #38 has since merged to main on its own** (merge commit `873cc0c`,\n2",
     "url": "https://github.com/G-0-B/FLOSS/pull/41",
     "source": "github_prs",
@@ -900,7 +900,7 @@
   },
   {
     "title": "[PR] \u8106\u5f31\u6027\u306e\u6a2a\u65ad\u76e3\u67fb \u2014 2 \u9031\u9593\u8d77\u52d5\u3057\u306a\u304b\u3063\u305f\u30c7\u30b9\u30af\u30c8\u30c3\u30d7\u7248\u3092\u542b\u3080\u5b9f\u30d0\u30b0 50 \u4ef6\u3068\u3001\u898b\u5f35\u308a\u5074\u306e\u6b7b\u89d2\u3092\u585e\u3044\u3060",
-    "date": "2026-08-26T09:42:16Z",
+    "date": "2026-08-26T10:30:33Z",
     "summary": "> \u5f53\u521d\u306f main \u30d7\u30ed\u30bb\u30b9\u306e\u5909\u7570\u691c\u67fb\u3092\u57cb\u3081\u308b\u4f5c\u696d\u3060\u3063\u305f\u304c\u3001\u305d\u3053\u3067\u898b\u3064\u3051\u305f\n> \u300c\u898b\u5f35\u308a\u304c\u898b\u3066\u3044\u306a\u3044\u5834\u6240\u300d\u3092\u8fbf\u3063\u3066\u6a2a\u65ad\u76e3\u67fb\u306b\u306a\u3063\u305f\u3002326 \u30b3\u30df\u30c3\u30c8\u30fb3 \u671f\u3002\n\n# \u524d\u534a (1\u301c77 \u30b3\u30df\u30c3\u30c8\u76ee) \u2014\u2014 \u5b9f\u88c5\u3069\u3046\u3057\u306e\u98df\u3044\u9055\u3044\n\n## 0. \u3044\u3061\u3070\u3093\u91cd\u3044\u3082\u306e \u2014 \u507d\u30b3\u30fc\u30eb\u30d0\u30c3\u30af 1 \u672c\u3067 Electron \u306e\u4e3b\u30d7\u30ed\u30bb\u30b9\u304c\u843d\u3061\u305f\n\nOAuth \u306e\u30eb\u30fc\u30d7\u30d0\u30c3\u30af\u5f85\u53d7 (`listenForCallback`) \u306f\u3001**2 \u901a\u308a\u306e\u5165\u529b\u3067\u540c\u671f throw** \u3057\u3001\n`http.createServer` \u306e listener \u5185\u306e throw \u306f `uncaughtException` \u306b\u306a\u308b\u3002\n`ma",
     "url": "https://github.com/hiroto1977/-/pull/787",
     "source": "github_prs",
@@ -1116,7 +1116,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-26T09:42:04Z",
+    "date": "2026-08-26T10:37:18Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-26T09:42:03Z",
+    "date": "2026-08-26T10:37:20Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1140,7 +1140,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-08-26T09:41:51Z",
+    "date": "2026-08-26T10:37:11Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1164,7 +1164,7 @@
   },
   {
     "title": "[PR] (Wait with review/merge) Set up dns for gardener cluster",
-    "date": "2026-08-26T09:30:48Z",
+    "date": "2026-08-26T10:02:59Z",
     "summary": "# Set Up Gardener Shoot DNS with Gardener-Managed TLS Certificates\n\n### New Features\n\n\u2728 Replaces nip.io wildcard DNS with Gardener's native `shoot-dns-service`, which auto-publishes A-records for all ingress hostnames. TLS certificates are now issued via Gardener's `cert.gardener.cloud` Certificate ",
     "url": "https://github.com/AI-Trust-Services/ai-trust-platform/pull/115",
     "source": "github_prs",
@@ -1284,7 +1284,7 @@
   },
   {
     "title": "[PR] chore(deps): update ghcr.io/open-webui/open-webui docker tag to v0.11.1",
-    "date": "2026-08-26T08:21:45Z",
+    "date": "2026-08-26T09:57:57Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [ghcr.io/open-webui/open-webui](https://redirect.github.com/open-webui/open-webui) | patch | `v0.11.0` \u2192 `v0.11.1` |\n\n---\n\n> [!WARNING]\n> Some",
     "url": "https://github.com/Smana/cloud-native-ref/pull/1838",
     "source": "github_prs",
@@ -1320,19 +1320,19 @@
   },
   {
     "title": "[PR] feat(skill-graft): reconcile Tool2Vec catalog eagerly",
-    "date": "2026-08-26T09:43:51Z",
+    "date": "2026-08-26T10:14:48Z",
     "summary": "## Summary\n\nThis makes Agent Harbor O3 real: one full-catalog Tool2Vec reconciler shared by setup, the daemon, Doctor, CLI, API, and read-only MCP status. Current-hash centroid rows are durable checkpoints, an expiring SQLite lease excludes competing builders, and interrupted work resumes without du",
     "url": "https://github.com/curiositech/port-daddy/pull/9860",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: port-daddy"
     ]
   },
   {
     "title": "[PR] fix(deps): update dependency org.testcontainers:testcontainers to v2",
-    "date": "2026-08-26T09:38:41Z",
+    "date": "2026-08-26T09:51:14Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:testcontainers](https://java.testcontainers.org) ([source](https://redirect.git",
     "url": "https://github.com/benhook1013/FireMUD/pull/2648",
     "source": "github_prs",
@@ -1392,7 +1392,7 @@
   },
   {
     "title": "[PR] fix(calendar): expose proposal context to screen readers",
-    "date": "2026-08-26T09:00:19Z",
+    "date": "2026-08-26T10:17:53Z",
     "summary": "## Problem\n\nCalendar coordination proposal buttons visually showed a rank, date/time, availability, and action, but assistive technology could announce only the generic action text. Hard-coded dates also allowed the visible weekday, accessible name, and parent calendar month to drift apart.\n\n## Fix\n",
     "url": "https://github.com/ContextualWisdomLab/naruon/pull/1320",
     "source": "github_prs",
@@ -1400,6 +1400,30 @@
       "comments: 44",
       "pull request",
       "repo: naruon"
+    ]
+  },
+  {
+    "title": "[PR] 2.0.0",
+    "date": "2026-08-26T10:34:23Z",
+    "summary": "<Note>\r\nv2.0.0 is the first stable release on the 2.0 line. This changelog rolls up `2.0.0-prerelease1` (based on [v1.6.3](https://docs.getbifrost.ai/changelogs/v1.6.3)), `2.0.0-prerelease2`, `2.0.0-prerelease3` and the final release window, so it is the complete delta for a deployment upgrading fro",
+    "url": "https://github.com/maximhq/bifrost/pull/6547",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] D-02: Spring AI & Tesseract OCR Pipeline",
+    "date": "2026-08-26T10:14:00Z",
+    "summary": "> Ollama (llama3.1:8b) was selected as the primary LLM.\r\n\r\n### Changes:\r\n\r\n* Two services have been added to `docker-compose.yml` to run the model locally.\r\n* Added a fail-fast check for the model's existence and successful connection to it.\r\n* Unit tests have been added to verify the fail-fast conf",
+    "url": "https://github.com/GutnikElina/document-ocr-service/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: document-ocr-service"
     ]
   }
 ]
