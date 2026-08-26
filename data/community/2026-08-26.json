@@ -204,12 +204,12 @@
   },
   {
     "title": "Want to suggest a wake word? Leave your thoughts here. (AIS-1441)",
-    "date": "2026-08-25T12:48:38Z",
+    "date": "2026-08-26T15:32:06Z",
     "summary": "Hi all,\n\nWe're excited to offer the community more free and high-quality wake word models. Everyone has their own unique wake word preferences. Now, we're ready to regularly release some of the most popular wake words. Please let us know the wake words you want! \n\n**Already supported languages: Chin",
     "url": "https://github.com/espressif/esp-sr/issues/88",
     "source": "github_issues",
     "highlights": [
-      "comments: 448",
+      "comments: 449",
       "state: open",
       "repo: esp-sr"
     ]
@@ -660,7 +660,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-08-26T14:11:40Z",
+    "date": "2026-08-26T16:16:26Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1200,7 +1200,7 @@
   },
   {
     "title": "[PR] feat(hub): add Strix Hub \u2014 multi-tenant task orchestration & dual-channel model routing console",
-    "date": "2026-08-26T12:34:31Z",
+    "date": "2026-08-26T16:00:58Z",
     "summary": "## Summary\n\nThis PR introduces **Strix Hub** (`strix hub`), a zero-intrusion, multi-tenant task orchestration and dual-channel model routing console for Strix.\n\n### Motivation\nWhile Strix has an excellent headless CLI and read-only viewer (`strix view`), security teams often require:\n1. **Interactiv",
     "url": "https://github.com/usestrix/strix/pull/1170",
     "source": "github_prs",
@@ -1572,7 +1572,7 @@
   },
   {
     "title": "[PR] refactor(platform): the Go module path names the repository it lives in",
-    "date": "2026-08-26T11:44:18Z",
+    "date": "2026-08-26T15:36:02Z",
     "summary": "Every module declared itself under `github.com/gradionhq/margince/*`. That path resolves to a real repository \u2014 `gradionhq/margince` is public and hosts six issues, two of which `orgdossier/` cites by number \u2014 but one that holds **no code and never has**. The path named a tracker, not this tree.\n\n##",
     "url": "https://github.com/margince/margince/pull/2779",
     "source": "github_prs",
@@ -1595,9 +1595,9 @@
     ]
   },
   {
-    "title": "[PR] 5.51.2 cache backport: #3389 + #3425 + #3777 onto lts/5",
-    "date": "2026-08-26T13:42:35Z",
-    "summary": "Backports three cross-server / process-wide cache correctness fixes from `next` onto the 5.x line, following the `next`-first rule in `plans/lts-process.md` \u00a75.2. Bundled into one PR mirroring #3934 (the 5.51.1 security backport).\n\nAll three carry `patch` changesets and **no migrations** \u2014 `dbImpact",
+    "title": "[PR] 5.51.2 cache backport: #3389 + #3777 onto lts/5",
+    "date": "2026-08-26T15:36:12Z",
+    "summary": "Backports two cache correctness fixes from `next` onto the 5.x line, following the `next`-first rule in `plans/lts-process.md` \u00a75.2.\n\n**Updated per Craig's review** \u2014 the #3425 commit has been dropped from this branch. See [what changed](#revision-dropped-3425) below.\n\nDriver is Skip, which is pinne",
     "url": "https://github.com/MemberJunction/MJ/pull/4067",
     "source": "github_prs",
     "highlights": [
@@ -1644,7 +1644,7 @@
   },
   {
     "title": "[PR] feat(models): hide unavailable models from pickers, grey them for admins",
-    "date": "2026-08-26T14:44:43Z",
+    "date": "2026-08-26T15:45:02Z",
     "summary": "Part of #1586 (PR B of the plan).\n\n## Summary\n- `GET /api/v1/config/models` only returns models whose provider is available on this installation (API key / URL configured; Ollama models must be pulled). Regular users never see the rest.\n- Admins can pass `includeUnavailable=1` to receive the full ca",
     "url": "https://github.com/metadist/synaplan/pull/1588",
     "source": "github_prs",
@@ -1688,6 +1688,138 @@
       "comments: 1",
       "pull request",
       "repo: Leviathan"
+    ]
+  },
+  {
+    "title": "[PR] feat(runtime-host): own bot conversation continuity",
+    "date": "2026-08-26T16:18:33Z",
+    "summary": "## Summary\n\n- move opaque external-conversation binding ownership into Runtime Host operational SQLite, including Session creation, crash recovery, retirement cleanup, and backup/restore\n- reduce Desktop to the channel boundary: normalize conversation, source-event, and reply-target identities, then",
+    "url": "https://github.com/apache/maka/pull/2550",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] feat(windows): add self-contained desktop packaging, local providers, and CI",
+    "date": "2026-08-26T16:17:30Z",
+    "summary": "## Summary\r\n\r\nThis PR completes the Windows desktop distribution path for oh-my-warp. It adds a self-contained x64 portable ZIP, a per-user installer/uninstaller, local-provider integration, persistent per-pane phone sharing, Windows terminal/layout fixes, and focused CI and release coverage.\r\n\r\nThe",
+    "url": "https://github.com/AndrewWayne/oh-my-warp/pull/132",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: oh-my-warp"
+    ]
+  },
+  {
+    "title": "[PR] platform/llm: LiteLLM on OKE as the model-routing row (crew#284)",
+    "date": "2026-08-26T16:13:43Z",
+    "summary": "LiteLLM becomes the estate's model-routing row on OKE: Flux Kustomization `llm` (platform/llm) with a Deployment, Service, ExternalSecret from the estate vault, and an HTTPRoute at `llm.${ESTATE_ZONE}` on the prospector edge. Until now the router ran only in a colima VM on the founder's Mac; stoppin",
+    "url": "https://github.com/chidionyema/idp/pull/225",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: idp"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm, ui): Add native keyless Local LLM model support (Ollama, vLLM, LM Studio, LocalAI) and Office UI Settings",
+    "date": "2026-08-26T15:54:05Z",
+    "summary": "## Overview\r\n\r\nThis PR adds support for using local/self-hosted LLM providers with OpenOPC without requiring a remote API key.\r\n\r\nSupported local providers include Ollama, vLLM, LM Studio, LocalAI, Llama.cpp, and TGI. It also adds an LLM settings modal to the Office UI so the provider, model, API ba",
+    "url": "https://github.com/HKUDS/OpenOPC/pull/30",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OpenOPC"
+    ]
+  },
+  {
+    "title": "[PR] feat: multi-provider interface for OpenAI-compatible LLM endpoints",
+    "date": "2026-08-26T15:48:52Z",
+    "summary": "## Summary\n\nAdds a provider abstraction layer that enables connecting to any OpenAI-compatible LLM endpoint (Ollama, OpenAI, Grok, Groq, Mistral, DeepSeek, Azure AI Foundry, etc.) from a single extension.\n\n## Architecture\n\n```\nUser Setup (LLM Provider = GROK)\n    \u2192 CE LLM Provider Setup (Code=GROK, ",
+    "url": "https://github.com/businesscentralal/origo-bc-cloudevents-llm/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: origo-bc-cloudevents-llm"
+    ]
+  },
+  {
+    "title": "[PR] sovereign: default models to the estate router; sb errors keep their last line (crew#313)",
+    "date": "2026-08-26T15:41:51Z",
+    "summary": "Sovereign's model defaults named the laptop-only `ollama` lane (`model.default`, `model.vision`, `model.consensus`, `consensus.cheap_model`). With the router on the cluster (idp#225) that alias does not exist, so every default call and the CP2 consensus would fail on the first request. Defaults are ",
+    "url": "https://github.com/chidionyema/idp/pull/228",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: idp"
+    ]
+  },
+  {
+    "title": "[PR] fix(macos): declare NSLocalNetworkUsageDescription so LAN Ollama works on macOS 15+",
+    "date": "2026-08-26T15:36:27Z",
+    "summary": "Fixes #499.\n\n## The failure\n\nPoint **Ollama server URL** at another machine on the LAN (`http://192.168.x.x:11434`) and **Test connection** fails on macOS 15+ with:\n\n> Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download\n\nNothing is",
+    "url": "https://github.com/stenolabs/stenoai/pull/500",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: stenoai"
+    ]
+  },
+  {
+    "title": "[PR] fix(desktop): read Usage from Runtime Host",
+    "date": "2026-08-26T15:18:29Z",
+    "summary": "## Summary\n\n- move Settings \u2192 Usage off the legacy session scanner and onto the reconnectable Runtime Host client\n- preserve missing token and pricing basis through the Host protocol, then show clean known totals with one coverage notice and precise request-row labels\n- keep aborted tool calls separ",
+    "url": "https://github.com/apache/maka/pull/2641",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] feat(opencode): \u652f\u6301 OpenCode Go \u5b98\u65b9\u7528\u91cf\u7a97\u53e3\u67e5\u8be2\u4e0e\u81ea\u52a8\u5237\u65b0",
+    "date": "2026-08-26T15:15:21Z",
+    "summary": "## \u80cc\u666f\n\nOpenCode Go \u662f OpenCode \u5b98\u65b9\u7684\u8ba2\u9605\u805a\u5408\u5e73\u53f0\uff08$10/\u6708\uff0c5h/$12\u3001\u5468/$30\u3001\u6708/$60 \u4e09\u4e2a\u7528\u91cf\u7a97\u53e3\uff09\uff0c\u63d0\u4f9b OpenAI \u517c\u5bb9\u7aef\u70b9 `https://opencode.ai/zen/go/v1`\u3002\u4e0a\u6e38\u4e8e 2026-08-11 \u4e0a\u7ebf\u5b98\u65b9\u7528\u91cf\u7aef\u70b9 `GET /zen/go/v1/usage`\uff08Bearer \u76f4\u63a5\u590d\u7528\u6d88\u8d39\u7aef key\uff0c\u5c1a\u672a\u5199\u5165\u5b98\u65b9\u6587\u6863\uff09\uff0c\u8fd4\u56de rolling/weekly/monthly \u4e09\u7a97\u53e3\u7684 `percent` \u4e0e `resetsAt`\u3002\n\n\u672c PR \u4e3a openai apikey \u8d26\u53f7\uff08base_url = `https://open",
+    "url": "https://github.com/Wei-Shaw/sub2api/pull/5616",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: sub2api"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update testcontainers-go monorepo to v0.44.0",
+    "date": "2026-08-26T15:15:00Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/henok321/translation-service/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: translation-service"
+    ]
+  },
+  {
+    "title": "[PR] 1.1.0",
+    "date": "2026-08-26T15:09:35Z",
+    "summary": "Mise \u00e0 jour majeure de l'interface et des fonctionnalit\u00e9s\r\nAPI, nouveau logo et nom, abonnements et plans, comptes partag\u00e9s et plus encore !",
+    "url": "https://github.com/mDevsLabs/mAI/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: mAI"
     ]
   }
 ]
