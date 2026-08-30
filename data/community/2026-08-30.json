@@ -144,7 +144,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-30T03:56:07Z",
+    "date": "2026-08-30T10:02:58Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -192,7 +192,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-08-30T02:15:58Z",
+    "date": "2026-08-30T10:02:14Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -288,12 +288,12 @@
   },
   {
     "title": "Want to suggest a wake word? Leave your thoughts here. (AIS-1441)",
-    "date": "2026-08-29T08:39:13Z",
+    "date": "2026-08-30T08:17:52Z",
     "summary": "Hi all,\n\nWe're excited to offer the community more free and high-quality wake word models. Everyone has their own unique wake word preferences. Now, we're ready to regularly release some of the most popular wake words. Please let us know the wake words you want! \n\n**Already supported languages: Chin",
     "url": "https://github.com/espressif/esp-sr/issues/88",
     "source": "github_issues",
     "highlights": [
-      "comments: 452",
+      "comments: 453",
       "state: open",
       "repo: esp-sr"
     ]
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-08-30T02:44:14Z",
+    "date": "2026-08-30T08:44:13Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -708,7 +708,7 @@
   },
   {
     "title": "[PR] \u8106\u5f31\u6027\u306e\u6a2a\u65ad\u76e3\u67fb \u2014 2 \u9031\u9593\u8d77\u52d5\u3057\u306a\u304b\u3063\u305f\u30c7\u30b9\u30af\u30c8\u30c3\u30d7\u7248\u3092\u542b\u3080\u5b9f\u30d0\u30b0 50 \u4ef6\u3068\u3001\u898b\u5f35\u308a\u5074\u306e\u6b7b\u89d2\u3092\u585e\u3044\u3060",
-    "date": "2026-08-30T01:59:38Z",
+    "date": "2026-08-30T10:21:27Z",
     "summary": "> \u5f53\u521d\u306f main \u30d7\u30ed\u30bb\u30b9\u306e\u5909\u7570\u691c\u67fb\u3092\u57cb\u3081\u308b\u4f5c\u696d\u3060\u3063\u305f\u304c\u3001\u305d\u3053\u3067\u898b\u3064\u3051\u305f\n> \u300c\u898b\u5f35\u308a\u304c\u898b\u3066\u3044\u306a\u3044\u5834\u6240\u300d\u3092\u8fbf\u3063\u3066\u6a2a\u65ad\u76e3\u67fb\u306b\u306a\u3063\u305f\u3002326 \u30b3\u30df\u30c3\u30c8\u30fb3 \u671f\u3002\n\n# \u524d\u534a (1\u301c77 \u30b3\u30df\u30c3\u30c8\u76ee) \u2014\u2014 \u5b9f\u88c5\u3069\u3046\u3057\u306e\u98df\u3044\u9055\u3044\n\n## 0. \u3044\u3061\u3070\u3093\u91cd\u3044\u3082\u306e \u2014 \u507d\u30b3\u30fc\u30eb\u30d0\u30c3\u30af 1 \u672c\u3067 Electron \u306e\u4e3b\u30d7\u30ed\u30bb\u30b9\u304c\u843d\u3061\u305f\n\nOAuth \u306e\u30eb\u30fc\u30d7\u30d0\u30c3\u30af\u5f85\u53d7 (`listenForCallback`) \u306f\u3001**2 \u901a\u308a\u306e\u5165\u529b\u3067\u540c\u671f throw** \u3057\u3001\n`http.createServer` \u306e listener \u5185\u306e throw \u306f `uncaughtException` \u306b\u306a\u308b\u3002\n`ma",
     "url": "https://github.com/hiroto1977/-/pull/787",
     "source": "github_prs",
@@ -732,14 +732,254 @@
   },
   {
     "title": "[PR] fix(models): resolve Ollama Cloud probe credentials through the auth-store seam",
-    "date": "2026-08-30T01:43:00Z",
+    "date": "2026-08-30T08:17:23Z",
     "summary": "## What does this PR do?\n\nFixes the desktop model picker dropping models that are present in the Ollama Cloud cache (#98243). The root cause is that the Ollama Cloud live `/v1/models` probe only consulted `os.environ['OLLAMA_API_KEY']`. Desktop/service processes are launched from the GUI and inherit",
     "url": "https://github.com/NousResearch/hermes-agent/pull/98261",
     "source": "github_prs",
     "highlights": [
-      "comments: 0",
+      "comments: 2",
       "pull request",
       "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "umbrella(config): #7437 migration silently dropped ~48 production defaults \u2014 fourth one-off fix, no systemic tracking",
+    "date": "2026-08-30T10:14:22Z",
+    "summary": "## The #7437 config migration dropped ~48 production defaults \u2014 and this is the fourth one-off fix\n\n`122793bbf` (#7437) migrated 675 `os.getenv(\"X\", \"default\")` call sites onto `ssot_config` fields. Where the original supplied a default, many of the new fields were declared `default=False` / `defaul",
+    "url": "https://github.com/mrveiss/AutoBot-AI/issues/13264",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 2",
+      "state: open",
+      "repo: AutoBot-AI"
+    ]
+  },
+  {
+    "title": "Spec \u00b7 Aulus build-ready implementation spec",
+    "date": "2026-08-30T07:12:27Z",
+    "summary": "**Build-ready spec for Aulus** \u2014 the consolidation of the [Wayfinder map](https://github.com/Siddhant043/aulus/issues/1) and its nine design tickets (D1\u2013D9) plus six research tickets (R1\u2013R6). This is the single document a coding agent implements from. Each decision links back to its ticket and ADR f",
+    "url": "https://github.com/Siddhant043/aulus/issues/17",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: aulus"
+    ]
+  },
+  {
+    "title": "max-concurrent \uac00 \ubc14\uc778\ub529\ubcc4\uc774\ub77c provider \ud55c\ub3c4\ub97c \ud569\uc0b0 \ucd08\uacfc\ud55c\ub2e4 \u2014 \ud3ec\ud654\uac00 429 \uac00 \uc544\ub2c8\ub77c 20\ucd08 \uc9c0\uc5f0\uc73c\ub85c \ub098\ud0c0\ub0a8",
+    "date": "2026-08-30T05:28:17Z",
+    "summary": "```masc-triage\nkind: defect\narea: runtime\nimpact: degrades\nroot: boundary\nmust-do: false\n```\n\n## \ubb34\uc2a8 \uc77c\uc774 \uc788\uc5c8\ub098\n\n`glm-coding` \ub7f0\ud0c0\uc784\uc5d0\uc11c keeper \ud134\uc774 `stream_idle` \ud0c0\uc784\uc544\uc6c3\uc73c\ub85c \ub05d\ub098\ub294 \uc77c\uc774 6\uc77c\uac04 \uc774\uc5b4\uc84c\uc2b5\ub2c8\ub2e4. 136\ud134 \uc911 17\ud134(12.5%)\uc785\ub2c8\ub2e4.\n\n\ud2b9\uc774\ud55c \uac74 \ubd84\ud3ec\uc600\uc2b5\ub2c8\ub2e4.\n\n| | \ud2b8\ub808\uc774\uc2a4 | \ud0c0\uc784\uc544\uc6c3 |\n|---|---|---|\n| \ub3c4\uad6c\ub97c \uc548 \uc4f4 \ud134 | 258 | **0** |\n| \ub3c4\uad6c\ub97c \uc4f4 \ud134 | 82 | 4 |\n\n\ub3c4\uad6c ",
+    "url": "https://github.com/jeong-sik/masc/issues/29589",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 1",
+      "state: open",
+      "repo: masc"
+    ]
+  },
+  {
+    "title": "[PR] chore(main): release minicloud-gitops 0.1.2",
+    "date": "2026-08-30T10:18:42Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.1.2](https://github.com/andrelair-platform/minicloud-gitops/compare/minicloud-gitops-v0.1.1...minicloud-gitops-v0.1.2) (2026-08-30)\n\n\n### Features\n\n* **#285:** deploy Retrieva core (backend + MongoDB + Redis) on minicloud ([#870](https://git",
+    "url": "https://github.com/andrelair-platform/minicloud-gitops/pull/711",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: minicloud-gitops"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image baserow/baserow ( 1.35.1 \u2794 2.3.3 )",
+    "date": "2026-08-30T10:15:52Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [baserow/baserow](https://redirect.github.com/baserow/baserow) | major | `1.35.1` \u2192 `2.3.3` |\n\n---\n\n> [!WARNING]\n> Some dependencies could not",
+    "url": "https://github.com/returnfloat/homelab/pull/1487",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7.6.0",
+    "date": "2026-08-30T10:14:56Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
+    "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3231",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: testcontainers-spring-boot"
+    ]
+  },
+  {
+    "title": "[PR] feat(worker): self-update install, restart, health-check, and rollback (#890 C3)",
+    "date": "2026-08-30T10:07:21Z",
+    "summary": "## Summary\n\nImplements the worker-side self-install, restart, re-register, and rollback flow for taOS Issue #890.\n\nBuilds on C2 (PR #1903, feat/worker-self-drain) drain protocol.\n\n## Changes\n\n### New module: `tinyagentos/worker/self_update.py` (747 lines)\n- Orchestrates the full worker-initiated upd",
+    "url": "https://github.com/jaylfc/taOS/pull/1910",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 22",
+      "pull request",
+      "repo: taOS"
+    ]
+  },
+  {
+    "title": "[PR] Update Mend: high confidence minor and patch dependency updates",
+    "date": "2026-08-30T10:07:10Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/jgeraigery/venice/pull/81",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: venice"
+    ]
+  },
+  {
+    "title": "[PR] feat(desktop): add a default working directory",
+    "date": "2026-08-30T09:49:54Z",
+    "summary": "## Summary\n\n- Add a persisted default working directory under Settings > General, with a native folder picker and clear action.\n- Use it for local sessions and Bot conversations without a Project, while preserving explicit workspace choices and remote Runtime Host boundaries.\n\nFixes #2322\n\n## Verifi",
+    "url": "https://github.com/apache/maka/pull/2998",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: maka"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go/modules/compose to v0.44.0",
+    "date": "2026-08-30T09:48:35Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go/modules/compose](https://redirect.github.com/testconta",
+    "url": "https://github.com/mdelapenya/testcontainers-go-compose/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: testcontainers-go-compose"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go/modules/postgres to v0.44.0",
+    "date": "2026-08-30T09:39:49Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go/modules/postgres](https://redirect.github.com/testcont",
+    "url": "https://github.com/infratographer/metadata-api/pull/329",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: metadata-api"
+    ]
+  },
+  {
+    "title": "[PR] logging, a query source without an LLM, multi-account and docker",
+    "date": "2026-08-30T09:35:15Z",
+    "summary": "Closes #14. Supersedes #31 and #35, which are closed; everything in both is carried over here.\n\nFour changes that all touch `src/main.py`, which is why they arrive together rather than as separate pull requests queued on the same file.\n\n---\n\n## 1. print to logging\n\nThe whole of #31, unchanged. `src/",
+    "url": "https://github.com/User0332/rewards-farmer/pull/36",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: rewards-farmer"
+    ]
+  },
+  {
+    "title": "[PR] feat(ollama): \u7528\u91cf\u7a97\u53e3\u652f\u6301\u6302\u5728\u56fd\u4ea7\u4e09\u5bb6\u5e73\u53f0\u4e0b\u7684 Ollama Cloud \u8d26\u53f7",
+    "date": "2026-08-30T09:21:57Z",
+    "summary": "## \u95ee\u9898\n\nOllama Cloud \u7528\u91cf\u7a97\u53e3\uff08\u6d4f\u89c8\u5668\u4f1a\u8bdd\u30015h/7d \u5feb\u7167\u3001\u81ea\u52a8\u5237\u65b0\u3001\u540c api_key \u7ec4\u5171\u4eab\uff09\u6b64\u524d\u53ea\u8ba4 `platform \u2208 {openai, anthropic}` \u7684 apikey \u8d26\u53f7\u3002\n\n\u4f46\u7f51\u5173\u5bf9 `kimi` / `zhipu` / `deepseek` \u7684 apikey \u8d26\u53f7\u540c\u6837\u6309 `credentials.base_url` \u8f6c\u53d1\uff08`Account.GetOpenAIBaseURL`\uff1aapikey/upstream \u7c7b\u578b\u4f18\u5148\u8fd4\u56de\u81ea\u5b9a\u4e49 base_url\uff09\u3002\u628a Ollama Cloud \u7684 key \u6302\u5728\u8fd9\u4e09\u4e2a\u5e73\u53f0\u4e0b\uff08\u5728\u5bf9\u5e94\u5e73\u53f0\u5206\u7ec4\u91cc\u8dd1 Ollama Clo",
+    "url": "https://github.com/Wei-Shaw/sub2api/pull/6388",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: sub2api"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-go monorepo to v0.44.0",
+    "date": "2026-08-30T09:16:14Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/emerconn/dlqt/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: dlqt"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update testcontainers-go monorepo to v0.44.0",
+    "date": "2026-08-30T09:14:45Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/infratographer/x/pull/566",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: x"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go/modules/mariadb to v0.44.0",
+    "date": "2026-08-30T08:44:09Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/testcontainers-go/modules/mariadb](https://redirect.github.com/testconta",
+    "url": "https://github.com/vexxhost/openstack_database_exporter/pull/87",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: openstack_database_exporter"
+    ]
+  },
+  {
+    "title": "[PR] Draft: current CGW reliability planning authority",
+    "date": "2026-08-30T08:42:36Z",
+    "summary": "## Current authority \u2014 2026-08-27\n\nThis PR remains the current **architecture / implementation-order planning authority** for the `goose-chatgpt-web` reliability workstream.\n\nThe current checkpoint is now:\n\n`docs/cgw-planning-checkpoint-2026-08-27.md`\n\nThat checkpoint **supersedes older future-tense",
+    "url": "https://github.com/luke-m-selway/goose-chatgpt-web/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 195",
+      "pull request",
+      "repo: goose-chatgpt-web"
+    ]
+  },
+  {
+    "title": "[PR] Nightly review rolling (through 2026-08-30)",
+    "date": "2026-08-30T08:19:37Z",
+    "summary": "## Summary\n\nAutomated nightly review (2026-07-03). Four review passes (bugs, security, UX, quality) across the `acp_adapter`, `agent`, and core modules. Seven fixes applied; several architectural findings deferred for human review.\n\n## Fixes applied\n\n| Severity | File:line | Description |\n|---|---|-",
+    "url": "https://github.com/iamhungree/hermes-agent/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 56",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] Fix endpoint URL normalization and cap on-device Gemma context window",
+    "date": "2026-08-30T08:17:24Z",
+    "summary": "## Summary\n\nThis PR contains three bounded correction areas:\n\n1. **OpenAI-compatible endpoint normalization and request-URL composition** for local/custom providers.\n2. **On-device Gemma LiteRT memory stabilization** by reducing the configured engine context to 4,096 tokens and providing an app-priv",
+    "url": "https://github.com/Xitius/ZeroAI/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 25",
+      "pull request",
+      "repo: ZeroAI"
+    ]
+  },
+  {
+    "title": "[PR] Update testcontainers-java monorepo to v1.21.4",
+    "date": "2026-08-30T08:51:26Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [org.testcontainers:kafka](https://java.testcontainers.org) ([source](https://redirect.github.com/t",
+    "url": "https://github.com/provenance-io/provenance-abci-listener/pull/75",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: provenance-abci-listener"
     ]
   }
 ]
