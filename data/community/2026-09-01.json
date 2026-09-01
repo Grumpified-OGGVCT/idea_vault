@@ -144,7 +144,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-09-01T00:44:53Z",
+    "date": "2026-09-01T20:41:28Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] `Logos`: Add internal retry mechanism for failed requests",
-    "date": "2026-09-01T06:54:44Z",
+    "date": "2026-09-01T20:44:24Z",
     "summary": "## Summary\n\nResolves #815: requests that fail before their answer is complete are now retried internally instead of being returned raw to the requester.\n\n### Phase 1 \u2014 bounded internal retry (must-have)\n\nA request is re-dispatched inside `_execute_resource_mode` (the single funnel for both proxy and",
     "url": "https://github.com/ls1intum/edutelligence/pull/853",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-09-01T00:51:50Z",
+    "date": "2026-09-01T19:35:52Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [ama",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/pull/1346",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-01T17:17:55Z",
+    "date": "2026-09-01T18:49:56Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -684,7 +684,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-01T17:17:58Z",
+    "date": "2026-09-01T18:52:35Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -840,7 +840,7 @@
   },
   {
     "title": "[PR] Automatic embedding with OpenAI-compatible providers",
-    "date": "2026-09-01T06:36:43Z",
+    "date": "2026-09-01T20:15:50Z",
     "summary": "Implement automatic embedding with OpenAI-compatible providers. For more details, please refer to the following ticket:\r\n\r\nhttps://perconadev.atlassian.net/browse/PS4M-8\r\n\r\n\r\n",
     "url": "https://github.com/percona/percona-search-for-mongodb-docs/pull/7",
     "source": "github_prs",
@@ -900,12 +900,12 @@
   },
   {
     "title": "[PR] `Logos`: Show current rate limit usage to application developers",
-    "date": "2026-09-01T17:25:54Z",
+    "date": "2026-09-01T19:26:18Z",
     "summary": "## Fixes #672\n\n## Summary\n\nApplication developers could see the rpm/tpm limits set for their keys in\nMy Workspace (key settings with team defaults filled in), but had no way to\nsee how much of those limits they were currently using. This PR adds the\nmissing half: current usage against the limits.\n\n`",
     "url": "https://github.com/ls1intum/edutelligence/pull/847",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: edutelligence"
     ]
@@ -1104,12 +1104,12 @@
   },
   {
     "title": "[PR] fix(core): Eliminate false-negative 500s in workflow builder tools",
-    "date": "2026-09-01T17:12:21Z",
+    "date": "2026-09-01T20:12:49Z",
     "summary": "## Summary\r\n\r\nFixes intermittent false-negative 500 errors returned by the MCP workflow-builder tools `create_workflow_from_code` and `update_workflow`.\r\n\r\n**Root cause:** Post-save side effects (telemetry, credential auto-assign tracking, hook execution) could throw exceptions after the database wr",
     "url": "https://github.com/n8n-io/n8n/pull/34975",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 6",
       "pull request",
       "repo: n8n"
     ]
@@ -1212,8 +1212,8 @@
   },
   {
     "title": "[PR] feat(openshell): bundle mkfs.ext4 and debugfs on Linux",
-    "date": "2026-09-01T17:11:29Z",
-    "summary": "## Summary\n\n- bundle the pinned e2fsprogs 1.47.4 `mke2fs` and `debugfs` payloads for the OpenShell VM driver on Linux x64 and arm64\n- stage `mkfs.ext4` and `debugfs` beside `openshell-driver-vm`, matching the VM driver's tool lookup without coupling the dependencies to the gateway\n- ship the e2fspro",
+    "date": "2026-09-01T20:42:57Z",
+    "summary": "## Summary\n\n- download the pinned e2fsprogs 1.47.4 Linux Homebrew bottle from GHCR during the OpenShell asset build for x64 and arm64\n- resolve the architecture-specific OCI manifest and bottle layer, download it with bounded timeouts, and verify the layer SHA-256 digest before extraction\n- extract ",
     "url": "https://github.com/openkaiden/kaiden/pull/2692",
     "source": "github_prs",
     "highlights": [
@@ -1280,6 +1280,162 @@
       "comments: 9",
       "pull request",
       "repo: maka"
+    ]
+  },
+  {
+    "title": "runtime: Claude Code hard quota exhaustion leaves rondo lane without fallback",
+    "date": "2026-09-01T18:09:01Z",
+    "summary": "## \uad00\uce21\n\n2026-08-26T20:58:41Z `rondo` lane\uc774 \ub2e4\uc74c runtime\uc5d0\uc11c turn\uc744 \uc2e4\ud328\ud588\ub2e4.\n\n- lane key: `rondo`\n- runtime: `claude_code.claude-sonnet-5`\n- \uc6d0\ubb38: `Provider 'claude_code' hard quota exhausted: Claude Code subscription quota blocked (rate_limit=rejected api_status=429) (retry_after: 9679.040s)`\n- \uc0c1\uc704 \uc624\ub958: `provide",
+    "url": "https://github.com/jeong-sik/masc/issues/31043",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 13",
+      "state: open",
+      "repo: masc"
+    ]
+  },
+  {
+    "title": "[PR] Bump Asp.Versioning.Mvc and 22 others",
+    "date": "2026-09-01T20:45:14Z",
+    "summary": "Updated [Asp.Versioning.Mvc](https://github.com/dotnet/aspnet-api-versioning) from 10.0.0 to 10.2.1.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Asp.Versioning.Mvc's releases](https://github.com/dotnet/aspnet-api-versioning/releases)._\n\n## 10.2.0\n\nThis release includes some big new f",
+    "url": "https://github.com/AAS-TwinEngine/AAS.TwinEngine.DataEngine/pull/205",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: AAS.TwinEngine.DataEngine"
+    ]
+  },
+  {
+    "title": "[PR] [pull] master from ItzCrazyKns:master",
+    "date": "2026-09-01T20:44:16Z",
+    "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
+    "url": "https://github.com/itsbrex/Perplexica/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: Perplexica"
+    ]
+  },
+  {
+    "title": "[PR] feat(llm): natural-language job query via local Ollama",
+    "date": "2026-09-01T20:42:03Z",
+    "summary": "## Summary\n\nFirst feature from the local-LLM integration plan: a **Ctrl+J \"Ask about jobs\"** panel that sends a plain-English question, plus the active board's job/note data, to a local Ollama server (Qwen3 14B) on the homelab network and displays the written answer. No cloud LLM is ever called.\n\n- ",
+    "url": "https://github.com/soakal/VRSI-Wallboard/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: VRSI-Wallboard"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.44.0",
+    "date": "2026-09-01T20:37:41Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/i-love-flamingo/httpcache/pull/146",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: httpcache"
+    ]
+  },
+  {
+    "title": "[PR] chore(main): release minicloud-gitops 0.1.2",
+    "date": "2026-09-01T20:36:54Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.1.2](https://github.com/andrelair-platform/minicloud-gitops/compare/minicloud-gitops-v0.1.1...minicloud-gitops-v0.1.2) (2026-09-01)\n\n\n### Features\n\n* **#285:** deploy Retrieva core (backend + MongoDB + Redis) on minicloud ([#870](https://git",
+    "url": "https://github.com/andrelair-platform/minicloud-gitops/pull/711",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: minicloud-gitops"
+    ]
+  },
+  {
+    "title": "[PR] fix(indexing): preserve effective index profiles",
+    "date": "2026-09-01T19:44:46Z",
+    "summary": "## Summary\n\n- persist versioned effective profiles for code and context collections\n- resolve indexing, watcher updates, context refreshes, and search against each collection's effective profile\n- retain the released prefix, path, and chunk behavior for legacy collections while marking unavailable h",
+    "url": "https://github.com/giancarloerra/SocratiCode/pull/133",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: SocratiCode"
+    ]
+  },
+  {
+    "title": "[PR] Add atomic agent prompt submission",
+    "date": "2026-09-01T19:28:16Z",
+    "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
+    "url": "https://github.com/manaflow-ai/cmux/pull/9290",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 60",
+      "pull request",
+      "repo: cmux"
+    ]
+  },
+  {
+    "title": "[PR] mojo/voice-ai-pipecat: voice assistant with the LLM leg on local max serve (Tier 3 scoped v1)",
+    "date": "2026-09-01T19:16:56Z",
+    "summary": "Stacked on #99. Tier 3 of the Mojo + MAX port plan: the scoped v1 of the voice\nassistant \u2014 keep the pipecat pipeline, swap the LLM leg from cloud-by-default to\na local `max serve` service.\n\n## Shape\n\nTwo-service app group (host networking):\n\n- **`voice-app/`** \u2014 `python/voice-ai-pipecat` vendored wi",
+    "url": "https://github.com/wendylabsinc/templates/pull/100",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: templates"
+    ]
+  },
+  {
+    "title": "[PR] feat: KAI-MISSION-001 \u2014 armature ex\u00e9cutable de l'IA personnelle hybride",
+    "date": "2026-09-01T19:14:47Z",
+    "summary": "Reprise du projet \u00e0 z\u00e9ro sur le plan directeur KAI-MISSION-001 v1.0.\n\nLe diff contre `main` est de **47 fichiers ajout\u00e9s, z\u00e9ro suppression** : `main` \u00e9tait vide, la reprise est donc r\u00e9ellement partie de rien.\n\n## \u00c0 lire en premier\n\n**Ce d\u00e9p\u00f4t livre le syst\u00e8me ex\u00e9cutable, pas encore un syst\u00e8me ex\u00e9cut",
+    "url": "https://github.com/kevinMdf05/LA/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: LA"
+    ]
+  },
+  {
+    "title": "[PR] Publish composio sync stage events so the Sources row can settle",
+    "date": "2026-09-01T19:09:36Z",
+    "summary": "Rebased onto main now that #5875 is merged.\n\nGrown, at the author's direction, into the post-merge memory-pipeline hardening PR \u2014 every finding came from a live prod test session against the #5875 build:\n\n## What\n\nThe Brain \u2192 Sources row clears its \"Syncing\" indicator only when a terminal `MemorySyn",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/5932",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] Add Claude Fable 5.1 alongside Fable 5",
+    "date": "2026-09-01T19:02:16Z",
+    "summary": "## Summary\n\nAdds **Claude Fable 5.1** (`claude-fable-5-1`) to the DroidProxy model catalog alongside the existing **Claude Fable 5** entry, which is kept unchanged. Fable 5.1 is Anthropic's newest flagship (released 2026-09-01): 1M context, 128K output tokens, adaptive thinking with the same `low` /",
+    "url": "https://github.com/nikships/droidproxy/pull/280",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: droidproxy"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update module github.com/testcontainers/testcontainers-go to v0.44.0",
+    "date": "2026-09-01T18:54:15Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/Sijoma/camunda-go-sdk/pull/20",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: camunda-go-sdk"
     ]
   }
 ]
