@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] Reconcile PR38 with the salvage line: merged history, AGPL executed, sweettest unblock",
-    "date": "2026-09-02T02:27:19Z",
+    "date": "2026-09-02T19:58:55Z",
     "summary": "Rejoins six weeks of parallel work and lands the corrections found along the way.\n`origin/main` is fully contained in this branch (0 ahead, 124 behind as of\n2026-08-24), so there is no content to reconcile here \u2014 only review.\n\n**PR #38 has since merged to main on its own** (merge commit `873cc0c`,\n2",
     "url": "https://github.com/G-0-B/FLOSS/pull/41",
     "source": "github_prs",
@@ -755,9 +755,9 @@
     ]
   },
   {
-    "title": "[PR] fix(ci): authenticate exact-base qualification evidence",
-    "date": "2026-09-02T17:41:32Z",
-    "summary": "## Outcome\n\nThis PR contains the follow-up previously isolated in draft #10842. It strengthens the migrated-target inventory regression, adds authenticated exact-base managed-runtime qualification, and fixes the CodeQL file-system race in OpenShell SDK package receipt validation.\n\n## Security and tr",
+    "title": "[PR] fix(e2e): use trusted workflow for exact-base comparison",
+    "date": "2026-09-02T20:11:07Z",
+    "summary": "## Outcome\n\nThis PR extends the existing trusted manual PR E2E workflow with a failure-triggered exact-base comparison. It does not create a second qualification, publication, catalog, receipt, status, or replay system.\n\n## Flow\n\n1. Run the selected E2E job against the exact current PR candidate.\n2.",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/10829",
     "source": "github_prs",
     "highlights": [
@@ -864,7 +864,7 @@
   },
   {
     "title": "[PR] RavenDB-26606",
-    "date": "2026-09-02T08:06:22Z",
+    "date": "2026-09-02T20:38:05Z",
     "summary": "### Issue link\r\n\r\nhttps://issues.hibernatingrhinos.com/issue/RavenDB-26606\r\n\r\n### Type of change\r\n\r\n- [ ] Bug fix\r\n- [ ] Regression bug fix\r\n- [ ] Optimization\r\n- [ ] New feature\r\n\r\n### How risky is the change?\r\n\r\n- [ ] Low \r\n- [ ] Moderate \r\n- [ ] High\r\n- [ ] Not relevant\r\n\r\n### Backward compatibil",
     "url": "https://github.com/ravendb/ravendb/pull/23170",
     "source": "github_prs",
@@ -972,7 +972,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-02T17:16:18Z",
+    "date": "2026-09-02T19:27:44Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -984,7 +984,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-02T17:16:17Z",
+    "date": "2026-09-02T19:27:44Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -996,7 +996,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-02T17:16:08Z",
+    "date": "2026-09-02T19:27:36Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1140,12 +1140,12 @@
   },
   {
     "title": "[PR] bench(h5): study v3 \u2014 mechanism taxonomy, utility axis, response-conditioned adaptive attacks",
-    "date": "2026-09-02T17:40:18Z",
+    "date": "2026-09-02T20:41:23Z",
     "summary": "Part of #1962.\n\n## What\n\nThe H5 memory-borne prompt-injection benchmark, taken from a completed negative result to a study that measures mechanism, utility cost, and response-conditioned attack pressure. All runner changes are in `@remnic/bench` and the CLI; the one core change is the `memoryInjecti",
     "url": "https://github.com/joshuaswarren/remnic/pull/3071",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 5",
       "pull request",
       "repo: remnic"
     ]
@@ -1164,7 +1164,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-02T17:28:43Z",
+    "date": "2026-09-02T19:58:46Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1280,6 +1280,150 @@
       "comments: 0",
       "pull request",
       "repo: umbrel-apps"
+    ]
+  },
+  {
+    "title": "[PR] fix(pt-BR): repair Brazilian Portuguese localization (replaces #1265)",
+    "date": "2026-09-02T20:43:48Z",
+    "summary": "## Summary\n\nRepairs and completes PR #1265 (\"feat(pt-BR): add Brazilian Portuguese localization\") from `payaci/openclaw-windows-node`. That branch is a fork with no push access available to this session, so this is a clean replacement PR built from the exact PR #1265 head (`192b2e16fb0982bd329092812",
+    "url": "https://github.com/openclaw/openclaw-windows-node/pull/1295",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openclaw-windows-node"
+    ]
+  },
+  {
+    "title": "[PR] Fix local catalog resolver and safe host advisories",
+    "date": "2026-09-02T20:43:12Z",
+    "summary": "## Summary\n\n- fixes the default local catalog resolver path when no executable digest is supplied\n- removes singular and plural cloud service-tier claims from local Ollama catalogs\n- adds digest omission/correct/wrong regression coverage through Desktop discovery\n- adds exact opt-in host-advisory ha",
+    "url": "https://github.com/Zilvereyes/PowerShellWorkbench/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: PowerShellWorkbench"
+    ]
+  },
+  {
+    "title": "[PR] feat(inference): support self-hosted Gemma 4 via vLLM on GKE in install/teardown pipeline",
+    "date": "2026-09-02T20:42:02Z",
+    "summary": "## Summary\n\nAdds self-hosted Gemma 4 inference support via vLLM on GKE GPU accelerator nodes for the Kustomize development workflow (`make -C k8s-operator deploy-litellm MODEL_PROVIDER=gemma4`). Configures the LiteLLM gateway with model aliases (`model-default`, `hermes-agent`, `google/gemma-4-E2B-i",
+    "url": "https://github.com/gke-labs/kube-agents/pull/608",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 24",
+      "pull request",
+      "repo: kube-agents"
+    ]
+  },
+  {
+    "title": "[PR] chore(ki): Doku und Code auf local-only angleichen",
+    "date": "2026-09-02T20:40:18Z",
+    "summary": "## Warum\n\nSeit N.3 (2026-08) gibt es nur lokale Inferenz: zwei Provider (`ollama`, `openai_compatible`), eine Route (`local_engine`), harter Fehler bei offlinem Maschinenraum. Vier Dokumente beschrieben trotzdem einen Cloud-Fallback mit Policy-Tabelle, und im Code lagen Reste, die dasselbe versprach",
+    "url": "https://github.com/Nehmo101/UWE/pull/333",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: UWE"
+    ]
+  },
+  {
+    "title": "[PR] fix(code-editor): fall back to file extensions when resolving a language by name",
+    "date": "2026-09-02T20:32:06Z",
+    "summary": "## Summary\n\n`CodeEditorComponent._findLanguage()` matches only `name` and `alias`:\n\n```ts\nfor (const lang of this.languages) {\n  for (const alias of [lang.name, ...lang.alias]) {\n    if (name.toLowerCase() === alias.toLowerCase()) return lang;\n  }\n}\nconsole.error('Language not found:', name);\n```\n\nS",
+    "url": "https://github.com/MemberJunction/MJ/pull/4170",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(conversations): make diagnostic logging opt-in instead of unconditional",
+    "date": "2026-09-02T20:31:55Z",
+    "summary": "> Rebased onto `next` and no longer stacked. It previously sat on #4168, which I withdrew \u2014 that PR claimed the agent-completion toast never fires, and it does; see the closing comment there.\n\n## Summary\n\nReported from a deployed app:\n\n> the browser's dev console is absolutely packed with spam. Ever",
+    "url": "https://github.com/MemberJunction/MJ/pull/4169",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: add OpenAI-compatible TTS & ASR engines (offline, no SDK)",
+    "date": "2026-09-02T20:26:33Z",
+    "summary": "## Summary\nAdds OpenAI-compatible **TTS** and **ASR** engines so Open-LLM-VTuber can talk to any local server that implements the OpenAI audio endpoints \u2014 fully offline, no OpenAI SDK and no cloud dependency.\n\n- `src/open_llm_vtuber/tts/openai_compat_tts.py` \u2014 `requests`-based client for `POST /v1/a",
+    "url": "https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/pull/442",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Open-LLM-VTuber"
+    ]
+  },
+  {
+    "title": "[PR] Merge structural-audit findings into code-smell-refactoring-plan.md and implement them",
+    "date": "2026-09-02T20:13:13Z",
+    "summary": "## Summary\n\nMerges a second, independent architectural audit (\"brutal-cozy-pascal\") into the existing `docs/router/code-smell-refactoring-plan.md`, then implements the combined backlog in three risk-tiered batches plus the ADR-gated `ManagementFacade` split. Two ADRs (0006, 0007) were drafted, revie",
+    "url": "https://github.com/davidpizon/TotallyHot-ArcRouter/pull/78",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: TotallyHot-ArcRouter"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go/modules/postgres to v0.44.0",
+    "date": "2026-09-02T20:10:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/infratographer/location-api/pull/142",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: location-api"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): update github.com/testcontainers/testcontainers-go to v0.44.0",
+    "date": "2026-09-02T20:08:27Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/Karaoke-Manager/karman/pull/149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: karman"
+    ]
+  },
+  {
+    "title": "[PR] chore(main): release minicloud-gitops 0.1.2",
+    "date": "2026-09-02T20:03:42Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.1.2](https://github.com/andrelair-platform/minicloud-gitops/compare/minicloud-gitops-v0.1.1...minicloud-gitops-v0.1.2) (2026-09-02)\n\n\n### Features\n\n* **#285:** deploy Retrieva core (backend + MongoDB + Redis) on minicloud ([#870](https://git",
+    "url": "https://github.com/andrelair-platform/minicloud-gitops/pull/711",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: minicloud-gitops"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update module github.com/testcontainers/testcontainers-go to v0.44.0",
+    "date": "2026-09-02T19:11:51Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/DoodleScheduling/saml-exporter/pull/334",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: saml-exporter"
     ]
   }
 ]
