@@ -528,19 +528,19 @@
   },
   {
     "title": "[PR] Promote stage to main: 2026-08-27 sweep (NVR recordings target, boot-stall netplan fix, agent-loop tool-error logging, Files design constraints)",
-    "date": "2026-09-03T17:05:24Z",
+    "date": "2026-09-03T19:44:02Z",
     "summary": "## \u26d4 Blocked on #1797 \u2014 do not merge this first\n\n`stage` and `main` have diverged (**ahead 5, behind 3**) and this promotion **conflicts in\nthree files** until [#1797](https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1797)\nlands. #1797 is a content-free ancestry merge; once it merge",
     "url": "https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1798",
     "source": "github_prs",
     "highlights": [
-      "comments: 30",
+      "comments: 32",
       "pull request",
       "repo: droplet-onboard-services"
     ]
   },
   {
     "title": "[PR] chore(deps): Update all minor dependencies",
-    "date": "2026-09-03T06:53:41Z",
+    "date": "2026-09-03T20:25:15Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [all",
     "url": "https://github.com/michaelbrusegard/infra/pull/152",
     "source": "github_prs",
@@ -756,7 +756,7 @@
   },
   {
     "title": "[PR] feat(coworker): add the standalone Open Coworker desktop app",
-    "date": "2026-09-03T17:32:11Z",
+    "date": "2026-09-03T20:36:52Z",
     "summary": "## Summary\n- Add Open Coworker as a standalone, local-first desktop app: a team of persistent coworkers, each with its own workspace, identity (`soul.md`), plain-Markdown memory, discussions, assignments, and responsibilities, running on OpenWork's embedded server and engine so every thread is a nat",
     "url": "https://github.com/different-ai/openwork/pull/4330",
     "source": "github_prs",
@@ -936,12 +936,12 @@
   },
   {
     "title": "[PR] Add Unsloth Docker images (base + Studio) for any NVIDIA GPU host, Ampere through Blackwell",
-    "date": "2026-09-03T17:20:50Z",
+    "date": "2026-09-03T20:33:52Z",
     "summary": "## Summary\n\nAdds a Docker setup for Unsloth that runs on any NVIDIA GPU host from Ampere through Blackwell (sm_80 through sm_120: A100, RTX 30/40, H100, B100/B200, RTX 50-series, RTX 6000 Pro Blackwell) and natively on aarch64 (GB10 / Grace, DGX Spark). Two images are published to `docker.io/unsloth",
     "url": "https://github.com/unslothai/unsloth/pull/5748",
     "source": "github_prs",
     "highlights": [
-      "comments: 71",
+      "comments: 77",
       "pull request",
       "repo: unsloth"
     ]
@@ -960,12 +960,12 @@
   },
   {
     "title": "[PR] Fix endpoint URL normalization and cap on-device Gemma context window",
-    "date": "2026-09-03T12:19:07Z",
+    "date": "2026-09-03T19:44:33Z",
     "summary": "## Summary\n\nThis PR contains three bounded correction areas:\n\n1. **OpenAI-compatible endpoint normalization and request-URL composition** for local/custom providers.\n2. **On-device Gemma LiteRT memory stabilization** by reducing the configured engine context to 4,096 tokens and providing an app-priv",
     "url": "https://github.com/Xitius/ZeroAI/pull/1",
     "source": "github_prs",
     "highlights": [
-      "comments: 27",
+      "comments: 31",
       "pull request",
       "repo: ZeroAI"
     ]
@@ -1020,7 +1020,7 @@
   },
   {
     "title": "[PR] Handle reauth_successful centrally",
-    "date": "2026-09-03T11:44:37Z",
+    "date": "2026-09-03T19:21:17Z",
     "summary": "<!--\r\n  You are amazing! Thanks for contributing to our project!\r\n  Please, DO NOT DELETE ANY TEXT from this template! (unless instructed).\r\n-->\r\n## Breaking change\r\n<!--\r\n  If your PR contains a breaking change for existing users, it is important\r\n  to tell them what breaks, how to make it work aga",
     "url": "https://github.com/home-assistant/core/pull/181154",
     "source": "github_prs",
@@ -1128,7 +1128,7 @@
   },
   {
     "title": "[PR] home-assistant: 2026.8.3 -> 2026.9.0",
-    "date": "2026-09-03T17:35:03Z",
+    "date": "2026-09-03T19:34:16Z",
     "summary": "Diff: https://github.com/home-assistant/core/compare/2026.8.3...2026.9.0\r\n\r\nChangelog: https://www.home-assistant.io/blog/2026/09/02/release-20269/\r\n\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or d",
     "url": "https://github.com/NixOS/nixpkgs/pull/559280",
     "source": "github_prs",
@@ -1175,9 +1175,9 @@
     ]
   },
   {
-    "title": "[PR] feat: Authorization.Check remotable operation",
-    "date": "2026-09-03T17:23:34Z",
-    "summary": "## Summary\n- New RO **Authorization.Check**: input `{ Names: string[] }` \u2192 per-name `Allowed`, `Unknown` (fail-closed), `ViaAncestor`, `MatchedAuthorizationName`.\n- Rides existing `ExecuteRemoteOperation` GraphQL. No new resolver. Does not extend `CheckEntityPermissions` (wrong layer).\n- `UseAuditLo",
+    "title": "[PR] feat: Authorization.Check RO + CompositeFilter eval",
+    "date": "2026-09-03T19:40:39Z",
+    "summary": "## Summary\n\nTwo related core pieces so Open Apps (Orders first) can ask *can this user?* and *does this price apply?* without inventing their own JSON or GraphQL.\n\n### 1. `Authorization.Check` remotable operation\n- Input `{ Names: string[] }` \u2192 per-name `Allowed`, `Unknown` (fail-closed), `ViaAncest",
     "url": "https://github.com/MemberJunction/MJ/pull/4185",
     "source": "github_prs",
     "highlights": [
@@ -1200,7 +1200,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-03T17:12:03Z",
+    "date": "2026-09-03T19:48:56Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1224,7 +1224,7 @@
   },
   {
     "title": "[PR] Backport/pre v8 nghodki fixes",
-    "date": "2026-09-03T17:03:08Z",
+    "date": "2026-09-03T19:20:52Z",
     "summary": "# backport: pre-v8 gateway, netguard, and plugin fixes\r\n\r\n## Summary\r\n\r\nBackports three commits from `main` to the release branch that landed after the branch cut (Jul 13) but before the v8 config overhaul (Jul 16+). None of these carry v8 dependencies.\r\n\r\n### 1. Allow operator-configured private up",
     "url": "https://github.com/cisco-ai-defense/defenseclaw/pull/835",
     "source": "github_prs",
@@ -1236,7 +1236,7 @@
   },
   {
     "title": "[PR] fix(search): resolve record keys from entity metadata instead of a hardcoded ID column",
-    "date": "2026-09-03T17:01:51Z",
+    "date": "2026-09-03T19:57:21Z",
     "summary": "Closes #4179\n\n## Summary\n\nClicking a universal-search result failed with `InnerLoad returned false for key ID=<value>` for any entity whose primary key column is not literally named `ID` (`individual_id`, `organization_id`, \u2026). The search navigation sites built the key as `{ FieldName: 'ID', Value: ",
     "url": "https://github.com/MemberJunction/MJ/pull/4184",
     "source": "github_prs",
@@ -1248,7 +1248,7 @@
   },
   {
     "title": "[PR] fix(MJCore): CompleteMessage rendered every validation error as a JSON blob",
-    "date": "2026-09-03T16:35:49Z",
+    "date": "2026-09-03T20:04:09Z",
     "summary": "## The defect\n\n`BaseEntityResult.CompleteMessage` rendered each entry of its `Errors` array as `err.message || JSON.stringify(err)` \u2014 **lowercase** `message`. MJ's own `ValidationErrorInfo` carries **`Message`** (`MJGlobal/src/ValidationTypes.ts:27`), so every one of them fell through to the JSON fa",
     "url": "https://github.com/MemberJunction/MJ/pull/3973",
     "source": "github_prs",
@@ -1256,6 +1256,102 @@
       "comments: 6",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] `Logos`: Drop Ollama support",
+    "date": "2026-09-03T20:33:03Z",
+    "summary": "## What\n\nRemoves Ollama support from all four Logos surfaces, per #778:\n\n**Orchestrator**\n- Deleted `sdi/providers/ollama_provider.py` and `sdi/ollama_facade.py`\n- Removed the `provider_type == \"ollama\"` branches and non-vLLM scheduling paths (`runtime_mode` is now `[\"vllm\"]`; `is_vllm` dropped from",
+    "url": "https://github.com/ls1intum/edutelligence/pull/865",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 8",
+      "pull request",
+      "repo: edutelligence"
+    ]
+  },
+  {
+    "title": "[PR] Field-Level Security Implementation Plan",
+    "date": "2026-09-03T20:26:07Z",
+    "summary": "## Summary\n\n- Adds implementation plan for role-based field-level security in MemberJunction\n- Driven by a client request for column-level access control on sensitive fields (compensation, donor giving, personnel data)\n- Builds on existing entity permission infrastructure with matching Allow/Deny se",
+    "url": "https://github.com/MemberJunction/MJ/pull/3367",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] fix(combos): harden failover across quotas, credentials, and streams",
+    "date": "2026-09-03T20:11:33Z",
+    "summary": "## Summary\n\n- Follow up #3302 by making recoverable combo failures continue across request-local caps, provider-wide quota exhaustion, API-key/account rotation, transport errors, and zero-output stream failures.\n- Persist long-lived provider and key quota cooldowns across restarts without allowing s",
+    "url": "https://github.com/lidge-jun/opencodex/pull/3348",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: opencodex"
+    ]
+  },
+  {
+    "title": "[PR] Add ai-commands extension",
+    "date": "2026-09-03T20:10:02Z",
+    "summary": "## Description\r\n\r\nThis project is heavily based on the excellent raycast-ollama extension. The upstream maintainer\r\n  intentionally wants to keep raycast-ollama focused on local Ollama only \u2014 and that's a fair call. This\r\n  extension exists to go further: bring Raycast-native AI command workflows to",
+    "url": "https://github.com/raycast/extensions/pull/30767",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: extensions"
+    ]
+  },
+  {
+    "title": "[PR] AI provider that runs on the local Claude Code CLI (subscription, no API key)",
+    "date": "2026-09-03T20:09:55Z",
+    "summary": "Implements the spec in #2 across tickets #3\u2013#9, on one branch.\n\nA user who already pays for a Claude subscription can now run OpenClip's AI presets on their own\nlocally installed, locally authenticated `claude` binary. **No API key is asked for, requested, or\nstored**, and both `ANTHROPIC_API_KEY` a",
+    "url": "https://github.com/sonhyrd/openclip/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: openclip"
+    ]
+  },
+  {
+    "title": "[PR] Fix agent-scheduler reliability and quality gates",
+    "date": "2026-09-03T19:48:22Z",
+    "summary": "## Summary\n- Root cause of long-stalled agent runs (redakteur idle 5+ hours, content/engineer 30+ min): the routing quality-judge check was silently calling a local model with a measured 206s average latency and zero fallback protection on nearly every response. Reassigned to a fast, cheap cloud mod",
+    "url": "https://github.com/d4sd1ng/jude/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: jude"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-09-03T19:37:55Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [cloud.google.com/go/secretm",
+    "url": "https://github.com/googleapis/mcp-toolbox-sdk-go/pull/153",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 201",
+      "pull request",
+      "repo: mcp-toolbox-sdk-go"
+    ]
+  },
+  {
+    "title": "[PR] fix(agents): bypass trailing runtime-context carrier relocation for local providers",
+    "date": "2026-09-03T19:21:04Z",
+    "summary": "## Description\r\nBypasses trailing runtime-context carrier relocation for local and self-hosted model backends while preserving tail relocation for cloud providers and Ollama cloud models.\r\n\r\n## What Problem This Solves\r\n`relocateCurrentRuntimeContextCarrierToTail` moves current-turn runtime-context ",
+    "url": "https://github.com/openclaw/openclaw/pull/132607",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: openclaw"
     ]
   }
 ]
