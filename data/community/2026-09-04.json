@@ -144,7 +144,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-09-04T15:49:25Z",
+    "date": "2026-09-04T20:48:36Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -575,9 +575,9 @@
     ]
   },
   {
-    "title": "[PR] feat: add generateWorld() and generateLive() for prompt-steerable sessions",
-    "date": "2026-09-04T08:05:36Z",
-    "summary": "You can open a live world with `generateWorld()` and `reactorWorld()`. You can open a live video session with `generateLive()` and `reactorVideo()` or `falLive()`. The server mints a scoped token. The browser connects, starts the stream, and can change the prompt while it runs. `generateVideo()` sta",
+    "title": "[PR] feat: add generateWorld() and generateLiveVideo() for prompt-steerable sessions",
+    "date": "2026-09-04T22:45:30Z",
+    "summary": "You can open a live world with `generateWorld()` and `reactorWorld()`. You can open a live video session with `generateLiveVideo()` and `reactorVideo()` or `falLiveVideo()`.\n\nReactor connects with a minted token. For Director, `falLiveVideo()` returns the WMA app id on `result.model`. Open it with `",
     "url": "https://github.com/TanStack/ai/pull/1321",
     "source": "github_prs",
     "highlights": [
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] Add Unsloth Docker images (base + Studio) for any NVIDIA GPU host, Ampere through Blackwell",
-    "date": "2026-09-04T20:16:28Z",
+    "date": "2026-09-04T22:43:33Z",
     "summary": "## Summary\n\nTwo Docker images for Unsloth, built without a GPU on free GitHub-hosted runners and published as multi-arch manifests to `docker.io/unsloth/unsloth`:\n\n- **Base image** (`docker/Dockerfile`, tags `core` / `core-<git tag>` / `core-nightly` / `core-sha-<short>`): the training stack at `tor",
     "url": "https://github.com/unslothai/unsloth/pull/5748",
     "source": "github_prs",
@@ -636,7 +636,7 @@
   },
   {
     "title": "[PR] Implement UI enhancements, model selection fixes, and new setup wizard",
-    "date": "2026-09-04T03:00:04Z",
+    "date": "2026-09-04T22:07:10Z",
     "summary": "This pull request introduces substantial improvements to the forecasting agent's model selection and fitting logic, as well as major documentation and configuration updates. The most significant changes are the addition of Meta Prophet model support, dynamic model enable/disable controls, and a new,",
     "url": "https://github.com/bmfmancini/data_forecasting_agent/pull/60",
     "source": "github_prs",
@@ -660,7 +660,7 @@
   },
   {
     "title": "[PR] Promote stage to main: 2026-08-27 sweep (NVR recordings target, boot-stall netplan fix, agent-loop tool-error logging, Files design constraints)",
-    "date": "2026-09-04T08:08:56Z",
+    "date": "2026-09-04T22:52:11Z",
     "summary": "## \u26d4 Blocked on #1797 \u2014 do not merge this first\n\n`stage` and `main` have diverged (**ahead 5, behind 3**) and this promotion **conflicts in\nthree files** until [#1797](https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1797)\nlands. #1797 is a content-free ancestry merge; once it merge",
     "url": "https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1798",
     "source": "github_prs",
@@ -864,7 +864,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-04T16:26:05Z",
+    "date": "2026-09-04T22:49:36Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -876,7 +876,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-04T16:26:05Z",
+    "date": "2026-09-04T22:49:35Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -888,7 +888,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-04T16:25:58Z",
+    "date": "2026-09-04T22:49:28Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -936,8 +936,8 @@
   },
   {
     "title": "[PR] fix(combos): harden failover across quotas, credentials, and streams",
-    "date": "2026-09-04T20:03:16Z",
-    "summary": "## Summary\n\n- Follow up #3302 by making recoverable combo failures continue across request-local caps, provider-wide quota exhaustion, API-key/account rotation, transport errors, and zero-output stream failures.\n- Persist long-lived provider and key quota cooldowns across restarts without allowing s",
+    "date": "2026-09-04T21:38:19Z",
+    "summary": "## Summary\n\n- Follow up #3302 by making recoverable combo failures continue across request-local caps, provider-wide quota exhaustion, API-key/account rotation, transport errors, and zero-output stream failures.\n- Persist long-lived provider and key quota cooldowns across restarts with bounded debou",
     "url": "https://github.com/lidge-jun/opencodex/pull/3348",
     "source": "github_prs",
     "highlights": [
@@ -1320,7 +1320,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-04T19:58:29Z",
+    "date": "2026-09-04T22:01:14Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -1356,7 +1356,7 @@
   },
   {
     "title": "[PR] fix: make offline mode cover cloud AI providers",
-    "date": "2026-09-04T19:20:42Z",
+    "date": "2026-09-04T22:04:53Z",
     "summary": "## Summary\n\n- Offline Mode now blocks AI calls that would reach a cloud provider (OpenAI, Anthropic, Google Gemini, GitHub Models). Generating a commit message, Vibe Check, split suggestions, changelogs, PR/MR descriptions, conflict resolution and explanation, Smart Undo's reflog search and \"Test pr",
     "url": "https://github.com/hegsie/Leviathan/pull/490",
     "source": "github_prs",
@@ -1388,6 +1388,138 @@
       "comments: 0",
       "pull request",
       "repo: AI-Researcher-l34n"
+    ]
+  },
+  {
+    "title": "\ud83d\udcca AI CLI \u5de5\u5177\u793e\u533a\u52a8\u6001\u65e5\u62a5 2026-09-05",
+    "date": "2026-09-04T22:21:53Z",
+    "summary": "# AI CLI \u5de5\u5177\u793e\u533a\u52a8\u6001\u65e5\u62a5 2026-09-05\n\n> \u751f\u6210\u65f6\u95f4: 2026-09-04 22:16 UTC | \u8986\u76d6\u5de5\u5177: 12 \u4e2a\n\n- [Claude Code](https://github\u200b.com/anthropics/claude-code)\n- [OpenAI Codex](https://github\u200b.com/openai/codex)\n- [Gemini CLI](https://github\u200b.com/google-gemini/gemini-cli)\n- [GitHub Copilot CLI](https://github\u200b.com/github/copil",
+    "url": "https://github.com/stevenko2002/agents-radar/issues/1108",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: agents-radar"
+    ]
+  },
+  {
+    "title": "[PR] superfixer pre 1.6 realease",
+    "date": "2026-09-04T22:48:57Z",
+    "summary": "## Purpose\n\nSuperfix branch to land **after** the five open arena PRs (#55, #57, #58, #59, #60) merge. It integrates all five (merged in conflict-safe order `#55 \u2192 #57 \u2192 #60 \u2192 #58 \u2192 #59`) and remediates every finding (Critical \u2192 Nitpick) from the consolidated assertive CodeRabbit-style review, so it",
+    "url": "https://github.com/maus-inc/mausVoice/pull/63",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 45",
+      "pull request",
+      "repo: mausVoice"
+    ]
+  },
+  {
+    "title": "[PR] fix(memory): ask for the fast lane on the embeddings recall depends on",
+    "date": "2026-09-04T22:53:01Z",
+    "summary": "## The outage\n\n`POST /api/genesis/hook/recall` returned **503 on every request** \u2014 20/20 through a\ncontrolled probe against the live endpoint, all at ~4510ms against the route's 4.5s\ndeadline. Every session was running with no recalled memory.\n\n## Root cause \u2014 the provider queues standard-tier reque",
+    "url": "https://github.com/WingedGuardian/GENesis-AGI/pull/1682",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: GENesis-AGI"
+    ]
+  },
+  {
+    "title": "[PR] chore(main): release minicloud-gitops 0.1.2",
+    "date": "2026-09-04T22:45:07Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.1.2](https://github.com/andrelair-platform/minicloud-gitops/compare/minicloud-gitops-v0.1.1...minicloud-gitops-v0.1.2) (2026-09-04)\n\n\n### Features\n\n* **#285:** deploy Retrieva core (backend + MongoDB + Redis) on minicloud ([#870](https://git",
+    "url": "https://github.com/andrelair-platform/minicloud-gitops/pull/711",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: minicloud-gitops"
+    ]
+  },
+  {
+    "title": "[PR] Add Cloud Agent dev environment (native Python + Ollama)",
+    "date": "2026-09-04T22:43:18Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nAdds a repository-managed Cloud Agent development environment so this codebase is fully usable out of the box, and validates it end to end.\n\nThe app is a passive-feed aggregator: a FastAPI service + scheduled worker that pull `osirisai.live` read APIs,",
+    "url": "https://github.com/aquafishstore-boop/osi-aggregator-tinyllm/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: osi-aggregator-tinyllm"
+    ]
+  },
+  {
+    "title": "[PR] docs(capabilities): say what a capability is, and measure who writes it",
+    "date": "2026-09-04T22:39:01Z",
+    "summary": "## Description\n\nThree changes to #913. None of them decides what becomes of `json_mode` \u2014 that stays where #923 put it, with the 1.0 API freeze (#895).\n\nRebased onto `main` after #923 landed, which changed one of the facts this PR was written on. The rebase is described at the end rather than hidden",
+    "url": "https://github.com/netresearch/t3x-nr-llm/pull/925",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: t3x-nr-llm"
+    ]
+  },
+  {
+    "title": "[PR] agent-board: 2026 roadmap completion + docs refresh",
+    "date": "2026-09-04T22:38:58Z",
+    "summary": "## Summary\n\nDocs audit + 2026 roadmap completion pass on agent-board. Six commits:\n\n1. **`fix(compose)`** \u2014 `config/docker-compose.yml` mixed two incompatible relative-path conventions: build contexts resolved from the compose file's own directory while `env_file`/volume entries assumed `--project-d",
+    "url": "https://github.com/nitsuah/agent-board/pull/62",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: agent-board"
+    ]
+  },
+  {
+    "title": "[PR] docs: README accuracy pass (2026-09-04)",
+    "date": "2026-09-04T22:37:55Z",
+    "summary": "Docs-only accuracy pass over `README.md` against `main` at `8067006`. Coverage numbers in `CONTRIBUTING.md` carried the same inaccuracy and were fixed too. No source changes.\n\nEach item: claim in the README -> what the tree shows -> new wording (evidence).\n\n1. **\"passes through sentiment analysis\"**",
+    "url": "https://github.com/christopherqueenconsulting/linkedin_engagement_manager/pull/1973",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: linkedin_engagement_manager"
+    ]
+  },
+  {
+    "title": "[PR] feat(platform): add Linux and macOS appliance installer",
+    "date": "2026-09-04T22:36:22Z",
+    "summary": "### Why / What / How\n\nThe existing hosted installer still follows the legacy clone-and-Compose flow,\nwhile the upcoming release publishes AutoGPT Platform as a single-container\nappliance. The public installer needs to match that product: install a\npublished artifact safely, preserve user data, and f",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13261",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 19",
+      "pull request",
+      "repo: AutoGPT"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-09-04T22:13:12Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confi",
+    "url": "https://github.com/stacksjs/system-cleaner/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: system-cleaner"
+    ]
+  },
+  {
+    "title": "[PR] fix(ng-base-forms): say when a stored date cannot be shown, instead of a blank box",
+    "date": "2026-09-04T21:51:35Z",
+    "summary": "Fixes the actual complaint in **MemberJunction/bc-aidp-next-golive#185**: *\"an invalid stored date should never render as an empty field that looks like 'no date'.\"*\n\nSeparate from #4177 on purpose. That one fixes a **day-shift** in read mode; this one fixes a **blank editor**. Same file, different ",
+    "url": "https://github.com/MemberJunction/MJ/pull/4178",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
     ]
   }
 ]
