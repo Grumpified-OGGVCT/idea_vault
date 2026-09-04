@@ -516,7 +516,7 @@
   },
   {
     "title": "[PR] Everything as a Plugin",
-    "date": "2026-09-04T03:30:15Z",
+    "date": "2026-09-04T08:07:19Z",
     "summary": "# Everything as a Plugin\n\nThis pull request is the structural change that makes the repository's folder\nlayout the architecture, rather than a place the architecture is hidden. The end\nstate is one rule: **the kernel knows about plugins and about nothing else, and\nevery capability veyyon has \u2014 every",
     "url": "https://github.com/santhreal/veyyon/pull/927",
     "source": "github_prs",
@@ -575,9 +575,9 @@
     ]
   },
   {
-    "title": "[PR] feat: add generateWorld() and Reactor adapters for live worlds and video",
-    "date": "2026-09-04T03:26:32Z",
-    "summary": "You can open a live Reactor world with `generateWorld()` and `reactorWorld()`, or a live video session with `generateVideo()` and `reactorVideo('helios')`. The server mints a scoped token. The browser connects, starts the stream, and can change the prompt while it runs.\n\n## \ud83c\udfaf Changes\n\n- New `generat",
+    "title": "[PR] feat: add generateWorld() and generateLive() for prompt-steerable sessions",
+    "date": "2026-09-04T08:05:36Z",
+    "summary": "You can open a live world with `generateWorld()` and `reactorWorld()`. You can open a live video session with `generateLive()` and `reactorVideo()` or `falLive()`. The server mints a scoped token. The browser connects, starts the stream, and can change the prompt while it runs. `generateVideo()` sta",
     "url": "https://github.com/TanStack/ai/pull/1321",
     "source": "github_prs",
     "highlights": [
@@ -600,12 +600,12 @@
   },
   {
     "title": "[PR] Add Unsloth Docker images (base + Studio) for any NVIDIA GPU host, Ampere through Blackwell",
-    "date": "2026-09-04T03:19:39Z",
+    "date": "2026-09-04T08:30:30Z",
     "summary": "## Summary\n\nTwo Docker images for Unsloth, built without a GPU on free GitHub-hosted runners and published as multi-arch manifests to `docker.io/unsloth/unsloth`:\n\n- **Base image** (`docker/Dockerfile`, tags `core` / `core-<git tag>` / `core-nightly` / `core-sha-<short>`): the training stack at `tor",
     "url": "https://github.com/unslothai/unsloth/pull/5748",
     "source": "github_prs",
     "highlights": [
-      "comments: 48",
+      "comments: 63",
       "pull request",
       "repo: unsloth"
     ]
@@ -660,12 +660,12 @@
   },
   {
     "title": "[PR] Promote stage to main: 2026-08-27 sweep (NVR recordings target, boot-stall netplan fix, agent-loop tool-error logging, Files design constraints)",
-    "date": "2026-09-04T02:56:33Z",
+    "date": "2026-09-04T08:08:56Z",
     "summary": "## \u26d4 Blocked on #1797 \u2014 do not merge this first\n\n`stage` and `main` have diverged (**ahead 5, behind 3**) and this promotion **conflicts in\nthree files** until [#1797](https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1797)\nlands. #1797 is a content-free ancestry merge; once it merge",
     "url": "https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1798",
     "source": "github_prs",
     "highlights": [
-      "comments: 34",
+      "comments: 36",
       "pull request",
       "repo: droplet-onboard-services"
     ]
@@ -740,6 +740,210 @@
       "comments: 3",
       "pull request",
       "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "SSE malformed_payload: provider wire corruption is a duplicate-byte-span defect, not client framing",
+    "date": "2026-09-04T04:38:00Z",
+    "summary": "## \uc99d\uc0c1\n\n`packages/agent_core/lib/llm_provider/http_client.ml`\uc758 `read_sse`\uac00 \ub9cc\ub4e0 `data` \ud398\uc774\ub85c\ub4dc\ub97c `Yojson.Safe.from_string`\uc73c\ub85c \ud30c\uc2f1\ud560 \ub54c `sse/malformed_payload` \uc5d0\ub7ec\uac00 \ubc18\ubcf5 \ubc1c\uc0dd\ud55c\ub2e4 (2026-08-10~15, `~/.masc/logs/system_log_*.jsonl` 98\uac74).\n\n\uc2e4\uc81c \uc6d0\uc778 \uc870\uc0ac\ub294 masc#(SSE \ud504\ub808\uc774\ubc0d \uc870\uc0ac, fix/sse-event-framing \ube0c\ub79c\uce58 \uc791\uc5c5) \uacfc\uc815\uc5d0\uc11c \uc218\ud589\ud588\ub2e4.\n\n## \uadfc\ubcf8 \uc6d0\uc778: ma",
+    "url": "https://github.com/jeong-sik/masc/issues/28761",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 1",
+      "state: open",
+      "repo: masc"
+    ]
+  },
+  {
+    "title": "[PR] GovStay - AI Agent",
+    "date": "2026-09-04T08:28:04Z",
+    "summary": "## Description\r\nGovStay is an AI-powered, multi-agent platform designed to streamline and automate circuit bungalow reservations for government employees and public users in Sri Lanka. It features a conversational AI assistant (GovSewana Support) that handles everything from verifying employee IDs a",
+    "url": "https://github.com/yaalalabs/agent-kernel/pull/703",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agent-kernel"
+    ]
+  },
+  {
+    "title": "[PR] Do not send OpenRouter's routing field to endpoints that are not OpenRouter",
+    "date": "2026-09-04T08:22:20Z",
+    "summary": "Moving to a different provider by swapping `REVIEWPASS_API_KEY` alone does not work,\nand the way it fails is unhelpful \u2014 it looks like a bad key.\n\nTwo things go wrong:\n\n1. **The endpoint does not move with the key.** `REVIEWPASS_ENDPOINT` defaults to\n   OpenRouter, so a key for another service is se",
+    "url": "https://github.com/magicpages/reviewpass/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: reviewpass"
+    ]
+  },
+  {
+    "title": "[PR] Nightly review rolling (through 2026-09-04)",
+    "date": "2026-09-04T08:20:38Z",
+    "summary": "## Summary\n\nAutomated nightly review (2026-07-03). Four review passes (bugs, security, UX, quality) across the `acp_adapter`, `agent`, and core modules. Seven fixes applied; several architectural findings deferred for human review.\n\n## Fixes applied\n\n| Severity | File:line | Description |\n|---|---|-",
+    "url": "https://github.com/iamhungree/hermes-agent/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 62",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] Updated to the latest version of the current project",
+    "date": "2026-09-04T08:18:11Z",
+    "summary": "#### What roadmap does this PR target?\r\n\r\n- [ ] Frontend Roadmap\r\n- [ ] Backend Roadmap\r\n- [ ] DevOps Roadmap\r\n- [x] All Roadmaps\r\n\r\n#### Please acknowledge the items listed below\r\n\r\n- [ ] I have discussed this contribution and got a go-ahead in an issue before opening this pull request.\r\n- [ ] This",
+    "url": "https://github.com/Diego-18/developer-roadmap/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: developer-roadmap"
+    ]
+  },
+  {
+    "title": "[PR] (WIP) Add support for multiple agentic LLMs.",
+    "date": "2026-09-04T08:16:15Z",
+    "summary": "- Convert claude slash commands into skills, which other LLMs understand.\r\n- Update all references to the commands -> skills.\r\n- Add setup instructions for Codex CLI, Gemini CLI, Copilot CLI and OpenCode.\r\n- Update the main readme file.\r\n\r\nAddresses Issue #1, Issue #3, Issue #3.\r\n\r\nNote: Not all pro",
+    "url": "https://github.com/jsbakker/job-os/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: job-os"
+    ]
+  },
+  {
+    "title": "[PR] feat: voice replies that work, Browser and Memory Shard apps, coding-agent media, and the onboarding ritual",
+    "date": "2026-09-04T08:12:15Z",
+    "summary": "Fourteen requested changes, implemented by seven agents on isolated worktrees and merged onto one branch. The full suite passes (10,320 tests; the one failure, `clawbox-firewall-policy`, already fails on `beta`).\n\n## Voice\n- **A voice message now gets a voice answer, on both surfaces.** Two real cau",
+    "url": "https://github.com/ID-Robots/clawbox/pull/624",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: clawbox"
+    ]
+  },
+  {
+    "title": "[PR] feat(test,nodes): integrated Cobalt pipeline evaluation (testing framework + dataset + evaluator)",
+    "date": "2026-09-04T08:06:46Z",
+    "summary": "## Summary\n\n- Adds two experimental nodes that make pipeline evaluation a pipeline step: **`dataset_cobalt`** (source, `_source \u2192 questions`) loads a golden dataset from JSON/CSV/JSONL or inline items and attaches each item's reference answer as `Question.metadata['expected']`; **`eval_cobalt`** (fi",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/683",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 33",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] AI auto scripture: local transcription + AI reference detection (opt-in)",
+    "date": "2026-09-04T08:05:30Z",
+    "summary": "> Builds on #3578 (its commit is included here) \u2014 happy to rebase once that lands, or fold both together if preferred.\n\n## What\n\n**AI auto scripture** (opt-in, off by default): FreeShow listens to the sermon, transcribes locally with whisper.cpp, detects scripture references \u2014 both spoken (\"John cha",
+    "url": "https://github.com/ChurchApps/FreeShow/pull/3579",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 18",
+      "pull request",
+      "repo: FreeShow"
+    ]
+  },
+  {
+    "title": "[PR] Make NovaCortex installable via Unraid Community Apps",
+    "date": "2026-09-04T08:04:21Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\nAdds the metadata Community Applications (CA) requires, fixes the Unraid template that could never have passed a CA scan, and removes the drift between the three places the Unraid stack was described.\n\n## Architecture: Compose-Manager-first, with narrow CA Docker ",
+    "url": "https://github.com/Nova-Cognitive-Systems/novacortex/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: novacortex"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-09-04T08:03:45Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-09-04T08:03:45Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-09-04T08:03:35Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] home-assistant: 2026.8.3 -> 2026.9.0",
+    "date": "2026-09-04T07:56:51Z",
+    "summary": "Diff: https://github.com/home-assistant/core/compare/2026.8.3...2026.9.0\r\n\r\nChangelog: https://www.home-assistant.io/blog/2026/09/02/release-20269/\r\n\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or d",
+    "url": "https://github.com/NixOS/nixpkgs/pull/559280",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: nixpkgs"
+    ]
+  },
+  {
+    "title": "[PR] Step 05 - Observability and unbounded consumption (OWASP LLM10)",
+    "date": "2026-09-04T07:31:54Z",
+    "summary": "# Step 05 - Observability and Unbounded Consumption (OWASP LLM10)\n\n> **Branch** `step-05-observability` \u00b7 **Base** `step-04-sensitive-disclosure` \u00b7 [Read the diff](https://github.com/wjglerum/quarkus-secure-ai-agent-workshop-javazone-2026/compare/step-04-sensitive-disclosure...step-05-observability)",
+    "url": "https://github.com/wjglerum/quarkus-secure-ai-agent-workshop-javazone-2026/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: quarkus-secure-ai-agent-workshop-javazone-2026"
+    ]
+  },
+  {
+    "title": "[PR] fix(claude-code): make the Claude Code provider usable in the shipped app",
+    "date": "2026-09-04T07:21:13Z",
+    "summary": "## Summary\n\nFive fixes that together make the `claude-code:<model>` provider work in the shipped desktop app. Each was found by using it and hitting the wall; the last one is the result of an adversarial review of the other four.\n\nThe user-visible symptom was always the same and always useless: *\"So",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/6004",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] fix(combos): harden failover across quotas, credentials, and streams",
+    "date": "2026-09-04T07:08:36Z",
+    "summary": "## Summary\n\n- Follow up #3302 by making recoverable combo failures continue across request-local caps, provider-wide quota exhaustion, API-key/account rotation, transport errors, and zero-output stream failures.\n- Persist long-lived provider and key quota cooldowns across restarts without allowing s",
+    "url": "https://github.com/lidge-jun/opencodex/pull/3348",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: opencodex"
     ]
   }
 ]
