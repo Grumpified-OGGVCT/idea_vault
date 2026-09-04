@@ -216,7 +216,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-09-04T15:00:15Z",
+    "date": "2026-09-04T19:17:59Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -600,12 +600,12 @@
   },
   {
     "title": "[PR] Add Unsloth Docker images (base + Studio) for any NVIDIA GPU host, Ampere through Blackwell",
-    "date": "2026-09-04T17:22:43Z",
+    "date": "2026-09-04T20:16:28Z",
     "summary": "## Summary\n\nTwo Docker images for Unsloth, built without a GPU on free GitHub-hosted runners and published as multi-arch manifests to `docker.io/unsloth/unsloth`:\n\n- **Base image** (`docker/Dockerfile`, tags `core` / `core-<git tag>` / `core-nightly` / `core-sha-<short>`): the training stack at `tor",
     "url": "https://github.com/unslothai/unsloth/pull/5748",
     "source": "github_prs",
     "highlights": [
-      "comments: 35",
+      "comments: 34",
       "pull request",
       "repo: unsloth"
     ]
@@ -672,7 +672,7 @@
   },
   {
     "title": "[PR] feat(coworker): add the standalone Open Coworker desktop app",
-    "date": "2026-09-04T02:56:29Z",
+    "date": "2026-09-04T20:21:24Z",
     "summary": "## Summary\n- Add Open Coworker as a standalone, local-first desktop app: a team of persistent coworkers, each with its own workspace, identity (`soul.md`), plain-Markdown memory, discussions, assignments, and responsibilities, running on OpenWork's embedded server and engine so every thread is a nat",
     "url": "https://github.com/different-ai/openwork/pull/4330",
     "source": "github_prs",
@@ -768,7 +768,7 @@
   },
   {
     "title": "[PR] Do not send OpenRouter's routing field to endpoints that are not OpenRouter",
-    "date": "2026-09-04T08:22:20Z",
+    "date": "2026-09-04T20:25:28Z",
     "summary": "Moving to a different provider by swapping `REVIEWPASS_API_KEY` alone does not work,\nand the way it fails is unhelpful \u2014 it looks like a bad key.\n\nTwo things go wrong:\n\n1. **The endpoint does not move with the key.** `REVIEWPASS_ENDPOINT` defaults to\n   OpenRouter, so a key for another service is se",
     "url": "https://github.com/magicpages/reviewpass/pull/6",
     "source": "github_prs",
@@ -900,12 +900,12 @@
   },
   {
     "title": "[PR] home-assistant: 2026.8.3 -> 2026.9.0",
-    "date": "2026-09-04T17:17:35Z",
+    "date": "2026-09-04T19:39:13Z",
     "summary": "Diff: https://github.com/home-assistant/core/compare/2026.8.3...2026.9.0\r\n\r\nChangelog: https://www.home-assistant.io/blog/2026/09/02/release-20269/\r\n\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or d",
     "url": "https://github.com/NixOS/nixpkgs/pull/559280",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: nixpkgs"
     ]
@@ -936,12 +936,12 @@
   },
   {
     "title": "[PR] fix(combos): harden failover across quotas, credentials, and streams",
-    "date": "2026-09-04T07:08:36Z",
+    "date": "2026-09-04T20:03:16Z",
     "summary": "## Summary\n\n- Follow up #3302 by making recoverable combo failures continue across request-local caps, provider-wide quota exhaustion, API-key/account rotation, transport errors, and zero-output stream failures.\n- Persist long-lived provider and key quota cooldowns across restarts without allowing s",
     "url": "https://github.com/lidge-jun/opencodex/pull/3348",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 11",
       "pull request",
       "repo: opencodex"
     ]
@@ -1032,7 +1032,7 @@
   },
   {
     "title": "[PR] feat(backend/copilot): AutoPilot delegates concrete work to a sub-agent",
-    "date": "2026-09-04T13:08:12Z",
+    "date": "2026-09-04T20:11:17Z",
     "summary": "Behind a new `autopilot-delegation` LaunchDarkly flag (default off), AutoPilot on the SDK engine is told to send each unit of concrete work to an in-process sub-agent instead of doing it in its own transcript.\n\n### Why / What / How\n\n**Why.** AutoPilot reasons and acts in one conversation, so every t",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/14336",
     "source": "github_prs",
@@ -1140,12 +1140,12 @@
   },
   {
     "title": "[PR] fix(db): nested savepoints live on GenericDatabaseProvider",
-    "date": "2026-09-04T17:18:09Z",
+    "date": "2026-09-04T20:25:37Z",
     "summary": "## Summary\n- Nested transactions (depth + savepoints) now live on `GenericDatabaseProvider`, so SQL Server, PostgreSQL, and any future provider share one machine.\n- Nested `BeginTransaction` **begins a physical transaction** when depth leaked without one, then issues the dialect savepoint. That is t",
     "url": "https://github.com/MemberJunction/MJ/pull/4225",
     "source": "github_prs",
     "highlights": [
-      "comments: 2",
+      "comments: 11",
       "pull request",
       "repo: MJ"
     ]
@@ -1164,7 +1164,7 @@
   },
   {
     "title": "[PR] ci: fold AI embedding smoke tests into docker-unified",
-    "date": "2026-09-04T16:49:39Z",
+    "date": "2026-09-04T20:03:19Z",
     "summary": "## Summary\n- Merge the standalone `docker-quickstart-ai.yml` workflow into `docker-unified.yml` as an `ai_smoke_test` job, reusing images from `base_build` instead of rebuilding them.\n- Gate the job with an `embedding-ai` path filter in `ci-optimization` so it runs only when local embedding / semant",
     "url": "https://github.com/datahub-project/datahub/pull/19621",
     "source": "github_prs",
@@ -1244,6 +1244,150 @@
       "comments: 4",
       "pull request",
       "repo: kaiden"
+    ]
+  },
+  {
+    "title": "[PR] mojo/voice-ai-pipecat: voice assistant with the LLM leg on local max serve (Tier 3 scoped v1)",
+    "date": "2026-09-04T20:28:19Z",
+    "summary": "Stacked on #99. Tier 3 of the Mojo + MAX port plan: the scoped v1 of the voice\nassistant \u2014 keep the pipecat pipeline, swap the LLM leg from cloud-by-default to\na local `max serve` service.\n\n## Shape\n\nTwo-service app group (host networking):\n\n- **`voice-app/`** \u2014 `python/voice-ai-pipecat` vendored wi",
+    "url": "https://github.com/wendylabsinc/templates/pull/100",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: templates"
+    ]
+  },
+  {
+    "title": "[PR] feat: refine 1.6.10 intelligence and dictation UX",
+    "date": "2026-09-04T20:25:32Z",
+    "summary": "## Description\r\nImproves Fluid Intelligence model selection, processing visibility, overlay layout, and automatic correction learning for 1.6.10.\r\n\r\n## Type of Change\r\n- [x] \ud83d\udc1e Bug fix\r\n- [x] \u2728 New feature\r\n- [ ] \ud83d\udca5 Breaking change\r\n- [ ] \ud83e\uddf9 Chore\r\n- [ ] \ud83d\udcdd Documentation update\r\n\r\n## Related Issue or Di",
+    "url": "https://github.com/altic-dev/FluidVoice/pull/947",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 24",
+      "pull request",
+      "repo: FluidVoice"
+    ]
+  },
+  {
+    "title": "[PR] Artifacts: let an action's file output say it is a download (FileOutputRef.visibility)",
+    "date": "2026-09-04T20:23:24Z",
+    "summary": "## Summary\n\nAn action's `FileOutput` always becomes an artifact with `Visibility = 'Always'`: the file path in `AgentRunner` hard-codes it, and the output contract has no way to say otherwise. For a file the user asked to download and will open elsewhere (an exported CSV, a PDF), that puts a card on",
+    "url": "https://github.com/MemberJunction/MJ/pull/4228",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] White minimal Ollama-style UI: project-first sidebar, single chat, implicit MLX",
+    "date": "2026-09-04T20:16:34Z",
+    "summary": "## Summary\n\nRedesigns the GUI to match the official Ollama macOS app: white and minimal, with only the essential fields and buttons visible.\n\n- **Light theme by default** \u2014 root background goes white; dark mode remains available (Settings \u2192 Appearance, palette, Ctrl+Shift+D).\n- **Project-first sideb",
+    "url": "https://github.com/janipasanen/ollamaGUI/pull/549",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: ollamaGUI"
+    ]
+  },
+  {
+    "title": "[PR] Fix endpoint URL normalization and cap on-device Gemma context window",
+    "date": "2026-09-04T20:08:50Z",
+    "summary": "## Summary\n\nThis PR contains three bounded correction areas:\n\n1. **OpenAI-compatible endpoint normalization and request-URL composition** for local/custom providers.\n2. **On-device Gemma LiteRT memory stabilization** by reducing the configured engine context to 4,096 tokens and providing an app-priv",
+    "url": "https://github.com/Xitius/ZeroAI/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 35",
+      "pull request",
+      "repo: ZeroAI"
+    ]
+  },
+  {
+    "title": "[PR] fix: posting score, trust and agent-cli addressing integrity (#1104-#1107)",
+    "date": "2026-09-04T20:04:25Z",
+    "summary": "## Why\n\nFour issues were filed from an Agent/MCP-driven QA pass over the sourcing pipeline. Each was root-caused independently before any fix started, and each fix went through a full review round that found a real HIGH-severity defect and several MEDIUMs, all fixed and mutation-checked.\n\n## What\n\n#",
+    "url": "https://github.com/saeedkolivand/ai-job-hunter-app/pull/1109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ai-job-hunter-app"
+    ]
+  },
+  {
+    "title": "[PR] [codex] Unify local org BYOK runtime",
+    "date": "2026-09-04T19:58:29Z",
+    "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
+    "url": "https://github.com/MCPJam/inspector/pull/2042",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: inspector"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all non-major dependencies",
+    "date": "2026-09-04T19:29:46Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [cloud.google.com/go/secretm",
+    "url": "https://github.com/googleapis/mcp-toolbox-sdk-go/pull/153",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 202",
+      "pull request",
+      "repo: mcp-toolbox-sdk-go"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): local hybrid RAG (agent-rag-mcp) shared across Claude/Pi/OpenCode",
+    "date": "2026-09-04T19:26:26Z",
+    "summary": "## What\n\nLocal **hybrid RAG** over `~/rag`, shared by Claude Code, Pi, and OpenCode:\nlocal retrieval (agent-rag-mcp = ChromaDB + Ollama embeddings) + your cloud LLM\nfor generation. One on-demand stdio MCP server, one ChromaDB index, three agents.\n\nChosen after verification ruled out ragkit (0\u2605, v0.0",
+    "url": "https://github.com/EllianCarlos/.dotfiles/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: .dotfiles"
+    ]
+  },
+  {
+    "title": "[PR] fix: make offline mode cover cloud AI providers",
+    "date": "2026-09-04T19:20:42Z",
+    "summary": "## Summary\n\n- Offline Mode now blocks AI calls that would reach a cloud provider (OpenAI, Anthropic, Google Gemini, GitHub Models). Generating a commit message, Vibe Check, split suggestions, changelogs, PR/MR descriptions, conflict resolution and explanation, Smart Undo's reflog search and \"Test pr",
+    "url": "https://github.com/hegsie/Leviathan/pull/490",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Leviathan"
+    ]
+  },
+  {
+    "title": "[PR] oboete M1 alpha: Phase 1 verification gate and Phase 2 kernel (draft)",
+    "date": "2026-09-04T19:17:11Z",
+    "summary": "## Summary\n\nDraft pull request for the M1 alpha milestone (spec `specs/007-oboete-m1-alpha`). It is opened early, after Phase 1 (amendments and the R13 verification gate) and Phase 2 (foundation and kernel, T012-T046), so that the bot reviewers see the kernel before the user-story phases land on the",
+    "url": "https://github.com/ojungo69/oboete/pull/155",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: oboete"
+    ]
+  },
+  {
+    "title": "[PR] Benchmark suite, non-frontier model support, and production routing/budget fixes (APE-703)",
+    "date": "2026-09-04T19:11:03Z",
+    "summary": "## Summary\n\nDeployment, benchmarking, and hardening work from the APE-703 research track (29 commits). Two production bugs, one benchmark-validity defect, and the prompt/application changes that let non-frontier models run the pipeline.\n\n**Production fixes**\n- Per-role model overrides (`AIR_BRIEF_MO",
+    "url": "https://github.com/mspicer/AI-Researcher-l34n/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: AI-Researcher-l34n"
     ]
   }
 ]
