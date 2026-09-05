@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-05T18:38:28Z",
+    "date": "2026-09-05T20:42:38Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] chore(main): release minicloud-gitops 0.1.2",
-    "date": "2026-09-05T18:22:42Z",
+    "date": "2026-09-05T20:21:28Z",
     "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.1.2](https://github.com/andrelair-platform/minicloud-gitops/compare/minicloud-gitops-v0.1.1...minicloud-gitops-v0.1.2) (2026-09-05)\n\n\n### Features\n\n* **#285:** deploy Retrieva core (backend + MongoDB + Redis) on minicloud ([#870](https://git",
     "url": "https://github.com/andrelair-platform/minicloud-gitops/pull/711",
     "source": "github_prs",
@@ -696,12 +696,12 @@
   },
   {
     "title": "[PR] superfixer pre 1.6 realease",
-    "date": "2026-09-05T17:31:23Z",
+    "date": "2026-09-05T20:12:34Z",
     "summary": "## Purpose\n\nSuperfix branch to land **after** the five open arena PRs (#55, #57, #58, #59, #60) merge. It integrates all five (merged in conflict-safe order `#55 \u2192 #57 \u2192 #60 \u2192 #58 \u2192 #59`) and remediates every finding (Critical \u2192 Nitpick) from the consolidated assertive CodeRabbit-style review, so it",
     "url": "https://github.com/maus-inc/mausVoice/pull/63",
     "source": "github_prs",
     "highlights": [
-      "comments: 47",
+      "comments: 48",
       "pull request",
       "repo: mausVoice"
     ]
@@ -768,12 +768,12 @@
   },
   {
     "title": "[PR] feat: make Pixel the default ODS agent",
-    "date": "2026-09-05T16:12:24Z",
+    "date": "2026-09-05T20:15:19Z",
     "summary": "## Summary and acceptance target\n\nWork in progress: make Pixel ODS's default owner-agent and conversational portal, with a native interactive preview, useful host/tools/extensions access, safe long-running work, and broad local/remote model flexibility. The acceptance target includes a strong experi",
     "url": "https://github.com/Osmantic/ODS/pull/3385",
     "source": "github_prs",
     "highlights": [
-      "comments: 313",
+      "comments: 314",
       "pull request",
       "repo: ODS"
     ]
@@ -827,9 +827,9 @@
     ]
   },
   {
-    "title": "[PR] [OPIK-8262] [BE] fix: classify provider errors by status and stop collapsing trace-thread fan-out",
-    "date": "2026-09-05T13:06:31Z",
-    "summary": "## Details\n\nThree fixes to online scoring. The first two are behavioural; the third removes the design flaw that forced the second to be written the way it was.\n\n### 1. `BaseRedisSubscriber` classifies retries by status, not by exception class\n\n`isRetryableException` decided retry-vs-drop purely by ",
+    "title": "[PR] [OPIK-8262] [BE] fix: publish one stream entry per trace-thread id",
+    "date": "2026-09-05T20:37:33Z",
+    "summary": "## Details\n\n**1 of 3.** Base `main`. The other two stack on top of this branch.\n\n`OnlineScorePublisher.enqueueThreadMessage` built **one** stream entry carrying the whole thread-id list. `BaseRedisSubscriber` acks and removes per entry, so N thread ids under one entry share a single retry verdict \u2014 ",
     "url": "https://github.com/comet-ml/opik/pull/8162",
     "source": "github_prs",
     "highlights": [
@@ -876,7 +876,7 @@
   },
   {
     "title": "[PR] feat(coworker): add the standalone Open Coworker desktop app",
-    "date": "2026-09-05T03:03:08Z",
+    "date": "2026-09-05T20:10:19Z",
     "summary": "## What this delivers\n\nOpen Coworker is a standalone desktop app for a persistent team: coworkers keep their identity and Markdown memory, work in native OpenWork discussions, create documents, take assignments, and own scheduled responsibilities. Group conversations and long-lived Workers use the s",
     "url": "https://github.com/different-ai/openwork/pull/4330",
     "source": "github_prs",
@@ -912,7 +912,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-09-05T14:44:13Z",
+    "date": "2026-09-05T20:44:14Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -1092,7 +1092,7 @@
   },
   {
     "title": "[PR] feat(observability): audit-driven rebuild \u2014 scrape hygiene, 45 alerts, 12 verified dashboards, Tempo retired, dh40801 agent",
-    "date": "2026-09-05T18:08:05Z",
+    "date": "2026-09-05T19:30:41Z",
     "summary": "## Summary\n\nObservability audit, adversarial review, and rebuild. Five audit agents, four adversarial reviewers, nine build packages, all on Opus 5 with Fable 5.1 orchestrating. Read `observability/AUDIT-2026-09.md` (v2) for findings and `observability/REBUILD-PLAN-2026-09.md` for the plan this bran",
     "url": "https://github.com/sdnydude/dhgaifactory3.5/pull/29",
     "source": "github_prs",
@@ -1188,12 +1188,12 @@
   },
   {
     "title": "[PR] fix(sqlserver): deterministic save-call SQL variable suffixes (loom #12 WP3)",
-    "date": "2026-09-05T17:53:02Z",
+    "date": "2026-09-05T21:01:14Z",
     "summary": "Implements **WP3** of [loom #12](https://github.com/MemberJunction/loom/pull/12) (F-D).\n\n`RenderSaveCallBinding` no longer mints `@Field_<uuidv4 8 hex>`. The suffix is:\n\n```\nsha1(\\`${schema}.${table}|${pk values joined by |}\\`).hex[:8]\n```\n\nSame record in the same transaction group twice gets `_hash",
     "url": "https://github.com/MemberJunction/MJ/pull/4257",
     "source": "github_prs",
     "highlights": [
-      "comments: 7",
+      "comments: 8",
       "pull request",
       "repo: MJ"
     ]
@@ -1284,7 +1284,7 @@
   },
   {
     "title": "[PR] fetch_url tool: read web pages (Markdown / llms.txt first, GitHub via API) in self-hosted modes",
-    "date": "2026-09-05T18:44:33Z",
+    "date": "2026-09-05T21:01:14Z",
     "summary": "Closes #19\n\n## What\n\nA `fetch_url` function tool for the self-hosted modes (Ollama / vLLM / openai-compatible). Hosted-tool providers keep OpenAI's web search, which reads pages itself.\n\n- **Content negotiation, Markdown first**, in the order the issue asks for: `Accept: text/markdown, text/plain, t",
     "url": "https://github.com/MetricsHub/m8b-slack/pull/21",
     "source": "github_prs",
@@ -1320,19 +1320,19 @@
   },
   {
     "title": "[PR] fix(agents): bypass trailing runtime-context carrier relocation for local providers",
-    "date": "2026-09-05T18:36:06Z",
-    "summary": "## Description\r\nBypasses trailing runtime-context carrier relocation for local and self-hosted model backends while preserving tail relocation for cloud providers and Ollama cloud models.\r\n\r\n## What Problem This Solves\r\n`relocateCurrentRuntimeContextCarrierToTail` moves current-turn runtime-context ",
+    "date": "2026-09-05T20:58:53Z",
+    "summary": "## Description\r\nBypasses trailing runtime-context carrier relocation for local and self-hosted model backends while preserving tail relocation for cloud providers, the bundled LiteLLM cloud route, cloud models behind local proxies, built-in ollama-cloud, and Ollama cloud models.\r\n\r\n## What Problem T",
     "url": "https://github.com/openclaw/openclaw/pull/132607",
     "source": "github_prs",
     "highlights": [
-      "comments: 16",
+      "comments: 20",
       "pull request",
       "repo: openclaw"
     ]
   },
   {
     "title": "[PR] Cut Docker's RAM footprint across the whole stack",
-    "date": "2026-09-05T18:26:22Z",
+    "date": "2026-09-05T20:06:01Z",
     "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\nDocker is the largest single RAM consumer on a dev machine running this\nproject, and every service was on stock defaults. This caps and tunes all\nfour, and stops two of them from running at all in the normal dev workflow.\n\nFewer containers by default:\n- backend an",
     "url": "https://github.com/BPForbes/Homework-Central/pull/70",
     "source": "github_prs",
@@ -1368,7 +1368,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-05T17:49:23Z",
+    "date": "2026-09-05T20:18:47Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1380,7 +1380,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-05T17:49:23Z",
+    "date": "2026-09-05T20:18:45Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1392,7 +1392,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-05T17:49:15Z",
+    "date": "2026-09-05T20:18:35Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1400,6 +1400,66 @@
       "comments: 2",
       "pull request",
       "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] REST connect + auto-login: control-plane probes and non-interactive credential acquire/export",
+    "date": "2026-09-05T20:58:59Z",
+    "summary": "## Outcome\n\nThe automatic-authentication story closed end to end: one script proves both control planes answer real REST calls with non-interactively acquired tokens, and one script acquires and exports every credential the stack consumes \u2014 az, gh, codex (OpenAI), claude (Anthropic), gh-models, and ",
+    "url": "https://github.com/Yolkster64/helios-platform/pull/113",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 131",
+      "pull request",
+      "repo: helios-platform"
+    ]
+  },
+  {
+    "title": "[PR] Document the finance service, and let the docs server find a free port",
+    "date": "2026-09-05T20:54:00Z",
+    "summary": "Started as finance docs. Standing up a fresh finance-plus-ai stack to screenshot them turned up defects at every layer, so this also fixes what it found. One commit.\n\n## Docs\n\nA page per finance tab and per domain, replacing a single analyst page with no way in: index, accounts, bills, projected, bu",
+    "url": "https://github.com/lbedner/aegis-stack/pull/1055",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: aegis-stack"
+    ]
+  },
+  {
+    "title": "[PR] build(deps): bump the npm-production group with 7 updates",
+    "date": "2026-09-05T20:43:08Z",
+    "summary": "Bumps the npm-production group with 7 updates:\n\n| Package | From | To |\n| --- | --- | --- |\n| [chalk](https://github.com/chalk/chalk) | `5.6.0` | `5.6.2` |\n| [commander](https://github.com/tj/commander.js) | `11.1.0` | `15.0.0` |\n| [fs-extra](https://github.com/jprichardson/node-fs-extra) | `11.3.1`",
+    "url": "https://github.com/beingmartinbmc/roastme/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: roastme"
+    ]
+  },
+  {
+    "title": "[PR] fix(deploy): the post-update subsystem check was reading a key that does not exist",
+    "date": "2026-09-05T19:56:48Z",
+    "summary": "## What\n\nAfter every update, `scripts/update.sh` asked which subsystems had come up and parsed a `subsystems` key out of the health response. **That response has no such key** \u2014 verified against a running server: 24 top-level keys, `subsystems` absent; the only endpoint using that name returns a *li",
+    "url": "https://github.com/WingedGuardian/GENesis-AGI/pull/1724",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: GENesis-AGI"
+    ]
+  },
+  {
+    "title": "[PR] Stop receipt images reaching api.openai.com: pin OCR to local vision (migration 460), make fallback_enabled=false refuse, retire the dead /operations/receipts page",
+    "date": "2026-09-05T19:43:45Z",
+    "summary": "Three rows. **O-1 closes an active data exfiltration** and is the gate for the rest of the wave.\n\nMigration **460** is **already applied** to `afrakala` and recorded in the ledger (`20260906090000`); `afrakala-lan-rest` was restarted.\n\n---\n\n## O-1 \u2014 receipt images were leaving the network\n\n`ai_usage",
+    "url": "https://github.com/mohammadrezaafra66-arch/get-git-going/pull/408",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: get-git-going"
     ]
   }
 ]
