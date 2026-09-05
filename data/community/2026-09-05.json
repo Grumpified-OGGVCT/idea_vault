@@ -204,24 +204,24 @@
   },
   {
     "title": "Want to suggest a wake word? Leave your thoughts here. (AIS-1441)",
-    "date": "2026-09-04T10:50:54Z",
+    "date": "2026-09-05T06:48:23Z",
     "summary": "Hi all,\n\nWe're excited to offer the community more free and high-quality wake word models. Everyone has their own unique wake word preferences. Now, we're ready to regularly release some of the most popular wake words. Please let us know the wake words you want! \n\n**Already supported languages: Chin",
     "url": "https://github.com/espressif/esp-sr/issues/88",
     "source": "github_issues",
     "highlights": [
-      "comments: 459",
+      "comments: 460",
       "state: open",
       "repo: esp-sr"
     ]
   },
   {
     "title": "SSE malformed_payload: provider wire corruption is a duplicate-byte-span defect, not client framing",
-    "date": "2026-09-05T05:20:46Z",
+    "date": "2026-09-05T05:53:03Z",
     "summary": "## \uc99d\uc0c1\n\n`packages/agent_core/lib/llm_provider/http_client.ml`\uc758 `read_sse`\uac00 \ub9cc\ub4e0 `data` \ud398\uc774\ub85c\ub4dc\ub97c `Yojson.Safe.from_string`\uc73c\ub85c \ud30c\uc2f1\ud560 \ub54c `sse/malformed_payload` \uc5d0\ub7ec\uac00 \ubc18\ubcf5 \ubc1c\uc0dd\ud55c\ub2e4 (2026-08-10~15, `~/.masc/logs/system_log_*.jsonl` 98\uac74).\n\n\uc2e4\uc81c \uc6d0\uc778 \uc870\uc0ac\ub294 masc#(SSE \ud504\ub808\uc774\ubc0d \uc870\uc0ac, fix/sse-event-framing \ube0c\ub79c\uce58 \uc791\uc5c5) \uacfc\uc815\uc5d0\uc11c \uc218\ud589\ud588\ub2e4.\n\n## \uadfc\ubcf8 \uc6d0\uc778: ma",
     "url": "https://github.com/jeong-sik/masc/issues/28761",
     "source": "github_issues",
     "highlights": [
-      "comments: 2",
+      "comments: 3",
       "state: open",
       "repo: masc"
     ]
@@ -516,12 +516,12 @@
   },
   {
     "title": "[PR] Promote stage to main: 2026-08-27 sweep (NVR recordings target, boot-stall netplan fix, agent-loop tool-error logging, Files design constraints)",
-    "date": "2026-09-05T05:05:33Z",
-    "summary": "## \u26d4 Blocked on #1797 \u2014 do not merge this first\n\n`stage` and `main` have diverged (**ahead 5, behind 3**) and this promotion **conflicts in\nthree files** until [#1797](https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1797)\nlands. #1797 is a content-free ancestry merge; once it merge",
+    "date": "2026-09-05T10:00:53Z",
+    "summary": "## Promote `stage` \u2192 `main`\n\n**Scope (measured 2026-09-05 09:1x UTC, `main...stage`):** 513 commits, 1,184 files, +225,535 / \u221215,574, a clean fast-forward (`behind_by 0`). It carries **191 merged PRs** \u2014 78 by stefan-cruceru, 68 by rjouffret, 45 dependabot bumps \u2014 across 155 WARP tickets, and **27 n",
     "url": "https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1798",
     "source": "github_prs",
     "highlights": [
-      "comments: 39",
+      "comments: 43",
       "pull request",
       "repo: droplet-onboard-services"
     ]
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-05T04:20:49Z",
+    "date": "2026-09-05T08:27:17Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -588,7 +588,7 @@
   },
   {
     "title": "[PR] fix(deps): stop both bots proposing the centrally governed framework pins",
-    "date": "2026-09-05T05:01:26Z",
+    "date": "2026-09-05T09:57:26Z",
     "summary": "## The problem\n\n`scripts/align_framework_pins.py` owns five pins restated in **63** requirements files. Its docstring is explicit that one version decision belongs in `CANONICAL` and is applied in a single reviewed pass \u2014 precisely so the estate doesn't regenerate 63 identical PRs and hit the rate l",
     "url": "https://github.com/Trancendos/Tranc3/pull/1150",
     "source": "github_prs",
@@ -600,7 +600,7 @@
   },
   {
     "title": "[PR] feat(platform): add Linux and macOS appliance installer",
-    "date": "2026-09-04T23:54:14Z",
+    "date": "2026-09-05T09:28:16Z",
     "summary": "### Why / What / How\n\nThe existing hosted installer still follows the legacy clone-and-Compose flow,\nwhile the upcoming release publishes AutoGPT Platform as a single-container\nappliance. The public installer needs to match that product: install a\npublished artifact safely, preserve user data, and f",
     "url": "https://github.com/Significant-Gravitas/AutoGPT/pull/13261",
     "source": "github_prs",
@@ -612,8 +612,8 @@
   },
   {
     "title": "[PR] chore(main): release minicloud-gitops 0.1.2",
-    "date": "2026-09-04T23:47:24Z",
-    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.1.2](https://github.com/andrelair-platform/minicloud-gitops/compare/minicloud-gitops-v0.1.1...minicloud-gitops-v0.1.2) (2026-09-04)\n\n\n### Features\n\n* **#285:** deploy Retrieva core (backend + MongoDB + Redis) on minicloud ([#870](https://git",
+    "date": "2026-09-05T09:13:30Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.1.2](https://github.com/andrelair-platform/minicloud-gitops/compare/minicloud-gitops-v0.1.1...minicloud-gitops-v0.1.2) (2026-09-05)\n\n\n### Features\n\n* **#285:** deploy Retrieva core (backend + MongoDB + Redis) on minicloud ([#870](https://git",
     "url": "https://github.com/andrelair-platform/minicloud-gitops/pull/711",
     "source": "github_prs",
     "highlights": [
@@ -768,12 +768,12 @@
   },
   {
     "title": "[PR] feat: make Pixel the default ODS agent",
-    "date": "2026-09-05T05:12:56Z",
+    "date": "2026-09-05T09:48:13Z",
     "summary": "## Summary and acceptance target\n\nWork in progress: make Pixel ODS's default owner-agent and conversational portal, with a native interactive preview, useful host/tools/extensions access, safe long-running work, and broad local/remote model flexibility. The acceptance target includes a strong experi",
     "url": "https://github.com/Osmantic/ODS/pull/3385",
     "source": "github_prs",
     "highlights": [
-      "comments: 303",
+      "comments: 307",
       "pull request",
       "repo: ODS"
     ]
@@ -792,19 +792,19 @@
   },
   {
     "title": "[PR] test: remove implementation-coupled coverage",
-    "date": "2026-09-05T05:03:32Z",
+    "date": "2026-09-05T10:05:07Z",
     "summary": "## Summary\n\n- remove tests coupled to private state, exact mock calls, constructor wiring, widget topology, syntax/resource permutations, and harness self-validation\n- retain user-visible behavior, security invariants, release integrity, public contracts, performance targets, and evaluation semantic",
     "url": "https://github.com/hellices/korvid/pull/362",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 7",
       "pull request",
       "repo: korvid"
     ]
   },
   {
     "title": "[PR] GovStay - AI Agent",
-    "date": "2026-09-05T04:46:27Z",
+    "date": "2026-09-05T08:57:00Z",
     "summary": "## Description\r\nGovStay is an AI-powered, multi-agent platform designed to streamline and automate circuit bungalow reservations for government employees and public users in Sri Lanka. It features a conversational AI assistant (GovSewana Support) that handles everything from verifying employee IDs a",
     "url": "https://github.com/yaalalabs/agent-kernel/pull/703",
     "source": "github_prs",
@@ -852,12 +852,12 @@
   },
   {
     "title": "[PR] fix(db): nested savepoints live on GenericDatabaseProvider",
-    "date": "2026-09-05T04:04:16Z",
+    "date": "2026-09-05T08:30:19Z",
     "summary": "## Summary\n- Nested transactions (depth + savepoints) now live on `GenericDatabaseProvider`, so SQL Server, PostgreSQL, and any future provider share one machine.\n- Nested `BeginTransaction` **begins a physical transaction** when depth leaked without one, then issues the dialect savepoint. That is t",
     "url": "https://github.com/MemberJunction/MJ/pull/4225",
     "source": "github_prs",
     "highlights": [
-      "comments: 18",
+      "comments: 19",
       "pull request",
       "repo: MJ"
     ]
@@ -912,7 +912,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-09-05T02:44:14Z",
+    "date": "2026-09-05T08:44:13Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -924,7 +924,7 @@
   },
   {
     "title": "[PR] Update dependency browser-use to v0.1.45 [SECURITY]",
-    "date": "2026-09-05T02:40:35Z",
+    "date": "2026-09-05T09:49:28Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [browser-use](https://redire",
     "url": "https://github.com/AReid987/stellarAgent/pull/168",
     "source": "github_prs",
@@ -932,6 +932,126 @@
       "comments: 3",
       "pull request",
       "repo: stellarAgent"
+    ]
+  },
+  {
+    "title": "Architecture v3 evidence track \u2014 OpenClaw \u2192 planners \u2192 Cursor bounded loop",
+    "date": "2026-09-05T07:36:49Z",
+    "summary": "## ACTIVE WORK \u2014 Architecture v3 evidence track\n\nStatus: `FOUNDATION_V3_CANONICAL \u2014 RUNTIME/EVIDENCE TRACK OPEN`\n\n`docs/runtime/CURRENT_FRONTIER.md` remains the sole LIVE STATE authority. Issue #8 is the provider/VPS evidence backlog and is **parallel**, not blocking all other architecture work.\n\n##",
+    "url": "https://github.com/mrhz1973/control-plane/issues/8",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 20",
+      "state: open",
+      "repo: control-plane"
+    ]
+  },
+  {
+    "title": "[PR] fix(claude-code): make the Claude Code provider usable in the shipped app",
+    "date": "2026-09-05T09:58:05Z",
+    "summary": "## Summary\n\nFive fixes that together make the `claude-code:<model>` provider work in the shipped desktop app. Each was found by using it and hitting the wall; the last one is the result of an adversarial review of the other four.\n\nThe user-visible symptom was always the same and always useless: *\"So",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/6004",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] Enhance Grok subscription handling and fix various UI and API issues",
+    "date": "2026-09-05T09:45:20Z",
+    "summary": "",
+    "url": "https://github.com/DengHaitao-2022/sub2api/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: sub2api"
+    ]
+  },
+  {
+    "title": "[PR] fix(provider): honor a supported default chat endpoint",
+    "date": "2026-09-05T10:07:58Z",
+    "summary": "> ### Branch strategy\n>\n> - Active development targets `main`.\n\n### What this PR does\n\nBefore this PR:\n\nPreset models with multiple endpoint types always used the registry's first endpoint. A provider's persisted default chat endpoint was ignored even when the model explicitly supported it.\n\nAfter t",
+    "url": "https://github.com/CherryHQ/cherry-studio/pull/19286",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: cherry-studio"
+    ]
+  },
+  {
+    "title": "[PR] oboete M1 alpha: Phase 1 verification gate and Phase 2 kernel (draft)",
+    "date": "2026-09-05T09:30:55Z",
+    "summary": "## Summary\n\nDraft pull request for the M1 alpha milestone (spec `specs/007-oboete-m1-alpha`). It is opened early, after Phase 1 (amendments and the R13 verification gate) and Phase 2 (foundation and kernel, T012-T046), so that the bot reviewers see the kernel before the user-story phases land on the",
+    "url": "https://github.com/ojungo69/oboete/pull/155",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: oboete"
+    ]
+  },
+  {
+    "title": "[PR] feat(opencode): \u652f\u6301 OpenCode Go \u5b98\u65b9\u7528\u91cf\u7a97\u53e3\u67e5\u8be2\u4e0e\u81ea\u52a8\u5237\u65b0",
+    "date": "2026-09-05T09:03:47Z",
+    "summary": "## \u80cc\u666f\n\nOpenCode Go \u662f OpenCode \u5b98\u65b9\u7684\u8ba2\u9605\u805a\u5408\u5e73\u53f0\uff08$10/\u6708\uff0c5h/$12\u3001\u5468/$30\u3001\u6708/$60 \u4e09\u4e2a\u7528\u91cf\u7a97\u53e3\uff09\uff0c\u63d0\u4f9b OpenAI \u517c\u5bb9\u7aef\u70b9 `https://opencode.ai/zen/go/v1`\u3002\u4e0a\u6e38\u4e8e 2026-08-11 \u4e0a\u7ebf\u5b98\u65b9\u7528\u91cf\u7aef\u70b9 `GET /zen/go/v1/usage`\uff08Bearer \u76f4\u63a5\u590d\u7528\u6d88\u8d39\u7aef key\uff0c\u5c1a\u672a\u5199\u5165\u5b98\u65b9\u6587\u6863\uff09\uff0c\u8fd4\u56de rolling/weekly/monthly \u4e09\u7a97\u53e3\u7684 `percent` \u4e0e `resetsAt`\u3002\n\n\u672c PR \u4e3a openai apikey \u8d26\u53f7\uff08base_url = `https://open",
+    "url": "https://github.com/Wei-Shaw/sub2api/pull/5616",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: sub2api"
+    ]
+  },
+  {
+    "title": "[PR] feat(search): add embedding-assisted hybrid search with managed Meilisearch embedder",
+    "date": "2026-09-05T08:51:47Z",
+    "summary": "## Intent\n\nRecover the completed embedding-assisted hybrid-search implementation from the preserved local branch fm/oksskolten-embedding-search at commit 7a044a1b (source branch must not be modified or deleted) and finish delivery on the task branch fm/oksskolten-embedding-search-recovery. The full ",
+    "url": "https://github.com/gvonbergen/oksskolten/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: oksskolten"
+    ]
+  },
+  {
+    "title": "[PR] fix(agents): recover from a max-tokens finish with compaction and one retry",
+    "date": "2026-09-05T08:51:18Z",
+    "summary": "[ENG-2457](https://linear.app/cline-bot/issue/ENG-2457/next-max-tokens-finish-on-a-text-only-turn-is-a-terminal-task-failure) \u00b7 reported in https://github.com/cline/cline/issues/13333#issuecomment-5324078237\n\n## Problem\n\nA provider stream finishing with `finishReason: \"max-tokens\"` on a turn with **",
+    "url": "https://github.com/cline/cline/pull/13340",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: cline"
+    ]
+  },
+  {
+    "title": "[PR] Nightly review rolling (through 2026-09-05)",
+    "date": "2026-09-05T08:19:15Z",
+    "summary": "## Summary\n\nAutomated nightly review (2026-07-03). Four review passes (bugs, security, UX, quality) across the `acp_adapter`, `agent`, and core modules. Seven fixes applied; several architectural findings deferred for human review.\n\n## Fixes applied\n\n| Severity | File:line | Description |\n|---|---|-",
+    "url": "https://github.com/iamhungree/hermes-agent/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 63",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] docs: document twelve undocumented product surfaces, Anthropic, and the proxy-only datasources",
+    "date": "2026-09-05T08:08:07Z",
+    "summary": "## Summary\n\nTwelve shipped product surfaces had no documentation. Six existed only as a line in a changelog \u2014 Custom Dashboards, Application Grouping, LLM Analyser, AI Gateway, Egress Filter, Tenant Settings \u2014 and six appeared nowhere at all: Alert Tuning, Event Resolutions, Service Criticality, Too",
+    "url": "https://github.com/nudgebee/nudgebee-docs/pull/836",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nudgebee-docs"
     ]
   }
 ]
