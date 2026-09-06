@@ -156,7 +156,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-09-06T14:01:45Z",
+    "date": "2026-09-06T21:06:57Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -599,20 +599,20 @@
     ]
   },
   {
-    "title": "[PR] Cut Docker's RAM footprint across the whole stack",
-    "date": "2026-09-06T00:08:39Z",
-    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## DevOps skill history (this rewrite)\n\nAfter QA PASS, the DevOps multi-agent skill now **keeps reviewer-approved Coder commits** in git history. Soft-reset of the whole workstream is only allowed on skill-only runs (no keep-commits).\n\nThis branch was compressed t",
+    "title": "[PR] Memory optimization: no-var pins, FIFO-free LRU cache, never-invent-branch",
+    "date": "2026-09-06T21:09:38Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\nPins explicit typing and bans `var`/`dynamic` in C# and `var` in JS/TS via `.editorconfig`, `Directory.Build.props`, ESLint (`no-var`, `prefer-const`), and `scripts/check-no-var.sh` in CI.\n\n**Branch policy:** stay on the current non-`main` branch. Never `git check",
     "url": "https://github.com/BPForbes/Homework-Central/pull/70",
     "source": "github_prs",
     "highlights": [
-      "comments: 3",
+      "comments: 5",
       "pull request",
       "repo: Homework-Central"
     ]
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-06T17:41:51Z",
+    "date": "2026-09-06T21:01:50Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -624,7 +624,7 @@
   },
   {
     "title": "[PR] chore(deps): update getmeili/meilisearch docker tag",
-    "date": "2026-09-06T00:01:43Z",
+    "date": "2026-09-06T21:01:41Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [getmeili/meilisearch](https://redirect.github.com/meilisearch/meilisearch) | minor | `v1.45.2` \u2192 `v1.53.1` |\n| [getmeili/meilisearch](https://redirect.github.com/meilisearch/meilisearch) | minor | `v1.36` \u2192 `v1.5",
     "url": "https://github.com/hevel86/BrainiacOps/pull/914",
     "source": "github_prs",
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] fix(security): CodeQL hardening \u2014 system-key compare, Teams webhook echo, OAuth proxy query handling",
-    "date": "2026-09-06T04:37:56Z",
+    "date": "2026-09-06T20:41:12Z",
     "summary": "## Summary\n\nThree hardening fixes from the first full CodeQL scan of the security-critical packages ([run 33972646378](https://github.com/MemberJunction/MJ/actions/runs/33972646378)). None change behavior for well-formed requests. The one exploitable finding from that scan, zip slip in the installer",
     "url": "https://github.com/MemberJunction/MJ/pull/4265",
     "source": "github_prs",
@@ -876,8 +876,8 @@
   },
   {
     "title": "[PR] feat(coworker): add the standalone Open Coworker desktop app",
-    "date": "2026-09-06T18:30:40Z",
-    "summary": "<!-- coworker-async-candidate -->\n## Current asynchronous collaboration delivery\n\nSource **7f0261f3a9f772691cd4526f43e86e268c3065e4**, rebased onto dev **830d62e09d7e6c1546b37262b7b79a446564d9b3**. Existing installer-workflow work and the new upstream managed-policy plugins are preserved.\n\n**Feature",
+    "date": "2026-09-06T19:30:53Z",
+    "summary": "<!-- coworker-async-candidate -->\n## Current asynchronous collaboration delivery\n\nSource **89878793bffc96915ea7b6f89f64ba611bfee240**, rebased onto dev **726a73c34f54ca29156871666af6a1510a4328fd**. Existing installer-workflow work and upstream managed-policy, desktop analytics, and v2 instruction-re",
     "url": "https://github.com/different-ai/openwork/pull/4330",
     "source": "github_prs",
     "highlights": [
@@ -888,7 +888,7 @@
   },
   {
     "title": "[PR] [pull] master from ItzCrazyKns:master",
-    "date": "2026-09-06T14:44:14Z",
+    "date": "2026-09-06T20:44:14Z",
     "summary": "See [Commits](/itsbrex/Perplexica/pull/11/commits) and [Changes](/itsbrex/Perplexica/pull/11/files) for more details.\n\n-----\nCreated by [<img src=\"https://prod.download/pull-18h-svg\" valign=\"bottom\"/> **pull[bot]**](https://github.com/wei/pull) (v2.0.0-alpha.4)\n\n_Can you help keep this open source s",
     "url": "https://github.com/itsbrex/Perplexica/pull/11",
     "source": "github_prs",
@@ -912,7 +912,7 @@
   },
   {
     "title": "[PR] chore(deps): Update all minor dependencies",
-    "date": "2026-09-06T16:49:16Z",
+    "date": "2026-09-06T20:30:06Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [all",
     "url": "https://github.com/michaelbrusegard/infra/pull/152",
     "source": "github_prs",
@@ -1284,7 +1284,7 @@
   },
   {
     "title": "[PR] Promote stage to main: 2026-08-27 sweep (NVR recordings target, boot-stall netplan fix, agent-loop tool-error logging, Files design constraints)",
-    "date": "2026-09-06T18:14:54Z",
+    "date": "2026-09-06T20:59:25Z",
     "summary": "## Promote `stage` \u2192 `main`\n\n**Scope (measured 2026-09-05 09:1x UTC, `main...stage`):** 513 commits, 1,184 files, +225,535 / \u221215,574, a clean fast-forward (`behind_by 0`). It carries **191 merged PRs** \u2014 78 by stefan-cruceru, 68 by rjouffret, 45 dependabot bumps \u2014 across 155 WARP tickets, and **27 n",
     "url": "https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1798",
     "source": "github_prs",
@@ -1308,12 +1308,12 @@
   },
   {
     "title": "[PR] Clarify team access with grouped controls and change review",
-    "date": "2026-09-06T18:55:43Z",
+    "date": "2026-09-06T21:04:01Z",
     "summary": "## Summary\nTeam Access now groups existing controls into browsing, computer commands, tools, AI setup, and app customization. Administrators see plain-language outcomes, can preview this team's choices, and review each before/after change for the named team before saving.\n\n## Why\nThe old Locked labe",
     "url": "https://github.com/different-ai/openwork/pull/4568",
     "source": "github_prs",
     "highlights": [
-      "comments: 5",
+      "comments: 14",
       "pull request",
       "repo: openwork"
     ]
@@ -1368,7 +1368,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-06T18:21:37Z",
+    "date": "2026-09-06T20:41:21Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
     "url": "https://github.com/hzpconnor/kilocode/pull/1",
     "source": "github_prs",
@@ -1380,7 +1380,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-06T18:21:36Z",
+    "date": "2026-09-06T20:41:20Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
     "source": "github_prs",
@@ -1392,7 +1392,7 @@
   },
   {
     "title": "[PR] sync to main",
-    "date": "2026-09-06T18:21:24Z",
+    "date": "2026-09-06T20:41:11Z",
     "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
     "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
     "source": "github_prs",
@@ -1448,6 +1448,66 @@
       "comments: 0",
       "pull request",
       "repo: my-jarvis-project"
+    ]
+  },
+  {
+    "title": "[PR] Apr\u00e8s 0.0.4 : reprises Google/local et services publics fran\u00e7ais",
+    "date": "2026-09-06T21:10:19Z",
+    "summary": "La 0.0.4 est fusionn\u00e9e dans `main` (PR #2, `0460534`). Cette PR poursuit le chantier sans changer la version, sans fusion et sans release.\n\n## Comportement livr\u00e9\n\n- Reprises Google/local renforc\u00e9es : identifiant CREATE r\u00e9serv\u00e9 avant l'appel, reprise apr\u00e8s r\u00e9ponse perdue, DELETE r\u00e9essayable sans recr",
+    "url": "https://github.com/helfina/Lumyn/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Lumyn"
+    ]
+  },
+  {
+    "title": "[PR] Record effective per-prompt inference settings across providers",
+    "date": "2026-09-06T21:08:47Z",
+    "summary": "## Summary\nAdopts per-prompt generation settings from #956 onto current main without changing the provider/model selection or claiming deterministic replay. Prompts may specify temperature, top P/K, output-token limit, and supported thinking controls. Each saved result records the settings actually ",
+    "url": "https://github.com/moona3k/macparakeet/pull/968",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: macparakeet"
+    ]
+  },
+  {
+    "title": "[PR] AI auto scripture: local transcription + AI reference detection (opt-in)",
+    "date": "2026-09-06T20:59:14Z",
+    "summary": "> Builds on #3578 (its commit is included here) \u2014 happy to rebase once that lands, or fold both together if preferred.\n\n## What\n\n**AI auto scripture** (opt-in, off by default): FreeShow listens to the sermon, transcribes locally with whisper.cpp, detects scripture references \u2014 both spoken (\"John cha",
+    "url": "https://github.com/ChurchApps/FreeShow/pull/3579",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 27",
+      "pull request",
+      "repo: FreeShow"
+    ]
+  },
+  {
+    "title": "[PR] Repair Wave 1: production supervision, Continue-mode local routing, Playwright gate, Commander auth gaps",
+    "date": "2026-09-06T20:33:05Z",
+    "summary": "## Summary\n\nFirst repair wave from the full-system audit. Built on top of #40 (not yet merged) since this PR's branch was created before PR #40's browser-verification gate could be completed \u2014 **base this PR against `nebula-council-streaming-runtime-repair`, not `main`, until #40 merges**, at which ",
+    "url": "https://github.com/markbroughton9205/war-room-os/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: war-room-os"
+    ]
+  },
+  {
+    "title": "[PR] fix(providers): close the recorded provider-campaign follow-ups",
+    "date": "2026-09-06T19:39:48Z",
+    "summary": "## Summary\n\nA full audit of the three-week provider campaign surfaced a list of defects that had been written down during the work and never scheduled. Twenty-one were re-scoped against current `release` before any code was touched. Three turned out to be already fixed and were left alone, including",
+    "url": "https://github.com/juspay/neurolink/pull/1649",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: neurolink"
     ]
   }
 ]
