@@ -180,7 +180,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-09-06T17:41:34Z",
+    "date": "2026-09-06T21:44:30Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -599,9 +599,9 @@
     ]
   },
   {
-    "title": "[PR] Memory optimization: no-var pins, FIFO-free LRU cache, never-invent-branch",
-    "date": "2026-09-06T21:09:38Z",
-    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\nPins explicit typing and bans `var`/`dynamic` in C# and `var` in JS/TS via `.editorconfig`, `Directory.Build.props`, ESLint (`no-var`, `prefer-const`), and `scripts/check-no-var.sh` in CI.\n\n**Branch policy:** stay on the current non-`main` branch. Never `git check",
+    "title": "[PR] Memory optimization: Rust LRU with C# fallback and safe dispose",
+    "date": "2026-09-06T23:36:33Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\nPins explicit typing and bans `var`/`dynamic` in C# and `var` in JS/TS via `.editorconfig`, `Directory.Build.props`, ESLint, and `scripts/check-no-var.sh`.\n\n**Branch policy:** stay on the current non-`main` branch. Never invent a git ref unless a human named it th",
     "url": "https://github.com/BPForbes/Homework-Central/pull/70",
     "source": "github_prs",
     "highlights": [
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-06T21:01:50Z",
+    "date": "2026-09-06T23:31:40Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -876,7 +876,7 @@
   },
   {
     "title": "[PR] feat(coworker): add the standalone Open Coworker desktop app",
-    "date": "2026-09-06T19:30:53Z",
+    "date": "2026-09-06T21:55:38Z",
     "summary": "<!-- coworker-async-candidate -->\n## Current asynchronous collaboration delivery\n\nSource **89878793bffc96915ea7b6f89f64ba611bfee240**, rebased onto dev **726a73c34f54ca29156871666af6a1510a4328fd**. Existing installer-workflow work and upstream managed-policy, desktop analytics, and v2 instruction-re",
     "url": "https://github.com/different-ai/openwork/pull/4330",
     "source": "github_prs",
@@ -1308,12 +1308,12 @@
   },
   {
     "title": "[PR] Clarify team access with grouped controls and change review",
-    "date": "2026-09-06T21:04:01Z",
-    "summary": "## Summary\nTeam Access now groups existing controls into browsing, computer commands, tools, AI setup, and app customization. Administrators see plain-language outcomes, can preview this team's choices, and review each before/after change for the named team before saving.\n\n## Why\nThe old Locked labe",
+    "date": "2026-09-06T22:03:38Z",
+    "summary": "## Summary\n\nTeam Access now groups existing permissions into browsing, computer commands, tools, AI setup, and app customization. Administrators can preview this team's choices and review every before/after change for the named team before saving.\n\n## Why\n\nThe previous Locked label covered app capab",
     "url": "https://github.com/different-ai/openwork/pull/4568",
     "source": "github_prs",
     "highlights": [
-      "comments: 14",
+      "comments: 19",
       "pull request",
       "repo: openwork"
     ]
@@ -1452,7 +1452,7 @@
   },
   {
     "title": "[PR] Apr\u00e8s 0.0.4 : reprises Google/local et services publics fran\u00e7ais",
-    "date": "2026-09-06T21:10:19Z",
+    "date": "2026-09-06T21:49:41Z",
     "summary": "La 0.0.4 est fusionn\u00e9e dans `main` (PR #2, `0460534`). Cette PR poursuit le chantier sans changer la version, sans fusion et sans release.\n\n## Comportement livr\u00e9\n\n- Reprises Google/local renforc\u00e9es : identifiant CREATE r\u00e9serv\u00e9 avant l'appel, reprise apr\u00e8s r\u00e9ponse perdue, DELETE r\u00e9essayable sans recr",
     "url": "https://github.com/helfina/Lumyn/pull/3",
     "source": "github_prs",
@@ -1508,6 +1508,66 @@
       "comments: 5",
       "pull request",
       "repo: neurolink"
+    ]
+  },
+  {
+    "title": "[PR] fix(deps): stop both bots proposing the centrally governed framework pins",
+    "date": "2026-09-06T23:34:27Z",
+    "summary": "## The problem\n\n`scripts/align_framework_pins.py` owns five pins restated in **63** requirements files. Its docstring is explicit that one version decision belongs in `CANONICAL` and is applied in a single reviewed pass \u2014 precisely so the estate doesn't regenerate 63 identical PRs and hit the rate l",
+    "url": "https://github.com/Trancendos/Tranc3/pull/1150",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 16",
+      "pull request",
+      "repo: Tranc3"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image amruthpillai/reactive-resume ( v4.4.6 \u2794 v5.3.0 )",
+    "date": "2026-09-06T22:11:51Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.4.6` \u2192 `v5.3.0` |\n\n---\n\n> [!WARNING]\n> ",
+    "url": "https://github.com/returnfloat/homelab/pull/1498",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: homelab"
+    ]
+  },
+  {
+    "title": "[PR] feat(container)!: Update image amruthpillai/reactive-resume (v4.4.5 \u2794 v5.3.0)",
+    "date": "2026-09-06T21:44:22Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [amruthpillai/reactive-resume](https://redirect.github.com/amruthpillai/reactive-resume) | major | `v4.4.5` \u2192 `v5.3.0` |\n\n---\n\n> [!WARNING]\n> ",
+    "url": "https://github.com/neilmfrench/homelab-prod/pull/1149",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: homelab-prod"
+    ]
+  },
+  {
+    "title": "[PR] Update dependency browser-use to v0.1.45 [SECURITY]",
+    "date": "2026-09-06T21:37:03Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [browser-use](https://redire",
+    "url": "https://github.com/AReid987/stellarAgent/pull/168",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: stellarAgent"
+    ]
+  },
+  {
+    "title": "[PR] review + fix: adversarial/lifecycle review, remediation plan, Phases 0\u20135 implemented",
+    "date": "2026-09-06T21:25:02Z",
+    "summary": "## What this PR carries\n\nTwelve commits, in order:\n\n1. **`ADVERSARIAL_REVIEW_2026-09-06.md`** \u2014 the consolidated review (7 surface passes + 6 lifecycle traces; every finding verified against source, several reproduced), plus a triage pointer in `memory-plan/plans/protocol/OUT_OF_SCOPE.md`.\n2. **`REM",
+    "url": "https://github.com/moltyguibros-design/openclaw-node/pull/6",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw-node"
     ]
   }
 ]
