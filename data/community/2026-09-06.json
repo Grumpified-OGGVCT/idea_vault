@@ -516,24 +516,24 @@
   },
   {
     "title": "[PR] fix(security): bound every engine-call wait \u2014 sympy compute-cost gate, provider HTTP timeouts, stats upload cap",
-    "date": "2026-09-06T00:42:03Z",
+    "date": "2026-09-06T09:44:40Z",
     "summary": "## **User description**\nCloses #353\n\nFollow-up scoped out of PR #352, implementing the issue's candidate design (3) \u2014 engine-level wall-clock/resource bounds, the true fix for the common hang shapes. Criteria (1) and (2) were delivered structurally by the per-call executors in #352; this PR pins the",
     "url": "https://github.com/QWED-AI/qwed-verification/pull/354",
     "source": "github_prs",
     "highlights": [
-      "comments: 8",
+      "comments: 10",
       "pull request",
       "repo: qwed-verification"
     ]
   },
   {
     "title": "[PR] Instinct \u2194 Codex: persistent communication channel",
-    "date": "2026-09-06T04:10:04Z",
+    "date": "2026-09-06T09:23:06Z",
     "summary": "[Codex] Shared GitHub mailbox for Instinct, Codex and Grok Bot. Keep this draft PR open; use new top-level Conversation comments.\n\n## Current owner authorization\n\nOn September 6, 2026 UTC, the owner directly instructed Codex to give Instinct full power. The [recorded authorization](https://github.co",
     "url": "https://github.com/Uuriko/dasha-desk/pull/167",
     "source": "github_prs",
     "highlights": [
-      "comments: 334",
+      "comments: 426",
       "pull request",
       "repo: dasha-desk"
     ]
@@ -588,12 +588,12 @@
   },
   {
     "title": "[PR] feat: make Pixel the default ODS agent",
-    "date": "2026-09-06T04:12:15Z",
+    "date": "2026-09-06T08:42:02Z",
     "summary": "## Summary and acceptance target\n\nWork in progress: make Pixel ODS's default owner-agent and conversational portal, with a native interactive preview, useful host/tools/extensions access, safe long-running work, and broad local/remote model flexibility. The acceptance target includes a strong experi",
     "url": "https://github.com/Osmantic/ODS/pull/3385",
     "source": "github_prs",
     "highlights": [
-      "comments: 316",
+      "comments: 318",
       "pull request",
       "repo: ODS"
     ]
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-06T04:31:47Z",
+    "date": "2026-09-06T08:53:38Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -840,7 +840,7 @@
   },
   {
     "title": "[PR] fix(agents): bypass trailing runtime-context carrier relocation for local providers",
-    "date": "2026-09-06T04:26:48Z",
+    "date": "2026-09-06T07:40:08Z",
     "summary": "## Description\r\nBypasses trailing runtime-context carrier relocation for local and self-hosted model backends while preserving tail relocation for cloud providers, the bundled LiteLLM cloud route, cloud models behind local proxies, built-in ollama-cloud, and Ollama cloud models.\r\n\r\n## What Problem T",
     "url": "https://github.com/openclaw/openclaw/pull/132607",
     "source": "github_prs",
@@ -876,8 +876,8 @@
   },
   {
     "title": "[PR] feat(coworker): add the standalone Open Coworker desktop app",
-    "date": "2026-09-06T02:58:52Z",
-    "summary": "## What this delivers\n\nOpen Coworker is a standalone desktop app for a persistent team: coworkers keep their identity and Markdown memory, work in native OpenWork discussions, create documents, take assignments, and own scheduled responsibilities. Group conversations and long-lived Workers use the s",
+    "date": "2026-09-06T07:29:38Z",
+    "summary": "<!-- coworker-async-candidate -->\n## Current asynchronous collaboration candidate\n\nSource: **26fbf8b77de6f3b83a22ee05f1c23a68809a4230**, based on dev **f6f93bdb39dded5ff134b87521778bb96ad25c43**. The intervening installer-workflow contribution was inspected and preserved.\n\n**Passed for the four targ",
     "url": "https://github.com/different-ai/openwork/pull/4330",
     "source": "github_prs",
     "highlights": [
@@ -924,7 +924,7 @@
   },
   {
     "title": "[PR] Everything as a Plugin",
-    "date": "2026-09-06T02:30:49Z",
+    "date": "2026-09-06T06:40:40Z",
     "summary": "# Everything as a Plugin\n\nThis pull request is the structural change that makes the repository's folder\nlayout the architecture, rather than a place the architecture is hidden. The end\nstate is one rule: **the kernel knows about plugins and about nothing else, and\nevery capability veyyon has \u2014 every",
     "url": "https://github.com/santhreal/veyyon/pull/927",
     "source": "github_prs",
@@ -932,6 +932,162 @@
       "comments: 157",
       "pull request",
       "repo: veyyon"
+    ]
+  },
+  {
+    "title": "[PR] fix(quota): Ollama Cloud credential validation and UI decoupling (#2187)",
+    "date": "2026-09-06T10:31:54Z",
+    "summary": "Closes #2187\n\n## Intent\n\nOllama Cloud usage tracking fails with \"Provider not configured\" even after setup. Three root-cause issues:\n\n1. **Credential validation always fails (web runtime)** \u2014 `fetchOllamaCloudUsage` uses `redirect: 'manual'` and treats all 3xx responses as auth failure. ollama.com r",
+    "url": "https://github.com/openchamber/openchamber/pull/2196",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: openchamber"
+    ]
+  },
+  {
+    "title": "[PR] Add Cloud Agent dev environment for the PR triage stack",
+    "date": "2026-09-06T10:21:55Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## What\n\nAdds a repository-managed Cloud Agent environment (`.cursor/`) that makes the `docker compose` stack in this repo runnable end-to-end inside a Cloud Agent VM.\n\nThe whole product is a compose stack (Redpanda broker, Redpanda Connect pipeline, Ollama model,",
+    "url": "https://github.com/pablogd-hashi/rp-ghtriage/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: rp-ghtriage"
+    ]
+  },
+  {
+    "title": "[PR] Upstream sync \u2014 2026-09-06",
+    "date": "2026-09-06T10:05:53Z",
+    "summary": "## Upstream Sync\n\n**New commits from [nyldn/claude-octopus](https://github.com/nyldn/claude-octopus)**\n\n```\n3267de84 chore: release v11.0.1 (#1016)\n9c3e7930 release: v11.0.0 model support, audit hardening, and plugin compatibility (#1015)\n4c299eb3 fix(review): fail closed on incomplete diff snapshot",
+    "url": "https://github.com/AlobarQuest/claude-octopus/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 37",
+      "pull request",
+      "repo: claude-octopus"
+    ]
+  },
+  {
+    "title": "[PR] Customer base: fork main merged forward with upstream v2026.9.2",
+    "date": "2026-09-06T09:49:03Z",
+    "summary": "## Customer base: fork `main` merged forward with upstream openclaw v2026.9.2\n\n**Draft. Do not merge.** Cory's ruling (2026-09-06 03:05Z): the customer base keeps the fork's own\nmain line. This branch is a true `git merge` of upstream tag `v2026.9.2` into fork `main`\n(`71138e06`, #109), followed by ",
+    "url": "https://github.com/BenchAGI/openclaw/pull/125",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] Allow configuring a custom provider endpoint",
+    "date": "2026-09-06T09:48:42Z",
+    "summary": "People keep asking to point SlopShop at their own Ollama / vLLM boxes, so this adds a \"Bring Your Own Model\" panel.\n\n- Settings persist the endpoint URL in localStorage\n- New `/api/providers/probe` handler fetches the URL server-side (avoids CORS on the office network) and returns status, latency an",
+    "url": "https://github.com/fireship-dev/slopshop/pull/12",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: slopshop"
+    ]
+  },
+  {
+    "title": "[PR] Bump Testcontainers.PostgreSql from 3.10.0 to 4.14.0",
+    "date": "2026-09-06T09:47:10Z",
+    "summary": "Updated [Testcontainers.PostgreSql](https://github.com/testcontainers/testcontainers-dotnet) from 3.10.0 to 4.14.0.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Testcontainers.PostgreSql's releases](https://github.com/testcontainers/testcontainers-dotnet/releases)._\n\n## 4.14.0\n\n# What",
+    "url": "https://github.com/frnczkyl/Personal-.Net-Project/pull/11",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Personal-.Net-Project"
+    ]
+  },
+  {
+    "title": "[PR] fix(claude-code): make the Claude Code provider usable in the shipped app",
+    "date": "2026-09-06T10:01:00Z",
+    "summary": "## Summary\n\nFive fixes that together make the `claude-code:<model>` provider work in the shipped desktop app. Each was found by using it and hitting the wall; the last one is the result of an adversarial review of the other four.\n\nThe user-visible symptom was always the same and always useless: *\"So",
+    "url": "https://github.com/tinyhumansai/openhuman/pull/6043",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: openhuman"
+    ]
+  },
+  {
+    "title": "[PR] docs(config): reconcile .env.example and the operator entry points with the code (GH#174)",
+    "date": "2026-09-06T08:37:16Z",
+    "summary": "## **User description**\nCloses #174\n\nDocs and configuration only \u2014 no source, CSV schema or public API changes.\n\n## .env.example\n\n| | keys |\n|---|---|\n| removed (zero references in `src/` or `examples/`) | `MODEL_ROOT`, `LLAMA_EMBEDDING_BIN` |\n| renamed | `EMBEDDING_BACKEND` \u2192 `EMBEDDING_PROVIDER` |",
+    "url": "https://github.com/rmems/corinth-canal/pull/175",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: corinth-canal"
+    ]
+  },
+  {
+    "title": "[PR] \ud83e\uddec Genesis: Self-healing mechanisms added for external APIs",
+    "date": "2026-09-06T08:23:33Z",
+    "summary": "## \ud83e\uddec Self-Healing Architecture Added\n**What:** Implemented `@CircuitBreaker` and `@with_retry_sync` decorators in `backend/core/resilience.py`. Extracted all third-party and local service HTTP calls into wrapped helper functions. Added a new `GET /api/health` status endpoint.\n**Failure scenario prot",
+    "url": "https://github.com/Akullganesh19/CodeKrackers/pull/287",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: CodeKrackers"
+    ]
+  },
+  {
+    "title": "[PR] Nightly review rolling (through 2026-09-06)",
+    "date": "2026-09-06T08:15:06Z",
+    "summary": "## Summary\n\nAutomated nightly review (2026-07-03). Four review passes (bugs, security, UX, quality) across the `acp_adapter`, `agent`, and core modules. Seven fixes applied; several architectural findings deferred for human review.\n\n## Fixes applied\n\n| Severity | File:line | Description |\n|---|---|-",
+    "url": "https://github.com/iamhungree/hermes-agent/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 64",
+      "pull request",
+      "repo: hermes-agent"
+    ]
+  },
+  {
+    "title": "[PR] feat(predictive-studio): the `sequence` problem type \u2014 HMM, end to end",
+    "date": "2026-09-06T07:36:04Z",
+    "summary": "Stacks on #4104. Turns `sequence` from a type the system could not hold into one it can train.\n\n## What this does\n\nThe HMM driver already existed in the sidecar but nothing could ask for it: the database CHECK rejected `'sequence'`, the generated entity's zod union was two values, and the component ",
+    "url": "https://github.com/MemberJunction/MJ/pull/4166",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] docs: refresh README for 1.1, bump versions",
+    "date": "2026-09-06T07:16:57Z",
+    "summary": "README cut from 209 to ~110 lines: links to live demo + releases up top, condensed features, desktop section kept. Version 1.1.0 in package.json (footer auto-updates, test adjusted), tauri.conf.json, Cargo.toml + lock. Changelog gains the 1.1.0 entry. No behavior changes \u2014 full gates green locally (",
+    "url": "https://github.com/cbangera2/BudgetLens/pull/52",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: BudgetLens"
+    ]
+  },
+  {
+    "title": "[PR] feat(quota): add Ollama Cloud quota tracking",
+    "date": "2026-09-06T06:56:46Z",
+    "summary": "## Summary\n\nAdds Ollama Cloud quota/usage tracking to the existing ProviderQuota system, mirroring the established `commandcode` provider pattern.\n\nOllama Cloud has no official usage/quota API (upstream feature requests are still open: [ollama/ollama#15132](https://github.com/ollama/ollama/issues/15",
+    "url": "https://github.com/looplj/axonhub/pull/2413",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: axonhub"
     ]
   }
 ]
