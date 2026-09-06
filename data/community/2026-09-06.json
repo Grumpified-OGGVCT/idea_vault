@@ -180,7 +180,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-09-06T13:56:54Z",
+    "date": "2026-09-06T17:41:34Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -540,7 +540,7 @@
   },
   {
     "title": "[PR] fetch_url tool: read web pages (Markdown / llms.txt first, GitHub via API) in self-hosted modes",
-    "date": "2026-09-06T12:01:19Z",
+    "date": "2026-09-06T18:56:38Z",
     "summary": "Closes #19.\n\nAdds a `fetch_url` function tool for the self-hosted providers (Ollama, vLLM, OpenAI-compatible), whose hosted web search cannot read pages. OpenAI mode is unchanged.\n\n## What it does\n\n- **Markdown first.** `GET` with `Accept: text/markdown, text/plain, text/html`; a Markdown or plain-t",
     "url": "https://github.com/MetricsHub/m8b-slack/pull/21",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-06T15:35:41Z",
+    "date": "2026-09-06T17:41:51Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -780,7 +780,7 @@
   },
   {
     "title": "[PR] home-assistant: 2026.9.0 -> 2026.9.1",
-    "date": "2026-09-06T16:18:26Z",
+    "date": "2026-09-06T17:28:13Z",
     "summary": "Diff: https://github.com/home-assistant/core/compare/2026.9.0...2026.9.1\r\n\r\nChangelog: https://github.com/home-assistant/core/releases/tag/2026.9.1\r\n\r\n<!--\r\n^ Please summarise the changes you have done and explain why they are necessary here ^\r\n\r\nFor package updates please link to a changelog or des",
     "url": "https://github.com/NixOS/nixpkgs/pull/560380",
     "source": "github_prs",
@@ -852,7 +852,7 @@
   },
   {
     "title": "[PR] Document the finance service, and let the docs server find a free port",
-    "date": "2026-09-06T16:30:12Z",
+    "date": "2026-09-06T18:39:58Z",
     "summary": "Started as finance docs. Standing up a fresh finance-plus-ai stack to screenshot them turned up defects at every layer, so this also fixes what it found. One commit.\n\n## Docs\n\nA page per finance tab and per domain, replacing a single analyst page with no way in: index, accounts, bills, projected, bu",
     "url": "https://github.com/lbedner/aegis-stack/pull/1055",
     "source": "github_prs",
@@ -876,12 +876,12 @@
   },
   {
     "title": "[PR] feat(coworker): add the standalone Open Coworker desktop app",
-    "date": "2026-09-06T16:46:36Z",
-    "summary": "<!-- coworker-async-candidate -->\n## Current asynchronous collaboration candidate\n\nSource: **26fbf8b77de6f3b83a22ee05f1c23a68809a4230**, based on dev **f6f93bdb39dded5ff134b87521778bb96ad25c43**. The intervening installer-workflow contribution was inspected and preserved.\n\n**Passed for the four targ",
+    "date": "2026-09-06T18:30:40Z",
+    "summary": "<!-- coworker-async-candidate -->\n## Current asynchronous collaboration delivery\n\nSource **7f0261f3a9f772691cd4526f43e86e268c3065e4**, rebased onto dev **830d62e09d7e6c1546b37262b7b79a446564d9b3**. Existing installer-workflow work and the new upstream managed-policy plugins are preserved.\n\n**Feature",
     "url": "https://github.com/different-ai/openwork/pull/4330",
     "source": "github_prs",
     "highlights": [
-      "comments: 11",
+      "comments: 13",
       "pull request",
       "repo: openwork"
     ]
@@ -1116,12 +1116,12 @@
   },
   {
     "title": "[PR] superfixer pre 1.6 realease",
-    "date": "2026-09-06T13:48:56Z",
+    "date": "2026-09-06T18:25:51Z",
     "summary": "## Purpose\n\nSuperfix branch to land **after** the five open arena PRs (#55, #57, #58, #59, #60) merge. It integrates all five (merged in conflict-safe order `#55 \u2192 #57 \u2192 #60 \u2192 #58 \u2192 #59`) and remediates every finding (Critical \u2192 Nitpick) from the consolidated assertive CodeRabbit-style review, so it",
     "url": "https://github.com/maus-inc/mausVoice/pull/63",
     "source": "github_prs",
     "highlights": [
-      "comments: 55",
+      "comments: 57",
       "pull request",
       "repo: mausVoice"
     ]
@@ -1284,14 +1284,170 @@
   },
   {
     "title": "[PR] Promote stage to main: 2026-08-27 sweep (NVR recordings target, boot-stall netplan fix, agent-loop tool-error logging, Files design constraints)",
-    "date": "2026-09-06T15:05:45Z",
+    "date": "2026-09-06T18:14:54Z",
     "summary": "## Promote `stage` \u2192 `main`\n\n**Scope (measured 2026-09-05 09:1x UTC, `main...stage`):** 513 commits, 1,184 files, +225,535 / \u221215,574, a clean fast-forward (`behind_by 0`). It carries **191 merged PRs** \u2014 78 by stefan-cruceru, 68 by rjouffret, 45 dependabot bumps \u2014 across 155 WARP tickets, and **27 n",
     "url": "https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1798",
     "source": "github_prs",
     "highlights": [
-      "comments: 45",
+      "comments: 46",
       "pull request",
       "repo: droplet-onboard-services"
+    ]
+  },
+  {
+    "title": "[PR] feat(context): progressive authorized content access and evidence",
+    "date": "2026-09-06T18:57:08Z",
+    "summary": "## Summary\n\nImplements the progressive authorized content-access architecture for issue #26645. Model-facing content is preserved through typed references, exact bounded reads, revision-bound continuations, native source segments, central projection, final-wire admission, and explicit rejection inst",
+    "url": "https://github.com/elizaOS/eliza/pull/28432",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: eliza"
+    ]
+  },
+  {
+    "title": "[PR] Clarify team access with grouped controls and change review",
+    "date": "2026-09-06T18:55:43Z",
+    "summary": "## Summary\nTeam Access now groups existing controls into browsing, computer commands, tools, AI setup, and app customization. Administrators see plain-language outcomes, can preview this team's choices, and review each before/after change for the named team before saving.\n\n## Why\nThe old Locked labe",
+    "url": "https://github.com/different-ai/openwork/pull/4568",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: openwork"
+    ]
+  },
+  {
+    "title": "[PR] Restore FileStorageProvider SP SupportsSearch/RequiresOAuth params",
+    "date": "2026-09-06T18:40:00Z",
+    "summary": "## Summary\n- `V202608191200` regenerated `spCreateFileStorageProvider` / `spUpdateFileStorageProvider` without `@SupportsSearch` and `@RequiresOAuth`.\n- Those columns were never dropped: they still exist on `__mj.FileStorageProvider` (v2.111 / v3.2) and as `EntityField` rows with `AllowUpdateAPI = 1",
+    "url": "https://github.com/MemberJunction/MJ/pull/4272",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(sync): update to upstream 7115aca824; fast tests blocked",
+    "date": "2026-09-06T18:39:53Z",
+    "summary": "## What Problem This Solves\n\nThe fork is **271 commits behind** the upstream snapshot captured for this scheduled sync. Automatic publication remains blocked because the required fast test suite is not green.\n\n@spullara \u2014 this remains the single rolling sync candidate. **Fork `main` was not pushed**",
+    "url": "https://github.com/spullara/openclaw/pull/10",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: openclaw"
+    ]
+  },
+  {
+    "title": "[PR] Dockerize the loan triage application",
+    "date": "2026-09-06T18:36:58Z",
+    "summary": "## Summary\n\nPrepares the local agentic loan-triage system for repeatable Docker deployment.\n\n### Changes\n- add a production Python 3.11 Dockerfile running FastAPI as a non-root user\n- add Docker Compose services for FastAPI, Ollama, and automatic model initialization\n- persist Ollama models, the Chr",
+    "url": "https://github.com/gerald-hlabiso/SPS-Corps-2026--Gerald-Monica-Abubakar/pull/3",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: SPS-Corps-2026--Gerald-Monica-Abubakar"
+    ]
+  },
+  {
+    "title": "[PR] Give agents a distinct Corbit avatar and people a pastel fallback (#634)",
+    "date": "2026-09-06T18:22:43Z",
+    "summary": "<!-- CURSOR_AGENT_PR_BODY_BEGIN -->\n## Summary\n\nCloses #634\n\nImplements the Corbit avatar design direction as a reusable, Workbench-owned SVG avatar for agents, and replaces arbitrary-hue generated fills for people without photos with deterministic light-pastel initials fallbacks.\n\n## Key Changes\n\n1",
+    "url": "https://github.com/pratikbuilds/workbench/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: workbench"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-09-06T18:21:37Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-09-06T18:21:36Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-09-06T18:21:24Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] Stage 6: production hardening, container, release 0.1.0",
+    "date": "2026-09-06T18:19:28Z",
+    "summary": "Closes #12.\n\nIn short: the service ships as one container image, protects its endpoints with API keys, logs JSON with request ids, reports readiness, limits uploads, and carries contributor, security, deployment and integration docs. Version 0.1.0. Terraform/AWS deferred by decision; the container i",
+    "url": "https://github.com/daysync/doc-intel/pull/13",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: doc-intel"
+    ]
+  },
+  {
+    "title": "[PR] feat(voice): add local neural speech and settings",
+    "date": "2026-09-06T17:44:30Z",
+    "summary": "## Summary\n\nGive Vera a consistent owner-controlled neural voice and a scalable settings experience while improving everyday conversation management and desktop ergonomics. Pocket TTS now runs behind a provider-neutral API boundary, the universal frontend distinguishes neural voices from device fall",
+    "url": "https://github.com/4romgod/vera/pull/41",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: vera"
+    ]
+  },
+  {
+    "title": "[PR] Day 2: wire FastAPI to local Ollama model via /api/chat endpoint",
+    "date": "2026-09-06T17:42:04Z",
+    "summary": "Wires the FastAPI backend to a locally running Ollama model (qwen3:8b), completing the first end-to-end proof of SOVARA AI's core sovereignty claim: a user prompt is processed entirely on-premise with zero cloud dependency.\r\n\r\nChanges\r\nAdded app/core/config.py \u2014 centralized configuration using pydan",
+    "url": "https://github.com/Chandrakant1210/SOVARA-AI/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: SOVARA-AI"
+    ]
+  },
+  {
+    "title": "[PR] Reform: standby auto-attestation, manageable 3-column dashboard, deterministic offline agent",
+    "date": "2026-09-06T17:14:19Z",
+    "summary": "## What this changes\n\n**1. Standby fixed for good**\n- Putting `GROQ_API_KEY` / `GEMINI_API_KEY` / `OPENROUTER_API_KEY` in `.env` **is** the free-tier attestation: `CLOUD_ENABLED` and the matching `*_FREE_TIER_CONFIRMED` flags switch on automatically in `Settings` validation \u2014 no manual sed. `/api/mo",
+    "url": "https://github.com/cawifefefe/my-jarvis-project/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: my-jarvis-project"
     ]
   }
 ]
