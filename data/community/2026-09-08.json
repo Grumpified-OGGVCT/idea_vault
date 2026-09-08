@@ -276,12 +276,12 @@
   },
   {
     "title": "[BOUNTY] Discovery Mode \u2014 Find Elyan Labs Software, Open PRs, Earn RTC",
-    "date": "2026-09-08T04:37:44Z",
+    "date": "2026-09-08T23:40:26Z",
     "summary": "## Discovery Mode Bounty \u2014 Explore Elyan Labs Software and Contribute\n\n**Difficulty:** Easy to Medium  \n**Starter Reward:** 2 RTC for a valid first discovery claim  \n**PR Reward:** 10 RTC for accepted improvement PRs (scope-dependent)  \n**Pool:** 250 RTC\n\n---\n\n### Goal\nHelp people discover and impro",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/100",
     "source": "github_issues",
     "highlights": [
-      "comments: 128",
+      "comments: 130",
       "state: open",
       "repo: rustchain-bounties"
     ]
@@ -564,7 +564,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-08T21:31:33Z",
+    "date": "2026-09-08T23:46:46Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] Restoring a remote workspace terminal hands it this machine's working directory",
-    "date": "2026-09-08T21:40:06Z",
+    "date": "2026-09-08T23:41:05Z",
     "summary": "Supersedes #8634 because that PR's head is fork-owned and cannot be advanced from the required origin branch. Its review history is preserved there.\n\n## Review comment closeout\n\nAll live review threads are resolved (10/10; no unresolved, non-outdated threads). The actionable findings were addressed ",
     "url": "https://github.com/manaflow-ai/cmux/pull/9855",
     "source": "github_prs",
@@ -780,7 +780,7 @@
   },
   {
     "title": "[PR] chore(deps): bump the all-dependencies group across 1 directory with 22 updates",
-    "date": "2026-09-08T21:22:23Z",
+    "date": "2026-09-08T23:23:07Z",
     "summary": "Updates the requirements on [pydantic](https://github.com/pydantic/pydantic), [anthropic](https://github.com/anthropics/anthropic-sdk-python), [sentence-transformers](https://github.com/huggingface/sentence-transformers), [langchain](https://github.com/langchain-ai/langchain), [langsmith](https://gi",
     "url": "https://github.com/mrveiss/AutoBot-AI/pull/15980",
     "source": "github_prs",
@@ -1020,7 +1020,7 @@
   },
   {
     "title": "[PR] Update reference implementation dependencies (non-major)",
-    "date": "2026-09-08T20:52:54Z",
+    "date": "2026-09-08T22:20:58Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [agent-framework-openai](htt",
     "url": "https://github.com/open-telemetry/semantic-conventions-genai/pull/505",
     "source": "github_prs",
@@ -1284,12 +1284,12 @@
   },
   {
     "title": "[PR] feat(codegen): 100% CodeGen idempotency, field change tracking, and SubtypeSelector",
-    "date": "2026-09-08T21:27:23Z",
+    "date": "2026-09-08T23:45:15Z",
     "summary": "## Summary\n\nThis PR implements **100% CodeGen Idempotency relative to database state**, eliminates metadata and UI churn across SQL Server and PostgreSQL, and adds `Entity.SubtypeSelector` support (plan in `plans/codegen-idempotency-and-field-churn.md`).\n\n### Key Changes:\n\n1. **CodeGen Idempotency (",
     "url": "https://github.com/MemberJunction/MJ/pull/4296",
     "source": "github_prs",
     "highlights": [
-      "comments: 13",
+      "comments: 19",
       "pull request",
       "repo: MJ"
     ]
@@ -1308,7 +1308,7 @@
   },
   {
     "title": "[PR] Add atomic agent prompt submission",
-    "date": "2026-09-08T21:13:25Z",
+    "date": "2026-09-08T23:54:30Z",
     "summary": "## Summary\n\n- add `workspace.agent_submit` and `cmux agent-submit` for definitive, atomic prompt submission to an active agent terminal\n- serialize complete submissions on the app's existing main-queue transaction boundary (FIFO globally, and therefore per workspace) and perform each as one non-susp",
     "url": "https://github.com/manaflow-ai/cmux/pull/9290",
     "source": "github_prs",
@@ -1380,12 +1380,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-09-08T21:34:58Z",
+    "date": "2026-09-08T22:55:39Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 69",
+      "comments: 70",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -1404,7 +1404,7 @@
   },
   {
     "title": "[PR] `Logos`: Drop Ollama support",
-    "date": "2026-09-08T21:31:15Z",
+    "date": "2026-09-08T23:32:35Z",
     "summary": "## What\n\nRemoves Ollama support from all four Logos surfaces, per #778:\n\n**Orchestrator**\n- Deleted `sdi/providers/ollama_provider.py` and `sdi/ollama_facade.py`\n- Removed the `provider_type == \"ollama\"` branches and non-vLLM scheduling paths (`runtime_mode` is now `[\"vllm\"]`; `is_vllm` dropped from",
     "url": "https://github.com/ls1intum/edutelligence/pull/865",
     "source": "github_prs",
@@ -1416,7 +1416,7 @@
   },
   {
     "title": "[PR] `Logos`: Add internal retry mechanism for failed requests",
-    "date": "2026-09-08T21:30:31Z",
+    "date": "2026-09-08T23:31:26Z",
     "summary": "## Summary\n\nResolves #815: requests that fail before their answer is complete are now retried internally instead of being returned raw to the requester.\n\n### Phase 1 \u2014 bounded internal retry (must-have)\n\nA request is re-dispatched inside `_execute_resource_mode` (the single funnel for both proxy and",
     "url": "https://github.com/ls1intum/edutelligence/pull/853",
     "source": "github_prs",
@@ -1452,7 +1452,7 @@
   },
   {
     "title": "[PR] fix(security): close the #4282 role-elevation path on MJ: Roles and MJ: User Roles",
-    "date": "2026-09-08T21:05:18Z",
+    "date": "2026-09-08T22:06:05Z",
     "summary": "**A non-Owner holding `Developer` could grant themselves any role in the system, and mint new roles.** Issue #4260 closed the `User.Type` route to elevated capability; role assignment is MJ's *other* authority mechanism and had no guard at all.\n\nCloses #4282.\n\n## Reproduced first, on the real stack\n",
     "url": "https://github.com/MemberJunction/MJ/pull/4305",
     "source": "github_prs",
@@ -1484,6 +1484,126 @@
       "comments: 0",
       "pull request",
       "repo: minicloud-gitops"
+    ]
+  },
+  {
+    "title": "[PR] Add OIDC sign-in (Google, Microsoft) and decouple auth into account identities",
+    "date": "2026-09-08T23:56:26Z",
+    "summary": "Implements OIDC sign-in (Google, Microsoft) \u2014 issue #274 \u2014 and reworks account authentication so credentials are decoupled from the account.\n\n## Auth model: identities decoupled from accounts\n\nAn account row no longer holds a credential. A password and each linked OIDC provider are stored as separat",
+    "url": "https://github.com/nvisycom/server/pull/284",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: server"
+    ]
+  },
+  {
+    "title": "[PR] OMNIX v3 native rebuild: Office runtime verification and architecture hardening",
+    "date": "2026-09-08T23:55:55Z",
+    "summary": "Controlled OMNIX v3 rebuild on the native VSTO/C#/WPF architecture.\n\nCompleted so far:\n- isolated rebuild branch created from main;\n- post-install verification expanded from Excel-only to Excel + Word + PowerPoint;\n- verifier checks COMAddIns discovery, Connect=True, controlled force-connect diagnos",
+    "url": "https://github.com/ali-shortcuts/OMNIX-v2/pull/46",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: OMNIX-v2"
+    ]
+  },
+  {
+    "title": "[PR] feat(gui): a GPU desktop front end in its own cargo workspace",
+    "date": "2026-09-08T23:55:55Z",
+    "summary": "A GPU desktop front end for veyyon, in its own Cargo workspace under `hosts/gui/`, with the\nengine-side host that serves it.\n\n## What is here\n\nFour crates, each depending only downward: `core` (state, routing, commands, keys, no rendering),\n`kit` (theme tokens, motion owners, primitives), `features`",
+    "url": "https://github.com/santhreal/veyyon/pull/934",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: veyyon"
+    ]
+  },
+  {
+    "title": "[PR] feat(desktop): Codex-style Workx desktop client with live app-server wiring",
+    "date": "2026-09-08T23:54:47Z",
+    "summary": "## What\n\nAdds `workx-desktop/`, a from-scratch Electron desktop client whose UI follows the Codex desktop app and is wired to `workx app-server` over JSON-RPC.\n\n## Stack\n\n- Electron Forge + Vite (matches the Vite + Electron Forge build Codex uses)\n- React 19 + TypeScript\n- Tailwind CSS 4\n- `react-ma",
+    "url": "https://github.com/RonanXiao/workx/pull/35",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: workx"
+    ]
+  },
+  {
+    "title": "[PR] fix(redteam): use scoped defaults for automatic providers",
+    "date": "2026-09-08T23:53:36Z",
+    "summary": "Automatic redteam providers now use the selected task defaults and keep each evaluation\u2019s credentials in scope for the complete provider call. Explicit overrides, calibrated grading models, fresh attack instances, and login-backed Codex authentication remain supported.\n\nThe change also shares Helico",
+    "url": "https://github.com/promptfoo/promptfoo/pull/5493",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 12",
+      "pull request",
+      "repo: promptfoo"
+    ]
+  },
+  {
+    "title": "[PR] feat(whiteboard): host-controllable ToolRoster (P12 / P14 roster half)",
+    "date": "2026-09-08T23:31:52Z",
+    "summary": "First of the whiteboard chrome inputs from the LXP alignment plan (Sidecar PR #837, plan 03).\nAdditive, defaulted to today's rendering, patch changeset on `@memberjunction/ng-whiteboard`.\n\n## The defect\n\nLXP hides five of the eleven tools with CSS. Hiding is not disabling: the keyboard map still\narm",
+    "url": "https://github.com/MemberJunction/MJ/pull/4310",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Final development handoff: six-cycle implementation and review fixes",
+    "date": "2026-09-08T23:31:28Z",
+    "summary": "The user requested completion of the remaining cycles and a final review before handoff. The review found gaps in saved-result handling, conversation capacity recovery, grouped evidence, provider secret wiring and lease expiry during database contention. This candidate corrects those findings and su",
+    "url": "https://github.com/yashumani/talk2data-conversational-intelligence/pull/24",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: talk2data-conversational-intelligence"
+    ]
+  },
+  {
+    "title": "[PR] fix(agent): honest policy rows, job identity by board id, and a usable found-jobs read",
+    "date": "2026-09-08T23:07:32Z",
+    "summary": "Closes the agent-cli policy-table review backlog: eight round-2/round-3 findings on `POLICY` rows, job identity, found-jobs, and dead surface fields, plus a round-9 security fencing gap discovered and fixed along the way. Read-tier classification now matches what each command actually does or can do",
+    "url": "https://github.com/saeedkolivand/ai-job-hunter-app/pull/1182",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: ai-job-hunter-app"
+    ]
+  },
+  {
+    "title": "[PR] feat(nodes): add NVIDIA Nemotron LLM node",
+    "date": "2026-09-08T22:49:52Z",
+    "summary": "Closes #1765\n\n## Summary\n\nAdds `llm_nemotron`, a dedicated LLM node for NVIDIA's **Nemotron** family \u2014 open-weight hybrid Mamba-Transformer reasoning models with up to 1M-token context \u2014 served through NVIDIA's OpenAI-compatible cloud API ([build.nvidia.com](https://build.nvidia.com), `nvapi-` keys)",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/1766",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] feat(coworker): add the standalone Open Coworker desktop app",
+    "date": "2026-09-08T22:47:15Z",
+    "summary": "<!-- coworker-alpha-current -->\n## Published macOS alpha \u2014 September 8\n\n[Open Coworker 0.1.0-alpha.20260908.1](https://github.com/different-ai/openwork/releases/tag/coworker-v0.1.0-alpha.20260908.1) is published for **Mac Apple Silicon**, signed and notarized. Feature source **3a6989aa7f3c70de71c7e6",
+    "url": "https://github.com/different-ai/openwork/pull/4330",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: openwork"
     ]
   }
 ]
