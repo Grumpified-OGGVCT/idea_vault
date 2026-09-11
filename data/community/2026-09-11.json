@@ -144,8 +144,8 @@
   },
   {
     "title": "Update all Micronaut Platform 5.2 projects to Micronaut Core 5.2",
-    "date": "2026-09-11T00:05:17Z",
-    "summary": "Tracking issue for moving every project managed by the Micronaut Platform 5.2 onto **Micronaut Core 5.2.x** (latest: [5.2.0](https://central.sonatype.com/artifact/io.micronaut/micronaut-core-bom/5.2.0), released 2026-09-10; the platform catalog still pins `5.1.14`).\n\n**Progress:** 1/71 projects on c",
+    "date": "2026-09-11T05:29:11Z",
+    "summary": "Tracking issue for moving every project managed by the Micronaut Platform 5.2 onto **Micronaut Core 5.2.x** (latest: [5.2.0](https://central.sonatype.com/artifact/io.micronaut/micronaut-core-bom/5.2.0), released 2026-09-10; the platform catalog still pins `5.1.14`).\n\n**Progress:** 10/71 projects on ",
     "url": "https://github.com/micronaut-projects/micronaut-core/issues/13110",
     "source": "github_issues",
     "highlights": [
@@ -192,19 +192,19 @@
   },
   {
     "title": "\ud83d\udea8 Zero Day Pulse \u2014 Active Vulnerability Tracker",
-    "date": "2026-09-10T20:10:29Z",
+    "date": "2026-09-11T01:47:17Z",
     "summary": "# Zero Day Pulse\n\n> **Generated:** 2026-05-26 14:37 UTC &nbsp;|&nbsp; **Total:** 15 &nbsp;|&nbsp; \ud83d\udd34 KEV: 0 &nbsp;|&nbsp; \ud83d\udfe0 Zero-Day: 13 &nbsp;|&nbsp; \ud83d\udfe1 High: 2 &nbsp;|&nbsp; \u2728 Enriched: 10\n\n---\n\n## 1. \ud83d\udfe0 Zero-Day \u2014 Ransomware Actors Exploit Unpatched SimpleHelp Remote Monitoring and Management to Com",
     "url": "https://github.com/peleduri/zero-day-pulse/issues/7",
     "source": "github_issues",
     "highlights": [
-      "comments: 425",
+      "comments: 426",
       "state: open",
       "repo: zero-day-pulse"
     ]
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-09-10T17:36:45Z",
+    "date": "2026-09-11T01:46:09Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -504,12 +504,12 @@
   },
   {
     "title": "[PR] feat(compress): compression on the wire, with a cache-aware benchmark",
-    "date": "2026-09-11T00:57:51Z",
-    "summary": "## Compression on the wire\r\n\r\nAn optional local proxy that compresses tool results, search output, logs and conversation history on the way to the model, plus the five engines behind it and the benchmark that decides whether any of it was worth building.\r\n\r\nThis is **PR 1 of 4** in the compression p",
+    "date": "2026-09-11T05:34:22Z",
+    "summary": "## Compression on the wire\r\n\r\nAn optional local proxy that compresses tool results, search output, logs and conversation history on the way to the model, plus the five engines behind it and the benchmark that decides whether any of it was worth building.\r\n\r\nThis ships as **one PR**, as directed. I r",
     "url": "https://github.com/ooples/token-optimizer-mcp/pull/382",
     "source": "github_prs",
     "highlights": [
-      "comments: 40",
+      "comments: 44",
       "pull request",
       "repo: token-optimizer-mcp"
     ]
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-11T00:55:45Z",
+    "date": "2026-09-11T05:33:06Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -740,6 +740,246 @@
       "comments: 73",
       "pull request",
       "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "\uce74\ud0c8\ub85c\uadf8\uc5d0\ub9cc \uc788\uace0 \uc544\ubb34\ub3c4 \uc548 \uc77d\ub294 capability \ud50c\ub798\uadf8 3~4\uac1c",
+    "date": "2026-09-11T04:26:06Z",
+    "summary": "#34818 (`supports_reasoning_budget`) \uc744 \ud558\ub2e4\uac00 \uac19\uc740 \ubaa8\uc591\uc774 \ub354 \uc788\ub294 \uac78 \ubd24\uc2b5\ub2c8\ub2e4. **\uc120\uc5b8\ud558\uace0 \ud758\ub824\ubcf4\ub0b4\uace0 \ud654\uba74\uc5d0 \ucc0d\ub294\ub370, \uc694\uccad\uc744 \ub9cc\ub4dc\ub294 \ucf54\ub4dc\uac00 \uc548 \uc77d\ub294** \uac12\ub4e4\uc785\ub2c8\ub2e4.\n\n## \ud655\uc778\ud55c \uac83\n\n`packages/agent_core/lib/` \uc640 `lib/`, `bin/` \uc5d0\uc11c \uac01 \uc774\ub984\uc774 \ub098\uc624\ub294 \uc790\ub9ac\ub97c \uc804\ubd80 \ubcf4\uace0, \ubc30\uad00(\ud30c\uc2f1\u00b7\ubcd1\ud569\u00b7\ubcf5\uc0ac\u00b7JSON \ubc1c\ud589)\uacfc \ud45c\uc2dc\ub97c \ube80 \ub098\uba38\uc9c0\ub97c \uc14c\uc2b5\ub2c8\ub2e4.\n\n| \ud544\ub4dc | \uc694\uccad \uacbd\ub85c\uc5d0\uc11c \uc77d\ub294 \uacf3 | models.toml \uc120\uc5b8 | \uce74\ud0c8\ub85c\uadf8\uc5d0\uc11c \ucf1c\uc9c0\ub294 \ud589 | \ucd1d \ub4f1\uc7a5 |\n|---|---|",
+    "url": "https://github.com/jeong-sik/masc/issues/34819",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 6",
+      "state: open",
+      "repo: masc"
+    ]
+  },
+  {
+    "title": "Readable SSRF via AI Provider Address in dradis-echo (CE Missing Admin Gate)",
+    "date": "2026-09-11T02:02:15Z",
+    "summary": "## Summary\n\nIn Dradis Community Edition, any authenticated user can create an AI provider with an arbitrary\nHTTP/HTTPS address and reassign the built-in Roslin agent to use it. When an AI interaction is\ntriggered, the server makes a POST request to the attacker-supplied URL. Non-2xx responses have\nt",
+    "url": "https://github.com/dradis/dradis-ce/issues/1641",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 1",
+      "state: open",
+      "repo: dradis-ce"
+    ]
+  },
+  {
+    "title": "[PR] feat(maria): build intelligence fabric discovery and MCP trust foundation",
+    "date": "2026-09-11T05:44:54Z",
+    "summary": "## Summary\n\nBuilds the first MARIA \u00d7 SEIS Intelligence Fabric foundation as a stacked draft on top of `feature/maria-runtime-v18-foundation`.\n\nThe branch now covers provider/model discovery metadata, bounded local-runtime discovery, evidence-backed routing/status, repository federation foundations, ",
+    "url": "https://github.com/emirhankudun-ux/SEIS/pull/206",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 883",
+      "pull request",
+      "repo: SEIS"
+    ]
+  },
+  {
+    "title": "[PR] Restoring a remote workspace terminal hands it this machine's working directory",
+    "date": "2026-09-11T05:41:22Z",
+    "summary": "Supersedes #8634 because that PR's head is fork-owned and cannot be advanced from the required origin branch. Its review history is preserved there.\n\n## Review comment closeout\n\nAll live review threads are resolved (10/10; no unresolved, non-outdated threads). The actionable findings were addressed ",
+    "url": "https://github.com/manaflow-ai/cmux/pull/9855",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 33",
+      "pull request",
+      "repo: cmux"
+    ]
+  },
+  {
+    "title": "[PR] feat(agent-daemon): add provider management commands",
+    "date": "2026-09-11T05:40:02Z",
+    "summary": "## Summary\n- add typed `moltnet-agent providers` list, set, discover, remove, login, and logout commands\n- accept API keys only through stdin and preserve omitted provider fields\n- expose Pi's dynamic OAuth providers with terminal prompts, device codes, browser authorization, and cancellation\n- make",
+    "url": "https://github.com/getlarge/themoltnet/pull/2216",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: themoltnet"
+    ]
+  },
+  {
+    "title": "[PR] chore(main): release minicloud-gitops 0.1.2",
+    "date": "2026-09-11T05:37:29Z",
+    "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.1.2](https://github.com/andrelair-platform/minicloud-gitops/compare/minicloud-gitops-v0.1.1...minicloud-gitops-v0.1.2) (2026-09-11)\n\n\n### Features\n\n* **#285:** deploy Retrieva core (backend + MongoDB + Redis) on minicloud ([#870](https://git",
+    "url": "https://github.com/andrelair-platform/minicloud-gitops/pull/711",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: minicloud-gitops"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-discovery): absorb ShadowClaw as the AI Discovery runtime planes",
+    "date": "2026-09-11T05:34:36Z",
+    "summary": "> **Stack note:** This is the base of the three-PR stack. PR #865 is stacked directly on this head, and PR #833 is stacked above #865.\n\n## Problem\n\nDefenseClaw's AI Discovery answers **\"what AI is present on this host?\"** It deliberately does not prove that a detected component is active \u2014 an invent",
+    "url": "https://github.com/cisco-ai-defense/defenseclaw/pull/864",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: defenseclaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update all helm/docker dependencies (2026-07-06)",
+    "date": "2026-09-11T05:34:03Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [garage](https://garagehq.deuxfleurs.fr/) ([source](https://redirect.github.com/datahub-local/garage-helm)) | patch | `0.7.1` \u2192 `0.7.2` |\n| [ghcr.io/browserless/chromium](https://redirect.github.com/browserless/br",
+    "url": "https://github.com/datahub-local/datahub-local-core/pull/220",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: datahub-local-core"
+    ]
+  },
+  {
+    "title": "[PR] fix(core,desktop): make the regional API Line control the provider base URL",
+    "date": "2026-09-11T05:33:50Z",
+    "summary": "### Related Issue\r\n\r\n**Issue:** N/A \u2014 found while manually verifying every configured provider in the desktop app. Small bug fix, no prior discussion.\r\n\r\n### Description\r\n\r\nSelecting a regional **API Line** (Qwen's *International* vs *China* DashScope endpoint) in Settings \u2192 Models had no effect. Se",
+    "url": "https://github.com/cline/cline/pull/14054",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: cline"
+    ]
+  },
+  {
+    "title": "[PR] feat(tools): green-but-disconnected detector (D1-D4) + validate-the-validator suite",
+    "date": "2026-09-11T05:26:03Z",
+    "summary": "## Green-but-disconnected detector\n\nOperator's framing: *\"almost nothing here is unbuilt. It's built, running, reporting healthy, and disconnected.\"* This adds a detector for that class, plus the Known Road to run it.\n\n`pmoves/tools/disconnection_audit.py` \u2014 four detectors, each answering **does it ",
+    "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/3004",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 7",
+      "pull request",
+      "repo: PMOVES.AI"
+    ]
+  },
+  {
+    "title": "[PR] feat(gui): a GPU desktop front end in its own cargo workspace",
+    "date": "2026-09-11T05:13:05Z",
+    "summary": "A native desktop front end for veyyon, drawn through GPUI, with the engine-side host that serves it.\n\n## What is here\n\nEight crates under `crates/`, each depending only downward: `veyyon-desktop-tokens` (the token\nfiles and their loaders), `veyyon-desktop-model` (protocol model, store, reducer, requ",
+    "url": "https://github.com/santhreal/veyyon/pull/934",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: veyyon"
+    ]
+  },
+  {
+    "title": "[PR] fix(agent): preserve message input and avoid idle stdin stalls",
+    "date": "2026-09-11T05:11:31Z",
+    "summary": "## Outcome\n\nInline-message OpenClaw turns dispatch without waiting for an inherited idle stdin pipe. Nonempty message-file arguments retain redirected input. Text and JSON paths share argument interpretation and transport setup, and headless interruption reaches the child while terminal cleanup rema",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/11382",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 30",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump the minor-and-patch group across 1 directory with 11 updates",
+    "date": "2026-09-11T05:13:37Z",
+    "summary": "Bumps the minor-and-patch group with 10 updates in the /a2a/image_service directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langgraph](https://github.com/langchain-ai/langgraph) | `1.2.9` | `1.2.11` |\n| [langchain-core](https://github.com/langchain-ai/langchain) | `1.4.9` | `1.6.1` |\n| [lan",
+    "url": "https://github.com/rossoctl/examples/pull/819",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: examples"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Bump the minor-and-patch group across 1 directory with 8 updates",
+    "date": "2026-09-11T05:11:33Z",
+    "summary": "Bumps the minor-and-patch group with 8 updates in the /a2a/reservation_service directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [langgraph](https://github.com/langchain-ai/langgraph) | `1.2.9` | `1.2.11` |\n| [langchain-core](https://github.com/langchain-ai/langchain) | `1.4.9` | `1.6.1` |\n|",
+    "url": "https://github.com/rossoctl/examples/pull/801",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: examples"
+    ]
+  },
+  {
+    "title": "[PR] fix: PR #717 incelemesindeki P0-P3 bulgular\u0131n\u0131 kapat",
+    "date": "2026-09-11T05:03:17Z",
+    "summary": "## Ama\u00e7\n\nBu PR sentetik bir **inceleme** PR'\u0131 olarak ba\u015flad\u0131 (298 legacy dosya, sentetik base, \"MERGE ETMEY\u0130N\"). Art\u0131k `main` tabanl\u0131, birle\u015ftirilebilir ve **tek commit**'lik bir **d\u00fczeltme** PR'\u0131.\n\n\u0130ncelemede a\u00e7\u0131k kalan bulgular (CodeRabbit + Aikido + Greptile) kod \u00fczerinde tek tek do\u011fruland\u0131. Bulg",
+    "url": "https://github.com/mokaradag/MERGEN-Bilge/pull/717",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 147",
+      "pull request",
+      "repo: MERGEN-Bilge"
+    ]
+  },
+  {
+    "title": "[PR] Provision OpenOSINT's lookup binaries, and correct the stale onboarding docs",
+    "date": "2026-09-11T05:00:04Z",
+    "summary": "Two of the backlog items: finish OpenOSINT's dependency setup through the existing provisioning mechanism, and correct documentation the merged work made stale. No new provisioning framework, no change to the installers or to the verified provider integrations.\n\n## Dependencies\n\nOpenOSINT shells out",
+    "url": "https://github.com/Lyther/agent-surface/pull/42",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: agent-surface"
+    ]
+  },
+  {
+    "title": "[PR] V0.1 Windows: accessible packaged provider/model selection",
+    "date": "2026-09-11T04:58:42Z",
+    "summary": "## Worker 4 \u2014 packaged Windows model selection + startup recovery user journey\n\n**Current base:** `c0ed340c8ee6ddfab011f861f5e6f49017ff5286`\n**Current exact head:** `31580e8460d8075e8e1ee91de44177c50f0940ff`\n\n### Customer-visible candidate\n- semantic keyboard-operable \u201c\u041c\u043e\u0434\u0435\u043b\u044c \u0434\u043b\u044f \u043d\u043e\u0432\u0438\u0445 \u0437\u0430\u0432\u0434\u0430\u043d\u044c\u201d sect",
+    "url": "https://github.com/Oleksii-debug/Nika-Core/pull/663",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 24",
+      "pull request",
+      "repo: Nika-Core"
+    ]
+  },
+  {
+    "title": "[PR] Promote stage to main: 2026-08-27 sweep (NVR recordings target, boot-stall netplan fix, agent-loop tool-error logging, Files design constraints)",
+    "date": "2026-09-11T04:57:28Z",
+    "summary": "## Promote `stage` \u2192 `main`\n\n**Scope (measured 2026-09-05 09:1x UTC, `main...stage`):** 513 commits, 1,184 files, +225,535 / \u221215,574, a clean fast-forward (`behind_by 0`). It carries **191 merged PRs** \u2014 78 by stefan-cruceru, 68 by rjouffret, 45 dependabot bumps \u2014 across 155 WARP tickets, and **27 n",
+    "url": "https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1798",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 61",
+      "pull request",
+      "repo: droplet-onboard-services"
+    ]
+  },
+  {
+    "title": "[PR] fix(common): fall back to a keyless Bedrock embedder on cloud stages with no embedding key",
+    "date": "2026-09-11T04:57:08Z",
+    "summary": "# Pull Request\n\n## Description\n\nCloses #1881.\n\n`defaultEmbeddingModelForEnv` returned `text-embedding-ada-002` for every non-self-host deployment,\nwhether or not a usable embedding key existed. Preview stages carry no `OPENAI_API_KEY` on purpose --\none shared key across every open PR's preview would",
+    "url": "https://github.com/Bike4Mind/bike4mind/pull/2682",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: bike4mind"
+    ]
+  },
+  {
+    "title": "[PR] feat(runtime): OTLP tracing, multi-arch Docker image, env placeholder expansion for MCP/LiteLLM",
+    "date": "2026-09-11T04:53:15Z",
+    "summary": "## Description\n\nAdds OTLP tracing, multi-arch runtime packaging, and safe environment placeholder support for Loom runtime deployments. It also hardens LiteLLM/OpenAI, MCP streamable HTTP sessions, SSE compatibility, tool alias governance, and ephemeral-agent opt-in behavior.\n\nCloses [TER-583](https",
+    "url": "https://github.com/teradata-labs/loom/pull/284",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 10",
+      "pull request",
+      "repo: loom"
     ]
   }
 ]
