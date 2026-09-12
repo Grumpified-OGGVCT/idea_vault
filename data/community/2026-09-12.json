@@ -144,12 +144,12 @@
   },
   {
     "title": "Prefill: no MoE profiler for S>1, and where the time actually goes on Qwen3.8-Flash-Next (M5 Max, measured)",
-    "date": "2026-09-12T15:56:51Z",
+    "date": "2026-09-12T18:49:43Z",
     "summary": "### Summary\n\nOn `ddalcu/Qwen3.8-Flash-Next-MLX-Serve-4bit` (qwen4_exp, 512 experts, top-10, `moe_intermediate_size` 640), prefill reaches **~8 TFLOP/s on an M5 Max whose measured 4-bit GEMM ceiling is ~50 TFLOP/s** \u2014 about 16 % utilisation. The dense 27B on the same machine and server reaches 33 TFL",
     "url": "https://github.com/ddalcu/mlx-serve/issues/366",
     "source": "github_issues",
     "highlights": [
-      "comments: 25",
+      "comments: 27",
       "state: open",
       "repo: mlx-serve"
     ]
@@ -228,7 +228,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-09-12T16:00:28Z",
+    "date": "2026-09-12T18:21:59Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/Zoo-Code-Org/Zoo-Code).\n\n## Deprecations / Repla",
     "url": "https://github.com/Zoo-Code-Org/Zoo-Code/issues/185",
     "source": "github_issues",
@@ -264,7 +264,7 @@
   },
   {
     "title": "Update all Micronaut Platform 5.2 projects to Micronaut Core 5.2",
-    "date": "2026-09-12T16:49:23Z",
+    "date": "2026-09-12T19:02:55Z",
     "summary": "Tracking issue for moving every project managed by the Micronaut Platform 5.2 onto **Micronaut Core 5.2.x** (latest: [5.2.0](https://central.sonatype.com/artifact/io.micronaut/micronaut-core-bom/5.2.0), released 2026-09-10; the platform catalog still pins `5.1.14`).\n\n**Progress:** 66/71 projects on ",
     "url": "https://github.com/micronaut-projects/micronaut-core/issues/13110",
     "source": "github_issues",
@@ -324,12 +324,12 @@
   },
   {
     "title": "[BOUNTY] Discovery Mode \u2014 Find Elyan Labs Software, Open PRs, Earn RTC",
-    "date": "2026-09-10T08:46:04Z",
+    "date": "2026-09-12T17:50:05Z",
     "summary": "## Discovery Mode Bounty \u2014 Explore Elyan Labs Software and Contribute\n\n**Difficulty:** Easy to Medium  \n**Starter Reward:** 2 RTC for a valid first discovery claim  \n**PR Reward:** 10 RTC for accepted improvement PRs (scope-dependent)  \n**Pool:** 250 RTC\n\n---\n\n### Goal\nHelp people discover and impro",
     "url": "https://github.com/Scottcjn/rustchain-bounties/issues/100",
     "source": "github_issues",
     "highlights": [
-      "comments: 133",
+      "comments: 135",
       "state: open",
       "repo: rustchain-bounties"
     ]
@@ -348,12 +348,12 @@
   },
   {
     "title": "AI model selection on OpenRouter for verse parsing \u2014 eval harness sweep of quality+cheap candidates (was: local SOTA LLM)",
-    "date": "2026-09-12T16:32:18Z",
+    "date": "2026-09-12T17:11:04Z",
     "summary": "Scope-gate: user-request\n\n## Motivation (user directive, 2026-08-06)\n\nThe AI assistant's real workload (parsing and structuring song verses / Bible text, simple structured text operations in Slovak) is a relatively simple prompt + text-processing task. Running it through Claude Opus via CLIProxyAPI ",
     "url": "https://github.com/zbynekdrlik/presenter/issues/662",
     "source": "github_issues",
     "highlights": [
-      "comments: 41",
+      "comments: 45",
       "state: open",
       "repo: presenter"
     ]
@@ -528,12 +528,12 @@
   },
   {
     "title": "[PR] fix: PR #717 incelemesindeki a\u00e7\u0131k bulgular\u0131 kapat",
-    "date": "2026-09-12T16:51:20Z",
+    "date": "2026-09-12T18:59:14Z",
     "summary": "## Ama\u00e7\n\nBu PR sentetik bir **inceleme** PR'\u0131 olarak ba\u015flad\u0131 (298 legacy dosya, sentetik base, \"MERGE ETMEY\u0130N\"). Art\u0131k `main` tabanl\u0131, birle\u015ftirilebilir ve **tek commit**'lik bir **d\u00fczeltme** PR'\u0131.\n\n\u0130ncelemede a\u00e7\u0131k kalan bulgular (CodeRabbit + Aikido + Greptile) kod \u00fczerinde tek tek do\u011fruland\u0131. Bulg",
     "url": "https://github.com/mokaradag/MERGEN-Bilge/pull/717",
     "source": "github_prs",
     "highlights": [
-      "comments: 186",
+      "comments: 190",
       "pull request",
       "repo: MERGEN-Bilge"
     ]
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] fix(embeddings): fall back to a keyless Bedrock embedder when no provider credential resolves",
-    "date": "2026-09-12T16:46:55Z",
+    "date": "2026-09-12T18:46:42Z",
     "summary": "# Pull Request\n\n## Description\n\nCloses #1881.\n\nPreview stages carry no OpenAI key on purpose -- one shared key across every open PR's preview would\nburn embedding spend continuously -- so on a preview `defaultEmbeddingModel` named a model the stage\ncould never reach: every embedding path threw `OPEN",
     "url": "https://github.com/Bike4Mind/bike4mind/pull/2682",
     "source": "github_prs",
@@ -612,7 +612,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-12T16:46:21Z",
+    "date": "2026-09-12T19:01:55Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -672,7 +672,7 @@
   },
   {
     "title": "[PR] chore(main): release minicloud-gitops 0.1.2",
-    "date": "2026-09-12T13:00:23Z",
+    "date": "2026-09-12T18:42:23Z",
     "summary": ":robot: I have created a release *beep* *boop*\n---\n\n\n## [0.1.2](https://github.com/andrelair-platform/minicloud-gitops/compare/minicloud-gitops-v0.1.1...minicloud-gitops-v0.1.2) (2026-09-12)\n\n\n### Features\n\n* **#285:** deploy Retrieva core (backend + MongoDB + Redis) on minicloud ([#870](https://git",
     "url": "https://github.com/andrelair-platform/minicloud-gitops/pull/711",
     "source": "github_prs",
@@ -696,12 +696,12 @@
   },
   {
     "title": "[PR] feat(ai): GPT-Live-1 integration, cross-modality personas, and modality inheritance",
-    "date": "2026-09-12T16:21:35Z",
+    "date": "2026-09-12T19:01:50Z",
     "summary": "## Overview\nImplements OpenAI **GPT-Live 1** integration, real-time driver architecture, cross-modality AI Persona catalog, and modality inheritance across MemberJunction.\n\nCompanion plans:\n- [`plans/realtime/gpt-live-1.md`](plans/realtime/gpt-live-1.md) (Revision 2 \u2014 dual delegation, client/respons",
     "url": "https://github.com/MemberJunction/MJ/pull/4397",
     "source": "github_prs",
     "highlights": [
-      "comments: 90",
+      "comments: 102",
       "pull request",
       "repo: MJ"
     ]
@@ -780,12 +780,12 @@
   },
   {
     "title": "[PR] fix(check): allowlist the pacman container post-transaction hook wrapper error",
-    "date": "2026-09-12T09:03:25Z",
+    "date": "2026-09-12T18:55:29Z",
     "summary": "## Summary\n\n**What changed.** Three edits, all in `candy/plugin-check/bed_diagnostics.go`, plus tests:\n\n1. **`pacman-post-transaction-hook-container-systemd`** \u2014 a narrow, CONDITIONAL allowlist entry for the in-container pacman post-transaction hook wrapper error the scanner scored FATAL (batch `che",
     "url": "https://github.com/opencharly/plugin-check/pull/45",
     "source": "github_prs",
     "highlights": [
-      "comments: 4",
+      "comments: 13",
       "pull request",
       "repo: plugin-check"
     ]
@@ -828,7 +828,7 @@
   },
   {
     "title": "[PR] chore(deps): update Non-critical containers",
-    "date": "2026-09-12T13:07:06Z",
+    "date": "2026-09-12T18:00:01Z",
     "summary": "This PR contains the following updates:\n\n| Package | Update | Change |\n|---|---|---|\n| [docker.io/amir20/dozzle](https://redirect.github.com/amir20/dozzle) | minor | `v10.7.4` \u2192 `v10.10.0` |\n| [ghcr.io/flaresolverr/flaresolverr](https://redirect.github.com/FlareSolverr/FlareSolverr) | patch | `v3.5.",
     "url": "https://github.com/fbosch/nixos/pull/231",
     "source": "github_prs",
@@ -948,7 +948,7 @@
   },
   {
     "title": "[PR] `Logos`: Add internal retry mechanism for failed requests",
-    "date": "2026-09-12T15:39:37Z",
+    "date": "2026-09-12T17:40:08Z",
     "summary": "## Summary\n\nResolves #815: requests that fail before their answer is complete are now retried internally instead of being returned raw to the requester.\n\n### Phase 1 \u2014 bounded internal retry (must-have)\n\nA request is re-dispatched inside `_execute_resource_mode` (the single funnel for both proxy and",
     "url": "https://github.com/ls1intum/edutelligence/pull/853",
     "source": "github_prs",
@@ -996,7 +996,7 @@
   },
   {
     "title": "[PR] feat: conversion matrix, reference tools, and equation/table exports",
-    "date": "2026-09-12T12:40:39Z",
+    "date": "2026-09-12T18:02:46Z",
     "summary": "This PR turns Tools into a full page and adds 22 focused, ad hoc conversion tools. A conversion can be copied or downloaded without creating a project. When the result is useful as an Oleafly document or asset, the tool also offers the relevant project action.\n\n## What is included\n\n| Area | Tools |\n",
     "url": "https://github.com/Oleafly/Oleafly/pull/161",
     "source": "github_prs",
@@ -1116,7 +1116,7 @@
   },
   {
     "title": "[PR] Beta Release: OpsGraph",
-    "date": "2026-09-12T16:43:51Z",
+    "date": "2026-09-12T18:57:09Z",
     "summary": "OpsGraph adds a self-hosted, single-operator PostgreSQL investigation workspace with guided source/model setup, local Ollama support, structured probing, durable runs and backend progress. Users can inspect cited SQL and records, export evidence, ask follow-ups and retry explicitly. Apache-2.0 and e",
     "url": "https://github.com/Arittra-Bag/opsgraph/pull/1",
     "source": "github_prs",
@@ -1208,6 +1208,126 @@
       "comments: 1",
       "pull request",
       "repo: AboutMe"
+    ]
+  },
+  {
+    "title": "[PR] refactor: retire inbound connectors and approval notifications",
+    "date": "2026-09-12T19:02:55Z",
+    "summary": "## First code-retirement slice: inbound connectors and notifications\n\nOrka is the platform. This PR removes the custom inbound webhook/A2A connector and approval-notification runtime. The model seam remains a bridge; migration still leaves the application's Deployment owner-managed. Internal plane p",
+    "url": "https://github.com/kaimahi-agents/kaimahi/pull/183",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kaimahi"
+    ]
+  },
+  {
+    "title": "[PR] Detect local AI runtimes that require an API key",
+    "date": "2026-09-12T19:01:20Z",
+    "summary": "## Why\n\nThe local AI scan registered only runtimes that answer an unauthenticated probe, so any runtime requiring a key was discarded along with a port that had nothing on it at all. This is not a corner case \u2014 vLLM takes `--api-key` and an MLX server requires one by default.\n\nOn the verification ma",
+    "url": "https://github.com/errand-ai/errand-ai/pull/259",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: errand-ai"
+    ]
+  },
+  {
+    "title": "[PR] Security hardening: make the privacy claim enforceable",
+    "date": "2026-09-12T18:59:34Z",
+    "summary": "# Security hardening: make the privacy claim enforceable\n\nCloses the findings from a security review of `8e7388c`. The README said *\"nothing leaves your machine or network\"*; nothing enforced it, and three separate mechanisms would each have carried page images off-box. This makes the claim a proper",
+    "url": "https://github.com/w512/Local-OCR/pull/4",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Local-OCR"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai): AI usage analytics PR1 \u2014 foundation, guides, and guardrails (#4396)",
+    "date": "2026-09-12T18:55:03Z",
+    "summary": "### Summary\n\nThis is **PR1** of the AI Usage Analytics overhaul implementing GitHub issue **MemberJunction/MJ#4396** (\"AI usage analytics: make cost/token reporting trustworthy, then make it sliceable\"), following the build plan at `plans/ai-usage-analytics.md`.\n\nPR1 establishes the architectural fo",
+    "url": "https://github.com/MemberJunction/MJ/pull/4402",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Fix Chat provider compatibility and config persistence",
+    "date": "2026-09-12T18:53:59Z",
+    "summary": "Chat defaults could follow the pipeline's independent framework, Hermes custom accounts were written outside its provider schema, and native OpenAI API choices were filtered out. Chat now resolves the running broker, preserves exact account identities, configures GLM API/Coding, Moonshot and Ollama ",
+    "url": "https://github.com/exploitintel/eip-cve-public-v4/pull/159",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: eip-cve-public-v4"
+    ]
+  },
+  {
+    "title": "[PR] feat(ollama): session/weekly/cost-period reset gauge parity",
+    "date": "2026-09-12T18:30:33Z",
+    "summary": "Brings the Ollama Cloud usage gauge to reset-countdown/elapsed-stripe parity with Claude/Codex, per `_pending/v14b_briefs/04_OLLAMA_GAUGE.md`.\n\n## The 6 numbered steps\n\n1. **costPeriod stripe (zero risk, no cookie)** -- `activity.period.starting_at/ending_at` from the account-usage API map into a Co",
+    "url": "https://github.com/Yogitmeister/nimbalyst/pull/38",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: nimbalyst"
+    ]
+  },
+  {
+    "title": "[PR] feat(cli): merge standalone CLI and account login",
+    "date": "2026-09-12T18:21:43Z",
+    "summary": "## Summary\n- merge the standalone `langtools` CLI work and the OpenAI account-login/Codex bridge into one branch\n- preserve the current CLI entrypoint and recent UX/reliability fixes while integrating auth/account-session support\n- land the follow-up merge fixes that reconnected top-level auth subco",
+    "url": "https://github.com/rchatham/LangTools.swift/pull/37",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: LangTools.swift"
+    ]
+  },
+  {
+    "title": "[PR] feat: local/hybrid voice pipeline with Voxtype, configurable LLMs and Piper",
+    "date": "2026-09-12T18:11:46Z",
+    "summary": "## Summary\n\nAdd an opt-in **ears \u2192 brain \u2192 mouth** pipeline alongside the existing integrated OpenAI Realtime mode. Existing configurations continue to select Realtime; `main` is not changed by this PR.\n\n```text\nVoxtype / transcription API\n  \u2192 configured text LLM\n  \u2192 existing Executor + desktop poli",
+    "url": "https://github.com/MarlonPassos-git/omarchy-voice/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: omarchy-voice"
+    ]
+  },
+  {
+    "title": "[PR] feat(providers): add native Hailo-Ollama support",
+    "date": "2026-09-12T18:04:06Z",
+    "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
+    "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 74",
+      "pull request",
+      "repo: zeroclaw"
+    ]
+  },
+  {
+    "title": "[PR] fix(test): isolate provider fixtures and close every owned resource",
+    "date": "2026-09-12T17:49:35Z",
+    "summary": "Provider fixtures inherited live LAN/Chroma/quota fallbacks and could reconnect after their listeners closed. This made a clean sandbox run unreliable and left session files outside the fixture's temporary directory.\n\nThis PR gives the existing HTTP fixtures explicit local endpoints and scoped Undic",
+    "url": "https://github.com/open-hax/proxx/pull/444",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 13",
+      "pull request",
+      "repo: proxx"
     ]
   }
 ]
