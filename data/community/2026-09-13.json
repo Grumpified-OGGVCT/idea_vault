@@ -144,12 +144,12 @@
   },
   {
     "title": "Label audit (unverified): open tickets tagged duplicate or invalid",
-    "date": "2026-09-13T05:37:26Z",
+    "date": "2026-09-13T21:11:43Z",
     "summary": "This is a **label audit**, not a close list.\n\n`duplicate` / `invalid` on this repo is mostly from the alt-glitch triage bot. **Those labels were not re-validated before this issue was opened.** A label is a retrieval hint, not a disposition. Do not bulk-close from this table.\n\nWhat was actually chec",
     "url": "https://github.com/NousResearch/hermes-agent/issues/109552",
     "source": "github_issues",
     "highlights": [
-      "comments: 16",
+      "comments: 17",
       "state: open",
       "repo: hermes-agent"
     ]
@@ -504,7 +504,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-13T20:31:45Z",
+    "date": "2026-09-13T22:46:33Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -576,12 +576,12 @@
   },
   {
     "title": "[PR] fix(embeddings): fall back to a keyless Bedrock embedder when no provider credential resolves",
-    "date": "2026-09-13T20:38:51Z",
+    "date": "2026-09-13T22:47:18Z",
     "summary": "# Pull Request\n\n## Description\n\nCloses #1881.\n\nPreview stages carry no OpenAI key on purpose -- one shared key across every open PR's preview would\nburn embedding spend continuously -- so on a preview `defaultEmbeddingModel` named a model the stage\ncould never reach: every embedding path threw `OPEN",
     "url": "https://github.com/Bike4Mind/bike4mind/pull/2682",
     "source": "github_prs",
     "highlights": [
-      "comments: 9",
+      "comments: 10",
       "pull request",
       "repo: bike4mind"
     ]
@@ -791,8 +791,8 @@
     ]
   },
   {
-    "title": "[PR] fix: PR #717 incelemesindeki a\u00e7\u0131k bulgular\u0131 kapat",
-    "date": "2026-09-13T19:55:58Z",
+    "title": "[PR] fix: inceleme bulgular\u0131n\u0131 kapat (dosya deposu, Bilge Yola\u00e7, kimlik, kodlama)",
+    "date": "2026-09-13T21:56:34Z",
     "summary": "## Ama\u00e7\n\nBu PR sentetik bir **inceleme** PR'\u0131 olarak ba\u015flad\u0131 (298 legacy dosya, sentetik base, \"MERGE ETMEY\u0130N\"). Art\u0131k `main` tabanl\u0131, birle\u015ftirilebilir ve **tek commit**'lik bir **d\u00fczeltme** PR'\u0131d\u0131r.\n\n\u0130ncelemede a\u00e7\u0131k kalan bulgular (CodeRabbit + Aikido + Greptile) kod \u00fczerinde tek tek do\u011fruland\u0131. B",
     "url": "https://github.com/mokaradag/MERGEN-Bilge/pull/717",
     "source": "github_prs",
@@ -804,7 +804,7 @@
   },
   {
     "title": "[PR] chore(deps): update dependency org.mock-server:mockserver-client-java to v7.6.0",
-    "date": "2026-09-13T16:27:08Z",
+    "date": "2026-09-13T21:04:43Z",
     "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Adoption](https://docs.renovatebot.com/merge-confidence/) | [Passing](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) ",
     "url": "https://github.com/PlaytikaOSS/testcontainers-spring-boot/pull/3231",
     "source": "github_prs",
@@ -876,7 +876,7 @@
   },
   {
     "title": "[PR] `Logos`: Add internal retry mechanism for failed requests",
-    "date": "2026-09-13T19:48:00Z",
+    "date": "2026-09-13T22:18:20Z",
     "summary": "## Summary\n\nResolves #815: requests that fail before their answer is complete are now retried internally instead of being returned raw to the requester.\n\n### Phase 1 \u2014 bounded internal retry (must-have)\n\nA request is re-dispatched inside `_execute_resource_mode` (the single funnel for both proxy and",
     "url": "https://github.com/ls1intum/edutelligence/pull/853",
     "source": "github_prs",
@@ -912,7 +912,7 @@
   },
   {
     "title": "[PR] Promote stage to main: 2026-08-27 sweep (NVR recordings target, boot-stall netplan fix, agent-loop tool-error logging, Files design constraints)",
-    "date": "2026-09-13T12:58:08Z",
+    "date": "2026-09-13T20:58:51Z",
     "summary": "## Promote `stage` \u2192 `main`\n\n**Scope (measured 2026-09-05 09:1x UTC, `main...stage`):** 513 commits, 1,184 files, +225,535 / \u221215,574, a clean fast-forward (`behind_by 0`). It carries **191 merged PRs** \u2014 78 by stefan-cruceru, 68 by rjouffret, 45 dependabot bumps \u2014 across 155 WARP tickets, and **27 n",
     "url": "https://github.com/DropletByWarpLab/droplet-onboard-services/pull/1798",
     "source": "github_prs",
@@ -1224,7 +1224,7 @@
   },
   {
     "title": "[PR] fix(codegen, db-auto-doc): create TransitiveView bridge views on PostgreSQL",
-    "date": "2026-09-13T16:07:13Z",
+    "date": "2026-09-13T22:58:55Z",
     "summary": "Fixes #4409\n\n## Summary\n- **CodeGen:** organic-key `TransitiveView` bridge views were created with a hardcoded SQL Server `CREATE OR ALTER VIEW`, which PostgreSQL rejects. The failure is caught per key and logged, so CodeGen reported success while both the view and the organic key it backs were miss",
     "url": "https://github.com/MemberJunction/MJ/pull/4443",
     "source": "github_prs",
@@ -1236,12 +1236,12 @@
   },
   {
     "title": "[PR] feat(providers): add native Hailo-Ollama support",
-    "date": "2026-09-13T19:12:03Z",
+    "date": "2026-09-13T22:24:08Z",
     "summary": "## Summary\n\n- **Base branch:** `master` (all contributions)\n- **What changed and why:**\n  - Adds an opt-in typed `[providers.models.hailo_ollama.<alias>]` provider for Hailo-Ollama 0.5.1 native `/api/tags` and non-streaming `/api/chat`.\n  - Keeps Hailo-specific request shaping, text-only capability ",
     "url": "https://github.com/zeroclaw-labs/zeroclaw/pull/9109",
     "source": "github_prs",
     "highlights": [
-      "comments: 75",
+      "comments: 76",
       "pull request",
       "repo: zeroclaw"
     ]
@@ -1344,7 +1344,7 @@
   },
   {
     "title": "[PR] [feat]: Add Tencent TokenHub (tencent) provider",
-    "date": "2026-09-13T19:21:40Z",
+    "date": "2026-09-13T22:29:12Z",
     "summary": "## Summary\n\nAdds **Tencent TokenHub** (`tencent`, https://tokenhub-intl.tencentcloudmaas.com) as a first-class provider. Tencent TokenHub exposes both an OpenAI-compatible Chat Completions API and an Anthropic-compatible Messages API from the same host, so the provider reuses Bifrost's shared OpenAI",
     "url": "https://github.com/maximhq/bifrost/pull/7124",
     "source": "github_prs",
@@ -1352,6 +1352,138 @@
       "comments: 2",
       "pull request",
       "repo: bifrost"
+    ]
+  },
+  {
+    "title": "[PR] fix(providers): close the recorded provider-campaign follow-ups",
+    "date": "2026-09-13T23:00:34Z",
+    "summary": "## Summary\n\nA full audit of the three-week provider campaign surfaced a list of defects that had been written down during the work and never scheduled. Twenty-one were re-scoped against current `release` before any code was touched. Three turned out to be already fixed and were left alone, including",
+    "url": "https://github.com/juspay/neurolink/pull/1649",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 14",
+      "pull request",
+      "repo: neurolink"
+    ]
+  },
+  {
+    "title": "[PR] fix(security): H3/H4/M1/M2/M4/H2 client IP, spend caps, team-role, backups, tenant-table guard",
+    "date": "2026-09-13T22:54:22Z",
+    "summary": "## Summary\n\nFixes a batch of confirmed findings from the two independent security audits of 2026-09-13 (`docs/security/audit-2026-09-13-claude.md`, `docs/security/audit-2026-09-13-codex.md`). Rules decide, fix at the source, no hardcoded numbers in product code \u2014 same conventions as the rest of the ",
+    "url": "https://github.com/DMPResearch/flowstarter/pull/141",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: flowstarter"
+    ]
+  },
+  {
+    "title": "[PR] feat(mobile): Phase 4 \u2014 v6 completion, Realtime Co-Agents, and the app-host architecture",
+    "date": "2026-09-13T22:51:24Z",
+    "summary": "> **Draft.** Opened early so the plan can be reviewed before the implementation lands on top of it.\n> Depends on #4456 (the realtime runtime extraction) for the realtime workstream; everything else is independent.\n\n## Commit 1 \u2014 the plan (this is what's up for review now)\n\nTwo documents under `plans",
+    "url": "https://github.com/MemberJunction/MJ/pull/4459",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Integrate NetClaw into Omarchy with Light and Full setup",
+    "date": "2026-09-13T22:40:11Z",
+    "summary": "# Integrate NetClaw into Omarchy with Light and Full setup\n\nCapability descriptions below refer to the pinned upstream catalog; tested behavior and remaining validation are identified separately.\n\n## Recorded demonstration\n\n[Watch the recorded Omarchy + NetClaw demonstration on YouTube](https://yout",
+    "url": "https://github.com/omacom/omarchy/pull/11216",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: omarchy"
+    ]
+  },
+  {
+    "title": "[PR] MARIA \u00d7 SEIS v4 platform foundation",
+    "date": "2026-09-13T22:39:51Z",
+    "summary": "## MARIA \u00d7 SEIS \u2014 4.0.0-alpha.10 + core hardening\n\nThis line keeps alpha.10's real **loopback OpenAI-compatible transport acceptance path** and transport-vs-outcome verification boundary, then adds bounded recovery-capacity, plugin-lifecycle, native-Ollama transport readiness and MCP result-compatib",
+    "url": "https://github.com/emirhankudun-ux/SEIS/pull/226",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 301",
+      "pull request",
+      "repo: SEIS"
+    ]
+  },
+  {
+    "title": "[PR] feat(copilot): I3a \u2014 the grounded live-insight pipeline",
+    "date": "2026-09-13T22:33:37Z",
+    "summary": "## Description\n\nThe first model call in EPIC I. `copilot::insight` takes the I2 rolling window plus the I4a mode and produces one grounded answer for one of the four live actions \u2014 **with no UI and no Tauri command**; I3b adds those. Nothing in this slice is reachable from the app yet.\n\nIt is shaped",
+    "url": "https://github.com/aydogandagidir/mityu/pull/44",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: mityu"
+    ]
+  },
+  {
+    "title": "[PR] fix(rooms): wire the validator that was marked DONE and never ran",
+    "date": "2026-09-13T22:25:07Z",
+    "summary": "## A spec marked DONE that nothing ran\n\n`ROOM_MANIFEST_CONTRACT.md:362` records the room smoke path as **DONE**, struck through, naming the script:\n\n> 5. ~~Add one smoke path that loads a manifest and verifies app routes, notebook refs, and skill bindings resolve.~~ **DONE \u2014 `validate_room_manifests",
+    "url": "https://github.com/POWERFULMOVES/PMOVES.AI/pull/2992",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: PMOVES.AI"
+    ]
+  },
+  {
+    "title": "[PR] Update Renovatebot Gradle Updates (major)",
+    "date": "2026-09-13T22:01:45Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [com.nimbusds:nimbus-jose-jw",
+    "url": "https://github.com/Consensys-Incorporated/web3signer/pull/1194",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: web3signer"
+    ]
+  },
+  {
+    "title": "[PR] Fix Ollama Cloud routing and XML directive parsing",
+    "date": "2026-09-13T21:54:08Z",
+    "summary": "Focused PR containing only the routing/parser fixes from tonight.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added Telegram messaging, setup, update polling, and default chat configuration.\n  * Added a browser-based ch",
+    "url": "https://github.com/ebey317/master-ai-cli/pull/2",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 15",
+      "pull request",
+      "repo: master-ai-cli"
+    ]
+  },
+  {
+    "title": "[PR] refactor(realtime): extract the session runtime out of Angular into @memberjunction/realtime-runtime",
+    "date": "2026-09-13T21:33:01Z",
+    "summary": "## TL;DR\n\n`RealtimeSessionService` is 2,768 lines of realtime co-agent orchestration whose **entire Angular surface is two lines** and whose **entire DOM surface is one line**. It moves to a new pure-TypeScript package so hosts other than Angular \u2014 starting with the React Native app \u2014 can drive a re",
+    "url": "https://github.com/MemberJunction/MJ/pull/4456",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] docs: complete the documentation revamp \u2014 consolidated tree, schemas + CI gates, node migration, new site",
+    "date": "2026-09-13T21:30:27Z",
+    "summary": "## Summary\n\nThis branch is the full documentation revamp, landed as one line of work: every hand-written doc consolidated into a single top-level `docs/` tree, node and client docs brought under enforced schemas with builder gates, all node READMEs migrated, the Docusaurus site restyled and restruct",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/2139",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: rocketride-server"
     ]
   }
 ]
