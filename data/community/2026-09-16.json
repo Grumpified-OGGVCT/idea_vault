@@ -192,12 +192,12 @@
   },
   {
     "title": "\ud83d\ude4c OpenSuperWhisper, continued \u2014 thank you & call for collaborators",
-    "date": "2026-09-16T06:23:04Z",
+    "date": "2026-09-16T18:57:09Z",
     "summary": "Hi everyone \ud83d\udc4b\n\nOpenSuperWhisper has been quiet for a little while, so we (the **My-Monkey** collective) started a community fork to keep it moving \u2014 landing the pending contributions, fixing open issues, and adding features. This is meant as a friendly continuation, with full credit to the original ",
     "url": "https://github.com/my-monkeys/OpenSuperWhisper/issues/1",
     "source": "github_issues",
     "highlights": [
-      "comments: 15",
+      "comments: 16",
       "state: open",
       "repo: OpenSuperWhisper"
     ]
@@ -576,7 +576,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-16T16:02:36Z",
+    "date": "2026-09-16T19:46:43Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -648,7 +648,7 @@
   },
   {
     "title": "[PR] fix(sessions): gate session-event operational spend behind a credit pre-flight",
-    "date": "2026-09-16T16:07:50Z",
+    "date": "2026-09-16T19:47:35Z",
     "summary": "# Pull Request\n\n## Description\n\nCloses #1852.\n\n`recordSessionOperationalUsage` passes the full billing repo set, so it clears the deduct gate in `recordOperationalUsage` and is one of only two debit-capable callers of it. The other (`pages/api/data-lakes/semantic-search`) got its pre-flight in #2142",
     "url": "https://github.com/Bike4Mind/bike4mind/pull/2727",
     "source": "github_prs",
@@ -780,7 +780,7 @@
   },
   {
     "title": "[PR] Improve memory reliability, evidence quality, and developer workflows",
-    "date": "2026-09-16T16:24:08Z",
+    "date": "2026-09-16T19:14:55Z",
     "summary": "PRME accepted events and derived memory could previously diverge after partial failures, retrieval evidence was not fully replayable, and benchmark adapters did not provide a trustworthy basis for memory-quality decisions. This branch makes ingestion and organizer publication recoverable, strengthen",
     "url": "https://github.com/dwamianm/prism/pull/74",
     "source": "github_prs",
@@ -828,12 +828,12 @@
   },
   {
     "title": "[PR] chore(deps): update OpenClaw to 2026.9.1",
-    "date": "2026-09-16T10:56:10Z",
+    "date": "2026-09-16T19:45:01Z",
     "summary": "## Outcome\n\nUpdates the managed OpenClaw runtime from 2026.7.1 to 2026.9.1. The change carries the new release through the image build, runtime compatibility patches, reviewed dependency and lifecycle policy, optional-plugin integrity pins, tests, and Pi qualification evidence.\n\n## Why\n\nNemoClaw nee",
     "url": "https://github.com/NVIDIA/NemoClaw/pull/11105",
     "source": "github_prs",
     "highlights": [
-      "comments: 68",
+      "comments: 70",
       "pull request",
       "repo: NemoClaw"
     ]
@@ -924,7 +924,7 @@
   },
   {
     "title": "[PR] fix(deps): update all non-major dependencies",
-    "date": "2026-09-16T10:55:09Z",
+    "date": "2026-09-16T19:35:02Z",
     "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) | Type | Update |\n|---|---|---|---|---|---|\n| [@as",
     "url": "https://github.com/mregni/BoardGameTracker/pull/240",
     "source": "github_prs",
@@ -1080,12 +1080,12 @@
   },
   {
     "title": "[PR] fix(providers): normalize native Gemini media data",
-    "date": "2026-09-16T16:24:07Z",
+    "date": "2026-09-16T19:07:27Z",
     "summary": "## Summary\n- Normalize native Gemini/Vertex inline media to raw base64 while retaining declared MIME types and M4A provenance for text prompts.\n- Cover native/text reuse, uppercase M4A, WAV, absent context and malformed data URLs. Restores compatibility needed by promptfoo/promptfoo-cloud#4544.\n\n## ",
     "url": "https://github.com/promptfoo/promptfoo/pull/10950",
     "source": "github_prs",
     "highlights": [
-      "comments: 20",
+      "comments: 24",
       "pull request",
       "repo: promptfoo"
     ]
@@ -1196,6 +1196,174 @@
       "comments: 8",
       "pull request",
       "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] chore(release): promote main to release \u2014 682 commits since v0.8.0",
+    "date": "2026-09-16T19:44:18Z",
+    "summary": "## Thinking Path\n\n`release` is still at `b94f51a4c`, the v0.8.0 merge from 2026-08-31. `main` is **682 commits ahead**. Sixteen days of merged, reviewed, CI-green work has not been released.\n\nThat is the real state of \"finish the release versions\". The v0.9.0 milestone has 189 open issues, but a mil",
+    "url": "https://github.com/mrveiss/AutoBot-AI/pull/16801",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: AutoBot-AI"
+    ]
+  },
+  {
+    "title": "[PR] fix(open-app): reconcile the Open App schema guard with MJ's own __mj_ namespace (#3302)",
+    "date": "2026-09-16T19:38:26Z",
+    "summary": "Fixes #3302.\n\n## The bug\n\n`mj app install` rejected every schema name starting with `__`, and every first-party MJ BizApp declares one:\n\n| App | Schema |\n|---|---|\n| bizapps-common | `__mj_BizAppsCommon` |\n| bizapps-tasks | `__mj_BizAppsTasks` |\n| bizapps-forms | `__mj_BizAppsForms` |\n| bizapps-cali",
+    "url": "https://github.com/MemberJunction/MJ/pull/4506",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] ai-brain: run local models first, with a LAN ollama host found by sweeping",
+    "date": "2026-09-16T19:29:27Z",
+    "summary": "The chain now runs local first and cloud last, with the free tier as the worst case rather than the default:\n\n```\nlan:deepseek-r1:8b \u2192 ollama:llama3.2:3b \u2192 gemini:gemini-3.8-flash \u2192 gemini:gemini-3.5-flash-lite\n```\n\n`ollama:` is the rpi5's own service, unchanged. **`lan:` is new**: a model on whatev",
+    "url": "https://github.com/tkhduracell/iot-fetcher/pull/493",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: iot-fetcher"
+    ]
+  },
+  {
+    "title": "[PR] Update module github.com/testcontainers/testcontainers-go/modules/postgres to v0.44.0",
+    "date": "2026-09-16T19:28:51Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [github.com/testcontainers/t",
+    "url": "https://github.com/infratographer/location-api/pull/142",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: location-api"
+    ]
+  },
+  {
+    "title": "[PR] Rebuild the fork on upstream: the agent we forked to write, upstream wrote",
+    "date": "2026-09-16T19:22:52Z",
+    "summary": "**Read the diff with care.** This branch is based on `beam-cloud/beta9` `upstream/main`, not on `main`, so GitHub computes the merge base as `299106d5` (2025-11-26) and shows you nine months of upstream work *plus* the removal of everything we are dropping. The number that matters is this one:\n\n```\n",
+    "url": "https://github.com/Wingie/beta9/pull/8",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: beta9"
+    ]
+  },
+  {
+    "title": "[PR] Complete Phases 0-3: defects, phase plan (D-022), and the last upstream branding",
+    "date": "2026-09-16T19:12:33Z",
+    "summary": "First of three changes completing Phases 0\u20133. This one fixes the two defects that turned up when the product was actually run yesterday, and writes down the phase plan that until now existed only in conversation (**D-022**).\n\n## The first chat request after a restart failed\n\n`@kete` answered \"Langua",
+    "url": "https://github.com/kete-org/Kete-workbench/pull/17",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: Kete-workbench"
+    ]
+  },
+  {
+    "title": "[PR] feat: cross-platform packaging, a working persona pipeline and AGENTS.md interop",
+    "date": "2026-09-16T19:11:11Z",
+    "summary": "## Summary\n\nThis branch does three things the project claimed but did not deliver:\n\n1. **The desktop app builds, bundles and runs on Windows, Linux and macOS** \u2014 not just in a `cargo run` from the repo root.\n2. **The persona system actually reaches the model.** The registry advertised engineering pl",
+    "url": "https://github.com/Emerald-dev0/Blueprint/pull/44",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: Blueprint"
+    ]
+  },
+  {
+    "title": "[PR] feat: use local Qwen for story generation",
+    "date": "2026-09-16T19:09:30Z",
+    "summary": "## Summary\n\nMake local Qwen3.5 0.8B through Ollama the default story writer, retaining the existing typed StoryBook API and explicit alternative-provider configuration.\n\nCloses #20\n\nDepends on: N/A\n\n## Why\n\nThe maintainer wants a first CPU-only, local generation baseline without a paid API or cloud ",
+    "url": "https://github.com/cblgn/storybook-ai/pull/21",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: storybook-ai"
+    ]
+  },
+  {
+    "title": "[PR] Make the OpenCode thinking level configurable",
+    "date": "2026-09-16T19:08:42Z",
+    "summary": "Adds a thinking-level control for OpenCode models, so they can be tuned the same way Codex and Cursor already can \u2014 in the chat composer, in Sub-Agent Role Defaults, and in the Context Builder chooser \u2014 and makes the OpenCode model choosers consistent with each other.\n\n## The problem\n\nOpenCode expos",
+    "url": "https://github.com/repoprompt/repoprompt-ce/pull/1009",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: repoprompt-ce"
+    ]
+  },
+  {
+    "title": "[PR] [ImgBot] Optimize images",
+    "date": "2026-09-16T18:06:23Z",
+    "summary": "## Beep boop. Your images are optimized!\r\n\r\nYour image file size has been reduced \ud83c\udf89\r\n\r\n<details>\r\n<summary>\r\nDetails\r\n</summary>\r\n\r\n| File | Before | After | Percent reduction |\r\n|:--|:--|:--|:--|\r\n| /.claude/commands/blog-feature-image/assets/logos/microsoft.svg | 0.62kb | 0.35kb | 43.06% |\r\n| /sta",
+    "url": "https://github.com/Mattlk13/docs-4/pull/1189",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: docs-4"
+    ]
+  },
+  {
+    "title": "[PR] Update miningtothelastblock.top pool to mine CS (Cloud Service)",
+    "date": "2026-09-16T17:58:04Z",
+    "summary": "## Summary\n- Adds a `CS` coin entry to `pool_templates/miningtothelastblock.json` (equihash 125/4 / ZelHash), pointing at `cs.miningtothelastblock.top:3332`, mined via the `cs-miner` Custom miner package.\n- Existing `DERO` entry is untouched.\n\n## \u26a0\ufe0f Reviewer note\nThe referenced `cs-miner` binary (ht",
+    "url": "https://github.com/minershive/hive-pooltemplates/pull/1844",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: hive-pooltemplates"
+    ]
+  },
+  {
+    "title": "[PR] Add cs-miner miner definition",
+    "date": "2026-09-16T17:58:04Z",
+    "summary": "## Summary\r\n- Adds `miners/cs-miner.json`: metadata for cs-miner (GPU AMD/Nvidia, OpenCL, ZelHash/`equihash 125/4`).\r\n- cs-miner ships as a HiveOS \"Custom miner\" package (`CUSTOM_NAME=cs-miner` in its `h-manifest.conf`), so it is actually launched via the `\"custom\"` miner key in pool templates (see ",
+    "url": "https://github.com/minershive/hive-pooltemplates/pull/1843",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: hive-pooltemplates"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): Update all minor dependencies",
+    "date": "2026-09-16T17:53:21Z",
+    "summary": "> \u2139\ufe0f **Note**\n> \n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|---|---|\n| [all",
+    "url": "https://github.com/michaelbrusegard/infra/pull/152",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: infra"
+    ]
+  },
+  {
+    "title": "[PR] fix(quota): Ollama Cloud credential validation and UI decoupling (#2187)",
+    "date": "2026-09-16T17:47:22Z",
+    "summary": "Closes #2187\n\n## Intent\n\nOllama Cloud usage tracking fails with \"Provider not configured\" even after setup. Root cause: credential validation used `redirect: 'manual'` and treated every 3xx response as auth failure. ollama.com returns 303 \u2192 /signin without a valid session cookie, so valid cookies we",
+    "url": "https://github.com/openchamber/openchamber/pull/2196",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 16",
+      "pull request",
+      "repo: openchamber"
     ]
   }
 ]
