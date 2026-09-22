@@ -168,12 +168,12 @@
   },
   {
     "title": "\ud83d\udea8 Zero Day Pulse \u2014 Active Vulnerability Tracker",
-    "date": "2026-09-22T15:52:33Z",
+    "date": "2026-09-22T20:35:47Z",
     "summary": "# Zero Day Pulse\n\n> **Generated:** 2026-05-26 14:37 UTC &nbsp;|&nbsp; **Total:** 15 &nbsp;|&nbsp; \ud83d\udd34 KEV: 0 &nbsp;|&nbsp; \ud83d\udfe0 Zero-Day: 13 &nbsp;|&nbsp; \ud83d\udfe1 High: 2 &nbsp;|&nbsp; \u2728 Enriched: 10\n\n---\n\n## 1. \ud83d\udfe0 Zero-Day \u2014 Ransomware Actors Exploit Unpatched SimpleHelp Remote Monitoring and Management to Com",
     "url": "https://github.com/peleduri/zero-day-pulse/issues/7",
     "source": "github_issues",
     "highlights": [
-      "comments: 473",
+      "comments: 474",
       "state: open",
       "repo: zero-day-pulse"
     ]
@@ -504,8 +504,8 @@
   },
   {
     "title": "[PR] feat: enable Relay streaming for Pi",
-    "date": "2026-09-22T03:54:26Z",
-    "summary": "#### Overview\n\nEnable Relay-backed ATOF streaming for Pi, building on the Relay integration\nmerged in #275.\n\nThis follow-up hardens invocation boundary selection with an explicit Pi\nturn-start signal, makes the embedded collector completion wait configurable\nend to end, adds actionable marker diagno",
+    "date": "2026-09-22T21:22:04Z",
+    "summary": "#### Overview\n\nEnable Relay-backed ATOF streaming for Pi, building on the Relay integration merged in #275.\n\nThis follow-up keeps the runtime usable when Relay drops or delays an `agent_settled` marker. Pi now reports a cumulative turn count, and the embedded collector uses it to fence ambiguous del",
     "url": "https://github.com/NVIDIA/NeMo-Fabric/pull/311",
     "source": "github_prs",
     "highlights": [
@@ -528,7 +528,7 @@
   },
   {
     "title": "[PR] [codex] Unify local org BYOK runtime",
-    "date": "2026-09-22T18:30:28Z",
+    "date": "2026-09-22T21:46:40Z",
     "summary": "## Summary\n- move local Chat V2 and eval model discovery to organization-managed model config, keeping Ollama as the local-only default\n- route non-Ollama org models through `/api/web/chat-v2`, preserving cloud vs local runtime execution for private/VPN/local-auth providers\n- migrate eval new-run, s",
     "url": "https://github.com/MCPJam/inspector/pull/2042",
     "source": "github_prs",
@@ -780,12 +780,12 @@
   },
   {
     "title": "[PR] A locally served model is usable when it appears, not after a restart",
-    "date": "2026-09-22T09:07:31Z",
-    "summary": "Closes #2045.\n\nA local runner's models are enumerated once, while the platform is being built, so `docker model pull` costs a restart \u2014 the one bring-your-own-key removed for keys and left in place for models on this machine. Found by reading the code against the appliance's `embabel embeddings use ",
+    "date": "2026-09-22T21:19:00Z",
+    "summary": "Closes #2045.\n\nA local runner's models are enumerated once, while the platform is being built. A model pulled a minute later is invisible however reachable it is, so `docker model pull` costs a restart \u2014 the one bring-your-own-key removed for keys and left in place for models on this machine. Found ",
     "url": "https://github.com/embabel/embabel-agent/pull/2046",
     "source": "github_prs",
     "highlights": [
-      "comments: 1",
+      "comments: 3",
       "pull request",
       "repo: embabel-agent"
     ]
@@ -1248,7 +1248,7 @@
   },
   {
     "title": "[PR] feat(ai-mcp): add an MCP server and speak spec 2026-07-28",
-    "date": "2026-09-22T18:23:40Z",
+    "date": "2026-09-22T21:21:56Z",
     "summary": "You can serve TanStack tools as an MCP server. Call `createMCPServer` and mount the Fetch handler on Workers, Deno, Bun, or Node. The same server can run on stdio with `serveMCPStdio`.\n\nThe client tries spec `2026-07-28` first. If the server does not support that spec, the client uses the 2025 hands",
     "url": "https://github.com/TanStack/ai/pull/1452",
     "source": "github_prs",
@@ -1292,6 +1292,210 @@
       "comments: 1",
       "pull request",
       "repo: kagent"
+    ]
+  },
+  {
+    "title": "[Roadmap] Evidence-backed reviews that converge: product and source direction",
+    "date": "2026-09-22T19:59:47Z",
+    "summary": "## Direction \u2014 September 22, 2026\n**ReviewSensei should be the open, user-controlled review and verification layer for human- and agent-authored changes: find material defects, verify fixes, stop review churn, and make the next action clear.** GitHub PR review is the first host integration, not the ",
+    "url": "https://github.com/malsabbagh/review-sensei/issues/167",
+    "source": "github_issues",
+    "highlights": [
+      "comments: 0",
+      "state: open",
+      "repo: review-sensei"
+    ]
+  },
+  {
+    "title": "[PR] fix(api): make /v1 audio routes work with the openai and Agents SDKs",
+    "date": "2026-09-22T21:51:17Z",
+    "summary": "## Summary\n\nMakes VoiceStudio's OpenAI-compatible API (`/v1`) work unchanged with the official `openai` Python SDK and the OpenAI Agents SDK voice pipeline.\n\n| Audit finding | Status | Fix |\n|---|---|---|\n| `gpt-4o-mini-tts` (Agents SDK default) \u2192 400 \"Unknown model\" | Confirmed | All OpenAI TTS ids",
+    "url": "https://github.com/debpalash/VoiceStudio/pull/2290",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: VoiceStudio"
+    ]
+  },
+  {
+    "title": "[PR] Update repo table",
+    "date": "2026-09-22T21:50:21Z",
+    "summary": "## Summary\n\nThis PR updates the README repository table.\n\n## Summary\n\n**1 repos starred:**\n[LingDong-/computer-grass](https://github.com/LingDong-/computer-grass)\n\n**1 repos had updated descriptions including:**\n[silverbulletmd/silverbullet](https://github.com/silverbulletmd/silverbullet)\n\n**3 repos",
+    "url": "https://github.com/arran4/arran4/pull/316",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: arran4"
+    ]
+  },
+  {
+    "title": "[PR] fix(mcp): /mcp works on Docker/source builds, tools follow OMNIVOICE_PORT, real integration setups",
+    "date": "2026-09-22T21:45:42Z",
+    "summary": "## Summary\n\n**MCP endpoint (critical).** `POST /mcp` returned **405** whenever `frontend/dist` existed (every Docker image, source builds). The MCP app is mounted at `/mcp`, which only matches `/mcp/...`, so a bare `/mcp` fell through to the SPA `StaticFiles` mount at `/`. Without a built SPA it was",
+    "url": "https://github.com/debpalash/VoiceStudio/pull/2289",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: VoiceStudio"
+    ]
+  },
+  {
+    "title": "[PR] Add retrieval and generation evaluation harness",
+    "date": "2026-09-22T21:45:39Z",
+    "summary": "## Description\r\n\r\nAdds a small offline evaluation harness for Tapio's RAG pipeline, under `backend/evals/`. It measures two things separately, so a bad answer can be traced to bad retrieval or to bad generation.\r\n\r\n**Retrieval** (`python -m evals.retrieval_eval`)\r\n- Runs each golden question through",
+    "url": "https://github.com/Finntegrate/tapio/pull/169",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: tapio"
+    ]
+  },
+  {
+    "title": "[PR] feat: pod-qdrant \u2014 the Qdrant box + check-qdrant-pod R10 bed",
+    "date": "2026-09-22T21:42:00Z",
+    "summary": "## Summary\n\nNew repo `opencharly/pod-qdrant`: the **Qdrant box image + the `check-qdrant-pod` R10 bed**.\n\n- **`box/qdrant`** \u2014 the Fedora 43 image composing the qdrant service layer ([`layer-qdrant`](https://github.com/opencharly/layer-qdrant) `v2026.265.2042`) and the external command:qdrant + verb",
+    "url": "https://github.com/opencharly/pod-qdrant/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: pod-qdrant"
+    ]
+  },
+  {
+    "title": "[PR] feat(plm-units): add BOREAS (local ministral-3:14b) + retire SOPHIA-5 (hosted Mistral)",
+    "date": "2026-09-22T21:40:42Z",
+    "summary": "## Summary\n\nAdds a **draft** registry entry for BOREAS, a proposed Ollama PLM unit running the Mistral-family `ministral-3:14b` model locally on TIALA (Mac mini M4 16 GB). The model is already pulled to TIALA's external SSD model store (`/Volumes/Extention_SSD/ollama-models/` via the `~/.ollama/mode",
+    "url": "https://github.com/dogmaai/magi-knowledge/pull/83",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: magi-knowledge"
+    ]
+  },
+  {
+    "title": "[PR] Bump Aspire.Hosting.PostgreSQL and 10 others",
+    "date": "2026-09-22T21:40:28Z",
+    "summary": "Updated [Aspire.Hosting.PostgreSQL](https://github.com/microsoft/aspire) from 13.4.6 to 13.5.4.\n\n<details>\n<summary>Release notes</summary>\n\n_Sourced from [Aspire.Hosting.PostgreSQL's releases](https://github.com/microsoft/aspire/releases)._\n\n## 13.5.4\n\n## What's New in Aspire 13.5.4\n\nPatch release ",
+    "url": "https://github.com/sahansera/PulseOps/pull/13",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: PulseOps"
+    ]
+  },
+  {
+    "title": "[PR] AI \u63a8\u85a6\u56de\u8986\uff1aB 100% \u53ea\u7528\u5728\u804a\u5929\u5ba4\u7684\u7b2c\u4e00\u5247\u8a0a\u606f\uff1b\u6c92\u6709\u4f9d\u64da\u5c31\u4e0d\u786c\u63a8\u85a6",
+    "date": "2026-09-22T21:40:18Z",
+    "summary": "## TL;DR\n\n\u300cAI \u63a8\u85a6\u56de\u8986\u300d\u7684\u5169\u9805\u898f\u5247\u66f4\u6b63\uff082026-09-23 \u4f7f\u7528\u8005\u63d0\u51fa\uff09\uff0c\u53ea\u52d5 AI \u670d\u52d9\u3001\u6e2c\u8a66\u8207\u6587\u4ef6\uff0c**\u5f8c\u7aef\u8207\u524d\u7aef\u7a0b\u5f0f\u90fd\u4e0d\u7528\u6539**\u3002\n\n1. **\u300c\u7b2c 1 \u5247 B 100%\u300d\u7684\u300c\u7b2c 1 \u5247\u300d\u6307\u7684\u662f\u6574\u500b\u804a\u5929\u5ba4\u7684\u7b2c\u4e00\u5247\u8a0a\u606f**\uff0c\u4e0d\u662f\u6bcf\u4e00\u6279\u63a8\u85a6\u7684\u7b2c 1 \u540d\uff0c\u4e5f\u4e0d\u662f A \u6216 B \u5404\u81ea\u7684\u7b2c\u4e00\u5247\u3002\n   - \u804a\u5929\u5ba4\u9084\u6c92\u6709\u4efb\u4f55\u8a0a\u606f\u6642\uff0c**5 \u5247\u5168\u90e8 B 100%**\uff0c\u7167 B \u559c\u6b61\u7684\u6a23\u5b50\u5beb\u3002\u9019\u500b\u7bc4\u570d\u662f\u4f7f\u7528\u8005\u5f9e\u5169\u500b\u9078\u9805\u4e2d\u9078\u5b9a\u7684\u3002\n   - \u53ea\u8981\u6709\u4eba\u50b3\u904e\u8a0a\u606f\uff08\u4e0d\u8ad6\u662f\u8ab0\uff09\uff0c5 \u5247\u5168\u90e8\u6539\u6210 A 80%\uff0fB 20%\u3002\n2. **\u6c92\u6709\u8cc7\u6599\u6839\u64da\u5c31\u4e0d\u786c\u63a8\u85a6**\uff0c\u76f4\u63a5\u986f\u793a\u300c**\u6c92\u6709\u53ef\u63a8\u85a6\u7684\u53e5\u5b50**\u300d\u3002\n  ",
+    "url": "https://github.com/mimimeowmeo/ai-dating-platform/pull/5",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: ai-dating-platform"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-agents, ai-anthropic): provider-aware trailing runtime state for Loop agents so prompt caches survive iterations, plus action-failure circuit breaker",
+    "date": "2026-09-22T21:37:07Z",
+    "summary": "## Summary\n\nMoves the Loop agent's **volatile per-iteration state out of the system prompt** and into a single framework-authored trailing message, so provider prompt caches survive across loop iterations \u2014 and shapes that trailing message per provider so each vendor's cache actually hits.\n\nUntil no",
+    "url": "https://github.com/MemberJunction/MJ/pull/4508",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] Bump ruby_llm from 1.16.0 to 2.0.0",
+    "date": "2026-09-22T21:34:16Z",
+    "summary": "Bumps [ruby_llm](https://github.com/crmne/ruby_llm) from 1.16.0 to 2.0.0.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/crmne/ruby_llm/releases\">ruby_llm's releases</a>.</em></p>\n<blockquote>\n<h2>RubyLLM 2.0.0</h2>\n<p>RubyLLM 2.0 brings more of each provi",
+    "url": "https://github.com/santib/demo-langfuse/pull/18",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: demo-langfuse"
+    ]
+  },
+  {
+    "title": "[PR] chore(logs): replay Firehose deliveries against a local capture-logs",
+    "date": "2026-09-22T21:32:11Z",
+    "summary": "## Problem\n\nNobody on this stack can exercise the Firehose intake without an AWS account, so four layers of it sit unverified behind the one test that needs real AWS.\n\n- The endpoint needs no AWS to reach: auth is one opaque header holding the project API key, and both payload layers are documented ",
+    "url": "https://github.com/PostHog/posthog/pull/102545",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: posthog"
+    ]
+  },
+  {
+    "title": "[PR] Restrict GeneMap to owner-only local Ollama",
+    "date": "2026-09-22T21:31:42Z",
+    "summary": "Restricts registration, login, authenticated requests, /auth/me refresh, and explicit refresh to the configured owner/admin email. Forces local Ollama as the default text provider and removes the owner-subscription shortcut in local-only mode. Runtime secrets remain local and uncommitted.",
+    "url": "https://github.com/buckeye7066/genemap-discovery/pull/233",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: genemap-discovery"
+    ]
+  },
+  {
+    "title": "[PR] docs: add a subagents tutorial with a blog-writing Start app",
+    "date": "2026-09-22T21:21:52Z",
+    "summary": "The blog desk can run research and SEO together, then send both texts to the writer.\n\nSay `do research and seo`. The researcher card and the SEO card open together. Say `research octopuses and squids, suggest SEO, and write the article`. Those two finish first. The writer starts after them.\n\nResearc",
+    "url": "https://github.com/TanStack/ai/pull/1439",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: ai"
+    ]
+  },
+  {
+    "title": "[PR] Following the install guide installed Alpine Linux and a different operating system",
+    "date": "2026-09-22T21:21:38Z",
+    "summary": "# The documented way to install Yantrik OS installed a different operating system\n\nBranch: `feature/install-truth` \u00b7 off `origin/main` at `d595bbf`\n\n## What a person hit\n\n`docs/getting-started.md` told a newcomer to install **Alpine Linux 3.18+** on their machine\nand then run:\n\n```bash\ncurl -fsSL ht",
+    "url": "https://github.com/yantrikos/yantrik-os/pull/92",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: yantrik-os"
+    ]
+  },
+  {
+    "title": "[PR] feat(soc): pinned AI knowledge, offline C4 evaluation and lifecycle fixes",
+    "date": "2026-09-22T21:19:35Z",
+    "summary": "## Audit update \u2014 2026-09-18\n\nThis session adds source-replay rejection and source-aware Wilson suppression to C4, sanitized HTTP protocol failures, six regression methods (307 tests total), a corrected delivery roadmap and a bounded audit report with adjudicated second-agent review. See docs/TAKEOV",
+    "url": "https://github.com/MoTechSys/my-bro/pull/28",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 85",
+      "pull request",
+      "repo: my-bro"
+    ]
+  },
+  {
+    "title": "[PR] FA3: materialize central provider-neutral Model Router runtime",
+    "date": "2026-09-22T21:17:26Z",
+    "summary": "## Scope\n\nMaterializes the existing `FA3-AUTH-MODEL-ROUTER-001` as the single provider-neutral model-routing authority on top of current `main`.\n\n### Runtime path\n\n`logical route -> admitted current-host provider/runtime -> runtime-discovered model -> LiteLLM data plane`\n\n- Canonical routes contain ",
+    "url": "https://github.com/ubuntuokos/Final-Architecture-v3.0/pull/351",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: Final-Architecture-v3.0"
     ]
   }
 ]
