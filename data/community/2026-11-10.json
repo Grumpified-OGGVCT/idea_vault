@@ -1,12 +1,12 @@
 [
   {
     "title": "[ARANHA SYNC TOTAL] 7 frentes em 5 automa\u00e7\u00f5es \u2014 corre\u00e7\u00f5es Maestro/BICHO e handoff",
-    "date": "2026-11-10T15:43:01Z",
+    "date": "2026-11-10T20:10:05Z",
     "summary": "## MAPA ATUALIZADO 22/10/2026 \u2014 ORDEM DO CAPIT\u00c3O: 7 FRENTES, 5 SLOTS\n**Esta se\u00e7\u00e3o prevalece sobre atribui\u00e7\u00f5es antigas deste issue.** Exatamente cinco automa\u00e7\u00f5es ativas; n\u00e3o criar novos slots.\n\n| Slot ativo | Frente(s) executadas no mesmo agendamento | Respons\u00e1vel l\u00f3gico |\n|---|---|---|\n| ARANHA 1 | ",
     "url": "https://github.com/cleitongoy-debug/AURION-ONE/issues/55",
     "source": "github_issues",
     "highlights": [
-      "comments: 1183",
+      "comments: 1192",
       "state: open",
       "repo: AURION-ONE"
     ]
@@ -61,24 +61,24 @@
   },
   {
     "title": "[OpenCode]",
-    "date": "2026-11-10T12:28:51Z",
+    "date": "2026-11-10T19:08:59Z",
     "summary": "## Agent Channel\n\nCanal durable de communication asynchrone GPT \u2194 **OpenCode**.\n\n**channel_id:** `opencode`\n\nCe canal transporte les demandes, accus\u00e9s de r\u00e9ception, \u00e9tats de travail et r\u00e9sultats de l'agent. Il ne constitue pas l'\u00e9tat canonique Axon/WAVE.\n\nProtocol cible : `REQUEST \u2192 ACK \u2192 WORKING \u2192 ",
     "url": "https://github.com/tvnv/axon-orchestrator/issues/12",
     "source": "github_issues",
     "highlights": [
-      "comments: 529",
+      "comments: 535",
       "state: open",
       "repo: axon-orchestrator"
     ]
   },
   {
     "title": "[Audit #17073] S\u00e9rie GenAI \u2014 partition NanoClaw",
-    "date": "2026-11-10T13:14:05Z",
+    "date": "2026-11-10T18:25:54Z",
     "summary": "Ouverture de la s\u00e9rie GenAI pour la campagne daudit #17073, partition NanoClaw (myia-ai-01) \u2014 sur le mod\u00e8le des s\u00e9ries QuantConnect #17093, Search #18244 et GameTheory #17107.\r\n\r\n**Population** : 268 notebooks hors archives (empreinte population-nc.json @7b2336565, garde-fou VERT 764/764).\r\n\r\n## Pan",
     "url": "https://github.com/jsboige/CoursIA/issues/19451",
     "source": "github_issues",
     "highlights": [
-      "comments: 413",
+      "comments: 416",
       "state: open",
       "repo: CoursIA"
     ]
@@ -121,7 +121,7 @@
   },
   {
     "title": "Dependency Dashboard",
-    "date": "2026-11-10T01:35:23Z",
+    "date": "2026-11-10T18:31:01Z",
     "summary": "This issue lists Renovate updates and detected dependencies. Read the [Dependency Dashboard](https://docs.renovatebot.com/key-concepts/dashboard/) docs to learn more.<br>[View this repository on the Mend.io Web Portal](https://developer.mend.io/github/MjrTom/Zoo-Code).\n\n## Deprecations / Replacement",
     "url": "https://github.com/MjrTom/Zoo-Code/issues/17",
     "source": "github_issues",
@@ -828,7 +828,7 @@
   },
   {
     "title": "[PR] chore: RSS draft posts - 2026-10-01",
-    "date": "2026-11-10T16:11:24Z",
+    "date": "2026-11-10T22:11:22Z",
     "summary": "Auto-generated draft posts from Discord RSS channel.\n\nHuman approval required before render/publish.\n<!-- devin-review-badge-begin -->\n\n---\n\n<a href=\"https://app.devin.ai/review/jondmarien/ai-ugc-pipeline/pull/39\" target=\"_blank\"><picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://",
     "url": "https://github.com/jondmarien/ai-ugc-pipeline/pull/39",
     "source": "github_prs",
@@ -1220,6 +1220,234 @@
       "comments: 1",
       "pull request",
       "repo: llama_deploy"
+    ]
+  },
+  {
+    "title": "[PR] fix(installer): prepare OpenShell destination before gateway retirement",
+    "date": "2026-11-10T22:11:52Z",
+    "summary": "## Outcome\n\nThe installer prepares a safe OpenShell replacement directory before retiring an incompatible gateway. It reuses a safe writable directory or selects the guarded private directory. If preparation fails, the gateway remains available and completed backups remain preserved.\n\n## Reason\n\nHis",
+    "url": "https://github.com/NVIDIA/NemoClaw/pull/14276",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 17",
+      "pull request",
+      "repo: NemoClaw"
+    ]
+  },
+  {
+    "title": "[PR] feat(manager)!: nats is the default state-store backend, kube the fallback",
+    "date": "2026-11-10T22:11:49Z",
+    "summary": "## What changed\n\n`nats` is now the default state-store backend: a clustered, 3-replica\nJetStream KV + Object Store the chart runs as its own bundle. It\nimplements the same `Collection`/`Expiring`/`Appended`/`Blobs` contract\n`kube` does, and passes the same conformance suite and bench.\n\n`kube` (Kuber",
+    "url": "https://github.com/kostiantyn-matsebora/agent-ops-operator/pull/471",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 78",
+      "pull request",
+      "repo: agent-ops-operator"
+    ]
+  },
+  {
+    "title": "[PR] fix(docs,tools): integration follow-ups outside the nine partitions (named pipes, partition 10)",
+    "date": "2026-11-10T22:11:28Z",
+    "summary": "## Summary\n\nPartition 10 of the Named Pipelines integration into `feat/named-pipes-v3`. It carries fixes to files that **none of partitions 1-9 (#3153..#3161) own**: every file here is unchanged between develop `fa852a307` and the final tree `330850767`, and no partition branch modifies any of them.",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/3163",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-agents): unify skill & direct action expiration, compaction, and history tools (#6395)",
+    "date": "2026-11-10T22:11:20Z",
+    "summary": "## Summary\n\nCloses #6395.\n\nPreviously, `BaseAgent` resolved action result expiration, compaction, and execution limits solely from per-agent `MJAIAgentActionEntity` (`AIAgentAction`) rows. Actions granted to an agent via a Skill (`MJAISkillActionEntity` / `AISkillAction`)\u2014such as `Run Ad-hoc Query` ",
+    "url": "https://github.com/MemberJunction/MJ/pull/6516",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat(helm)!: Update kagent group (0.10.6 \u2794 1.0.0)",
+    "date": "2026-11-10T22:10:45Z",
+    "summary": "> [!NOTE]\n> This PR body was truncated due to platform limits.\n\nThis PR contains the following updates:\n\n| Package | Type | Update | Change | OpenSSF |\n|---|---|---|---|---|\n| [ghcr.io/kagent-dev/kagent/helm/kagent](https://redirect.github.com/kagent-dev/kagent) | HelmChart | major | `0.10.6` \u2192 `1.0",
+    "url": "https://github.com/xunholy/k8s-gitops/pull/4578",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: k8s-gitops"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-11-10T22:10:31Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/TroupeCrypto/kilocode/pull/7",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] Use each provider's own credential for tenant models",
+    "date": "2026-11-10T22:10:19Z",
+    "summary": "## Purpose\n\nA tenant model row was treated as \"own credentials, not metered\" based on fields the SDK provider class may ignore. For example, the Vertex AI class does not use `api_key` and falls back to the server's environment credentials, so such a row ran on the platform's account without metering",
+    "url": "https://github.com/rhesis-ai/rhesis/pull/3133",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 0",
+      "pull request",
+      "repo: rhesis"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-11-10T22:09:59Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\n\nSaw you forked Kilo, really appreciate for building on top of us.\n\nWe are putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\n\nIf you are open to it, would you be up for shar",
+    "url": "https://github.com/hzpconnor/kilocode/pull/1",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] WIP: SoruLab do\u011frulamal\u0131 ikiz soru motoru \u2014 \u00e7evrimd\u0131\u015f\u0131 \u015fablon + \u015fekil + Qwen/SymPy",
+    "date": "2026-11-10T22:09:13Z",
+    "summary": "## Goal\nImplement source-structure-preserving SoruLab twins without touching the other chat's paper test layout. Base branch: fix/v138-balanced-paper-flow-20261110.\n\n## Implemented\n- Strict free offline calculation-backed linear function variants and Pythagorean right-triangle variants; verified sou",
+    "url": "https://github.com/Furknsss/SoruLab/pull/44",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: SoruLab"
+    ]
+  },
+  {
+    "title": "[PR] chore(deps): update dependency ruby_llm to \"~> 2.2.0\"",
+    "date": "2026-11-10T22:07:07Z",
+    "summary": "This PR contains the following updates:\n\n| Package | Change | [Age](https://docs.renovatebot.com/merge-confidence/) | [Confidence](https://docs.renovatebot.com/merge-confidence/) |\n|---|---|---|---|\n| [ruby_llm](https://rubyllm.com) ([source](https://redirect.github.com/crmne/ruby_llm), [changelog](",
+    "url": "https://github.com/haru/redmine_ai_helper/pull/561",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: redmine_ai_helper"
+    ]
+  },
+  {
+    "title": "[PR] u1: view state store (unit 1 of the 1921 split)",
+    "date": "2026-11-10T22:06:58Z",
+    "summary": "# 1921 unit 1/8 - view-state core for profile deletion and activation\n\nBase: main at 18861b2e357203e6cb4d93930aa2ed122b1eecea. Head: 71cfcf33141104967f8d2917\nccc72a4ed48ad7b7 (tree 475953b5cf86aa115464d65ac8b1f5e2051a488b). Units 2 and 3 are\nstacked on this branch, so this unit cannot be preceded by",
+    "url": "https://github.com/Zoo-Code-Org/Zoo-Code/pull/2416",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: Zoo-Code"
+    ]
+  },
+  {
+    "title": "[PR] feat(ai-agent-harness): Cloud Agent Harness & Antigravity / Claude Code Cloud / Codex Cloud Adapters",
+    "date": "2026-11-10T22:06:46Z",
+    "summary": "## Summary\nAdds managed cloud agent harness execution (`sandbox.provider === 'cloud'`), bounded polling + `adaptive-wake` async continuation handoff, and four registered external agent harness adapters to `@memberjunction/ai-agent-harness`:\n\n1. **Additive Cloud Sandbox & Telemetry Types (`src/types.",
+    "url": "https://github.com/MemberJunction/MJ/pull/6526",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 2",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] feat: add a built-in email MCP server over IMAP and SMTP and an on/off switch for every MCP server",
+    "date": "2026-11-10T22:05:48Z",
+    "summary": "## Primary issue\n\nCloses #307\n\nRelated: #319 (#325), #320 (#323), #321 (#324), and #322 (#326), whose fixes the maintainer merged into this branch; #327, a Rust CI job (A-6); #328 and #329, which write the rulings on Q-7 and Q-8 into the coding standards.\n\n## Change type\n\nFeature\n\n## Purpose and nee",
+    "url": "https://github.com/w3lt/lys/pull/308",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 35",
+      "pull request",
+      "repo: lys"
+    ]
+  },
+  {
+    "title": "[PR] sync to main",
+    "date": "2026-11-10T22:04:47Z",
+    "summary": "Hey! Darko from Kilo here \ud83d\udc4b\r\n\r\nSaw you forked Kilo, really appreciate for building on top of us.\r\n\r\nWe're putting together a short Kilo Show segment on why people contribute to open source, and would love to include real perspectives from folks like you.\r\n\r\nIf you're open to it, would you be up for ",
+    "url": "https://github.com/Deep-Consulting-Solutions/kilocode/pull/9",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 5",
+      "pull request",
+      "repo: kilocode"
+    ]
+  },
+  {
+    "title": "[PR] Model selection tells the truth: one answering line, a sentence for a dead pick, Hermes names its model",
+    "date": "2026-11-10T22:03:14Z",
+    "summary": "PR A of #1114 (migration steps 1 to 3): make model selection truthful.\n\n## What changed\n\n1. **One `answering(mind)` resolver** (`crates/yantrik-ui/src/answering.rs`). It reads the newest successful call for that Mind from the gateway call log and says \"answering \u00b7 <Account> \u00b7 <model>\", adding \"\u00b7 via",
+    "url": "https://github.com/yantrikos/yantrik-os/pull/1162",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 6",
+      "pull request",
+      "repo: yantrik-os"
+    ]
+  },
+  {
+    "title": "[PR] Bound untrusted Ollama model-download progress",
+    "date": "2026-11-10T22:02:07Z",
+    "summary": "## Summary\n- Cap the aggregate Ollama model-pull progress stream at 8 MiB in addition to the existing per-event limit and overall task deadline.\n- Bound progress status and error strings before forwarding them to the UI or returning them to callers.\n- Strip control characters from provider-controlle",
+    "url": "https://github.com/asifshadab33/UJANI-PUBLIC-AI-/pull/187",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 1",
+      "pull request",
+      "repo: UJANI-PUBLIC-AI-"
+    ]
+  },
+  {
+    "title": "[PR] feat(jit-catching): Catching JiTTests \u2014 design, phase 1 core package and phase 2 gate-1 tooling (#6218)",
+    "date": "2026-11-10T22:01:45Z",
+    "summary": "## Summary\n\nDesign, phase 1 (core package) and phase 2 (gate-1 tooling) of Meta's **Catching JiTTests** for MemberJunction, as #6218 requests. For each PR, MJ generates throwaway tests, runs each test on the PR's merge-base and on its head, and keeps the tests that **pass on base and fail on head**.",
+    "url": "https://github.com/MemberJunction/MJ/pull/6367",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 4",
+      "pull request",
+      "repo: MJ"
+    ]
+  },
+  {
+    "title": "[PR] refactor(nodes): property-model conversion, llamaparse to llm_xai (named pipes, partition 5/9)",
+    "date": "2026-11-10T21:58:20Z",
+    "summary": "One of nine disjoint file partitions of the Named Pipelines final tree, targeting the integration branch `feat/named-pipes-v3` (base: develop at fa852a307). The nine partitions are split by **file**, not by commit, so they review concurrently and merge without conflicts. A single partition is not a ",
+    "url": "https://github.com/rocketride-org/rocketride-server/pull/3157",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 9",
+      "pull request",
+      "repo: rocketride-server"
+    ]
+  },
+  {
+    "title": "[PR] CAMEL-26716: design - Good to know, hint rules as metadata in the catalog and facts per component, which also explain a failure",
+    "date": "2026-11-10T21:57:04Z",
+    "summary": "This is a design for [CAMEL-26716](https://issues.apache.org/jira/browse/CAMEL-26716): the Good to know hints of the About screen, `camel get about`, the project overview and the MCP tools. The hints are metadata, not Java code. Only the design doc is added here, plus its line in AGENTS.md; no code ",
+    "url": "https://github.com/apache/camel/pull/29554",
+    "source": "github_prs",
+    "highlights": [
+      "comments: 3",
+      "pull request",
+      "repo: camel"
     ]
   }
 ]
